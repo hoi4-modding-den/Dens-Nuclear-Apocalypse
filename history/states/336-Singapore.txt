@@ -15,7 +15,7 @@ state = {
 
 	history = {
 
-		#owner = MAL
+		owner = LIB # MAL
 		#add_core_of = MAL
 
 		victory_points = {

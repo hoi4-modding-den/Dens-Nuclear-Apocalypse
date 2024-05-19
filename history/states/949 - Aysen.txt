@@ -14,7 +14,7 @@ state = {
 
 	history = {
 
-		#owner = CHL
+		owner = LIB # CHL
 		#add_core_of = CHL
 
 		buildings = {

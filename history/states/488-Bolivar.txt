@@ -7,7 +7,7 @@ state={
 	state_category = pastoral
 
 	history={
-		#owner = VEN
+		owner = LIB # VEN
 		buildings = {
 			infrastructure = 1
 

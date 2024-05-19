@@ -6,7 +6,7 @@ state={
 	state_category = wasteland
 	
 	history = {
-		#owner = ENG
+		owner = LIB # ENG
 		#add_core_of = SUD
 		buildings = {
 			infrastructure = 1

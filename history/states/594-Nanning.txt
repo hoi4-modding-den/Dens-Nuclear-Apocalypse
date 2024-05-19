@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		#owner = GXC
+		owner = LIB # GXC
 		#add_core_of = GXC
 		#add_core_of = CHI
 		#add_core_of = PRC
@@ -32,9 +32,9 @@ state={
 				CHI = { transfer_state = PREV }
 			}
 			JAP = {
-				set_province_controller = 1018
-				set_province_controller = 4023
-				set_province_controller = 10004
+				#set_province_controller = 1018
+				#set_province_controller = 4023
+				#set_province_controller = 10004
 			} 			
 		}
 	}

@@ -11,7 +11,7 @@ state={
 
 
 	history={
-		#owner = SIA
+		owner = LIB # SIA
 		buildings = {
 			infrastructure = 2
 		}

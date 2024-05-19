@@ -3,7 +3,7 @@ state={
 	name="STATE_600"
 
 	history={
-		#owner = CHI
+		owner = LIB # CHI
 		#add_core_of = CHI
 		#add_core_of = PRC
 		buildings = {
@@ -16,15 +16,15 @@ state={
 		}
 		1938.10.25 = {
 			JAP = {
-				set_province_controller = 1153
-				set_province_controller = 1628
-				set_province_controller = 3992
-				set_province_controller = 4038
-				set_province_controller = 4185
-				set_province_controller = 7653
-				set_province_controller = 10114
-				set_province_controller = 11988
-				set_province_controller = 13141
+				#set_province_controller = 1153
+				#set_province_controller = 1628
+				#set_province_controller = 3992
+				#set_province_controller = 4038
+				#set_province_controller = 4185
+				#set_province_controller = 7653
+				#set_province_controller = 10114
+				#set_province_controller = 11988
+				#set_province_controller = 13141
 
 			}
 

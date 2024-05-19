@@ -10,7 +10,7 @@ state= {
 
 	history=
 	{
-		#owner = ENG
+		owner = LIB # ENG
 		#add_core_of = CYP
 		victory_points = {
 			11984 5

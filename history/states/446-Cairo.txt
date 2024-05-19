@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		#owner = ENG
+		owner = LIB # ENG
 		#add_core_of = EGY
 
 		buildings = {

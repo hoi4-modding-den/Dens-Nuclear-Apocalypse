@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		#owner = SHX
+		owner = LIB # SHX
 		#add_core_of = SHX
 		#add_core_of = CHI
 		#add_core_of = PRC
@@ -23,13 +23,13 @@ state=
 
 		1938.10.25 = {
 			#remove_core_of = SHX
-			#owner = PRC
-			controller = JAP
+			owner = LIB # PRC
+			#controller = JAP
 			PRC = {
-				set_province_controller = 1034
-				set_province_controller = 1531
-				set_province_controller = 4074
-				set_province_controller = 10367
+				#set_province_controller = 1034
+				#set_province_controller = 1531
+				#set_province_controller = 4074
+				#set_province_controller = 10367
 			}
 		}
 	}

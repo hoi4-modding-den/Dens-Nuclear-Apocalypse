@@ -36,14 +36,14 @@ state = {
 			13247 1 
 		}
 		
-		#owner = ETH
+		owner = LIB # ETH
 		#add_core_of = ETH
 		#add_core_of = SID
 		#add_core_of = ORO
 
 		1936.6.1 = {
-			#owner = ITA
-			controller = ITA
+			owner = LIB # ITA
+			#controller = ITA
 		}
 	}
 

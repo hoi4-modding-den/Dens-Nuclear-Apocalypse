@@ -10,7 +10,7 @@ state={
 	state_category = city
 
 	history={
-		#owner = CZE
+		owner = LIB # CZE
 		victory_points = {
 			3569 20
 		}
@@ -26,8 +26,8 @@ state={
 		#add_core_of = CZE
 
 		1939.3.14 = {
-			#owner = GER
-			controller = GER
+			owner = LIB # GER
+			#controller = GER
 		}
 	}
 

@@ -7,7 +7,7 @@ state={
 	state_category = large_town
 
 	history={
-		#owner = SOV
+		owner = LIB # SOV
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

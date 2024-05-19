@@ -5,7 +5,7 @@ state= {
 	state_category = city
 	history=
 	{
-		#owner = CHI
+		owner = LIB # CHI
 		#add_core_of = CHI
 		#add_core_of = PRC
 		buildings = {
@@ -31,8 +31,8 @@ state= {
 
 		1938.10.25 = {		
 			JAP = {
-				set_province_controller = 4196
-				set_province_controller = 7071
+				#set_province_controller = 4196
+				#set_province_controller = 7071
 			} 			
 		}
 	}

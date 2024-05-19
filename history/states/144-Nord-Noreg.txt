@@ -18,7 +18,7 @@ state = {
 			9126 1
 		}
 		
-		#owner = NOR
+		owner = LIB # NOR
 		#add_core_of = NOR
 		if = {
 			limit = {

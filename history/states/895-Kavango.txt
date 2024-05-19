@@ -6,7 +6,7 @@ state={
 	state_category = pastoral
 
 	history={
-		#owner = SAF
+		owner = LIB # SAF
 		buildings = {
 			infrastructure = 2
 

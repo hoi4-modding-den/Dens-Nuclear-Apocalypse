@@ -5,7 +5,7 @@ state={
 	state_category = small_island
 
 	history={
-		#owner = NZL
+		owner = LIB # NZL
 		#add_core_of = SAM
 		buildings = {
 			infrastructure = 2

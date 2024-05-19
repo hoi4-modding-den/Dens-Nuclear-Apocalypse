@@ -13,7 +13,7 @@ state={
 	}
 
 	history={
-		#owner = USA
+		owner = LIB # USA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

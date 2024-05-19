@@ -8,7 +8,7 @@ state = {
 		victory_points = {
 			6626 3
 		}
-		#owner = ITA
+		owner = LIB # ITA
 		#add_core_of = ITA
 		#add_core_of = YUG
 		#add_core_of = SLV

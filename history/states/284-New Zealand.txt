@@ -7,7 +7,7 @@ state={
 	state_category = city
 	
 	history={
-		#owner = NZL
+		owner = LIB # NZL
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 1

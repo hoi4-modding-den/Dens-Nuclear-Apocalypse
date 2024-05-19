@@ -6,7 +6,7 @@ state = {
 	
 	state_category = town
 	history = {
-		#owner = ITA
+		owner = LIB # ITA
 		victory_points = {
 			9990 1 
 		}

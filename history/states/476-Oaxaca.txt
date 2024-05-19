@@ -11,7 +11,7 @@ state={
 	}
 	
 	history={
-		#owner = MEX
+		owner = LIB # MEX
 		buildings = {
 			infrastructure = 2
 			air_base = 2

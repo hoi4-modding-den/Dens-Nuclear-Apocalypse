@@ -10,7 +10,7 @@ state = {
 
 	history = {
 
-		#owner = JAP
+		owner = LIB # JAP
 		#add_core_of = JAP
 
 		buildings = {

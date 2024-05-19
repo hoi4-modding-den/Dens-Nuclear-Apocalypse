@@ -4,7 +4,7 @@ state={
 	
 
 	history={
-		#owner = SAU
+		owner = LIB # SAU
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

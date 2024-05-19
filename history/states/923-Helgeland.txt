@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		#owner = NOR
+		owner = LIB # NOR
 		#add_core_of = NOR
 		if = {
 			limit = {

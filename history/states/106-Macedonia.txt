@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		#owner = YUG
+		owner = LIB # YUG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

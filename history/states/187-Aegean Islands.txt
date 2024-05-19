@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		#owner = GRE
+		owner = LIB # GRE
 		buildings = {
 			infrastructure = 1
 			dockyard = 1

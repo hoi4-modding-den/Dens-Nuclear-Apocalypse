@@ -8,7 +8,7 @@ state = {
 
 	history = {
 
-		#owner = PRU
+		owner = LIB # PRU
 		#add_core_of = PRU
 
 		buildings = {

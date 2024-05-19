@@ -11,7 +11,7 @@ state=
 	
 
 	history= {
-		#owner = LIB
+		owner = LIB # LIB
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

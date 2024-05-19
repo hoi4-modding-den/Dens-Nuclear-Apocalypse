@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		#owner = AFG
+		owner = LIB # AFG
 		buildings = {
 			infrastructure = 1
 		}

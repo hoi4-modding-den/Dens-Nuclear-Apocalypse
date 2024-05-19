@@ -7,7 +7,7 @@ state={
 	resources={
 	}
 	history={
-		#owner = SWI
+		owner = LIB # SWI
 		buildings = {
 			infrastructure = 1 
 			industrial_complex = 1

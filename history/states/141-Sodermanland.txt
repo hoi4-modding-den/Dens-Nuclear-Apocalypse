@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		#owner = SWE
+		owner = LIB # SWE
 
 		victory_points = {
 			6050 20 # Stockholm

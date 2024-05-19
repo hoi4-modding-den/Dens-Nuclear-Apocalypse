@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		#owner = ECU
+		owner = LIB # ECU
 		#add_core_of = ECU
 
 		buildings = {

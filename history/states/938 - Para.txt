@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		#owner = BRA
+		owner = LIB # BRA
 		#add_core_of = BRA
 		buildings = {
 			infrastructure = 1

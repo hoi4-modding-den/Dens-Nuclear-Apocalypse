@@ -11,7 +11,7 @@ state={
 
 	history={
 		#add_core_of = TRI
-		#owner = ENG
+		owner = LIB # ENG
 		victory_points = {
 			3284 1
 		}
