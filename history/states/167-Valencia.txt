@@ -7,7 +7,7 @@ manpower=1319529
 	state_category = large_town
 
 	history={
-		owner = LIB # SPR
+		owner = XAD # SPR
 		victory_points = {
 			6906 10
 		}

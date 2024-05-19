@@ -6,7 +6,7 @@ manpower=14248
 	
 	state_category = enclave
 	history={
-		owner = LIB # ENG
+		owner = XAD # ENG
 		victory_points = { 4135 10 }
 		buildings = {
 			infrastructure = 3

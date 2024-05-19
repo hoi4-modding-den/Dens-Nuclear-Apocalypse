@@ -2,3 +2,7 @@ LIB = {
 	color = rgb { 1 1 1 }
 	color_ui = rgb { 1 1 1 }
 }
+XAD = {
+	color = rgb { 51 204 51 }
+	color_ui = rgb { 51 204 51 }
+}
