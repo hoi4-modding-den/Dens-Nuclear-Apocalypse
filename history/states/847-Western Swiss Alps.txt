@@ -7,12 +7,12 @@ manpower=118953
 	resources={
 	}
 	history={
-		owner = LIB # SWI
+		owner = XSS
 		buildings = {
 			infrastructure = 1 
 			#industrial_complex = 1
 		}
-		#add_core_of = SWI
+		add_core_of = XSS
 	}
 	provinces={
 		636 9587 3612 9618  

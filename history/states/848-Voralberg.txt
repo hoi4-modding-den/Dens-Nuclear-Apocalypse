@@ -5,18 +5,13 @@ state={
 manpower=102903
 	state_category = pastoral
 	history={
-		owner = LIB # AUS
+		owner = XSS
 		buildings = {
 			infrastructure = 2
 			#industrial_complex = 1
 		}
-		#add_core_of = AUS
-		#add_claim_by = SWI
-		1938.3.12 = {
-			owner = LIB # GER
-			#controller = GER
-			#add_core_of = GER
-		}
+		add_core_of = XSS
+
 	}
 	provinces={
 		6678 6680 
