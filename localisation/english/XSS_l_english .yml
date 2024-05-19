@@ -2,3 +2,15 @@
  XSS:0 "Switzerland"
  XSS_DEF:0 "Switzerland"
  XSS_ADJ:0 "Swiss"
+
+ XSS_communism_party:0 "KP/SSA/RA"
+ XSS_communism_party_long:0 "Kommunistische Partei/Schweizerische Sozialisten und Arbeitergewerkschaft/Rote Armee"
+
+ XSS_fascism_party:0 "NSS/GA/NAP"
+ XSS_fascism_party_long:0 "Neu Schutzstaffel/Grüne Armee/Nationale Arbeiterpartei"
+
+ XSS_neutrality_party:0 "House of Bracher"
+ XSS_neutrality_party_long:0 "House of Bracher"
+
+ XSS_democratic_party:0 "SSD/NU/BU"
+ XSS_democratic_party_long:0 "Schweizer Sozialdemokratie/Nationale Union/Bundesunion"

@@ -1,0 +1,67 @@
+characters = {
+
+	XSS_swiss_council = {
+		name = "National assembly"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SWI_federal_assembly"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XSS_niemir_eggli = {
+		name = "Niemir Eggli"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ger_hans_von_luck"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XSS_evan_signer = {
+		name = "Evan Signer"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_wilhelm_pieck"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XSS_bracher = {
+		name = "Alexander Bracher"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Prince_Henry"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+
+
+
+
+}

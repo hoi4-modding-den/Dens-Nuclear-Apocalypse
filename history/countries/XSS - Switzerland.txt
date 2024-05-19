@@ -1,5 +1,9 @@
 capital = 3
 
+recruit_character = XSS_swiss_council
+recruit_character = XSS_niemir_eggli
+recruit_character = XSS_evan_signer
+recruit_character = XSS_bracher
 
 
 set_research_slots = 3
@@ -24,9 +28,9 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 96
-	fascism = 2
-	communism = 2
+	democratic = 78
+	fascism = 18
+	communism = 4
 }
 
 set_stability = 1
