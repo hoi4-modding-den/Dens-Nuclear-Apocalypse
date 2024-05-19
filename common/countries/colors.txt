@@ -14,8 +14,11 @@ XIE = {
 	color = rgb { 131 193 81 }
 	color_ui = rgb { 131 193 81 }
 }
-
 XSS = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
+}
+XNI = {
+	color = rgb { 206 130 95 }
+	color_ui = rgb { 206 130 95 }
 }

@@ -1,0 +1,13 @@
+capital = 119
+
+set_politics = {
+	ruling_party = fascism
+}
+set_popularities = {
+	fascism = 100
+}
+create_country_leader = {
+	name = "William Ulsterman"
+	picture = "GFX_leader_unknown"
+	ideology = fascism_ideology
+}

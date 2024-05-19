@@ -2,3 +2,13 @@
  XIE: "Ireland"
  XIE_DEF: "Ireland"
  XIE_ADJ: "Irish"
+ XIE_democratic: "Irish Confederation"
+ XIE_democratic_DEF: "the Irish Confederation"
+ XIE_democratic_ADJ: "Irish"
+
+ XNI: "Ulster"
+ XNI_DEF: "Ulster"
+ XNI_ADJ: "Ulster"
+ XNI_neutrality: "Ulster Dominion"
+ XNI_neutrality_DEF: "the Ulster Dominion"
+ XNI_neutrality_ADJ: "Ulster"
