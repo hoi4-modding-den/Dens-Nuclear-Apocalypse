@@ -1,0 +1,30 @@
+capital = 132
+
+oob = "XNM_1936"
+
+set_war_support = 0.25
+set_stability = 0.75
+set_convoys = 10
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 64
+	communism = 11
+	fascism = 4
+	neutrality = 21
+}
+
+# create_country_leader = {
+	name = XNE_winston_chamberlain
+	desc = XNE_winston_chamberlain_desc
+	picture = GFX_Portrait_Britain_Generic_land_2
+	expire = "1.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}

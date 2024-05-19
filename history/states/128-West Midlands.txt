@@ -10,7 +10,7 @@ manpower=2456823
 	}
 
 	history={
-		owner = LIB # ENG
+		owner = XNM # ENG
 		buildings = {
 			infrastructure = 4 #was: 8
 			#arms_factory = 2

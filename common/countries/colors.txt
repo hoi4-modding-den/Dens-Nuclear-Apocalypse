@@ -22,3 +22,16 @@ XNI = {
 	color = rgb { 206 130 95 }
 	color_ui = rgb { 206 130 95 }
 }
+XNM = {
+	color = rgb { 41 74 173 }
+	color_ui = rgb { 41 74 173 }
+}
+XCT = {
+	color = rgb { 75 150 75 }
+	color_ui = rgb { 75 150 75 }
+}
+XTY = {
+	color = rgb { 87 120 150 }
+	color_ui = rgb { 87 120 150 }
+}
+
