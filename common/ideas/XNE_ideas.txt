@@ -1,20 +1,22 @@
-﻿country = {
-	AST_standard_gauge_railway = {
+﻿ideas = {
+	country = {
+		# AST_standard_gauge_railway = {
 
-		allowed = {
-			always = no
-		}
+			# allowed = {
+				# always = no
+			# }
 
-		allowed_civil_war = {
-			always = yes
-		}
+			# allowed_civil_war = {
+				# always = yes
+			# }
 
-		removal_cost = -1
+			# removal_cost = -1
 
-		picture = generic_build_infrastructure
+			# picture = generic_build_infrastructure
 
-		modifier = {
-			production_speed_rail_way_factor = 0.1
-		}
+			# modifier = {
+				# production_speed_rail_way_factor = 0.1
+			# }
+		# }
 	}
 }

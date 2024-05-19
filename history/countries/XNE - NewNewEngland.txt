@@ -25,4 +25,7 @@ create_country_leader = {
 	picture = GFX_Portrait_Britain_Generic_land_2
 	expire = "1.1.1"
 	ideology = conservatism
+	traits = {
+		XNE_conservative_traditionalist
+	}
 }
