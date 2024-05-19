@@ -34,4 +34,7 @@ XTY = {
 	color = rgb { 87 120 150 }
 	color_ui = rgb { 87 120 150 }
 }
-
+XRP = {
+	color = rgb { 0 82 155 }
+	color_ui = rgb { 0 82 155 }
+}
