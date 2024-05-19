@@ -1,0 +1,8 @@
+capital = 826
+
+set_politics = {
+	ruling_party = democratic
+}
+set_popularities = {
+	democratic = 100
+}
