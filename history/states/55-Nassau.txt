@@ -4,11 +4,11 @@ state={
 	name="STATE_55"
 
 	history={
-		owner = GER
+		owner = LIB 
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 2
+			#arms_factory = 1
+			#industrial_complex = 2
 
 		}
 		victory_points = {
@@ -17,11 +17,10 @@ state={
 		victory_points = {
 			564 3 
 		}
-		add_core_of = GER
 		1939.1.1 = {
 			buildings = {
-				air_base = 3
-				arms_factory = 4
+				#air_base = 3
+				#arms_factory = 4
 
 			}
 
@@ -32,7 +31,7 @@ state={
 	provinces={
 		564 589 3397 3524 3574 6444 6488 6549 9486 9524 9547 11445 11533 
 	}
-	manpower=3798235
+	manpower=2532157
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=15.000
