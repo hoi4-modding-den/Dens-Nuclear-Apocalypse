@@ -2,35 +2,27 @@
 state={
 	id=129
 	name="STATE_129"
-manpower=1474681
+	manpower=1474681
 	
 	state_category = city
 	
 	resources={
-		steel=11 # was: 20
+		steel=11
 	}
 
 	history={
-		owner = LIB # ENG
+		owner = XNE
 		victory_points = {
-			6237 10 #Nottingham
+			6237 10
 		}
 		victory_points = {
-			11279 3 #Leicester
+			11279 3 
 		}
 		buildings = {
-			infrastructure = 4 #was: 8
-			#arms_factory = 2
-			#industrial_complex = 1
-			#air_base = 5
+			infrastructure = 4 
 		}
-		#add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				#arms_factory = 3
-				#industrial_complex = 2
-			}
-		}
+		add_core_of = XNE
+		
 	}
 
 	provinces={
