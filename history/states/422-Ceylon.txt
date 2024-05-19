@@ -2,7 +2,7 @@ state=
 {
 	id=422
 	name="STATE_422"
-	manpower = 5500000
+manpower=3666667
 	
 	state_category = rural
 
@@ -18,8 +18,8 @@ state=
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			air_base = 3
+			#industrial_complex = 1
+			#air_base = 3
 			10201 = {
 				naval_base = 5
 			}

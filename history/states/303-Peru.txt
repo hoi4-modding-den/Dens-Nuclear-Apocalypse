@@ -2,7 +2,7 @@
 state = {
 	id = 303
 	name = "STATE_303" # Lima
-	manpower = 3563249
+manpower=2375499
 	resources = {
 		oil = 14 # was: 18
 	}
@@ -16,9 +16,9 @@ state = {
 
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 6
-			air_base = 3
+			#arms_factory = 1
+			#industrial_complex = 6
+			#air_base = 3
 			12997 = {
 				naval_base = 5
 			}

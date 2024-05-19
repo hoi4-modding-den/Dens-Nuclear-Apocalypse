@@ -2,7 +2,7 @@
 state={
 	id=447
 	name="STATE_447"
-	manpower = 3859239
+manpower=2572826
 	resources={
 		oil=1 # was: 2
 		tungsten = 3 #maganese
@@ -24,8 +24,8 @@ state={
 		}		
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1
-			air_base = 6
+			#industrial_complex = 1
+			#air_base = 6
 			4076 = {
 				naval_base = 8
 			}

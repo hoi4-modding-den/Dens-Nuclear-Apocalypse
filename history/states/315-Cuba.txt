@@ -1,7 +1,7 @@
 state= {
 	id=315
 	name="STATE_315"
-	manpower = 3607919
+manpower=2405279
 	resources={
 		steel=3 # was: 4
 		chromium=90 # was: 160
@@ -13,9 +13,9 @@ state= {
 		owner = LIB # CUB
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+			#arms_factory = 1
+			#industrial_complex = 3
+			#air_base = 1
 			7622 = {
 				naval_base = 3
 			}

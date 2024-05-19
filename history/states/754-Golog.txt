@@ -4,7 +4,7 @@ state = {
 	provinces = {
 		1882 4536 4888 7270 10490 10817 11448 12732 12815 
 	}
-	manpower = 400000
+manpower=266667
 	buildings_max_level_factor = 1.000
 	state_category = rural
 	history = {
@@ -19,8 +19,8 @@ state = {
 
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
-			arms_factory = 1
+			#industrial_complex = 1
+			#arms_factory = 1
 		}
 
 		1938.10.25 = {

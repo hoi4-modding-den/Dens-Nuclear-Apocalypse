@@ -2,7 +2,7 @@
 state={
 	id=185
 	name="STATE_185"
-	manpower = 760900
+manpower=507267
 	
 	state_category = rural
 	
@@ -24,8 +24,8 @@ state={
 		owner = LIB # GRE
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			air_base = 3
+			#industrial_complex = 1
+			#air_base = 3
 			9805 = {
 				naval_base = 1
 			}

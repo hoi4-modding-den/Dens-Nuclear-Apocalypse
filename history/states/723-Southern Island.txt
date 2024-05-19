@@ -1,7 +1,7 @@
 state={
 	id=723
 	name="STATE_723"
-	manpower = 547198
+manpower=364799
 	resources={
 		tungsten=4 # was: 6
 	}
@@ -13,7 +13,7 @@ state={
 		owner = LIB # NZL
 		buildings = {
 			infrastructure = 3 #was: 5
-			air_base = 1
+			#air_base = 1
 			2197 = {
 				naval_base = 1
 			}

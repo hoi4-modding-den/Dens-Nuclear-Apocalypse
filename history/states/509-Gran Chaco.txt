@@ -1,7 +1,7 @@
 state = {
 	id = 509
 	name = "STATE_509" # Chaco Australis
-	manpower = 704241
+manpower=469494
 	
 	state_category = rural
 	
@@ -17,7 +17,7 @@ state = {
 
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 
 		victory_points = {

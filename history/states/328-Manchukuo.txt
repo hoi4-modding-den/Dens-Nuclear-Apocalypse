@@ -2,7 +2,7 @@
 state={
 	id=328
 	name="STATE_328" # Kirin
-	manpower = 7536266
+manpower=5024177
 	
 	state_category = rural
 
@@ -17,7 +17,7 @@ state={
 		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-			#industrial_complex = 1
+			##industrial_complex = 1
 		}
 		victory_points = {
 			4572 1

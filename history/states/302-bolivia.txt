@@ -1,7 +1,7 @@
 state = {
 	id = 302
 	name = "STATE_302"
-	manpower = 2044500
+manpower=1363000
 
 	resources = {
 		tungsten = 60 # was: 102.000
@@ -17,9 +17,9 @@ state = {
 
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 5
-			air_base = 2
+			#arms_factory = 1
+			#industrial_complex = 5
+			#air_base = 2
 		}
 		
 		victory_points = {

@@ -15,10 +15,10 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 2
-			air_base = 5
-			dockyard = 2
+			#arms_factory = 2
+			#industrial_complex = 2
+			#air_base = 5
+			#dockyard = 2
 			11805 = {
 				naval_base = 8
 			}
@@ -30,7 +30,7 @@ state={
 	provinces={
 		799 3798 3861 6924 11805 
 	}
-	manpower=1995800
+manpower=1330533
 	buildings_max_level_factor=1.000
 	state_category=city
 

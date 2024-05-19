@@ -1,7 +1,7 @@
 state= {
 	id=595
 	name="STATE_595"
-	manpower = 11755600
+manpower=7837067
 	state_category = city
 	history=
 	{
@@ -10,7 +10,7 @@ state= {
 		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 			7071 = {
 				naval_base = 1
 				coastal_bunker = 1

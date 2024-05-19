@@ -2,14 +2,14 @@ state = {
 	id = 910
 	name="STATE_910"
 	state_category = small_island
-	manpower = 45819
+manpower=30546
 
 	history = {
 		owner = LIB # DEN
 		#add_core_of = DEN
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		6361 = {
 				naval_base = 1
 			}

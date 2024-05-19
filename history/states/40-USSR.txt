@@ -2,7 +2,7 @@
 state={
 	id=40
 	name="STATE_40" # Barnaul
-	manpower = 2107451
+manpower=1404967
 	
 	state_category = large_town
 
@@ -10,13 +10,13 @@ state={
 		owner = LIB # SOV
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		#add_core_of = SOV
 		#add_core_of = ALT #Could be a claim too
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 2
+				#industrial_complex = 2
 			}
 		}
 		victory_points = {

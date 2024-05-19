@@ -1,7 +1,7 @@
 state={
 	id=719
 	name="STATE_719" # Natal
-	manpower = 3962157
+manpower=2641438
 	resources={
 		chromium=60 # was: 116
 	}
@@ -13,8 +13,8 @@ state={
 		owner = LIB # SAF
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 2
-			air_base = 1
+			#industrial_complex = 2
+			#air_base = 1
 			1468 = {
 				naval_base = 2
 			}

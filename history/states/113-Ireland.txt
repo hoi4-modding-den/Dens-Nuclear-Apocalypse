@@ -2,7 +2,7 @@
 state={
 	id=113
 	name="STATE_113" # Leinster
-	manpower = 1357600
+manpower=905067
 	resources={
 		aluminium=0 # was: 2
 		steel=2 # was: 3
@@ -23,9 +23,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 5
-			air_base = 3
+			#arms_factory = 1
+			#industrial_complex = 5
+			#air_base = 3
 			11293 = {
 				naval_base = 6
 			}

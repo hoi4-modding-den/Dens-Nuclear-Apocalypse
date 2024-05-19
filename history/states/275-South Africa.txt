@@ -2,7 +2,7 @@
 state={
 	id=275
 	name="STATE_275" # Transvaal
-	manpower = 3680363
+manpower=2453575
 	
 	state_category = city
 	
@@ -15,9 +15,9 @@ state={
 		owner = LIB # SAF
 		buildings = {
 			infrastructure = 3 #was: 5
-			arms_factory = 1
-			industrial_complex = 5
-			air_base = 3
+			#arms_factory = 1
+			#industrial_complex = 5
+			#air_base = 3
 		}
 		victory_points = {
 			10400 10

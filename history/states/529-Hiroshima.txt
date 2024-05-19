@@ -2,7 +2,7 @@
 state={
 	id=529
 	name="STATE_529" # Chugoku
-	manpower = 5341000
+manpower=3560667
 	state_category = large_city
 
 	history={
@@ -10,10 +10,10 @@ state={
 		#add_core_of = JAP
 		buildings = {
 			infrastructure = 4 #was: 7
-			air_base = 3
-			dockyard = 2
-			arms_factory = 2
-			industrial_complex = 2
+			#air_base = 3
+			#dockyard = 2
+			#arms_factory = 2
+			#industrial_complex = 2
 			1092 = {
 				naval_base = 10
 
@@ -25,9 +25,9 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				dockyard = 3
-				arms_factory = 3
-				industrial_complex = 3
+				#dockyard = 3
+				#arms_factory = 3
+				#industrial_complex = 3
 			}
 		}
 

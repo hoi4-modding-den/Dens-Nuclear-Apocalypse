@@ -2,7 +2,7 @@
 state = {
 	id = 99
 	name = "STATE_99"
-	manpower = 1254177
+manpower=836118
 	state_category = rural
 
 	history={
@@ -25,9 +25,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			dockyard = 1
-			air_base = 2
+			#industrial_complex = 1
+			#dockyard = 1
+			#air_base = 2
 			394 = {
 				naval_base = 2
 			}

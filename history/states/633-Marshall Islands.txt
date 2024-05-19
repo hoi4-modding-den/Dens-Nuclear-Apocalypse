@@ -2,7 +2,7 @@
 state={
 	id=633
 	name="STATE_633"
-	manpower=52517
+manpower=35011
 	
 	state_category = small_island
 
@@ -11,7 +11,7 @@ state={
 		#add_core_of = FSM
 		buildings = {
 			infrastructure = 2
-			air_base = 2
+			#air_base = 2
 			13040 = {
 				naval_base = 1
 

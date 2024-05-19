@@ -2,7 +2,7 @@
 state={
 	id=394
 	name="STATE_394"
-	manpower = 2939004
+manpower=1959336
 	state_category = city
 	
 	resources={
@@ -13,7 +13,7 @@ state={
 		owner = LIB # USA
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 3
+			#industrial_complex = 3
 		}
 		#add_core_of = USA
 		victory_points = {

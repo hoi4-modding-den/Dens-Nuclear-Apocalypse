@@ -2,7 +2,7 @@
 state = {
 	id = 849
 	name = "STATE_849"
-	manpower = 2642000 
+manpower=1761333
 	state_category = city
 	history = {
 		owner = LIB # ITA
@@ -20,9 +20,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			dockyard = 4
-			air_base = 5
+			#industrial_complex = 1
+			#dockyard = 4
+			#air_base = 5
 			11837 = { #Taranto
 				naval_base = 10
 			}
@@ -35,7 +35,7 @@ state = {
 
 		1939.1.1 = {
 			buildings = {
-				dockyard = 5
+				#dockyard = 5
 			}
 		}
 	}

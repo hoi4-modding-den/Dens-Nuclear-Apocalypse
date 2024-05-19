@@ -2,7 +2,7 @@
 state={
 	id=266
 	name="STATE_266" # Tehran
-	manpower = 3446250
+manpower=2297500
 	
 	state_category = town
 
@@ -10,9 +10,9 @@ state={
 		owner = LIB # PER
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 3
+			#arms_factory = 1
+			#industrial_complex = 2
+			#air_base = 3
 		}
 		victory_points = {
 			10837 10 

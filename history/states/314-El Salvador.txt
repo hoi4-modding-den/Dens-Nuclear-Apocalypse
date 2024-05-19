@@ -2,7 +2,7 @@ state=
 {
 	id=314
 	name="STATE_314"
-	manpower = 1437611
+manpower=958407
 	resources={
 		chromium=1 # was: 1
 	}
@@ -14,9 +14,9 @@ state=
 		owner = LIB # ELS
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2 
-			air_base = 1
+			#arms_factory = 1
+			#industrial_complex = 2 
+			#air_base = 1
 			12823 = {
 				naval_base = 1
 			}

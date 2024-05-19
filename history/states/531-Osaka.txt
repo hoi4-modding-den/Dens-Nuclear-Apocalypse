@@ -2,7 +2,7 @@
 state = {
 	id = 531
 	name = "STATE_531" # Kansai
-	manpower = 11015000
+manpower=7343333
 	state_category = metropolis
 	resources = {
 		aluminium = 3 # was: 6
@@ -15,9 +15,9 @@ state = {
 
 		buildings = {
 			infrastructure = 4 #was: 8
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
+			#arms_factory = 2
+			#industrial_complex = 4
+			#dockyard = 2
 			1136 = {
 				naval_base = 6
 			}
@@ -37,8 +37,8 @@ state = {
 
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 3
-				industrial_complex = 5
+				#arms_factory = 3
+				#industrial_complex = 5
 			}
 		}
 

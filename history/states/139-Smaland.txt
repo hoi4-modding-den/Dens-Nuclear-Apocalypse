@@ -2,7 +2,7 @@
 state = {
 	id = 139
 	name = "STATE_139"
-	manpower = 390366
+manpower=260244
 	state_category = rural
 	resources = {
 		steel = 4
@@ -22,7 +22,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1	
+			#industrial_complex = 1	
 		}	
 
 	}

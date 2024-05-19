@@ -2,14 +2,14 @@
 state={
 	id=629
 	name="STATE_629"
-	manpower = 368336
+manpower=245557
 	state_category = town
 	history={
 		owner = LIB # USA
 		#add_core_of = HAW
 		buildings = {
 			infrastructure = 2
-			air_base = 5
+			#air_base = 5
 			4180 = {
 				naval_base = 10
 			}

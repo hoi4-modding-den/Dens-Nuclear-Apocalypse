@@ -2,7 +2,7 @@
 state = {
 	id = 834
 	name = "STATE_834"
-	manpower = 183748
+manpower=122499
 	
 	state_category = rural
 
@@ -24,7 +24,7 @@ state = {
 		#add_core_of = MOL
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 2
+				#industrial_complex = 2
 			}
 		}
 	}

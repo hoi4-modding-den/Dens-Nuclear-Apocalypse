@@ -1,7 +1,7 @@
 state = {
 	id = 511
 	name = "STATE_511" # Mendoza
-	manpower = 1090274
+manpower=726849
 	
 	state_category = rural
 
@@ -12,8 +12,8 @@ state = {
 
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
+			#industrial_complex = 1
+			#air_base = 1
 		}
 
 		victory_points = {

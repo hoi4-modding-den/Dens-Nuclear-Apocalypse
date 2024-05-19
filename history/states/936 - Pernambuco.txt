@@ -2,7 +2,7 @@
 state = {
 	id = 936
 	name = "STATE_936"
-	manpower = 2282000 # A third from Rio Grande
+manpower=1521333
 
 	state_category = town # Was city
 
@@ -14,7 +14,7 @@ state = {
 
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1 # Was 3
+			#industrial_complex = 1 # Was 3
 
 			5168 = {
 				naval_base = 1

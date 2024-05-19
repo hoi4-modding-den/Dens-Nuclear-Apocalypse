@@ -2,7 +2,7 @@
 state={
 	id=197
 	name="STATE_197"
-	manpower = 896311
+manpower=597541
 	
 	state_category = rural
 
@@ -13,13 +13,13 @@ state={
 		owner = LIB # SOV
 		buildings = {
 			infrastructure = 3 #was: 5
-			dockyard = 1
+			#dockyard = 1
 		}
 		#add_core_of = SOV
 		#add_core_of = UKR
 		1939.1.1 = {
 			buildings = {
-				dockyard = 2
+				#dockyard = 2
 			}
 		}
 	}

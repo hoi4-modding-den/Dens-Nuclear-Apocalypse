@@ -2,7 +2,7 @@
 state = {
 	id = 569
 	name = "STATE_569" # Khakassia
-	manpower = 1567322
+manpower=1044881
 	
 	state_category = town
 
@@ -10,7 +10,7 @@ state = {
 		owner = LIB # SOV
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		#add_core_of = SOV
 		#add_core_of = KHA

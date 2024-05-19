@@ -2,7 +2,7 @@
 state={
 	id=429
 	name="STATE_429"
-	manpower = 17355600
+manpower=11570400
 	state_category = town
 	
 	resources={
@@ -13,8 +13,8 @@ state={
 		owner = LIB # RAJ
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			air_base = 2
+			#industrial_complex = 1
+			#air_base = 2
 			1349 = {
 				naval_base = 6
 			}

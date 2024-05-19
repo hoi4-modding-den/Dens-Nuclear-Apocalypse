@@ -2,7 +2,7 @@
 state = {
 	id = 880
 	name = "STATE_880" # Kotlas
-	manpower = 262721
+manpower=175147
 	
 	state_category = rural
 
@@ -17,7 +17,7 @@ state = {
 		#add_core_of = SOV
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 2
+				#industrial_complex = 2
 			}
 		}
 	}

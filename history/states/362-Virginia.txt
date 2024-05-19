@@ -7,9 +7,9 @@ state={
 		owner = LIB # USA
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 2
-			dockyard = 4
-			air_base = 6
+			#industrial_complex = 2
+			#dockyard = 4
+			#air_base = 6
 			fuel_silo = 1
 			788 = {
 				naval_base = 10
@@ -26,8 +26,8 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 2
-				dockyard = 5
+				#industrial_complex = 2
+				#dockyard = 5
 
 			}
 
@@ -40,7 +40,7 @@ state={
 	}
 
 	local_supplies=11.0
-	manpower=2249080
+manpower=1499387
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

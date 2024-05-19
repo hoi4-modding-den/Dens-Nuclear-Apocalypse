@@ -2,7 +2,7 @@
 state={
 	id=684
 	name="STATE_684"
-	manpower=42357
+manpower=28238
 	state_category = small_island
 
 	history={
@@ -10,7 +10,7 @@ state={
 		#add_core_of = FSM
 		buildings = {
 			infrastructure = 2
-			air_base = 3
+			#air_base = 3
 			2489 = {
 				naval_base = 6
 				coastal_bunker = 5

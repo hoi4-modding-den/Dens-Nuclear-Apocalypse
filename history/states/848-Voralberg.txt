@@ -2,13 +2,13 @@
 state={
 	id=848
 	name="STATE_848"
-	manpower = 154354
+manpower=102903
 	state_category = pastoral
 	history={
 		owner = LIB # AUS
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		#add_core_of = AUS
 		#add_claim_by = SWI

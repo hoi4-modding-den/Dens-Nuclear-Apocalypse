@@ -2,7 +2,7 @@
 state = {
 	id = 655
 	name = "STATE_655"
-	manpower = 94759
+manpower=63173
 	
 	state_category = pastoral
 	history = {
@@ -12,7 +12,7 @@ state = {
 		#add_claim_by = JAP
 		buildings = {
 			infrastructure = 2
-			air_base = 1
+			#air_base = 1
 		}
 	}
 

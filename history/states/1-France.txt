@@ -2,7 +2,7 @@
 state={
 	id=1
 	name="STATE_1" # Corsica
-	manpower = 322900
+manpower=215267
 	
 	state_category = town
 
@@ -11,8 +11,8 @@ state={
 		victory_points = { 3838 1 }
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
+			#industrial_complex = 1
+			#air_base = 1
 			3838 = {
 				naval_base = 3
 			}

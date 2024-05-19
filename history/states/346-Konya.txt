@@ -2,7 +2,7 @@
 state={
 	id=346
 	name="STATE_346"
-	manpower = 849453
+manpower=566302
 	
 	state_category = rural
 
@@ -10,7 +10,7 @@ state={
 		owner = LIB # TUR
 		buildings = {
 			infrastructure = 2
-			air_base = 5
+			#air_base = 5
 		}
 		
 		victory_points = {

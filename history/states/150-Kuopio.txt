@@ -2,7 +2,7 @@
 state = {
 	id = 150
 	name = "STATE_150" # KUOPIO
-	manpower = 392400
+manpower=261600
 	
 	state_category = rural
 	
@@ -31,7 +31,7 @@ state = {
 
 		buildings = {
 			infrastructure = 1 #TODO_Manu: Was 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		
 	}

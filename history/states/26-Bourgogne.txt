@@ -2,7 +2,7 @@
 state={
 	id=26
 	name="STATE_26" # Auveregne
-	manpower = 877800
+manpower=585200
 	
 	state_category = town
 
@@ -13,7 +13,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			#industrial_complex = 1
 
 		}
 		#add_core_of = OCC

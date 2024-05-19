@@ -2,7 +2,7 @@
 state={
 	id=499
 	name="STATE_499"
-	manpower = 4233900
+manpower=2822600
 	
 	state_category = large_town
 
@@ -14,8 +14,8 @@ state={
 		owner = LIB # BRA
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
-			air_base = 1
+			#industrial_complex = 2
+			#air_base = 1
 			10946 = {
 				naval_base = 1
 			}

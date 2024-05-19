@@ -2,7 +2,7 @@ state=
 {
 	id=69
 	name="STATE_69"
-	manpower = 2830000
+manpower=1886667
 	
 	state_category = town
 	
@@ -23,7 +23,7 @@ state=
 		owner = LIB # CZE
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			#industrial_complex = 2
 			anti_air_building = 1
 			424 =
 			{

@@ -12,7 +12,7 @@ state = {
 		
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
+			#industrial_complex = 1
 
 		}
 		
@@ -25,7 +25,7 @@ state = {
 	provinces = {
 		1493 1649 7618 10485
 	}
-	manpower = 133065
+manpower=88710
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 

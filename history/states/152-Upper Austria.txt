@@ -2,7 +2,7 @@
 state={
 	id=152
 	name="STATE_152"
-	manpower = 2275377
+manpower=1516918
 	
 	state_category = city
 	
@@ -15,7 +15,7 @@ state={
 		owner = LIB # AUS
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 3
+			#industrial_complex = 3
 		}
 		victory_points = {
 			688 10 

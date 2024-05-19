@@ -2,7 +2,7 @@ state=
 {
 	id=766
 	name="STATE_766"
-	manpower = 566600
+manpower=377733
 	
 	state_category = rural
 	
@@ -15,7 +15,7 @@ state=
 		owner = LIB # ROM
 		buildings = {
 			infrastructure = 2
-			dockyard = 1
+			#dockyard = 1
 			6727 = {
 				naval_base = 3
 			}

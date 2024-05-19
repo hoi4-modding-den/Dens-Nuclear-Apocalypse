@@ -2,7 +2,7 @@
 state = {
 	id = 192
 	name = "STATE_192"
-	manpower = 1286238 #1 8th removed due to Balta-Tiraspol
+manpower=857492
 	
 	state_category = city
 
@@ -13,8 +13,8 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1
-			air_base = 6
+			#industrial_complex = 1
+			#air_base = 6
 			11670 ={
 				naval_base = 3
 				coastal_bunker = 1
@@ -24,7 +24,7 @@ state = {
 		#add_core_of = UKR
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 2
+				#industrial_complex = 2
 			}
 		}
 	}

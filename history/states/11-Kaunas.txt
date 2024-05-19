@@ -13,8 +13,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 3
+			#arms_factory = 1
+			#industrial_complex = 3
 
 		}
 		#add_core_of = LIT
@@ -26,7 +26,7 @@ state={
 	}
 
 	local_supplies=10.0 
-	manpower=971940
+manpower=647960
 	buildings_max_level_factor=1.000
 	state_category=town
 }

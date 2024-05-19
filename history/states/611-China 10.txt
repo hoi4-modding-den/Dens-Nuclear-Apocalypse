@@ -2,7 +2,7 @@
 state={
 	id=611
 	name="STATE_611" # South Chahar
-	manpower = 1470000
+manpower=980000
 	
 	state_category = pastoral
 
@@ -13,7 +13,7 @@ state={
 		#add_core_of = PRC
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		victory_points = {
 			11752 4

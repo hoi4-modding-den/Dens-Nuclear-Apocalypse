@@ -2,7 +2,7 @@
 state = {
 	id=651
 	name = "STATE_651" # Ufa
-	manpower = 2552075
+manpower=1701383
 
 	state_category = city
 
@@ -10,7 +10,7 @@ state = {
 		owner = LIB # SOV
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			#industrial_complex = 1
 
 		}
 		victory_points = {

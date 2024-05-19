@@ -2,7 +2,7 @@
 state={
 	id=845
 	name="STATE_845"
-	manpower = 2067296
+manpower=1378197
 	resources={
 		aluminium=18 # was: 28 #CarloTODO
 	}
@@ -13,8 +13,8 @@ state={
 		victory_points = { 6666 5 }
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 2
+			#arms_factory = 1
+			#industrial_complex = 2
 		}
 		#add_core_of = SWI
 	}

@@ -2,7 +2,7 @@
 state={
 	id=68
 	name="STATE_68"
-	manpower = 1250840
+manpower=833893
 	resources={
 		aluminium=15 # was: 24
 	}
@@ -16,7 +16,7 @@ state={
 		owner = LIB # GER
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		#add_core_of = GER
 	}

@@ -2,7 +2,7 @@
 state={
 	id=607
 	name="STATE_607"
-	manpower=34289800
+manpower=22859867
 	
 	state_category = town
 	
@@ -14,7 +14,7 @@ state={
 		#add_core_of = PRC
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 2
+			#industrial_complex = 2
 		}
 		victory_points = {
 			9958 1 
@@ -22,10 +22,10 @@ state={
 
 		1938.10.25 = {		
 			buildings = {
-				industrial_complex = 4
+				#industrial_complex = 4
 				infrastructure = 4 #was: 8
-				air_base = 2
-				arms_factory = 2
+				#air_base = 2
+				#arms_factory = 2
 			}
 			JAP = {
 				#set_province_controller = 1004

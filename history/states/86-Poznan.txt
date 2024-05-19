@@ -1,7 +1,7 @@
 state={
 	id=86
 	name="STATE_86"
-	manpower = 2106500
+manpower=1404333
 	
 	
 	state_category = city
@@ -12,7 +12,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			#industrial_complex = 1
 			11232 = {
 				bunker = 1
 
@@ -25,7 +25,7 @@ state={
 				bunker = 1
 
 			}
-			air_base = 3
+			#air_base = 3
 		}
 		#add_core_of = POL
 		1938.3.12 = {

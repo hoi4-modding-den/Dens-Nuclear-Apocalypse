@@ -3,7 +3,7 @@ state=
 	id=646
 	name="STATE_646"
 	state_category = small_island
-	manpower=21657
+manpower=14438
 	history=
 	{
 		owner = LIB # JAP
@@ -11,7 +11,7 @@ state=
 		#add_core_of = GUM
 		buildings = {
 			infrastructure = 2
-			air_base = 3
+			#air_base = 3
 			3995 = {
 				naval_base = 1
 

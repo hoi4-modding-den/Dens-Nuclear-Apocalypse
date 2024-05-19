@@ -2,7 +2,7 @@
 state={
 	id=84
 	name="STATE_84"
-	manpower = 1622300
+manpower=1081533
 	resources={
 		steel=3 # was: 4
 	}
@@ -13,8 +13,8 @@ state={
 		owner = LIB # ROM
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 1
+			#arms_factory = 1
+			#industrial_complex = 1
 		}
 		victory_points = {
 			690 1 

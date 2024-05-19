@@ -2,7 +2,7 @@
 state={
 	id=49
 	name="STATE_49" # Ankara
-	manpower = 810284
+manpower=540189
 	resources={
 		chromium=11 # was: 16
 		steel = 28
@@ -23,9 +23,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 2
-			air_base = 3
+			#arms_factory = 2
+			#industrial_complex = 2
+			#air_base = 3
 		}
 		#add_core_of = TUR
 	}

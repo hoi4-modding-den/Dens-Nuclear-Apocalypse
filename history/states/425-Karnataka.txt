@@ -2,7 +2,7 @@
 state={
 	id=425
 	name="STATE_425" # Mysore
-	manpower = 12348200
+manpower=8232133
 	
 	state_category = rural
 	
@@ -17,7 +17,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 
 	}

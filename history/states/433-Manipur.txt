@@ -2,7 +2,7 @@
 state={
 	id=433
 	name="STATE_433" # Rajasthan
-	manpower = 11786000
+manpower=7857333
 	
 	state_category = town
 	
@@ -18,7 +18,7 @@ state={
 		owner = LIB # RAJ
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 
 	}

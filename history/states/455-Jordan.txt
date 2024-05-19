@@ -2,7 +2,7 @@
 state={
 	id=455
 	name="STATE_455"
-	manpower = 932000
+manpower=621333
 	
 	state_category = rural
 
@@ -10,7 +10,7 @@ state={
 		owner = LIB # ENG
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		victory_points = {
 			7151 1 

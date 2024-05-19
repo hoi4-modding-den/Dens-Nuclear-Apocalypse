@@ -1,7 +1,7 @@
 state = {
 	id = 2
 	name = "STATE_2" # Latium
-	manpower = 2781971
+manpower=1854647
 	
 	state_category = city
 
@@ -11,9 +11,9 @@ state = {
 		victory_points = { 11846 1 } #Anzio (was 5)
 		buildings = {
 			infrastructure = 4
-			air_base = 8
-			arms_factory = 1
-			industrial_complex = 4
+			#air_base = 8
+			#arms_factory = 1
+			#industrial_complex = 4
 			11751 = {
 				naval_base = 5
 			}
@@ -25,8 +25,8 @@ state = {
 		#add_core_of = PAP
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 2
-				industrial_complex = 5
+				#arms_factory = 2
+				#industrial_complex = 5
 			}
 		}
 	}

@@ -2,7 +2,7 @@
 state = {
 	id = 879
 	name = "STATE_879" # Kargopol
-	manpower = 210177
+manpower=140118
 	
 	state_category = rural
 
@@ -18,7 +18,7 @@ state = {
 		#add_core_of = SOV
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 2
+				#industrial_complex = 2
 			}
 		}
 	}

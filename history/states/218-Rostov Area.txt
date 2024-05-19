@@ -2,7 +2,7 @@
 state={
 	id=218
 	name="STATE_218"
-	manpower = 1501076
+manpower=1000717
 	
 	state_category = city
 
@@ -13,9 +13,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-			arms_factory = 1
-			industrial_complex = 1
-			air_base = 3
+			#arms_factory = 1
+			#industrial_complex = 1
+			#air_base = 3
 			9417 ={
 				naval_base = 5
 			}
@@ -23,7 +23,7 @@ state={
 		#add_core_of = SOV
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 2
+				#arms_factory = 2
 			}
 		}
 	}

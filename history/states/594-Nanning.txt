@@ -2,7 +2,7 @@
 state={
 	id=594
 	name="STATE_594"
-	manpower = 6550000
+manpower=4366667
 	state_category = town
 	resources={
 		tungsten=11 # was: 14
@@ -17,7 +17,7 @@ state={
 		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		victory_points = { 
 			7137 10 

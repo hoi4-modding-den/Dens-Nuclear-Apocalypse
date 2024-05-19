@@ -1,7 +1,7 @@
 state = {
 	id = 949
 	name = "STATE_949" # Aysen
-	manpower = 34347
+manpower=22898
 	
 	state_category = pastoral
 
@@ -19,7 +19,7 @@ state = {
 
 		buildings = {
 			infrastructure = 1
-			#dockyard = 1
+			##dockyard = 1
 		}
 
 		victory_points = {

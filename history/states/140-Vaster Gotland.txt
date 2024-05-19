@@ -2,7 +2,7 @@
 state = {
 	id = 140
 	name = "STATE_140" # Västra Götaland
-	manpower = 889962
+manpower=593308
 	state_category = town
 	resources = {
 		steel = 2
@@ -15,10 +15,10 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 1
-			dockyard = 1
-			air_base = 1
+			#arms_factory = 1
+			#industrial_complex = 1
+			#dockyard = 1
+			#air_base = 1
 			383 = {
 				naval_base = 5
 				coastal_bunker = 5

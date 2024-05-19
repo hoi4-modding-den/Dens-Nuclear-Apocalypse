@@ -2,7 +2,7 @@
 state={
 	id=203
 	name="STATE_203"
-	manpower = 2405190
+manpower=1603460
 	
 	state_category = large_town
 
@@ -13,7 +13,7 @@ state={
 		owner = LIB # SOV
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		#add_core_of = SOV
 		#add_core_of = UKR

@@ -8,7 +8,7 @@ state={
 		owner = LIB # BRA
 		#add_core_of = BRA
 	}
-	manpower=8962
+manpower=5975
 	impassable = yes
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

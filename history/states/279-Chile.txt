@@ -1,7 +1,7 @@
 state = {
 	id = 279
 	name = "STATE_279" # Santiago
-	manpower = 2635146 # Was 3935146
+manpower=1756764
 	
 	state_category = large_city
 	
@@ -18,10 +18,10 @@ state = {
 
 		buildings = {
 			infrastructure = 3 #was: 5
-			arms_factory = 1
-			industrial_complex = 3 # was 5
-			dockyard = 2
-			air_base = 3
+			#arms_factory = 1
+			#industrial_complex = 3 # was 5
+			#dockyard = 2
+			#air_base = 3
 			8222 = {
 				naval_base = 5
 				coastal_bunker = 2

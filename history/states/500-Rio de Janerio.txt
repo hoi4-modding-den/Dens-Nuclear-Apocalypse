@@ -2,7 +2,7 @@
 state={
 	id=500
 	name="STATE_500"
-	manpower = 6665500
+manpower=4443667
 	
 	state_category = large_city
 	
@@ -11,10 +11,10 @@ state={
 		#add_core_of = BRA
 		buildings = {
 			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
-			air_base = 7
+			#arms_factory = 2
+			#industrial_complex = 4
+			#dockyard = 2
+			#air_base = 7
 			10980 = {
 				naval_base = 7
 			}

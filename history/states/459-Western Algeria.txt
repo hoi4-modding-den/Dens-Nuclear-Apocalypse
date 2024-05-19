@@ -2,7 +2,7 @@
 state={
 	id=459
 	name="STATE_459" # Algiers
-	manpower = 3089944
+manpower=2059963
 	state_category = town
 	
 	resources={
@@ -21,7 +21,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			air_base = 5
+			#air_base = 5
 			1145 = {
 				naval_base = 2
 			}

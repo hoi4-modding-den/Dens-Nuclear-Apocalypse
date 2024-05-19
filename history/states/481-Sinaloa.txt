@@ -2,7 +2,7 @@
 state={
 	id=481
 	name="STATE_481" # Durango
-	manpower = 1255094
+manpower=836729
 	
 	state_category = rural
 	
@@ -10,7 +10,7 @@ state={
 		owner = LIB # MEX
 		buildings = {
 			infrastructure = 2
-			dockyard = 1
+			#dockyard = 1
 			8057 = {
 				naval_base = 3
 			}

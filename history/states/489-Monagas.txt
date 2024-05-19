@@ -2,7 +2,7 @@
 state={
 	id=489
 	name="STATE_489" # Zulia
-	manpower = 1576373
+manpower=1050915
 	
 	state_category = town
 	
@@ -14,7 +14,7 @@ state={
 		owner = LIB # VEN
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			#industrial_complex = 2
 			1944 = {
 				naval_base = 5
 			}

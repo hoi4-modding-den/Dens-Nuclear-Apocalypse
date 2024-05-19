@@ -2,7 +2,7 @@ state=
 {
 	id=79
 	name="STATE_79"
-	manpower = 2806400
+manpower=1870933
 	
 	state_category = rural
 	
@@ -11,8 +11,8 @@ state=
 		owner = LIB # ROM
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			air_base = 2
+			#industrial_complex = 1
+			#air_base = 2
 		}
 		victory_points = {
 			9716 1 

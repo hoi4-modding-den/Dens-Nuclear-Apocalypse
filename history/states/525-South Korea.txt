@@ -2,7 +2,7 @@ state=
 {
 	id=525
 	name="STATE_525"
-	manpower = 14284105
+manpower=9522737
 	
 	state_category = town
 	history=
@@ -10,8 +10,8 @@ state=
 		owner = LIB # JAP
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			dockyard = 1
+			#arms_factory = 1
+			#dockyard = 1
 			4056 = {
 				naval_base = 3
 			}

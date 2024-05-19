@@ -1,7 +1,7 @@
 state = {
 	id = 835 # Hararghe
 	name = "STATE_835"
-	manpower = 1500000
+manpower=1000000
 	resources = {
 	}
 	
@@ -24,8 +24,8 @@ state = {
 		}
 		
 		buildings = {
-			industrial_complex = 1
-			air_base = 1
+			#industrial_complex = 1
+			#air_base = 1
 		}
 		
 		victory_points = { 

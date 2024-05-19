@@ -1,7 +1,7 @@
 state={
 	id=146
 	name="STATE_146" #KARJALA
-	manpower=604427
+manpower=402951
 
 	state_category = town
 
@@ -11,7 +11,7 @@ state={
 		#add_core_of = KAR
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 2
+			#industrial_complex = 2
 
 			#Mannerheim Line
 			9100 = {

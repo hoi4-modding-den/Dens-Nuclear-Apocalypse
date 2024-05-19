@@ -1,7 +1,7 @@
 state = {
 	id = 506
 	name = "STATE_506" # Antofagasta
-	manpower = 423605
+manpower=282403
 	
 	state_category = town
 
@@ -17,9 +17,9 @@ state = {
 
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
+			#industrial_complex = 2
+			#dockyard = 1
+			#air_base = 1
 			12994 = {
 				naval_base = 1
 			}

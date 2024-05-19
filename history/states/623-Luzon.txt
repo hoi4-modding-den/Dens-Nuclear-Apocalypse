@@ -1,7 +1,7 @@
 state= {
 	id=623
 	name="STATE_623"
-	manpower = 2010656
+manpower=1340437
 	
 	state_category = city
 	
@@ -13,7 +13,7 @@ state= {
 		owner = LIB # PHI
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 			12213 = {
 				naval_base = 1
 			}

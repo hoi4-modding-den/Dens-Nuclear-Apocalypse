@@ -2,7 +2,7 @@
 state={
 	id=619
 	name="STATE_619" # Yarkand
-	manpower = 1430700
+manpower=953800
 	
 	state_category = pastoral
 	
@@ -18,7 +18,7 @@ state={
 		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		victory_points = {
 			2015 2

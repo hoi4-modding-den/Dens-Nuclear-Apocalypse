@@ -22,10 +22,10 @@ state = {
 
 		buildings = {
 			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 1
-			air_base = 3
+			#arms_factory = 2
+			#industrial_complex = 4
+			#dockyard = 1
+			#air_base = 3
 			11584 = {
 				naval_base = 6
 			}
@@ -34,8 +34,8 @@ state = {
 		#add_core_of = LBV
 		1939.1.1 = {
 			buildings = {
-				dockyard = 2
-				industrial_complex = 5
+				#dockyard = 2
+				#industrial_complex = 5
 			}
 		}
 
@@ -44,7 +44,7 @@ state = {
 	provinces = {
 		603 628 3604 3657 6656 9582 9613 11584 
 	}
-	manpower = 3963151
+manpower=2642101
 	buildings_max_level_factor = 1.000
 
 	local_supplies = 5.0 

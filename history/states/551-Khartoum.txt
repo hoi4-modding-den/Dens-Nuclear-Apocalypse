@@ -2,15 +2,15 @@
 state={
 	id=551
 	name = "STATE_551"
-	manpower = 821003
+manpower=547335
 
 	history={
 		owner = LIB # ENG
 		#add_core_of = SUD
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
-			air_base = 2
+			#industrial_complex = 1
+			#air_base = 2
 		}
 		victory_points = {
 			12806 3 

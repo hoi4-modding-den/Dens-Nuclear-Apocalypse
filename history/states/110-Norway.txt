@@ -2,7 +2,7 @@
 state = {
 	id = 110
 	name = "STATE_110"
-	manpower = 1057185
+manpower=704790
 	
 	state_category = large_town
 	
@@ -21,10 +21,10 @@ state = {
 		owner = LIB # NOR
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 4
+			#arms_factory = 1
+			#industrial_complex = 2
+			#dockyard = 1
+			#air_base = 4
 			6115 = {
 				naval_base = 6
 				coastal_bunker = 3

@@ -2,7 +2,7 @@
 state = {
 	id = 398
 	name = "STATE_398"
-	manpower = 2135879
+manpower=1423919
 	state_category = rural
 	resources = {
 		aluminium = 6 # was: 10
@@ -12,7 +12,7 @@ state = {
 		owner = LIB # SOV
 		buildings = {
 			infrastructure = 3 #was: 6
-			arms_factory = 1
+			#arms_factory = 1
 
 		}
 		victory_points = {
@@ -21,7 +21,7 @@ state = {
 		#add_core_of = SOV
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 2
+				#arms_factory = 2
 			}
 		}
 	}

@@ -2,7 +2,7 @@
 state={
 	id=323
 	name="STATE_323"
-	manpower = 5573791
+manpower=3715861
 	
 	state_category = town
 	resources={
@@ -12,8 +12,8 @@ state={
 		owner = LIB # NEP
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2 
+			#arms_factory = 1
+			#industrial_complex = 2 
 		}
 		victory_points = {
 			4987 3 

@@ -15,7 +15,7 @@ state={
 		}
 		#add_core_of = MON
 	}
-	manpower=11000
+manpower=7333
 	buildings_max_level_factor=1.000
 	state_category = wasteland
 	local_supplies=0.000

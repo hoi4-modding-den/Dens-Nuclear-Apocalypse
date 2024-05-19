@@ -2,7 +2,7 @@
 state = {
 	id = 156
 	name = "STATE_156"
-	manpower = 1772000 # was 2966315 before Puglia was added
+manpower=1181333
 	
 	state_category = town
 	history = {
@@ -12,7 +12,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 2 #was: 5
-			dockyard = 1
+			#dockyard = 1
 			fuel_silo = 1
 			9990 = {
 				naval_base = 2

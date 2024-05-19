@@ -2,7 +2,7 @@
 state={
 	id=220
 	name="STATE_220"
-	manpower = 1680086
+manpower=1120057
 	state_category = city
 
 	history={
@@ -12,7 +12,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-			air_base = 1
+			#air_base = 1
 		}
 		#add_core_of = SOV
 	}

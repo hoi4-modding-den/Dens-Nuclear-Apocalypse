@@ -2,7 +2,7 @@
 state={
 	id=372
 	name="STATE_372"
-	manpower = 1854481
+manpower=1236321
 	
 	state_category = town
 	
@@ -15,7 +15,7 @@ state={
 		owner = LIB # USA
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			#industrial_complex = 2
 		}
 		#add_core_of = USA
 		victory_points = {

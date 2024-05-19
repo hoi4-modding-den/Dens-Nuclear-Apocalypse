@@ -1,7 +1,7 @@
 state={
 	id=9
 	name="STATE_9"
-	manpower = 4492600
+manpower=2995067
 	resources={
 		steel=5 # was: 8
 	}
@@ -16,10 +16,10 @@ state={
 		#victory_points = { 9541 3 }
 		buildings = {
 			infrastructure = 4
-			arms_factory = 6
-			industrial_complex = 1
+			#arms_factory = 6
+			#industrial_complex = 1
 			anti_air_building = 5
-			air_base = 5
+			#air_base = 5
 		}
 		#add_core_of = CZE
 

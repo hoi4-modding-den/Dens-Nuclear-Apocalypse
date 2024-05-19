@@ -2,7 +2,7 @@
 state={
 	id=847
 	name="STATE_847"
-	manpower = 178429
+manpower=118953
 	state_category = pastoral
 	resources={
 	}
@@ -10,7 +10,7 @@ state={
 		owner = LIB # SWI
 		buildings = {
 			infrastructure = 1 
-			industrial_complex = 1
+			#industrial_complex = 1
 		}
 		#add_core_of = SWI
 	}
