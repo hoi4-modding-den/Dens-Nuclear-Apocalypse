@@ -18,13 +18,3 @@ set_popularities = {
 	fascism = 4
 	neutrality = 21
 }
-
-# create_country_leader = {
-	name = XNE_winston_chamberlain
-	desc = XNE_winston_chamberlain_desc
-	picture = GFX_Portrait_Britain_Generic_land_2
-	expire = "1.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
