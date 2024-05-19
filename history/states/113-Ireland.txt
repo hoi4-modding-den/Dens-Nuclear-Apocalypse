@@ -11,7 +11,8 @@ manpower=905067
 	state_category = city
 	
 	history={
-		owner = LIB # IRE
+		owner = XIE
+		add_core_of = XIE
 		victory_points = {
 			285 1 #Wexford
 		}
