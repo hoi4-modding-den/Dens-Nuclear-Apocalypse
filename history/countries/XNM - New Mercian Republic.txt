@@ -32,17 +32,7 @@ create_country_leader = {
 create_faction = "Isles Cooperative"
 add_to_faction = XTY
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = XTY
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = XTY
-	}
+set_autonomy = {
+	target = XTY
+	autonomous_state = autonomy_integrated_puppet
 }
