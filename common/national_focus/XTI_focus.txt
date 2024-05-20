@@ -18,10 +18,46 @@
 		#focus = 
 	}
 	
+#	focus = {
+#		id = PRC_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+	
 	focus = {
-		id = XTI_test
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
+		id = XTI_radio_silence
+		icon = GFX_
+		x = 6
 		y = 0
 
 		cost = 10
@@ -47,7 +83,514 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+			
+		}
+	}
+	focus = {
+		id = XTI_vienna_expedition
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_radio_silence }
+		mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XTI_radio_silence
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_the_new_tiroleans
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_vienna_expedition }
+		mutually_exclusive = { focus = XTI_the_reclamationists }
+		x = -3
+		y = 1
+		relative_position_id = XTI_vienna_expedition
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_the_bridge
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_the_new_tiroleans }
+		mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XTI_the_new_tiroleans
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_new_highways
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_the_bridge }
+		mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XTI_the_bridge
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_reopen_prewar_roads
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_the_bridge }
+		mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XTI_the_bridge
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_the_inn
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_the_new_tiroleans }
+		mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XTI_the_new_tiroleans
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_swarovski_plants
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_the_inn }
+		mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XTI_the_inn
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_ammotec_warehouses
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_the_inn }
+		mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XTI_the_inn
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_mobilize_tirol
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_new_highways }
+		prerequisite = { focus = XTI_reopen_prewar_roads }
+		prerequisite = { focus = XTI_swarovski_plants }
+		prerequisite = { focus = XTI_ammotec_warehouses }
+		mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XTI_reopen_prewar_roads
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_demand_vorarlberg
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_mobilize_tirol }
+		mutually_exclusive = { focus = XTI_vorarlberg_skirmishes }
+		x = -1
+		y = 1
+		relative_position_id = XTI_mobilize_tirol
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_vorarlberg_skirmishes
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_mobilize_tirol }
+		mutually_exclusive = { focus = XTI_demand_vorarlberg }
+		x = 1
+		y = 1
+		relative_position_id = XTI_mobilize_tirol
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_alpine_alliance
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes }
+		mutually_exclusive = { focus = XTI_unify_the_alps }
+		x = -1
+		y = 1
+		relative_position_id = XTI_demand_vorarlberg
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_unify_the_alps
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes }
+		mutually_exclusive = { focus = XTI_alpine_alliance }
+		x = 1
+		y = 1
+		relative_position_id = XTI_vorarlberg_skirmishes
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_the_reclamationists
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_vienna_expedition }
+		mutually_exclusive = { focus = XTI_the_new_tiroleans }
+		x = 3
+		y = 1
+		relative_position_id = XTI_vienna_expedition
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
 		}
 	}
 
