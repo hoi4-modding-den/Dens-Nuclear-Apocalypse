@@ -1,0 +1,22 @@
+add_namespace = XLV_events
+
+country_event = { #Start Info
+	id = XLV_events.1
+	title = XLV_events.1.t
+	desc = XLV_events.1.desc
+	picture = XLV_start_info
+
+	is_triggered_only = yes
+
+    trigger = {
+        tag = XLV
+        date > 1950.01.01
+    }
+
+	option = { #Pane, patria e libertà!
+		name = XLV_events.1.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}

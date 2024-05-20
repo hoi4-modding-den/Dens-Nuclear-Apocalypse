@@ -4,4 +4,11 @@ spriteTypes = {
 		name = "GFX_portrait_XLV_Alberto_Cartoni"
 		texturefile = "gfx/leaders/XLV/portrait_XLV_Alberto_Cartoni.dds"
 	}	
+
+
+
+	spriteType = {
+		name = "XLV_start_info"
+		texturefile = "gfx/XLV/events/XLV_start_info.dds"
+	}	
 }
