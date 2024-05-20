@@ -7,7 +7,7 @@ set_stability = 0.65
 set_convoys = 5
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "2235.1.15"
 	election_frequency = 48
 	elections_allowed = yes
@@ -17,4 +17,14 @@ set_popularities = {
 	communism = 23
 	fascism = 3
 	neutrality = 64
+}
+
+create_country_leader = {
+	name = XCT_niall_stonehelm
+	desc = XCT_niall_stonehelm_desc
+	picture = GFX_portrait_XCT_Niall_Stonehelm
+	expire = "1.1.1"
+	ideology = centrism
+	traits = {
+	}
 }
