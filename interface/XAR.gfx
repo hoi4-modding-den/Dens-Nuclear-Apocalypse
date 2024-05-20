@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_XAR_perm_peace"
+		texturefile = "gfx/interface/ideas/XAR/XAR_perm_peace.png"
+	}
+
+}
