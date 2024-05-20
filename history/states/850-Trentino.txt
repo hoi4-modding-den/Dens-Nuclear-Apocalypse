@@ -8,15 +8,13 @@ manpower=247159
 
 	history = {
 		victory_points = { #Trento
-			9598 1
+			9598 10
 		}
-		owner = LIB # ITA
+		owner = XLV
 		buildings = {
 			infrastructure = 2 #was 3 before split
 		}
-		#add_core_of = ITA
-		#add_core_of = LBV
-		#add_claim_by = AUS
+		add_core_of = XLV
 	}
 
 	provinces = {

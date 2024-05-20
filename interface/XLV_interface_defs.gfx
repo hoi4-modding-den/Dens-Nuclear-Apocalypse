@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_XLV_Alberto_Cartoni"
+		texturefile = "gfx/leaders/XLV/portrait_XLV_Alberto_Cartoni.dds"
+	}	
+}
