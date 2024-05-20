@@ -36,8 +36,8 @@ XTY = {
 }
 
 XDK = {
-	color = rgb { 142 28 24 }
-	color_ui = rgb { 142 28 24 }
+	color = rgb { 132 28 85 }
+	color_ui = rgb { 142 28 30 }
 }
 
 XRP = {
@@ -53,8 +53,8 @@ XNF = {
 	color_ui = rgb { 20 20 75 }
 }
 XGE = {
-	color = rgb { 158  0  0 }
-	color_ui = rgb { 158  0  0 }
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
 }
 XMD = {
 	color = rgb { 0 38 190 }
