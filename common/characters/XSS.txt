@@ -21,12 +21,25 @@ characters = {
 			civilian = {
 				large = "GFX_portrait_ger_hans_von_luck"
 			}
+			army = {
+				small = "GFX_idea_GER_alfred_jodl"
+			}
 		}
 		country_leader = {
 			ideology = nazism
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_eggli
+			allowed = {
+				original_tag = XSS
+			}
+			traits = {
+				XSS_head_of_ss
+			}
 		}
 	}
 
