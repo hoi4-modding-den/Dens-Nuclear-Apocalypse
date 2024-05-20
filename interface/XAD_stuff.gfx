@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_XAD_king"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_Mouhamed_Talib_II.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_XAD_communist"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_Muhammad_Hosein.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_XAD_democracy"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_Malik_Yacoub.dds"
+	}
+}
