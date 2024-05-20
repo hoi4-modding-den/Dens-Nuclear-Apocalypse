@@ -1,0 +1,69 @@
+characters = {
+
+	XDA_Malik_Yacoub = {			#democratic
+		name = "Malik Yacoub"
+		portraits = {
+			civilian = {
+				large = "GFX_ideology_XAD_democracy"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XDA_Mouhamed_Talib_II_fascist = {			#fascist
+		name = "Mouhamed Talib II"
+		portraits = {
+			civilian = {
+				large = "GFX_ideology_XAD_king"
+			}
+		}
+		country_leader = {
+			desc = XDA_Mouhamed_Talib_II_fascist_desc
+			ideology = nazism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XDA_Muhammad_Hosein = {			#communist
+		name = "Muhammad Hosein"
+		portraits = {
+			civilian = {
+				large = "GFX_ideology_XAD_communist"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XDA_Mouhamed_Talib_II_nonaligned = {			#unaligned
+		name = "Mouhamed Talib II"
+		portraits = {
+			civilian = {
+				large = "GFX_ideology_XAD_king"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = XDA_Mouhamed_Talib_II_fascist_desc
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+
+
+
+
+}

@@ -34,6 +34,12 @@ XTY = {
 	color = rgb { 87 120 150 }
 	color_ui = rgb { 87 120 150 }
 }
+
+XDK = {
+	color = rgb { 142 28 24 }
+	color_ui = rgb { 142 28 24 }
+}
+
 XRP = {
 	color = rgb { 0 82 155 }
 	color_ui = rgb { 0 82 155 }
@@ -65,3 +71,4 @@ XTI = {
 	color = rgb { 163 179 204 }
 	color_ui = rgb { 163 179 204 }
 }
+

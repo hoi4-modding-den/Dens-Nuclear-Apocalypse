@@ -1,0 +1,22 @@
+capital = 3780
+
+# oob = "XLV_1936"
+
+set_war_support = 0.3
+set_stability = 0.6
+set_convoys = 8
+
+recruit_character = XDK_reconstruction_council
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	communism = 10
+	fascism = 5
+	neutrality = 70
+}
