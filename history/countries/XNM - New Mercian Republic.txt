@@ -18,3 +18,13 @@ set_popularities = {
 	fascism = 4
 	neutrality = 21
 }
+
+create_country_leader = {
+	name = XNM_Arthur_Gainsborough
+	desc = XNM_Arthur_Gainsborough_desc
+	picture = GFX_portrait_XNM_Arthur_Gainsborough
+	expire = "1.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}

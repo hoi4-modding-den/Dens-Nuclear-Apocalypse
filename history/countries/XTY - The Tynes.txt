@@ -13,8 +13,18 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 14
+	democratic = 6
 	communism = 0
 	fascism = 0
-	neutrality = 86
+	neutrality = 94
+}
+
+create_country_leader = {
+	name = XTY_Steve_Hardman_IV
+	desc = XTY_Steve_Hardman_IV_desc
+	picture = GFX_portrait_XTY_Steve_Hardman_IV
+	expire = "1.1.1"
+	ideology = oligarchism
+	traits = {
+	}
 }
