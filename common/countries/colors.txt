@@ -38,3 +38,7 @@ XRP = {
 	color = rgb { 0 82 155 }
 	color_ui = rgb { 0 82 155 }
 }
+XAR = {
+	color = rgb { 84 97 81 }
+	color_ui = rgb { 84 97 81 }
+}

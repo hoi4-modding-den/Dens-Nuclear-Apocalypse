@@ -1,0 +1,18 @@
+capital = 132
+
+oob = "XAR_2236"
+
+set_war_support = 0.55
+set_stability = 0.35
+set_convoys = 0
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 24
+	communism = 13.5
+	fascism = 5
+	neutrality = 57.5
+}
