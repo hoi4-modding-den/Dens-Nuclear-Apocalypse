@@ -1,0 +1,30 @@
+characters = {
+
+	XAR_valer_serrano = {
+		name = "Valer Serrano"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XAR/valer_serrano.png"
+			}
+			army = {
+				large = "gfx/leaders/XAR/valer_serrano.png"
+			}			
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}		
+	}
+
+}
