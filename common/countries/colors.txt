@@ -42,3 +42,7 @@ XAR = {
 	color = rgb { 84 97 81 }
 	color_ui = rgb { 84 97 81 }
 }
+XNF = {
+	color = rgb { 50 155 170 }
+	color_ui = rgb { 20 20 75 }
+}
