@@ -2,14 +2,14 @@
 state={
 	id=64
 	name="STATE_64"
-manpower=4843353
+	manpower=4843353
 	buildings_max_level_factor = 1
 
 	state_category = megalopolis
 
 
 	history={
-		owner = LIB # GER
+		owner = XGE # GER
 		victory_points = {
 			6521 50 
 		}
@@ -24,7 +24,7 @@ manpower=4843353
 			#air_base = 6
 
 		}
-		#add_core_of = GER
+		add_core_of = XGE
 
 		1939.1.1 = {
 			buildings = {

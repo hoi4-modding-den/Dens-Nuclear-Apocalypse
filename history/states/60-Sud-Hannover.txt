@@ -2,7 +2,7 @@
 state={
 	id=60
 	name="STATE_60"
-manpower=2003476
+	manpower=2003476
 	resources={
 		steel=9 # was 5 was: 13 was: 20
 		chromium = 3 # was: 4
@@ -12,14 +12,14 @@ manpower=2003476
 	state_category = large_city
 
 	history={
-		owner = LIB # GER
+		owner = XGE # GER
 		victory_points = { 3561 5 }
 		victory_points = { 425 3 }
 		buildings = {
 			infrastructure = 3
 			#industrial_complex = 1
 		}
-		#add_core_of = GER
+		add_core_of = XGE
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3

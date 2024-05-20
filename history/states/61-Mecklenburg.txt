@@ -1,13 +1,13 @@
 state={
 	id=61
 	name="STATE_61"
-manpower=557569
+	manpower=557569
 
 
 	state_category = town
 
 	history={
-		owner = LIB # GER
+		owner = XGE # GER
 		victory_points = {
 			321 5
 		}
@@ -23,7 +23,7 @@ manpower=557569
 			}
 			#air_base = 3
 		}
-		#add_core_of = GER
+		add_core_of = XGE
 	}
 
 	provinces={

@@ -11,12 +11,12 @@ manpower=670814
 		victory_points = {
 			9388 1
 		}
-		owner = LIB # GER
+		owner = XGE # GER
 		buildings = {
 			infrastructure = 3
 			fuel_silo = 1
 		}
-		#add_core_of = GER
+		add_core_of = XGE
 
 		1939.1.1 = {
 			buildings = {

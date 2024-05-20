@@ -46,3 +46,7 @@ XNF = {
 	color = rgb { 50 155 170 }
 	color_ui = rgb { 20 20 75 }
 }
+XGE = {
+	color = rgb { 158  0  0 }
+	color_ui = rgb { 158  0  0 }
+}
