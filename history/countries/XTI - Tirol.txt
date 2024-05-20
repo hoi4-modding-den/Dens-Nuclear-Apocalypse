@@ -1,0 +1,23 @@
+capital = 153
+
+#oob = "XTI_1936"
+
+#set_war_support = 0.1
+#set_stability = 0.8
+#set_convoys = 5
+
+recruit_character = XTI_reclamation_council
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	neutrality = 100
+}
+

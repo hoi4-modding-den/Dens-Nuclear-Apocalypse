@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_XPY_portrait_andreu_icart"
+		texturefile = "gfx/leaders/XPY/XPY_portrait_andreu_icart.dds"
+	}
+
+}

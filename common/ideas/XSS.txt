@@ -1,0 +1,22 @@
+ideas = {
+    country = {
+        XSS_neutrality = {
+           removal_cost = -1
+            picture = SWI_swiss_neutrality
+            modifier = {
+               join_faction_tension = 1
+               justify_war_goal_time = 5
+               enemy_justify_war_goal_time = 5
+               annex_cost_factor = 5
+            }
+        }
+        XSS_bank_of_europe = {
+           removal_cost = -1
+            picture = generic_foreign_capital
+            modifier = {
+                political_power_gain = 0.5
+            }
+        }
+    }
+
+}

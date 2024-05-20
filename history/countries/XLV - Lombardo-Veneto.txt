@@ -1,0 +1,30 @@
+capital = 3780
+
+oob = "XLV_1936"
+
+set_war_support = 0.3
+set_stability = 0.6
+set_convoys = 8
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 12
+	communism = 14
+	fascism = 13
+	neutrality = 61
+}
+
+create_country_leader = {
+	name = XLV_Alberto_Cartoni
+	desc = XLV_Alberto_Cartoni_desc
+	picture = GFX_portrait_XLV_Alberto_Cartoni
+	expire = "1.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}

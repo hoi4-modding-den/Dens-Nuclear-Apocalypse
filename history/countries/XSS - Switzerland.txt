@@ -5,6 +5,11 @@ recruit_character = XSS_niemir_eggli
 recruit_character = XSS_evan_signer
 recruit_character = XSS_bracher
 
+add_ideas = {
+
+XSS_neutrality
+XSS_bank_of_europe
+}
 
 set_research_slots = 3
 

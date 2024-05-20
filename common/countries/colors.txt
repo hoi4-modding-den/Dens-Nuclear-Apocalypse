@@ -34,6 +34,12 @@ XTY = {
 	color = rgb { 87 120 150 }
 	color_ui = rgb { 87 120 150 }
 }
+
+XDK = {
+	color = rgb { 132 28 85 }
+	color_ui = rgb { 142 28 30 }
+}
+
 XRP = {
 	color = rgb { 0 82 155 }
 	color_ui = rgb { 0 82 155 }
@@ -47,8 +53,8 @@ XNF = {
 	color_ui = rgb { 20 20 75 }
 }
 XGE = {
-	color = rgb { 158  0  0 }
-	color_ui = rgb { 158  0  0 }
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
 }
 XMD = {
 	color = rgb { 0 38 190 }
@@ -58,3 +64,16 @@ XPR = {
 	color = rgb { 94 113 193 }
 	color_ui = rgb { 94 113 193 }
 }
+XLV = {
+	color = rgb { 82 163 173 }
+	color_ui = rgb { 82 163 173 }
+}
+XPY = {
+	color = rgb { 61 111 155 }
+	color_ui = rgb { 61 111 155 }
+}
+XTI = {
+	color = rgb { 163 179 204 }
+	color_ui = rgb { 163 179 204 }
+}
+

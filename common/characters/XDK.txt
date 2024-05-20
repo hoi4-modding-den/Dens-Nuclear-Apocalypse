@@ -1,0 +1,16 @@
+characters = {
+
+    XDK_reconstruction_council = {
+        name = "Folketinget"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_folketinget"
+            }
+        }
+        country_leader = {
+            ideology = centrism
+			id = -1
+        }
+    }
+
+}
