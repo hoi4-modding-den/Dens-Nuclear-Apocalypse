@@ -6,5 +6,9 @@
  XLV_neutrality_DEF: "Regioni unite del Lombardo-Veneto"
  XLV_neutrality_ADJ: "Trivenetine"
 
- XLV_Alberto_Cartoni: "Alberto Cannoni"
+ XLV_Alberto_Cartoni: "Alberto Cartoni"
  XLV_Alberto_Cartoni_desc: "WIP"
+
+  XLV_events.1.t: "Starting situation in Lombardo-Veneto"
+	XLV_events.1.desc: "WIP"
+  XLV_events.1.a: "Pane, patria e libertà!s"
