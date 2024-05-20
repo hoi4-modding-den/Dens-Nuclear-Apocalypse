@@ -6,6 +6,8 @@ capital = 153
 #set_stability = 0.8
 #set_convoys = 5
 
+recruit_character = XTI_reclamation_council
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2235.1.15"
@@ -13,18 +15,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 6
+	democratic = 0
 	communism = 0
 	fascism = 0
-	neutrality = 94
+	neutrality = 100
 }
 
-#create_country_leader = {
-#	name = XTY_steve_hardman_IV
-#	desc = XTY_steve_hardman_IV_desc
-#	picture = GFX_portrait_XTY_Steve_Hardman_IV
-#	expire = "1.1.1"
-#	ideology = oligarchism
-#	traits = {
-#	}
-#}
