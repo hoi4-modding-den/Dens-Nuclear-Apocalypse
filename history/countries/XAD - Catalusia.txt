@@ -1,3 +1,5 @@
+set_country_flag = dont_use_default_political_advisors
+set_country_flag = dont_use_default_military_advisors
 capital = 789
 
 # Starting tech
@@ -20,6 +22,14 @@ recruit_character = XDA_Mouhamed_Talib_II_fascist
 recruit_character = XDA_Malik_Yacoub
 recruit_character = XDA_Muhammad_Hosein
 recruit_character = XDA_Mouhamed_Talib_II_nonaligned
+
+recruit_character = XDA_popular_figurehead
+recruit_character = XDA_propaganda_expert
+recruit_character = XDA_silent_workhorse
+recruit_character = XDA_prince_of_terror
+recruit_character = XDA_financial_expert
+recruit_character = XDA_economist
+recruit_character = XDA_technocrat
 
 set_popularities = {
 	neutrality = 100
