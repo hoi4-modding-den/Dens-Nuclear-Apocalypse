@@ -54,3 +54,7 @@ XMD = {
 	color = rgb { 0 38 190 }
 	color_ui = rgb { 0 38 190 }
 }
+XPR = {
+	color = rgb { 94 113 193 }
+	color_ui = rgb { 94 113 193 }
+}
