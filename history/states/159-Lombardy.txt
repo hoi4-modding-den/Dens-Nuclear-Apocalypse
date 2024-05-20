@@ -6,22 +6,24 @@ manpower=3731803
 	state_category = metropolis
 
 	history = {
-		owner = LIB # ITA
+		owner = XLV
 		victory_points = { #Milano
-			3780 15 
+			3780 20 
 		}
+
 		victory_points = { #Brescia
 			773 3
 		}
+
 		buildings = {
 			infrastructure = 4 #was: 8
 			#arms_factory = 7
 			#industrial_complex = 3
 			#air_base = 10
-
 		}
-		#add_core_of = ITA
-		#add_core_of = LBV
+
+		add_core_of = XLV
+
 		1939.1.1 = {
 			buildings = {
 				#arms_factory = 7

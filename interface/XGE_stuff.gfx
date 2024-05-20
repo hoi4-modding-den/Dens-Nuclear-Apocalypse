@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_XGE_stalinism"
+		texturefile = "gfx/XGE/computer_ideology.dds"
+	}
+
+}

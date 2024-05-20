@@ -1,0 +1,21 @@
+capital = 31
+
+#oob = "XNE_1936"
+
+set_war_support = 0.4
+set_stability = 0.65
+set_convoys = 5
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 36
+	communism = 0
+	fascism = 50
+	neutrality = 14
+}
+recruit_character = XPY_andreu_icart

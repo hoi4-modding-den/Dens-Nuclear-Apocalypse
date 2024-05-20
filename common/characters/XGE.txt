@@ -1,0 +1,15 @@
+characters = {
+	XGE_erich_honecker = {
+		name = XGE_erich_honecker
+		portraits = {
+			civilian = {
+				large = gfx\XGE\XGE_honecker_computer.dds
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = XGE_erich_honecker_desc
+			id = -1
+		}
+	}
+}

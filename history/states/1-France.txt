@@ -7,7 +7,7 @@ manpower=215267
 	state_category = town
 
 	history={
-		owner = LIB # FRA
+		owner = XNF # FRA
 		victory_points = { 3838 1 }
 		buildings = {
 			infrastructure = 2
@@ -17,7 +17,7 @@ manpower=215267
 				naval_base = 3
 			}
 		}
-		#add_core_of = COR
+		add_core_of = XNF
 		#add_core_of = FRA
 	}
 

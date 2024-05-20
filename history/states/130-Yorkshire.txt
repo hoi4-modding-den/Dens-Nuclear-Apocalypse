@@ -11,7 +11,10 @@ manpower=3174997
 	}
 
 	history={
-		owner = LIB # ENG
+		owner = XNM # ENG
+		victory_points = {
+			6237 10
+		}		
 		victory_points = {
 			9379 10 
 		}
@@ -40,7 +43,7 @@ manpower=3174997
 	}
 
 	provinces={
-		6268 9269 9315 9332 9379 9397 11297 11317 11382 
+		6268 9269 9315 9332 9379 9397 11297 11317 11382 6237
 	}
 
 	local_supplies=0.0 

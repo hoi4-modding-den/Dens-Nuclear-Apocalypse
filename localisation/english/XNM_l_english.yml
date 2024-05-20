@@ -1,0 +1,23 @@
+﻿l_english:
+ ### Country Names ###
+ XNM:0 "Mercian Republic"
+ XNM_DEF:0 "the Mercian Republic"
+ XNM_ADJ:0 "Mercian"
+ 
+ XCT:0 "Clyde Tribes"
+ XCT_DEF:0 "the Clyde Tribes"
+ XCT_ADJ:0 "Brythonic"
+ 
+ XTY:0 "The Tynes"
+ XTY_DEF:0 "The Tynes"
+ XTY_ADJ:0 "Tynes" 
+ 
+ ### Leaders ###
+ XNM_arthur_gainsborough:0 "Arthur Gainsborough"
+ XNM_arthur_gainsborough_desc:0 "WIP" 
+
+ XCT_niall_stonehelm:0 "Niall 'Goldenblade' Stonehelm"
+ XCT_niall_stonehelm_desc:0 "WIP"  
+
+ XTY_steve_hardman_IV:0 "Steve Hardman IV"
+ XTY_steve_hardman_IV_desc:0 "WIP"  

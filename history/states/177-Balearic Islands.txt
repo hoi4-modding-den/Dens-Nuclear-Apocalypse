@@ -11,10 +11,12 @@ manpower=243667
 		victory_points = {
 			9793 1
 		}
-		owner = LIB # SPR
+		owner = XMD
 		buildings = {
 			infrastructure = 3 #was: 6
-			#air_base = 1
+			arms_factory = 1
+			air_base = 1
+			
 			9793 = {
 				naval_base = 2
 			}
@@ -22,7 +24,7 @@ manpower=243667
 				naval_base = 1
 			}
 		}
-		#add_core_of = SPR
+		add_core_of = XMD
 	}
 	provinces=
 	{

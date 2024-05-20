@@ -1,0 +1,32 @@
+﻿l_english:
+ XTI_fascism:0 "Nationalstaat von Tirol"
+ XTI_fascism_DEF:0 "Nationalstaat von Tirol"
+ XTI_democratic:0 "Republik Tirol"
+ XTI_democratic_DEF:0 "Republik Tirol"
+ XTI_neutrality:0 "Tiroler Landgewinnungskomitee"
+ XTI_neutrality_DEF:0 "Tiroler Landgewinnungskomitee"
+ XTI_communism:0 "Volksrepublik Tirol"
+ XTI_communism_DEF:0 "Volksrepublik Tirol"
+ XTI_fascism_ADJ:0 "Tirolean"
+ XTI_democratic_ADJ:0 "Tirolean"
+ XTI_neutrality_ADJ:0 "Tirolean"
+ XTI_communism_ADJ:0 "Tirolean"
+ XTI:0 "Tirol"
+ XTI_DEF:0 "Tirol"
+ XTI_ADJ:0 "Tirolean"
+ XTI_subject:0 "$OVERLORDADJ$ $XTI$"
+ XTI_subject_DEF:0 "$OVERLORDADJ$ $XTI$"
+
+ XTI_communism_party:0 "KPT"
+ XTI_communism_party_long:0 "Kommunistische Partei Tirols"
+
+ XTI_fascism_party:0 "NV"
+ XTI_fascism_party_long:0 "Neue Vaterlandsfront"
+
+ XTI_neutrality_party:0 "Interim Government"
+ XTI_neutrality_party_long:0 "Übergangsregierung von Tirol"
+
+ XTI_democratic_party:0 "TVP"
+ XTI_democratic_party_long:0 "Tiroler Volkspartei"
+
+ XTI_reclamation_council_desc:0 "test hello!"

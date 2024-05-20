@@ -12,7 +12,7 @@ manpower=1505149
 
 	history={
 		#add_core_of = SCO
-		owner = LIB # ENG
+		owner = XCT # ENG
 		victory_points = {
 			3273 15
 		}

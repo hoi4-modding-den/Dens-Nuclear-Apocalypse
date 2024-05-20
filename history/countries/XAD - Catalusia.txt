@@ -1,4 +1,4 @@
-capital = 173
+capital = 789
 
 # Starting tech
 set_technology = {
@@ -15,6 +15,12 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+recruit_character = XDA_Mouhamed_Talib_II_fascist
+recruit_character = XDA_Malik_Yacoub
+recruit_character = XDA_Muhammad_Hosein
+recruit_character = XDA_Mouhamed_Talib_II_nonaligned
+
 set_popularities = {
 	neutrality = 100
 }

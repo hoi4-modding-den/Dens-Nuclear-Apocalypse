@@ -9,15 +9,15 @@ state = {
 	state_category = large_city
 
 	history = {
-		owner = LIB # ITA
+		owner = XLV
 		victory_points = { #Venezia
-			11584 10 
+			11584 5 
 		}
 		victory_points = { #Padova
 			3604 3 
 		}
 		victory_points = { #Verona
-			603 1
+			603 10
 		}
 
 		buildings = {
@@ -30,8 +30,7 @@ state = {
 				naval_base = 6
 			}
 		}
-		#add_core_of = ITA
-		#add_core_of = LBV
+		add_core_of = XLV
 		1939.1.1 = {
 			buildings = {
 				#dockyard = 2

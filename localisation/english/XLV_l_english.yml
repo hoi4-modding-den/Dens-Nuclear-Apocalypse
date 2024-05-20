@@ -1,0 +1,14 @@
+﻿l_english:
+ XLV: "Lombardo-Veneto"
+ XLV_DEF: "Regioni unite del Lombardo-Veneto"
+ XLV_ADJ: "Trivenetine"
+ XLV_neutrality: "Lombardo-Veneto"
+ XLV_neutrality_DEF: "Regioni unite del Lombardo-Veneto"
+ XLV_neutrality_ADJ: "Trivenetine"
+
+ XLV_Alberto_Cartoni: "Alberto Cartoni"
+ XLV_Alberto_Cartoni_desc: "WIP"
+
+  XLV_events.1.t: "Starting situation in Lombardo-Veneto"
+	XLV_events.1.desc: "WIP"
+  XLV_events.1.a: "Pane, patria e libertà!s"

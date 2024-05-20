@@ -2,16 +2,16 @@
 state={
 	id=55
 	name="STATE_55"
-manpower=2532157
+	manpower = 2532157
 
 	state_category = large_city
 
 	history={
-		owner = LIB # GER
+		owner = XAP
 		buildings = {
 			infrastructure = 4
-			#arms_factory = 1
-			#industrial_complex = 2
+			arms_factory = 1
+			industrial_complex = 2
 		}
 		victory_points = {
 			6488 20.0 
@@ -19,12 +19,12 @@ manpower=2532157
 		victory_points = {
 			564 3
 		}
-		#add_core_of = GER
+		add_core_of = XAP
 
 		1939.1.1 = {
 			buildings = {
-				#air_base = 3
-				#arms_factory = 4
+				air_base = 3
+				arms_factory = 4
 			}
 		}
 	}

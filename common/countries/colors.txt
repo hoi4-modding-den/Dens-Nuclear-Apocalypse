@@ -14,8 +14,61 @@ XIE = {
 	color = rgb { 131 193 81 }
 	color_ui = rgb { 131 193 81 }
 }
-
 XSS = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
 }
+XNI = {
+	color = rgb { 206 130 95 }
+	color_ui = rgb { 206 130 95 }
+}
+XNM = {
+	color = rgb { 41 74 173 }
+	color_ui = rgb { 41 74 173 }
+}
+XCT = {
+	color = rgb { 75 150 75 }
+	color_ui = rgb { 75 150 75 }
+}
+XTY = {
+	color = rgb { 87 120 150 }
+	color_ui = rgb { 87 120 150 }
+}
+
+XDK = {
+	color = rgb { 132 28 85 }
+	color_ui = rgb { 142 28 30 }
+}
+
+XRP = {
+	color = rgb { 0 82 155 }
+	color_ui = rgb { 0 82 155 }
+}
+XAR = {
+	color = rgb { 84 97 81 }
+	color_ui = rgb { 84 97 81 }
+}
+XNF = {
+	color = rgb { 50 155 170 }
+	color_ui = rgb { 20 20 75 }
+}
+XGE = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
+}
+XMD = {
+	color = rgb { 0 38 190 }
+	color_ui = rgb { 0 38 190 }
+}
+XLV = {
+	color = rgb { 82 163 173 }
+	color_ui = rgb { 82 163 173 }
+}
+XPY = {
+	color = rgb { 61 111 155 }
+	color_ui = rgb { 61 111 155 }
+XTI = {
+	color = rgb { 163 179 204 }
+	color_ui = rgb { 163 179 204 }
+}
+
