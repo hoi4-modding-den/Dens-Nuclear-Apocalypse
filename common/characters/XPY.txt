@@ -1,0 +1,15 @@
+characters = {
+
+    XPY_andreu_icart = {
+        name = "Andreu Icart"
+        portraits = {
+            civilian = {
+                large = "GFX_XPY_portrait_andreu_icart"
+            }
+        }
+        country_leader = {
+            ideology = fascism_ideology
+        }
+    }
+
+}
