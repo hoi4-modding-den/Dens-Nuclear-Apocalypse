@@ -20,8 +20,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = XNM_Arthur_Gainsborough
-	desc = XNM_Arthur_Gainsborough_desc
+	name = XNM_arthur_gainsborough
+	desc = XNM_arthur_gainsborough_desc
 	picture = GFX_portrait_XNM_Arthur_Gainsborough
 	expire = "1.1.1"
 	ideology = liberalism

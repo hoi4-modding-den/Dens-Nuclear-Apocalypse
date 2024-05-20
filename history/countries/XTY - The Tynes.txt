@@ -20,8 +20,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = XTY_Steve_Hardman_IV
-	desc = XTY_Steve_Hardman_IV_desc
+	name = XTY_steve_hardman_IV
+	desc = XTY_steve_hardman_IV_desc
 	picture = GFX_portrait_XTY_Steve_Hardman_IV
 	expire = "1.1.1"
 	ideology = oligarchism
