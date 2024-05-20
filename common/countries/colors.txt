@@ -57,4 +57,9 @@ XMD = {
 XLV = {
 	color = rgb { 82 163 173 }
 	color_ui = rgb { 82 163 173 }
+}s
+XPY = {
+	color = rgb { 61 111 155 }
+	color_ui = rgb { 61 111 155 }
 }
+

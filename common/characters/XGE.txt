@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = stalinism
-			expire = "3000.1.1"
+			desc = XGE_erich_honecker_desc
 			id = -1
 		}
 	}
