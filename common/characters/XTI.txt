@@ -1,0 +1,19 @@
+characters = {
+
+	XTI_reclamation_council = {
+		name = "Reclamation Council"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XTI_reclamation_council"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			desc = XTI_reclamation_council_desc
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+		
+	}
+}
