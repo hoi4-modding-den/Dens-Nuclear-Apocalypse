@@ -2,6 +2,17 @@
 	country = {
 		XLV_committee_of_public_safety = {
 			picture = XLV_committee
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
 			modifier = {
 				stability_factor = 0.1
 				surrender_limit = 0.5
@@ -12,6 +23,17 @@
 
 		XLV_centro_ricerca_trento = {
 			picture = XLV_centro_ricerca
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
 			modifier = {
 				stability_factor = -0.1
 				political_power_factor = -0.1
