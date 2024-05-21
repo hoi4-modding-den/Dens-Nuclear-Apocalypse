@@ -20,6 +20,9 @@ manpower=2456823
 		victory_points = {
 			9297 25
 		}
+		victory_points = {
+			3301 1
+		}		
 		#add_core_of = ENG
 		1939.1.1 = {
 			buildings = {
