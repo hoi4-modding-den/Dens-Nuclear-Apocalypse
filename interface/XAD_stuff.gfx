@@ -12,4 +12,46 @@ spriteTypes = {
 		name = "GFX_ideology_XAD_democracy"
 		texturefile = "gfx/leaders/XAD/portrait_XAD_Malik_Yacoub.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_XDA_popular_figurehead"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat3_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_propaganda_expert"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat2_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_silent_workhorse"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat1_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_prince_of_terror"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat4_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_financial_expert"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat6_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_economist"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat5_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_technocrat"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat7_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_mobile_wf"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat8_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_gb"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat9_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_sf"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat10_small.dds"
+	}
 }
+

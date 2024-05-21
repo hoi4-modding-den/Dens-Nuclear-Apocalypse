@@ -30,6 +30,9 @@ recruit_character = XDA_prince_of_terror
 recruit_character = XDA_financial_expert
 recruit_character = XDA_economist
 recruit_character = XDA_technocrat
+recruit_character = XDA_grand_battle_plan_expert
+recruit_character = XDA_mobile_warfare_expert
+recruit_character = XDA_superior_firepower_expert
 
 set_popularities = {
 	neutrality = 100
