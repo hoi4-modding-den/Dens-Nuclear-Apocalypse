@@ -1,6 +1,6 @@
 state= {
 	id=970
-	name="STATE_970"
+	name="Penb Rok"
 manpower=500
 	
 	state_category = city
@@ -15,6 +15,7 @@ manpower=500
 
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		add_core_of = XWA
 		add_core_of = XPW

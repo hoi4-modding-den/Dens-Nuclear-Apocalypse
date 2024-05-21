@@ -21,8 +21,8 @@ manpower=1539487
 		}
 		victory_points = { 377 5 }
 		buildings = {
-			infrastructure = 3
-			#industrial_complex = 1
+			infrastructure = 2
+			industrial_complex = 3
 			377 = {
 				naval_base = 3
 			}
