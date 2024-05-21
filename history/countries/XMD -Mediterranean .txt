@@ -100,7 +100,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Oliver Rhodes"
 	desc = ""
-	picture = "leader_unknown.dds"
+	picture = "OliverRhodes.dds"
 	ideology = centrism
 	traits = {
 		#
