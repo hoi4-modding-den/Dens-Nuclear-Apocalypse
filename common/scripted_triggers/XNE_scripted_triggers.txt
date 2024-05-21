@@ -1,0 +1,8 @@
+XNE_is_state = {
+	OR = {
+		state = 126
+		state = 128
+		state = 110
+	}
+}
+
