@@ -4,12 +4,12 @@ state = {
 	name = "STATE_115"
 
 	history = {
-		owner = LIB # ITA
+		owner = XRE
 		victory_points = {
-			10074 20 
+			10074 12 
 		}
 		victory_points = {
-			4159 5 
+			4159 15 
 		}
 		victory_points = {
 			4014 5 
@@ -40,8 +40,7 @@ state = {
 			}
 
 		}
-		#add_core_of = ITA
-		#add_core_of = TTS
+		add_core_of = XRE
 
 	}
 
