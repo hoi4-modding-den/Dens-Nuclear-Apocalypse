@@ -76,4 +76,11 @@ XTI = {
 	color = rgb { 163 179 204 }
 	color_ui = rgb { 163 179 204 }
 }
-
+XWA = {
+	color = rgb { 255  239  213 }
+	color_ui = rgb { 255  239  213 }
+}
+XPW = {
+	color = rgb { 178  34  34 }
+	color_ui = rgb { 178  34  34 }
+}

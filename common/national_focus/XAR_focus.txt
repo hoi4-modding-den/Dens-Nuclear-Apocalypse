@@ -1,0 +1,238 @@
+﻿focus_tree = {
+	id = XAR_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XAR
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = XAR_the_hero_of_sarayosa
+		icon = GFX_focus_mex_support_general_cedillo
+		x = 7
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = XAR_and_his_ungrateful_enemies
+		icon = GFX_focus_ARG_no_gods_no_masters
+		x = 1
+		y = 1
+
+		prerequisite = {focus = XAR_the_hero_of_sarayosa}
+		mutually_exclusive = { }
+		relative_position_id = XAR_the_hero_of_sarayosa
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}	
+
+	focus = {
+		id = XAR_a_tough_hand
+		icon = GFX_focus_generic_military_dictatorship
+		x = -1
+		y = 1
+
+		prerequisite = {focus = XAR_and_his_ungrateful_enemies}
+		mutually_exclusive = {focus = XAR_concessions_to_the_people}
+		relative_position_id = XAR_and_his_ungrateful_enemies
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XAR_increasing_civil_discontent
+				add_idea = XAR_increasing_civil_discontent_supressed
+			}
+		}
+	}
+
+	focus = {
+		id = XAR_concessions_to_the_people
+		icon = GFX_focus_SWE_refuge_from_war
+		x = 1
+		y = 1
+
+		prerequisite = {focus = XAR_and_his_ungrateful_enemies}
+		mutually_exclusive = {focus = XAR_a_tough_hand}
+		relative_position_id = XAR_and_his_ungrateful_enemies
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = XAR_this_wont_work
+			remove_ideas = XAR_increasing_civil_discontent
+			swap_ideas = {
+				remove_idea = XAR_an_army_with_a_state
+				add_idea = XAR_an_army_with_a_state_2
+			}
+			hidden_effect = {
+				add_ideas = XAR_increasing_civil_discontent
+				swap_ideas = {
+					remove_idea = XAR_an_army_with_a_state_2
+					add_idea = XAR_an_army_with_a_state
+				}		
+				#TODO EVENT HERE
+			}
+		}
+	}
+
+	focus = {
+		id = XAR_and_his_friends
+		icon = GFX_focus_FIN_parmis_devils
+		x = -2
+		y = 1
+
+		prerequisite = {focus = XAR_the_hero_of_sarayosa}
+		mutually_exclusive = { }
+		relative_position_id = XAR_the_hero_of_sarayosa
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = XAR_a_much_deserved_award
+		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
+		x = -2
+		y = 1
+
+		prerequisite = {focus = XAR_and_his_friends}
+		mutually_exclusive = { }
+		relative_position_id = XAR_and_his_friends
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			#TODO: EVENT
+		}
+	}
+	
+	focus = {
+		id = XAR_boros_army_depot
+		icon = GFX_focus_FIN_oy_alkoholiliike
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_and_his_friends}
+		mutually_exclusive = { }
+		relative_position_id = XAR_and_his_friends
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			176 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = XAR_the_REAL_goal
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 1
+		y = 1
+
+		prerequisite = {focus = XAR_boros_army_depot}
+		prerequisite = {focus = XAR_a_tough_hand}
+		mutually_exclusive = { }
+		relative_position_id = XAR_boros_army_depot
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XAR_quest_for_eternal_peace
+				add_idea = XAR_quest_for_eternal_peace_2
+			}
+		}
+	}		
+}

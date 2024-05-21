@@ -16,13 +16,13 @@ state={
 		victory_points = { 3561 5 }
 		victory_points = { 425 3 }
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			#industrial_complex = 1
 		}
 		add_core_of = XGE
 		1939.1.1 = {
 			buildings = {
-				synthetic_refinery = 3
+				
 				#arms_factory = 2
 			}
 		}
