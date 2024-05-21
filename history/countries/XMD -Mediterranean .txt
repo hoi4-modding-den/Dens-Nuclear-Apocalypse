@@ -99,7 +99,7 @@ set_popularities = {
 }
 create_country_leader = {
 	name = "Oliver Rhodes"
-	desc = ""
+	desc = "Oliver is a descendant of Prime Minister of Cape Colony "Cecil Rhodes".After the bombes fell he and a group of people decending from old colonial empires founded a new country on the Mediterranean sea in order to begin a new era of colonization"
 	picture = "OliverRhodes.dds"
 	ideology = centrism
 	traits = {
