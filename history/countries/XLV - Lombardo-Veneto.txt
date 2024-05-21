@@ -28,3 +28,11 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+country_event = { id = XLV_events.1 }
+set_country_flag = dont_use_default_political_advisors
+
+add_ideas = {
+	XLV_committee_of_public_safety
+	XLV_centro_ricerca_trento	
+}
