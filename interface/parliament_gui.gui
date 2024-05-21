@@ -76,7 +76,7 @@ guiTypes = {
 			name = "parliament_member_text"
 			position = { x = 0 y = 0 }
 			font = "hoi_16mbs"
-			maxWidth = 200
+			maxWidth = 300
 			maxHeight = 16
 			format = left
 			text = "parliament_member_text"
