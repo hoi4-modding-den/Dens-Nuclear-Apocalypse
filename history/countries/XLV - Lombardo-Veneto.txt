@@ -6,6 +6,11 @@ set_war_support = 0.3
 set_stability = 0.6
 set_convoys = 8
 
+add_ideas = {
+	XLV_committee_of_public_safety
+	XLV_centro_ricerca_trento	
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2235.1.15"
@@ -31,8 +36,3 @@ create_country_leader = {
 
 country_event = { id = XLV_events.1 }
 set_country_flag = dont_use_default_political_advisors
-
-add_ideas = {
-	XLV_committee_of_public_safety
-	XLV_centro_ricerca_trento	
-}
