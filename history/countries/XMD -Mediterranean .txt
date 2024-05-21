@@ -97,5 +97,13 @@ set_popularities = {
 	communism = 15
 	neutrality = 70
 }
-
+create_country_leader = {
+	name = "Oliver Rhodes"
+	desc = ""
+	picture = "leader_unknown.dds"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
 

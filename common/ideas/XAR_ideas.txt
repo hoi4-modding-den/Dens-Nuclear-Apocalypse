@@ -1,0 +1,111 @@
+ideas = {
+	
+	country = {
+	
+		XAR_increasing_civil_discontent = {
+			name = XAR_increasing_civil_discontent_name
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support3
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_weekly = -0.0020
+				
+			}
+		}
+
+		XAR_increasing_civil_discontent_supressed = {
+			name = XAR_increasing_civil_discontent_supressed_name
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support3
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.10
+				
+			}
+		}
+		
+		XAR_an_army_with_a_state = {
+			name = XAR_an_army_with_a_state_name
+
+			removal_cost = -1
+
+			picture = generic_license_production
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.30
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}	
+
+		XAR_an_army_with_a_state_2 = {
+			name = XAR_an_army_with_a_state_name
+
+			removal_cost = -1
+
+			picture = generic_license_production
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.29
+				army_speed_factor = 0.049
+				army_attack_factor = 0.049
+				army_defence_factor = 0.049				
+			}
+		}
+
+		XAR_quest_for_eternal_peace = {
+			name = XAR_quest_for_eternal_peace_name
+
+			removal_cost = -1
+
+			picture = XAR_perm_peace
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.01
+			}
+		}	
+
+		XAR_quest_for_eternal_peace_2 = {
+			name = XAR_quest_for_eternal_peace_name
+
+			removal_cost = -1
+
+			picture = XAR_perm_peace
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}			
+	}
+}
