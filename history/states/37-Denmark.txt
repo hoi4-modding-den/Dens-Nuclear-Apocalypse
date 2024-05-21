@@ -12,7 +12,10 @@ manpower=994148
 			6287 20 
 		}
 		victory_points = {
-			6393 2 
+			6393 10
+		}
+		victory_points = {
+			3260 5
 		}
 		buildings = {
 			infrastructure = 3
