@@ -99,11 +99,14 @@ set_popularities = {
 }
 create_country_leader = {
 	name = "Oliver Rhodes"
-	desc = ""
-	picture = "leader_unknown.dds"
+	desc = "POLITICS_OLIVER_RHODES_DESC"
+	picture = "OliverRhodes.dds"
 	ideology = centrism
 	traits = {
 		#
 	}
 }
 
+add_ideas = { 
+     Diverse_nationalities
+}

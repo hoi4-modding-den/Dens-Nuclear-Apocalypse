@@ -12,7 +12,7 @@ manpower=1539487
 
 	history=
 	{
-		owner = LIB # ENG
+		owner = XWA # ENG
 		victory_points = {
 			407 3 #Swansea
 		}
@@ -21,19 +21,19 @@ manpower=1539487
 		}
 		victory_points = { 377 5 }
 		buildings = {
-			infrastructure = 3
-			#industrial_complex = 1
+			infrastructure = 2
+			industrial_complex = 3
 			377 = {
 				naval_base = 3
 			}
 		}
-		#add_core_of = ENG
+		add_core_of = XWA
 		#add_core_of = WLS
 	}
 
 	provinces=
 	{
-253 311 377 407 3274 6363 9364 11361 	}
+253 311 377 407 3274 6363 9364 	}
 
 	local_supplies=0.0 
 }

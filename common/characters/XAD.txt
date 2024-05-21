@@ -67,7 +67,7 @@ characters = {
 		name = "Sama' fwryws'"
 		portraits = {
 			civilian = {
-				small = " "
+				small = "GFX_XDA_popular_figurehead"
 			}
 		}
 		advisor = {
@@ -80,7 +80,7 @@ characters = {
 		name = "Rabah Farooqui"
 		portraits = {
 			civilian = {
-				small = " "
+				small = "GFX_XDA_propaganda_expert"
 			}
 		}
 		advisor = {
@@ -93,7 +93,7 @@ characters = {
 		name = "Abbas Khalifa"
 		portraits = {
 			civilian = {
-				small = " "
+				small = "GFX_XDA_silent_workhorse"
 			}
 		}
 		advisor = {
@@ -106,7 +106,7 @@ characters = {
 		name = "Coman Naderi"
 		portraits = {
 			civilian = {
-				small = " "
+				small = "GFX_XDA_prince_of_terror"
 			}
 		}
 		advisor = {
@@ -119,7 +119,7 @@ characters = {
 		name = "Rakim Malak"
 		portraits = {
 			civilian = {
-				small = " "
+				small = "GFX_XDA_financial_expert"
 			}
 		}
 		advisor = {
@@ -132,7 +132,7 @@ characters = {
 		name = "Basam Mohamad"
 		portraits = {
 			civilian = {
-				small = " "
+				small = "GFX_XDA_economist"
 			}
 		}
 		advisor = {
@@ -145,7 +145,7 @@ characters = {
 		name = "Basel Baten"
 		portraits = {
 			civilian = {
-				small = " "
+				small = "GFX_XDA_technocrat"
 			}
 		}
 		advisor = {
@@ -154,7 +154,88 @@ characters = {
 			traits = { technocrat }      # Unspecified cost defaults to 150.
 		}
 	}
-
-
-
+	XDA_grand_battle_plan_expert = {
+		name = "Imad Mustafa"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_gb"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = XDA_grand_battle_plan_expert_idea
+			ledger = army
+			traits = { grand_battle_plan_expert }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_superior_firepower_expert = {
+		name = "Waseem Shakir"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_sf"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = XDA_superior_firepower_expert_idea
+			ledger = army
+			traits = { superior_firepower_expert }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_mobile_warfare_expert = {
+		name = "Nasser Rizk"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_mobile_wf"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = XDA_mobile_warfare_expert_idea
+			ledger = army
+			traits = { mobile_warfare_expert }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_chief_offensive_3 = {
+		name = "Mahmoud Bagheri"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_mobile_wf"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XDA_army_chief_offensive_3_idea
+			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_chief_defensive_3 = {
+		name = "Almanzor Azzi"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_mobile_wf"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XDA_army_chief_defensive_3_idea
+			traits = { army_chief_defensive_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_chief_reform_2 = {
+		name = "Nasir Amber"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_mobile_wf"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XDA_army_chief_reform_2_idea
+			traits = { army_chief_reform_2 }      # Unspecified cost defaults to 150.
+		}
+	}
 }
+
+
+#army_chief_reform_2

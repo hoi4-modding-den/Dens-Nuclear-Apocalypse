@@ -8,8 +8,8 @@ set_convoys = 10
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "2235.1.15"
-	election_frequency = 48
+	last_election = "2233.6.15"
+	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
