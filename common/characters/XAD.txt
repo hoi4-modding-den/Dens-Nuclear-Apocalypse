@@ -25,7 +25,7 @@ characters = {
 		country_leader = {
 			desc = XDA_Mouhamed_Talib_II_fascist_desc
 			ideology = nazism
-			traits = {  }
+			traits = { unpopular_monarch }
 			expire = "3000.9.9.9"
 			id = -1
 		}
@@ -56,13 +56,104 @@ characters = {
 		country_leader = {
 			ideology = despotism
 			desc = XDA_Mouhamed_Talib_II_fascist_desc
-			traits = {  }
+			traits = { unpopular_monarch }
 			expire = "3000.9.9.9"
 			id = -1
 		}
 	}
-
-
+	
+	
+	XDA_popular_figurehead = {
+		name = "Sama' fwryws'"
+		portraits = {
+			civilian = {
+				small = " "
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XDA_popular_figurehead_idea
+			traits = { popular_figurehead }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_propaganda_expert = {
+		name = "Rabah Farooqui"
+		portraits = {
+			civilian = {
+				small = " "
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XDA_propaganda_expert_idea
+			traits = { propaganda_expert }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_silent_workhorse = {
+		name = "Abbas Khalifa"
+		portraits = {
+			civilian = {
+				small = " "
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XDA_silent_workhorse_idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_prince_of_terror = {
+		name = "Coman Naderi"
+		portraits = {
+			civilian = {
+				small = " "
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XDA_prince_of_terror_idea
+			traits = { prince_of_terror }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_financial_expert = {
+		name = "Rakim Malak"
+		portraits = {
+			civilian = {
+				small = " "
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XDA_financial_expert_idea
+			traits = { financial_expert }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_economist = {
+		name = "Basam Mohamad"
+		portraits = {
+			civilian = {
+				small = " "
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XDA_economist_idea
+			traits = { economist }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_technocrat = {
+		name = "Basel Baten"
+		portraits = {
+			civilian = {
+				small = " "
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XDA_technocrat_idea
+			traits = { technocrat }      # Unspecified cost defaults to 150.
+		}
+	}
 
 
 

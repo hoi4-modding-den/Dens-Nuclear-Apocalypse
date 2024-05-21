@@ -1,0 +1,21 @@
+﻿XGE_INF_01 = {
+	name = "Red Guards" 
+	for_countries = { XGE } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Red Guards"
+	ordered = {
+		1 = { "%d. Red Guards" } 
+	}
+}
+XGE_ARM_01 = {
+	name = "Red Guards" 
+	for_countries = { XGE } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Armoured Red Guards"
+	ordered = {
+		1 = { "%d. Armoured Red Guards" } 
+	}
+}
+

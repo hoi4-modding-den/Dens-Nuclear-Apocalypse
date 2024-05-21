@@ -28,3 +28,11 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_faction = "Isles Cooperative"
+add_to_faction = XTY
+
+set_autonomy = {
+	target = XTY
+	autonomous_state = autonomy_integrated_puppet
+}

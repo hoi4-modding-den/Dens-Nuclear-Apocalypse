@@ -21,12 +21,25 @@ characters = {
 			civilian = {
 				large = "GFX_portrait_ger_hans_von_luck"
 			}
+			army = {
+				small = "GFX_idea_GER_alfred_jodl"
+			}
 		}
 		country_leader = {
 			ideology = nazism
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_eggli
+			allowed = {
+				original_tag = XSS
+			}
+			traits = {
+				XSS_head_of_ss
+			}
 		}
 	}
 
@@ -36,12 +49,25 @@ characters = {
 			civilian = {
 				large = "GFX_portrait_GER_wilhelm_pieck"
 			}
+			army = {
+				small = "GFX_idea_GER_wilhelm_pieck"
+			}
 		}
 		country_leader = {
 			ideology = marxism
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_signer
+			allowed = {
+				original_tag = XSS
+			}
+			traits = {
+				communist_revolutionary
+			}
 		}
 	}
 
@@ -57,6 +83,49 @@ characters = {
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1
+		}
+	}
+
+	XSS_stettler = {
+		name = "Wenert Stettler"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Prince_Henry"
+			}
+			army = {
+				small = "GFX_idea_SOV_vyacheslav_tkachyov"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_stettler_idea
+			allowed = {
+				original_tag = XSS
+			}
+			traits = {
+				democratic_reformer
+			}
+		}
+	}
+
+	XSS_holzhauer = {
+		name = "Sanno Holzhauer"
+		portraits = {
+			army = {
+				small = "GFX_idea_yoshio_nishina"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_holzhauer_idea
+			allowed = {
+				original_tag = XSS
+			}
+			traits = {
+				XSS_philosopher_of_transhumanism
+			}
 		}
 	}
 

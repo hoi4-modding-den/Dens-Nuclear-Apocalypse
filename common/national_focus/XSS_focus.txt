@@ -1,0 +1,40 @@
+
+
+
+
+
+
+focus_tree = {
+id = 420
+
+country = {
+    factor = 0
+    modifier = {
+        add = 20
+        original_tag = XSS
+    }
+}
+
+    focus = {
+    id = XSS_prepare_elections_of_1936
+    x = 50
+    y = 0
+    icon = GFX_focus_generic_improve_the_administration
+    cost = 5
+    
+
+    completion_reward = {
+        add_political_power = 150
+
+        }
+        
+
+    }
+
+
+
+
+
+
+
+}

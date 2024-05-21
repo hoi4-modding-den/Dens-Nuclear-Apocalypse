@@ -8318,6 +8318,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/XDK/portrait_XDK_folketinget.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_copenhagen"
+		texturefile = "gfx/leaders/XDK/portrait_XDK_copenhagen_congress.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_ITA_alessandro_pirzio_biroli"
 		texturefile = "gfx/leaders/ITA/portrait_ITA_alessandro_pirzio_biroli.dds"
 	}
