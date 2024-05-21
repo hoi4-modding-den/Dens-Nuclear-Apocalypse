@@ -15,7 +15,38 @@
 	initial_show_position = {
 		#focus = 
 	}
+	
+	focus = {
+		id = XNE_test
+		#icon = GFX_
+		x = 2
+		y = 0
 
+		cost = 10
+
+		available = {
+			NOT = {
+				any_state = {
+					XNE_is_state = yes
+					NOT = { is_core_of = XNE }
+				}
+			}
+		}
+		bypass = {}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
 	
 
 }
