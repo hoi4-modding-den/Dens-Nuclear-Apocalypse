@@ -1,3 +1,7 @@
+###########################
+# Lombardo-Veneto Events
+###########################
+
 add_namespace = XLV_events
 
 country_event = { #Start Info
@@ -6,11 +10,10 @@ country_event = { #Start Info
 	desc = XLV_events.1.desc
 	picture = XLV_start_info
 
-	is_triggered_only = yes
-
+    fire_only_once = yes
+    is_triggered_only = yes
     trigger = {
         tag = XLV
-        date > 1950.01.01
     }
 
 	option = { #Pane, patria e libertà!

@@ -11,4 +11,15 @@ spriteTypes = {
 		name = "XLV_start_info"
 		texturefile = "gfx/XLV/events/XLV_start_info.dds"
 	}	
+
+
+
+	spriteType = {
+		name = "XLV_committee"
+		texturefile = "gfx/XLV/XLV_committee_of_public_safety.dds"
+	}	
+	spriteType = {
+		name = "XLV_centro_ricerca"
+		texturefile = "gfx/XLV/XLV_centro_ricerca.dds"
+	}	
 }
