@@ -13,7 +13,7 @@ state={
 	history={
 		owner = XGE # GER
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			#arms_factory = 2
 			#industrial_complex = 7
 		}
@@ -29,7 +29,6 @@ state={
 		add_core_of = XGE
 		1939.1.1 = {
 			buildings = {
-				synthetic_refinery = 2
 				#arms_factory = 5
 				#industrial_complex = 10
 			}
