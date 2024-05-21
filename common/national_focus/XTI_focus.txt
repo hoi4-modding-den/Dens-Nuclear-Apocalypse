@@ -491,7 +491,117 @@
 		
 		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes }
 		mutually_exclusive = { focus = XTI_unify_the_alps }
+		mutually_exclusive = { focus = XTI_european_ambitions }
+		x = -2
+		y = 1
+		relative_position_id = XTI_demand_vorarlberg
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_invite_swiss
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_alpine_alliance }
+		mutually_exclusive = { focus =  }
 		x = -1
+		y = 1
+		relative_position_id = XTI_alpine_alliance
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_invite_lombards
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_alpine_alliance }
+		mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XTI_alpine_alliance
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_european_ambitions
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes }
+		mutually_exclusive = { focus = XTI_alpine_alliance }
+		mutually_exclusive = { focus = XTI_unify_the_alps }
+		x = 1
 		y = 1
 		relative_position_id = XTI_demand_vorarlberg
 
@@ -527,7 +637,8 @@
 		
 		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes }
 		mutually_exclusive = { focus = XTI_alpine_alliance }
-		x = 1
+		mutually_exclusive = { focus = XTI_european_ambitions }
+		x = 2
 		y = 1
 		relative_position_id = XTI_vorarlberg_skirmishes
 

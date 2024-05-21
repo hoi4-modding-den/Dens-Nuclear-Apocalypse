@@ -1,10 +1,19 @@
 capital = 132
 
-oob = "XNM_1936"
+oob = "XNM"
 
 set_war_support = 0.25
 set_stability = 0.75
 set_convoys = 10
+
+add_ideas = {
+	XNM_compromise_of_29
+	XNM_midlands_protests
+	XNM_tensions_on_the_trent
+	XNM_undergoing_army_modernization
+	XNM_albion_booming_heartland
+	BEZ_membership
+}
 
 set_politics = {
 	ruling_party = democratic

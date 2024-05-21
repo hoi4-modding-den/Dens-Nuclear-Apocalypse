@@ -1,0 +1,15 @@
+capital = 156
+
+# oob = "XTI_1936"
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 27
+	neutrality = 73
+}
+

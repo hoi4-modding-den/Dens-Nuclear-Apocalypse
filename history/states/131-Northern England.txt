@@ -14,7 +14,7 @@ manpower=1419240
 		owner = XTY # ENG
 		#add_core_of = ENG
 		victory_points = {
-			351 8 
+			351 10
 		}
 		buildings = {
 			infrastructure = 3 #was: 6

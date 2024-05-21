@@ -1,0 +1,156 @@
+﻿division_template = {
+	name = "Wreocensæte Company"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Angles Cavaliers"
+	division_names_group = ENG_CAV_02
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Protectors of Repton" # WIP
+	division_names_group = ENG_INF_02
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 6	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }		
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }		
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 } 
+	}	
+	priority = 2	
+}
+
+units = {
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 3301
+		division_template = "Wreocensæte Company"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 9297
+		division_template = "Wreocensæte Company"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 9297
+		division_template = "Protectors of Repton"
+		start_experience_factor = 0.1
+	}	
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 6237
+		division_template = "Wreocensæte Company"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 6237
+		division_template = "Angles Cavaliers"
+		start_experience_factor = 0.1
+	}	
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 11297
+		division_template = "Wreocensæte Company"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 11297
+		division_template = "Angles Cavaliers"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 3241
+		division_template = "Angles Cavaliers"
+		start_experience_factor = 0.1
+	}		
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 6384
+		division_template = "Wreocensæte Company"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 9397
+		division_template = "Wreocensæte Company"
+		start_experience_factor = 0.1
+	}	
+}
+
+###airwings in their own file
+
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+}
+	#####################
