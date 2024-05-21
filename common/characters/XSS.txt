@@ -129,6 +129,39 @@ characters = {
 		}
 	}
 
+	XSS_ackert = {
+		name = "Mian Ackert"
+		portraits = {
+			army = {
+				small = "GFX_idea_POL_stanislaw_mikolajczyk"
+			}
+			civilian = {
+				large = "GFX_portrait_POL_stanislaw_mikolajczyk"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { XSS_leader_of_ssd_2 }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_ackert_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				NOT = {has_completed_focus = XSS_socdem}
+
+			}
+			traits = {
+				XSS_leader_of_ssd
+			}
+		}
+	}
+
 
 
 
