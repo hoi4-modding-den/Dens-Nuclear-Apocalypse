@@ -196,4 +196,46 @@ characters = {
 			traits = { mobile_warfare_expert }      # Unspecified cost defaults to 150.
 		}
 	}
+	XDA_army_chief_offensive_3 = {
+		name = "Mahmoud Bagheri"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_mobile_wf"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XDA_army_chief_offensive_3_idea
+			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_chief_defensive_3 = {
+		name = "Almanzor Azzi"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_mobile_wf"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XDA_army_chief_defensive_3_idea
+			traits = { army_chief_defensive_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_chief_reform_2 = {
+		name = "Nasir Amber"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_mobile_wf"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XDA_army_chief_reform_2_idea
+			traits = { army_chief_reform_2 }      # Unspecified cost defaults to 150.
+		}
+	}
 }
+
+
+#army_chief_reform_2
