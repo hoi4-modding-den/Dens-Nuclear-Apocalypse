@@ -22,6 +22,27 @@ leader_traits = {
 		}
 	}
 
+	XSS_leader_of_ssd = {
+		random = no
+		
+		democratic_drift = 0.05
+        stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	XSS_leader_of_ssd_2 = {
+		random = no
+		
+		political_power_gain = 0.05
+		forced_surrender_limit = 0.5
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 
 }

@@ -31,6 +31,96 @@ country = {
 
     }
 
+    focus = {
+    id = XSS_elections
+    x = 50
+    y = 2
+    icon = GFX_focus_SWI_swiss_guiding_principles
+    cost = 5
+    prerequisite = { focus = XSS_prepare_elections_of_1936 }
+
+
+    completion_reward = {
+        
+        add_popularity = {
+        ideology = democratic
+        popularity = 0.05
+                }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_triumph_of_democracy
+    x = 49
+    y = 3
+    icon = GFX_goal_support_democracy
+    cost = 1
+    prerequisite = { focus = XSS_elections }
+    mutually_exclusive = { focus = XSS_storm_the_council }
+
+    completion_reward = {
+        
+        add_popularity = {
+        ideology = democratic
+        popularity = 0.15
+                }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_socdem
+    x = 30
+    y = 4
+    icon = GFX_focus_prc_agrarian_socialism
+    cost = 1
+    prerequisite = { focus = XSS_triumph_of_democracy }
+
+
+    completion_reward = {
+        
+            promote_character = {
+            character = XSS_ackert
+                    }
+
+        }
+        
+
+    }
+
+################ Totalitaryzm ##########################################
+
+    focus = {
+    id = XSS_storm_the_council
+    x = 51
+    y = 3
+    icon = GFX_focus_SWI_dissolve_the_federal_council
+    cost = 1
+    prerequisite = { focus = XSS_elections }
+    mutually_exclusive = { focus = XSS_triumph_of_democracy }
+
+
+    completion_reward = {
+        
+        add_popularity = {
+        ideology = fascism
+        popularity = 0.15
+                }
+        add_popularity = {
+        ideology = communism
+        popularity = 0.15
+                }
+        add_stability = -0.5
+        }
+        
+
+    }
+
 
 
 
