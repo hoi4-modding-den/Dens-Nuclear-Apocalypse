@@ -9,10 +9,10 @@ manpower=836118
 		owner = LIB # DEN
 		#add_core_of = DEN
 		victory_points = {
-			6235 2 
+			6235 5
 		}
 		victory_points = {
-			6364 3 
+			6364 15
 		}
 		victory_points = {
 			3277 1 
@@ -22,6 +22,9 @@ manpower=836118
 		}
 		victory_points = {
 			3206 1
+		}
+		victory_points = {
+			3341 5
 		}
 		buildings = {
 			infrastructure = 3

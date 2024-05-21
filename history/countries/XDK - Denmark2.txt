@@ -1,4 +1,4 @@
-capital = 3780
+capital = 37
 
 # oob = "XLV_1936"
 
@@ -7,6 +7,7 @@ set_stability = 0.6
 set_convoys = 8
 
 recruit_character = XDK_reconstruction_council
+recruit_character = XDK_copenhagen_council
 
 set_politics = {
 	ruling_party = neutrality

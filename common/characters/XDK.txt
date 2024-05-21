@@ -12,5 +12,17 @@ characters = {
 			id = -1
         }
     }
+	XDK_copenhagen_council = {
+        name = "Congress of Copenhagen"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_copenhagen"
+            }
+        }
+        country_leader = {
+            ideology = stalinism
+			id = -1
+        }
+    }
 
 }
