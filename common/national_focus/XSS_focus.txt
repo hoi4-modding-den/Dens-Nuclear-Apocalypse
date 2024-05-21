@@ -93,6 +93,286 @@ country = {
 
     }
 
+    focus = {
+    id = XSS_maitain_neutrality
+    x = 29
+    y = 5
+    icon = GFX_focus_SWI_neutrality_on_the_move
+    cost = 10
+    prerequisite = { focus = XSS_socdem }
+
+
+    completion_reward = {
+        
+        add_political_power = 50
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_hub_for_culture
+    x = 30
+    y = 6
+    icon = GFX_focus_SWE_institute_of_technology
+    cost = 5
+    prerequisite = { focus = XSS_socdem }
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_hub_of_culture}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_education_reform
+    x = 34
+    y = 6
+    icon = GFX_goal_generic_scientific_exchange
+    cost = 5
+    prerequisite = { focus = XSS_socdem }
+
+
+    completion_reward = {
+        
+        add_timed_idea = {
+        idea = XSS_education_reform_idea
+        days = 180
+                }
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_expand_zurich_uni
+    x = 32
+    y = 7
+    icon = GFX_focus_SWE_organize_a_putsch
+    cost = 10
+    prerequisite = { focus = XSS_hub_for_culture }
+    prerequisite = {focus = XSS_education_reform}
+
+
+    completion_reward = {
+        
+        add_research_slot = 1 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_expand_genova_uni
+    x = 30
+    y = 8
+    icon = GFX_focus_SWE_organize_a_putsch
+    cost = 5
+    prerequisite = { focus = XSS_expand_zurich_uni }
+
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_uni_of_genova}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_nation_of_students
+    x = 34
+    y = 8
+    icon = GFX_focus_generic_university_2
+    cost = 5
+    prerequisite = { focus = XSS_expand_zurich_uni }
+
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_nation_of_students_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_nationalized_publishers
+    x = 33
+    y = 9
+    icon = GFX_focus_TUR_ratify_the_six_arrows
+    cost = 5
+    prerequisite = { focus = XSS_expand_zurich_uni }
+
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_nationalized_publishers_idea}
+
+        }
+        
+
+    }
+    focus = {
+    id = XSS_wing_of_philosophy
+    x = 34
+    y = 10
+    icon = GFX_focus_SWI_helvetic_junta
+    cost = 5
+    prerequisite = { focus = XSS_nationalized_publishers }
+    prerequisite = { focus = XSS_nation_of_students }
+
+
+
+    completion_reward = {
+        
+        add_political_power = 50
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_nihilism
+    x = 32
+    y = 11
+    icon = GFX_goal_generic_attack_allies
+    cost = 2
+    prerequisite = { focus = XSS_wing_of_philosophy }
+    mutually_exclusive = {focus = XSS_anti_nihilism}
+    mutually_exclusive = {focus = XSS_christian_morals}
+
+
+
+    completion_reward = {
+        
+
+        }
+        
+
+    }
+    focus = {
+    id = XSS_publish_dennler_letters
+    x = 32
+    y = 12
+    icon = GFX_goal_generic_attack_allies
+    cost = 5
+    prerequisite = { focus = XSS_nihilism }
+    available = {
+        XSS_dennler = {is_political_advisor = yes}
+
+    }
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_dennlers_letters}
+        remove_ideas = {XSS_nation_of_students_idea}
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_anti_nihilism
+    x = 34
+    y = 11
+    icon = GFX_focus_ICE_embrace_the_workers_revolution
+    cost = 2
+    prerequisite = { focus = XSS_wing_of_philosophy }
+    mutually_exclusive = {focus = XSS_nihilism}
+    mutually_exclusive = {focus = XSS_christian_morals}
+
+
+    completion_reward = {
+        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_publish_love_of_life
+    x = 34
+    y = 12
+    icon = GFX_focus_SWE_refuge_from_war
+    cost = 5
+    prerequisite = { focus = XSS_anti_nihilism }
+    available = {
+        XSS_boni = {is_political_advisor = yes}
+
+    }
+
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_love_of_life}
+        remove_ideas = {XSS_nation_of_students_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_christian_morals
+    x = 36
+    y = 11
+    icon = GFX_focus_por_concordat
+    cost = 2
+    prerequisite = { focus = XSS_wing_of_philosophy }
+    mutually_exclusive = {focus = XSS_anti_nihilism}
+    mutually_exclusive = {focus = XSS_nihilism}
+
+
+    completion_reward = {
+        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_rebirth_of_christianity
+    x = 36
+    y = 12
+    icon = GFX_focus_GRE_an_orthodox_state
+    cost = 5
+    prerequisite = { focus = XSS_christian_morals }
+    available = {
+        XSS_rolf = {is_political_advisor = yes}
+
+    }
+
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_home_of_god}
+        remove_ideas = {XSS_nation_of_students_idea}
+
+        }
+        
+
+    }
+
 ################ Totalitaryzm ##########################################
 
     focus = {

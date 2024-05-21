@@ -123,6 +123,10 @@ characters = {
 			allowed = {
 				original_tag = XSS
 			}
+			available = {
+				has_completed_focus = XSS_wing_of_philosophy
+
+			}
 			traits = {
 				XSS_philosopher_of_transhumanism
 			}
@@ -162,8 +166,126 @@ characters = {
 		}
 	}
 
+	XSS_giger = {
+		name = "Wenert Giger"
+		portraits = {
+			army = {
+				small = "GFX_idea_GER_felix_steiner"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_giger_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_wing_of_philosophy
+
+			}
+			traits = {
+				XSS_philosopher_of_absurdist
+			}
+		}
+	}
+
+	XSS_stutz = {
+		name = "Nathan Stutz"
+		portraits = {
+			army = {
+				small = "GFX_idea_GER_paul_hausser"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_stutz_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_wing_of_philosophy
+
+			}
+			traits = {
+				XSS_philosopher_of_global_intervention
+			}
+		}
+	}
+
+	XSS_dennler = {
+		name = "Oscar Dennler"
+		portraits = {
+			army = {
+				small = "GFX_idea_gre_george_papandreou"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_dennler_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_nihilism
+
+			}
+			traits = {
+				XSS_philosopher_of_nihilism
+			}
+		}
+	}
+
+	XSS_boni = {
+		name = "Raphaël Böni"
+		portraits = {
+			army = {
+				small = "GFX_idea_gre_markos_vafiadis"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_boni_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_anti_nihilism
+
+			}
+			traits = {
+				XSS_philosopher_of_anti_nihilism
+			}
+		}
+	}
 
 
+	XSS_rolf = {
+		name = "Father Rolf"
+		portraits = {
+			army = {
+				small = "GFX_idea_gre_father_dimistrios"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_rolf_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_christian_morals
+
+			}
+			traits = {
+				XSS_priest_philosopher
+			}
+		}
+	}
 
 
 }

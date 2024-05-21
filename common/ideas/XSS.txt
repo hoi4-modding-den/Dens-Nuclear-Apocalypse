@@ -17,6 +17,81 @@ ideas = {
                 political_power_gain = 0.5
             }
         }
+        XSS_hub_of_culture = {
+           removal_cost = -1
+            picture = SPR_torchbearers_of_tomorrow
+            modifier = {
+                fascism_acceptance = 50
+                democratic_acceptance = 100
+                communism_acceptance = 50
+                neutrality_acceptance = 50
+            }
+        }
+        XSS_education_reform_idea = {
+           removal_cost = -1
+            picture = SOV_atomic_bomb_project
+            modifier = {
+                research_speed_factor = 0.1
+                political_power_gain = -0.1
+            }
+        }
+        XSS_uni_of_genova = {
+           removal_cost = -1
+            picture = generic_economic_increase
+            modifier = {
+                research_speed_factor = 0.04
+                political_power_gain = 0.05
+            }
+        }
+        XSS_nation_of_students_idea = {
+           removal_cost = -1
+            picture = chi_army_corruption2
+            modifier = {
+                research_speed_factor = 0.15
+                local_manpower = -0.25
+                political_power_gain = -0.05
+            }
+        }
+        XSS_nationalized_publishers_idea = {
+           removal_cost = -1
+            picture = generic_democratic_opposition
+            modifier = {
+                political_power_gain = -0.05
+            }
+        }
+        XSS_dennlers_letters = {
+           removal_cost = -1
+            picture = gre_schachtplan
+            modifier = {
+                political_power_gain = 0.1
+                production_factory_efficiency_gain_factor = 0.15
+                conscription = 0.025
+                surrender_limit = -0.1
+                research_speed_factor = 0.10
+            }
+        }
+        XSS_love_of_life = {
+           removal_cost = -1
+            picture = gre_schachtplan
+            modifier = {
+                political_power_gain = 0.1
+                monthly_population = 0.05
+                conscription = -0.025
+                surrender_limit = 0.1
+                research_speed_factor = 0.15
+            }
+        }
+        XSS_home_of_god = {
+           removal_cost = -1
+            picture = MEX_church_power_5
+            modifier = {
+                political_power_gain = 0.2
+                monthly_population = 0.01
+                		
+		        war_support_weekly = 0.01
+		        stability_weekly = 0.03
+            }
+        }
     }
 
 }
