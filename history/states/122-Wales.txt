@@ -12,7 +12,7 @@ manpower=1539487
 
 	history=
 	{
-		owner = LIB # ENG
+		owner = XWA # ENG
 		victory_points = {
 			407 3 #Swansea
 		}
@@ -27,7 +27,7 @@ manpower=1539487
 				naval_base = 3
 			}
 		}
-		#add_core_of = ENG
+		add_core_of = XWA
 		#add_core_of = WLS
 	}
 

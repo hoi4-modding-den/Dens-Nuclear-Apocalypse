@@ -1,0 +1,19 @@
+capital = 122
+
+oob = "XWA_1936"
+
+set_war_support = 0.25
+set_stability = 0.5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2230.1.30"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	neutrality = 100
+}
