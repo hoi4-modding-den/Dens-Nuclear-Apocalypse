@@ -1,0 +1,30 @@
+state = {
+	id = 972
+	name = "Agrigento"
+    manpower = 	759425
+	
+	state_category = city
+	
+	resources = {
+		steel = 1 
+	}
+
+	history = {
+		owner = XSI
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			7147 5 
+		}
+		add_core_of = XSI
+	}
+
+	provinces = { 
+		1009 7147 12047
+	}
+
+	local_supplies = 0.0 
+}

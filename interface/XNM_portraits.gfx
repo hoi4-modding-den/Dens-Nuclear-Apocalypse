@@ -2,30 +2,30 @@ spriteTypes = {
 # XNM, XCT, XTY
 	spriteType = {
 		name = "GFX_portrait_XNM_Arthur_Gainsborough"
-		texturefile = "gfx/leaders/XNM/portrait_XNM_Arthur_Gainsborough.dds"
+		texturefile = "gfx/XNM/XNM_Portraits/portrait_XNM_Arthur_Gainsborough.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_XNM_Edmund_Harrington"
-		texturefile = "gfx/leaders/XNM/portrait_XNM_Edmund_Harrington.dds"
+		texturefile = "gfx/XNM/XNM_Portraits/portrait_XNM_Edmund_Harrington.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_XNM_Frederick_Thorne"
-		texturefile = "gfx/leaders/XNM/portrait_XNM_Frederick_Thorne.dds"
+		texturefile = "gfx/XNM/XNM_Portraits/portrait_XNM_Frederick_Thorne.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_XNM_General_Edwin_Barron"
-		texturefile = "gfx/leaders/XNM/portrait_XNM_General_Edwin_Barron.dds"
+		texturefile = "gfx/XNM/XNM_Portraits/portrait_XNM_General_Edwin_Barron.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_XTY_Steve_Hardman_IV"
-		texturefile = "gfx/leaders/XTY/portrait_XTY_Steve_Hardman_IV .dds"
+		texturefile = "gfx/XNM/XTY_Portraits/portrait_XTY_Steve_Hardman_IV .dds"
 	}	
 	spriteType = {
 		name = "GFX_portrait_XCT_Niall_Stonehelm"
-		texturefile = "gfx/leaders/XCT/portrait_XCT_Niall_Stonehelm.dds"
+		texturefile = "gfx/XNM/XCT_Portraits/portrait_XCT_Niall_Stonehelm.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_XCT_Ragnar_The_Great"
-		texturefile = "gfx/leaders/XCT/portrait_XCT_Ragnar_The_Great.dds"
+		texturefile = "gfx/XNM/XCT_Portraits/portrait_XCT_Ragnar_The_Great.dds"
 	}	
 }

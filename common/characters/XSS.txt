@@ -212,7 +212,11 @@ corps_commander = {
 				original_tag = XSS
 			}
 			available = {
+				OR = {
 				has_completed_focus = XSS_wing_of_philosophy
+				has_completed_focus = XSS_volountarism
+				}
+
 
 			}
 			traits = {

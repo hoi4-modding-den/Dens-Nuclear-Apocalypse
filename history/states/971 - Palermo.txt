@@ -1,0 +1,32 @@
+state = {
+	id = 971
+	name = "Palermo"
+    manpower = 1852233
+	
+	state_category = city
+	
+	resources = {
+		steel = 1 
+	}
+
+	history = {
+		owner = XSI
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+
+		victory_points = {
+			10074 12 
+		}
+
+		add_core_of = XSI
+	}
+
+	provinces = { 
+		3857 7059 10074 
+	}
+
+	local_supplies = 0.0 
+}

@@ -266,3 +266,47 @@ XSS_join_military_training_desc:0 "We must build strenght in our allies."
 
 XSS_joint_army:0 "Joint army training"
 XSS_joint_army_desc:0 ""
+
+XSS_create_zurich_institute:0 "Create Zurich Institute"
+XSS_create_zurich_institute_desc:0 "ZI will be an organization to research post apocaliptic world."
+
+XSS_czi:0 "Zurich Institute"
+XSS_czi_desc:0 "Zurich institute is a science based complex tasked with researching post apocaliptic world"
+
+XSS_army_reform:0 "Army Reform"
+XSS_army_reform_desc:0 "Our army is inefficient and in dire need of reform."
+
+XSS_penal_battalions:0 "Penal Battalions"
+XSS_penal_battalions_desc:0 "Our prisons are overflowing. We should put these degenerates to a good use."
+
+XSS_join_bez:0 "Join B.E.Z"
+XSS_join_bez_desc:0 "We wish to bring Switzerland closer to Europe. B.E.Z brings good old memories of EU. This time we won't ignore this offer."
+
+XSS_test_event.4.t:0 "Switzerland wishes to join B.E.Z"
+XSS_test_event.4.desc:0 "Switzerland is on path of European integration and they wish to join us in B.E.Z."
+XSS_test_event.4.a:0 "Sure!"
+XSS_test_event.4.b:0 "We don't need them"
+
+XSS_fortifications_in_geneva:0 "Fortify Geneva"
+XSS_fortifications_in_geneva_desc:0 "We must protect ourselfs against outsiders."
+
+XSS_joint_army_2:0 "Joint army training"
+XSS_joint_army_2_desc:0 ""
+
+XSS_join_military_training_europe:0 "European join army training"
+XSS_join_military_training_europe_desc:0 "We should improve our millitary by cooperation with other european states."
+
+XSS_test_event.5.t:0 "Switzerland proposes joint military training"
+XSS_test_event.5.desc:0 "Switzerland sent us proposition to train both of our armies to support european integration."
+XSS_test_event.5.a:0 "Sure"
+XSS_test_event.5.b:0 "Why should we support our enemy"
+XSS_test_event.5.c:0 "Liberia"
+
+XSS_volountarism:0 "Volounteer batalions"
+XSS_volountarism_desc:0 "We must support conflicts in Europe so that the oppressors will be crashed."
+
+XSS_foreign_legion:0 "Swiss Foreign Legion"
+XSS_foreign_legion_desc:0 "We must establish foreign legion to gather volounteers from around the europe and wastelands."
+
+XSS_swi_foreign_legion:0 "Swiss foreign legion"
+XSS_swi_foreign_legion_desc:0 "Criminals, adventure seekers and millitarists behold. Swiss have recreated foreign legion in Bern and they are hiring."
