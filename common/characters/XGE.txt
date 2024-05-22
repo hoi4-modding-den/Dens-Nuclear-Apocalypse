@@ -3,7 +3,7 @@ characters = {
 		name = XGE_erich_honecker
 		portraits = {
 			civilian = {
-				large = gfx\XGE\XGE_honecker_computer.dds
+				large = "gfx/XGE/XGE_honecker_computer.dds"
 			}
 		}
 		country_leader = {
