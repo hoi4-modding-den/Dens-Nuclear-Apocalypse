@@ -26,14 +26,17 @@
  
  ### National Spirits ###
  XNM_compromise_of_29:0 "Compromise of 29'"
- XNM_compromise_of_29:0 "WIP" 
+ XNM_compromise_of_29_desc:0 "WIP" 
  XNM_midlands_protests:0 "Midlands Protests"
- XNM_midlands_protests:0 "WIP" 
+ XNM_midlands_protests_desc:0 "WIP" 
  XNM_tensions_on_the_trent:0 "Tensions on the Trent"
- XNM_tensions_on_the_trent:0 "WIP"
+ XNM_tensions_on_the_trent_desc:0 "WIP"
  XNM_undergoing_army_modernization:0 "Undergoing Army Modernization"
- XNM_undergoing_army_modernization:0 "WIP"
+ XNM_undergoing_army_modernization_desc:0 "WIP"
  XNM_albion_booming_heartland:0 "Albion's Booming Heartland"
- XNM_albion_booming_heartland:0 "WIP"
+ XNM_albion_booming_heartland_desc:0 "WIP"
  BEZ_membership:0 "B.E.Z. Membership"
- BEZ_membership:0 "WIP"
+ BEZ_membership_desc:0 "WIP"
+ 
+ ### Tooltips ###
+ bez_membership_idea_tt:0 "\nWhile this national spirit is active, nations around our country will be §Gmore inclined§! to trade with us."

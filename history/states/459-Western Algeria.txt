@@ -10,8 +10,8 @@ manpower=2059963
 	}
 
 	history={
-		owner = LIB # FRA
-		#add_core_of = ALG
+		owner = XTR
+		add_core_of = XTR
 
 		victory_points = {
 			1145 5 

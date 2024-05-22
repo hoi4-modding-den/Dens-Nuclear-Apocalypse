@@ -92,3 +92,7 @@ XRM = {
 	color = rgb { 0 153 0 }
 	color_ui = rgb { 0 153 0 }
 }
+XTR = {
+	color = rgb { 127 116 39 }
+	color_ui = rgb { 127 116 39 }
+}

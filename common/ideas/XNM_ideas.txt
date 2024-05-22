@@ -15,7 +15,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.05
-				political_power_gain = -0.15
+				political_power_factor = -0.15
 			}
 		}
 		XNM_midlands_protests = {
@@ -32,6 +32,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				political_power_factor = -0.05				
 			}
 		}
 		XNM_tensions_on_the_trent = {
@@ -96,6 +97,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				min_export = 0.1
+				custom_modifier_tooltip = bez_membership_idea_tt				
+			}			
+			hidden_modifier = {
+				trade_opinion_factor = 0.2				
 			}
 		}		
 	}

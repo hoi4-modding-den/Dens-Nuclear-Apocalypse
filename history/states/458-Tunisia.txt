@@ -9,8 +9,8 @@ manpower=1321960
 	}
 
 	history={
-		owner = LIB # FRA
-		#add_core_of = TUN
+		owner = XTR
+		add_core_of = XTR
 		victory_points = {
 			11969 10 
 		}

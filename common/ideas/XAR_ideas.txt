@@ -15,7 +15,7 @@ ideas = {
 
 			modifier = {
 				political_power_factor = -0.15
-				stability_weekly = -0.0020
+				stability_weekly = -0.0050
 				
 			}
 		}
@@ -33,7 +33,7 @@ ideas = {
 
 			modifier = {
 				political_power_factor = -0.10
-				
+				stability_weekly = -0.0020
 			}
 		}
 		
