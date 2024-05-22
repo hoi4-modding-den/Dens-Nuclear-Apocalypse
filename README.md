@@ -22,13 +22,28 @@ Nuclear war has set the world back 300 years, now in the year 2236 they are back
 
 ## Current tag list:
 
-| Tag | Github Name      |
-| --- | ---------------- |
-| XNE | Meepazor         |
-| XPR | Potanicc         |
-| XSS | Woodymapper      |
-| XAD | IWillExplode     |
-| XGE | Kasastul         |
-| XAP | MouldedMind      |
-| XNL | BrickPi          |
-| XWA | Lcdub            |
+| Tag | Github Name      | Discord name        |
+| --- | ---------------- |---------------------|
+| XAD | IWillExplode     | i_will_explode_     |
+| XAP | MouldedMind      | carrera075          |
+| XAR | Durangg          | durangoose          |
+| XCT | Furiousky        | furiousky           |
+| XNM | Furiousky        | furiousky           |
+| XTY | Furiousky        | furiousky           |
+| XDK | playerandplayer  | oscaremn            |
+| XGE | Kasastul         | kasastul            |
+| XIE | tombricks        | tombricks           |
+| XNI | tombricks        | tombricks           |
+| XLV | Jadeclouds       | jadeclouds_         |
+| XMD | GreenLeader3626  | mentzen_            |
+| XNE | Meepazor         | meepazor            |
+| XNF | Burgerkinghotline| burgerkinghotline   |
+| XPR | Potanicc         | Potanic             |
+| XPW | lcdub            | justaghostt         |
+| XWA | lcdub            | justaghostt         |
+| XPY | Knighticus       | biggusbutt          |
+| XRE | Bowteye          | adeleine.mp3        |
+| XRM | Woodymapper      | woody6982           |
+| XSS | Woodymapper      | woody6982           |
+| XRP | Carrera075       | carrera075          |
+| XTI | H2o27            | h2o27               |
