@@ -152,6 +152,14 @@ ideas = {
             }
 
         }
+        XSS_joint_army = {
+           removal_cost = -1
+            picture = ARG_military_government
+            modifier = {
+               experience_gain_army = 0.05   
+            }
+
+        }
     }
 
 }
