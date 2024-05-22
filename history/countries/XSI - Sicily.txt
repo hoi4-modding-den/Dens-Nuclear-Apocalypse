@@ -1,4 +1,4 @@
-capital = 156
+capital = 115
 
 # oob = "XTI_1936"
 
@@ -9,7 +9,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 27
-	neutrality = 73
+	democratic = 23
+	neutrality = 77
 }
 

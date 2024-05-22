@@ -23,6 +23,19 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite = "GFX_tiled_window_thin_border2"
 			}
+		
+			containerWindowType = {
+				name = "XNM_parliament_main_entry"
+				position = { x = 205 y = 185 }
+				
+				iconType = {
+					name = "XNM_parliament_main_icon"
+					spriteType = "GFX_parliament_XNM_coat_of_arms"
+					position = { x = 10 y = -25 }
+					pdx_tooltip = "XNM_parliament_main_icon_tt"
+				}
+			}
+		
 
 			gridboxtype = {
 				name = "parliament_semicircle_main_grid"
@@ -58,8 +71,8 @@ guiTypes = {
 
 	containerWindowType = {
         name = "parliament_member_entry"
-        position = { x = 0 y = 0 }
-		size = { width = 200 height = 18 }
+        position = { x = 45 y = 0 }
+		size = { width = 500 height = 100 }
 
 		iconType = {
 			name = "parliament_member_icon"

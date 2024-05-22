@@ -1,13 +1,11 @@
 
 state = {
 	id = 115
-	name = "STATE_115"
+	name = "Catania"
 
 	history = {
-		owner = XRE
-		victory_points = {
-			10074 12 
-		}
+		owner = XSI
+
 		victory_points = {
 			4159 15 
 		}
@@ -40,14 +38,14 @@ state = {
 			}
 
 		}
-		add_core_of = XRE
+		add_core_of = XSI
 
 	}
 
 	provinces = {
-		1009 1156 3857 4014 4159 7059 7147 10074 12047 13256 
+		1156 4014 4159 13256 
 	}
-manpower=2557714
+	manpower=2656429
 	buildings_max_level_factor = 1.000
 	state_category = city
 	local_supplies = 0.000

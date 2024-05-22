@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_XNE_communist"
+		texturefile = "gfx/leaders/XNE/Portrait_XNE_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_XNE_conservative"
+		texturefile = "gfx/leaders/XNE/Portrait_XNE_conservative.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_XNE_fascism"
+		texturefile = "gfx/leaders/XNE/Portrait_XNE_fascism.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_XNE_liberalism"
+		texturefile = "gfx/leaders/XNE/Portrait_XNE_liberalism.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_XNE_monarchist"
+		texturefile = "gfx/leaders/XNE/Portrait_XNE_monarchist.dds"
+	}	
+}
