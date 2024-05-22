@@ -1,0 +1,21 @@
+﻿capital = 458
+
+#oob = "XTR_1936"
+
+set_research_slots = 1
+
+# Starting tech
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2203.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality =  100
+}

@@ -7,8 +7,8 @@ manpower=540991
 	state_category = wasteland
 
 	history={
-		owner = LIB # FRA
-		#add_core_of = ALG
+		owner = XTR
+		add_core_of = XTR
 		victory_points = {
 			12034 1 
 		}

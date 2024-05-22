@@ -7,8 +7,8 @@ manpower=1562558
 	state_category = town
 
 	history={
-		owner = LIB # FRA
-		#add_core_of = ALG
+		owner = XTR
+		add_core_of = XTR
 		victory_points = {
 			7081 1 
 		}
