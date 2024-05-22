@@ -2,7 +2,7 @@ capital = 166
 
 recruit_character = XAR_valer_serrano
 
-oob = "XAR_2236"
+#oob = "XAR_2236" #TODO
 
 set_technology = {
 	infantry_weapons = 1
