@@ -112,6 +112,177 @@ country = {
     }
 
     focus = {
+    id = XSS_dominate_the_coalition
+    x = 25
+    y = 5
+    icon = GFX_focus_generic_conspiracy
+    cost = 10
+    prerequisite = { focus = XSS_socdem }
+
+
+    completion_reward = {
+        
+        add_stability = -0.3
+        set_party_name = {
+        ideology = democratic
+        long_name = "Schweizer Sozialdemokratie"
+        name = "SSD"
+            }
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_defensive_doctrine
+    x = 23
+    y = 6
+    icon = GFX_focus_SWI_federal_police
+    cost = 10
+    prerequisite = { focus = XSS_dominate_the_coalition }
+
+
+    completion_reward = {
+        
+        army_experience = 15
+        add_ideas = {XSS_defensive_army}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_artillery_expansion
+    x = 23
+    y = 8
+    icon = GFX_goal_generic_army_artillery2
+    cost = 5
+    prerequisite = { focus = XSS_defensive_doctrine }
+
+
+    completion_reward = {
+        
+        army_experience = 15
+        add_tech_bonus = {
+        bonus = 1
+        uses = 1
+        category = artillery
+            }
+
+        }
+        
+
+    }
+    focus = {
+    id = XSS_tank_exp
+    x = 27
+    y = 8
+    icon = GFX_goal_generic_army_tanks
+    cost = 5
+    prerequisite = { focus = XSS_mass_fortification }
+
+
+    completion_reward = {
+        
+        army_experience = 15
+        add_tech_bonus = {
+        bonus = 1
+        uses = 1
+        category = armor
+            }
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_mass_fortification
+    x = 27
+    y = 6
+    icon = GFX_goal_generic_fortify_city
+    cost = 5
+    prerequisite = { focus = XSS_dominate_the_coalition }
+
+
+    completion_reward = {
+        
+        add_timed_idea = {
+        idea = XSS_fortification_push
+        days = 60
+                }
+        
+
+        }
+        
+
+    }
+    focus = {
+    id = XSS_oppress_romansh
+    x = 25
+    y = 7
+    icon = GFX_focus_BRA_end_the_state_of_emergency
+    cost = 5
+    prerequisite = { focus = XSS_dominate_the_coalition }
+
+
+    completion_reward = {
+        
+        set_party_name = {
+        ideology = fascism
+        long_name = "Neu Schutzstaffel/Nationale Arbeiterpartei"
+        name = "NSS/NAP"
+            }
+        add_popularity = {
+        ideology = fascism
+        popularity = -0.05
+                }
+        add_political_power = 50
+        add_stability = -0.3
+        151 = {
+            set_demilitarized_zone = yes
+        }
+        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_finish_war_on_romansh
+    x = 25
+    y = 9
+    icon = GFX_focus_SWE_neither_death_nor_dishonor
+    cost = 10
+    prerequisite = { focus = XSS_oppress_romansh }
+    prerequisite = { focus = XSS_tank_exp }
+    prerequisite = { focus = XSS_artillery_expansion }
+
+
+    completion_reward = {
+        
+        add_popularity = {
+        ideology = fascism
+        popularity = -0.05
+                }
+        add_political_power = 150
+        add_stability = 0.05
+        151 = {
+            set_demilitarized_zone = no
+        }
+        
+
+        }
+        
+
+    }
+
+    focus = {
     id = XSS_hub_for_culture
     x = 30
     y = 6
@@ -183,6 +354,72 @@ country = {
     completion_reward = {
         
         add_ideas = {XSS_uni_of_genova}
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_nep
+    x = 31
+    y = 9
+    icon = GFX_focus_generic_communist_industry
+    cost = 5
+    prerequisite = { focus = XSS_expand_genova_uni }
+
+
+
+    completion_reward = {
+        
+
+        add_timed_idea = {
+        idea = XSS_nep_idea
+        days = 180
+            }
+
+        }
+        
+
+    }
+    focus = {
+    id = XSS_nationalization_of_industry
+    x = 29
+    y = 9
+    icon = GFX_focus_SOV_organize_wreckers
+    cost = 10
+    prerequisite = { focus = XSS_expand_genova_uni }
+
+
+
+    completion_reward = {
+        
+
+        add_timed_idea = {
+        idea = XSS_economic_shock
+        days = 180
+            }
+        add_offsite_building = { type = industrial_complex level = 2 }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_students_in_gov
+    x = 30
+    y = 10
+    icon = GFX_focus_ARG_establish_the_free_association
+    cost = 5
+    prerequisite = { focus = XSS_expand_genova_uni }
+
+
+
+    completion_reward = {
+        
+
 
         }
         

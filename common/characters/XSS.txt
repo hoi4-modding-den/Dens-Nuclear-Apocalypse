@@ -31,6 +31,13 @@ characters = {
 			expire = "3000.9.9.9"
 			id = -1
 		}
+corps_commander = {
+    skill = 3
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 1
+}
 		advisor = {
 			slot = political_advisor
 			idea_token = XSS_eggli
@@ -286,6 +293,28 @@ characters = {
 			}
 		}
 	}
+	XSS_student_circle = {
+		name = "Student Union"
+		portraits = {
+			army = {
+				small = "GFX_idea_ARG_establish_the_free_association"
+			}
+		}
 
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_student_union_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_students_in_gov
+
+			}
+			traits = {
+				XSS_student_circle_trait
+			}
+		}
+	}
 
 }

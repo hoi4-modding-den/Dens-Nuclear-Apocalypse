@@ -1,0 +1,149 @@
+division_template = {
+	name = "Civil Guard"
+	division_names_group = GER_INF_01
+    is_locked = yes
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "Waffen-NSS"
+	division_names_group = GER_INF_01
+    is_locked = yes
+    force_allow_recruiting = yes
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+        motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+        motorized = { x = 2 y = 1 }
+        artillery_brigade = { x = 3 y = 0 }
+
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "Republican Army"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+        artillery_brigade = { x = 3 y = 0 }
+
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+        maintenance_company = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 9638
+		division_template = "Civil Guard"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 3612
+		division_template = "Civil Guard"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 3
+		}
+		location = 3612
+		division_template = "Civil Guard"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 663
+		division_template = "Waffen-NSS"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 9620
+		division_template = "Republican Army"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 9622
+		division_template = "Republican Army"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 3
+		}
+		location = 11604
+		division_template = "Republican Army"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 4
+		}
+		location = 11623
+		division_template = "Republican Army"
+		start_experience_factor = 0.1
+	}
+
+}

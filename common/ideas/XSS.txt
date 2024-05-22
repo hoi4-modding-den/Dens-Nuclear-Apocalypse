@@ -14,7 +14,7 @@ ideas = {
            removal_cost = -1
             picture = generic_foreign_capital
             modifier = {
-                political_power_gain = 0.5
+                political_power_gain = 0.3
             }
         }
         XSS_hub_of_culture = {
@@ -90,6 +90,41 @@ ideas = {
                 		
 		        war_support_weekly = 0.01
 		        stability_weekly = 0.03
+            }
+        }
+        XSS_nep_idea = {
+           removal_cost = -1
+            picture = generic_political_support
+            modifier = {
+                political_power_gain = 0.3
+
+            }
+        }
+        XSS_economic_shock = {
+           removal_cost = -1
+            picture = generic_political_support
+            modifier = {
+                political_power_gain = -0.5
+
+            }
+        }
+        XSS_defensive_army = {
+           removal_cost = -1
+            picture = generic_shield_against_communism
+            modifier = {
+                offence = -0.25
+                defence = 0.25
+
+            }
+        }
+        XSS_fortification_push = {
+           removal_cost = -1
+            picture = ger_bulwark_against_bolshevism
+            modifier = {
+                production_speed_bunker_factor = 1.25
+                political_power_gain = -0.5
+                consumer_goods_factor = 0.35
+
             }
         }
     }
