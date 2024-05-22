@@ -1,0 +1,12 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_portrait_folketinget"
+        texturefile = "gfx/leaders/XDK/portrait_XDK_folketinget.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_copenhagen"
+        texturefile = "gfx/leaders/XDK/portrait_XDK_copenhagen_congress.dds"
+    }
+
+}

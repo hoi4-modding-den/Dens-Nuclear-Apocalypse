@@ -101,11 +101,11 @@ ideas = {
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.1
 				min_export = 0.1
-				custom_modifier_tooltip = bez_membership_idea_tt				
+				custom_modifier_tooltip = bez_membership_idea_tt
+				hidden_modifier = {
+					trade_opinion_factor = 0.2				
+				}				
 			}			
-			hidden_modifier = {
-				trade_opinion_factor = 0.2				
-			}
 		}		
 	}
 }	

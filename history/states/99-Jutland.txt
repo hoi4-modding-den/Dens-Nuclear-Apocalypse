@@ -6,8 +6,8 @@ manpower=836118
 	state_category = rural
 
 	history={
-		owner = LIB # DEN
-		#add_core_of = DEN
+		owner = XJY # DEN
+		add_core_of = XJY
 		victory_points = {
 			6235 5
 		}
