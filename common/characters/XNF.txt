@@ -1,0 +1,18 @@
+characters = {
+
+	XNF_napoleon_x = {
+		name = "Napoleon X"
+		portraits = {
+			civilian = {
+				large = "GFX_napoleon_xnf"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+}

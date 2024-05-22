@@ -1,0 +1,170 @@
+XNF_add_to_vp = {
+	if = {
+		limit = { state = 1 }
+		set_victory_points = {
+			province = 3838
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 851 }
+		set_victory_points = {
+			province = 911
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 735 }
+		set_victory_points = {
+			province = 9909
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 21 }
+		set_victory_points = {
+			province = 11834
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 32 }
+		set_victory_points = {
+			province = 3768
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 20 }
+		set_victory_points = {
+			province = 6613
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 22 }
+		set_victory_points = {
+			province = 9898
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 26 }
+		set_victory_points = {
+			province = 3594
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 31 }
+		set_victory_points = {
+			province = 6766
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 806 }
+		set_victory_points = {
+			province = 9710
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 19 }
+		set_victory_points = {
+			province = 9737
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 25 }
+		set_victory_points = {
+			province = 620
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 33 }
+		set_victory_points = {
+			province = 651
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 23 }
+		set_victory_points = {
+			province = 6657
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 27 }
+		set_victory_points = {
+			province = 3652
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 17 }
+		set_victory_points = {
+			province = 11516
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 28 }
+		set_victory_points = {
+			province = 9559
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 18 }
+		set_victory_points = {
+			province = 13011
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 24 }
+		set_victory_points = {
+			province = 512
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 785 }
+		set_victory_points = {
+			province = 11420
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 29 }
+		set_victory_points = {
+			province = 11548
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 30 }
+		set_victory_points = {
+			province = 11465
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 15 }
+		set_victory_points = {
+			province = 9434
+			value = var:FROM.vpsize
+		}
+	}
+	else_if = {
+		limit = { state = 14 }
+		set_victory_points = {
+			province = 3552
+			value = var:FROM.vpsize
+		}
+	}
+}

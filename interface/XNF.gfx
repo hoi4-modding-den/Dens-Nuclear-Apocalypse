@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_napoleon_xnf"
+		texturefile = "gfx/leaders/XNF/xnf_napoleon.dds"
+	}
+
+}

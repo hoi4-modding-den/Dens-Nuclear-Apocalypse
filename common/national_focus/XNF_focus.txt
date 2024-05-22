@@ -1,0 +1,38 @@
+focus_tree = {
+id = XNF_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            original_tag = XNF
+        }
+    }
+    focus = {
+        id = XNF_reclaim_our_empire
+        x = 0
+        y = 0
+        icon = GFX_focus_focus_fra_border
+        cost = 10
+        available = {
+            NOT = {
+                any_state = {
+                    DEN_is_french_state = yes
+                    NOT = { is_core_of = XNF }
+                }
+            }
+        }
+        completion_reward = {
+            add_state_core = 165
+            add_state_core = 158
+            add_state_core = 6
+            add_state_core = 34
+            add_state_core = 35
+            add_state_core = 51
+            add_state_core = 42
+            add_state_core = 7
+            add_state_core = 36
+            add_state_core = 56
+        }
+    }
+}
