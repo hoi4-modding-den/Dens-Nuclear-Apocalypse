@@ -107,5 +107,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	XSS_industrial_union_trait = {
+		random = no
+		
+		political_power_gain = -0.15
+		production_speed_buildings_factor = 0.25 
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }

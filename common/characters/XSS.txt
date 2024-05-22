@@ -342,4 +342,29 @@ corps_commander = {
 	}
 ################# Back to normal ################################
 
+	XSS_industrial_circle = {
+		name = "Industrial Union"
+		portraits = {
+			army = {
+				small = "GFX_idea_ger_rebuild_the_nation"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_industrial_union_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_industrial_union
+
+			}
+			traits = {
+				XSS_industrial_union_trait
+			}
+		}
+	}
+
+
 }

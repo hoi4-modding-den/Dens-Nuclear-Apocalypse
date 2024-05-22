@@ -110,6 +110,23 @@ country = {
         
 
     }
+    focus = {
+    id = XSS_industrial_union
+    x = 38
+    y = 5
+    icon = GFX_focus_generic_industrialists
+    cost = 5
+    prerequisite = { focus = XSS_socdem }
+
+
+    completion_reward = {
+        
+        
+
+        }
+        
+
+    }
 
     focus = {
     id = XSS_dominate_the_coalition
@@ -276,6 +293,28 @@ country = {
             }
 
         
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_elimination_of_romansh
+    x = 25
+    y = 10
+    icon = GFX_focus_SOV_military_purge
+    cost = 2
+    prerequisite = { focus = XSS_finish_war_on_romansh }
+
+
+
+    completion_reward = {
+        
+        151 = {
+            remove_core_of = XRM
+        }
+         add_stability = 0.05
 
         }
         
