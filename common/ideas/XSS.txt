@@ -142,6 +142,16 @@ ideas = {
                 defense_bonus_against = 0.25
                 }
         }
+        XSS_uni_health = {
+           removal_cost = -1
+            picture = SWI_spirit_of_saint_bernard
+            modifier = {
+               political_power_gain = -0.15
+               monthly_population = 0.15 
+               consumer_goods_factor = 0.1     
+            }
+
+        }
     }
 
 }

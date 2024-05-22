@@ -181,3 +181,35 @@ XSS_industrial_union:0 "Industrial Union"
 XSS_industrial_union_desc:0 "Our state controled union will maintain progress towards building new swiss industry."
 
 XSS_industrial_union_trait:0 "State Industrial Union"
+
+XSS_develop_bern_zurich:0 "Develop Bern-Zurich"
+XSS_develop_bern_zurich_desc:0 "Our capital is in dire need for improvments. Post war winter has caused havoc on our population."
+
+XSS_millitary_complex:0 "Build millitary complex"
+XSS_millitary_complex_desc:0 "Our army is lacking guns and we need to provide them to our people."
+
+XSS_develop_swiss_airports:0 "Develop swiss airports"
+XSS_develop_swiss_airports_desc:0 "We must invite as much people as we can to our nation. Modern airport system is mandatory."
+
+XSS_develop_italian_region:0 "Develop Ticino"
+XSS_develop_italian_region_desc:0 "Our Italian minority have been left out of our plans in Swiss modernization."
+
+XSS_fotress_ticino:0 "Fortress Ticino"
+XSS_fotress_ticino_desc:0 "We must fortify Ticino region to protect switzerland against Italians."
+
+XSS_fortess_zurich:0 "Fortress Zurich"
+XSS_fortess_zurich_desc:0 "Our biggest city is a border city. We must protect it at all cost."
+
+XSS_test_event.1.t:0 "Elections in Switzerland"
+XSS_test_event.1.desc:0 "This day elections will be held. We have SSD socialdemocratic party with focus in neutrality and coalition of NU/BU which are strongly on side of interventionism.We hope everything will go according to the plan."
+XSS_test_event.1.a:0 "Democracy will Triumph"
+XSS_test_event.1.b:0 "Anybody hears the artillery shells?"
+
+XSS_develop_graubunden:0 "Develop Graubünden"
+XSS_develop_graubunden_desc:0 "Romansh people have been pacified. It's high time to develop that area."
+
+XSS_uni_health:0 "Universal Healthcare"
+XSS_uni_health_desc:0 "No body should be left behind especially in field of health."
+
+XSS_push_health:0 "Push for Healthcare"
+XSS_push_health_desc:0 "Universal health care should be a universal right in civilized world."
