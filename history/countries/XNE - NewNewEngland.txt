@@ -7,7 +7,7 @@ set_stability = 0.65
 set_convoys = 5
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "2234.1.15"
 	election_frequency = 48
 	elections_allowed = yes

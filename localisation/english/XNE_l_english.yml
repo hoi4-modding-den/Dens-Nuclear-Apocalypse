@@ -2,6 +2,8 @@
  XNE:0 "New New England"
  XNE_DEF:0 "New New England"
  XNE_ADJ:0 "New English"
+ XNE_communism:0 "New English Commonwealth"
+ XNE_communism_DEF:0 "the New English Commonwealth"
  
  XNE_winston_chamberlain:0 "Winston Chamberlain"
  XNE_winston_chamberlain_desc:0 "Often said to be an extreme traditionalist, Sir Winston has always advocated to return England to its former glory. He believes by reading ancient texts from the 20th Century, he can bring about a new Golden Age for England."
@@ -15,6 +17,7 @@
  XNE_jesse_smith_desc:0 "Jesse Smith is a journalist for the extremist Guardian paper. He has written numerous articles criticizing the government for its inability to act on crises and force the integration of the northern English states."
  XNE_oswald_joyce:0 "Oswald Joyce"
  XNE_oswald_joyce_desc:0 "Oswald is a young up-and-comer within the [XNE.GetAdj] New Collective Party, being a natural born leader and a popular speaker."
+ XNE_young_trade_unionist:0 "Young Trade Unionist"
 
  XNE_party_liberalism:0 "Liberalism"
  XNE_party_liberalism_desc:0 "With a long philosophical tradition of valuing personal liberty, liberalism views safeguarding these rights as the primary function of the state."
