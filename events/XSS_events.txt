@@ -1,0 +1,23 @@
+
+add_namespace = XSS_test_event
+country_event = {
+    id = XSS_test_event.1
+    title = XSS_test_event.1.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XSS_test_event.1.desc
+    
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XSS_test_event.1.a
+        complete_national_focus = XSS_triumph_of_democracy
+    }
+    option = {
+        name = XSS_test_event.1.b
+        complete_national_focus = XSS_storm_the_council
+    }
+}
+
+################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
+### tak robie te zajebane gówno pierwszy raz i mam ochote jebnąc magika ######################
