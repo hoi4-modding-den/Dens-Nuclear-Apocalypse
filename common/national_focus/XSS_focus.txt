@@ -79,6 +79,135 @@ country_event = {
 
     }
 
+
+    focus = {
+    id = XSS_nubu
+    x = 45
+    y = 4
+    icon = GFX_focus_SWI_expand_the_federation
+    cost = 1
+    prerequisite = { focus = XSS_triumph_of_democracy }
+   mutually_exclusive = {focus = XSS_socdem}
+
+    completion_reward = {
+        
+            promote_character = {
+            character = XSS_konig
+                    }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_partition_from_ssd
+    x = 45
+    y = 5
+    icon = GFX_focus_SWE_attack_landsorganisationen
+    cost = 5
+    prerequisite = { focus = XSS_nubu }
+ 
+
+
+    completion_reward = {
+        
+        add_stability = -0.15
+        set_party_name = {
+        ideology = democratic
+        long_name = "Nationale Union/Bundesunion"
+        name = "NU/BU"
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_abandon_neutrality
+    x = 45
+    y = 6
+    icon = GFX_focus_SWI_abandon_neutrality
+    cost = 5
+    prerequisite = { focus = XSS_partition_from_ssd }
+ 
+
+
+    completion_reward = {
+        
+        add_stability = -0.05
+        remove_ideas = {XSS_neutrality}
+        news_event = {
+        id = XSS_test_event.2
+        days = 1
+        random_hours = 12
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_alliance_with_green_army
+    x = 42
+    y = 7
+    icon = GFX_focus_SWI_continuous_support_active_militias
+    cost = 5
+    prerequisite = { focus = XSS_abandon_neutrality }
+ 
+
+
+    completion_reward = {
+        
+
+        add_stability = 0.15
+        add_manpower = 35000
+
+        set_party_name = {
+        ideology = democratic
+        long_name = "Nationale Union/Bundesunion/Grüne Armee"
+        name = "NU/BU/GA"
+            }
+        set_party_name = {
+        ideology = fascism
+        long_name = "Neu Schutzstaffel/Nationale Arbeiterpartei"
+        name = "NSS/NAP"
+            }
+        hidden_effect = { load_oob = "GreenArmy" }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_lay_claim_to_voralburg
+    x = 45
+    y = 7
+    icon = GFX_goal_generic_forceful_treaty
+    cost = 5
+    prerequisite = { focus = XSS_abandon_neutrality }
+ 
+
+
+    completion_reward = {
+        
+        848 = {
+
+            add_claim_by = XSS
+
+        }
+
+        }
+        
+
+    }
+
+
+############## Socdem ####################################
+
     focus = {
     id = XSS_socdem
     x = 30
@@ -86,7 +215,7 @@ country_event = {
     icon = GFX_focus_prc_agrarian_socialism
     cost = 1
     prerequisite = { focus = XSS_triumph_of_democracy }
-
+   mutually_exclusive = {focus = XSS_nubu}
 
     completion_reward = {
         
@@ -529,6 +658,9 @@ country_event = {
        target = XRM
         type = annex_everything
             }
+        
+        
+        hidden_effect = { XRM = { load_oob = "XRM"}}
 
         
 
@@ -544,6 +676,7 @@ country_event = {
     icon = GFX_focus_SOV_military_purge
     cost = 2
     prerequisite = { focus = XSS_finish_war_on_romansh }
+    available = {XRM = {exists = no}}
 
 
 

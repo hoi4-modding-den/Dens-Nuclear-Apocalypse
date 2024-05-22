@@ -366,5 +366,21 @@ corps_commander = {
 		}
 	}
 
+	XSS_konig = {
+		name = "Lyan König"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SPR_jose_diaz"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { compassionate_commoner nuclear_enthusiast liberal_journalist}
+			expire = "3000.9.9.9"
+			id = -1
+		}
+
+	}
+
 
 }
