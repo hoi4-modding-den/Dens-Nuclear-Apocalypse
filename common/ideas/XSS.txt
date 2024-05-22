@@ -156,7 +156,27 @@ ideas = {
            removal_cost = -1
             picture = ARG_military_government
             modifier = {
-               experience_gain_army = 0.05   
+               experience_gain_army = 0.5   
+            }
+
+        }
+        XSS_joint_army_2 = {
+           removal_cost = -1
+            picture = ARG_military_government
+            modifier = {
+               experience_gain_army = 0.1   
+            }
+
+        }
+        XSS_czi = {
+           removal_cost = -1
+            picture = jap_supremacy_of_will
+            modifier = {
+               political_power_gain = -0.15
+               research_speed_factor = 0.15
+               experience_gain_air_factor = 0.05
+               land_doctrine_cost_factor = -0.05
+               nuclear_production_factor = 0.1
             }
 
         }

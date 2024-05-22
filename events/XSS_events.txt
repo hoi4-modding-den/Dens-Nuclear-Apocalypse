@@ -58,5 +58,63 @@ country_event = {
     }
 }
 
+################# B.E.Z #############################
+
+country_event = {
+    id = XSS_test_event.4
+    title = XSS_test_event.4.t
+    picture = GFX_report_event_soviet_japanese_pact
+    desc = XSS_test_event.4.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.4.a
+        XSS = { add_ideas = {BEZ_membership} }
+        
+    }
+    option = {
+        name = XSS_test_event.4.b
+        
+    }
+}
+
+#############Europe military training###################
+country_event = {
+    id = XSS_test_event.5
+    title = XSS_test_event.5.t
+    picture = GFX_report_event_yugoslavian_cavalry
+    desc = XSS_test_event.5.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = XSS_test_event.5.a
+        trigger = {
+            NOT = {tag = LIB}
+        }
+        add_ideas = {XSS_joint_army_2}
+        
+    }
+    option = {
+        name = XSS_test_event.5.b
+        trigger = {
+            NOT = {tag = LIB}
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.5.c
+        trigger = {
+            tag = LIB
+        }
+        
+    }
+}
+
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
 ### tak robie te zajebane gówno pierwszy raz i mam ochote jebnąc magika ######################
