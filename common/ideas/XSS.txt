@@ -127,6 +127,21 @@ ideas = {
 
             }
         }
+
+        XRM_romansh_spirit = {
+           removal_cost = -1
+            picture = ger_revive_the_kaiserreich
+            modifier = {
+
+                conscription = 0.1
+                surrender_limit = 1
+            }
+                targeted_modifier = {
+                tag = XSS
+                 attack_bonus_against = 0.15
+                defense_bonus_against = 0.25
+                }
+        }
     }
 
 }

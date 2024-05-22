@@ -266,15 +266,15 @@ country = {
 
     completion_reward = {
         
-        add_popularity = {
-        ideology = fascism
-        popularity = -0.05
-                }
-        add_political_power = 150
-        add_stability = 0.05
         151 = {
             set_demilitarized_zone = no
+            transfer_state_to = XRM
         }
+        declare_war_on = {
+       target = XRM
+        type = annex_everything
+            }
+
         
 
         }

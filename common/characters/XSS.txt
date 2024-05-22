@@ -317,4 +317,29 @@ corps_commander = {
 		}
 	}
 
+#################### Romansh #####################
+	XRM_bohr = {
+		name = "Alexi Bohr"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_konstantin_rodzayevsky"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+corps_commander = {
+    skill = 1
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 1
+    logistics_skill = 1
+}
+
+	}
+################# Back to normal ################################
+
 }

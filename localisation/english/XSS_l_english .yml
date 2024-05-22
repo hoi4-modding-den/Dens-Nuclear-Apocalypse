@@ -3,6 +3,13 @@
  XSS_DEF:0 "Switzerland"
  XSS_ADJ:0 "Swiss"
 
+ XRM:0 "Romanchia"
+ XRM_DEF:0 "Romanchia"
+ XRM_ADJ:0 "Romansh"
+
+ XRM_fascism_party:0 "Grüne Armee"
+ XRM_fascism_party_long:0 "Grüne Armee"
+
  XSS_communism_party:0 "KP/SSA/RA"
  XSS_communism_party_long:0 "Kommunistische Partei/Schweizerische Sozialisten und Arbeitergewerkschaft/Rote Armee"
 
@@ -161,3 +168,8 @@ XSS_tank_exp_desc:0 "Switzerland will benefit from armor divisions for quick res
 
 XSS_finish_war_on_romansh:0 "Finish war on Romansh"
 XSS_finish_war_on_romansh_desc:0 "Romansh language and population were killed. It's time to finish occupation."
+
+VICTORY_POINTS_11601:0 "Schwyz"
+
+XRM_romansh_spirit:0 "Romansh spirit"
+XRM_romansh_spirit_desc:0 "FREEEEEEEEEEEEEEEEEEEEEEEEEDOM"
