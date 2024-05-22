@@ -14,6 +14,15 @@ bookmarks = {
 		"XSS" = {
 			ideology = democratic
 			history = "PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS "
+			focuses = {
+				XSS_alpine_federation_through_force
+				XSS_join_bez
+				XSS_alpine_federation_through_diplo
+			}
+			ideas = {
+				XSS_neutrality
+				XSS_bank_of_europe
+			}
 		}
 		"XNM" = {
 			ideology = democratic

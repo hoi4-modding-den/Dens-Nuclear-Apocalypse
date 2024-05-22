@@ -301,3 +301,12 @@ XSS_test_event.5.desc:0 "Switzerland sent us proposition to train both of our ar
 XSS_test_event.5.a:0 "Sure"
 XSS_test_event.5.b:0 "Why should we support our enemy"
 XSS_test_event.5.c:0 "Liberia"
+
+XSS_volountarism:0 "Volounteer batalions"
+XSS_volountarism_desc:0 "We must support conflicts in Europe so that the oppressors will be crashed."
+
+XSS_foreign_legion:0 "Swiss Foreign Legion"
+XSS_foreign_legion_desc:0 "We must establish foreign legion to gather volounteers from around the europe and wastelands."
+
+XSS_swi_foreign_legion:0 "Swiss foreign legion"
+XSS_swi_foreign_legion_desc:0 "Criminals, adventure seekers and millitarists behold. Swiss have recreated foreign legion in Bern and they are hiring."

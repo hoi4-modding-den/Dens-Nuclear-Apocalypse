@@ -180,6 +180,16 @@ ideas = {
             }
 
         }
+        XSS_swi_foreign_legion = {
+           removal_cost = -1
+            picture = por_colonial_army
+            modifier = {
+               political_power_gain = -0.15
+               exile_manpower_factor = 0.25
+               weekly_manpower = 25
+            }
+
+        }
     }
 
 }

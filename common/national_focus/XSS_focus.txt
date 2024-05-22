@@ -252,7 +252,7 @@ country_event = {
     x = 41
     y = 10
     icon = GFX_goal_generic_national_unity
-    cost = 5
+    cost = 10
     prerequisite = { focus = XSS_fortifications_in_geneva }
     prerequisite = { focus = XSS_penal_battalions }
  
@@ -262,7 +262,7 @@ country_event = {
 
         add_ideas = {XSS_joint_army_2}
         hidden_effect = {
-        XNM = {
+        every_country = {
         news_event = {
         id = XSS_test_event.5
         days = 5
@@ -270,6 +270,48 @@ country_event = {
              }
             }
         }
+    }
+        
+
+    }
+
+   focus = {
+    id = XSS_volountarism
+    x = 41
+    y = 11
+    icon = GFX_focus_spr_torchbearers_of_tomorrow
+    cost = 5
+    prerequisite = { focus = XSS_join_military_training_europe }
+
+ 
+
+
+    completion_reward = {
+
+        army_experience = 5
+
+
+    }
+        
+
+    }
+   focus = {
+    id = XSS_foreign_legion
+    x = 41
+    y = 12
+    icon = GFX_focus_SWI_aktion_nationaler_widerstand
+    cost = 10
+    prerequisite = { focus = XSS_volountarism }
+
+ 
+
+
+    completion_reward = {
+
+        army_experience = 5
+        add_ideas = {XSS_swi_foreign_legion}
+
+
     }
         
 
