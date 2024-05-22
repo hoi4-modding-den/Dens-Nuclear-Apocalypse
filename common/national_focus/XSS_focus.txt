@@ -260,10 +260,13 @@ country_event = {
 
     completion_reward = {
 
-        add_ideas = {XSS_joint_army_2}
+        add_timed_idea = {
+        idea = XSS_joint_army_2
+        days = 60
+                }  
         hidden_effect = {
         every_country = {
-        news_event = {
+        country_event = {
         id = XSS_test_event.5
         days = 5
         random_hours = 12
@@ -331,6 +334,171 @@ country_event = {
         
         add_ideas = {XSS_czi}
 
+        }
+        
+
+    }
+    focus = {
+    id = XSS_fund_institute
+    x = 50
+    y = 8
+    icon = GFX_goal_generic_scientific_exchange
+    cost = 5
+    prerequisite = { focus = XSS_create_zurich_institute }
+ 
+
+
+    completion_reward = {
+        
+        add_timed_idea = {
+        idea = XSS_education_reform_idea
+        days = 180
+                }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_open_biology_wing
+    x = 51
+    y = 9
+    icon = GFX_focus_ARG_capitalize_the_beef_industry
+    cost = 5
+    prerequisite = { focus = XSS_fund_institute }
+ 
+
+
+    completion_reward = {
+        
+add_resource = {
+    type = oil
+    amount = 5
+    state = 3
+}
+
+        }
+        
+
+    }
+    focus = {
+    id = XSS_novel_shrooms
+    x = 51
+    y = 10
+    icon = GFX_focus_generic_agricultural_subsidies
+    cost = 10
+    prerequisite = { focus = XSS_open_biology_wing }
+ 
+
+
+    completion_reward = {
+        
+        add_political_power = -50
+        add_ideas = {XSS_novel_food_source}
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_reinstate_nobel_prize
+    x = 51
+    y = 11
+    icon = GFX_focus_generic_field_hostpital
+    cost = 10
+    prerequisite = { focus = XSS_novel_shrooms }
+ 
+
+
+    completion_reward = {
+        
+        add_political_power = 50
+
+        }
+        
+
+    }
+
+
+   focus = {
+    id = XSS_nuclear_research
+    x = 50
+    y = 12
+    icon = GFX_focus_wonderweapons
+    cost = 10
+    prerequisite = { focus = XSS_reinstate_nobel_prize }
+    prerequisite = { focus = XSS_novel_deliriant_gas }
+ 
+
+
+    completion_reward = {
+        add_tech_bonus = {
+        bonus = 1
+        uses = 1
+        category = nuclear
+            }   
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_open_chemistry_wing
+    x = 49
+    y = 9
+    icon = GFX_goal_generic_oil_refinery
+    cost = 5
+    prerequisite = { focus = XSS_fund_institute }
+ 
+
+
+    completion_reward = {
+        
+        add_tech_bonus = {
+        bonus = 1
+        uses = 2
+        category = industry
+            }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_lsd
+    x = 49
+    y = 10
+    icon = GFX_goal_tfv_generic_tech_sharing
+    cost = 10
+    prerequisite = { focus = XSS_open_chemistry_wing }
+ 
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_lsd_idea}
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_novel_deliriant_gas
+    x = 49
+    y = 11
+    icon = GFX_goal_generic_secret_weapon
+    cost = 10
+    prerequisite = { focus = XSS_lsd }
+ 
+
+
+    completion_reward = {
+        
+        add_ideas = {XSS_gas_warfare}
+        
         }
         
 

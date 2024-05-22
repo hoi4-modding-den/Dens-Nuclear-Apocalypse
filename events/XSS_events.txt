@@ -82,10 +82,10 @@ country_event = {
 }
 
 #############Europe military training###################
-news_event = {
+country_event = {
     id = XSS_test_event.5
     title = XSS_test_event.5.t
-    picture = GFX_news_event_chinese_soldiers_march
+    picture = GFX_report_event_yugoslavian_cavalry
     desc = XSS_test_event.5.desc
     
     
@@ -95,14 +95,19 @@ news_event = {
         name = XSS_test_event.5.a
         trigger = {
             NOT = {tag = LIB}
+            NOT = {tag = XSS}
         }
-        add_ideas = {XSS_joint_army_2}
+        add_timed_idea = {
+        idea = XSS_joint_army_2
+        days = 60
+                }  
         
     }
     option = {
         name = XSS_test_event.5.b
         trigger = {
             NOT = {tag = LIB}
+            NOT = {tag = XSS}
         }
         
     }
@@ -111,8 +116,15 @@ news_event = {
         trigger = {
             tag = LIB
         }
+    }
+    option = {
+        name = XSS_test_event.5.d
+        trigger = {
+            tag = XSS
+        }
         
     }
+    
 }
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

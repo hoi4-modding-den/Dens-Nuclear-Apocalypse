@@ -190,6 +190,33 @@ ideas = {
             }
 
         }
+        XSS_lsd_idea = {
+           removal_cost = -1
+            picture = LAT_neopaganism_4
+            modifier = {
+               max_command_power = 20
+               ai_focus_aggressive_factor = -0.5
+            }
+
+        }
+        XSS_gas_warfare = {
+           removal_cost = -1
+            picture = ENG_the_war_to_end_all_wars
+            modifier = {
+               offence = 0.20
+
+            }
+
+        }
+        XSS_novel_food_source = {
+           removal_cost = -1
+            picture = ARG_argentine_beef
+            modifier = {
+               monthly_population = 0.02
+
+            }
+
+        }
     }
 
 }
