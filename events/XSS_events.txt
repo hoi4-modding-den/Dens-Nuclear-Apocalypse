@@ -82,10 +82,10 @@ country_event = {
 }
 
 #############Europe military training###################
-country_event = {
+news_event = {
     id = XSS_test_event.5
     title = XSS_test_event.5.t
-    picture = GFX_report_event_yugoslavian_cavalry
+    picture = GFX_news_event_chinese_soldiers_march
     desc = XSS_test_event.5.desc
     
     
