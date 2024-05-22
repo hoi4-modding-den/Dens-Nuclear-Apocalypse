@@ -26,7 +26,7 @@
  
  ### National Spirits ###
  XNM_compromise_of_29:0 "Compromise of 29'"
- XNM_compromise_of_29_desc:0 "WIP" 
+ XNM_compromise_of_29_desc:0 "As the 2230 Elections were coming up, the unstable coalition of the United Democrats of Mercia, also known as the §CUDM§!, fragmented as each faction decided to pursue its own interests. Fearing that this could lead to the rise of extremism in the Republic, the §2New Dawn Party§! worked hard to rebuild relations among the bygone partners. However, this effort came at a significant cost, leading to numerous compromises and allowing the conservatives, also known as the §1UC§!, to dictate the majority of terms. Today, the coalition is attempting to regain its strength and counteract its declining influence, though even a minor spark could trigger another major crisis within the coalition." 
  XNM_midlands_protests:0 "Midlands Protests"
  XNM_midlands_protests_desc:0 "WIP" 
  XNM_tensions_on_the_trent:0 "Tensions on the Trent"
@@ -40,3 +40,4 @@
  
  ### Tooltips ###
  bez_membership_idea_tt:0 "\nWhile this national spirit is active, nations around our country will be §Gmore inclined§! to trade with us."
+ compromise_of_29_idea_tt:0 "\nThe fragile §CUDM§! coalition may §Rrupture§! if the Compromise of 29' is broken or sidelined in politics."

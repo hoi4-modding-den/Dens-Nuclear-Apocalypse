@@ -27,6 +27,12 @@ bookmarks = {
 		"XNM" = {
 			ideology = democratic
 			history = "hi v2"
+			#focuses = { }
+			ideas = {
+				XNM_compromise_of_29
+				XNM_tensions_on_the_trent
+				XNM_albion_booming_heartland
+			}			
 		}		
 		"XNE" = {
 			ideology = democratic

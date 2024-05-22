@@ -16,6 +16,8 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				political_power_factor = -0.15
+				drift_defence_factor = 0.1
+				custom_modifier_tooltip = compromise_of_29_idea_tt
 			}
 		}
 		XNM_midlands_protests = {
@@ -32,7 +34,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_factor = -0.05				
+				stability_factor = -0.15
+				resistance_activity = 0.10
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+
 			}
 		}
 		XNM_tensions_on_the_trent = {
@@ -49,6 +55,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				war_support_factor = 0.1
+				defensive_war_stability_factor = 0.3
 			}
 		}
 		XNM_undergoing_army_modernization = {
