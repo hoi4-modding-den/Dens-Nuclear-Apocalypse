@@ -4,7 +4,7 @@ state = {
 	name = "STATE_115"
 
 	history = {
-		owner = XRE
+		owner = XSI
 		victory_points = {
 			10074 12 
 		}
@@ -40,7 +40,7 @@ state = {
 			}
 
 		}
-		add_core_of = XRE
+		add_core_of = XSI
 
 	}
 

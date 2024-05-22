@@ -11,9 +11,9 @@ state = {
 	}
 
 	history = {
-		owner = XRE 
+		owner = LIB 
 		victory_points = {
-			819 20 
+			819 7 
 		}
 		buildings = {
 			infrastructure = 3
@@ -25,7 +25,7 @@ state = {
 				naval_base = 6
 			}
 		}
-		add_core_of = XRE
+		add_core_of = LIB
 	}
 
 	provinces = {
