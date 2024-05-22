@@ -5,8 +5,8 @@ manpower=331382
 	state_category = town
 
 	history = {
-		owner = LIB # DEN
-		#add_core_of = DEN
+		owner = XDK # DEN
+		add_core_of = XDK
 		victory_points = {
 			3325 5 
 		}

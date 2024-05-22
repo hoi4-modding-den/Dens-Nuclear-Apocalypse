@@ -18,6 +18,10 @@ XSS = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
 }
+XJY = {
+	color = rgb { 96 147 87 }
+	color_ui = rgb { 96 147 87 }
+}
 XNI = {
 	color = rgb { 206 130 95 }
 	color_ui = rgb { 206 130 95 }
