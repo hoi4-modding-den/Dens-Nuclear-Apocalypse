@@ -2,9 +2,9 @@
 	id = XNE_focus
 	
 	country = {
-		factor = 1
+		factor = 0
 		modifier = {
-			add = 100
+			add = 10
 			tag = XNE
 		}
 	}
@@ -13,33 +13,29 @@
 	reset_on_civilwar = no
 
 	initial_show_position = {
-		#focus = 
+		focus = XNE_chamberlains_speech
 	}
 	
 	focus = {
-		id = XNE_test
-		#icon = GFX_
-		x = 2
+		id = XNE_chamberlains_speech
+		icon = GFX_goal_generic_propaganda
+
+		x = 6
 		y = 0
 
-		cost = 10
+		cost = 12
 
-		available = {
-			NOT = {
-				any_state = {
-					XNE_is_state = yes
-					NOT = { is_core_of = XNE }
-				}
-			}
-		}
+		available = {}
 		bypass = {}
 		
+		cancelable = no
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			country_event = XNE_focus.1
+			XNE_gain_conservative_support = yes
 		}
 		
 		ai_will_do = {

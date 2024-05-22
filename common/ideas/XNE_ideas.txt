@@ -1,1 +1,83 @@
-﻿
+ideas = {
+
+	country = {
+		XNE_fascism_rising = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				fascism_drift = 0.01
+			}
+			
+			on_remove = {
+				country_event = XNE_support.1
+			}
+		}
+		XNE_neutrality_rising = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				neutrality_drift = 0.01
+			}
+			
+			on_remove = {
+				country_event = XNE_support.2
+			}
+		}
+		XNE_liberal_rising = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = -0.12
+			}
+			
+			on_remove = {
+				country_event = XNE_support.3
+			}
+		}
+		XNE_communism_rising = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				communism_drift = 0.01
+			}
+			
+			on_remove = {
+				country_event = XNE_support.4
+			}
+		}
+		
+	}
+
+}

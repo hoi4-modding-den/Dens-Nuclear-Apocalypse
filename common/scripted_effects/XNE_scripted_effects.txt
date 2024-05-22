@@ -1,0 +1,187 @@
+#Remember to change the tooltips if the effects are changed
+#State scope. Prev is target country.
+XNE_check_popular_support = {
+	if = {
+		limit = { check_variable = { XNE_fascism_support > 0.5 } }
+		add_stability = -0.02
+		add_war_support = 0.03
+		if = {
+			limit = { NOT = { has_idea = XNE_fascism_rising } }
+			add_timed_idea = {
+				idea = XNE_fascism_rising
+				days = 28
+			}
+		}
+	}
+	else_if = {
+		limit = { check_variable = { XNE_neutrality_support > 0.5 } }
+		add_stability = -0.02
+		add_war_support = 0.03
+		if = {
+			limit = { NOT = { has_idea = XNE_neutrality_rising } }
+			add_timed_idea = {
+				idea = XNE_neutrality_rising
+				days = 28
+			}
+		}
+	}
+	else_if = {
+		limit = { check_variable = { XNE_conservative_support > 0.5 } }
+		add_stability = 0.05
+		add_war_support = -0.05
+	}
+	else_if = {
+		limit = { check_variable = { XNE_liberal_support > 0.5 } }
+		add_stability = -0.02
+		add_political_power = -35
+		if = {
+			limit = { NOT = { has_idea = XNE_liberal_rising } }
+			add_timed_idea = {
+				idea = XNE_liberal_rising
+				days = 28
+			}
+		}
+	}
+	else_if = {
+		limit = { check_variable = { XNE_communism_support > 0.5 } }
+		add_stability = -0.05
+		if = {
+			limit = { NOT = { has_idea = XNE_communism_rising } }
+			add_timed_idea = {
+				idea = XNE_communism_rising
+				days = 28
+			}
+		}
+	}
+	else = {
+		add_stability = -0.025
+		if = {
+			limit = { NOT = { has_idea = XNE_fascism_rising } }
+			add_timed_idea = {
+				idea = XNE_fascism_rising
+				days = 28
+			}
+		}
+	}
+}
+
+XNE_gain_fascism_support = {
+	custom_effect_tooltip = XNE_gain_fascism_support
+	add_to_variable = {
+		var = XNE_fascism_support
+		value = 0.05
+	}
+	subtract_from_variable = {
+		var = XNE_neutrality_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_conservative_support
+		value = 0.02
+	}
+	subtract_from_variable = {
+		var = XNE_liberal_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_communism_support
+		value = 0.01
+	}
+	hidden_effect = { XNE_check_popular_support = yes }
+}
+XNE_gain_neutrality_support = {
+	custom_effect_tooltip = XNE_gain_neutrality_support
+	add_to_variable = {
+		var = XNE_neutrality_support
+		value = 0.04
+	}
+	subtract_from_variable = {
+		var = XNE_fascism_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_conservative_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_liberal_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_communism_support
+		value = 0.01
+	}
+	hidden_effect = { XNE_check_popular_support = yes }
+}
+XNE_gain_conservative_support = {
+	custom_effect_tooltip = XNE_gain_conservative_support
+	add_to_variable = {
+		var = XNE_conservative_support
+		value = 0.04
+	}
+	subtract_from_variable = {
+		var = XNE_neutrality_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_fascism_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_liberal_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_communism_support
+		value = 0.01
+	}
+	hidden_effect = { XNE_check_popular_support = yes }
+}
+XNE_gain_liberal_support = {
+	custom_effect_tooltip = XNE_gain_liberal_support
+	add_to_variable = {
+		var = XNE_liberal_support
+		value = 0.04
+	}
+	subtract_from_variable = {
+		var = XNE_neutrality_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_conservative_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_fascism_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_communism_support
+		value = 0.01
+	}
+	hidden_effect = { XNE_check_popular_support = yes }
+}
+XNE_gain_communism_support = {
+	custom_effect_tooltip = XNE_gain_communism_support
+	add_to_variable = {
+		var = XNE_communism_support
+		value = 0.05
+	}
+	subtract_from_variable = {
+		var = XNE_neutrality_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_conservative_support
+		value = 0.02
+	}
+	subtract_from_variable = {
+		var = XNE_liberal_support
+		value = 0.01
+	}
+	subtract_from_variable = {
+		var = XNE_fascism_support
+		value = 0.01
+	}
+	hidden_effect = { XNE_check_popular_support = yes }
+}
