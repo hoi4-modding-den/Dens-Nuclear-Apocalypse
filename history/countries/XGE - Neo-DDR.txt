@@ -56,7 +56,22 @@ if = {
 
 recruit_character = XGE_erich_honecker
 
+XGE = {
+	set_variable = {
+		XGE_cc_pp_factor = -0.1
+	}
+	set_variable = {
+		XGE_cc_research_speed_variable = 0.1
+	}
+	set_variable = {
+		XGE_cc_stability_factor_variable = -0.05
+	}
+	set_variable = {
+		XGE_cc_war_support_factor_variable = -0.05
+	}
+}
 
+add_dynamic_modifier = { modifier = XGE_computer_clique }
 
 
 set_politics = {
