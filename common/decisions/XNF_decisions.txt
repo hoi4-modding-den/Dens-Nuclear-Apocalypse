@@ -1,0 +1,89 @@
+XNF_spreading_support_cat = {
+	XNF_spread_monarchy_support = {
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = XNF
+				is_core_of = XNF
+			}
+		}
+	}
+}
+XNF_rebuilding_france_cat = {
+	XNF_build_up_vp = {
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = XNF
+				NOT = {
+					check_variable = {
+						vpsize > 14
+					}
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				add_to_variable = { vpsize = 2 }
+				XNF_add_to_vp = yes
+			}
+		}
+	}
+	XNF_core_state = {
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				DEN_is_french_state = yes
+				is_owned_by = XNF
+				check_variable = {
+					vpsize > 5
+				}
+				NOT = {
+					is_core_of = XNF
+				}
+			}
+		}
+		complete_effect = {
+			add_state_core = FROM
+		}
+	}
+	XNF_move_capital = {
+		state_target = yes
+		target_trigger = {
+			capital_scope ={
+				set_temp_variable = { temp_vpsize = vpsize }
+			}
+			FROM = {
+				is_owned_by = XNF
+				is_core_of = XNF
+				check_variable = {
+					vpsize > temp_vpsize
+				}
+			}
+		}
+		complete_effect = {
+			set_capital = {state = FROM}
+		}
+	}
+}
+XNF_loyalist_royalty_cat = {
+	XNF_build_palace_here = {
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = XNF
+				is_core_of = XNF
+				check_variable = {
+					vpsize > 14
+				}
+				check_variable = {
+					vpsize < 20
+				}
+			}
+		}
+		complete_effect = {
+			FROM = { add_to_variable = { vpsize = 5 } }
+			XNF_add_to_vp = yes
+		}
+	}
+}
