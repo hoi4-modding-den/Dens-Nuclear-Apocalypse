@@ -17,6 +17,28 @@
  XTI_subject:0 "$OVERLORDADJ$ $XTI$"
  XTI_subject_DEF:0 "$OVERLORDADJ$ $XTI$"
 
+ NEW_TIR:0 "Neu Tirol"
+ NEW_TIR_DEF:0 "Neu Tirol"
+ NEW_TIR_ADJ:0 "Neuer Tiroler"
+ 
+ ALP_CONF_fascism:0 "Alpenreich"
+ ALP_CONF_fascism_DEF:0 "the Alpenreich"
+ ALP_CONF_democratic:0 "Alpine Confederacy"
+ ALP_CONF_democratic_DEF:0 "the Alpine Confederacy"
+ ALP_CONF_neutrality:0 "Alpine State"
+ ALP_CONF_neutrality_DEF:0 "the Alpine State"
+ ALP_CONF_communism:0 "Alpine Union"
+ ALP_CONF_communism_DEF:0 "the Alpine Union"
+ ALP_CONF_fascism_ADJ:0 "Alpin"
+ ALP_CONF_democratic_ADJ:0 "Alpine"
+ ALP_CONF_neutrality_ADJ:0 "Alpine"
+ ALP_CONF_communism_ADJ:0 "Alpine"
+ ALP_CONF:0 "Alpine Confederacy"
+ ALP_CONF_DEF:0 "Alpine Confederacy"
+ ALP_CONF_ADJ:0 "Alpine"
+ ALP_CONF_subject:0 "$OVERLORDADJ$ $ALP_CONF$"
+ ALP_CONF_subject_DEF:0 "$OVERLORDADJ$ $ALP_CONF$"
+
  XTI_communism_party:0 "KPT"
  XTI_communism_party_long:0 "Kommunistische Partei Tirols"
 
@@ -31,12 +53,38 @@
 
  XTI_reclamation_council_desc:0 "After the bombs were dropped, nuclear winter took over the surface. To survive these horrid conditions, many fled to the bunkers. Some of these people hid deep in the Alps and formed their own societies. After a couple of generations, the first settlers emerged from their hideouts. The goal is to reclaim tirol for the Austrians. However, the council in charge of the vault has unknown loyalties. Only time will tell which direction they will lead this new society."
  
+ ### IDEAS ###
+ 
+ XTI_new_identity:0 "New Identity"
+ XTI_new_identity_desc:0 "The only way going forward is to embrace our new culture. We have more in common with the people in the Alps than we do with the rest of Austria."
+ XTI_reconstruction:0 "Reconstruction"
+ XTI_reconstruction_desc:0 "Investing into our infrastructure will provide many benefits in the long run."
+ XTI_industrial_rejuvenation:0 "Industrial Rejuvenation"
+ XTI_industrial_rejuvenation_desc:0 "Using what remains of our city, we can refit and revitalize downtown. This process can then be replicated across the country."
+ 
  ### FOCUSES ###
  
  XTI_radio_silence:0 "Radio Silence"
  XTI_radio_silence_desc:0 "Once the people of Tirol emerged from the bunkers, they attempted to reach out to Vienna. Unfortunately, no call has been returned. Are they even alive?"
  XTI_vienna_expedition:0 "Vienna Expedition"
  XTI_vienna_expedition_desc:0 "It's useless to keep chatting over radio. A small group will be sent to Vienna to check for themselves. Our hopes are not high but there might be some survivors."
+ 
+ XTI_the_new_tiroleans:0 "The New Tiroleans"
+ XTI_the_new_tiroleans_desc:0 "Vienna is reduced to rubble. Few survivors lie beyond our lands. There is little point to spend all of our resources on desolate wasteland. It is time for a new generation who doesn't waste time on the past."
+ XTI_the_bridge:0 "The Bridge"
+ XTI_the_bridge_desc:0 "Despite the relatively good condition of the small resort town of Innsbruck, it has still been over 100 years since the last major renovation. Due to this neglect, many of our roads and bridges are crumbling, if not completely gone. Resources must be spent to rebuild our infrastructure."
+ XTI_new_highways:0 "New Highways"
+ XTI_new_highways_desc:0 "The mountainous terrain isolates many communities. To provide prosperity, we must open routes between these settlements."
+ XTI_reopen_prewar_roads:0 "Repave Prewar Roads"
+ XTI_reopen_prewar_roads_desc:0 "Asphalt has a short lifespan when neglected. The cities, once easily navigable, has resembled more of a warzone. These roads must be stripped and repaved throughout the country."
+ XTI_the_inn:0 "The Inn"
+ XTI_the_inn_desc:0 "Despite the desolation, many prewar building remain. Some of these are prime for either scavenging or refitting."
+ XTI_swarovski_plants:0 "Repair Swarovski Plants"
+ XTI_swarovski_plants_desc:0 "Swarovski was once a prominant local glassmaker in the prewar times. If we can get their facilities running again, the economy can start to recover."
+ XTI_ammotec_warehouses:0 "Raid Ammotec Warehouses"
+ XTI_ammotec_warehouses_desc:0 "There are several facilities nearby that contain plenty of guns. Although unideal, we may have to use these weapons to protect our lands."
+ XTI_mobilize_tirol:0 "Mobilize Tirol"
+ XTI_mobilize_tirol_desc:0 "If we expect to maintain our sovereignty, we must start conscripting our men to protect our lands."
  
  ### EVENTS ###
  

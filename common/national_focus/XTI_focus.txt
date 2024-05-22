@@ -119,7 +119,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			country_event = XTI.2
 		}
 	}
 	focus = {
@@ -155,7 +155,8 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			set_cosmetic_tag = NEW_TIR
+			add_ideas = XTI_new_identity
 		}
 	}
 	focus = {
@@ -191,7 +192,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			add_ideas = XTI_reconstruction
 		}
 	}
 	focus = {
@@ -227,7 +228,20 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 3675 11634 673 11618 9633 }
+				start_province = 3675
+				target_province = 9633
+			}
+			add_building_construction = {
+				type = supply_node
+				level = 2
+				instant_build = yes
+				province = 673
+			}
 		}
 	}
 	focus = {
@@ -263,7 +277,20 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			153 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			39 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -299,7 +326,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			add_ideas = XTI_industrial_rejuvenation
 		}
 	}
 	focus = {
@@ -335,7 +362,13 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			153 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -371,7 +404,16 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = XTI
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = XTI
+			}
 		}
 	}
 	focus = {
@@ -410,7 +452,8 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			add_ideas = limited_conscription
+			add_ideas = partial_economic_mobilisation
 		}
 	}
 	focus = {
@@ -510,7 +553,7 @@
 		}
 		
 		bypass = {
-
+			is_in_faction_with = XSS
 		}
 
 		cancel_if_invalid = yes
@@ -519,7 +562,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			create_faction = "Alpine Alliance"
 		}
 	}
 	focus = {
@@ -546,7 +589,7 @@
 		}
 		
 		bypass = {
-
+			is_in_faction_with = XSS
 		}
 
 		cancel_if_invalid = yes
@@ -567,6 +610,41 @@
 		x = 1
 		y = 1
 		relative_position_id = XTI_alpine_alliance
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+			is_in_faction_with = XSS
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_economic_integration
+		icon = GFX_
+		prerequisite = { focus = XTI_invite_swiss }
+		prerequisite = { focus = XTI_invite_lombards }
+		x = 1
+		y = 1
+		relative_position_id = XTI_invite_swiss
 
 		cost = 10
 
@@ -641,6 +719,157 @@
 		x = 2
 		y = 1
 		relative_position_id = XTI_vorarlberg_skirmishes
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_swiss_war
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_unify_the_alps }
+		x = 0
+		y = 1
+		relative_position_id = XTI_unify_the_alps
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XSS
+			}
+		}
+	}
+	focus = {
+		id = XTI_alpine_proclamation
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_swiss_war }
+		x = 0
+		y = 1
+		relative_position_id = XTI_swiss_war
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_cosmetic_tag = ALP_CONF
+			add_political_power = 100
+			add_state_core = 3
+			add_state_core = 845
+			add_state_core = 847
+			add_state_core = 151
+			add_state_core = 846
+		}
+	}
+	focus = {
+		id = XTI_restore_democracy
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_economic_integration focus = XTI_alpine_proclamation }
+		x = 2
+		y = 1
+		relative_position_id = XTI_economic_integration
+		mutually_exclusive = { focus = XTI_strongman_politics }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = XTI_strongman_politics
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_economic_integration focus = XTI_alpine_proclamation }
+		x = -2
+		y = 1
+		relative_position_id = XTI_alpine_proclamation
+		mutually_exclusive = { focus = XTI_restore_democracy }
 
 		cost = 10
 
