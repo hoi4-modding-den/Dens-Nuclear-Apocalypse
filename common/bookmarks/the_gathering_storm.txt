@@ -11,6 +11,10 @@ bookmarks = {
 			ideology = neutrality
 			history = "hi"
 		}
+		"XNM" = {
+			ideology = democracy
+			history = "hi v2"
+		}		
 
 		"---"={
 			history = ":O"
