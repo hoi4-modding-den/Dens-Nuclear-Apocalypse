@@ -34,7 +34,6 @@ set_technology = {
 #copied from base-game USA
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "USA_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
 			basic_small_airframe = 1
@@ -48,7 +47,6 @@ if = {
 			air_torpedoe_1 = 1
 		}
 	else = {
-		set_air_oob = "USA_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			cv_early_fighter = 1
@@ -128,7 +126,7 @@ if = {
 }
 
 add_ideas = {
-	partial_economic_mobilization
+	partial_economic_mobilisation #british spelling augh
 	service_by_requirement #it's a military tag, also intended to offset planned debuffs
 	free_trade
 	#reminder to add planned national spirits
