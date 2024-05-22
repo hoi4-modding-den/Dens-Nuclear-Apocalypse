@@ -48,7 +48,7 @@ XSS_storm_the_council_desc:0 "The democracy is a conservative ideology not up wi
 XSS_leader_of_ssd:0 "Leader of SSD"
 XSS_leader_of_ssd_2:0 "Leader of SSD"
 
-XSS_socdem:0 "SSD"
+XSS_socdem:0 "§tSSD§t"
 XSS_socdem_desc:0 "SSD should take lead of the country."
 
 XSS_maitain_neutrality:0 "Maintain Neutrality"
@@ -214,7 +214,7 @@ XSS_uni_health_desc:0 "No body should be left behind especially in field of heal
 XSS_push_health:0 "Push for Healthcare"
 XSS_push_health_desc:0 "Universal health care should be a universal right in civilized world."
 
-XSS_nubu:0 "NU/BU"
+XSS_nubu:0 "§2NU/BU§2"
 XSS_nubu_desc:0 "Interventionist coalition will bring the new age to Europe."
 
 XSS_partition_from_ssd:0 "Partition from SSD"
@@ -293,7 +293,7 @@ XSS_fortifications_in_geneva_desc:0 "We must protect ourselfs against outsiders.
 XSS_joint_army_2:0 "Joint army training"
 XSS_joint_army_2_desc:0 ""
 
-XSS_join_military_training_europe:0 "European join army training"
+XSS_join_military_training_europe:0 "European joint army training"
 XSS_join_military_training_europe_desc:0 "We should improve our millitary by cooperation with other european states."
 
 XSS_test_event.5.t:0 "Switzerland proposes joint military training"
