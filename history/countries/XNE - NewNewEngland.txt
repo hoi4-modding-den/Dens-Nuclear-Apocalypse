@@ -8,16 +8,22 @@ set_convoys = 5
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "2235.1.15"
+	last_election = "2234.1.15"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 44
+	democratic = 79
 	communism = 5
-	fascism = 28
-	neutrality = 23
+	fascism = 8
+	neutrality = 8
 }
+
+set_variable = { var = XNE_fascism_support value = 0.18 }
+set_variable = { var = XNE_neutrality_support value = 0.14 }
+set_variable = { var = XNE_conservative_support value = 0.41 }
+set_variable = { var = XNE_liberal_support value = 0.21 }
+set_variable = { var = XNE_communism_support value = 0.06 }
 
 create_country_leader = {
 	name = XNE_winston_chamberlain

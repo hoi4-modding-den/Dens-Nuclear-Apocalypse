@@ -8,12 +8,12 @@ manpower=101680
 		victory_points = {
 			317 3 
 		}
-		owner = LIB # GER
+		owner = XJY # GER
 		buildings = {
 			infrastructure = 3
 			#arms_factory = 1
 		}
-		#add_core_of = GER
+		add_core_of = XJY
 	}
 
 	provinces = {

@@ -206,6 +206,275 @@ country_event = {
     }
 
 
+    focus = {
+    id = XSS_alpine_federation_through_force
+    x = 44
+    y = 8
+    icon = GFX_goal_generic_political_pressure
+    cost = 5
+    prerequisite = { focus = XSS_lay_claim_to_voralburg }
+    mutually_exclusive = {focus = XSS_alpine_federation_through_diplo } 
+    ai_will_do = {
+    base = 0
+    }
+
+    completion_reward = {
+        
+        39 = {
+
+            add_claim_by = XSS
+
+        }
+        153 = {
+
+            add_claim_by = XSS
+
+        }
+        159 = {
+
+            add_claim_by = XSS
+
+        }
+        850 = {
+
+            add_claim_by = XSS
+
+        }
+        160 = {
+
+            add_claim_by = XSS
+
+        }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_unite_the_alps
+    x = 44
+    y = 9
+    icon = GFX_goal_generic_major_war
+    cost = 10
+    prerequisite = { focus = XSS_alpine_federation_through_force }
+
+
+    completion_reward = {
+       declare_war_on = {
+       target = XLV
+        type = annex_everything
+            }   
+       declare_war_on = {
+       target = XTI
+        type = annex_everything
+            } 
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_reorganization_of_cantons
+    x = 44
+    y = 10
+    icon = GFX_focus_SWI_swiss_guiding_principles
+    cost = 10
+    prerequisite = { focus = XSS_unite_the_alps }
+    available = {
+            controls_state = 39
+            controls_state = 153
+            controls_state = 159
+            controls_state = 850
+            controls_state = 160
+    }
+
+
+    completion_reward = {
+        39 = {
+
+            add_core_of = XSS
+
+        }
+        153 = {
+
+            add_core_of = XSS
+
+        }
+        159 = {
+
+            add_core_of = XSS
+
+        }
+        850 = {
+
+            add_core_of = XSS
+
+        }
+        160 = {
+
+            add_core_of = XSS
+
+        }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_proclaim_fed
+    x = 44
+    y = 11
+    icon = GFX_focus_renounce_the_treaty_of_trianon
+    cost = 10
+    prerequisite = { focus = XSS_reorganization_of_cantons }
+
+
+    completion_reward = {
+        set_cosmetic_tag = XSS_alpine
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_alpine_federation_through_diplo
+    x = 46
+    y = 8
+    icon = GFX_goal_generic_major_alliance
+    cost = 5
+    prerequisite = { focus = XSS_lay_claim_to_voralburg }
+    mutually_exclusive = {focus = XSS_alpine_federation_through_force }
+    ai_will_do = {
+    base = 10
+    }
+
+    completion_reward = {
+        
+        create_faction = "Alpine Union"
+
+        }
+        
+
+    }
+    focus = {
+    id = XSS_invite_tyrol
+    x = 46
+    y = 9
+    icon = GFX_focus_SWI_closer_ties_with_germany
+    cost = 5
+    prerequisite = { focus = XSS_alpine_federation_through_diplo }
+
+
+
+    completion_reward = {
+
+        XTI = {
+        country_event = {
+        id = XSS_test_event.3
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_invite_lombardy
+    x = 46
+    y = 10
+    icon = GFX_focus_ITA_italian_irredentism
+    cost = 5
+    prerequisite = { focus = XSS_invite_tyrol }
+
+
+
+    completion_reward = {
+
+        XLV = {
+        country_event = {
+        id = XSS_test_event.3
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_join_military_training
+    x = 46
+    y = 11
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 5
+    prerequisite = { focus = XSS_invite_lombardy }
+    available = {
+        OR = {
+        AND = {
+        XLV = {is_ally_with = XSS}
+        XTI = {is_ally_with = XSS}
+        }
+        OR = {
+        XLV = {exists = no}
+        XTI = {is_ally_with = XSS}
+
+            }
+        OR = {
+        XLV = {is_ally_with = XSS}
+        XTI = {exists = no}
+
+            }
+        OR = {
+        XLV = {exists = no}
+        XTI = {exists = no}
+
+            }
+        }
+
+    }
+
+
+
+    completion_reward = {
+
+
+        XTI = {
+        add_timed_idea = {
+        idea = XSS_joint_army
+        days = 90
+                }    
+            } 
+        XLV = {
+        add_timed_idea = {
+        idea = XSS_joint_army
+        days = 90
+                }    
+            }
+        
+        add_timed_idea = {
+        idea = XSS_joint_army
+        days = 90
+                } 
+
+
+        }
+        
+
+    }
+
+
 ############## Socdem ####################################
 
     focus = {
@@ -447,7 +716,7 @@ country_event = {
     id = XSS_push_health
     x = 40
     y = 8
-    icon = GFX_goal_generic_consumer_goods
+    icon = GFX_focus_generic_field_hostpital
     cost = 10
     prerequisite = { focus = XSS_fortess_zurich }
 

@@ -1,1 +1,106 @@
-#add_namespace = XNE_event
+add_namespace = XNE_focus
+add_namespace = XNE_support
+
+# Fascism Rising
+country_event = {
+	id = XNE_support.1
+	title = XNE_support.1.title
+	desc = XNE_support.1.desc
+	picture = GFX_report_event_ast_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_support.1.a
+		ai_chance = { factor = 5 }
+		
+	}
+	
+	option = {
+		name = XNE_support.1.b
+		ai_chance = { factor = 3 }
+		
+	}
+}
+
+# Monarchy Rising
+country_event = {
+	id = XNE_support.2
+	title = XNE_support.2.title
+	desc = XNE_support.2.desc
+	picture = GFX_report_event_bul_muraviev_protest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_support.2.a
+		ai_chance = { factor = 5 }
+		
+	}
+	
+	option = {
+		name = XNE_support.2.b
+		ai_chance = { factor = 3 }
+		
+	}
+}
+
+# Liberalism Rising
+country_event = {
+	id = XNE_support.3
+	title = XNE_support.3.title
+	desc = XNE_support.3.desc
+	picture = GFX_report_event_communist_leader
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_support.3.a
+		ai_chance = { factor = 6 }
+		
+	}
+	
+	option = {
+		name = XNE_support.3.b
+		ai_chance = { factor = 2 }
+		
+	}
+}
+
+# Communism Rising
+country_event = {
+	id = XNE_support.4
+	title = XNE_support.4.title
+	desc = XNE_support.4.desc
+	picture = GFX_report_event_generic_communist_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_support.4.a
+		ai_chance = { factor = 5 }
+		
+	}
+	
+	option = {
+		name = XNE_support.4.b
+		ai_chance = { factor = 3 }
+		
+	}
+}
+
+# Chamberlain Speech
+country_event = {
+	id = XNE_focus.1
+	title = XNE_focus.1.title
+	desc = XNE_focus.1.desc
+	picture = GFX_report_event_imperial_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_focus.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+}

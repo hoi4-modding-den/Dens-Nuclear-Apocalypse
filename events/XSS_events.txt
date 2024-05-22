@@ -36,6 +36,27 @@ news_event = {
     }
 
 }
+###############Tyrol fed##############################
+country_event = {
+    id = XSS_test_event.3
+    title = XSS_test_event.3.t
+    picture = GFX_report_event_bunker_01
+    desc = XSS_test_event.3.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.3.a
+        XSS = { add_to_faction = ROOT }
+        
+    }
+    option = {
+        name = XSS_test_event.3.b
+        
+    }
+}
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
 ### tak robie te zajebane gówno pierwszy raz i mam ochote jebnąc magika ######################
