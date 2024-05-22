@@ -26,7 +26,7 @@ Nuclear war has set the world back 300 years, now in the year 2236 they are back
 | --- | ---------------- |---------------------|
 | XAD | IWillExplode     | i_will_explode_     |
 | XAP | MouldedMind      | carrera075          |
-| XAR | Durangg          | durangoose          |
+| XAR | Durangq          | durangoose          |
 | XCT | Furiousky        | furiousky           |
 | XNM | Furiousky        | furiousky           |
 | XTY | Furiousky        | furiousky           |
