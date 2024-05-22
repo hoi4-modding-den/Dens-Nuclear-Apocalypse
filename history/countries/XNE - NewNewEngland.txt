@@ -26,12 +26,72 @@ set_variable = { var = XNE_liberal_support value = 0.21 }
 set_variable = { var = XNE_communism_support value = 0.06 }
 
 create_country_leader = {
+	name = XNE_king_henry_x
+	desc = XNE_king_henry_x_desc
+	picture = GFX_Portrait_XNE_monarchist
+	expire = "1.1.1"
+	ideology = XNE_party_monarchism
+	traits = {
+		XNE_illegitimate_monarch
+	}
+}
+set_party_name = {
+    ideology = neutrality
+    long_name = XNE_party_monarchism_party_long
+    name = XNE_party_monarchism_party
+}
+create_country_leader = {
+	name = XNE_john_cooper
+	desc = XNE_john_cooper_desc
+	picture = GFX_Portrait_XNE_liberalism
+	expire = "1.1.1"
+	ideology = XNE_party_liberalism
+	traits = {
+		liberal_democratic_paragon
+	}
+}
+create_country_leader = {
 	name = XNE_winston_chamberlain
 	desc = XNE_winston_chamberlain_desc
-	picture = GFX_Portrait_Britain_Generic_land_2
+	picture = GFX_Portrait_XNE_conservative
 	expire = "1.1.1"
 	ideology = conservatism
 	traits = {
 		XNE_conservative_traditionalist
 	}
+}
+set_party_name = {
+    ideology = democratic
+    long_name = XNE_conservatism_party_long
+    name = XNE_conservatism_party
+}
+create_country_leader = {
+	name = XNE_jesse_smith
+	desc = XNE_jesse_smith_desc
+	picture = GFX_Portrait_XNE_fascism
+	expire = "1.1.1"
+	ideology = rexism
+	traits = {
+		nationalist_journalist
+	}
+}
+set_party_name = {
+    ideology = fascism
+    long_name = XNE_rexism_party_long
+    name = XNE_rexism_party
+}
+create_country_leader = {
+	name = XNE_oswald_joyce
+	desc = XNE_oswald_joyce_desc
+	picture = GFX_Portrait_XNE_communist
+	expire = "1.1.1"
+	ideology = anti_revisionism
+	traits = {
+		XNE_young_trade_unionist
+	}
+}
+set_party_name = {
+    ideology = communism
+    long_name = XNE_anti_revisionism_party_long
+    name = XNE_anti_revisionism_party
 }

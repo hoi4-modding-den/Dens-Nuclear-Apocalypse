@@ -10,5 +10,25 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	XNE_illegitimate_monarch = {
+		random = no
+		neutrality_drift = 0.01
+		stability_factor = -0.10
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	XNE_young_trade_unionist = {
+		random = no
+		sprite = 13
+		industrial_capacity_factory = 0.03
+		production_speed_buildings_factor = 0.03
+		stability_factor = 0.03
+		political_power_factor = -0.25
+	}
 
 }
