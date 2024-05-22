@@ -1,0 +1,33 @@
+
+add_namespace = XTI
+country_event = {
+    id = XTI.1
+    title = XTI.1.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XTI.1.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XTI.1.a
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}
+
+country_event = {
+    id = XTI.2
+    title = XTI.2.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XTI.2.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XTI.2.a
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}

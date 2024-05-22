@@ -30,3 +30,20 @@
  XTI_democratic_party_long:0 "Tiroler Volkspartei"
 
  XTI_reclamation_council_desc:0 "After the bombs were dropped, nuclear winter took over the surface. To survive these horrid conditions, many fled to the bunkers. Some of these people hid deep in the Alps and formed their own societies. After a couple of generations, the first settlers emerged from their hideouts. The goal is to reclaim tirol for the Austrians. However, the council in charge of the vault has unknown loyalties. Only time will tell which direction they will lead this new society."
+ 
+ ### FOCUSES ###
+ 
+ XTI_radio_silence:0 "Radio Silence"
+ XTI_radio_silence_desc:0 "Once the people of Tirol emerged from the bunkers, they attempted to reach out to Vienna. Unfortunately, no call has been returned. Are they even alive?"
+ XTI_vienna_expedition:0 "Vienna Expedition"
+ XTI_vienna_expedition_desc:0 "It's useless to keep chatting over radio. A small group will be sent to Vienna to check for themselves. Our hopes are not high but there might be some survivors."
+ 
+ ### EVENTS ###
+ 
+ XTI.1.t:0 "Silence From Vienna"
+ XTI.1.d:0 "'Hello? Hello! This is the head of the vaults of Tirol. Vienna command, are you there?'\n\n...\n\n'Hello...?'"
+ XTI.1.a:0 "Hope for the best. Prepare for the worst."
+ 
+ XTI.2.t:0 "What's Left"
+ XTI.2.d:0 "Even from afar, it is readily apparent that there was little left. What was once a hub of social and political thought with a deep history is now just rubble. After several days of scavenging, the bunker entrances were found... open. It seems that they were either blown off or the survivors left many years too soon. Either way, whoever was once here is no longer alive."
+ XTI.2.a:0 "What now?"

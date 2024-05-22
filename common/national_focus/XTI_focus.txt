@@ -22,7 +22,7 @@
 #		id = PRC_
 #		icon = GFX_
 #		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
+#		#mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
 #		relative_position_id = 
@@ -56,11 +56,11 @@
 	
 	focus = {
 		id = XTI_radio_silence
-		icon = GFX_
+		icon = GFX_focus_SWE_radiotjanst
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 1
 
 #		ai_will_do = {
 #			factor = 24
@@ -83,20 +83,20 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			
+			country_event = XTI.1
 		}
 	}
 	focus = {
 		id = XTI_vienna_expedition
-		icon = GFX_
+		icon = GFX_focus_ARG_march_to_la_casa_rosada
 		
 		prerequisite = { focus = XTI_radio_silence }
-		mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = XTI_radio_silence
 
-		cost = 10
+		cost = 4
 
 #		ai_will_do = {
 #			factor = 24
@@ -124,7 +124,7 @@
 	}
 	focus = {
 		id = XTI_the_new_tiroleans
-		icon = GFX_
+		icon = GFX_focus_SMB_a_land_of_mountains
 		
 		prerequisite = { focus = XTI_vienna_expedition }
 		mutually_exclusive = { focus = XTI_the_reclamationists }
@@ -163,7 +163,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_the_new_tiroleans }
-		mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = -2
 		y = 1
 		relative_position_id = XTI_the_new_tiroleans
@@ -199,7 +199,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_the_bridge }
-		mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = XTI_the_bridge
@@ -235,7 +235,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_the_bridge }
-		mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = XTI_the_bridge
@@ -271,7 +271,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_the_new_tiroleans }
-		mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 2
 		y = 1
 		relative_position_id = XTI_the_new_tiroleans
@@ -307,7 +307,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_the_inn }
-		mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = XTI_the_inn
@@ -343,7 +343,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_the_inn }
-		mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = XTI_the_inn
@@ -382,7 +382,7 @@
 		prerequisite = { focus = XTI_reopen_prewar_roads }
 		prerequisite = { focus = XTI_swarovski_plants }
 		prerequisite = { focus = XTI_ammotec_warehouses }
-		mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = XTI_reopen_prewar_roads
@@ -527,7 +527,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_alpine_alliance }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = XTI_alpine_alliance
@@ -563,7 +563,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_alpine_alliance }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = XTI_alpine_alliance
@@ -670,7 +670,7 @@
 	}
 	focus = {
 		id = XTI_the_reclamationists
-		icon = GFX_
+		icon = GFX_goal_anschluss
 		
 		prerequisite = { focus = XTI_vienna_expedition }
 		mutually_exclusive = { focus = XTI_the_new_tiroleans }
