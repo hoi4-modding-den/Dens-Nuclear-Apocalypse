@@ -9,6 +9,7 @@ tags={
 	"Technologies"
 }
 replace_path="history/states"
+replace_path="common/bookmarks"
 replace_path="map/strategicregions"
 name="Den's Nuclear Apocalypse"
 supported_version="1.14.*"

@@ -4,8 +4,13 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 2236.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "---"
+		default_country = "XNF"
 		default = yes
+
+		"XNF" = {
+			ideology = neutrality
+			history = "hi"
+		}
 
 		"---"={
 			history = ":O"
