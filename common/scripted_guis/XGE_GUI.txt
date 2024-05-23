@@ -6,13 +6,13 @@ scripted_gui = {
 		window_name = "XGE_custom_gui_open_window"
 
 		visible = {
-			always = yes
+			has_country_flag = XGE_custom_gui_enable
 		}
-		triggers = {
-			XGE_custom_gui_menu_Button_visible = {
-				has_country_flag = XGE_custom_gui_enable
-			}
-		}
+		#triggers = {
+		#	XGE_custom_gui_menu_Button_visible = {
+		#		has_country_flag = XGE_custom_gui_enable
+		#	}
+		#}
 		triggers = {
 			XGE_button_bloom_visible = {
 				NOT = { has_country_flag = XGE_remove_bloom }
