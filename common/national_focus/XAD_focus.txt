@@ -1,0 +1,629 @@
+﻿focus_tree = {
+	id = XAD_focus
+	
+	country = {
+		factor = 1
+		modifier = {
+			add = 100
+			tag = XAD
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 0 y = 3000 }
+	
+#	focus = {
+#		id = PRC_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		#mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+	focus = {
+		id = XAD_start_the_casablanca_project
+		icon = GFX_
+		prerequisite = { focus = }
+		mutually_exclusive = { focus =  }
+		x = 2
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 789
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			789 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = XAD_work_on_the_sevilla_projects
+		icon = GFX_
+		prerequisite = { focus = XAD_start_the_casablanca_project }
+		mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 169
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			169 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_develop_tabilina
+		icon = GFX_
+		prerequisite = { focus = XAD_start_the_casablanca_project }
+		mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 179
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_develop_melilla
+		icon = GFX_
+		prerequisite = { focus = XAD_start_the_casablanca_project }
+		mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 173
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			173 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_develop_marakkech
+		icon = GFX_
+		prerequisite = { focus = XAD_start_the_casablanca_project }
+		mutually_exclusive = { focus =  }
+		x = 5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 167
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			167 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_enstablish_the_cataban_west
+		icon = GFX_
+		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
+		mutually_exclusive = { focus =  }
+		x = 1
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 169
+				controls_state = 179
+				controls_state = 789
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			169 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			179 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			789 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_enstablish_the_cataban_east
+		icon = GFX_
+		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
+		mutually_exclusive = { focus =  }
+		x = 3
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 173
+				controls_state = 168
+				controls_state = 167
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			167 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			168 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}	
+			}
+			173 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_develop_the_cities
+		icon = GFX_
+		prerequisite = { focus = XAD_enstablish_the_cataban_east }
+		prerequisite = { focus = XAD_enstablish_the_cataban_west }
+		mutually_exclusive = { focus =  }
+		x = 2
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 179
+				controls_state = 789
+				controls_state = 167
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			179 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			789 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}	
+			}
+			167 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_the_casablanca_airport
+		icon = GFX_
+		prerequisite = { focus = XAD_develop_the_cities }
+		mutually_exclusive = { focus =  }
+		x = 2
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 789
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			789 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_increase_the_gibraltar_tariffs
+		icon = GFX_
+		prerequisite = { focus = XAD_develop_the_cities }
+		mutually_exclusive = { focus =  }
+		x = 4
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 118
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = XAD_increased_tariffs
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = XAD_develop_the_casablanca_university
+		icon = GFX_
+		prerequisite = { focus = XAD_develop_the_cities }
+		mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XAD_invite_swiss_investors
+		icon = GFX_
+		prerequisite = { focus = XAD_develop_the_cities }
+		mutually_exclusive = { focus =  }
+		x = -2
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_ideas = XAD_swiss_investors
+		}
+	}
+	focus = {
+		id = XAD_fund_the_CIAMP
+		icon = GFX_
+		prerequisite = { focus = XAD_develop_the_cities }
+		mutually_exclusive = { focus =  }
+		x = 6
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = XAD_CIAMP
+				days = 92
+			}
+		}
+	}
+}
