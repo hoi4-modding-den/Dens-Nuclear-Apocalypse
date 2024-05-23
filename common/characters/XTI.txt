@@ -16,4 +16,20 @@ characters = {
 		}
 		
 	}
+	XTI_elisa = {
+		name = "Elisa Anzengruber"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XTI_elisa_portrait"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			desc = XTI_elisa_desc
+			traits = {  }
+			expire = "2274.9.9.9"
+			id = -1
+		}
+		
+	}
 }

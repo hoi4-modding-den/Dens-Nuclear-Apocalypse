@@ -1,0 +1,183 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "XGE_custom_gui_open_window"
+		size = { width = 100%% height = 100%% }
+		position = { x = 440 y = 243 }
+		clipping = no
+		
+		buttonType = {
+			name = "XGE_custom_gui_menu_Button"
+			spriteType = "GFX_XGE_open_button"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = XGE_custom_gui_button_loc
+		}
+		iconType = {
+			name = "XGE_button_bloom"
+			spriteType = "GFX_XGE_button_bloom"
+			position = { x = 0 y = 0 }
+			#pdx_tooltip = XGE_bloom_hint_loc
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "XGE_custom_gui_main_window"
+		clipping = no
+		#moveable = yes
+		position = { x = 538 y = -200 }
+		show_position = { x = 538 y = 220 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width = 550 height = 410 }
+		
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		buttonType = {
+			name = "XGE_custom_gui_close"
+			spriteType = "GFX_closebutton"
+			position = { x = 515 y = 2 }
+		}
+		iconType = {
+			name = "XGE_custom_gui_computer_image"
+			spriteType = "GFX_XGE_custom_gui_computer_image"
+			position = { x = 270 y = 85 }
+			scale = 0.5
+			#alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "custom_gui_desc"
+			position = { x = 15 y = 10 }
+			font = "hoi_24header"
+			text = XGE_custom_gui_text
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry"
+			position = { x = 15 y = 65 }
+			font = "hoi_16tooltip3"
+			text = XGE_economy_control_text #will always be true
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+
+			#pdx_tooltip = "XGE_economy_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry_desc"
+			position = { x = 15 y = 85 }
+			font = "hoi_16tooltip3"
+			text = XGE_economy_control_text_desc #cuz nesting loc keys don't work with 
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+
+			#pdx_tooltip = "XGE_economy_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry2"
+			position = { x = 15 y = 130 }
+			font = "hoi_16tooltip3"
+			text = XGE_jurisdiction_control_text #will always be true
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			#pdx_tooltip = "XGE_jurisdiction_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry2_desc"
+			position = { x = 15 y = 150 }
+			font = "hoi_16tooltip3"
+			text = XGE_jurisdiction_control_text_desc #will always be true
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			#pdx_tooltip = "XGE_jurisdiction_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry3"
+			position = { x = 15 y = 195 }
+			font = "hoi_16tooltip3"
+			text = [GetArmyControl]
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			#pdx_tooltip = "XGE_army_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry3_desc"
+			position = { x = 15 y = 215 }
+			font = "hoi_16tooltip3"
+			text = [GetArmyControlDesc]
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			#pdx_tooltip = "XGE_army_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry4"
+			position = { x = 15 y = 260 }
+			font = "hoi_16tooltip3"
+			text = [GetIntelligenceControl]
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			#pdx_tooltip = "XGE_intelligence_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry4_desc"
+			position = { x = 15 y = 280 }
+			font = "hoi_16tooltip3"
+			text = [GetIntelligenceControlDesc]
+			maxWidth = 350
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			#pdx_tooltip = "XGE_intelligence_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry5"
+			position = { x = 15 y = 325 }
+			font = "hoi_16tooltip3"
+			text = [GetTradeControl]
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			#pdx_tooltip = "XGE_intelligence_control_tt"
+		}
+		instantTextboxType = {
+			name = "custom_gui_entry5_desc"
+			position = { x = 15 y = 345 }
+			font = "hoi_16tooltip3"
+			text = [GetTradeControlDesc]
+			maxWidth = 300
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			#pdx_tooltip = "XGE_intelligence_control_tt"
+		}
+		
+	}
+	
+}

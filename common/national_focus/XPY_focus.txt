@@ -1,0 +1,84 @@
+﻿focus_tree = {
+	id = XPY_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XPY
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+    continuous_focus_position = { x = 450 y = 2000 }
+	
+	focus = {
+		id = XPY_heres_to_another_120_years
+		icon = GFX_goal_generic_propaganda
+		x = 10
+		y = 0
+
+		#prerequisite = {}
+		#mutually_exclusive = { }
+		
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_finally_some_progress
+		icon = GFX_goal_support_democracy
+		x = 4
+		y = 0
+
+		#prerequisite = {}
+		#mutually_exclusive = { }
+		
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XPY_glory_to_baphomet
+		icon = GFX_goal_generic_propaganda
+		x = 16
+		y = 0
+
+		#prerequisite = {}
+		#mutually_exclusive = { }
+		
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+}

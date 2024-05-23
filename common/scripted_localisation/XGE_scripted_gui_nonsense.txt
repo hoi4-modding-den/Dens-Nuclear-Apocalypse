@@ -1,0 +1,108 @@
+defined_text = {
+	name = GetArmyControl
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = operating_system_controls_army
+			}
+		}
+		localization_key = XGE_army_control_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = operating_system_controls_army
+		}
+		localization_key = XGE_army_control_text_true
+	}
+}
+defined_text = {
+	name = GetArmyControlDesc
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = operating_system_controls_army
+			}
+		}
+		localization_key = XGE_army_control_text_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = operating_system_controls_army
+		}
+		localization_key = XGE_army_control_text_true_desc
+	}
+}
+defined_text = {
+	name = GetIntelligenceControl
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = operating_system_controls_intelligence
+			}
+		}
+		localization_key = XGE_intelligence_control_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = operating_system_controls_intelligence
+		}
+		localization_key = XGE_intelligence_control_text_true
+	}
+}
+defined_text = {
+	name = GetIntelligenceControlDesc
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = operating_system_controls_intelligence
+			}
+		}
+		localization_key = XGE_intelligence_control_text_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = operating_system_controls_intelligence
+		}
+		localization_key = XGE_intelligence_control_text_true_desc
+	}
+}
+defined_text = {
+	name = GetTradeControl
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = operating_system_controls_trade
+			}
+		}
+		localization_key = XGE_trade_control_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = operating_system_controls_trade
+		}
+		localization_key = XGE_trade_control_text_true
+	}
+}
+defined_text = {
+	name = GetTradeControlDesc
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = operating_system_controls_trade
+			}
+		}
+		localization_key = XGE_trade_control_text_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = operating_system_controls_trade
+		}
+		localization_key = XGE_trade_control_text_true_desc
+	}
+}

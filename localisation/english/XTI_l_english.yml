@@ -52,6 +52,9 @@
  XTI_democratic_party_long:0 "Tiroler Volkspartei"
 
  XTI_reclamation_council_desc:0 "After the bombs were dropped, nuclear winter took over the surface. To survive these horrid conditions, many fled to the bunkers. Some of these people hid deep in the Alps and formed their own societies. After a couple of generations, the first settlers emerged from their hideouts. The goal is to reclaim tirol for the Austrians. However, the council in charge of the vault has unknown loyalties. Only time will tell which direction they will lead this new society."
+ XTI_elisa_desc:0 "The Anzengruber family has deepened their grip into the arisocratic class of Tirol. Starting in the 21st century, their political influence on society has grown evermore. Now that the chance has presented itself, the most prominant member of the Anzengruber family has taken the helm. She is known for her tight grip on politics and preference for loyalty above all else."
+ 
+ XTI_history:0 "WIP"
  
  ### IDEAS ###
  
@@ -61,6 +64,8 @@
  XTI_reconstruction_desc:0 "Investing into our infrastructure will provide many benefits in the long run."
  XTI_industrial_rejuvenation:0 "Industrial Rejuvenation"
  XTI_industrial_rejuvenation_desc:0 "Using what remains of our city, we can refit and revitalize downtown. This process can then be replicated across the country."
+ XTI_aggressive_doctrine:0 "Aggressive Foreign Policy"
+ XTI_aggressive_doctrine_desc:0 "Offense is the best defense. This strategy is tried and true, but our neighbors may not be welcome to this mindset."
  
  ### FOCUSES ###
  
@@ -77,6 +82,8 @@
  XTI_new_highways_desc:0 "The mountainous terrain isolates many communities. To provide prosperity, we must open routes between these settlements."
  XTI_reopen_prewar_roads:0 "Repave Prewar Roads"
  XTI_reopen_prewar_roads_desc:0 "Asphalt has a short lifespan when neglected. The cities, once easily navigable, has resembled more of a warzone. These roads must be stripped and repaved throughout the country."
+ XTI_dig_mines:0 "Dig New Mines"
+ XTI_dig_mines_desc:0 "The prewar mines are currently inoperable since they have collapsed. Instead of digging dry tunnels, we must dig new ones."
  XTI_the_inn:0 "The Inn"
  XTI_the_inn_desc:0 "Despite the desolation, many prewar building remain. Some of these are prime for either scavenging or refitting."
  XTI_swarovski_plants:0 "Repair Swarovski Plants"
@@ -85,6 +92,35 @@
  XTI_ammotec_warehouses_desc:0 "There are several facilities nearby that contain plenty of guns. Although unideal, we may have to use these weapons to protect our lands."
  XTI_mobilize_tirol:0 "Mobilize Tirol"
  XTI_mobilize_tirol_desc:0 "If we expect to maintain our sovereignty, we must start conscripting our men to protect our lands."
+ XTI_demand_vorarlberg:0 "Demand Vorarlberg"
+ XTI_demand_vorarlberg_desc:0 "Skirmishes are risky and bound for escalation. If we demand Vorarlberg first, the dispute could be resolved peacefully... or break out into a full on war."
+ XTI_vorarlberg_skirmishes:0 "Vorarlberg Skirmishes"
+ XTI_vorarlberg_skirmishes_desc:0 "Direct confrontation may be risky. It may be wise to keep the dispute local."
+ 
+ XTI_alpine_alliance:0 "Alpine Alliance"
+ XTI_alpine_alliance_desc:0 "The future of Tirol involves forming a strong alliance to protect our interests. By working with our neighbors, we can ensure future stability."
+ XTI_invite_swiss:0 "Invite the Swiss"
+ XTI_invite_swiss_desc:0 "Switzerland is our twin to the west. We have more in common than apart."
+ XTI_invite_lombards:0 "Invite the Lombards"
+ XTI_invite_lombards_desc:0 "The Lombards to the south are economically vital to us due to their regional power and sea access. If we befriend them now, it will bring us great riches."
+ XTI_economic_integration:0 "Economic Integration"
+ XTI_economic_integration_desc:0 "Now that we are politically tied, it is time to open trade with one another. It will bring great benefit to all partners involved."
+ 
+ XTI_european_ambitions:0 "European Ambitions"
+ XTI_european_ambitions_desc:0 "The EU was a failed project that had great promise. With the lessons of the past learnt, we can avoid the same mistakes and form a successful European alliance."
+ 
+ XTI_unify_the_alps:0 "Unify the Alps"
+ XTI_unify_the_alps_desc:0 "The people of the alps have a common history and struggle. We must confront those who hold our people back."
+ XTI_swiss_war:0 "Liberate the Swiss"
+ XTI_swiss_war_desc:0 "The Swiss people are our brothers. The government is holding them back and draining them of their wealth. We must free our brothers to the west."
+ XTI_alpine_proclamation:0 "The Alpine Proclamation"
+ XTI_alpine_proclamation_desc:0 "Now that the people of the alps are united in arms, it is time to declare a new state. A state that represents all who live in the mountains."
+ 
+ XTI_restore_democracy:0 "Restore Democracy"
+ XTI_restore_democracy_desc:0 "After over 100 years, it is time to put the trust back into the people. We were given the power to rule under times of crisis, but now that society is back on its feet, it is time to step down."
+ 
+ XTI_strongman_politics:0 "Strongman Politics"
+ XTI_strongman_politics_desc:0 "The people need a strong leader in these perilous times. Elisa Anzengruber has deep political experience and the knowhow to keep the country running."
  
  ### EVENTS ###
  
@@ -95,3 +131,14 @@
  XTI.2.t:0 "What's Left"
  XTI.2.d:0 "Even from afar, it is readily apparent that there was little left. What was once a hub of social and political thought with a deep history is now just rubble. After several days of scavenging, the bunker entrances were found... open. It seems that they were either blown off or the survivors left many years too soon. Either way, whoever was once here is no longer alive."
  XTI.2.a:0 "What now?"
+ 
+ XTI.3.t:0 "Tirol Invites us to the Alpine Alliance"
+ XTI.3.d:0 "We have been invited to join the Alpine Alliance. There are several draws to joining, but it is up to us to accept."
+ XTI.3.a:0 "We are brothers in arms."
+ XTI.3.b:0 "It's unwise to tie ourselves diplomatically."
+ 
+ XTI.4.t:0 "First Postwar Elections"
+ XTI.4.d:0 "After both internal and external pressures, the reclamation council has declared that the first elections will be held. The new system will be a parliamentary system with a prime minister at the head. Turnout was expectedly high and the outcome was close, but 3 parties are clearly dominant. The TVP is the moderate christian democracy party. They most resemble the Europe of old and prefer a relatively free market. Overall, they are a moderate conservative party with an anti-socialist stance. The primary left-leaning party is the SPT. They are social democrats who believe in justice and a strong hand in government. Although a declining party in the prewar times, they have successfully rebranded themselves as a more forward-looking party. Finally, the FPT is a right wing populist party who is interventionist and promotes a strong national identity. However, many are concerned about their harsh stances on many cultural issues. The race is still for anyone's taking. After days of counting, the winner is..."
+ XTI.4.a:0 "the Social Democrats"
+ XTI.4.b:0 "the Christian Democrats"
+ XTI.4.c:0 "the National Conservatives"

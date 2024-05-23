@@ -73,6 +73,18 @@ XGE = {
 
 add_dynamic_modifier = { modifier = XGE_computer_clique }
 
+add_ideas = { XGE_computer_clique_dummy_idea } #cleared after start-up
+
+add_ideas = {
+	XGE_system_controls_economy
+	XGE_system_controls_jurisdiction
+	XGE_system_controls_army_false
+	XGE_system_controls_intelligence_false
+	XGE_system_controls_trade_false
+}
+
+set_country_flag = XGE_custom_gui_enable
+
 
 set_politics = {
 	ruling_party = communism

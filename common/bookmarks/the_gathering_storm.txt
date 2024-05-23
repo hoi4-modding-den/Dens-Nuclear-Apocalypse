@@ -38,7 +38,34 @@ bookmarks = {
 			ideology = democratic
 			history = "XNE_bookmark_history"
 		}		
-
+		"XGE" = {
+			ideology = communism
+			history = "XGE_history_desc"
+			#focuses = { }
+			ideas = {
+				XGE_computer_clique_dummy_idea
+			}			
+		}
+		"XAD" = {
+			ideology = neutrality
+			history = "XDA_history"
+			focuses = {
+				
+			}
+			ideas = {
+				XAD_remember_ceuta
+				XAD_impending_communist_coup
+				XAD_devided_lenguage
+			}
+		}
+		"XPY" = {
+			ideology = fascist
+			history = "WIP"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
 		"---"={
 			history = ":O"
 		}
@@ -47,5 +74,5 @@ bookmarks = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
-	}
+	
 }

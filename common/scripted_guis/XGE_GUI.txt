@@ -1,0 +1,48 @@
+scripted_gui = {
+
+	XGE_custom_gui_open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "XGE_custom_gui_open_window"
+
+		visible = {
+			has_country_flag = XGE_custom_gui_enable
+		}
+		#triggers = {
+		#	XGE_custom_gui_menu_Button_visible = {
+		#		has_country_flag = XGE_custom_gui_enable
+		#	}
+		#}
+		triggers = {
+			XGE_button_bloom_visible = {
+				NOT = { has_country_flag = XGE_remove_bloom }
+			}
+		}
+
+		effects = {
+			XGE_custom_gui_menu_Button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = XGE_custom_gui_visible_flag }
+					}
+					set_country_flag = XGE_custom_gui_visible_flag
+				}
+				else = {
+					clr_country_flag = XGE_custom_gui_visible_flag
+				}
+				set_country_flag = XGE_remove_bloom
+			}
+		}
+	}
+	XGE_custom_gui_main_window = {
+		context_type = player_context
+		window_name = "XGE_custom_gui_main_window"
+		visible = { has_country_flag = XGE_custom_gui_visible_flag }
+		
+		effects = {	
+			XGE_custom_gui_close_click = {
+				clr_country_flag = XGE_custom_gui_visible_flag
+			}
+		}
+	}
+}

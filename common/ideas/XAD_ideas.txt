@@ -1,1 +1,64 @@
-﻿
+ideas = {
+	country = {
+		XAD_remember_ceuta = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = chi_war_of_resistance3
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					war_support_factor = -0.25
+					army_core_defence_factor = -0.15
+					communism_drift = 0.01
+				}
+			}
+		XAD_impending_communist_coup = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_communist_army
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_weekly = -0.001
+					communism_drift = 0.02
+				}
+			}
+		XAD_devided_lenguage = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_constitutional_guarantees
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					political_power_cost = 0.5
+				}
+			}
+	}
+}

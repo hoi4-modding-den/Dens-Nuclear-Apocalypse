@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			XGE = { 
+				remove_ideas = { XGE_computer_clique_dummy_idea }
+			}
+		}
+	}	
+}

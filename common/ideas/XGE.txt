@@ -1,0 +1,64 @@
+ideas = {
+	country = {
+		XGE_computer_clique_dummy_idea = {
+			picture = GFX_idea_unknown
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_factor = -0.1
+				research_speed_factor = 0.1
+			}
+		}
+		
+	}
+	hidden_ideas = { 
+		XGE_system_controls_economy = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		XGE_system_controls_jurisdiction = {
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		XGE_system_controls_army_false = {
+			modifier = {
+				army_org_factor = -0.1
+				planning_speed = -0.4
+			}
+		}
+		XGE_system_controls_army = {
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.1
+			}
+		}
+		XGE_system_controls_intelligence_false = {
+			modifier = {
+				civilian_intel_to_others = 40
+				foreign_subversive_activites = 0.4
+			}
+		}
+		XGE_system_controls_intelligence = {
+			modifier = {
+				civilian_intel_to_others = 10
+				foreign_subversive_activites = 0.20
+			}
+		}
+		XGE_system_controls_trade_false = {
+			modifier = {
+				consumer_goods_factor = 0.05
+				trade_opinion_factor = -0.25
+			}
+		}
+		XGE_system_controls_trade = {
+			modifier = {
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+	}
+}
