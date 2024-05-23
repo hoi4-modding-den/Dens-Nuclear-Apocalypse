@@ -686,6 +686,265 @@ add_resource = {
     }
 
     focus = {
+    id = XSS_srodziemie
+    x = 46
+    y = 13
+    icon = GFX_focus_generic_mediterranean_sea_focus
+    cost = 5
+    prerequisite = { focus = XSS_join_bez}
+    prerequisite = { focus = XSS_join_military_training}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+    completion_reward = {
+
+        set_faction_name = "European Union"
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_invite_sicily
+    x = 46
+    y = 14
+    icon = GFX_focus_ITA_southern_industry
+    cost = 10
+    prerequisite = { focus = XSS_srodziemie}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+    completion_reward = {
+
+        XSI = {
+        country_event = {
+        id = XSS_test_event.6
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_invest_in_sicily
+    x = 47
+    y = 15
+    icon = GFX_focus_ITA_southern_industry
+    cost = 5
+    prerequisite = { focus = XSS_invite_sicily}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes XSS ={is_in_faction_with = XSI}}}
+
+
+    completion_reward = {
+
+        115 = {
+            add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+                }
+
+        }
+
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_invite_colonials
+    x = 46
+    y = 16
+    icon = GFX_focus_ITA_bend_the_bars
+    cost = 5
+    prerequisite = { focus = XSS_invite_sicily}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+    completion_reward = {
+
+        XMD = {
+        country_event = {
+        id = XSS_test_event.6
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_invite_napoleon
+    x = 47
+    y = 17
+    icon = GFX_focus_chi_reach_out_to_france
+    cost = 5
+    prerequisite = { focus = XSS_invite_colonials}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+    mutually_exclusive = {focus = XSS_war_napoleon}
+
+    completion_reward = {
+
+        XNF = {
+        country_event = {
+        id = XSS_test_event.6
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_war_napoleon
+    x = 45
+    y = 17
+    icon = GFX_focus_attack_france
+    cost = 5
+    prerequisite = { focus = XSS_invite_colonials}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes XSS ={is_in_faction_with = XMD}}}
+    mutually_exclusive = {focus = XSS_invite_napoleon}
+
+
+    completion_reward = {
+
+        1 = {add_claim_by = XMD}
+        declare_war_on = {
+       target = XNF
+        type = annex_everything
+            }
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_invite_cats
+    x = 46
+    y = 18
+    icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+    cost = 5
+    prerequisite = { focus = XSS_invite_napoleon focus = XSS_war_napoleon}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+    completion_reward = {
+
+        XAD = {
+        country_event = {
+        id = XSS_test_event.6
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_unify_iberia
+    x = 47
+    y = 19
+    icon = GFX_focus_spr_war_of_independence
+    cost = 10
+    prerequisite = { focus = XSS_invite_cats }
+    available = {AND = {is_in_faction = yes is_faction_leader = yes XSS ={is_in_faction_with = XAD}}}
+
+
+
+    completion_reward = {
+
+        declare_war_on = {
+       target = XPY
+        type = annex_everything
+            }
+        declare_war_on = {
+       target = XAR
+        type = annex_everything
+            }
+        165 = {add_claim_by = XAD}            
+        794 = {add_claim_by = XAD}   
+        166 = {add_claim_by = XAD}   
+        176 = {add_claim_by = XAD}   
+        791 = {add_claim_by = XAD}     
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_british_focus
+    x = 46
+    y = 20
+    icon = GFX_focus_eng_the_sun_never_sets
+    cost = 5
+    prerequisite = { focus = XSS_invite_cats }
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+
+    completion_reward = {
+
+        news_event = {
+        id = XSS_test_event.7
+        days = 5
+        random_hours = 12
+            }
+
+
+        }
+
+    }
+
+   focus = {
+    id = XSS_invite_mercia
+    x = 46
+    y = 21
+    icon = GFX_focus_eng_imperial_federation
+    cost = 10
+    prerequisite = { focus = XSS_british_focus }
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+
+    completion_reward = {
+
+        XNM = {
+        country_event = {
+        id = XSS_test_event.6
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+
+        }
+
+    }
+
+    focus = {
     id = XSS_alpine_federation_through_diplo
     x = 46
     y = 8
