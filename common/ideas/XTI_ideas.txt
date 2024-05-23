@@ -59,5 +59,43 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}	
+		XTI_aggressive_doctrine = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				opinion_gain_monthly_factor = -0.25
+			}
+		}
+		XTI_economic_ties = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				trade_opinion_factor = 0.25
+			}
+		}		
 	}
 }	

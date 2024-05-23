@@ -77,6 +77,8 @@
  XTI_new_highways_desc:0 "The mountainous terrain isolates many communities. To provide prosperity, we must open routes between these settlements."
  XTI_reopen_prewar_roads:0 "Repave Prewar Roads"
  XTI_reopen_prewar_roads_desc:0 "Asphalt has a short lifespan when neglected. The cities, once easily navigable, has resembled more of a warzone. These roads must be stripped and repaved throughout the country."
+ XTI_dig_mines:0 "Dig New Mines"
+ XTI_dig_mines_desc:0 "The prewar mines are currently inoperable since they have collapsed. Instead of digging dry tunnels, we must dig new ones."
  XTI_the_inn:0 "The Inn"
  XTI_the_inn_desc:0 "Despite the desolation, many prewar building remain. Some of these are prime for either scavenging or refitting."
  XTI_swarovski_plants:0 "Repair Swarovski Plants"
@@ -85,6 +87,14 @@
  XTI_ammotec_warehouses_desc:0 "There are several facilities nearby that contain plenty of guns. Although unideal, we may have to use these weapons to protect our lands."
  XTI_mobilize_tirol:0 "Mobilize Tirol"
  XTI_mobilize_tirol_desc:0 "If we expect to maintain our sovereignty, we must start conscripting our men to protect our lands."
+ XTI_alpine_alliance:0 "Alpine Alliance"
+ XTI_alpine_alliance_desc:0 "The future of Tirol involves forming a strong alliance to protect our interests. By working with our neighbors, we can ensure future stability."
+ XTI_invite_swiss:0 "Invite the Swiss"
+ XTI_invite_swiss_desc:0 "Switzerland is our twin to the west. We have more in common than apart."
+ XTI_invite_lombards:0 "Invite the Lombards"
+ XTI_invite_lombards_desc:0 "The Lombards to the south are economically vital to us due to their regional power and sea access. If we befriend them now, it will bring us great riches."
+ XTI_economic_integration:0 "Economic Integration"
+ XTI_economic_integration_desc:0 "Now that we are politically tied, it is time to open trade with one another. It will bring great benefit to all partners involved."
  
  ### EVENTS ###
  
@@ -95,3 +105,8 @@
  XTI.2.t:0 "What's Left"
  XTI.2.d:0 "Even from afar, it is readily apparent that there was little left. What was once a hub of social and political thought with a deep history is now just rubble. After several days of scavenging, the bunker entrances were found... open. It seems that they were either blown off or the survivors left many years too soon. Either way, whoever was once here is no longer alive."
  XTI.2.a:0 "What now?"
+ 
+ XTI.3.t:0 "Tirol Invites us to the Alpine Alliance"
+ XTI.3.d:0 "We have been invited to join the Alpine Alliance. There are several draws to joining, but it is up to us to accept."
+ XTI.3.a:0 "We are brothers in arms."
+ XTI.3.b:0 "It's unwise to tie ourselves diplomatically."

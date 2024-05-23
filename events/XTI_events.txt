@@ -39,3 +39,23 @@ country_event = {
         #complete_national_focus = XSS_triumph_of_democracy
     }
 }
+country_event = {
+    id = XTI.3
+    title = XTI.3.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XTI.3.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XTI.3.a
+		XTI = { add_to_faction = ROOT }
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+	option = {
+        name = XTI.3.b
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}
