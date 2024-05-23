@@ -196,11 +196,13 @@ characters = {
 			traits = { mobile_warfare_expert }      # Unspecified cost defaults to 150.
 		}
 	}
+	
+	# ARMY NAVY AND AIR
 	XDA_army_chief_offensive_3 = {
 		name = "Mahmoud Bagheri"
 		portraits = {
 			civilian = {
-				small = "GFX_XDA_mobile_wf"
+				small = "GFX_XDA_army_chief_offensive_3"
 			}
 		}
 		advisor = {
@@ -213,7 +215,7 @@ characters = {
 		name = "Almanzor Azzi"
 		portraits = {
 			civilian = {
-				small = "GFX_XDA_mobile_wf"
+				small = "GFX_XDA_army_chief_defensive_3"
 			}
 		}
 		advisor = {
@@ -226,7 +228,7 @@ characters = {
 		name = "Nasir Amber"
 		portraits = {
 			civilian = {
-				small = "GFX_XDA_mobile_wf"
+				small = "GFX_XDA_army_chief_reform_2"
 			}
 		}
 		advisor = {
@@ -235,6 +237,174 @@ characters = {
 			traits = { army_chief_reform_2 }      # Unspecified cost defaults to 150.
 		}
 	}
+	XDA_navy_chief_reform_2 = {
+		name = "Aharon Amber"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_navy_chief_reform_2"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = XDA_navy_chief_reform_2_idea
+			traits = { navy_chief_reform_2 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_navy_chief_maneuver_3 = {
+		name = "Kateb Abdella"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_navy_chief_maneuver_3"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = XDA_navy_chief_maneuver_3_idea
+			traits = { navy_chief_maneuver_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_navy_fleet_logistics_3 = {
+		name = "Mahmoud Karimi"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_navy_fleet_logistics_3"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = XDA_navy_fleet_logistics_3_idea
+			traits = { navy_fleet_logistics_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	
+	XDA_air_chief_reform_2 = {
+		name = "Cemal Halaby"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_air_chief_reform_2"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = XDA_air_chief_reform_2_idea
+			traits = { air_chief_reform_2 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_air_chief_ground_support_2 = {
+		name = "Ubaid Habeeb"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_air_chief_ground_support_2"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = XDA_air_chief_ground_support_2_idea
+			traits = { air_chief_ground_support_2 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_air_air_combat_training_3 = {
+		name = "Kaeden Kalil"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_air_air_combat_training_3"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = XDA_air_air_combat_training_3_idea
+			traits = { air_air_combat_training_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	
+	
+	#and finally, the high command
+	
+	XDA_army_artillery_2 = {
+		name = "Abbud Ayoob"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_army_artillery_2"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = XDA_army_artillery_2_idea
+			ledger = army
+			traits = { army_artillery_2 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_infantry_2 = {
+		name = "Sariyah Mohamed"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_army_infantry_2"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = XDA_army_infantry_2_idea
+			ledger = army
+			traits = { army_infantry_2 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_commando_3 = {
+		name = "Mansur Safar"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_army_commando_3"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = XDA_army_commando_3_idea
+			ledger = army
+			traits = { army_commando_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_cavalry_3 = {
+		name = "Adil Faraj"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_army_cavalry_3"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = XDA_army_cavalry_3_idea
+			ledger = army
+			traits = { army_cavalry_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_regrouping_2 = {
+		name = "Indalecio Sham"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_army_regrouping_2"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = XDA_army_regrouping_2_idea
+			ledger = army
+			traits = { army_regrouping_2 }      # Unspecified cost defaults to 150.
+		}
+	}
+	XDA_army_logistics_3 = {
+		name = "Kaiden Hossain"
+		portraits = {
+			civilian = {
+				small = "GFX_XDA_army_logistics_3"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = XDA_army_logistics_3_idea
+			ledger = army
+			traits = { army_logistics_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+	
 }
 
 
