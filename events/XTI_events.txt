@@ -71,14 +71,47 @@ country_event = {
     
     option = {
         name = XTI.4.a
+		create_country_leader = {
+			name = "Clara Bauer"
+			desc = "XTI_clara_desc"
+			picture = GFX_portrait_XTI_clara_portrait
+			expire = "2266.9.9.9"
+			ideology = socialism
+			traits = {
+				champion_of_peace_5
+				economic_reformer
+			}
+		}
         #complete_national_focus = XSS_triumph_of_democracy
     }
 	option = {
         name = XTI.4.b
+		create_country_leader = {
+			name = "Leo Schmidt"
+			desc = "XTI_leo_desc"
+			picture = GFX_portrait_XTI_leo_portrait
+			expire = "2258.9.9.9"
+			ideology = conservatism
+			traits = {
+				conservative_grandee
+				staunch_constitutionalist
+			}
+		}
         #complete_national_focus = XSS_triumph_of_democracy
     }
 	option = {
         name = XTI.4.c
+		create_country_leader = {
+			name = "Louis Boltzmann"
+			desc = "XTI_louis_desc"
+			picture = GFX_portrait_XTI_louis_portrait
+			expire = "2283.9.9.9"
+			ideology = populism
+			traits = {
+				conservative_nationalist
+				nationalist_symbol
+			}
+		}
         #complete_national_focus = XSS_triumph_of_democracy
     }
 }
