@@ -38,7 +38,14 @@ bookmarks = {
 			ideology = democratic
 			history = "XNE_bookmark_history"
 		}		
-
+		"XGE" = {
+			ideology = communism
+			history = "XGE_history_desc"
+			#focuses = { }
+			ideas = {
+				XGE_computer_clique_dummy_idea
+			}			
+		}		
 		"---"={
 			history = ":O"
 		}
