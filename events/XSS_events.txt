@@ -28,7 +28,7 @@ news_event = {
     
     
     is_triggered_only = yes
-    fire_only_once = yes
+
     major = yes
     
     option = {
@@ -125,6 +125,51 @@ country_event = {
         
     }
     
+}
+
+########## E U ########################
+
+country_event = {
+    id = XSS_test_event.6
+    title = XSS_test_event.6.t
+    picture = GFX_report_event_bunker_01
+    desc = XSS_test_event.6.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.6.a
+        XSS = { add_to_faction = ROOT }
+        
+    }
+    option = {
+        name = XSS_test_event.6.b
+        
+    }
+}
+
+news_event = {
+    id = XSS_test_event.7
+    title = XSS_test_event.7.t
+    picture = GFX_news_event_009
+    desc = XSS_test_event.7.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = XSS_test_event.7.a
+    }
+    option = {
+        name = XSS_test_event.7.b
+        trigger = {
+            tag = XNM
+        }
+    }
+
 }
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
