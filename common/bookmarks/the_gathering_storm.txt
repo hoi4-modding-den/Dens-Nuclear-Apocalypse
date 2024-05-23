@@ -66,6 +66,20 @@ bookmarks = {
 			ideas = {
 			}
 		}
+		"XTI" = {
+			ideology = neutrality
+			history = "XTI_history"
+			focuses = {
+				XTI_the_new_tiroleans
+				XTI_alpine_proclamation
+				XTI_the_reclamationists
+			}
+			ideas = {
+				XTI_economic_ties
+				XTI_reconstruction
+				XTI_aggressive_doctrine
+			}
+		}
 		"---"={
 			history = ":O"
 		}

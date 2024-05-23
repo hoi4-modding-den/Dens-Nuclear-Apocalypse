@@ -122,8 +122,20 @@
  XTI_restore_democracy:0 "Restore Democracy"
  XTI_restore_democracy_desc:0 "After over 100 years, it is time to put the trust back into the people. We were given the power to rule under times of crisis, but now that society is back on its feet, it is time to step down."
  
+ XTI_SPT_victory:0 "SPT Victory"
+ XTI_SPT_victory_desc:0 "The people have voted for change. We must act upon our promises for a just and fair society."
+ 
+ XTI_TVP_victory:0 "TVP Victory"
+ XTI_TVP_victory_desc:0 "The people need a steady hand in a turbulent world. It's our job to keep the nation afloat."
+ 
+ XTI_FPT_victory:0 "FPT Victory"
+ XTI_FPT_victory_desc:0 "For too long the oligarchs of the vault have stepped on the average citizen's liberties. It is our duty to rid this country of those who hold our nation back."
+ 
  XTI_strongman_politics:0 "Strongman Politics"
  XTI_strongman_politics_desc:0 "The people need a strong leader in these perilous times. Elisa Anzengruber has deep political experience and the knowhow to keep the country running."
+ 
+ XTI_autocratic_state:0 "Age of the Autocrats"
+ XTI_autocratic_state_desc:0 "Now the opportunity has arrived to seize power. If we tighten our hold on the state, we can amass a large quantity of wealth for generations."
  
  ### EVENTS ###
  
