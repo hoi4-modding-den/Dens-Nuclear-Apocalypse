@@ -2,15 +2,15 @@
 	id = XAD_focus
 	
 	country = {
-		factor = 1
+		factor = 0
+		
 		modifier = {
-			add = 100
+			add = 10
 			tag = XAD
 		}
 	}
 	
 	default = no
-	reset_on_civilwar = no
 	
 	continuous_focus_position = { x = 0 y = 3000 }
 	

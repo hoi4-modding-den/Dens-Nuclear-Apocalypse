@@ -8,5 +8,17 @@ spriteTypes = {
 		name = "GFX_portrait_XTI_elisa_portrait"
 		texturefile = "gfx/XTI/XTI_elisa_anzengruber.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_XTI_leo_portrait"
+		texturefile = "gfx/XTI/XTI_leo_schmidt.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XTI_louis_portrait"
+		texturefile = "gfx/XTI/XTI_louis_boltzmann.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XTI_clara_portrait"
+		texturefile = "gfx/XTI/XTI_clara_bauer.dds"
+	}
 
 }
