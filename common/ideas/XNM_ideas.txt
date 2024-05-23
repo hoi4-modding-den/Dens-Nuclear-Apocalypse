@@ -21,7 +21,7 @@ ideas = {
 			}
 		}
 		XNM_midlands_protests = {
-			picture = generic_constitutional_guarantees
+			picture = GFX_idea_XNM_midlands_protests
 			
 			allowed = {
 				always = no
@@ -42,7 +42,7 @@ ideas = {
 			}
 		}
 		XNM_tensions_on_the_trent = {
-			picture = GFX_XNM_tensions_on_the_trent
+			picture = GFX_idea_XNM_tensions_on_the_trent
 			
 			allowed = {
 				always = no
@@ -76,7 +76,7 @@ ideas = {
 			}
 		}
 		XNM_albion_booming_heart = {
-			picture = GFX_XNM_albion_booming_heart
+			picture = GFX_idea_XNM_albion_booming_heart
 			
 			allowed = {
 				always = no
