@@ -1,27 +1,26 @@
+
 state={
 	id=789
 	name="STATE_789"
 
 	history={
-		owner = XAD # SPR
+		owner = XAD
 		victory_points = {
-			875 16
+			875 16 
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			industrial_complex = 1
 
 		}
-		#add_core_of = SPR
 
 	}
 
 	provinces={
-		875 879 950 1090 1192 3810 3871 4095 6744 7198 10111 12083 
+		875 879 950 1090 1192 3810 3871 3953 4095 6744 6832 6896 7198 9778 9828 10111 12081 12083 
 	}
-manpower=952342
+	manpower=952342
 	buildings_max_level_factor=1.000
 	state_category=town
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }

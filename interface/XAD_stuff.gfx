@@ -53,5 +53,69 @@ spriteTypes = {
 		name = "GFX_XDA_sf"
 		texturefile = "gfx/leaders/XAD/portrait_XAD_cat10_small.dds"
 	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_XDA_army_chief_offensive_3"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat11_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_army_chief_defensive_3"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat12_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_army_chief_reform_2"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat13_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_navy_chief_reform_2"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat14_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_navy_chief_maneuver_3"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat15_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_navy_fleet_logistics_3"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat16_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_air_chief_reform_2"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat17_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_air_chief_ground_support_2"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat18_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_air_air_combat_training_3"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat19_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_army_artillery_2"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat20_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_army_infantry_2"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat21_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_army_commando_3"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat22_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_army_cavalry_3"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat23_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_army_regrouping_2"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat24_small.dds"
+	}
+	spriteType = {
+		name = "GFX_XDA_army_logistics_3"
+		texturefile = "gfx/leaders/XAD/portrait_XAD_cat25_small.dds"
+	}
+	
 }
 
