@@ -6,7 +6,10 @@ state={
 	history={
 		owner = XAD
 		victory_points = {
-			875 16 
+			875 15 
+		}
+		victory_points = {
+			6832 5 
 		}
 		buildings = {
 			infrastructure = 3

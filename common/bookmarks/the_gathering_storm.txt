@@ -45,7 +45,19 @@ bookmarks = {
 			ideas = {
 				XGE_computer_clique_dummy_idea
 			}			
-		}		
+		}
+		"XAD" = {
+			ideology = neutrality
+			history = "XDA_history"
+			focuses = {
+				
+			}
+			ideas = {
+				XAD_remember_ceuta
+				XAD_impending_communist_coup
+				XAD_devided_lenguage
+			}
+		}
 		"---"={
 			history = ":O"
 		}
