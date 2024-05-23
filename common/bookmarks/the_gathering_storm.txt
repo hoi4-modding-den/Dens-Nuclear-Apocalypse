@@ -58,14 +58,12 @@ bookmarks = {
 				XAD_devided_lenguage
 			}
 		}
-		"XTI" = {
-			ideology = neutrality
-			history = "XTI_history"
+		"XPY" = {
+			ideology = fascist
+			history = "WIP"
 			focuses = {
-				XTI_the_new_tiroleans
 			}
 			ideas = {
-				XTI_aggressive_doctrine
 			}
 		}
 		"---"={
@@ -76,5 +74,5 @@ bookmarks = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
-	}
+	
 }
