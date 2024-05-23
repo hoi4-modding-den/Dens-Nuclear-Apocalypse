@@ -6,18 +6,18 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_XGE_open_button"
-		texturefile = "gfx/XGE/computer.png"
+		texturefile = "gfx/XGE/computer.dds"
 	}
 	spriteType = {
 		name = "GFX_XGE_custom_gui_computer_image"
-		texturefile = "gfx/XGE/ddr_pc_stylized.png"
+		texturefile = "gfx/XGE/ddr_pc_stylized.dds"
 	}
 	SpriteType = {
 		name = "GFX_XGE_button_bloom"
 		texturefile = "gfx/XGE/computer.png"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/XGE/computer.png"			
+			animationmaskfile = "gfx/XGE/computer.dds"			
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = yes			# yes or no ;)
@@ -30,7 +30,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/XGE/computer.png"			
+			animationmaskfile = "gfx/XGE/computer.dds"			
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = yes			# yes or no ;)
