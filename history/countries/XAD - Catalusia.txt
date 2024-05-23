@@ -10,6 +10,11 @@ set_technology = {
 
 set_convoys = 5
 
+add_ideas = {
+	XAD_remember_ceuta
+	XAD_impending_communist_coup
+	XAD_devided_lenguage
+}
 
 set_politics = {
 	ruling_party = neutrality
@@ -52,6 +57,7 @@ recruit_character = XDA_army_infantry_2
 recruit_character = XDA_army_artillery_2
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 75
+	communism = 15
+	democratic = 10
 }
-
