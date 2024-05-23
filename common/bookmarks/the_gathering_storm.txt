@@ -58,6 +58,14 @@ bookmarks = {
 				XAD_devided_lenguage
 			}
 		}
+		"XPY" = {
+			ideology = fascist
+			history = "WIP"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
 		"---"={
 			history = ":O"
 		}

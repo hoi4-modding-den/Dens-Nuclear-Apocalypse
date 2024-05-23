@@ -11,5 +11,17 @@ characters = {
             ideology = fascism_ideology
         }
     }
+	
+    XPY_jose_dominguez = {
+        name = "Jose Dominguez"
+        portraits = {
+            civilian = {
+                large = "GFX_XPY_portrait_jose_dominguez"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+        }
+    }
 
 }
