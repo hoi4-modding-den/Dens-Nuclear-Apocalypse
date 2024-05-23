@@ -3,12 +3,16 @@ spriteTypes = {
 
 ### Ideas ###
 	spriteType = {
-		name = "GFX_XNM_albion_booming_heart"
+		name = "GFX_idea_XNM_albion_booming_heart"
 		texturefile = "gfx/XNM/XNM_albion_booming_heart.dds"
 	}
 	spriteType = {
-		name = "GFX_XNM_tensions_on_the_trent"
+		name = "GFX_idea_XNM_tensions_on_the_trent"
 		texturefile = "gfx/XNM/XNM_tensions_on_the_trent.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XNM_midlands_protests"
+		texturefile = "gfx/XNM/XNM_midlands_protests.dds"
 	}	
 
 ### Portraits ###
