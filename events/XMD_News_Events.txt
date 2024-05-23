@@ -1,0 +1,34 @@
+﻿###########################
+# Colonist News Events
+###########################
+
+add_namespace = XMD
+
+# First focus of Collonial tree
+news_event = {
+	id = XMD.1
+	title = "Colonists Junta announces its ambitions"
+	desc = Colonists.1.d
+	picture = GFX_Colonists
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A bunch of fools"
+		trigger = {
+			NOT = {
+				TAG = XMD
+			}
+		}
+	}
+	option = {
+		name = "With recognition or withought it, we will prevail!"
+		trigger = { TAG = XMD }
+	}
+}
+
+
+
+

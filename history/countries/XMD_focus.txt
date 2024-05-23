@@ -1,0 +1,393 @@
+﻿focus_tree = {
+	id = XMD_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XMD
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+    
+	#COLONIAL FOCUS TREE
+	
+	focus = {
+		id = XMD_announce_our_ambitions
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		news_event = XMD.1
+		}
+	}
+	
+	focus = {
+		id = XMD_prepare_for_the_first_expedition
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+
+		prerequisite = { focus = XMD_announce_our_ambitions }
+		mutually_exclusive = { }
+		relative_position_id = XMD_announce_our_ambitions
+		
+		cost = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_expedition_to_the_lands_of_first_colonizers
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 1
+
+		prerequisite = { focus = XMD_prepare_for_the_first_expedition }
+		relative_position_id = XMD_prepare_for_the_first_expedition
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_expedition_to_the_lands_of_old_colonial_empires
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+
+		prerequisite = { focus = XMD_prepare_for_the_first_expedition }
+		relative_position_id = XMD_prepare_for_the_first_expedition
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+        
+		available = {
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_the_bigger_prize
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 2
+
+		prerequisite = { focus = XMD_expedition_to_the_lands_of_old_colonial_empires }
+		prerequisite = { focus = XMD_expedition_to_the_lands_of_first_colonizers }
+		relative_position_id = XMD_expedition_to_the_lands_of_first_colonizers
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	#POLITICAL TREE
+	
+	focus = {
+		id = XMD_State_of_our_nation
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 25
+		y = 0
+
+		prerequisite = { focus = }
+		relative_position_id = XMD_
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_Declare_English_our_national_language
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -5
+		y = 2
+
+		mutually_exclusive = { focus = XMD_Declare_Spanish_our_national_language }
+        mutually_exclusive = { focus = XMD_Preserve_the_truce }
+		prerequisite = { focus = XMD_State_of_our_nation }
+		relative_position_id = XMD_State_of_our_nation
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_Declare_Spanish_our_national_language
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 2
+
+		mutually_exclusive = { focus = XMD_Preserve_the_truce }
+		mutually_exclusive = { focus = XMD_Declare_English_our_national_language }
+		prerequisite = { focus = XMD_State_of_our_nation }
+		relative_position_id = XMD_State_of_our_nation
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_Preserve_the_truce
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+
+		prerequisite = { focus = XMD_State_of_our_nation }
+		relative_position_id = XMD_State_of_our_nation
+		mutually_exclusive = { focus = XMD_Declare_English_our_national_language }
+		mutually_exclusive = { focus = XMD_Declare_Spanish_our_national_language }
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_Olivers_rule
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+
+		prerequisite = { focus = XMD_Decrease_Spanish_influence_in_the_goverment }
+		prerequisite = { focus = XMD_Discriminate_the_Spanish }
+		relative_position_id = XMD_Declare_English_our_national_language
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_Decrease_Spanish_influence_in_the_goverment
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 1
+
+		prerequisite = { focus = XMD_Declare_English_our_national_language }
+		relative_position_id = XMD_Declare_English_our_national_language
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_Discriminate_the_Spanish
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+
+		prerequisite = { focus = XMD_Declare_English_our_national_language }
+		relative_position_id = XMD_Declare_English_our_national_language
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_Masters_of_the_Mediterranean
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 3
+
+		prerequisite = { focus = XMD_Olivers_rule }
+		relative_position_id = XMD_Olivers_rule
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XMD_Masters_of_the_Mediterranean
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 3
+
+		prerequisite = { focus = XMD_Olivers_rule }
+		relative_position_id = XMD_Olivers_rule
+		
+		cost = 5
+		
+		available = {
+		187 = { is_controlled_by = ROOT }
+		164 = { is_controlled_by = ROOT }
+		182 = { is_controlled_by = ROOT }
+		183 = { is_controlled_by = ROOT }
+		458 = { is_controlled_by = ROOT }
+		460 = { is_controlled_by = ROOT }
+		459 = { is_controlled_by = ROOT }
+		513 = { is_controlled_by = ROOT }
+		665 = { is_controlled_by = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	
+}
