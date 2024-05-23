@@ -58,6 +58,16 @@ bookmarks = {
 				XAD_devided_lenguage
 			}
 		}
+		"XTI" = {
+			ideology = neutrality
+			history = "XTI_history"
+			focuses = {
+				XTI_the_new_tiroleans
+			}
+			ideas = {
+				XTI_aggressive_doctrine
+			}
+		}
 		"---"={
 			history = ":O"
 		}

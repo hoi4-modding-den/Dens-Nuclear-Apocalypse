@@ -908,7 +908,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			country_event = XTI.4
 		}
 	}
 	focus = {
@@ -944,7 +944,14 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			retire_country_leader = yes
+			set_party_name = {
+				ideology = neutrality
+				long_name = "Tirol für Wohlstand"
+				name = "TW"
+			}
+			add_political_power = 100
+			add_stability = 0.1
 		}
 	}
 	focus = {

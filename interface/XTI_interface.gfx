@@ -4,5 +4,9 @@ spriteTypes = {
 		name = "GFX_portrait_XTI_reclamation_council"
 		texturefile = "gfx/XTI/XTI_reclamation_council.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_XTI_elisa_portrait"
+		texturefile = "gfx/XTI/XTI_elisa_anzengruber.dds"
+	}
 
 }
