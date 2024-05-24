@@ -10,7 +10,7 @@ state = {
 	}
 
 	history = {
-		owner = XSI
+		owner = XAG
 
 		buildings = {
 			infrastructure = 4
@@ -19,7 +19,7 @@ state = {
 		victory_points = {
 			7147 5 
 		}
-		add_core_of = XSI
+		add_core_of = XAG
 	}
 
 	provinces = { 

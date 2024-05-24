@@ -4,7 +4,7 @@ state = {
 	name = "Catania"
 
 	history = {
-		owner = XSI
+		owner = XCA
 
 		victory_points = {
 			4159 15 
@@ -17,9 +17,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			#industrial_complex = 1
+			industrial_complex = 1
 			#air_base = 10
-			#dockyard = 1
+			dockyard = 1
 			10074 = {
 				naval_base = 2
 
@@ -38,7 +38,7 @@ state = {
 			}
 
 		}
-		add_core_of = XSI
+		add_core_of = XCA
 
 	}
 

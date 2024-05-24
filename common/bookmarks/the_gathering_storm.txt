@@ -80,8 +80,38 @@ bookmarks = {
 				XTI_aggressive_doctrine
 			}
 		}
-		"---"={
-			history = ":O"
+		"XAG" = {
+			minor = yes
+			ideology = neutrality
+			history = "history goes here"
+			focuses = {
+			
+			}
+			ideas = {
+			
+			}
+		}
+		"XCA" = {
+			minor = yes
+			ideology = neutrality
+			history = "history goes here"
+			focuses = {
+			
+			}
+			ideas = {
+			
+			}
+		}
+		"XNR" = {
+			minor = yes
+			ideology = neutrality
+			history = "history goes here"
+			focuses = {
+			
+			}
+			ideas = {
+			
+			}
 		}
 
 		effect = {

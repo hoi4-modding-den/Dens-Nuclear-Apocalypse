@@ -6,6 +6,18 @@ XAD = {
 	color = rgb { 51 204 51 }
 	color_ui = rgb { 51 204 51 }
 }
+XAG = {
+	color = rgb { 105 115 145 }
+	color_ui = rgb { 105 115 145 }
+}
+XCA = {
+	color = rgb { 105 115 145 }
+	color_ui = rgb { 105 115 145 }
+}
+XNR = {
+	color = rgb { 105 115 145 }
+	color_ui = rgb { 105 115 145 }
+}
 XNE = {
 	color = rgb { 222 22 79 }
 	color_ui = rgb { 222 22 79 }
