@@ -1,4 +1,4 @@
-looming_communist_strike = {		
+XAD_improving_the_peoples_life = {		
 	priority = 9		
 	icon = GFX_category_icon
 	
@@ -7,5 +7,6 @@ looming_communist_strike = {
 	}
 	visible = {	
 		original_tag = XAD
+		has_completed_focus = XAD_the_civilian_problems
 	}
 }

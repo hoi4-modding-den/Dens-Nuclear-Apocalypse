@@ -1,4 +1,176 @@
-looming_communist_strike = {	
-	
-	
+XAD_improving_the_peoples_life = {	
+	XAD_lower_taxes = {		
+
+		icon = GFX_decision_icon_default
+		
+		available = {	
+			NOT = {
+				has_idea = XAD_lowered_taxes
+			}
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {	
+		}		
+
+		cost = 25	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = XAD_lowered_taxes
+				days = 30
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	XAD_distribute_bread = {		
+
+		icon = GFX_decision_icon_default
+		
+		available = {	
+			NOT = {
+				has_idea = XAD_distribuated_bread
+			}
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {	
+		}		
+
+		cost = 50	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = XAD_distribuated_bread
+				days = 30
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	XAD_the_northern_threat = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {	
+			NOT = {
+				has_idea = XAD_prepare_for_the_worst
+			}
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {	
+		}		
+
+		cost = 50	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = XAD_prepare_for_the_worst
+				days = 30
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	XAD_spanish_official_lenguage = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			
+		}
+		
+		fire_only_once = yes		
+		days_re_enable = 1	
+
+		visible = {
+			NOT = {
+				OR = {
+					has_idea = XAD_arab_chosen
+					has_idea = XAD_spanish_chosen
+				}
+			}
+		}		
+
+		cost = 150	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = XAD_devided_lenguage
+				add_idea = XAD_spanish_chosen
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	XAD_arab_official_lenguage = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			
+		}
+		
+		fire_only_once = yes		
+		days_re_enable = 1	
+
+		visible = {	
+			NOT = {
+				OR = {
+					has_idea = XAD_arab_chosen
+					has_idea = XAD_spanish_chosen
+				}
+			}
+		}		
+
+		cost = 150	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = XAD_devided_lenguage
+				add_idea = XAD_arab_chosen
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
 }
+

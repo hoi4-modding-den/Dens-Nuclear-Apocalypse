@@ -147,5 +147,105 @@ ideas = {
 					ai_focus_war_production_factor = 0.5
 				}
 			}
+		XAD_lowered_taxes = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = chi_hyper_inflation
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					consumer_goods_factor = 0.05
+					stability_weekly = 0.001
+				}
+			}
+		XAD_distribuated_bread = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_agrarian_reform
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					consumer_goods_factor = 0.25
+					stability_weekly = 0.004
+				}
+			}
+		XAD_prepare_for_the_worst = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = FRA_national_mobilization_focus
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					political_power_factor = -0.15
+					war_stability_factor = 0.001
+				}
+			}
+		XAD_spanish_chosen = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = SPA_duty_to_work
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					political_power_factor = 0.25
+				}
+			}
+		XAD_arab_chosen = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = raj_marginalized_muslim_community_happy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = 0.15
+				}
+			}
 	}
 }
+
+#war_stability_factor
