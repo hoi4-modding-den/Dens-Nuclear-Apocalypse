@@ -52,8 +52,8 @@
 	focus = {
 		id = XAD_start_the_casablanca_project
 		icon = GFX_
-		prerequisite = { focus = }
-		mutually_exclusive = { focus =  }
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 0
 
@@ -95,7 +95,7 @@
 		id = XAD_work_on_the_sevilla_projects
 		icon = GFX_
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 
@@ -136,7 +136,7 @@
 		id = XAD_develop_tabilina
 		icon = GFX_
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 
@@ -177,7 +177,7 @@
 		id = XAD_develop_melilla
 		icon = GFX_
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 3
 		y = 1
 
@@ -218,7 +218,7 @@
 		id = XAD_develop_marakkech
 		icon = GFX_
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 5
 		y = 1
 
@@ -259,7 +259,7 @@
 		id = XAD_enstablish_the_cataban_west
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 2
 
@@ -315,7 +315,7 @@
 		id = XAD_enstablish_the_cataban_east
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 3
 		y = 2
 
@@ -372,7 +372,7 @@
 		icon = GFX_
 		prerequisite = { focus = XAD_enstablish_the_cataban_east }
 		prerequisite = { focus = XAD_enstablish_the_cataban_west }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 3
 
@@ -428,7 +428,7 @@
 		id = XAD_the_casablanca_airport
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 4
 
@@ -468,7 +468,7 @@
 		id = XAD_increase_the_gibraltar_tariffs
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 4
 		y = 4
 
@@ -505,7 +505,7 @@
 		id = XAD_develop_the_casablanca_university
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 4
 
@@ -537,7 +537,7 @@
 		id = XAD_invite_swiss_investors
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = -2
 		y = 4
 
@@ -569,7 +569,7 @@
 		id = XAD_fund_the_CIAMP
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 6
 		y = 4
 
@@ -604,7 +604,7 @@
 		id = XAD_the_civilian_problems
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		x = 8
 		y = 4
 

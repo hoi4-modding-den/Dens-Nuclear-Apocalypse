@@ -81,7 +81,6 @@ bookmarks = {
 			}
 		}
 		"XAG" = {
-			minor = yes
 			ideology = neutrality
 			history = "history goes here"
 			focuses = {
@@ -92,7 +91,6 @@ bookmarks = {
 			}
 		}
 		"XCA" = {
-			minor = yes
 			ideology = neutrality
 			history = "history goes here"
 			focuses = {
@@ -103,7 +101,6 @@ bookmarks = {
 			}
 		}
 		"XNR" = {
-			minor = yes
 			ideology = neutrality
 			history = "history goes here"
 			focuses = {
@@ -113,14 +110,8 @@ bookmarks = {
 			
 			}
 		}
-
-		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
-		}
 		
 		"XMD" = {
-			minor = yes
 			ideology = neutrality
 			history = "XMD_bookmark"
 			focuses = {
@@ -128,6 +119,13 @@ bookmarks = {
 			ideas = {
 	        }
 		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+		
+		
 
        
 }
