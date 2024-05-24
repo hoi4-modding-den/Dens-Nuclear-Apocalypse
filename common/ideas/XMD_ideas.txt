@@ -24,48 +24,4 @@ ideas = {
 			}
 		}
 	}
-	# TECHNOLOGY
-	tank_manufacturer = {
-		
-		designer = yes
-		
-		steyr_daimler_puch = {
-			picture = generic_tank_manufacturer_1
-
-			
-			allowed = {
-				original_tag = XMD
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { tank_manufacturer }
-		}
-	}
-
-	materiel_manufacturer = {
-		
-		designer = yes
-		
-		XMD_hirtenberger = {
-			picture = generic_artillery_manufacturer_2
-
-			
-			allowed = {
-				original_tag = XMD
-			}
-			
-			research_bonus = {
-				artillery = 0.15
-			}
-			
-			traits = { artillery_manufacturer }
-						
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 }

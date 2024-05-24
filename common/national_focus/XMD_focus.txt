@@ -1,13 +1,4 @@
-﻿focus_tree = {
-	id = XMD_focus
-	
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = XMD
-		}
-	}
+﻿focus_tree = {	
 	
 	default = no
 	reset_on_civilwar = no
@@ -15,6 +6,20 @@
 	#COLONIAL FOCUS TREE
 	
 	focus = {
+	 id = XMD_focus
+	
+	 country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XMD
+		}
+	 }
+	
+		
+		
+		
 		id = XMD_announce_our_ambitions
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
@@ -146,7 +151,7 @@
 		y = 0
 
 		prerequisite = { focus = }
-		relative_position_id = XMD_
+		relative_position_id =
 		
 		cost = 5
 		
@@ -310,32 +315,6 @@
 
 		prerequisite = { focus = XMD_Declare_English_our_national_language }
 		relative_position_id = XMD_Declare_English_our_national_language
-		
-		cost = 5
-		
-		available = {
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = XMD_Masters_of_the_Mediterranean
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 5
-		y = 3
-
-		prerequisite = { focus = XMD_Olivers_rule }
-		relative_position_id = XMD_Olivers_rule
 		
 		cost = 5
 		
