@@ -186,7 +186,8 @@ ideas = {
             modifier = {
                political_power_gain = -0.15
                exile_manpower_factor = 0.25
-               weekly_manpower = 25
+               local_non_core_manpower = 0.1
+               
             }
 
         }
@@ -216,6 +217,23 @@ ideas = {
 
             }
 
+        }
+        XSS_no_neutrality = {
+           removal_cost = -1
+            picture = ast_volunteer_defence_corps
+            modifier = {
+               justify_war_goal_time = -0.25
+               enemy_justify_war_goal_time = -0.25
+               annex_cost_factor = -0.25
+            }
+        }
+        XSS_warplans_idea = {
+           removal_cost = -1
+            picture = cze_planning_bonus
+            modifier = {
+                planning_speed = 0.15
+                max_planning = 0.05
+            }
         }
     }
 
