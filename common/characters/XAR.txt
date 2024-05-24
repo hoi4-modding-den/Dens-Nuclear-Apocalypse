@@ -4,10 +4,10 @@ characters = {
 		name = "Valer Serrano"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/XAR/valer_serrano.png"
+				large = "gfx/leaders/XAR/valer_serrano.dds"
 			}
 			army = {
-				large = "gfx/leaders/XAR/valer_serrano.png"
+				large = "gfx/leaders/XAR/valer_serrano.dds"
 			}			
 		}
 		country_leader = {

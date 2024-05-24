@@ -120,6 +120,21 @@ bookmarks = {
 	        }
 		}
 
+		"XAR"={
+			ideology = neutrality
+			focuses = {
+				XAR_and_his_friends
+				XAR_the_hero_of_sarayosa
+				XAR_and_his_ungrateful_enemies
+			}
+			ideas = {
+				XAR_increasing_civil_discontent
+				XAR_an_army_with_a_state
+				XAR_quest_for_eternal_peace
+			}
+			history = XAR_history_desc
+		}
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
