@@ -1,5 +1,5 @@
 XGE_computer_clique = {
-    icon = GFX_idea_unknown
+    icon = GFX_idea_XGE_computer_clique
 	political_power_factor = XGE_cc_pp_factor
 	research_speed_factor = XGE_cc_research_speed_variable
 	stability_factor = XGE_cc_stability_factor_variable
