@@ -82,6 +82,7 @@ country_event = {
 				economic_reformer
 			}
 		}
+		complete_national_focus = XTI_SPT_victory
         #complete_national_focus = XSS_triumph_of_democracy
     }
 	option = {
@@ -96,6 +97,7 @@ country_event = {
 				conservative_grandee
 				staunch_constitutionalist
 			}
+			complete_national_focus = XTI_TVP_victory
 		}
         #complete_national_focus = XSS_triumph_of_democracy
     }
@@ -111,6 +113,7 @@ country_event = {
 				conservative_nationalist
 				nationalist_symbol
 			}
+			complete_national_focus = XTI_FPT_victory
 		}
         #complete_national_focus = XSS_triumph_of_democracy
     }

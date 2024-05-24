@@ -1015,7 +1015,7 @@
 		available = {
 			has_completed_focus = XTI_restore_democracy
 			has_country_leader = {
-				character = XTI_clara_bauer
+				character = XTI_leo_schmidt
 			}
 		}
 		
@@ -1054,7 +1054,7 @@
 		available = {
 			has_completed_focus = XTI_restore_democracy
 			has_country_leader = {
-				character = XTI_clara_bauer
+				character = XTI_louis_boltzmann
 			}
 		}
 		
