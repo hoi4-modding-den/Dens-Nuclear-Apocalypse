@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_king_marino"
+		texturefile = "gfx/leaders/XCA/Marino.dds"
+	}
+
+}

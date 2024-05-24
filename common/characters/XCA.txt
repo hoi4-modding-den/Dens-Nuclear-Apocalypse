@@ -1,0 +1,19 @@
+characters = {
+
+	XCA_king_marino = {
+		name = "King Marino III"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_king_marino"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = ""
+			traits = { XCA_musician_king }
+			expire = "3000.9.9.9"
+			id = 1
+		}
+		
+	}
+}

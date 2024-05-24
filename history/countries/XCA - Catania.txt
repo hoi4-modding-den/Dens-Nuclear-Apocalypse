@@ -2,6 +2,8 @@ capital = 115
 
 # oob = "XCA_1936"
 
+recruit_character = XCA_king_marino
+
 create_faction = "Sicilian Concorde"
 add_to_faction = XCA
 add_to_faction = XNR
