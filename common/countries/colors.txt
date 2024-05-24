@@ -30,6 +30,10 @@ XSS = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
 }
+XSH = {
+	color = rgb { 28 131 255 }
+	color_ui = rgb { 28 131 255 }
+}
 XJY = {
 	color = rgb { 96 147 87 }
 	color_ui = rgb { 96 147 87 }
