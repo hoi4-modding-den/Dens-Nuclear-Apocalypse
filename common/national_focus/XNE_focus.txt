@@ -455,7 +455,7 @@
 	}
 
     focus = {
-		id = XNE_alliance_with_mercia
+		id = XNE_summit_for_peace
     	icon = GFX_goal_generic_territory_or_war
     	prerequisite = { focus = XNE_recognise_mercia }
     	prerequisite = { focus = XNE_coalition_government }

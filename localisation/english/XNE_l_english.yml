@@ -102,7 +102,7 @@
  XNE_coalition_government:0 "Coalition Government"
  XNE_coalition_government_tool:0 "The Government will be reformed into a §YCoalition Government§! under §Y$XNE_harold_johnson$§!."
  XNE_recognise_mercia:0 "Recognise [XNM.GetNameDef]"
- XNE_alliance_with_mercia:0 "Alliance with [XNM.GetNameDef]"
+ XNE_summit_for_peace:0 "Summit for Peace"
  XNE_focus.2.title:0 "[XNE.GetNameDefCap] Proposes An Alliance"
  XNE_focus.2.desc:0 "[XNE.GetNameDefCap] proposes an alliance."
  XNE_focus.2.a:0 "Yes"
