@@ -3,11 +3,12 @@
 ###########################
 
 add_namespace = XLV_events
+add_namespace = XLV_info_events
 
-country_event = { #Start Info
-	id = XLV_events.1
-	title = XLV_events.1.t
-	desc = XLV_events.1.desc
+country_event = {
+	id = XLV_info_events.1
+	title = XLV_info_events.1.t
+	desc = XLV_info_events.1.desc
 	picture = XLV_start_info
 
     fire_only_once = yes
@@ -17,9 +18,57 @@ country_event = { #Start Info
     }
 
 	option = { #Pane, patria e libertà!
-		name = XLV_events.1.a
+		name = XLV_info_events.1.a
 		ai_chance = {
 			base = 1
 		}
 	}
 }
+
+country_event = {
+	id = XLV_info_events.2
+	title = XLV_info_events.2.t
+	desc = XLV_info_events.2.desc
+	picture = XLV_start_info
+
+    fire_only_once = yes
+    is_triggered_only = yes
+    trigger = {
+        tag = XLV
+    }
+
+	option = { #Good to know.
+		name = XLV_info_events.2.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = XLV_events.1
+	title = XLV_events.1.t
+	desc = XLV_events.1.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #We hope for a "Liga Autonomia Veneto" win
+		name = XLV_info_events.1.a
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = { #We hope for a "Partito Comunista Unito" win
+		name = XLV_info_events.1.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+
+
+
+

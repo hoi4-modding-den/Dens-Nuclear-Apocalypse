@@ -1,19 +1,54 @@
 ﻿l_english:
+ #Country
  XLV: "Lombardo-Veneto"
  XLV_DEF: "Regioni unite del Lombardo-Veneto"
  XLV_ADJ: "Trivenetine"
  XLV_neutrality: "Lombardo-Veneto"
  XLV_neutrality_DEF: "Regioni unite del Lombardo-Veneto"
  XLV_neutrality_ADJ: "Trivenetine"
+ XLV_fascism_party: "Grüne Armee"
+ XLV_fascism_party_long: "Grüne Armee"
 
+ XLV_communism_party: "PCU"
+ XLV_communism_party_long: "Partito Comunista Unito"
+
+ XLV_fascism_party: "LAV"
+ XLV_fascism_party_long: "Liga Autonomia Veneto"
+
+ XLV_neutrality_party: "The Commitee"
+ XLV_neutrality_party_long: "Commitee of public safety"
+
+ XLV_democratic_party: "PEL-AV"
+ XLV_democratic_party_long: "Partito Eurodemocratico della Lombardia - Avanti Veneto!"
+
+ #Leaders
  XLV_Alberto_Cartoni: "Alberto Cartoni"
  XLV_Alberto_Cartoni_desc: "WIP"
 
- XLV_committee_of_public_safety: "Commitee of Public Safety"
- XLV_committee_of_public_safety_desc: ""
- XLV_centro_ricerca_trento: "Centro Ricerca Trento"
- XLV_centro_ricerca_trento_desc: ""
+ #Info Events
+ XLV_info_events.1.t: "Starting situation in Lombardo-Veneto"
+ XLV_info_events.1.desc: "WIP"
+ XLV_info_events.1.a: "Pane, patria e libertà!"
+ XLV_info_events.2.t: "Path Guide - Lombardo-Veneto"
+ XLV_info_events.2.desc: "WIP"
+ XLV_info_events.2.a: "Good to know."
 
-  XLV_events.1.t: "Starting situation in Lombardo-Veneto"
-	XLV_events.1.desc: "WIP"
-  XLV_events.1.a: "Pane, patria e libertà!s"
+ # Ideas
+ XLV_committee_of_public_safety: "Commitee of public safety"
+ XLV_committee_of_public_safety_desc: "The republic is ruled by a commitee of public safety, following the revolutionary french forces as an example. Altrough it's autority is recognized everwhere in the nation, the council itself is greatly divided, being ruled by joint forces from many different parties."
+ XLV_centro_ricerca_trento: "CRT - Centro Ricerca Trento"
+ XLV_centro_ricerca_trento_desc: "Trento houses the biggest underground laboratories in the region, often builded in the dismissed mines, and the CTR unites all of the laboratories near Trento, making the scientifical effort of our country much easier."
+
+ #Decisions
+ XLV_info_decisions: "Info"
+ XLV_info_decision_1: "Starting situation in Lombardo-Veneto"
+ XLV_info_decisions_2: "Path Guide - Lombardo-Veneto"
+
+ XLV_the_committee_decisions: "Info"
+ X LV_the_committee_decisions.desc: "The committee is the most powerful institution in our country, it is formed by 5 members, divided between the major parties  in Lombardo-Veneto.
+ They are currently divided in this way:
+ Liga Autonomia Veneto: [?lega_members] members
+ Centro Ricerca Trento: [?science_members] members
+ Non-Aligned Members: [?neutral_members] members
+ Partito Eurodemocratico della Lombardia - Avanti Veneto!: [?europe_members] members
+ Partito Comunista Unito: [?communist_members] members"
