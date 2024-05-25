@@ -25,6 +25,8 @@ set_variable = { var = XNE_conservative_support value = 0.41 }
 set_variable = { var = XNE_liberal_support value = 0.21 }
 set_variable = { var = XNE_communism_support value = 0.06 }
 
+add_ideas = XNE_tensions_on_the_trent
+
 create_country_leader = {
 	name = XNE_king_henry_x
 	desc = XNE_king_henry_x_desc

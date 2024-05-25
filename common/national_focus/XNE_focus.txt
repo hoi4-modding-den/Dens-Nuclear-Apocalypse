@@ -20,12 +20,12 @@
 		id = XNE_chamberlains_speech
 		icon = GFX_goal_generic_propaganda
 
-		x = 6
+		x = 8
 		y = 0
 
 		cost = 12
 
-		available = {}
+		available = { has_tech = radio }
 		bypass = {}
 		
 		cancelable = no
@@ -43,6 +43,289 @@
 		}
 		
 	}
+	
+	focus = {
+		id = XNE_isolation
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = XNE_chamberlains_speech }
+		x = 0
+		y = 1
+		relative_position_id = XNE_chamberlains_speech
+
+		cost = 8
+
+		available = {}
+		bypass = {}
+		mutually_exclusive = { focus = XNE_cooperation }
+		mutually_exclusive = { focus = XNE_aggression }
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_conservative_support = yes
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2.5
+				XNM = { has_country_flag = XNM_aggressive }
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = XNE_cooperation
+		icon = GFX_focus_generic_befriend_denmark
+		prerequisite = { focus = XNE_chamberlains_speech }
+		x = -5
+		y = 1
+		relative_position_id = XNE_chamberlains_speech
+
+		cost = 8
+
+		available = {}
+		bypass = {}
+		mutually_exclusive = { focus = XNE_aggression }
+		mutually_exclusive = { focus = XNE_isolation }
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_liberal_support = yes
+			XNE_gain_communism_support = yes
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2.5
+				XNM = { has_country_flag = XNM_coop }
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = XNE_aggression
+		icon = GFX_focus_generic_attack_denmark
+		prerequisite = { focus = XNE_chamberlains_speech }
+		x = 5
+		y = 1
+		relative_position_id = XNE_chamberlains_speech
+		
+		cost = 8
+
+		available = {}
+		bypass = {}
+		mutually_exclusive = { focus = XNE_cooperation }
+		mutually_exclusive = { focus = XNE_isolation }
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_fascism_support = yes
+			XNE_gain_neutrality_support = yes
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2.5
+				XNM = { has_country_flag = XNM_coop }
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = XNE_expand_our_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = XNE_cooperation }
+		x = 2
+		y = 1
+		relative_position_id = XNE_cooperation
+
+		cost = 8
+
+		available = {}
+		bypass = {}
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_liberal_support = yes
+			add_timed_idea = {
+				idea = XNE_trade_focus
+				days = 730
+			}
+			add_resource = {
+				type = steel
+				amount = 40
+				state = 126
+			}
+			add_ideas = free_trade
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+
+	focus = {
+		id = XNE_greater_mining_investments
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = XNE_expand_our_trade }
+		x = 0
+		y = 1
+		relative_position_id = XNE_expand_our_trade
+
+		cost = 8
+
+		available = {}
+		bypass = {}
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_liberal_support = yes
+			add_resource = {
+				type = aluminium
+				amount = 16
+				state = 123
+			}
+			add_resource = {
+				type = aluminium
+				amount = 13
+				state = 127
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+
+	focus = {
+		id = XNE_oil_off_the_coast
+		icon = GFX_focus_generic_offshore_oil_rig
+		prerequisite = { focus = XNE_greater_mining_investments }
+		x = 0
+		y = 1
+		relative_position_id = XNE_greater_mining_investments
+
+		cost = 8
+
+		available = {}
+		bypass = {}
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_liberal_support = yes
+			XNE_gain_communism_support = yes
+			add_resource = {
+				type = oil
+				amount = 24
+				state = 125
+			}
+			add_resource = {
+				type = oil
+				amount = 19
+				state = 123
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+
+	focus = {
+		id = XNE_ease_tensions_with_mercia
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = XNE_cooperation }
+		x = 0
+		y = 1
+		relative_position_id = XNE_cooperation
+
+		cost = 8
+
+		available = {}
+		bypass = {}
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_liberal_support = yes
+			XNE_gain_communism_support = yes
+			swap_ideas = {
+				remove_idea = XNE_tensions_on_the_trent
+				add_idea = XNE_tensions_on_the_trent_eased
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+
+	focus = {
+		id = XNE_lower_military_presence
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = XNE_ease_tensions_with_mercia }
+		x = 0
+		y = 1
+		relative_position_id = XNE_ease_tensions_with_mercia
+
+		cost = 8
+
+		available = {}
+		bypass = {}
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_liberal_support = yes
+			add_manpower = -90000
+			add_stability = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	
 	
 
 }

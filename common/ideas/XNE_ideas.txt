@@ -1,6 +1,53 @@
 ideas = {
 
 	country = {
+		XNE_trade_focus = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				war_support_factor = -0.05
+				custom_modifier_tooltip = XNE_free_trade_only
+			}
+		}
+		XNE_tensions_on_the_trent = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XNM_tensions_on_the_trent
+			
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = -0.05
+				democratic_drift = -0.01
+			}
+		}
+		XNE_tensions_on_the_trent_eased = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XNM_tensions_on_the_trent
+			
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = -0.02
+			}
+		}
+		
 		XNE_fascism_rising = {
 
 			allowed = {}
