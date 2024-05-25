@@ -2507,7 +2507,43 @@ set_politics = {
     completion_reward = {
 
         845 = {add_manpower = -60548}
+        851 = {add_manpower = 60548}
+        }
+        
 
+    }
+
+   focus = {
+    id = XSS_host_italian_exile_government
+    x = 56
+    y = 14
+    icon = GFX_focus_generic_italy_first
+    cost = 10
+    prerequisite = { focus = XSS_extermination_of_french }
+
+    completion_reward = {
+
+        add_ideas = {XSS_ticino_government}
+        159 = {add_core_of = XIA}
+        160 = {add_core_of = XIA}
+        850 = {add_core_of = XIA}
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XTN_rally_italian_army
+    x = 56
+    y = 15
+    icon = GFX_focus_ITA_generic_fascist_workers
+    cost = 10
+    prerequisite = { focus = XSS_host_italian_exile_government }
+
+    completion_reward = {
+
+        hidden_effect = { load_oob = "XSS_ITA" }
         }
         
 

@@ -460,17 +460,17 @@ XSS_fascist_win_desc:0 "Fascists have started the barrage and nobody contested t
 
 XSS_test_event.12.t:0 "Fascist victory march"
 XSS_test_event.12.desc:0 "Today after shelling National Assembly NSS have took over Switzerland. Their started their reign of terror and will rule Switzerland. Niemir Eggli said that Europe will fear the new Swiss army."
-XSS_test_event.12.a:0 "All hail the Führer"
+XSS_test_event.12.a:0 "All hail the ruler"
 
 
 XSS_abandon_neutrality_nazi:0 "Abandon Neutrality"
 XSS_abandon_neutrality_nazi_desc:0 "To make shit done we need to stop being neutral. Let's have our own opinion."
 
-XSS_nazi_terror:0 "Campaign of Terror"
+XSS_nazi_terror:0 "Internal Fight"
 XSS_nazi_terror_desc:0 "The strikes and constant fighting is taking toll on our nation preventing us from expanding. We shall put end to these decadents."
 
 
-XSS_test_event.13.t:0 "Nazi Terror"
+XSS_test_event.13.t:0 "Internal Fight"
 XSS_test_event.13.desc:0 "NSS have deployed their divisions and started shootouts and arrests all over Switzerland. All communists, liberals and socialdemocrats were either killed or imprisoned. National Socialists now have complete rule over switzerland ending the Era of Instability."
 XSS_test_event.13.a:0 "Another victory for the Führer"
 
@@ -541,9 +541,23 @@ XSS_2nd_party_rally_desc:0 "After all the goals listed in 1st party rally were m
 
 XSS_test_event.16.t:0 "2nd Party rally"
 XSS_test_event.16.desc:0 "Today all officials and party members have hosted a second party rally after taking over power. All officials have discussed the new way for modern Switzerland. Later the Führer held a speech in which he announced future conquests in Europe and how Germany will be his main goal. He also quoted recently published Germania as he considers it to be the best book ever written. The rally was pretty sucessfull in rallying support for the Führer."
-XSS_test_event.16.a:0 "Heil Führer, We soon will be great"
+XSS_test_event.16.a:0 "We soon will be great"
 
-XSS_extermination_of_french:0 "Extermination of French minority"
-XSS_extermination_of_french_desc:0 "The French are Unberührbares and must be enslaved or exterminated."
+XSS_extermination_of_french:0 "Exile the French minority"
+XSS_extermination_of_french_desc:0 "The French are Unberührbares and must be exiled."
 
+XSS_host_italian_exile_government:0 "Host Ticino Government"
+XSS_host_italian_exile_government_desc:0 "Italians have been friends of Germany in the past. We shall create a new Italy by giving them government based in Ticino."
 
+XSS_ticino_government:0 "Ticino Government"
+XSS_ticino_government_desc:0 "Ticino Government hosts Italians who fleed Lombardy and the onces that came from wasteland."
+
+XIA_fascism_party:0 "NSS/Unione Italiana Nazisti"
+XIA_fascism_party_long:0 "Neu Schutzstaffel/Unione Italiana Nazisti"
+
+XIA:0 "Italian Republic"
+XIA_DEF:0 "Italian Republic"
+XIA_ADJ:0 "Italian"
+
+XTN_rally_italian_army:0 "Form Italian army"
+XTN_rally_italian_army_desc:0 "Italian exiles are willing to fight for a new Italy."

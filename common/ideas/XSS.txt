@@ -319,6 +319,13 @@ ideas = {
             war_support_factor = 0.15
             }
         }
+       XSS_ticino_government = {
+           removal_cost = -1
+            picture = ETH_italian_settlers
+            modifier = {
+            political_power_gain = 0.05
+            }
+        }
 
     }
 

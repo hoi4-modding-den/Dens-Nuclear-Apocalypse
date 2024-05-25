@@ -408,5 +408,22 @@ corps_commander = {
 		}
 	}
 
+################# Italian #########################
+	XSS_zino = {
+		name = "Julius Zino"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ita_palmiro_togliatti"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+
+	}
+###################### Normal ######################################
 
 }

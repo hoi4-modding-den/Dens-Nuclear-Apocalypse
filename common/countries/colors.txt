@@ -120,3 +120,7 @@ XSA = {
 	color = rgb { 245 220 132 }
 	color_ui = rgb { 245 220 132 }
 }
+XIA = {
+	color = rgb { 25 248 96 }
+	color_ui = rgb { 25 248 96  }
+}
