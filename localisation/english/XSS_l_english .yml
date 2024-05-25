@@ -435,3 +435,19 @@ XSS_test_event.8.c:0 "I love you"
 XSS_test_event.9.t:0 "United Nations recreated"
 XSS_test_event.9.desc:0 "Today Switzerland has announced creation of United Nations. United Nations was an international organization bringing us all closer and now Switzerland wishes to do so. The first meeting of the organization will be held in Geneva."
 XSS_test_event.9.a:0 "Interesting"
+
+XSS_invest_in_iberia:0 "Invest in Iberia"
+XSS_invest_in_iberia_desc:0 "We have our men in iberia already. We should support our allies in their unification struggle."
+
+XSS_test_event.10.t:0 "Switzerland offers investments"
+XSS_test_event.10.desc:0 "We are two nations united in one alliance and Switzerland offers to give us a massive support."
+XSS_test_event.10.a:0 "We Should agree"
+XSS_test_event.10.b:0 "Nah we will pass"
+
+XSS_fortify_border_spain:0 "Fortify Caliphate"
+XSS_fortify_border_spain_desc:0 "We shall build contructions in Nueva Marrakesh."
+
+XSS_test_event.11.t:0 "Switzerland offers Fortifications"
+XSS_test_event.11.desc:0 "We are two nations united in one alliance and Switzerland offers to give us a massive support."
+XSS_test_event.11.a:0 "We Should agree"
+XSS_test_event.11.b:0 "Nah we will pass"

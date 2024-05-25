@@ -1029,12 +1029,65 @@ add_resource = {
     }
 
    focus = {
-    id = XSS_unify_iberia
-    x = 47
+    id = XSS_invest_in_iberia
+    x = 48
     y = 18
-    icon = GFX_focus_spr_war_of_independence
+    icon = GFX_goal_generic_construction2
     cost = 10
     prerequisite = { focus = XSS_invite_cats }
+    available = {AND = {is_in_faction = yes is_faction_leader = yes XSS ={is_in_faction_with = XAD}}}
+
+
+
+    completion_reward = {
+        XAD = {
+        country_event = {
+        id = XSS_test_event.10
+        days = 1
+        random_hours = 5
+            } 
+
+        }
+    
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_fortify_border_spain
+    x = 48
+    y = 19
+    icon = GFX_goal_generic_construct_military
+    cost = 10
+    prerequisite = { focus = XSS_invest_in_iberia }
+    available = {AND = {is_in_faction = yes is_faction_leader = yes XSS ={is_in_faction_with = XAD}}}
+
+
+
+    completion_reward = {
+        XAD = {
+        country_event = {
+        id = XSS_test_event.11
+        days = 1
+        random_hours = 5
+            } 
+
+        }
+  
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_unify_iberia
+    x = 48
+    y = 20
+    icon = GFX_focus_spr_war_of_independence
+    cost = 10
+    prerequisite = { focus = XSS_fortify_border_spain }
     available = {AND = {is_in_faction = yes is_faction_leader = yes XSS ={is_in_faction_with = XAD}}}
 
 
