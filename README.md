@@ -17,7 +17,6 @@ You are allowed to modify provinces and states.<br><br>
 <ol>
   <li>Must be adjacent to a dark red state (or could include a dark red state) <b>OR</b> adjacent to an existing country (see state claim map on Discord)</li>
   <li>Must not include any state not marked in red</li>
-  <li>Please see [this message](https://discord.com/channels/361642407453786112/725125861128404993/1241840098686009507) for the current claim map.</li>
 </ol><br>
 
 Lore: <br><br>
