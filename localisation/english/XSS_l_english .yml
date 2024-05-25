@@ -413,3 +413,41 @@ XSS_italian_campaign_desc:0 "With Iberia and Alps out of the picture it's time t
 
 XSS_war_sicily:0 "War in Sicily"
 XSS_war_sicily_desc:0 "With Italian campaign raging on, we must put our eyes on destruction of Sicilian oligarchy."
+
+XSS_war_with_aquitaine:0 "War with Aquitaine"
+XSS_war_with_aquitaine_desc:0 "Last country on our list is Aquitane. If they fall we will have full control over southern Europe."
+
+XSS_subjugate_colonials:0 "Subjugate Colonials"
+XSS_subjugate_colonials_desc:0 "Last part of our Italian campaign will be subjugation of sardinian colonials."
+
+XSS_UN:0 "Recreate United Nations"
+XSS_UN_desc:0 "We as humanity were united decades ago. Now it's time to bring human cooperation back on the table by recreation of United Nations."
+
+XSS_UN_idea:0 "United Nations member"
+XSS_UN_idea_desc:0 "No more wars aye?"
+
+XSS_test_event.8.t:0 "United Nations"
+XSS_test_event.8.desc:0 "Switzerland trying to bring back peace to the wasteland have recreated United Nations. A guardian of peace in old world now it will prevent us all from killing eachother."
+XSS_test_event.8.a:0 "We Shall join"
+XSS_test_event.8.b:0 "UN-involved in peace am i right?"
+XSS_test_event.8.c:0 "I love you"
+
+XSS_test_event.9.t:0 "United Nations recreated"
+XSS_test_event.9.desc:0 "Today Switzerland has announced creation of United Nations. United Nations was an international organization bringing us all closer and now Switzerland wishes to do so. The first meeting of the organization will be held in Geneva."
+XSS_test_event.9.a:0 "Interesting"
+
+XSS_invest_in_iberia:0 "Invest in Iberia"
+XSS_invest_in_iberia_desc:0 "We have our men in iberia already. We should support our allies in their unification struggle."
+
+XSS_test_event.10.t:0 "Switzerland offers investments"
+XSS_test_event.10.desc:0 "We are two nations united in one alliance and Switzerland offers to give us a massive support."
+XSS_test_event.10.a:0 "We Should agree"
+XSS_test_event.10.b:0 "Nah we will pass"
+
+XSS_fortify_border_spain:0 "Fortify Caliphate"
+XSS_fortify_border_spain_desc:0 "We shall build contructions in Nueva Marrakesh."
+
+XSS_test_event.11.t:0 "Switzerland offers Fortifications"
+XSS_test_event.11.desc:0 "We are two nations united in one alliance and Switzerland offers to give us a massive support."
+XSS_test_event.11.a:0 "We Should agree"
+XSS_test_event.11.b:0 "Nah we will pass"

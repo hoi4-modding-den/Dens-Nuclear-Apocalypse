@@ -116,3 +116,7 @@ XTR = {
 	color = rgb { 127 116 39 }
 	color_ui = rgb { 127 116 39 }
 }
+XSA = {
+	color = rgb { 245 220 132 }
+	color_ui = rgb { 245 220 132 }
+}

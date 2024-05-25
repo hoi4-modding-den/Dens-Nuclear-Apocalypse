@@ -355,3 +355,44 @@ XAD_improving_the_peoples_life = {
 	}
 }
 
+XAD_coring_territories = {
+	XAD_santarem_core = {		
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			795 = {
+				is_owned_by = XAD
+			}
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {
+			NOT = {
+				795 = {
+					is_core_of = XAD
+				}
+			}
+		}		
+
+		cost = 25	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			795 = {
+				add_core_of = XAD
+			}
+			set_province_name = { id = 924 name = "Cattaria" }
+			set_province_name = { id = 9869 name = "Mouhamlil" }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+}
