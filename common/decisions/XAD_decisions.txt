@@ -172,5 +172,186 @@ XAD_improving_the_peoples_life = {
 			factor = 0			
 		}
 	}
+	XAD_crack_down_on_strikers = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			NOT = {
+					has_idea = XAD_cracking_down_on_communists
+			}
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {	
+			
+		}		
+
+		cost = 75	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = XAD_cracking_down_on_communists
+				days = 30
+			} 
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	XAD_break_in_communist_hideouts = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			NOT = {
+				has_country_flag = XAD_recently_cracked_down_on_communism
+			}
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {	
+			
+		}		
+
+		cost = 25	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			add_manpower = -2500
+			add_popularity = {
+				ideology = communism 
+				popularity = -0.03
+			}
+			set_country_flag = {
+				flag = XAD_recently_cracked_down_on_communism
+				days = 30
+				value = 1
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	XAD_crack_down_on_corruption = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			NOT = {
+				has_country_flag = XAD_cracking_down_on_corruption
+			}
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {	
+			
+		}		
+
+		cost = 0	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			set_country_flag = {
+				flag = XAD_cracking_down_on_corruption
+				days = 150
+				value = 1
+			}
+			add_timed_idea = {
+				idea = XAD_cracking_down_on_corrupt_politicians
+				days = 75
+			} 
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	XAD_jobs_to_the_people = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			NOT = {
+				has_idea = XAD_building_programs
+			}
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {	
+			
+		}		
+
+		cost = 25
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = XAD_building_programs
+				days = 30
+			} 
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	XAD_build_civis = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {	
+			
+		}		
+
+		cost = 100
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			random_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
 }
 

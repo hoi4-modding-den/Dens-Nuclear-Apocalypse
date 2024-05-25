@@ -1,0 +1,121 @@
+﻿division_template = {
+	name = "División de Infantería"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	division_names_group = XAD_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brigada de Caballería"
+	division_names_group = XAD_CAV_02
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Guardia real del rey"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	division_names_group = XAD_GRDR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division= {
+        name = "1a División de Infantería"
+        location = 6933 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "2a División de Infantería"
+        location = 6933
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "3a División de Infantería"
+        location = 970 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "4a División de Infantería"
+        location = 970 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "1a Brigada de Caballería"
+        location = 1176 
+        division_template = "Brigada de Caballería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "2a Brigada de Caballería"
+        location = 1176 
+        division_template = "Brigada de Caballería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "3a Brigada de Caballería"
+        location = 875 
+        division_template = "Brigada de Caballería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "1a Guardia real del rey"
+        location = 875 
+        division_template = "Guardia real del rey"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+}
+
+###airwings in their own file
+
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+}
+	#####################
