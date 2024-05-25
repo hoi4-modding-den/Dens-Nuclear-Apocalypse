@@ -145,7 +145,7 @@ guiTypes = {
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 130
-			maxHeight = 20
+			maxHeight = 45
 			fixedsize = yes
 			format = center
 			Orientation = "UPPER_LEFT"
@@ -627,14 +627,14 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="countries"
-			position = { x = 15 y = 45 }
+			position = { x = 15 y = 35 }
 			size = { width = -15 height = 120}
 
 			gridboxType = {
 				name ="countries_grid"
 				position = { x = 0 y = 10 }
 				size = { width = 100% height = 100% }
-				slotsize = { width = 150 height = 110 }
+				slotsize = { width = 150 height = 115 }
 				add_horizontal = yes
 				max_slots_vertical = 5
 				max_slots_horizontal = 5
@@ -831,14 +831,14 @@ guiTypes = {
 
 			containerWindowType = {
 				name ="ideas"
-				position = { x = 115 y = -1 }
+				position = { x = 89 y = -1 }
 				size = { width = 100%% height = 70 }
 
 				gridboxType = {
 					name ="ideas_grid"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 70 }
-					slotsize = { width = 60 height = 66 }
+					slotsize = { width = 88 height = 66 }
 					max_slots = { x = 3 y = 1 }
 					add_horizontal = yes
 					format = "UPPER_LEFT"
