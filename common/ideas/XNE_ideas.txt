@@ -16,6 +16,34 @@ ideas = {
 				custom_modifier_tooltip = XNE_free_trade_only
 			}
 		}
+		XNE_trade_focus_tool = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				war_support_factor = -0.05
+			}
+		}
+		XNE_internal_conflict = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_weekly = -0.001
+			}
+		}
 		XNE_tensions_on_the_trent = {
 			allowed = {}
 			available = {}

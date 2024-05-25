@@ -69,122 +69,317 @@ XNE_check_popular_support = {
 }
 
 XNE_gain_fascism_support = {
-	custom_effect_tooltip = XNE_gain_fascism_support
-	add_to_variable = {
-		var = XNE_fascism_support
-		value = 0.05
+	if = {
+		limit = { has_idea = XNE_internal_conflict }
+		custom_effect_tooltip = XNE_gain_fascism_support
+		add_to_variable = {
+			var = XNE_fascism_support
+			value = 0.05
+		}
+		if = {
+			limit = { check_variable = { XNE_neutrality_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_neutrality_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_fascism_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_conservative_support > 0.01 } }
+			subtract_from_variable = {
+				var = XNE_conservative_support
+				value = 0.02
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_fascism_support
+				value = 0.02
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_liberal_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_liberal_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_fascism_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_communism_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_communism_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_fascism_support
+				value = 0.01
+			}
+		}
+		hidden_effect = { XNE_check_popular_support = yes }
 	}
-	subtract_from_variable = {
-		var = XNE_neutrality_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_conservative_support
-		value = 0.02
-	}
-	subtract_from_variable = {
-		var = XNE_liberal_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_communism_support
-		value = 0.01
-	}
-	hidden_effect = { XNE_check_popular_support = yes }
 }
 XNE_gain_neutrality_support = {
-	custom_effect_tooltip = XNE_gain_neutrality_support
-	add_to_variable = {
-		var = XNE_neutrality_support
-		value = 0.04
+	if = {
+		limit = { has_idea = XNE_internal_conflict }
+		custom_effect_tooltip = XNE_gain_neutrality_support
+		add_to_variable = {
+			var = XNE_neutrality_support
+			value = 0.04
+		}
+		if = {
+			limit = { check_variable = { XNE_fascism_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_fascism_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_neutrality_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_conservative_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_conservative_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_neutrality_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_liberal_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_liberal_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_neutrality_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_communism_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_communism_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_neutrality_support
+				value = 0.01
+			}
+		}
+		hidden_effect = { XNE_check_popular_support = yes }
 	}
-	subtract_from_variable = {
-		var = XNE_fascism_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_conservative_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_liberal_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_communism_support
-		value = 0.01
-	}
-	hidden_effect = { XNE_check_popular_support = yes }
 }
 XNE_gain_conservative_support = {
-	custom_effect_tooltip = XNE_gain_conservative_support
-	add_to_variable = {
-		var = XNE_conservative_support
-		value = 0.04
+	if = {
+		limit = { has_idea = XNE_internal_conflict }
+		custom_effect_tooltip = XNE_gain_conservative_support
+		add_to_variable = {
+			var = XNE_conservative_support
+			value = 0.04
+		}
+		if = {
+			limit = { check_variable = { XNE_neutrality_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_neutrality_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_conservative_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_fascism_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_fascism_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_conservative_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_liberal_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_liberal_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_conservative_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_communism_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_communism_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_conservative_support
+				value = 0.01
+			}
+		}
+		hidden_effect = { XNE_check_popular_support = yes }
 	}
-	subtract_from_variable = {
-		var = XNE_neutrality_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_fascism_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_liberal_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_communism_support
-		value = 0.01
-	}
-	hidden_effect = { XNE_check_popular_support = yes }
 }
 XNE_gain_liberal_support = {
-	custom_effect_tooltip = XNE_gain_liberal_support
-	add_to_variable = {
-		var = XNE_liberal_support
-		value = 0.04
+	if = {
+		limit = { has_idea = XNE_internal_conflict }
+		custom_effect_tooltip = XNE_gain_liberal_support
+		add_to_variable = {
+			var = XNE_liberal_support
+			value = 0.04
+		}
+		if = {
+			limit = { check_variable = { XNE_neutrality_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_neutrality_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_liberal_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_conservative_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_conservative_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_liberal_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_fascism_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_fascism_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_liberal_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_communism_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_communism_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_liberal_support
+				value = 0.01
+			}
+		}
+		hidden_effect = { XNE_check_popular_support = yes }
 	}
-	subtract_from_variable = {
-		var = XNE_neutrality_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_conservative_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_fascism_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_communism_support
-		value = 0.01
-	}
-	hidden_effect = { XNE_check_popular_support = yes }
 }
 XNE_gain_communism_support = {
-	custom_effect_tooltip = XNE_gain_communism_support
-	add_to_variable = {
-		var = XNE_communism_support
-		value = 0.05
+	if = {
+		limit = { has_idea = XNE_internal_conflict }
+		custom_effect_tooltip = XNE_gain_communism_support
+		add_to_variable = {
+			var = XNE_communism_support
+			value = 0.05
+		}
+		if = {
+			limit = { check_variable = { XNE_neutrality_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_neutrality_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_communism_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_conservative_support > 0.01 } }
+			subtract_from_variable = {
+				var = XNE_conservative_support
+				value = 0.02
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_communism_support
+				value = 0.02
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_liberal_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_liberal_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_communism_support
+				value = 0.01
+			}
+		}
+		if = {
+			limit = { check_variable = { XNE_fascism_support > 0 } }
+			subtract_from_variable = {
+				var = XNE_fascism_support
+				value = 0.01
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				var = XNE_communism_support
+				value = 0.01
+			}
+		}
+		hidden_effect = { XNE_check_popular_support = yes }
 	}
-	subtract_from_variable = {
-		var = XNE_neutrality_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_conservative_support
-		value = 0.02
-	}
-	subtract_from_variable = {
-		var = XNE_liberal_support
-		value = 0.01
-	}
-	subtract_from_variable = {
-		var = XNE_fascism_support
-		value = 0.01
-	}
-	hidden_effect = { XNE_check_popular_support = yes }
 }

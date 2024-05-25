@@ -37,7 +37,7 @@ XLV_the_committee_decisions = {
                 id = XLV_events.1
                 days = 3
             }
-            subtract_to_variable = {
+            subtract_from_variable = {
                 var = neutral_members
                value = 1
             }

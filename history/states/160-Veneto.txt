@@ -14,10 +14,10 @@ state = {
 			11584 5 
 		}
 		victory_points = { #Padova
-			3604 3 
+			3604 10 
 		}
 		victory_points = { #Verona
-			603 10
+			603 20
 		}
 
 		buildings = {
