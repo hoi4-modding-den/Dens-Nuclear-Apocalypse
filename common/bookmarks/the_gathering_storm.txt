@@ -59,7 +59,7 @@ bookmarks = {
 			}
 		}
 		"XPY" = {
-			ideology = fascist
+			ideology = fascism
 			history = "WIP"
 			focuses = {
 			}
@@ -80,16 +80,6 @@ bookmarks = {
 				XTI_aggressive_doctrine
 			}
 		}
-		"XAG" = {
-			ideology = neutrality
-			history = "history goes here"
-			focuses = {
-			
-			}
-			ideas = {
-			
-			}
-		}
 		"XCA" = {
 			ideology = neutrality
 			history = "history goes here"
@@ -100,17 +90,6 @@ bookmarks = {
 			
 			}
 		}
-		"XNR" = {
-			ideology = neutrality
-			history = "history goes here"
-			focuses = {
-			
-			}
-			ideas = {
-			
-			}
-		}
-		
 		"XMD" = {
 			ideology = neutrality
 			history = "XMD_bookmark"
