@@ -1,0 +1,17 @@
+XLV_info_decisions = {
+    allowed = {
+        tag = XLV
+    }
+    priority = 10
+    icon = XLV_info_decisions
+    visible_when_empty = no
+}
+
+XLV_the_committee_decisions = {
+    allowed = {
+        tag = XLV
+    }
+    priority = 8
+    icon = XLV_info_decisions
+    visible_when_empty = yes
+}

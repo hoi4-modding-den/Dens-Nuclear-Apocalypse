@@ -13,9 +13,8 @@ ideas = {
 			picture = XLV_centro_ricerca
 			modifier = {
 				stability_factor = 0.1
-				surrender_limit = 0.5
+				resarch_speed_factor = 0.1
 				political_power_factor = -0.25
-				compliance_growth_on_our_occupied_states = 0.25
 			}
 		}
 	}

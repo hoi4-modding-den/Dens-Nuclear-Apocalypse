@@ -1,0 +1,38 @@
+XLV_info_decisions = {
+    XLV_info_decision_1 = {
+        allowed = {
+            tag = XLV
+        }
+        fire_only_once = yes
+        days_remove = 1
+
+        remove_effect = {
+			country_event = XLV_info_events.1
+        }
+    }
+
+    XLV_info_decision_2 = {
+        allowed = {
+            tag = XLV
+        }
+        fire_only_once = yes
+        days_remove = 1
+
+        remove_effect = {
+			country_event = XLV_info_events.2
+        }
+    }
+}
+
+XLV_the_committee_decisions = {
+    XLV__decision_1 = {
+        allowed = {
+            tag = XLV
+        }
+        fire_only_once = no
+        days_remove = 1
+
+        remove_effect = {
+        }
+    }
+}

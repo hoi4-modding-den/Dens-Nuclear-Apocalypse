@@ -57,7 +57,7 @@ country_event = {
 	option = {
 		name = XNE_support.3.a
 		ai_chance = { factor = 6 }
-		
+		retire_country_leader = yes
 	}
 	
 	option = {
@@ -84,6 +84,28 @@ country_event = {
 	
 	option = {
 		name = XNE_support.4.b
+		ai_chance = { factor = 3 }
+		
+	}
+}
+
+# No Confidence
+country_event = {
+	id = XNE_support.5
+	title = XNE_support.5.title
+	desc = XNE_support.5.desc
+	picture = GFX_report_event_SWI_president_talking_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_support.5.a
+		ai_chance = { factor = 5 }
+		
+	}
+	
+	option = {
+		name = XNE_support.5.b
 		ai_chance = { factor = 3 }
 		
 	}

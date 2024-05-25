@@ -37,3 +37,28 @@ create_country_leader = {
 
 country_event = { id = XLV_events.1 }
 set_country_flag = dont_use_default_political_advisors
+
+set_variable = {
+    var = lega_members
+    value = 1
+}
+
+set_variable = {
+    var = science_members
+    value = 1
+}
+
+set_variable = {
+    var = neutral_members
+    value = 1
+}
+
+set_variable = {
+    var = europe_members
+    value = 1
+}
+
+set_variable = {
+    var = communist_members
+    value = 1
+}

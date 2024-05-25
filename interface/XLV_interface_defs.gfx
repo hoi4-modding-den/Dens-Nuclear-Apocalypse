@@ -14,5 +14,10 @@ spriteTypes = {
 	spriteType = {
 		name = "XLV_centro_ricerca"
 		texturefile = "gfx/XLV/XLV_centro_ricerca.dds"
+	}
+	spriteType = {
+		name = "XLV_info_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_generic.dds"
 	}	
 }
+

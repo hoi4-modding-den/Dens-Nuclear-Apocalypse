@@ -305,6 +305,26 @@ ideas = {
 					production_speed_buildings_factor = 0.25
 				}
 			}
+		XAD_swiss_catalusian_trade = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = chi_hyper_inflation
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					production_speed_buildings_factor = 0.25
+					consumer_goods_factor = -0.15
+				}
+			}
 	}
 }
 

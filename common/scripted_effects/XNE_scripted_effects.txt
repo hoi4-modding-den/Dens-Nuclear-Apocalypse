@@ -54,13 +54,16 @@ XNE_check_popular_support = {
 		}
 	}
 	else = {
-		add_stability = -0.025
+		add_stability = -0.015
 		if = {
-			limit = { NOT = { has_idea = XNE_fascism_rising } }
-			add_timed_idea = {
-				idea = XNE_fascism_rising
-				days = 28
+			limit = { 
+				AND = { 
+					date > 2240.05.01
+					NOT = { has_country_flag = XNE_no_confidence }
+				}
 			}
+			country_event = XNE_support.5
+			set_country_flag = XNE_no_confidence
 		}
 	}
 }
