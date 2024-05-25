@@ -11,6 +11,7 @@
 	
 	default = no
 	reset_on_civilwar = no
+	continuous_focus_position = { x = 0 y = 3000 }
 
 	initial_show_position = {
 		focus = XNE_chamberlains_speech
@@ -65,7 +66,7 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			XNE_gain_conservative_support = yes
+			XNE_gain_communism_support = yes
 		}
 		
 		ai_will_do = {
@@ -82,7 +83,7 @@
 		id = XNE_cooperation
 		icon = GFX_focus_generic_befriend_denmark
 		prerequisite = { focus = XNE_chamberlains_speech }
-		x = -5
+		x = -4
 		y = 1
 		relative_position_id = XNE_chamberlains_speech
 
@@ -100,7 +101,7 @@
 		
 		completion_reward = {
 			XNE_gain_liberal_support = yes
-			XNE_gain_communism_support = yes
+			XNE_gain_conservative_support = yes
 		}
 		
 		ai_will_do = {
@@ -117,7 +118,7 @@
 		id = XNE_aggression
 		icon = GFX_focus_generic_attack_denmark
 		prerequisite = { focus = XNE_chamberlains_speech }
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = XNE_chamberlains_speech
 		
@@ -152,7 +153,7 @@
 		id = XNE_expand_our_trade
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = XNE_cooperation }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = XNE_cooperation
 
@@ -168,9 +169,17 @@
 		
 		completion_reward = {
 			XNE_gain_liberal_support = yes
-			add_timed_idea = {
-				idea = XNE_trade_focus
-				days = 730
+			hidden_effect = {
+				add_timed_idea = {
+					idea = XNE_trade_focus
+					days = 730
+				}
+			}
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = XNE_trade_focus_tool
+					days = 730
+				}
 			}
 			add_resource = {
 				type = steel
@@ -267,7 +276,7 @@
 		id = XNE_ease_tensions_with_mercia
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = XNE_cooperation }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = XNE_cooperation
 
@@ -283,7 +292,7 @@
 		
 		completion_reward = {
 			XNE_gain_liberal_support = yes
-			XNE_gain_communism_support = yes
+			XNE_gain_conservative_support = yes
 			swap_ideas = {
 				remove_idea = XNE_tensions_on_the_trent
 				add_idea = XNE_tensions_on_the_trent_eased
@@ -316,6 +325,7 @@
 		
 		completion_reward = {
 			XNE_gain_liberal_support = yes
+			XNE_gain_conservative_support = yes
 			add_manpower = -90000
 			add_stability = 0.05
 		}
@@ -324,8 +334,269 @@
 			factor = 10
 		}
 	}
+	
+	focus = {
+		id = XNE_ease_conscription
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = XNE_lower_military_presence }
+		x = -1
+		y = 1
+		relative_position_id = XNE_lower_military_presence
 
+		cost = 8
+
+		available = {}
+		bypass = { has_idea = volunteer_only }
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_liberal_support = yes
+			XNE_gain_conservative_support = yes
+			if = {
+				limit = { has_idea = limited_conscription }
+				swap_ideas = {
+					remove_idea = limited_conscription
+					add_idea = volunteer_only
+				}
+			}
+			if = {
+				limit = { has_idea = extensive_conscription }
+				swap_ideas = {
+					remove_idea = extensive_conscription
+					add_idea = limited_conscription
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
 	
+	focus = {
+		id = XNE_recognise_mercia
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XNE_ease_conscription }
+		x = 0
+		y = 1
+		relative_position_id = XNE_ease_conscription
+
+		cost = 8
+
+		available = {}
+		bypass = { has_idea = volunteer_only }
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			XNE_gain_liberal_support = yes
+			XNE_gain_conservative_support = yes
+			add_stability = 0.05
+			remove_ideas = XNE_tensions_on_the_trent_eased
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = XNE_coalition_government
+		icon = GFX_focus_DEN_undermine_overlord_continuous_focus
+		prerequisite = { focus = XNE_lower_military_presence }
+		prerequisite = { focus = XNE_oil_off_the_coast }
+		x = 1
+		y = 2
+		relative_position_id = XNE_lower_military_presence
+
+		cost = 8
+
+		available = { has_government = democratic }
+		bypass = {}
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+				create_country_leader = {
+					name = XNE_harold_johnson
+					desc = XNE_harold_johnson_desc
+					picture = GFX_Portrait_XNE_conservative2
+					expire = "1.1.1"
+					ideology = XNE_democratic_centrism
+					traits = {
+						ARG_prominent_centrist
+					}
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = XNE_coalition_party_long
+					name = XNE_coalition_party
+				}
+				add_stability = -0.1
+			}
+			custom_effect_tooltip = XNE_coalition_government_tool
+			remove_ideas = XNE_internal_conflict
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+    focus = {
+		id = XNE_alliance_with_mercia
+    	icon = GFX_goal_generic_territory_or_war
+    	prerequisite = { focus = XNE_recognise_mercia }
+    	prerequisite = { focus = XNE_coalition_government }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_coalition_government
+    
+    	cost = 8
+    
+    	available = { XNM = { has_government = ROOT } }
+    	bypass = {}
+    	
+    	cancelable = no
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNM = { country_event = XNE_focus.2 }
+			add_political_power = 75
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+    focus = {
+		id = XNE_approach_ireland
+    	icon = GFX_goal_generic_improve_relations
+    	prerequisite = { focus = XNE_recognise_mercia }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_recognise_mercia
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_approach_ulster }
+    	
+    	cancelable = no
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XIE = { country_event = XNE_focus.2 }
+			add_political_power = 50
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+    focus = {
+		id = XNE_approach_ulster
+    	icon = GFX_focus_generic_infiltration
+    	prerequisite = { focus = XNE_recognise_mercia }
+    	x = -3
+    	y = 1
+    	relative_position_id = XNE_recognise_mercia
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_approach_ireland }
+    	
+    	cancelable = no
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNI = { country_event = XNE_focus.3 }
+			add_political_power = 35
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
 	
+	focus = {
+		id = XNE_treaty_with_wales
+    	icon = GFX_goal_generic_improve_relations
+    	prerequisite = { focus = XNE_coalition_government }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_coalition_government
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_a_deal_for_welsh_victory }
+    	
+    	cancelable = no
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XWA = { country_event = XNE_focus.2 }
+			add_political_power = 50
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+    focus = {
+		id = XNE_a_deal_for_welsh_victory
+    	icon = GFX_focus_generic_infiltration
+    	prerequisite = { focus = XNE_coalition_government }
+    	x = 3
+    	y = 1
+    	relative_position_id = XNE_coalition_government
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_treaty_with_wales }
+    	
+    	cancelable = no
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XPW = { country_event = XNE_focus.4 }
+			add_political_power = 35
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
 
 }

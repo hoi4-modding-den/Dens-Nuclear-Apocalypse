@@ -20,6 +20,12 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 191 191 2 }
 			}
+			
+			XNE_democratic_centrism = {
+				can_be_randomly_selected = no
+				color = { 96 96 129 }
+			}
+				
 		}
 
 		dynamic_faction_names = {
