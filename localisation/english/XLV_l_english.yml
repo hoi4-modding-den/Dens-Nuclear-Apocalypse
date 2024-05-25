@@ -73,3 +73,6 @@
 
  XLV_the_committee_decisions: "The Committee"
  XLV_the_committee_decisions_desc: "The committee is the most powerful institution in our country, it is formed by 5 members, divided between the major parties in Lombardo-Veneto.\n They are currently divided in this way.\n §GLiga Autonomia Veneto:§  [?lega_members] members\n §YCentro Ricerca Trento:§  [?science_members] members\n §WNon-Aligned Members:§  [?neutral_members] members\n §BPartito Eurodemocratico della Lombardia - Avanti Veneto!:§  [?europe_members] members\n §RPartito Comunista Unito:§  [?communist_members] members"
+
+ #others
+ XLV_history_desc: "WIP"

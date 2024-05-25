@@ -113,6 +113,14 @@ bookmarks = {
 			}
 			history = XAR_history_desc
 		}
+		"XLV"={
+			ideology = neutrality
+			ideas = {
+				XLV_committee_of_public_safety
+				XLV_centro_ricerca_trento
+			}
+			history = XLV_history_desc
+		}
 		"XAQ" = {
 			ideology = fascism
 			history = XAQ_history_desc
@@ -128,8 +136,5 @@ bookmarks = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
-		
-		
-
-       
+	}
 }
