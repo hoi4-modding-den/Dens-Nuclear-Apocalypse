@@ -561,3 +561,24 @@ XIA_ADJ:0 "Italian"
 
 XTN_rally_italian_army:0 "Form Italian army"
 XTN_rally_italian_army_desc:0 "Italian exiles are willing to fight for a new Italy."
+
+XTN_modernize_ticino:0 "Modernize Ticino"
+XTN_modernize_ticino_desc:0 "We shall build arms for our new allies."
+
+XSS_test_event.17.t:0 "Switzerland creates Italian government in Ticino"
+XSS_test_event.17.desc:0 "Today Switzerland has announced creation of Italian government in Ticino. Their plan on invasion of Lombardy to establish their new Italian Republic."
+XSS_test_event.17.a:0 "Long live the Italian Republic"
+XSS_test_event.17.b:0 "What the fuck is this"
+
+XSS_march_into_lombardy:0 "March into Lombardy"
+XSS_march_into_lombardy_desc:0 "Today our soldiers will march into lombardy to create a new Italian state."
+
+XSS_create_italian_state:0 "Create Italian State"
+XSS_create_italian_state_desc:0 "After conquest of Lombardy we should keep our promise and establish Italian Republic."
+
+XSS_NSS_italy:0 "Neu Schutzstaffel"
+XSS_NSS_italy_desc:0 "Neu Schutzstaffel was a paramilitary organization, but after Victory March it was integrated into regular army. They also hold much influence over Italy."
+
+XSS_claim_north_italy:0 "Claim Northern Italy"
+XSS_claim_north_italy_desc:0 "We will help our little Italian puppet by allowing them for expansion into wasteland."
+

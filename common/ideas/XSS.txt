@@ -326,6 +326,17 @@ ideas = {
             political_power_gain = 0.05
             }
         }
+        XSS_NSS_italy = {
+           removal_cost = -1
+            picture = SWI_spirit_of_helvetia_defensive_peace
+            modifier = {
+            offence = 0.1
+            experience_loss_factor = -0.3
+            training_time_factor = -0.12
+            conscription = 0.02
+            autonomy_gain = -0.25
+            }
+        }
 
     }
 

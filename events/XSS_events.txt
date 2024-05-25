@@ -396,6 +396,31 @@ news_event = {
 
 }
 
+news_event = {
+    id = XSS_test_event.17
+    title = XSS_test_event.17.t
+    picture = GFX_news_event_BRA_estado_novo
+    desc = XSS_test_event.17.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.17.a
+        trigger = {
+            tag = XSS
+        }
+    }
+    option = {
+        name = XSS_test_event.17.b
+        trigger = {
+            tag = XLV
+        }
+    }
+
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
