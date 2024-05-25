@@ -1,0 +1,15 @@
+capital = 23
+
+# oob = "XAQ_1936"
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 90
+	neutrality = 10
+}
+

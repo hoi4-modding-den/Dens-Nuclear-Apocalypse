@@ -10,6 +10,10 @@ XAG = {
 	color = rgb { 105 115 145 }
 	color_ui = rgb { 105 115 145 }
 }
+XAQ = {
+	color = rgb { 58 151 29 }
+	color_ui = rgb { 58 151 29 }
+}
 XCA = {
 	color = rgb { 105 115 145 }
 	color_ui = rgb { 105 115 145 }
