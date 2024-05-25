@@ -126,7 +126,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_shield_medium"
-			position = { x = 34 y = -37 }
+			position = { x = 28 y = -30 }
 			scale = 2.0
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
@@ -134,14 +134,14 @@ guiTypes = {
 
 		buttonType = {
 			name = "country"
-			quadTextureSprite = "GFX_country_selection_entry"
+			quadTextureSprite = "GFX_country_selection_minor_entry"
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
 		}
 
 		instantTextBoxType = {
 			name = "country_name"
-			position = { x = 9 y = 74 }
+			position = { x = 3 y = 85 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 130
@@ -875,11 +875,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history"
-			position = { x = 805 y = 500 }
+			position = { x = 805 y = 527 }
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 387
-			maxHeight = 40
+			maxHeight = 300
 			format = left
 		}
 	}
