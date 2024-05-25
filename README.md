@@ -42,7 +42,9 @@ Nuclear war has set the world back 300 years, now in the year 2236 they are back
 | XPW | lcdub            | justaghostt         |
 | XWA | lcdub            | justaghostt         |
 | XPY | Knighticus       | biggusbutt          |
-| XRE | Bowteye          | adeleine.mp3        |
+| XAG | Bowteye          | adeleine.mp3        |
+| XCA | Bowteye          | adeleine.mp3        |
+| XNR | Bowteye          | adeleine.mp3        |
 | XRM | Woodymapper      | woody6982           |
 | XSS | Woodymapper      | woody6982           |
 | XRP | Carrera075       | carrera075          |

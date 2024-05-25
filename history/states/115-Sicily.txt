@@ -20,14 +20,7 @@ state = {
 			industrial_complex = 1
 			#air_base = 10
 			dockyard = 1
-			10074 = {
-				naval_base = 2
 
-			}
-			7059 = {
-				naval_base = 5
-
-			}
 			4159 = {
 				naval_base = 8
 
