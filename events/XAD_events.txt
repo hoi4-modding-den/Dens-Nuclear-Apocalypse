@@ -1,0 +1,78 @@
+
+add_namespace = XAD
+country_event = {
+    id = XAD.1
+    title = XAD.1.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XAD.1.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.1.a
+		XAD = { country_event = XAD.2 }
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XAD.1.b
+		XAD = { country_event = XAD.3 }
+		ai_chance = {
+			base = 100
+		}
+    }
+}
+country_event = {
+    id = XAD.2
+	desc = XAD.2.d
+    title = XAD.2.t
+    # picture = GFX_report_event_DEN_celebration
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.2.a
+    }
+}
+country_event = {
+    id = XAD.3
+    title = XAD.3.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XAD.3.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.3.a
+        add_ideas = XAD_swiss_catalusian_trade
+		give_resource_rights = {
+			receiver = XSS
+			state = 173
+		}
+    }
+}
+country_event = {
+    id = XAD.4
+    title = XAD.4.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XAD.4.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.4.a
+		795 = {
+			transfer_state_to = XAD
+			add_core_of = XSA
+			start_resistance = yes
+		}
+    }
+}

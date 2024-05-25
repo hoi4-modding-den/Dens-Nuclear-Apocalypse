@@ -92,6 +92,38 @@
 		
 	}
 	focus = {
+		id = XAD_develop_the_casablanca_university
+		icon = GFX_
+		prerequisite = { focus = XAD_start_the_casablanca_project }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
 		id = XAD_work_on_the_sevilla_projects
 		icon = GFX_
 		prerequisite = { focus = XAD_start_the_casablanca_project }
@@ -429,7 +461,7 @@
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
-		x = 2
+		x = 0
 		y = 4
 
 		cost = 10
@@ -469,7 +501,7 @@
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
-		x = 4
+		x = 2
 		y = 4
 
 		cost = 10
@@ -499,38 +531,6 @@
 				idea = XAD_increased_tariffs
 				days = 365
 			}
-		}
-	}
-	focus = {
-		id = XAD_develop_the_casablanca_university
-		icon = GFX_
-		prerequisite = { focus = XAD_develop_the_cities }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 4
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		 
-
-		completion_reward = {
-			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -570,7 +570,7 @@
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
-		x = 6
+		x = 4
 		y = 4
 
 		cost = 10
@@ -605,7 +605,7 @@
 		icon = GFX_
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
-		x = 8
+		x = 6
 		y = 4
 
 		cost = 3
@@ -630,5 +630,201 @@
 			add_political_power = 50
 			custom_effect_tooltip = "XAD_tooltip_country_fixing"
 		}
+	}
+	focus = {
+		id = XAD_tiblina_mines
+		icon = GFX_
+		prerequisite = { focus = XAD_start_the_casablanca_project }
+		#mutually_exclusive = { focus =  }
+		x = 8
+		y = 1
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 179
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				add_resource = {
+					type = tungsten
+					amount = 28
+					state = 179
+				}
+		}
+	}
+	focus = {
+		id = XAD_oil_in_the_meditarrean
+		icon = GFX_
+		prerequisite = { focus = XAD_tiblina_mines }
+		#mutually_exclusive = { focus =  }
+		x = 8
+		y = 2
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 167
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				add_resource = {
+					type = oil
+					amount = 18
+					state = 167
+				}
+		}
+	}
+	focus = {
+		id = XAD_iron_in_cordoba
+		icon = GFX_
+		prerequisite = { focus = XAD_oil_in_the_meditarrean }
+		#mutually_exclusive = { focus =  }
+		x = 8
+		y = 3
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 789
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				add_resource = {
+					type = steel
+					amount = 21
+					state = 789
+				}
+		}
+	}
+	focus = {
+		id = XAD_selling_iron_to_the_swiss
+		icon = GFX_
+		prerequisite = { focus = XAD_iron_in_cordoba }
+		#mutually_exclusive = { focus =  }
+		x = 8
+		y = 4
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 173
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			XSS = { 
+				country_event = {
+					id = XAD.1
+					days = 2
+					random_hours = 6
+				}
+			}
+		} 
+	}
+	focus = {
+		id = XAD_the_cromium_in_the_north
+		icon = GFX_
+		prerequisite = { focus = XAD_iron_in_cordoba }
+		#mutually_exclusive = { focus =  }
+		x = 10
+		y = 4
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 179
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 179
+					num_provinces = 3
+					on_win = XAD.4
+					on_lose = XAD.4
+					on_cancel = XAD.4
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 795
+					num_provinces = 1
+					on_win = XAD.4
+					on_lose = XAD.4
+					on_cancel = XAD.4
+				}
+			}
+		} 
 	}
 }
