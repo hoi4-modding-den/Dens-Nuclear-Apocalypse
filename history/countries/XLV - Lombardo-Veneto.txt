@@ -62,3 +62,13 @@ set_variable = {
     var = communist_members
     value = 1
 }
+
+set_variable = {
+    var = lega_points
+    value = 0
+}
+
+set_variable = {
+    var = communists_points
+    value = 0
+}

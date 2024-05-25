@@ -54,19 +54,390 @@ country_event = {
     is_triggered_only = yes
 
 	option = { #We hope for a "Liga Autonomia Veneto" win
-		name = XLV_info_events.1.a
+		name = XLV_events.1.a
 		ai_chance = {
 			base = 1
-		}
+        }
+        add_popularity = {
+        ideology = fascism
+        popularity = 0.05
+        }
+        hidden_effect= {
+            country_event = {
+                id = XLV_events.2
+                days = 3
+            }
+            add_to_variable = {
+                var = lega_points
+               value = 1
+            }
+        }
 	}
 
 	option = { #We hope for a "Partito Comunista Unito" win
-		name = XLV_info_events.1.b
+		name = XLV_events.1.b
 		ai_chance = {
 			base = 1
 		}
+        add_popularity = {
+        ideology = communism
+        popularity = 0.05
+        }
+        hidden_effect= {
+            country_event = {
+                id = XLV_events.2
+                days = 3
+            }
+            add_to_variable = {
+                var = communists_points
+                value = 1
+            }
+        }
 	}
 }
+
+country_event = {
+	id = XLV_events.2
+	title = XLV_events.2.t
+	desc = XLV_events.2.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #We hope for a "Liga Autonomia Veneto" win
+		name = XLV_events.1.a
+		ai_chance = {
+			base = 1
+        }
+        add_popularity = {
+        ideology = fascism
+        popularity = 0.05
+        }
+        hidden_effect= {
+            country_event = {
+                id = XLV_events.3
+                days = 3
+            }
+            add_to_variable = {
+                var = lega_points
+               value = 1
+            }
+        }
+	}
+
+	option = { #We hope for a "Partito Comunista Unito" win
+		name = XLV_events.1.b
+		ai_chance = {
+			base = 1
+		}
+        add_popularity = {
+        ideology = communism
+        popularity = 0.05
+        }
+        hidden_effect= {
+            country_event = {
+                id = XLV_events.3
+                days = 3
+            }
+            add_to_variable = {
+                var = communists_points
+                value = 1
+            }
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.3
+	title = XLV_events.3.t
+	desc = XLV_events.3.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #We hope for a "Liga Autonomia Veneto" win
+		name = XLV_events.1.a
+		ai_chance = {
+			base = 1
+        }
+        add_popularity = {
+        ideology = fascism
+        popularity = 0.05
+        }
+        hidden_effect= {
+            country_event = {
+                id = XLV_events.4
+                days = 3
+            }
+            add_to_variable = {
+                var = lega_points
+               value = 1
+            }
+        }
+	}
+
+	option = { #We hope for a "Partito Comunista Unito" win
+		name = XLV_events.1.b
+		ai_chance = {
+			base = 1
+		}
+        add_popularity = {
+        ideology = communism
+        popularity = 0.05
+        }
+        hidden_effect= {
+            country_event = {
+                id = XLV_events.4
+                days = 3
+            }
+            add_to_variable = {
+                var = communists_points
+                value = 1
+            }
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.4
+	title = XLV_events.4.t
+	desc = XLV_events.4.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #We hope for a "Liga Autonomia Veneto" win
+		name = XLV_events.1.a
+		ai_chance = {
+			base = 1
+        }
+        add_popularity = {
+        ideology = fascism
+        popularity = 0.05
+        }
+        hidden_effect= {
+            country_event = {
+                id = XLV_events.5
+                days = 3
+            }
+            add_to_variable = {
+                var = lega_points
+               value = 1
+            }
+        }
+	}
+
+	option = { #We hope for a "Partito Comunista Unito" win
+		name = XLV_events.1.b
+		ai_chance = {
+			base = 1
+		}
+        add_popularity = {
+        ideology = communism
+        popularity = 0.05
+        }
+        hidden_effect= {
+            country_event = {
+                id = XLV_events.5
+                days = 3
+            }
+            add_to_variable = {
+                var = communists_points
+                value = 1
+            }
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.5
+	title = XLV_events.5.t
+	desc = XLV_events.5.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #We hope for the better...
+		name = XLV_events.5.a
+		ai_chance = {
+			base = 1
+        }
+        hidden_effect= {
+            if = {
+                limit = {
+                    check_variable = { communists_points > lega_points }
+                }
+                country_event = {
+                    id = XLV_events.6 #Communists win
+                    days = 3
+                }
+            }
+            else_if = {
+                limit = {
+                    check_variable = { communists_points < lega_points }
+                }
+                country_event = {
+                    id = XLV_events.7 #Fascists win
+                    days = 3
+                }
+            }
+            else_if = {
+                limit = {
+                    check_variable = { communists_points = lega_points }
+                }
+                country_event = {
+                    id = XLV_events.8 #Stalemate
+                    days = 3
+                }
+            }
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.6
+	title = XLV_events.6.t
+	desc = XLV_events.6.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #E' giunta l'ora, compagni!
+		name = XLV_events.6.a
+		ai_chance = {
+			base = 1
+        }
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+            last_election = "1935.12.17"
+            election_frequency = 48
+            long_name = XLV_communism_party_long
+            name = XLV_communism_party
+        }
+        add_to_variable = {
+            var = communist_members
+            value = 1
+        }
+    }
+}
+
+country_event = {
+	id = XLV_events.7
+	title = XLV_events.7.t
+	desc = XLV_events.7.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #Avanti popolo d'Italia!
+		name = XLV_events.7.a
+		ai_chance = {
+			base = 1
+        }
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+            last_election = "1935.12.17"
+            election_frequency = 48
+            long_name = XLV_fascism_party_long
+            name = XLV_fascism_party
+        }
+        add_to_variable = {
+            var = lega_members
+            value = 1
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.8
+	title = XLV_events.8.t
+	desc = XLV_events.8.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #Another member of the Centro Ricerca Trento can't do bad.
+		name = XLV_events.8.a
+		ai_chance = {
+			base = 1
+        }
+        add_to_variable = {
+            var = science_members
+            value = 1
+        }
+        country_event = {
+            id = XLV_events.9
+            days = 10
+        }
+	}
+
+	option = { #We could do better with another European Party in our committee.
+		name = XLV_events.8.b
+		ai_chance = {
+			base = 1
+        }
+        add_to_variable = {
+            var = europe_members
+            value = 1
+        }
+        country_event = {
+            id = XLV_events.10
+            days = 10
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.9
+	title = XLV_events.9.t
+	desc = XLV_events.9.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #This is... Unexpected, to say the least.
+		name = XLV_events.9.a
+		ai_chance = {
+			base = 1
+        }
+        set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no
+            last_election = "1935.12.17"
+            election_frequency = 48
+            long_name = XLV_science_party_long
+            name = XLV_science_party
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.10
+	title = XLV_events.10.t
+	desc = XLV_events.10.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #This is... Unexpected, to say the least.
+		name = XLV_events.9.a
+		ai_chance = {
+			base = 1
+        }
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+            last_election = "1935.12.17"
+            election_frequency = 48
+            long_name = XLV_democratic_party_long
+            name = XLV_democratic_party
+        }
+	}
+}
+
+
 
 
 
