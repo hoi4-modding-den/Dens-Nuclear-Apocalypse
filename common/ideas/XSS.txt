@@ -235,6 +235,30 @@ ideas = {
                 max_planning = 0.05
             }
         }
+        XSS_UN_idea = {
+           removal_cost = -1
+            picture = ger_the_great_red_menace
+            modifier = {
+               justify_war_goal_time = 0.35
+               enemy_justify_war_goal_time = 0.5
+               annex_cost_factor = 0.35
+               puppet_cost_factor = -0.25
+               request_lease_tension = -1
+               send_volunteer_divisions_required = -1
+               send_volunteers_tension = -1
+               send_volunteer_size = 2
+               opinion_gain_monthly = 5
+               lend_lease_tension = -1
+               join_faction_tension = -1
+               guarantee_cost = -0.5
+               stability_factor = 0.05
+               war_support_factor = -0.15
+               nuclear_production_factor = -0.15
+               research_speed_factor = 0.15
+               
+
+            }
+        }
     }
 
 }

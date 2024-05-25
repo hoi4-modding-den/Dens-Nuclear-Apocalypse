@@ -172,5 +172,58 @@ news_event = {
 
 }
 
+################## UN #############################
+country_event = {
+    id = XSS_test_event.8
+    title = XSS_test_event.8.t
+    picture = GFX_report_event_tur_politician_march
+    desc = XSS_test_event.8.desc
+    
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XSS_test_event.8.a
+        trigger = {
+            NOT = {tag = LIB}
+            }
+    add_ideas = {XSS_UN_idea}
+        
+    }
+    option = {
+        name = XSS_test_event.8.b
+        trigger = {
+            NOT = {tag = LIB}
+
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.8.c
+        trigger = {
+            tag = LIB
+        }
+    }
+
+    
+}
+
+news_event = {
+    id = XSS_test_event.9
+    title = XSS_test_event.9.t
+    picture = GFX_news_event_ast_parliament_house
+    desc = XSS_test_event.9.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XSS_test_event.9.a
+    }
+
+}
+
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
 ### tak robie te zajebane gówno pierwszy raz i mam ochote jebnąc magika ######################

@@ -708,7 +708,7 @@ add_resource = {
     completion_reward = {
 
         add_ideas = {XSS_no_neutrality}
-        
+        remove_ideas = {XSS_bank_of_europe}
         }
         
 
@@ -853,6 +853,49 @@ add_resource = {
 			create_wargoal = {
 				type = annex_everything
 				target = XNR
+			}
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_subjugate_colonials
+    x = 44
+    y = 20
+    icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
+    cost = 10
+    prerequisite = { focus = XSS_war_sicily }
+
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XMD
+			}
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_with_aquitaine
+    x = 43
+    y = 21
+    icon = GFX_focus_generic_attack_vichy_france
+    cost = 10
+    prerequisite = { focus = XSS_war_sicily }
+
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XAQ
 			}
         
         }
@@ -1016,6 +1059,39 @@ add_resource = {
 
     }
 
+   focus = {
+    id = XSS_UN
+    x = 46
+    y = 19
+    icon = GFX_focus_spr_anarchism_knows_no_borders
+    cost = 10
+    prerequisite = { focus = XSS_invite_cats }
+
+
+    completion_reward = {
+
+
+        news_event = {
+        id = XSS_test_event.9
+        days = 1
+        random_hours = 12
+            }
+
+
+
+        hidden_effect = {
+        every_country = {
+        country_event = {
+        id = XSS_test_event.8
+        days = 5
+        random_hours = 12
+             }
+            }
+        }      
+
+    }
+
+   }
 
 
     focus = {
