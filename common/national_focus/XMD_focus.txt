@@ -1,5 +1,12 @@
 ﻿focus_tree = {	
-	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XMD
+		}
+	}
 	default = no
 	reset_on_civilwar = no
     
@@ -8,14 +15,7 @@
 	focus = {
 	 id = XMD_focus
 	
-	 country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = XMD
-		}
-	 }
+	 
 	
 		
 		
