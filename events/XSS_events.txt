@@ -286,5 +286,56 @@ country_event = {
     }
 }
 
+#################### Naziści #####################
+
+news_event = {
+    id = XSS_test_event.12
+    title = XSS_test_event.12.t
+    picture = GFX_news_event_german_inspect_troops
+    desc = XSS_test_event.12.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.12.a
+    }
+
+}
+
+news_event = {
+    id = XSS_test_event.13
+    title = XSS_test_event.13.t
+    picture = GFX_news_event_064
+    desc = XSS_test_event.13.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.13.a
+add_popularity = {
+    ideology = fascism
+    popularity = 0.5
+}
+add_popularity = {
+    ideology = democratic
+    popularity = -1
+}
+add_popularity = {
+    ideology = communism
+    popularity = -0.25
+}
+add_stability = -0.15
+remove_ideas = {XSS_era_of_instability}
+
+    }
+
+}
+
+
+
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
 ### tak robie te zajebane gówno pierwszy raz i mam ochote jebnąc magika ######################

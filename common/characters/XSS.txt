@@ -27,7 +27,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = nazism
-			traits = {  }
+			traits = { dictator autocratic_imperialist rearmer }
 			expire = "3000.9.9.9"
 			id = -1
 		}
@@ -37,6 +37,7 @@ corps_commander = {
     defense_skill = 4
     planning_skill = 4
     logistics_skill = 1
+	traits = {media_personality harsh_leader armor_officer}
 }
 		advisor = {
 			slot = political_advisor

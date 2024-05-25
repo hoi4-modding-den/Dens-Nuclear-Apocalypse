@@ -2117,18 +2117,111 @@ add_resource = {
         
         add_popularity = {
         ideology = fascism
-        popularity = 0.15
+        popularity = 0.3
                 }
         add_popularity = {
         ideology = communism
-        popularity = 0.15
+        popularity = 0.25
                 }
         add_stability = -0.5
+        remove_ideas = {XSS_bank_of_europe}
+        add_ideas = {XSS_era_of_instability}
+        
         }
         
 
     }
 
+##################### Fascist ##################
+
+    focus = {
+    id = XSS_fascist_win
+    x = 60
+    y = 4
+    icon = GFX_focus_ger_reichskommisariats
+    cost = 1
+    prerequisite = { focus = XSS_storm_the_council }
+
+
+    completion_reward = {
+        news_event = {
+        id = XSS_test_event.12
+        days = 1
+        random_hours = 3
+            }
+
+        hidden_effect = { load_oob = "GreenArmy" }
+        
+set_politics = {
+    ruling_party = fascism
+    elections_allowed = no
+}
+
+        }
+        
+
+    }
+    focus = {
+    id = XSS_abandon_neutrality_nazi
+    x = 60
+    y = 5
+    icon = GFX_focus_SWI_abandon_neutrality
+    cost = 5
+    prerequisite = { focus = XSS_fascist_win }
+
+
+    completion_reward = {
+        remove_ideas = {XSS_neutrality}
+        news_event = {
+        id = XSS_test_event.2
+        days = 1
+        random_hours = 12
+            }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_nazi_terror
+    x = 60
+    y = 6
+    icon = GFX_goal_generic_secret_weapon
+    cost = 5
+    prerequisite = { focus = XSS_abandon_neutrality_nazi }
+
+
+    completion_reward = {
+
+        news_event = {
+        id = XSS_test_event.13
+        days = 1
+        random_hours = 12
+            }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_NSS_concecions
+    x = 60
+    y = 7
+    icon = GFX_focus_SWI_helvetic_junta
+    cost = 5
+    prerequisite = { focus = XSS_nazi_terror }
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_NSS}
+
+        }
+        
+
+    }
 
 
 
