@@ -1,0 +1,19 @@
+characters = {
+
+	XAQ_marcel_pietot = {
+		name =  XAQ_marcel_pietot
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XAQ/marcel_pietot.dds"
+			}		
+		}
+		country_leader = {
+			ideology = XAQ_esoteric_caesarism
+			traits = { XAQ_devoted_servant_of_rome }
+			expire = "3000.9.9.9"
+			desc = XAQ_marcel_pietot_desc
+			id = -1
+		}	
+	}
+
+}

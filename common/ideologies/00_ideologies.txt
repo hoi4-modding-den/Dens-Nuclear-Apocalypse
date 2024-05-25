@@ -151,6 +151,10 @@ ideologies = {
 
 			rexism = {
 			}
+
+			XAQ_esoteric_caesarism = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
