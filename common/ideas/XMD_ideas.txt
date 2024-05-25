@@ -1,27 +1,22 @@
 ideas = {
 	
 	
-	country= {
+	country = {
 	
-		Diverse_nationalities = {
-			name = Diverse_nationalities
+		XMD_Small_probability_of_Spanish_coup = {
+			name = XMD_Small_probability_of_Spanish_coup
 
 			removal_cost = -1
 
-			picture = 
+			picture = spa_maquis
 
 			allowed = {
-				original_tag = XMD
-			}
-
-			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			modifier = {
-				stability_factor = -0.15
-				political_power_factor = -0.1
+				stability_factor = -0.05
+				
 			}
 		}
-	}
 }

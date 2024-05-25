@@ -149,9 +149,6 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 25
 		y = 0
-
-		prerequisite = { focus = }
-		relative_position_id =
 		
 		cost = 5
 		
