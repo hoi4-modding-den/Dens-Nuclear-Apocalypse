@@ -259,6 +259,31 @@ ideas = {
 
             }
         }
+
+        XSS_era_of_instability = {
+           removal_cost = -1
+            picture = ICE_general_strike
+            modifier = {
+            production_speed_buildings_factor = 0.5 
+            consumer_goods_factor = 0.3
+            industry_repair_factor = -1
+            political_power_gain = -0.5
+            stability_factor = -0.35   
+
+            }
+        }
+
+        XSS_NSS = {
+           removal_cost = -1
+            picture = SWI_spirit_of_helvetia_defensive_peace
+            modifier = {
+            offence = 0.05
+            experience_loss_factor = -0.3
+            training_time_factor = -0.1
+
+            }
+        }
+
     }
 
 }

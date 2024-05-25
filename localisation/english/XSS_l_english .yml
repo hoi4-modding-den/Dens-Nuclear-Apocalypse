@@ -224,7 +224,7 @@ XSS_abandon_neutrality:0 "Abandon Neutrality"
 XSS_abandon_neutrality_desc:0 "To make shit done we need to stop being neutral. Let's have our own opinion."
 
 XSS_test_event.2.t:0 "Switzerland Abandons Neutrality!"
-XSS_test_event.2.desc:0 "After centuries of peace and neutrality, Switzerland has decided to abandon their ideas. Lyan Konig annonced today that the nation must adapt to new world and interventionism is mandatory in modern society."
+XSS_test_event.2.desc:0 "After centuries of peace and neutrality, Switzerland has decided to abandon their ideas. Leader of Switzerland annonced today that the nation must adapt to new world and interventionism is mandatory in modern society."
 XSS_test_event.2.a:0 "Something is brewing"
 
 XSS_alliance_with_green_army:0 "Befriend Romansh"
@@ -451,3 +451,31 @@ XSS_test_event.11.t:0 "Switzerland offers Fortifications"
 XSS_test_event.11.desc:0 "We are two nations united in one alliance and Switzerland offers to give us a massive support."
 XSS_test_event.11.a:0 "We Should agree"
 XSS_test_event.11.b:0 "Nah we will pass"
+
+XSS_era_of_instability:0 "Era of chaos"
+XSS_era_of_instability_desc:0 "Swiss concil have been stormed bringng end to swiss democracy, a bedrock on which the nation has been built."
+
+XSS_fascist_win:0 "Fascist Victory"
+XSS_fascist_win_desc:0 "Fascists have started the barrage and nobody contested their march on National Assembly. They will take over power and bring new era to Switzerland."
+
+XSS_test_event.12.t:0 "Fascist victory march"
+XSS_test_event.12.desc:0 "Today after shelling National Assembly NSS have took over Switzerland. Their started their reign of terror and will rule Switzerland. Niemir Eggli said that Europe will fear the new Swiss army."
+XSS_test_event.12.a:0 "All hail the Führer"
+
+
+XSS_abandon_neutrality_nazi:0 "Abandon Neutrality"
+XSS_abandon_neutrality_nazi_desc:0 "To make shit done we need to stop being neutral. Let's have our own opinion."
+
+XSS_nazi_terror:0 "Campaign of Terror"
+XSS_nazi_terror_desc:0 "The strikes and constant fighting is taking toll on our nation preventing us from expanding. We shall put end to these decadents."
+
+
+XSS_test_event.13.t:0 "Nazi Terror"
+XSS_test_event.13.desc:0 "NSS have deployed their divisions and started shootouts and arrests all over Switzerland. All communists, liberals and socialdemocrats were either killed or imprisoned. National Socialists now have complete rule over switzerland ending the Era of Instability."
+XSS_test_event.13.a:0 "Another victory for the Führer"
+
+XSS_NSS:0 "Neu Schutzstaffel"
+XSS_NSS_desc:0 "Neu Schutzstaffel was a paramilitary organization, but after Victory March it was integrated into regular army."
+
+XSS_NSS_concecions:0 "NSS Concesions"
+XSS_NSS_concecions_desc:0 "Our Führer is part of NSS and he will grant them some concessions to support the war effort."
