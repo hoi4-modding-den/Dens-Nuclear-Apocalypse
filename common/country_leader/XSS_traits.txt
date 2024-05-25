@@ -117,5 +117,14 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	Writer = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.1
+		conscription_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }

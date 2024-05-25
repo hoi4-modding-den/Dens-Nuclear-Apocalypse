@@ -63,7 +63,7 @@ country_event = {
     x = 49
     y = 3
     icon = GFX_goal_support_democracy
-    cost = 1
+    cost = 100
     prerequisite = { focus = XSS_elections }
     mutually_exclusive = { focus = XSS_storm_the_council }
 
@@ -2108,7 +2108,7 @@ add_resource = {
     x = 51
     y = 3
     icon = GFX_focus_SWI_dissolve_the_federal_council
-    cost = 1
+    cost = 100
     prerequisite = { focus = XSS_elections }
     mutually_exclusive = { focus = XSS_triumph_of_democracy }
 
@@ -2223,9 +2223,295 @@ set_politics = {
 
     }
 
+    focus = {
+    id = XSS_nazi_party_rally
+    x = 60
+    y = 8
+    icon = GFX_focus_generic_workers
+    cost = 2
+    prerequisite = { focus = XSS_NSS_concecions }
+
+
+    completion_reward = {
+
+        news_event = {
+        id = XSS_test_event.14
+        days = 1
+        random_hours = 12
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_industrial_reform
+    x = 55
+    y = 9
+    icon = GFX_goal_generic_construction
+    cost = 10
+    prerequisite = { focus = XSS_nazi_party_rally }
+
+
+    completion_reward = {
+
+ 3 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_millitary_effort
+    x = 54
+    y = 10
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 10
+    prerequisite = { focus = XSS_industrial_reform }
+
+
+    completion_reward = {
+
+ 151 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_geneva_investment
+    x = 56
+    y = 10
+    icon = GFX_goal_generic_construct_civ_factory
+    cost = 10
+    prerequisite = { focus = XSS_industrial_reform }
+
+
+    completion_reward = {
+
+    845 = {
+    add_extra_state_shared_building_slots = 2 
+    add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+        }
+    }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_great_leap_forward
+    x = 55
+    y = 11
+    icon = GFX_goal_generic_construct_civilian
+    cost = 10
+    prerequisite = { focus = XSS_geneva_investment }
+    prerequisite = { focus = XSS_millitary_effort }
+
+
+    completion_reward = {
+
+        add_timed_idea = {
+        idea = XSS_great_leap_forward_idea
+        days = 120
+                }  
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_tank_effort
+    x = 60
+    y = 10
+    icon = GFX_goal_generic_army_tanks
+    cost = 10
+    prerequisite = { focus = XSS_nazi_party_rally }
+
+
+    completion_reward = {
+
+        army_experience = 15
+        add_tech_bonus = {
+        bonus = 1
+        uses = 2
+        category = armor
+            }
+
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_NSS_mountanieers
+    x = 60
+    y = 11
+    icon = GFX_goal_generic_special_forces
+    cost = 10
+    prerequisite = { focus = XSS_tank_effort }
+
+
+    completion_reward = {
+
+        army_experience = 25
+        hidden_effect = {load_oob = "XSSSS"}
 
 
 
+        }
+        
+
+    }
+
+
+   focus = {
+    id = XSS_nazi_youth
+    x = 65
+    y = 9
+    icon = GFX_focus_ITA_generic_fascist_workers
+    cost = 10
+    prerequisite = { focus = XSS_nazi_party_rally }
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_swiss_youth}
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_expand_NSS
+    x = 64
+    y = 10
+    icon = GFX_focus_ITA_blackshirts
+    cost = 10
+    prerequisite = { focus = XSS_nazi_youth }
+
+
+    completion_reward = {
+    
+    swap_ideas = {
+        add_idea = XSS_NSS_2
+        remove_idea = XSS_NSS
+    }
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_expand_army
+    x = 66
+    y = 10
+    icon = GFX_focus_SWI_continuous_build_up_military_readiness
+    cost = 5
+    prerequisite = { focus = XSS_nazi_youth }
+
+
+    completion_reward = {
+    
+    army_experience = 25
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_publish_germania
+    x = 65
+    y = 11
+    icon = GFX_focus_generic_spread_fascism
+    cost = 5
+    prerequisite = { focus = XSS_expand_army }
+    prerequisite = { focus = XSS_expand_NSS }
+
+    completion_reward = {
+
+        add_ideas = {XSS_germania}
+        hidden_effect = {
+        news_event = {
+        id = XSS_test_event.15
+        days = 1
+        random_hours = 6
+            }
+
+        }
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_2nd_party_rally
+    x = 60
+    y = 12
+    icon = GFX_focus_generic_limited_social_mobilization
+    cost = 2
+    prerequisite = { focus = XSS_publish_germania }
+    prerequisite = { focus = XSS_NSS_mountanieers }
+    prerequisite = { focus = XSS_great_leap_forward }
+
+    completion_reward = {
+        news_event = {
+        id = XSS_test_event.16
+        days = 1
+        random_hours = 6
+            }
+
+        }
+        
+
+    }
+
+
+   focus = {
+    id = XSS_extermination_of_french
+    x = 60
+    y = 13
+    icon = GFX_focus_generic_attack_vichy_france
+    cost = 5
+    prerequisite = { focus = XSS_2nd_party_rally }
+
+    completion_reward = {
+
+        845 = {add_manpower = -60548}
+
+        }
+        
+
+    }
 
 
 }

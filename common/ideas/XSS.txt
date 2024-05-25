@@ -264,7 +264,7 @@ ideas = {
            removal_cost = -1
             picture = ICE_general_strike
             modifier = {
-            production_speed_buildings_factor = 0.5 
+            production_speed_buildings_factor = -0.5 
             consumer_goods_factor = 0.3
             industry_repair_factor = -1
             political_power_gain = -0.5
@@ -281,6 +281,42 @@ ideas = {
             experience_loss_factor = -0.3
             training_time_factor = -0.1
 
+            }
+        }
+
+        XSS_great_leap_forward_idea = {
+           removal_cost = -1
+            picture = SWE_folkhemmet
+            modifier = {
+            production_speed_buildings_factor = 0.35 
+            consumer_goods_factor = 0.25
+            stability_factor = 0.05
+            }
+        }
+        XSS_swiss_youth = {
+           removal_cost = -1
+            picture = SOV_war_heroes
+            modifier = {
+            training_time_factor = -0.05
+            conscription = 0.02
+
+            }
+        }
+        XSS_NSS_2 = {
+           removal_cost = -1
+            picture = SWI_spirit_of_helvetia_defensive_peace
+            modifier = {
+            offence = 0.1
+            experience_loss_factor = -0.3
+            training_time_factor = -0.12
+            conscription = 0.02
+            }
+        }
+       XSS_germania = {
+           removal_cost = -1
+            picture = hol_the_foundations_of_defense
+            modifier = {
+            war_support_factor = 0.15
             }
         }
 

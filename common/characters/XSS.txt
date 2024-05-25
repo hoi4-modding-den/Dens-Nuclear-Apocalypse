@@ -387,5 +387,26 @@ corps_commander = {
 
 	}
 
+	XSS_friedrich = {
+		name = "Friedrich Bracher"
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_leon_trotsky"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_friedrich_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+			traits = {
+				Writer
+			}
+		}
+	}
+
 
 }
