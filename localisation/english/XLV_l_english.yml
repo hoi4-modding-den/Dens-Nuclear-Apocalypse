@@ -6,8 +6,6 @@
  XLV_neutrality: "Lombardo-Veneto"
  XLV_neutrality_DEF: "Regioni unite del Lombardo-Veneto"
  XLV_neutrality_ADJ: "Trivenetine"
- XLV_fascism_party: "Grüne Armee"
- XLV_fascism_party_long: "Grüne Armee"
 
  XLV_communism_party: "PCU"
  XLV_communism_party_long: "Partito Comunista Unito"
@@ -21,6 +19,10 @@
  XLV_democratic_party: "PEL-AV"
  XLV_democratic_party_long: "Partito Eurodemocratico della Lombardia - Avanti Veneto!"
 
+
+ XLV_science_party: "CRT"
+ XLV_science_party_long: "Centro Ricerca Trento"
+
  #Leaders
  XLV_Alberto_Cartoni: "Alberto Cartoni"
  XLV_Alberto_Cartoni_desc: "WIP"
@@ -32,6 +34,31 @@
  XLV_info_events.2.t: "Path Guide - Lombardo-Veneto"
  XLV_info_events.2.desc: "WIP"
  XLV_info_events.2.a: "Good to know."
+ 
+ XLV_events.1.t: "Elections in Trento"
+ XLV_events.2.t: "Elections in Verona"
+ XLV_events.3.t: "Elections in Milan"
+ XLV_events.4.t: "Elections in Padua"
+ XLV_events.5.t: "The Elections Are Finished!"
+ XLV_events.6.t: "Partito Comunista Unito wins the seat!"
+ XLV_events.7.t: "Liga Autonomia Veneto wins the seat!"
+ XLV_events.8.t: "A stalemate..."
+ XLV_events.9.t: "CRT forms a coalition with PEL-AV"
+ XLV_events.10.t: "PEL-AV forms a coalition with CRT"
+ XLV_events.1.desc: "Today, Trento citizens voted for the party that should have the fifth place in the council. We can only hope they voted for the better..."
+ XLV_events.2.desc: "Today, Verona citizens voted for the party that should have the fifth place in the council. We can only hope they voted for the better..."
+ XLV_events.3.desc: "Today, Milan citizens voted for the party that should have the fifth place in the council. We can only hope they voted for the better..."
+ XLV_events.4.desc: "Today, Padua citizens voted for the party that should have the fifth place in the council. We can only hope they voted for the better..."
+ XLV_events.5.desc: "The elctions are finished in our 4 major cities, once again, we can only hope that our favoured party has won the elections..."
+ XLV_events.1.a: "We hope for a 'liga Autonomia Veneto' win"
+ XLV_events.1.b: "We hope for a 'Partito Comunista Unito' win"
+ XLV_events.5.a: "We hope for the better..."
+ XLV_events.6.a: "E' giunta l'ora, compagni!"
+ XLV_events.7.a: "Avanti popolo d'Italia!"
+ XLV_events.8.a: "Another member of the Centro Ricerca Trento can't do bad."
+ XLV_events.8.b: "We could do better with another European Party in our committee."
+ XLV_events.9.a: "This is... Unexpected, to say the least."
+
 
  # Ideas
  XLV_committee_of_public_safety: "Commitee of public safety"
@@ -44,11 +71,5 @@
  XLV_info_decision_1: "Starting situation in Lombardo-Veneto"
  XLV_info_decisions_2: "Path Guide - Lombardo-Veneto"
 
- XLV_the_committee_decisions: "Info"
- X LV_the_committee_decisions.desc: "The committee is the most powerful institution in our country, it is formed by 5 members, divided between the major parties  in Lombardo-Veneto.
- They are currently divided in this way:
- Liga Autonomia Veneto: [?lega_members] members
- Centro Ricerca Trento: [?science_members] members
- Non-Aligned Members: [?neutral_members] members
- Partito Eurodemocratico della Lombardia - Avanti Veneto!: [?europe_members] members
- Partito Comunista Unito: [?communist_members] members"
+ XLV_the_committee_decisions: "The Committee"
+ XLV_the_committee_decisions_desc: "The committee is the most powerful institution in our country, it is formed by 5 members, divided between the major parties in Lombardo-Veneto.\n They are currently divided in this way.\n §GLiga Autonomia Veneto:§  [?lega_members] members\n §YCentro Ricerca Trento:§  [?science_members] members\n §WNon-Aligned Members:§  [?neutral_members] members\n §BPartito Eurodemocratico della Lombardia - Avanti Veneto!:§  [?europe_members] members\n §RPartito Comunista Unito:§  [?communist_members] members"
