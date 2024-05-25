@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		XGE_computer_clique_dummy_idea = {
-			picture = GFX_idea_unknown
+			picture = XGE_computer_clique
 			modifier = {
 				stability_factor = -0.05
 				war_support_factor = -0.05

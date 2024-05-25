@@ -21,7 +21,7 @@ ideas = {
 			}
 		}
 		XNM_midlands_protests = {
-			picture = generic_constitutional_guarantees
+			picture = GFX_idea_XNM_midlands_protests
 			
 			allowed = {
 				always = no
@@ -42,7 +42,7 @@ ideas = {
 			}
 		}
 		XNM_tensions_on_the_trent = {
-			picture = generic_constitutional_guarantees
+			picture = GFX_idea_XNM_tensions_on_the_trent
 			
 			allowed = {
 				always = no
@@ -60,7 +60,7 @@ ideas = {
 			}
 		}
 		XNM_undergoing_army_modernization = {
-			picture = generic_constitutional_guarantees
+			picture = SPR_disbanded_army
 			
 			allowed = {
 				always = no
@@ -75,8 +75,8 @@ ideas = {
 			modifier = {
 			}
 		}
-		XNM_albion_booming_heartland = {
-			picture = generic_constitutional_guarantees
+		XNM_albion_booming_heart = {
+			picture = GFX_idea_XNM_albion_booming_heart
 			
 			allowed = {
 				always = no
@@ -92,7 +92,7 @@ ideas = {
 			}
 		}		
 		BEZ_membership = {
-			picture = generic_constitutional_guarantees
+			picture = generic_flexible_foreign_policy2
 			
 			allowed = {
 				always = no

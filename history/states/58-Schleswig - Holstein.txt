@@ -11,7 +11,7 @@ manpower=2063753
 		victory_points = {
 			9347 20
 		}
-		owner = LIB # GER
+		owner = XSH # GER
 		buildings = {
 			infrastructure = 3
 			#arms_factory = 1
@@ -21,7 +21,7 @@ manpower=2063753
 				naval_base = 8
 			}
 		}
-		#add_core_of = GER
+		add_core_of = XSH
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3

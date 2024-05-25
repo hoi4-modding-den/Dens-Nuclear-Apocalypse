@@ -16,4 +16,80 @@ characters = {
 		}
 		
 	}
+	XTI_elisa = {
+		name = "Elisa Anzengruber"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XTI_elisa_portrait"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			desc = XTI_elisa_desc
+			traits = { 
+				dictator
+				socialite_connections
+			}
+			expire = "2274.9.9.9"
+			id = -1
+		}
+		
+	}
+	XTI_leo_schmidt = {
+		name = "Leo Schmidt"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XTI_leo_portrait"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			desc = XTI_leo_desc
+			traits = { 
+				conservative_grandee
+				staunch_constitutionalist
+			}
+			expire = "2258.9.9.9"
+			id = -1
+		}
+		
+	}
+	XTI_clara_bauer = {
+		name = "Clara Bauer"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XTI_clara_portrait"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			desc = XTI_clara_desc
+			traits = { 
+				champion_of_peace_5
+				economic_reformer
+			}
+			expire = "2266.9.9.9"
+			id = -1
+		}
+		
+	}
+	XTI_louis_boltzmann = {
+		name = "Louis Boltzmann"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XTI_louis_portrait"
+			}
+		}
+		country_leader = {
+			ideology = populism
+			desc = XTI_louis_desc
+			traits = { 
+				conservative_nationalist
+				nationalist_symbol
+			}
+			expire = "2283.9.9.9"
+			id = -1
+		}
+		
+	}
 }

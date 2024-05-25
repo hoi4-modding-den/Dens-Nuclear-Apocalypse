@@ -6,6 +6,22 @@ XAD = {
 	color = rgb { 51 204 51 }
 	color_ui = rgb { 51 204 51 }
 }
+XAG = {
+	color = rgb { 105 115 145 }
+	color_ui = rgb { 105 115 145 }
+}
+XAQ = {
+	color = rgb { 58 151 29 }
+	color_ui = rgb { 58 151 29 }
+}
+XCA = {
+	color = rgb { 105 115 145 }
+	color_ui = rgb { 105 115 145 }
+}
+XNR = {
+	color = rgb { 105 115 145 }
+	color_ui = rgb { 105 115 145 }
+}
 XNE = {
 	color = rgb { 222 22 79 }
 	color_ui = rgb { 222 22 79 }
@@ -17,6 +33,10 @@ XIE = {
 XSS = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
+}
+XSH = {
+	color = rgb { 28 131 255 }
+	color_ui = rgb { 28 131 255 }
 }
 XJY = {
 	color = rgb { 96 147 87 }
@@ -47,10 +67,6 @@ XDK = {
 XRP = {
 	color = rgb { 0 82 155 }
 	color_ui = rgb { 0 82 155 }
-}
-XSI = {
-	color = rgb { 18 127 210 }
-	color_ui = rgb { 18 127 210 }
 }
 XAR = {
 	color = rgb { 84 97 81 }

@@ -1,0 +1,10 @@
+spriteTypes = {
+  spriteType = {
+		name = "GFX_Colonists"
+		texturefile = "gfx/event_pictures/news_event_xmd.dds"
+  }
+
+}
+
+
+

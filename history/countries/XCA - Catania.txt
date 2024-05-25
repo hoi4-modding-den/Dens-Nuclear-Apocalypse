@@ -1,0 +1,22 @@
+capital = 115
+
+# oob = "XCA_1936"
+
+recruit_character = XCA_king_marino
+
+create_faction = "Sicilian Concorde"
+add_to_faction = XCA
+add_to_faction = XNR
+add_to_faction = XAG
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 23
+	neutrality = 77
+}
+

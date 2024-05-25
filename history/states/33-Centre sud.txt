@@ -10,12 +10,12 @@ manpower=424267
 		victory_points = {
 			651 1
 		}
-		owner = LIB # FRA
+		owner = XAQ
 		
 		buildings = {
 			infrastructure = 3
 		}
-		#add_core_of = FRA
+		add_core_of = XAQ
 	}
 
 	provinces={

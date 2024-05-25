@@ -658,6 +658,61 @@ add_resource = {
         
 
     }
+
+    focus = {
+    id = XSS_lay_claim_to_rest_of_alps
+    x = 44
+    y = 13
+    icon = GFX_focus_eng_move_to_secure_the_dominions
+    cost = 5
+    prerequisite = { focus = XSS_proclaim_fed}
+
+
+    completion_reward = {
+
+        735 = {
+
+            add_claim_by = XSS
+
+        }
+        158 = {
+
+            add_claim_by = XSS
+
+        }
+        32 = {
+
+            add_claim_by = XSS
+
+        }
+        21 = {
+
+            add_claim_by = XSS
+
+        }
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_war_spirit
+    x = 44
+    y = 14
+    icon = GFX_focus_SWI_abandon_neutrality
+    cost = 10
+    prerequisite = { focus = XSS_lay_claim_to_rest_of_alps}
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_no_neutrality}
+        
+        }
+        
+
+    }
     #B.E.Z#
     focus = {
     id = XSS_join_bez
@@ -684,6 +739,284 @@ add_resource = {
         
 
     }
+
+    focus = {
+    id = XSS_war_napoleon_2
+    x = 44
+    y = 15
+    icon = GFX_focus_attack_france
+    cost = 10
+    prerequisite = { focus = XSS_war_spirit}
+
+
+    completion_reward = {
+
+        851 = {add_claim_by = XSS}
+        declare_war_on = {
+       target = XNF
+        type = annex_everything
+            }
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_warplans
+    x = 43
+    y = 16
+    icon = GFX_goal_generic_more_territorial_claims
+    cost = 5
+    prerequisite = { focus = XSS_war_napoleon_2}
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_warplans_idea}
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_iberian_intervention
+    x = 44
+    y = 17
+    icon = GFX_focus_spr_no_pasaran
+    cost = 10
+    prerequisite = { focus = XSS_war_napoleon_2 }
+
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XPY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XAR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XAD
+			}
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_italian_campaign
+    x = 43
+    y = 18
+    icon = GFX_focus_ITA_greater_italy
+    cost = 10
+    prerequisite = { focus = XSS_iberian_intervention }
+    prerequisite = { focus = XSS_warplans }
+
+
+    completion_reward = {
+
+        #### War with italian anarchy tags #####
+
+        
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_war_sicily
+    x = 43
+    y = 19
+    icon = GFX_focus_SWE_let_fly_all_guns
+    cost = 10
+    prerequisite = { focus = XSS_italian_campaign }
+
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XCA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XAG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XNR
+			}
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_srodziemie
+    x = 46
+    y = 13
+    icon = GFX_focus_generic_mediterranean_sea_focus
+    cost = 5
+    prerequisite = { focus = XSS_join_bez}
+    prerequisite = { focus = XSS_join_military_training}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+    completion_reward = {
+
+        set_faction_name = "Mediterranean Union"
+        
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_invite_colonials
+    x = 46
+    y = 15
+    icon = GFX_focus_ITA_bend_the_bars
+    cost = 5
+    prerequisite = { focus = XSS_srodziemie}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+    completion_reward = {
+
+        XMD = {
+        country_event = {
+        id = XSS_test_event.6
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_invite_napoleon
+    x = 47
+    y = 16
+    icon = GFX_focus_chi_reach_out_to_france
+    cost = 5
+    prerequisite = { focus = XSS_invite_colonials}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+    mutually_exclusive = {focus = XSS_war_napoleon}
+
+    completion_reward = {
+
+        XNF = {
+        country_event = {
+        id = XSS_test_event.6
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_war_napoleon
+    x = 45
+    y = 16
+    icon = GFX_focus_attack_france
+    cost = 5
+    prerequisite = { focus = XSS_invite_colonials}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes XSS ={is_in_faction_with = XMD}}}
+    mutually_exclusive = {focus = XSS_invite_napoleon}
+
+
+    completion_reward = {
+
+        1 = {add_claim_by = XMD}
+        declare_war_on = {
+       target = XNF
+        type = annex_everything
+            }
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_invite_cats
+    x = 46
+    y = 17
+    icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+    cost = 5
+    prerequisite = { focus = XSS_invite_napoleon focus = XSS_war_napoleon}
+    available = {AND = {is_in_faction = yes is_faction_leader = yes}}
+
+
+    completion_reward = {
+
+        XAD = {
+        country_event = {
+        id = XSS_test_event.6
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_unify_iberia
+    x = 47
+    y = 18
+    icon = GFX_focus_spr_war_of_independence
+    cost = 10
+    prerequisite = { focus = XSS_invite_cats }
+    available = {AND = {is_in_faction = yes is_faction_leader = yes XSS ={is_in_faction_with = XAD}}}
+
+
+
+    completion_reward = {
+
+        declare_war_on = {
+       target = XPY
+        type = annex_everything
+            }
+        declare_war_on = {
+       target = XAR
+        type = annex_everything
+            }
+        165 = {add_claim_by = XAD}            
+        794 = {add_claim_by = XAD}   
+        166 = {add_claim_by = XAD}   
+        176 = {add_claim_by = XAD}   
+        791 = {add_claim_by = XAD}     
+        }
+        
+
+    }
+
+
 
     focus = {
     id = XSS_alpine_federation_through_diplo
@@ -775,6 +1108,7 @@ add_resource = {
         XTI = {is_ally_with = XSS}
         }
         OR = {
+        OR = {
         XLV = {exists = no}
         XTI = {is_ally_with = XSS}
 
@@ -789,6 +1123,7 @@ add_resource = {
         XTI = {exists = no}
 
             }
+        }
         }
 
     }

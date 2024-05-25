@@ -26,12 +26,12 @@ bookmarks = {
 		}
 		"XNM" = {
 			ideology = democratic
-			history = "hi v2"
+			history = "XNM_bookmark_history"
 			#focuses = { }
 			ideas = {
 				XNM_compromise_of_29
 				XNM_tensions_on_the_trent
-				XNM_albion_booming_heartland
+				XNM_albion_booming_heart
 			}			
 		}		
 		"XNE" = {
@@ -58,13 +58,78 @@ bookmarks = {
 				XAD_devided_lenguage
 			}
 		}
-		"---"={
-			history = ":O"
+		"XPY" = {
+			ideology = fascism
+			history = "WIP"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XTI" = {
+			ideology = neutrality
+			history = "XTI_history"
+			focuses = {
+				XTI_the_new_tiroleans
+				XTI_alpine_proclamation
+				XTI_the_reclamationists
+			}
+			ideas = {
+				XTI_economic_ties
+				XTI_reconstruction
+				XTI_aggressive_doctrine
+			}
+		}
+		"XCA" = {
+			ideology = neutrality
+			history = "history goes here"
+			focuses = {
+			
+			}
+			ideas = {
+			
+			}
+		}
+		"XMD" = {
+			ideology = neutrality
+			history = "XMD_bookmark"
+			focuses = {
+			}
+			ideas = {
+	        }
+		}
+
+		"XAR"={
+			ideology = neutrality
+			focuses = {
+				XAR_and_his_friends
+				XAR_the_hero_of_sarayosa
+				XAR_and_his_ungrateful_enemies
+			}
+			ideas = {
+				XAR_increasing_civil_discontent
+				XAR_an_army_with_a_state
+				XAR_quest_for_eternal_peace
+			}
+			history = XAR_history_desc
+		}
+		"XAQ" = {
+			ideology = fascism
+			history = XAQ_history_desc
+			focuses = {
+			
+			}
+			ideas = {
+			
+			}
 		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
-	}
+		
+		
+
+       
 }

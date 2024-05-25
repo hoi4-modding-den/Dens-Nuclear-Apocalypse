@@ -7,6 +7,7 @@ capital = 153
 #set_convoys = 5
 
 recruit_character = XTI_reclamation_council
+recruit_character = XTI_elisa
 
 set_politics = {
 	ruling_party = neutrality

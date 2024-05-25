@@ -1,71 +1,22 @@
 ideas = {
 	
 	
-	country= {
+	country = {
 	
-		Diverse_nationalities = {
-			name = Diverse_nationalities
+		XMD_Small_probability_of_Spanish_coup = {
+			name = XMD_Small_probability_of_Spanish_coup
 
 			removal_cost = -1
 
-			picture = 
+			picture = spa_maquis
 
 			allowed = {
-				original_tag = XMD
-			}
-
-			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			modifier = {
-				stability_factor = -0.15
-				political_power_factor = -0.1
+				stability_factor = -0.05
+				
 			}
 		}
-	}
-	# TECHNOLOGY
-	tank_manufacturer = {
-		
-		designer = yes
-		
-		steyr_daimler_puch = {
-			picture = generic_tank_manufacturer_1
-
-			
-			allowed = {
-				original_tag = XMD
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { tank_manufacturer }
-		}
-	}
-
-	materiel_manufacturer = {
-		
-		designer = yes
-		
-		XMD_hirtenberger = {
-			picture = generic_artillery_manufacturer_2
-
-			
-			allowed = {
-				original_tag = XMD
-			}
-			
-			research_bonus = {
-				artillery = 0.15
-			}
-			
-			traits = { artillery_manufacturer }
-						
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 }

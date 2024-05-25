@@ -1,5 +1,21 @@
 spriteTypes = {
-# XNM, XCT, XTY
+### XNM, XCT, XTY ###
+
+### Ideas ###
+	spriteType = {
+		name = "GFX_idea_XNM_albion_booming_heart"
+		texturefile = "gfx/XNM/XNM_albion_booming_heart.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XNM_tensions_on_the_trent"
+		texturefile = "gfx/XNM/XNM_tensions_on_the_trent.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XNM_midlands_protests"
+		texturefile = "gfx/XNM/XNM_midlands_protests.dds"
+	}	
+
+### Portraits ###
 	spriteType = {
 		name = "GFX_portrait_XNM_Arthur_Gainsborough"
 		texturefile = "gfx/XNM/XNM_Portraits/portrait_XNM_Arthur_Gainsborough.dds"

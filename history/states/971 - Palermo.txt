@@ -10,18 +10,26 @@ state = {
 	}
 
 	history = {
-		owner = XSI
+		owner = XNR
 
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
+
+			10074 = {
+				naval_base = 2
+			}
+
+			7059 = {
+				naval_base = 5
+			}
 		}
 
 		victory_points = {
 			10074 12 
 		}
 
-		add_core_of = XSI
+		add_core_of = XNR
 	}
 
 	provinces = { 

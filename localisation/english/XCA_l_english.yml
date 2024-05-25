@@ -1,0 +1,14 @@
+﻿l_english:
+#Sicily 
+ XNR:0 "New Rome"
+ XNR_DEF:0 "New Rome"
+ XNR_ADJ:0 "New Roman"
+
+ XAG:0 "Kingdom of Agrigento"
+ XAG_DEF:0 "the Kingdom of Agrigento"
+ XAG_ADJ:0 "Agrigentine"
+
+ XCA:0 "Kingdom of Catania"
+ XCA_DEF:0 "the Kingdom of Catania"
+ XCA_ADJ:0 "Catanian"
+ XCA_musician_king:0 "Musician King"

@@ -908,7 +908,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			country_event = XTI.4
 		}
 	}
 	focus = {
@@ -944,9 +944,173 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			retire_country_leader = yes
+			set_party_name = {
+				ideology = neutrality
+				long_name = "Tirol für Wohlstand"
+				name = "TW"
+			}
+			add_political_power = 100
+			add_stability = 0.1
 		}
 	}
+	focus = {
+		id = XTI_SPT_victory
+		icon = GFX_
+		
+		#prerequisite = { focus =  }
+		x = -2
+		y = 2
+		relative_position_id = XTI_restore_democracy
+		#mutually_exclusive = { focus = XTI_strongman_politics }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_completed_focus = XTI_restore_democracy
+			has_country_leader = {
+				character = XTI_clara_bauer
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XTI_TVP_victory
+		icon = GFX_
+		
+		#prerequisite = { focus =  }
+		x = 4
+		y = 2
+		relative_position_id = XTI_restore_democracy
+		#mutually_exclusive = { focus = XTI_strongman_politics }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_completed_focus = XTI_restore_democracy
+			has_country_leader = {
+				character = XTI_leo_schmidt
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = {
+		id = XTI_FPT_victory
+		icon = GFX_
+		
+		#prerequisite = { focus =  }
+		x = 10
+		y = 2
+		relative_position_id = XTI_restore_democracy
+		#mutually_exclusive = { focus = XTI_strongman_politics }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_completed_focus = XTI_restore_democracy
+			has_country_leader = {
+				character = XTI_louis_boltzmann
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XTI_autocratic_state
+		icon = GFX_
+		
+		#prerequisite = { focus =  }
+		x = 16
+		y = 2
+		relative_position_id = XTI_restore_democracy
+		#mutually_exclusive = { focus = XTI_strongman_politics }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_completed_focus = XTI_strongman_politics
+			has_country_leader = {
+				character = XTI_elisa
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	
 	focus = {
 		id = XTI_the_reclamationists
 		icon = GFX_goal_anschluss

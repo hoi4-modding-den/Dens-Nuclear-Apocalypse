@@ -1,4 +1,22 @@
 scripted_gui = {
+	
+	XGE_welcome_message = {
+		context_type = player_context
+		#parent_window_token = politics_tab
+		window_name = "XGE_welcome_window"
+
+		visible = {
+			has_country_flag = XGE_welcome_message_flag
+		}
+		effects = {	
+			XGE_welcome_message_close_click = {
+				clr_country_flag = XGE_welcome_message_flag
+			}
+			XGE_welcome_message_continue_click = {
+				clr_country_flag = XGE_welcome_message_flag
+			}
+		}
+	}
 
 	XGE_custom_gui_open = {
 		context_type = player_context

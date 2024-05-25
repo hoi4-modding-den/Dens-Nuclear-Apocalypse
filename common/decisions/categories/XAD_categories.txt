@@ -1,0 +1,12 @@
+XAD_improving_the_peoples_life = {		
+	priority = 9		
+	icon = GFX_category_icon
+	
+	allowed = {
+		original_tag = XAD
+	}
+	visible = {	
+		original_tag = XAD
+		has_completed_focus = XAD_the_civilian_problems
+	}
+}
