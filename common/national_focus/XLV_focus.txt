@@ -2,7 +2,7 @@
 	id = XLV_focus
 	
 	country = {
-		factor = 1
+		factor = 0
 		modifier = {
 			add = 100
 			tag = XLV
@@ -96,10 +96,10 @@
     	x = 1
 		y = 1
 		relative_position_id = XLV_elettrotreno_nord
-		prequisite = {
+		prerequisite = {
 			focus = XLV_elettrotreno_nord 
 		}
-		prequisite = {
+		prerequisite = {
 			focus = XLV_kickstart_agriculture 
 		}
 
@@ -128,7 +128,7 @@
 				category = train_tech
 			}
 			add_equipment_to_stockpile = {
-			    type = train
+			    type = train_equipment_1
 			    amount = 8
 			    producer = XLV
 			}
@@ -141,7 +141,7 @@
     	x = 0
 		y = 2
 		relative_position_id = XLV_elettrotreno_nord
-		prequisite = {
+		prerequisite = {
 			focus = XLV_azienda_ferroviaria_nazionale
 		}
 		cost = 5
@@ -175,7 +175,7 @@
     	x = 2
 		y = 2
 		relative_position_id = XLV_elettrotreno_nord
-		prequisite = {
+		prerequisite = {
 			focus = XLV_azienda_ferroviaria_nazionale
 		}
 		cost = 5
@@ -218,8 +218,8 @@
     	x = 4
 		y = 3
 		relative_position_id = XLV_elettrotreno_nord
-		prequisite = {
-			focus = XLV_azienda_ferroviaria_nazionale
+		prerequisite = {
+			focus = XLV_restore_venice
 		}
 		cost = 5
 
@@ -243,7 +243,7 @@
 		completion_reward = {
 			160 = {
 				add_building_construction = {
-			   		type = costal_bunker
+			   		type = naval_fort
 				    level = 3
 				    instant_build = yes
 				    province = 11584
@@ -262,9 +262,11 @@
     	x = 1
 		y = 3
 		relative_position_id = XLV_elettrotreno_nord
-		prequisite = {
-			focus = XLV_azienda_ferroviaria_nazionale
-			focus = XLV_azienda_borsa_scambi_milano
+		prerequisite = {
+			focus = XLV_borsa_scambi_milano
+		}
+		prerequisite = {
+			focus = XLV_restore_venice
 		}
 		cost = 5
 
