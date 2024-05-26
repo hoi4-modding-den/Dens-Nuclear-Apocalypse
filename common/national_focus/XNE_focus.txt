@@ -60,7 +60,7 @@
 		mutually_exclusive = { focus = XNE_cooperation }
 		mutually_exclusive = { focus = XNE_aggression }
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -94,7 +94,7 @@
 		mutually_exclusive = { focus = XNE_aggression }
 		mutually_exclusive = { focus = XNE_isolation }
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -129,7 +129,7 @@
 		mutually_exclusive = { focus = XNE_cooperation }
 		mutually_exclusive = { focus = XNE_isolation }
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -162,7 +162,7 @@
 		available = {}
 		bypass = {}
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -208,7 +208,7 @@
 		available = {}
 		bypass = {}
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -236,8 +236,8 @@
 	focus = {
 		id = XNE_oil_off_the_coast
 		icon = GFX_focus_generic_offshore_oil_rig
-		prerequisite = { focus = XNE_greater_mining_investments }
-		x = 0
+		prerequisite = { focus = XNE_greater_mining_investments  focus = XNE_energy_independence }
+		x = 1
 		y = 1
 		relative_position_id = XNE_greater_mining_investments
 
@@ -246,7 +246,7 @@
 		available = {}
 		bypass = {}
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -285,7 +285,7 @@
 		available = {}
 		bypass = {}
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -318,7 +318,7 @@
 		available = {}
 		bypass = {}
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -348,7 +348,7 @@
 		available = {}
 		bypass = { has_idea = volunteer_only }
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -388,9 +388,9 @@
 		cost = 8
 
 		available = {}
-		bypass = { has_idea = volunteer_only }
+		bypass = {}
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -400,6 +400,11 @@
 			XNE_gain_conservative_support = yes
 			add_stability = 0.05
 			remove_ideas = XNE_tensions_on_the_trent_eased
+			hidden_effect = {
+				every_country = {
+					news_event = XNE_news.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -421,7 +426,7 @@
 		available = { has_government = democratic }
 		bypass = {}
 		
-		cancelable = no
+		cancelable = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -468,7 +473,7 @@
     	available = { XNM = { has_government = ROOT } }
     	bypass = {}
     	
-    	cancelable = no
+    	cancelable = yes
     	cancel_if_invalid = yes
     	continue_if_invalid = no
     	available_if_capitulated = yes
@@ -497,7 +502,7 @@
     	bypass = {}
 		mutually_exclusive = { focus = XNE_approach_ulster }
     	
-    	cancelable = no
+    	cancelable = yes
     	cancel_if_invalid = yes
     	continue_if_invalid = no
     	available_if_capitulated = yes
@@ -522,11 +527,11 @@
     
     	cost = 8
     
-    	available = {}
+    	available = { NOT = { has_country_flag = XNE_ulster_rejects } }
     	bypass = {}
 		mutually_exclusive = { focus = XNE_approach_ireland }
     	
-    	cancelable = no
+    	cancelable = yes
     	cancel_if_invalid = yes
     	continue_if_invalid = no
     	available_if_capitulated = yes
@@ -555,7 +560,7 @@
     	bypass = {}
 		mutually_exclusive = { focus = XNE_a_deal_for_welsh_victory }
     	
-    	cancelable = no
+    	cancelable = yes
     	cancel_if_invalid = yes
     	continue_if_invalid = no
     	available_if_capitulated = yes
@@ -584,7 +589,7 @@
     	bypass = {}
 		mutually_exclusive = { focus = XNE_treaty_with_wales }
     	
-    	cancelable = no
+    	cancelable = yes
     	cancel_if_invalid = yes
     	continue_if_invalid = no
     	available_if_capitulated = yes
@@ -598,5 +603,528 @@
     		factor = 10
     	}
     }
+	
+	focus = {
+		id = XNE_fortifications_along_the_trent
+    	icon = GFX_goal_generic_fortify_city
+    	prerequisite = { focus = XNE_isolation }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_isolation
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_communism_support = yes
+			338 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			129 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			swap_ideas = {
+				remove_idea = XNE_tensions_on_the_trent
+				add_idea = XNE_tensions_on_the_trent_fort
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_leicester_devolution
+    	icon = GFX_focus_generic_land_reclamation
+    	prerequisite = { focus = XNE_fortifications_along_the_trent }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_fortifications_along_the_trent
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_affordable_cost_housing_initiative }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_communism_support = yes
+			338 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			129 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			129 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11279
+				}
+			}
+			129 = {
+				remove_building = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			swap_ideas = {
+				remove_idea = XNE_tensions_on_the_trent_fort
+				add_idea = XNE_tensions_on_the_trent_devolution
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_energy_independence
+    	icon = GFX_focus_generic_energy
+    	prerequisite = { focus = XNE_isolation }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_isolation
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_communism_support = yes
+			XNE_gain_conservative_support = yes
+			every_owned_state = {
+				limit = { infrastructure < 5 }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_affordable_cost_housing_initiative
+    	icon = GFX_focus_generic_low_cost_housing
+    	prerequisite = { focus = XNE_energy_independence }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_energy_independence
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_leicester_devolution }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_communism_support = yes
+			XNE_gain_conservative_support = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
 
+	focus = {
+		id = XNE_national_unity
+    	icon = GFX_focus_DEN_national_unity
+    	prerequisite = { focus = XNE_affordable_cost_housing_initiative focus = XNE_leicester_devolution }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_affordable_cost_housing_initiative
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_communism_support = yes
+			XNE_gain_conservative_support = yes
+			add_political_power = 75
+			add_stability = 0.05
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+	focus = {
+		id = XNE_higher_import_taxes
+    	icon = GFX_focus_ARG_crackdown_on_corruption
+    	prerequisite = { focus = XNE_oil_off_the_coast }
+    	prerequisite = { focus = XNE_affordable_cost_housing_initiative }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_oil_off_the_coast
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_communism_support = yes
+    		XNE_gain_conservative_support = yes
+			if = {
+				limit = { has_idea = free_trade }
+				swap_ideas = {
+					remove_idea = free_trade
+					add_idea = limited_exports
+				}
+			}
+			else_if = {
+				limit = { has_idea = export_focus }
+				swap_ideas = {
+					remove_idea = export_focus
+					add_idea = limited_exports
+				}
+			}
+			add_ideas = XNE_high_import_taxes
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	
+
+	focus = {
+		id = XNE_government_reformation
+    	icon = GFX_focus_generic_self_management
+    	prerequisite = { focus = XNE_leicester_devolution focus = XNE_national_unity }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_leicester_devolution
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_communism_support = yes
+			add_stability = 0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_escalate_tensions_with_mercia
+    	icon = GFX_focus_generic_provoke_border_clashes
+    	prerequisite = { focus = XNE_aggression }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_aggression
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_neutrality_support = yes
+			add_war_support = 0.05
+			XNM = { add_war_support = 0.05 }
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_formally_denounce_mercia
+    	icon = GFX_focus_generic_annex_country
+    	prerequisite = { focus = XNE_escalate_tensions_with_mercia }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_escalate_tensions_with_mercia
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_neutrality_support = yes
+			swap_ideas = {
+				remove_idea = XNE_tensions_on_the_trent
+				add_idea = XNE_tensions_on_the_trent_escalate
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_call_for_action
+    	icon = GFX_focus_generic_manpower
+    	prerequisite = { focus = XNE_aggression }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_aggression
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		add_manpower = 50000
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_rulers_of_the_british_isles
+    	icon = GFX_focus_generic_monarchy_2
+    	prerequisite = { focus = XNE_call_for_action }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_call_for_action
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_neutrality_support = yes
+    		add_political_power = 120
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_reclaim_our_steel
+    	icon = GFX_focus_generic_steel
+    	prerequisite = { focus = XNE_formally_denounce_mercia }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_formally_denounce_mercia
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_neutrality_support = yes
+    		add_political_power = 120
+			XNM = { country_event = XNE_focus.5 }
+			add_resource = {
+				type = steel
+				amount = 35
+				state = 338
+			}
+			add_resource = {
+				type = steel
+				amount = -26
+				state = 128
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_end_the_peace
+    	icon = GFX_focus_generic_total_war
+    	prerequisite = { focus = XNE_reclaim_our_steel }
+    	prerequisite = { focus = XNE_rulers_of_the_british_isles }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_reclaim_our_steel
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = { 
+			OR = {
+				has_war_with = XNM 
+				NOT = { country_exists = XNM }
+			}
+		}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_neutrality_support = yes
+    		declare_war_on = {
+                target = XNM
+                type = annex_everything
+            }
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
 }
