@@ -1,0 +1,54 @@
+XGE_reconstruction_category = {	
+	XGE_devastation_5to4 = {
+		
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		selectable_mission = yes
+		timeout_effect = {
+			swap_ideas = {
+				remove_idea = XGE_devastation_5
+				add_idea = XGE_devastation_4
+			}
+		}
+	}
+	XGE_devastation_4to3 = {
+		
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		selectable_mission = yes
+		timeout_effect = {
+			swap_ideas = {
+				remove_idea = XGE_devastation_4
+				add_idea = XGE_devastation_3
+			}
+		}
+	}
+	XGE_devastation_3to2 = {
+		
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		selectable_mission = yes
+		timeout_effect = {
+			swap_ideas = {
+				remove_idea = XGE_devastation_3
+				add_idea = XGE_devastation_2
+			}
+		}
+	}
+	XGE_devastation_2to1 = {
+		
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		selectable_mission = yes
+		timeout_effect = {
+			swap_ideas = {
+				remove_idea = XGE_devastation_2
+				add_idea = XGE_devastation_1
+			}
+		}
+	}
+}

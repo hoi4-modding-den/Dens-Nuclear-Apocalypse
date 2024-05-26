@@ -1,0 +1,54 @@
+﻿focus_tree = {
+	id = XGE_initial
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XGE
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 0 y = 3000 }
+	
+	focus = {
+		id = XGE_begin_reconstruction
+		icon = GFX_goal_generic_construction2
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 11
+		y = 0
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			activate_mission = XGE_devastation_5to4
+		}
+	}
+	focus = {
+		id = XGE_begin_reconstruction2
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = XGE_begin_reconstruction }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_begin_reconstruction
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XGE_decrease_devastation_time = yes
+		}
+	}
+
+}
