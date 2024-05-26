@@ -325,6 +325,88 @@ ideas = {
 					consumer_goods_factor = -0.15
 				}
 			}
+			XAD_full_empleyement = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = chi_hyper_inflation
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					production_speed_buildings_factor = 0.10
+					consumer_goods_factor = -0.05
+					conscription = -0.02
+				}
+			}
+			XAD_women_dont_work = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = chi_hyper_inflation
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = 0.10
+				}
+			}
+			XAD_women_work = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = chi_hyper_inflation
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					industrial_capacity_factory = 0.15
+				}
+			}
+			XAD_self_sufficence_idea = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = chi_hyper_inflation
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					min_export = -0.15
+					production_lack_of_resource_penalty_factor = -0.20
+					local_resources_factor = 0.05
+					war_support_factor = 0.10
+					stability_factor = 0.05
+				}
+			}
 	}
 }
 

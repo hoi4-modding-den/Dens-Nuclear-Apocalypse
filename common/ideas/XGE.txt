@@ -9,6 +9,36 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
+		XGE_devastation_5 = {
+			#picture = XGE_computer_clique
+			modifier = {
+				
+			}
+		}
+		XGE_devastation_4 = {
+			#picture = XGE_computer_clique
+			modifier = {
+				
+			}
+		}
+		XGE_devastation_3 = {
+			#picture = XGE_computer_clique
+			modifier = {
+				
+			}
+		}
+		XGE_devastation_2 = {
+			#picture = XGE_computer_clique
+			modifier = {
+				
+			}
+		}
+		XGE_devastation_1 = {
+			#picture = XGE_computer_clique
+			modifier = {
+				
+			}
+		}
 		
 	}
 	hidden_ideas = { 

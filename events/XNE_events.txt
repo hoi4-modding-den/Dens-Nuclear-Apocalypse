@@ -1,5 +1,6 @@
 add_namespace = XNE_focus
 add_namespace = XNE_support
+add_namespace = XNE_news
 
 # Fascism Rising
 country_event = {
@@ -111,6 +112,20 @@ country_event = {
 	}
 }
 
+# NNE Recognises Mercia
+news_event = {
+	id = XNE_news.1
+	title = XNE_news.1.title
+	desc = XNE_news.1.desc
+	picture = GFX_news_event_009
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_news.1.a
+		ai_chance = { factor = 1 }
+	}
+}
 # Chamberlain Speech
 country_event = {
 	id = XNE_focus.1
