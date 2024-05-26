@@ -9,4 +9,13 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	XAQ_great_calamity_historian = {
+		random = no
+		research_speed_factor = 0.07
+		production_speed_industrial_complex_factor = 0.1 
+		monthly_population = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

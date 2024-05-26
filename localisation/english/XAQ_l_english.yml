@@ -3,12 +3,9 @@
  XAQ_DEF:0 "The Divine Realm of Lesser Gaul"
  XAQ_ADJ:0 "Roman"
  XAQ_esoteric_caesarism:0 "Esoteric Caesarism"
- XAQ_esoteric_caesarism_desc:0 "Word"
+ XAQ_esoteric_caesarism_desc:0 "Esoteric-Caesarism is an authoritarian system of governance that emphasizes strong centralized leadership combined with a deep, hidden understanding of the knowledge of the gods. Nations adopting this ideology are led by a charismatic leader who is believed to possess profound metaphysical insights and uses these to guide the nation toward greatness."
  XAQ_history_desc:0 "Years after the destruction of France during the Great Calamity, the Republic of Aquitaine stood battered by the storm, but united nonetheless. However that all changed when an obese neo-roman lunatic got his hands on an ancient nuke. Now, the Divine Realm of Gaul lies in his hands, whether his people adore or despise him."
- XAQ_marcel_pietot:0 "Marcel "Griffon" Petiot"
- XAQ_marcel_pietot_desc:0 "The Gods did toil, they waited for their champion, and one day, he answered their divine call. Mars himself possessed this mere mortal, blessing him the strength of a demigod. Now he, as chosen Caesar of the Gods, leads his nation to divine glory. No opposition will stand in his way, not from out, nor within. Ave!"
- XAQ_devoted_servant_of_rome:0 "Devoted Servant of Rome"
- XAQ_roman_revanchism:0 "Roman Revanchism"
+
  XAQ_fascism_party:0 "Gratia Gryphem"
  XAQ_neutrality_party:0 "Lunatics"
 
@@ -23,3 +20,20 @@
  XAQ_senate_desc:0 "The last remnants of the old Aquitaine Republic, the senate stands now as a ceremonial piece of Roman unity."
  XAQ_annos_interitus_desc:0 "At the turn of the 23rd century, the Divine Realm of Lesser Gaul was shattered by its short-sighted attempt to realise its conquest of Gaul. Now, with its territories in Gallia Lugdunensis stripped, Lesser Gaul isn't what it used to be."
  XAQ_roman_revanchism_desc:0 "At the heart of every Roman lies a great nationalist fervour to grasp what is theirs."
+
+#characters
+ XAQ_marcel_pietot:0 "Marcel "Griffon" Petiot"
+ XAQ_yvon_moise:0 "Yvon Moïse"
+ XAQ_gnaeus_allard:0 "Gnaeus Allard"
+ XAQ_charles_sapiens:0 "Charles Sapiens"
+ 
+#character descriptions
+ XAQ_marcel_pietot_desc:0 "The Gods did toil, they waited for their champion, and one day, he answered their divine call. Mars himself possessed this mere mortal, blessing him the strength of a demigod. Now he, as chosen Caesar of the Gods, leads his nation to divine glory. No opposition will stand in his way, not from out, nor within. Ave!"
+ XAQ_charles_sapiens_desc:0 "A true expert on the Great Calamity, he will surely aid our quest to seize utopia."
+
+
+#traits
+ XAQ_devoted_servant_of_rome:0 "Devoted Servant of Rome"
+ XAQ_great_calamity_historian:0 "Great Calamity Historian"
+
+
