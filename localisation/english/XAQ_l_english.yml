@@ -9,6 +9,13 @@
  XAQ_fascism_party:0 "Gratia Gryphem"
  XAQ_neutrality_party:0 "Lunatics"
 
+#focus
+ XAQ_secure_our_land:0 "Secure our Borders"
+ XAQ_land_recolonisation:0 "Land Recolonisation"
+
+#focus descriptions
+ XAQ_secure_our_land_desc:0 "In these tumultuous times, we must ensure that we stay strong, lest we are consumed by our neighbours."
+ XAQ_land_recolonisation_desc:0 "During the Great Calamity, the nuclear bombs dropped by our ancestors leveled the cities of Gaul, rendering its lands uninhabitable. Now, thanks to hundreds of years, the lands are now safe to set foot on again."
 
 #ideas
  XAQ_senate:0 "The Senate"
