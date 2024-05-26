@@ -1,5 +1,32 @@
 guiTypes = {
-
+	containerWindowType = {
+		name = "XGE_credits_main_window"
+		clipping = no
+		#moveable = yes
+		position = { x = 1190 y = 1010 }
+		#show_position = { x = 1145 y = 1010 }
+		#show_animation_type = linear
+		#hide_animation_type = linear
+		#animation_time = 500
+		fade_time = 20000
+		fade_type = accelerated
+		size = { width = 410 height = 50 }
+		
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		instantTextboxType = {
+			name = "credits_desc"
+			position = { x = 7 y = -9 }
+			font = "hoi_18mbs"
+			text = XGE_credits
+			maxWidth = 400
+			maxHeight = 375
+			multiline = yes
+			format = left
+		}
+	}
 	containerWindowType = {
 		name = "XGE_custom_gui_open_window"
 		size = { width = 100%% height = 100%% }
@@ -182,7 +209,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "XGE_welcome_window"
 		#clipping = no
-		moveable = yes
+		moveable = no
 		position = { x = 800 y = 400 }
 		#show_position = { x = 538 y = 220 }
 		#show_animation_type = decelerated
@@ -243,7 +270,7 @@ guiTypes = {
 		buttonType = {
 			name ="XGE_welcome_message_continue"
 			quadTextureSprite ="GFX_button_359x34"
-			position = { x=73 y=553 }
+			position = { x=20 y=553 }
 			buttonText = "Continue"
 			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"
@@ -251,13 +278,13 @@ guiTypes = {
 		iconType = {
 			name = "XGE_continue_button_bloom"
 			spriteType = "GFX_XGE_continue_button_bloom"
-			position = { x=73 y=553 }
+			position = { x=20 y=553 }
 			#pdx_tooltip = XGE_bloom_hint_loc
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "XGE_continue_button_text" 
-			position = { x=100 y=563 }
+			position = { x=50 y=563 }
 			font = "hoi_16mbs"
 			text = "Continue"
 			maxWidth = 300
@@ -281,5 +308,15 @@ guiTypes = {
 			
 			#pdx_tooltip = "XGE_intelligence_control_tt"
 		}
+		buttonType = {
+			name ="XGE_welcome_message_credits"
+			quadTextureSprite ="GFX_button_94x31"
+			position = { x=400 y=555 }
+			buttonText = "Credits?"
+			buttonFont = "hoi_16mbs"
+			#shortcut = "ESCAPE"
+		}
+		
 	}
+	
 }
