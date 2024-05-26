@@ -1,4 +1,35 @@
 ideas = {
+	economy = {
+		law = yes
+
+		agrarian_economy_1 = {
+
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.10
+				production_speed_industrial_complex_factor = -0.75
+				max_fuel_factor = 2
+				fuel_gain_factor = 0.5
+				conscription = 0.1
+				weekly_manpower = 300
+				min_export = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				industry_repair_factor = 0.5
+				global_building_slots = 2
+			}
+
+			allowed_to_remove = {
+				
+			}
+
+			cancel_if_invalid = no
+		}
+	}
 	country = {
 		XAD_remember_ceuta = {
 			
