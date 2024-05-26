@@ -460,17 +460,17 @@ XSS_fascist_win_desc:0 "Fascists have started the barrage and nobody contested t
 
 XSS_test_event.12.t:0 "Fascist victory march"
 XSS_test_event.12.desc:0 "Today after shelling National Assembly NSS have took over Switzerland. Their started their reign of terror and will rule Switzerland. Niemir Eggli said that Europe will fear the new Swiss army."
-XSS_test_event.12.a:0 "All hail the Führer"
+XSS_test_event.12.a:0 "All hail the ruler"
 
 
 XSS_abandon_neutrality_nazi:0 "Abandon Neutrality"
 XSS_abandon_neutrality_nazi_desc:0 "To make shit done we need to stop being neutral. Let's have our own opinion."
 
-XSS_nazi_terror:0 "Campaign of Terror"
+XSS_nazi_terror:0 "Internal Fight"
 XSS_nazi_terror_desc:0 "The strikes and constant fighting is taking toll on our nation preventing us from expanding. We shall put end to these decadents."
 
 
-XSS_test_event.13.t:0 "Nazi Terror"
+XSS_test_event.13.t:0 "Internal Fight"
 XSS_test_event.13.desc:0 "NSS have deployed their divisions and started shootouts and arrests all over Switzerland. All communists, liberals and socialdemocrats were either killed or imprisoned. National Socialists now have complete rule over switzerland ending the Era of Instability."
 XSS_test_event.13.a:0 "Another victory for the Führer"
 
@@ -479,3 +479,106 @@ XSS_NSS_desc:0 "Neu Schutzstaffel was a paramilitary organization, but after Vic
 
 XSS_NSS_concecions:0 "NSS Concesions"
 XSS_NSS_concecions_desc:0 "Our Führer is part of NSS and he will grant them some concessions to support the war effort."
+
+XSS_test_event.14.t:0 "1st Party rally"
+XSS_test_event.14.desc:0 "Today all officials and party members have hosted a first party rally after taking over power. All officials have discussed the new way for modern Switzerland. Later the Führer held a speech in which he announced German swiss are the only swiss which will have place in new Switzerland. The rally was pretty sucessfull in rallying support for the Führer."
+XSS_test_event.14.a:0 "All according to the plan"
+
+XSS_nazi_party_rally:0 "Host party rally"
+XSS_nazi_party_rally_desc:0 "It is time for Führer to give us a direction for new swiss nation. The rally will be held in old building of National Assembly now named Reichstag."
+
+XSS_industrial_reform:0 "Industrial reform"
+XSS_industrial_reform_desc:0 "We must start mass industrialization of Switzerland."
+
+XSS_millitary_effort:0 "Millitary effort"
+XSS_millitary_effort_desc:0 "We must support our millitary industry by creation of new factories."
+
+XSS_geneva_investment:0 "Invest in Geneva"
+XSS_geneva_investment_desc:0 "Geneva is our 3rd biggest city and we shall support them by pouring money into it."
+
+XSS_great_leap_forward:0 "Great leap forward"
+XSS_great_leap_forward_desc:0 "Our postapocaliptic industry is in terrifying state. We shall encourage building of new industry."
+
+XSS_great_leap_forward_idea:0 "Great leap forward"
+XSS_great_leap_forward_idea_desc:0 "Switzerland is on their new path and they need rapid industrial expansion to fufill it."
+
+XSS_tank_effort:0 "Tank effort"
+XSS_tank_effort_desc:0 "Tanks are the future of warfare and we shall use them."
+
+XSS_NSS_mountanieers:0 "NSS Mountaineers"
+XSS_NSS_mountanieers_desc:0 "Switzerland is a mountainous country and we need special units to take care of our enemies in mountains."
+
+XSS_nazi_youth:0 "Swiss Youth"
+XSS_nazi_youth_desc:0 "Swiss Youth is a paramillitary organization and a party youth group designed to rally teenangers and conscript them into the millitary."
+
+XSS_swiss_youth:0 "Swiss Youth"
+XSS_swiss_youth_desc:0 "Swiss Youth is a paramillitary organization and a party youth group designed to rally teenangers and conscript them into the millitary."
+
+XSS_expand_NSS:0 "Expand NSS"
+XSS_expand_NSS_desc:0 "NSS is still not the strongest force in Switzerland and we must strenghten them."
+
+XSS_NSS_2:0 "Neu Schutzstaffel"
+XSS_NSS_2_desc:0 "Neu Schutzstaffel was a paramilitary organization, but after Victory March it was integrated into regular army."
+
+XSS_expand_army:0 "Expand army"
+XSS_expand_army_desc:0 "Swiss army is weak and is in dire need of reforms."
+
+XSS_publish_germania:0 "Publish Germania"
+XSS_publish_germania_desc:0 "Germania is a book written by Friedrich Bracher in which he shows Germans should all be united as well as dominate the entire Europe."
+
+XSS_germania:0 "Germania"
+XSS_germania_desc:0 "Germania is a book written by Friedrich Bracher in which he shows Germans should all be united as well as dominate the entire Europe. Friedrich divides people into cathegories such as Race of Victors and Unberührbares. He also suggests after fall of Germany, Switzerland has a moral quest to recreate German empire and liberate Europe from Unberührbares."
+
+XSS_test_event.15.t:0 "Germania is published"
+XSS_test_event.15.desc:0 "Germania is a book written by Friedrich Bracher in which he shows Germans should all be united as well as dominate the entire Europe. Friedrich divides people into cathegories such as Race of Victors and Unberührbares. He also suggests after fall of Germany, Switzerland has a moral quest to recreate German empire and liberate Europe from Unberührbares."
+XSS_test_event.15.a:0 "Switzerland will be great or dead"
+XSS_test_event.15.b:0 "What the actual fuck?"
+
+Writer:0 "Author of Germania"
+
+XSS_2nd_party_rally:0 "2nd Party rally"
+XSS_2nd_party_rally_desc:0 "After all the goals listed in 1st party rally were met, and Germania was published. Führer has decided to call on another rally to decide on future of Switzerland."
+
+XSS_test_event.16.t:0 "2nd Party rally"
+XSS_test_event.16.desc:0 "Today all officials and party members have hosted a second party rally after taking over power. All officials have discussed the new way for modern Switzerland. Later the Führer held a speech in which he announced future conquests in Europe and how Germany will be his main goal. He also quoted recently published Germania as he considers it to be the best book ever written. The rally was pretty sucessfull in rallying support for the Führer."
+XSS_test_event.16.a:0 "We soon will be great"
+
+XSS_extermination_of_french:0 "Exile the French minority"
+XSS_extermination_of_french_desc:0 "The French are Unberührbares and must be exiled."
+
+XSS_host_italian_exile_government:0 "Host Ticino Government"
+XSS_host_italian_exile_government_desc:0 "Italians have been friends of Germany in the past. We shall create a new Italy by giving them government based in Ticino."
+
+XSS_ticino_government:0 "Ticino Government"
+XSS_ticino_government_desc:0 "Ticino Government hosts Italians who fleed Lombardy and the onces that came from wasteland."
+
+XIA_fascism_party:0 "NSS/Unione Italiana Nazisti"
+XIA_fascism_party_long:0 "Neu Schutzstaffel/Unione Italiana Nazisti"
+
+XIA:0 "Italian Republic"
+XIA_DEF:0 "Italian Republic"
+XIA_ADJ:0 "Italian"
+
+XTN_rally_italian_army:0 "Form Italian army"
+XTN_rally_italian_army_desc:0 "Italian exiles are willing to fight for a new Italy."
+
+XTN_modernize_ticino:0 "Modernize Ticino"
+XTN_modernize_ticino_desc:0 "We shall build arms for our new allies."
+
+XSS_test_event.17.t:0 "Switzerland creates Italian government in Ticino"
+XSS_test_event.17.desc:0 "Today Switzerland has announced creation of Italian government in Ticino. Their plan on invasion of Lombardy to establish their new Italian Republic."
+XSS_test_event.17.a:0 "Long live the Italian Republic"
+XSS_test_event.17.b:0 "What the fuck is this"
+
+XSS_march_into_lombardy:0 "March into Lombardy"
+XSS_march_into_lombardy_desc:0 "Today our soldiers will march into lombardy to create a new Italian state."
+
+XSS_create_italian_state:0 "Create Italian State"
+XSS_create_italian_state_desc:0 "After conquest of Lombardy we should keep our promise and establish Italian Republic."
+
+XSS_NSS_italy:0 "Neu Schutzstaffel"
+XSS_NSS_italy_desc:0 "Neu Schutzstaffel was a paramilitary organization, but after Victory March it was integrated into regular army. They also hold much influence over Italy."
+
+XSS_claim_north_italy:0 "Claim Northern Italy"
+XSS_claim_north_italy_desc:0 "We will help our little Italian puppet by allowing them for expansion into wasteland."
+

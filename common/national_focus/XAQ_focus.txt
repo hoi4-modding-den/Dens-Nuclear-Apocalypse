@@ -1,0 +1,86 @@
+focus_tree = {
+	id = XAQ_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XAQ
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+    	continuous_focus_position = { x = 0 y = 3000 }
+	focus = {
+		id = XAQ_secure_our_land
+		icon = GFX_goal_generic_military_sphere
+		x = 10
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAQ_land_recolonisation
+		icon = GFX_focus_BRA_amazon_colonization
+		x = 0
+		y = 1
+
+		prerequisite = { focus = XAQ_secure_our_land }
+		mutually_exclusive = { }
+		
+
+		relative_position_id = XAQ_secure_our_land
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			owns_state = 20
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			XAQ = {
+				add_state_core = 20
+				transfer_state = 20
+			}
+			LIB = {
+				remove_state_core = 20
+			}
+			
+		}
+	}
+	
+	
+
+}

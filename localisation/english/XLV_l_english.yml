@@ -65,6 +65,8 @@
  XLV_committee_of_public_safety_desc: "The republic is ruled by a commitee of public safety, following the revolutionary french forces as an example. Altrough it's autority is recognized everwhere in the nation, the council itself is greatly divided, being ruled by joint forces from many different parties."
  XLV_centro_ricerca_trento: "CRT - Centro Ricerca Trento"
  XLV_centro_ricerca_trento_desc: "Trento houses the biggest underground laboratories in the region, often builded in the dismissed mines, and the CTR unites all of the laboratories near Trento, making the scientifical effort of our country much easier."
+ XLV_borsa_scambi_milano_idea: "Borsa scambi milano"
+ XLV_borsa_scambi_milano_idea_desc: ""
 
  #Decisions
  XLV_info_decisions: "Info"
@@ -72,7 +74,16 @@
  XLV_info_decisions_2: "Path Guide - Lombardo-Veneto"
 
  XLV_the_committee_decisions: "The Committee"
- XLV_the_committee_decisions_desc: "The committee is the most powerful institution in our country, it is formed by 5 members, divided between the major parties in Lombardo-Veneto.\n They are currently divided in this way.\n §GLiga Autonomia Veneto:§  [?lega_members] members\n §YCentro Ricerca Trento:§  [?science_members] members\n §WNon-Aligned Members:§  [?neutral_members] members\n §BPartito Eurodemocratico della Lombardia - Avanti Veneto!:§  [?europe_members] members\n §RPartito Comunista Unito:§  [?communist_members] members"
+ XLV_the_committee_decisions_desc: "The committee is the most powerful institution in our country, it is formed by 5 members, divided between the major parties in Lombardo-Veneto.\n They are currently divided in this way.\n §GLiga Autonomia Veneto:§  [?lega_members] members\n §YCentro Ricerca Trento:§  [?science_members] members\n §WNon-Aligned Members:§  [?neutral_members] members\n §CPartito Eurodemocratico della Lombardia - Avanti Veneto!:§  [?europe_members] members\n §RPartito Comunista Unito:§  [?communist_members] members"
+
+ #focuses
+ XLV_elettrotreno_nord: "Elettrotreno-Nord"
+ XLV_kickstart_agriculture: "Kickstart Agriculture"
+ XLV_azienda_ferroviaria_nazionale: "Azienda ferroviaria nazionale"
+ XLV_borsa_scambi_milano: "Borsa scambi Milano"
+ XLV_restore_venice: "Restore Venice"
+ XLV_restore_the_MOSE: "Restore the MOSE"
+ XLV_open_uniTN: "Open uniTN"
 
  #others
  XLV_history_desc: "WIP"

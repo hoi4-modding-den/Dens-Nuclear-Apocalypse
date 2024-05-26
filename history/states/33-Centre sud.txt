@@ -2,18 +2,22 @@
 state={
 	id=33
 	name="STATE_33"
-manpower=424267
+manpower=1024267
 	
-	state_category = town
+	state_category = large_town
 
 	history={
 		victory_points = {
-			651 1
+			651 5
+		}
+		victory_points = {
+			6651 5
 		}
 		owner = XAQ
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
+			arms_factory = 2
 		}
 		add_core_of = XAQ
 	}
