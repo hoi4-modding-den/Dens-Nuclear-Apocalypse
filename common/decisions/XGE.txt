@@ -34,8 +34,10 @@ XGE_reconstruction_category = {
 		days_mission_timeout = 90
 		selectable_mission = no
 		available = {
-			NOT = {
-				has_country_flag = XGE_4to3_flag
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XGE_4to3_flag
+				}
 			}
 		}
 		timeout_effect = {
@@ -57,8 +59,10 @@ XGE_reconstruction_category = {
 		days_mission_timeout = 90
 		selectable_mission = no
 		available = {
-			NOT = {
-				has_country_flag = XGE_3to2_flag
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XGE_3to2_flag
+				}
 			}
 		}
 		timeout_effect = {
@@ -80,8 +84,10 @@ XGE_reconstruction_category = {
 		days_mission_timeout = 90
 		selectable_mission = no
 		available = {
-			NOT = {
-				has_country_flag = XGE_2to1_flag
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XGE_2to1_flag
+				}
 			}
 		}
 		timeout_effect = {
