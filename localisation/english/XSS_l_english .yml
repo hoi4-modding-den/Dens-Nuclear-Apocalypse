@@ -582,3 +582,59 @@ XSS_NSS_italy_desc:0 "Neu Schutzstaffel was a paramilitary organization, but aft
 XSS_claim_north_italy:0 "Claim Northern Italy"
 XSS_claim_north_italy_desc:0 "We will help our little Italian puppet by allowing them for expansion into wasteland."
 
+XSS_anschluss:0 "Anschluss"
+XSS_anschluss_desc:0 "We must unify all germans of the world. First we shall unite with people of Tirol."
+
+XSS_test_event.18.t:0 "Anschluss"
+XSS_test_event.18.desc:0 "Today Switzerland demanded our surredner and wants to incorporate us into Federation"
+XSS_test_event.18.a:0 "There is nothing we can do"
+XSS_test_event.18.b:0 "Let them come we will defeat them"
+
+XSS_incorporate_tyrol_into_fed:0 "Create Cantons in Tyrol"
+XSS_incorporate_tyrol_into_fed_desc:0 "After Anschluss of Tirol we shall incorporate them into our federation."
+
+XSS_claim_souther_tyrol:0 "Claim southern Tyrol"
+XSS_claim_souther_tyrol_desc:0 "German minority have been oppressed for too long by Lombardians."
+
+XSS_develop_tirol:0 "Develop Tyrol"
+XSS_develop_tirol_desc:0 "Tyrol have been underdeveloped by previous owners. To build our support in the region we must give them places to live and where they can work."
+
+XSS_annex_southern_tirol:0 "Annex southern Tyrol"
+XSS_annex_southern_tirol_desc:0 "Southern Tyrol is rightfully German and we shall re-take what's ours!"
+
+XSS_lay_claim_to_voralburg_nazi:0 "Claim Voralburg"
+XSS_lay_claim_to_voralburg_nazi_desc:0 "Voralburg is rightful Swiss territory and we should take hold of it."
+
+XSS_into_germany:0 "Into Germany"
+XSS_into_germany_desc:0 "The time is now. We shall fufill prophecy from Germania and take our homeland back!"
+
+XSS_war_in_south:0 "War in South"
+XSS_war_in_south_desc:0 "First stop in our way to Germania is south."
+
+XSS_rhineland:0 "Rhineland"
+XSS_rhineland_desc:0 "Rhineland is occupied by filthy Americans which overstayed their visit. We will drive them out to fulfill Germania!"
+
+XSS_develop_rhineland:0 "Develop Rhineland"
+XSS_develop_rhineland_desc:0 "Once heart of German industry now reduced to ashes. It's time we rebuild rennish industry."
+
+XSS_fight_hannover:0 "March into Hannover"
+XSS_fight_hannover_desc:0 "Hannover is mostly abandoned. A disgrace to a once so great city, it is high time to free it from oppression."
+
+XSS_final_march:0 "Final March"
+XSS_final_march_desc:0 "The time is now brothers! We will take Berlin and free it from communists. Their days are numbered and the German Glory is near."
+
+XSS_3rd_party_rally:0 "3rd Party rally"
+XSS_3rd_party_rally_desc:0 "We have taken Berlin! Brothers and sisters this day will go down in history. Führer wants to hold a party rally in newly controlled Berlin."
+
+XSS_test_event.19.t:0 "3rd Party rally"
+XSS_test_event.19.desc:0 "Führer has arrived at Berlin to hold his speech in front of old Brandenburg Gate. He held in speech in which he annonced his proud of Germans who helped him re-unite all Germans, but says that the work is not finished. We must destroy rebelious holsteinians and conquer Europe to bring Lebensraum to German people."
+XSS_test_event.19.a:0 "Germany is united and stronger than ever!"
+
+XSS_triumph:0 "Triumphant will"
+XSS_triumph_desc:0 "Germany is united now and their support for war is stronger than ever."
+
+XSS_germania_nation:0 "German Reich"
+XSS_germania_nation_DEF:0 "Germany"
+XSS_germania_nation_ADJ:0 "German"
+
+

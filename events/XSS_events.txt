@@ -421,6 +421,160 @@ news_event = {
 
 }
 
+################# Anschluss ##################
+country_event = {
+    id = XSS_test_event.18
+    title = XSS_test_event.18.t
+    picture = GFX_report_event_crowd_in_prague
+    desc = XSS_test_event.18.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.18.a
+        XSS = { 
+annex_country = {
+    target = XTI
+    transfer_troops = yes
+}
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.18.b
+        XSS = {
+			create_wargoal = {
+				type = annex_everything
+				target = XTI
+			}
+        }
+        
+    }
+}
+
+################# Germania dokonana ######################
+
+news_event = {
+    id = XSS_test_event.19
+    title = XSS_test_event.19.t
+    picture = GFX_news_event_herman_goring
+    desc = XSS_test_event.19.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.19.a
+        add_ideas = {XSS_triumph}
+        set_cosmetic_tag = XSS_germania_nation
+
+        848 = {
+
+            add_core_of = XSS
+
+        }
+        50 = {
+
+            add_core_of = XSS
+
+        }
+        28 = {
+
+            add_core_of = XSS
+
+        }
+        52 = {
+
+            add_core_of = XSS
+
+        }
+        53 = {
+
+            add_core_of = XSS
+
+        }
+        54 = {
+
+            add_core_of = XSS
+
+        }
+        55 = {
+
+            add_core_of = XSS
+
+        }
+        42 = {
+
+            add_core_of = XSS
+
+        }
+        51 = {
+
+            add_core_of = XSS
+
+        }
+        60 = {
+
+            add_core_of = XSS
+
+        }
+        65 = {
+
+            add_core_of = XSS
+
+        }
+        64 = {
+
+            add_core_of = XSS
+
+        }
+        59 = {
+
+            add_core_of = XSS
+
+        }
+        57 = {
+
+            add_core_of = XSS
+
+        }
+        56 = {
+
+            add_core_of = XSS
+
+        }
+        61 = {
+
+            add_core_of = XSS
+
+        }
+        62 = {
+
+            add_core_of = XSS
+
+        }
+        58 = {
+
+            add_core_of = XSS
+
+        }
+        909 = {
+
+            add_core_of = XSS
+
+        }
+set_capital = {
+  state = 64
+  remember_old_capital = no
+}
+
+    }
+
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

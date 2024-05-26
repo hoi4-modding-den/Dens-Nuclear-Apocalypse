@@ -337,6 +337,14 @@ ideas = {
             autonomy_gain = -0.25
             }
         }
+        XSS_triumph = {
+           removal_cost = -1
+            picture = triumphant_will
+            modifier = {
+            drift_defence_factor = 1
+            war_support_factor = 0.3
+            }
+        }
 
     }
 
