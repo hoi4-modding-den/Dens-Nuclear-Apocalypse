@@ -2,7 +2,7 @@
 	id = XLV_focus
 	
 	country = {
-		factor = 1
+		factor = 0
 		modifier = {
 			add = 100
 			tag = XLV
@@ -219,7 +219,7 @@
 		y = 3
 		relative_position_id = XLV_elettrotreno_nord
 		prerequisite = {
-			focus = XLV_azienda_ferroviaria_nazionale
+			focus = XLV_restore_venice
 		}
 		cost = 5
 
@@ -263,8 +263,10 @@
 		y = 3
 		relative_position_id = XLV_elettrotreno_nord
 		prerequisite = {
-			focus = XLV_azienda_ferroviaria_nazionale
-			focus = XLV_azienda_borsa_scambi_milano
+			focus = XLV_borsa_scambi_milano
+		}
+		prerequisite = {
+			focus = XLV_restore_venice
 		}
 		cost = 5
 
