@@ -15,5 +15,43 @@ characters = {
 			id = -1
 		}	
 	}
-
+	XAQ_yvon_moise = {
+		name =  XAQ_yvon_moise
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/XAQ/yvon_moise.dds"
+			}		
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XAQ_yvon_moise_idea
+			traits = { silent_workhorse }
+		}	
+	}
+	XAQ_gnaeus_allard = {
+		name =  XAQ_gnaeus_allard
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/XAQ/gnaeus_allard.dds"
+			}		
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XAQ_gnaeus_allard_idea
+			traits = { captain_of_industry }
+		}	
+	}
+	 XAQ_charles_sapiens = {
+		name =   XAQ_charles_sapiens
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/XAQ/charles_sapiens.dds"
+			}		
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XAQ_charles_sapiens_idea
+			traits = { XAQ_great_calamity_historian }
+		}	
+	}
 }

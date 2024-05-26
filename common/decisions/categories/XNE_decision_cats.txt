@@ -7,6 +7,6 @@ XNE_popular_support = {
 
 	allowed = {
 		tag = XNE
-		#XNE = { has_idea = XNE_internal_tensions }
+		XNE = { has_idea = XNE_internal_conflict }
 	}
 }

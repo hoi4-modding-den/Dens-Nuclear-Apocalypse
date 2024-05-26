@@ -335,6 +335,92 @@ remove_ideas = {XSS_era_of_instability}
 
 }
 
+news_event = {
+    id = XSS_test_event.14
+    title = XSS_test_event.14.t
+    picture = GFX_news_event_herman_goring
+    desc = XSS_test_event.14.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.14.a
+        add_stability = 0.35
+
+    }
+
+}
+news_event = {
+    id = XSS_test_event.15
+    title = XSS_test_event.15.t
+    picture = GFX_news_event_024
+    desc = XSS_test_event.15.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = XSS_test_event.15.a
+        trigger = {
+            tag = XSS
+        }
+    }
+    option = {
+        name = XSS_test_event.15.b
+        trigger = {
+        NOT = { tag = XSS}   
+        }
+  
+    }
+
+}
+
+news_event = {
+    id = XSS_test_event.16
+    title = XSS_test_event.16.t
+    picture = GFX_news_event_herman_goring
+    desc = XSS_test_event.16.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.16.a
+        add_war_support = 0.35
+
+    }
+
+}
+
+news_event = {
+    id = XSS_test_event.17
+    title = XSS_test_event.17.t
+    picture = GFX_news_event_BRA_estado_novo
+    desc = XSS_test_event.17.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.17.a
+        trigger = {
+            tag = XSS
+        }
+    }
+    option = {
+        name = XSS_test_event.17.b
+        trigger = {
+            tag = XLV
+        }
+    }
+
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

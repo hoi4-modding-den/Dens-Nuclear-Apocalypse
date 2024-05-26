@@ -1,0 +1,67 @@
+division_template = {
+	name = "NSS-Bergsteiger"
+	division_names_group = GER_INF_01
+    is_locked = yes
+    force_allow_recruiting = yes
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+        mountaineers = { x = 2 y = 0 }
+        mountaineers = { x = 2 y = 1 }
+        mountaineers = { x = 3 y = 0 }
+        mountaineers = { x = 3 y = 1 }
+
+	}
+
+}
+
+units = {
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 636
+		division_template = "NSS-Bergsteiger"
+		start_experience_factor = 0.5
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 3641
+		division_template = "NSS-Bergsteiger"
+		start_experience_factor = 0.5
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 3
+		}
+		location = 9587
+		division_template = "NSS-Bergsteiger"
+		start_experience_factor = 0.5
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 4
+		}
+		location = 3612
+		division_template = "NSS-Bergsteiger"
+		start_experience_factor = 0.5
+	}
+
+
+
+}
+
+

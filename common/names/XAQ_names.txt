@@ -1,0 +1,24 @@
+XAQ = {
+	male = {
+		names = {  
+			Andreas Albanus Amadeus Achille Adolphe Aurelius Adrien Aimable Alphonse Amédée Antoine Armand August Augustin Aurelien
+			Charles Brutus Blandus Bacchus Cassius Caius Daniel Denis Édouard Éttiene Elie Eugène Fernand François Frédéric
+			Félicien Félix Georges Octavius Guillaume Gustave Hadrian Henri Hubert Hugo Jacques Jean Joseph
+			Jules Julien Julian Lazare Leo Leroy Louis Lucien Léopold Matthieu Michel Napoléon Nicolas
+			Patrice Paul Philippe Pierre Robert Tatius Thibaut Thierry Thomas
+		 }
+	}
+	female = {
+		names = { Augustine Anne Marie Françoise Gisèle Marguerite Marianne Simone Anaïs Irène Nathalie Elsa }
+	}
+	surnames = {
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère"
+		Boulanger Bouët-Willaumez Bugeaud Caillard Canrobert Courbet
+		Cousin-Mountauban Delay "de Castellane" "de Castelnau"  "de Langle de Cary"
+		"de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Davout Dubail Dubois
+		Duchêne Dupetit-Thouars Exelmans Foch Forey "Franchet d'Espèrey" Gallieni Gouraud
+		Guillaumat Hamelin Harispe Hoche Humbert Jaurès Joffre Lebouef Lyautey Murat
+		"Ney d'Elchingen" Nivelle Péllissier Petain Ropert Vaillant
+	}
+	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
+}

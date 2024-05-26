@@ -11,11 +11,31 @@ scripted_gui = {
 		effects = {	
 			XGE_welcome_message_close_click = {
 				clr_country_flag = XGE_welcome_message_flag
+				clr_country_flag = XGE_credits_visible_flag
 			}
 			XGE_welcome_message_continue_click = {
 				clr_country_flag = XGE_welcome_message_flag
+				clr_country_flag = XGE_credits_visible_flag
+			}
+			XGE_welcome_message_credits_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = XGE_credits_visible_flag }
+					}
+					set_country_flag = XGE_credits_visible_flag
+				}
+				else = {
+					clr_country_flag = XGE_credits_visible_flag
+				}
 			}
 		}
+	}
+	XGE_credits_main_window = {
+		context_type = player_context
+		window_name = "XGE_credits_main_window"
+		visible = { has_country_flag = XGE_credits_visible_flag }
+		
+		
 	}
 
 	XGE_custom_gui_open = {

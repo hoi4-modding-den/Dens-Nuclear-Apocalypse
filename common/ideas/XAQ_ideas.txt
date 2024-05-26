@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+		XAQ_roman_revanchism = {
+			
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = MEX_politicised_army
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					war_support_factor = 0.10
+					fascism_drift = 0.01
+					resistance_target = 0.05
+					drift_defence_factor = 0.15
+				}
+		}
+		XAQ_annos_interitus = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = gre_venerate_the_ancient_hellenes
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					trade_opinion_factor = -0.1
+					political_power_gain = -0.3
+					stability_factor = -0.1
+					consumer_goods_factor = 0.15
+
+				}
+		}
+		XAQ_senate = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = focus_generic_improve_the_administration
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = 0.05
+
+				}
+		}
+	}
+}
