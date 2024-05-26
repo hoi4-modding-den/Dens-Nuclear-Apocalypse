@@ -9,7 +9,7 @@ characters = {
 		country_leader = {
 			ideology = stalinism
 			desc = XGE_erich_honecker_desc
-			id = -1
+			id = -1	
 		}
 		field_marshal = {
 			skill=5
@@ -18,6 +18,28 @@ characters = {
 			planning_skill=5
 			logistics_skill=5
 			legacy_id=-1
+		}
+	}
+	XGE_maximillian_weiss = {
+		advisor={
+			slot = political_advisor
+			idea_token = XGE_maximillian_weiss_minister
+			allowed = {
+				original_tag = XGE
+			}
+			traits = { 
+				XGE_head_engineer_trait
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+			can_be_fired = no
+		}
+		name = XGE_maximillian_weiss
+		portraits = {
+			civilian = {
+				small = GFX_Portrait_Europe_Generic_land_5_small
+			}
 		}
 	}
 }

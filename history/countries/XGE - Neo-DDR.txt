@@ -55,6 +55,7 @@ if = {
 
 
 recruit_character = XGE_erich_honecker
+recruit_character = XGE_maximillian_weiss
 
 XGE = {
 	set_variable = {
@@ -74,6 +75,7 @@ XGE = {
 add_dynamic_modifier = { modifier = XGE_computer_clique }
 
 add_ideas = { XGE_computer_clique_dummy_idea } #cleared after start-up
+add_ideas = { XGE_maximillian_weiss_minister }
 
 add_ideas = {  #for the control panel gui
 	XGE_system_controls_economy

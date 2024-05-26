@@ -16,6 +16,11 @@ spriteTypes = {
 		name = "GFX_XGE_custom_gui_computer_image"
 		texturefile = "gfx/XGE/ddr_pc_stylized.dds"
 	}
+	spriteType = {
+		name = "GFX_XGE_skull_emoji"
+		texturefile = "gfx/XGE/XGE_skull_emoji.dds"
+		legacy_lazy_load = no
+	}
 	SpriteType = {
 		name = "GFX_XGE_button_bloom"
 		texturefile = "gfx/XGE/computer.dds"			
