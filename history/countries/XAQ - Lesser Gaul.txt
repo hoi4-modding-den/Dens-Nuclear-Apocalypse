@@ -1,4 +1,4 @@
-capital = 23
+capital = 19
 
 # oob = "XAQ_1936"
 
@@ -14,3 +14,6 @@ set_popularities = {
 }
 
 recruit_character = XAQ_marcel_pietot
+add_ideas = XAQ_roman_revanchism
+add_ideas = XAQ_annos_interitus
+add_ideas = XAQ_senate
