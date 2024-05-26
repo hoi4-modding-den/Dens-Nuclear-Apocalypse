@@ -3,7 +3,7 @@ scripted_gui = {
 	XGE_welcome_message = {   ##Controls the main window of the welcome message, remember to credit me in the loc if you're directly copying this stuff
 		context_type = player_context
 		#parent_window_token = politics_tab
-		window_name = "XGE_welcome_window"  ##Change the names of all windows
+		window_name = "XGE_welcome_window"  ##Change the names of all windows, defined in interface/*.gui
 
 		visible = {
 			has_country_flag = XGE_welcome_message_flag  ##change the flag names

@@ -30,6 +30,7 @@
 		}
 		completion_reward = {
 			activate_mission = XGE_devastation_5to4
+			set_country_flag = XGE_5to4_flag
 		}
 	}
 	focus = {
