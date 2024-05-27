@@ -637,4 +637,50 @@ XSS_germania_nation:0 "German Reich"
 XSS_germania_nation_DEF:0 "Germany"
 XSS_germania_nation_ADJ:0 "German"
 
+XSS_conquer_south:0 "Conquer south"
+XSS_conquer_south_desc:0 "We shall support Italians in their one last offensive then they can lead on their own."
+
+XSS_NSS_3:0 "Neu Schutzstaffel"
+XSS_NSS_3_desc:0 "Neu Schutzstaffel was a paramilitary organization, but after Victory March it was integrated into regular army."
+
+XSS_NSS_modernization:0 "NSS Modernization"
+XSS_NSS_modernization_desc:0 "NSS must be ready to reunite Germany. We shall fund their operations as much as we can."
+
+XSS_mechanization:0 "Mechanization"
+XSS_mechanization_desc:0 "Flat lands of Germany and France are optimal for tank warfare."
+
+XSS_army_expansion:0 "Army expansion"
+XSS_army_expansion_desc:0 "We will increase funds going to the millitary."
+
+XSS_army_factrory:0 "Basel Millitary Complex"
+XSS_army_factrory_desc:0 "Basel has been left out in industrialistaion programs. A new millitary complex will be built there."
+
+XSS_MUZ:0 "Millitary University of Zurich"
+XSS_MUZ_desc:0 "Millitary University of Zurch has been founded to teach new officers that will support German war effort."
+
+XSS_millitary_university_of_zurich:0 "Millitary University of Zurich"
+XSS_millitary_university_of_zurich_desc:0 "Millitary University of Zurch will be found to teach new officers that will support German war effort."
+
+XSS_subjugate_rebels:0 "Subjugate rebelious provinces"
+XSS_subjugate_rebels_desc:0 "Schleswig-Holstein is rightfull German clay that has been taken from us by Danish Imperialists. We must subjugate these provinces to incorporate them into Reich."
+
+XSS_ardennes_push:0 "Ardennes push"
+XSS_ardennes_push_desc:0 "Lowlands are our gate to futher conquests in France."
+
+XSS_push_forward:0 "PUSH FORWARD!"
+XSS_push_forward_desc:0 "Like our fathers in the past we shall conquer France in days. They won't know what hit'em."
+
+XSS_end_british_hegemony:0 "End British hegemony"
+XSS_end_british_hegemony_desc:0 "Our fathers had perished in futile attempts to take on British, but we are not weak like them. Forward my brothers!"
+
+XSS_germania_achieved:0 "Germania Achieved"
+XSS_germania_achieved_desc:0 "Like written in Germania we have succeded in achieving rule over Europe. The world now enters a new era of stability and German supremacy."
+
+XSS_test_event.20.t:0 "Germania Achieved"
+XSS_test_event.20.desc:0 "After German conquest of British isles all points of German future listed in Germania were achieved. Führer visited what have remained of London and held a speech. He said that nobody can defeat Germany now and they are masters of their own faith. Now nobody can stand up to German rule and soon other nations will follow."
+XSS_test_event.20.a:0 "A new era for the world"
+
+XSS_komunizm:0 "Rote Armee"
+XSS_komunizm_desc:0 "Rote Armee stops NSS in their Victory March"
+
 

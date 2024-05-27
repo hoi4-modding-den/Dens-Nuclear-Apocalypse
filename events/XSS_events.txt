@@ -575,6 +575,24 @@ set_capital = {
 
 }
 
+news_event = {
+    id = XSS_test_event.20
+    title = XSS_test_event.20.t
+    picture = GFX_news_event_herman_goring
+    desc = XSS_test_event.20.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+
+    
+    option = {
+        name = XSS_test_event.20.a
+
+    }
+
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

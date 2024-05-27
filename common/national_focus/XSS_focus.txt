@@ -2141,7 +2141,7 @@ add_resource = {
     icon = GFX_focus_ger_reichskommisariats
     cost = 1
     prerequisite = { focus = XSS_storm_the_council }
-
+    mutually_exclusive = {focus = XSS_komunizm}
 
     completion_reward = {
         news_event = {
@@ -2672,6 +2672,158 @@ set_politics = {
         
 
     }
+   focus = {
+    id = XSS_conquer_south
+    x = 56
+    y = 19
+    icon = GFX_focus_ITA_southern_industry
+    cost = 5
+    prerequisite = { focus = XSS_claim_north_italy }
+    available = {
+        XIA = is_puppet_of = XSS
+    }
+
+    completion_reward = {
+################################# modify after anarchy drops############################
+        2 = {
+            add_core_of = XIA
+        }
+        117 = {
+            add_core_of = XIA
+        }
+        849 = {
+            add_core_of = XIA
+        }
+        162 = {
+            add_core_of = XIA
+        }
+        156 = {
+            add_core_of = XIA
+        }
+        157 = {
+            add_core_of = XIA
+        }
+        XIA = {
+        transfer_state= 2
+        transfer_state= 849
+        transfer_state= 117
+        transfer_state= 162
+        transfer_state= 156
+        transfer_state= 157
+        transfer_state= 161
+        transfer_state= 158
+        transfer_state= 162
+        transfer_state= 735
+
+        }
+
+        
+
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_NSS_modernization
+    x = 65
+    y = 14
+    icon = GFX_focus_generic_fascist_troops
+    cost = 5
+    prerequisite = { focus = XSS_extermination_of_french }
+   
+
+    completion_reward = {
+    swap_ideas = {
+        add_idea = XSS_NSS_3
+        remove_idea = XSS_NSS_2
+    }
+
+        }
+        
+
+    }
+   focus = {
+    id = XSS_mechanization
+    x = 65
+    y = 15
+    icon = GFX_goal_generic_army_tanks
+    cost = 5
+    prerequisite = { focus = XSS_NSS_modernization }
+   
+
+    completion_reward = {
+        add_tech_bonus = {
+        bonus = 1
+        uses = 1
+        category = armor
+            }
+
+        }
+        
+
+    }
+   focus = {
+    id = XSS_army_expansion
+    x = 64
+    y = 16
+    icon = GFX_goal_generic_axis_build_infantry
+    cost = 5
+    prerequisite = { focus = XSS_mechanization }
+   
+
+    completion_reward = {
+
+        army_experience = 15
+
+        }
+        
+
+    }
+   focus = {
+    id = XSS_army_factrory
+    x = 66
+    y = 16
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 10
+    prerequisite = { focus = XSS_mechanization }
+   
+
+    completion_reward = {
+    845 = {
+    add_extra_state_shared_building_slots = 2 
+    add_building_construction = {
+    type = arms_factory
+    level = 2
+    instant_build = yes
+        }
+    }
+        
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_millitary_university_of_zurich
+    x = 65
+    y = 17
+    icon = GFX_focus_SWI_federal_police
+    cost = 10
+    prerequisite = { focus = XSS_army_factrory }
+    prerequisite = { focus = XSS_army_expansion }   
+
+    completion_reward = {
+
+    add_research_slot = 1    
+    add_ideas = {XSS_MUZ}    
+
+        }
+        
+
+    }
 
 
    focus = {
@@ -3074,5 +3226,195 @@ country_event = {
 
     }
 
+   focus = {
+    id = XSS_subjugate_rebels
+    x = 60
+    y = 25
+    icon = GFX_focus_POL_reassert_silesian_claims
+    cost = 5
+    prerequisite = { focus = XSS_3rd_party_rally }
+
+    completion_reward = {
+
+       declare_war_on = {
+       target = XSH
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XJY
+        type = annex_everything
+            } 
+
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_ardennes_push
+    x = 60
+    y = 26
+    icon = GFX_focus_hol_gateway_to_europe
+    cost = 5
+    prerequisite = { focus = XSS_subjugate_rebels }
+
+    completion_reward = {
+        ##################### Rework when Anarchy drops #############
+        transfer_state= 8
+        transfer_state= 36
+        transfer_state= 7
+        transfer_state= 35
+        transfer_state= 34
+        transfer_state= 6
+        transfer_state= 29
+        8 = {
+
+            add_core_of = XSS
+
+        }
+
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_push_forward
+    x = 60
+    y = 27
+    icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+    cost = 2
+    prerequisite = { focus = XSS_ardennes_push }
+
+    completion_reward = {
+        ##################### Rework when Anarchy drops #############
+        transfer_state= 18
+        transfer_state= 15
+        transfer_state= 17
+        transfer_state= 27
+        transfer_state= 34
+        transfer_state= 24
+        transfer_state= 30
+        transfer_state= 14
+        transfer_state= 973
+        transfer_state= 20
+        transfer_state= 32
+        transfer_state= 21
+
+       declare_war_on = {
+       target = XPR
+        type = annex_everything
+            }  
+       declare_war_on = {
+       target = XAQ
+        type = annex_everything
+            }
+       declare_war_on = {
+       target = XPY
+        type = annex_everything
+            }
+     
+
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_end_british_hegemony
+    x = 60
+    y = 28
+    icon = GFX_focus_eng_imperial_federation
+    cost = 2
+    prerequisite = { focus = XSS_push_forward }
+
+    completion_reward = {
+    
+
+
+       declare_war_on = {
+       target = XNE
+        type = annex_everything
+            }  
+       declare_war_on = {
+       target = XNM
+        type = annex_everything
+            }
+
+     
+
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_germania_achieved
+    x = 60
+    y = 29
+    icon = GFX_focus_eng_decolonization
+    cost = 1
+    prerequisite = { focus = XSS_end_british_hegemony }
+    available = {controls_state = 126}
+
+    completion_reward = {
+ 
+        news_event = {
+        id = XSS_test_event.20
+        days = 1
+        random_hours = 12
+            }
+    
+
+        
+        }
+        
+
+    }
+
+
+#################### Komunizm #######################
+
+    focus = {
+    id = XSS_komunizm
+    x = 75
+    y = 4
+    icon = GFX_focus_SOV_support_spanish_poum
+    cost = 1
+    prerequisite = { focus = XSS_storm_the_council }
+    mutually_exclusive = {focus = XSS_fascist_win}
+
+
+    completion_reward = {
+
+delete_unit_template_and_units = {
+    division_template = "Waffen-NSS"
+    disband = yes 
+}
+
+        
+set_politics = {
+    ruling_party = communism
+    elections_allowed = no
+}
+
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
 
 }
+

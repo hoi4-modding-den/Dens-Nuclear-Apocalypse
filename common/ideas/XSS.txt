@@ -345,6 +345,26 @@ ideas = {
             war_support_factor = 0.3
             }
         }
+        XSS_NSS_3 = {
+           removal_cost = -1
+            picture = SWI_spirit_of_helvetia_defensive_peace
+            modifier = {
+            political_power_gain = -0.05
+            offence = 0.15
+            experience_loss_factor = -0.35
+            training_time_factor = -0.15
+            conscription = 0.03
+            }
+        }
+        XSS_MUZ = {
+           removal_cost = -1
+            picture = eng_imperial_conscription
+            modifier = {
+            political_power_gain = -0.05
+            experience_gain_army = 0.5
+            army_leader_start_level = 1 
+            }
+        }
 
     }
 
