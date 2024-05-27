@@ -96,6 +96,40 @@ ideas = {
 				consumer_goods_factor = -0.1
 				trade_opinion_factor = 0.25
 			}
-		}		
+		}	
+		XTI_reclamation_recruitment = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.2
+			}
+		}	
+		XTI_reclamation_supplies = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}	
 	}
 }	

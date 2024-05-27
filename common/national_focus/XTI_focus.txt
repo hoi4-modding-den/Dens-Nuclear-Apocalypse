@@ -630,7 +630,10 @@
 		}
 		
 		bypass = {
-			is_faction_leader = no
+			AND = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -668,7 +671,10 @@
 		}
 		
 		bypass = {
-			is_faction_leader = no
+			AND = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1144,10 +1150,231 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			add_state_claim = 152
+			add_state_claim = 4
+			add_political_power = 50
 		}
 	}
+	focus = {
+		id = XTI_recruit_colonists
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_the_reclamationists }
+#		mutually_exclusive = { focus = XTI_the_new_tiroleans }
+		x = -1
+		y = 1
+		relative_position_id = XTI_the_reclamationists
 
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_reclamation_recruitment
+		}
+	}
+	focus = {
+		id = XTI_prepare_supplies
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_the_reclamationists }
+#		mutually_exclusive = { focus = XTI_the_new_tiroleans }
+		x = 1
+		y = 1
+		relative_position_id = XTI_the_reclamationists
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_reclamation_supplies
+		}
+	}
+	focus = {
+		id = XTI_reclaim_upper_austria
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_recruit_colonists }
+		prerequisite = { focus = XTI_prepare_supplies }
+#		mutually_exclusive = { focus = XTI_the_new_tiroleans }
+		x = 1
+		y = 1
+		relative_position_id = XTI_recruit_colonists
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_state_owner = 152
+			add_state_core = 152
+		}
+	}
+	focus = {
+		id = XTI_reclaim_lower_austria
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reclaim_upper_austria }
+#		mutually_exclusive = { focus = XTI_the_new_tiroleans }
+		x = 0
+		y = 1
+		relative_position_id = XTI_reclaim_upper_austria
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_state_owner = 4
+			add_state_core = 4
+		}
+	}
+	focus = {
+		id = XTI_declare_new_austria
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reclaim_lower_austria }
+		mutually_exclusive = { focus = XTI_look_to_the_past }
+		x = 0
+		y = 1
+		relative_position_id = XTI_reclaim_lower_austria
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_cosmetic_tag = AUS
+			remove_ideas = XTI_reclamation_recruitment
+			remove_ideas = XTI_reclamation_supplies
+		}
+	}
+	focus = {
+		id = XTI_look_to_the_past
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reclaim_lower_austria }
+		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 4
+		y = 1
+		relative_position_id = XTI_reclaim_lower_austria
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
 	
 
 }
