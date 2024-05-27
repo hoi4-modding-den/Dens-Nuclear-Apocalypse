@@ -75,6 +75,10 @@
 				factor = 2.5
 				XNM = { has_country_flag = XNM_aggressive }
 			}
+			modifier = {
+				factor = 5
+				date > 1937.01.01
+			}
 		}
 		
 	}
@@ -110,6 +114,10 @@
 				factor = 2.5
 				XNM = { has_country_flag = XNM_coop }
 			}
+			modifier = {
+				factor = 5
+				date > 1937.01.01
+			}
 		}
 		
 	}
@@ -143,7 +151,11 @@
 			factor = 10
 			modifier = {
 				factor = 2.5
-				XNM = { has_country_flag = XNM_coop }
+				XNM = { has_country_flag = XNM_no_coop }
+			}
+			modifier = {
+				factor = 5
+				date > 1937.01.01
 			}
 		}
 		
@@ -489,12 +501,95 @@
     }
 
     focus = {
-		id = XNE_approach_ireland
-    	icon = GFX_goal_generic_improve_relations
-    	prerequisite = { focus = XNE_recognise_mercia }
+		id = XNE_agree_a_way_forward
+    	icon = GFX_focus_generic_diplomatic_treaty
+    	prerequisite = { focus = XNE_summit_for_peace }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_summit_for_peace
+    
+    	cost = 8
+    
+    	available = { is_in_faction_with = XNM }
+    	bypass = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		country_event = XNE_focus.6
+			add_stability = 0.05
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_join_the_bez
+    	icon = GFX_goal_generic_positive_trade_relations
+    	prerequisite = { focus = XNE_agree_a_way_forward }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_agree_a_way_forward
+    
+    	cost = 8
+    
+    	available = { is_in_faction_with = XNM }
+    	bypass = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		add_ideas = BEZ_membership
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_share_ideas_on_military
+    	icon = GFX_goal_generic_army_doctrines
+    	prerequisite = { focus = XNE_agree_a_way_forward }
     	x = -1
     	y = 1
-    	relative_position_id = XNE_recognise_mercia
+    	relative_position_id = XNE_agree_a_way_forward
+    
+    	cost = 8
+    
+    	available = { is_in_faction_with = XNM }
+    	bypass = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		army_experience = 40
+			XNM = { army_experience = 60 }
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+    focus = {
+		id = XNE_approach_ireland
+    	icon = GFX_goal_generic_improve_relations
+    	prerequisite = { focus = XNE_summit_for_peace }
+    	x = -2
+    	y = 1
+    	relative_position_id = XNE_summit_for_peace
     
     	cost = 8
     
@@ -520,10 +615,10 @@
     focus = {
 		id = XNE_approach_ulster
     	icon = GFX_focus_generic_infiltration
-    	prerequisite = { focus = XNE_recognise_mercia }
-    	x = -3
+    	prerequisite = { focus = XNE_summit_for_peace }
+    	x = -4
     	y = 1
-    	relative_position_id = XNE_recognise_mercia
+    	relative_position_id = XNE_summit_for_peace
     
     	cost = 8
     
@@ -545,14 +640,49 @@
     		factor = 10
     	}
     }
+
+    focus = {
+		id = XNE_irish_dependence
+    	icon = GFX_focus_CZE_german_puppet
+    	prerequisite = { focus = XNE_approach_ulster }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_approach_ulster
+    
+    	cost = 8
+    
+    	available = { NOT = { has_country_flag = XNE_ulster_rejects } }
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		add_political_power = 50
+			XNI = { 
+				add_political_power = 50
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.2
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
 	
 	focus = {
 		id = XNE_treaty_with_wales
     	icon = GFX_goal_generic_improve_relations
-    	prerequisite = { focus = XNE_coalition_government }
-    	x = 1
+    	prerequisite = { focus = XNE_summit_for_peace }
+    	x = 2
     	y = 1
-    	relative_position_id = XNE_coalition_government
+    	relative_position_id = XNE_summit_for_peace
     
     	cost = 8
     
@@ -578,14 +708,14 @@
     focus = {
 		id = XNE_a_deal_for_welsh_victory
     	icon = GFX_focus_generic_infiltration
-    	prerequisite = { focus = XNE_coalition_government }
-    	x = 3
+    	prerequisite = { focus = XNE_summit_for_peace }
+    	x = 4
     	y = 1
-    	relative_position_id = XNE_coalition_government
+    	relative_position_id = XNE_summit_for_peace
     
     	cost = 8
     
-    	available = {}
+    	available = { NOT = { has_country_flag = XNE_worcester_rejects } }
     	bypass = {}
 		mutually_exclusive = { focus = XNE_treaty_with_wales }
     	
@@ -597,6 +727,89 @@
     	completion_reward = {
     		XPW = { country_event = XNE_focus.4 }
 			add_political_power = 35
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+    focus = {
+		id = XNE_corporate_capitalism
+    	icon = GFX_focus_ARG_strengthening_the_concordancia
+    	prerequisite = { focus = XNE_a_deal_for_welsh_victory }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_a_deal_for_welsh_victory
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_ideas = XNE_concessions_to_companies
+			XNI = { add_ideas = XNE_lower_taxes }
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+    focus = {
+		id = XNE_secure_wales
+    	icon = GFX_focus_generic_annex_country_2
+    	prerequisite = { focus = XNE_corporate_capitalism focus = XNE_treaty_with_wales }
+    	x = -2
+    	y = 1
+    	relative_position_id = XNE_corporate_capitalism
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			if = {
+				limit = { has_completed_focus = XNE_a_deal_for_welsh_victory }
+				declare_war_on = {
+					target = XWA
+					type = annex_everything
+				}
+				XPW = {
+					add_to_war = {
+						targeted_alliance = ROOT
+						enemy = XWA
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			else = {
+				declare_war_on = {
+					target = XPW
+					type = annex_everything
+				}
+				XWA = {
+					add_to_war = {
+						targeted_alliance = ROOT
+						enemy = XPW
+						hostility_reason = asked_to_join
+					}
+				}
+			}
     	}
     	
     	ai_will_do = {

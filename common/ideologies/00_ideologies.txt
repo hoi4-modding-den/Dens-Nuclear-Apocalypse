@@ -221,7 +221,7 @@ ideologies = {
 			
 			XNE_party_monarchism = {
 				can_be_randomly_selected = no
-				color = { 219 18 136 }
+				color = { 76 10 122 }
 			}
 		}
 
