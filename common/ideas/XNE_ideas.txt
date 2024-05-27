@@ -44,6 +44,20 @@ ideas = {
 				stability_weekly = -0.001
 			}
 		}
+		XNE_internal_conflict_add = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_weekly = -0.002
+			}
+		}
 		XNE_tensions_on_the_trent = {
 			allowed = {}
 			available = {}
@@ -122,6 +136,22 @@ ideas = {
 				stability_factor = -0.05
 				democratic_drift = -0.01
 				political_power_gain = 0.2
+			}
+		}
+		XNE_tensions_on_the_trent_victory = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XNM_tensions_on_the_trent
+			
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.10
+				political_power_gain = 0.1
 			}
 		}
 		XNE_high_import_taxes = {

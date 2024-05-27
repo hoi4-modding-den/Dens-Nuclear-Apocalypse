@@ -53,7 +53,7 @@
 		y = 1
 		relative_position_id = XNE_chamberlains_speech
 
-		cost = 8
+		cost = 1
 
 		available = {}
 		bypass = {}
@@ -87,7 +87,7 @@
 		y = 1
 		relative_position_id = XNE_chamberlains_speech
 
-		cost = 8
+		cost = 1
 
 		available = {}
 		bypass = {}
@@ -122,7 +122,7 @@
 		y = 1
 		relative_position_id = XNE_chamberlains_speech
 		
-		cost = 8
+		cost = 1
 
 		available = {}
 		bypass = {}
@@ -929,7 +929,7 @@
 		id = XNE_escalate_tensions_with_mercia
     	icon = GFX_focus_generic_provoke_border_clashes
     	prerequisite = { focus = XNE_aggression }
-    	x = -1
+    	x = 0
     	y = 1
     	relative_position_id = XNE_aggression
     
@@ -960,7 +960,7 @@
 		id = XNE_formally_denounce_mercia
     	icon = GFX_focus_generic_annex_country
     	prerequisite = { focus = XNE_escalate_tensions_with_mercia }
-    	x = 0
+    	x = -1
     	y = 1
     	relative_position_id = XNE_escalate_tensions_with_mercia
     
@@ -994,7 +994,7 @@
     	icon = GFX_focus_generic_manpower
     	prerequisite = { focus = XNE_aggression }
     	x = 1
-    	y = 1
+    	y = 2
     	relative_position_id = XNE_aggression
     
     	cost = 8
@@ -1022,6 +1022,7 @@
 		id = XNE_rulers_of_the_british_isles
     	icon = GFX_focus_generic_monarchy_2
     	prerequisite = { focus = XNE_call_for_action }
+    	prerequisite = { focus = XNE_formally_denounce_mercia }
     	x = 0
     	y = 1
     	relative_position_id = XNE_call_for_action
@@ -1058,7 +1059,12 @@
     
     	cost = 8
     
-    	available = {}
+    	available = { 
+			strength_ratio = {
+				tag = XNM
+				ratio > 1.25
+			}
+		}
     	bypass = {}
 		mutually_exclusive = {}
     	
@@ -1092,15 +1098,20 @@
 	focus = {
 		id = XNE_end_the_peace
     	icon = GFX_focus_generic_total_war
-    	prerequisite = { focus = XNE_reclaim_our_steel }
     	prerequisite = { focus = XNE_rulers_of_the_british_isles }
-    	x = 1
+    	x = -1
     	y = 1
-    	relative_position_id = XNE_reclaim_our_steel
+    	relative_position_id = XNE_rulers_of_the_british_isles
     
     	cost = 8
     
-    	available = {}
+    	available = {
+			OR = {
+				has_completed_focus = XNE_reclaim_our_steel
+				date > 1938.06.01
+			}
+			NOT = { has_government = democratic }
+		}
     	bypass = { 
 			OR = {
 				has_war_with = XNM 
@@ -1121,6 +1132,385 @@
                 target = XNM
                 type = annex_everything
             }
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+			modifier = {
+				factor = 10
+				date > 1938.09.01
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_integration_of_the_midlands
+    	icon = GFX_focus_hol_united_netherlands
+    	prerequisite = { focus = XNE_end_the_peace }
+    	prerequisite = { focus = XNE_reclaim_our_steel }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_end_the_peace
+    
+    	cost = 8
+    
+    	available = { 
+			NOT = { country_exists = XNM }
+		}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_neutrality_support = yes
+    		add_political_power = 35
+			set_country_flag = XNE_integration_mercia
+			custom_effect_tooltip = XNE_integration_mercia_tool
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_victorious
+    	icon = GFX_focus_generic_combined_arms
+    	prerequisite = { focus = XNE_end_the_peace }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_end_the_peace
+    
+    	cost = 8
+    
+    	available = { 
+			NOT = { country_exists = XNM }
+		}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_neutrality_support = yes
+    		XNE_gain_fascism_support = yes
+    		add_political_power = 65
+			swap_ideas = {
+				remove_idea = XNE_tensions_on_the_trent_escalate
+				add_idea = XNE_tensions_on_the_trent_victory
+			}
+			add_threat = 5
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_claim_the_british_isles
+    	icon = GFX_focus_eng_imperial_federation
+    	prerequisite = { focus = XNE_integration_of_the_midlands }
+    	prerequisite = { focus = XNE_victorious }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_integration_of_the_midlands
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_neutrality_support = yes
+    		add_state_claim = 122
+    		add_state_claim = 970
+    		add_state_claim = 121
+    		add_state_claim = 133
+    		add_state_claim = 136
+    		add_state_claim = 120
+    		add_state_claim = 119
+    		add_state_claim = 134
+    		add_state_claim = 113
+    		add_state_claim = 135
+    		add_state_claim = 932
+    		add_state_claim = 131
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_crush_the_welsh
+    	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+    	prerequisite = { focus = XNE_claim_the_british_isles }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_claim_the_british_isles
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = { 
+			AND = {
+				NOT = { country_exists = XWA }
+				NOT = { country_exists = XPW }
+			}
+		}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_neutrality_support = yes
+    		if = {
+				limit = { country_exists = XWA }
+				create_wargoal = {
+					type = annex_everything
+					target = XWA
+					expire = 180
+				}
+			}
+			if = {
+				limit = { country_exists = XPW }
+				create_wargoal = {
+					type = annex_everything
+					target = XPW
+					expire = 180
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_reclaim_scotland
+    	icon = GFX_focus_ETH_continuous_strengthen_the_black_lions
+    	prerequisite = { focus = XNE_claim_the_british_isles }
+    	x = -2
+    	y = 1
+    	relative_position_id = XNE_claim_the_british_isles
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = { 
+			NOT = { country_exists = XCT }
+			NOT = { country_exists = XTY }
+		}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_neutrality_support = yes
+    		if = {
+				limit = { country_exists = XCT }
+				create_wargoal = {
+					type = annex_everything
+					target = XCT
+					expire = 180
+				}
+			}
+			if = {
+				limit = { country_exists = XTY }
+				create_wargoal = {
+					type = annex_everything
+					target = XTY
+					expire = 180
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_move_into_ireland
+    	icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+    	prerequisite = { focus = XNE_claim_the_british_isles }
+    	x = 2
+    	y = 1
+    	relative_position_id = XNE_claim_the_british_isles
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = { 
+			AND = {
+				NOT = { country_exists = XNI }
+				NOT = { country_exists = XIE }
+			}
+		}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_neutrality_support = yes
+    		if = {
+				limit = { country_exists = XNI }
+				create_wargoal = {
+					type = annex_everything
+					target = XNI
+					expire = 240
+				}
+			}
+			if = {
+				limit = { country_exists = XIE }
+				create_wargoal = {
+					type = annex_everything
+					target = XIE
+					expire = 240
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_an_english_victory
+    	icon = GFX_focus_DEN_national_unity
+    	prerequisite = { focus = XNE_crush_the_welsh }
+    	prerequisite = { focus = XNE_reclaim_scotland }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_crush_the_welsh
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = { 
+			AND = {
+				NOT = { country_exists = XCT }
+				NOT = { country_exists = XWA }
+				NOT = { country_exists = XPW }
+				NOT = { country_exists = XTY }
+			}
+		}
+		mutually_exclusive = { focus = XNE_a_british_victory }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		add_stability = 0.1
+			add_country_leader_trait = indomitable_perseverance
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+			modifier = {
+				factor = 0.5
+				OR = {
+					country_exists = XIE
+					country_exists = XNI
+				}
+			}
+				
+    	}
+    }
+	
+	focus = {
+		id = XNE_a_british_victory
+    	icon = GFX_focus_eng_the_sun_never_sets
+    	prerequisite = { focus = XNE_crush_the_welsh }
+    	prerequisite = { focus = XNE_move_into_ireland }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_crush_the_welsh
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = { 
+			AND = {
+				NOT = { country_exists = XCT }
+				NOT = { country_exists = XWA }
+				NOT = { country_exists = XPW }
+				NOT = { country_exists = XTY }
+				NOT = { country_exists = XIE }
+				NOT = { country_exists = XNI }
+			}
+		}
+		mutually_exclusive = { focus = XNE_an_english_victory }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_neutrality_support = yes
+    		set_cosmetic_tag = XNE_UK
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = XNM
+						is_core_of = XTY
+						is_core_of = XCT
+						is_core_of = XWA
+						is_core_of = XPW
+						is_core_of = XIE
+						is_core_of = XNI
+					}
+				}
+				add_core_of = ROOT
+			}
+			if = {
+				limit = { has_idea = XNE_internal_conflict }
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = XNE_internal_conflict
+						add_idea = XNE_internal_conflict_add
+					}
+				}
+				hidden_effect = {
+					remove_ideas = XNE_internal_conflict
+					add_timed_idea = {
+						idea = XNE_internal_conflict_add
+						days = 365
+					}
+				}
+			}
     	}
     	
     	ai_will_do = {
