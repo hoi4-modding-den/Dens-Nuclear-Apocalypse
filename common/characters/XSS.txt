@@ -426,4 +426,21 @@ corps_commander = {
 	}
 ###################### Normal ######################################
 
+	XSS_lohmiller = {
+		name = "Moritz Lohmiller"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_fra_leon_blum"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+
+	}
+
+
 }

@@ -593,6 +593,57 @@ news_event = {
 
 }
 
+###################### commie path ##############################
+
+news_event = {
+    id = XSS_test_event.21
+    title = XSS_test_event.21.t
+    picture = GFX_news_event_spr_spanish_civil_war2
+    desc = XSS_test_event.21.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.21.a
+
+        set_party_name = {
+        ideology = fascism
+        long_name = "Nationale Arbeiterpartei"
+        name = "NAP"
+            }
+        add_popularity = {
+        ideology = fascism
+        popularity = -0.05
+                }
+        add_popularity = {
+        ideology = communism
+        popularity = 0.3
+                }
+        151 = {
+            transfer_state_to = XRM
+        }
+        846 = {transfer_state_to = XRM}
+        XRM = {
+        declare_war_on = {
+        target = XSS
+        type = annex_everything
+            }
+
+        }
+
+        
+        
+        
+        hidden_effect = { XRM = { load_oob = "XRM"}}
+
+        kill_ideology_leader = fascism
+
+    }
+
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

@@ -683,4 +683,6 @@ XSS_test_event.20.a:0 "A new era for the world"
 XSS_komunizm:0 "Rote Armee"
 XSS_komunizm_desc:0 "Rote Armee stops NSS in their Victory March"
 
-
+XSS_test_event.21.t:0 "Rote Armee stops Victory March"
+XSS_test_event.21.desc:0 "Today NSS tried to take control over National Assembly, happily passing near Rote Armee has stopped their advance starting fight on streets of Bern. Most of NSS soldiers were killed including Head of NSS. While NSS was stopped in their tracks Grüne Armee soldiers have survived and retreted to Romanchia. Soon they will rise against newly formed communist government."
+XSS_test_event.21.a:0 "War is comming"

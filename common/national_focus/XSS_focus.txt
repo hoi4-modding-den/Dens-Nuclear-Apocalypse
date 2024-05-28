@@ -2646,7 +2646,7 @@ set_politics = {
     cost = 5
     prerequisite = { focus = XSS_create_italian_state }
     available = {
-        XIA = is_puppet_of = XSS
+        XIA = {is_puppet_of = XSS} 
     }
 
     completion_reward = {
@@ -2680,7 +2680,7 @@ set_politics = {
     cost = 5
     prerequisite = { focus = XSS_claim_north_italy }
     available = {
-        XIA = is_puppet_of = XSS
+        XIA = {is_puppet_of = XSS} 
     }
 
     completion_reward = {
@@ -3390,6 +3390,12 @@ country_event = {
 
 
     completion_reward = {
+
+        news_event = {
+        id = XSS_test_event.21
+        days = 1
+        random_hours = 3
+            }
 
 delete_unit_template_and_units = {
     division_template = "Waffen-NSS"

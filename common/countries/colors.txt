@@ -124,7 +124,3 @@ XIA = {
 	color = rgb { 25 248 96 }
 	color_ui = rgb { 25 248 96  }
 }
-XSS_germania_nation = {
-    color = rgb {21 12 11}
-    color_ui = rgb {21 12 11 }
-}
