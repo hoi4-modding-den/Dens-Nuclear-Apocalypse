@@ -1162,6 +1162,7 @@
     		XNE_gain_neutrality_support = yes
 			add_war_support = 0.05
 			XNM = { add_war_support = 0.05 }
+			set_country_flag = XNE_escalated_tensions
     	}
     	
     	ai_will_do = {
@@ -1321,7 +1322,13 @@
     	available = {
 			OR = {
 				has_completed_focus = XNE_reclaim_our_steel
-				date > 1938.06.01
+				custom_trigger_tooltip = {
+					tooltip = XNE_escalated_tensions_180
+					has_country_flag = {
+						flag = XNE_escalated_tensions
+						days > 365
+					}
+				}
 			}
 			NOT = { has_government = democratic }
 		}

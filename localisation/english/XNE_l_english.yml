@@ -142,6 +142,8 @@
  XNE_government_reformation:0 "Government Reformation"
  XNE_escalate_tensions_with_mercia:0 "Escalate Tensions with [XNM.GetNameDef]"
  XNE_formally_denounce_mercia:0 "Formally Denounce [XNM.GetNameDef]"
+ XNE_escalated_tensions:0 " §REscalated tensions§!"
+ XNE_escalated_tensions_180:0 "§REscalated tensions more than 180 days ago§!."
  XNE_call_for_action:0 "Call for Action"
  XNE_rulers_of_the_british_isles:0 "Rulers of the British Isles"
  XNE_reclaim_our_steel:0 "Reclaim our Steel"
