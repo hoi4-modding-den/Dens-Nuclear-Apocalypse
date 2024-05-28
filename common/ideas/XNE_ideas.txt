@@ -56,6 +56,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = -0.002
+				neutrality_drift = 0.02
 			}
 		}
 		XNE_tensions_on_the_trent = {
@@ -170,6 +171,36 @@ ideas = {
 				industry_repair_factor = 0.25
 				cic_construction_boost = 0.25
 				custom_modifier_tooltip = XNE_closed_trade
+			}
+		}
+		XNE_lower_taxes = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = ARG_civilian_economy_boost
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				political_power_factor = 0.1
+			}
+		}
+		XNE_concessions_to_companies = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_economic_crisis
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = 0.1
 			}
 		}
 		

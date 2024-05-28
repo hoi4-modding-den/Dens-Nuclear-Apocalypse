@@ -36,6 +36,9 @@ country_event = {
 		4 = {
 			add_manpower = -1615000
 		}
+		152 = {
+			add_manpower = -1344000
+		}
         #complete_national_focus = XSS_triumph_of_democracy
     }
 }

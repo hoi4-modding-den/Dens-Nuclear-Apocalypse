@@ -142,7 +142,7 @@ country_event = {
 	}
 }
 
-# Alliance with Mercia
+# Alliance with Mercia/IRE/WELSH
 country_event = {
 	id = XNE_focus.2
 	title = XNE_focus.2.title
@@ -153,6 +153,7 @@ country_event = {
 	
 	option = {
 		name = XNE_focus.2.a
+		trigger = { tag = XNM }
 		ai_chance = { factor = 5 }
 		if = {
 			limit = { is_in_faction = yes }
@@ -167,10 +168,29 @@ country_event = {
 	}
 	
 	option = {
+		name = XNE_focus.2.a
+		trigger = { NOT = { tag = XNM } }
+		ai_chance = { factor = 5 }
+		FROM = {
+			faction_leader = {
+				add_to_faction = ROOT
+			}
+		}
+	}
+	
+	option = {
 		name = XNE_focus.2.b
 		ai_chance = { factor = 2 }
 		add_political_power = -50
 		XNE = { add_war_support = 0.25 }
 		add_ideas = XNE_tensions_on_the_trent
+	}
+	
+	option = {
+		name = XNE_focus.2.b
+		trigger = { NOT = { tag = XNM } }
+		ai_chance = { factor = 2 }
+		add_political_power = -50
+		XNE = { add_war_support = 0.05 }
 	}
 }
