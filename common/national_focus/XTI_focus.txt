@@ -1672,6 +1672,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			set_capital = { state = 4 }
 			create_country_leader = {
 				name = "Interregnum"
 				desc = ""
@@ -1680,6 +1681,11 @@
 				ideology = despotism
 				traits = {
 				}
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "Interregnum"
+				name = "Interregnum"
 			}
 		}
 	}
@@ -1725,6 +1731,12 @@
 				traits = {
 				}
 			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "House of Habsburg-Lorraine"
+				name = "Habsburg Dynasty"
+			}
+			set_cosmetic_tag = AUS_ROY
 		}
 	}
 	focus = {
