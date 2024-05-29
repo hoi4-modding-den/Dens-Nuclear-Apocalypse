@@ -573,7 +573,7 @@
 		id = XTI_alpine_alliance
 		icon = GFX_
 		
-		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes }
+		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes focus = XTI_declare_new_austria }
 		mutually_exclusive = { focus = XTI_unify_the_alps }
 		mutually_exclusive = { focus = XTI_european_ambitions }
 		x = -2
@@ -732,7 +732,7 @@
 		id = XTI_european_ambitions
 		icon = GFX_
 		
-		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes }
+		prerequisite = { focus = XTI_demand_vorarlberg focus = XTI_vorarlberg_skirmishes focus = XTI_declare_new_austria }
 		mutually_exclusive = { focus = XTI_alpine_alliance }
 		mutually_exclusive = { focus = XTI_unify_the_alps }
 		x = 1
@@ -885,7 +885,7 @@
 		id = XTI_restore_democracy
 		icon = GFX_
 		
-		prerequisite = { focus = XTI_economic_integration focus = XTI_alpine_proclamation }
+		prerequisite = { focus = XTI_economic_integration focus = XTI_alpine_proclamation focus = XTI_prepare_elections }
 		x = 2
 		y = 1
 		relative_position_id = XTI_economic_integration
@@ -921,7 +921,7 @@
 		id = XTI_strongman_politics
 		icon = GFX_
 		
-		prerequisite = { focus = XTI_economic_integration focus = XTI_alpine_proclamation }
+		prerequisite = { focus = XTI_economic_integration focus = XTI_alpine_proclamation focus = XTI_prepare_elections }
 		x = -2
 		y = 1
 		relative_position_id = XTI_alpine_proclamation
@@ -965,9 +965,9 @@
 		icon = GFX_
 		
 		#prerequisite = { focus =  }
-		x = -2
-		y = 2
-		relative_position_id = XTI_restore_democracy
+		x = 16
+		y = 0
+		#relative_position_id = XTI_restore_democracy
 		#mutually_exclusive = { focus = XTI_strongman_politics }
 
 		cost = 10
@@ -1004,9 +1004,9 @@
 		icon = GFX_
 		
 		#prerequisite = { focus =  }
-		x = 4
-		y = 2
-		relative_position_id = XTI_restore_democracy
+		x = 20
+		y = 0
+		#relative_position_id = XTI_restore_democracy
 		#mutually_exclusive = { focus = XTI_strongman_politics }
 
 		cost = 10
@@ -1043,9 +1043,9 @@
 		icon = GFX_
 		
 		#prerequisite = { focus =  }
-		x = 10
-		y = 2
-		relative_position_id = XTI_restore_democracy
+		x = 24
+		y = 0
+		#relative_position_id = XTI_restore_democracy
 		#mutually_exclusive = { focus = XTI_strongman_politics }
 
 		cost = 10
@@ -1082,9 +1082,9 @@
 		icon = GFX_
 		
 		#prerequisite = { focus =  }
-		x = 16
-		y = 2
-		relative_position_id = XTI_restore_democracy
+		x = 28
+		y = 0
+		#relative_position_id = XTI_restore_democracy
 		#mutually_exclusive = { focus = XTI_strongman_politics }
 
 		cost = 10
@@ -1165,7 +1165,7 @@
 		y = 1
 		relative_position_id = XTI_the_reclamationists
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -1201,7 +1201,7 @@
 		y = 1
 		relative_position_id = XTI_the_reclamationists
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -1265,6 +1265,11 @@
 			add_state_core = 152
 			152 = {
 				add_manpower = 10000
+				add_state_modifier = {
+					modifier = {
+						monthly_population = 0.1
+					}
+				}
 			}
 		}
 	}
@@ -1305,6 +1310,11 @@
 			add_state_core = 4
 			4 = {
 				add_manpower = 25000
+				add_state_modifier = {
+					modifier = {
+						monthly_population = 0.1
+					}
+				}
 			}
 		}
 	}
@@ -1347,6 +1357,174 @@
 		}
 	}
 	focus = {
+		id = XTI_fill_in_the_gaps
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_declare_new_austria }
+#		mutually_exclusive = { focus = XTI_look_to_the_past }
+		x = 0
+		y = 1
+		relative_position_id = XTI_declare_new_austria
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			152 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			4 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XTI_rebuild_vienna
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_declare_new_austria focus = XTI_look_to_the_past }
+#		mutually_exclusive = { focus = XTI_look_to_the_past }
+		x = 2
+		y = 1
+		relative_position_id = XTI_declare_new_austria
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_victory_points = {
+				province = 11666
+				value = 10
+			}
+			4 = {
+				add_manpower = 100000
+			}
+		}
+	}
+	focus = {
+		id = XTI_question_of_capital
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_fill_in_the_gaps }
+		prerequisite = { focus = XTI_rebuild_vienna }
+#		mutually_exclusive = { focus = XTI_look_to_the_past }
+		x = 1
+		y = 1
+		relative_position_id = XTI_fill_in_the_gaps
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			country_event = XTI.5
+		}
+	}
+	focus = {
+		id = XTI_prepare_elections
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_question_of_capital }
+#		mutually_exclusive = { focus = XTI_look_to_the_past }
+		x = 0
+		y = 1
+		relative_position_id = XTI_question_of_capital
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
 		id = XTI_look_to_the_past
 		icon = GFX_
 		
@@ -1367,6 +1545,209 @@
 
 		available = {
 		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XTI_glorify_forefathers
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_look_to_the_past }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_look_to_the_past
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = XTI_vienna_palace
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_glorify_forefathers }
+		prerequisite = { focus = XTI_rebuild_vienna }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = -1
+		y = 1
+		relative_position_id = XTI_glorify_forefathers
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+			add_victory_points = {
+				province = 11666	
+				value = 10
+			}
+			4 = {
+				add_manpower = 1000
+			}
+		}
+	}
+	focus = {
+		id = XTI_declare_monarchy
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_vienna_palace }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_vienna_palace
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Interregnum"
+				desc = ""
+				picture = GFX_portrait_XTI_interregnum_portrait
+				expire = "3000.9.9.9"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+	}
+	focus = {
+		id = XTI_habsburg_king
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_declare_monarchy }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_declare_monarchy
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Karl II von Habsburg"
+				desc = ""
+				picture = GFX_portrait_XTI_karl_ii_portrait
+				expire = "3000.9.9.9"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+	}
+	focus = {
+		id = XTI_karls_speech
+		icon = GFX_
+		
+#		prerequisite = { focus = XTI_declare_monarchy }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 32
+		y = 0
+#		relative_position_id = XTI_declare_monarchy
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_completed_focus = XTI_habsburg_king
 		}
 		
 		bypass = {

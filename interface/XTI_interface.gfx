@@ -20,5 +20,12 @@ spriteTypes = {
 		name = "GFX_portrait_XTI_clara_portrait"
 		texturefile = "gfx/XTI/XTI_clara_bauer.dds"
 	}
-
+	spriteType = {
+		name = "GFX_portrait_XTI_interregnum_portrait"
+		texturefile = "gfx/XTI/XTI_interregnum.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XTI_karl_ii_portrait"
+		texturefile = "gfx/XTI/XTI_karl_II.dds"
+	}
 }

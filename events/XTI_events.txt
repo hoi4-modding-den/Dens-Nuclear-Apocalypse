@@ -121,3 +121,43 @@ country_event = {
         #complete_national_focus = XSS_triumph_of_democracy
     }
 }
+country_event = {
+    id = XTI.5
+    title = XTI.5.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XTI.5.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XTI.5.a
+		add_political_power = 50
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+	option = {
+        name = XTI.5.b
+		set_capital = {state = 152}
+		152 = {
+			add_manpower = 50000
+		}			
+		add_victory_points = {
+			province = 688
+			value = 10
+		}
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+	option = {
+        name = XTI.5.c
+		set_capital = {state = 4}
+		4 = {
+			add_manpower = 50000
+		}			
+		add_victory_points = {
+			province = 11666	
+			value = 10
+		}
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}
