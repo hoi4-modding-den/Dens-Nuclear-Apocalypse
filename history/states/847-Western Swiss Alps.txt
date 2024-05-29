@@ -6,7 +6,9 @@ manpower=118953
 	state_category = pastoral
 	resources={
 	}
+	
 	history={
+		victory_points = { 3612 10 }
 		owner = XSS
 		buildings = {
 			infrastructure = 1 

@@ -383,13 +383,50 @@ ideas = {
         }
         XSS_romash_partisans = {
            removal_cost = -1
-            picture = POL_the_peasants_strike
+            picture = chi_army_corruption2
             modifier = {
             political_power_gain = -0.05
             training_time_factor = 0.10
             }
         }
+        XSS_RA_headquaters = {
+           removal_cost = -1
+            picture = eng_spirit_of_the_industrial_revolution
+            modifier = {
+            power_balance_weekly = -0.01
+            }
+        }
+
+        XSS_RA_civilwar = {
+           removal_cost = -1
+            picture = SOV_war_heroes
+            modifier = {
+            offence = 0.05
+            experience_gain_army = 0.5
+            power_balance_weekly = -0.01
+            }
+        }
+
+        XSS_international_brigades_idea = {
+           removal_cost = -1
+            picture = usa_desegregation_1
+            modifier = {
+               political_power_gain = -0.15
+               exile_manpower_factor = 0.25
+               local_non_core_manpower = 0.1
+               
+            }
 
     }
+
+        XSS_NSS_opposition = {
+           removal_cost = -1
+            picture = SWI_spirit_of_helvetia_defensive_war
+            modifier = {
+            political_power_gain = -0.25
+            offence = 0.15
+            training_time_factor = 0.15
+            }
+        }
 
 }
