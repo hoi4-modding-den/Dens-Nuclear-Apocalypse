@@ -38,6 +38,45 @@
  BEZ_membership:0 "B.E.Z. Membership"
  BEZ_membership_desc:0 "The Britannia Economic Zone was founded as a result of the evolving relations between the Mercian Republic and The Tynes. However, today, the trade organization seeks to prosper and bring back an era of globalization, from concocting trade and tariffs agreements to aiding the development of new member countries."
  
+ ### National Focus ###
+ XNM_the_gainsborough_administration:0 "The Gainsborough Administration"
+ XNM_the_gainsborough_administration_desc:0 ""
+ XNM_visit_to_the_heartland:0 "Visit to the Heartland"
+ XNM_visit_to_the_heartland_desc:0 ""
+ XNM_the_southern_border_crisis:0 "The Sūþerne Crisis"
+ XNM_the_southern_border_crisis_desc:0 ""
+ XNM_transnational_response:0 "Transnational Response"
+ XNM_transnational_response_desc:0 ""
+ XNM_second_to_none:0 "Second to None"
+ XNM_second_to_none_desc:0 ""
+ XNM_worker_right_act:0 "Worker's Rights Act"
+ XNM_worker_right_act_desc:0 ""
+ XNM_scunthorpe_steelworks_investments:0 "Scunthorpe Steelworks Investments"
+ XNM_scunthorpe_steelworks_investments_desc:0 ""
+ XNM_tyne_technologies:0 "Tyne Technologies"
+ XNM_tyne_technologies_desc:0 ""
+ XNM_automation_movement:0 "Automation Movement"
+ XNM_automation_movement_desc:0 ""
+ XNM_political_continuation:0 "Political Continuation"
+ XNM_political_continuation_desc:0 ""
+ XNM_support_from_the_udm:0 "Support from the UDM"
+ XNM_support_from_the_udm_desc:0 ""
+ XNM_approach_thorne:0 "Approach Thorne"
+ XNM_approach_thorne_desc:0 ""
+ XNM_the_equinox_deal:0 "The Equinox Deal"
+ XNM_the_equinox_deal_desc:0 ""
+ XNM_the_autumn_elections:0 "The Autumn Elections"
+ XNM_the_autumn_elections_desc:0 ""
+ 
+ ### Events ###
+ XNM_focus.1.title:0 "Gainsborough's Trip"
+ XNM_focus.1.desc:0 "WIP"
+ XNM_focus.1.a:0 "For a prosperous Mercia!"
+ 
+ ### Decisions ###
+ XNM_election_season_category:0 "Election Season"
+ 
  ### Tooltips ###
  bez_membership_idea_tt:0 "\nWhile this national spirit is active, nations around our country will be §Gmore inclined§! to trade with us."
  compromise_of_29_idea_tt:0 "\nThe fragile §CUDM§! coalition may §Rrupture§! if the Compromise of 29' is broken or sidelined in politics."
+ XNM_visit_to_the_heartland_desc:0 "§YArthur Gainsborough's§! speech will allow the §2New Dawn Party§! to gain §Y3§! seats in the upcoming elections." 

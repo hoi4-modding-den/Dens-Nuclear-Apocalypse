@@ -12,19 +12,19 @@ manpower=196499
 
 	history=
 	{
-		owner = LIB # LUX
+		owner = XLX
 		buildings = {
 			infrastructure = 3
-			#arms_factory = 1
-			#industrial_complex = 3
+			#arms_factory = 2
+			#industrial_complex = 2
 		}
 		victory_points = { 6583 5 }
-		#add_core_of = LUX
+		#add_core_of = XLX
 	}
 
 	provinces=
 	{
 6583 	}
 
-	local_supplies=0.0 
+	local_supplies=15.0 
 }

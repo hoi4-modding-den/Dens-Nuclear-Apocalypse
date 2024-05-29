@@ -13,6 +13,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_XNM_midlands_protests"
 		texturefile = "gfx/XNM/XNM_midlands_protests.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_XNM_political_continuation"
+		texturefile = "gfx/XNM/XNM_political_continuation.png"
+	}
+	spriteType = {
+		name = "GFX_focus_XNM_second_to_none"
+		texturefile = "gfx/XNM/XNM_second_to_none.png"
 	}	
 
 ### Portraits ###

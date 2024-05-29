@@ -1,0 +1,17 @@
+################
+##### XNM ######
+################
+
+XNM_election_season_category = {
+
+	icon = GFX_decision_generic_political_rally
+	picture = GFX_decision_republican_revolt
+	priority = 10
+	
+	allowed = {
+		tag = XNM
+	}
+	
+	visible = {
+	}
+}

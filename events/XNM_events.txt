@@ -1,0 +1,24 @@
+add_namespace = XNM_focus
+add_namespace = XNM_parliament
+add_namespace = XNM_news
+
+# Visit to the Heartland
+country_event = {
+	id = XNM_focus.1
+	title = XNM_focus.1.title
+	desc = XNM_focus.1.desc
+	picture = GFX_report_event_communist_leader
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNM_focus.1.a
+		complete_effect = {
+			XNM = {
+				set_country_flag = XNM_visit_to_the_heartland
+			}
+			custom_effect_tooltip = XNM_visit_to_the_heartland_desc
+		}	
+		ai_chance = { factor = 1 }	
+	}
+}
