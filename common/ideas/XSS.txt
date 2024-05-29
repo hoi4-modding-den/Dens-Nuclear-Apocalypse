@@ -385,7 +385,7 @@ ideas = {
            removal_cost = -1
             picture = chi_army_corruption2
             modifier = {
-            political_power_gain = -0.05
+            political_power_gain = -0.25
             training_time_factor = 0.10
             }
         }
@@ -441,6 +441,43 @@ ideas = {
             picture = tur_odpa
             modifier = {
             consumer_goods_factor = -0.1
+            }
+        }
+        XSS_cominform = {
+           removal_cost = -1
+            picture = SOV_soviet_railways
+            modifier = {
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.15
+                communism_drift = 0.1
+	
+            }
+        }
+        XSS_RA_2 = {
+           removal_cost = -1
+            picture = SOV_war_heroes
+            modifier = {
+            offence = 0.15
+            experience_gain_army = 0.5
+            equipment_capture = 0.5
+            }
+        }
+
+        XSS_romash_partisans_light = {
+           removal_cost = -1
+            picture = chi_army_corruption
+            modifier = {
+            political_power_gain = -0.05
+            }
+        }
+
+        XSS_romash_partisans_strong = {
+           removal_cost = -1
+            picture = chi_army_corruption3
+            modifier = {
+            political_power_gain = -0.5
+            training_time_factor = 0.25
+
             }
         }
 

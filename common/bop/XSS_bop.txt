@@ -17,8 +17,8 @@ XSS_balance = {
         min = -0.40
         max = -0.15
         modifier = {
-
-
+        war_support_factor = 0.05
+        forced_surrender_limit = 0.1
         }
 
     }
@@ -27,7 +27,8 @@ XSS_balance = {
         min = 0.15
         max = 0.40
         modifier = {
-
+            communism_drift = 0.03
+            forced_surrender_limit = -0.1
 
         }
 
@@ -37,8 +38,9 @@ XSS_balance = {
         min = 0.40
         max = 0.75
         modifier = {
-
-
+            political_power_gain = 0.35
+            communism_drift = 0.05
+            forced_surrender_limit = -0.15
         }
 
     }
@@ -47,8 +49,9 @@ XSS_balance = {
         min = -0.75
         max = -0.40
         modifier = {
-
-
+            war_support_factor = 0.1
+            forced_surrender_limit = 0.15
+            experience_gain_army = 0.5
         }
 
     }
@@ -61,9 +64,9 @@ XSS_balance = {
             min = -1
             max = -0.75
             modifier = {
-
-
-
+                experience_gain_army = 0.75
+                war_support_factor = 0.15
+                forced_surrender_limit = 0.2
             }
 
 
@@ -77,7 +80,9 @@ XSS_balance = {
             min = 0.75
             max = 1
             modifier = {
-
+                political_power_gain = 0.5
+                communism_drift = 0.1
+                forced_surrender_limit = -0.2
             }
         }
     }

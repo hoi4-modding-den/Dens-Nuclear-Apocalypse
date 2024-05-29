@@ -736,7 +736,7 @@ XSS_left_side_range:0 "Victory of Rote Armee"
 XSS_right_side_range:0 "Victory of Kommunistische Partei"
 
 XSS_test_event.22.t:0 "Swiss struggle"
-XSS_test_event.22.desc:0 "After victory over Romachia, Switzerland can finally decide it's future. The problem is that Rote Armee and KP are clashing against eachother for who will rule Switzeland. This confilict have turned into a mini-civil war."
+XSS_test_event.22.desc:0 "After victory over Romachia, Switzerland can finally decide on it's future. The problem is that Rote Armee and KP are clashing against eachother for who will rule Switzeland. This confilict have turned into a mini-civil war."
 XSS_test_event.22.a:0 "I hope they will stop soon"
 
 XSS_shell_kp_headquaters:0 "Shell KP Headquaters"
@@ -827,4 +827,114 @@ XSS_test_event.25.desc:0 "Today Evan Signer has decided to incorporate Rote Arme
 XSS_test_event.25.a:0 "Interesting"
 
 
+XSS_abandon_neutrality_commie:0 "Abandon Neutrality"
+XSS_abandon_neutrality_commie_desc:0 "Post war Switzerland is a new and reformed nation. We must end with neutrality and build a new path for Swiss citizens."
  
+XSS_cominform:0 "Cominform"
+XSS_cominform_desc:0 "International organization uniting communist parties around the world."
+
+XSS_create_cominform:0 "Create Cominform"
+XSS_create_cominform_desc:0 "Proletarians of the world UNITE!"
+
+XSS_invite_lombardy_cominform:0 "Invite Lombardy"
+XSS_invite_lombardy_cominform_desc:0 "Lombardy is our faithul brother in the south. We shall ally them to help them carry the torch of revolution."
+
+
+XSS_test_event.26.t:0 "Switzerland invites us to Cominform"
+XSS_test_event.26.desc:0 "Switzerland has offered us cooperation in Cominform."
+XSS_test_event.26.a:0 "We shall join"
+XSS_test_event.26.b:0 "We are better off alone"
+
+XSS_valais_industry:0 "Valais Industrialization"
+XSS_valais_industry_desc:0 "Our old home land during civil war. We must modernize it as a thank you to local population who helped us rise to power."
+
+XSS_autobahn:0 "Autobahn"
+XSS_autobahn_desc:0 "We shall connect all of Switzerland in a web of Highways."
+
+XSS_education_reform_commie:0 "Education reform"
+XSS_education_reform_commie_desc:0 "We must create a new socialist youth!"
+
+XSS_University_of_zurich:0 "University of Zurich"
+XSS_University_of_zurich_desc:0 "We must increase funds to University of Zurich."
+
+XSS_RA_2:0 "Rote Armee"
+XSS_RA_2_desc:0 "A special Formation in Swiss Army consisting of Political loyalists and veteran revolutionaries."
+
+XSS_modernize_RA:0 "Modernize Rote Armee"
+XSS_modernize_RA_desc:0 "Our army needs to be stronger so it can lead revolution forward."
+
+XSS_romash_partisans_light:0 "Romansh partisans"
+XSS_romash_partisans_light_desc:0 "Altrough Romanchia have been crushed there are small terrorist cells still located in Samnaun."
+
+XSS_begin_elimination_of_romansh_threat:0 "Begin anti-partisan warfare"
+XSS_begin_elimination_of_romansh_threat_desc:0 "We must destroy terrorist cells in Chur."
+
+XSS_romash_partisans_strong:0 "Romansh partisans"
+XSS_romash_partisans_strong_desc:0 "Altrough Romanchia have been crushed there are large terrorist cells still located in Schwyz."
+
+XSS_fight_in_samnaun:0 "Fights in Samnaun"
+XSS_fight_in_samnaun_desc:0 "Last terrorist cells of Green Army have been hiding in Samnaun. We shall stop them and bring end to their reign of terror."
+
+
+XSS_ally_green_army:0 "Ally Green Army"
+XSS_ally_green_army_desc:0 "We shall make peace with romansh and incorporate them to our army."
+
+XSS_mobilize_green_army:0 "Mobilize Green Army"
+XSS_mobilize_green_army_desc:0 "We have allied Green Army. They have agreed to join our struggles against enemies of Socialism."
+
+XSS_unite_two_armies:0 "Unite two armies"
+XSS_unite_two_armies_desc:0 "We have sucessfully united Romansh and Swiss people. The Green and Red army want to unite to form their new government."
+
+XSS_romansh_penal_battalions:0 "Romansh Penal Battalions"
+XSS_romansh_penal_battalions_desc:0 "All the remaning Romansh people who haven't escaped will be forced into Swiss army."
+
+XSS_invite_tirol:0 "Invite Tirol"
+XSS_invite_tirol_desc:0 "Brothers in Alps will join us in our European struggle."
+
+XSS_war_with_tirol:0 "War with Tirol"
+XSS_war_with_tirol_desc:0 "Traitorous Romansh Fascists are slowly regrouping in Tirol. We must strike before they try commming back."
+
+XSS_voralburg_commie:0 "Claim Voralburg"
+XSS_voralburg_commie_desc:0 "We shall liberate workers of Voralburg."
+
+XSS_ticino_for_trento:0 "Ticino for Trentino"
+XSS_ticino_for_trento_desc:0 "We will trade our Italian speaking regions for German speaking regions with Lombardy."
+
+XSS_test_event.27.t:0 "Switzerland offers territorial trade"
+XSS_test_event.27.desc:0 "Switzerland offers us trade of German speaking territories for Italian speaking ones."
+XSS_test_event.27.a:0 "Sure!"
+XSS_test_event.27.b:0 "This is our land and they can go away"
+
+XSS_french_campaign:0 "French Campaign"
+XSS_french_campaign_desc:0 "We shall move our troops into France to enlarge our Federation."
+
+XSS_war_with_luxemburg:0 "War with Luxemburg"
+XSS_war_with_luxemburg_desc:0 "We shall move North to the Kingdom of Luxmeburg."
+
+XSS_socialist_republic_of_burgundy:0 "Form Socialist Republic of Burgundy"
+XSS_socialist_republic_of_burgundy_desc:0 "We have taken over lands of Historic Burgundy. We shall create a new nation out of it to give ourselfs legitimacy over local population."
+
+XSS_burgundy:0 "Socialist Republic of Burgundy"
+
+XSS_operation_napoleon:0 "Operation Red Napoleon"
+XSS_operation_napoleon_desc:0 "Operation codename Red Napoleon will focus on destruction of French states."
+
+XSS_negotiation_with_british:0 "Negotiation with the British"
+XSS_negotiation_with_british_desc:0 "We shall make alliance on the British isles. Socialists out there definitly need us."
+
+XSS_negotiation_with_ddr:0 "Negotiations with DDR"
+XSS_negotiation_with_ddr_desc:0 "We shall make a pact with Eastern Germans to block the british out of Europe."
+
+XSS_war_with_britain:0 "War with British Isles"
+XSS_war_with_britain_desc:0 "We shall liberate workers of Britian."
+
+XSS_war_with_ddr:0 "War with DDR"
+XSS_war_with_ddr_desc:0 "We shall Unite Germany under single Socialist Union!"
+
+XSS_swiss_navy:0 "Swiss navy"
+XSS_swiss_navy_desc:0 "Switzerland needs to start building ships to block anything from mainland Europe."
+
+XSS_reconquer_rhine:0 "Reconquer Rhine"
+XSS_reconquer_rhine_desc:0 "Rhine river is now our main objective. We shall conquer everybody who tries to control it."
+
+

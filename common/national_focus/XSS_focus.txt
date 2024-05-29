@@ -3891,6 +3891,11 @@ set_power_balance = {
         }
         
         retire_character = XSS_evan_signer
+        set_party_name = {
+        ideology = communism
+        long_name = "Rote Armee"
+        name = "Rote Armee"
+            }
         }
         
 
@@ -3936,6 +3941,11 @@ set_power_balance = {
         847 = {
             set_demilitarized_zone = no
         }
+        set_party_name = {
+        ideology = communism
+        long_name = "KP"
+        name = "Kommunistische Partei"
+            }
         
         }
         
@@ -4218,6 +4228,711 @@ set_power_balance = {
 
     }
 
+
+
+####### Post Swiss Struggle ############ Czacha dymi ##################
+
+    focus = {
+    id = XSS_abandon_neutrality_commie
+    x = 75
+    y = 17
+    icon = GFX_focus_SWI_abandon_neutrality
+    cost = 1
+    prerequisite = {focus = XSS_victory_of_RA focus = XSS_victory_of_KP}
+
+    completion_reward = {
+
+        remove_ideas = {XSS_neutrality}
+        news_event = {
+        id = XSS_test_event.2
+        days = 1
+        random_hours = 3
+            }
+
+        }
+        
+
+    }
+##################### RA #################################
+
+
+    focus = {
+    id = XSS_create_cominform
+    x = 73
+    y = 18
+    icon = GFX_focus_generic_join_comintern
+    cost = 5
+    prerequisite = {focus = XSS_victory_of_RA  }
+    prerequisite = {focus = XSS_abandon_neutrality_commie}
+    #available = {XLV = {has_government = communism}}
+
+    completion_reward = {
+
+        create_faction = "Cominform"
+        add_ideas = {XSS_cominform}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_invite_lombardy_cominform
+    x = 73
+    y = 21
+    icon = GFX_focus_generic_italy_propaganda
+    cost = 5
+    prerequisite = {focus = XSS_create_cominform  }
+    available = {XLV = {has_government = communism}}
+    bypass = {XLV = {NOT = {has_government = communism}}}
+
+    completion_reward = {
+
+        XLV = {
+            country_event = {
+                id = XSS_test_event.26
+                days = 1
+                random_hours = 12
+                }
+
+        }
+
+
+        #add_ideas = {XSS_cominform}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_invite_tirol
+    x = 74
+    y = 22
+    icon = GFX_goal_generic_alliance
+    cost = 5
+    prerequisite = {focus = XSS_invite_lombardy_cominform  }
+     mutually_exclusive = {focus = XSS_war_with_tirol}
+    completion_reward = {
+
+        XTI = {
+            country_event = {
+                id = XSS_test_event.26
+                days = 1
+                random_hours = 12
+                }
+
+        }
+
+
+        #add_ideas = {XSS_cominform}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_with_tirol
+    x = 72
+    y = 22
+    icon = GFX_goal_demand_sudetenland
+    cost = 5
+    prerequisite = {focus = XSS_invite_lombardy_cominform  }
+    mutually_exclusive = {focus = XSS_invite_tirol}
+    available = {has_completed_focus = XSS_fight_in_samnaun}
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XTI
+			}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_voralburg_commie
+    x = 73
+    y = 23
+    icon = GFX_goal_generic_forceful_treaty
+    cost = 5
+    prerequisite = {focus = XSS_war_with_tirol focus = XSS_invite_tirol  }
+
+
+    completion_reward = {
+        ####### modify when anarchy drops ###########
+        848 = {add_claim_by = XSS}
+        transfer_state = 848
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_ticino_for_trento
+    x = 74
+    y = 24
+    icon = GFX_focus_generic_concessions
+    cost = 5
+    prerequisite = {focus = XSS_voralburg_commie }
+    available = {is_ally_with = XLV}
+
+
+    completion_reward = {
+        
+
+        XLV = {
+            country_event = {
+                id = XSS_test_event.27
+                days = 1
+                random_hours = 12
+                }
+
+        }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_french_campaign
+    x = 73
+    y = 25
+    icon = GFX_focus_focus_fra_revolution_utmost
+    cost = 10
+    prerequisite = {focus = XSS_voralburg_commie }
+
+
+
+    completion_reward = {
+        
+        ###### Rework when anarchy #############
+
+        transfer_state = 17
+        transfer_state = 28
+        transfer_state = 18
+        transfer_state = 27
+        transfer_state = 973
+        transfer_state = 20
+        transfer_state = 32
+        transfer_state = 21
+        transfer_state = 24
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_with_luxemburg
+    x = 74
+    y = 26
+    icon = GFX_focus_generic_join_comintern
+    cost = 5
+    prerequisite = {focus = XSS_french_campaign }
+    mutually_exclusive = {focus = XSS_operation_napoleon}
+
+
+    completion_reward = {
+        
+			create_wargoal = {
+				type = annex_everything
+				target = XLX
+			}    
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_socialist_republic_of_burgundy
+    x = 74
+    y = 27
+    icon = GFX_focus_prc_proclaim_the_peoples_republic
+    cost = 5
+    prerequisite = {focus = XSS_war_with_luxemburg }
+
+
+
+    completion_reward = {
+
+        17 = {add_core_of = XSS}
+        28 = {add_core_of = XSS}
+        18 = {add_core_of = XSS}
+        27 = {add_core_of = XSS}
+        973 = {add_core_of = XSS}
+        20 = {add_core_of = XSS}
+        32 = {add_core_of = XSS}
+        21 = {add_core_of = XSS}
+        24 = {add_core_of = XSS}
+        8 = {add_core_of = XSS}
+        34 = {add_core_of = XSS}
+        29 = {add_core_of = XSS}
+        42 = {add_core_of = XSS}
+        51 = {add_core_of = XSS}
+        set_cosmetic_tag = XSS_burgundy
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_reconquer_rhine
+    x = 74
+    y = 28
+    icon = GFX_focus_SWI_helvetic_junta
+    cost = 5
+    prerequisite = {focus = XSS_socialist_republic_of_burgundy }
+
+
+
+    completion_reward = {
+        ############ re-work when anarchy ###########
+        transfer_state = 50
+        transfer_state = 51
+        transfer_state = 35
+        transfer_state = 7
+        transfer_state = 36
+        transfer_state = 6
+			create_wargoal = {
+				type = annex_everything
+				target = XRP
+			} 
+     
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_operation_napoleon
+    x = 70
+    y = 26
+    icon = GFX_focus_fra_le_deluge
+    cost = 5
+    prerequisite = {focus = XSS_french_campaign }
+    mutually_exclusive = {focus = XSS_war_with_luxemburg}
+
+
+
+    completion_reward = {
+        
+			create_wargoal = {
+				type = annex_everything
+				target = XPR
+			} 
+			create_wargoal = {
+				type = annex_everything
+				target = XAQ
+			} 
+			create_wargoal = {
+				type = annex_everything
+				target = XNF
+			} 
+	 
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_negotiation_with_british
+    x = 71
+    y = 27
+    icon = GFX_focus_generic_british_trade
+    cost = 5
+    prerequisite = {focus = XSS_operation_napoleon }
+    available = {XNE = {has_government = communism}}
+    mutually_exclusive = {focus = XSS_negotiation_with_ddr}
+
+
+    completion_reward = {
+        
+        XNE = {
+            country_event = {
+                id = XSS_test_event.26
+                days = 1
+                random_hours = 12
+                }
+
+        }
+	 
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_negotiation_with_ddr
+    x = 69
+    y = 27
+    icon = GFX_focus_generic_german_trade
+    cost = 5
+    prerequisite = {focus = XSS_operation_napoleon }
+    available = {XGE = {has_government = communism}}
+    mutually_exclusive = {focus = XSS_negotiation_with_british}
+
+
+
+    completion_reward = {
+        
+        XGE = {
+            country_event = {
+                id = XSS_test_event.26
+                days = 1
+                random_hours = 12
+                }
+
+        }
+	 
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_with_britain
+    x = 69
+    y = 28
+    icon = GFX_focus_eng_liberate_the_home_of_marx
+    cost = 5
+    prerequisite = {focus = XSS_negotiation_with_ddr }
+
+
+
+
+    completion_reward = {
+        
+			create_wargoal = {
+				type = annex_everything
+				target = XNE
+			} 
+			create_wargoal = {
+				type = annex_everything
+				target = XNM
+			}
+	 
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_with_ddr
+    x = 71
+    y = 28
+    icon = GFX_focus_ger_great_red_menace
+    cost = 5
+    prerequisite = {focus = XSS_negotiation_with_british }
+
+
+
+
+    completion_reward = {
+        
+			create_wargoal = {
+				type = annex_everything
+				target = XGE
+			} 
+			create_wargoal = {
+				type = annex_everything
+				target = XRP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XAP
+			}
+            ############# Anarchy drop fix ################
+            transfer_state = 50
+            transfer_state = 52
+            transfer_state = 53
+            transfer_state = 54
+	 
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_swiss_navy
+    x = 67
+    y = 27
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5
+    prerequisite = {focus = XSS_operation_napoleon }
+    available = {controls_state = 785}
+
+
+
+    completion_reward = {
+    785 = {
+    add_extra_state_shared_building_slots = 4 
+    add_building_construction = {
+    type = dockyard
+    level = 4
+    instant_build = yes
+        }
+    }    
+      
+	 
+        }
+        
+
+    }
+
+
+
+
+    focus = {
+    id = XSS_valais_industry
+    x = 70
+    y = 19
+    icon = GFX_focus_generic_industry_3
+    cost = 5
+    prerequisite = {focus = XSS_create_cominform  }
+
+
+    completion_reward = {
+
+    847 = {
+    add_extra_state_shared_building_slots = 2 
+    add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+        }
+    }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_autobahn
+    x = 71
+    y = 20
+    icon = GFX_focus_generic_improve_roads
+    cost = 10
+    prerequisite = {focus = XSS_valais_industry  }
+
+
+    completion_reward = {
+
+    3 = {
+    add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+        }
+    }
+    845 = {
+    add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+        }
+    }
+    151 = {
+    add_building_construction = {
+    type = infrastructure
+    level = 4
+    instant_build = yes
+        }
+    }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_education_reform_commie
+    x = 69
+    y = 20
+    icon = GFX_focus_NOR_moscows_education_centers
+    cost = 5
+    prerequisite = {focus = XSS_valais_industry  }
+
+
+    completion_reward = {
+        add_timed_idea = {
+        idea = XSS_education_reform_idea
+        days = 90
+                }      
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_University_of_zurich
+    x = 69
+    y = 21
+    icon = GFX_focus_generic_university_3
+    cost = 5
+    prerequisite = {focus = XSS_education_reform_commie  }
+
+
+    completion_reward = {
+        add_research_slot = 1   
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_modernize_RA
+    x = 66
+    y = 20
+    icon = GFX_focus_SOV_organization_centralization_discipline
+    cost = 5
+    prerequisite = {focus = XSS_valais_industry  }
+
+
+    completion_reward = {
+    swap_ideas = {
+        add_idea = XSS_RA_2
+        remove_idea = XSS_RA
+    }
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_begin_elimination_of_romansh_threat
+    x = 65
+    y = 21
+    icon = GFX_focus_spa_eliminate_the_carlists
+    cost = 5
+    prerequisite = {focus = XSS_modernize_RA  }
+    mutually_exclusive = {focus = XSS_ally_green_army }
+
+    completion_reward = {
+    swap_ideas = {
+        add_idea = XSS_romash_partisans_light
+        remove_idea = XSS_romash_partisans
+    }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_fight_in_samnaun
+    x = 65
+    y = 22
+    icon = GFX_focus_SWE_neither_death_nor_dishonor
+    cost = 10
+    prerequisite = {focus = XSS_begin_elimination_of_romansh_threat  }
+    available = {army_manpower_in_state = {
+    type = infantry
+    amount > 10000
+    state = 151
+}}
+
+    completion_reward = {
+  
+        remove_ideas = {XSS_romash_partisans_light}
+        151 = {add_manpower = -204086}
+        159 = {add_manpower = 102096}
+        153 = {add_manpower = 101990}
+        151 = {remove_core_of = XRM}
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_ally_green_army
+    x = 67
+    y = 21
+    icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+    cost = 10
+    prerequisite = {focus = XSS_modernize_RA  }
+    mutually_exclusive = {focus = XSS_begin_elimination_of_romansh_threat }
+
+    completion_reward = {
+    swap_ideas = {
+        add_idea = XSS_romash_partisans_light
+        remove_idea = XSS_romash_partisans
+    }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_mobilize_green_army
+    x = 67
+    y = 22
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 10
+    prerequisite = {focus = XSS_ally_green_army  }
+
+    completion_reward = {
+    remove_ideas = {XSS_romash_partisans_light}
+    hidden_effect = { load_oob = "GreenArmy" }
+        set_party_name = {
+        ideology = communism
+        long_name = "Rote Armee/Grüne Armee"
+        name = "Rote Armee/Grüne Armee"
+            }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_unite_two_armies
+    x = 67
+    y = 23
+    icon = GFX_focus_SOV_support_spanish_poum
+    cost = 2
+    prerequisite = {focus = XSS_mobilize_green_army  }
+
+    completion_reward = {
+        set_party_name = {
+        ideology = communism
+        long_name = "Helvetic-Romansh Peoples Union"
+        name = "HRPU"
+            }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_romansh_penal_battalions
+    x = 65
+    y = 23
+    icon = GFX_focus_SOV_penal_battalions
+    cost = 10
+    prerequisite = {focus = XSS_fight_in_samnaun  }
+    available = {army_manpower_in_state = {
+    type = infantry
+    amount > 10000
+    state = 151
+}}
+
+    completion_reward = {
+  
+        hidden_effect = { XSS = { load_oob = "PenalBattalions"}}
+        
+        }
+        
+
+    }
 
 
 

@@ -721,6 +721,55 @@ news_event = {
 
 }
 
+#############################################
+country_event = {
+    id = XSS_test_event.26
+    title = XSS_test_event.26.t
+    picture = GFX_report_event_stalin_01
+    desc = XSS_test_event.26.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.26.a
+        add_ideas = {XSS_cominform}
+        XSS = { add_to_faction = ROOT }
+
+        
+    }
+    option = {
+        name = XSS_test_event.26.b
+
+        
+    }
+}
+########## Tyrol za ticino ##########
+country_event = {
+    id = XSS_test_event.27
+    title = XSS_test_event.27.t
+    picture = GFX_report_event_stalin_propaganda
+    desc = XSS_test_event.27.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.27.a
+    XSS = {transfer_state = 850}
+    XLV = { transfer_state = 846}
+        
+    }
+    option = {
+        name = XSS_test_event.27.b
+
+        
+    }
+}
+
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
