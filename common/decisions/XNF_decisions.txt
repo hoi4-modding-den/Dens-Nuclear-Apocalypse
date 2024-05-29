@@ -1,14 +1,3 @@
-XNF_spreading_support_cat = {
-	XNF_spread_monarchy_support = {
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				is_owned_by = XNF
-				is_core_of = XNF
-			}
-		}
-	}
-}
 XNF_rebuilding_france_cat = {
 	XNF_build_up_vp = {
 		state_target = yes
@@ -23,10 +12,13 @@ XNF_rebuilding_france_cat = {
 			}
 		}
 		complete_effect = {
-			FROM = {
-				add_to_variable = { vpsize = 2 }
-				XNF_add_to_vp = yes
+			hidden_effect = {
+				FROM = {
+					add_to_variable = { vpsize = 2 }
+					XNF_add_to_vp = yes
+				}
 			}
+			custom_effect_tooltip = add_2_vp
 		}
 	}
 	XNF_core_state = {
@@ -35,12 +27,19 @@ XNF_rebuilding_france_cat = {
 			FROM = {
 				DEN_is_french_state = yes
 				is_owned_by = XNF
-				check_variable = {
-					vpsize > 5
-				}
 				NOT = {
 					is_core_of = XNF
 				}
+			}
+		}
+		available = {
+			FROM = {
+				check_variable = {
+					vpsize > 5
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = vp_larger_5
 			}
 		}
 		complete_effect = {
@@ -67,6 +66,18 @@ XNF_rebuilding_france_cat = {
 	}
 }
 XNF_loyalist_royalty_cat = {
+	XNF_spread_monarchy_support = {
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = XNF
+				is_core_of = XNF
+			}
+		}
+		complete_effect = {
+			add_political_power = 1000
+		}
+	}
 	XNF_build_palace_here = {
 		state_target = yes
 		target_trigger = {
@@ -74,16 +85,28 @@ XNF_loyalist_royalty_cat = {
 				is_owned_by = XNF
 				is_core_of = XNF
 				check_variable = {
-					vpsize > 14
-				}
-				check_variable = {
 					vpsize < 20
 				}
 			}
 		}
+		available = {
+			FROM = {
+				check_variable = {
+					vpsize > 14
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = vp_larger_14
+			}
+		}
 		complete_effect = {
-			FROM = { add_to_variable = { vpsize = 5 } }
-			XNF_add_to_vp = yes
+			hidden_effect = {
+				FROM = { 
+					add_to_variable = { vpsize = 5 }
+					XNF_add_to_vp = yes
+				}
+			}
+			custom_effect_tooltip = add_5_vp
 		}
 	}
 }

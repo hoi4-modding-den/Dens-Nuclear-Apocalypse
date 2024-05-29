@@ -1,5 +1,5 @@
 focus_tree = {
-id = XNF_focus
+    id = XNF_focus
 
     country = {
         factor = 0
@@ -15,24 +15,32 @@ id = XNF_focus
         icon = GFX_focus_focus_fra_border
         cost = 10
         available = {
-            NOT = {
-                any_state = {
-                    DEN_is_french_state = yes
-                    NOT = { is_core_of = XNF }
+            hidden_trigger = {
+                NOT = {
+                    any_state = {
+                        DEN_is_french_state = yes
+                        NOT = { is_core_of = XNF }
+                    }
                 }
+            }
+            custom_trigger_tooltip = {
+                tooltip = XNF_control_all_france
             }
         }
         completion_reward = {
-            add_state_core = 165
-            add_state_core = 158
-            add_state_core = 6
-            add_state_core = 34
-            add_state_core = 35
-            add_state_core = 51
-            add_state_core = 42
-            add_state_core = 7
-            add_state_core = 36
-            add_state_core = 56
+            custom_effect_tooltip = XNF_gain_old_cores
+            hidden_effect = {
+                add_state_core = 165
+                add_state_core = 158
+                add_state_core = 6
+                add_state_core = 34
+                add_state_core = 35
+                add_state_core = 51
+                add_state_core = 42
+                add_state_core = 7
+                add_state_core = 36
+                add_state_core = 56
+            }
         }
     }
 }
