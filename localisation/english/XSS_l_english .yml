@@ -720,3 +720,22 @@ XSS_primacy_of_RA_desc:0 "After eliminating the fascist threat we must now focus
 XSS_primacy_of_KP:0 "Primacy of KP"
 XSS_primacy_of_KP_desc:0 "We must maintain the rule of KP at all cost."
 
+XSS_balance:0 "Swiss Struggle"
+XSS_left_side:0 "Rote Armee"
+XSS_right_side:0 "Kommunistische Partei"
+
+XSS_mid_range:0 "Stalemate"
+XSS_left_mid_range:0 "Small army victory"
+XSS_left_dom_range:0 "Army controls countryside"
+
+XSS_right_mid_range:0 "KP popular support"
+XSS_right_dom_range:0 "KP dominates the army"
+
+XSS_left_side_range:0 "Victory of Rote Armee"
+XSS_right_side_range:0 "Victory of Kommunistische Partei"
+
+XSS_test_event.22.t:0 "Swiss struggle"
+XSS_test_event.22.desc:0 "After victory over Romachia, Switzerland can finally decide it's future. The problem is that Rote Armee and KP are clashing against eachother for who will rule Switzeland. This confilict have turned into a mini-civil war."
+XSS_test_event.22.a:0 "I hope they will stop soon"
+
+

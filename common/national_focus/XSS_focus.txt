@@ -3548,6 +3548,16 @@ set_politics = {
     mutually_exclusive = {focus = XSS_primacy_of_KP}
 
     completion_reward = {
+
+set_power_balance = {
+    id = XSS_balance
+    set_value = -0.15
+}
+        news_event = {
+        id = XSS_test_event.22
+        days = 1
+        random_hours = 3
+            }
         
         }
         
@@ -3562,6 +3572,15 @@ set_politics = {
     prerequisite = { focus = XSS_victory_at_romansh }
     mutually_exclusive = {focus = XSS_primacy_of_RA}
     completion_reward = {
+set_power_balance = {
+    id = XSS_balance
+    set_value = 0.15
+}
+        news_event = {
+        id = XSS_test_event.22
+        days = 1
+        random_hours = 3
+            }
         
         }
         

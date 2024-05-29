@@ -645,6 +645,27 @@ news_event = {
 }
 
 
+################## Swiss Struggle ######################
+
+news_event = {
+    id = XSS_test_event.22
+    title = XSS_test_event.22.t
+    picture = GFX_news_event_023
+    desc = XSS_test_event.20.desc
+    
+    
+    is_triggered_only = yes
+
+
+    
+    option = {
+        name = XSS_test_event.22.a
+
+    }
+
+}
+
+
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
 ### tak robie te zajebane gówno pierwszy raz i mam ochote jebnąc magika ######################

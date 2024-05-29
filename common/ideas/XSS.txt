@@ -375,7 +375,7 @@ ideas = {
         }
         XSS_recklessness = {
            removal_cost = -1
-            picture = mex_revolutionary_army
+            picture = jap_the_unthinkable_option
             modifier = {
             offence = -0.15
             defence = -1
@@ -383,7 +383,7 @@ ideas = {
         }
         XSS_romash_partisans = {
            removal_cost = -1
-            picture = mex_revolutionary_army
+            picture = POL_the_peasants_strike
             modifier = {
             political_power_gain = -0.05
             training_time_factor = 0.10
