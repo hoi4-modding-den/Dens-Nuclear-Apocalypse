@@ -1,0 +1,31 @@
+XAQ_INF_01 = {
+	name = "Auxilia" 
+	for_countries = { XAQ } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Auxilia Legionis"
+	ordered = {
+		1 = { "%d. Auxilia Legionis" } 
+	}
+}
+XAQ_INF_02 = {
+	name = "Praetorian" 
+	for_countries = { XAQ } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Legionis Praetoriae"
+	ordered = {
+		1 = { "%d. Legionis Praetoriae" } 
+	}
+}
+XAQ_ARM_01 = {
+	name = "Armatae Currus" 
+	for_countries = { XAQ } 
+	can_use = { always = yes } 
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" } 
+	fallback_name = "%d. Armatae Currus"
+	ordered = {
+		1 = { "%d. Armatae Currus" } 
+	}
+}
+
