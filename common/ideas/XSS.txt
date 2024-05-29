@@ -428,5 +428,14 @@ ideas = {
             training_time_factor = 0.15
             }
         }
+        XSS_RA = {
+           removal_cost = -1
+            picture = SOV_war_heroes
+            modifier = {
+            offence = 0.1
+            experience_gain_army = 0.5
+            }
+        }
 
+    }
 }

@@ -3794,6 +3794,66 @@ set_power_balance = {
     }
 
     focus = {
+    id = XSS_strike_bern
+    x = 72
+    y = 14
+    icon = GFX_focus_prc_infiltration
+    cost = 2
+    prerequisite = { focus = XSS_build_headquaters_in_valais }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < -0.7
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -1
+        tooltip_side = XSS_left_side
+        }
+        3 = {
+            set_demilitarized_zone = yes
+        }
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_victory_of_RA
+    x = 73
+    y = 16
+    icon = GFX_focus_SOV_builder_of_the_red_army
+    cost = 5
+
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value = -1
+        }
+    has_completed_focus = XSS_strike_bern
+    }
+
+    completion_reward = {
+
+        remove_power_balance = {
+        id = XSS_balance
+            }
+        remove_ideas = {XSS_RA_headquaters}
+    swap_ideas = {
+        add_idea = XSS_RA
+        remove_idea = XSS_RA_civilwar
+    }
+        
+        }
+        
+
+    }
+
+    focus = {
     id = XSS_primacy_of_KP
     x = 77
     y = 10
