@@ -521,6 +521,7 @@
     	completion_reward = {
     		country_event = XNE_focus.6
 			add_stability = 0.05
+			
     	}
     	
     	ai_will_do = {
@@ -808,6 +809,98 @@
 						enemy = XPW
 						hostility_reason = asked_to_join
 					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+    focus = {
+		id = XNE_pacify_ireland
+    	icon = GFX_goal_generic_political_pressure
+    	prerequisite = { focus = XNE_irish_dependence focus = XNE_approach_ireland }
+    	x = 2
+    	y = 1
+    	relative_position_id = XNE_irish_dependence
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			if = {
+				limit = { has_completed_focus = XNE_irish_dependence }
+				declare_war_on = {
+					target = XIE
+					type = annex_everything
+				}
+				XNI = {
+					add_to_war = {
+						targeted_alliance = ROOT
+						enemy = XIE
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			else = {
+				declare_war_on = {
+					target = XNI
+					type = annex_everything
+				}
+				XIE = {
+					add_to_war = {
+						targeted_alliance = ROOT
+						enemy = XNI
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+
+    focus = {
+		id = XNE_integration_of_scottish_tribes
+    	icon = GFX_focus_generic_tank_air_support
+    	prerequisite = { focus = XNE_share_ideas_on_military focus = XNE_join_the_bez }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_share_ideas_on_military
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			declare_war_on = {
+				target = XCT
+				type = annex_everything
+			}
+			XNM = {
+				add_to_war = {
+					targeted_alliance = ROOT
+					enemy = XCT
+					hostility_reason = asked_to_join
 				}
 			}
     	}

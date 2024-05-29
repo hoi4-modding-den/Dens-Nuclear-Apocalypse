@@ -843,14 +843,14 @@ guiTypes = {
 
 			containerWindowType = {
 				name ="ideas"
-				position = { x = 89 y = -1 }
+				position = { x = 100 y = -1 }
 				size = { width = 100%% height = 70 }
 
 				gridboxType = {
 					name ="ideas_grid"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 70 }
-					slotsize = { width = 88 height = 66 }
+					slotsize = { width = 68 height = 66 }
 					max_slots = { x = 3 y = 1 }
 					add_horizontal = yes
 					format = "UPPER_LEFT"

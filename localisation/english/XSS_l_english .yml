@@ -784,4 +784,47 @@ XSS_victory_of_RA_desc:0 "We have won the Civil war. Red army is now in power."
 XSS_RA:0 "Rote Armee"
 XSS_RA_desc:0 "A special Formation in Swiss Army consisting of Political loyalists and veteran revolutionaries."
 
+XSS_victory_of_KP:0 "Victory of KP"
+XSS_victory_of_KP_desc:0 "KP has complete control over the RA now."
 
+XSS_assasinations:0 "Political Assasinations"
+XSS_assasinations_desc:0 "We must kill some agitators in RA..."
+
+XSS_speech_at_national_assembly:0 "Speech at National Assembly"
+XSS_speech_at_national_assembly_desc:0 "Evan Signer will hold speech at National Assembly to rally support for KP."
+
+XSS_test_event.23.t:0 "Evan Signer calls for unity"
+XSS_test_event.23.desc:0 "Evan Signer today held a speech at National Assembly. He stressed how nation should unite and stop internal fight. He also adressed how romansh people will strike back if nation will be divided."
+XSS_test_event.23.a:0 "A wise man"
+
+XSS_land_reform:0 "Land reform"
+XSS_land_reform_desc:0 "People want redistribution of wealth! We must fulfill their wishes."
+
+XSS_post_war_modernization:0 "Post-war Modernization"
+XSS_post_war_modernization_desc:0 "Our country torn out by civil war with romansh needs some support. We shall re-build Graubünden."
+
+XSS_government_bonds_idea:0 "Government Bonds"
+XSS_government_bonds_idea_desc:0 "Our citizens borrow us money!"
+
+XSS_government_bonds:0 "Government Bonds"
+XSS_government_bonds_desc:0 "We must introduce governemnt bonds to help kickstart our economy."
+
+XSS_street_fights:0 "Street fights"
+XSS_street_fights_desc:0 "We shall take to the streets and pacify the army."
+
+XSS_finish_off_NSS:0 "Finish off NSS"
+XSS_finish_off_NSS_desc:0 "The remaining NSS members must be stopped as they are threat to national stability."
+
+XSS_incorporate_RA:0 "Incorporate Rote Armee"
+XSS_incorporate_RA_desc:0 "We have built so much influence we can safely incorporate RA into regular army."
+
+XSS_test_event.24.t:0 "Rote Armee wins Swiss Struggle"
+XSS_test_event.24.desc:0 "Today Rote Armee has stormed National Assembly killing Evan Signer and taking over the government. This event marks end of Era of Instability for Switzerland and everything should be going forward from now on."
+XSS_test_event.24.a:0 "Interesting"
+
+XSS_test_event.25.t:0 "Kommunistische Partei wins Swiss Struggle"
+XSS_test_event.25.desc:0 "Today Evan Signer has decided to incorporate Rote Armee into regular Swiss armed forces. This marks end of Swiss civil war also known as Swiss Struggle. This event marks end for Era of Instablity and now Switzerland will walk a new path in this world."
+XSS_test_event.25.a:0 "Interesting"
+
+
+ 
