@@ -1,0 +1,223 @@
+XNE_british_alliance = {
+	enable = {
+		OR = {
+			AND = {
+				original_tag = XNM
+				XNM = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XNI
+				#XNI = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XIE
+				XIE = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XWA
+				XWA = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XPW
+				XPW = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XTY
+				XTY = { is_in_faction_with = XNE }
+			}
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XNE"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XNE"
+		value = 1000
+	}
+}
+
+XNE_british_alliance_XNM = {
+	enable = {
+		OR = {
+			AND = {
+				original_tag = XNI
+				XNI = { is_in_faction_with = XNE }
+				XNM = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XIE
+				XIE = { is_in_faction_with = XNE }
+				XNM = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XWA
+				XWA = { is_in_faction_with = XNE }
+				XNM = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XPW
+				XPW = { is_in_faction_with = XNE }
+				XNM = { is_in_faction_with = XNE }
+			}
+			AND = {
+				original_tag = XTY
+				XTY = { is_in_faction_with = XNE }
+				XNM = { is_in_faction_with = XNE }
+			}
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XNM"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XNM"
+		value = 1000
+	}
+}
+
+XNE_alliance_XNM = {
+	enable = {
+		AND = {
+			original_tag = XNE
+			XNE = { is_in_faction_with = XNM }
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XNM"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XNM"
+		value = 1000
+	}
+}
+XNE_alliance_XNI = {
+	enable = {
+		AND = {
+			original_tag = XNE
+			XNE = { is_in_faction_with = XNI }
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XNI"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XNI"
+		value = 1000
+	}
+}
+XNE_alliance_XIE = {
+	enable = {
+		AND = {
+			original_tag = XNE
+			XNE = { is_in_faction_with = XIE }
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XIE"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XIE"
+		value = 1000
+	}
+}
+XNE_alliance_XWA = {
+	enable = {
+		AND = {
+			original_tag = XNE
+			XNE = { is_in_faction_with = XWA }
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XWA"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XWA"
+		value = 1000
+	}
+}
+XNE_alliance_XTY = {
+	enable = {
+		AND = {
+			original_tag = XNE
+			XNE = { is_in_faction_with = XTY }
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XTY"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XTY"
+		value = 1000
+	}
+}
+XNE_alliance_XPW = {
+	enable = {
+		AND = {
+			original_tag = XNE
+			XNE = { is_in_faction_with = XPW }
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XPW"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XPW"
+		value = 1000
+	}
+}
