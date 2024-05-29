@@ -1,0 +1,19 @@
+characters = {
+
+	XLX_council = {
+		name = "Grand Luxonie Council"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XLX_council"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "9000.2.3.9"
+			desc = XLX_council_desc
+			id = -1
+		}
+	}
+
+}
