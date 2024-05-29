@@ -39,6 +39,24 @@
  ALP_CONF_subject:0 "$OVERLORDADJ$ $ALP_CONF$"
  ALP_CONF_subject_DEF:0 "$OVERLORDADJ$ $ALP_CONF$"
 
+ AUS_fascism:0 "Deutschsozialen Austria"
+ AUS_fascism_DEF:0 "Deutschsozialen Austria"
+ AUS_democratic:0 "Republic of Austria"
+ AUS_democratic_DEF:0 "the Republic of Austria"
+ AUS_neutrality:0 "Austrian Interim Government"
+ AUS_neutrality_DEF:0 "Austrian Interim Government"
+ AUS_communism:0 "Austrian Soviet Republic"
+ AUS_communism_DEF:0 "the Austrian Soviet Republic"
+ AUS_fascism_ADJ:0 "Austrian"
+ AUS_democratic_ADJ:0 "Austrian"
+ AUS_neutrality_ADJ:0 "Austrian"
+ AUS_communism_ADJ:0 "Austrian"
+ AUS:0 "Austria"
+ AUS_DEF:0 "Austria"
+ AUS_ADJ:0 "Austrian"
+ AUS_subject:0 "$OVERLORDADJ$ $AUS$"
+ AUS_subject_DEF:0 "$OVERLORDADJ$ $AUS$"
+
  XTI_communism_party:0 "KPT"
  XTI_communism_party_long:0 "Kommunistische Partei Tirols"
 
@@ -69,6 +87,8 @@
  XTI_industrial_rejuvenation_desc:0 "Using what remains of our city, we can refit and revitalize downtown. This process can then be replicated across the country."
  XTI_aggressive_doctrine:0 "Aggressive Foreign Policy"
  XTI_aggressive_doctrine_desc:0 "Offense is the best defense. This strategy is tried and true, but our neighbors may not be welcome to this mindset."
+ XTI_reclamation_recruitment:0 "Reclamation Recruitment"
+ XTI_reclamation_supplies:0 "Reclamation Supplies"
  
  ### FOCUSES ###
  
@@ -136,6 +156,23 @@
  
  XTI_autocratic_state:0 "Age of the Autocrats"
  XTI_autocratic_state_desc:0 "Now the opportunity has arrived to seize power. If we tighten our hold on the state, we can amass a large quantity of wealth for generations."
+ 
+ XTI_the_reclamationists:0 "The Reclamationists"
+ XTI_the_reclamationists_desc:0 "Now that it is confirmed that Vienna has been destroyed, it is our job to rebuild. If we don't reclaim Austria, who will?"
+ XTI_recruit_colonists:0 "Recruit Colonists"
+ XTI_recruit_colonists_desc:0 "It takes many people to rebuild a society. This will dip into our manpower reserves."
+ XTI_prepare_supplies:0 "Prepare Supplies"
+ XTI_prepare_supplies_desc:0 "It will be expensive to recolonize the rest of the country. Some of our factories will have to be dedicated to this project."
+ XTI_reclaim_upper_austria:0 "Reclaim Upper Austria"
+ XTI_reclaim_upper_austria_desc:0 "Upper Austria, although not as devistated as the former capital, still suffered severely from the bombs dropping. Most have died of radiation poisoning and famine. We should establish control before someone else does."
+ XTI_reclaim_lower_austria:0 "Reclaim Lower Austria"
+ XTI_reclaim_lower_austria_desc:0 "It is our job to reestablish Austria. It is necessary for any legitimate Austrian successor to hold Vienna. If not, who are we?"
+ 
+ XTI_declare_new_austria:0 "Declare a New Austria"
+ XTI_declare_new_austria_desc:0 "Now that we hold most former Austrian lands, it is time to formalize what was already known."
+ 
+ XTI_look_to_the_past:0 "Look to the Past"
+ XTI_look_to_the_past_desc:0 "The Republic of Austria was flawed. It had led to its own downfall and failed every Austrian. We must learn from the past and pivot to a more pure form of government."
  
  ### EVENTS ###
  

@@ -1263,6 +1263,9 @@
 		completion_reward = {
 			set_state_owner = 152
 			add_state_core = 152
+			152 = {
+				add_manpower = 10000
+			}
 		}
 	}
 	focus = {
@@ -1300,6 +1303,9 @@
 		completion_reward = {
 			set_state_owner = 4
 			add_state_core = 4
+			4 = {
+				add_manpower = 25000
+			}
 		}
 	}
 	focus = {
