@@ -170,6 +170,7 @@ XSS_finish_war_on_romansh:0 "Finish war on Romansh"
 XSS_finish_war_on_romansh_desc:0 "Romansh language and population were killed. It's time to finish occupation."
 
 VICTORY_POINTS_11601:0 "Schwyz"
+VICTORY_POINTS_3612:0 "Sion"
 
 XRM_romansh_spirit:0 "Romansh spirit"
 XRM_romansh_spirit_desc:0 "FREEEEEEEEEEEEEEEEEEEEEEEEEDOM"
@@ -737,5 +738,41 @@ XSS_right_side_range:0 "Victory of Kommunistische Partei"
 XSS_test_event.22.t:0 "Swiss struggle"
 XSS_test_event.22.desc:0 "After victory over Romachia, Switzerland can finally decide it's future. The problem is that Rote Armee and KP are clashing against eachother for who will rule Switzeland. This confilict have turned into a mini-civil war."
 XSS_test_event.22.a:0 "I hope they will stop soon"
+
+XSS_shell_kp_headquaters:0 "Shell KP Headquaters"
+XSS_shell_kp_headquaters_desc:0 "KP headquaters will be destroyed to give RA major advantage."
+
+XSS_march_on_valais:0 "March on Valais"
+XSS_march_on_valais_desc:0 "We must build our strenght by taking over countryside. We shall march south and build our base of operation in Valais."
+
+XSS_march_on_ticino:0 "March on Ticino"
+XSS_march_on_ticino_desc:0 "After taking control over Valais we must advance to Ticino."
+
+XSS_build_headquaters_in_valais:0 "Build headquaters in Valais"
+XSS_build_headquaters_in_valais_desc:0 "We need a base of operations and Valais is a safe and well guarded region."
+
+XSS_RA_headquaters:0 "Rote Armee Headquaters"
+XSS_RA_headquaters_desc:0 "Deep mountains in Valais region secretly hold underground capital of Rote Armee."
+
+XSS_formalize_RA:0 "Formalize Rote Armee"
+XSS_formalize_RA_desc:0 "Rote Armee is not considered part of standing army and this needs to change."
+
+XSS_RA_civilwar:0 "Rote Armee"
+XSS_RA_civilwar_desc:0 "A special Formation in Swiss Army consisting of Political loyalists and veteran revolutionaries."
+
+XSS_millitary_propaganda:0 "Millitary propaganda"
+XSS_millitary_propaganda_desc:0 "We need more meat for the grinder. Our ministry of propaganda will try to organize some."
+
+XSS_international_brigades_idea:0 "International Brigades"
+XSS_international_brigades_idea_desc:0 "We need foreign communist exiles to join RA!"
+
+XSS_international_brigades:0 "International brigades"
+XSS_international_brigades_desc:0 "We need more manpower! International revolutionaries will have to support us in our struggle for world revolution."
+
+XSS_rally_NSS_veterans:0 "Rally NSS veterans"
+XSS_rally_NSS_veterans_desc:0 "Desperate times require desperate measures. We shall strike a deal with the devil and adopt some of the less extreme NSS veterans to our army."
+
+XSS_NSS_opposition:0 "NSS Opposition"
+XSS_NSS_opposition_desc:0 "We have signed a deal with the devil and now we must pay for our sins."
 
 

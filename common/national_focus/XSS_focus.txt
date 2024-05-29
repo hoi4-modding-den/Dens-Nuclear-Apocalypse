@@ -3563,6 +3563,236 @@ set_power_balance = {
         
 
     }
+
+    focus = {
+    id = XSS_shell_kp_headquaters
+    x = 75
+    y = 11
+    icon = GFX_focus_SWE_organize_a_putsch
+    cost = 10
+    prerequisite = { focus = XSS_primacy_of_RA focus = XSS_primacy_of_KP}
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < -0.5
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -0.25
+        tooltip_side = XSS_left_side
+        }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_formalize_RA
+    x = 70
+    y = 11
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 5
+    prerequisite = { focus = XSS_primacy_of_RA focus = XSS_primacy_of_KP}
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < 0.50
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -0.1
+        tooltip_side = XSS_left_side
+        }
+
+        add_ideas = {XSS_RA_civilwar}
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_millitary_propaganda
+    x = 69
+    y = 12
+    icon = GFX_focus_por_workers_of_iberia
+    cost = 5
+    prerequisite = { focus = XSS_formalize_RA }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < 0.50
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -0.25
+        tooltip_side = XSS_left_side
+        }
+
+        add_manpower = 35000
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_international_brigades
+    x = 70
+    y = 13
+    icon = GFX_focus_spr_masters_of_our_own_fate
+    cost = 5
+    prerequisite = { focus = XSS_formalize_RA }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < 0.50
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -0.05
+        tooltip_side = XSS_left_side
+        }
+
+        add_ideas = {XSS_international_brigades_idea}
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_rally_NSS_veterans
+    x = 67
+    y = 12
+    icon = GFX_focus_ger_reichskommisariats
+    cost = 10
+    prerequisite = { focus = XSS_formalize_RA }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < -0.25
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -0.05
+        tooltip_side = XSS_left_side
+        }
+        hidden_effect = {load_oob = "XSSSS"}
+        add_ideas = {XSS_NSS_opposition}
+        add_popularity = {
+        ideology = fascism
+        popularity = 0.05
+                }
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_march_on_valais
+    x = 72
+    y = 11
+    icon = GFX_focus_SWI_patriotic_shooting_clubs
+    cost = 10
+    prerequisite = { focus = XSS_primacy_of_RA focus = XSS_primacy_of_KP}
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < -0.05
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -0.1
+        tooltip_side = XSS_left_side
+        }
+        847 = {
+            set_demilitarized_zone = yes
+        }
+
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_march_on_ticino
+    x = 72
+    y = 12
+    icon = GFX_goal_generic_political_pressure
+    cost = 5
+    prerequisite = { focus = XSS_march_on_valais }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < -0.05
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -0.1
+        tooltip_side = XSS_left_side
+        }
+        846 = {
+            set_demilitarized_zone = yes
+        }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_build_headquaters_in_valais
+    x = 72
+    y = 13
+    icon = GFX_goal_generic_fortify_city
+    cost = 2
+    prerequisite = { focus = XSS_march_on_ticino }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value < -0.05
+        }
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = -0.2
+        tooltip_side = XSS_left_side
+        }
+
+        add_ideas = {XSS_RA_headquaters}
+        
+        }
+        
+
+    }
+
     focus = {
     id = XSS_primacy_of_KP
     x = 77
