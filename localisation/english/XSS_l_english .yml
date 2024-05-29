@@ -686,3 +686,37 @@ XSS_komunizm_desc:0 "Rote Armee stops NSS in their Victory March"
 XSS_test_event.21.t:0 "Rote Armee stops Victory March"
 XSS_test_event.21.desc:0 "Today NSS tried to take control over National Assembly, happily passing near Rote Armee has stopped their advance starting fight on streets of Bern. Most of NSS soldiers were killed including Head of NSS. While NSS was stopped in their tracks Grüne Armee soldiers have survived and retreted to Romanchia. Soon they will rise against newly formed communist government."
 XSS_test_event.21.a:0 "War is comming"
+
+XSS_mobilize_rote_armee:0 "Mobilize Rote Armee"
+XSS_mobilize_rote_armee_desc:0 "The Fascists are against us. We must protect Switzerland to the last man. Let's mobilize Rote Armee and kill the rebelion."
+
+XSS_army_chaos:0 "Chaos in the Army"
+XSS_army_chaos_desc:0 "Switzerland is at war again. It's been a long time and our army is not really sure how to wage war."
+
+XSS_lessons_from_war:0 "Lessons from war"
+XSS_lessons_from_war_desc:0 "We have sustained heavy losses in war against romansh. We have to reorganize and attack with more caution now."
+
+XSS_recklessness:0 "Recklessness"
+XSS_recklessness_desc:0 "After Victory at Schwyz, Swiss army is very confident about their victory. Too confident."
+
+XSS_victory_at_schwyz:0 "Victory at Schwyz"
+XSS_victory_at_schwyz_desc:0 "We did it! We have captured schwyz back from the fascists."
+
+XSS_victory_at_romansh:0 "Victory over Romansh"
+XSS_victory_at_romansh_desc:0 "We have won. It's time to bring back stability to Switzerland."
+
+XSS_war_industrialization:0 "War Industrialization"
+XSS_war_industrialization_desc:0 "The war is not comming swiftly we must give more weapons to the population!"
+
+XSS_fortress_Chur:0 "Fortress Chur"
+XSS_fortress_Chur_desc:0 "We have taken over City of Chur. We need to fortify it before counter-attack."
+
+XSS_romash_partisans:0 "Romansh partisans"
+XSS_romash_partisans_desc:0 "Altrough Romanchia have been crushed there are small terrorist cells still located in Chur."
+
+XSS_primacy_of_RA:0 "Primacy of Rote Armee"
+XSS_primacy_of_RA_desc:0 "After eliminating the fascist threat we must now focus on establishing a government. We think a dictatorship of Red Army will be beneficial."
+
+XSS_primacy_of_KP:0 "Primacy of KP"
+XSS_primacy_of_KP_desc:0 "We must maintain the rule of KP at all cost."
+

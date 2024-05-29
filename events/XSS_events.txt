@@ -633,7 +633,7 @@ news_event = {
 
         }
 
-        
+        add_ideas = {XSS_army_chaos}
         
         
         hidden_effect = { XRM = { load_oob = "XRM"}}

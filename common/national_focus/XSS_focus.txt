@@ -3413,9 +3413,160 @@ set_politics = {
 
     }
 
+    focus = {
+    id = XSS_mobilize_rote_armee
+    x = 75
+    y = 5
+    icon = GFX_focus_ITA_peasants_rise
+    cost = 5
+    prerequisite = { focus = XSS_komunizm }
+    available = {has_war_with = XRM}
+
+    completion_reward = {
+        hidden_effect = { load_oob = "RoteArmee" }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_lessons_from_war
+    x = 75
+    y = 6
+    icon = GFX_focus_SOV_military_purge
+    cost = 5
+    prerequisite = { focus = XSS_mobilize_rote_armee }
+    available = {has_war_with = XRM}
+    bypass = {NOT = {has_war_with = XRM} XRM = {exists = no}}
+
+    completion_reward = {
+        remove_ideas = {XSS_army_chaos}
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_victory_at_schwyz
+    x = 75
+    y = 7
+    icon = GFX_focus_PAR_align_with_the_guion_rojo
+    cost = 1
+    prerequisite = { focus = XSS_lessons_from_war }
+    available = {has_war_with = XRM controls_province = 11601}
+    bypass = {NOT = {has_war_with = XRM} XRM = {exists = no}}
+
+    completion_reward = {
+        add_timed_idea = {
+        idea = XSS_recklessness
+        days = 90
+                }  
+        add_war_support = 0.35
+        }
+        
+
+    }
 
 
+    focus = {
+    id = XSS_victory_at_romansh
+    x = 75
+    y = 9
+    icon = GFX_focus_SWE_undermine_fascism
+    cost = 1
+    prerequisite = { focus = XSS_victory_at_schwyz }
+    available = {NOT = {has_war_with = XRM} XRM = {exists = no}}
 
+    completion_reward = {
+        remove_ideas = { XSS_era_of_instability}
+        add_ideas = {XSS_romash_partisans}
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_industrialization
+    x = 76
+    y = 8
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 2
+    prerequisite = { focus = XSS_victory_at_schwyz }
+    available = {has_war_with = XRM}
+    bypass = {NOT = {has_war_with = XRM} XRM = {exists = no}}
+
+    completion_reward = {
+    3 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    }
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_fortress_Chur
+    x = 74
+    y = 8
+    icon = GFX_goal_generic_fortify_city
+    cost = 2
+    prerequisite = { focus = XSS_victory_at_schwyz }
+    available = {has_war_with = XRM controls_province = 658}
+    bypass = {NOT = {has_war_with = XRM} XRM = {exists = no}}
+
+    completion_reward = {
+        151 = {
+            add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 658
+                }
+
+        }
+
+        
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_primacy_of_RA
+    x = 73
+    y = 10
+    icon = GFX_focus_SOV_support_spanish_poum
+    cost = 5
+    prerequisite = { focus = XSS_victory_at_romansh }
+    mutually_exclusive = {focus = XSS_primacy_of_KP}
+
+    completion_reward = {
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_primacy_of_KP
+    x = 77
+    y = 10
+    icon = GFX_focus_SOV_stalins_cult_of_personality
+    cost = 5
+    prerequisite = { focus = XSS_victory_at_romansh }
+    mutually_exclusive = {focus = XSS_primacy_of_RA}
+    completion_reward = {
+        
+        }
+        
+
+    }
 
 
 
