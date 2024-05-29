@@ -436,6 +436,13 @@ ideas = {
             experience_gain_army = 0.5
             }
         }
+        XSS_government_bonds_idea = {
+           removal_cost = -1
+            picture = tur_odpa
+            modifier = {
+            consumer_goods_factor = -0.1
+            }
+        }
 
     }
 }

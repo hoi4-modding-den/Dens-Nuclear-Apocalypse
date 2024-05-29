@@ -15,7 +15,7 @@ XSS_balance = {
     range = {
         id = XSS_left_mid_range
         min = -0.40
-        max = -0.16
+        max = -0.15
         modifier = {
 
 
@@ -24,7 +24,7 @@ XSS_balance = {
     }
     range = {
         id = XSS_right_mid_range
-        min = 0.16
+        min = 0.15
         max = 0.40
         modifier = {
 
@@ -34,7 +34,7 @@ XSS_balance = {
     }
     range = {
         id = XSS_right_dom_range
-        min = 0.41
+        min = 0.40
         max = 0.75
         modifier = {
 
@@ -45,7 +45,7 @@ XSS_balance = {
     range = {
         id = XSS_left_dom_range
         min = -0.75
-        max = -0.41
+        max = -0.40
         modifier = {
 
 
@@ -59,7 +59,7 @@ XSS_balance = {
         range = {
             id = XSS_left_side_range
             min = -1
-            max = -0.76
+            max = -0.75
             modifier = {
 
 
@@ -74,7 +74,7 @@ XSS_balance = {
         icon = GFX_idea_ITA_il_sol_dell_avvenire_ns
         range = {
             id = XSS_right_side_range
-            min = 0.76
+            min = 0.75
             max = 1
             modifier = {
 

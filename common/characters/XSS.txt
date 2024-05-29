@@ -63,7 +63,7 @@ corps_commander = {
 		}
 		country_leader = {
 			ideology = marxism
-			traits = {  }
+			traits = { dictator }
 			expire = "3000.9.9.9"
 			id = -1
 		}
@@ -435,10 +435,33 @@ corps_commander = {
 		}
 		country_leader = {
 			ideology = nazism
-			traits = { }
+			traits = { dictator }
 			expire = "3000.9.9.9"
 			id = -1
 		}
+
+	}
+
+	XSS_engelberg = {
+		name = "Mark Engelberg"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_ivan_chernyakhovsky"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { warmonger great_architect dealbroker }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+corps_commander = {
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 4
+}
 
 	}
 

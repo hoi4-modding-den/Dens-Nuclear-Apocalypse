@@ -651,7 +651,7 @@ news_event = {
     id = XSS_test_event.22
     title = XSS_test_event.22.t
     picture = GFX_news_event_023
-    desc = XSS_test_event.20.desc
+    desc = XSS_test_event.22.desc
     
     
     is_triggered_only = yes
@@ -660,6 +660,62 @@ news_event = {
     
     option = {
         name = XSS_test_event.22.a
+
+    }
+
+}
+
+news_event = {
+    id = XSS_test_event.23
+    title = XSS_test_event.23.t
+    picture = GFX_news_event_fascist_gathering
+    desc = XSS_test_event.23.desc
+    
+    
+    is_triggered_only = yes
+
+
+    
+    option = {
+        name = XSS_test_event.23.a
+
+    }
+
+}
+
+############## End of Swiss Struggle ###################
+### RA ########
+news_event = {
+    id = XSS_test_event.24
+    title = XSS_test_event.24.t
+    picture = GFX_news_event_064
+    desc = XSS_test_event.24.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+
+    
+    option = {
+        name = XSS_test_event.24.a
+
+    }
+
+}
+####### KP ########
+news_event = {
+    id = XSS_test_event.25
+    title = XSS_test_event.25.t
+    picture = GFX_news_event_009
+    desc = XSS_test_event.25.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+
+    
+    option = {
+        name = XSS_test_event.25.a
 
     }
 

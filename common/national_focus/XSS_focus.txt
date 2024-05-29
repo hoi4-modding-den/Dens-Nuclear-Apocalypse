@@ -3261,18 +3261,23 @@ country_event = {
 
     completion_reward = {
         ##################### Rework when Anarchy drops #############
-        transfer_state= 8
+        
         transfer_state= 36
         transfer_state= 7
         transfer_state= 35
-        transfer_state= 34
+        
         transfer_state= 6
-        transfer_state= 29
+        
         8 = {
 
             add_core_of = XSS
 
         }
+       declare_war_on = {
+       target = XLX
+        type = annex_everything
+            } 
+
 
         
         }
@@ -3418,7 +3423,7 @@ set_politics = {
     x = 75
     y = 5
     icon = GFX_focus_ITA_peasants_rise
-    cost = 5
+    cost = 1
     prerequisite = { focus = XSS_komunizm }
     available = {has_war_with = XRM}
 
@@ -3478,7 +3483,7 @@ set_politics = {
     available = {NOT = {has_war_with = XRM} XRM = {exists = no}}
 
     completion_reward = {
-        remove_ideas = { XSS_era_of_instability}
+        remove_ideas = {XSS_army_chaos}
         add_ideas = {XSS_romash_partisans}
         }
         
@@ -3576,6 +3581,8 @@ set_power_balance = {
         id = XSS_balance
         value < -0.5
         }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+      NOT = {has_completed_focus = XSS_victory_of_KP}
     }
 
     completion_reward = {
@@ -3603,6 +3610,8 @@ set_power_balance = {
         id = XSS_balance
         value < 0.50
         }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
     }
 
     completion_reward = {
@@ -3630,6 +3639,8 @@ set_power_balance = {
         id = XSS_balance
         value < 0.50
         }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
     }
 
     completion_reward = {
@@ -3658,6 +3669,8 @@ set_power_balance = {
         id = XSS_balance
         value < 0.50
         }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
     }
 
     completion_reward = {
@@ -3686,6 +3699,9 @@ set_power_balance = {
         id = XSS_balance
         value < -0.25
         }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+   NOT = {has_completed_focus = XSS_finish_off_NSS}
     }
 
     completion_reward = {
@@ -3718,6 +3734,8 @@ set_power_balance = {
         id = XSS_balance
         value < -0.05
         }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
     }
 
     completion_reward = {
@@ -3747,6 +3765,8 @@ set_power_balance = {
         id = XSS_balance
         value < -0.05
         }
+       NOT = {has_completed_focus = XSS_victory_of_RA}
+       NOT = {has_completed_focus = XSS_victory_of_KP}
     }
 
     completion_reward = {
@@ -3777,6 +3797,8 @@ set_power_balance = {
         id = XSS_balance
         value < -0.05
         }
+       NOT = {has_completed_focus = XSS_victory_of_RA}
+       NOT = {has_completed_focus = XSS_victory_of_KP}
     }
 
     completion_reward = {
@@ -3805,6 +3827,8 @@ set_power_balance = {
         id = XSS_balance
         value < -0.7
         }
+    NOT = {has_completed_focus = XSS_victory_of_RA}
+    NOT = {has_completed_focus = XSS_victory_of_KP}
     }
 
     completion_reward = {
@@ -3815,7 +3839,9 @@ set_power_balance = {
         }
         3 = {
             set_demilitarized_zone = yes
+            add_manpower = -125
         }
+        
         
         }
         
@@ -3827,17 +3853,23 @@ set_power_balance = {
     x = 73
     y = 16
     icon = GFX_focus_SOV_builder_of_the_red_army
-    cost = 5
-
+    cost = 1
+        mutually_exclusive = {focus = XSS_victory_of_KP}
     available = {
     power_balance_value = {
         id = XSS_balance
-        value = -1
+        value < -0.99
         }
     has_completed_focus = XSS_strike_bern
     }
 
     completion_reward = {
+        news_event = {
+        id = XSS_test_event.24
+        days = 1
+        random_hours = 3
+            }
+       remove_ideas = { XSS_era_of_instability}
 
         remove_power_balance = {
         id = XSS_balance
@@ -3847,6 +3879,63 @@ set_power_balance = {
         add_idea = XSS_RA
         remove_idea = XSS_RA_civilwar
     }
+
+        3 = {
+            set_demilitarized_zone = no
+        }
+        846 = {
+            set_demilitarized_zone = no
+        }
+        847 = {
+            set_demilitarized_zone = no
+        }
+        
+        retire_character = XSS_evan_signer
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_victory_of_KP
+    x = 77
+    y = 16
+    icon = GFX_focus_SOV_father_of_nations
+    cost = 1
+    mutually_exclusive = {focus = XSS_victory_of_RA}
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > 0.99
+        }
+
+    }
+
+    completion_reward = {
+        news_event = {
+        id = XSS_test_event.25
+        days = 1
+        random_hours = 3
+            }
+       remove_ideas = { XSS_era_of_instability}
+
+        remove_power_balance = {
+        id = XSS_balance
+            }
+        remove_ideas = {XSS_RA_headquaters}
+ 
+        remove_ideas ={XSS_RA_civilwar} 
+    
+
+        3 = {
+            set_demilitarized_zone = no
+        }
+        846 = {
+            set_demilitarized_zone = no
+        }
+        847 = {
+            set_demilitarized_zone = no
+        }
         
         }
         
@@ -3877,6 +3966,257 @@ set_power_balance = {
 
     }
 
+    focus = {
+    id = XSS_assasinations
+    x = 78
+    y = 11
+    icon = GFX_focus_SWE_lottakoren
+    cost = 5
+    prerequisite = { focus = XSS_primacy_of_RA focus = XSS_primacy_of_KP}
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > -0.5
+        }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = 0.25
+        tooltip_side = XSS_right_side
+        }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_street_fights
+    x = 78
+    y = 12
+    icon = GFX_focus_SOV_the_last_purge
+    cost = 5
+    prerequisite = { focus = XSS_assasinations }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > 0.5
+        }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = 0.35
+        tooltip_side = XSS_right_side
+        }
+        3 = {add_manpower = -36780}
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_finish_off_NSS
+    x = 78
+    y = 13
+    icon = GFX_focus_ger_oppose_hitler
+    cost = 5
+    prerequisite = { focus = XSS_street_fights }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > 0.5
+        }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+   NOT = {has_completed_focus = XSS_rally_NSS_veterans}
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = 0.05
+        tooltip_side = XSS_right_side
+        }
+        add_popularity = {
+        ideology = fascism
+        popularity = -1
+                }
+        
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_incorporate_RA
+    x = 78
+    y = 14
+    icon = GFX_focus_CZE_german_puppet
+    cost = 2
+    prerequisite = { focus = XSS_finish_off_NSS }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > 0.75
+        }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+   NOT = {has_completed_focus = XSS_formalize_RA}
+   NOT = {has_completed_focus = XSS_march_on_valais}
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = 1
+        tooltip_side = XSS_right_side
+        }
+
+        
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_speech_at_national_assembly
+    x = 80
+    y = 11
+    icon = GFX_focus_SWE_socialist_reforms
+    cost = 5
+    prerequisite = { focus = XSS_primacy_of_RA focus = XSS_primacy_of_KP}
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > -0.5
+        }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = 0.05
+        tooltip_side = XSS_right_side
+        }
+        news_event = {
+        id = XSS_test_event.23
+        days = 1
+        random_hours = 3
+            }
+
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_land_reform
+    x = 81
+    y = 12
+    icon = GFX_focus_generic_join_comintern
+    cost = 5
+    prerequisite = { focus = XSS_speech_at_national_assembly }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > -0.5
+        }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = 0.15
+        tooltip_side = XSS_right_side
+        }
+    3 = {    add_extra_state_shared_building_slots = 1 }
+    845 = {    add_extra_state_shared_building_slots = 1 }
+    151 = {    add_extra_state_shared_building_slots = 1 }
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_government_bonds
+    x = 83
+    y = 12
+    icon = GFX_focus_usa_reestablish_the_gold_standard
+    cost = 5
+    prerequisite = { focus = XSS_speech_at_national_assembly }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > 0.5
+        }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = 0.25
+        tooltip_side = XSS_right_side
+        }
+    add_ideas = {XSS_government_bonds_idea}
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_post_war_modernization
+    x = 80
+    y = 13
+    icon = GFX_goal_generic_construct_civ_factory
+    cost = 5
+    prerequisite = { focus = XSS_speech_at_national_assembly }
+    available = {
+    power_balance_value = {
+        id = XSS_balance
+        value > 0.25
+        }
+   NOT = {has_completed_focus = XSS_victory_of_RA}
+   NOT = {has_completed_focus = XSS_victory_of_KP}
+    }
+
+    completion_reward = {
+    add_power_balance_value = {
+        id = XSS_balance
+        value = 0.25
+        tooltip_side = XSS_right_side
+        }
+    151 = {
+    add_extra_state_shared_building_slots = 2 
+    add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+        }
+    }
+
+        
+        }
+        
+
+    }
 
 
 
