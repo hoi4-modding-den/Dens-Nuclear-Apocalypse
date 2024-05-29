@@ -22,10 +22,10 @@ XNR = {
 	color = rgb { 105 115 145 }
 	color_ui = rgb { 105 115 145 }
 }
-#XLX = {
-#	color = rgb { 59 127 127 }
-#	color_ui = rgb { 59 127 127 }
-#}
+XLX = {
+	color = rgb { 59 127 127 }
+	color_ui = rgb { 59 127 127 }
+}
 XNE = {
 	color = rgb { 222 22 79 }
 	color_ui = rgb { 222 22 79 }
