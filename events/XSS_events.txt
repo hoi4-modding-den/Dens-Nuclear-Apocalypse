@@ -804,7 +804,7 @@ country_event = {
     option = {
         name = XSS_test_event.29.a
         trigger = {
-            NOT = {tag = LIB}
+            NOT = {tag = LIB tag = XSS}
             }
     add_ideas = {XSS_SEU}
         
@@ -825,6 +825,126 @@ country_event = {
     }
 
     
+}
+
+##################### XSS_negotiation_with_bohr ############################
+
+
+news_event = {
+    id = XSS_test_event.30
+    title = XSS_test_event.30.t
+    picture = GFX_news_event_FIN_camouflaged_white_death
+    desc = XSS_test_event.30.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.30.a
+    swap_ideas = {
+        add_idea = XSS_romash_partisans_strong
+        remove_idea = XSS_romash_partisans
+    }
+
+    }
+
+}
+
+news_event = {
+    id = XSS_test_event.31
+    title = XSS_test_event.31.t
+    picture = GFX_news_event_ast_army
+    desc = XSS_test_event.31.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.31.a
+
+    846 = {add_core_of = XRM set_demilitarized_zone = yes}
+    847 = {add_core_of = XRM set_demilitarized_zone = yes}
+    151 = {set_demilitarized_zone = yes}
+    swap_ideas = {
+        add_idea = XSS_romash_partisans_light
+        remove_idea = XSS_romash_partisans_strong
+    }
+
+    }
+
+}
+
+###################### 2nd romansh war ######################
+
+news_event = {
+    id = XSS_test_event.32
+    title = XSS_test_event.32.t
+    picture = GFX_news_event_ast_army
+    desc = XSS_test_event.32.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+    name = XSS_test_event.32.a
+        trigger = {
+            XSS = {has_completed_focus = XSS_finish_off_NSS}
+
+        }
+
+    846 = { set_demilitarized_zone = no}
+    847 = { set_demilitarized_zone = no}
+    151 = {set_demilitarized_zone = no}
+    XRM = {
+    transfer_state = 846 
+    transfer_state = 847 
+    transfer_state = 151
+    hidden_effect = { load_oob = "GreenArmy" }
+    }
+
+    remove_ideas = {XSS_romash_partisans_light}
+        XRM = {
+        declare_war_on = {
+        target = XSS
+        type = annex_everything
+            }
+
+        }
+
+    }
+    option = {
+    name = XSS_test_event.32.b
+        trigger = {
+            NOT = {has_completed_focus = XSS_finish_off_NSS}
+
+        }
+
+    846 = { set_demilitarized_zone = no}
+    847 = { set_demilitarized_zone = no}
+    151 = {set_demilitarized_zone = no}
+    XRM = {
+    transfer_state = 846 
+    transfer_state = 847 
+    transfer_state = 151
+    hidden_effect = { load_oob = "GreenArmy" }
+    hidden_effect = { load_oob = "XSSSS" }
+    }
+
+    remove_ideas = {XSS_romash_partisans_light}
+    remove_ideas = {XSS_NSS_opposition}
+        XRM = {
+        declare_war_on = {
+        target = XSS
+        type = annex_everything
+            }
+
+        }
+
+    }
+
 }
 
 

@@ -5217,5 +5217,90 @@ add_equipment_to_stockpile = {
 
 
 
+    focus = {
+    id = XSS_negotiation_with_bohr
+    x = 82
+    y = 19
+    icon = GFX_focus_SOV_approach_semyonov
+    cost = 2
+    prerequisite = {focus = XSS_small_stability  }
+
+    completion_reward = {
+        news_event = {
+        id = XSS_test_event.30
+        days = 5
+        random_hours = 3
+            }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_second_attempt
+    x = 82
+    y = 20
+    icon = GFX_focus_SOV_approach_semyonov
+    cost = 2
+    prerequisite = {focus = XSS_negotiation_with_bohr  }
+
+    completion_reward = {
+        news_event = {
+        id = XSS_test_event.31
+        days = 5
+        random_hours = 3
+            }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_integrate_romansh
+    x = 82
+    y = 21
+    icon = GFX_focus_SMB_a_land_of_mountains
+    cost = 1
+    prerequisite = {focus = XSS_second_attempt  }
+
+    completion_reward = {
+        news_event = {
+        id = XSS_test_event.32
+        days = 5
+        random_hours = 3
+            }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_peace
+    x = 82
+    y = 22
+    icon = GFX_focus_SWE_refuge_from_war
+    cost = 5
+    prerequisite = {focus = XSS_integrate_romansh  }
+    available = {XRM = {exists = no}}
+
+    completion_reward = {
+
+        846 = {remove_core_of = XRM }
+        151 = {remove_core_of = XRM }
+        847 = {remove_core_of = XRM }
+        }
+        
+
+    }
+
+
+
+
 }
 

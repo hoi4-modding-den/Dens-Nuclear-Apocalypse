@@ -983,4 +983,29 @@ XSS_test_event.29.a:0 "We shall join them"
 XSS_test_event.29.b:0 "Interesting"
 XSS_test_event.29.c:0 "PENIS"
 
+XSS_negotiation_with_bohr:0 "Negotiations with Bohr"
+XSS_negotiation_with_bohr_desc:0 "Leader of Green army is still out there alive organizing a comeback. We should try to negotiate peace with romansh people."
+
+XSS_test_event.30.t:0 "Negotations with Bohr"
+XSS_test_event.30.desc:0 "Several of KP representatives have decided to start negotations with Alexi Bohr (leader of Green Army). During negotiations Bohr have said that independent Romachia is his only dream and wish. He said that he won't stop terrorist attacks and then proceeded to kill all of the negotiators."
+XSS_test_event.30.a:0 "This means war"
+
+XSS_second_attempt:0 "2nd Attempt"
+XSS_second_attempt_desc:0 "Our first round of negotiations have failed. We shall try again with a better offer."
+
+XSS_test_event.31.t:0 "Ceasefire"
+XSS_test_event.31.desc:0 "Bohr have decided to end terrorist attacks only if Valais, Ticino and Grischun will be administrated by Green army."
+XSS_test_event.31.a:0 "Everything for peace"
+
+XSS_integrate_romansh:0 "Integrate Romansh"
+XSS_integrate_romansh_desc:0 "After giving autonomy to romansh people we should sign a peace treaty."
+
+XSS_test_event.32.t:0 "Integration"
+XSS_test_event.32.desc:0 "Today we have send a peace treaty to Bohr. He declined and called us fools. His new and reorganized army is marching towards Bern."
+XSS_test_event.32.a:0 "Good we have killed NSS..."
+XSS_test_event.32.b:0 "The NSS is also joining in..."
+
+XSS_peace:0 "Peace"
+XSS_peace_desc:0 "We have finally brought peace to Switzerland! This time it will last forever."
+
 
