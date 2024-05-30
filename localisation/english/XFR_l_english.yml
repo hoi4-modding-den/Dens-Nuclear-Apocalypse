@@ -49,3 +49,12 @@ XFR_communism_party: "Anarchists"
 XFR_communism_party_long: "Anarchists"
 XFR_communism_party_real: "Anarcho-Communist Union Party"
 XFR_communism_party_real_long: "Anarcho-Communist Union Party"
+
+# Ideas
+
+XFR_chaos_in_center: "Chaos in [24.GetName]"
+XFR_chaos_in_center_desc: "The Region of [24.GetName] has been devastated during the cataclysm. Strange mutants roam the lands and the area has been evacuated by the army. We need to somehow deal with this situation before we can go out into the world to reestablish ourselves."
+
+# Bookmark
+
+XFR_history_desc: "The Republic of Burgundy was born from struggle. The inhabitants of the region known before the cataclysm as 'Eastern France' bonded together to create new hope. They rebuild their homes, their nation, their democracy. But now, that very democracy is in grave danger. To the southwest lie the lands of Lesser Gaul, a 'divine' dictatorship starving for land to take. To the east lie the lands of the former Germany, now under control of many strange factions, out of which most of them surely be hostile to this newborn democracy. How will Burgundy survive this age of strife? Will they stand strong against the fascist threat or join them in their cause?"
