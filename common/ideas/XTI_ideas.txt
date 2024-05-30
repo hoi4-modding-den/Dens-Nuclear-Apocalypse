@@ -130,6 +130,25 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.1
 			}
-		}	
+		}
+		XTI_national_pride = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_morale_factor = 0.05
+				war_stability_factor = 0.05
+			}
+		}		
 	}
 }	

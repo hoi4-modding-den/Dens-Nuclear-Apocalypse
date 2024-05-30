@@ -1557,10 +1557,11 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			add_ideas = XTI_national_pride
 		}
 	}
 	focus = {
-		id = XTI_glorify_forefathers
+		id = XTI_glorify_forefathers
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_look_to_the_past }
@@ -1599,12 +1600,12 @@
 		id = XTI_vienna_palace
 		icon = GFX_
 		
-		prerequisite = { focus = XTI_glorify_forefathers }
+		prerequisite = { focus = XTI_glorify_forefathers }
 		prerequisite = { focus = XTI_rebuild_vienna }
 #		mutually_exclusive = { focus = XTI_declare_new_austria }
 		x = -1
 		y = 1
-		relative_position_id = XTI_glorify_forefathers
+		relative_position_id = XTI_glorify_forefathers
 
 		cost = 10
 

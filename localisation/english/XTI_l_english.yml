@@ -107,6 +107,8 @@
  XTI_aggressive_doctrine_desc:0 "Offense is the best defense. This strategy is tried and true, but our neighbors may not be welcome to this mindset."
  XTI_reclamation_recruitment:0 "Reclamation Recruitment"
  XTI_reclamation_supplies:0 "Reclamation Supplies"
+ XTI_national_pride:0 "National Pride"
+ XTI_national_pride_desc:0 "We have a long history of resiliance and success. The war was simply a setback."
  
  ### FOCUSES ###
  
@@ -188,9 +190,25 @@
  
  XTI_declare_new_austria:0 "Declare a New Austria"
  XTI_declare_new_austria_desc:0 "Now that we hold most former Austrian lands, it is time to formalize what was already known."
+ XTI_fill_in_the_gaps:0 "Fill in the Gaps"
+ XTI_fill_in_the_gaps_desc:0 "Even with our new settlements, many places remain isolated. This is a significant overlook in our infrastructure."
+ XTI_rebuild_vienna:0 "Rebuild Vienna"
+ XTI_rebuild_vienna_desc:0 "Vienna is nothing but rubble. This shame shall not persist. It is time to rebuild from the ashes."
+ XTI_question_of_capital:0 "Question of Capital"
+ XTI_question_of_capital_desc:0 "Now that all of Austria is under our control, it is time to rethink where we should govern from."
+ XTI_prepare_elections:0 "Prepare Elections"
+ XTI_prepare_elections_desc:0 "Austria is in a stable position. The people should have their voice heard. It no longer makes sense to have emergency rule."
  
  XTI_look_to_the_past:0 "Look to the Past"
  XTI_look_to_the_past_desc:0 "The Republic of Austria was flawed. It had led to its own downfall and failed every Austrian. We must learn from the past and pivot to a more pure form of government."
+ XTI_glorify_forefathers:0 "Glorify Forefathers"
+ XTI_glorify_forefathers_desc:0 "Despite the mistakes of the past, there were many great men we should revere."
+ XTI_vienna_palace:0 "Schönbrunn Palace"
+ XTI_vienna_palace_desc:0 "The Schönbrunn Palace has significant cultural significance. It is better if we invest in restoring these historic sites for future generation."
+ XTI_declare_monarchy:0 "Declare Monarchy"
+ XTI_declare_monarchy_desc:0 "The war was god's divine punishment for man since they rejected his word. It is time to restore order with his right hand man."
+ XTI_habsburg_king:0 "Restore Habsburg Rule"
+ XTI_habsburg_king_desc:0 "Until the great war, Austria was the pride of central Europe. If anyone was to rule the nation, it would be the Habsburgs."
  
  ### EVENTS ###
  
@@ -212,3 +230,9 @@
  XTI.4.a:0 "the Social Democrats"
  XTI.4.b:0 "the Christian Democrats"
  XTI.4.c:0 "the National Conservatives"
+ 
+ XTI.5.t:0 "Question of the Capital"
+ XTI.5.d:0 "Austria is a land of many people across large swaths of land. If we are to efficiently rule, we should ask where from. The cheapest and most convenient option is to stay in Innsbruck. It already has the infrastructure, even if it's somewhat isolated. Next is Salzburg. It has a very central location that is easy to rule from. This would naturally make it the most practical choice. Finally, we can move back to Vienna. This would reestablish legitimacy and bring prestige to the nation. Now that the choice is ours, where should the capital be?"
+ XTI.5.a:0 "We stay in Innsbruck."
+ XTI.5.b:0 "Salzburg is the most logical option."
+ XTI.5.c:0 "It is time to restore rule from Vienna!"
