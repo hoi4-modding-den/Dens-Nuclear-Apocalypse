@@ -149,6 +149,24 @@ ideas = {
 				army_morale_factor = 0.05
 				war_stability_factor = 0.05
 			}
-		}		
+		}	
+		XTI_late_emergers = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+				political_power_factor = -0.5
+			}
+		}
 	}
 }	

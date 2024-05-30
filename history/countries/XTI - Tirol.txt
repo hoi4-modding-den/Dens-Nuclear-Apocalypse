@@ -6,6 +6,8 @@ capital = 153
 #set_stability = 0.8
 #set_convoys = 5
 
+add_ideas = XTI_late_emergers
+
 recruit_character = XTI_reclamation_council
 recruit_character = XTI_elisa
 

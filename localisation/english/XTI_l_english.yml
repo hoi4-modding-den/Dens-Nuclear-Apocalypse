@@ -97,6 +97,8 @@
  
  ### IDEAS ###
  
+ XTI_late_emergers:0 "Late Emergers"
+ XTI_late_emergers_desc:0 "Many nations have already resurfaced since the fall of the bombs. As it turns out, we miscalculated the time the surface would take to be safe again. Our lack of contact with Vienna might have something to do with it."
  XTI_new_identity:0 "New Identity"
  XTI_new_identity_desc:0 "The only way going forward is to embrace our new culture. We have more in common with the people in the Alps than we do with the rest of Austria."
  XTI_reconstruction:0 "Reconstruction"
@@ -109,6 +111,7 @@
  XTI_reclamation_supplies:0 "Reclamation Supplies"
  XTI_national_pride:0 "National Pride"
  XTI_national_pride_desc:0 "We have a long history of resiliance and success. The war was simply a setback."
+ 
  
  ### FOCUSES ###
  
@@ -210,6 +213,9 @@
  XTI_habsburg_king:0 "Restore Habsburg Rule"
  XTI_habsburg_king_desc:0 "Until the great war, Austria was the pride of central Europe. If anyone was to rule the nation, it would be the Habsburgs."
  
+ XTI_karls_speech:0 "Karl's Speech"
+ XTI_karls_speech_desc:0 "The nation is waiting. The king has been crowned. Now is the question: what next?"
+ 
  ### EVENTS ###
  
  XTI.1.t:0 "Silence From Vienna"
@@ -236,3 +242,7 @@
  XTI.5.a:0 "We stay in Innsbruck."
  XTI.5.b:0 "Salzburg is the most logical option."
  XTI.5.c:0 "It is time to restore rule from Vienna!"
+ 
+ XTI.6.t:0 "Karl's Speech"
+ XTI.6.d:0 "Thousands amass at the new city plaza in Vienna. What was once nothing but rubble and roaches is now a bustling metropolis. Trumpets are blared and the crowd reduces to murmurs. Karl II walks up to the microphone.\n\n'Today is the day that we set our destiny. Once we our vision is clear our fate will be sealed. As the rightful heir of the Habsburgs, Archduke of Austria, Count of Tirol, Count of Styria, Baron of Innsbruck, Baron of ...'\n\nHe proceeded for the next few hours.\n\n'...and High Priest of the Austrian Catholic Church, I announce the beginning of the campaign to restore the Holy Roman Empire.'\n\nSeveral sporadic claps were heard.\n\n'Free food can also be found at the buffet by the exit.'\n\nThe crowd roared in a thunderous applause."
+ XTI.6.a:0 "For God and Glory!"
