@@ -3295,12 +3295,8 @@ country_event = {
 
     completion_reward = {
         ##################### Rework when Anarchy drops #############
-        transfer_state= 18
         transfer_state= 15
-        transfer_state= 17
-        transfer_state= 27
         transfer_state= 34
-        transfer_state= 24
         transfer_state= 30
         transfer_state= 14
         transfer_state= 973
@@ -3310,6 +3306,10 @@ country_event = {
 
        declare_war_on = {
        target = XPR
+        type = annex_everything
+            }  
+       declare_war_on = {
+       target = XFR
         type = annex_everything
             }  
        declare_war_on = {
@@ -4414,15 +4414,16 @@ set_power_balance = {
         
         ###### Rework when anarchy #############
 
-        transfer_state = 17
         transfer_state = 28
-        transfer_state = 18
-        transfer_state = 27
         transfer_state = 973
         transfer_state = 20
         transfer_state = 32
         transfer_state = 21
-        transfer_state = 24
+			create_wargoal = {
+				type = annex_everything
+				target = XFR
+			}    
+
 
 
         }
