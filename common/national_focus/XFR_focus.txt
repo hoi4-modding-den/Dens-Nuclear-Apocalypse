@@ -1,0 +1,521 @@
+﻿focus_tree = {
+	id = XFR_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XFR
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 0 y = 3000 }
+
+# POLITICS
+
+	focus = {
+		id = XFR_support_parliament
+		icon = GFX_focus_generic_treaty
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XFR_dennounce_democracy }
+		x = 5
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			has_government = democratic
+		}
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = XFR_dennounce_democracy
+				}
+			}
+		}
+
+		offset = {
+			x = 8
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = XFR_support_parliament
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_prepare_for_elections
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = XFR_support_parliament }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_support_parliament
+
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_investigate_center
+		icon = GFX
+		prerequisite = { focus = XFR_support_parliament focus = XFR_dennounce_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 13
+		y = 1
+		#relative_position_id = XFR_support_parliament
+
+		offset = {
+			x = 3
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = XFR_support_parliament
+			}
+		}
+
+		offset = {
+			x = -3
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = XFR_dennounce_democracy
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = XFR_deal_with_the_mutants
+		icon = GFX
+		prerequisite = { focus = XFR_investigate_center }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_investigate_center
+
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_crisis_averted
+		icon = GFX
+		prerequisite = { focus = XFR_deal_with_the_mutants }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_deal_with_the_mutants
+
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_revitalise_center
+		icon = GFX
+		prerequisite = { focus = XFR_crisis_averted }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_crisis_averted
+
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+
+
+	focus = {
+		id = XFR_democracy_lives_on
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = XFR_prepare_for_elections }
+		prerequisite = { focus = XFR_crisis_averted }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+		relative_position_id = XFR_prepare_for_elections
+
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_dennounce_democracy
+		icon = GFX_focus_generic_strike_at_democracy2
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XFR_support_parliament }
+		x = 21
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			is_subject = no
+			has_government = democratic
+		}
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = XFR_support_parliament
+				}
+			}
+		}
+
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = XFR_dennounce_democracy
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = XFR_fascist_coup
+		icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = XFR_dennounce_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_dennounce_democracy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_monarchist_coup
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = XFR_fascist_coup }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 2
+		relative_position_id = XFR_fascist_coup
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_the_new_empire
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = XFR_fascist_coup }
+		prerequisite = { focus = XFR_crisis_averted }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 5
+		relative_position_id = XFR_dennounce_democracy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+# INDUSTRY
+
+	focus = {
+		id = XFR_industrial_investments
+		icon = GFX_focus_generic_industry_1
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus = }
+		x = 30
+		y = 0
+		#relative_position_id = 
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+# DIPLOMACY
+
+	focus = {	
+		id = XFR_cooperate_with_neighbours
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = XFR_the_new_empire focus = XFR_democracy_lives_on }
+		mutually_exclusive = { focus = XFR_reclaim_french_territories }
+		x = 11
+		y = 7
+		#relative_position_id = 
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_reclaim_french_territories
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = XFR_the_new_empire focus = XFR_democracy_lives_on }
+		mutually_exclusive = { focus = XFR_cooperate_with_neighbours }
+		x = 15
+		y = 7
+		#relative_position_id = 
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+# ARMY
+
+	focus = {	
+		id = XFR_army_funds
+		icon = GFX_goal_generic_allies_build_infantry
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus = }
+		x = 5
+		y = 10
+		#relative_position_id = 
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+# AIRFORCE
+
+	focus = {	
+		id = XFR_establish_airforce
+		icon = GFX_goal_generic_build_airforce
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus = }
+		x = 12
+		y = 10
+		#relative_position_id = 
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+# NAVY
+
+	focus = {	
+		id = XFR_establish_navy
+		icon = GFX_goal_generic_build_navy
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus = }
+		x = 19
+		y = 10
+		#relative_position_id = 
+
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+# INTELLIGENCE
+
+	focus = {	
+		id = XFR_create_intelligence_agency
+		icon = GFX_focus_generic_secret_service_agency
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus = }
+		x = 30
+		y = 7
+		#relative_position_id = 
+
+		available = {
+			
+		}
+
+		bypass = {
+			has_intelligence_agency = yes
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_intelligence_agency = yes
+		}
+	}
+
+}

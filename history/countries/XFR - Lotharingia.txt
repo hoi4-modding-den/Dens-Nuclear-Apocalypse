@@ -15,6 +15,9 @@ set_technology = {
 	gw_artillery = 1
 }
 
+add_ideas = {
+	XFR_chaos_in_center
+}
 
 recruit_character = XFR_anarchists
 recruit_character = XFR_parliament
