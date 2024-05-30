@@ -11,7 +11,7 @@ manpower=1011667
 	}
 
 	history={
-		owner = LIB # FRA
+		owner = XFR
 		victory_points = {
 			9642 5 
 		}
@@ -23,7 +23,7 @@ manpower=1011667
 			#industrial_complex = 1
 			#air_base = 5
 		}
-		#add_core_of = FRA
+		#add_core_of = XFR
 	}
 
 	provinces={
