@@ -22,7 +22,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -56,7 +56,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = { focus = XAQ_secure_our_land }
+		prerequisite = { focus = XAQ_secure_our_land } 
 		mutually_exclusive = { }
 		
 
@@ -82,7 +82,190 @@ focus_tree = {
 			
 		}
 	}
-	
-	
+	focus = {
+		id = XAQ_another_hundred
+		icon = GFX_focus_mex_privatisation
+		x = 5
+		y = 1
 
+		prerequisite = { focus = XAQ_secure_our_land } 
+		mutually_exclusive = { }
+		
+
+		relative_position_id = XAQ_secure_our_land
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+				add_building_construction = {
+    					type = infrastructure
+    					level = 1
+    					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+				add_building_construction = {
+    					type = infrastructure
+    					level = 1
+    					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = XAQ_movere_admirari
+		icon = GFX_focus_generic_railroad
+		x = -5
+		y = 1
+
+		prerequisite = { focus = XAQ_secure_our_land } 
+		mutually_exclusive = { }
+		
+
+		relative_position_id = XAQ_secure_our_land
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			XAQ = {
+				add_equipment_to_stockpile = {
+        				type = train_equipment_1
+        				amount = 10
+					producer = XAQ
+    				}
+			}
+		}
+	}
+	focus = {
+		id = XAQ_long_march_home
+		icon = GFX_focus_generic_adriatic_sea_focus
+		x = 30
+		y = 0
+
+		prerequisite = { } 
+		mutually_exclusive = { }
+		
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = XAQ_repeating_mistakes
+		icon = GFX_focus_wonderweapons
+		x = 5
+		y = 2
+
+		prerequisite = { focus = XAQ_long_march_home } 
+		mutually_exclusive = { }
+		
+
+		relative_position_id = XAQ_long_march_home
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 2
+    				bonus = 1
+    				uses = 1
+    				category = nuclear
+			}
+			activate_advisor = XAQ_charles_sapiens_idea
+		}
+	}
+	focus = {
+		id = XAQ_griffin
+		icon = GFX_XAQ_griffin
+		x = 0
+		y = 2
+
+		prerequisite = { focus = XAQ_long_march_home } 
+		
+
+		relative_position_id = XAQ_long_march_home
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_spqr
+		icon = GFX_focus_generic_improve_the_administration
+		x = -5
+		y = 2
+
+		prerequisite = { focus = XAQ_long_march_home } 
+		mutually_exclusive = { focus = XAQ_griffin }
+		
+
+		relative_position_id = XAQ_long_march_home
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
 }
