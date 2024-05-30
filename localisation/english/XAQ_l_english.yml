@@ -8,14 +8,28 @@
 
  XAQ_fascism_party:0 "Gratia Gryphem"
  XAQ_neutrality_party:0 "Lunatics"
+ XAQ_democratic_party:0 "Retards"
+ XAQ_communism_party:0 "Autists"
 
 #focus
  XAQ_secure_our_land:0 "Secure our Borders"
  XAQ_land_recolonisation:0 "Land Recolonisation"
+ XAQ_another_hundred:0 "To Another Hundred Years!"
+ XAQ_movere_admirari:0 "Movere Admirari"
+ XAQ_repeating_mistakes:0 "Repeating the Mistakes of the Past"
+ XAQ_long_march_home:0 "The Long March Home"
+ XAQ_griffin:0 "The Griffin"
+ XAQ_spqr:0 "Senatus Populusque Romanus"
 
 #focus descriptions
  XAQ_secure_our_land_desc:0 "In these tumultuous times, we must ensure that we stay strong, lest we are consumed by our neighbours."
  XAQ_land_recolonisation_desc:0 "During the Great Calamity, the nuclear bombs dropped by our ancestors leveled the cities of Gaul, rendering its lands uninhabitable. Now, thanks to hundreds of years, the lands are now safe to set foot on again."
+ XAQ_another_hundred_desc:0 "Like our predecessors, we will continue our rule in Europe for centuries to come. With the 100th anniversary of our regime, its time to jump towards a century of prosperity thrice as prosperous of that of the previous one."
+ XAQ_movere_admirari_desc:0 "The ancients had amazing technology besides the nuclear bombs, including the illustrous "train". There exist trains in bunkers and storages which we can use to supply our troops for the reconquest of Gaul."
+ XAQ_repeating_mistakes_desc:0 "If we could get ahold of the weaponry the ancients used to annihalate each other, we could easily dominate europe. Charles Sapiens, an expert on the Great Calamity and life before it, can help us acquire this technology."
+ XAQ_long_march_home_desc:0 "Following the fall of the Western Roman Empire in 476 AD nearly 2 millenium ago, the world has degenerated into a flux of false and misintentioned governments. We must reclaim rome and truly restore its glory."
+ XAQ_griffin_desc:0 "Marcel Pietot has been nothing but beneficial to the development of the nation, we must ensure that we enable him to execute absolute power as was intended by Mars himself."
+ XAQ_spqr_desc:0 "In ancient rome, the senate was an advisory council to the Emperor and has been of great importance in enacting fair bureaucracy and laws. It is foolish to reject Petiot's rule but we must also empower the Senate to ensure prosperity."
 
 #ideas
  XAQ_senate:0 "The Senate"
@@ -36,7 +50,7 @@
  
 #character descriptions
  XAQ_marcel_pietot_desc:0 "The Gods did toil, they waited for their champion, and one day, he answered their divine call. Mars himself possessed this mere mortal, blessing him the strength of a demigod. Now he, as chosen Caesar of the Gods, leads his nation to divine glory. No opposition will stand in his way, not from out, nor within. Ave!"
- XAQ_charles_sapiens_desc:0 "A true expert on the Great Calamity, he will surely aid our quest to seize utopia."
+ XAQ_charles_sapiens_idea_desc:0 "A true expert on the Great Calamity, he will surely aid our quest to seize utopia."
 
 
 #traits
