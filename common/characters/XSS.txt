@@ -465,5 +465,15 @@ corps_commander = {
 
 	}
 
+	XSS_soviet = {
+		name = "National assembly"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_supreme_soviet"
+			}
+		}
+		
+	}
+
 
 }

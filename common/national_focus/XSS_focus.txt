@@ -5285,7 +5285,7 @@ add_equipment_to_stockpile = {
     x = 82
     y = 22
     icon = GFX_focus_SWE_refuge_from_war
-    cost = 5
+    cost = 1
     prerequisite = {focus = XSS_integrate_romansh  }
     available = {XRM = {exists = no}}
 
@@ -5294,6 +5294,297 @@ add_equipment_to_stockpile = {
         846 = {remove_core_of = XRM }
         151 = {remove_core_of = XRM }
         847 = {remove_core_of = XRM }
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_proclaim_soviet_union
+    x = 82
+    y = 23
+    icon = GFX_focus_ITA_the_italian_republic
+    cost = 5
+    prerequisite = {focus = XSS_peace  }
+
+    completion_reward = {
+
+           add_country_leader_role = {
+            character = XSS_soviet
+            promote_leader = yes
+            country_leader = {
+        ideology = marxism
+        expire = "3000.1.1.1"
+        traits = {  }
+                }
+           }
+        set_cosmetic_tag = XSS_Soviet_union
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_new_swiss_army
+    x = 78
+    y = 24
+    icon = GFX_focus_SWI_spirit_of_resistance
+    cost = 5
+    prerequisite = {focus = XSS_proclaim_soviet_union  }
+
+    completion_reward = {
+
+        add_ideas = {XSS_new_swiss_army_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_army_training
+    x = 77
+    y = 25
+    icon = GFX_goal_generic_axis_build_infantry
+    cost = 5
+    prerequisite = {focus = XSS_new_swiss_army  }
+
+    completion_reward = {
+
+        army_experience = 35
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_swiss_air
+    x = 79
+    y = 25
+    icon = GFX_goal_generic_air_fighter
+    cost = 5
+    prerequisite = {focus = XSS_new_swiss_army  }
+
+    completion_reward = {
+
+        air_experience = 35
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_lay_claim_to_voralburg_commie
+    x = 82
+    y = 25
+    icon = GFX_goal_generic_forceful_treaty
+    cost = 5
+    prerequisite = {focus = XSS_proclaim_soviet_union  }
+
+    completion_reward = {
+
+        848 = {add_core_of = XSS}
+        transfer_state = 848        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_in_lombardy
+    x = 80
+    y = 26
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 5
+    prerequisite = {focus = XSS_lay_claim_to_voralburg_commie  }
+    prerequisite = {focus = XSS_army_training  }
+    prerequisite = {focus = XSS_swiss_air  }
+
+    completion_reward = {
+       declare_war_on = {
+       target = XLV
+        type = annex_everything
+            } 
+             
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_in_tyrol
+    x = 78
+    y = 26
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 5
+    prerequisite = {focus = XSS_lay_claim_to_voralburg_commie  }
+    prerequisite = {focus = XSS_army_training  }
+    prerequisite = {focus = XSS_swiss_air  }
+
+    completion_reward = {
+       declare_war_on = {
+       target = XTI
+        type = annex_everything
+            } 
+             
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_in_north
+    x = 82
+    y = 26
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 5
+    prerequisite = {focus = XSS_lay_claim_to_voralburg_commie  }
+    prerequisite = {focus = XSS_army_training  }
+    prerequisite = {focus = XSS_swiss_air  }
+
+    completion_reward = {
+        ############ re-work anarchy
+
+        transfer_state = 158
+        transfer_state = 735
+        transfer_state = 161
+        transfer_state = 162     
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_new_cantons
+    x = 80
+    y = 27
+    icon = GFX_focus_SOV_the_supreme_soviet
+    cost = 5
+    prerequisite = {focus = XSS_war_in_north  }
+    prerequisite = {focus = XSS_war_in_tyrol  }
+    prerequisite = {focus = XSS_war_in_lombardy  }
+    available = {
+        controls_state = 158
+        controls_state = 735
+        controls_state = 161
+        controls_state = 162
+        controls_state = 159
+        controls_state = 160
+        controls_state = 850
+        controls_state = 39
+        controls_state = 153
+    }
+
+    completion_reward = {
+       
+
+        158 = {add_core_of = XSS}
+        735 = {add_core_of = XSS}
+        161 = {add_core_of = XSS}
+        162 = {add_core_of = XSS}
+        159 = {add_core_of = XSS}
+        160 = {add_core_of = XSS}
+        850 = {add_core_of = XSS}
+        39 = {add_core_of = XSS}    
+        153 = {add_core_of = XSS} 
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_road_to_rome
+    x = 80
+    y = 28
+    icon = GFX_focus_SOV_the_true_tsars
+    cost = 5
+    prerequisite = {focus = XSS_new_cantons  }
+
+
+    completion_reward = {
+       ########################### Anarchy rework ########################
+        transfer_state = 2
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_roman_cantons
+    x = 80
+    y = 29
+    icon = GFX_focus_SWE_socialist_reforms
+    cost = 2
+    prerequisite = {focus = XSS_road_to_rome  }
+
+
+    completion_reward = {
+       
+        2 = {add_core_of = XSS}
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_politbiuro
+    x = 86
+    y = 24
+    icon = GFX_focus_SWE_socialist_reforms
+    cost = 5
+    prerequisite = {focus = XSS_proclaim_soviet_union  }
+
+    completion_reward = {
+       
+        add_ideas = {XSS_politbiuro_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_ministry_of_culture
+    x = 86
+    y = 25
+    icon = GFX_focus_SWE_socialist_reforms
+    cost = 5
+    prerequisite = {focus = XSS_politbiuro  }
+
+    completion_reward = {
+       
+        add_ideas={XSS_kulturburo}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_socrealism
+    x = 86
+    y = 26
+    icon = GFX_focus_prc_agrarian_socialism
+    cost = 5
+    prerequisite = {focus = XSS_ministry_of_culture  }
+
+    completion_reward = {
+       
+        add_ideas={XSS_socrealizm}
+
         }
         
 
