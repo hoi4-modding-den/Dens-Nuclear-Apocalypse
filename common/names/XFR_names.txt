@@ -22,3 +22,35 @@ XFR = {
 	}
 	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Farmer" "Weasel" "Target Practice" "Invisible" "Princess" "The Mute" "Carpenter"}
 }
+XAL = {
+	male = {
+		names = {  
+			Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin Aurelien
+			Charles Daniel Denis Édouard Éttiene Elie Eugène Fernand François Frédéric
+			Félicien Félix Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean Joseph
+			Jules Julien Lazare Leroy Louis Lucien Léopold Matthieu Michel Napoléon Nicolas
+			Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
+			Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard
+			Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco
+			Markus Max Maximilian Otto Otto Paul Peter Philipp Ralph Samuel Staffan Theodor
+			Tobias Walter Wilhelm
+		 }
+	}
+	female = {
+		names = { Anne Marie Françoise Gisèle Marguerite Marianne Simone Anaïs Irène Nathalie Elsa Jessica Emma Hanna Sofia Marie Hildegard }
+	}
+	surnames = {
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère"
+		Boulanger Bourbaki Bouët-Willaumez Bugeaud Caillard Canrobert Courbet
+		Cousin-Mountauban Delay "de Castellane" "de Castelnau"  "de Langle de Cary"
+		"de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Davout Dubail Dubois
+		Duchêne Dupetit-Thouars Exelmans Foch Forey "Franchet d'Espèrey" Gallieni Gouraud
+		Guillaumat Hamelin Harispe Hoche Humbert Jaurès Joffre Lebouef Lyautey Murat
+		"Ney d'Elchingen" Nivelle Péllissier Petain Ropert Vaillant
+		Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich
+		Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig
+		Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte
+		Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann
+	}
+	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Farmer" "Weasel" "Target Practice" "Invisible" "Princess" "The Mute" "Carpenter"}
+}

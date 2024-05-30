@@ -14,7 +14,10 @@ state = {
 			9642 10 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
+			air_base = 3
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		add_core_of = XFR
 	}

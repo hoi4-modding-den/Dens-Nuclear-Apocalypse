@@ -17,8 +17,9 @@ manpower=913867
 		}
 		buildings = {
 			infrastructure = 4
-			#industrial_complex = 2
-			#air_base = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
 		}
 		add_core_of = XFR
 		1939.1.1 = {
