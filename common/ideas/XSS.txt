@@ -506,6 +506,39 @@ ideas = {
 				}	
             }
         }
+        XSS_new_swiss_army_idea = {
+           removal_cost = -1
+            picture = SWI_weaponize_Swissness
+            modifier = {
+            offence = 0.15
+            defence = 0.25
+            conscription = 0.01
+            }
+        }
+        XSS_politbiuro_idea = {
+           removal_cost = -1
+            picture = SOV_system_decentralization
+            modifier = {
+            war_support_factor = 0.15
+            production_speed_buildings_factor = 0.15
+
+            }
+        }
+        XSS_kulturburo = {
+           removal_cost = -1
+            picture = por_iberian_workers_united
+            modifier = {
+                democratic_acceptance = 50
+                communism_acceptance = 100
+            }
+        }
+        XSS_socrealizm = {
+           removal_cost = -1
+            picture = jap_the_unthinkable_option
+            modifier = {
+                stability_factor = 0.15
+            }
+        }
 
     }
 }
