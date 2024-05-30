@@ -88,7 +88,9 @@
 		y = 1
 		relative_position_id = XFR_support_parliament
 
-		
+		available = {
+			has_government = democratic
+		}
 
 		cost = 5
 
@@ -100,13 +102,21 @@
 	}
 
 	focus = {
-		id = XFR_investigate_center
+		id = XFR_investigate_centre
 		icon = GFX
 		prerequisite = { focus = XFR_support_parliament focus = XFR_dennounce_democracy }
 		#mutually_exclusive = { focus =  }
 		x = 13
 		y = 1
 		#relative_position_id = XFR_support_parliament
+
+		available = {
+			24 = { is_owned_by = ROOT }
+		}
+
+		bypass ={
+			NOT = { 24 = { is_owned_by = ROOT } }
+		}
 
 		offset = {
 			x = 3
@@ -143,13 +153,19 @@
 	focus = {
 		id = XFR_deal_with_the_mutants
 		icon = GFX
-		prerequisite = { focus = XFR_investigate_center }
+		prerequisite = { focus = XFR_investigate_centre }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
-		relative_position_id = XFR_investigate_center
+		relative_position_id = XFR_investigate_centre
 
-		
+		available = {
+			24 = { is_owned_by = ROOT }
+		}
+
+		bypass ={
+			NOT = { 24 = { is_owned_by = ROOT } }
+		}
 
 		cost = 10
 
@@ -169,7 +185,13 @@
 		y = 1
 		relative_position_id = XFR_deal_with_the_mutants
 
-		
+		available = {
+			24 = { is_owned_by = ROOT }
+		}
+
+		bypass ={
+			NOT = { 24 = { is_owned_by = ROOT } }
+		}
 
 		cost = 5
 
@@ -181,15 +203,17 @@
 	}
 
 	focus = {
-		id = XFR_revitalise_center
-		icon = GFX
+		id = XFR_revitalise_centre
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = XFR_crisis_averted }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = XFR_crisis_averted
 
-		
+		available = {
+			24 = { is_owned_by = ROOT }
+		}
 
 		cost = 5
 
@@ -212,7 +236,9 @@
 		y = 4
 		relative_position_id = XFR_prepare_for_elections
 
-		
+		available = {
+			has_government = democratic
+		}
 
 		cost = 5
 
@@ -220,6 +246,11 @@
 			factor = 1
 		}
 		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
 		}
 	}
 
@@ -235,6 +266,10 @@
 		available = {
 			is_subject = no
 			has_government = democratic
+		}
+
+		bypass = {
+			has_government = fascism
 		}
 
 		allow_branch = {
@@ -300,10 +335,19 @@
 
 		cost = 5
 
+		available = {
+			fascism > 0.5
+		}
+
+		bypass = {
+			has_government = fascism
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			set_politics = { ruling_party = fascism elections_allowed = no }
 		}
 	}
 
@@ -315,6 +359,13 @@
 		x = 2
 		y = 2
 		relative_position_id = XFR_fascist_coup
+
+		available = {
+			NOT = { has_completed_focus = XFR_the_new_empire }
+			neutrality > 0.4
+			has_government = fascism
+			is_subject = no
+		}
 
 		cost = 5
 
@@ -335,12 +386,74 @@
 		y = 5
 		relative_position_id = XFR_dennounce_democracy
 
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+
 		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		}
+	}
+
+	focus = {	
+		id = XFR_hand_over_centre
+		icon = GFX
+		prerequisite = { focus = XFR_the_new_empire }
+		x = 2
+		y = 1
+		relative_position_id = XFR_the_new_empire
+
+		available = {
+			has_completed_focus = XFR_cooperate_with_lesser_gaul
+			has_government = fascism
+			OR = {
+				is_subject = no
+				is_subject_of = XAQ
+			}
+			24 = { is_owned_by = ROOT }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_the_noviodunum_deal
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = XFR_the_new_empire }
+		x = 0
+		y = 2
+		relative_position_id = XFR_hand_over_centre
+
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+
+		bypass = {
+			is_subject_of = XAQ
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
 		}
 	}
 
@@ -414,6 +527,327 @@
 		}
 	}
 
+	focus = {	
+		id = XFR_preempt_the_swiss_threat
+		icon = GFX_focus_attack_switzerland
+		prerequisite = { focus = XFR_reclaim_french_territories }
+		x = 0
+		y = 2
+		relative_position_id = XFR_reclaim_french_territories
+
+		available = {
+			is_subject = no
+			any_neighbor_country = {
+				tag = XSS
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+   				target = XSS
+			}
+		}
+	}
+
+	focus = {	
+		id = XFR_to_paris_we_march
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = XFR_reclaim_french_territories }
+		x = 3
+		y = 1
+		relative_position_id = XFR_reclaim_french_territories
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_normandy_to_britanny
+		icon = GFX
+		prerequisite = { focus = XFR_to_paris_we_march }
+		x = -1
+		y = 1
+		relative_position_id = XFR_to_paris_we_march
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_erase_luxonie
+		icon = GFX
+		prerequisite = { focus = XFR_to_paris_we_march }
+		x = 1
+		y = 1
+		relative_position_id = XFR_to_paris_we_march
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_dennounce_the_illigitimate_government
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = XFR_reclaim_french_territories focus = XFR_cooperate_with_neighbours }
+		x = -2
+		y = 3
+		relative_position_id = XFR_reclaim_french_territories
+
+		available = {
+			is_subject = no
+			any_neighbor_country = {
+				tag = XNF
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+   				target = XNF
+			}
+		}
+	}
+
+	focus = {	
+		id = XFR_guarantee_swiss_neutrality
+		icon = GFX_focus_SWI_swiss_guiding_principles
+		prerequisite = { focus = XFR_cooperate_with_neighbours }
+		x = 0
+		y = 2
+		relative_position_id = XFR_cooperate_with_neighbours
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_paris_conference
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = XFR_cooperate_with_neighbours }
+		x = -3
+		y = 1
+		relative_position_id = XFR_cooperate_with_neighbours
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_expand_the_pact
+		icon = GFX
+		prerequisite = { focus = XFR_paris_conference }
+		x = -1
+		y = 1
+		relative_position_id = XFR_paris_conference
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_cooperate_with_lesser_gaul
+		icon = GFX
+		prerequisite = { focus = XFR_reclaim_french_territories focus = XFR_cooperate_with_neighbours }
+		mutually_exclusive = { focus = XFR_no_deal_with_mad_men }
+		x = -1
+		y = 1
+		relative_position_id = XFR_reclaim_french_territories
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_no_deal_with_mad_men
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = XFR_reclaim_french_territories focus = XFR_cooperate_with_neighbours }
+		mutually_exclusive = { focus = XFR_cooperate_with_lesser_gaul }
+		x = 1
+		y = 1
+		relative_position_id = XFR_reclaim_french_territories
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_alcase_lorraine_diplomacy
+		icon = GFX
+		prerequisite = { focus = XFR_democracy_lives_on focus = XFR_the_new_empire }
+		x = -5
+		y = 0
+		relative_position_id = XFR_cooperate_with_neighbours
+
+		available = {
+			XAL = {
+				exists = yes
+				28 = { is_owned_by = XAL }
+			}
+		}
+
+		offset = {
+			x = -2
+			trigger = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					NOT = {
+						OR = {
+							has_completed_focus = XFR_dennounce_democracy
+							has_completed_focus = XFR_support_parliament
+						}
+					}
+				}
+			}
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_ultimatum_to_alcase_lorraine
+		icon = GFX
+		prerequisite = { focus = XFR_alcase_lorraine_diplomacy }
+		x = 0
+		y = 1
+		relative_position_id = XFR_alcase_lorraine_diplomacy
+
+		available = {
+			XAL = {
+				exists = yes
+				28 = { is_owned_by = XAL }
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			annex_country = {
+    			target = XAL
+    			transfer_troops = no
+			}
+		}
+	}
+
+	focus = {	
+		id = XFR_reintegrate_alcase_lorraine
+		icon = GFX
+		prerequisite = { focus = XFR_ultimatum_to_alcase_lorraine }
+		x = 0
+		y = 1
+		relative_position_id = XFR_ultimatum_to_alcase_lorraine
+
+		available = {
+			28 = { is_owned_by = XFR }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			28 = { add_core_of = ROOT }
+		}
+	}
+
 # ARMY
 
 	focus = {	
@@ -421,62 +855,11 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 5
-		y = 10
+		x = 37
+		y = 0
 		#relative_position_id = 
 
 		available = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-
-# AIRFORCE
-
-	focus = {	
-		id = XFR_establish_airforce
-		icon = GFX_goal_generic_build_airforce
-		#prerequisite = { focus =  }
-		#mutually_exclusive = { focus = }
-		x = 12
-		y = 10
-		#relative_position_id = 
-
-		available = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-
-# NAVY
-
-	focus = {	
-		id = XFR_establish_navy
-		icon = GFX_goal_generic_build_navy
-		#prerequisite = { focus =  }
-		#mutually_exclusive = { focus = }
-		x = 19
-		y = 10
-		#relative_position_id = 
-
-		available = {
-			any_owned_state = {
-				is_coastal = yes
-			}
 		}
 
 		cost = 5
@@ -496,8 +879,8 @@
 		icon = GFX_focus_generic_secret_service_agency
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 30
-		y = 7
+		x = 27
+		y = 4
 		#relative_position_id = 
 
 		available = {

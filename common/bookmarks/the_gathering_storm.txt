@@ -137,11 +137,11 @@ bookmarks = {
 			history = XFR_history_desc
 			focuses = {
 				XFR_democracy_lives_on
-				XFR_revitalise_center
+				XFR_revitalise_centre
 				XFR_the_new_empire
 			}
 			ideas = {
-				XFR_chaos_in_center
+				XFR_chaos_in_centre
 			}
 		}
 

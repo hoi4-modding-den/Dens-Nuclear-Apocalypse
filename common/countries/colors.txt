@@ -132,3 +132,7 @@ XFR = {
 	color = rgb { 155 0 124 }
 	color_ui = rgb { 155 0 124 }
 }
+XAL = {
+	color = rgb { 122 122 122 }
+	color_ui = rgb { 122 122 122 }
+}
