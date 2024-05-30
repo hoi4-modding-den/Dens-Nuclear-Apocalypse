@@ -7,6 +7,14 @@
  XRM_DEF:0 "Romanchia"
  XRM_ADJ:0 "Romansh"
 
+ XRA:0 "Rote Armee"
+ XRA_DEF:0 "Rote Armee"
+ XRA_ADJ:0 "Red army's"
+
+ XRA_communism_party:0 "RA"
+ XRA_communism_party_long:0 "Rote Armee"
+
+
  XRM_fascism_party:0 "Grüne Armee"
  XRM_fascism_party_long:0 "Grüne Armee"
 
@@ -16,15 +24,16 @@
  XSS_fascism_party:0 "NSS/GA/NAP"
  XSS_fascism_party_long:0 "Neu Schutzstaffel/Grüne Armee/Nationale Arbeiterpartei"
 
- XSS_neutrality_party:0 "House of Bracher"
- XSS_neutrality_party_long:0 "House of Bracher"
+ XSS_neutrality_party:0 "Monarchist Society"
+ XSS_neutrality_party_long:0 "Monarchist Society"
 
  XSS_democratic_party:0 "SSD/NU/BU"
  XSS_democratic_party_long:0 "Schweizer Sozialdemokratie/Nationale Union/Bundesunion"
 
+XSS_neutrality:0 "Helvetica"
 
-XSS_neutrality:0 "Swiss Neutrality"
-XSS_neutrality_desc:0 "Switzerland is the most peaceful country in the world. They have survived 389 years in stable peace. They are totally unbothered by world wars that have wiped humanity and they won't be bothered for long."
+XSS_neutrality_idea:0 "Swiss Neutrality"
+XSS_neutrality_idea_desc:0 "Switzerland is the most peaceful country in the world. They have survived 389 years in stable peace. They are totally unbothered by world wars that have wiped humanity and they won't be bothered for long."
 
 XSS_bank_of_europe:0 "Bank of Europe"
 XSS_bank_of_europe_desc:0 "Since the world wars switzerland has been considered the safest place to store money."
@@ -1064,4 +1073,15 @@ XSS_socrealism_desc:0 "Socrealism or Socialist realism is a style of art that ou
 XSS_socrealizm:0 "Socrealism"
 XSS_socrealizm_desc:0 "Socialist realism was the official cultural doctrine of the Soviet Union that mandated an idealized representation of life under socialism in literature and the visual arts. The doctrine was first proclaimed by the First Congress of Soviet Writers in 1934 as approved method for Soviet cultural production in all media. In the aftermath of World War II, socialist realism was adopted by the communist states that were politically aligned with the Soviet Union. The primary official objective of socialist realism was to depict reality in its revolutionary development although no formal guidelines concerning style or subject matter were provided."
 
+
+XSS_monarchy:0 "Monarchist Plot"
+XSS_monarchy_desc:0 "A bunch of Monarchists have decided to attack National Assembly and take over power."
+
+XSS_rally_freikorps:0 "Rally Freikorps"
+XSS_rally_freikorps_desc:0 "We must fight for Monarchy. We must rally our faithful supporters."
+
+
+XSS_test_event.33.t:0 "Monarchist Plot"
+XSS_test_event.33.desc:0 "Today Monarchists led by Paul Robisch have made a sudden attack on National Assembly. They have captured it before Nazi Victory March has finished. Brave Freikorps have defended gates of Bern from Nazis and have killed Niemir Eggli (Head of NSS). Shattered NSS has surrendered while Green army escpaed to Chur. After This Victory Rote Armee opposing Monarchist rule decided to launch a coup starting in Sion."
+XSS_test_event.33.a:0 "To arms brothers"
 

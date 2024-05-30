@@ -128,6 +128,10 @@ XIA = {
 	color = rgb { 25 248 96 }
 	color_ui = rgb { 25 248 96  }
 }
+XRA = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
 XFR = {
 	color = rgb { 155 0 124 }
 	color_ui = rgb { 155 0 124 }

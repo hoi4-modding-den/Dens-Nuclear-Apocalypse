@@ -88,7 +88,7 @@ corps_commander = {
 		}
 		country_leader = {
 			ideology = despotism
-			traits = {  }
+			traits = { inexperienced_monarch }
 			expire = "3000.9.9.9"
 			id = -1
 		}
@@ -475,5 +475,49 @@ corps_commander = {
 		
 	}
 
+	XSS_robisch = {
+		name = "Paul Robisch"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_czechoslovakia_richard_tesarik"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { revolutionary_general staunch_monarchist }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+		corps_commander = {
+    	skill = 3
+    	attack_skill = 4
+    	defense_skill = 4
+    	planning_skill = 2
+    	logistics_skill = 4
+			}
+	}
+######################### RA Civil war #############################
+	XSS_mayer= {
+		name = "Moritz Mayer"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_issa_pliyev"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+		corps_commander = {
+    	skill = 1
+    	attack_skill = 1
+    	defense_skill = 3
+    	planning_skill = 1
+    	logistics_skill = 1
+			}
+	}
+##########################################################################
 
 }

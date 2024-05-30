@@ -1,0 +1,88 @@
+division_template = {
+	name = "Rote Armee"
+	division_names_group = GER_INF_01
+    is_locked = yes
+    force_allow_recruiting = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+        artillery_brigade = { x = 3 y = 0 }
+
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Rote Bergsteiger"
+	division_names_group = GER_INF_01
+    is_locked = yes
+    force_allow_recruiting = yes
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+        mountaineers = { x = 2 y = 0 }
+        mountaineers = { x = 2 y = 1 }
+        artillery_brigade = { x = 3 y = 0 }
+
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 3612
+		division_template = "Rote Armee"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 9618
+		division_template = "Rote Armee"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 6666
+		division_template = "Rote Armee"
+		start_experience_factor = 0.1
+	}
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 3
+		}
+		location = 636
+		division_template = "Rote Bergsteiger"
+		start_experience_factor = 0.1
+	}
+
+
+
+}

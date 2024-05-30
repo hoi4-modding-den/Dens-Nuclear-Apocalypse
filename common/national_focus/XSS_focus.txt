@@ -137,7 +137,7 @@ country_event = {
     completion_reward = {
         
         add_stability = -0.05
-        remove_ideas = {XSS_neutrality}
+        remove_ideas = {XSS_neutrality_idea}
         news_event = {
         id = XSS_test_event.2
         days = 1
@@ -2142,6 +2142,7 @@ add_resource = {
     cost = 1
     prerequisite = { focus = XSS_storm_the_council }
     mutually_exclusive = {focus = XSS_komunizm}
+    mutually_exclusive = {focus = XSS_monarchy}
 
     completion_reward = {
         news_event = {
@@ -2171,7 +2172,7 @@ set_politics = {
 
 
     completion_reward = {
-        remove_ideas = {XSS_neutrality}
+        remove_ideas = {XSS_neutrality_idea}
         news_event = {
         id = XSS_test_event.2
         days = 1
@@ -3391,6 +3392,7 @@ country_event = {
     icon = GFX_focus_SOV_support_spanish_poum
     cost = 1
     prerequisite = { focus = XSS_storm_the_council }
+    mutually_exclusive = {focus = XSS_monarchy}
     mutually_exclusive = {focus = XSS_fascist_win}
 
 
@@ -4242,7 +4244,7 @@ set_power_balance = {
 
     completion_reward = {
 
-        remove_ideas = {XSS_neutrality}
+        remove_ideas = {XSS_neutrality_idea}
         news_event = {
         id = XSS_test_event.2
         days = 1
@@ -4478,6 +4480,8 @@ set_power_balance = {
         29 = {add_core_of = XSS}
         42 = {add_core_of = XSS}
         51 = {add_core_of = XSS}
+        974 = {add_core_of = XSS}
+        975 = {add_core_of = XSS}
         set_cosmetic_tag = XSS_burgundy
         }
         
@@ -5590,6 +5594,65 @@ add_equipment_to_stockpile = {
         
 
     }
+
+############################# Monarchia #########################################
+
+
+    focus = {
+    id = XSS_monarchy
+    x = 100
+    y = 4
+    icon = GFX_focus_ger_return_of_the_kaiser
+    cost = 1
+    prerequisite = { focus = XSS_storm_the_council }
+    mutually_exclusive = {focus = XSS_komunizm}
+    mutually_exclusive = {focus = XSS_fascist_win}
+
+    completion_reward = {
+
+   delete_unit_template_and_units = {
+    division_template = "Waffen-NSS"
+    disband = yes 
+}
+        
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+}
+        news_event = {
+        id = XSS_test_event.33
+        days = 1
+        random_hours = 3
+            }
+       
+        }
+    }
+
+    focus = {
+    id = XSS_rally_freikorps
+    x = 100
+    y = 5
+    icon = GFX_focus_ger_oppose_hitler
+    cost = 1
+    prerequisite = { focus = XSS_monarchy }
+    available = {
+        OR = {
+        has_war_with = XRM
+        has_war_with = XRA            
+        }
+
+        }
+    completion_reward = {
+
+        }
+    }
+
+
+
+
+
+
+
 
 
 
