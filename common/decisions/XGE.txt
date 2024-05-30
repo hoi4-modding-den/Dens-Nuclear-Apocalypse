@@ -23,6 +23,7 @@ XGE_reconstruction_category = {
 			}
 			activate_mission = XGE_devastation_4to3
 			set_country_flag = XGE_4to3_flag
+			remove_mission = XGE_devastation_5to4
 		}
 	}
 	XGE_devastation_4to3 = {
@@ -48,6 +49,7 @@ XGE_reconstruction_category = {
 			activate_mission = XGE_devastation_3to2
 			set_country_flag = XGE_3to2_flag
 			clr_country_flag = XGE_4to3_flag
+			remove_mission = XGE_devastation_4to3
 		}
 	}
 	XGE_devastation_3to2 = {
@@ -73,6 +75,7 @@ XGE_reconstruction_category = {
 			activate_mission = XGE_devastation_2to1
 			set_country_flag = XGE_2to1_flag
 			clr_country_flag = XGE_3to2_flag
+			remove_mission = XGE_devastation_3to2
 		}
 	}
 	XGE_devastation_2to1 = {
@@ -96,6 +99,7 @@ XGE_reconstruction_category = {
 				add_idea = XGE_devastation_1
 			}
 			clr_country_flag = XGE_2to1_flag
+			remove_mission = XGE_devastation_2to1
 		}
 	}
 }

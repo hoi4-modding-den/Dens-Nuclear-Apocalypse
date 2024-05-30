@@ -1,6 +1,7 @@
 XGE_reconstruction_category = {		
 	priority = 9		
-	icon = GFX_category_icon
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_XGE_reconstruction_picture
 	
 	allowed = {
 		original_tag = XGE

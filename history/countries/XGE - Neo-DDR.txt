@@ -75,6 +75,7 @@ XGE = {
 add_dynamic_modifier = { modifier = XGE_computer_clique }
 
 add_ideas = { XGE_computer_clique_dummy_idea } #cleared after start-up
+
 add_ideas = { 
 	XGE_maximillian_weiss_minister 
 	XGE_devastation_5

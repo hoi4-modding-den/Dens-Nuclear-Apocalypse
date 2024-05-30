@@ -17,6 +17,10 @@ spriteTypes = {
 		texturefile = "gfx/XGE/ddr_pc_stylized.dds"
 	}
 	spriteType = {
+		name = "GFX_XGE_reconstruction_picture"
+		texturefile = "gfx/XGE/XGE_rebuild_category_image.dds"
+	}
+	spriteType = {
 		name = "GFX_XGE_skull_emoji"
 		texturefile = "gfx/XGE/XGE_skull_emoji.dds"
 		legacy_lazy_load = no
