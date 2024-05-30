@@ -5173,6 +5173,7 @@ add_equipment_to_stockpile = {
 
         
         every_country = {
+        limit = { has_government = communism }
         country_event = {
         id = XSS_test_event.29
         days = 5
