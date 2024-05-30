@@ -1,4 +1,4 @@
-capital = 27
+capital = 17
 
 set_research_slots = 3
 
@@ -21,7 +21,7 @@ recruit_character = XFR_parliament
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1934.1.1"
+	last_election = "2234.6.1"
 	election_frequency = 24
 	elections_allowed = yes
 }

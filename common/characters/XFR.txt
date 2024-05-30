@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			ideology = conservatism
 			traits = {  }
-			expire = "1965.1.1"
+			expire = "3000.1.1"
 		}
 	}
 
@@ -24,7 +24,7 @@ characters = {
 		country_leader = {
 			ideology = anarchist_communism
 			traits = {  }
-			expire = "1965.1.1"
+			expire = "3000.1.1"
 		}
 	}
 
