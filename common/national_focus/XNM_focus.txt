@@ -45,7 +45,10 @@ focus_tree = {
 		relative_position_id = XNM_the_gainsborough_administration
 		prerequisite = { focus = XNM_the_gainsborough_administration }
 		available = { 
-			has_country_leader = { character = XNM_arthur_gainsborough }
+			has_country_leader = { 
+				name = "Arthur Gainsborough"
+				ruling_only = yes
+			}
 		}
 		bypass = {}		
 		
@@ -160,7 +163,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_tyne_technologies
-		icon = GFX_focus_SWE_institute_of_technology
+		icon = GFX_focus_XNM_tyne_technologies
 		x = 1
 		y = 1
 		cost = 5

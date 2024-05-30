@@ -22,6 +22,10 @@ spriteTypes = {
 		name = "GFX_focus_XNM_second_to_none"
 		texturefile = "gfx/XNM/XNM_second_to_none.png"
 	}	
+	spriteType = {
+		name = "GFX_focus_XNM_tyne_technologies"
+		texturefile = "gfx/XNM/XNM_tyne_technologies.png"
+	}		
 
 ### Portraits ###
 	spriteType = {

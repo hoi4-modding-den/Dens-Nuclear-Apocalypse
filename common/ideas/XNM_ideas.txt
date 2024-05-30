@@ -41,6 +41,27 @@ ideas = {
 
 			}
 		}
+		XNM_midlands_protests_light = {
+			picture = GFX_idea_XNM_midlands_protests
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.17
+				resistance_activity = 0.15
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+
+			}
+		}		
 		XNM_tensions_on_the_trent = {
 			picture = GFX_idea_XNM_tensions_on_the_trent
 			

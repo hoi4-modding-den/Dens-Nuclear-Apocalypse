@@ -25,6 +25,11 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 96 96 129 }
 			}
+		
+			XNM_udm_coalition = {
+				can_be_randomly_selected = no
+				color = { 27 159 196 }
+			}		
 				
 		}
 
@@ -161,6 +166,11 @@ ideologies = {
 			XAQ_esoteric_caesarism = {
 				can_be_randomly_selected = no
 			}
+			
+			XNM_national_mercian_front = {
+				can_be_randomly_selected = no
+				color = { 193 160 106 }
+			}			
 		}
 
 		dynamic_faction_names = {
