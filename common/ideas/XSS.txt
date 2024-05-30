@@ -387,6 +387,7 @@ ideas = {
             modifier = {
             political_power_gain = -0.25
             training_time_factor = 0.10
+            stability_factor = -0.25
             }
         }
         XSS_RA_headquaters = {
@@ -468,6 +469,7 @@ ideas = {
             picture = chi_army_corruption
             modifier = {
             political_power_gain = -0.05
+            stability_factor = -0.05
             }
         }
 
@@ -477,7 +479,31 @@ ideas = {
             modifier = {
             political_power_gain = -0.5
             training_time_factor = 0.25
+            stability_factor = -0.45
 
+            }
+        }
+        XSS_two_year_plan_idea = {
+           removal_cost = -1
+            picture = SWE_folkhemmet
+            modifier = {
+            production_speed_buildings_factor = 0.35 
+            consumer_goods_factor = 0.25
+            stability_factor = 0.05
+            }
+        }
+        XSS_SEU = {
+           removal_cost = -1
+            picture = gre_schachtplan3
+            modifier = {
+				political_power_gain = -0.15
+                communism_drift = 0.05
+				consumer_goods_factor = -0.05
+				conscription = 0.025
+				min_export = 0.1
+				hidden_modifier = {
+					trade_opinion_factor = 0.2				
+				}	
             }
         }
 

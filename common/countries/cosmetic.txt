@@ -1255,3 +1255,7 @@ XSS_germania_nation = {
     color = rgb {21 12 11}
     color_ui = rgb {21 12 11 }
 }
+XSS_burgundy = {
+color = rgb { 57 113 228 }
+color_ui = rgb { 57 113 228 }
+}

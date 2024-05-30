@@ -4688,6 +4688,177 @@ set_power_balance = {
 
     }
 
+    focus = {
+    id = XSS_spanish_campaign
+    x = 65
+    y = 27
+    icon = GFX_focus_spr_war_of_independence
+    cost = 5
+    prerequisite = {focus = XSS_operation_napoleon }
+
+
+
+    completion_reward = {
+       declare_war_on = {
+       target = XPY
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XAR
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XAD
+        type = annex_everything
+            } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_spanish_collaborators
+    x = 66
+    y = 28
+    icon = GFX_focus_spr_no_pasaran
+    cost = 5
+    prerequisite = {focus = XSS_spanish_campaign }
+     mutually_exclusive = {focus = XSS_transfer_spanish_population}
+    bypass = {
+        XAD = {exists = no}
+        XAR = {exists = no}
+        XPY = {exists = no}
+    }
+    available = {
+        OR = {
+        has_war_with = XAR    
+        has_war_with = XPY
+        has_war_with = XAD   
+        }
+        controls_state = 165        
+    }
+
+
+    completion_reward = {
+
+        hidden_effect = { load_oob = "XSS_Spain" }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_southern_uprising
+    x = 66
+    y = 29
+    icon = GFX_focus_ARG_no_gods_no_masters
+    cost = 5
+    prerequisite = {focus = XSS_spanish_collaborators }
+    bypass = {
+        XAD = {exists = no}
+        XAR = {exists = no}
+        XPY = {exists = no}
+    }
+    available = {
+        has_war_with = XAD   
+      
+    }
+
+
+    completion_reward = {
+
+        hidden_effect = { load_oob = "XSS_Spain_2" }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_transfer_spanish_population
+    x = 64
+    y = 28
+    icon = GFX_focus_SOV_the_road_of_life
+    cost = 5
+    prerequisite = {focus = XSS_spanish_campaign }
+    mutually_exclusive = {focus = XSS_spanish_collaborators}
+    bypass = {
+        XAD = {exists = no}
+        XAR = {exists = no}
+        XPY = {exists = no}
+    }
+    available = {
+        OR = {
+        has_war_with = XAR    
+        has_war_with = XPY
+        has_war_with = XAD   
+        }
+        controls_state = 165
+        controls_state = 794
+        controls_state = 166        
+    }
+
+
+    completion_reward = {
+
+        news_event = {
+        id = XSS_test_event.28
+        days = 1
+        random_hours = 12
+            }
+
+        165 = {add_manpower = -1030784}
+        794 = {add_manpower = -200563}
+        166 = {add_manpower = -360512}    
+        3 = {add_manpower = 1591859}
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_raze_barcelona
+    x = 64
+    y = 29
+    icon = GFX_focus_PAR_neuter_the_guion_rojo
+    cost = 2
+    prerequisite = {focus = XSS_transfer_spanish_population }
+    bypass = {
+        XAD = {exists = no}
+        XAR = {exists = no}
+        XPY = {exists = no}
+    }
+    available = {
+        OR = {
+        has_war_with = XAR    
+        has_war_with = XPY
+        has_war_with = XAD   
+        }
+        controls_province = 9764
+        
+    }
+
+
+    completion_reward = {
+
+set_victory_points = {
+	province = 9764
+	value = 0
+}
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 35000
+    producer = XPY
+}
+
+        }
+        
+
+    }
+
 
 
 
@@ -4929,6 +5100,114 @@ set_power_balance = {
     completion_reward = {
   
         hidden_effect = { XSS = { load_oob = "PenalBattalions"}}
+        
+        }
+        
+
+    }
+
+
+################# KP ############################
+
+    focus = {
+    id = XSS_small_stability
+    x = 77
+    y = 18
+    icon = GFX_focus_generic_treaty
+    cost = 5
+    prerequisite = {focus = XSS_victory_of_KP  }
+    prerequisite = {focus = XSS_abandon_neutrality_commie}
+
+    completion_reward = {
+
+        add_stability = 0.1
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_2_year_plan
+    x = 77
+    y = 20
+    icon = GFX_goal_generic_construction
+    cost = 5
+    prerequisite = {focus = XSS_small_stability  }
+
+    completion_reward = {
+
+        add_timed_idea = {
+        idea = XSS_two_year_plan_idea
+        days = 720
+                } 
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_soviet_economic_union
+    x = 76
+    y = 21
+    icon = GFX_focus_SOV_proclaim_soviet_hegemony
+    cost = 5
+    prerequisite = {focus = XSS_2_year_plan  }
+    mutually_exclusive = {focus = XSS_soviet_join_bez }
+    completion_reward = {
+        add_ideas = {XSS_SEU}
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_send_invites
+    x = 77
+    y = 22
+    icon = GFX_focus_SOV_international_union_of_soviet_republics
+    cost = 5
+    prerequisite = {focus = XSS_soviet_economic_union  }
+    completion_reward = {
+
+        
+        every_country = {
+        country_event = {
+        id = XSS_test_event.29
+        days = 5
+        random_hours = 12
+             }
+            }
+        
+       
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XSS_soviet_join_bez
+    x = 78
+    y = 21
+    icon = GFX_focus_usa_focus_on_europe
+    cost = 5
+    prerequisite = {focus = XSS_2_year_plan  }
+    mutually_exclusive = {focus = XSS_soviet_economic_union}
+   #available = {XNM={has_completed_focus = XNM_future_of_the_BEZ}}
+
+
+    completion_reward = {
+        XNM = {
+        country_event = {
+        id = XSS_test_event.4
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
         
         }
         

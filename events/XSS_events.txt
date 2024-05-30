@@ -769,6 +769,64 @@ country_event = {
     }
 }
 
+################ Warcrimes in Spain ###############
+
+
+news_event = {
+    id = XSS_test_event.28
+    title = XSS_test_event.28.t
+    picture = GFX_news_event_chinese_soldiers_city_ruin
+    desc = XSS_test_event.28.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+
+    
+    option = {
+        name = XSS_test_event.28.a
+
+    }
+
+}
+
+################# S.E.U #############################
+
+country_event = {
+    id = XSS_test_event.29
+    title = XSS_test_event.29.t
+    picture = GFX_report_event_tur_politician_march
+    desc = XSS_test_event.29.desc
+    
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XSS_test_event.29.a
+        trigger = {
+            NOT = {tag = LIB}
+            }
+    add_ideas = {XSS_SEU}
+        
+    }
+    option = {
+        name = XSS_test_event.29.b
+        trigger = {
+            NOT = {tag = LIB}
+
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.29.c
+        trigger = {
+            tag = LIB
+        }
+    }
+
+    
+}
+
 
 
 

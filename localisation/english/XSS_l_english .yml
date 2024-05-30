@@ -280,7 +280,7 @@ XSS_army_reform_desc:0 "Our army is inefficient and in dire need of reform."
 XSS_penal_battalions:0 "Penal Battalions"
 XSS_penal_battalions_desc:0 "Our prisons are overflowing. We should put these degenerates to a good use."
 
-XSS_join_bez:0 "Join B.E.Z"
+XSS_join_bez:0 "Join the B.E.Z"
 XSS_join_bez_desc:0 "We wish to bring Switzerland closer to Europe. B.E.Z brings good old memories of EU. This time we won't ignore this offer."
 
 XSS_test_event.4.t:0 "Switzerland wishes to join B.E.Z"
@@ -919,7 +919,7 @@ XSS_burgundy:0 "Socialist Republic of Burgundy"
 XSS_operation_napoleon:0 "Operation Red Napoleon"
 XSS_operation_napoleon_desc:0 "Operation codename Red Napoleon will focus on destruction of French states."
 
-XSS_negotiation_with_british:0 "Negotiation with the British"
+XSS_negotiation_with_british:0 "Negotiations with the British"
 XSS_negotiation_with_british_desc:0 "We shall make alliance on the British isles. Socialists out there definitly need us."
 
 XSS_negotiation_with_ddr:0 "Negotiations with DDR"
@@ -936,5 +936,51 @@ XSS_swiss_navy_desc:0 "Switzerland needs to start building ships to block anythi
 
 XSS_reconquer_rhine:0 "Reconquer Rhine"
 XSS_reconquer_rhine_desc:0 "Rhine river is now our main objective. We shall conquer everybody who tries to control it."
+
+XSS_spanish_campaign:0 "Spanish Campaign"
+XSS_spanish_campaign_desc:0 "We have conquered france in a record short time. Now we will move south to close off Mediterranean sea."
+
+XSS_spanish_collaborators:0 "Spanish Collaborators"
+XSS_spanish_collaborators_desc:0 "We are liberating Iberia from oppressive Fascists. The oppressed communists and workers are flocking to our banners."
+
+XSS_transfer_spanish_population:0 "Forced Relocation"
+XSS_transfer_spanish_population_desc:0 "Our Mainland Switzerland is nowhere near as rich in population as Aragon. We shall forcefully relocate some of the Spanish population to central Switzerland."
+
+XSS_test_event.28.t:0 "War crimes in Spain"
+XSS_test_event.28.desc:0 "Independent reporters have noticed a shocking fact that Swiss army forcefully deports Spanish population to Mainland Switzerland. This is disgusting behaviour and Switzerland should pay for this."
+XSS_test_event.28.a:0 "0_0"
+
+XSS_raze_barcelona:0 "Raze Barcelona"
+XSS_raze_barcelona_desc:0 "One of the biggest city in Iberia will soon be burned to the ground to show our dominance over the region."
+
+XSS_southern_uprising:0 "Southern Uprising"
+XSS_southern_uprising_desc:0 "Socialists are trying to tear apart the Caliphate. We shall fund them and let them join our army!"
+
+XSS_small_stability:0 "Small Stabilization"
+XSS_small_stability_desc:0 "After war, reconstruction is much needed. Small Stabilization is a series of reforms that plan to help Switzerland rebuild after Civil war."
+
+XSS_two_year_plan_idea:0 "Two Year Plan"
+XSS_two_year_plan_idea_desc:0 "After Civil War Switzerland is in dire need of industrialization. We shall make Switzerland an industrial empire."
+
+XSS_2_year_plan:0 "Two Year Plan"
+XSS_2_year_plan_desc:0 "War has torn us apart. We must support our industrial sector."
+
+XSS_soviet_economic_union:0 "Create S.E.U"
+XSS_soviet_economic_union_desc:0 "British have their B.E.Z we will have our own S.E.U."
+
+XSS_SEU:0 "S.E.U"
+XSS_SEU_desc:0 "Soviet Economic Union is an economic alliance made to rival B.E.Z"
+
+XSS_soviet_join_bez:0 "Join the B.E.Z"
+XSS_soviet_join_bez_desc:0 "We shall cooperate with Europe to bring back Switzerland from civil war times."
+
+XSS_send_invites:0 "Send invitations"
+XSS_send_invites_desc:0 "To rival B.E.Z we must have some other members."
+
+XSS_test_event.29.t:0 "Soviet Economic Union"
+XSS_test_event.29.desc:0 "Switzerland has annonced creation of S.E.U an economic alliance made to rival B.E.Z."
+XSS_test_event.29.a:0 "We shall join them"
+XSS_test_event.29.b:0 "Interesting"
+XSS_test_event.29.c:0 "PENIS"
 
 
