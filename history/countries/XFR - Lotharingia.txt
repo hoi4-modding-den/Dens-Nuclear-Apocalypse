@@ -16,6 +16,9 @@ set_technology = {
 }
 
 
+recruit_character = XFR_anarchists
+recruit_character = XFR_parliament
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1934.1.1"

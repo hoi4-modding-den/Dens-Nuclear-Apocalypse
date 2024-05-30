@@ -1,0 +1,10 @@
+spriteTypes = {
+
+    # Portraits
+
+    spriteType = {
+        name = "GFX_portrait_XFR_parliament"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_parliament.dds"
+    }
+
+}
