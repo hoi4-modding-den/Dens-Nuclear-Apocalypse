@@ -6,6 +6,10 @@
  XNF_DEF: "the Neo-Napoleonic French Empire"
  XNF_ADJ: "French"
 
+ XFW: "French Wasteland"
+ XFW_DEF: "the French Wasteland"
+ XFW_ADJ: "French"
+
  XNF_fascism_party: "Ultranationalists"
  XNF_communism_party: "Revolutionaries"
  XNF_democratic_party: "Republicans"

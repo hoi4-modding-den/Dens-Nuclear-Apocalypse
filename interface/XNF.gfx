@@ -23,7 +23,7 @@ spriteTypes = {
 		color = { 255 0 0 }
 		colortwo = { 0 255 0 }
 		size = { 
-			x = 50
+			x = 25
 			y = 200
 		}
 		effectFile = "gfx/FX/progress.lua"
@@ -37,7 +37,7 @@ spriteTypes = {
 		color = { 255 0 0 }
 		colortwo = { 0 255 0 }
 		size = { 
-			x = 50
+			x = 25
 			y = 200
 		}
 		effectFile = "gfx/FX/progress.lua"

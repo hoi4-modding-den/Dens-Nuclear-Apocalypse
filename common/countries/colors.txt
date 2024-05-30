@@ -140,3 +140,7 @@ XAL = {
 	color = rgb { 122 122 122 }
 	color_ui = rgb { 122 122 122 }
 }
+XFW = {
+	color = rgb { 45 40 20 }
+	color_ui = rgb { 35 30 15 }
+}

@@ -11,7 +11,7 @@ manpower=1982133
 	state_category = city
 
 	history={
-		owner = LIB # FRA
+		owner = XFW # FRA
 		victory_points = {
 			6613 10
 		}
