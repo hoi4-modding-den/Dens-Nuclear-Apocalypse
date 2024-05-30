@@ -947,7 +947,61 @@ news_event = {
 
 }
 
+####################### Civil war Helvetica ##############################
 
+news_event = {
+    id = XSS_test_event.33
+    title = XSS_test_event.33.t
+    picture = GFX_news_event_FIN_camouflaged_white_death
+    desc = XSS_test_event.33.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.33.a
+############ Do eventa #################
+add_ideas = {XSS_army_chaos}
+retire_character = XSS_engelberg
+retire_character = XSS_niemir_eggli
+847 = {transfer_state_to = XRA}
+XRA = {    hidden_effect = { load_oob = "RoteArmee_civilwar" }
+ add_ideas = {XSS_army_chaos}
+}
+151 = {transfer_state_to = XRM}
+846 = {transfer_state_to = XRM}
+XRM = {    hidden_effect = { load_oob = "GreenArmy" }
+       declare_war_on = {
+       target = XRA
+        type = annex_everything
+            }  
+}
+        set_party_name = {
+        ideology = communism
+        long_name = "Kommunistische Partei/Schweizerische Sozialisten und Arbeitergewerkschaft"
+        name = "KP/SSA"
+            }
+       declare_war_on = {
+       target = XRA
+        type = annex_everything
+            }  
+       declare_war_on = {
+       target = XRM
+        type = annex_everything
+            }  
+XRA = {
+       declare_war_on = {
+       target = XRM
+        type = annex_everything
+            } 
+}
+
+########################################
+
+    }
+
+}
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
