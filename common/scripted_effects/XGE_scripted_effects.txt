@@ -1,5 +1,5 @@
 XGE_decrease_devastation_time = {
-	custom_effect_tooltip = XGE_decrease_devastation_tt
+	#custom_effect_tooltip = XGE_decrease_devastation_tt
 	if = {
 		limit = {
 			has_active_mission = XGE_devastation_5to4
