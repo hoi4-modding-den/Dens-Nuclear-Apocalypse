@@ -1,0 +1,42 @@
+ideas = {
+    country = {
+
+        XAL_burgundy_volunteers = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = XFR
+			}
+
+            cancel = {
+                has_war_with = XFR
+            }
+
+            on_remove = {
+                delete_units = {
+					division_template = "Brigade des Volontaires Bourguignons"
+					disband = no
+				}
+            }     
+
+           removal_cost = -1
+
+            picture = GFX
+
+            modifier = {
+                surrender_limit = 0.1
+                weekly_manpower = 100
+                experience_gain_army = 0.1
+                custom_modifier_tooltip = XAL_burgundy_volunteers_tt
+            }
+
+            rule = {
+                can_send_volunteers = no
+            }
+
+        }
+
+    }
+}

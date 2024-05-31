@@ -1,0 +1,390 @@
+XFR_INF_01 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%dème Division d'Infanterie"
+
+	ordered =
+	{
+		1 = { "%dème Division d'Infanterie" }
+		2 = { "%dème Division d'Infanterie" }
+		3 = { "%dème Division d'Infanterie" }
+		4 = { "%dème Division d'Infanterie" }
+		5 = { "%dème Division d'Infanterie" }
+		6 = { "%dème Division d'Infanterie" }
+		7 = { "%dème Division d'Infanterie" }
+		8 = { "%dème Division d'Infanterie" }
+		9 = { "%dème Division d'Infanterie" }
+		10 = { "%dème Division d'Infanterie" }
+		11 = { "%dème Division d'Infanterie" }
+		12 = { "%dème Division d'Infanterie" }
+		13 = { "%dème Division d'Infanterie" }
+		14 = { "%dème Division d'Infanterie" }
+		15 = { "%dème Division d'Infanterie" }
+		16 = { "%dème Division d'Infanterie" }
+		17 = { "%dème Division d'Infanterie" }
+		18 = { "%dème Division d'Infanterie" }
+		19 = { "%dème Division d'Infanterie" }
+		20 = { "%dème Division d'Infanterie" }
+	}
+}
+
+XFR_CAV_01 = 
+{
+	name = "Cavalry Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+
+	fallback_name = "%dème Division de Cavalerie"
+
+	ordered =
+	{
+		1 = { "%dère Division de Cavalerie" }
+		2 = { "%dème Division de Cavalerie" }
+		3 = { "%dème Division de Cavalerie" }
+		4 = { "%dème Division de Cavalerie" }
+		5 = { "%dème Division de Cavalerie" }
+		6 = { "%dème Division de Cavalerie" }
+		7 = { "%dème Division de Cavalerie" }
+		8 = { "%dème Division de Cavalerie" }
+		9 = { "%dème Division de Cavalerie" }
+		10 = { "%dème Division de Cavalerie" }
+		11 = { "%dème Division de Cavalerie" }
+		12 = { "%dème Division de Cavalerie" }
+		13 = { "%dème Division de Cavalerie" }
+		14 = { "%dème Division de Cavalerie" }
+		15 = { "%dème Division de Cavalerie" }
+		16 = { "%dème Division de Cavalerie" }
+		17 = { "%dème Division de Cavalerie" }
+		18 = { "%dème Division de Cavalerie" }
+		19 = { "%dème Division de Cavalerie" }
+		20 = { "%dème Division de Cavalerie" }
+	}
+}
+
+XFR_CAV_02 = 
+{
+	name = "Light Cavalry Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" "cavalry" "mechanized" }
+
+	fallback_name = "%dème Div. Légère de Cavalerie"
+	ordered =
+	{
+		1 = { "%dère Div. Légère de Cavalerie" }
+		2 = { "%dème Div. Légère de Cavalerie" }
+		3 = { "%dème Div. Légère de Cavalerie" }
+		4 = { "%dème Div. Légère de Cavalerie" }
+		5 = { "%dème Div. Légère de Cavalerie" }
+		6 = { "%dème Div. Légère de Cavalerie" }
+		7 = { "%dème Div. Légère de Cavalerie" }
+		8 = { "%dème Div. Légère de Cavalerie" }
+		9 = { "%dème Div. Légère de Cavalerie" }
+		10 = { "%dème Div. Légère de Cavalerie" }
+		11 = { "%dème Div. Légère de Cavalerie" }
+		12 = { "%dème Div. Légère de Cavalerie" }
+		13 = { "%dème Div. Légère de Cavalerie" }
+		14 = { "%dème Div. Légère de Cavalerie" }
+		15 = { "%dème Div. Légère de Cavalerie" }
+		16 = { "%dème Div. Légère de Cavalerie" }
+		17 = { "%dème Div. Légère de Cavalerie" }
+		18 = { "%dème Div. Légère de Cavalerie" }
+		19 = { "%dème Div. Légère de Cavalerie" }
+		20 = { "%dème Div. Légère de Cavalerie" }
+	}
+}
+
+
+XFR_MOT_01 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%dème Div. d'Infanterie Motorisée"
+
+	ordered =
+	{
+		1 = { "%dère Div. d'Infanterie Motorisée" }
+		2 = { "%dème Div. d'Infanterie Motorisée" }
+		3 = { "%dème Div. d'Infanterie Motorisée" }
+		4 = { "%dème Div. d'Infanterie Motorisée" }
+		5 = { "%dème Div. d'Infanterie Motorisée" }
+		6 = { "%dème Div. d'Infanterie Motorisée" }
+		7 = { "%dème Div. d'Infanterie Motorisée" }
+		8 = { "%dème Div. d'Infanterie Motorisée" }
+		9 = { "%dème Div. d'Infanterie Motorisée" }
+		10 = { "%dème Div. d'Infanterie Motorisée" }
+	}
+}
+
+XFR_MEC_01 = 
+{
+	name = "Light Mechanized Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "mechanized" }
+
+
+	fallback_name = "%dème Division Légère Mécanique"
+
+	ordered =
+	{
+		1 = { "%dère Division Légère Mécanique" }
+		2 = { "%dème Division Légère Mécanique" }
+		3 = { "%dème Division Légère Mécanique" }
+		4 = { "%dème Division Légère Mécanique" }
+		7 = { "%dème Division Légère Mécanique" }
+		5 = { "%dème Division Légère Mécanique" }
+		6 = { "%dème Division Légère Mécanique" }
+		8 = { "%dème Division Légère Mécanique" }
+		9 = { "%dème Division Légère Mécanique" }
+		10 = { "%dème Division Légère Mécanique" }
+		11 = { "%dème Division Légère Mécanique" }
+		12 = { "%dème Division Légère Mécanique" }
+		13 = { "%dème Division Légère Mécanique" }
+		14 = { "%dème Division Légère Mécanique" }
+		15 = { "%dème Division Légère Mécanique" }
+		16 = { "%dème Division Légère Mécanique" }
+		17 = { "%dème Division Légère Mécanique" }
+		18 = { "%dème Division Légère Mécanique" }
+		19 = { "%dème Division Légère Mécanique" }
+		20 = { "%dème Division Légère Mécanique" }
+	}
+}
+
+XFR_ARM_01 = 
+{
+	name = "Armored Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+
+	fallback_name = "%dème Division Cuirassée"
+
+	ordered =
+	{
+		1 = { "%dère Division Cuirassée" }
+		2 = { "%dème Division Cuirassée" }
+		3 = { "%dème Division Cuirassée" }
+		4 = { "%dème Division Cuirassée" }
+		5 = { "%dème Division Cuirassée" }
+		6 = { "%dème Division Cuirassée" }
+		7 = { "%dème Division Cuirassée" }
+		8 = { "%dème Division Cuirassée" }
+		9 = { "%dème Division Cuirassée" }
+		10 = { "%dème Division Cuirassée" }
+		11 = { "%dème Division Cuirassée" }
+		12 = { "%dème Division Cuirassée" }
+		13 = { "%dème Division Cuirassée" }
+		14 = { "%dème Division Cuirassée" }
+		15 = { "%dème Division Cuirassée" }
+		16 = { "%dème Division Cuirassée" }
+		17 = { "%dème Division Cuirassée" }
+		18 = { "%dème Division Cuirassée" }
+		19 = { "%dème Division Cuirassée" }
+		20 = { "%dème Division Cuirassée" }
+	}
+}
+
+XFR_ARM_02 = 
+{
+	name = "Tank Brigade"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%dème Brigade Cuirassée"
+
+	ordered =
+	{
+		1 = { "%dère Brigade Cuirassée" }
+		2 = { "%dème Brigade Cuirassée" }
+		3 = { "%dème Brigade Cuirassée" }
+		4 = { "%dème Brigade Cuirassée" }
+		5 = { "%dème Brigade Cuirassée" }
+		6 = { "%dème Brigade Cuirassée" }
+		7 = { "%dème Brigade Cuirassée" }
+		8 = { "%dème Brigade Cuirassée" }
+		9 = { "%dème Brigade Cuirassée" }
+		10 = { "%dème Brigade Cuirassée" }
+		11 = { "%dème Brigade Cuirassée" }
+		12 = { "%dème Brigade Cuirassée" }
+		13 = { "%dème Brigade Cuirassée" }
+		14 = { "%dème Brigade Cuirassée" }
+		15 = { "%dème Brigade Cuirassée" }
+		16 = { "%dème Brigade Cuirassée" }
+		17 = { "%dème Brigade Cuirassée" }
+		18 = { "%dème Brigade Cuirassée" }
+		19 = { "%dème Brigade Cuirassée" }
+		20 = { "%dème Brigade Cuirassée" }
+	}
+}
+
+XFR_PAR_01 = 
+{
+	name = "Paratrooper Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	fallback_name = "%dème Division Parachutiste"
+
+	ordered =
+	{
+		1 = { "%dère Division Parachutiste" }
+		2 = { "%dème Division Parachutiste" }
+		3 = { "%dème Division Parachutiste" }
+		4 = { "%dème Division Parachutiste" }
+		5 = { "%dème Division Parachutiste" }
+		6 = { "%dème Division Parachutiste" }
+		7 = { "%dème Division Parachutiste" }
+		8 = { "%dème Division Parachutiste" }
+		9 = { "%dème Division Parachutiste" }
+		10 = { "%dème Division Parachutiste" }
+	}
+}
+
+XFR_MAR_01 = 
+{
+	name = "Marine Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	fallback_name = "%dème Div. d'Infanterie de Marine"
+
+	ordered =
+	{
+		1 = { "%dère Div. d'Infanterie de Marine" }
+		2 = { "%dème Div. d'Infanterie de Marine" }
+		3 = { "%dème Div. d'Infanterie de Marine" }
+		4 = { "%dème Div. d'Infanterie de Marine" }
+		5 = { "%dème Div. d'Infanterie de Marine" }
+		6 = { "%dème Div. d'Infanterie de Marine" }
+		7 = { "%dème Div. d'Infanterie de Marine" }
+		8 = { "%dème Div. d'Infanterie de Marine" }
+		9 = { "%dème Div. d'Infanterie de Marine" }
+		10 = { "%dème Div. d'Infanterie de Marine" }
+		11 = { "%dème Div. d'Infanterie de Marine" }
+		12 = { "%dème Div. d'Infanterie de Marine" }
+		13 = { "%dème Div. d'Infanterie de Marine" }
+		14 = { "%dème Div. d'Infanterie de Marine" }
+		15 = { "%dème Div. d'Infanterie de Marine" }
+		16 = { "%dème Div. d'Infanterie de Marine" }
+		17 = { "%dème Div. d'Infanterie de Marine" }
+		18 = { "%dème Div. d'Infanterie de Marine" }
+		19 = { "%dème Div. d'Infanterie de Marine" }
+		20 = { "%dème Div. d'Infanterie de Marine" }
+	}
+}
+
+XFR_MNT_01 = 
+{
+	name = "Mountain Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	fallback_name = "%dème Division d'Infanterie Alpine"
+	ordered =
+	{
+		1 = { "%dème Division d'Infanterie Alpine" }
+		2 = { "%dème Division d'Infanterie Alpine" }
+		3 = { "%dème Division d'Infanterie Alpine" }
+		4 = { "%dème Division d'Infanterie Alpine" }
+		5 = { "%dème Division d'Infanterie Alpine" }
+		6 = { "%dème Division d'Infanterie Alpine" }
+		7 = { "%dème Division d'Infanterie Alpine" }
+		8 = { "%dème Division d'Infanterie Alpine" }		# fictional divisions start here
+		9 = { "%dème Division d'Infanterie Alpine" }
+		10 = { "%dème Division d'Infanterie Alpine" }
+		11 = { "%dème Division d'Infanterie Alpine" }
+		12 = { "%dème Division d'Infanterie Alpine" }
+		13 = { "%dème Division d'Infanterie Alpine" }
+		14 = { "%dème Division d'Infanterie Alpine" }
+		15 = { "%dème Division d'Infanterie Alpine" }
+		16 = { "%dème Division d'Infanterie Alpine" }
+		17 = { "%dème Division d'Infanterie Alpine" }
+		18 = { "%dème Division d'Infanterie Alpine" }
+		19 = { "%dème Division d'Infanterie Alpine" }
+		20 = { "%dème Division d'Infanterie Alpine" }
+	}
+}
+
+XFR_GAR_01 = 
+{
+	name = "Garrison Division"
+
+	for_countries = { XFR XAL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%dème Division de Forteresse"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dère Div. d'Inf. de Forteresse" }
+		2 = { "%dème Div. d'Inf. de Forteresse" }
+		3 = { "%dème Div. d'Inf. de Forteresse" }
+		4 = { "%dème Div. d'Inf. de Forteresse" }
+		5 = { "%dème Div. d'Inf. de Forteresse" }
+		6 = { "%dème Div. d'Inf. de Forteresse" }
+		7 = { "%dème Div. d'Inf. de Forteresse" }
+		8 = { "%dème Div. d'Inf. de Forteresse" }
+		9 = { "%dème Div. d'Inf. de Forteresse" }
+		10 = { "%dème Div. d'Inf. de Forteresse" }
+		11 = { "%dème Div. d'Inf. de Forteresse" }
+		12 = { "%dème Div. d'Inf. de Forteresse" }
+		13 = { "%dème Div. d'Inf. de Forteresse" }
+		14 = { "%dème Div. d'Inf. de Forteresse" }
+		15 = { "%dème Div. d'Inf. de Forteresse" }
+		16 = { "%dème Div. d'Inf. de Forteresse" }
+		17 = { "%dème Div. d'Inf. de Forteresse" }
+		18 = { "%dème Div. d'Inf. de Forteresse" }
+		19 = { "%dème Div. d'Inf. de Forteresse" }
+		20 = { "%dème Div. d'Inf. de Forteresse" }
+	}
+}

@@ -1,6 +1,9 @@
 capital = 975
+oob = "XFR"
 
 set_research_slots = 3
+
+starting_train_buffer = 3
 
 set_technology = {
 	infantry_weapons = 1
