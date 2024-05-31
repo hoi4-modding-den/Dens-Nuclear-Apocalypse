@@ -540,5 +540,60 @@ ideas = {
             }
         }
 
+        XSS_freikorps = {
+           removal_cost = -1
+            picture = general_staff
+            modifier = {
+            army_core_attack_factor = 0.15
+            army_core_defence_factor = 0.3
+            experience_gain_army = 0.5
+            }
+        }
+
+        XSS_schwyz_offensive = {
+           removal_cost = -1
+            picture = SWI_spirit_of_helvetia_aggressive_war
+            modifier = {
+            
+            }
+                targeted_modifier = {
+                tag = XRM
+                 attack_bonus_against = 0.15
+                }
+        }
+        XSS_schwyz_defeat = {
+           removal_cost = -1
+            picture = prc_the_long_march2
+            modifier = {
+            
+            }
+                targeted_modifier = {
+                tag = XSS
+                defense_bonus_against = -0.25
+                }
+        }
+        XSS_summer_offensive = {
+           removal_cost = -1
+            picture = NOR_anti_communist_sentiment
+            modifier = {
+            
+            }
+                targeted_modifier = {
+                tag = XRA
+                attack_bonus_against = 0.15
+                }
+        }
+
+        XSS_freikorps_2 = {
+           removal_cost = -1
+            picture = general_staff
+            modifier = {
+            army_core_attack_factor = 0.20
+            army_core_defence_factor = 0.35
+            experience_gain_army = 0.5
+            }
+        }
+
+
     }
 }

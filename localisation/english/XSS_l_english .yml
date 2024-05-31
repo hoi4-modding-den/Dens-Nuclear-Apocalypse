@@ -1085,3 +1085,48 @@ XSS_test_event.33.t:0 "Monarchist Plot"
 XSS_test_event.33.desc:0 "Today Monarchists led by Paul Robisch have made a sudden attack on National Assembly. They have captured it before Nazi Victory March has finished. Brave Freikorps have defended gates of Bern from Nazis and have killed Niemir Eggli (Head of NSS). Shattered NSS has surrendered while Green army escpaed to Chur. After This Victory Rote Armee opposing Monarchist rule decided to launch a coup starting in Sion."
 XSS_test_event.33.a:0 "To arms brothers"
 
+XSS_freikorps:0 "Freikorps"
+XSS_freikorps_desc:0 "Free Corps or Freikorps in German, is an organized army made of nationalists, monarchists and old veterans."
+
+XSS_freikorps_drill:0 "Freikorps Drill"
+XSS_freikorps_drill_desc:0 "Our new mobilized Freikorps will drill our regular army to help them fight in our little civil war."
+
+XSS_develop_zurich_defence:0 "Mobilize Zurich"
+XSS_develop_zurich_defence_desc:0 "Zurich is our main frontal city in war against romansh. We must hastely mobilize it's citizens and fortify it!"
+
+XSS_develop_bern_defence:0 "Mobilize Bern"
+XSS_develop_bern_defence_desc:0 "Heart of Switzerland will be defended at all cost against traitorous Rote Armee."
+
+
+XSS_schwyz_offensive:0 "Schwyz offensive"
+XSS_schwyz_offensive_desc:0 "We have taken Schwyz the capital of Romansh revolt."
+
+XSS_schwyz_defeat:0 "Schwyz defeat"
+XSS_schwyz_defeat_desc:0 "We have been crushed at Schwyz. We must retreat deeper."
+
+XSS_schwyz_victory:0 "Schwyz Victory"
+XSS_schwyz_victory_desc:0 "We have taken over Schwyz the capital of Romash revolt. We have destroyed their stockpiles and drove them away."
+
+XSS_eliminate_RA:0 "Summer offensive"
+XSS_eliminate_RA_desc:0 "We can launch offensive on Sion."
+
+XSS_summer_offensive:0 "Summer offensive"
+XSS_summer_offensive_desc:0 "For Fatherland Brothers!"
+
+XSS_push_romansh_past_tirol:0 "Chase Romansh past Tyrol"
+XSS_push_romansh_past_tirol_desc:0 "Romansh combatants are escaping to Neutral Tirol. We must catch them and eliminate this weak breed of people once and for all."
+
+XSS_test_event.34.t:0 "Swiss civil war spreads to Tirol"
+XSS_test_event.34.desc:0 "Escaping Romansh fighters from green army tried escaping Freikorps to neutral Tirol. Their efforts proved futile as Swiss army started passing trough tirolean border this morning."
+XSS_test_event.34.a:0 "May this war end quickly"
+
+XSS_end_of_civil_war:0 "Post-war Stability"
+XSS_end_of_civil_war_desc:0 "The civil war is over. There might be some fighting here and there but guns went mostly silent."
+
+XSS_freikorps_2:0 "Freikorps"
+XSS_freikorps_2_desc:0 "Free Corps or Freikorps in German, is an organized army made of nationalists, monarchists and old veterans."
+
+XSS_rule_of_regent:0 "Rule of regent"
+XSS_rule_of_regent_desc:0 "War with Tirol has made it impossible to search for a king. Maybe Paul can lead the nation for longer? "
+
+
