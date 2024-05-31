@@ -1780,6 +1780,331 @@
 			country_event = XTI.6
 		}
 	}
-	
+	focus = {
+		id = XTI_every_man_a_soldier
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_karls_speech }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_karls_speech
 
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}
+	focus = {
+		id = XTI_royal_armories
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_every_man_a_soldier }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = -1
+		y = 1
+		relative_position_id = XTI_every_man_a_soldier
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			4 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_manpower = 10000
+			}
+		}
+	}
+	focus = {
+		id = XTI_raid_abandoned_armories
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_every_man_a_soldier }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 1
+		y = 1
+		relative_position_id = XTI_every_man_a_soldier
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = XTI
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2500
+				producer = XTI
+			}
+		}
+	}
+	focus = {
+		id = XTI_begin_the_march
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_royal_armories }
+		prerequisite = { focus = XTI_raid_abandoned_armories }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 1
+		y = 1
+		relative_position_id = XTI_royal_armories
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_the_great_march
+		}
+	}
+	focus = {
+		id = XTI_take_out_robots
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_begin_the_march }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = -1
+		y = 1
+		relative_position_id = XTI_begin_the_march
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XOO
+			}
+		}
+	}
+	focus = {
+		id = XTI_hitler_larper
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_begin_the_march }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 1
+		y = 1
+		relative_position_id = XTI_begin_the_march
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XLH
+			}
+		}
+	}
+	focus = {
+		id = XTI_consolidate_bavaria
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_take_out_robots }
+		prerequisite = { focus = XTI_hitler_larper }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 1
+		y = 1
+		relative_position_id = XTI_take_out_robots
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 848
+			owns_state = 50
+			owns_state = 52
+			owns_state = 53
+			owns_state = 54
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_state_core = 848
+			add_state_core = 50
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 54
+		}
+	}
+	focus = {
+		id = XTI_strongarm_alps
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_consolidate_bavaria }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = -4
+		y = 1
+		relative_position_id = XTI_consolidate_bavaria
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					region = 21
+				}
+				add_claim_by = XTI
+			}
+		}
+	}
+	
 }

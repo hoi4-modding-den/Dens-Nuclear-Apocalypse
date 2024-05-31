@@ -168,5 +168,24 @@ ideas = {
 				political_power_factor = -0.5
 			}
 		}
+		XTI_the_great_march = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
 	}
 }	

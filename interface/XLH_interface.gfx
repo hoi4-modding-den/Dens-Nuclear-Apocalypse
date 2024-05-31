@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	### PEOPLE ###
+	spriteType = {
+		name = "GFX_portrait_XLH_LH"
+		texturefile = "gfx/XLH/XLH_hitler_larper.dds"
+	}
+}

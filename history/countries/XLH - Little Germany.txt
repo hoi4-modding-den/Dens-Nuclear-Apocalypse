@@ -1,0 +1,31 @@
+capital = 53
+
+#oob = "XTI_1936"
+
+#set_war_support = 0.1
+#set_stability = 0.8
+#set_convoys = 5
+
+create_country_leader = {
+	name = "Hitler Cosplayer"
+	desc = XLH_hitler_larper_desc
+	picture = GFX_portrait_XLH_LH
+	expire = "2276.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2000.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 100
+	neutrality = 0
+}
+

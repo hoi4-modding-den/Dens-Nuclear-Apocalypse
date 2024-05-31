@@ -148,3 +148,7 @@ XOO = {
 	color = rgb { 50 50 50 }
 	color_ui = rgb { 50 50 50 }
 }
+XLH = {
+	color = rgb { 99 75 58 }
+	color_ui = rgb { 99 75 58 }
+}

@@ -7,11 +7,11 @@ manpower=968910
 	state_category = city
 
 	history={
-		owner = LIB # GER
+		owner = XLH # GER
 		buildings = {
 			infrastructure = 3
 		}
-		#add_core_of = GER
+		add_core_of = XLH
 		victory_points = {
 			9515 3
 		}
