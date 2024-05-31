@@ -1,8 +1,47 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_pie_chart_segment"
+		texturefile = "gfx/XNF/pie_chart_segment.dds"
+		noOfFrames = 4 # change to how many frames you have, index starts at 1
+	}
+
+	spriteType = {
+		name = "XNF_gui_bg"
+		legacy_lazy_load = no
+		texturefile = "gfx/XNF/xnf_gov_bg.dds"
+	}
 
 	spriteType = {
 		name = "GFX_napoleon_xnf"
 		texturefile = "gfx/leaders/XNF/xnf_napoleon.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_senate_bar"
+		textureFile1 = "gfx/XNF/Gov_good.dds"
+		textureFile2 = "gfx/XNF/Gov_bad.dds"
+		color = { 255 0 0 }
+		colortwo = { 0 255 0 }
+		size = { 
+			x = 25
+			y = 200
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+
+	progressbartype = {
+		name = "GFX_leg_bar"
+		textureFile1 = "gfx/XNF/Gov_good.dds"
+		textureFile2 = "gfx/XNF/Gov_bad.dds"
+		color = { 255 0 0 }
+		colortwo = { 0 255 0 }
+		size = { 
+			x = 25
+			y = 200
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
 	}
 
 }

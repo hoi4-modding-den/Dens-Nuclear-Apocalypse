@@ -1,0 +1,31 @@
+characters = {
+
+	XFR_parliament = {
+		name = "Burgundian Parliament"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_parliament"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "3000.1.1"
+		}
+	}
+
+	XFR_anarchists = {
+		name = "Anarchists"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SPR_anarchist_commune"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			traits = {  }
+			expire = "3000.1.1"
+		}
+	}
+
+}

@@ -421,6 +421,587 @@ news_event = {
 
 }
 
+################# Anschluss ##################
+country_event = {
+    id = XSS_test_event.18
+    title = XSS_test_event.18.t
+    picture = GFX_report_event_crowd_in_prague
+    desc = XSS_test_event.18.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.18.a
+        XSS = { 
+annex_country = {
+    target = XTI
+    transfer_troops = yes
+}
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.18.b
+        XSS = {
+			create_wargoal = {
+				type = annex_everything
+				target = XTI
+			}
+        }
+        
+    }
+}
+
+################# Germania dokonana ######################
+
+news_event = {
+    id = XSS_test_event.19
+    title = XSS_test_event.19.t
+    picture = GFX_news_event_herman_goring
+    desc = XSS_test_event.19.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.19.a
+        add_ideas = {XSS_triumph}
+        set_cosmetic_tag = XSS_germania_nation
+
+        848 = {
+
+            add_core_of = XSS
+
+        }
+        50 = {
+
+            add_core_of = XSS
+
+        }
+        28 = {
+
+            add_core_of = XSS
+
+        }
+        52 = {
+
+            add_core_of = XSS
+
+        }
+        53 = {
+
+            add_core_of = XSS
+
+        }
+        54 = {
+
+            add_core_of = XSS
+
+        }
+        55 = {
+
+            add_core_of = XSS
+
+        }
+        42 = {
+
+            add_core_of = XSS
+
+        }
+        51 = {
+
+            add_core_of = XSS
+
+        }
+        60 = {
+
+            add_core_of = XSS
+
+        }
+        65 = {
+
+            add_core_of = XSS
+
+        }
+        64 = {
+
+            add_core_of = XSS
+
+        }
+        59 = {
+
+            add_core_of = XSS
+
+        }
+        57 = {
+
+            add_core_of = XSS
+
+        }
+        56 = {
+
+            add_core_of = XSS
+
+        }
+        61 = {
+
+            add_core_of = XSS
+
+        }
+        62 = {
+
+            add_core_of = XSS
+
+        }
+        58 = {
+
+            add_core_of = XSS
+
+        }
+        909 = {
+
+            add_core_of = XSS
+
+        }
+set_capital = {
+  state = 64
+  remember_old_capital = no
+}
+
+    }
+
+}
+
+news_event = {
+    id = XSS_test_event.20
+    title = XSS_test_event.20.t
+    picture = GFX_news_event_herman_goring
+    desc = XSS_test_event.20.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+
+    
+    option = {
+        name = XSS_test_event.20.a
+
+    }
+
+}
+
+###################### commie path ##############################
+
+news_event = {
+    id = XSS_test_event.21
+    title = XSS_test_event.21.t
+    picture = GFX_news_event_spr_spanish_civil_war2
+    desc = XSS_test_event.21.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.21.a
+
+        set_party_name = {
+        ideology = fascism
+        long_name = "Nationale Arbeiterpartei"
+        name = "NAP"
+            }
+        add_popularity = {
+        ideology = fascism
+        popularity = -0.05
+                }
+        add_popularity = {
+        ideology = communism
+        popularity = 0.3
+                }
+        151 = {
+            transfer_state_to = XRM
+        }
+        846 = {transfer_state_to = XRM}
+        XRM = {
+        declare_war_on = {
+        target = XSS
+        type = annex_everything
+            }
+
+        }
+
+        add_ideas = {XSS_army_chaos}
+        
+        
+        hidden_effect = { XRM = { load_oob = "XRM"}}
+
+        kill_ideology_leader = fascism
+
+    }
+
+}
+
+
+################## Swiss Struggle ######################
+
+news_event = {
+    id = XSS_test_event.22
+    title = XSS_test_event.22.t
+    picture = GFX_news_event_023
+    desc = XSS_test_event.22.desc
+    
+    
+    is_triggered_only = yes
+
+
+    
+    option = {
+        name = XSS_test_event.22.a
+
+    }
+
+}
+
+news_event = {
+    id = XSS_test_event.23
+    title = XSS_test_event.23.t
+    picture = GFX_news_event_fascist_gathering
+    desc = XSS_test_event.23.desc
+    
+    
+    is_triggered_only = yes
+
+
+    
+    option = {
+        name = XSS_test_event.23.a
+
+    }
+
+}
+
+############## End of Swiss Struggle ###################
+### RA ########
+news_event = {
+    id = XSS_test_event.24
+    title = XSS_test_event.24.t
+    picture = GFX_news_event_064
+    desc = XSS_test_event.24.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+
+    
+    option = {
+        name = XSS_test_event.24.a
+
+    }
+
+}
+####### KP ########
+news_event = {
+    id = XSS_test_event.25
+    title = XSS_test_event.25.t
+    picture = GFX_news_event_009
+    desc = XSS_test_event.25.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+
+    
+    option = {
+        name = XSS_test_event.25.a
+
+    }
+
+}
+
+#############################################
+country_event = {
+    id = XSS_test_event.26
+    title = XSS_test_event.26.t
+    picture = GFX_report_event_stalin_01
+    desc = XSS_test_event.26.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.26.a
+        add_ideas = {XSS_cominform}
+        XSS = { add_to_faction = ROOT }
+
+        
+    }
+    option = {
+        name = XSS_test_event.26.b
+
+        
+    }
+}
+########## Tyrol za ticino ##########
+country_event = {
+    id = XSS_test_event.27
+    title = XSS_test_event.27.t
+    picture = GFX_report_event_stalin_propaganda
+    desc = XSS_test_event.27.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.27.a
+    XSS = {transfer_state = 850}
+    XLV = { transfer_state = 846}
+        
+    }
+    option = {
+        name = XSS_test_event.27.b
+
+        
+    }
+}
+
+################ Warcrimes in Spain ###############
+
+
+news_event = {
+    id = XSS_test_event.28
+    title = XSS_test_event.28.t
+    picture = GFX_news_event_chinese_soldiers_city_ruin
+    desc = XSS_test_event.28.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+
+    
+    option = {
+        name = XSS_test_event.28.a
+
+    }
+
+}
+
+################# S.E.U #############################
+
+country_event = {
+    id = XSS_test_event.29
+    title = XSS_test_event.29.t
+    picture = GFX_report_event_tur_politician_march
+    desc = XSS_test_event.29.desc
+    
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XSS_test_event.29.a
+        trigger = {
+            NOT = {tag = LIB tag = XSS}
+            }
+    add_ideas = {XSS_SEU}
+        
+    }
+    option = {
+        name = XSS_test_event.29.b
+        trigger = {
+            NOT = {tag = LIB}
+
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.29.c
+        trigger = {
+            tag = LIB
+        }
+    }
+
+    
+}
+
+##################### XSS_negotiation_with_bohr ############################
+
+
+news_event = {
+    id = XSS_test_event.30
+    title = XSS_test_event.30.t
+    picture = GFX_news_event_FIN_camouflaged_white_death
+    desc = XSS_test_event.30.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.30.a
+    swap_ideas = {
+        add_idea = XSS_romash_partisans_strong
+        remove_idea = XSS_romash_partisans
+    }
+
+    }
+
+}
+
+news_event = {
+    id = XSS_test_event.31
+    title = XSS_test_event.31.t
+    picture = GFX_news_event_ast_army
+    desc = XSS_test_event.31.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.31.a
+
+    846 = {add_core_of = XRM set_demilitarized_zone = yes}
+    847 = {add_core_of = XRM set_demilitarized_zone = yes}
+    151 = {set_demilitarized_zone = yes}
+    swap_ideas = {
+        add_idea = XSS_romash_partisans_light
+        remove_idea = XSS_romash_partisans_strong
+    }
+
+    }
+
+}
+
+###################### 2nd romansh war ######################
+
+news_event = {
+    id = XSS_test_event.32
+    title = XSS_test_event.32.t
+    picture = GFX_news_event_ast_army
+    desc = XSS_test_event.32.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+    name = XSS_test_event.32.a
+        trigger = {
+            XSS = {has_completed_focus = XSS_finish_off_NSS}
+
+        }
+
+    846 = { set_demilitarized_zone = no}
+    847 = { set_demilitarized_zone = no}
+    151 = {set_demilitarized_zone = no}
+    XRM = {
+    transfer_state = 846 
+    transfer_state = 847 
+    transfer_state = 151
+    hidden_effect = { load_oob = "GreenArmy" }
+    }
+
+    remove_ideas = {XSS_romash_partisans_light}
+        XRM = {
+        declare_war_on = {
+        target = XSS
+        type = annex_everything
+            }
+
+        }
+
+    }
+    option = {
+    name = XSS_test_event.32.b
+        trigger = {
+            NOT = {has_completed_focus = XSS_finish_off_NSS}
+
+        }
+
+    846 = { set_demilitarized_zone = no}
+    847 = { set_demilitarized_zone = no}
+    151 = {set_demilitarized_zone = no}
+    XRM = {
+    transfer_state = 846 
+    transfer_state = 847 
+    transfer_state = 151
+    hidden_effect = { load_oob = "GreenArmy" }
+    hidden_effect = { load_oob = "XSSSS" }
+    }
+
+    remove_ideas = {XSS_romash_partisans_light}
+    remove_ideas = {XSS_NSS_opposition}
+        XRM = {
+        declare_war_on = {
+        target = XSS
+        type = annex_everything
+            }
+
+        }
+
+    }
+
+}
+
+####################### Civil war Helvetica ##############################
+
+news_event = {
+    id = XSS_test_event.33
+    title = XSS_test_event.33.t
+    picture = GFX_news_event_FIN_camouflaged_white_death
+    desc = XSS_test_event.33.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.33.a
+############ Do eventa #################
+add_ideas = {XSS_army_chaos}
+retire_character = XSS_engelberg
+retire_character = XSS_niemir_eggli
+847 = {transfer_state_to = XRA}
+XRA = {    hidden_effect = { load_oob = "RoteArmee_civilwar" }
+ add_ideas = {XSS_army_chaos}
+}
+151 = {transfer_state_to = XRM}
+846 = {transfer_state_to = XRM}
+XRM = {    hidden_effect = { load_oob = "GreenArmy" }
+       declare_war_on = {
+       target = XRA
+        type = annex_everything
+            }  
+}
+        set_party_name = {
+        ideology = communism
+        long_name = "Kommunistische Partei/Schweizerische Sozialisten und Arbeitergewerkschaft"
+        name = "KP/SSA"
+            }
+       declare_war_on = {
+       target = XRA
+        type = annex_everything
+            }  
+       declare_war_on = {
+       target = XRM
+        type = annex_everything
+            }  
+XRA = {
+       declare_war_on = {
+       target = XRM
+        type = annex_everything
+            } 
+}
+
+########################################
+
+    }
+
+}
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

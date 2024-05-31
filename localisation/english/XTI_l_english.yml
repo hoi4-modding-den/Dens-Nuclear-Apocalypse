@@ -39,6 +39,42 @@
  ALP_CONF_subject:0 "$OVERLORDADJ$ $ALP_CONF$"
  ALP_CONF_subject_DEF:0 "$OVERLORDADJ$ $ALP_CONF$"
 
+ AUS_fascism:0 "Deutschsozialen Austria"
+ AUS_fascism_DEF:0 "Deutschsozialen Austria"
+ AUS_democratic:0 "Republic of Austria"
+ AUS_democratic_DEF:0 "the Republic of Austria"
+ AUS_neutrality:0 "Austrian Interim Government"
+ AUS_neutrality_DEF:0 "Austrian Interim Government"
+ AUS_communism:0 "People's Republic of Austria"
+ AUS_communism_DEF:0 "the People's Republic of Austria"
+ AUS_fascism_ADJ:0 "Austrian"
+ AUS_democratic_ADJ:0 "Austrian"
+ AUS_neutrality_ADJ:0 "Austrian"
+ AUS_communism_ADJ:0 "Austrian"
+ AUS:0 "Austria"
+ AUS_DEF:0 "Austria"
+ AUS_ADJ:0 "Austrian"
+ AUS_subject:0 "$OVERLORDADJ$ $AUS$"
+ AUS_subject_DEF:0 "$OVERLORDADJ$ $AUS$"
+ 
+ AUS_ROY_fascism:0 "Deutschsozialen Austria"
+ AUS_ROY_fascism_DEF:0 "Deutschsozialen Austria"
+ AUS_ROY_democratic:0 "Republic of Austria"
+ AUS_ROY_democratic_DEF:0 "the Republic of Austria"
+ AUS_ROY_neutrality:0 "Archduchy of Austria"
+ AUS_ROY_neutrality_DEF:0 "The Archduchy of Austria"
+ AUS_ROY_communism:0 "People's Republic of Austria"
+ AUS_ROY_communism_DEF:0 "the People's Republic of Austria"
+ AUS_ROY_fascism_ADJ:0 "Austrian"
+ AUS_ROY_democratic_ADJ:0 "Austrian"
+ AUS_ROY_neutrality_ADJ:0 "Austrian"
+ AUS_ROY_communism_ADJ:0 "Austrian"
+ AUS_ROY:0 "Austria"
+ AUS_ROY_DEF:0 "Austria"
+ AUS_ROY_ADJ:0 "Austrian"
+ AUS_ROY_subject:0 "$OVERLORDADJ$ $AUS_ROY$"
+ AUS_ROY_subject_DEF:0 "$OVERLORDADJ$ $AUS_ROY$"
+
  XTI_communism_party:0 "KPT"
  XTI_communism_party_long:0 "Kommunistische Partei Tirols"
 
@@ -61,6 +97,8 @@
  
  ### IDEAS ###
  
+ XTI_late_emergers:0 "Late Emergers"
+ XTI_late_emergers_desc:0 "Many nations have already resurfaced since the fall of the bombs. As it turns out, we miscalculated the time the surface would take to be safe again. Our lack of contact with Vienna might have something to do with it."
  XTI_new_identity:0 "New Identity"
  XTI_new_identity_desc:0 "The only way going forward is to embrace our new culture. We have more in common with the people in the Alps than we do with the rest of Austria."
  XTI_reconstruction:0 "Reconstruction"
@@ -69,6 +107,11 @@
  XTI_industrial_rejuvenation_desc:0 "Using what remains of our city, we can refit and revitalize downtown. This process can then be replicated across the country."
  XTI_aggressive_doctrine:0 "Aggressive Foreign Policy"
  XTI_aggressive_doctrine_desc:0 "Offense is the best defense. This strategy is tried and true, but our neighbors may not be welcome to this mindset."
+ XTI_reclamation_recruitment:0 "Reclamation Recruitment"
+ XTI_reclamation_supplies:0 "Reclamation Supplies"
+ XTI_national_pride:0 "National Pride"
+ XTI_national_pride_desc:0 "We have a long history of resiliance and success. The war was simply a setback."
+ 
  
  ### FOCUSES ###
  
@@ -137,6 +180,42 @@
  XTI_autocratic_state:0 "Age of the Autocrats"
  XTI_autocratic_state_desc:0 "Now the opportunity has arrived to seize power. If we tighten our hold on the state, we can amass a large quantity of wealth for generations."
  
+ XTI_the_reclamationists:0 "The Reclamationists"
+ XTI_the_reclamationists_desc:0 "Now that it is confirmed that Vienna has been destroyed, it is our job to rebuild. If we don't reclaim Austria, who will?"
+ XTI_recruit_colonists:0 "Recruit Colonists"
+ XTI_recruit_colonists_desc:0 "It takes many people to rebuild a society. This will dip into our manpower reserves."
+ XTI_prepare_supplies:0 "Prepare Supplies"
+ XTI_prepare_supplies_desc:0 "It will be expensive to recolonize the rest of the country. Some of our factories will have to be dedicated to this project."
+ XTI_reclaim_upper_austria:0 "Reclaim Upper Austria"
+ XTI_reclaim_upper_austria_desc:0 "Upper Austria, although not as devistated as the former capital, still suffered severely from the bombs dropping. Most have died of radiation poisoning and famine. We should establish control before someone else does."
+ XTI_reclaim_lower_austria:0 "Reclaim Lower Austria"
+ XTI_reclaim_lower_austria_desc:0 "It is our job to reestablish Austria. It is necessary for any legitimate Austrian successor to hold Vienna. If not, who are we?"
+ 
+ XTI_declare_new_austria:0 "Declare a New Austria"
+ XTI_declare_new_austria_desc:0 "Now that we hold most former Austrian lands, it is time to formalize what was already known."
+ XTI_fill_in_the_gaps:0 "Fill in the Gaps"
+ XTI_fill_in_the_gaps_desc:0 "Even with our new settlements, many places remain isolated. This is a significant overlook in our infrastructure."
+ XTI_rebuild_vienna:0 "Rebuild Vienna"
+ XTI_rebuild_vienna_desc:0 "Vienna is nothing but rubble. This shame shall not persist. It is time to rebuild from the ashes."
+ XTI_question_of_capital:0 "Question of Capital"
+ XTI_question_of_capital_desc:0 "Now that all of Austria is under our control, it is time to rethink where we should govern from."
+ XTI_prepare_elections:0 "Prepare Elections"
+ XTI_prepare_elections_desc:0 "Austria is in a stable position. The people should have their voice heard. It no longer makes sense to have emergency rule."
+ 
+ XTI_look_to_the_past:0 "Look to the Past"
+ XTI_look_to_the_past_desc:0 "The Republic of Austria was flawed. It had led to its own downfall and failed every Austrian. We must learn from the past and pivot to a more pure form of government."
+ XTI_glorify_forefathers:0 "Glorify Forefathers"
+ XTI_glorify_forefathers_desc:0 "Despite the mistakes of the past, there were many great men we should revere."
+ XTI_vienna_palace:0 "Schönbrunn Palace"
+ XTI_vienna_palace_desc:0 "The Schönbrunn Palace has significant cultural significance. It is better if we invest in restoring these historic sites for future generation."
+ XTI_declare_monarchy:0 "Declare Monarchy"
+ XTI_declare_monarchy_desc:0 "The war was god's divine punishment for man since they rejected his word. It is time to restore order with his right hand man."
+ XTI_habsburg_king:0 "Restore Habsburg Rule"
+ XTI_habsburg_king_desc:0 "Until the great war, Austria was the pride of central Europe. If anyone was to rule the nation, it would be the Habsburgs."
+ 
+ XTI_karls_speech:0 "Karl's Speech"
+ XTI_karls_speech_desc:0 "The nation is waiting. The king has been crowned. Now is the question: what next?"
+ 
  ### EVENTS ###
  
  XTI.1.t:0 "Silence From Vienna"
@@ -157,3 +236,13 @@
  XTI.4.a:0 "the Social Democrats"
  XTI.4.b:0 "the Christian Democrats"
  XTI.4.c:0 "the National Conservatives"
+ 
+ XTI.5.t:0 "Question of the Capital"
+ XTI.5.d:0 "Austria is a land of many people across large swaths of land. If we are to efficiently rule, we should ask where from. The cheapest and most convenient option is to stay in Innsbruck. It already has the infrastructure, even if it's somewhat isolated. Next is Salzburg. It has a very central location that is easy to rule from. This would naturally make it the most practical choice. Finally, we can move back to Vienna. This would reestablish legitimacy and bring prestige to the nation. Now that the choice is ours, where should the capital be?"
+ XTI.5.a:0 "We stay in Innsbruck."
+ XTI.5.b:0 "Salzburg is the most logical option."
+ XTI.5.c:0 "It is time to restore rule from Vienna!"
+ 
+ XTI.6.t:0 "Karl's Speech"
+ XTI.6.d:0 "Thousands amass at the new city plaza in Vienna. What was once nothing but rubble and roaches is now a bustling metropolis. Trumpets are blared and the crowd reduces to murmurs. Karl II walks up to the microphone.\n\n'Today is the day that we set our destiny. Once we our vision is clear our fate will be sealed. As the rightful heir of the Habsburgs, Archduke of Austria, Count of Tirol, Count of Styria, Baron of Innsbruck, Baron of ...'\n\nHe proceeded for the next few hours.\n\n'...and High Priest of the Austrian Catholic Church, I announce the beginning of the campaign to restore the Holy Roman Empire.'\n\nSeveral sporadic claps were heard.\n\n'Free food can also be found at the buffet by the exit.'\n\nThe crowd roared in a thunderous applause."
+ XTI.6.a:0 "For God and Glory!"

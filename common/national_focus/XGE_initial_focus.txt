@@ -1,0 +1,117 @@
+﻿focus_tree = {
+	id = XGE_initial
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XGE
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 0 y = 3000 }
+	
+	focus = {
+		id = XGE_begin_reconstruction
+		icon = GFX_goal_generic_construction2
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 11
+		y = 0
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			activate_mission = XGE_devastation_5to4
+			set_country_flag = XGE_5to4_flag
+		}
+	}
+	focus = {
+		id = XGE_industrial_redevelopment
+		icon = GFX_focus_DEN_limited_regulations
+		prerequisite = { focus = XGE_begin_reconstruction }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_begin_reconstruction
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XGE_decrease_devastation_time = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XGE_societal_rebirth
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_generic_workers
+		prerequisite = { focus = XGE_begin_reconstruction }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_begin_reconstruction
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#XGE_decrease_devastation_time = yes
+			add_to_variable = {
+				XGE_cc_pp_factor = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_research_speed_variable = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_stability_factor_variable = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_war_support_factor_variable = 0.02
+			}
+			custom_effect_tooltip = XGE_buff_computer_clique
+		}
+	}
+
+}

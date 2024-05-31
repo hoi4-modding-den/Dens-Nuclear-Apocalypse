@@ -1,9 +1,65 @@
 ﻿l_english:
- XNF: "Neo-Napoleonic France"
+
+# COUNTRY
+
+ XNF: "Neo-Napoleonic Legion"
  XNF_DEF: "the Neo-Napoleonic French Empire"
  XNF_ADJ: "French"
+
+ XFW: "French Wasteland"
+ XFW_DEF: "the French Wasteland"
+ XFW_ADJ: "French"
 
  XNF_fascism_party: "Ultranationalists"
  XNF_communism_party: "Revolutionaries"
  XNF_democratic_party: "Republicans"
  XNF_neutrality_party: "Loyalists"
+
+# DECISIONS
+
+ XNF_loyalist_royalty_cat: "Government of the Napoleonic Legion"
+ XNF_build_palace_here: "Build Palace in [FROM.GetCapitalVictoryPointName]"
+ XNF_move_capital: "Move Capital to [FROM.GetCapitalVictoryPointName]"
+ XNF_core_state: "Core [FROM.GetName]"
+ XNF_build_up_vp: "Build up [FROM.GetCapitalVictoryPointName]"
+ XNF_spread_monarchy_support: "Spread Monarchist Support in [FROM.GetName]"
+ vp_larger_5: "Largest Victory Point More than 5"
+ add_2_vp: "Add 2 Victory Points to [FROM.GetCapitalVictoryPointName]"
+ add_5_vp: "Add 5 Victory Points to [FROM.GetCapitalVictoryPointName]"
+ vp_larger_14: "Has a Victory Point of 15 or More"
+
+ # GOV GUI
+  XNF_happiness: "Ultranationalist Happiness: [IsNationalistsHappy]\nLoyalist Happiness: [IsLoyalistsHappy]\nRepublican Happiness: [IsRepublicansHappy]\nRevolutionary Happiness: [IsRadicalsHappy]"
+  XNF_yay_sen: "[?xnf_sen_lyl|G0]"
+  XNF_meh_sen: "[?xnf_sen_lyl|Y0]"
+  XNF_boo_sen: "[?xnf_sen_lyl|R0]"
+  XNF_yay_leg: "[?xnf_leg_lyl|G0]"
+  XNF_meh_leg: "[?xnf_leg_lyl|Y0]"
+  XNF_boo_leg: "[?xnf_leg_lyl|R0]"
+  XNF_yay_lyl: "[?xnfloyalists_happy|G0%%]"
+  XNF_meh_lyl: "[?xnfloyalists_happy|Y0%%]"
+  XNF_boo_lyl: "[?xnfloyalists_happy|R0%%]"
+  XNF_yay_rad: "[?xnfradicals_happy|G0%%]"
+  XNF_meh_rad: "[?xnfradicals_happy|Y0%%]"
+  XNF_boo_rad: "[?xnfradicals_happy|R0%%]"
+  XNF_yay_rep: "[?xnfrepublicans_happy|G0%%]"
+  XNF_meh_rep: "[?xnfrepublicans_happy|Y0%%]"
+  XNF_boo_rep: "[?xnfrepublicans_happy|R0%%]"
+  XNF_yay_nat: "[?xnfultnationalists_happy|G0%%]"
+  XNF_meh_nat: "[?xnfultnationalists_happy|Y0%%]"
+  XNF_boo_nat: "[?xnfultnationalists_happy|R0%%]"
+  senate_xnf: "Senate:\n[IsSenateLoyal]/10 Members Loyal"
+  leg_xnf: "Legislature:\n[IsLegLoyal]/100 Members Loyal"
+  xnf_s_color: "[STEXTCOLOR]"
+  xnf_l_color: "[LTEXTCOLOR]"
+  S_YAY: "§GS§!"
+  S_MEH: "§YS§!"
+  S_BOO: "§RS§!"
+  L_YAY: "§GL§!"
+  L_MEH: "§YL§!"
+  L_BOO: "§RL§!"
+
+# FOCUS TREE
+
+ XNF_control_all_france: "Controls all of Mainland France"
+ XNF_gain_old_cores: "Regain Cores on Napoleonic France States"

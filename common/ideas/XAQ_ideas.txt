@@ -44,12 +44,12 @@ ideas = {
 
 				}
 		}
-		XAQ_senate = {
+		XAQ_senate_1 = {
 				allowed = {
 					original_tag = XAQ
 				}
 	
-				picture = focus_generic_improve_the_administration
+				picture = GFX_idea_XAQ_senate
 			
 				removal_cost = -1
 				
@@ -60,6 +60,71 @@ ideas = {
 	
 				modifier = {
 					stability_factor = 0.05
+
+				}
+		}
+		XAQ_senate_2 = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = GFX_idea_XAQ_senate
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = 0.10
+					political_power_factor = 0.10
+
+				}
+		}
+		XAQ_senate_3 = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = GFX_idea_XAQ_senate
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = 0.10
+					political_power_factor = 0.15
+					drift_defence_factor = 0.15
+					research_speed_factor = 0.05
+
+				}
+		}
+		XAQ_senate_4 = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = GFX_idea_XAQ_senate
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = 0.15
+					political_power_factor = 0.20
+					drift_defence_factor = 0.15
+					research_speed_factor = 0.05
+					
 
 				}
 		}

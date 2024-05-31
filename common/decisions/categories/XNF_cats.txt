@@ -1,25 +1,14 @@
-XNF_government_makeup_gui_cat = {
-	visible_when_empty = yes
-	allowed = {
-		original_tag = XNF
-	}
-}
-
-XNF_spreading_support_cat = {
-	visible_when_empty = yes
-	allowed = {
-		original_tag = XNF
-	}
-}
-
 XNF_rebuilding_france_cat = {
 	visible_when_empty = yes
+	priority = 9
 	allowed = {
 		original_tag = XNF
 	}
 }
 
 XNF_loyalist_royalty_cat = {
+	priority = 10
+	scripted_gui = XNF_gov_gui
 	visible_when_empty = yes
 	allowed = {
 		original_tag = XNF

@@ -11,7 +11,7 @@ manpower=1984267
 	}
 
 	history={
-		owner = LIB # FRA
+		owner = XLX
 		victory_points = {
 			575 5
 		}
@@ -23,13 +23,13 @@ manpower=1984267
 		}
 		buildings = {
 			infrastructure = 4
-			#industrial_complex = 3
+			#industrial_complex = 2
 			#air_base = 10
 			575 = {
 				naval_base = 6
 			}
 		}
-		#add_core_of = FRA
+		#add_core_of = XLX
 		1939.1.1 = {
 			buildings = {
 				#industrial_complex = 6

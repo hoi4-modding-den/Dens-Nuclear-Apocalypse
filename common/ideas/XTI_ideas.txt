@@ -96,6 +96,77 @@ ideas = {
 				consumer_goods_factor = -0.1
 				trade_opinion_factor = 0.25
 			}
-		}		
+		}	
+		XTI_reclamation_recruitment = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.2
+			}
+		}	
+		XTI_reclamation_supplies = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		XTI_national_pride = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_morale_factor = 0.05
+				war_stability_factor = 0.05
+			}
+		}	
+		XTI_late_emergers = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+				political_power_factor = -0.5
+			}
+		}
 	}
 }	

@@ -92,4 +92,19 @@ characters = {
 		}
 		
 	}
+	XTI_interregnum = {
+		name = "Interregnum"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XTI_interregnum_portrait"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = ""
+			expire = "3000.9.9.9"
+			id = -1
+		}
+		
+	}
 }

@@ -22,6 +22,10 @@ XNR = {
 	color = rgb { 105 115 145 }
 	color_ui = rgb { 105 115 145 }
 }
+XLX = {
+	color = rgb { 59 127 127 }
+	color_ui = rgb { 59 127 127 }
+}
 XNE = {
 	color = rgb { 222 22 79 }
 	color_ui = rgb { 222 22 79 }
@@ -123,4 +127,20 @@ XSA = {
 XIA = {
 	color = rgb { 25 248 96 }
 	color_ui = rgb { 25 248 96  }
+}
+XRA = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
+XFR = {
+	color = rgb { 155 0 124 }
+	color_ui = rgb { 155 0 124 }
+}
+XAL = {
+	color = rgb { 122 122 122 }
+	color_ui = rgb { 122 122 122 }
+}
+XFW = {
+	color = rgb { 45 40 20 }
+	color_ui = rgb { 35 30 15 }
 }

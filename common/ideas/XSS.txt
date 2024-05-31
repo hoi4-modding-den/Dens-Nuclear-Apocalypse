@@ -1,6 +1,6 @@
 ideas = {
     country = {
-        XSS_neutrality = {
+        XSS_neutrality_idea = {
            removal_cost = -1
             picture = SWI_swiss_neutrality
             modifier = {
@@ -337,7 +337,208 @@ ideas = {
             autonomy_gain = -0.25
             }
         }
+        XSS_triumph = {
+           removal_cost = -1
+            picture = triumphant_will
+            modifier = {
+            drift_defence_factor = 1
+            war_support_factor = 0.3
+            }
+        }
+        XSS_NSS_3 = {
+           removal_cost = -1
+            picture = SWI_spirit_of_helvetia_defensive_peace
+            modifier = {
+            political_power_gain = -0.05
+            offence = 0.15
+            experience_loss_factor = -0.35
+            training_time_factor = -0.15
+            conscription = 0.03
+            }
+        }
+        XSS_MUZ = {
+           removal_cost = -1
+            picture = eng_imperial_conscription
+            modifier = {
+            political_power_gain = -0.05
+            experience_gain_army = 0.5
+            army_leader_start_level = 1 
+            }
+        }
+        XSS_army_chaos = {
+           removal_cost = -1
+            picture = chi_incompetent_officers
+            modifier = {
+            offence = -0.45
+            training_time_factor = 1
+            }
+        }
+        XSS_recklessness = {
+           removal_cost = -1
+            picture = jap_the_unthinkable_option
+            modifier = {
+            offence = -0.15
+            defence = -1
+            }
+        }
+        XSS_romash_partisans = {
+           removal_cost = -1
+            picture = chi_army_corruption2
+            modifier = {
+            political_power_gain = -0.25
+            training_time_factor = 0.10
+            stability_factor = -0.25
+            }
+        }
+        XSS_RA_headquaters = {
+           removal_cost = -1
+            picture = eng_spirit_of_the_industrial_revolution
+            modifier = {
+            power_balance_weekly = -0.01
+            }
+        }
+
+        XSS_RA_civilwar = {
+           removal_cost = -1
+            picture = SOV_war_heroes
+            modifier = {
+            offence = 0.05
+            experience_gain_army = 0.5
+            power_balance_weekly = -0.01
+            }
+        }
+
+        XSS_international_brigades_idea = {
+           removal_cost = -1
+            picture = usa_desegregation_1
+            modifier = {
+               political_power_gain = -0.15
+               exile_manpower_factor = 0.25
+               local_non_core_manpower = 0.1
+               
+            }
 
     }
 
+        XSS_NSS_opposition = {
+           removal_cost = -1
+            picture = SWI_spirit_of_helvetia_defensive_war
+            modifier = {
+            political_power_gain = -0.25
+            offence = 0.15
+            training_time_factor = 0.15
+            }
+        }
+        XSS_RA = {
+           removal_cost = -1
+            picture = SOV_war_heroes
+            modifier = {
+            offence = 0.1
+            experience_gain_army = 0.5
+            }
+        }
+        XSS_government_bonds_idea = {
+           removal_cost = -1
+            picture = tur_odpa
+            modifier = {
+            consumer_goods_factor = -0.1
+            }
+        }
+        XSS_cominform = {
+           removal_cost = -1
+            picture = SOV_soviet_railways
+            modifier = {
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.15
+                communism_drift = 0.1
+	
+            }
+        }
+        XSS_RA_2 = {
+           removal_cost = -1
+            picture = SOV_war_heroes
+            modifier = {
+            offence = 0.15
+            experience_gain_army = 0.5
+            equipment_capture = 0.5
+            }
+        }
+
+        XSS_romash_partisans_light = {
+           removal_cost = -1
+            picture = chi_army_corruption
+            modifier = {
+            political_power_gain = -0.05
+            stability_factor = -0.05
+            }
+        }
+
+        XSS_romash_partisans_strong = {
+           removal_cost = -1
+            picture = chi_army_corruption3
+            modifier = {
+            political_power_gain = -0.5
+            training_time_factor = 0.25
+            stability_factor = -0.45
+
+            }
+        }
+        XSS_two_year_plan_idea = {
+           removal_cost = -1
+            picture = SWE_folkhemmet
+            modifier = {
+            production_speed_buildings_factor = 0.35 
+            consumer_goods_factor = 0.25
+            stability_factor = 0.05
+            }
+        }
+        XSS_SEU = {
+           removal_cost = -1
+            picture = gre_schachtplan3
+            modifier = {
+				political_power_gain = -0.15
+                communism_drift = 0.05
+				consumer_goods_factor = -0.05
+				conscription = 0.025
+				min_export = 0.1
+				hidden_modifier = {
+					trade_opinion_factor = 0.2				
+				}	
+            }
+        }
+        XSS_new_swiss_army_idea = {
+           removal_cost = -1
+            picture = SWI_weaponize_Swissness
+            modifier = {
+            offence = 0.15
+            defence = 0.25
+            conscription = 0.01
+            }
+        }
+        XSS_politbiuro_idea = {
+           removal_cost = -1
+            picture = SOV_system_decentralization
+            modifier = {
+            war_support_factor = 0.15
+            production_speed_buildings_factor = 0.15
+
+            }
+        }
+        XSS_kulturburo = {
+           removal_cost = -1
+            picture = por_iberian_workers_united
+            modifier = {
+                democratic_acceptance = 50
+                communism_acceptance = 100
+            }
+        }
+        XSS_socrealizm = {
+           removal_cost = -1
+            picture = jap_the_unthinkable_option
+            modifier = {
+                stability_factor = 0.15
+            }
+        }
+
+    }
 }

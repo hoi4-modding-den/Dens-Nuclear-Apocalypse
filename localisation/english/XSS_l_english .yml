@@ -7,6 +7,14 @@
  XRM_DEF:0 "Romanchia"
  XRM_ADJ:0 "Romansh"
 
+ XRA:0 "Rote Armee"
+ XRA_DEF:0 "Rote Armee"
+ XRA_ADJ:0 "Red army's"
+
+ XRA_communism_party:0 "RA"
+ XRA_communism_party_long:0 "Rote Armee"
+
+
  XRM_fascism_party:0 "Grüne Armee"
  XRM_fascism_party_long:0 "Grüne Armee"
 
@@ -16,15 +24,16 @@
  XSS_fascism_party:0 "NSS/GA/NAP"
  XSS_fascism_party_long:0 "Neu Schutzstaffel/Grüne Armee/Nationale Arbeiterpartei"
 
- XSS_neutrality_party:0 "House of Bracher"
- XSS_neutrality_party_long:0 "House of Bracher"
+ XSS_neutrality_party:0 "Monarchist Society"
+ XSS_neutrality_party_long:0 "Monarchist Society"
 
  XSS_democratic_party:0 "SSD/NU/BU"
  XSS_democratic_party_long:0 "Schweizer Sozialdemokratie/Nationale Union/Bundesunion"
 
+XSS_neutrality:0 "Helvetica"
 
-XSS_neutrality:0 "Swiss Neutrality"
-XSS_neutrality_desc:0 "Switzerland is the most peaceful country in the world. They have survived 389 years in stable peace. They are totally unbothered by world wars that have wiped humanity and they won't be bothered for long."
+XSS_neutrality_idea:0 "Swiss Neutrality"
+XSS_neutrality_idea_desc:0 "Switzerland is the most peaceful country in the world. They have survived 389 years in stable peace. They are totally unbothered by world wars that have wiped humanity and they won't be bothered for long."
 
 XSS_bank_of_europe:0 "Bank of Europe"
 XSS_bank_of_europe_desc:0 "Since the world wars switzerland has been considered the safest place to store money."
@@ -170,6 +179,7 @@ XSS_finish_war_on_romansh:0 "Finish war on Romansh"
 XSS_finish_war_on_romansh_desc:0 "Romansh language and population were killed. It's time to finish occupation."
 
 VICTORY_POINTS_11601:0 "Schwyz"
+VICTORY_POINTS_3612:0 "Sion"
 
 XRM_romansh_spirit:0 "Romansh spirit"
 XRM_romansh_spirit_desc:0 "FREEEEEEEEEEEEEEEEEEEEEEEEEDOM"
@@ -279,7 +289,7 @@ XSS_army_reform_desc:0 "Our army is inefficient and in dire need of reform."
 XSS_penal_battalions:0 "Penal Battalions"
 XSS_penal_battalions_desc:0 "Our prisons are overflowing. We should put these degenerates to a good use."
 
-XSS_join_bez:0 "Join B.E.Z"
+XSS_join_bez:0 "Join the B.E.Z"
 XSS_join_bez_desc:0 "We wish to bring Switzerland closer to Europe. B.E.Z brings good old memories of EU. This time we won't ignore this offer."
 
 XSS_test_event.4.t:0 "Switzerland wishes to join B.E.Z"
@@ -581,4 +591,497 @@ XSS_NSS_italy_desc:0 "Neu Schutzstaffel was a paramilitary organization, but aft
 
 XSS_claim_north_italy:0 "Claim Northern Italy"
 XSS_claim_north_italy_desc:0 "We will help our little Italian puppet by allowing them for expansion into wasteland."
+
+XSS_anschluss:0 "Anschluss"
+XSS_anschluss_desc:0 "We must unify all germans of the world. First we shall unite with people of Tirol."
+
+XSS_test_event.18.t:0 "Anschluss"
+XSS_test_event.18.desc:0 "Today Switzerland demanded our surredner and wants to incorporate us into Federation"
+XSS_test_event.18.a:0 "There is nothing we can do"
+XSS_test_event.18.b:0 "Let them come we will defeat them"
+
+XSS_incorporate_tyrol_into_fed:0 "Create Cantons in Tyrol"
+XSS_incorporate_tyrol_into_fed_desc:0 "After Anschluss of Tirol we shall incorporate them into our federation."
+
+XSS_claim_souther_tyrol:0 "Claim southern Tyrol"
+XSS_claim_souther_tyrol_desc:0 "German minority have been oppressed for too long by Lombardians."
+
+XSS_develop_tirol:0 "Develop Tyrol"
+XSS_develop_tirol_desc:0 "Tyrol have been underdeveloped by previous owners. To build our support in the region we must give them places to live and where they can work."
+
+XSS_annex_southern_tirol:0 "Annex southern Tyrol"
+XSS_annex_southern_tirol_desc:0 "Southern Tyrol is rightfully German and we shall re-take what's ours!"
+
+XSS_lay_claim_to_voralburg_nazi:0 "Claim Voralburg"
+XSS_lay_claim_to_voralburg_nazi_desc:0 "Voralburg is rightful Swiss territory and we should take hold of it."
+
+XSS_into_germany:0 "Into Germany"
+XSS_into_germany_desc:0 "The time is now. We shall fufill prophecy from Germania and take our homeland back!"
+
+XSS_war_in_south:0 "War in South"
+XSS_war_in_south_desc:0 "First stop in our way to Germania is south."
+
+XSS_rhineland:0 "Rhineland"
+XSS_rhineland_desc:0 "Rhineland is occupied by filthy Americans which overstayed their visit. We will drive them out to fulfill Germania!"
+
+XSS_develop_rhineland:0 "Develop Rhineland"
+XSS_develop_rhineland_desc:0 "Once heart of German industry now reduced to ashes. It's time we rebuild rennish industry."
+
+XSS_fight_hannover:0 "March into Hannover"
+XSS_fight_hannover_desc:0 "Hannover is mostly abandoned. A disgrace to a once so great city, it is high time to free it from oppression."
+
+XSS_final_march:0 "Final March"
+XSS_final_march_desc:0 "The time is now brothers! We will take Berlin and free it from communists. Their days are numbered and the German Glory is near."
+
+XSS_3rd_party_rally:0 "3rd Party rally"
+XSS_3rd_party_rally_desc:0 "We have taken Berlin! Brothers and sisters this day will go down in history. Führer wants to hold a party rally in newly controlled Berlin."
+
+XSS_test_event.19.t:0 "3rd Party rally"
+XSS_test_event.19.desc:0 "Führer has arrived at Berlin to hold his speech in front of old Brandenburg Gate. He held in speech in which he annonced his proud of Germans who helped him re-unite all Germans, but says that the work is not finished. We must destroy rebelious holsteinians and conquer Europe to bring Lebensraum to German people."
+XSS_test_event.19.a:0 "Germany is united and stronger than ever!"
+
+XSS_triumph:0 "Triumphant will"
+XSS_triumph_desc:0 "Germany is united now and their support for war is stronger than ever."
+
+XSS_germania_nation:0 "German Reich"
+XSS_germania_nation_DEF:0 "Germany"
+XSS_germania_nation_ADJ:0 "German"
+
+XSS_conquer_south:0 "Conquer south"
+XSS_conquer_south_desc:0 "We shall support Italians in their one last offensive then they can lead on their own."
+
+XSS_NSS_3:0 "Neu Schutzstaffel"
+XSS_NSS_3_desc:0 "Neu Schutzstaffel was a paramilitary organization, but after Victory March it was integrated into regular army."
+
+XSS_NSS_modernization:0 "NSS Modernization"
+XSS_NSS_modernization_desc:0 "NSS must be ready to reunite Germany. We shall fund their operations as much as we can."
+
+XSS_mechanization:0 "Mechanization"
+XSS_mechanization_desc:0 "Flat lands of Germany and France are optimal for tank warfare."
+
+XSS_army_expansion:0 "Army expansion"
+XSS_army_expansion_desc:0 "We will increase funds going to the millitary."
+
+XSS_army_factrory:0 "Basel Millitary Complex"
+XSS_army_factrory_desc:0 "Basel has been left out in industrialistaion programs. A new millitary complex will be built there."
+
+XSS_MUZ:0 "Millitary University of Zurich"
+XSS_MUZ_desc:0 "Millitary University of Zurch has been founded to teach new officers that will support German war effort."
+
+XSS_millitary_university_of_zurich:0 "Millitary University of Zurich"
+XSS_millitary_university_of_zurich_desc:0 "Millitary University of Zurch will be found to teach new officers that will support German war effort."
+
+XSS_subjugate_rebels:0 "Subjugate rebelious provinces"
+XSS_subjugate_rebels_desc:0 "Schleswig-Holstein is rightfull German clay that has been taken from us by Danish Imperialists. We must subjugate these provinces to incorporate them into Reich."
+
+XSS_ardennes_push:0 "Ardennes push"
+XSS_ardennes_push_desc:0 "Lowlands are our gate to futher conquests in France."
+
+XSS_push_forward:0 "PUSH FORWARD!"
+XSS_push_forward_desc:0 "Like our fathers in the past we shall conquer France in days. They won't know what hit'em."
+
+XSS_end_british_hegemony:0 "End British hegemony"
+XSS_end_british_hegemony_desc:0 "Our fathers had perished in futile attempts to take on British, but we are not weak like them. Forward my brothers!"
+
+XSS_germania_achieved:0 "Germania Achieved"
+XSS_germania_achieved_desc:0 "Like written in Germania we have succeded in achieving rule over Europe. The world now enters a new era of stability and German supremacy."
+
+XSS_test_event.20.t:0 "Germania Achieved"
+XSS_test_event.20.desc:0 "After German conquest of British isles all points of German future listed in Germania were achieved. Führer visited what have remained of London and held a speech. He said that nobody can defeat Germany now and they are masters of their own faith. Now nobody can stand up to German rule and soon other nations will follow."
+XSS_test_event.20.a:0 "A new era for the world"
+
+XSS_komunizm:0 "Rote Armee"
+XSS_komunizm_desc:0 "Rote Armee stops NSS in their Victory March"
+
+XSS_test_event.21.t:0 "Rote Armee stops Victory March"
+XSS_test_event.21.desc:0 "Today NSS tried to take control over National Assembly, happily passing near Rote Armee has stopped their advance starting fight on streets of Bern. Most of NSS soldiers were killed including Head of NSS. While NSS was stopped in their tracks Grüne Armee soldiers have survived and retreted to Romanchia. Soon they will rise against newly formed communist government."
+XSS_test_event.21.a:0 "War is comming"
+
+XSS_mobilize_rote_armee:0 "Mobilize Rote Armee"
+XSS_mobilize_rote_armee_desc:0 "The Fascists are against us. We must protect Switzerland to the last man. Let's mobilize Rote Armee and kill the rebelion."
+
+XSS_army_chaos:0 "Chaos in the Army"
+XSS_army_chaos_desc:0 "Switzerland is at war again. It's been a long time and our army is not really sure how to wage war."
+
+XSS_lessons_from_war:0 "Lessons from war"
+XSS_lessons_from_war_desc:0 "We have sustained heavy losses in war against romansh. We have to reorganize and attack with more caution now."
+
+XSS_recklessness:0 "Recklessness"
+XSS_recklessness_desc:0 "After Victory at Schwyz, Swiss army is very confident about their victory. Too confident."
+
+XSS_victory_at_schwyz:0 "Victory at Schwyz"
+XSS_victory_at_schwyz_desc:0 "We did it! We have captured schwyz back from the fascists."
+
+XSS_victory_at_romansh:0 "Victory over Romansh"
+XSS_victory_at_romansh_desc:0 "We have won. It's time to bring back stability to Switzerland."
+
+XSS_war_industrialization:0 "War Industrialization"
+XSS_war_industrialization_desc:0 "The war is not comming swiftly we must give more weapons to the population!"
+
+XSS_fortress_Chur:0 "Fortress Chur"
+XSS_fortress_Chur_desc:0 "We have taken over City of Chur. We need to fortify it before counter-attack."
+
+XSS_romash_partisans:0 "Romansh partisans"
+XSS_romash_partisans_desc:0 "Altrough Romanchia have been crushed there are small terrorist cells still located in Chur."
+
+XSS_primacy_of_RA:0 "Primacy of Rote Armee"
+XSS_primacy_of_RA_desc:0 "After eliminating the fascist threat we must now focus on establishing a government. We think a dictatorship of Red Army will be beneficial."
+
+XSS_primacy_of_KP:0 "Primacy of KP"
+XSS_primacy_of_KP_desc:0 "We must maintain the rule of KP at all cost."
+
+XSS_balance:0 "Swiss Struggle"
+XSS_left_side:0 "Rote Armee"
+XSS_right_side:0 "Kommunistische Partei"
+
+XSS_mid_range:0 "Stalemate"
+XSS_left_mid_range:0 "Small army victory"
+XSS_left_dom_range:0 "Army controls countryside"
+
+XSS_right_mid_range:0 "KP popular support"
+XSS_right_dom_range:0 "KP dominates the army"
+
+XSS_left_side_range:0 "Victory of Rote Armee"
+XSS_right_side_range:0 "Victory of Kommunistische Partei"
+
+XSS_test_event.22.t:0 "Swiss struggle"
+XSS_test_event.22.desc:0 "After victory over Romachia, Switzerland can finally decide on it's future. The problem is that Rote Armee and KP are clashing against eachother for who will rule Switzeland. This confilict have turned into a mini-civil war."
+XSS_test_event.22.a:0 "I hope they will stop soon"
+
+XSS_shell_kp_headquaters:0 "Shell KP Headquaters"
+XSS_shell_kp_headquaters_desc:0 "KP headquaters will be destroyed to give RA major advantage."
+
+XSS_march_on_valais:0 "March on Valais"
+XSS_march_on_valais_desc:0 "We must build our strenght by taking over countryside. We shall march south and build our base of operation in Valais."
+
+XSS_march_on_ticino:0 "March on Ticino"
+XSS_march_on_ticino_desc:0 "After taking control over Valais we must advance to Ticino."
+
+XSS_build_headquaters_in_valais:0 "Build headquaters in Valais"
+XSS_build_headquaters_in_valais_desc:0 "We need a base of operations and Valais is a safe and well guarded region."
+
+XSS_RA_headquaters:0 "Rote Armee Headquaters"
+XSS_RA_headquaters_desc:0 "Deep mountains in Valais region secretly hold underground capital of Rote Armee."
+
+XSS_formalize_RA:0 "Formalize Rote Armee"
+XSS_formalize_RA_desc:0 "Rote Armee is not considered part of standing army and this needs to change."
+
+XSS_RA_civilwar:0 "Rote Armee"
+XSS_RA_civilwar_desc:0 "A special Formation in Swiss Army consisting of Political loyalists and veteran revolutionaries."
+
+XSS_millitary_propaganda:0 "Millitary propaganda"
+XSS_millitary_propaganda_desc:0 "We need more meat for the grinder. Our ministry of propaganda will try to organize some."
+
+XSS_international_brigades_idea:0 "International Brigades"
+XSS_international_brigades_idea_desc:0 "We need foreign communist exiles to join RA!"
+
+XSS_international_brigades:0 "International brigades"
+XSS_international_brigades_desc:0 "We need more manpower! International revolutionaries will have to support us in our struggle for world revolution."
+
+XSS_rally_NSS_veterans:0 "Rally NSS veterans"
+XSS_rally_NSS_veterans_desc:0 "Desperate times require desperate measures. We shall strike a deal with the devil and adopt some of the less extreme NSS veterans to our army."
+
+XSS_NSS_opposition:0 "NSS Opposition"
+XSS_NSS_opposition_desc:0 "We have signed a deal with the devil and now we must pay for our sins."
+
+XSS_strike_bern:0 "Strike Bern"
+XSS_strike_bern_desc:0 "We must finish this war now!"
+
+XSS_victory_of_RA:0 "Victory of Rote Armee"
+XSS_victory_of_RA_desc:0 "We have won the Civil war. Red army is now in power."
+
+XSS_RA:0 "Rote Armee"
+XSS_RA_desc:0 "A special Formation in Swiss Army consisting of Political loyalists and veteran revolutionaries."
+
+XSS_victory_of_KP:0 "Victory of KP"
+XSS_victory_of_KP_desc:0 "KP has complete control over the RA now."
+
+XSS_assasinations:0 "Political Assasinations"
+XSS_assasinations_desc:0 "We must kill some agitators in RA..."
+
+XSS_speech_at_national_assembly:0 "Speech at National Assembly"
+XSS_speech_at_national_assembly_desc:0 "Evan Signer will hold speech at National Assembly to rally support for KP."
+
+XSS_test_event.23.t:0 "Evan Signer calls for unity"
+XSS_test_event.23.desc:0 "Evan Signer today held a speech at National Assembly. He stressed how nation should unite and stop internal fight. He also adressed how romansh people will strike back if nation will be divided."
+XSS_test_event.23.a:0 "A wise man"
+
+XSS_land_reform:0 "Land reform"
+XSS_land_reform_desc:0 "People want redistribution of wealth! We must fulfill their wishes."
+
+XSS_post_war_modernization:0 "Post-war Modernization"
+XSS_post_war_modernization_desc:0 "Our country torn out by civil war with romansh needs some support. We shall re-build Graubünden."
+
+XSS_government_bonds_idea:0 "Government Bonds"
+XSS_government_bonds_idea_desc:0 "Our citizens borrow us money!"
+
+XSS_government_bonds:0 "Government Bonds"
+XSS_government_bonds_desc:0 "We must introduce governemnt bonds to help kickstart our economy."
+
+XSS_street_fights:0 "Street fights"
+XSS_street_fights_desc:0 "We shall take to the streets and pacify the army."
+
+XSS_finish_off_NSS:0 "Finish off NSS"
+XSS_finish_off_NSS_desc:0 "The remaining NSS members must be stopped as they are threat to national stability."
+
+XSS_incorporate_RA:0 "Incorporate Rote Armee"
+XSS_incorporate_RA_desc:0 "We have built so much influence we can safely incorporate RA into regular army."
+
+XSS_test_event.24.t:0 "Rote Armee wins Swiss Struggle"
+XSS_test_event.24.desc:0 "Today Rote Armee has stormed National Assembly killing Evan Signer and taking over the government. This event marks end of Era of Instability for Switzerland and everything should be going forward from now on."
+XSS_test_event.24.a:0 "Interesting"
+
+XSS_test_event.25.t:0 "Kommunistische Partei wins Swiss Struggle"
+XSS_test_event.25.desc:0 "Today Evan Signer has decided to incorporate Rote Armee into regular Swiss armed forces. This marks end of Swiss civil war also known as Swiss Struggle. This event marks end for Era of Instablity and now Switzerland will walk a new path in this world."
+XSS_test_event.25.a:0 "Interesting"
+
+
+XSS_abandon_neutrality_commie:0 "Abandon Neutrality"
+XSS_abandon_neutrality_commie_desc:0 "Post war Switzerland is a new and reformed nation. We must end with neutrality and build a new path for Swiss citizens."
+ 
+XSS_cominform:0 "Cominform"
+XSS_cominform_desc:0 "International organization uniting communist parties around the world."
+
+XSS_create_cominform:0 "Create Cominform"
+XSS_create_cominform_desc:0 "Proletarians of the world UNITE!"
+
+XSS_invite_lombardy_cominform:0 "Invite Lombardy"
+XSS_invite_lombardy_cominform_desc:0 "Lombardy is our faithul brother in the south. We shall ally them to help them carry the torch of revolution."
+
+
+XSS_test_event.26.t:0 "Switzerland invites us to Cominform"
+XSS_test_event.26.desc:0 "Switzerland has offered us cooperation in Cominform."
+XSS_test_event.26.a:0 "We shall join"
+XSS_test_event.26.b:0 "We are better off alone"
+
+XSS_valais_industry:0 "Valais Industrialization"
+XSS_valais_industry_desc:0 "Our old home land during civil war. We must modernize it as a thank you to local population who helped us rise to power."
+
+XSS_autobahn:0 "Autobahn"
+XSS_autobahn_desc:0 "We shall connect all of Switzerland in a web of Highways."
+
+XSS_education_reform_commie:0 "Education reform"
+XSS_education_reform_commie_desc:0 "We must create a new socialist youth!"
+
+XSS_University_of_zurich:0 "University of Zurich"
+XSS_University_of_zurich_desc:0 "We must increase funds to University of Zurich."
+
+XSS_RA_2:0 "Rote Armee"
+XSS_RA_2_desc:0 "A special Formation in Swiss Army consisting of Political loyalists and veteran revolutionaries."
+
+XSS_modernize_RA:0 "Modernize Rote Armee"
+XSS_modernize_RA_desc:0 "Our army needs to be stronger so it can lead revolution forward."
+
+XSS_romash_partisans_light:0 "Romansh partisans"
+XSS_romash_partisans_light_desc:0 "Altrough Romanchia have been crushed there are small terrorist cells still located in Samnaun."
+
+XSS_begin_elimination_of_romansh_threat:0 "Begin anti-partisan warfare"
+XSS_begin_elimination_of_romansh_threat_desc:0 "We must destroy terrorist cells in Chur."
+
+XSS_romash_partisans_strong:0 "Romansh partisans"
+XSS_romash_partisans_strong_desc:0 "Altrough Romanchia have been crushed there are large terrorist cells still located in Schwyz."
+
+XSS_fight_in_samnaun:0 "Fights in Samnaun"
+XSS_fight_in_samnaun_desc:0 "Last terrorist cells of Green Army have been hiding in Samnaun. We shall stop them and bring end to their reign of terror."
+
+
+XSS_ally_green_army:0 "Ally Green Army"
+XSS_ally_green_army_desc:0 "We shall make peace with romansh and incorporate them to our army."
+
+XSS_mobilize_green_army:0 "Mobilize Green Army"
+XSS_mobilize_green_army_desc:0 "We have allied Green Army. They have agreed to join our struggles against enemies of Socialism."
+
+XSS_unite_two_armies:0 "Unite two armies"
+XSS_unite_two_armies_desc:0 "We have sucessfully united Romansh and Swiss people. The Green and Red army want to unite to form their new government."
+
+XSS_romansh_penal_battalions:0 "Romansh Penal Battalions"
+XSS_romansh_penal_battalions_desc:0 "All the remaning Romansh people who haven't escaped will be forced into Swiss army."
+
+XSS_invite_tirol:0 "Invite Tirol"
+XSS_invite_tirol_desc:0 "Brothers in Alps will join us in our European struggle."
+
+XSS_war_with_tirol:0 "War with Tirol"
+XSS_war_with_tirol_desc:0 "Traitorous Romansh Fascists are slowly regrouping in Tirol. We must strike before they try commming back."
+
+XSS_voralburg_commie:0 "Claim Voralburg"
+XSS_voralburg_commie_desc:0 "We shall liberate workers of Voralburg."
+
+XSS_ticino_for_trento:0 "Ticino for Trentino"
+XSS_ticino_for_trento_desc:0 "We will trade our Italian speaking regions for German speaking regions with Lombardy."
+
+XSS_test_event.27.t:0 "Switzerland offers territorial trade"
+XSS_test_event.27.desc:0 "Switzerland offers us trade of German speaking territories for Italian speaking ones."
+XSS_test_event.27.a:0 "Sure!"
+XSS_test_event.27.b:0 "This is our land and they can go away"
+
+XSS_french_campaign:0 "French Campaign"
+XSS_french_campaign_desc:0 "We shall move our troops into France to enlarge our Federation."
+
+XSS_war_with_luxemburg:0 "War with Luxemburg"
+XSS_war_with_luxemburg_desc:0 "We shall move North to the Kingdom of Luxmeburg."
+
+XSS_socialist_republic_of_burgundy:0 "Form Socialist Republic of Burgundy"
+XSS_socialist_republic_of_burgundy_desc:0 "We have taken over lands of Historic Burgundy. We shall create a new nation out of it to give ourselfs legitimacy over local population."
+
+XSS_burgundy:0 "Socialist Republic of Burgundy"
+
+XSS_operation_napoleon:0 "Operation Red Napoleon"
+XSS_operation_napoleon_desc:0 "Operation codename Red Napoleon will focus on destruction of French states."
+
+XSS_negotiation_with_british:0 "Negotiations with the British"
+XSS_negotiation_with_british_desc:0 "We shall make alliance on the British isles. Socialists out there definitly need us."
+
+XSS_negotiation_with_ddr:0 "Negotiations with DDR"
+XSS_negotiation_with_ddr_desc:0 "We shall make a pact with Eastern Germans to block the british out of Europe."
+
+XSS_war_with_britain:0 "War with British Isles"
+XSS_war_with_britain_desc:0 "We shall liberate workers of Britian."
+
+XSS_war_with_ddr:0 "War with DDR"
+XSS_war_with_ddr_desc:0 "We shall Unite Germany under single Socialist Union!"
+
+XSS_swiss_navy:0 "Swiss navy"
+XSS_swiss_navy_desc:0 "Switzerland needs to start building ships to block anything from mainland Europe."
+
+XSS_reconquer_rhine:0 "Reconquer Rhine"
+XSS_reconquer_rhine_desc:0 "Rhine river is now our main objective. We shall conquer everybody who tries to control it."
+
+XSS_spanish_campaign:0 "Spanish Campaign"
+XSS_spanish_campaign_desc:0 "We have conquered france in a record short time. Now we will move south to close off Mediterranean sea."
+
+XSS_spanish_collaborators:0 "Spanish Collaborators"
+XSS_spanish_collaborators_desc:0 "We are liberating Iberia from oppressive Fascists. The oppressed communists and workers are flocking to our banners."
+
+XSS_transfer_spanish_population:0 "Forced Relocation"
+XSS_transfer_spanish_population_desc:0 "Our Mainland Switzerland is nowhere near as rich in population as Aragon. We shall forcefully relocate some of the Spanish population to central Switzerland."
+
+XSS_test_event.28.t:0 "War crimes in Spain"
+XSS_test_event.28.desc:0 "Independent reporters have noticed a shocking fact that Swiss army forcefully deports Spanish population to Mainland Switzerland. This is disgusting behaviour and Switzerland should pay for this."
+XSS_test_event.28.a:0 "0_0"
+
+XSS_raze_barcelona:0 "Raze Barcelona"
+XSS_raze_barcelona_desc:0 "One of the biggest city in Iberia will soon be burned to the ground to show our dominance over the region."
+
+XSS_southern_uprising:0 "Southern Uprising"
+XSS_southern_uprising_desc:0 "Socialists are trying to tear apart the Caliphate. We shall fund them and let them join our army!"
+
+XSS_small_stability:0 "Small Stabilization"
+XSS_small_stability_desc:0 "After war, reconstruction is much needed. Small Stabilization is a series of reforms that plan to help Switzerland rebuild after Civil war."
+
+XSS_two_year_plan_idea:0 "Two Year Plan"
+XSS_two_year_plan_idea_desc:0 "After Civil War Switzerland is in dire need of industrialization. We shall make Switzerland an industrial empire."
+
+XSS_2_year_plan:0 "Two Year Plan"
+XSS_2_year_plan_desc:0 "War has torn us apart. We must support our industrial sector."
+
+XSS_soviet_economic_union:0 "Create S.E.U"
+XSS_soviet_economic_union_desc:0 "British have their B.E.Z we will have our own S.E.U."
+
+XSS_SEU:0 "S.E.U"
+XSS_SEU_desc:0 "Soviet Economic Union is an economic alliance made to rival B.E.Z"
+
+XSS_soviet_join_bez:0 "Join the B.E.Z"
+XSS_soviet_join_bez_desc:0 "We shall cooperate with Europe to bring back Switzerland from civil war times."
+
+XSS_send_invites:0 "Send invitations"
+XSS_send_invites_desc:0 "To rival B.E.Z we must have some other members."
+
+XSS_test_event.29.t:0 "Soviet Economic Union"
+XSS_test_event.29.desc:0 "Switzerland has annonced creation of S.E.U an economic alliance made to rival B.E.Z."
+XSS_test_event.29.a:0 "We shall join them"
+XSS_test_event.29.b:0 "Interesting"
+XSS_test_event.29.c:0 "PENIS"
+
+XSS_negotiation_with_bohr:0 "Negotiations with Bohr"
+XSS_negotiation_with_bohr_desc:0 "Leader of Green army is still out there alive organizing a comeback. We should try to negotiate peace with romansh people."
+
+XSS_test_event.30.t:0 "Negotations with Bohr"
+XSS_test_event.30.desc:0 "Several of KP representatives have decided to start negotations with Alexi Bohr (leader of Green Army). During negotiations Bohr have said that independent Romachia is his only dream and wish. He said that he won't stop terrorist attacks and then proceeded to kill all of the negotiators."
+XSS_test_event.30.a:0 "This means war"
+
+XSS_second_attempt:0 "2nd Attempt"
+XSS_second_attempt_desc:0 "Our first round of negotiations have failed. We shall try again with a better offer."
+
+XSS_test_event.31.t:0 "Ceasefire"
+XSS_test_event.31.desc:0 "Bohr have decided to end terrorist attacks only if Valais, Ticino and Grischun will be administrated by Green army."
+XSS_test_event.31.a:0 "Everything for peace"
+
+XSS_integrate_romansh:0 "Integrate Romansh"
+XSS_integrate_romansh_desc:0 "After giving autonomy to romansh people we should sign a peace treaty."
+
+XSS_test_event.32.t:0 "Integration"
+XSS_test_event.32.desc:0 "Today we have send a peace treaty to Bohr. He declined and called us fools. His new and reorganized army is marching towards Bern."
+XSS_test_event.32.a:0 "Good we have killed NSS..."
+XSS_test_event.32.b:0 "The NSS is also joining in..."
+
+XSS_peace:0 "Peace"
+XSS_peace_desc:0 "We have finally brought peace to Switzerland! This time it will last forever."
+
+XSS_proclaim_soviet_union:0 "Proclaim Soviet Union"
+XSS_proclaim_soviet_union_desc:0 "Switzerland is a thing of the past. It's time to give more rights to the cantons and establish supreme soviet."
+
+XSS_Soviet_union:0 "Union of Soviet Socialist Cantons"
+
+XSS_new_swiss_army:0 "New Swiss army"
+XSS_new_swiss_army_desc:0 "After 2nd Romansh war we must rebuild our millitary to be more effective."
+
+XSS_new_swiss_army_idea:0 "New Swiss army"
+XSS_new_swiss_army_idea_desc:0 "Swiss army is hardened in two wars against Romanchia."
+
+XSS_army_training:0 "Army Training"
+XSS_army_training_desc:0 " "
+
+XSS_swiss_air:0 "Swiss Airforce"
+XSS_swiss_air_desc:0 "We need to build a new airforce."
+
+XSS_lay_claim_to_voralburg_commie:0 "Annex Voralburg"
+XSS_lay_claim_to_voralburg_commie_desc:0 "Voralburg should join the Union as a new Canton."
+
+XSS_war_in_lombardy:0 "War with lombardy"
+XSS_war_in_lombardy_desc:0 "It's time to expand the Union!"
+
+XSS_war_in_tyrol:0 "War in Tyrol"
+XSS_war_in_tyrol_desc:0 "We must incorporate our brothers into Union of peace."
+
+XSS_war_in_north:0 "War in North"
+XSS_war_in_north_desc:0 "Conquest of Northern Italy will open us road to Rome."
+
+XSS_new_cantons:0 "New Cantons"
+XSS_new_cantons_desc:0 "Northern Italy + Tyrol will be divided and incorporated into Union as 87 new Cantons."
+
+XSS_road_to_rome:0 "Road to Rome"
+XSS_road_to_rome_desc:0 "Rome is a City many nations desire. We shall take it and protect it from others."
+
+XSS_roman_cantons:0 "Roman Cantons"
+XSS_roman_cantons_desc:0 "Province of Lazio will be divided into Cantons named Rome, Anzio and Nord-Roma."
+
+XSS_politbiuro:0 "Politbiuro"
+XSS_politbiuro_desc:0 "We must create the ministry of Work and Propaganda."
+
+XSS_politbiuro_idea:0 "Politbiuro"
+XSS_politbiuro_idea_desc:0 "A ministry responsible for overseeing work."
+
+XSS_ministry_of_culture:0 "Kulturbüro"
+XSS_ministry_of_culture_desc:0 "Kulturbüro or ministry of culture will be beneficial for generating soft power for our nation."
+
+XSS_kulturburo:0 "Kulturbüro"
+XSS_kulturburo_desc:0 "Kulturbüro or ministry of culture is responsible for administraiting work of artists."
+
+XSS_socrealism:0 "Swiss Socrealism"
+XSS_socrealism_desc:0 "Socrealism or Socialist realism is a style of art that our artists need to adopt."
+
+XSS_socrealizm:0 "Socrealism"
+XSS_socrealizm_desc:0 "Socialist realism was the official cultural doctrine of the Soviet Union that mandated an idealized representation of life under socialism in literature and the visual arts. The doctrine was first proclaimed by the First Congress of Soviet Writers in 1934 as approved method for Soviet cultural production in all media. In the aftermath of World War II, socialist realism was adopted by the communist states that were politically aligned with the Soviet Union. The primary official objective of socialist realism was to depict reality in its revolutionary development although no formal guidelines concerning style or subject matter were provided."
+
+
+XSS_monarchy:0 "Monarchist Plot"
+XSS_monarchy_desc:0 "A bunch of Monarchists have decided to attack National Assembly and take over power."
+
+XSS_rally_freikorps:0 "Rally Freikorps"
+XSS_rally_freikorps_desc:0 "We must fight for Monarchy. We must rally our faithful supporters."
+
+
+XSS_test_event.33.t:0 "Monarchist Plot"
+XSS_test_event.33.desc:0 "Today Monarchists led by Paul Robisch have made a sudden attack on National Assembly. They have captured it before Nazi Victory March has finished. Brave Freikorps have defended gates of Bern from Nazis and have killed Niemir Eggli (Head of NSS). Shattered NSS has surrendered while Green army escpaed to Chur. After This Victory Rote Armee opposing Monarchist rule decided to launch a coup starting in Sion."
+XSS_test_event.33.a:0 "To arms brothers"
 

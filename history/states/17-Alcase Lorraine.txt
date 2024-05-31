@@ -2,7 +2,7 @@
 state={
 	id=17
 	name="STATE_17" # Lorraine
-manpower=1011667
+manpower=1411667
 	
 	state_category = city
 	
@@ -11,23 +11,21 @@ manpower=1011667
 	}
 
 	history={
-		owner = LIB # FRA
-		victory_points = {
-			9642 5 
-		}
+		owner = XFR
 		victory_points = {
 			11516 5 
 		}
 		buildings = {
 			infrastructure = 4
-			#industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 1
 			#air_base = 5
 		}
-		#add_core_of = FRA
+		#add_core_of = XFR
 	}
 
 	provinces={
-		521 698 3646 3666 6698 9642 9658 11488 11516 11642 
+		521 698 3646 3666 6698 9658 11488 11516 11642 
 	}
 
 	local_supplies=0.0 

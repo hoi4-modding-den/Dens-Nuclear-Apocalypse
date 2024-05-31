@@ -7,6 +7,11 @@ XNE_popular_support = {
 
 	allowed = {
 		tag = XNE
-		XNE = { has_idea = XNE_internal_conflict }
+		XNE = { 
+			OR = {
+				has_idea = XNE_internal_conflict
+				has_idea = XNE_internal_conflict_add
+			}
+		}
 	}
 }

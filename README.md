@@ -36,10 +36,13 @@ Nuclear war has set the world back 300 years, now in the year 2236 they are back
 | XNM | Furiousky        | furiousky           |
 | XTY | Furiousky        | furiousky           |
 | XDK | playerandplayer  | oscaremn            |
+| XFR | 0rland2 | 0rland0 |
 | XGE | Kasastul         | kasastul            |
 | XIE | tombricks        | tombricks           |
 | XNI | tombricks        | tombricks           |
 | XLV | Jadeclouds       | jadeclouds_         |
+| XLR | pingmann | pingmann |
+| XLX | TrulyMatchstick | realmatchstick |
 | XMD | GreenLeader3626  | mentzen_            |
 | XNE | Meepazor         | meepazor            |
 | XNF | Burgerkinghotline| burgerkinghotline   |

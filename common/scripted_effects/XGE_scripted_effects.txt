@@ -1,0 +1,43 @@
+XGE_decrease_devastation_time = {
+	#custom_effect_tooltip = XGE_decrease_devastation_tt
+	if = {
+		limit = {
+			has_active_mission = XGE_devastation_5to4
+		}
+		add_days_mission_timeout = {
+			mission = XGE_devastation_5to4
+			days = -20
+		}
+	}
+	
+	if = {
+		limit = {
+			has_active_mission = XGE_devastation_4to3
+		}
+		add_days_mission_timeout = {
+			mission = XGE_devastation_4to3
+			days = -20
+		}
+	}
+	
+	if = {
+		limit = {
+			has_active_mission = XGE_devastation_3to2
+		}
+		add_days_mission_timeout = {
+			mission = XGE_devastation_3to2
+			days = -20
+		}
+	}
+	
+	if = {
+		limit = {
+			has_active_mission = XGE_devastation_2to1
+		}
+		add_days_mission_timeout = {
+			mission = XGE_devastation_3to2
+			days = -20
+		}
+	}
+	
+}

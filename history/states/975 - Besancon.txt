@@ -1,0 +1,30 @@
+state = {
+	id = 975
+	name = "STATE_975"
+    	manpower = 1047208
+	
+	state_category = metropolis
+	
+	resources = {
+	}
+
+	history = {
+		owner = XFR
+		victory_points = {
+			9642 10 
+		}
+		buildings = {
+			infrastructure = 5
+			air_base = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = XFR
+	}
+
+	provinces = { 
+		9642
+	}
+
+	local_supplies = 0.0 
+}

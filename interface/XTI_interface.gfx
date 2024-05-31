@@ -1,5 +1,6 @@
 spriteTypes = {
-
+	
+	### PEOPLE ###
 	spriteType = {
 		name = "GFX_portrait_XTI_reclamation_council"
 		texturefile = "gfx/XTI/XTI_reclamation_council.dds"
@@ -20,5 +21,21 @@ spriteTypes = {
 		name = "GFX_portrait_XTI_clara_portrait"
 		texturefile = "gfx/XTI/XTI_clara_bauer.dds"
 	}
-
+	spriteType = {
+		name = "GFX_portrait_XTI_interregnum_portrait"
+		texturefile = "gfx/XTI/XTI_interregnum.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XTI_karl_ii_portrait"
+		texturefile = "gfx/XTI/XTI_karl_II.dds"
+	}
+	### FOCUSES ###
+	spriteType = {
+		name = "GFX_XTI_focus_radio"
+		texturefile = "gfx/XTI/focus_XTI_radio.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SWE_radiotjanst"
+		texturefile = "gfx/interface/goals/focus_SWE_radiotjanst.dds"
+	}
 }

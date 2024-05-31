@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_XAQ_senate"
+		texturefile = "gfx/interface/ideas/XAQ/XAQ_senate.dds"
+	}
+
+}

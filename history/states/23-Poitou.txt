@@ -2,9 +2,9 @@
 state={
 	id=23
 	name="STATE_23"
-manpower=1068733
+manpower=1468733
 	
-	state_category = town
+	state_category = city
 	
 	resources={
 		steel=12 #was:30 was: 48
@@ -13,10 +13,10 @@ manpower=1068733
 	history={
 		owner = XAQ
 		victory_points = {
-			6657 5
+			6657 10
 		}
 		victory_points = {
-			655 1
+			655 5
 		}
 		buildings = {
 			infrastructure = 3

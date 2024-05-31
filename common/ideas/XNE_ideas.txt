@@ -44,6 +44,21 @@ ideas = {
 				stability_weekly = -0.001
 			}
 		}
+		XNE_internal_conflict_add = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_weekly = -0.002
+				neutrality_drift = 0.02
+			}
+		}
 		XNE_tensions_on_the_trent = {
 			allowed = {}
 			available = {}
@@ -60,6 +75,37 @@ ideas = {
 				democratic_drift = -0.01
 			}
 		}
+		XNE_tensions_on_the_trent_fort = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XNM_tensions_on_the_trent
+			
+			modifier = {
+				war_support_factor = 0.15
+				democratic_drift = -0.01
+			}
+		}
+		XNE_tensions_on_the_trent_devolution = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XNM_tensions_on_the_trent
+			
+			modifier = {
+				war_support_factor = 0.15
+				democratic_drift = -0.01
+				production_speed_bunker_factor = 0.25
+			}
+		}
 		XNE_tensions_on_the_trent_eased = {
 			allowed = {}
 			available = {}
@@ -73,6 +119,88 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.10
 				stability_factor = -0.02
+			}
+		}
+		XNE_tensions_on_the_trent_escalate = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XNM_tensions_on_the_trent
+			
+			modifier = {
+				war_support_factor = 0.15
+				stability_weekly = -0.001
+				stability_factor = -0.05
+				democratic_drift = -0.01
+				political_power_gain = 0.2
+			}
+		}
+		XNE_tensions_on_the_trent_victory = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XNM_tensions_on_the_trent
+			
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.10
+				political_power_gain = 0.1
+			}
+		}
+		XNE_high_import_taxes = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = ARG_civilian_economy_boost
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				global_building_slots = 2
+				industry_repair_factor = 0.25
+				cic_construction_boost = 0.25
+				custom_modifier_tooltip = XNE_closed_trade
+			}
+		}
+		XNE_lower_taxes = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = ARG_civilian_economy_boost
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				political_power_factor = 0.25
+			}
+		}
+		XNE_concessions_to_companies = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_economic_crisis
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = 0.1
 			}
 		}
 		

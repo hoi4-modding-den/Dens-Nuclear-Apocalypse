@@ -34,10 +34,31 @@ create_country_leader = {
 	desc = XNM_arthur_gainsborough_desc
 	picture = GFX_portrait_XNM_Arthur_Gainsborough
 	expire = "1.1.1"
-	ideology = liberalism
+	ideology = XNM_udm_coalition
 	traits = {
 	}
 }
+set_party_name = {
+    ideology = democratic
+    long_name = XNM_udm_coalition_long
+    name = XNM_udm_coalition
+}
+
+create_country_leader = {
+	name = XNM_general_edwin_barron
+	desc = XNM_general_edwin_barron_desc
+	picture = GFX_portrait_XNM_General_Edwin_Barron
+	expire = "1.1.1"
+	ideology = XNM_national_mercian_front
+	traits = {
+	}
+}
+set_party_name = {
+    ideology = fascism
+    long_name = XNM_national_mercian_front_long
+    name = XNM_national_mercian_front
+}
+
 
 create_faction = "Isles Cooperative"
 add_to_faction = XTY

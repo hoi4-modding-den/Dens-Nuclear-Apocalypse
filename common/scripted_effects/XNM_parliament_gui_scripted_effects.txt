@@ -7,7 +7,7 @@ parliament_gui_initial = {
 	add_to_array = { parliament_seat_array = 28 } # New Dawn Party
 	add_to_array = { parliament_seat_array = 16 } # Union for Culturalism
 	add_to_array = { parliament_seat_array = 15 } # Iclingatists
-	add_to_array = { parliament_seat_array = 4 } # Freedom Party of Mercia	
+	add_to_array = { parliament_seat_array = 4 } # National Mercian Front	
 
 	# parliament_member_array stores the list of parties
 	# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
@@ -15,7 +15,7 @@ parliament_gui_initial = {
 	add_to_array = { parliament_member_array = 2 } # New Dawn Party
 	add_to_array = { parliament_member_array = 3 } # Union for Culturalism
 	add_to_array = { parliament_member_array = 4 } # Iclingatists
-	add_to_array = { parliament_member_array = 5 } # Freedom Party of Mercia
+	add_to_array = { parliament_member_array = 5 } # National Mercian Front
 
 	# Set up the positions of the dots for the semicircle parliament
 	parliament_gui_positions = yes

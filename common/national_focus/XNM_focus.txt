@@ -1,0 +1,306 @@
+focus_tree = {
+	id = XNM_focus
+	default = no
+	reset_on_civilwar = no	
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XNM
+		}
+	}
+	
+	focus = {
+		id = XNM_the_gainsborough_administration
+		icon = GFX_focus_eng_motion_of_no_confidence
+		x = 10
+		y = 0
+		cost = 5
+
+		available = { 
+			has_country_leader = { 
+				name = "Arthur Gainsborough"
+				ruling_only = yes
+			}
+		}
+		bypass = {}		
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_visit_to_the_heartland
+		icon = GFX_focus_generic_copy_plane_designs
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_gainsborough_administration
+		prerequisite = { focus = XNM_the_gainsborough_administration }
+		available = { 
+			has_country_leader = { 
+				name = "Arthur Gainsborough"
+				ruling_only = yes
+			}
+		}
+		bypass = {}		
+		
+		completion_reward = {
+			country_event = XNM_focus.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			unlock_decision_category_tooltip = XNM_election_season_category
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_the_southern_border_crisis
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 0
+		y = 1
+		cost = 10
+
+		relative_position_id = XNM_visit_to_the_heartland
+		prerequisite = { focus = XNM_visit_to_the_heartland }
+		available = { always = false }
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNM_transnational_response
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_southern_border_crisis
+		prerequisite = { focus = XNM_the_southern_border_crisis }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_second_to_none
+		icon = GFX_focus_XNM_second_to_none
+		x = 3
+		y = 1
+		cost = 5
+
+		relative_position_id = XNM_visit_to_the_heartland
+		prerequisite = { focus = XNM_visit_to_the_heartland }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_worker_right_act
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		x = -1
+		y = 1
+		cost = 5
+
+		relative_position_id = XNM_second_to_none
+		prerequisite = { focus = XNM_second_to_none }
+		mutually_exclusive = { focus = XNM_tyne_technologies }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_scunthorpe_steelworks_investments
+		icon = GFX_focus_generic_steel
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_worker_right_act
+		prerequisite = { focus = XNM_worker_right_act }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_tyne_technologies
+		icon = GFX_focus_XNM_tyne_technologies
+		x = 1
+		y = 1
+		cost = 5
+
+		relative_position_id = XNM_second_to_none
+		prerequisite = { focus = XNM_second_to_none }
+		mutually_exclusive = { focus = XNM_worker_right_act }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_automation_movement
+		icon = GFX_focus_SOV_organize_wreckers
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_tyne_technologies
+		prerequisite = { focus = XNM_tyne_technologies }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNM_political_continuation
+		icon = GFX_focus_XNM_political_continuation
+		x = -3
+		y = 1
+		cost = 5
+
+		relative_position_id = XNM_visit_to_the_heartland
+		prerequisite = { focus = XNM_visit_to_the_heartland }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_support_from_the_udm
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 0
+		y = 1
+		cost = 5
+
+		relative_position_id = XNM_political_continuation
+		prerequisite = { focus = XNM_political_continuation }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_approach_thorne
+		icon = GFX_focus_SOV_ally_bukharinists
+		x = -1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_support_from_the_udm
+		prerequisite = { focus = XNM_support_from_the_udm }
+		mutually_exclusive = { focus = XNM_the_equinox_deal }		
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_the_equinox_deal
+		icon = GFX_focus_generic_court
+		x = 1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_support_from_the_udm
+		prerequisite = { focus = XNM_support_from_the_udm }
+		mutually_exclusive = { focus = XNM_approach_thorne }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_the_autumn_elections
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+		x = 0
+		y = 2
+		cost = 1
+
+		relative_position_id = XNM_transnational_response
+		prerequisite = { focus = XNM_transnational_response }		
+		prerequisite = { 
+			focus = XNM_approach_thorne
+			focus = XNM_scunthorpe_steelworks_investments
+			focus = XNM_automation_movement
+			focus = XNM_the_equinox_deal
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}		
+}	

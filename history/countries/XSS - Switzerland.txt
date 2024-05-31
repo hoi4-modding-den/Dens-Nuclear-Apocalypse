@@ -5,6 +5,7 @@ oob = "XSS"
 recruit_character = XSS_swiss_council
 recruit_character = XSS_niemir_eggli
 recruit_character = XSS_evan_signer
+recruit_character = XSS_robisch
 recruit_character = XSS_bracher
 recruit_character = XSS_stettler
 recruit_character = XSS_holzhauer
@@ -18,10 +19,13 @@ recruit_character = XSS_student_circle
 recruit_character = XSS_industrial_circle
 recruit_character = XSS_konig
 recruit_character = XSS_friedrich
+recruit_character = XSS_lohmiller
+recruit_character = XSS_engelberg
+recruit_character = XSS_soviet
 
 add_ideas = {
 
-XSS_neutrality
+XSS_neutrality_idea
 XSS_bank_of_europe
 }
 

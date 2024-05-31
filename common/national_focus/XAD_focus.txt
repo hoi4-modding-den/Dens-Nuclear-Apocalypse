@@ -16,7 +16,7 @@
 	
 #	focus = {
 #		id = PRC_
-#		icon = GFX_
+#		icon = GFX_goal_unknown
 #		prerequisite = { focus = }
 #		#mutually_exclusive = { focus =  }
 #		x = -3
@@ -51,7 +51,7 @@
 #	}
 	focus = {
 		id = XAD_start_the_casablanca_project
-		icon = GFX_
+		icon = GFX_goal_unknown
 		#prerequisite = { focus = }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -93,7 +93,7 @@
 	}
 	focus = {
 		id = XAD_develop_the_casablanca_university
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = -3
@@ -125,7 +125,7 @@
 	}
 	focus = {
 		id = XAD_work_on_the_sevilla_projects
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -166,7 +166,7 @@
 	}
 	focus = {
 		id = XAD_develop_tabilina
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -207,7 +207,7 @@
 	}
 	focus = {
 		id = XAD_develop_melilla
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = 3
@@ -248,7 +248,7 @@
 	}
 	focus = {
 		id = XAD_develop_marakkech
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = 5
@@ -289,7 +289,7 @@
 	}
 	focus = {
 		id = XAD_enstablish_the_cataban_west
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -345,7 +345,7 @@
 	}
 	focus = {
 		id = XAD_enstablish_the_cataban_east
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
 		#mutually_exclusive = { focus =  }
 		x = 3
@@ -401,7 +401,7 @@
 	}
 	focus = {
 		id = XAD_develop_the_cities
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_enstablish_the_cataban_east }
 		prerequisite = { focus = XAD_enstablish_the_cataban_west }
 		#mutually_exclusive = { focus =  }
@@ -458,7 +458,7 @@
 	}
 	focus = {
 		id = XAD_the_casablanca_airport
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -498,7 +498,7 @@
 	}
 	focus = {
 		id = XAD_increase_the_gibraltar_tariffs
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -535,7 +535,7 @@
 	}
 	focus = {
 		id = XAD_invite_swiss_investors
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = -2
@@ -567,7 +567,7 @@
 	}
 	focus = {
 		id = XAD_fund_the_CIAMP
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = 4
@@ -602,7 +602,7 @@
 	}
 	focus = {
 		id = XAD_the_civilian_problems
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = 6
@@ -632,8 +632,392 @@
 		}
 	}
 	focus = {
+		id = XAD_encorauge_turism
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_the_civilian_problems }
+		#mutually_exclusive = { focus =  }
+		x = 6
+		y = 5
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_industrialization
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_encorauge_turism }
+		mutually_exclusive = { focus = XAD_agriculturalism }
+		x = 2
+		y = 6
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_further_industrialization
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_industrialization }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 7
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_enstablish_full_employement
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_further_industrialization }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 8
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = XAD_full_empleyement
+		}
+	}
+	focus = {
+		id = XAD_allow_women_to_work
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_enstablish_full_employement }
+		mutually_exclusive = { focus = XAD_dont_allow_women_to_work }
+		x = 1
+		y = 9
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = XAD_women_work
+		}
+	}
+	focus = {
+		id = XAD_dont_allow_women_to_work
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_enstablish_full_employement }
+		mutually_exclusive = { focus = XAD_allow_women_to_work }
+		x = 3
+		y = 9
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = XAD_women_dont_work
+		}
+	}
+	focus = {
+		id = XAD_enstablish_the_port_of_valencia
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 10
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 167
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			167 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAD_destroy_random_places
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_enstablish_the_port_of_valencia }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 11
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = XAD_connect_the_country
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
+		#mutually_exclusive = { focus =  }
+		x = 4
+		y = 10
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				controls_state = 167
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				path = { 970 980 6933 6884 9819 11851 931 3930 6948 6832 9778 3953 11812 832 3835 3799 6906}
+				start_province = 970
+				target_province = 3799
+			}
+		}
+	}
+	focus = {
+		id = XAD_self_sufficence
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 10
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = XAD_self_sufficence_idea
+		}
+	}
+	focus = {
 		id = XAD_tiblina_mines
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -669,7 +1053,7 @@
 	}
 	focus = {
 		id = XAD_oil_in_the_meditarrean
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_tiblina_mines }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -705,7 +1089,7 @@
 	}
 	focus = {
 		id = XAD_iron_in_cordoba
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_oil_in_the_meditarrean }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -741,7 +1125,7 @@
 	}
 	focus = {
 		id = XAD_selling_iron_to_the_swiss
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_iron_in_cordoba }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -779,7 +1163,7 @@
 	}
 	focus = {
 		id = XAD_the_cromium_in_the_north
-		icon = GFX_
+		icon = GFX_goal_unknown
 		prerequisite = { focus = XAD_iron_in_cordoba }
 		#mutually_exclusive = { focus =  }
 		x = 10
@@ -826,5 +1210,35 @@
 				}
 			}
 		} 
+	}
+	focus = {
+		id = XAD_agriculturalism
+		icon = GFX_goal_unknown
+		prerequisite = { focus = XAD_encorauge_turism }
+		mutually_exclusive = { focus = XAD_industrialization }
+		x = 10
+		y = 6
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = agrarian_economy_1
+		}
 	}
 }

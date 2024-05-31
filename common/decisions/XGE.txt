@@ -1,0 +1,105 @@
+XGE_reconstruction_category = {	
+	XGE_devastation_5to4 = {
+		activation = {
+			
+			has_country_flag = XGE_5to4_flag
+			
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		selectable_mission = no
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XGE_5to4_flag
+				}
+			}
+		}
+		timeout_effect = {
+			swap_ideas = {
+				remove_idea = XGE_devastation_5
+				add_idea = XGE_devastation_4
+			}
+			activate_mission = XGE_devastation_4to3
+			set_country_flag = XGE_4to3_flag
+			remove_mission = XGE_devastation_5to4
+		}
+	}
+	XGE_devastation_4to3 = {
+		activation = {
+			has_country_flag = XGE_4to3_flag
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		selectable_mission = no
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XGE_4to3_flag
+				}
+			}
+		}
+		timeout_effect = {
+			swap_ideas = {
+				remove_idea = XGE_devastation_4
+				add_idea = XGE_devastation_3
+			}
+			activate_mission = XGE_devastation_3to2
+			set_country_flag = XGE_3to2_flag
+			clr_country_flag = XGE_4to3_flag
+			remove_mission = XGE_devastation_4to3
+		}
+	}
+	XGE_devastation_3to2 = {
+		activation = {
+			has_country_flag = XGE_3to2_flag
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		selectable_mission = no
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XGE_3to2_flag
+				}
+			}
+		}
+		timeout_effect = {
+			swap_ideas = {
+				remove_idea = XGE_devastation_3
+				add_idea = XGE_devastation_2
+			}
+			activate_mission = XGE_devastation_2to1
+			set_country_flag = XGE_2to1_flag
+			clr_country_flag = XGE_3to2_flag
+			remove_mission = XGE_devastation_3to2
+		}
+	}
+	XGE_devastation_2to1 = {
+		activation = {
+			has_country_flag = XGE_2to1_flag
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		selectable_mission = no
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XGE_2to1_flag
+				}
+			}
+		}
+		timeout_effect = {
+			swap_ideas = {
+				remove_idea = XGE_devastation_2
+				add_idea = XGE_devastation_1
+			}
+			clr_country_flag = XGE_2to1_flag
+			remove_mission = XGE_devastation_2to1
+		}
+	}
+}

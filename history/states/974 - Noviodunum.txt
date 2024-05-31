@@ -1,0 +1,28 @@
+state = {
+	id = 974
+	name = "STATE_974"
+    	manpower = 10472
+	
+	state_category = enclave
+	
+	resources = {
+	}
+
+	history = {
+		owner = XFR
+		victory_points = {
+			9609 2 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = XFR
+		add_claim_by = XAQ
+	}
+
+	provinces = { 
+		9609
+	}
+
+	local_supplies = 0.0 
+}

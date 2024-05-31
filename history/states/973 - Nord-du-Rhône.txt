@@ -1,0 +1,26 @@
+state = {
+	id = 973
+	name = "Nord-du-Rhône"
+    	manpower = 659425
+	
+	state_category = large_town
+	
+	resources = {
+	}
+
+	history = {
+		owner = XFW
+
+		buildings = {
+			infrastructure = 4
+			#industrial_complex = 1
+		}
+		add_core_of = LIB
+	}
+
+	provinces = { 
+		3650 6668 641 6639 9590
+	}
+
+	local_supplies = 0.0 
+}

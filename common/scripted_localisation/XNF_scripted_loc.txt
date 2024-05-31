@@ -1,0 +1,249 @@
+defined_text = {
+	name = IsSenateLoyal
+
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_sen_lyl > 7
+			}
+		}
+		localization_key = XNF_yay_sen
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_sen_lyl < 8
+			}
+			check_variable = {
+				xnf_sen_lyl > 5
+			}
+		}
+		localization_key = xnf_meh_sen
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_sen_lyl < 6
+			}
+		}
+		localization_key = XNF_boo_sen
+	}
+}
+defined_text = {
+	name = STEXTCOLOR
+
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_sen_lyl > 7
+			}
+		}
+		localization_key = S_YAY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_sen_lyl < 8
+			}
+			check_variable = {
+				xnf_sen_lyl > 5
+			}
+		}
+		localization_key = S_MEH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_sen_lyl < 6
+			}
+		}
+		localization_key = S_BOO
+	}
+}
+defined_text = {
+	name = IsLegLoyal
+
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_leg_lyl > 79
+			}
+		}
+		localization_key = XNF_yay_leg
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_leg_lyl > 50
+			}
+			check_variable = {
+				xnf_leg_lyl < 80
+			}
+		}
+		localization_key = XNF_meh_leg
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_leg_lyl < 51
+			}
+		}
+		localization_key = XNF_boo_leg
+	}
+}
+defined_text = {
+	name = LTEXTCOLOR
+
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_leg_lyl > 79
+			}
+		}
+		localization_key = L_YAY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_leg_lyl > 50
+			}
+			check_variable = {
+				xnf_leg_lyl < 80
+			}
+		}
+		localization_key = L_MEH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnf_leg_lyl < 51
+			}
+		}
+		localization_key = L_BOO
+	}
+}
+
+defined_text = {
+	name = IsLoyalistsHappy
+
+	text = {
+		trigger = {
+			check_variable = {
+				xnfloyalists_happy > 79
+			}
+		}
+		localization_key = XNF_yay_lyl
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnfloyalists_happy > 50
+			}
+			check_variable = {
+				xnfloyalists_happy < 80
+			}
+		}
+		localization_key = XNF_meh_lyl
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnfloyalists_happy < 51
+			}
+		}
+		localization_key = XNF_boo_lyl
+	}
+}
+defined_text = {
+	name = IsRadicalsHappy
+
+	text = {
+		trigger = {
+			check_variable = {
+				xnfradicals_happy > 79
+			}
+		}
+		localization_key = XNF_yay_rad
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnfradicals_happy > 50
+			}
+			check_variable = {
+				xnfradicals_happy < 80
+			}
+		}
+		localization_key = XNF_meh_rad
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnfradicals_happy < 51
+			}
+		}
+		localization_key = XNF_boo_rad
+	}
+}
+defined_text = {
+	name = IsRepublicansHappy
+
+	text = {
+		trigger = {
+			check_variable = {
+				xnfrepublicans_happy > 79
+			}
+		}
+		localization_key = XNF_yay_rep
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnfrepublicans_happy > 50
+			}
+			check_variable = {
+				xnfrepublicans_happy < 80
+			}
+		}
+		localization_key = XNF_meh_rep
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnfrepublicans_happy < 51
+			}
+		}
+		localization_key = XNF_boo_rep
+	}
+}
+defined_text = {
+	name = IsNationalistsHappy
+
+	text = {
+		trigger = {
+			check_variable = {
+				xnfultnationalists_happy > 79
+			}
+		}
+		localization_key = XNF_yay_nat
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnfultnationalists_happy > 50
+			}
+			check_variable = {
+				xnfultnationalists_happy < 80
+			}
+		}
+		localization_key = XNF_meh_nat
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				xnfultnationalists_happy < 51
+			}
+		}
+		localization_key = XNF_boo_nat
+	}
+}

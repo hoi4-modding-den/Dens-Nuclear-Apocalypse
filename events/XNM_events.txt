@@ -1,0 +1,100 @@
+add_namespace = XNM_focus
+add_namespace = XNM_country
+add_namespace = XNM_news
+
+# Visit to the Heartland
+country_event = {
+	id = XNM_focus.1
+	title = XNM_focus.1.title
+	desc = XNM_focus.1.desc
+	picture = GFX_report_event_communist_leader
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNM_focus.1.a
+		custom_effect_tooltip = XNM_visit_to_the_heartland_tt
+		complete_effect = {			
+			XNM = {
+				set_country_flag = XNM_visit_to_the_heartland
+			}
+		}	
+		ai_chance = { factor = 1 }	
+	}
+}
+
+# Midlands Situation out of Control 
+country_event = {
+	id = XNM_country.1
+	title = XNM_country.1.title
+	desc = XNM_country.1.desc
+	picture = GFX_report_event_bul_muraviev_protest
+	
+	trigger = {
+		has_completed_focus = XNM_visit_to_the_heartland
+	}	
+	mean_time_to_happen = { days = 27 }
+	
+	option = {
+		name = XNM_country.1.a
+		swap_ideas = {
+			remove_idea = XNM_midlands_protests
+			add_idea = XNM_midlands_protests_light
+		}		
+		128 = {
+			set_demilitarized_zone = yes
+		}
+		ai_chance = { factor = 1 }	
+	}	
+}
+
+# Local Governmental Collapse in Repton
+country_event = {
+	id = XNM_country.2
+	title = XNM_country.2.title
+	desc = XNM_country.2.desc
+	picture = GFX_report_event_gathering_protest
+	
+	trigger = {
+		has_completed_focus = XNM_visit_to_the_heartland
+	}	
+	mean_time_to_happen = { days = 41 }
+	
+	option = {
+		name = XNM_country.2.a
+		128 = {
+            remove_core_of = ROOT
+            hidden_effect = { force_enable_resistance = XNM start_resistance = yes }
+            set_resistance = 50
+			set_compliance = 10
+		}
+		ai_chance = { factor = 5 }	
+	}
+	option = {
+		name = XNM_country.2.b
+		128 = {
+			remove_core_of = XNM
+		}		
+		ai_chance = { factor = 1 }	
+	}	
+}
+
+# Midlands Crisis in Mercia
+news_event = {
+	id = XNM_news.1
+	title = XNM_news.1.title
+	desc = XNM_news.1.desc
+	picture = GFX_news_event_gathering_protest
+	
+	trigger = {
+		has_completed_focus = XNM_visit_to_the_heartland
+	}	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = XNM_news.1.a
+		complete_effect = {	
+		}	
+		ai_chance = { factor = 1 }	
+	}
+}

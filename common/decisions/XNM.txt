@@ -1,0 +1,25 @@
+XNM_election_season_category = {	
+
+	XNM_public_rally_in_liuerpul = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = POR
+		}
+		
+		available = { }
+		
+		fire_only_once = yes
+		days_remove = 25
+		selectable_mission = yes
+		
+		visible = {
+			tag = POR
+		}
+		
+		complete_effect  = {
+		    custom_effect_tooltip = xnm_public_rally_in_liuerpul
+		}		
+	}
+}
