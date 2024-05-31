@@ -10,12 +10,25 @@ ideas = {
 				always = yes
 			}
 
-            cancel = {
-				NOT = {
-					24 = {
-                        is_owned_by = ROOT
-                    }
-				}
+           removal_cost = -1
+
+            picture = GFX
+
+            modifier = {
+                political_power_factor = -0.05
+			    stability_weekly = -0.01
+                consumer_goods_factor = 0.15
+            }
+
+        }
+
+        XFR_chaos_in_centre2 = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
 			}
 
            removal_cost = -1
