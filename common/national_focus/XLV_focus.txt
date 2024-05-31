@@ -127,11 +127,6 @@
 				uses = 2
 				category = train_tech
 			}
-			add_equipment_to_stockpile = {
-			    type = train_equipment_1
-			    amount = 8
-			    producer = XLV
-			}
 		}
 	}
 
@@ -153,6 +148,7 @@
 
 
 		available = {
+			controls_state = 159
 		}
 		
 		bypass = {
@@ -289,6 +285,110 @@
 
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = XLV_the_neoeuro_deal
+		icon = GFX_
+    	x = -2
+		y = 3
+		relative_position_id = XLV_elettrotreno_nord
+		prerequisite = {
+			focus = XLV_borsa_scambi_milano
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				XSS = {exists = yes}
+			}
+			OR = {
+				XTI = {exists = yes}
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			XTI = {
+                country_event = {
+                    id = XLV_events.11
+                    days = 7
+                }
+			}
+			XSS = {
+                country_event = {
+                    id = XLV_events.11
+                    days = 7
+                }
+			}
+		}
+	}
+
+	focus = {
+		id = XLV_second_fiume_expedition
+		icon = GFX_
+    	x = 1
+		y = 4
+		relative_position_id = XLV_elettrotreno_nord
+		prerequisite = {
+			focus = XLV_open_uniTN
+		}
+		prerequisite = {
+			focus = XLV_restore_the_MOSE
+			focus = XLV_the_neoeuro_deal
+
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			736 = {
+				is_owned_by = LIB
+			}
+			852 = {
+				is_owned_by = LIB
+			}
+		}
+		
+		bypass = {
+			NOT = {
+				736 = {
+					is_owned_by = LIB
+				}
+				852 = {
+					is_owned_by = LIB
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			736 = { transfer_state_to = XLV }
+			852 = { transfer_state_to = XLV }
+			hidden_effect = {
+	            country_event = {
+                    id = XLV_events.12
+                    random_days = 60
+					
+                }
+			}
 		}
 	}
 }

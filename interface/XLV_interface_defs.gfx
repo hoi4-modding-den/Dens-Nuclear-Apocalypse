@@ -9,14 +9,14 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "XLV_committee"
-		texturefile = "gfx/XLV/XLV_committee_of_public_safety.dds"
+		texturefile = "gfx/XLV/GFX_idea_XLV_committee_of_public_safety.dds"
 	}	
 	spriteType = {
 		name = "XLV_centro_ricerca"
-		texturefile = "gfx/XLV/XLV_centro_ricerca.dds"
+		texturefile = "gfx/XLV/GFX_idea_XLV_centro_ricerca.dds"
 	}
 	spriteType = {
-		name = "XLV_info_decisions"
+		name = "GFX_idea_XLV_info_decisions"
 		texturefile = "gfx/interface/decisions/decision_category_generic.dds"
 	}	
 }

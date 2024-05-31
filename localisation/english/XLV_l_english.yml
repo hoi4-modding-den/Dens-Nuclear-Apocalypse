@@ -45,6 +45,8 @@
  XLV_events.8.t: "A stalemate..."
  XLV_events.9.t: "CRT forms a coalition with PEL-AV"
  XLV_events.10.t: "PEL-AV forms a coalition with CRT"
+ XLV_events.11.t: "Lombardo-Veneto proposes a common currency"
+ XLV_events.12.t: "Alberto Cartoni dies from 'Febbre di Fiume'"
  XLV_events.1.desc: "Today, Trento citizens voted for the party that should have the fifth place in the council. We can only hope they voted for the better..."
  XLV_events.2.desc: "Today, Verona citizens voted for the party that should have the fifth place in the council. We can only hope they voted for the better..."
  XLV_events.3.desc: "Today, Milan citizens voted for the party that should have the fifth place in the council. We can only hope they voted for the better..."
@@ -58,7 +60,9 @@
  XLV_events.8.a: "Another member of the Centro Ricerca Trento can't do bad."
  XLV_events.8.b: "We could do better with another European Party in our committee."
  XLV_events.9.a: "This is... Unexpected, to say the least."
-
+ XLV_events.11.a: "This looks like a good deal."
+ XLV_events.11.b: "We really do not care."
+ XLV_events.11.b: "We must hold new elections right now."
 
  # Ideas
  XLV_committee_of_public_safety: "Commitee of public safety"
@@ -74,7 +78,7 @@
  XLV_info_decisions_2: "Path Guide - Lombardo-Veneto"
 
  XLV_the_committee_decisions: "The Committee"
- XLV_the_committee_decisions_desc: "The committee is the most powerful institution in our country, it is formed by 5 members, divided between the major parties in Lombardo-Veneto.\n They are currently divided in this way.\n §GLiga Autonomia Veneto:§  [?lega_members] members\n §YCentro Ricerca Trento:§  [?science_members] members\n §WNon-Aligned Members:§  [?neutral_members] members\n §CPartito Eurodemocratico della Lombardia - Avanti Veneto!:§  [?europe_members] members\n §RPartito Comunista Unito:§  [?communist_members] members"
+ XLV_the_committee_decisions_desc: "The committee is the most powerful institution in our country, it is formed by 5 members, divided between the major parties in Lombardo-Veneto.\n They are currently divided in this way.\n §GLiga Autonomia Veneto:§  [?lega_members] members\n §YCentro Ricerca Trento:§  [?XLV_science_members] members\n §WNon-Aligned Members:§  [?XLV_neutral_members] members\n §CPartito Eurodemocratico della Lombardia - Avanti Veneto!:§  [?XLV_europe_members] members\n §RPartito Comunista Unito:§  [?XLV_communist_members] members"
 
  #focuses
  XLV_elettrotreno_nord: "Elettrotreno-Nord"
@@ -84,6 +88,8 @@
  XLV_restore_venice: "Restore Venice"
  XLV_restore_the_MOSE: "Restore the MOSE"
  XLV_open_uniTN: "Open uniTN"
+ XLV_the_neueuro_deal: "The neueuro deal"
+ XLV_second_fiume_expedition: "Second Fiume Expedition"
 
  #others
  XLV_history_desc: "WIP"

@@ -68,7 +68,7 @@ country_event = {
                 days = 3
             }
             add_to_variable = {
-                var = lega_points
+                var = XLV_lega_points
                value = 1
             }
         }
@@ -89,7 +89,7 @@ country_event = {
                 days = 3
             }
             add_to_variable = {
-                var = communists_points
+                var = XLV_communists_points
                 value = 1
             }
         }
@@ -119,7 +119,7 @@ country_event = {
                 days = 3
             }
             add_to_variable = {
-                var = lega_points
+                var = XLV_lega_points
                value = 1
             }
         }
@@ -140,7 +140,7 @@ country_event = {
                 days = 3
             }
             add_to_variable = {
-                var = communists_points
+                var = XLV_communists_points
                 value = 1
             }
         }
@@ -170,7 +170,7 @@ country_event = {
                 days = 3
             }
             add_to_variable = {
-                var = lega_points
+                var = XLV_lega_points
                value = 1
             }
         }
@@ -191,7 +191,7 @@ country_event = {
                 days = 3
             }
             add_to_variable = {
-                var = communists_points
+                var = XLV_communists_points
                 value = 1
             }
         }
@@ -221,7 +221,7 @@ country_event = {
                 days = 3
             }
             add_to_variable = {
-                var = lega_points
+                var = XLV_lega_points
                value = 1
             }
         }
@@ -242,7 +242,7 @@ country_event = {
                 days = 3
             }
             add_to_variable = {
-                var = communists_points
+                var = XLV_communists_points
                 value = 1
             }
         }
@@ -265,7 +265,7 @@ country_event = {
         hidden_effect= {
             if = {
                 limit = {
-                    check_variable = { communists_points > lega_points }
+                    check_variable = { XLV_communists_points > XLV_lega_points }
                 }
                 country_event = {
                     id = XLV_events.6 #Communists win
@@ -274,7 +274,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    check_variable = { communists_points < lega_points }
+                    check_variable = { XLV_communists_points < XLV_lega_points }
                 }
                 country_event = {
                     id = XLV_events.7 #Fascists win
@@ -283,7 +283,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    check_variable = { communists_points = lega_points }
+                    check_variable = { XLV_communists_points = XLV_lega_points }
                 }
                 country_event = {
                     id = XLV_events.8 #Stalemate
@@ -316,7 +316,7 @@ country_event = {
             name = XLV_communism_party
         }
         add_to_variable = {
-            var = communist_members
+            var = XLV_communist_members
             value = 1
         }
     }
@@ -364,7 +364,7 @@ country_event = {
 			base = 1
         }
         add_to_variable = {
-            var = science_members
+            var = XLV_science_members
             value = 1
         }
         country_event = {
@@ -379,7 +379,7 @@ country_event = {
 			base = 1
         }
         add_to_variable = {
-            var = europe_members
+            var = XLV_europe_members
             value = 1
         }
         country_event = {
@@ -433,6 +433,89 @@ country_event = {
             election_frequency = 48
             long_name = XLV_democratic_party_long
             name = XLV_democratic_party
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.11
+	title = XLV_events.11.t
+	desc = XLV_events.11.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #This looks like a good deal.
+		name = XLV_events.11.a
+		ai_chance = {
+			base = 1
+        }
+        add_ideas = {
+            XLV_neo_euro
+        }
+        add_opinion_modifier = {
+            target = XLV
+            modifier = XLV_accepted_euro
+        }
+        XLV = {
+            add_ideas = {
+                XLV_neo_euro
+            }
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = XLV_accepted_euro
+            }
+        }
+	}
+
+	option = { #We really do not care.
+		name = XLV_events.11.b
+		ai_chance = {
+			base = 1
+        }
+        add_opinion_modifier = {
+            target = XLV
+            modifier = XLV_refused_euro
+        }
+        XLV = {
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = XLV_refused_euro
+            }
+        }
+	}
+}
+
+country_event = {
+	id = XLV_events.12
+	title = XLV_events.12.t
+	desc = XLV_events.12.desc
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #We need to host new elections right now.
+		name = XLV_events.11.a
+		ai_chance = {
+			base = 1
+        }
+        kill_country_leader = yes
+        manpower = -1
+        country_event = {
+            id = XLV_events.1
+            days = 7
+        }
+        subtract_from_variable = {
+            var = XLV_neutral_members
+           value = 1
+        }
+        add_country_leader_role = {
+            character = XLV_the_committee
+            promote_leader = yes
+            country_leader = {
+                ideology = fascism_type
+                expire = "2300.1.1.1"
+            }
         }
 	}
 }

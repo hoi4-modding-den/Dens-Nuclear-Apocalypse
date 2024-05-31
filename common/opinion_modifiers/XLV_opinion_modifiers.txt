@@ -1,0 +1,20 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	XLV_refused_euro = {
+		value = -15
+	}
+
+	XLV_accepted_euro = {
+		value = 15
+	}
+}
