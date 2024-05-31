@@ -15,7 +15,7 @@
 	continuous_focus_position = { x = 0 y = 3000 }
 
 	initial_show_position = {
-		#focus = 
+		focus = XTI_radio_silence
 	}
 	
 #	focus = {
@@ -53,14 +53,18 @@
 #
 #		}
 #	}
-	
+
 	focus = {
 		id = XTI_radio_silence
 		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = {  }
+#		mutually_exclusive = { focus =  }
 		x = 6
 		y = 0
+#		relative_position_id = XTI_radio_silence
 
-		cost = 1
+		cost = 4
 
 #		ai_will_do = {
 #			factor = 24
