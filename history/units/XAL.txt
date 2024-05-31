@@ -1,0 +1,138 @@
+division_template = {
+	name = "Division de Forteresse"
+	division_names_group = XFR_GAR_01
+	priority = 0
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Division de Cavalerie"
+	division_names_group = XFR_CAV_01
+	priority = 2
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+      	recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie"
+	division_names_group = XFR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+      	engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Brigade des Volontaires Bourguignons"
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+      	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 9559 # Metz
+		division_template = "Division de Forteresse"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 11516 # Nancy
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.4
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 9503 # Strasbourg
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.4
+	}
+	division = { 
+		division_name = {
+            name = "Brigade des Volontaires Bourguignons"
+		}
+		location = 9503 # Strasbourg
+		division_template = "Brigade des Volontaires Bourguignons"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "XFR" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "XFR" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "XFR" } }
+		force_equipment_variants = { anti_air_equipment_1 = { owner = "XFR" } }
+		start_experience_factor = 0.7
+	}
+}
+
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "XAL"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "XAL"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+}

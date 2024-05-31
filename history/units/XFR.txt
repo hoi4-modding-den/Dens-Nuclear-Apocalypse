@@ -1,0 +1,215 @@
+division_template = {
+	name = "Division de Forteresse"
+	division_names_group = XFR_GAR_01
+	priority = 0
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+      		military_police = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Division de Cavalerie"
+	division_names_group = XFR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+      		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie"
+	division_names_group = XFR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+      	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	# Garrison #
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 3652 # Dijon
+		division_template = "Division de Forteresse"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 9609 # Nevers
+		division_template = "Division de Forteresse"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 3
+		}
+		location = 3560 # Sedan
+		division_template = "Division de Forteresse"
+		start_experience_factor = 0.2
+	}
+
+	# Infantry #
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 9642 # Besancon
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 3652 # Dijon
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 3
+		}
+		location = 9644 # Railway End near Centre
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 4
+		}
+		location = 13011 # Reims
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 5
+		}
+		location = 11488 # Railway End near Alsace-Lorraine
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+	}
+	
+	# Cavalry #
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 11628 # Railway Intersection between Dijon and Nevers
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.4
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 3506 # Upper Empty State near Centre
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.4
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 3
+		}
+		location = 9490 # Troyes
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.4
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 4
+		}
+		location = 9505 # Middle of the Railway between Reims and Besancon
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.4
+	}
+}
+
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "XFR"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "XFR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "XFR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "XFR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+}

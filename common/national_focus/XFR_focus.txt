@@ -102,6 +102,99 @@
 	}
 
 	focus = {
+		id = XFR_raid_fascist_hideouts
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = XFR_prepare_for_elections }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_prepare_for_elections
+
+		available = {
+			has_government = democratic
+		}
+
+		bypass = {
+			fascism < 0.1
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_secure_the_border
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = XFR_prepare_for_elections }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_prepare_for_elections
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_arrest_the_ringleaders
+		icon = GFX_focus_ARG_crackdown_on_corruption
+		prerequisite = { focus = XFR_raid_fascist_hideouts }
+		prerequisite = { focus = XFR_secure_the_border }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_prepare_for_elections
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_elections
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+		prerequisite = { focus = XFR_arrest_the_ringleaders }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+		relative_position_id = XFR_support_parliament
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = XFR_investigate_centre
 		icon = GFX
 		prerequisite = { focus = XFR_support_parliament focus = XFR_dennounce_democracy }
@@ -160,7 +253,7 @@
 		prerequisite = { focus = XFR_investigate_centre }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = XFR_investigate_centre
 
 		available = {
@@ -170,7 +263,7 @@
 		bypass ={
 			OR = {
 				NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
-				NOT = {has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
+				NOT = { 24 = { has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } } }
 			}
 		}
 
@@ -191,7 +284,7 @@
 		prerequisite = { focus = XFR_deal_with_the_mutants }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = XFR_deal_with_the_mutants
 
 		available = {
@@ -289,12 +382,12 @@
 	focus = {
 		id = XFR_democracy_lives_on
 		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = XFR_prepare_for_elections }
+		prerequisite = { focus = XFR_elections }
 		prerequisite = { focus = XFR_crisis_averted }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 4
-		relative_position_id = XFR_prepare_for_elections
+		y = 1
+		relative_position_id = XFR_elections
 
 		available = {
 			has_government = democratic
@@ -606,6 +699,15 @@
 			}
 		}
 
+		bypass = {
+			XSS = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+
 		cost = 5
 
 		ai_will_do = {
@@ -628,6 +730,19 @@
 		relative_position_id = XFR_reclaim_french_territories
 
 		available = {
+			is_subject = no
+			any_neighbor_country = {
+				tag = XPR
+			}
+		}
+
+		bypass = {
+			XPR = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
 		}
 
 		cost = 5
@@ -636,7 +751,10 @@
 			factor = 1
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+   				target = XPR
+			}
 		}
 	}
 
@@ -740,6 +858,54 @@
 		relative_position_id = XFR_cooperate_with_neighbours
 
 		available = {
+			is_subject = no
+			has_government = democratic
+			OR = {
+				16 = { is_fully_controlled_by = ROOT }
+				XPR = {
+					OR = {
+						is_subject_of = ROOT
+						has_opinion = { target = ROOT value > 50 }
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					16 = {
+						is_fully_controlled_by = ROOT
+						NOT = { is_owned_by = ROOT }
+					}
+				}
+				16 = { transfer_state_to = ROOT }
+			}
+			set_party_rule = {
+				ideology = democratic
+				can_create_factions = yes
+			}
+			create_faction = "French Federation"
+		}
+	}
+
+	focus = {	
+		id = XFR_expand_the_pact
+		icon = GFX
+		prerequisite = { focus = XFR_paris_conference }
+		x = 0
+		y = 1
+		relative_position_id = XFR_paris_conference
+
+		available = {
 		}
 
 		cost = 5
@@ -753,11 +919,34 @@
 	}
 
 	focus = {	
-		id = XFR_expand_the_pact
+		id = XFR_restore_the_french_republic
 		icon = GFX
 		prerequisite = { focus = XFR_paris_conference }
+		mutually_exclusive = { focus = XFR_a_french_federation }
 		x = -1
-		y = 1
+		y = 2
+		relative_position_id = XFR_paris_conference
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {	
+		id = XFR_a_french_federation
+		icon = GFX
+		prerequisite = { focus = XFR_paris_conference }
+		mutually_exclusive = { focus = XFR_restore_the_french_republic }
+		x = 1
+		y = 2
 		relative_position_id = XFR_paris_conference
 
 		available = {
