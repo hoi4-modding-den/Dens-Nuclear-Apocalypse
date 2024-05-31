@@ -111,11 +111,14 @@
 		#relative_position_id = XFR_support_parliament
 
 		available = {
-			24 = { is_owned_by = ROOT }
+			24 = { is_owned_and_controlled_by = ROOT }
 		}
 
 		bypass ={
-			NOT = { 24 = { is_owned_by = ROOT } }
+			OR = {
+				NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
+				24 = { is_demilitarized_zone = no }
+			}
 		}
 
 		offset = {
@@ -146,6 +149,7 @@
 			factor = 1
 		}
 		completion_reward = {
+			24 = { set_demilitarized_zone = no }
 		}
 	}
 
@@ -160,11 +164,14 @@
 		relative_position_id = XFR_investigate_centre
 
 		available = {
-			24 = { is_owned_by = ROOT }
+			24 = { is_owned_and_controlled_by = ROOT }
 		}
 
 		bypass ={
-			NOT = { 24 = { is_owned_by = ROOT } }
+			OR = {
+				NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
+				NOT = {has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
+			}
 		}
 
 		cost = 10
@@ -173,6 +180,8 @@
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = XFR_deal_with_the_mutants_tt
+			add_political_power = 50
 		}
 	}
 
@@ -186,33 +195,43 @@
 		relative_position_id = XFR_deal_with_the_mutants
 
 		available = {
-			24 = { is_owned_by = ROOT }
+			24 = {
+				OR = {
+					NOT = { is_owned_and_controlled_by = ROOT }
+					NOT = {has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
+				}
+			}
 		}
 
 		bypass ={
-			NOT = { 24 = { is_owned_by = ROOT } }
+			NOT = {has_idea = XFR_chaos_in_centre }
 		}
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			remove_ideas = { XFR_chaos_in_centre }
 		}
 	}
 
 	focus = {
-		id = XFR_revitalise_centre
+		id = XFR_revitalise_industry
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = XFR_crisis_averted }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = XFR_crisis_averted
 
 		available = {
-			24 = { is_owned_by = ROOT }
+			24 = { is_owned_and_controlled_by = ROOT }
+			if = {
+				limit = { has_idea = XFR_chaos_in_centre2 }
+				NOT = { has_idea = XFR_chaos_in_centre2 }
+			}
 		}
 
 		cost = 5
@@ -221,6 +240,47 @@
 			factor = 1
 		}
 		completion_reward = {
+			24 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_colonise_centre
+		icon = GFX_focus_BRA_amazon_colonization
+		prerequisite = { focus = XFR_crisis_averted }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_crisis_averted
+
+		available = {
+			24 = { is_owned_and_controlled_by = ROOT }
+			if = {
+				limit = { has_idea = XFR_chaos_in_centre2 }
+				NOT = { has_idea = XFR_chaos_in_centre2 }
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			24 = {
+				add_manpower = 15000
+				add_extra_state_shared_building_slots = 2
+				add_dynamic_modifier = {
+					modifier = XFR_colonisation_state_modifier
+				}
+			}
 		}
 	}
 
@@ -333,7 +393,7 @@
 		y = 1
 		relative_position_id = XFR_dennounce_democracy
 
-		cost = 5
+		cost = 10
 
 		available = {
 			fascism > 0.5
@@ -539,6 +599,10 @@
 			is_subject = no
 			any_neighbor_country = {
 				tag = XSS
+			}
+			OR = {
+				XSS = { NOT = { has_government = democratic } }
+				NOT = { has_government = democratic }
 			}
 		}
 
@@ -757,7 +821,7 @@
 		id = XFR_alcase_lorraine_diplomacy
 		icon = GFX
 		prerequisite = { focus = XFR_democracy_lives_on focus = XFR_the_new_empire }
-		x = -5
+		x = -6
 		y = 0
 		relative_position_id = XFR_cooperate_with_neighbours
 
@@ -769,7 +833,7 @@
 		}
 
 		offset = {
-			x = -2
+			x = -1
 			trigger = {
 				if = {
 					limit = {
@@ -823,28 +887,6 @@
     			target = XAL
     			transfer_troops = no
 			}
-		}
-	}
-
-	focus = {	
-		id = XFR_reintegrate_alcase_lorraine
-		icon = GFX
-		prerequisite = { focus = XFR_ultimatum_to_alcase_lorraine }
-		x = 0
-		y = 1
-		relative_position_id = XFR_ultimatum_to_alcase_lorraine
-
-		available = {
-			28 = { is_owned_by = XFR }
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			28 = { add_core_of = ROOT }
 		}
 	}
 

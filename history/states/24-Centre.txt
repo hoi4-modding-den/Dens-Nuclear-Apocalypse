@@ -27,6 +27,9 @@ manpower=867
 			}
 		}
 		set_demilitarized_zone = yes
+		add_dynamic_modifier = {
+			modifier = XFR_mutant_state_modifier
+		}
 	}
 
 	provinces={

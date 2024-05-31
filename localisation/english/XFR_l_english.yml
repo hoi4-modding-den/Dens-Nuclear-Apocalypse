@@ -36,25 +36,25 @@ XFR_XAQ_fascism_subject: "Regnum Lotharii"
 XFR_XAQ_fascism_subject_DEF: "the Regnum Lotharii"
 XFR_XAQ_fascism_subject_ADJ: "Lotharingian"
 
-XAL: "Alcase-Lorraine"
-XAL_DEF: "Alcase-Lorraine"
-XAL_ADJ: "Lorrains"
+XAL: "Alsace-Lorraine"
+XAL_DEF: "Alsace-Lorraine"
+XAL_ADJ: "Alsace-Lorrains"
 XAL_democratic: "Alsacian Territories"
 XAL_democratic_DEF: "the Alsacian Territories"
-XAL_democratic_ADJ: "Lorrains"
+XAL_democratic_ADJ: "Alsacian"
 XAL_fascism: "Imperial State of Alsace-Lorraine"
-XAL_fascism_DEF: "the Imperial State of Alsace-Lorraine"
-XAL_fascism_ADJ: "Lorrains"
+XAL_fascism_DEF: "the Imperial State of Elsaß-Lothringen"
+XAL_fascism_ADJ: "Elsaß-Lothar"
 XAL_neutrality: "Alsacian Territories"
 XAL_neutrality_DEF: "the Alsacian Territories"
-XAL_neutrality_ADJ: "Lorrains"
+XAL_neutrality_ADJ: "Alsacian"
 XAL_communism: "Socialist Lorrainian Republic"
 XAL_communism_DEF: "the Socialist Lorrainian Republic"
 XAL_communism_ADJ: "Lorrains"
 
-XAL_subject: "$OVERLORDADJ$ State of Alcase-Lorraine"
-XAL_subject_DEF: "the $OVERLORDADJ$ State of Alcase-Lorraine"
-XAL_subject_ADJ: "Lorrains"
+XAL_subject: "$OVERLORDADJ$ State of Alsace-Lorraine"
+XAL_subject_DEF: "the $OVERLORDADJ$ State of Alsace-Lorraine"
+XAL_subject_ADJ: "Alsace-Lorrains"
 
 # Political Stuff
 
@@ -70,12 +70,12 @@ XFR_communism_party_long: "Anarchists"
 XFR_communism_party_real: "Anarcho-Communist Union Party"
 XFR_communism_party_real_long: "Anarcho-Communist Union Party"
 
-XAL_democratic_party: "CDP"
-XAL_democratic_party_long: "Christlich-Demokratische Partei"
+XAL_democratic_party: "CDPE"
+XAL_democratic_party_long: "Christlich-Demokratische Partei Elsaß"
 XAL_fascism_party: "German Nationalists"
 XAL_fascism_party_long: "Deutsche Kaiser-Gesellschaft"
 XAL_neutrality_party: "Military Government"
-XAL_neutrality_party_long: "Alcase-Lorraine Military Government"
+XAL_neutrality_party_long: "Alsace-Lorraine Military Government"
 XAL_communism_party: "SPEL"
 XAL_communism_party_long: "Sozialistische Partei Elsass-Lothringen"
 
@@ -99,19 +99,76 @@ XFR_investigate_centre: "The [24.GetName] Excursion"
 XFR_investigate_centre_desc: "WIP"
 XFR_deal_with_the_mutants: "Deal with the Mutants"
 XFR_deal_with_the_mutants_desc: "WIP"
+XFR_deal_with_the_mutants_tt: "Unlock £GFX_decision_icon_small §YHunt down Mutants§! Decision\nUnlock £GFX_decision_icon_small §YImprove Local Infrastructure§! Decision\n"
 XFR_crisis_averted: "Crisis averted"
 XFR_crisis_averted_desc: "WIP"
-XFR_revitalise_centre: "Revitalise [24.GetName]"
-XFR_revitalise_centre_desc: "WIP"
+XFR_colonise_centre: "Colonise [24.GetName]"
+XFR_colonise_centre_desc: "WIP"
+XFR_revitalise_industry: "Revitalise [24.GetName] Industry"
+XFR_revitalise_industry_desc: "WIP"
 XFR_cooperate_with_neighbours: "Diplomatic Efforts"
 XFR_cooperate_with_neighbours_desc: "WIP"
 XFR_reclaim_french_territories: "Announce Expansionist Ambitions"
 XFR_reclaim_french_territories_desc: "WIP"
+XFR_erase_luxonie: "Erase Luxonie"
+XFR_erase_luxonie_desc: "The [XLX.GetNameDef] as a concept is a despicable creation. We cannot let it exist for any longer!"
+XFR_dennounce_the_illigitimate_government: "Dennounce the Illigitimate Government"
+XFR_dennounce_the_illigitimate_government_desc: "WIP"
+XFR_alcase_lorraine_diplomacy: "A Message for Alsace-Lorraine"
+XFR_alcase_lorraine_diplomacy_desc: "WIP"
+XFR_ultimatum_to_alcase_lorraine: "The Ultimatum"
+XFR_ultimatum_to_alcase_lorraine_desc: "WIP"
 
 # Ideas
 
 XFR_chaos_in_centre: "Chaos in [24.GetName]"
-XFR_chaos_in_centre_desc: "The Region of [24.GetName] has been devastated during the cataclysm. Strange mutants roam the lands and the area has been evacuated by the army. We need to somehow deal with this situation before we can go out into the world to reestablish ourselves."
+XFR_chaos_in_centre_desc: "The Region of [24.GetName] has been devastated during the cataclysm. Mutated Creatures roam the lands and the area has been evacuated by the army. With the intensity of the mutants attacks growing, the government must make a decision."
+XFR_chaos_in_centre2: "[24.GetName] Fallout"
+XFR_chaos_in_centre2_desc: "After our contingency plan, the [24.GetName] region has been mostly destroyed by the explosion. While it was not a nuclear weapon, it definitely caused serious damage. We have to pay the price for our negligence."
+
+# Dynamic Modifiers
+
+XFR_mutant_state_modifier: "Mutant Infestation"
+XFR_mutant_state_modifier_desc: "This area is infested with mutant creatures. They are mostly hostile to humans and do not tolerate their existance, therefore this state has been mostly evacuated with the exception for a few isolated villages and survivor groups."
+XFR_colonisation_state_modifier: "Colonisation Effort"
+
+# Decisions
+
+XFR_centre_crisis_cat: "The Centre Crisis"
+XFR_centre_crisis_timer: "Crisis Escalates"
+XFR_centre_crisis_timer_desc: "Analysis of mutant behaviours suggests that they will soon breach the protective wall around the [24.GetName] region if not eliminated quickly. We have put of this task for too long and now is the time to act."
+XFR_mutant_hunt_progress: "[?Root.XFR_mutant_hunt_progress|0]%"
+XFR_mutant_hunt_progress_tt: "§YIncrease§! the §YHunt Progress§!"
+XFR_centre_hunt_down_mutants: "Hunt down Mutants: $XFR_mutant_hunt_progress$ Progress"
+XFR_centre_hunt_down_mutants_desc: "We will exterminate the mutants living in the region by sending in military troops."
+XFR_centre_improve_centre_infrastructure: "Improve Local Infrastructure"
+XFR_centre_improve_centre_infrastructure_desc: "Improving the local infrastucture is necessary if we want to reclaim our land and will also assist our troops in moving around while hunting."
+
+# Decision Costs
+
+decision_cost_500_guns: "£infantry_equipment_text_icon §Y500§!"
+decision_cost_500_guns_blocked: "£infantry_equipment_text_icon §R500§!"
+decision_cost_500_guns_tooltip: "It costs £infantry_equipment_text_icon §Y500§! to take the decision"
+
+# Events
+
+XFR_events.1.t: "The Centre Crisis"
+XFR_events.1.desc: "While most parts of Europe have been cleared of the mutants, the Centre region has so far always stayed isolated. After the first excursion into Centre, it was deemed to be unsafe and in turn was fully abandoned. Only a few soldiers stood guard along the regions border, ensuring none of the mutants could escape. However, in recent times, the mutants have grown restless, repeatedly attacking the patrols."
+XFR_events.1.a: "We must do something!"
+XFR_events.1.a.tt: "§RThe Countdown has begun§!"
+
+XFR_events.2.t: "The Last Contingent"
+XFR_events.2.desc: "TEXT FOR CRISIS ESCALATED WIP"
+XFR_events.2.a: "A necessary measure..."
+
+XFR_news_events.1.t: "Centre Crisis resolved"
+XFR_news_events.1.desc: "TEXT FOR CRISIS RESOLVED WIP"
+XFR_news_events.1.a: "Seems France is settling down."
+
+XFR_news_events.2.t: "Centre Crisis escalates!"
+XFR_news_events.2.desc: "TEXT FOR CRISIS ESCALATED WIP"
+XFR_news_events.2.a: "Seems France is getting more complicated"
+
 
 # Bookmark
 
