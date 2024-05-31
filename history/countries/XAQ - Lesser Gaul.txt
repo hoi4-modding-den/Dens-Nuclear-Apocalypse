@@ -35,12 +35,12 @@ set_technology = {
 add_ideas = {
 	XAQ_roman_revanchism
 	XAQ_annos_interitus
-	XAQ_senate
+	XAQ_senate_1
 }
 
 add_ideas = {
 	limited_conscription
-	low_economic_mobilisation
+	partial_economic_mobilisation
 }
 oob = "XAQ"
 

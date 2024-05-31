@@ -265,7 +265,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			swap_ideas = {
+    				remove_idea = XAQ_senate_1
+    				add_idea = XAQ_senate_2
+			}
 		}
 	}
 }

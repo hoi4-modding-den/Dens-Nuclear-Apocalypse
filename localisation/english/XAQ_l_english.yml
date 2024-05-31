@@ -32,13 +32,20 @@
  XAQ_spqr_desc:0 "In ancient rome, the senate was an advisory council to the Emperor and has been of great importance in enacting fair bureaucracy and laws. It is foolish to reject Petiot's rule but we must also empower the Senate to ensure prosperity."
 
 #ideas
- XAQ_senate:0 "The Senate"
+ XAQ_senate_1:0 "The Senate"
+ XAQ_senate_2:0 "The Senate"
+ XAQ_senate_3:0 "The Senate"
+ XAQ_senate_4:0 "The Senate"
+ XAQ_senate_chaos:0 "Senate in Chaos"
  XAQ_annos_interitus:0 "Annos Interitus"
  XAQ_roman_revanchism:0 "Roman Pride"
 
 
 #idea descriptions
- XAQ_senate_desc:0 "The last remnants of the old Aquitaine Republic, the senate stands now as a ceremonial piece of Roman unity."
+ XAQ_senate_1_desc:0 "The last remnants of the old Aquitaine Republic, the senate stands now as a ceremonial piece of Roman unity."
+ XAQ_senate_2_desc:0 "The Senate now holds more power than before, but government function mostly remains in the griffin's hands."
+ XAQ_senate_3_desc:0 "The Senate's increasing influence in the government is easily recognisable. The government's efficency is at an all time peak."
+ XAQ_senate_4_desc:0 "The Senate has become the primary government function, the griffin is simply a figurehead of a new Roman Republic."
  XAQ_annos_interitus_desc:0 "At the turn of the 23rd century, the Divine Realm of Lesser Gaul was shattered by its short-sighted attempt to realise its conquest of Gaul. Now, with its territories in Gallia Lugdunensis stripped, Lesser Gaul isn't what it used to be."
  XAQ_roman_revanchism_desc:0 "At the heart of every Roman lies a great nationalist fervour to grasp what is theirs."
 
