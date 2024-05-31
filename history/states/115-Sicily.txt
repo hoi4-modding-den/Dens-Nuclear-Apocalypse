@@ -7,13 +7,13 @@ state = {
 		owner = XCA
 
 		victory_points = {
-			4159 15 
+			4159 13 
 		}
 		victory_points = {
-			4014 5 
+			4014 15 
 		}
 		victory_points = {
-			13256 1 
+			13256 7 
 		}
 		buildings = {
 			infrastructure = 3

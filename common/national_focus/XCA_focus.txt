@@ -1,0 +1,35 @@
+﻿focus_tree = {
+	id = XCA_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XCA
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = XCA_new_years_convention_1
+		icon = GFX_focus_generic_improve_the_administration
+		x = 12
+		y = 0
+
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			country_event = {
+    			id = XCA.1
+			}
+		}
+	}	
+}

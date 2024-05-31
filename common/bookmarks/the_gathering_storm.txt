@@ -83,7 +83,7 @@ bookmarks = {
 		}
 		"XCA" = {
 			ideology = neutrality
-			history = "history goes here"
+			history = "XCA_history"
 			focuses = {
 			
 			}
