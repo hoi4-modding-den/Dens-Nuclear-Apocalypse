@@ -5,12 +5,12 @@ state={
 manpower=102903
 	state_category = pastoral
 	history={
-		owner = LIB # if it's not given to you on the modding jam announcements map you can't take it 
+		owner = XOO # if it's not given to you on the modding jam announcements map you can't take it 
 		buildings = {
 			infrastructure = 2
 			#industrial_complex = 1
 		}
-
+		add_core_of = XOO
 	}
 	provinces={
 		6678 6680 
