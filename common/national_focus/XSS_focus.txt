@@ -670,6 +670,11 @@ add_resource = {
 
     completion_reward = {
 
+			create_wargoal = {
+				type = annex_everything
+				target = XFW
+			} 
+
         735 = {
 
             add_claim_by = XSS
@@ -2990,6 +2995,11 @@ country_event = {
             add_claim_by = XSS
 
         }
+        976 = {
+
+            add_claim_by = XSS
+
+        }
         28 = {
 
             add_claim_by = XSS
@@ -3093,12 +3103,18 @@ country_event = {
 
         ############ Re work when anarchy tags drop #######################
 
-        transfer_state= 848
-        transfer_state= 50
-        transfer_state= 28
-        transfer_state= 52
-        transfer_state= 53
-        transfer_state= 54
+       declare_war_on = {
+       target = XOO
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XLH
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XAL
+        type = annex_everything
+            } 
 
         
         }
@@ -3274,6 +3290,11 @@ country_event = {
             add_core_of = XSS
 
         }
+        976 = {
+
+            add_core_of = XSS
+
+        }
        declare_war_on = {
        target = XLX
         type = annex_everything
@@ -3297,13 +3318,12 @@ country_event = {
     completion_reward = {
         ##################### Rework when Anarchy drops #############
         transfer_state= 15
-        transfer_state= 34
         transfer_state= 30
         transfer_state= 14
-        transfer_state= 973
-        transfer_state= 20
-        transfer_state= 32
-        transfer_state= 21
+      declare_war_on = {
+       target = XFW
+        type = annex_everything
+            }  
 
        declare_war_on = {
        target = XPR
@@ -4368,7 +4388,10 @@ set_power_balance = {
     completion_reward = {
         ####### modify when anarchy drops ###########
         848 = {add_claim_by = XSS}
-        transfer_state = 848
+       declare_war_on = {
+       target = XOO
+        type = annex_everything
+            } 
 
         }
         
@@ -4416,15 +4439,18 @@ set_power_balance = {
         
         ###### Rework when anarchy #############
 
-        transfer_state = 28
-        transfer_state = 973
-        transfer_state = 20
-        transfer_state = 32
-        transfer_state = 21
+			create_wargoal = {
+				type = annex_everything
+				target = XFW
+			}   
 			create_wargoal = {
 				type = annex_everything
 				target = XFR
-			}    
+			}  
+			create_wargoal = {
+				type = annex_everything
+				target = XAL
+			}     
 
 
 
@@ -4482,6 +4508,7 @@ set_power_balance = {
         51 = {add_core_of = XSS}
         974 = {add_core_of = XSS}
         975 = {add_core_of = XSS}
+        976 = {add_core_of = XSS}
         set_cosmetic_tag = XSS_burgundy
         }
         
@@ -4500,7 +4527,7 @@ set_power_balance = {
 
     completion_reward = {
         ############ re-work when anarchy ###########
-        transfer_state = 50
+
         transfer_state = 51
         transfer_state = 35
         transfer_state = 7
@@ -4509,6 +4536,10 @@ set_power_balance = {
 			create_wargoal = {
 				type = annex_everything
 				target = XRP
+			} 
+			create_wargoal = {
+				type = annex_everything
+				target = XOO
 			} 
      
         }
@@ -4655,10 +4686,14 @@ set_power_balance = {
 				target = XAP
 			}
             ############# Anarchy drop fix ################
-            transfer_state = 50
-            transfer_state = 52
-            transfer_state = 53
-            transfer_state = 54
+			create_wargoal = {
+				type = annex_everything
+				target = XOO
+			} 
+			create_wargoal = {
+				type = annex_everything
+				target = XLH
+			} 
 	 
         }
         

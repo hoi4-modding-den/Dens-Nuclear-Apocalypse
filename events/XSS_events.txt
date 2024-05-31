@@ -476,6 +476,11 @@ news_event = {
             add_core_of = XSS
 
         }
+        976 = {
+
+            add_core_of = XSS
+
+        }
         50 = {
 
             add_core_of = XSS
