@@ -1,0 +1,33 @@
+state = {
+	id = 976
+	name = "STATE_976"
+    	manpower = 1047208
+	
+	state_category = city
+	resources={
+		steel=42 #was 100 # was: 236
+	}
+	
+	resources = {
+	}
+
+	history = {
+		owner = XAL
+		victory_points = { 678 5 }
+		#victory_points = { 6529 1 }
+		victory_points = { 9503 15 }
+		#victory_points = { 549 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = XAL
+	}
+
+	provinces = { 
+		549 1346 9503 6529 678
+	}
+
+	local_supplies = 0.0 
+}

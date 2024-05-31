@@ -12,9 +12,6 @@ manpower=1411667
 
 	history={
 		owner = XFR
-		victory_points = {
-			11516 5 
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
@@ -25,7 +22,7 @@ manpower=1411667
 	}
 
 	provinces={
-		521 698 3646 3666 6698 9658 11488 11516 11642 
+		698 3646 3666 6698 9658 11488 11642 
 	}
 
 	local_supplies=0.0 
