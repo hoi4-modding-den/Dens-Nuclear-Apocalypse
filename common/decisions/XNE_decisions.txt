@@ -1,0 +1,427 @@
+XNE_federation_of_uk_decisions = {
+    XNE_unified_army = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_generic_formable_nations
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_unified_army_ai
+		}
+		remove_effect = {
+			army_experience = 25
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 10q
+			modifier = {
+				factor = 1.2
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_federal_army_ai
+			}
+		}
+    }
+	XNE_federal_army = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_eng_imperial_conference
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_federal_army_ai
+		}
+		remove_effect = {
+			army_experience = 10
+			add_war_support = 0.03
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = -0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_unified_army_ai
+			}
+		}
+    }
+	XNE_single_language = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_generic_formable_nations
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_single_language_ai
+		}
+		remove_effect = {
+			add_stability = 0.05
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_second_language_ai
+			}
+		}
+    }
+	XNE_second_language = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_eng_imperial_conference
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_second_language_ai
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.02
+			}
+			add_stability = 0.02
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = -0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_single_language_ai
+			}
+		}
+    }
+	XNE_london_government = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_generic_formable_nations
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_london_government_ai
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.05
+			}
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_local_government_ai
+			}
+		}
+    }
+	XNE_local_government = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_eng_imperial_conference
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_local_government_ai
+		}
+		remove_effect = {
+			add_political_power = 40
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = -0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_london_government_ai
+			}
+		}
+    }
+	XNE_one_religion = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_generic_formable_nations
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_one_religion_ai
+		}
+		remove_effect = {
+			add_stability = 0.03
+			add_war_support = -0.03
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_multi_religion_ai
+			}
+		}
+    }
+	XNE_multi_religion = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_eng_imperial_conference
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_multi_religion_ai
+		}
+		remove_effect = {
+			add_stability = -0.03
+			add_war_support = 0.03
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = -0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_one_religion_ai
+			}
+		}
+    }
+	XNE_private_schools = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_generic_formable_nations
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_private_schools_ai
+		}
+		remove_effect = {
+			add_political_power = 30
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_public_schools_ai
+			}
+		}
+    }
+	XNE_public_schools = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_eng_imperial_conference
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_public_schools_ai
+		}
+		remove_effect = {
+			add_political_power = -30
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = -0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_private_schools_ai
+			}
+		}
+    }
+	XNE_national_identity = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_generic_formable_nations
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_national_identity_ai
+		}
+		remove_effect = {
+			add_manpower = 25000
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_communal_identity_ai
+			}
+		}
+    }
+	XNE_communal_identity = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_category_eng_imperial_conference
+        priority = 50
+        days_re_enable = 42
+        cost = 25
+        days_remove = 14
+        complete_effect = {
+			set_country_flag = XNE_communal_identity_ai
+		}
+		remove_effect = {
+			add_manpower = 10000
+			add_war_support = 0.02
+			add_power_balance_value = {
+				id = XNE_federation_of_uk_bop
+				value = -0.10
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.2
+				tag = XNM
+			}
+			modifier = {
+				factor = 0.8
+				tag = XNE
+			}
+			modifier = {
+				factor = 0.2
+				has_country_flag = XNE_national_identity_ai
+			}
+		}
+    }
+}

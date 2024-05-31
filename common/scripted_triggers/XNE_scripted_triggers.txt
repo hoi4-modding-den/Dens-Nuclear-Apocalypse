@@ -1,7 +1,33 @@
-XNE_is_state = {
-	OR = {
-		state = 126
-		state = 128
-		state = 110
+XNE_full_british_alliance = {
+	AND = {
+		OR = {
+			is_in_faction_with = XNM
+			NOT = { country_exists = XNM }
+		}
+		OR = {
+			is_in_faction_with = XCT
+			NOT = { country_exists = XCT }
+		}
+		OR = {
+			is_in_faction_with = XIE
+			NOT = { country_exists = XIE }
+		}
+		OR = {
+			is_in_faction_with = XNI
+			NOT = { country_exists = XNI }
+		}
+		OR = {
+			is_in_faction_with = XTY
+			NOT = { country_exists = XTY }
+		}
+		OR = {
+			is_in_faction_with = XWA
+			NOT = { country_exists = XWA }
+		}
+		OR = {
+			is_in_faction_with = XPW
+			NOT = { country_exists = XPW }
+		}
 	}
 }
+

@@ -14,13 +14,22 @@ country_event = {
 	option = {
 		name = XNE_support.1.a
 		ai_chance = { factor = 5 }
-		
+		add_popularity = {
+			ideology = fascism
+			popularity = var:XNE_fascism_support
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		remove_ideas = XNE_internal_conflict
 	}
 	
 	option = {
 		name = XNE_support.1.b
-		ai_chance = { factor = 3 }
-		
+		ai_chance = { factor = 2 }
+		add_stability = -0.12
+		add_manpower = -20000
 	}
 }
 
@@ -36,13 +45,22 @@ country_event = {
 	option = {
 		name = XNE_support.2.a
 		ai_chance = { factor = 5 }
-		
+		add_popularity = {
+			ideology = neutrality
+			popularity = var:XNE_neutrality_support
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		remove_ideas = XNE_internal_conflict
 	}
 	
 	option = {
 		name = XNE_support.2.b
-		ai_chance = { factor = 3 }
-		
+		ai_chance = { factor = 2 }
+		add_stability = -0.15
+		add_manpower = -12000
 	}
 }
 
@@ -59,12 +77,22 @@ country_event = {
 		name = XNE_support.3.a
 		ai_chance = { factor = 6 }
 		retire_country_leader = yes
+		add_stability = 0.05
+		set_politics = {
+			ruling_party = democratic
+			long_name = XNE_liberal_long
+			name = XNE_liberal
+		}
 	}
 	
 	option = {
 		name = XNE_support.3.b
 		ai_chance = { factor = 2 }
-		
+		add_stability = -0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.15
+		}
 	}
 }
 
@@ -80,13 +108,25 @@ country_event = {
 	option = {
 		name = XNE_support.4.a
 		ai_chance = { factor = 5 }
-		
+		add_popularity = {
+			ideology = communism
+			popularity = var:XNE_communism_support
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		remove_ideas = XNE_internal_conflict
 	}
 	
 	option = {
 		name = XNE_support.4.b
 		ai_chance = { factor = 3 }
-		
+		trigger = { NOT = { has_idea = XNE_general_strike } }
+		add_timed_idea = {
+			idea = XNE_general_strike
+			days = 120
+		}
 	}
 }
 
@@ -102,13 +142,32 @@ country_event = {
 	option = {
 		name = XNE_support.5.a
 		ai_chance = { factor = 5 }
-		
+		hidden_effect = {
+			create_country_leader = {
+				name = XNE_harold_johnson
+				desc = XNE_harold_johnson_desc
+				picture = GFX_Portrait_XNE_conservative2
+				expire = "1.1.1"
+				ideology = XNE_democratic_centrism
+				traits = {
+					ARG_prominent_centrist
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = XNE_coalition_party_long
+				name = XNE_coalition_party
+			}
+			add_stability = -0.1
+		}
+		custom_effect_tooltip = XNE_coalition_government_tool
+		remove_ideas = XNE_internal_conflict
 	}
 	
 	option = {
 		name = XNE_support.5.b
 		ai_chance = { factor = 3 }
-		
+		add_stability = -0.3
 	}
 }
 
@@ -126,6 +185,23 @@ news_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+# Test Speech
+country_event = {
+	id = XNE_focus.999
+	title = XNE_focus.999.title
+	desc = XNE_focus.999.desc
+	picture = GFX_report_event_imperial_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_focus.999.a
+		ai_chance = { factor = 1 }
+		XNE = { complete_national_focus = XNE_federation_of_the_british_isles }
+	}
+}
+
 # Chamberlain Speech
 country_event = {
 	id = XNE_focus.1
@@ -138,7 +214,6 @@ country_event = {
 	option = {
 		name = XNE_focus.1.a
 		ai_chance = { factor = 1 }
-		
 	}
 }
 
@@ -192,5 +267,65 @@ country_event = {
 		ai_chance = { factor = 2 }
 		add_political_power = -50
 		XNE = { add_war_support = 0.05 }
+	}
+}
+
+# Approach Ulster
+country_event = {
+	id = XNE_focus.3
+	title = XNE_focus.3.title
+	desc = XNE_focus.3.desc
+	picture = GFX_report_event_imperial_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_focus.3.a
+		ai_chance = { factor = 5 }
+		ROOT = { add_political_power = 50 }
+		FROM = { add_political_power = 50 }
+	}
+	
+	option = {
+		name = XNE_focus.3.b
+		ai_chance = { factor = 2 }
+		FROM = {
+			uncomplete_national_focus = {
+			  focus = XNE_approach_ulster
+			  uncomplete_children = yes
+			  refund_political_power = no
+			}
+			set_country_flag = XNE_ulster_rejects
+		}
+	}
+}
+
+# Approach Worcester
+country_event = {
+	id = XNE_focus.4
+	title = XNE_focus.4.title
+	desc = XNE_focus.4.desc
+	picture = GFX_report_event_imperial_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_focus.4.a
+		ai_chance = { factor = 5 }
+		ROOT = { add_political_power = 50 }
+		FROM = { add_political_power = 50 }
+	}
+	
+	option = {
+		name = XNE_focus.4.b
+		ai_chance = { factor = 2 }
+		FROM = {
+			uncomplete_national_focus = {
+			  focus = XNE_a_deal_for_welsh_victory
+			  uncomplete_children = yes
+			  refund_political_power = no
+			}
+			set_country_flag = XNE_worcester_rejects
+		}
 	}
 }

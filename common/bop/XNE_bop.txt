@@ -1,0 +1,68 @@
+XNE_federation_of_uk_bop = {
+    initial_value = 0
+    left_side = XNE_federation_side
+    right_side = XNE_united_side
+    decision_category = XNE_federation_of_uk_decisions
+    range = {
+        id = XNE_undecided
+        min = -0.2
+        max = 0.2
+		on_activate = {
+			XNE = { 
+				if = { 
+					limit = { has_country_flag = XNE_decided_fed }
+					clr_country_flag = XNE_decided_fed
+				}
+				if = { 
+					limit = { has_country_flag = XNE_decided_uk }
+					clr_country_flag = XNE_decided_uk
+				}
+			}
+		}
+        modifier = {
+        }
+    }
+
+    side = {
+        id = XNE_federation_side
+        icon = GFX_idea_YUG_federal_defense_council
+        range = {
+            id = XNE_federation_max
+            min = -1
+            max = -0.8
+			on_activate = {
+				XNE = { set_country_flag = XNE_decided_uk }
+			}
+            modifier = {
+            }
+        }
+		range = {
+            id = XNE_federation
+            min = -0.8
+            max = -0.2
+            modifier = {
+            }
+        }
+    }
+	side = {
+        id = XNE_united_side
+        icon = GFX_idea_eng_the_sun_never_sets
+        range = {
+            id = XNE_united
+            min = 0.2
+            max = 0.8
+            modifier = {
+            }
+        }
+		range = {
+            id = XNE_united_max
+            min = 0.8
+            max = 1
+			on_activate = {
+				XNE = { set_country_flag = XNE_decided_fed }
+			}
+            modifier = {
+            }
+        }
+    }
+}

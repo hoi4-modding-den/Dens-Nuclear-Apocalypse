@@ -15,3 +15,15 @@ XNE_popular_support = {
 		}
 	}
 }
+
+XNE_federation_of_uk_decisions = {
+	priority = 10
+	icon = GFX_decision_category_generic_democracy
+
+	allowed = {
+		OR = {
+			tag = XNE
+			tag = XNM
+		}
+	}
+}
