@@ -1026,6 +1026,26 @@ news_event = {
 
 }
 
+############ Traktat Innsbrucki ##############
+
+news_event = {
+    id = XSS_test_event.35
+    title = XSS_test_event.35.t
+    picture = GFX_news_event_009
+    desc = XSS_test_event.35.desc
+    
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XSS_test_event.35.a
+    153 = {add_core_of = XSS}
+    39 = {add_core_of = XSS}
+
+    }
+
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

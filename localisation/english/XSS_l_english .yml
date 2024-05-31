@@ -180,6 +180,10 @@ XSS_finish_war_on_romansh_desc:0 "Romansh language and population were killed. I
 
 VICTORY_POINTS_11601:0 "Schwyz"
 VICTORY_POINTS_3612:0 "Sion"
+VICTORY_POINTS_3660:0 "Samnaun"
+VICTORY_POINTS_11604:0 "Lucerna"
+VICTORY_POINTS_6683:0 "Delémont"
+VICTORY_POINTS_636:0 "Altdorf"
 
 XRM_romansh_spirit:0 "Romansh spirit"
 XRM_romansh_spirit_desc:0 "FREEEEEEEEEEEEEEEEEEEEEEEEEDOM"
@@ -646,6 +650,8 @@ XSS_triumph_desc:0 "Germany is united now and their support for war is stronger 
 XSS_germania_nation:0 "German Reich"
 XSS_germania_nation_DEF:0 "Germany"
 XSS_germania_nation_ADJ:0 "German"
+XSS_germania_nation_neutrality:0 "Deutsches Kaiserreich"
+
 
 XSS_conquer_south:0 "Conquer south"
 XSS_conquer_south_desc:0 "We shall support Italians in their one last offensive then they can lead on their own."
@@ -1129,4 +1135,45 @@ XSS_freikorps_2_desc:0 "Free Corps or Freikorps in German, is an organized army 
 XSS_rule_of_regent:0 "Rule of regent"
 XSS_rule_of_regent_desc:0 "War with Tirol has made it impossible to search for a king. Maybe Paul can lead the nation for longer? "
 
+XSS_fortify_tirol:0 "Fortify Tirol corridor"
+XSS_fortify_tirol_desc:0 "The Tiroleans are flooding in, we must stop them at gates of Helvetica!"
+
+XSS_mass_mobilization_program:0 "Mass mobilization Program"
+XSS_mass_mobilization_program_desc:0 "We shall grant major rewards for volounteers in Tyrol war."
+
+XSS_volounteer_program:0 "Volounteer Program"
+XSS_volounteer_program_desc:0 "We have requested for civilians to join army for 90 days to recive great boons."
+
+XSS_treaty_of_innsbruck:0 "Threaty of Innsbruck"
+XSS_treaty_of_innsbruck_desc:0 "The Tirol has been defeated. We have some special offer for ex-tiroleans though."
+
+XSS_test_event.35.t:0 "Threaty of Innsbruck"
+XSS_test_event.35.desc:0 "After Tirolean defeat Paul Robisch has decided to offer helping hand to tiroleans. They will be incorporated as Germans into Helvetica and will recive monetary support for their loyality."
+XSS_test_event.35.a:0 "Bright future for Helvetica"
+
+XSS_develop_tirol_2:0 "Develop Tirol"
+XSS_develop_tirol_2_desc:0 "As promised in Threaty of Innsbruck we shall industrialize Tirol."
+
+XSS_tirol_gold:0 "Tirolean Gold"
+XSS_tirol_gold_desc:0 "Tyrol is a province rich in natural resources especially gold."
+
+XSS_tirol_gold_idea:0 "Tirolean Gold"
+XSS_tirol_gold_idea_desc:0 "Tirol is region rich in natural resources especially gold."
+
+XSS_transalpine_railway:0 "Transalpine Railway"
+XSS_transalpine_railway_desc:0 "We must connect Tyrol to the rest of Helvetica."
+
+XSS_expand_tirol_mines:0 "Expand Tirol mines"
+XSS_expand_tirol_mines_desc:0 "Mines of Tirol are rich in Aluminum we must dig deeper and greedier."
+
+XSS_eternal_regency:0 "Eternal regency"
+XSS_eternal_regency_desc:0 "The rule of the Freikorps is acually beneficial for the nation so why search for the king?"
+
+XSS_freikorps_government:0 "Freikorps Government"
+XSS_freikorps_government_desc:0 "Who needs king when you have loyal patriots by your side?"
+
+XSS_conquer_south_freikorps:0 "Conquer Southern Germany"
+XSS_conquer_south_freikorps_desc:0 "We shall re-unite Germany. For Regent Paul!"
+
+XSS_regent_for_life:0 "Regent for life"
 

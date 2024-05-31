@@ -9,6 +9,7 @@ manpower=118953
 	
 	history={
 		victory_points = { 3612 10 }
+		victory_points = { 636 1 }
 		owner = XSS
 		buildings = {
 			infrastructure = 1 

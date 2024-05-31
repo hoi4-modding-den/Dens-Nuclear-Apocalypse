@@ -126,5 +126,14 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	XSS_regent_for_life = {
+		random = no
+		sprite = 13
+		stability_factor = -0.1
+		political_power_gain = -0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }

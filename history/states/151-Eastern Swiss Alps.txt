@@ -11,6 +11,7 @@ manpower=399280
 		owner = XSS
 		victory_points = { 658 1 }
 		victory_points = { 11601 5 }
+		victory_points = { 3660 1 }
 		buildings = {
 			infrastructure = 1 
 			#industrial_complex = 1
