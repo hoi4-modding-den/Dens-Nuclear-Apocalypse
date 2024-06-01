@@ -1189,4 +1189,24 @@ XSS_fortify_burgundy_desc:0 "Burgundians are a threat to our independence. We ar
 XSS_fortify_italian_straits:0 "Fortify Italian Chokepoints"
 XSS_fortify_italian_straits_desc:0 "Italians are comming after us. We shall fortify all roads to Switzerland that go through alps."
 
+XSS_demand_alsace:0 "Anschluss of Alsace-Lotharingia"
+XSS_demand_alsace_desc:0 "Alsace-Lotharingia is a rightful German clay. We shall send them demands of submission."
+
+XSS_test_event.36.t:0 "Anschluss"
+XSS_test_event.18.desc:0 "Today Swiss government has sent us a list of demands in which they demand our subjugation to the Swiss federation."
+XSS_test_event.36.a:0 "There is nothing we can do"
+XSS_test_event.36.b:0 "Let them come!"
+
+XSS_annex_lux:0 "Annex Luxembourg"
+XSS_annex_lux_desc:0 "After subjugation of Alsace. We shall move our zone of intrest to Luxembourg."
+
+XSS_into_germany_freikorps:0 "Into Germany"
+XSS_into_germany_freikorps_desc:0 "We shall march into Germany to reclaim our Imperial claims."
+
+XSS_capture_berlin:0 "Capture Berlin"
+XSS_capture_berlin_desc:0 "Imperial capital will be ours!"
+
+XSS_kaiserreich:0 "Kaiserreich"
+XSS_kaiserreich_desc:0 "Germany is united!"
+
 

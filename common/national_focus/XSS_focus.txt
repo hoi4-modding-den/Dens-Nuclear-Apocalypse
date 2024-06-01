@@ -6337,6 +6337,247 @@ build_railway = {
 
 
 
+    focus = {
+    id = XSS_demand_alsace
+    x = 89
+    y = 15
+    icon = GFX_goal_anschluss
+    cost = 5
+    prerequisite = { focus = XSS_conquer_south_freikorps }
+
+
+
+
+    completion_reward = {
+    
+			
+        976 = {add_claim_by = XSS}
+        28 = {add_claim_by = XSS}
+          
+    XAL = { 
+country_event = {
+    id = XSS_test_event.36
+    days = 1
+    random_hours = 12
+}
+    }
+
+
+        }
+    }
+
+    focus = {
+    id = XSS_annex_lux
+    x = 89
+    y = 16
+    icon = GFX_goal_generic_major_war
+    cost = 5
+    prerequisite = { focus = XSS_demand_alsace }
+
+
+
+
+    completion_reward = {
+    
+			
+        8 = {add_claim_by = XSS}
+
+			create_wargoal = {
+				type = annex_everything
+				target = XLX
+			} 
+
+
+        }
+    }
+
+    focus = {
+    id = XSS_into_germany_freikorps
+    x = 91
+    y = 15
+    icon = GFX_focus_generic_manpower
+    cost = 5
+    prerequisite = { focus = XSS_conquer_south_freikorps }
+
+
+
+
+    completion_reward = {
+    
+			
+        42 = {add_claim_by = XSS}
+        55 = {add_claim_by = XSS}
+        57 = {add_claim_by = XSS}
+        59 = {add_claim_by = XSS}
+        56 = {add_claim_by = XSS}
+        51 = {add_claim_by = XSS}
+
+			create_wargoal = {
+				type = annex_everything
+				target = XRP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XAP
+			} 
+
+
+        }
+    }
+
+    focus = {
+    id = XSS_capture_berlin
+    x = 91
+    y = 16
+    icon = GFX_goal_generic_territory_or_war
+    cost = 5
+    prerequisite = { focus = XSS_into_germany_freikorps }
+
+
+
+
+    completion_reward = {
+    
+			
+        60 = {add_claim_by = XSS}
+        65 = {add_claim_by = XSS}
+        64 = {add_claim_by = XSS}
+        62 = {add_claim_by = XSS}
+        61 = {add_claim_by = XSS}
+
+			create_wargoal = {
+				type = annex_everything
+				target = XGE
+			}
+
+
+
+        }
+    }
+    focus = {
+    id = XSS_kaiserreich
+    x = 90
+    y = 17
+    icon = GFX_focus_ger_revive_kaiserreich
+    cost = 1
+    prerequisite = { focus = XSS_capture_berlin }
+    prerequisite = { focus = XSS_annex_lux }
+    available = {controls_state = 64 }
+
+
+
+    completion_reward = {
+        add_ideas = {XSS_triumph}
+       set_cosmetic_tag = XSS_germania_nation
+
+        848 = {
+
+            add_core_of = XSS
+
+        }
+        976 = {
+
+            add_core_of = XSS
+
+        }
+        50 = {
+
+            add_core_of = XSS
+
+        }
+        28 = {
+
+            add_core_of = XSS
+
+        }
+        52 = {
+
+            add_core_of = XSS
+
+        }
+        53 = {
+
+            add_core_of = XSS
+
+        }
+        54 = {
+
+            add_core_of = XSS
+
+        }
+        55 = {
+
+            add_core_of = XSS
+
+        }
+        42 = {
+
+            add_core_of = XSS
+
+        }
+        51 = {
+
+            add_core_of = XSS
+
+        }
+        60 = {
+
+            add_core_of = XSS
+
+        }
+        65 = {
+
+            add_core_of = XSS
+
+        }
+        64 = {
+
+            add_core_of = XSS
+
+        }
+        59 = {
+
+            add_core_of = XSS
+
+        }
+        57 = {
+
+            add_core_of = XSS
+
+        }
+        56 = {
+
+            add_core_of = XSS
+
+        }
+        61 = {
+
+            add_core_of = XSS
+
+        }
+        62 = {
+
+            add_core_of = XSS
+
+        }
+        58 = {
+
+            add_core_of = XSS
+
+        }
+        909 = {
+
+            add_core_of = XSS
+
+        }
+set_capital = {
+  state = 64
+  remember_old_capital = no
+}
+
+    
+		}
+    }
 
 
 

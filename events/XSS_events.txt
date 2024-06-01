@@ -1046,6 +1046,40 @@ news_event = {
 
 }
 
+############## Anschluss wersja lotaryngia ###################
+
+country_event = {
+    id = XSS_test_event.36
+    title = XSS_test_event.36.t
+    picture = GFX_report_event_crowd_in_prague
+    desc = XSS_test_event.18.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.36.a
+        XSS = { 
+annex_country = {
+    target = XAL
+    transfer_troops = yes
+}
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.36.b
+        XSS = {
+			create_wargoal = {
+				type = annex_everything
+				target = XAL
+			}
+        }
+        
+    }
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
