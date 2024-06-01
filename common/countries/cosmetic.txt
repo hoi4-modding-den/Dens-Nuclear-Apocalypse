@@ -1252,8 +1252,8 @@ LGF_UNIFIED = {
 	color_ui = rgb { 205 69 69 }
 }
 XSS_germania_nation = {
-    color = rgb {75 130 135}
-    color_ui = rgb {75 130 135}
+    color = rgb {102 102 102}
+    color_ui = rgb {102 102 102}
 }
 XSS_burgundy = {
 color = rgb { 57 113 228 }

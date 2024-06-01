@@ -631,6 +631,20 @@ ideas = {
 
         }
 
+        XSS_continental_union_idea = {
+           removal_cost = -1
+            picture = ger_rebuild_the_nation
+            modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = -0.05
+				conscription = 0.025
+				min_export = 0.1
+				hidden_modifier = {
+					trade_opinion_factor = 0.2				
+				}	
+            }
+        }
+
 
     }
 }

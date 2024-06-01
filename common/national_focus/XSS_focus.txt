@@ -6627,7 +6627,166 @@ add_trait = {
 
     completion_reward = {
         
+        add_ideas = {XSS_continental_union_idea}
+
+        }
+
+    }
+
+    focus = {
+    id = XSS_conquer_hamburg
+    x = 95
+    y = 18
+    icon = GFX_goal_generic_axis_build_infantry
+    cost = 5
+    prerequisite = { focus = XSS_kaiserreich }
+
+
+    completion_reward = {
         
+			create_wargoal = {
+				type = annex_everything
+				target = XSH
+			}         
+
+        }
+
+    }
+
+    focus = {
+    id = XSS_invite_burgundy_cu
+    x = 86
+    y = 19
+    icon = GFX_focus_fra_devalue_the_franc
+    cost = 1
+    prerequisite = { focus = XSS_continental_union }
+
+
+    completion_reward = {
+        
+        XFR = {
+        country_event = {
+        id = XSS_test_event.37
+        days = 5
+        random_hours = 12
+            }
+        }
+
+        }
+
+    }
+
+    focus = {
+    id = XSS_invite_lombardy_cu
+    x = 88
+    y = 19
+    icon = GFX_focus_generic_italy_propaganda
+    cost = 1
+    prerequisite = { focus = XSS_continental_union }
+
+
+    completion_reward = {
+        
+        XLV = {
+        country_event = {
+        id = XSS_test_event.37
+        days = 5
+        random_hours = 12
+            }
+        }
+
+        }
+
+    }
+
+    focus = {
+    id = XSS_war_with_britain_kaiser
+    x = 87
+    y = 20
+    icon = GFX_focus_eng_imperial_federation
+    cost = 5
+    prerequisite = { focus = XSS_invite_lombardy_cu }
+    prerequisite = { focus = XSS_invite_burgundy_cu }
+
+
+    completion_reward = {
+        
+			create_wargoal = {
+				type = annex_everything
+				target = XNE
+			}  
+			create_wargoal = {
+				type = annex_everything
+				target = XNM
+			}        
+
+        }
+
+    }
+
+    focus = {
+    id = XSS_destroy_burgundy
+    x = 93
+    y = 19
+    icon = GFX_focus_generic_attack_vichy_france
+    cost = 5
+    prerequisite = { focus = XSS_join_bez_kaiser }
+
+
+    completion_reward = {
+        
+			create_wargoal = {
+				type = annex_everything
+				target = XFR
+			}  
+      
+
+        }
+
+    }
+
+    focus = {
+    id = XSS_march_on_paris
+    x = 92
+    y = 20
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 5
+    prerequisite = { focus = XSS_destroy_burgundy }
+
+
+    completion_reward = {
+        
+			create_wargoal = {
+				type = annex_everything
+				target = XPR
+			}  
+      
+
+        }
+
+    }
+
+    focus = {
+    id = XSS_unite_arles
+    x = 94
+    y = 20
+    icon = GFX_goal_generic_major_war
+    cost = 5
+    prerequisite = { focus = XSS_destroy_burgundy }
+
+
+    completion_reward = {
+        
+			create_wargoal = {
+				type = annex_everything
+				target = XFW
+			} 
+			create_wargoal = {
+				type = annex_everything
+				target = XNF
+			}   
+      
+
         }
 
     }

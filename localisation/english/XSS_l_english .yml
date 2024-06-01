@@ -1217,4 +1217,35 @@ XSS_continental_union_desc:0 "British barbarians are disgusting. They have falle
 
 XSS_kaiser:0 "Kaiser"
 
+XSS_continental_union_idea:0 "Continental Union"
+XSS_continental_union_idea_desc:0 "German Economic union."
+
+XSS_invite_burgundy_cu:0 "Invite Burgundy to Continental Union"
+XSS_invite_burgundy_cu_desc:0 "Burgundy is a threat no more, but a potencial ally."
+
+XSS_test_event.37.t:0 "Invitation to Continental Union"
+XSS_test_event.37.desc:0 "We have recived a proposition of joining Continental Union."
+XSS_test_event.37.a:0 "We shall join"
+XSS_test_event.37.b:0 "We prefer to stand alone"
+
+XSS_invite_lombardy_cu:0 "Invite Lombardy to Continental Union"
+XSS_invite_lombardy_cu_desc:0 "Italians are our brothers from the south. We should cooperate."
+
+XSS_war_with_britain_kaiser:0 "War with Britian"
+XSS_war_with_britain_kaiser_desc:0 "We shall pass La Manche and capture the british isles, to eliminate our mortal enemy."
+
+XSS_destroy_burgundy:0 "Destroy Burgundy"
+XSS_destroy_burgundy_desc:0 "Burgundy is already out to get us. We shall strike first."
+
+XSS_march_on_paris:0 "March on Paris"
+XSS_march_on_paris_desc:0 "We shall annex Paris into the Reich."
+
+XSS_unite_arles:0 "Unite Arles"
+XSS_unite_arles_desc:0 "We shall capture Wastelands of the south and Unite Legendary Arles Kingdom."
+
+XSS_conquer_hamburg:0 "Conquer Hamburg"
+XSS_conquer_hamburg_desc:0 "Last city of our rightful German clay must be retaken."
+
+
+
 

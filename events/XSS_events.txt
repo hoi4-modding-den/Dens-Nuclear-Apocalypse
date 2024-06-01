@@ -1052,7 +1052,7 @@ country_event = {
     id = XSS_test_event.36
     title = XSS_test_event.36.t
     picture = GFX_report_event_crowd_in_prague
-    desc = XSS_test_event.18.desc
+    desc = XSS_test_event.36.desc
     
     
     is_triggered_only = yes
@@ -1076,6 +1076,29 @@ annex_country = {
 				target = XAL
 			}
         }
+        
+    }
+}
+
+#################### Continental Union ############################
+country_event = {
+    id = XSS_test_event.37
+    title = XSS_test_event.37.t
+    picture = GFX_report_event_generic_sign_treaty1
+    desc = XSS_test_event.37.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.37.a
+        add_ideas = {XSS_continental_union_idea}
+        
+    }
+    option = {
+        name = XSS_test_event.37.b
+
         
     }
 }
