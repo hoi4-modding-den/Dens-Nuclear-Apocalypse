@@ -213,6 +213,75 @@ country_event = {
 				target = ROOT
 				type = annex_everything
 			}
+			add_state_core = 850
+		}
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}
+country_event = {
+    id = XTI.8
+    title = XTI.8.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XTI.8.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XTI.8.a
+		XTI = {
+			transfer_state = 848
+			add_state_core = 848
+		}
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+	option = {
+        name = XTI.8.b
+		XTI = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+			add_state_core = 848
+		}
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}
+country_event = {
+    id = XTI.9 # win vorarlberg
+    title = XTI.9.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XTI.9.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XTI.9.a
+		XTI = {
+			transfer_state = 848
+			add_state_core = 848
+		}
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}
+country_event = {
+    id = XTI.10 # lose vorarlberg
+    title = XTI.10.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XTI.10.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XTI.10.a
+		XTI = {
+			add_political_power = -100
+			add_stability = -0.1
 		}
         #complete_national_focus = XSS_triumph_of_democracy
     }

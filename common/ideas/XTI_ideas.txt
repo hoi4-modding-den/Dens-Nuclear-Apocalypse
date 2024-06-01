@@ -168,6 +168,40 @@ ideas = {
 				political_power_factor = -0.5
 			}
 		}
+		XTI_late_emergers_wo_research_debuff = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.5
+			}
+		}
+		XTI_late_emergers_wo_pp_debuff = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
 		XTI_the_great_march = {
 			picture = generic_constitutional_guarantees
 			
@@ -185,6 +219,59 @@ ideas = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				army_morale_factor = 0.1
+			}
+		}
+		XTI_hre = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				war_support_weekly = 0.01
+				stability_factor = 0.2
+				political_power_gain = 0.5
+			}
+		}
+		XTI_extensive_social_programs = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		XTI_food_stamps = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.1
 			}
 		}
 	}

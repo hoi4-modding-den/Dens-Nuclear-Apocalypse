@@ -534,7 +534,9 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			XOO = {
+				country_event = XTI.8
+			}
 		}
 	}
 	focus = {
@@ -570,7 +572,27 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 153
+					num_provinces = 2
+					on_win = XTI.9
+					on_lose = XTI.10
+					on_cancel = XTI.10
+					modifier = 0.1
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 848
+					num_provinces = 1
+					on_win = XTI.10
+					on_lose = XTI.9
+					on_cancel = XTI.9
+				}
+			}
+			add_state_core = 848
 		}
 	}
 	focus = {
@@ -1120,7 +1142,340 @@
 			
 		}
 	}
-	
+	focus = {
+		id = XTI_expand_public_schools
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_SPT_victory focus = XTI_TVP_victory }
+		x = -1
+		y = 1
+		relative_position_id = XTI_TVP_victory
+		mutually_exclusive = { focus = XTI_privatize_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XTI_late_emergers
+				add_idea = XTI_late_emergers_wo_research_debuff
+			}
+		}
+	}
+	focus = {
+		id = XTI_privatize_schools
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_TVP_victory focus = XTI_FPT_victory }
+		x = 1
+		y = 1
+		relative_position_id = XTI_TVP_victory
+		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XTI_late_emergers
+				add_idea = XTI_late_emergers_wo_pp_debuff
+			}
+		}
+	}
+	focus = {
+		id = XTI_propaganda
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_FPT_victory focus = XTI_autocratic_state }
+		x = 2
+		y = 1
+		relative_position_id = XTI_FPT_victory
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_national_pride
+		}
+	}
+	focus = {
+		id = XTI_expand_social_programs
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_SPT_victory }
+		x = 0
+		y = 1
+		relative_position_id = XTI_SPT_victory
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_extensive_social_programs
+		}
+	}
+	focus = {
+		id = XTI_open_universities
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_expand_social_programs }
+		prerequisite = { focus = XTI_expand_public_schools }
+		x = 2
+		y = 1
+		relative_position_id = XTI_expand_social_programs
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XTI_fund_religious_programs
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_TVP_victory }
+		x = 0
+		y = 2
+		relative_position_id = XTI_TVP_victory
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = XTI_free_upper_education
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_expand_public_schools }
+		prerequisite = { focus = XTI_open_universities focus = XTI_fund_religious_programs }
+		x = 0
+		y = 2
+		relative_position_id = XTI_expand_public_schools
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			remove_ideas = XTI_late_emergers_wo_research_debuff
+		}
+	}
+	focus = {
+		id = XTI_food_stamps
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_expand_social_programs }
+		x = 0
+		y = 1
+		relative_position_id = XTI_expand_social_programs
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_food_stamps
+		}
+	}
+	focus = {
+		id = XTI_social_housing
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_expand_social_programs }
+		x = -2
+		y = 1
+		relative_position_id = XTI_expand_social_programs
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
 	focus = {
 		id = XTI_the_reclamationists
 		icon = GFX_goal_anschluss
@@ -1742,6 +2097,7 @@
 				name = "Habsburg Dynasty"
 			}
 			set_cosmetic_tag = AUS_ROY
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = {
@@ -1769,6 +2125,10 @@
 		
 		bypass = {
 
+		}
+		
+		allow_branch = {
+			has_completed_focus = XTI_habsburg_king
 		}
 
 		cancel_if_invalid = yes
@@ -2071,7 +2431,7 @@
 		
 		prerequisite = { focus = XTI_consolidate_bavaria }
 #		mutually_exclusive = { focus = XTI_declare_new_austria }
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = XTI_consolidate_bavaria
 
@@ -2351,7 +2711,7 @@
 		
 		prerequisite = { focus = XTI_consolidate_bavaria }
 #		mutually_exclusive = { focus = XTI_declare_new_austria }
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = XTI_consolidate_bavaria
 
@@ -2640,15 +3000,11 @@
 		id = XTI_lowlands_campaign
 		icon = GFX_
 		
-		prerequisite = { focus = XTI_consolidate_swiss }
-		prerequisite = { focus = XTI_colonize_piedmonte focus = XTI_establish_piedmonte_puppet }
-		prerequisite = { focus = XTI_core_americans }
-		prerequisite = { focus = XTI_core_saxony }
-		prerequisite = { focus = XTI_core_east_germany }
+		prerequisite = { focus = XTI_consolidate_bavaria }
 #		mutually_exclusive = { focus = XTI_declare_new_austria }
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = XTI_establish_piedmonte_puppet
+		relative_position_id = XTI_consolidate_bavaria
 
 		cost = 10
 
@@ -2679,6 +3035,145 @@
 				}
 				add_claim_by = XTI
 			}
+		}
+	}
+	focus = {
+		id = XTI_conquer_lowlands
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_lowlands_campaign }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_lowlands_campaign
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XLX
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XAL
+			}
+		}
+	}
+	focus = {
+		id = XTI_integrate_lowlands
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_conquer_lowlands }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_conquer_lowlands
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 7
+			owns_state = 36
+			owns_state = 35
+			owns_state = 51
+			owns_state = 6
+			owns_state = 34
+			owns_state = 29
+			owns_state = 8
+			owns_state = 28
+			owns_state = 976
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_state_core = 7
+			add_state_core = 36
+			add_state_core = 35
+			add_state_core = 51
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 29
+			add_state_core = 8
+			add_state_core = 28
+			add_state_core = 976
+		}
+	}
+	focus = {
+		id = XTI_crown_emperor
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_consolidate_swiss }
+		prerequisite = { focus = XTI_colonize_piedmonte focus = XTI_establish_piedmonte_puppet }
+		prerequisite = { focus = XTI_integrate_lowlands }
+		prerequisite = { focus = XTI_core_americans }
+		prerequisite = { focus = XTI_core_saxony }
+		prerequisite = { focus = XTI_core_east_germany }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_integrate_lowlands
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_cosmetic_tag = HRE_UNIFIED
+			add_ideas = XTI_hre
 		}
 	}
 }
