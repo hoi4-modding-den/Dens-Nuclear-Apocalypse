@@ -383,3 +383,37 @@ XNE_gain_communism_support = {
 		hidden_effect = { XNE_check_popular_support = yes }
 	}
 }
+XNE_add_civ = {
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+XNE_add_mil = {
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+}

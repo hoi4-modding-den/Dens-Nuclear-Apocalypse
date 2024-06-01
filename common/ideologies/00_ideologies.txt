@@ -101,6 +101,11 @@ ideologies = {
 
 			anarchist_communism = {
 			}
+			
+			XNE_oligarchical_collectivism = {
+				can_be_randomly_selected = no
+				color = { 10 10 10 }
+			}
 		}
 
 		dynamic_faction_names = {

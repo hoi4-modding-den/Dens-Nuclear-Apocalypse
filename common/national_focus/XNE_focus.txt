@@ -11,7 +11,7 @@
 	
 	default = no
 	reset_on_civilwar = no
-	continuous_focus_position = { x = 0 y = 3000 }
+	continuous_focus_position = { x = 3000 y = 3000 }
 
 	initial_show_position = {
 		focus = XNE_chamberlains_speech
@@ -2018,6 +2018,865 @@
 					}
 				}
 			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_colchester_vault
+		icon = GFX_focus_ARG_march_to_la_casa_rosada
+
+		x = 21
+		y = 0
+
+		cost = 4
+
+		available = { has_tech = excavation1 }
+		bypass = {}
+		
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = XNE_focus.6
+			XNE_gain_conservative_support = yes
+			hidden_effect = { 
+				country_event = { 
+					id = XNE_focus.7
+					days = 180
+					random_days = 180
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	focus = {
+		id = XNE_books_on_military_excursions
+    	icon = GFX_goal_generic_army_doctrines
+    	prerequisite = { focus = XNE_colchester_vault }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_colchester_vault
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_communism_support = yes
+    		army_experience = 50
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_battle_of_france
+    	icon = GFX_goal_generic_allies_build_infantry
+    	prerequisite = { focus = XNE_books_on_military_excursions }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_books_on_military_excursions
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_conservative_support = yes
+    		add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.5
+				uses = 1
+				category = infantry_weapons
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 2
+				has_government = democratic
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_battle_of_the_bulge
+    	icon = GFX_focus_generic_combined_arms
+    	prerequisite = { focus = XNE_books_on_military_excursions }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_books_on_military_excursions
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_communism_support = yes
+    		add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_operation_barbarossa
+    	icon = GFX_focus_generic_tankette
+    	prerequisite = { focus = XNE_books_on_military_excursions }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_books_on_military_excursions
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		XNE_gain_communism_support = yes
+    		add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_old_naval_warfare
+    	icon = GFX_goal_generic_navy_doctrines_tactics
+    	prerequisite = { focus = XNE_colchester_vault }
+    	x = -4
+    	y = 1
+    	relative_position_id = XNE_colchester_vault
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_conservative_support = yes
+    		XNE_gain_liberal_support = yes
+    		navy_experience = 50
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				has_government = democratic
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_dday_landings
+    	icon = GFX_goal_generic_navy_battleship
+    	prerequisite = { focus = XNE_old_naval_warfare }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_old_naval_warfare
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_conservative_support = yes
+    		XNE_gain_liberal_support = yes
+    		add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = bb_tech
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				has_government = democratic
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_dunkirk
+    	icon = GFX_focus_generic_destroyer
+    	prerequisite = { focus = XNE_old_naval_warfare }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_old_naval_warfare
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_conservative_support = yes
+    		XNE_gain_liberal_support = yes
+    		add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				has_government = democratic
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_attack_on_pearl_harbour
+    	icon = GFX_goal_generic_air_naval_bomber
+    	prerequisite = { focus = XNE_old_naval_warfare }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_old_naval_warfare
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = naval_bomber
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 2
+				has_government = fascism
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_war_in_the_skies
+    	icon = GFX_goal_generic_air_doctrine
+    	prerequisite = { focus = XNE_colchester_vault }
+    	x = 4
+    	y = 1
+    	relative_position_id = XNE_colchester_vault
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_neutrality_support = yes
+    		air_experience = 50
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				has_government = neutrality
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_battle_of_britain
+    	icon = GFX_goal_generic_air_fighter
+    	prerequisite = { focus = XNE_war_in_the_skies }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_war_in_the_skies
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_neutrality_support = yes
+    		add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				has_government = neutrality
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_dresden
+    	icon = GFX_focus_SWE_marauder_bombers
+    	prerequisite = { focus = XNE_war_in_the_skies }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_war_in_the_skies
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_conservative_support = yes
+    		XNE_gain_fascism_support = yes
+    		add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = medium_air
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 2
+				has_government = democratic
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_operation_hailstone
+    	icon = GFX_focus_generic_multi_role_aircraft
+    	prerequisite = { focus = XNE_war_in_the_skies }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_war_in_the_skies
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_neutrality_support = yes
+    		add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = heavy_air
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 7
+			modifier = {
+				factor = 1.5
+				has_government = neutrality
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_modern_industry
+    	icon = GFX_focus_generic_modernize_industry
+    	prerequisite = { focus = XNE_colchester_vault }
+    	x = 2
+    	y = 1
+    	relative_position_id = XNE_colchester_vault
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_ideas = XNE_modern_industry_1
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_military_industry
+    	icon = GFX_focus_generic_industry_3
+    	prerequisite = { focus = XNE_modern_industry }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_modern_industry
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = XNE_modern_industry_1
+				add_idea = XNE_modern_industry_2
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_early_computers
+    	icon = GFX_focus_ARG_develop_the_electricity_sector
+    	prerequisite = { focus = XNE_colchester_vault }
+    	x = -2
+    	y = 1
+    	relative_position_id = XNE_colchester_vault
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+			modifier = {
+				factor = 3
+				date > 1938.01.01
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_advanced_computers
+    	icon = GFX_focus_generic_university_2
+    	prerequisite = { focus = XNE_early_computers }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_early_computers
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		add_research_slot = 1
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+			modifier = {
+				factor = 2
+				date > 1938.01.01
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_1969_rockets
+    	icon = GFX_focus_rocketry
+    	prerequisite = { focus = XNE_attack_on_pearl_harbour }
+    	prerequisite = { focus = XNE_advanced_computers }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_attack_on_pearl_harbour
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_conservative_support = yes
+    		add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 1
+				category = rocketry
+				category = jet_technology
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 12
+			modifier = {
+				factor = 0.25
+				date < 1940.01.01
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_mobile_infantry
+    	icon = GFX_goal_generic_army_motorized
+    	prerequisite = { focus = XNE_battle_of_france }
+    	prerequisite = { focus = XNE_advanced_computers }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_advanced_computers
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_fascism_support = yes
+    		add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_arsenal_of_nne
+    	icon = GFX_focus_FIN_weapon_caches
+    	prerequisite = { focus = XNE_battle_of_france }
+    	prerequisite = { focus = XNE_military_industry }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_battle_of_france
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_communism_support = yes
+    		XNE_add_mil = yes
+    		XNE_add_mil = yes
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_21st_century_radar
+    	icon = GFX_goal_generic_radar
+    	prerequisite = { focus = XNE_military_industry }
+    	prerequisite = { focus = XNE_dresden }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_military_industry
+    
+    	cost = 8
+    
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		XNE_gain_liberal_support = yes
+    		add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 2
+				category = radar_tech
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_23rd_century_nne
+    	icon = GFX_focus_NORDIC_com_selector_research
+    	prerequisite = { focus = XNE_1969_rockets focus = XNE_mobile_infantry }
+    	prerequisite = { focus = XNE_arsenal_of_nne focus = XNE_21st_century_radar }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_mobile_infantry
+    
+    	cost = 8
+    
+    	available = {
+			NOT = {
+				has_country_leader = {
+					name = "Winston Chamberlain"
+					ruling_only = yes
+				}
+			}
+		}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		add_political_power = 100
+			add_research_slot = 1
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_oligarchical_collectivism
+    	icon = GFX_focus_NOR_a_new_norway_Trotsky_communism
+    	prerequisite = { focus = XNE_higher_import_taxes }
+    	prerequisite = { focus = XNE_government_reformation }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_higher_import_taxes
+    
+    	cost = 12
+    
+		allow_branch = { 
+			has_country_flag = XNE_1984
+			#has_completed_focus = XNE_isolation
+		}
+    	available = { has_government = communism }
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+    		hidden_effect = {
+				create_country_leader = {
+					name = XNE_the_prime_minister
+					desc = XNE_the_prime_minister_desc
+					picture = GFX_Portrait_XNE_communist2
+					expire = "1.1.1"
+					ideology = XNE_oligarchical_collectivism
+					traits = {
+					}
+				}
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					long_name = XNE_1984_party_long
+					name = XNE_1984_party
+				}
+				set_popularities = {
+					democratic = 0
+					neutrality = 0
+					fascism = 0
+					communism = 100
+				}
+				if = {
+					limit = { has_idea = XNE_internal_conflict }
+					remove_ideas = XNE_internal_conflict
+				}
+				add_ideas = closed_economy
+				add_ideas = tot_economic_mobilisation
+			}
+			set_cosmetic_tag = XNE_OC
+			mark_focus_tree_layout_dirty = yes
     	}
     	
     	ai_will_do = {

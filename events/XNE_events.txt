@@ -198,7 +198,7 @@ country_event = {
 	option = {
 		name = XNE_focus.999.a
 		ai_chance = { factor = 1 }
-		XNE = { complete_national_focus = XNE_federation_of_the_british_isles }
+		XNE = { complete_national_focus = XNE_oligarchical_collectivism }
 	}
 }
 
@@ -327,5 +327,51 @@ country_event = {
 			}
 			set_country_flag = XNE_worcester_rejects
 		}
+	}
+}
+
+# Colchester Vault
+country_event = {
+	id = XNE_focus.6
+	title = XNE_focus.6.title
+	desc = XNE_focus.6.desc
+	picture = GFX_report_event_bunker_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_focus.6.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+# 1984
+country_event = {
+	id = XNE_focus.7
+	title = XNE_focus.7.title
+	desc = XNE_focus.7.desc
+	picture = GFX_report_event_eng_mosley_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNE_focus.7.a
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				add = 4
+				OR = {
+					has_government = communism
+					has_completed_focus = XNE_isolation
+				}
+			}
+		}
+		set_country_flag = XNE_1984
+		mark_focus_tree_layout_dirty = yes
+	}
+	
+	option = {
+		name = XNE_focus.7.b
+		ai_chance = { factor = 1 }
 	}
 }

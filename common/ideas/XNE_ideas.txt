@@ -227,6 +227,43 @@ ideas = {
 				}				
 			}			
 		}
+		XNE_modern_industry_1 = {
+			picture = man_five_year_plan_industry
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.075
+				line_change_production_efficiency_factor = 0.05
+			}			
+		}
+		XNE_modern_industry_2 = {
+			picture = man_five_year_plan_industry
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.08
+				global_building_slots_factor = 0.1
+			}			
+		}
 		
 		XNE_fascism_rising = {
 

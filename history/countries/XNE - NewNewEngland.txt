@@ -30,6 +30,7 @@ set_variable = { var = XNE_communism_support value = 0.06 }
 add_ideas = XNE_tensions_on_the_trent
 add_ideas = XNE_internal_conflict
 add_ideas = limited_conscription
+set_country_flag = dont_use_default_political_advisors
 
 create_country_leader = {
 	name = XNE_king_henry_x
