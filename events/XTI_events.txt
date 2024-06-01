@@ -84,6 +84,39 @@ country_event = {
 				champion_of_peace_5
 				economic_reformer
 			}
+			if = {
+				limit = {
+					has_completed_focus = XTI_alpine_proclamation
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = "Sozialdemokratische Partei der Alpen"
+					name = "SPA"
+				}
+
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = XTI_declare_new_austria
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = "Sozialdemokratische Partei Österreichs"
+					name = "SPÖ"
+				}
+
+			}
+			else = {
+				set_party_name = {
+					ideology = democratic
+					long_name = "Sozialdemokratische Partei Tirols"
+					name = "SPT"
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
 		}
 		complete_national_focus = XTI_SPT_victory
         #complete_national_focus = XSS_triumph_of_democracy
@@ -100,8 +133,41 @@ country_event = {
 				conservative_grandee
 				staunch_constitutionalist
 			}
-			complete_national_focus = XTI_TVP_victory
 		}
+		if = {
+			limit = {
+				has_completed_focus = XTI_alpine_proclamation
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Alpenvolkspartei"
+				name = "AVP"
+			}
+
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = XTI_declare_new_austria
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Österreichische Volkspartei"
+				name = "ÖVP"
+			}
+
+		}
+		else = {
+			set_party_name = {
+				ideology = democratic
+				long_name = "Tiroler Volkspartei"
+				name = "TVP"
+			}
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		complete_national_focus = XTI_TVP_victory
         #complete_national_focus = XSS_triumph_of_democracy
     }
 	option = {
@@ -116,8 +182,41 @@ country_event = {
 				conservative_nationalist
 				nationalist_symbol
 			}
-			complete_national_focus = XTI_FPT_victory
 		}
+		if = {
+			limit = {
+				has_completed_focus = XTI_alpine_proclamation
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Freiheitspartei der Alpen"
+				name = "FPA"
+			}
+
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = XTI_declare_new_austria
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Freiheitliche Partei Österreichs"
+				name = "FPÖ"
+			}
+
+		}
+		else = {
+			set_party_name = {
+				ideology = democratic
+				long_name = "Freiheitspartei Tirols"
+				name = "FPT"
+			}
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		complete_national_focus = XTI_FPT_victory
         #complete_national_focus = XSS_triumph_of_democracy
     }
 }

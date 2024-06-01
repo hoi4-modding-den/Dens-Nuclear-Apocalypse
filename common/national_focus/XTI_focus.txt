@@ -977,10 +977,34 @@
 
 		completion_reward = {
 			retire_country_leader = yes
-			set_party_name = {
-				ideology = neutrality
-				long_name = "Tirol für Wohlstand"
-				name = "TW"
+			if = {
+				limit = {
+					has_completed_focus = XTI_alpine_proclamation
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "Alpen für Wohlstand"
+					name = "AW"
+				}
+
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = XTI_declare_new_austria
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "Österreich für Wohlstand"
+					name = "ÖW"
+				}
+
+			}
+			else = {
+				set_party_name = {
+					ideology = neutrality
+					long_name = "Tirol für Wohlstand"
+					name = "TW"
+				}
 			}
 			add_political_power = 100
 			add_stability = 0.1
@@ -1620,7 +1644,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			set_state_owner = 152
+			transfer_state = 152
 			add_state_core = 152
 			152 = {
 				add_manpower = 10000
@@ -1665,7 +1689,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			set_state_owner = 4
+			transfer_state = 4
 			add_state_core = 4
 			4 = {
 				add_manpower = 25000
