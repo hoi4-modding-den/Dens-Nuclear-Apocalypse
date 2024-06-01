@@ -59,6 +59,35 @@ set_party_name = {
     name = XNM_national_mercian_front
 }
 
+create_country_leader = {
+	name = XNM_frederick_thorne
+	desc = XNM_frederick_thorne_desc
+	picture = GFX_portrait_XNM_Frederick_Thorne
+	expire = "1.1.1"
+	ideology = XNM_thornist_revolutionaries
+	traits = {
+	}
+}
+set_party_name = {
+    ideology = communism
+    long_name = XNM_thornist_revolutionaries_long
+    name = XNM_thornist_revolutionaries
+}
+
+#create_country_leader = {
+#	name = XNM_frederick_thorne
+#	desc = XNM_frederick_thorne_desc
+#	picture = GFX_portrait_XNM_Frederick_Thorne
+#	expire = "1.1.1"
+#	ideology = XNM_iclingatists
+#	traits = {
+#	}
+#}
+set_party_name = {
+    ideology = neutrality
+    long_name = XNM_iclingatists_long
+    name = XNM_iclingatists
+}
 
 create_faction = "Isles Cooperative"
 add_to_faction = XTY
