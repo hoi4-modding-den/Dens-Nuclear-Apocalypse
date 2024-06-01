@@ -6222,6 +6222,121 @@ build_railway = {
     }
 
 
+    focus = {
+    id = XSS_volkspolizei
+    x = 94
+    y = 13
+    icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+    cost = 5
+    prerequisite = { focus = XSS_treaty_of_innsbruck }
+
+
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_volkspolizei_idea}
+        hidden_effect = { load_oob = "XSS_volkspolizei_oob" }
+  
+        }
+    }
+
+    focus = {
+    id = XSS_fortify_burgundy
+    x = 93
+    y = 14
+    icon = GFX_focus_SWI_fortify_border_with_france
+    cost = 10
+    prerequisite = { focus = XSS_volkspolizei }
+    mutually_exclusive = {focus = XSS_fortify_italian_straits }
+
+
+
+    completion_reward = {
+
+        845 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 6666
+                }
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 9622
+                }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 6683
+                }
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 9638
+                }
+
+        }
+  
+        }
+    }
+
+    focus = {
+    id = XSS_fortify_italian_straits
+    x = 95
+    y = 14
+    icon = GFX_focus_SWI_fortify_border_with_italy
+    cost = 10
+    prerequisite = { focus = XSS_volkspolizei }
+    mutually_exclusive = {focus = XSS_fortify_burgundy }
+
+
+
+
+    completion_reward = {
+
+        846 = {
+            add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 9600
+                }
+        }
+        847 = {
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 636
+                }
+        }
+        151 = {
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 658
+                }
+        }
+        153 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 11618
+                }
+        }
+  
+        }
+    }
+
+
+
 
 
 
