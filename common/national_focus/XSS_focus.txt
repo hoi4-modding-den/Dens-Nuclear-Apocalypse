@@ -6574,10 +6574,77 @@ set_capital = {
   state = 64
   remember_old_capital = no
 }
+remove_trait = {
+     character = XSS_robisch
+     ideology = despotism
+     trait = XSS_regent_for_life
+}
+add_trait = {
+     character = XSS_robisch
+     ideology = despotism
+     trait = XSS_kaiser
+}
 
     
 		}
     }
+
+
+    focus = {
+    id = XSS_join_bez_kaiser
+    x = 93
+    y = 18
+    icon = GFX_focus_eng_the_sun_never_sets
+    cost = 1
+    prerequisite = { focus = XSS_kaiserreich }
+    #available = {XNM={has_completed_focus = XNM_future_of_the_BEZ}}
+    mutually_exclusive = {focus = XSS_continental_union}
+
+    completion_reward = {
+        XNM = {
+        country_event = {
+        id = XSS_test_event.4
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+        
+        }
+
+    }
+
+    focus = {
+    id = XSS_continental_union
+    x = 87
+    y = 18
+    icon = GFX_focus_eng_decolonization
+    cost = 1
+    prerequisite = { focus = XSS_kaiserreich }
+    mutually_exclusive = {focus = XSS_join_bez_kaiser}
+
+
+    completion_reward = {
+        
+        
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
