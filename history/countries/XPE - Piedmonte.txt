@@ -1,0 +1,21 @@
+capital = 158
+
+#oob = "XTI_1936"
+
+#set_war_support = 0.1
+#set_stability = 0.8
+#set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2000.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	communism = 15
+	fascism = 15
+	neutrality = 55
+}
+

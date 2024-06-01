@@ -152,3 +152,7 @@ XLH = {
 	color = rgb { 99 75 58 }
 	color_ui = rgb { 99 75 58 }
 }
+XPE = {
+	color = rgb { 252 186 3 }
+	color_ui = rgb { 252 186 3 }
+}

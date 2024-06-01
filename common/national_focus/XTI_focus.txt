@@ -2071,7 +2071,7 @@
 		
 		prerequisite = { focus = XTI_consolidate_bavaria }
 #		mutually_exclusive = { focus = XTI_declare_new_austria }
-		x = -4
+		x = -3
 		y = 1
 		relative_position_id = XTI_consolidate_bavaria
 
@@ -2106,5 +2106,579 @@
 			}
 		}
 	}
-	
+	focus = {
+		id = XTI_strike_the_swiss
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_strongarm_alps }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = -2
+		y = 1
+		relative_position_id = XTI_strongarm_alps
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XSS
+			}
+		}
+	}
+	focus = {
+		id = XTI_consolidate_swiss
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_strike_the_swiss }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_strike_the_swiss
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 151
+			owns_state = 847
+			owns_state = 3
+			owns_state = 845
+			owns_state = 846
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_state_core = 151
+			add_state_core = 847
+			add_state_core = 3
+			add_state_core = 845
+			add_state_core = 846
+		}
+	}
+	focus = {
+		id = XTI_strike_the_lombards
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_strongarm_alps }
+		mutually_exclusive = { focus = XTI_trent_or_war }
+		x = 0
+		y = 1
+		relative_position_id = XTI_strongarm_alps
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XLV
+			}
+		}
+	}
+	focus = {
+		id = XTI_colonize_piedmonte
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_strike_the_lombards focus = XTI_trent_or_war }
+		mutually_exclusive = { focus = XTI_establish_piedmonte_puppet }
+		x = 0
+		y = 1
+		relative_position_id = XTI_strike_the_lombards
+
+		cost = 20
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 850
+			has_political_power > 149
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			transfer_state = 158
+			add_state_core = 158
+			add_political_power = -150
+		}
+	}
+	focus = {
+		id = XTI_trent_or_war
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_strongarm_alps }
+		mutually_exclusive = { focus = XTI_strike_the_lombards }
+		x = 2
+		y = 1
+		relative_position_id = XTI_strongarm_alps
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			XLV = {
+				country_event = XTI.7
+			}
+		}
+	}
+	focus = {
+		id = XTI_establish_piedmonte_puppet
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_strike_the_lombards focus = XTI_trent_or_war }
+		mutually_exclusive = { focus = XTI_colonize_piedmonte }
+		x = 2
+		y = 1
+		relative_position_id = XTI_strike_the_lombards
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 850
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			XPE = {
+				add_state_core = 158
+				transfer_state = 158
+			}
+			puppet = XPE
+		}
+	}
+	focus = {
+		id = XTI_north_german_campaign
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_consolidate_bavaria }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 3
+		y = 1
+		relative_position_id = XTI_consolidate_bavaria
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = XTI_remove_americans
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_north_german_campaign }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = -2
+		y = 1
+		relative_position_id = XTI_north_german_campaign
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XRP
+			}
+		}
+	}
+	focus = {
+		id = XTI_core_americans
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_remove_americans }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_remove_americans
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 42
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_state_core = 42
+		}
+	}
+	focus = {
+		id = XTI_conquer_the_saxons
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_north_german_campaign }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_north_german_campaign
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XAP
+			}
+		}
+	}
+	focus = {
+		id = XTI_core_saxony
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_conquer_the_saxons }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_conquer_the_saxons
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 55
+			owns_state = 56
+			owns_state = 57
+			owns_state = 59
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_state_core = 55
+			add_state_core = 56
+			add_state_core = 57
+			add_state_core = 59
+		}
+	}
+	focus = {
+		id = XTI_destroy_the_commies
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_north_german_campaign }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 2
+		y = 1
+		relative_position_id = XTI_north_german_campaign
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XGE
+			}
+		}
+	}
+	focus = {
+		id = XTI_core_east_germany
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_destroy_the_commies }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_destroy_the_commies
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 60
+			owns_state = 65
+			owns_state = 64
+			owns_state = 61
+			owns_state = 62
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_state_core = 60
+			add_state_core = 65
+			add_state_core = 64
+			add_state_core = 61
+			add_state_core = 62
+			60 = {
+				set_state_name = "Thuringia"
+			}
+			65 = {
+				set_state_name = "Upper Saxony"
+			}
+			64 = {
+				set_state_name = "Brandenburg"
+			}
+			61 = {
+				set_state_name = "Mecklenburg"
+			}
+			62 = {
+				set_state_name = "Pomerania"
+			}
+		}
+	}
+	focus = {
+		id = XTI_lowlands_campaign
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_consolidate_swiss }
+		prerequisite = { focus = XTI_colonize_piedmonte focus = XTI_establish_piedmonte_puppet }
+		prerequisite = { focus = XTI_core_americans }
+		prerequisite = { focus = XTI_core_saxony }
+		prerequisite = { focus = XTI_core_east_germany }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 1
+		y = 1
+		relative_position_id = XTI_establish_piedmonte_puppet
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					region = 5
+				}
+				add_claim_by = XTI
+			}
+		}
+	}
 }
