@@ -1246,6 +1246,16 @@ XSS_unite_arles_desc:0 "We shall capture Wastelands of the south and Unite Legen
 XSS_conquer_hamburg:0 "Conquer Hamburg"
 XSS_conquer_hamburg_desc:0 "Last city of our rightful German clay must be retaken."
 
+XSS_house_of_bracher:0 "House of Bracher"
+XSS_house_of_bracher_desc:0 "We have found a local self titled King! He is brave and he fought in Civilwar."
+
+XSS_test_event.38.t:0 "Summer offensive"
+XSS_test_event.38.desc:0 "Summer offensive has started. Durning the first days we have sadly suffered heavy casulties. Alexander Bracher a person who destined to become king has died."
+XSS_test_event.38.a:0 "A sad loss for Switzerland"
+
+XSS_steady_offensive:0 "Steady offensive"
+XSS_steady_offensive_desc:0 "War will soon be over, no need to be aggressive."
+
 
 
 

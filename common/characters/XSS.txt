@@ -88,7 +88,7 @@ corps_commander = {
 		}
 		country_leader = {
 			ideology = despotism
-			traits = { inexperienced_monarch }
+			traits = { inexperienced_monarch veteran_guerrilla_fighter DEN_socialdemokrat}
 			expire = "3000.9.9.9"
 			id = -1
 		}

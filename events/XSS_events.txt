@@ -1103,6 +1103,25 @@ country_event = {
     }
 }
 
+####################### Summer offensive ######################
+
+news_event = {
+    id = XSS_test_event.38
+    title = XSS_test_event.38.t
+    picture = GFX_news_event_dutch_soldiers_indonesia
+    desc = XSS_test_event.38.desc
+    
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XSS_test_event.38.a
+        retire_character = XSS_bracher
+
+    }
+
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

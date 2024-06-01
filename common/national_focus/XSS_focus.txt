@@ -5846,17 +5846,18 @@ add_equipment_to_stockpile = {
 
     focus = {
     id = XSS_eliminate_RA
-    x = 99
+    x = 98
     y = 8
     icon = GFX_focus_SOV_support_spanish_poum
     cost = 3
     prerequisite = { focus = XSS_schwyz_victory }
         mutually_exclusive = {focus = XSS_push_romansh_past_tirol}
+
+    mutually_exclusive = {focus = XSS_steady_offensive}
     available = {
-        OR = {
-        has_war_with = XRM
+   
         has_war_with = XRA            
-        }
+        
   
 
         }
@@ -5875,18 +5876,56 @@ add_equipment_to_stockpile = {
         idea = XSS_summer_offensive
         days = 62
                 }   
+        news_event = {
+        id = XSS_test_event.38
+        days = 1
+        random_hours = 1
+            }
 
         }
     }
 
     focus = {
+    id = XSS_steady_offensive
+    x = 100
+    y = 8
+    icon = GFX_goal_generic_major_war
+    cost = 3
+    prerequisite = { focus = XSS_schwyz_victory }
+        mutually_exclusive = {focus = XSS_push_romansh_past_tirol}
+           mutually_exclusive = {focus = XSS_eliminate_RA}
+    available = {
+   
+        has_war_with = XRA            
+        
+  
+
+        }
+    bypass = {
+        NOT = {
+        OR = {
+        has_war_with = XRM
+        has_war_with = XRA            
+        }
+        }
+    }
+
+    completion_reward = {
+
+        army_experience = 15
+
+    }
+    }
+
+    focus = {
     id = XSS_push_romansh_past_tirol
-    x = 101
+    x = 102
     y = 8
     icon = GFX_focus_SOV_mobilization_plan
     cost = 1
     prerequisite = { focus = XSS_schwyz_victory }
     mutually_exclusive = {focus = XSS_eliminate_RA}
+    mutually_exclusive = {focus = XSS_steady_offensive}
     available = {
         OR = {
         has_war_with = XRM
@@ -5932,7 +5971,7 @@ divisions_in_state = {
     y = 9
     icon = GFX_focus_generic_population_growth
     cost = 1
-    prerequisite = { focus = XSS_push_romansh_past_tirol focus= XSS_eliminate_RA}
+    prerequisite = { focus = XSS_push_romansh_past_tirol focus= XSS_eliminate_RA focus = XSS_steady_offensive}
 
     available = {
         NOT = {
@@ -5961,7 +6000,7 @@ divisions_in_state = {
     icon = GFX_focus_generic_military_dictatorship
     cost = 1
     prerequisite = { focus = XSS_end_of_civil_war }
-
+        mutually_exclusive = {focus = XSS_house_of_bracher}
     available = {
        has_completed_focus = XSS_push_romansh_past_tirol
         }
@@ -6792,7 +6831,61 @@ add_trait = {
     }
 
 
+    focus = {
+    id = XSS_house_of_bracher
+    x = 100
+    y = 10
+    icon = GFX_focus_SWI_federal_police
+    cost = 1
+    prerequisite = { focus = XSS_end_of_civil_war }
+    mutually_exclusive = {focus = XSS_rule_of_regent}
 
+
+    available = {
+       NOT = {has_completed_focus = XSS_push_romansh_past_tirol
+                has_completed_focus = XSS_eliminate_RA
+       }
+        }
+
+
+    completion_reward = {
+
+
+           add_country_leader_role = {
+            character = XSS_bracher
+            promote_leader = yes
+            country_leader = {
+        ideology = despotism
+        expire = "3000.1.1.1"
+        traits = {  }
+                }
+           }
+add_field_marshal_role = {
+  character = XSS_bracher
+  skill = 4
+  attack_skill = 4
+  defense_skill = 4
+  planning_skill = 4
+  logistics_skill = 1
+}
+remove_country_leader_role = {
+    character = XSS_robisch
+    ideology = despotism
+}
+
+        add_popularity = {
+        ideology = neutrality
+        popularity = 0.35
+                }      
+
+
+       set_party_name = {
+        ideology = neutrality
+        long_name = "House of Bracher"
+        name = "House of Bracher"
+            }
+        }
+    }
 
 
 
