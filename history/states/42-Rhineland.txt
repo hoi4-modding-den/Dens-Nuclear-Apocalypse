@@ -12,10 +12,13 @@ manpower=2018493
 
 	history={
 		owner = XRP # GER
-		victory_points = { 11435 1 }
-		victory_points = { 11547 10 }
-		#victory_points = { 9575 3 }
+		victory_points = { 11435 5 }
+		victory_points = { 11547 15 }
+		victory_points = { 9575 1 }
 		victory_points = { 11531 5 }
+		victory_points = { 3423 1 }
+		victory_points = { 11560 10 }
+		victory_points = { 3558 5 }
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2

@@ -154,6 +154,17 @@ bookmarks = {
 				
 			}
 		}
+		"XRP" = { #no idea how to make it not go off the screen, sorry
+			ideology = fascism
+			history = XRP_history_desc
+			focuses = {
+				
+			}
+			ideas = {
+				XRP_deutsch_apartheid
+			}
+		}
+
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

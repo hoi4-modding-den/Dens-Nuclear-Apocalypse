@@ -1,0 +1,26 @@
+characters = {
+
+	XRP_Cavoli = { 		#starting leader
+		name = XRP_Cavoli
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XRP/XRP_Cavoli.dds"
+			}
+		}
+		country_leader = {
+			ideology = XRP_american_supremacism
+			traits = { XRP_naive_blowhard }
+			desc = XRP_Cavoli_desc
+			id = -1	
+		}
+		field_marshal = {
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

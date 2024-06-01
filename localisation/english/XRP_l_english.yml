@@ -1,0 +1,54 @@
+﻿l_english:
+ #Country/Party Names#
+ XRP_fascism:0 "United States Military"
+ XRP_fascism_DEF:0 "the United States European Command"
+ XRP_fascism_ADJ:0 "American"
+ XRP_fascism_party: "EUCOM"
+ XRP_fascism_party_long: "United States European Command"
+ XRP_democratic:0 "United States"
+ XRP_democratic_DEF:0 "the United States Government-in-Exile"
+ XRP_democratic_ADJ:0 "American-German"
+ XRP_democratic_party: "Old Guard"
+ XRP_democratic_party_long: "Democratically Inclined Senior Officers"
+ XRP_neutrality:0 "Rhineland-Palatinate"
+ XRP_neutrality_DEF:0 "Rhineland-Palatinate"
+ XRP_neutrality_ADJ:0 "Rheinländer-Pfälzer"
+ XRP_neutrality_party: "German Influence"
+ XRP_neutrality_party_long: "Indigenous German Influence on our Government"
+ XRP_communism:0 "Commune of the Rhine"
+ XRP_communism_DEF:0 "the Commune of the Rhine"
+ XRP_communism_ADJ:0 "Rheinländer"
+ XRP_communism_party: "Young Officers"
+ XRP_communism_party_long: "Radicalized Young Officers"
+ XRP_XGE_communism_subject:0 "Autonomy of the Rhineland"
+ XRP_XGE_communism_subject_DEF:0 "the Reconstructive Autonomy of the Rhineland-Palatinate"
+ XRP_XAP_democratic_subject:0 "Council of the Rhine"
+ XRP_XAP_democratic_subject_DEF:0 "the People's Council of the Rhineland"
+ XRP:0 "Rhineland"
+ XRP_DEF:0 "the Rhineland"
+ XRP_ADJ:0 "Rheinländer"
+ XRP_subject:0 "$OVERLORDADJ$ $XRP$"
+ 
+ #Select Screen#
+ XRP_history_desc:0 "WIP [first draft was too long :skull:]"
+ 
+ #Traits#
+ XRP_naive_blowhard:0 "Overconfident Yes-Man" #Cavoli trait
+ 
+ #Sub-Ideologies#
+ XRP_american_supremacism:0 "EUCOM"
+ XRP_american_supremacism_long:0 "United States European Command"
+ XRP_american_supremacism_desc:0 "WIP"
+ XRP_american_republicanism:0 "Old Guard"
+ XRP_american_republicanism_long:0 "Democratically Inclined Senior Officers"
+ XRP_american_republicanism_desc:0 "WIP" 
+ 
+ #Ideas#
+ XRP_deutsch_apartheid:0 "German Segregation"
+ XRP_deutsch_apartheid_desc:0 "The Government of the Rhineland is primarily run by and for Americans, the descendants of the soldiers and officers who occupied the US military installations that peppered the state of Rhineland-Palatinate, prior to the Third World War. German 'civilians' are not granted the same protections, rights, or opportunities, as American 'citizens', and are generally seen as 'obstructive' at best by senior officers of the armed forces." 
+ #add idea for "lingering US democratic ideals" type of thing
+ 
+ #Characters
+ XRP_Cavoli:0 "Gavin C. Cavoli"
+ XRP_Cavoli_desc:0 "A distant descendant of Christopher G. Cavoli, who led EUCOM during the Third World War, Gavin C. Cavoli was trained from birth to eventually hold the office of 'Supreme Allied Commander', and has done so since 2230. Despite this, Cavoli has had a seeming lack of interest in military affairs, and has instead commanded more as a monarch than a true military leader, being more content to hold the spotlight and give speeches than actually command or even understand his role in the military. However, this arrangement is considered acceptable by high command due to him ‘rubber stamping’ any bills or commands given to him. Some in high command have had concerns that this arrangement could collapse if he ever takes a more firm stance on anything, but for now, everything is ‘smooth sailing’."
+ 

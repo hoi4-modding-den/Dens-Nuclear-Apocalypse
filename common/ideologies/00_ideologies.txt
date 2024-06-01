@@ -29,6 +29,10 @@ ideologies = {
 			XNM_udm_coalition = {
 				can_be_randomly_selected = no
 				color = { 27 159 196 }
+			}
+			XRP_american_republicanism = {
+				can_be_randomly_selected = no
+				color = { 0 68 201 }
 			}		
 				
 		}
@@ -180,7 +184,11 @@ ideologies = {
 			XNM_national_mercian_front = {
 				can_be_randomly_selected = no
 				color = { 216 169 49 }
-			}			
+			}
+			XRP_american_supremacism = {
+				can_be_randomly_selected = no
+				color = { 0 20 137 }
+			} 			
 		}
 
 		dynamic_faction_names = {

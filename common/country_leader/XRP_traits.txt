@@ -1,0 +1,13 @@
+leader_traits = {
+
+	XRP_naive_blowhard = {
+		random = no
+		political_power_factor = -0.1
+		war_support_factor = -0.1
+		resistance_decay = -0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

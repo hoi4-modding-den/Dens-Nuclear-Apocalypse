@@ -3,7 +3,7 @@ capital = 42
 oob = "XRP_1936"
 
 set_research_slots = 3
-set_stability = 0.25
+set_stability = 0.35
 set_war_support = 0.5
 add_command_power = 20
 
@@ -129,8 +129,11 @@ add_ideas = {
 	partial_economic_mobilisation #british spelling augh
 	service_by_requirement #it's a military tag, also intended to offset planned debuffs
 	free_trade
+	XRP_deutsch_apartheid
 	#reminder to add planned national spirits
 }
+
+recruit_character = XRP_Cavoli
 
 set_politics = {
 	ruling_party = fascism #I'm not *just* being edgy, I have a lore reason for this
@@ -140,8 +143,8 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 55 #lingering american ideals of democracy
-    fascism = 20
+	democratic = 42 #lingering american ideals of democracy
+    fascism = 30
     communism = 20 #do you remember Aaron Bushnell? 
-    neutrality = 5
+    neutrality = 8
 }
