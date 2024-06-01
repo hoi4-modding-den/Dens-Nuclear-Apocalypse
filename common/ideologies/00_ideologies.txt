@@ -102,17 +102,15 @@ ideologies = {
 			anarchist_communism = {
 			}
 			
-<<<<<<< Updated upstream
 			XNE_oligarchical_collectivism = {
 				can_be_randomly_selected = no
 				color = { 10 10 10 }
 			}
-=======
+			
 			XNM_thornist_revolutionaries = {
 				can_be_randomly_selected = no
 				color = { 211 65 65 } # 211 65 65 (darker) or 255 79 79 (lighter)
 			}			
->>>>>>> Stashed changes
 		}
 
 		dynamic_faction_names = {
