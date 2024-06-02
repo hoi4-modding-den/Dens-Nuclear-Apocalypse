@@ -2692,9 +2692,9 @@
 
 		}
 		
-		allow_branch = {
-			has_completed_focus = XTI_habsburg_king
-		}
+		#allow_branch = {
+		#	has_completed_focus = XTI_habsburg_king
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3739,6 +3739,311 @@
 		completion_reward = {
 			set_cosmetic_tag = HRE_UNIFIED
 			add_ideas = XTI_hre
+		}
+	}
+	focus = {
+		id = XTI_democratize_state
+		icon = GFX_
+		
+#		prerequisite = { focus = XTI_consolidate_swiss }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 19
+		y = 4
+#		relative_position_id = XTI_
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_completed_focus = XTI_european_ambitions
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = XTI_democratization
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = XTI_draft_national_constitution
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_democratize_state }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 0
+		y = 1
+		relative_position_id = XTI_democratize_state
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_ideas = XTI_constitution
+		}
+	}
+	focus = {
+		id = XTI_hold_elections
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_draft_national_constitution }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = -1
+		y = 1
+		relative_position_id = XTI_draft_national_constitution
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			country_event = XTI.4
+		}
+	}
+	focus = {
+		id = XTI_hold_european_convention
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_draft_national_constitution }
+#		mutually_exclusive = { focus = XTI_declare_new_austria }
+		x = 1
+		y = 1
+		relative_position_id = XTI_draft_national_constitution
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_faction = "European Union"
+			every_country = {
+				limit = {
+					has_government = democratic
+				}
+				country_event = XTI.11
+			}
+		}
+	}
+	focus = {
+		id = XTI_liberty_by_force
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_hold_elections }
+		prerequisite = { focus = XTI_hold_european_convention }
+		mutually_exclusive = { focus = XTI_liberty_by_coercion }
+		x = -2
+		y = 1
+		relative_position_id = XTI_hold_elections
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = XTI_liberty_by_coercion
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_hold_elections }
+		prerequisite = { focus = XTI_hold_european_convention }
+		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 2
+		y = 1
+		relative_position_id = XTI_hold_european_convention
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_diplo_pressure
+		}
+	}
+	focus = {
+		id = XTI_liberate_bavarians
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_liberty_by_force }
+		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 0
+		y = 1
+		relative_position_id = XTI_liberty_by_force
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XTI_intelligence_agency
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_liberty_by_force focus = XTI_liberty_by_coercion }
+		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 3
+		y = 1
+		relative_position_id = XTI_liberty_by_force
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "Project Europa"
+			}
 		}
 	}
 }
