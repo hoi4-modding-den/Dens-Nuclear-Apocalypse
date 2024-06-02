@@ -1,0 +1,32 @@
+defined_text = {
+	name = XFR_focus_create_intelligence_agency
+
+	text = {
+		trigger = {
+			has_intelligence_agency = no
+		}
+		localization_key = "Intelligence Gathering"
+	}
+	text = {
+		trigger = {
+			has_intelligence_agency = yes
+		}
+		localization_key = "[XFR.GetAgency] Operations"
+	}
+}
+defined_text = {
+	name = XFR_focus_expand_the_pact
+
+	text = {
+		trigger = {
+			is_in_faction = no
+		}
+		localization_key = "Expand the Faction"
+	}
+	text = {
+		trigger = {
+			is_in_faction = yes
+		}
+		localization_key = "Expand the [XFR.GetFactionName]"
+	}
+}

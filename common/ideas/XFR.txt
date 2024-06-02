@@ -36,9 +36,28 @@ ideas = {
             picture = GFX
 
             modifier = {
-                political_power_factor = -0.05
-			    stability_weekly = -0.01
-                consumer_goods_factor = 0.15
+                political_power_factor = -0.1
+			    stability_factor = -0.25
+            }
+
+        }
+
+        XFR_propaganda_department_idea = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = GFX
+
+            modifier = {
+			    stability_factor = 0.05
+                war_support_factor = 0.1
             }
 
         }

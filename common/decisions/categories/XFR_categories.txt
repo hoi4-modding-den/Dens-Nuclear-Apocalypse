@@ -1,6 +1,6 @@
 XFR_centre_crisis_cat = {		
-	priority = 9		
-	icon = GFX_category_icon
+	priority = 100	
+	icon = GFX_decision_category_generic_crisis
 	
 	allowed = {
 		original_tag = XFR
@@ -9,5 +9,47 @@ XFR_centre_crisis_cat = {
 		original_tag = XFR
 		has_idea = XFR_chaos_in_centre
 		24 = { is_owned_by = XFR }
+	}
+}
+
+XFR_country_development_cat = {			
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	priority = 10	
+
+	visible_when_empty = yes	
+	
+	allowed = {
+		original_tag = XFR
+	}
+	visible = {	
+		has_completed_focus = XFR_electrify_the_country
+	}
+
+	visibility_type = map_and_decisions_view
+
+	on_map_area = {
+		target_array = controlled_states
+		name = XFR_electrification_cat_tt
+		zoom = 200
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_dynamic_modifier = { modifier = XFR_electricity_state_modifier }
+			}
+		}
+		
+	}
+}
+
+XFR_integration = {		
+	icon = GFX_decision_category_generic_formable_nations
+	
+	allowed = {
+		OR = {
+			original_tag = XFR
+			original_tag = XAL
+		}
+	}
+	visible = {	
 	}
 }
