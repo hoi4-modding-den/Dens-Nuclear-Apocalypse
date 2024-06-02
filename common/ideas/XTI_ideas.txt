@@ -274,5 +274,131 @@ ideas = {
 				monthly_population = 0.1
 			}
 		}
+		XTI_happy_church = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		XTI_happy_church_2 = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		XTI_youth_groups = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		XTI_political_opposition = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.1
+				communism_drift = 0.1
+				drift_defence_factor = -0.1
+			}
+		}
+		XTI_political_opposition_2 = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.05
+				drift_defence_factor = -0.05
+			}
+		}
+		XTI_state_corporations_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				local_resources = 0.25
+				political_power_gain = -0.1
+			}
+		}
+		XTI_internationalism_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+				research_sharing_per_country_bonus_factor = 0.5
+			}
+		}
 	}
 }	

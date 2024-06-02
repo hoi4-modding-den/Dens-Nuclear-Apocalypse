@@ -1006,6 +1006,8 @@
 					name = "TW"
 				}
 			}
+			complete_national_focus = XTI_autocratic_state
+			add_ideas = XTI_political_opposition
 			add_political_power = 100
 			add_stability = 0.1
 		}
@@ -1281,6 +1283,42 @@
 		}
 	}
 	focus = {
+		id = XTI_church_appeasement
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_TVP_victory focus = XTI_FPT_victory }
+		x = 3
+		y = 1
+		relative_position_id = XTI_TVP_victory
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_happy_church
+		}
+	}
+	focus = {
 		id = XTI_expand_social_programs
 		icon = GFX_
 		
@@ -1354,7 +1392,7 @@
 		}
 	}
 	focus = {
-		id = XTI_fund_religious_programs
+		id = XTI_traditional_teaching
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_TVP_victory }
@@ -1394,7 +1432,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_expand_public_schools }
-		prerequisite = { focus = XTI_open_universities focus = XTI_fund_religious_programs }
+		prerequisite = { focus = XTI_open_universities focus = XTI_traditional_teaching }
 		x = 0
 		y = 2
 		relative_position_id = XTI_expand_public_schools
@@ -1424,6 +1462,428 @@
 
 		completion_reward = {
 			remove_ideas = XTI_late_emergers_wo_research_debuff
+		}
+	}
+	focus = {
+		id = XTI_deregulate_curriculum
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_privatize_schools }
+		prerequisite = { focus = XTI_church_appeasement }
+		x = 1
+		y = 1
+		relative_position_id = XTI_privatize_schools
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XTI_happy_church
+				add_idea = XTI_happy_church_2
+			}
+		}
+	}
+	focus = {
+		id = XTI_tirol_youth_group
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_FPT_victory focus = XTI_autocratic_state }
+		x = 0
+		y = 2
+		relative_position_id = XTI_FPT_victory
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_youth_groups
+		}
+	}
+	focus = {
+		id = XTI_biased_cirriculum
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_traditional_teaching focus = XTI_tirol_youth_group }
+		prerequisite = { focus = XTI_deregulate_curriculum }
+		x = 1
+		y = 1
+		relative_position_id = XTI_traditional_teaching
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			remove_ideas = XTI_late_emergers_wo_pp_debuff
+		}
+	}
+	focus = {
+		id = XTI_religious_philosophy
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_church_appeasement }
+		x = 1
+		y = 1
+		relative_position_id = XTI_deregulate_curriculum
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XTI_state_corporations
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_autocratic_state }
+		x = 0
+		y = 1
+		relative_position_id = XTI_autocratic_state
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_state_corporations_idea
+		}
+	}
+	focus = {
+		id = XTI_loyal_bureaucrats
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_autocratic_state }
+		x = 2
+		y = 1
+		relative_position_id = XTI_autocratic_state
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XTI_late_emergers
+				add_idea = XTI_late_emergers_wo_pp_debuff
+			}
+		}
+	}
+	focus = {
+		id = XTI_state_media
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_propaganda }
+		prerequisite = { focus = XTI_state_corporations }
+		x = 1
+		y = 1
+		relative_position_id = XTI_propaganda
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XTI_political_opposition
+				add_idea = XTI_political_opposition_2
+			}
+		}
+	}
+	focus = {
+		id = XTI_target_opposition
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_tirol_youth_group }
+		prerequisite = { focus = XTI_state_media }
+		x = 2
+		y = 1
+		relative_position_id = XTI_tirol_youth_group
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			remove_ideas = XTI_political_opposition_2
+		}
+	}
+	focus = {
+		id = XTI_state_labs
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_state_media }
+		prerequisite = { focus = XTI_clear_private_lands }
+		x = 1
+		y = 1
+		relative_position_id = XTI_state_media
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			remove_ideas = XTI_late_emergers_wo_pp_debuff
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XTI_clear_private_lands
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_state_corporations }
+		prerequisite = { focus = XTI_loyal_bureaucrats }
+		x = 1
+		y = 1
+		relative_position_id = XTI_state_corporations
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = XTI_state_armories
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_clear_private_lands }
+		x = 1
+		y = 1
+		relative_position_id = XTI_clear_private_lands
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1498,6 +1958,87 @@
 			every_owned_state = {
 				add_extra_state_shared_building_slots = 1
 			}
+		}
+	}
+	focus = {
+		id = XTI_state_industrial_investment
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_social_housing }
+		prerequisite = { focus = XTI_food_stamps }
+		x = 1
+		y = 1
+		relative_position_id = XTI_social_housing
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_manpower = 2500
+			}
+		}
+	}
+	focus = {
+		id = XTI_internationalism
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_open_universities }
+		x = -1
+		y = 1
+		relative_position_id = XTI_open_universities
+#		mutually_exclusive = { focus = XTI_expand_public_schools }
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_internationalism_idea
 		}
 	}
 	focus = {
