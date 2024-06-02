@@ -392,10 +392,13 @@ country_event = {
     
     
     is_triggered_only = yes
-    fire_only_once = yes
+    fire_only_once = no
     
     option = {
         name = XTI.11.a
+		ai_chance = {
+            base = 1
+        }
 		XTI = {
 			add_to_faction = ROOT
 		}
@@ -403,7 +406,9 @@ country_event = {
     }
 	option = {
         name = XTI.11.b
-		
+		ai_chance = {
+            base = 1
+        }
         #complete_national_focus = XSS_triumph_of_democracy
     }
 }
@@ -415,10 +420,13 @@ country_event = {
     
     
     is_triggered_only = yes
-    fire_only_once = yes
+    fire_only_once = no
     
     option = {
         name = XTI.12.a
+		ai_chance = {
+            base = 1
+        }
 		XTI = {
 			puppet = ROOT
 		}
@@ -426,10 +434,15 @@ country_event = {
     }
 	option = {
         name = XTI.12.b
-		XTI = {
-			create_wargoal = {
-				type = puppet
-				target = ROOT
+		ai_chance = {
+            base = 1
+        }
+		ROOT = {
+			XTI = {
+				declare_war_on = {
+					target = ROOT
+					type = annex_everything
+				}
 			}
 		}
         #complete_national_focus = XSS_triumph_of_democracy
