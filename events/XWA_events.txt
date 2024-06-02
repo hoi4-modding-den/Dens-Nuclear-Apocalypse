@@ -1,0 +1,102 @@
+add_namespace = XWA
+
+country_event = {
+	id = XWA.1
+	title = "The Dissolution of the Welsh Republic"
+	desc = XWA.1.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The Horde shall prosper!"
+		ai_chance = { factor = 5 }
+        hidden_effect = {
+           122 = {
+                transfer_state_to = XW2
+                add_core_of = XW2
+            }
+           977 = {
+                transfer_state_to = XWA
+                add_core_of = XW2
+            }
+        XWA = {
+                retire_country_leader = yes
+                promote_character = {
+                    character = XWA_Arwyn_Blood
+                    ideology = Moderatism
+                }
+                set_popularities = {
+                    democratic = 0
+                    neutrality = 65
+                    fascism = 35
+                    communism = 0
+                }
+                set_cosmetic_tag = XWA_Horde
+                remove_ideas = XWA_TheSplit
+            }
+        XW2 = {
+                set_politics = {
+                    ruling_party = democratic
+                    last_election = "2230.1.30"
+                    election_frequency = 48
+                    elections_allowed = no
+                }
+                set_popularities = {
+                    democratic = 80
+                    neutrality = 0
+                    fascism = 0
+                    communism = 20
+                }
+                set_cosmetic_tag = XWA_NewRepublic
+                remove_ideas = XWA_TheSplit         
+        }
+        }
+	}
+
+	option = {
+		name = "How tragic."
+		ai_chance = { factor = 5 }
+        hidden_effect = {
+            977 = {
+                transfer_state_to = XW2
+                add_core_of = XW2
+            }
+            122 = {
+                transfer_state_to = XWA
+                add_core_of = XW2
+            }
+            XWA = {
+                set_politics = {
+                    ruling_party = democratic
+                    last_election = "2230.1.30"
+                    election_frequency = 48
+                    elections_allowed = no
+                }
+                set_popularities = {
+                    democratic = 80
+                    neutrality = 0
+                    fascism = 0
+                    communism = 20
+                }
+                set_cosmetic_tag = XWA_NewRepublic
+                remove_ideas = XWA_TheSplit
+            }
+            XW2 = {
+                retire_country_leader = yes
+                promote_character = {
+                    character = XW2_Arwyn_Blood
+                    ideology = Moderatism
+                }
+                set_popularities = {
+                    democratic = 0
+                    neutrality = 65
+                    fascism = 35
+                    communism = 0
+                }
+                set_cosmetic_tag = XWA_Horde    
+                remove_ideas = XWA_TheSplit
+            }
+        }
+	}
+}
