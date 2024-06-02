@@ -179,6 +179,33 @@
 			}
 		}
 	}
+	focus = {
+		id = XGE_reopen_the_schonefeld_airport
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = XGE_rebuild_the_autobahn_network }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_rebuild_the_autobahn_network
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XGE_decrease_devastation_time = yes
+			64 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					province = 6521
+				}
+			}
+		}
+	}
 	
 	
 	#societal path
