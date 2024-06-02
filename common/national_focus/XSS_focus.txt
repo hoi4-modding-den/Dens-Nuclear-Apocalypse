@@ -3317,13 +3317,19 @@ country_event = {
 
     completion_reward = {
         ##################### Rework when Anarchy drops #############
-        transfer_state= 15
-        transfer_state= 30
-        transfer_state= 14
+      
       declare_war_on = {
        target = XFW
         type = annex_everything
             }  
+ declare_war_on = {
+       target = XLF
+        type = annex_everything
+            } 
+ declare_war_on = {
+       target = XBR
+        type = annex_everything
+            } 
 
        declare_war_on = {
        target = XPR
@@ -4386,7 +4392,6 @@ set_power_balance = {
 
 
     completion_reward = {
-        ####### modify when anarchy drops ###########
         848 = {add_claim_by = XSS}
        declare_war_on = {
        target = XOO
@@ -4437,7 +4442,7 @@ set_power_balance = {
 
     completion_reward = {
         
-        ###### Rework when anarchy #############
+
 
 			create_wargoal = {
 				type = annex_everything
@@ -4685,7 +4690,7 @@ set_power_balance = {
 				type = annex_everything
 				target = XAP
 			}
-            ############# Anarchy drop fix ################
+
 			create_wargoal = {
 				type = annex_everything
 				target = XOO
@@ -4748,6 +4753,10 @@ set_power_balance = {
             } 
        declare_war_on = {
        target = XAD
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XBC
         type = annex_everything
             } 
 
@@ -7512,7 +7521,11 @@ set_capital = {
   state = 55
   remember_old_capital = no
 }
-
+remove_trait = {
+     character = XSS_bracher
+     ideology = despotism
+     trait = inexperienced_monarch
+}
 
 
         }

@@ -23,4 +23,10 @@ on_actions = {
 			}
 		}
 	}	
+
+	on_new_term_election = {
+		random_events = {
+			100 = XFR_events.7 # 2236
+		}
+	}
 }

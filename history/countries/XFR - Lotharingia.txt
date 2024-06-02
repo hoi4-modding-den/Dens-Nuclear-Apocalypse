@@ -43,6 +43,7 @@ if = {
 set_variable = { var = XFR_mutant_hunt_progress value = 0 }
 
 add_ideas = {
+	closed_economy
 	XFR_chaos_in_centre
 }
 
