@@ -30,11 +30,9 @@ country_event = {
 	desc = XNM_country.1.desc
 	picture = GFX_report_event_bul_muraviev_protest
 	
-	trigger = {
-		date > 2235.12.31
-	}
-	mean_time_to_happen = { days = 41 }
-	
+	is_triggered_only = yes
+	fire_only_once = yes
+
 	option = {
 		name = XNM_country.1.a
 		swap_ideas = {
@@ -55,11 +53,9 @@ country_event = {
 	desc = XNM_country.2.desc
 	picture = GFX_report_event_gathering_protest
 	
-	trigger = {
-		date > 2235.12.31
-	}
-	mean_time_to_happen = { days = 59 }
-	
+	is_triggered_only = yes
+	fire_only_once = yes
+
 	option = {
 		name = XNM_country.2.a
 		128 = {
@@ -86,10 +82,9 @@ news_event = {
 	desc = XNM_news.1.desc
 	picture = GFX_news_event_gathering_protest
 	
-	trigger = {
-		date > 2235.12.31
-	}
-	mean_time_to_happen = { days = 60 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
 	
 	option = {
 		name = XNM_news.1.a

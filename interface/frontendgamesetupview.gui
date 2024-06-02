@@ -154,7 +154,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "country_name"
 			position = { x = 3 y = 86 }
-			font = "Arial12"
+			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 130
 			maxHeight = 45

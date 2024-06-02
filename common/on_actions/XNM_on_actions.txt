@@ -1,0 +1,31 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            XNM = {
+                country_event = { 
+                    id = XNM_country.1
+                    days = 45
+                    random_days = 0     # Fires in ...
+                }
+            }
+        }
+		effect = {
+            XNM = {
+                country_event = { 
+                    id = XNM_country.2
+                    days = 59 
+                    random_days = 0     # Fires in ...
+                }
+            }
+        }		
+        effect = {
+            XNM = {
+                news_event = { 
+                    id = XNM_news.1 
+                    days = 60  
+                    random_days = 0     # Fires in ...
+                }
+            }
+        }		
+    }
+}
