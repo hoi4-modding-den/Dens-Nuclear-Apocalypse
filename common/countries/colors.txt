@@ -155,3 +155,11 @@ XPE = {
 	color = rgb { 252 186 3 }
 	color_ui = rgb { 252 186 3 }
 }
+XLF = {
+	color = rgb { 255 130 40 }
+	color_ui = rgb { 160 80 25 }
+}
+XBR = {
+	color = rgb { 118 99 151 }
+	color_ui = rgb { 118 99 151 }
+}

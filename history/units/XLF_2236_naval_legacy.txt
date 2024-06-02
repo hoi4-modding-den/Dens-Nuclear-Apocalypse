@@ -1,0 +1,25 @@
+﻿units = {
+	
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Her Saints Navy"			
+		naval_base = 9434 # Sydney
+		task_force = {
+			name = "Le Havre Squadron"
+			location = 9434 # Sydney
+			ship = { name = "HMAS Paris" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = XLF version_name = "Saint Class" } }	}
+			ship = { name = "HMAS Orléans" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = XLF version_name = "Saint Class" } } }
+			ship = { name = "HMAS Reims" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = XLF } } }
+			ship = { name = "HMAS Compiègne" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = XLF } } }
+			# Scrap Iron Flotilla
+			ship = { name = "HMAS Beaugency" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = XLF } } }
+			ship = { name = "HMAS Meung-sur-Loir" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = XLF } } }
+			ship = { name = "HMAS Montépilloy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = XLF } } }
+			ship = { name = "HMAS Jargeau" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = XLF } } }
+			ship = { name = "HMAS Alençon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = XLF } } }
+		}				
+	}
+}
+
+

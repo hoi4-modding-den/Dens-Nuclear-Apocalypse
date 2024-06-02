@@ -1,0 +1,31 @@
+﻿l_english:
+ XLF: "League of Followers"
+ XLF_DEF: "the League of Followers"
+ XLF_ADJ: "Follower"
+ XLF_democratic_party: "Relief Society"
+ XLF_fascism_party: "The Children of the Cathedral"
+ XLF_communism_party: "The Fellowship of Equals"
+ XLF_neutrality_party: "The Church of Joan"
+
+
+
+
+ XBR: "Brittany"
+ XBR_DEF: "Brittany"
+ XBR_ADJ: "Breton"
+ XBR_provisional: "Breton Provisional State"
+ XBR_provisional_DEF: "the Breton Provisional State"
+ XBR_provisional_ADJ: "Breton"
+ XBR_fascism: "Breizh"
+ XBR_fascism_DEF: "Breizh"
+ XBR_fascism_ADJ: "Bretoned"
+ XBR_provisional_fascism: "Breizh Provisional State"
+ XBR_provisional_fascism_DEF: "the Breizh Provisional State"
+ XBR_provisional_fascism_ADJ: "Bretoned"
+ XBR_democratic_party: "Breton National Congress"
+ XBR_fascism_party: "Breton Union Front"
+ XBR_communism_party: "Breton Republican Army"
+ XBR_neutrality_party: "Provisional Government"
+ 
+ XBR_provisional_government_name: "Provisional Government"
+ XBR_emergency_powers: "Emergency Powers"

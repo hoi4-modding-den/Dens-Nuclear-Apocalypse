@@ -10,36 +10,43 @@ manpower=1554733
 	state_category = city
 
 	history={
-		owner = LIB # FRA
+		owner = XLF # FRA
 		victory_points = {
-			9434 10
+			9434 12
 		}
 		victory_points = {
-			6449 3
+			6449 10
 		}
 		victory_points = {
-			11563 5
+			11563 14
 		}
 		victory_points = {
 			485 3
 		}
+		victory_points = {
+			11535 3
+		}
 		buildings = {
 			infrastructure = 4
-			#industrial_complex = 2
-			#air_base = 6
+			industrial_complex = 3
+			arms_factory = 2
+			dockyard = 2
+			air_base = 2
 			6449 = {
 				naval_base = 3
-				coastal_bunker = 1
+				coastal_bunker = 4
+				bunker = 3
 			}
 			9434 = {
 				naval_base = 5
-				coastal_bunker = 1
+				coastal_bunker = 4
+				bunker = 5
 			}
 			485= {
 				naval_base = 1
 			}
 		}
-		#add_core_of = FRA
+		add_core_of = XLF
 	}
 
 	provinces={

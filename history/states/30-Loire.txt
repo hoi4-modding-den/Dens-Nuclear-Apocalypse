@@ -7,18 +7,27 @@ manpower=925600
 	state_category = city
 
 	history={
-		owner = LIB # FRA
+		owner = XLF # FRA
 		victory_points = {
-			11465 5
+			11465 10
+		}
+		victory_points = {
+			9478 3
+		}
+		victory_points = {
+			3509 3
+		}
+		victory_points = {
+			503 5
 		}
 		
 		buildings = {
 			infrastructure = 4
-			#industrial_complex = 1
-			#dockyard = 1
+			industrial_complex = 1
+			dockyard = 1
 			#air_base = 2
 		}
-		#add_core_of = FRA
+		add_core_of = XLF
 	}
 
 	provinces={

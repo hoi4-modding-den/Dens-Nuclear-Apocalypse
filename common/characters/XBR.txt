@@ -1,0 +1,21 @@
+characters = {
+
+	XBR_provisional_government = {
+		name = XBR_provisional_government_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SWE_fallen_riksdag"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { XBR_emergency_powers }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	
+}
+
+
+#army_chief_reform_2
