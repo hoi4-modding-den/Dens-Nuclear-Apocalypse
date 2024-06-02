@@ -1,12 +1,21 @@
 ﻿l_english:
 #Wales Republic
  XWA:0 "Welsh Republic"
- XWA_DEF:0 "Welsh Republic"
+ XWA_DEF:0 "Wales"
  XWA_ADJ:0 "Welsh"
  XWA_neutrality_party:0 "Mutants Party"
  XWA_TheSplit:0 "Divided Politics"
  XWA_TheSplit_desc:0 "The Welsh Republic has long had an internal division between the mutants seeking a cure and those proud of their mutant identity. These tensions have grown rapidly and could lead to a civil war."
+ XWA_Horde:0 "Welsh Horde"
+ XWA_Horde_DEF:0 "Welsh Horde"
+ XWA_NewRepublic:0 "Welsh Union"
+
+ XW2:0 "Welsh Republic"
+ XW2_DEF:0 "Wales"
+ XW2_ADJ:0 "Welsh"
+ XW2_neutrality_party:0 "Mutants Party"
+
 #Dr Pepper lol
  XPW:0 "P.H.D Worcestershire"
  XPW_DEF:0 "P.H.D Worcestershire Company"
- XPW_ADJ:0 "PHD W"
+ XPW_ADJ:0 "PHD Company"

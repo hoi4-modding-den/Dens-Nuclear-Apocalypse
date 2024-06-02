@@ -1,0 +1,22 @@
+XWA_SplitDecisions = {
+        XWA_SplitIncoming = {
+        activation = {
+        }
+        available = {
+            NOT = {
+                has_idea = XWA_TheSplit
+            }
+        }
+        cancel_trigger = {
+        }
+        icon = mission_icon     # For GFX_decision_mission_icon
+        is_good = no
+        days_mission_timeout = 10
+        selectable_mission = no
+        complete_effect = {
+        }
+        timeout_effect = {
+            XWA = {country_event = XWA.1 }
+        }
+    }
+}

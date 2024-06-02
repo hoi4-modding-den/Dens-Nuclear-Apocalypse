@@ -12,6 +12,72 @@ characters = {
             expire = "3000.3.1.1"
             id = -1
         }
+        country_leader = {
+            ideology = socialism
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }
+    }
+    XWA_Arwyn_Blood = {
+        name = "Arwyn Blood"
+        portraits = {
+            civilian = {
+                large = gfx/leaders/XWA/XWA_Gerallt_Havard.dds
+            }
+        }
+        country_leader = {
+            ideology = Moderatism
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }
+        country_leader = {
+            ideology = fascism_ideology
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }       
+    }
+    XW2_Gerallt_Havard = {
+        name = "Gerallt Havard"
+        portraits = {
+            civilian = {
+                large = gfx/leaders/XWA/XWA_Gerallt_Havard.dds
+            }
+        }
+        country_leader = {
+            ideology = Moderatism
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }
+        country_leader = {
+            ideology = socialism
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }
+    }
+    XW2_Arwyn_Blood = {
+        name = "Arwyn Blood"
+        portraits = {
+            civilian = {
+                large = gfx/leaders/XWA/XWA_Gerallt_Havard.dds
+            }
+        }
+        country_leader = {
+            ideology = Moderatism
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }
+        country_leader = {
+            ideology = fascism_ideology
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }       
     }
 }
  

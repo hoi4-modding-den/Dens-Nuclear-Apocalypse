@@ -1273,3 +1273,11 @@ XSS_HRE = {
 	color = rgb { 255 255 0 }
 	color_ui = rgb { 255 255 0 }
 }
+XWA_Horde = {
+	color = rgb { 107 142 35 }
+	color_ui = rgb { 107 142 35 }	
+}
+XWA_NewRepublic = {
+	color = rgb { 255 255 51 }
+	color_ui = rgb { 255 255 51 }	
+}

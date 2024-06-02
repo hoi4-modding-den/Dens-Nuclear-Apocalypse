@@ -17,8 +17,8 @@ set_technology = {
 set_war_support = 0.25
 set_stability = 0.5
 
-recruit_character = XWA_Gerallt_Havard
-recruit_character = XWA_Arwyn_Blood
+recruit_character = XW2_Gerallt_Havard
+recruit_character = XW2_Arwyn_Blood
 
 add_ideas = {
 	XWA_TheSplit
