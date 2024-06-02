@@ -1,29 +1,24 @@
 state= {
-	id=122
-	name="STATE_122"
-manpower=1026325
+	id=977
+	name="Upper Wales"
+manpower=513162
 	
 	state_category = city
 	
 	resources={
-		steel=11 # was: 16
-		aluminium=3 # was: 4
+		steel=1 # was: 16
 	}
 
 	history=
 	{
 		owner = XWA # ENG
 		victory_points = {
-			407 3 #Swansea
+			311 1 #Wrexham
 		}
-
-		victory_points = { 377 5 }
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
 			industrial_complex = 1
-			377 = {
-				naval_base = 3
-			}
 		}
 		add_core_of = XWA
 		#add_core_of = WLS
@@ -31,7 +26,7 @@ manpower=1026325
 
 	provinces=
 	{
-253 377 407 3274   	}
+6363 9364 311 	}
 
 	local_supplies=0.0 
 }
