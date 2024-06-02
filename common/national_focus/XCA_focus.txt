@@ -13,15 +13,16 @@
 	reset_on_civilwar = no
 
 	focus = {
-		id = XCA_new_years_convention_1
+		id = XCA_the_kings_absence
 		icon = GFX_focus_generic_improve_the_administration
 		x = 12
 		y = 0
 
+		allow_branch = { NOT = { has_completed_focus = XCA_the_kings_absence } }
 		prerequisite = { }
 		mutually_exclusive = { }
 		
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -30,6 +31,41 @@
 			country_event = {
     			id = XCA.1
 			}
+		}
+	}	
+	focus = {
+		id = XCA_entice_the_king
+		icon = GFX_focus_generic_improve_the_administration
+		x = 12
+		y = 0
+
+		allow_branch = { has_completed_focus = XCA_the_kings_absence }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = {
+		id = XCA_marino_returns
+		icon = GFX_focus_generic_improve_the_administration
+		x = 0
+		y = 1
+
+		relative_position_id = XCA_entice_the_king
+		prerequisite = { focus = XCA_entice_the_king }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
 		}
 	}	
 }
