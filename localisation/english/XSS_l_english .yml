@@ -57,7 +57,7 @@ XSS_storm_the_council_desc:0 "The democracy is a conservative ideology not up wi
 XSS_leader_of_ssd:0 "Leader of SSD"
 XSS_leader_of_ssd_2:0 "Leader of SSD"
 
-XSS_socdem:0 "§tSSD§t"
+XSS_socdem:0 "§tSSD§!"
 XSS_socdem_desc:0 "SSD should take lead of the country."
 
 XSS_maitain_neutrality:0 "Maintain Neutrality"
@@ -228,7 +228,7 @@ XSS_uni_health_desc:0 "No body should be left behind especially in field of heal
 XSS_push_health:0 "Push for Healthcare"
 XSS_push_health_desc:0 "Universal health care should be a universal right in civilized world."
 
-XSS_nubu:0 "§2NU/BU§2"
+XSS_nubu:0 "§2NU/BU§!"
 XSS_nubu_desc:0 "Interventionist coalition will bring the new age to Europe."
 
 XSS_partition_from_ssd:0 "Partition from SSD"
@@ -1256,6 +1256,102 @@ XSS_test_event.38.a:0 "A sad loss for Switzerland"
 XSS_steady_offensive:0 "Steady offensive"
 XSS_steady_offensive_desc:0 "War will soon be over, no need to be aggressive."
 
+XSS_post_war_social_programs:0 "Post-war social programs"
+XSS_post_war_social_programs_desc:0 "The country has been destroyed durning civil war. The king needs to repair economy and support citizens of the nation."
+
+XSS_new_franc:0 "New Swiss Franc"
+XSS_new_franc_desc:0 "A new currency will help battle post war inflation."
+
+XSS_currency_reform:0 "Currency Reform"
+XSS_currency_reform_desc:0 "The civil war has put a very heavy burden on our finanse. The inflation is sky high and the king introduces monetary reforms to battle it."
+
+XSS_wine_industry:0 "Wine Industry"
+XSS_wine_industry_desc:0 "We must expand our goods market by setting up grapes farms and wineries."
+
+XSS_national_radio:0 "National Radio"
+XSS_national_radio_desc:0 "We shall establish nation wide radio station that will broadcast music and news."
+
+XSS_graubunden_arsenal:0 "Graubünden Arsenal"
+XSS_graubunden_arsenal_desc:0 "We need to start production of rifles and artillery for our army. Everything to protect Switzerland."
+
+XSS_colonize_arles:0 "Colonize Arles"
+XSS_colonize_arles_desc:0 "French wasteland is such a wasted potencial. We shall expand into barbarian infested lands of Provance down to Marseille"
+
+XSS_national_opera:0 "Create National Opera"
+XSS_national_opera_desc:0 "King Alexander always loved music. We shall build an amazing opera as a gift for our King!"
+
+XSS_expand_wine_industry_france:0 "Expand Wine industry in France"
+XSS_expand_wine_industry_france_desc:0 "Our newly colonized French territories, altrough radiocative are still good for grapes plantations."
+
+XSS_opera_manifesto:0 "Opera Speech"
+XSS_opera_manifesto_desc:0 "King Alexander is about to speak to his nation at the national opera."
+
+XSS_test_event.39.t:0 "Opera speech"
+XSS_test_event.39.desc:0 "Great King Alexander has entered stage of Swiss National Opera. After all performences ended he decided to speak to his crowd and to his nation. He said he wishes to re-unite Holy Roman Empire of the past and that he will attempt to do it all by pen not sword. His speech was broadcasted on National radio and caught attention of International media."
+XSS_test_event.39.a:0 "Holy Roman Empire?"
+
+XSS_alpine_anschluss:0 "Alpine Anschluss"
+XSS_alpine_anschluss_desc:0 "We shall send requests of submission to alpine countries."
+
+XSS_test_event.40.t:0 "Imperial submission"
+XSS_test_event.40.desc:0 "Switzerland is trying to re-unite Holy Roman Empire. They wish for us to join them."
+XSS_test_event.40.a:0 "All hail the Emperor"
+XSS_test_event.40.b:0 "Not Holy not Roman not Empire, That's a no"
+
+XSS_test_event.41.t:0 "Imperial submission"
+XSS_test_event.41.desc:0 "Switzerland wishes to re-unite Holy Roman Empire. They request us to cede Franche-Comte to them."
+XSS_test_event.41.a:0 "All hail the Emperor"
+XSS_test_event.41.b:0 "Not Holy not Roman not Empire, That's a no"
+
+XSS_submission_of_burgundy:0 "Submission of Burgundy"
+XSS_submission_of_burgundy_desc:0 "Lands of Burgudny were a border of Empire back in the days. We shall request them."
+
+XSS_submission_of_germany:0 "Submission of Germany"
+XSS_submission_of_germany_desc:0 "Germany was essential territory of Holy Roman Empire. We shall request it."
+
+XSS_submission_of_rome:0 "Submission of Rome"
+XSS_submission_of_rome_desc:0 "Rome is in the name, and it needs to be ours."
+
+XSS_proclaim_hre:0 "Proclaim Holy Roman Empire"
+XSS_proclaim_hre_desc:0 "Main Imperial cities are in our domain. We shall press our HRE claim."
+
+XSS_HRE:0 "Holy Roman Empire"
+XSS_HRE_DEF:0 "Holy Roman Empire"
+XSS_HRE_ADJ:0 "Roman"
+
+XSS_abandon_neutrality_hre:0 "Abandon neutrality"
+XSS_abandon_neutrality_hre_desc:0 "Altrough we are trying to unite World by non-aggressive means, neutrality is a burden to us considering are no-sayers."
+
+XSS_crown_emperor:0 "Crown Emperor"
+XSS_crown_emperor_desc:0 "The Empire is unifed. It's time we crown our rightful ruler."
+
+XSS_council_rule:0 "Council rule"
+XSS_council_rule_desc:0 "We have so many princes in the empire we cannot leave them out. We shall strive to go back to direct democracy and rebuild national council."
+
+XSS_imperial_council_trait:0 "Imperial Council"
+
+XSS_imperial_alliance:0 "Imperial Alliance"
+XSS_imperial_alliance_desc:0 "We shall enforce peace in Europe by creating a strong alliance."
+
+XSS_invite_burgundy_imperial:0 "Invite Burgundy"
+XSS_invite_burgundy_imperial_desc:0 "We shall ally Burgudny as a fellow peacekeeper in Europe."
+
+XSS_test_event.42.t:0 "Peace League of Nations"
+XSS_test_event.42.desc:0 "Holy Roman Empire has annonced that no war will every happen on European continent. They have annonced that every country must join league of nations and maintain peace or they will face consequences."
+XSS_test_event.42.a:0 "We comply"
+XSS_test_event.42.b:0 "We shall stand against this imperialist threat"
+XSS_test_event.42.c:0 "sram chujem"
+
+XSS_League_idea:0 "League of Nations"
+XSS_League_idea_desc:0 "We shall not declare war unless it's against freedom."
+
+XSS_test_event.43.t:0 "Imperial Alliance"
+XSS_test_event.43.desc:0 "Holy Roman Empire invites us into Imperial Alliance. We shall stand together against warmongers."
+XSS_test_event.43.a:0 "For peace!"
+XSS_test_event.43.b:0 "Hypocrates."
+
+XSS_league_of_nations:0 "League of Nations"
+XSS_league_of_nations_desc:0 "Europe shall be united in peace or not be at all. §t (If country refuses membership in the league we will start a war) §!"
 
 
 

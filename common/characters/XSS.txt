@@ -520,4 +520,18 @@ corps_commander = {
 	}
 ##########################################################################
 
+	XSS_imperial_council = {
+		name = "Imperial Council"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SWI_federal_assembly"
+			}
+		}
+
+	}
+
+
+
+
+
 }

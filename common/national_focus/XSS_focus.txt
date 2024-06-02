@@ -6887,12 +6887,772 @@ remove_country_leader_role = {
         }
     }
 
+    focus = {
+    id = XSS_post_war_social_programs
+    x = 100
+    y = 11
+    icon = GFX_goal_generic_construct_civ_factory
+    cost = 10
+    prerequisite = { focus = XSS_house_of_bracher }
+
+
+
+
+    completion_reward = {
+
+        add_stability = 0.1
+3 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    }
+
+     
+        }
+    }
+
+    focus = {
+    id = XSS_currency_reform
+    x = 99
+    y = 12
+    icon = GFX_focus_CHL_devalue_the_peso_export
+    cost = 5
+    prerequisite = { focus = XSS_post_war_social_programs }
+
+
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_new_franc}
+
+     
+        }
+    }
+
+    focus = {
+    id = XSS_wine_industry
+    x = 97
+    y = 12
+    icon = GFX_focus_SMB_a_land_of_mountains
+    cost = 5
+    prerequisite = { focus = XSS_post_war_social_programs }
+
+
+
+
+    completion_reward = {
+
+        845 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    }
+
+     
+        }
+    }
+
+    focus = {
+    id = XSS_national_radio
+    x = 101
+    y = 12
+    icon = GFX_focus_SWE_radiotjanst
+    cost = 5
+    prerequisite = { focus = XSS_post_war_social_programs }
+
+
+
+
+    completion_reward = {
+
+        add_stability = 0.05
+
+        }
+    }
+
+    focus = {
+    id = XSS_graubunden_arsenal #Graubünden
+    x = 103
+    y = 12
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 5
+    prerequisite = { focus = XSS_post_war_social_programs }
+
+
+
+
+    completion_reward = {
+
+        151 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    }
+
+        }
+    }
+
+
+   focus = {
+    id = XSS_colonize_arles
+    x = 100
+    y = 13
+    icon = GFX_focus_SWI_expand_the_federation
+    cost = 2
+    prerequisite = { focus = XSS_national_radio }
+    prerequisite = { focus = XSS_currency_reform }
+    bypass = { XFW = {exists = no}}
+
+
+
+
+    completion_reward = {
+
+annex_country = {
+    target = XFW
+    transfer_troops = no
+}
+    735 = {add_core_of = XSS}
+    973 = {add_core_of = XSS}
+    20 = {add_core_of = XSS}
+    32 = {add_core_of = XSS}
+    21 = {add_core_of = XSS}
+
+
+        }
+    }
+
+   focus = {
+    id = XSS_national_opera
+    x = 102
+    y = 13
+    icon = GFX_focus_generic_improve_the_administration
+    cost = 5
+    prerequisite = { focus = XSS_national_radio }
+
+
+
+
+
+    completion_reward = {
+
+        add_country_leader_trait = XCA_musician_king
+
+        }
+    }
+
+   focus = {
+    id = XSS_expand_wine_industry_france
+    x = 98
+    y = 14
+    icon = GFX_focus_generic_land_reclamation
+    cost = 10
+    prerequisite = { focus = XSS_colonize_arles }
+    prerequisite = { focus = XSS_wine_industry }
+    available = {controls_state = 21}
+
+
+
+
+    completion_reward = {
+
+    
+        21 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    }
+
+        }
+    }
+
+  focus = {
+    id = XSS_opera_manifesto
+    x = 101 
+    y = 14
+    icon = GFX_focus_POL_habsburg
+    cost = 1
+    prerequisite = { focus = XSS_colonize_arles }
+    prerequisite = { focus = XSS_national_opera } 
+    prerequisite = {focus = XSS_abandon_neutrality_hre}
+
+
+
+
+
+    completion_reward = {
+
+        news_event = {
+        id = XSS_test_event.39
+        days = 1
+        random_hours = 12
+            }
+
+
+
+        }
+    }
+
+  focus = {
+    id = XSS_alpine_anschluss
+    x = 98 
+    y = 15
+    icon = GFX_goal_anschluss
+    cost = 5
+    prerequisite = { focus = XSS_opera_manifesto }
 
 
 
 
 
 
+    completion_reward = {
+
+        XTI = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+       XLV = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+
+
+        }
+    }
+
+  focus = {
+    id = XSS_submission_of_burgundy
+    x = 100 
+    y = 15
+    icon = GFX_goal_generic_territory_or_war
+    cost = 5
+    prerequisite = { focus = XSS_opera_manifesto }
+
+
+
+
+
+
+    completion_reward = {
+
+        XFR = {
+        country_event = {
+        id = XSS_test_event.41
+        days = 1
+        random_hours = 12
+            }
+        }
+       XAL = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+      XLX = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+        ################ rework when anarchy ################
+
+        transfer_state = 51
+        transfer_state = 6
+        transfer_state = 35
+        transfer_state = 7
+        transfer_state = 36
+
+
+        }
+    }
+
+  focus = {
+    id = XSS_submission_of_germany
+    x = 102
+    y = 15
+    icon = GFX_focus_ger_revive_kaiserreich
+    cost = 5
+    prerequisite = { focus = XSS_opera_manifesto }
+
+
+
+
+
+
+    completion_reward = {
+
+        XOO = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+       XLH = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+      XRP = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+      XAP = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+      XGE = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+      XSH = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
+
+
+        }
+    }
+
+  focus = {
+    id = XSS_submission_of_rome
+    x = 104
+    y = 15
+    icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+    cost = 5
+    prerequisite = { focus = XSS_opera_manifesto }
+
+
+
+
+
+
+    completion_reward = {
+        ################ rework when anarchy ################
+
+        transfer_state = 158
+        transfer_state = 161
+        transfer_state = 162
+        transfer_state = 2
+
+
+
+        }
+    }
+  focus = {
+    id = XSS_abandon_neutrality_hre
+    x = 104
+    y = 13
+    icon = GFX_focus_SWI_abandon_neutrality
+    cost = 5
+    prerequisite = { focus = XSS_post_war_social_programs }
+
+
+
+
+
+
+    completion_reward = {
+
+        remove_ideas = {XSS_neutrality_idea}
+        news_event = {
+        id = XSS_test_event.2
+        days = 1
+        random_hours = 12
+            }
+
+
+        }
+    }
+
+  focus = {
+    id = XSS_proclaim_hre
+    x = 101
+    y = 16
+    icon = GFX_focus_POL_habsburg
+    cost = 5
+    prerequisite = { focus = XSS_submission_of_rome }
+    prerequisite = { focus = XSS_submission_of_germany }
+    prerequisite = { focus = XSS_submission_of_burgundy }
+    prerequisite = { focus = XSS_alpine_anschluss }
+    available = {controls_state = 55 controls_state = 2}
+
+
+
+
+
+    completion_reward = {
+        
+        set_cosmetic_tag = XSS_HRE
+
+       848 = {
+
+            add_core_of = XSS
+
+        }
+        976 = {
+
+            add_core_of = XSS
+
+        }
+        50 = {
+
+            add_core_of = XSS
+
+        }
+        28 = {
+
+            add_core_of = XSS
+
+        }
+        52 = {
+
+            add_core_of = XSS
+
+        }
+        53 = {
+
+            add_core_of = XSS
+
+        }
+        54 = {
+
+            add_core_of = XSS
+
+        }
+        55 = {
+
+            add_core_of = XSS
+
+        }
+        42 = {
+
+            add_core_of = XSS
+
+        }
+        51 = {
+
+            add_core_of = XSS
+
+        }
+        60 = {
+
+            add_core_of = XSS
+
+        }
+        65 = {
+
+            add_core_of = XSS
+
+        }
+        64 = {
+
+            add_core_of = XSS
+
+        }
+        59 = {
+
+            add_core_of = XSS
+
+        }
+        57 = {
+
+            add_core_of = XSS
+
+        }
+        56 = {
+
+            add_core_of = XSS
+
+        }
+        61 = {
+
+            add_core_of = XSS
+
+        }
+        62 = {
+
+            add_core_of = XSS
+
+        }
+        58 = {
+
+            add_core_of = XSS
+
+        }
+        909 = {
+
+            add_core_of = XSS
+
+        }
+        2 = {
+
+            add_core_of = XSS
+
+        }
+        162 = {
+
+            add_core_of = XSS
+
+        }
+        161 = {
+
+            add_core_of = XSS
+
+        }
+        158 = {
+
+            add_core_of = XSS
+
+        }
+        159 = {
+
+            add_core_of = XSS
+
+        }
+        160 = {
+
+            add_core_of = XSS
+
+        }
+        850 = {
+
+            add_core_of = XSS
+
+        }
+        39 = {
+
+            add_core_of = XSS
+
+        }
+        153 = {
+
+            add_core_of = XSS
+
+        }
+        17 = {
+
+            add_core_of = XSS
+
+        }
+        975 = {
+
+            add_core_of = XSS
+
+        }
+        8 = {
+
+            add_core_of = XSS
+
+        }
+        34 = {
+
+            add_core_of = XSS
+
+        }
+        6 = {
+
+            add_core_of = XSS
+
+        }
+        35 = {
+
+            add_core_of = XSS
+
+        }
+        7 = {
+
+            add_core_of = XSS
+
+        }
+        36 = {
+
+            add_core_of = XSS
+
+        }
+
+
+set_capital = {
+  state = 55
+  remember_old_capital = no
+}
+
+
+
+        }
+    }
+
+
+focus = {
+    id = XSS_crown_emperor
+    x = 102
+    y = 17
+    icon = GFX_focus_ETH_the-italo_ethiopian_empire
+    cost = 1
+    prerequisite = { focus = XSS_proclaim_hre }
+    mutually_exclusive = {focus = XSS_council_rule}
+
+    completion_reward = {
+
+add_trait = {
+     character = XSS_bracher
+     ideology = despotism
+     trait = XSS_kaiser
+}
+        
+
+
+        }
+    }
+
+focus = {
+    id = XSS_council_rule
+    x = 100
+    y = 17
+    icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+    cost = 5
+    prerequisite = { focus = XSS_proclaim_hre }
+    mutually_exclusive = {focus = XSS_crown_emperor}
+
+
+    completion_reward = {
+hidden_effect = {retire_character = XSS_swiss_council}
+
+        set_party_name = {
+        ideology = democratic
+        long_name = "Imperial Council"
+        name = "Imperial Council"
+            }
+           add_country_leader_role = {
+            character = XSS_imperial_council
+            promote_leader = yes
+            country_leader = {
+        ideology = liberalism
+        expire = "3000.1.1.1"
+        traits = { XSS_imperial_council_trait }
+                }
+           }
+
+
+
+    
+    hidden_effect = {add_trait = {
+     character = XSS_imperial_council
+     ideology = liberalism
+     trait = XSS_imperial_council_trait
+}
+               promote_character = {
+            character = XSS_imperial_council
+                    } set_politics = {
+    ruling_party = democratic
+    elections_allowed = yes
+}}
+                    
+
+        }
+    }
+
+
+focus = {
+    id = XSS_imperial_alliance
+    x = 101
+    y = 18
+    icon = GFX_goal_generic_alliance
+    cost = 5
+    prerequisite = { focus = XSS_crown_emperor focus = XSS_council_rule}
+
+
+    completion_reward = {
+
+        create_faction = "Imperial Alliance"
+
+        }
+    }
+
+focus = {
+    id = XSS_invite_burgundy_imperial
+    x = 101
+    y = 19
+    icon = GFX_goal_generic_dangerous_deal
+    cost = 5
+    prerequisite = { focus = XSS_imperial_alliance }
+
+
+    completion_reward = {
+
+        XFR = {
+        country_event = {
+        id = XSS_test_event.43
+        days = 5
+        random_hours = 12
+            }
+
+        }
+        
+
+        }
+    }
+
+focus = {
+    id = XSS_league_of_nations
+    x = 101
+    y = 20
+    icon = GFX_focus_generic_league_of_nations
+    cost = 5
+    prerequisite = { focus = XSS_invite_burgundy_imperial }
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_League_idea}
+        every_country = {
+        limit = { NOT = {tag = LIB tag = XSS }}
+        country_event = {
+        id = XSS_test_event.42
+        days = 5
+        random_hours = 12
+             }
+            }
+        
+
+        }
+    }
 
 
 
