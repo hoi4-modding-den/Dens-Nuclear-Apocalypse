@@ -1,5 +1,22 @@
 on_actions = {
-	on_declare_war = {
-		
+	on_state_control_changed = {
+		effect = {
+			limit = {
+				FROM.FROM = {
+					is_core_of = LIB
+				}
+			}
+			FROM.FROM = {
+				remove_core_of = LIB
+			}
+			limit = {
+				FROM.FROM = {
+					is_core_of = XFW
+				}
+			}
+			FROM.FROM = {
+				remove_core_of = XFW
+			}
+		}
 	}	
 }

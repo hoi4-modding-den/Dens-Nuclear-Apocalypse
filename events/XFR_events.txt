@@ -54,6 +54,75 @@ country_event = { # Centre Crisis escalates
     }
 }
 
+country_event = { # Rhone Border War lost
+    id = XFR_events.3
+    title = XFR_events.3.t
+    picture = GFX_report_event_ger_civil_war
+    desc = XFR_events.3.desc
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XFR_events.3.a
+        trigger = {
+            original_tag = XFR
+        }
+    
+    }
+
+    option = {
+        name = XFR_events.4.a
+        trigger = {
+            NOT = { original_tag = XFR }
+        }
+    
+    }
+}
+
+country_event = { # Rhone Border War won
+    id = XFR_events.4
+    title = XFR_events.4.t
+    picture = GFX_report_event_ger_civil_war
+    desc = XFR_events.4.desc
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XFR_events.4.a
+        trigger = {
+            original_tag = XFR
+        }
+        973 = {
+            transfer_state_to = XFR
+        }
+    
+    }
+
+    option = {
+        name = XFR_events.3.a
+        trigger = {
+            NOT = { original_tag = XFR }
+        }
+    
+    }
+}
+
+country_event = { # recalled military support to XAL
+    id = XFR_events.5
+    title = XFR_events.5.t
+    picture = GFX_report_event_ger_civil_war
+    desc = XFR_events.5.desc
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XFR_events.5.a
+    
+    }
+}
+
+# NEWS EVENTS #
+
 news_event = { # Centre Crisis resolved
     id = XFR_news_events.1
     title = XFR_news_events.1.t
