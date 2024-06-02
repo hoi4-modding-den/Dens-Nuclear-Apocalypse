@@ -1,0 +1,16 @@
+ideas = {
+    country = {
+        XWA_TheSplit = {
+            picture = XWA_TheSplitPhoto
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+                political_power_cost = 1.5
+                stability_factor = -0.1
+            }
+            
+            allowed = { tag = XWA }
+        }
+    }
+}

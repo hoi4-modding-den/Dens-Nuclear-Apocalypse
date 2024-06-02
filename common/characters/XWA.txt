@@ -1,0 +1,17 @@
+characters = {
+    XWA_Gerallt_Havard = {
+        name = "Gerallt Havard"
+        portraits = {
+            civilian = {
+                large = gfx/leaders/XWA/XWA_Gerallt_Havard.dds
+            }
+        }
+        country_leader = {
+            ideology = Moderatism
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }
+    }
+}
+ 
