@@ -537,6 +537,7 @@
 			XOO = {
 				country_event = XTI.8
 			}
+			add_state_core = 848
 		}
 	}
 	focus = {
@@ -3977,7 +3978,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_liberty_by_force }
-		mutually_exclusive = { focus = XTI_liberty_by_force }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
 		x = 0
 		y = 1
 		relative_position_id = XTI_liberty_by_force
@@ -4005,7 +4006,57 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = XOO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XLH
+			}
+		}
+	}
+	focus = {
+		id = XTI_declare_south_german_state
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_liberate_bavarians }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 0
+		y = 1
+		relative_position_id = XTI_liberate_bavarians
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			owns_state = 50
+			owns_state = 52
+			owns_state = 53
+			owns_state = 54
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_state_core = 50
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 54
+			set_cosmetic_tag = SGS_TIR
 		}
 	}
 	focus = {

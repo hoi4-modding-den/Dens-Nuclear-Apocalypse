@@ -342,7 +342,6 @@ country_event = {
 				target = ROOT
 				type = annex_everything
 			}
-			add_state_core = 848
 		}
         #complete_national_focus = XSS_triumph_of_democracy
     }

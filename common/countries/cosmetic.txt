@@ -1,3 +1,7 @@
+SGS_TIR = {
+	color = rgb { 181 149 20 }
+	color_ui = rgb { 181 149 20 }
+}
 XNE_OC = {
 	color = rgb { 28 15 107 }
 	color_ui = rgb { 52 29 196 }
