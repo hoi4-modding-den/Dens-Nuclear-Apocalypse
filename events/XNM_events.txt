@@ -31,9 +31,9 @@ country_event = {
 	picture = GFX_report_event_bul_muraviev_protest
 	
 	trigger = {
-		has_completed_focus = XNM_visit_to_the_heartland
-	}	
-	mean_time_to_happen = { days = 27 }
+		date > 2235.12.31
+	}
+	mean_time_to_happen = { days = 41 }
 	
 	option = {
 		name = XNM_country.1.a
@@ -56,9 +56,9 @@ country_event = {
 	picture = GFX_report_event_gathering_protest
 	
 	trigger = {
-		has_completed_focus = XNM_visit_to_the_heartland
-	}	
-	mean_time_to_happen = { days = 41 }
+		date > 2235.12.31
+	}
+	mean_time_to_happen = { days = 59 }
 	
 	option = {
 		name = XNM_country.2.a
@@ -87,9 +87,9 @@ news_event = {
 	picture = GFX_news_event_gathering_protest
 	
 	trigger = {
-		has_completed_focus = XNM_visit_to_the_heartland
-	}	
-	mean_time_to_happen = { days = 45 }
+		date > 2235.12.31
+	}
+	mean_time_to_happen = { days = 60 }
 	
 	option = {
 		name = XNM_news.1.a
