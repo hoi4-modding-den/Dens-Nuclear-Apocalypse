@@ -448,3 +448,50 @@ country_event = {
         #complete_national_focus = XSS_triumph_of_democracy
     }
 }
+country_event = {
+    id = XTI.13
+    title = XTI.13.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XTI.13.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XTI.13.a
+		ai_chance = {
+            base = 1
+        }
+		ROOT = {
+			XTI = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+	option = {
+        name = XTI.13.b
+		ai_chance = {
+            base = 1
+        }
+		if = {
+			limit = {
+				is_in_faction_with = XTI
+			}
+			leave_faction = yes
+		}
+		ROOT = {
+			XTI = {
+				declare_war_on = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}

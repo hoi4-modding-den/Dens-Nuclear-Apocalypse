@@ -4571,4 +4571,277 @@
 			}
 		}
 	}
+	focus = {
+		id = XTI_influence_bavarian_politics
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_liberty_by_coercion }
+		prerequisite = { focus = XTI_intelligence_agency }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 1
+		y = 1
+		relative_position_id = XTI_intelligence_agency
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			XOO = {
+				add_timed_idea = {
+					idea = XTI_democratization
+					days = 180
+				}
+			}
+			XLH = {
+				add_timed_idea = {
+					idea = XTI_democratization
+					days = 180
+				}
+			}
+		}
+	}
+	focus = {
+		id = XTI_influence_swiss_politics
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_liberty_by_coercion }
+		prerequisite = { focus = XTI_intelligence_agency }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = -1
+		y = 1
+		relative_position_id = XTI_intelligence_agency
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			XSS = {
+				add_timed_idea = {
+					idea = XTI_democratization
+					days = 180
+				}
+			}
+		}
+	}
+	focus = {
+		id = XTI_pressure_neighbors
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_influence_swiss_politics }
+		prerequisite = { focus = XTI_influence_bavarian_politics }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 1
+		y = 1
+		relative_position_id = XTI_influence_swiss_politics
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			XOO = {
+				has_government = democratic
+			}
+			XLH = {
+				has_government = democratic
+			}
+			XSS = {
+				has_government = democratic
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			XOO = {
+				country_event = XTI.13
+			}
+			XLH = {
+				country_event = XTI.13
+			}
+			XSS = {
+				country_event = XTI.13
+			}
+		}
+	}
+	focus = {
+		id = XTI_germany_of_tomorrow
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_pressure_neighbors }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 1
+		y = 1
+		relative_position_id = XTI_pressure_neighbors
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_cosmetic_tag = SGS_TIR
+			every_owned_state = {
+				limit = {
+					NOT = {
+						is_core_of = XTI
+					}
+				}
+				add_core_of = XTI
+			}
+		}
+	}
+	focus = {
+		id = XTI_democratic_europe
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_pressure_neighbors }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = -1
+		y = 1
+		relative_position_id = XTI_pressure_neighbors
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = LIB
+							tag = XTR
+						}
+					}
+				}
+				add_timed_idea = {
+					idea = XTI_democratization
+					days = 180
+				}
+			}
+		}
+	}
+	focus = {
+		id = XTI_defender_of_democracy
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_democratic_europe }
+		prerequisite = { focus = XTI_germany_of_tomorrow }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 1
+		y = 1
+		relative_position_id = XTI_democratic_europe
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_defender_of_dem
+		}
+	}
 }

@@ -452,5 +452,24 @@ ideas = {
 				boost_ideology_mission_factor = 0.5
 			}
 		}
+		XTI_defender_of_dem = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.1
+				army_core_attack_factor = 0.1
+				guarantee_tension = -0.2
+			}
+		}
 	}
 }	
