@@ -51,7 +51,7 @@
 #	}
 	focus = {
 		id = XAD_start_the_casablanca_project
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production
 		#prerequisite = { focus = }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -90,10 +90,10 @@
 			}
 		}
 		
-	}
+	}	
 	focus = {
 		id = XAD_develop_the_casablanca_university
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = -3
@@ -125,7 +125,7 @@
 	}
 	focus = {
 		id = XAD_work_on_the_sevilla_projects
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -166,7 +166,7 @@
 	}
 	focus = {
 		id = XAD_develop_tabilina
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -207,7 +207,7 @@
 	}
 	focus = {
 		id = XAD_develop_melilla
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = 3
@@ -248,7 +248,7 @@
 	}
 	focus = {
 		id = XAD_develop_marakkech
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = 5
@@ -289,7 +289,7 @@
 	}
 	focus = {
 		id = XAD_enstablish_the_cataban_west
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction
 		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -345,7 +345,7 @@
 	}
 	focus = {
 		id = XAD_enstablish_the_cataban_east
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
 		#mutually_exclusive = { focus =  }
 		x = 3
@@ -401,7 +401,7 @@
 	}
 	focus = {
 		id = XAD_develop_the_cities
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = XAD_enstablish_the_cataban_east }
 		prerequisite = { focus = XAD_enstablish_the_cataban_west }
 		#mutually_exclusive = { focus =  }
@@ -458,7 +458,7 @@
 	}
 	focus = {
 		id = XAD_the_casablanca_airport
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -498,7 +498,7 @@
 	}
 	focus = {
 		id = XAD_increase_the_gibraltar_tariffs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_tax_the_strait
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -535,7 +535,7 @@
 	}
 	focus = {
 		id = XAD_invite_swiss_investors
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SWI_swiss_guiding_principles
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = -2
@@ -567,7 +567,7 @@
 	}
 	focus = {
 		id = XAD_fund_the_CIAMP
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = 4
@@ -602,7 +602,7 @@
 	}
 	focus = {
 		id = XAD_the_civilian_problems
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_improve_the_administration
 		prerequisite = { focus = XAD_develop_the_cities }
 		#mutually_exclusive = { focus =  }
 		x = 6
@@ -633,7 +633,7 @@
 	}
 	focus = {
 		id = XAD_encorauge_turism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SWE_privately_managed_vacation
 		prerequisite = { focus = XAD_the_civilian_problems }
 		#mutually_exclusive = { focus =  }
 		x = 6
@@ -678,7 +678,7 @@
 	}
 	focus = {
 		id = XAD_industrialization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = XAD_encorauge_turism }
 		mutually_exclusive = { focus = XAD_agriculturalism }
 		x = 2
@@ -731,7 +731,7 @@
 	}
 	focus = {
 		id = XAD_further_industrialization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = XAD_industrialization }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -774,7 +774,7 @@
 	}
 	focus = {
 		id = XAD_enstablish_full_employement
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = XAD_further_industrialization }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -804,7 +804,7 @@
 	}
 	focus = {
 		id = XAD_allow_women_to_work
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		prerequisite = { focus = XAD_enstablish_full_employement }
 		mutually_exclusive = { focus = XAD_dont_allow_women_to_work }
 		x = 1
@@ -834,7 +834,7 @@
 	}
 	focus = {
 		id = XAD_dont_allow_women_to_work
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = XAD_enstablish_full_employement }
 		mutually_exclusive = { focus = XAD_allow_women_to_work }
 		x = 3
@@ -864,7 +864,7 @@
 	}
 	focus = {
 		id = XAD_enstablish_the_port_of_valencia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -903,7 +903,7 @@
 	}
 	focus = {
 		id = XAD_destroy_random_places
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = XAD_enstablish_the_port_of_valencia }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -950,7 +950,7 @@
 	}
 	focus = {
 		id = XAD_connect_the_country
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
 		#mutually_exclusive = { focus =  }
 		x = 4
@@ -988,7 +988,7 @@
 	}
 	focus = {
 		id = XAD_self_sufficence
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -1017,7 +1017,7 @@
 	}
 	focus = {
 		id = XAD_tiblina_mines
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tungsten
 		prerequisite = { focus = XAD_start_the_casablanca_project }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -1053,7 +1053,7 @@
 	}
 	focus = {
 		id = XAD_oil_in_the_meditarrean
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = XAD_tiblina_mines }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -1089,7 +1089,7 @@
 	}
 	focus = {
 		id = XAD_iron_in_cordoba
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = XAD_oil_in_the_meditarrean }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -1125,7 +1125,7 @@
 	}
 	focus = {
 		id = XAD_selling_iron_to_the_swiss
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SWI_swiss_guiding_principles
 		prerequisite = { focus = XAD_iron_in_cordoba }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -1163,7 +1163,7 @@
 	}
 	focus = {
 		id = XAD_the_cromium_in_the_north
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = XAD_iron_in_cordoba }
 		#mutually_exclusive = { focus =  }
 		x = 10
@@ -1213,7 +1213,7 @@
 	}
 	focus = {
 		id = XAD_agriculturalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = XAD_encorauge_turism }
 		mutually_exclusive = { focus = XAD_industrialization }
 		x = 10
@@ -1243,7 +1243,7 @@
 	}
 	focus = {
 		id = XAD_building_slots
-		icon = GFX_goal_unknown
+		icon = GFX_goal_reichsautobahn
 		prerequisite = { focus = XAD_agriculturalism }
 		#mutually_exclusive = { focus = XAD_industrialization }
 		x = 10
@@ -1275,7 +1275,7 @@
 	}
 	focus = {
 		id = XAD_self_sufficence_2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = XAD_building_slots }
 		#mutually_exclusive = { focus =  }
 		x = 10
@@ -1304,7 +1304,7 @@
 	}
 	focus = {
 		id = XAD_birthrates_improvements
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XAD_self_sufficence_2 }
 		#mutually_exclusive = { focus =  }
 		x = 10
@@ -1333,7 +1333,7 @@
 	}
 	focus = {
 		id = XAD_agricultural_education
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = XAD_self_sufficence_2 }
 		#mutually_exclusive = { focus =  }
 		x = 12
@@ -1362,7 +1362,7 @@
 	}
 	focus = {
 		id = XAD_expand_crack_market
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = XAD_self_sufficence_2 }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -1390,7 +1390,7 @@
 	}
 	focus = {
 		id = XAD_develop_focus_on_grain_production
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = XAD_expand_crack_market focus = XAD_birthrates_improvements focus = XAD_agricultural_education }
 		#mutually_exclusive = { focus =  }
 		x = 9
@@ -1426,7 +1426,7 @@
 	}
 	focus = {
 		id = XAD_arm_citizens
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_mobilization_plan
 		prerequisite = { focus = XAD_expand_crack_market focus = XAD_birthrates_improvements focus = XAD_agricultural_education }
 		#mutually_exclusive = { focus =  }
 		x = 11

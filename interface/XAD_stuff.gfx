@@ -14,6 +14,17 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_focus_tax_the_strait"
+		texturefile = "gfx/leaders/XAD/focus_XAD_gibraltar.png"
+	}
+	spriteType = {
+		name = "GFX_focus_tax_the_strait_shine"
+		texturefile = "gfx/leaders/XAD/focus_XAD_gibraltar.png"
+	}
+	
+	
+	
+	spriteType = {
 		name = "GFX_XDA_popular_figurehead"
 		texturefile = "gfx/leaders/XAD/portrait_XAD_cat3_small.dds"
 	}
