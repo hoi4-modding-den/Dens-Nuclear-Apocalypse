@@ -1122,6 +1122,154 @@ news_event = {
 
 }
 
+news_event = {
+    id = XSS_test_event.39
+    title = XSS_test_event.39.t
+    picture = GFX_news_event_generic_parliament
+    desc = XSS_test_event.39.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = XSS_test_event.39.a
+ 
+
+    }
+
+}
+
+####################### Imperial Submission ##############################
+
+country_event = {
+    id = XSS_test_event.40
+    title = XSS_test_event.40.t
+    picture = GFX_report_event_crowd_in_prague
+    desc = XSS_test_event.40.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.40.a
+        XSS = { 
+annex_country = {
+    target = ROOT
+    transfer_troops = yes
+}
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.40.b
+        XSS = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+        }
+        
+    }
+}
+#Burgundy
+country_event = {
+    id = XSS_test_event.41
+    title = XSS_test_event.41.t
+    picture = GFX_report_event_crowd_in_prague
+    desc = XSS_test_event.41.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.41.a
+        XSS = { 
+            transfer_state = 17
+            transfer_state = 975
+        }
+        
+    }
+    option = {
+        name = XSS_test_event.41.b
+        XSS = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+        }
+        
+    }
+}
+
+######################## Imperial Peace #################################
+
+country_event = {
+    id = XSS_test_event.42
+    title = XSS_test_event.42.t
+    picture = GFX_report_event_tur_politician_march
+    desc = XSS_test_event.42.desc
+    
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XSS_test_event.42.a
+        trigger = {
+            NOT = {tag = LIB}
+            }
+    add_ideas = { XSS_League_idea}
+        
+    }
+    option = {
+        name = XSS_test_event.42.b
+        trigger = {
+            NOT = {tag = LIB tag = XSS}}
+        XSS = {
+			declare_war_on = {
+				type = annex_everything
+				target = ROOT
+			}
+        }
+
+        
+        
+    }
+    option = {
+        name = XSS_test_event.42.c
+        trigger = {
+            tag = LIB
+        }
+    }
+
+    
+}
+
+#################### Burgundy alliance imperial #########################
+
+country_event = {
+    id = XSS_test_event.43
+    title = XSS_test_event.43.t
+    picture = GFX_report_event_bunker_01
+    desc = XSS_test_event.43.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.43.a
+        XSS = { add_to_faction = ROOT }
+        
+    }
+    option = {
+        name = XSS_test_event.43.b
+
+        
+    }
+}
+
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

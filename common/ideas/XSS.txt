@@ -644,6 +644,32 @@ ideas = {
 				}	
             }
         }
+        XSS_new_franc = {
+           removal_cost = -1
+            picture = SPR_appropriate_church_riches
+            modifier = {
+				consumer_goods_factor = -0.1
+            }
+        }
+        XSS_League_idea = {
+           removal_cost = -1
+            picture = triumphant_will
+            modifier = {
+               justify_war_goal_time = 5
+               enemy_justify_war_goal_time = 0.5
+               annex_cost_factor = 5
+               puppet_cost_factor = -1
+               opinion_gain_monthly = 5
+               lend_lease_tension = -1
+               join_faction_tension = -1
+               guarantee_cost = -1
+               stability_factor = 0.05
+               nuclear_production_factor = -1
+
+               
+
+            }
+        }
 
 
     }
