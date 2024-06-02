@@ -1,21 +1,25 @@
 on_actions = {
 	on_state_control_changed = {
 		effect = {
-			limit = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						is_core_of = LIB
+					}
+				}
 				FROM.FROM = {
-					is_core_of = LIB
+					remove_core_of = LIB
 				}
 			}
-			FROM.FROM = {
-				remove_core_of = LIB
-			}
-			limit = {
-				FROM.FROM = {
-					is_core_of = XFW
+			if = {
+				limit = {
+					FROM.FROM = {
+						is_core_of = XFW
+					}
 				}
-			}
-			FROM.FROM = {
-				remove_core_of = XFW
+				FROM.FROM = {
+					remove_core_of = XFW
+				}
 			}
 		}
 	}	
