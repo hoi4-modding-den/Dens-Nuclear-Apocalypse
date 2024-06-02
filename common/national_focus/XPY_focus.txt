@@ -14,15 +14,15 @@
     continuous_focus_position = { x = 450 y = 2000 }
 	
 	focus = {
-		id = XPY_heres_to_another_120_years
-		icon = GFX_goal_generic_propaganda
-		x = 10
+		id = XPY_the_coming_storm
+		icon = GFX_goal_generic_attack_allies
+		x = 4
 		y = 0
 
 		#prerequisite = {}
 		#mutually_exclusive = { }
 		
-		cost = 0
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -37,15 +37,16 @@
 	}
 	
 	focus = {
-		id = XPY_finally_some_progress
-		icon = GFX_goal_support_democracy
-		x = 4
-		y = 0
+		id = XPY_collect_old_rifles
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 1
 
-		#prerequisite = {}
+		relative_position_id = XPY_the_coming_storm
+		prerequisite = { focus = XPY_the_coming_storm }
 		#mutually_exclusive = { }
 		
-		cost = 0
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -58,17 +59,18 @@
 			
 		}
 	}
-
+	
 	focus = {
-		id = XPY_glory_to_baphomet
-		icon = GFX_goal_generic_propaganda
-		x = 16
-		y = 0
+		id = XPY_enlist_volunteers
+		icon = GFX_focus_generic_manpower
+		x = 0
+		y = 1
 
-		#prerequisite = {}
+		relative_position_id = XPY_the_coming_storm
+		prerequisite = { focus = XPY_the_coming_storm }
 		#mutually_exclusive = { }
 		
-		cost = 0
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -81,4 +83,253 @@
 			
 		}
 	}
+	
+	focus = {
+		id = XPY_seize_artillery_pieces
+		icon = GFX_goal_generic_army_artillery2
+		x = 2
+		y = 1
+
+		relative_position_id = XPY_the_coming_storm
+		prerequisite = { focus = XPY_the_coming_storm }
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_invest_in_the_cottage_firearm_industry
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+
+		relative_position_id = XPY_enlist_volunteers
+		prerequisite = { focus = XPY_collect_old_rifles }
+		prerequisite = { focus = XPY_enlist_volunteers }
+		prerequisite = { focus = XPY_seize_artillery_pieces }
+		
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_plug_the_railway_gaps
+		icon = GFX_focus_generic_railroad
+		x = 0
+		y = 1
+
+		relative_position_id = XPY_invest_in_the_cottage_firearm_industry
+		prerequisite = { focus = XPY_invest_in_the_cottage_firearm_industry }
+		
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_fortify_the_southern_border
+		icon = GFX_goal_fortify_the_westwall
+		x = 0
+		y = 1
+
+		relative_position_id = XPY_plug_the_railway_gaps
+		prerequisite = { focus = XPY_plug_the_railway_gaps }
+		
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_seize_civilian_trucks
+		icon = GFX_focus_generic_truck
+		x = 2
+		y = 1
+
+		relative_position_id = XPY_plug_the_railway_gaps
+		prerequisite = { focus = XPY_plug_the_railway_gaps }
+		
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_fortify_the_northern_border
+		icon = GFX_goal_generic_fortify_city
+		x = -2
+		y = 1
+
+		relative_position_id = XPY_plug_the_railway_gaps
+		prerequisite = { focus = XPY_plug_the_railway_gaps }
+		
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_the_great_iberian_war
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+
+		relative_position_id = XPY_fortify_the_southern_border
+		prerequisite = { focus = XPY_fortify_the_southern_border }
+		
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_victory_in_the_great_iberian_war
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+
+		relative_position_id = XPY_the_great_iberian_war
+		prerequisite = { focus = XPY_the_great_iberian_war }
+		
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_address_to_the_nation
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 15
+		y = 0
+
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XPY_
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -4
+		y = 1
+
+		relative_position_id = XPY_address_to_the_nation
+		prerequisite = { focus = XPY_address_to_the_nation }
+		#mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
 }
