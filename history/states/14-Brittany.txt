@@ -2,12 +2,12 @@
 state={
 	id=14
 	name="STATE_14"
-manpower=1597733
+	manpower=1597733
 	
-	state_category = city
+	state_category = large_city
 
 	history={
-		owner = LIB # FRA
+		owner = XBR # FRA
 		victory_points = {
 			3552 20
 		}
@@ -17,13 +17,15 @@ manpower=1597733
 		victory_points = {
 			9495 1
 		}
+		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 3
-			#dockyard = 5
-			#air_base = 5
+			dockyard = 4
+			industrial_complex = 3
 			3552 = {
 				naval_base = 10
-				coastal_bunker = 1
+				coastal_bunker = 5
+				bunker = 4
 			}
 			6536 = {
 				naval_base = 4
@@ -33,8 +35,8 @@ manpower=1597733
 				naval_base = 1
 			}
 		}
-		#add_core_of = FRA
-		#add_core_of = BRI
+		add_claim_by = XLF
+		add_core_of = XBR
 		1939.1.1 = {
 			buildings = {
 				#dockyard = 5

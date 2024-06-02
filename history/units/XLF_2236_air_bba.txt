@@ -1,0 +1,14 @@
+﻿
+
+air_wings = {
+	15 = {
+		small_plane_airframe_1 =  {
+			owner = "XLF" 
+			amount = 60
+			creator = "XLF"
+			version_name = "Patron Saint"
+		}
+	}
+}
+
+
