@@ -164,6 +164,16 @@ bookmarks = {
 				XRP_deutsch_apartheid
 			}
 		}
+		"XBC" = {
+			ideology = neutrality
+			history = XBC_history_desc
+			focuses = {
+				
+			}
+			ideas = {
+				
+			}
+		}
 
 
 		effect = {

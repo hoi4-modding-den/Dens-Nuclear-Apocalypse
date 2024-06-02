@@ -1,0 +1,37 @@
+XBC = {
+	male = {
+		names = { 
+			Agustín Alberto Alejandro Alfonso Álvaro Antonio Arsenio Arturo Augusto Aureliano 
+			Baldomero Baltasar Benancio Benigno Benito Bernardino Bernardo 
+			Calixto Cándido Carlos Celestino Claudio Cristóbal Dámaso Diego Dionisio Domingo 
+			Eduardo Eleazar Emilio Ernesto Estanislao Esteban Federico Felipe Félix Fernando Francisco
+			Gabino Gabriel Gaspar Genaro Gonzalo Herminio Ignacio Isidro 
+			Jacobo Jaime Joaquín "Jorge Mariano" José "José Antonio" "Jose María" Juan "Juan Manuel" Julián Julio Leopoldo Lorenzo Luis 
+			Manuel Marcelo Mariano Mario "Mario Eduardo" Mateo Melchor Miguel Nicolás Norberto Pablo Pascual Pedro 
+			Rafael Raimundo Ramón Ricardo Salvador Sandalio Santiago Sebastián Segismundo Segundo Valeriano Vicente 
+		  }
+	}
+	female = {
+		names = {
+			Adelita Amalia Amaranta Ana Araceli Aurelia Auxilio Beatriz Belén Blanca
+			Camila Candelaria Cándida Carmen Chavela Cirila Consuelo Cristina Delfina Dolores 
+			Eduarda Esperanza Felipa Fidelia Froilana Graciela Herminia Inés Isabel Irene Isadora Isabella
+			Jimena Justa Justina Luciana Lucrecia María "María del Carmen" "María del Mar" "María Dolores" Marisol Mercedes 
+			Noemí Nohemi Primitiva Rebeca Remedios Rocío Salvadora Socorro Sofía Soledad
+			Teodora Teófila Úrsula Valentina Valeria Vicenta Ximena
+		}
+	}
+	surnames = { 
+		Agirre Alkorta Altube Amenábar Ametzaga Ameztoy Anzoátegui Araia Arana Aramburu 
+		Arauz Aristizábal Armendáriz Aroztegi Arrieta Arteaga Ayala Azkarraga Baroja Bedoya 
+		Bengoetxea Bergara Berriotxoa Biskarriet Bolívar Bordaberry Cenarruza Duhalde Elizabar
+		Elizondo Elorriaga Eskibel Etxebarren Etxeberria Etxegarai Etxegoien Etxemendi Etxenike
+		Ezkurra Gabiria Galartza Gaona Garai Garamendi García Gebara Goikoetxea Goizueta Ibarra
+		Induráin Iriondo Irigoien Iturbi Iturbide Izaguirre Jáuregui Karrantza Kortazar Lardizábal
+		Larrazábal Larrañaga Laxalt Legazpi Loiola Maetzu Mariñelarena Mendieta Mendizábal Mendoza
+		Montoia Muxica Nafarro Okendo Orozko Ortiz Orzabal Otxoa Oyarzábal Sagasti Salazar Semen
+		Ugartetxe Uharte Unamuno Untzaga Urdaneta Uriarte Uribe Uriburu Urkiza Uzain Yaben Zabala
+		Zabaleta Zárate Zatarain Zelaia Zorreguieta Zubillaga Zubiria Zuloaga Zúñiga
+	}
+	callsigns = { }
+}
