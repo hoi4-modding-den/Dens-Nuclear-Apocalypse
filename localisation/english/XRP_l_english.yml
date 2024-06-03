@@ -30,7 +30,7 @@
  XRP_subject:0 "$OVERLORDADJ$ $XRP$"
  
  #Select Screen#
- XRP_history_desc:0 "WIP [first draft was too long :skull:]"
+ XRP_history_desc:0 "In the Rhineland, amongst the old ruins, of steel frames and pockmarked hills, lies a specter of Germany's past. \n \nHaving only barely survived the Third World War, the American descendants of the soldiers and officers in America’s military bases, have continually maintained their independence against the Germans since the nuclear winter lifted. By 2200, the Americans had expanded their borders to include the whole of Rhineland-Palatinate, in the name of “national defense”. But with the German population oppressed and rebellious, and the army already stretched to its limit, America will either have to change its ways, or be relegated to the German history books."
  
  #Traits#
  XRP_naive_blowhard:0 "Overconfident Yes-Man" #Cavoli trait
@@ -38,10 +38,10 @@
  #Sub-Ideologies#
  XRP_american_supremacism:0 "EUCOM"
  XRP_american_supremacism_long:0 "United States European Command"
- XRP_american_supremacism_desc:0 "WIP"
+ XRP_american_supremacism_desc:0 "American Supremacism is less a coherent, well-defined ideology, and more of the ‘logical conclusion’ to the concept of American Exceptionalism. Held by many Americans in Europe, American Supremacists view Americans as inherently better than other people, as Americans are inherently virtuous and loyal to the ideals of liberty, capitalism, and individualism. American Supremacists believe that the American way of life must be protected, by any means necessary, even at the cost of said liberties."
  XRP_american_republicanism:0 "Old Guard"
  XRP_american_republicanism_long:0 "Democratically Inclined Senior Officers"
- XRP_american_republicanism_desc:0 "WIP" 
+ XRP_american_republicanism_desc:0 "American Republicanism is an ideology that seeks to establish a republic in the style of the old American government prior to the Third World War, believing that the American style of democracy was the reason for the United States being the most stable and powerful nation in history, and that it should be emulated to recapture its successes. American Republicanists aim to establish a strong presidency, an electoral college, a two party election system, and a neoliberal economic outlook." 
  
  #Ideas#
  XRP_deutsch_apartheid:0 "German Segregation"
