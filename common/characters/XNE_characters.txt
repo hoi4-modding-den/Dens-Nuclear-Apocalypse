@@ -1,2 +1,348 @@
 characters = {
+
+	XNE_redd_penny={
+		name=XNE_redd_penny
+		portraits={
+			army={
+				small="GFX_idea_ENG_generic_land_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XNEt_redd_penny
+			
+			visible  = {
+				tag = XNE
+				XNE = { NOT = { has_country_flag = XNE_1984 } }
+			}
+			available  = {}
+			allowed = {}
+			
+			on_add = { 
+				owner = { 
+					XNE_gain_conservative_support = yes
+				}
+			}
+			traits  = { captain_of_industry }
+			
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+	XNE_luke_parker={
+		name=XNE_luke_parker
+		portraits={
+			army={
+				small="GFX_idea_ENG_john_cunningham"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XNEt_luke_parker
+			
+			visible  = {
+				tag = XNE
+				XNE = { NOT = { has_country_flag = XNE_1984 } }
+			}
+			available  = {}
+			allowed = {}
+			
+			on_add = { 
+				owner = { 
+					XNE_gain_conservative_support = yes
+				}
+			}
+			traits  = { financial_expert }
+			
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+	XNE_francis_cummings={
+		name=XNE_francis_cummings
+		portraits={
+			army={
+				small="GFX_idea_ENG_william_slim"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XNEt_francis_cummings
+			
+			visible  = {
+				tag = XNE
+				XNE = { NOT = { has_country_flag = XNE_1984 } }
+			}
+			available  = {}
+			allowed = {}
+			
+			on_add = { 
+				owner = { 
+					XNE_gain_liberal_support = yes
+				}
+			}
+			traits  = { economist }
+			
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+	XNE_albie_walt={
+		name=XNE_albie_walt
+		portraits={
+			army={
+				small="GFX_idea_ENG_william_platt"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XNEt_albie_walt
+			
+			visible  = {
+				tag = XNE
+				XNE = { NOT = { has_country_flag = XNE_1984 } }
+			}
+			available  = {}
+			allowed = {}
+			
+			on_add = { 
+				owner = { 
+					XNE_gain_liberal_support = yes
+				}
+			}
+			traits  = { smooth_talking_charmer }
+			
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+	XNE_kash_churchill={
+		name=XNE_kash_churchill
+		portraits={
+			army={
+				small="GFX_idea_ENG_richard_oconnor"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XNEt_kash_churchill
+			
+			visible  = {
+				tag = XNE
+				XNE = { NOT = { has_country_flag = XNE_1984 } }
+			}
+			available  = {}
+			allowed = {}
+			
+			on_add = { 
+				owner = { 
+					XNE_gain_fascism_support = yes
+				}
+			}
+			traits  = { technocrat }
+			
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+	XNE_dale_branson={
+		name=XNE_dale_branson
+		portraits={
+			army={
+				small="GFX_idea_ENG_merton_beckwith_smith"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XNEt_dale_branson
+			
+			visible  = {
+				tag = XNE
+				XNE = { NOT = { has_country_flag = XNE_1984 } }
+			}
+			available  = {}
+			allowed = {}
+			
+			on_add = { 
+				owner = { 
+					XNE_gain_fascism_support = yes
+				}
+			}
+			traits  = { popular_figurehead }
+			
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+	XNE_scout_levitt={
+		name=XNE_scout_levitt
+		portraits={
+			army={
+				small="GFX_idea_ENG_john_jackie_smyth"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XNEt_scout_levitt
+			
+			visible  = {
+				tag = XNE
+				XNE = { NOT = { has_country_flag = XNE_1984 } }
+			}
+			available  = {}
+			allowed = {}
+			
+			on_add = { 
+				owner = { 
+					XNE_gain_communism_support = yes
+				}
+			}
+			traits  = { ambitious_union_boss }
+			
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+	XNE_oli_ritchie={
+		name=XNE_oli_ritchie
+		portraits={
+			army={
+				small="GFX_idea_ENG_oliver_leese"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XNEt_oli_ritchie
+			
+			visible  = {
+				tag = XNE
+				XNE = { NOT = { has_country_flag = XNE_1984 } }
+			}
+			available  = {}
+			allowed = {}
+			
+			on_add = { 
+				owner = { 
+					XNE_gain_neutrality_support = yes
+				}
+			}
+			traits  = { socialite_connections }
+			
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+	
+	XNE_harold_saxon={
+		name=XNE_harold_saxon
+		portraits={
+			army={
+				small="GFX_idea_ENG_generic_land_3"
+			}
+		}
+		# advisor={
+			# slot = political_advisor
+			# idea_token = XNEt_harold_saxon
+			
+			# visible  = {
+				# tag = XNE
+				# XNE = { has_country_flag = XNE_1984 }
+			# }
+			# available  = {}
+			# allowed = {}
+			
+			# traits  = { XNE_minister_of_truth }
+			
+			# ai_will_do  = {
+				# factor  = 1
+			# }
+		# }
+	}
+	
+	XNE_james_hurley={
+		name=XNE_james_hurley
+		portraits={
+			army={
+				small="GFX_idea_ENG_generic_land_2"
+			}
+		}
+		# advisor={
+			# slot = political_advisor
+			# idea_token = XNEt_james_hurley
+			
+			# visible  = {
+				# tag = XNE
+				# XNE = { has_country_flag = XNE_1984 }
+			# }
+			# available  = {}
+			# allowed = {}
+			
+			# traits  = { XNE_minister_of_peace }
+			
+			# ai_will_do  = {
+				# factor  = 1
+			# }
+		# }
+	}
+	
+	XNE_millard_cale={
+		name=XNE_millard_cale
+		portraits={
+			army={
+				small="GFX_idea_ENG_generic_land_4"
+			}
+		}
+		# advisor={
+			# slot = political_advisor
+			# idea_token = XNEt_millard_cale
+			
+			# visible  = {
+				# tag = XNE
+				# XNE = { has_country_flag = XNE_1984 }
+			# }
+			# available  = {}
+			# allowed = {}
+			
+			# traits  = { XNE_minister_of_love }
+			
+			# ai_will_do  = {
+				# factor  = 1
+			# }
+		# }
+	}
+	
+	XNE_edward_mills={
+		name=XNE_edward_mills
+		portraits={
+			army={
+				small="GFX_idea_ENG_generic_land_4"
+			}
+		}
+		# advisor={
+			# slot = political_advisor
+			# idea_token = XNEt_edward_mills
+			
+			# visible  = {
+				# tag = XNE
+				# XNE = { has_country_flag = XNE_1984 }
+			# }
+			# available  = {}
+			# allowed = {}
+			
+			# traits  = { XNE_minister_of_plenty }
+			
+			# ai_will_do  = {
+				# factor  = 1
+			# }
+		# }
+	}
+	
 }

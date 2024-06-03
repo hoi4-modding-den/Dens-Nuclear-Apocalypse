@@ -57,5 +57,6 @@ Nuclear war has set the world back 300 years, now in the year 2236 they are back
 | XSS | Woodymapper      | woody6982           |
 | XRP | Carrera075       | carrera075          |
 | XTI | H2o27            | h2o27               |
+| XHP | icewizard521     | icewizard521        | 
 
 </details>

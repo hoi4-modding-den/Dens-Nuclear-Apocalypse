@@ -63,6 +63,8 @@ XAL_autonomy_colony:0 "$OVERLORDADJ$ Alsace-Lorraine"
 XAL_autonomy_colony_DEF:0 "$OVERLORDADJ$ Alsace-Lorraine"
 XAL_autonomy_puppet:0 "$OVERLORDADJ$ Alsace-Lorraine"
 XAL_autonomy_puppet_DEF:0 "$OVERLORDADJ$ Alsace-Lorraine"
+XAL_XFR_autonomy_puppet:0 "$OVERLORDADJ$ Protectorate of Alsace-Lorraine"
+XAL_XFR_autonomy_puppet_DEF:0 "$OVERLORDADJ$ Protectorate of Alsace-Lorraine"
 XAL_autonomy_integrated_puppet:0 "$OVERLORDADJ$ State of Alsace-Lorraine"
 XAL_autonomy_integrated_puppet_DEF:0 "the $OVERLORDADJ$ State of Alsace-Lorraine"
 XAL_autonomy_reichskommissariat:0 "Commissariat Alsace-Lorraine"
@@ -304,6 +306,57 @@ XFR_propaganda_department_desc: "WIP"
 XFR_burgundian_infiltration_squad: "Infiltration Training"
 XFR_burgundian_infiltration_squad_desc: "WIP"
 
+# Alsace-Lorraine Foci #
+
+XAL_reinforce_burgundian_friendship: "Reinforce [XFR.GetAdjective] Friendship"
+XAL_reinforce_burgundian_friendship_desc: "The Republic of Burgundy assisted the military government in their takeover back in 2230. Since then, we have had cordial relations. We should send an envoy."
+XAL_improve_relations: "Improve Diplomatic Relations"
+XAL_improve_relations_desc: "There are many things one can do to improve relations with another country. Exchanging envoys is merely one of those many options."
+XAL_request_closer_cooperation: "Request closer Cooperation"
+XAL_request_closer_cooperation_desc: "In times of turmoil, it might be better to stick to one larger nation that can protect us. We shall ask [XFR.GetNameDef] to become their client state."
+XAL_extend_military_support: "Extend Military Support"
+XAL_extend_military_support_desc: "The [XFR.GetAdjective] Military Support is very helpful. We should ask them to hold some live excercises with our troops."
+XAL_military_government: "The Military Government"
+XAL_military_government_desc: "The Alsace-Lorraine Military Government has been in charge since the takeover in 2230. And looking into the future, they will probably stay there for a while."
+XAL_fortify_alsace_lorraine: "Fortify Alsace-Lorraine"
+XAL_fortify_alsace_lorraine_desc: "Our nation lies in a very unfortunate location. What was once the border between Germany and France, other nations have now taken the mantle of these threats."
+XAL_increase_political_freedoms: "Increase Political Freedoms"
+XAL_increase_political_freedoms_desc: "During the early years of the dictatorship, civilians had to pay with a lot of their liberties. It is time to retract some of those laws and return to a more free nation."
+XAL_restore_democracy: "Restore Alsacian Democracy"
+XAL_restore_democracy_desc: "WIP"
+XAL_ensure_council_leadership: "Ensure Military Control"
+XAL_ensure_council_leadership_desc: "WIP"
+XAL_alsacian_neutrality: "Alsacian Neutrality"
+XAL_alsacian_neutrality_desc: "WIP"
+XAL_arrest_dissidents: "Arrest Dissidents"
+XAL_arrest_dissidents_desc: "WIP"
+XAL_nationalist_coup: "Nationalist Coup"
+XAL_nationalist_coup_desc: "Die Deutsche Kaiser-Gesellschaft entstand 2218 nachdem Bunker mit Wissen über den Ersten Weltkrieg zum Tage kamen. Viele Deutsche Nationalisten in Elsaß-Lothringen sahen die Geschehnisse der Vergangenheit als Rechtvertigung für einen erneuten Versuch."
+XAL_ready_for_war: "Ready for War"
+XAL_ready_for_war_desc: "Im Rheinland liegen viele Ressourcen die wir für die Kriegsführung benötigen werden. Macht euch bereit, Männer! Es geht in den Krieg!"
+XAL_panzer_armee: "Panzer-Armee"
+XAL_panzer_armee_desc: "Wie unsere Vorfahren werden wir erneut unsere Armee mechanisieren und uns für den Blitzkrieg vorbereiten."
+XAL_attack_the_rhineland: "Strike at the Rhineland"
+XAL_attack_the_rhineland_desc: "Es ist Zeit! Kameraden! In den Kampf!"
+XAL_memories_of_the_reich: "Memories of the Kaiserreich"
+XAL_memories_of_the_reich_desc: "Die Bevölkerung weiß von den ungefähren Verhältnissen der Vergangenheit. Wir müssen die Wahrheiten von den Unwahrheiten trennen und die Bürger darüber informieren, was wirklich geschah."
+XAL_delusions_of_grandeur: "Delusions of Grandeur"
+XAL_delusions_of_grandeur_desc: "Wir haben es geschafft. Das Rheinland ist unser. Die Geschichten unserer Rasse werden verbreitet. Nichts kann uns noch aufhalten!"
+XAL_industry_focus: "Alsacian Industry"
+XAL_industry_focus_desc: "Our industry is very reliant on the export of steel. We need to remove some of that dependency and begin supplying our populace ourselves."
+XAL_expand_civilian_industry: "Expand Civilian Sector"
+XAL_expand_civilian_industry_desc: "The civilian industrial sector has always played second fiddle after the steel industry. We must change that."
+XAL_aluminum_factories: "Aluminium Production"
+XAL_aluminum_factories_desc: "In addition to steel, aluminium can also be found in our nation. We must also profit of this."
+XAL_finalize_infrastructure_projects: "Finalise Infrastructure Projects"
+XAL_finalize_infrastructure_projects_desc: "Our country has very high quality roads and railways. However, we can do better!"
+XAL_international_trade: "International Trade"
+XAL_international_trade_desc: "We should seek to improve our trade relations with some of our friendly neighbours to get them to buy our steel."
+XAL_expand_military_industry: "Expand Military Industry"
+XAL_expand_military_industry_desc: "We must improve our military industry for the sake of self-defence."
+XAL_military_modernisation: "Modernise Military Equipment"
+XAL_military_modernisation_desc: "We need to keep up with modern weaponry if we do not want to get steamrolled by our larger neighbours."
+
 will_bypass_through_event_tt: "will auto-complete trough an event"
 
 
@@ -317,9 +370,13 @@ XFR_modern_cavalry: "Modernised Cavalry"
 XFR_modern_cavalry_desc: "WIP"
 XFR_propaganda_department_idea: "Propaganda Department"
 XFR_propaganda_department_idea_desc: "The [ROOT.GetAgency] Department of Propaganda ensures the citizen know that everything is fine."
+XAL_military_government_idea: "The Military Dictatorship"
 XAL_burgundy_volunteers: "[XFR.GetAdjectiveCap] Military Support"
 XAL_burgundy_volunteers_desc: "The [XFR.GetAdjective] Government is supporting us by sending a Brigade of Volunteer Soldiers."
 XAL_burgundy_volunteers_tt: "§RWe will lose this spirit and the Division if we are at war with [XFR.GetNameDef] or they decide to retract their Military Support.§!"
+XAL_ready_for_war_idea: "Be Prepared!"
+XAL_memories_of_the_reich_idea: "Memories of the Reich"
+XAL_delusions_of_grandeur_idea: "Delusions of Grandeur"
 
 # Dynamic Modifiers
 
@@ -357,7 +414,7 @@ XFR_electrify_state_decision_desc: "WIP"
 
 XFR_integration: "Integrate Territories"
 XFR_integrate_alsace_lorraine: "Reintegrate [976.GetName]-[28.GetName]"
-XAL_integrate_rhineland: "Integrate [42.GetName]"
+XAL_integrate_rhineland: "Integrate the [42.GetName]"
 
 XFR_develop_burgundy_aluminum: "Expand [27.GetName] Aluminum Mines"
 
@@ -373,6 +430,8 @@ XFR_supports_our_government: "Supports our Government"
 XFR_improve_relations: "Improved Relations"
 XFR_open_borders: "Open Borders Agreement"
 XFR_recalled_support: "Recalled Military Support"
+XAL_increased_political_freedoms: "Increased Political Freedoms"
+XFR_refused_to_protect: "Refused to protect us"
 
 # Events
 
@@ -407,13 +466,23 @@ XFR_events.7.desc: "WIP: CANDIDATES"
 XFR_events.7.a: "Candidate A: Federalists"
 XFR_events.7.b: "Candiate B: Restaurationists"
 
-XFR_events.9.t: "[XAL.GetNameDef] join the Republic!"
+XFR_events.8.t: "[XAL.GetNameDefCap] rejects the Ultimatum!"
+XFR_events.8.desc: "The [XAL.GetAdjective] Government has declined our offer of integration. With both our and their citizen wanting to be united, it seems that all there is left is war..."
+XFR_events.8.a: "We didn't want this."
+
+XFR_events.9.t: "[XAL.GetNameDefCap] joins the Republic!"
 XFR_events.9.desc: "The [XAL.GetAdjective] Government has accepted our offer of integration! Finally, our people are united in both nationality and culture!"
 XFR_events.9.a: "Welcome back, Brethren!"
 
-XFR_events.8.t: "[XAL.GetNameDef] reject the Ultimatum!"
-XFR_events.8.desc: "The [XAL.GetAdjective] Government has declined our offer of integration. With both our and their citizen wanting to be united, it seems that all there is left is war..."
-XFR_events.8.a: "We didn't want this."
+
+XFR_events.10.t: "[XAL.GetNameDefCap] wants Protection!"
+XFR_events.10.desc: "The [XAL.GetAdjective] Government has requested that we give them protection against outside threats. In return they will pay with autonomy."
+XFR_events.10.a: "We will protect them."
+XFR_events.10.b: "No."
+
+XFR_events.11.t: "[XFR.GetNameDefCap] rejects the offer!"
+XFR_events.11.desc: "The [XFR.GetAdjective] Government has declined our request of protection."
+XFR_events.11.a: "I guess not.."
 
 
 XFR_news_events.1.t: "Centre Crisis resolved"
@@ -428,6 +497,15 @@ XFR_news_events.2.a: "How irresponsible."
 # Bookmark
 
 XFR_history_desc: "The Republic of Burgundy was born from struggle. The inhabitants of the region known before the cataclysm as 'Eastern France' bonded together to create new hope. They rebuild their homes, their nation, their democracy. But now, that very democracy is in grave danger. To the southwest lie the lands of Lesser Gaul, a 'divine' dictatorship starving for land to take. To the east lie the lands of the former Germany, now under control of many strange factions, out of which most of them surely be hostile to this newborn democracy. How will Burgundy survive this age of strife? Will they stand strong against the fascist threat or join them in their cause?"
+
+# Traits
+
+XAL_military_junta_trait: "Military Government"
+
+# (Sub-)Ideologies
+
+XFR_military_government: "Military Government"
+XFR_military_government_desc: "A military government is any government that is administered by a military, whether or not this government is legal under the laws of the jurisdiction at issue or by an occupying power. It is usually administered by military personnel." # straight from Wikipedia
 
 # Misc
 

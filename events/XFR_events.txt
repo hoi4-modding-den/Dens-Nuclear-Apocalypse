@@ -140,6 +140,10 @@ country_event = { # XFR wants to annex XAL
                 factor = 2
                 has_opinion = { target = XFR value > 79 }
             }
+            modifier = {
+                factor = 5
+                is_subject_of = XFR
+            }
         }
         XFR = { country_event = { id = XFR_events.9 days = 1 } }
         effect_tooltip = {
@@ -225,6 +229,10 @@ country_event = { # XFR wants to annex XAL -> XAL declines
         ai_chance = {
             base = 1
         }
+        if = {
+            limit = { XAL = { is_subject_of = ROOT }}
+            end_puppet = XAL
+        }
         declare_war_on = {
             target = XAL
             type = annex_everything
@@ -253,6 +261,73 @@ country_event = { # XFR wants to annex XAL -> XAL accepts
 			limit = { is_core_of = XAL }
 			add_core_of = XFR
 		}
+    }
+}
+
+country_event = { # XAL wants to become XFR puppet
+    id = XFR_events.10
+    title = XFR_events.10.t
+    picture = GFX_report_event_generic_peaceful_annexation
+    desc = XFR_events.10.desc
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XFR_events.10.a
+        ai_chance = {
+            base = 100
+        }
+        give_guarantee = XAL
+        if = {
+			limit = { XFR = { has_government = fascism } }
+				XFR = {
+					set_autonomy = {
+    					target = XAL
+    					autonomous_state = autonomy_reichsprotectorate
+    					end_wars = no
+    					end_civil_wars = no
+					}
+				}
+			}
+			if = {
+				limit = { XFR = { NOT = { has_government = fascism } } }
+				XFR = {
+					set_autonomy = {
+    					target = XAL
+    					autonomous_state = autonomy_puppet
+    					end_wars = no
+    					end_civil_wars = no
+					}
+				}
+			}
+    }
+
+    option = {
+        name = XFR_events.10.b
+        ai_chance = {
+            base = 1
+        }
+        XAL = { country_event = { id = XFR_events.11 days = 1 } }
+    }
+}
+
+country_event = { # XFR rejects (WHY?)
+    id = XFR_events.11
+    title = XFR_events.11.t
+    picture = GFX_report_event_generic_peaceful_annexation
+    desc = XFR_events.11.desc
+    
+    is_triggered_only = yes
+
+    option = {
+        name = XFR_events.11.a
+        ai_chance = {
+            base = 1
+        }
+        add_opinion_modifier = {
+            target = XFR
+            modifier = XFR_refused_to_protect
+        }
     }
 }
 

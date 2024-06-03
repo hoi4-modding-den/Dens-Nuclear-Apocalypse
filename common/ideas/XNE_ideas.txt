@@ -264,6 +264,25 @@ ideas = {
 				global_building_slots_factor = 0.1
 			}			
 		}
+		XNE_police_state_i = {
+			picture = generic_spy_political
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.35
+				stability_weekly_factor = 0.003
+				party_popularity_stability_factor = 0.1
+			}			
+		}
 		
 		XNE_fascism_rising = {
 

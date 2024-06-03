@@ -1,0 +1,17 @@
+characters = {
+
+	XAL_military_junta = {
+		name = "Alsacian Military Junta"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XAL_military_gov"
+			}
+		}
+		country_leader = {
+			ideology = XFR_military_government
+			traits = { XAL_military_junta_trait }
+			expire = "3000.1.1"
+		}
+	}
+
+}

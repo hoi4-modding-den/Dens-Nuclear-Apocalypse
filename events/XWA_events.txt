@@ -33,7 +33,10 @@ country_event = {
                     communism = 0
                 }
                 set_cosmetic_tag = XWA_Horde
-                remove_ideas = XWA_TheSplit
+                remove_ideas = {
+                    XWA_TheSplit
+                    BEZ_membership
+                }
                 retire_character = XWA_Gerallt_Havard
             }
         XW2 = {
@@ -98,7 +101,10 @@ country_event = {
                     communism = 0
                 }
                 set_cosmetic_tag = XWA_Horde    
-                remove_ideas = XWA_TheSplit
+                remove_ideas = {
+                XWA_TheSplit
+                BEZ_membership
+                }
                 retire_character = XW2_Gerallt_Havard
             }
         }

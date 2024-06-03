@@ -1,0 +1,36 @@
+﻿l_english:
+
+### Country defines
+XHP_fascism:0 "Falangist Spain"
+XHP_fascism_DEF:0 "Fascist Spain"
+XHP_fascism_ADJ:0 "Spanish"
+XHP_democratic:0 "Federal Republic of Spain"
+XHP_democratic_DEF:0 "the Republic of Spain"
+XHP_democratic_ADJ:0 "Spanish"
+XHP_neutrality:0 "Spanis State"
+XHP_neutrality_DEF:0 "the Spanish State"
+XHP_neutrality_ADJ:0 "Spanish"
+XHP_communism:0 "Madrid Supreme Soviet"
+XHP_communism_DEF:0 "the Spanish Commune"
+XHP_communism_ADJ:0 "Spanish"
+XHP:0 "Spain"
+XHP_DEF:0 "Spain"
+XHP_ADJ:0 "Spanish"
+XHP_subject:0 "$OVERLORDADJ$ $XHP$"
+
+### Focuses
+
+### Events
+
+### Decisions
+
+### Characters
+
+### Effect Tooltips
+
+### Trigger Tooltips
+
+
+
+
+
