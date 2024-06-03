@@ -21,6 +21,8 @@ add_ideas = {
 	XAL_burgundy_volunteers
 }
 
+recruit_character = XAL_military_junta
+
 add_opinion_modifier = {
 	target = XFR
 	modifier = XFR_supports_our_government

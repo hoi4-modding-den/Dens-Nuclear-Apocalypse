@@ -7,4 +7,9 @@ spriteTypes = {
         texturefile = "gfx/leaders/XFR/portrait_XFR_parliament.dds"
     }
 
+    spriteType = {
+        name = "GFX_portrait_XAL_military_gov"
+        texturefile = "gfx/leaders/XAL/portrait_XAL_military_gov.png"
+    }
+
 }

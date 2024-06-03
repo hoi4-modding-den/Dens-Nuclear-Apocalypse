@@ -251,6 +251,10 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 76 10 122 }
 			}
+
+			XFR_military_government  = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
