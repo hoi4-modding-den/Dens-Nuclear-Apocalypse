@@ -1473,4 +1473,36 @@
 			}
 		}
 	}
+	focus = {
+		id = XAD_borgir
+		icon = GFX_
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 15
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+			add_political_power = -5
+		}
+	}
+	
 }
