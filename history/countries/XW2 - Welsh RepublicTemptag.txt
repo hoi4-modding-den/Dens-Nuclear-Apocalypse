@@ -22,6 +22,7 @@ recruit_character = XW2_Arwyn_Blood
 
 add_ideas = {
 	XWA_TheSplit
+	BEZ_membership
 }
 
 set_politics = {
