@@ -26,6 +26,7 @@
  XGE_devastation_3to2:0 "Reduce Devastation From Level 3 to 2"
  XGE_devastation_2to1:0 "Reduce Devastation From Level 2 to 1"
  XGE_buff_computer_clique:0 "§GImproves the 'Computer Clique' National Spirit§!"
+ XGE_trust_the_operating_system_tt:0 "§HTransfers the control of §GInternational Trade§! to the§! §ROperating System§!"
  XGE_reconstruction_category:0 "National Reconstruction"
  XGE_reconstruction_category_desc:0 "Aserejé-ja-dejé, De jebe tu de jebere" 
  XGE_history_desc:0 "Communism has never worked, except in this place... \n\nWelcome to Post-Apocalyptic Germany!!!"
@@ -66,3 +67,13 @@
  XGE_trade_control_text_desc:0 "§H    -Trade Opinion Factor:§! §R-25%§!\n§H    -Consumer Goods Factor:§! §R+5%§!"
  XGE_trade_control_text_true_desc:0 "§H    -Trade Opinion Factor:§! §G+10%§!\n§H    -Consumer Goods Factor:§! §G-5%§!"
  XGE_credits:0 "Credits for the Neo-German Content: §Hkasastul/Kåsastul§!, \nCredits for the rest of the content: \n§HThe HOI4 Modding Den Discord Server§!"
+ 
+ #foci
+ XGE_begin_reconstruction:0 "Begin Reconstruction"
+ XGE_industrial_redevelopment:0 "Industrial Redevelopment"
+ XGE_reconnect_old_powergrids:0 "Reconnect Old Power Grids"
+ XGE_rebuild_the_autobahn_network:0 "Rebuild the Autobahn Network"
+ XGE_reopen_the_schonefeld_airport:0 "Reopen the Schönefeld Airport"
+ XGE_baltic_sea_access:0 "Access to the Baltic Sea"
+ XGE_reestablish_trade_routes:0 "Re-Establish Trade Routes"
+ XGE_trust_the_operating_system:0 "Trust the Operating System"

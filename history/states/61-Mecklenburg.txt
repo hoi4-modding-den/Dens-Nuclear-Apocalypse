@@ -17,11 +17,11 @@ state={
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
-			dockyard = 1
-			321 = {
-				naval_base = 6
-
-			}
+			#dockyard = 1
+			#321 = {
+			#	#naval_base = 6
+			#
+			#}
 			#air_base = 3
 		}
 		add_core_of = XGE

@@ -53,7 +53,7 @@ scripted_gui = {
 		#}
 		triggers = {
 			XGE_button_bloom_visible = {
-				NOT = { has_country_flag = XGE_remove_bloom }
+				has_country_flag = XGE_bloom_gui_visible
 			}
 		}
 
@@ -68,7 +68,7 @@ scripted_gui = {
 				else = {
 					clr_country_flag = XGE_custom_gui_visible_flag
 				}
-				set_country_flag = XGE_remove_bloom
+				clr_country_flag = XGE_bloom_gui_visible
 			}
 		}
 	}

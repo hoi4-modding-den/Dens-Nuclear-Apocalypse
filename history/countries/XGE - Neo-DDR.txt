@@ -93,6 +93,7 @@ set_country_flag = XGE_custom_gui_enable
 set_country_flag = dont_use_default_political_advisors
 set_country_flag = dont_use_default_military_advisors
 set_country_flag = XGE_welcome_message_flag
+set_country_flag = XGE_bloom_gui_visible
 
 set_politics = {
 	ruling_party = communism
