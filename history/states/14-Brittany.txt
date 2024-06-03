@@ -36,11 +36,13 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		start_resistance = yes
-		set_resistance = 80
-		set_compliance = 10
 		add_claim_by = XLF
 		add_core_of = XBR
+		1939.1.1 = {
+			buildings = {
+				#dockyard = 5
+			}
+		}
 	}
 
 	provinces={
