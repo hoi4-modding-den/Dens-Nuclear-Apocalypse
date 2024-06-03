@@ -171,3 +171,7 @@ XBR = {
 	color = rgb { 110 158 107 }
 	color_ui = rgb { 110 158 107 }
 }
+XHP = {
+	color = rgb { 189 217 213 }
+	color_ui = rgb = { 189 217 213 }
+}
