@@ -47,6 +47,19 @@ add_ideas = {
 	XFR_chaos_in_centre
 }
 
+add_dynamic_modifier = { modifier = XFR_industry_modifier }
+set_variable = { var = XFR_industry_research_speed_factor value = -0.1 }
+set_variable = { var = XFR_industry_production_factory_max_efficiency_factor value = -0.05 }
+set_variable = { var = XFR_industry_production_speed_buildings_factor value = 0 }
+set_variable = { var = XFR_industry_production_speed_industrial_complex_factor value = 0.05 }
+set_variable = { var = XFR_industry_production_speed_arms_factory_factor value = 0 }
+set_variable = { var = XFR_industry_production_speed_supply_node_factor value = 0 }
+set_variable = { var = XFR_industry_production_speed_rail_way_factor value = 0 }
+set_variable = { var = XFR_industry_consumer_goods_factor value = 0.05 }
+set_variable = { var = XFR_industry_industrial_capacity_dockyard value = -0.1 }
+set_variable = { var = XFR_industry_industrial_capacity_factory value = -0.1 }
+set_variable = { var = XFR_industry_monthly_population value = 0 }
+
 recruit_character = XFR_anarchists
 recruit_character = XFR_parliament
 

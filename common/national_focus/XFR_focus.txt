@@ -170,7 +170,7 @@
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
-				popularity = -0.05
+				popularity = 0.05
 			}
 			custom_effect_tooltip = XFR_work_with_anarchists_tt
 		}
@@ -199,7 +199,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_popularity = {
 				ideology = neutrality
@@ -384,6 +384,11 @@
     				instant_build = yes
 				}
 			}
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_production_speed_buildings_factor = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
 		}
 	}
 
@@ -539,7 +544,10 @@
 			is_subject = no
 			has_government = democratic
 			NOT = { has_country_flag = XFR_2236_elections_over }
-			always = no
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
 		}
 
 		bypass = {
@@ -741,6 +749,15 @@
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				XFR_industry_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
+			}
 		}
 	}
 
@@ -803,9 +820,15 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
+				name = XFR_better_machinery
     			bonus = 0.75
     			uses = 2
     			category = cat_production
+			}
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_production_factory_max_efficiency_factor = 0.1
+				tooltip = production_factory_max_efficiency_factor_tt
 			}
 		}
 	}
@@ -870,7 +893,15 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_production_speed_rail_way_factor = 0.2
+				tooltip = production_speed_rail_way_factor_tt
+			}
+			add_to_variable = {
+				XFR_industry_production_speed_supply_node_factor = 0.2
+				tooltip = production_speed_supply_node_factor_tt
+			}
 		}
 	}
 
@@ -982,6 +1013,11 @@
 				add_dynamic_modifier = { modifier = XFR_electricity_state_modifier }
 			}
 			custom_effect_tooltip = XFR_electrify_the_country_tt
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_production_speed_buildings_factor = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
 		}
 	}
 
@@ -1004,7 +1040,11 @@
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_research_speed_factor = 0.15
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 
@@ -1133,6 +1173,15 @@
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				XFR_industry_monthly_population = 0.1
+				tooltip = monthly_population_tt
+			}
 		}
 	}
 
@@ -1155,6 +1204,19 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				XFR_industry_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				XFR_industry_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
+			}
 		}
 	}
 
@@ -1193,7 +1255,8 @@
     					include_locked = no
 					}
 				}
-				random_select_amount = 2
+				random_select_amount = 1
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1233,12 +1296,18 @@
     					include_locked = no
 					}
 				}
-				random_select_amount = 3
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
+			}
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_production_speed_arms_factory_factor = 0.2
+				tooltip = production_speed_arms_factory_factor_tt
 			}
 		}
 	}
@@ -1935,7 +2004,7 @@
 		}
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
-			
+			army_experience = 25
 		}
 	}
 
@@ -1958,7 +2027,11 @@
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
-			
+			hidden_effect = {
+				load_oob = "XFR_motorised"
+			}
+			custom_effect_tooltip = XFR_motorise_the_army_tt
+			army_experience = 25
 		}
 	}
 
@@ -2089,14 +2162,15 @@
 		available = {
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
-			
+			add_ideas = XFR_modern_cavalry
+			army_experience = 25
 		}
 	}
 
@@ -2245,6 +2319,7 @@
 		}
 
 		available = {
+			
 		}
 
 		cost = 5
@@ -2254,7 +2329,7 @@
 		}
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		completion_reward = {
-			
+			air_experience = 25
 		}
 	}
 
@@ -2352,8 +2427,8 @@
 
 
 	focus = {	
-		id = XFR_base_expansion
-		icon = GFX_focus_generic_air_bases
+		id = XFR_radar_towers
+		icon = GFX_goal_generic_radar
 		prerequisite = { focus = XFR_air_force }
 		#mutually_exclusive = { focus = }
 		x = -3
@@ -2368,16 +2443,21 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = radar_tech_bonus
+				bonus = 1.0
+				uses = 1
+				category = radar_tech
+			}
 		}
 	}
 
 	focus = {	
 		id = XFR_anti_air
 		icon = GFX_focus_generic_air_defense
-		prerequisite = { focus = XFR_base_expansion }
+		prerequisite = { focus = XFR_radar_towers }
 		#mutually_exclusive = { focus = }
 		x = -3
 		y = 2
@@ -2464,7 +2544,7 @@
 		}
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 		completion_reward = {
-			
+			navy_experience = 25
 		}
 	}
 

@@ -34,12 +34,17 @@ XFR_electricity_state_modifier = {
 
 XFR_industry_modifier = {
 	enable = { always = yes }
-	icon = GFX_idea_tur_balkan_central_bank_wealthy_greece 
+	icon = GFX_idea_SOV_third_five_year_plan_civilian 
 
-	research_speed_factor = ICE_economy_research_speed_factor
-	production_factory_max_efficiency_factor = ICE_economy_production_factory_max_efficiency_factor
-	production_speed_buildings_factor = ICE_economy_production_speed_buildings_factor
-	consumer_goods_factor = ICE_economy_consumer_goods_factor
-	industrial_capacity_dockyard = ICE_economy_industrial_capacity_dockyard
-	industrial_capacity_factory = ICE_economy_industrial_capacity_factory
+	research_speed_factor = XFR_industry_research_speed_factor
+	production_factory_max_efficiency_factor = XFR_industry_production_factory_max_efficiency_factor
+	production_speed_buildings_factor = XFR_industry_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = XFR_industry_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = XFR_industry_production_speed_arms_factory_factor
+	production_speed_supply_node_factor = XFR_industry_production_speed_supply_node_factor
+	production_speed_rail_way_factor = XFR_industry_production_speed_rail_way_factor
+	consumer_goods_factor = XFR_industry_consumer_goods_factor
+	industrial_capacity_dockyard = XFR_industry_industrial_capacity_dockyard
+	industrial_capacity_factory = XFR_industry_industrial_capacity_factory
+	monthly_population = XFR_industry_monthly_population
 }

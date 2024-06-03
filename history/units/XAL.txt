@@ -99,9 +99,7 @@ units = {
 		start_experience_factor = 0.4
 	}
 	division = { 
-		division_name = {
-            name = "Brigade des Volontaires Bourguignons"
-		}
+		name = "Brigade des Volontaires Bourguignons"
 		location = 9503 # Strasbourg
 		division_template = "Brigade des Volontaires Bourguignons"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "XFR" } }
