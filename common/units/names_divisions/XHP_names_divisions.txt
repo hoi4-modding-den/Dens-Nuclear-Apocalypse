@@ -1,0 +1,44 @@
+XHP_INF_01 = {
+	name = "Infantería Nacional Española"
+
+	for_countries = { XHP }
+	can_use = { always = yes }
+
+	division_types = { infantry }
+
+	fallback_name = "Infantería Nacional Española %s."
+
+	ordered = {
+		1 = { "Infantería Nacional Española %s." }
+		2 = { "Infantería Nacional Española %s." }
+		3 = { "Infantería Nacional Española %s." }
+		4 = { "Infantería Nacional Española %s." }
+		5 = { "Infantería Nacional Española %s." }
+		6 = { "Infantería Nacional Española %s." }
+		7 = { "Infantería Nacional Española %s." }
+		8 = { "Infantería Nacional Española %s." }
+		9 = { "Infantería Nacional Española %s." }
+		10 = { "Infantería Nacional Española %s." }
+		11 = { "Infantería Nacional Española %s." }
+		12 = { "Infantería Nacional Española %s." }
+		13 = { "Infantería Nacional Española %s." }
+		14 = { "Infantería Nacional Española %s." }
+		15 = { "Infantería Nacional Española %s." }
+		16 = { "Infantería Nacional Española %s." }
+		17 = { "Infantería Nacional Española %s." }
+		18 = { "Infantería Nacional Española %s." }
+		19 = { "Infantería Nacional Española %s." }
+		20 = { "Infantería Nacional Española %s." }
+		21 = { "Infantería Nacional Española %s." }
+		22 = { "Infantería Nacional Española %s." }
+		23 = { "Infantería Nacional Española %s." }
+		24 = { "Infantería Nacional Española %s." }
+		25 = { "Infantería Nacional Española %s." }
+		26 = { "Infantería Nacional Española %s." }
+		27 = { "Infantería Nacional Española %s." }
+		28 = { "Infantería Nacional Española %s." }
+		29 = { "Infantería Nacional Española %s." }
+		30 = { "Infantería Nacional Española %s." }
+		31 = { "Infantería Nacional Española %s." }
+	}
+}

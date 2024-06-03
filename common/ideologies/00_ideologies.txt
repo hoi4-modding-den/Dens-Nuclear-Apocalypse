@@ -33,6 +33,10 @@ ideologies = {
 			XRP_american_republicanism = {
 				can_be_randomly_selected = no
 				color = { 0 68 201 }
+			}
+			XHP_corrupt_democracy = {
+				can_be_randomly_selected = no
+				color = { 41 39 66 }
 			}		
 				
 		}

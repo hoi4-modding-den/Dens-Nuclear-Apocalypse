@@ -1,0 +1,15 @@
+characters = {
+	XHP_senate = {
+		name = XHP_senate
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_spain_senate"
+			}
+		}
+		country_leader = {
+			ideology = XHP_corrupt_democracy
+			desc = XHP_senate_desc
+			id = -1
+		}
+	}
+}
