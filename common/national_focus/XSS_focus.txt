@@ -7698,6 +7698,15 @@ focus = {
                 }
            }
 
+add_field_marshal_role = {
+  character = XSS_e_burgund
+  skill = 1
+  attack_skill = 1
+  defense_skill = 2
+  planning_skill = 2
+  logistics_skill = 1
+}
+
 remove_country_leader_role = {
     character = XSS_robisch
     ideology = despotism
@@ -8070,6 +8079,334 @@ hidden_effect = {
         days = 1
         random_hours = 12
             }
+        
+        }
+        
+
+    }
+
+##################### lone burgundy ############################
+    focus = {
+    id = XSS_stand_alone
+    x = 106
+    y = 17
+    icon = GFX_focus_SWI_helvetic_junta
+    cost = 1
+    prerequisite = { focus = XSS_ready_for_war }
+    mutually_exclusive = {focus = XSS_burgundian_ally}
+    available = {XFR = {
+        NOT = {
+        has_government = neutrality   
+        }
+        
+        }}
+
+
+    completion_reward = {
+ 
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_colonize_arles_monarch
+    x = 105
+    y = 18
+    icon = GFX_focus_generic_annex_country
+    cost = 5
+    prerequisite = { focus = XSS_stand_alone }
+
+
+
+    completion_reward = {
+annex_country = {
+    target = XFW
+    transfer_troops = no
+}
+    735 = {add_core_of = XSS}
+    973 = {add_core_of = XSS}
+    20 = {add_core_of = XSS}
+    32 = {add_core_of = XSS}
+    21 = {add_core_of = XSS}
+
+ 
+
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_build_docks_france
+    x = 105
+    y = 19
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5
+    prerequisite = { focus = XSS_colonize_arles_monarch }
+    available = {controls_state = 21}
+
+
+    completion_reward = {
+
+    21 = {
+    add_extra_state_shared_building_slots = 4 
+    add_building_construction = {
+    type = dockyard
+    level = 4
+    instant_build = yes
+        }
+    }  
+        
+        }
+        
+
+    }
+    focus = {
+    id = XSS_destroy_napoleon
+    x = 105
+    y = 20
+    icon = GFX_goal_generic_major_war
+    cost = 5
+    prerequisite = { focus = XSS_build_docks_france }
+
+
+
+    completion_reward = {
+
+       declare_war_on = {
+       target = XNF
+        type = annex_everything
+            }  
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_claim_burgundy
+    x = 107
+    y = 18
+    icon = GFX_focus_rom_royal_dictatorship
+    cost = 5
+    prerequisite = { focus = XSS_stand_alone }
+
+
+
+    completion_reward = {
+
+        17 = {add_claim_by = XSS}
+        975 = {add_claim_by = XSS}
+        27 = {add_claim_by = XSS}
+        18 = {add_claim_by = XSS}
+        24 = {add_claim_by = XSS}
+        28 = {add_claim_by = XSS}
+        976 = {add_claim_by = XSS}
+        }        
+
+    }
+    focus = {
+    id = XSS_press_claim_burgundy
+    x = 107
+    y = 19
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 5
+    prerequisite = { focus = XSS_claim_burgundy }
+    prerequisite = { focus = XSS_colonize_arles_monarch }
+
+
+    completion_reward = {
+
+
+			create_wargoal = {
+				type = annex_everything
+				target = XFR
+			} 
+        
+        }        
+
+    }
+    focus = {
+    id = XSS_move_to_besancon
+    x = 107
+    y = 20
+    icon = GFX_focus_SOV_zemsky_sobor
+    cost = 2
+    prerequisite = { focus = XSS_press_claim_burgundy }
+    available = {controls_state = 975}
+
+    completion_reward = {
+
+
+set_capital = {
+  state = 975
+  remember_old_capital = no
+}
+        
+        }        
+
+    }
+
+    focus = {
+    id = XSS_burgundy_restored
+    x = 106
+    y = 21
+    icon = GFX_goal_generic_demand_territory
+    cost = 1
+    prerequisite = { focus = XSS_move_to_besancon }
+    prerequisite = { focus = XSS_destroy_napoleon}
+    available = {controls_state = 975 XFR = {exists = no}}
+
+    completion_reward = {
+
+        17 = {add_core_of = XSS}
+        28 = {add_core_of = XSS}
+        18 = {add_core_of = XSS}
+        27 = {add_core_of = XSS}
+        973 = {add_core_of = XSS}
+        20 = {add_core_of = XSS}
+        32 = {add_core_of = XSS}
+        21 = {add_core_of = XSS}
+        24 = {add_core_of = XSS}
+        8 = {add_core_of = XSS}
+        34 = {add_core_of = XSS}
+        29 = {add_core_of = XSS}
+        42 = {add_core_of = XSS}
+        51 = {add_core_of = XSS}
+        974 = {add_core_of = XSS}
+        975 = {add_core_of = XSS}
+        976 = {add_core_of = XSS}
+        851 = {add_core_of = XSS}
+        set_cosmetic_tag = XSS_burgundy
+
+        
+        }        
+
+    }
+
+    focus = {
+    id = XSS_paris_campaign
+    x = 104
+    y = 22
+    icon = GFX_focus_generic_provoke_border_clashes
+    cost = 5
+    prerequisite = { focus = XSS_burgundy_restored }
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XPR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XLX
+			}  
+
+        
+        }        
+
+    }
+
+    focus = {
+    id = XSS_anti_fascist_campaign
+    x = 108
+    y = 22
+    icon = GFX_focus_SWE_undermine_fascism
+    cost = 5
+    prerequisite = { focus = XSS_burgundy_restored }
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XAQ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XPY
+			}  
+
+        
+        }        
+
+    }
+
+    focus = {
+    id = XSS_subjugate_bretonia
+    x = 106
+    y = 22
+    icon = GFX_goal_demand_sudetenland
+    cost = 5
+    prerequisite = { focus = XSS_burgundy_restored }
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XLF
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XBR
+			}  
+
+        
+        }        
+
+    }
+
+    focus = {
+    id = XSS_francia
+    x = 106
+    y = 23
+    icon = GFX_focus_fra_french_union
+    cost = 5
+    prerequisite = { focus = XSS_subjugate_bretonia }
+    prerequisite = { focus = XSS_anti_fascist_campaign }
+    prerequisite = { focus = XSS_paris_campaign }
+
+    completion_reward = {
+
+        22 = {add_core_of = XSS}
+        31 = {add_core_of = XSS}
+        806 = {add_core_of = XSS}
+        26 = {add_core_of = XSS}
+        25 = {add_core_of = XSS}
+        19 = {add_core_of = XSS}
+        23 = {add_core_of = XSS}
+        33 = {add_core_of = XSS}
+        30 = {add_core_of = XSS}
+        14 = {add_core_of = XSS}
+        15 = {add_core_of = XSS}
+        16 = {add_core_of = XSS}
+        785 = {add_core_of = XSS}
+        29 = {add_core_of = XSS}
+        1 = {add_core_of = XSS}
+        add_country_leader_trait = XSS_emperor_trait
+        }        
+
+    }
+
+
+    ################# Burgundian ally ########################
+    focus = {
+    id = XSS_burgundian_ally
+    x = 114
+    y = 17
+    icon = GFX_focus_chi_reach_out_to_france
+    cost = 1
+    prerequisite = { focus = XSS_ready_for_war }
+    available = {XFR = {has_government = neutrality}}
+    mutually_exclusive = {focus = XSS_stand_alone}
+
+
+    completion_reward = {
+ 
+
         
         }
         

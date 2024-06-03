@@ -930,6 +930,7 @@ XSS_socialist_republic_of_burgundy:0 "Form Socialist Republic of Burgundy"
 XSS_socialist_republic_of_burgundy_desc:0 "We have taken over lands of Historic Burgundy. We shall create a new nation out of it to give ourselfs legitimacy over local population."
 
 XSS_burgundy:0 "Socialist Republic of Burgundy"
+XSS_burgundy_neutrality:0 "Kingdom of Burgundy"
 
 XSS_operation_napoleon:0 "Operation Red Napoleon"
 XSS_operation_napoleon_desc:0 "Operation codename Red Napoleon will focus on destruction of French states."
@@ -1428,5 +1429,47 @@ XSS_swiss_steel_desc:0 "We shall build more steel mills to satisfy our quota."
 
 XSS_ready_for_war:0 "Ready for war"
 XSS_ready_for_war_desc:0 "Months of preparations were worth it. Now we are ready to go to war defensive or offensive."
+
+XSS_stand_alone:0 "Stand Alone"
+XSS_stand_alone_desc:0 "Burgundy failed to establish a strong monarchy. In that case we must go alone."
+
+XSS_burgundian_ally:0 "Burgundian Ally"
+XSS_burgundian_ally_desc:0 "Burgundy has established a strong monarchy, with our relative on throne."
+
+XSS_colonize_arles_monarch:0 "Colonize Arles"
+XSS_colonize_arles_monarch_desc:0 "Free lands for grabs. We should colonize them."
+
+XSS_claim_burgundy:0 "Claim Burgundy"
+XSS_claim_burgundy_desc:0 "As a member of Burgundian royal family we have rights to these lands."
+
+XSS_build_docks_france:0 "Build Marseillean dockyards"
+XSS_build_docks_france_desc:0 "To fulfill our imperialist will, we need ships."
+
+XSS_destroy_napoleon:0 "Destroy Napoleon"
+XSS_destroy_napoleon_desc:0 "We shall invade Napoleonic France and destroy these imitators."
+
+XSS_press_claim_burgundy:0 "Press Burgundian Claim"
+XSS_press_claim_burgundy_desc:0 "Throne of Burgundy is rightfully ours. We must take what's ours."
+
+XSS_move_to_besancon:0 "Move to Besancon"
+XSS_move_to_besancon_desc:0 "Capital of Burgundy have been re-taken by us. We shall move our Imperial Palace there."
+
+XSS_burgundy_restored:0 "Burgundy Reunited"
+XSS_burgundy_restored_desc:0 "We have taken over Burgundy. The Crown belongs to us."
+
+XSS_paris_campaign:0 "Paris Campaign"
+XSS_paris_campaign_desc:0 "We shall strike Paris and claim Empire of Francia."
+
+XSS_anti_fascist_campaign:0 "Anti-Fascist Campaign"
+XSS_anti_fascist_campaign_desc:0 "We and fascists are mortal enemies. We must purify earth out of this scum."
+
+XSS_subjugate_bretonia:0 "Subjugate Bretons"
+XSS_subjugate_bretonia_desc:0 "Subjugation of Bretons will be benefcial for strenghtening our claim on Francia."
+
+XSS_francia:0 "Francia United"
+XSS_francia_desc:0 "We have united Empire of Francia. We are the best."
+
+XSS_emperor_trait:0 "Emperor of Franks"
+
 
 
