@@ -1310,7 +1310,7 @@
 		id = XNE_higher_import_taxes
     	icon = GFX_focus_ARG_crackdown_on_corruption
     	prerequisite = { focus = XNE_oil_off_the_coast }
-    	prerequisite = { focus = XNE_affordable_cost_housing_initiative }
+    	prerequisite = { focus = XNE_national_unity }
     	x = 1
     	y = 1
     	relative_position_id = XNE_oil_off_the_coast
@@ -1356,7 +1356,7 @@
 	focus = {
 		id = XNE_government_reformation
     	icon = GFX_focus_generic_self_management
-    	prerequisite = { focus = XNE_leicester_devolution focus = XNE_national_unity }
+    	prerequisite = { focus = XNE_national_unity }
     	x = 0
     	y = 2
     	relative_position_id = XNE_leicester_devolution
@@ -2827,7 +2827,7 @@
     	prerequisite = { focus = XNE_higher_import_taxes }
     	prerequisite = { focus = XNE_government_reformation }
     	x = 1
-    	y = 1
+    	y = 5
     	relative_position_id = XNE_higher_import_taxes
     
     	cost = 12
@@ -2865,8 +2865,8 @@
 				set_popularities = {
 					democratic = 0
 					neutrality = 0
-					fascism = 0
-					communism = 100
+					fascism = 10
+					communism = 90
 				}
 				if = {
 					limit = { has_idea = XNE_internal_conflict }
@@ -2874,9 +2874,246 @@
 				}
 				add_ideas = closed_economy
 				add_ideas = tot_economic_mobilisation
+				XNE_redd_penny = { retire = yes }
+				XNE_luke_parker = { retire = yes }
+				XNE_francis_cummings = { retire = yes }
+				XNE_albie_walt = { retire = yes }
+				XNE_kash_churchill = { retire = yes }
+				XNE_dale_branson = { retire = yes }
+				XNE_scout_levitt = { retire = yes }
+				XNE_oli_ritchie = { retire = yes }
+				create_faction = XNE_eurasia
 			}
 			set_cosmetic_tag = XNE_OC
 			mark_focus_tree_layout_dirty = yes
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_the_ministry_of_truth
+    	icon = GFX_focus_eng_concessions_to_the_trade_unions
+    	prerequisite = { focus = XNE_oligarchical_collectivism }
+    	x = -3
+    	y = 1
+    	relative_position_id = XNE_oligarchical_collectivism
+    
+    	cost = 6
+    
+		allow_branch = { 
+			has_country_flag = XNE_1984
+			#has_completed_focus = XNE_oligarchical_collectivism
+		}
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			custom_effect_tooltip = XNE_set_up_the_ministry_of_truth
+    		add_advisor_role = {
+				character = XNE_harold_saxon
+				advisor={
+					slot = political_advisor
+					idea_token = XNEt_harold_saxon
+					cost = 75
+					
+					visible  = {}
+					available  = {}
+					allowed = {}
+					
+					traits  = { XNE_minister_of_truth }
+					
+					ai_will_do  = {
+						factor  = 100
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_the_ministry_of_peace
+    	icon = GFX_focus_eng_expose_the_belly_of_the_bear
+    	prerequisite = { focus = XNE_oligarchical_collectivism }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_oligarchical_collectivism
+    
+    	cost = 6
+    
+		allow_branch = { 
+			has_country_flag = XNE_1984
+			#has_completed_focus = XNE_oligarchical_collectivism
+		}
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			custom_effect_tooltip = XNE_set_up_the_ministry_of_peace
+    		add_advisor_role = {
+				character = XNE_james_hurley
+				advisor={
+					slot = political_advisor
+					idea_token = XNEt_james_hurley
+					cost = 75
+					
+					visible  = {}
+					available  = {}
+					allowed = {}
+					
+					traits  = { XNE_minister_of_peace }
+					
+					ai_will_do  = {
+						factor  = 100
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_the_ministry_of_love
+    	icon = GFX_focus_eng_move_to_secure_the_dominions
+    	prerequisite = { focus = XNE_oligarchical_collectivism }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_oligarchical_collectivism
+    
+    	cost = 6
+    
+		allow_branch = { 
+			has_country_flag = XNE_1984
+			#has_completed_focus = XNE_oligarchical_collectivism
+		}
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			custom_effect_tooltip = XNE_set_up_the_ministry_of_love
+    		add_advisor_role = {
+				character = XNE_millard_cale
+				advisor={
+					slot = political_advisor
+					idea_token = XNEt_millard_cale
+					cost = 75
+					
+					visible  = {}
+					available  = {}
+					allowed = {}
+					
+					traits  = { XNE_minister_of_love }
+					
+					ai_will_do  = {
+						factor  = 100
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_the_ministry_of_plenty
+    	icon = GFX_focus_generic_agricultural_subsidies
+    	prerequisite = { focus = XNE_oligarchical_collectivism }
+    	x = 3
+    	y = 1
+    	relative_position_id = XNE_oligarchical_collectivism
+    
+    	cost = 6
+    
+		allow_branch = { 
+			has_country_flag = XNE_1984
+			#has_completed_focus = XNE_oligarchical_collectivism
+		}
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			custom_effect_tooltip = XNE_set_up_the_ministry_of_plenty
+    		add_advisor_role = {
+				character = XNE_edward_mills
+				advisor={
+					slot = political_advisor
+					idea_token = XNEt_edward_mills
+					cost = 75
+					
+					visible  = {}
+					available  = {}
+					allowed = {}
+					
+					traits  = { XNE_minister_of_plenty }
+					
+					ai_will_do  = {
+						factor  = 100
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_police_state
+    	icon = GFX_focus_generic_national_security
+    	prerequisite = { focus = XNE_the_ministry_of_truth }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_the_ministry_of_truth
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_ideas = XNE_policy_state_i
     	}
     	
     	ai_will_do = {

@@ -199,6 +199,10 @@ country_event = {
 		name = XNE_focus.999.a
 		ai_chance = { factor = 1 }
 		XNE = { complete_national_focus = XNE_oligarchical_collectivism }
+		XNE = { complete_national_focus = XNE_the_ministry_of_truth }
+		XNE = { complete_national_focus = XNE_the_ministry_of_peace }
+		XNE = { complete_national_focus = XNE_the_ministry_of_love }
+		XNE = { complete_national_focus = XNE_the_ministry_of_plenty }
 	}
 }
 

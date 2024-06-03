@@ -114,7 +114,7 @@ ideologies = {
 			XNM_thornist_revolutionaries = {
 				can_be_randomly_selected = no
 				color = { 211 65 65 } # 211 65 65 (darker) or 255 79 79 (lighter)
-			}			
+			}
 		}
 
 		dynamic_faction_names = {
