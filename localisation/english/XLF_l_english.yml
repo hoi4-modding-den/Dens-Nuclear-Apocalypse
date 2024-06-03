@@ -8,7 +8,8 @@
  XLF_neutrality_party: "The Church of Joan"
 
 
-
+ autonomy_gie: "Government-In-Exile"
+ XIE_CAN_NOT_OFFICIALLY_JOIN: "You can not officially support [FROM.GetNameDef] in their wars."
 
  XBR: "Brittany"
  XBR_DEF: "Brittany"
