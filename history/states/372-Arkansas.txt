@@ -18,6 +18,7 @@ manpower=1236321
 			#industrial_complex = 2
 		}
 		#add_core_of = USA
+		add_claim_by = XRP
 		victory_points = {
 			12489 1 
 		}

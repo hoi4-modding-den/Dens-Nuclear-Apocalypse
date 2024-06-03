@@ -7,6 +7,7 @@ manpower=245557
 	history={
 		owner = LIB # USA
 		#add_core_of = HAW
+		add_claim_by = XRP
 		buildings = {
 			infrastructure = 2
 			#air_base = 5

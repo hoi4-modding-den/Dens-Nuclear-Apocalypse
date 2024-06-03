@@ -33,6 +33,7 @@ manpower=3784832
 			}
 		}
 		#add_core_of = USA
+		add_claim_by = XRP
 		victory_points = {
 			9814 30
 		}

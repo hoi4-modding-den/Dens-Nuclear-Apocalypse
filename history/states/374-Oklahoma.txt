@@ -20,6 +20,7 @@ manpower=1597359
 			#air_base = 2
 		}
 		#add_core_of = USA
+		add_claim_by = XRP
 		victory_points = {
 			1806 1 
 		}

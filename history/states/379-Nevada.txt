@@ -18,6 +18,7 @@ manpower=60705
 			infrastructure = 2
 		}
 		#add_core_of = USA
+		add_claim_by = XRP
 	}
 
 	provinces={

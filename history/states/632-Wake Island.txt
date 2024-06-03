@@ -8,6 +8,7 @@ manpower=100
 	history={
 		owner = LIB # USA
 		#add_core_of = GUM
+		add_claim_by = XRP
 		buildings = {
 			infrastructure = 2
 			13047 = {

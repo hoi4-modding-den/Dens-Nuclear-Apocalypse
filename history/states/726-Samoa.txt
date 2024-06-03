@@ -7,6 +7,7 @@ manpower=82143
 	history={
 		owner = LIB # NZL
 		#add_core_of = SAM
+		add_claim_by = XRP
 		buildings = {
 			infrastructure = 2
 			7290 = {

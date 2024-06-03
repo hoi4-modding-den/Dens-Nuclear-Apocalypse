@@ -9,6 +9,7 @@ manpower=14438
 		owner = LIB # JAP
 		#add_core_of = JAP
 		#add_core_of = GUM
+		add_claim_by = XRP
 		buildings = {
 			infrastructure = 2
 			#air_base = 3
