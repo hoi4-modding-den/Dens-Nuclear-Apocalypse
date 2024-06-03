@@ -670,6 +670,69 @@ ideas = {
 
             }
         }
+        XSS_new_workplaces = {
+           removal_cost = -1
+            picture = generic_agrarian_reform
+            modifier = {
+				consumer_goods_factor = 0.1
+                production_speed_buildings_factor = 0.25 
+            }
+        }
+        XSS_swiss_mil_school = {
+           removal_cost = -1
+            picture = generic_army_war_college
+            modifier = {
+				army_leader_cost_factor = -0.1
+                army_leader_start_level = 1   
+            }
+        }
+        XSS_liberal_gun_laws = {
+           removal_cost = -1
+            picture = generic_war_preparation
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.15  
+            }
+        }
+        XSS_volkstuhrm_idea = {
+           removal_cost = -1
+            picture = prc_low_popular_support3
+            modifier = {
+				training_time_factor = 0.3
+                minimum_training_level = -1 
+                cat_mass_assault_cost_factor = -0.3
+                cat_superior_firepower_cost_factor = 1
+            }
+        }
+        XSS_elite_idea = {
+           removal_cost = -1
+            picture = SWE_varnplikt
+            modifier = {
+				training_time_factor = 0.3
+                minimum_training_level = 1
+                cat_mass_assault_cost_factor = 1
+                cat_superior_firepower_cost_factor = -0.3
+                offence = 0.35
+                defence = 0.5
+            }
+        }
+        XSS_opium = {
+           removal_cost = -1
+            picture = prc_permit_opium_trade
+            modifier = {
+				consumer_goods_factor = -0.1
+                stability_factor = -0.05
+            }
+        }
+        XSS_licence_production_idea = {
+           removal_cost = -1
+            picture = ger_mefo_bills
+            modifier = {
+				license_purchase_cost = -0.5 
+                license_production_speed = 0.35
+                lend_lease_tension = -1
+
+            }
+        }
 
 
     }

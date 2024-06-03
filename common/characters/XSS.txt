@@ -530,6 +530,21 @@ corps_commander = {
 
 	}
 
+	XSS_e_burgund = {
+		name = "Éric von Burgund"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_POL_marian_kukiel"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { committed_anti_fascist humanist BRA_father_of_the_poor}
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
 
 
 

@@ -1320,7 +1320,7 @@ XSS_HRE_DEF:0 "Holy Roman Empire"
 XSS_HRE_ADJ:0 "Roman"
 
 XSS_abandon_neutrality_hre:0 "Abandon neutrality"
-XSS_abandon_neutrality_hre_desc:0 "Altrough we are trying to unite World by non-aggressive means, neutrality is a burden to us considering are no-sayers."
+XSS_abandon_neutrality_hre_desc:0 "Altrough we are trying to unite World by non-aggressive means, neutrality is a burden to us considering there are no-sayers."
 
 XSS_crown_emperor:0 "Crown Emperor"
 XSS_crown_emperor_desc:0 "The Empire is unifed. It's time we crown our rightful ruler."
@@ -1353,5 +1353,80 @@ XSS_test_event.43.b:0 "Hypocrates."
 XSS_league_of_nations:0 "League of Nations"
 XSS_league_of_nations_desc:0 "Europe shall be united in peace or not be at all. §t (If country refuses membership in the league we will start a war) §!"
 
+XSS_house_of_burgund:0 "House of Burgund"
+XSS_house_of_burgund_desc:0 "Burgundian self-titled king may have low legitimacy but he will bring us closer to Burgundian state."
+
+
+XSS_social_reforms:0 "Social reforms"
+XSS_social_reforms_desc:0 "The war has devastated the country. We shall support the poor and help them stand up."
+
+XSS_new_workplaces:0 "New Workplaces"
+XSS_new_workplaces_desc:0 "We have built new workplaces to support the poor and jobless."
+
+XSS_army_reforms:0 "Army reforms"
+XSS_army_reforms_desc:0 "Our army was baptised in fire and it's probably the best in Europe, but it could be better."
+
+XSS_officer_schools:0 "Officer schools"
+XSS_officer_schools_desc:0 "We need to improve our generals and our millitary thought."
+
+XSS_swiss_mil_school:0 "Swiss Millitary School"
+XSS_swiss_mil_school_desc:0 "New generals and marshals are born here."
+
+XSS_deregulation_guns:0 "Deregulation of Gun laws"
+XSS_deregulation_guns_desc:0 "We must arm our people and support our arms industry."
+
+XSS_liberal_gun_laws:0 "Liberal gun laws"
+XSS_liberal_gun_laws_desc:0 "You get a gun! and you get a gun! Everybody gets a gun!"
+
+XSS_zurich_arms:0 "Zurich arms industry"
+XSS_zurich_arms_desc:0 "We need guns to arm our soldiers."
+
+XSS_swiss_foreign_legion_monarch:0 "Swiss Foreign Legion"
+XSS_swiss_foreign_legion_monarch_desc:0 "We need new adventurers to join us in struggle against world."
+
+XSS_volkstuhrm:0 "Volkssturm"
+XSS_volkstuhrm_desc:0 "We need more man to the army. Creation of Volksstuhrm will be our choice. We will recruit anybody."
+
+XSS_volkstuhrm_idea:0 "Volkssturm"
+XSS_volkstuhrm_idea_desc:0 "Everybody is now joining the army to support their fatherland."
+
+XSS_elite_army:0 "Elite Army"
+XSS_elite_army_desc:0 "We shall win not by quantity but by quality."
+
+XSS_elite_idea:0 "Elite army"
+XSS_elite_idea_desc:0 "Victory by quality!"
+
+XSS_swiss_industry:0 "Swiss Industry"
+XSS_swiss_industry_desc:0 "Let's push for mass industrialization."
+
+XSS_opium_trade:0 "Opium Trade"
+XSS_opium_trade_desc:0 "Nuclear fallout caused opiod poppies to develop new opioids that if sold, could give us a profit."
+
+XSS_opium:0 "Opium Trade"
+XSS_opium_desc:0 "Wastelands caused mutations in opioid poppies and now they produce novel Opioids. We are gonna be rich from drug trade."
+
+XSS_bern_technology_institute:0 "Bern Technology Institute"
+XSS_bern_technology_institute_desc:0 "New world needs to be re-discovered."
+
+XSS_join_bez_monarch:0 "Join the B.E.Z"
+XSS_join_bez_monarch_desc:0 "Economic union with Britain will be beneficial for us."
+
+XSS_licence_production:0 "License focused Industry"
+XSS_licence_production_desc:0 "Why waste time producing desings of our weapons when we can produce foreign crap."
+
+XSS_licence_production_idea:0 "License focused Industry"
+XSS_licence_production_idea_desc:0 "Send us project and we will build it for you."
+
+XSS_fortress_bern:0 "Fortress Bern"
+XSS_fortress_bern_desc:0 "Our capital will be protected at all costs. We shall fortify it and build a citadel over city."
+
+XSS_fight_poverty:0 "Fight Poverty"
+XSS_fight_poverty_desc:0 "Éric is a champion of the people and he shall provide all needs to the people."
+
+XSS_swiss_steel:0 "Swiss steel"
+XSS_swiss_steel_desc:0 "We shall build more steel mills to satisfy our quota."
+
+XSS_ready_for_war:0 "Ready for war"
+XSS_ready_for_war_desc:0 "Months of preparations were worth it. Now we are ready to go to war defensive or offensive."
 
 

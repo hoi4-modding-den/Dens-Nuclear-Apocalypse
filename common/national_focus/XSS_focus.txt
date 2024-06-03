@@ -6010,6 +6010,7 @@ divisions_in_state = {
     cost = 1
     prerequisite = { focus = XSS_end_of_civil_war }
         mutually_exclusive = {focus = XSS_house_of_bracher}
+         mutually_exclusive = {focus = XSS_house_of_burgund}
     available = {
        has_completed_focus = XSS_push_romansh_past_tirol
         }
@@ -6848,7 +6849,7 @@ add_trait = {
     cost = 1
     prerequisite = { focus = XSS_end_of_civil_war }
     mutually_exclusive = {focus = XSS_rule_of_regent}
-
+     mutually_exclusive = {focus = XSS_house_of_burgund}
 
     available = {
        NOT = {has_completed_focus = XSS_push_romansh_past_tirol
@@ -7668,8 +7669,412 @@ focus = {
     }
 
 
+    focus = {
+    id = XSS_house_of_burgund
+    x = 110
+    y = 10
+    icon = GFX_focus_chi_reach_out_to_france
+    cost = 1
+    prerequisite = { focus = XSS_end_of_civil_war }
+    mutually_exclusive = {focus = XSS_rule_of_regent}
+    mutually_exclusive = {focus = XSS_house_of_bracher}
+
+    available = {
+       NOT = {has_completed_focus = XSS_push_romansh_past_tirol
+
+       }
+        }
 
 
+    completion_reward = {
+
+           add_country_leader_role = {
+            character = XSS_e_burgund
+            promote_leader = yes
+            country_leader = {
+        ideology = despotism
+        expire = "3000.1.1.1"
+        traits = {  }
+                }
+           }
+
+remove_country_leader_role = {
+    character = XSS_robisch
+    ideology = despotism
+}
+hidden_effect = {
+    remove_country_leader_role = {
+    character = XSS_bracher
+    ideology = despotism
+}
+}
+
+        add_popularity = {
+        ideology = neutrality
+        popularity = 0.35
+                }      
+
+
+       set_party_name = {
+        ideology = neutrality
+        long_name = "House of Burgund"
+        name = "House of Burgund"
+            }
+
+            
+        }
+    }
+
+
+    focus = {
+    id = XSS_social_reforms
+    x = 110
+    y = 11
+    icon = GFX_focus_prc_agrarian_socialism
+    cost = 5
+    prerequisite = { focus = XSS_house_of_burgund }
+
+        
+
+
+    completion_reward = {
+
+        add_stability = 0.05
+        add_ideas = {XSS_new_workplaces}
+            
+        }
+    }
+    focus = {
+    id = XSS_army_reforms
+    x = 109
+    y = 12
+    icon = GFX_goal_generic_axis_build_infantry
+    cost = 5
+    prerequisite = { focus = XSS_social_reforms }
+
+        
+
+
+    completion_reward = {
+
+        army_experience = 15
+            
+        }
+    }
+    focus = {
+    id = XSS_officer_schools
+    x = 106
+    y = 13
+    icon = GFX_focus_generic_military_academy
+    cost = 5
+    prerequisite = { focus = XSS_army_reforms }
+
+        
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_swiss_mil_school}
+            
+        }
+    }
+    focus = {
+    id = XSS_deregulation_guns
+    x = 108
+    y = 13
+    icon = GFX_focus_generic_manpower
+    cost = 5
+    prerequisite = { focus = XSS_army_reforms }
+
+        
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_liberal_gun_laws}
+            
+        }
+    }
+
+    focus = {
+    id = XSS_zurich_arms
+    x = 109
+    y = 14
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 5
+    prerequisite = { focus = XSS_army_reforms }
+
+        
+
+
+    completion_reward = {
+
+ 3 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    }
+            
+        }
+    }
+
+    focus = {
+    id = XSS_swiss_foreign_legion_monarch
+    x = 107
+    y = 14
+    icon = GFX_focus_SWI_patriotic_shooting_clubs
+    cost = 5
+    prerequisite = { focus = XSS_deregulation_guns }
+    prerequisite = { focus = XSS_officer_schools }
+        
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_swi_foreign_legion}
+   
+        }
+    }
+
+    focus = {
+    id = XSS_volkstuhrm
+    x = 108
+    y = 15
+    icon = GFX_focus_ITA_peasants_rise
+    cost = 5
+    prerequisite = { focus = XSS_swiss_foreign_legion_monarch }
+    prerequisite = { focus = XSS_zurich_arms }
+    mutually_exclusive = {focus = XSS_elite_army}        
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_volkstuhrm_idea}
+   
+        }
+    }
+    focus = {
+    id = XSS_elite_army
+    x = 106
+    y = 15
+    icon = GFX_focus_generic_military_mission
+    cost = 5
+    prerequisite = { focus = XSS_swiss_foreign_legion_monarch }
+    prerequisite = { focus = XSS_zurich_arms }
+    mutually_exclusive = {focus = XSS_volkstuhrm}
+        
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_elite_idea}
+   
+        }
+    }
+
+    focus = {
+    id = XSS_swiss_industry
+    x = 111
+    y = 12
+    icon = GFX_goal_generic_construction
+    cost = 5
+    prerequisite = { focus = XSS_social_reforms }
+
+        
+
+
+    completion_reward = {
+
+ 3 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    }
+            
+        }
+    }
+
+    focus = {
+    id = XSS_opium_trade
+    x = 114
+    y = 13
+    icon = GFX_goal_generic_consumer_goods
+    cost = 5
+    prerequisite = { focus = XSS_swiss_industry }
+
+        
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_opium}
+        add_offsite_building = { type = industrial_complex level = 1 }
+            
+        }
+    }
+
+    focus = {
+    id = XSS_bern_technology_institute
+    x = 112
+    y = 13
+    icon = GFX_goal_tfv_generic_tech_sharing
+    cost = 10
+    prerequisite = { focus = XSS_swiss_industry }
+
+        
+
+
+    completion_reward = {
+
+        add_research_slot = 1
+            
+        }
+    }
+
+    focus = {
+    id = XSS_join_bez_monarch
+    x = 113
+    y = 14
+    icon = GFX_focus_usa_focus_on_europe
+    cost = 10
+    prerequisite = { focus = XSS_bern_technology_institute }
+    prerequisite = { focus = XSS_opium_trade }
+    #available = {XNM={has_completed_focus = XNM_future_of_the_BEZ}}
+
+
+    completion_reward = {
+        XNM = {
+        country_event = {
+        id = XSS_test_event.4
+        days = 5
+        random_hours = 12
+            }
+
+        }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_licence_production
+    x = 111
+    y = 14
+    icon = GFX_focus_DEN_no_regulations
+    cost = 10
+    prerequisite = { focus = XSS_swiss_industry }
+
+
+    completion_reward = {
+
+        add_offsite_building = { type = arms_factory level = 3 }
+        add_ideas = {XSS_licence_production_idea}
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_fortress_bern
+    x = 110
+    y = 15
+    icon = GFX_goal_generic_fortify_city
+    cost = 10
+    prerequisite = { focus = XSS_licence_production }
+    prerequisite = { focus = XSS_zurich_arms }
+
+
+    completion_reward = {
+        3 = {
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 9620
+                }
+
+        }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_fight_poverty
+    x = 112
+    y = 15
+    icon = GFX_goal_generic_national_unity
+    cost = 5
+    prerequisite = { focus = XSS_join_bez_monarch }
+    prerequisite = { focus = XSS_licence_production }
+
+
+    completion_reward = {
+ 
+        add_stability = 0.05
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_swiss_steel
+    x = 114
+    y = 15
+    icon = GFX_focus_generic_steel
+    cost = 10
+    prerequisite = { focus = XSS_join_bez_monarch }
+
+
+    completion_reward = {
+ 
+    add_resource = {
+    type = steel
+    amount = 25
+    state = 3
+}   
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_ready_for_war
+    x = 110
+    y = 16
+    icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+    cost = 5
+    prerequisite = { focus = XSS_swiss_steel }
+     prerequisite = { focus = XSS_fight_poverty }
+      prerequisite = { focus = XSS_fortress_bern }
+       prerequisite = { focus = XSS_elite_army focus = XSS_volkstuhrm }
+
+
+    completion_reward = {
+ 
+       remove_ideas = {XSS_neutrality_idea}
+        news_event = {
+        id = XSS_test_event.2
+        days = 1
+        random_hours = 12
+            }
+        
+        }
+        
+
+    }
 
 
 
