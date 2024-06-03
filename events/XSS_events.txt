@@ -1270,6 +1270,97 @@ country_event = {
     }
 }
 
+####################### BURGUDNIA SOJUSZ KURWA MIÓD ############################
+
+country_event = {
+    id = XSS_test_event.44
+    title = XSS_test_event.44.t
+    picture = GFX_report_event_bunker_01
+    desc = XSS_test_event.44.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.44.a
+        XSS = { add_to_faction = ROOT }
+        
+    }
+    option = {
+        name = XSS_test_event.44.b
+
+        
+    }
+}
+
+######################## Return to neutrality ###############################
+
+news_event = {
+    id = XSS_test_event.45
+    title = XSS_test_event.45.t
+    picture = GFX_news_event_SOV_bukharin
+    desc = XSS_test_event.45.desc
+    
+    
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = XSS_test_event.45.a
+ 
+
+    }
+
+}
+
+############################ End of Switzerland #############################
+
+news_event = {
+    id = XSS_test_event.46
+    title = XSS_test_event.46.t
+    picture = GFX_news_event_polish_resistance_warsaw
+    desc = XSS_test_event.46.desc
+    
+    
+    is_triggered_only = yes
+
+    option = {
+        name = XSS_test_event.46.a
+    XFR = {
+annex_country = {
+    target = XSS
+    transfer_troops = no
+}
+    }
+    hidden_effect = {
+
+        3 = {transfer_state_to = XRM add_core_of = XRM}
+        847 = {transfer_state_to = XRM add_core_of = XRM}
+        846 = {transfer_state_to = XRM add_core_of = XRM}
+        151 = {transfer_state_to = XRM}
+        XRM = {
+        load_oob = "GreenArmy"
+        load_oob = "RoteArmee_civilwar"
+        load_oob = "XSS_freikorps"
+        load_oob = "XSS_volkspolizei_oob"
+        load_oob = "XSSSS"
+        add_ideas = {XSS_freikorps XSS_NSS_3 XSS_RA}
+        add_manpower = 1000000
+        }
+    XFR = {
+        declare_war_on = {
+        target = XRM
+        type = annex_everything
+            }
+    }
+
+
+    }
+
+
+    }
+
+}
 
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################

@@ -8413,6 +8413,388 @@ set_capital = {
 
     }
 
+    focus = {
+    id = XSS_bend_down
+    x = 116
+    y = 18
+    icon = GFX_focus_CZE_german_puppet
+    cost = 5
+    prerequisite = { focus = XSS_burgundian_ally }
+    mutually_exclusive = {focus = XSS_friendship }
+
+
+
+    completion_reward = {
+ 
+        XFR = {puppet = XSS}
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_grant_rights_to_burgundy
+    x = 116
+    y = 19
+    icon = GFX_focus_rom_abdicate
+    cost = 5
+    prerequisite = { focus = XSS_bend_down }
+
+
+
+    completion_reward = {
+ 
+        3 = {add_core_of = XFR}
+        845 = {add_core_of = XFR}
+        847 = {add_core_of = XFR}
+        151 = {add_core_of = XFR}
+        846 = {add_core_of = XFR}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_overlord_will
+    x = 116
+    y = 20
+    icon = GFX_focus_SWE_neither_death_nor_dishonor
+    cost = 5
+    prerequisite = { focus = XSS_grant_rights_to_burgundy }
+
+
+
+    completion_reward = {
+ 
+        remove_ideas = {
+            XSS_swi_foreign_legion
+            XSS_elite_idea
+            BEZ_membership
+            XSS_opium
+            XSS_liberal_gun_laws
+            XSS_new_workplaces
+            XSS_freikorps
+        }
+        add_ideas = {XSS_exploitation}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_end_of_switzerland
+    x = 116
+    y = 21
+    icon = GFX_focus_spr_crush_the_revolution
+    cost = 10
+    prerequisite = { focus = XSS_overlord_will }
+
+
+
+    completion_reward = {
+        XFR = {
+       news_event = {
+        id = XSS_test_event.46
+        days = 1
+        random_hours = 12
+            }
+        }
+        }
+        
+
+    }
+
+
+######################3 Friendship ###################################
+
+    focus = {
+    id = XSS_friendship
+    x = 112
+    y = 18
+    icon = GFX_goal_generic_alliance
+    cost = 5
+    prerequisite = { focus = XSS_burgundian_ally }
+    mutually_exclusive = {focus = XSS_bend_down }
+
+
+    completion_reward = {
+ 
+        create_faction = "Burgundian Confederacy"
+        XFR = {
+country_event = {
+    id = XSS_test_event.44
+    days = 1
+    random_hours = 12
+}
+
+        }
+
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_continue_social_reforms
+    x = 112
+    y = 19
+    icon = GFX_focus_usa_guarantee_the_american_dream
+    cost = 5
+    prerequisite = { focus = XSS_friendship }
+
+
+    completion_reward = {
+ 
+        add_stability = 0.05
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_coop_with_arms_in_xfr
+    x = 111
+    y = 20
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 5
+    prerequisite = { focus = XSS_continue_social_reforms }
+    available = {is_in_faction_with = XFR}
+
+
+    completion_reward = {
+ 
+ 845 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    }    
+    XFR = {
+        add_offsite_building = { type = arms_factory level = 2 }
+    }    
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_send_equipment_to_burgundy
+    x = 113
+    y = 20
+    icon = GFX_goal_generic_small_arms
+    cost = 5
+    prerequisite = { focus = XSS_continue_social_reforms }
+    available = {
+        is_in_faction_with = XFR
+        has_equipment = {
+        infantry_equipment_1 > 4999
+            }
+        }
+
+
+    completion_reward = {
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -5000
+    producer = XSS
+}
+XFR = {
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 5000
+    producer = XSS
+}
+}
+        add_offsite_building = { type = industrial_complex level = 2 }
+ 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_cheap_housing
+    x = 109
+    y = 20
+    icon = GFX_focus_generic_low_cost_housing
+    cost = 5
+    prerequisite = { focus = XSS_continue_social_reforms }
+
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_cheap_housing_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_safety_regulations
+    x = 110
+    y = 21
+    icon = GFX_focus_generic_workers
+    cost = 5
+    prerequisite = { focus = XSS_cheap_housing }
+    prerequisite = { focus = XSS_coop_with_arms_in_xfr }
+
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_safety_regulations_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_free_public_transport
+    x = 112
+    y = 21
+    icon = GFX_focus_SWE_bicycle
+    cost = 5
+    prerequisite = { focus = XSS_continue_social_reforms }
+
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_free_public_transport_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_war_industry
+    x = 111
+    y = 22
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 10
+    prerequisite = { focus = XSS_free_public_transport }
+    prerequisite = { focus = XSS_safety_regulations }
+
+
+
+
+    completion_reward = {
+
+ 847 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_burgundian_tourism
+    x = 113
+    y = 22
+    icon = GFX_focus_SWE_state_paid_vacation
+    cost = 5
+    prerequisite = { focus = XSS_send_equipment_to_burgundy }
+    available = {is_in_faction_with = XFR}
+
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_tourism_idea}
+        XFR = {add_ideas = {XSS_tourism_idea}}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_expand_alcohol_industry
+    x = 112
+    y = 23
+    icon = GFX_focus_FIN_oy_alkoholiliike
+    cost = 5
+    prerequisite = { focus = XSS_burgundian_tourism }
+    prerequisite = { focus = XSS_war_industry }
+
+
+
+    completion_reward = {
+
+        add_offsite_building = { type = industrial_complex level = 4 }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_peace_in_neutrality
+    x = 113
+    y = 24
+    icon = GFX_focus_SWI_the_national_redoubt
+    cost = 5
+    prerequisite = { focus = XSS_expand_alcohol_industry }
+    available = {has_war = no}
+    mutually_exclusive = {focus = XSS_strenght_in_war}
+
+
+    completion_reward = {
+
+        add_ideas = {XSS_neutrality_idea}
+        dismantle_faction = yes
+        news_event = {
+        id = XSS_test_event.45
+        days = 1
+        random_hours = 12
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XSS_strenght_in_war
+    x = 111
+    y = 24
+    icon = GFX_focus_SWI_abandon_neutrality 
+    cost = 5
+    prerequisite = { focus = XSS_expand_alcohol_industry }
+    mutually_exclusive = {focus = XSS_peace_in_neutrality}
+
+
+    completion_reward = {
+
+       add_ideas = {XSS_no_neutrality}
+
+        }
+        
+
+    }
+
+
 
 
 }

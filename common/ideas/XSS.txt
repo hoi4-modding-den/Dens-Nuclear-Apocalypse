@@ -733,6 +733,59 @@ ideas = {
 
             }
         }
+        XSS_cheap_housing_idea = {
+           removal_cost = -1
+            picture = SWE_folkhemmet
+            modifier = {
+			political_power_gain = -0.15
+            monthly_population = 0.1
+            }
+        }
+        XSS_safety_regulations_idea = {
+           removal_cost = -1
+            picture = new_deal
+            modifier = {
+			political_power_gain = 0.15
+            monthly_population = 0.05
+            production_speed_buildings_factor = -0.05
+            consumer_goods_factor = 0.1
+            production_factory_efficiency_gain_factor = -0.05  
+
+            }
+        }
+        XSS_free_public_transport_idea = {
+           removal_cost = -1
+            picture = SPR_anarchist_public_transport
+            modifier = {
+            monthly_population = 0.05
+            consumer_goods_factor = 0.15
+
+            }
+        }
+        XSS_tourism_idea = {
+           removal_cost = -1
+            picture = SWE_per_albin_bus
+            modifier = {
+            monthly_population = 0.1
+
+            }
+        }
+        XSS_exploitation = {
+           removal_cost = -1
+            picture = prc_low_popular_support
+            modifier = {
+            monthly_population = -0.25
+            consumer_goods_factor = 1
+            autonomy_gain = -1
+            stability_factor = -1
+            war_support_factor = -1
+            weekly_manpower = -10000 
+            conscription = 1
+            production_speed_buildings_factor = -1
+            
+
+            }
+        }
 
 
     }

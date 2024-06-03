@@ -1471,5 +1471,79 @@ XSS_francia_desc:0 "We have united Empire of Francia. We are the best."
 
 XSS_emperor_trait:0 "Emperor of Franks"
 
+XSS_bend_down:0 "Bend knee"
+XSS_bend_down_desc:0 "With Burgundy being the biggest force in our house it is only natural that we will offer our vassalage."
 
+XSS_friendship:0 "Friendship"
+XSS_friendship_desc:0 "Burgundy is our younger brother and we shall stand together against world."
+
+XSS_test_event.44.t:0 "Burgundian alliance"
+XSS_test_event.44.desc:0 "Switzerland with monarch from house of Burgund has proposed us to unite in an alliance."
+XSS_test_event.44.a:0 "Brothers stand united!"
+XSS_test_event.44.b:0 "A pretender won't tell me what to do"
+
+XSS_continue_social_reforms:0 "Continue Social Reforms"
+XSS_continue_social_reforms_desc:0 "With Burgundy backing up our independence we can continue making life in Switzerland better."
+
+XSS_coop_with_arms_in_xfr:0 "Joint arms production"
+XSS_coop_with_arms_in_xfr_desc:0 "We shall expand our millitary industry and support Burgundy while at it."
+
+XSS_send_equipment_to_burgundy:0 "Send equipment to Burgundy"
+XSS_send_equipment_to_burgundy_desc:0 "We shall sell some old guns to our Burgundian brother."
+
+XSS_cheap_housing:0 "Cheap Housing"
+XSS_cheap_housing_desc:0 "We shall house our poor citizens in a cheap flats to give them roof over their heads."
+
+XSS_cheap_housing_idea:0 "State funded Housing"
+XSS_cheap_housing_idea_desc:0 "Every citizen in Switzerland will have a roof over their head."
+
+XSS_safety_regulations:0 "Introduce Safety Regulations"
+XSS_safety_regulations_desc:0 "Fatalities in industrial sector are unberable. We shall create standardized code of laws for workplaces."
+
+XSS_safety_regulations_idea:0 "Industrial Work Safety Regulations"
+XSS_safety_regulations_idea_desc:0 "I.W.S.R is a law created in Switzerland to reduce fatalities in workplaces."
+
+XSS_free_public_transport:0 "Free Public Transport"
+XSS_free_public_transport_desc:0 "Our citizens would benefit from free public transport that will connect us Swiss closer."
+
+XSS_free_public_transport_idea:0 "Free Public Transport"
+XSS_free_public_transport_idea_desc:0 "Swiss citizens are now connected with eachother."
+
+XSS_war_industry:0 "Millitary Industry"
+XSS_war_industry_desc:0 "We as an industrial powerhouse must support our burgundian brothers."
+
+XSS_burgundian_tourism:0 "Burgundian Tourism"
+XSS_burgundian_tourism_desc:0 "We shall bring people of our nations togheter by expanding our tourist sector."
+
+XSS_tourism_idea:0 "High Tourism"
+XSS_tourism_idea_desc:0 "There is a massive tourism wave in our country."
+
+XSS_expand_alcohol_industry:0 "Expand Alcohol Industry"
+XSS_expand_alcohol_industry_desc:0 "Alcohol consumpiton is sky high after apocalipse. Maybe we should profit of that?"
+
+XSS_peace_in_neutrality:0 "Peace in Neutrality"
+XSS_peace_in_neutrality_desc:0 "Maybe throwing away neutrality was a bad thing?"
+
+XSS_test_event.45.t:0 "Switzerland Returns to Neutrality"
+XSS_test_event.45.desc:0 "Swiss King has annonced that drifitng away from neutrality was a horrible idea dictated by civil war. He decided to bring back Switzerland to neutrality."
+XSS_test_event.45.a:0 "Interesting"
+
+XSS_strenght_in_war:0 "Strenght by might"
+XSS_strenght_in_war_desc:0 "We have pushed Switzerland into 23th century and beyond. It's might that drives us forward not neutrality."
+
+XSS_grant_rights_to_burgundy:0 "Grant rights to Burgundy"
+XSS_grant_rights_to_burgundy_desc:0 "We are their dominion and they should have full rights to our lands."
+
+XSS_exploitation:0 "Burgundian Exploitation"
+XSS_exploitation_desc:0 "Burgundians are plundering us to dust."
+
+XSS_overlord_will:0 "Overlords Will"
+XSS_overlord_will_desc:0 "Switzerland will cease to be soon..."
+
+XSS_end_of_switzerland:0 "End of Switzerland"
+XSS_end_of_switzerland_desc:0 "Welp the time is now. We shall became a state ruled by burgunds. The King can only weep now."
+
+XSS_test_event.46.t:0 "End of Switzerland"
+XSS_test_event.46.desc:0 "Today Dammed King Éric decided to surrender to Burgundian Kingdom. Hope for Citizens of Switzerland is not yet lost though, as ex-enemies decided to become allies and started a revolution in Switzerland. Rote Armee, NSS and Green Army altrough weakend by civl war decided to rebel. First shots were fired in German city of Schwyz. They have continued their march on Bern. The King Éric was found weeping somewhere in forest not far away from Geneva."
+XSS_test_event.46.a:0 "We shall crush these Nazis!"
 
