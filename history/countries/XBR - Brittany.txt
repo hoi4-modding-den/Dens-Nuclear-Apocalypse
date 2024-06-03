@@ -13,8 +13,6 @@ XIE = {
 	}
 }
 
-become_exiled_in = { target = XIE legitimacy = 60}
-
 declare_war_on = {
     target = XLF
     type = independence_wargoal

@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			XBR ={
+				become_exiled_in = { target = XIE legitimacy = 60}
+			}
+		}
+	}
+}
