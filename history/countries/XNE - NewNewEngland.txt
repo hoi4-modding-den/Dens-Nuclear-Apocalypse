@@ -31,6 +31,21 @@ add_ideas = XNE_tensions_on_the_trent
 add_ideas = XNE_internal_conflict
 add_ideas = limited_conscription
 set_country_flag = dont_use_default_political_advisors
+set_country_flag = dont_use_default_military_advisors
+set_country_flag = dont_use_default_head_of_intelligence
+
+recruit_character = XNE_redd_penny
+recruit_character = XNE_luke_parker
+recruit_character = XNE_francis_cummings
+recruit_character = XNE_albie_walt
+recruit_character = XNE_kash_churchill
+recruit_character = XNE_dale_branson
+recruit_character = XNE_scout_levitt
+recruit_character = XNE_oli_ritchie
+recruit_character = XNE_harold_saxon
+recruit_character = XNE_james_hurley
+recruit_character = XNE_millard_cale
+recruit_character = XNE_edward_mills
 
 create_country_leader = {
 	name = XNE_king_henry_x

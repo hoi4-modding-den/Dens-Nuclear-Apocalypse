@@ -7,7 +7,7 @@ XNE_british_alliance = {
 			}
 			AND = {
 				original_tag = XNI
-				#XNI = { is_in_faction_with = XNE }
+				XNI = { is_in_faction_with = XNE }
 			}
 			AND = {
 				original_tag = XIE
