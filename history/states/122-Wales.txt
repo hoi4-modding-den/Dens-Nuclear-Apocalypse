@@ -21,6 +21,7 @@ manpower=1026325
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			arms_factory = 1
 			377 = {
 				naval_base = 3
 			}

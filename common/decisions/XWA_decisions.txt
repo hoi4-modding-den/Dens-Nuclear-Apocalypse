@@ -1,6 +1,7 @@
 XWA_SplitDecisions = {
         XWA_SplitIncoming = {
         activation = {
+            has_idea = XWA_TheSplit
         }
         available = {
             NOT = {
