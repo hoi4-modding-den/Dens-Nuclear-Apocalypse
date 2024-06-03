@@ -795,6 +795,7 @@
 
 		completion_reward = {
 			create_faction = "European Union"
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = {
@@ -891,7 +892,11 @@
 #		}
 
 		available = {
-		
+			owns_state = 3
+			owns_state = 845
+			owns_state = 847
+			owns_state = 151
+			owns_state = 846
 		}
 		
 		bypass = {
@@ -2702,9 +2707,9 @@
 
 		}
 		
-		#allow_branch = {
-		#	has_completed_focus = XTI_habsburg_king
-		#}
+		allow_branch = {
+			has_completed_focus = XTI_habsburg_king
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3777,6 +3782,10 @@
 		bypass = {
 
 		}
+		
+		allow_branch = {
+			has_completed_focus = XTI_european_ambitions
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4842,6 +4851,1271 @@
 
 		completion_reward = {
 			add_ideas = XTI_defender_of_dem
+		}
+	}
+	focus = {
+		id = XTI_reformed_army
+		icon = GFX_
+		
+#		prerequisite = { focus = XTI_democratic_europe }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 36
+		y = 0
+#		relative_position_id = XTI_democratic_europe
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = XTI_quality
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_army }
+		mutually_exclusive = { focus = XTI_quantity }
+		x = -1
+		y = 1
+		relative_position_id = XTI_reformed_army
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+	focus = {
+		id = XTI_quantity
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_army }
+		mutually_exclusive = { focus = XTI_quality }
+		x = 1
+		y = 1
+		relative_position_id = XTI_reformed_army
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = XTI_officer_academies
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_quality focus = XTI_quantity }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 1
+		y = 1
+		relative_position_id = XTI_quality
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_officer_academy_idea
+		}
+	}
+	focus = {
+		id = XTI_tank_designs
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_quality }
+		prerequisite = { focus = XTI_officer_academies }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 0
+		y = 2
+		relative_position_id = XTI_quality
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_light_armor
+			}
+		}
+	}
+	focus = {
+		id = XTI_artillery
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_tank_designs focus = XTI_gun_designs }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 1
+		y = 1
+		relative_position_id = XTI_tank_designs
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = XTI_gun_designs
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_quantity }
+		prerequisite = { focus = XTI_officer_academies }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 0
+		y = 2
+		relative_position_id = XTI_quantity
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = XTI_reformed_airforce
+		icon = GFX_
+		
+#		prerequisite = { focus = XTI_democratic_europe }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 48
+		y = 0
+#		relative_position_id = XTI_democratic_europe
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = XTI_new_armories
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_army focus = XTI_reformed_airforce }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 9
+		y = 1
+		relative_position_id = XTI_reformed_army
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XTI_improved_logistics
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_army }
+		prerequisite = { focus = XTI_new_armories }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = -1
+		y = 1
+		relative_position_id = XTI_new_armories
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_impr_logistics
+		}
+	}
+	focus = {
+		id = XTI_new_airfields
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_airforce }
+		prerequisite = { focus = XTI_new_armories }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 1
+		y = 1
+		relative_position_id = XTI_new_armories
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XTI_extra_support
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_improved_logistics }
+		prerequisite = { focus = XTI_new_airfields }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 1
+		y = 1
+		relative_position_id = XTI_improved_logistics
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 3
+				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = XTI_special_forces
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_army }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 4
+		y = 1
+		relative_position_id = XTI_reformed_army
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = special_forces_doctrine
+			}
+		}
+	}
+	focus = {
+		id = XTI_over_the_mountains
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_special_forces }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = -2
+		y = 1
+		relative_position_id = XTI_special_forces
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 3
+				category = para_tech
+			}
+		}
+	}
+	focus = {
+		id = XTI_through_the_mountains
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_special_forces }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 0
+		y = 1
+		relative_position_id = XTI_special_forces
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 3
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = XTI_around_the_mountains
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_special_forces }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 2
+		y = 1
+		relative_position_id = XTI_special_forces
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 3
+				category = marine_tech
+			}
+		}
+	}
+	focus = {
+		id = XTI_masters_of_their_trade
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_over_the_mountains }
+		prerequisite = { focus = XTI_through_the_mountains }
+		prerequisite = { focus = XTI_around_the_mountains }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 0
+		y = 1
+		relative_position_id = XTI_through_the_mountains
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_spf
+		}
+	}
+	focus = {
+		id = XTI_calvalry
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_army }
+#		mutually_exclusive = { focus = XTI_quality }
+		x = 6
+		y = 1
+		relative_position_id = XTI_reformed_army
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_calv_idea
+		}
+	}
+	focus = {
+		id = XTI_fighter
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_airforce }
+		mutually_exclusive = { focus = XTI_bomber }
+		x = -1
+		y = 1
+		relative_position_id = XTI_reformed_airforce
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = XTI_bomber
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_reformed_airforce }
+		mutually_exclusive = { focus = XTI_fighter }
+		x = 1
+		y = 1
+		relative_position_id = XTI_reformed_airforce
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	focus = {
+		id = XTI_heroes_of_the_skies
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_bomber focus = XTI_fighter }
+		mutually_exclusive = { focus = XTI_fighter }
+		x = 1
+		y = 1
+		relative_position_id = XTI_fighter
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_aces
+		}
+	}
+	focus = {
+		id = XTI_heavy_fighters
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_new_airfields }
+		prerequisite = { focus = XTI_fighter }
+		prerequisite = { focus = XTI_heroes_of_the_skies }
+#		mutually_exclusive = { focus = XTI_fighter }
+		x = 0
+		y = 2
+		relative_position_id = XTI_fighter
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	focus = {
+		id = XTI_cas
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_new_airfields }
+		prerequisite = { focus = XTI_bomber }
+		prerequisite = { focus = XTI_heroes_of_the_skies }
+#		mutually_exclusive = { focus = XTI_fighter }
+		x = 0
+		y = 2
+		relative_position_id = XTI_bomber
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = XTI_jet
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_heavy_fighters focus = XTI_cas }
+#		mutually_exclusive = { focus = XTI_fighter }
+		x = 1
+		y = 1
+		relative_position_id = XTI_heavy_fighters
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = XTI_naval_miracle
+		icon = GFX_
+		
+#		prerequisite = { focus = XTI_democratic_europe }
+#		mutually_exclusive = { focus = XTI_liberty_by_force }
+		x = 52
+		y = 0
+#		relative_position_id = XTI_democratic_europe
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = XTI_subs
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_naval_miracle }
+		mutually_exclusive = { focus = XTI_cruisers }
+		x = -1
+		y = 1
+		relative_position_id = XTI_naval_miracle
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = mio_cat_tech_all_submarine_and_modules
+			}
+		}
+	}
+	focus = {
+		id = XTI_cruisers
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_naval_miracle }
+		mutually_exclusive = { focus = XTI_subs }
+		x = 1
+		y = 1
+		relative_position_id = XTI_naval_miracle
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = mio_cat_tech_all_cruiser_and_modules
+			}
+		}
+	}
+	focus = {
+		id = XTI_learn_from_others
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_subs focus = XTI_cruisers }
+#		mutually_exclusive = { focus = XTI_subs }
+		x = 1
+		y = 1
+		relative_position_id = XTI_subs
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = XTI_destroyers
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_subs }
+		prerequisite = { focus = XTI_learn_from_others }
+#		mutually_exclusive = { focus = XTI_subs }
+		x = 0
+		y = 2
+		relative_position_id = XTI_subs
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = mio_cat_tech_all_destroyer_and_modules
+			}
+		}
+	}
+	focus = {
+		id = XTI_battleships
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_cruisers }
+		prerequisite = { focus = XTI_learn_from_others }
+#		mutually_exclusive = { focus = XTI_subs }
+		x = 0
+		y = 2
+		relative_position_id = XTI_cruisers
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = mio_cat_tech_all_capital_ship_and_modules
+			}
+		}
+	}
+	focus = {
+		id = XTI_carriers
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_battleships }
+#		mutually_exclusive = { focus = XTI_subs }
+		x = 1
+		y = 1
+		relative_position_id = XTI_battleships
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = mio_cat_tech_all_carrier_and_modules
+			}
+		}
+	}
+	focus = {
+		id = XTI_naval_invasion
+		icon = GFX_
+		
+		prerequisite = { focus = XTI_destroyers focus = XTI_battleships }
+#		mutually_exclusive = { focus = XTI_subs }
+		x = 1
+		y = 1
+		relative_position_id = XTI_destroyers
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XTI_nav_inv
 		}
 	}
 }

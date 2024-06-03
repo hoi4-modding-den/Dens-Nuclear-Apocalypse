@@ -471,5 +471,109 @@ ideas = {
 				guarantee_tension = -0.2
 			}
 		}
+		XTI_officer_academy_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_level = 1
+				grant_medal_cost_factor = -0.5
+			}
+		}
+		XTI_impr_logistics = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				local_supply_impact_factor = -0.2
+			}
+		}
+		XTI_spf = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.5
+				special_forces_no_supply_grace = 60
+			}
+		}
+		XTI_calv_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				cavalry_attack_factor = 0.1
+			}
+		}
+		XTI_aces = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				air_ace_generation_chance_factor = 0.33
+			}
+		}
+		XTI_nav_inv = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				naval_invasion_capacity = 10
+			}
+		}
 	}
 }	
