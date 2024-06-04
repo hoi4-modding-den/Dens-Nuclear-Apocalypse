@@ -1,0 +1,35 @@
+XLA = {
+	male = {
+		names = { 
+			Bessas Thrasamund Borani Videric Lagariman Berimud Hildebrand Hildebad Huml Achila Getica Theodahad Badua Baduila Argaith Godegisel Ovida 
+			Eriulf Ildebad Rudesind Goiaricus Retemeris Ardaric Colias Viliaris Gauterit Gunteric Tanca Sisenand Wella Beucad Arvandus Niketas Wamba Gouththas
+			Fredegar Radagaisus Flaccitheus Ataulf Thela Frithila Hadubrand Bilimer Witige Wala Vinitharius Braga Teias Sidimund Cyrila
+			Centus Exscincious Butiro Endoucellicus Ateuritus Contesilo Magurius Dagillus Attectius Ambadus Vogitoutus Cottio Caracco Epotsiorouidus Coteus
+			Attectius Condarillus Andegasus Carasius
+			Chalinus Agorastocles Messenio Franciscus Georgius Philocomasium Megadorus Hadrius Pellio Bromia Menaechmus Gulielmus Charinus Collybiscus
+			Lycus Baebio Philopolemus Stephanium Abelus
+		  }
+	}
+	female = {
+		names = {
+			Hildurara Amalwara Emalia Radegond Ostrogotho Kriemhild Lioba Elja Amelina Oonagh "Megan-Laureen" Matasuntha Liuva Amalasontha Theodananda
+			Hermesind Lioba Bjarka Adosinda Areagne Glismoda Brunihild Garsendis Hermesind Malasintha "Heidrun-Gabriela" Anouk Geloyra Amalaswinth Fredegonda
+			"Dörthe-Julia" Aleyda Narin Hunila Radegond "Megan-Laureen" Gosvintha Geleswintha "Mia-Selina" Melisanda
+			Matua Diona Castina Cobruna Ressilla Billia Velacena Ressatu Camulilia Donisia Materiona Verucia Adnamu Mattia Combara Matuna Velacena Iattossa Matia Ibliomaria
+			Cunacena Cassa Cottula Carantana Corasia Neme Nemetogena Camulatia Allusa Avitianomara Camulilia Aesiua Ressilla Adnamu Anderca Caretosa Valicinia Velacosta Genaca
+			Pedia Turullia Pomphilia Minucia Piscia Trebellia Vatinia Vagina Cornelia Rufia Coiedia Norbana Aelia Caecilia Volumnia Loreia Volcatia Petra Floridia Bruttia Novia Martina
+			Gavia Caesennia Artoria Fundana Caedicia Laetoria Felicitas Calavia Ummidia Dossenia Floria Cosconia Epidia Fufia
+		}
+	}
+	surnames = { 
+		Ann Beckford Bellamira Beowulf Bronte Catherine Clara Count Cruella Cullen Dante Desdomna Dorian Edgar Grendel Horace Lenore Llorona Otranto Portia Samara
+		Stoker Achlys Barnabas Bathsheba Belial Dirge Endora Fester Nosferatu Bauer Fischer Ravenwood Deathridge 
+		Agila Chintila Iudila Isidore Hermenegild Liuva Reccared Receswinth Sisbert Sisenand Wittiza Geilar Thrasamund Ansila Atta Hunuil Hildefonis Vulfila Frideger Eutharic
+		Eiriks Wallia Tautila Theodoric Thurismund Tius Eboric Badwila Liuva Kunimund Ildefonso Athalagild Hathus Andagis Audvakr Geberic
+		Ahearn Argall Beirne Bleddyn Bowen Brannon Breen Callan Carran Cavan Conroy Donne Donohue Foley Fylan Friseal Aodh Kilduff Leary "Mac Alastair" "Mac an Bhaird" "Cnáimhín" "Óda" 
+		Madigan Uidhir Connell Crory Mohan "Ó Conaire" "O'Reilly" Priddy Sowards Whalen
+		Dannicus Agaptus Camillus Caletus Paternus Limetanus Domitius Caesar Campanus Glabrio Triferus Crispus Flavillus Nelius Carus Similis Panaetius Irenaeus Volusius Corvinus Verrucosis
+		Veranius Pavo Epolonius Dacien Petri Priscillius Bodenius Apelles Priscillian Octavian Vepgenus Planta Caelinus Tanicus Cornix Hybrida Celatus Grumio Vonones Hilaris Adjutor Proceus Valgus
+	}
+	callsigns = { }
+}

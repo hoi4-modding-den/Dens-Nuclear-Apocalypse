@@ -1,0 +1,65 @@
+characters = {
+	XLA_Elder_Borani = {
+		name = "Elder Borani"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Elder_Borani"
+			}
+		}
+
+		country_leader = {
+			ideology = XLA_council
+		}
+	}
+
+	XLA_Altwigite_Order = {
+		name = "The Altwigite Order"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Altwigite_Order"	
+			}
+		}
+
+		country_leader = {
+			ideology = XLA_mages
+		}
+	}
+
+	XLA_Voiceless_Grotto = {
+		name = "The Voiceless Grotto"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Voiceless_Grotto"
+			}
+		}
+
+		country_leader = {
+			ideology = XLA_fey
+		}
+	}
+
+	XLA_Socellia_Luzi = {
+		name = "Socellia Luzi"
+		advisor = {
+			slot = political_advisor
+			idea_token = XLA_Luzi
+			allowed = {
+				original_tag = XLA
+			}
+			traits = {
+				XLA_Altwigitian_Acolyte
+			}
+		}
+	}
+
+	XLA_Samio = {
+		name = "Samio"
+		advisor = {
+			slot = political_advisor
+			idea_token = XLA_Samio_Token
+			traits = { 
+				XLA_Druidic
+			}
+		}
+	}
+}

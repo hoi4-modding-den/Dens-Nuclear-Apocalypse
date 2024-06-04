@@ -32,6 +32,7 @@ Nuclear war has set the world back 300 years, now in the year 2236 they are back
 | XAD | IWillExplode     | i_will_explode_     |
 | XAP | MouldedMind      | moulded_mind        |
 | XAR | Durangq          | durangoose          |
+| XBC | sappp00 | sap00 |
 | XCT | Furiousky        | furiousky           |
 | XNM | Furiousky        | furiousky           |
 | XTY | Furiousky        | furiousky           |
@@ -40,6 +41,8 @@ Nuclear war has set the world back 300 years, now in the year 2236 they are back
 | XGE | Kasastul         | kasastul            |
 | XIE | tombricks        | tombricks           |
 | XNI | tombricks        | tombricks           |
+| XIT | TxicFish | txicfish |
+| XLA | greenbueller | greenbueller |
 | XLV | Jadeclouds       | jadeclouds_         |
 | XLR | pingmann | pingmann |
 | XLX | TrulyMatchstick | realmatchstick |

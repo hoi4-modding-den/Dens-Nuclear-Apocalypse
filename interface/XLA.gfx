@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Elder_Borani"
+		textureFile = "gfx/leaders/XLA/Portrait_Elder_Borani.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Altwigite_Order"
+		textureFile = "gfx/leaders/XLA/Portrait_The_Altwigite_Order_Base.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Altwigite_Order_New"
+		textureFile = "gfx/leaders/XLA/Portrait_The_Altwigite_Order.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Voiceless_Grotto"
+		textureFile = "gfx/leaders/XLA/Portrait_Voiceless_Grotto.dds"
+	}
+}
