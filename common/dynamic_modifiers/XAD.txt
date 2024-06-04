@@ -12,6 +12,9 @@ XAD_military = {
 	planning_speed = XAD_re_planning_speed
 	army_org_factor = XAD_re_army_org_factor
 	army_speed_factor = XAD_re_army_speed_factor
+	conscription = XAD_re_conscription
+	training_time_factor = XAD_re_training_time_factor
+	political_power_cost = XAD_re_political_power_cost
 	
 	# offence = -0.25
 	# defence = -0.25

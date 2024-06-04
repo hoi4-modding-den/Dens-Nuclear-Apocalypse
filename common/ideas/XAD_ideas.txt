@@ -497,6 +497,26 @@ ideas = {
 					monthly_population = 0.10
 				}
 			}
+			XAD_ADPPG = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = combined_bomber_offensive
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					monthly_population = 0.10
+					weekly_manpower = 100
+				}
+			}
 			XAD_borgir = {
 			
 				allowed = {

@@ -87,7 +87,7 @@ add_ideas = {
 	XAD_remember_ceuta
 	XAD_impending_communist_coup
 	XAD_devided_lenguage
-	
+
 }
 
 add_dynamic_modifier = { modifier = XAD_military }
@@ -119,6 +119,15 @@ XAD = {
 	}
 	set_variable = {
 		XAD_re_army_speed_factor = -0.15
+	}
+	set_variable = {
+		XAD_re_conscription = 0
+	}
+	set_variable = {
+		XAD_re_training_time_factor = 0.30
+	}
+	set_variable = {
+		XAD_re_political_power_cost = 0
 	}
 }
 

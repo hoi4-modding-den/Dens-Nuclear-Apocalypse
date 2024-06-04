@@ -35,6 +35,18 @@
  XAD_borgir:0 "borgir"
  
  
+ XAD_small_recruitment_efforts_variable:0 "Modify §YEjército catorbano§!\nRecruitable Population §Y+5.00%§!"
+ XAD_extensive_recruitment_efforts_variable:0 "Modify §YEjército catorbano§!\nRecruitable Population §Y+10.00%§!\nPolitical Power Cost §R+0.25§!"
+ XAD_military:0 "Ejército catorbano"
+ XAD_enemies_in_the_north_variable:0 "Modify §YEjército catorbano§!\nMax planning §G+5.00%§!\nPlanning speed §G+5.00%§!"
+ XAD_men_lead_the_army_variable:0 "Modify §YEjército catorbano§!\nRecruitable Population §Y+1.00%§!"
+ XAD_insufficent_training_problem_variable:0 "Modify §YEjército catorbano§!\nTraining time §G-30.00%§!"
+ XAD_best_army_in_iberia_variable:0 "Modify §YEjército catorbano§!\nAttack §G+30.00%§!\nDefense §G+20.00%§!"
+ XAD_never_another_ceuta_variable:0 "Modify §YEjército catorbano§!\nOrg Loss when Moving §G-5.00%§!\nArmy speed §G+20.00%§!"
+ XAD_force_military_loyalty_variable:0 "Modify §YEjército catorbano§!\nBreakthrough §G+20.00%§!"
+ XAD_prepare_the_generation_for_a_war_variable:0 "Modify §YEjército catorbano§!\nDivision Organization §G+10.00%§!\nDivision Recovery Rate §G+10.00%§!"
+ XAD_horrible_tactic_problem_variable:0 "Modify §YEjército catorbano§!\nMax planning §G+15.00%§!\nPlanning speed §G+15.00%§!"
+
  XAD_tooltip_country_fixing:0 "[Root.GetLeader] and his ministers have finally understood how fucked up the situation currently is in thier country and it's now time for reform.\n§tWill enable decisions to fix our state§!"
  XAD_start_the_casablanca_project:0 "Start the Casablanca project"
  XAD_develop_the_casablanca_university:0 "Build the Casablanca University"
