@@ -22,6 +22,18 @@ spriteTypes = {
 		texturefile = "gfx/leaders/XAD/focus_XAD_gibraltar.png"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_the_catalusian_army"
+		texturefile = "gfx/leaders/XAD/idea_XAD_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_burgir"
+		texturefile = "gfx/leaders/XAD/idea_XAD_burgir.png"
+	}
+	
+	
+	
+	
 	
 	
 	spriteType = {

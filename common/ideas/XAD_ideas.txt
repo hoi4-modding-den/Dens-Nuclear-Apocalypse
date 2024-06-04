@@ -497,6 +497,24 @@ ideas = {
 					monthly_population = 0.10
 				}
 			}
+			XAD_borgir = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = GFX_idea_burgir
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+				}
+			}
 	}
 }
 

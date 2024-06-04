@@ -1502,7 +1502,1174 @@
 		completion_reward = {
 			add_political_power = 5
 			add_political_power = -5
+			add_ideas = XAD_borgir
 		}
 	}
+	focus = {
+		id = XAD_army_problems
+		icon = GFX_
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 30
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 
+
+		completion_reward = {
+			
+			}
+		}
+		focus = {
+			id = XAD_develop_military_industry
+			icon = GFX_
+			prerequisite = { focus = XAD_army_problems }
+			#mutually_exclusive = { focus =  }
+			x = 30
+			y = 1
 	
-}
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+				id = XAD_enemies_in_the_north
+				icon = GFX_
+				prerequisite = { focus = XAD_develop_military_industry }
+				#mutually_exclusive = { focus =  }
+				x = 28
+				y = 2
+		
+				cost = 5
+		
+				ai_will_do = {
+					factor = 1
+				}
+		
+				available = {
+					
+				}
+				
+				bypass = {
+		
+				}
+		
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+		
+				 
+		
+				completion_reward = {
+					
+					}
+		}
+		focus = {
+			id = XAD_men_lead_the_army
+			icon = GFX_
+			prerequisite = { focus = XAD_develop_military_industry }
+			#mutually_exclusive = { focus =  }
+			x = 30
+			y = 2
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_bad_generals
+			icon = GFX_
+			prerequisite = { focus = XAD_develop_military_industry }
+			#mutually_exclusive = { focus =  }
+			x = 32
+			y = 2
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_insufficent_training_problem
+			icon = GFX_
+			prerequisite = { focus = XAD_enemies_in_the_north }
+			prerequisite = { focus = XAD_men_lead_the_army }
+			prerequisite = { focus = XAD_bad_generals }
+			#mutually_exclusive = { focus =  }
+			x = 30
+			y = 3
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_enstablish_the_ADPPG
+			icon = GFX_
+			prerequisite = { focus = XAD_insufficent_training_problem }
+			#mutually_exclusive = { focus =  }
+			x = 30
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_enact_obbligatory_draft
+			icon = GFX_
+			prerequisite = { focus = XAD_insufficent_training_problem }
+			#mutually_exclusive = { focus =  }
+			x = 32
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_prepare_the_generation_for_a_war
+			icon = GFX_
+			prerequisite = { focus = XAD_insufficent_training_problem }
+			#mutually_exclusive = { focus =  }
+			x = 28
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_never_another_ceuta
+			icon = GFX_
+			prerequisite = { focus = XAD_insufficent_training_problem }
+			#mutually_exclusive = { focus =  }
+			x = 26
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_best_army_in_iberia
+			icon = GFX_
+			prerequisite = { focus = XAD_insufficent_training_problem }
+			prerequisite = { focus = XAD_prepare_the_generation_for_a_war }
+			prerequisite = { focus = XAD_enact_obbligatory_draft }
+			#mutually_exclusive = { focus =  }
+			x = 30
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_extensive_recruitment_efforts
+			icon = GFX_
+			prerequisite = { focus = XAD_best_army_in_iberia }
+			mutually_exclusive = { focus = XAD_small_recruitment_efforts }
+			x = 31
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_small_recruitment_efforts
+			icon = GFX_
+			prerequisite = { focus = XAD_best_army_in_iberia }
+			mutually_exclusive = { focus = XAD_extensive_recruitment_efforts }
+			x = 29
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_insufficent_industry
+			icon = GFX_
+			prerequisite = { focus = XAD_enemies_in_the_north }
+			prerequisite = { focus = XAD_men_lead_the_army }
+			prerequisite = { focus = XAD_bad_generals }
+			#mutually_exclusive = { focus =  }
+			x = 20
+			y = 3
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_develop_industry_in_casablanca
+			icon = GFX_
+			prerequisite = { focus = XAD_insufficent_industry }
+			#mutually_exclusive = { focus =  }
+			x = 19
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_develop_industry_in_tablina
+			icon = GFX_
+			prerequisite = { focus = XAD_insufficent_industry }
+			#mutually_exclusive = { focus =  }
+			x = 21
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_develop_in_mililla
+			icon = GFX_
+			prerequisite = { focus = XAD_develop_industry_in_tablina }
+			prerequisite = { focus = XAD_develop_industry_in_casablanca }
+			#mutually_exclusive = { focus =  }
+			x = 20
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_develop_in_marrakech
+			icon = GFX_
+			prerequisite = { focus = XAD_develop_industry_in_tablina }
+			prerequisite = { focus = XAD_develop_industry_in_casablanca }
+			#mutually_exclusive = { focus =  }
+			x = 22
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_develop_in_ceuta
+			icon = GFX_
+			prerequisite = { focus = XAD_develop_industry_in_tablina }
+			prerequisite = { focus = XAD_develop_industry_in_casablanca }
+			#mutually_exclusive = { focus =  }
+			x = 24
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_build_forts_in_the_north
+			icon = GFX_
+			prerequisite = { focus = XAD_develop_in_mililla }
+			prerequisite = { focus = XAD_develop_in_marrakech }
+			prerequisite = { focus = XAD_develop_in_ceuta }
+			#mutually_exclusive = { focus =  }
+			x = 22
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_supply_in_the_north
+			icon = GFX_
+			prerequisite = { focus = XAD_build_forts_in_the_north }
+			#mutually_exclusive = { focus =  }
+			x = 22
+			y = 7
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_better_guns
+			icon = GFX_
+			prerequisite = { focus = XAD_develop_industry_in_tablina }
+			prerequisite = { focus = XAD_develop_industry_in_casablanca }
+			mutually_exclusive = { focus = XAD_cheaper_guns }
+			x = 17
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_cheaper_guns
+			icon = GFX_
+			prerequisite = { focus = XAD_develop_industry_in_tablina }
+			prerequisite = { focus = XAD_develop_industry_in_casablanca }
+			mutually_exclusive = { focus = XAD_better_guns }
+			x = 19
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_better_artillery
+			icon = GFX_
+			prerequisite = { focus = XAD_better_guns focus = XAD_cheaper_guns }
+			mutually_exclusive = { focus = XAD_cheaper_artillery }
+			x = 17
+			y = 7
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_cheaper_artillery
+			icon = GFX_
+			prerequisite = { focus = XAD_better_guns focus = XAD_cheaper_guns }
+			mutually_exclusive = { focus = XAD_better_artillery }
+			x = 19
+			y = 7
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_develop_tanks
+			icon = GFX_
+			prerequisite = { focus = XAD_better_artillery focus = XAD_cheaper_artillery }
+			#mutually_exclusive = { focus = XAD_cheaper_artillery }
+			x = 17
+			y = 8
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_equip_mechanized
+			icon = GFX_
+			prerequisite = { focus = XAD_better_artillery focus = XAD_cheaper_artillery }
+			#mutually_exclusive = { focus = XAD_better_artillery }
+			x = 19
+			y = 8
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_horrible_tactic_problem
+			icon = GFX_
+			prerequisite = { focus = XAD_enemies_in_the_north }
+			prerequisite = { focus = XAD_men_lead_the_army }
+			prerequisite = { focus = XAD_bad_generals }
+			#mutually_exclusive = { focus =  }
+			x = 40
+			y = 3
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_the_faster_the_better
+			icon = GFX_
+			prerequisite = { focus = XAD_horrible_tactic_problem }
+			mutually_exclusive = { focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs  }
+			x = 40
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_a_gun_is_all_a_man_needs
+			icon = GFX_
+			prerequisite = { focus = XAD_horrible_tactic_problem }
+			mutually_exclusive = { focus = XAD_artillery_is_always_key focus = XAD_the_faster_the_better  }
+			x = 38
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_artillery_is_always_key
+			icon = GFX_
+			prerequisite = { focus = XAD_horrible_tactic_problem }
+			mutually_exclusive = { focus = XAD_a_gun_is_all_a_man_needs focus = XAD_the_faster_the_better }
+			x = 42
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_cats_of_the_desert
+			icon = GFX_
+			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
+			#mutually_exclusive = { }
+			x = 40
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_tactical_camel
+			icon = GFX_
+			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
+			#mutually_exclusive = { }
+			x = 38
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_cats_in_the_mountains
+			icon = GFX_
+			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
+			#mutually_exclusive = { }
+			x = 36
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_supply_problems
+			icon = GFX_
+			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
+			#mutually_exclusive = { }
+			x = 42
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+		focus = {
+			id = XAD_the_paratroopers
+			icon = GFX_
+			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
+			#mutually_exclusive = { }
+			x = 44
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+				}
+		}
+	}	
