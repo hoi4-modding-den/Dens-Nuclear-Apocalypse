@@ -1,7 +1,7 @@
 ﻿l_english:
 # Country Names
-XFR: "Burgundy"
-XFR_DEF: "Burgundy"
+XFR: "Bourgogne-Franche-Comté"
+XFR_DEF: "Bourgogne-Franche-Comté"
 XFR_ADJ: "Burgundian"
 XFR_democratic: "Republic of Burgundy"
 XFR_democratic_DEF: "the Republic of Burgundy"
@@ -16,8 +16,8 @@ XFR_communism: "Regional Defence Council of Burgundy"
 XFR_communism_DEF: "the Regional Defence Council of Burgundy"
 XFR_communism_ADJ: "Burgundian"
 
-XFR_subject: "$OVERLORDADJ$ State of Burgundy"
-XFR_subject_DEF: "the $OVERLORDADJ$ State of Burgundy"
+XFR_subject: "$OVERLORDADJ$ Bourgogne-Franche-Comté"
+XFR_subject_DEF: "the $OVERLORDADJ$ Bourgogne-Franche-Comté"
 XFR_subject_ADJ: "Burgundian"
 XFR_autonomy_dominion:0 "Dominion of Burgundy"
 XFR_autonomy_dominion_DEF:0 "the Dominion of Burgundy"
