@@ -207,6 +207,22 @@ country_event = { # Elections 2236
         ai_chance = {
             base = 1
         }
+        hidden_effect = { retire_ideology_leader = democratic }
+        add_country_leader_role = {
+            character = XFR_jacob_d_amboise
+            promote_leader = yes
+            country_leader = {
+                ideology = socialism
+                desc = XFR_jacob_d_amboise_desc
+                expire = "3000.1.1"
+            traits = { XFR_federalist_leader }
+            }
+        }
+        set_party_name = {
+            ideology = democratic
+            long_name = XFR_democratic_party_federalists_long
+            name = XFR_democratic_party_federalists
+        }   
 
     }
 
@@ -215,6 +231,22 @@ country_event = { # Elections 2236
         ai_chance = {
             base = 1
         }
+        hidden_effect = { retire_ideology_leader = democratic }
+        add_country_leader_role = {
+            character = XFR_gabriel_moreau
+            promote_leader = yes
+            country_leader = {
+                ideology = liberalism
+                desc = XFR_gabriel_moreau_desc
+                expire = "3000.1.1"
+            traits = { XFR_restaurationist_leader }
+            }
+        }
+        set_party_name = {
+            ideology = democratic
+            long_name = XFR_democratic_party_restauration_long
+            name = XFR_democratic_party_restauration
+        }       
 
     }
 

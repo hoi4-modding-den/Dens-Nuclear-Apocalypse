@@ -25,6 +25,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_XFR_jacob_d_amboise"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_jacob_d_amboise.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_gabriel_moreau"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_gabriel_moreau.dds"
+    }
+
+    spriteType = {
         name = "GFX_portrait_XAL_military_gov"
         texturefile = "gfx/leaders/XAL/portrait_XAL_military_gov.png"
     }

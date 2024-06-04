@@ -14,6 +14,24 @@ characters = {
 		}
 	}
 
+	XFR_jacob_d_amboise = {
+		name = XFR_jacob_d_amboise_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_jacob_d_amboise"
+			}
+		}
+	}
+
+	XFR_gabriel_moreau = {
+		name = XFR_gabriel_moreau_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_gabriel_moreau"
+			}
+		}
+	}
+
 	XFR_herzog_julius = {
 		name = XFR_herzog_julius_name
 		portraits = {

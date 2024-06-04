@@ -82,12 +82,16 @@ XAL_subject_ADJ: "Alsace-Lorrains"
 
 XFR_democratic_party: "Front Démocratique"
 XFR_democratic_party_long: "Bourgogne Front Démocratique (Burgundian Democratic Front)"
+XFR_democratic_party_federalists: "Parti de la solidarité"
+XFR_democratic_party_federalists_long: "Parti de la solidarité (Solidarity Party)"
+XFR_democratic_party_restauration: "Debout la France"
+XFR_democratic_party_restauration_long: "Debout la France (France Arise)"
 XFR_fascism_party: "Concilium Lotharingiae"
 XFR_fascism_party_long: "Concilium Lotharingiae (Council of Lotharingia)"
 XFR_neutrality_party: "Haus von Burgund"
 XFR_neutrality_party_long: "Haus von Burgund (House of Burgundy)"
-XFR_communism_party: "Les Anarchistes"
-XFR_communism_party_long: "Les Anarchistes (Anarchists)"
+XFR_communism_party: "Anarchists"
+XFR_communism_party_long: "Anarchists"
 XFR_communism_party_real: "Union anarcho-communiste"
 XFR_communism_party_real_long: "Parti de l'union anarcho-communiste (Anarcho-Communist Union Party)"
 
@@ -111,6 +115,9 @@ XFR_german_revanchism_desc: "German Revanchism is an ultra-nationalist ideal of 
 XFR_parliament_name:" Burgundian Parliament"
 XFR_herzog_julius_name: "Julius von Burgund"
 XFR_herzog_julius_desc: "WIP"
+XFR_jacob_d_amboise_name: "Jacob D'Amboise"
+XFR_jacob_d_amboise_desc: "WIP"
+XFR_gabriel_moreau_name: "Gabriel Moreau"
 XFR_anarchists_name: "Anarchists"
 
 XAL_military_junta_name: "Alsatian Military Junta"
@@ -129,6 +136,8 @@ XAL_military_junta_trait: "Military Government"
 XAL_german_nationalist: "German Nationalist"
 XAL_regent_of_germany: "Regent of the German Empire"
 XFR_herzog_von_burgund: "Herzog von Burgund, Pretender to the Imperial Throne of Francia"
+XFR_federalist_leader: "Federalist Advocate"
+XFR_restaurationist_leader: "French Restaurationist"
 
 
 # FOCUS TREE
@@ -468,8 +477,8 @@ XFR_events.6.b: "How dare they!"
 
 XFR_events.7.t: "Elections!"
 XFR_events.7.desc: "WIP: CANDIDATES"
-XFR_events.7.a: "Candidate A: Federalists"
-XFR_events.7.b: "Candiate B: Restaurationists"
+XFR_events.7.a: "Jacob D'Amboise"
+XFR_events.7.b: "Gabriel Moreau"
 
 XFR_events.8.t: "[XAL.GetNameDefCap] rejects the Ultimatum!"
 XFR_events.8.desc: "The [XAL.GetAdjective] Government has declined our offer of integration. With both our and their citizen wanting to be united, it seems that all there is left is war..."
