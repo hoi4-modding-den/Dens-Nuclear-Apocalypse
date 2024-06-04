@@ -12,4 +12,40 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	XAL_german_nationalist = {
+		random = no
+
+		offensive_war_stability_factor = -0.5
+		fascism_drift = 0.02
+		justify_war_goal_time = -0.1
+		ai_focus_aggressive_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XAL_regent_of_germany = {
+		random = no
+
+		army_attack_against_major_factor = 0.15
+		army_breakthrough_against_major_factor = 0.05
+		generate_wargoal_tension = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_herzog_von_burgund = {
+		random = no
+
+		political_power_factor = -0.15
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

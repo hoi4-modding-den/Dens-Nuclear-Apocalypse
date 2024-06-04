@@ -463,12 +463,12 @@
 		icon = GFX_focus_generic_provoke_border_clashes
 		prerequisite = { focus = XFR_democracy_lives_on focus = XFR_the_new_empire }
 		#mutually_exclusive = { focus =  }
-		x = -4
+		x = 0
 		y = 2
 		relative_position_id = XFR_crisis_averted
 
 		offset = {
-			x = 6
+			x = 1
 			trigger = {
 				if = {
 					limit = {
@@ -478,6 +478,21 @@
 						}
 					}
 					has_completed_focus = XFR_dennounce_democracy
+				}
+			}
+		}
+
+		offset = {
+			x = -1
+			trigger = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					has_completed_focus = XFR_support_parliament
 				}
 			}
 		}
@@ -529,6 +544,32 @@
 					modifier = -0.2
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = XFR_dennounce_the_illigitimate_government
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = XFR_rhone_expedition }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_rhone_expedition
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
 		}
 	}
 
@@ -948,7 +989,7 @@
 	}
 
 	focus = {
-		id = XFR_alsacian_steel_industry
+		id = XFR_alsatian_steel_industry
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = XFR_civilian_industry_expansion }
 		#mutually_exclusive = { focus = }
@@ -1322,473 +1363,6 @@
 
 # DIPLOMACY
 
-	focus = {	
-		id = XFR_cooperate_with_neighbours
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = XFR_the_new_empire focus = XFR_democracy_lives_on }
-		mutually_exclusive = { focus = XFR_reclaim_french_territories }
-		x = 11
-		y = 7
-		#relative_position_id = 
-
-		available = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { }
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {	
-		id = XFR_reclaim_french_territories
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = XFR_the_new_empire focus = XFR_democracy_lives_on }
-		mutually_exclusive = { focus = XFR_cooperate_with_neighbours }
-		x = 15
-		y = 7
-		#relative_position_id = 
-
-		available = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { }
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {	
-		id = XFR_preempt_the_swiss_threat
-		icon = GFX_focus_attack_switzerland
-		prerequisite = { focus = XFR_reclaim_french_territories focus = XFR_cooperate_with_neighbours }
-		mutually_exclusive = { focus = XFR_guarantee_swiss_neutrality }
-		x = 0
-		y = 2
-		relative_position_id = XFR_reclaim_french_territories
-
-		available = {
-			is_subject = no
-			any_neighbor_country = {
-				tag = XSS
-			}
-			NOT = { XSS = { has_idea = XSS_neutrality_idea } }
-		}
-
-		bypass = {
-			XSS = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-				}
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		will_lead_to_war_with = XSS
-
-		completion_reward = {
-			create_wargoal = {
-    			type = puppet_wargoal_focus
-   				target = XSS
-			}
-		}
-	}
-
-	focus = {	
-		id = XFR_to_paris_we_march
-		icon = GFX_focus_attack_france
-		prerequisite = { focus = XFR_reclaim_french_territories }
-		x = 3
-		y = 1
-		relative_position_id = XFR_reclaim_french_territories
-
-		available = {
-			is_subject = no
-			any_neighbor_country = {
-				tag = XPR
-			}
-		}
-
-		bypass = {
-			OR = {
-				XPR = { exists = no }
-				XPR = { is_subject_of = ROOT }
-				16 = { is_owned_by = ROOT }
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		will_lead_to_war_with = XPR
-
-		completion_reward = {
-			16 = { add_claim_by = ROOT }
-			create_wargoal = {
-    			type = annex_everything
-   				target = XPR
-			}
-		}
-	}
-
-	focus = {	
-		id = XFR_normandy_to_britanny
-		icon = GFX
-		prerequisite = { focus = XFR_to_paris_we_march }
-		x = -1
-		y = 1
-		relative_position_id = XFR_to_paris_we_march
-
-		available = {
-			is_subject = no
-			if = {
-				limit = {
-					XLF = { exists = yes }
-				}
-				any_neighbor_country = {
-					tag = XLF
-				}
-			}
-			if = {
-				limit = {
-					XBR = { exists = yes }
-				}
-				OR = {
-					any_neighbor_country = {
-						tag = XBR
-					}
-					XLF = {
-						any_neighbor_country = {
-							tag = XBR
-						}
-					}
-				}
-			}
-		}
-
-		bypass = {
-			OR = {
-				AND = {
-					XLF = { exists = no }
-					XBR = { exists = no }
-				}
-				AND = {
-					XLF = { is_subject_of = ROOT }
-					XBR = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		will_lead_to_war_with = XLF
-		will_lead_to_war_with = XBR
-
-		completion_reward = {
-			create_wargoal = {
-    			type = annex_everything
-   				target = XLF
-			}
-			create_wargoal = {
-    			type = annex_everything
-   				target = XBR
-			}
-		}
-	}
-
-	focus = {	
-		id = XFR_erase_luxonie
-		icon = GFX
-		prerequisite = { focus = XFR_to_paris_we_march }
-		x = 1
-		y = 1
-		relative_position_id = XFR_to_paris_we_march
-
-		available = {
-			is_subject = no
-			any_neighbor_country = {
-				tag = XLX
-			}
-		}
-
-		bypass = {
-			OR = {
-				XLX = { exists = no }
-				XLX = { is_subject_of = ROOT }
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		will_lead_to_war_with = XLX
-
-		completion_reward = {
-			create_wargoal = {
-    			type = annex_everything
-   				target = XLX
-			}
-		}
-	}
-
-	focus = {	
-		id = XFR_dennounce_the_illigitimate_government
-		icon = GFX_focus_attack_france
-		prerequisite = { focus = XFR_reclaim_french_territories focus = XFR_cooperate_with_neighbours }
-		x = -2
-		y = 3
-		relative_position_id = XFR_reclaim_french_territories
-
-		available = {
-			is_subject = no
-			any_neighbor_country = {
-				tag = XNF
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		will_lead_to_war_with = XNF
-
-		completion_reward = {
-			create_wargoal = {
-    			type = annex_everything
-   				target = XNF
-			}
-		}
-	}
-
-	focus = {	
-		id = XFR_guarantee_swiss_neutrality
-		icon = GFX_focus_SWI_swiss_guiding_principles
-		prerequisite = { focus = XFR_cooperate_with_neighbours }
-		mutually_exclusive = { focus = XFR_preempt_the_swiss_threat }
-		x = 0
-		y = 2
-		relative_position_id = XFR_cooperate_with_neighbours
-
-		available = {
-			XSS = { 
-				exists = yes
-				has_government = democratic
-				has_idea = XSS_neutrality_idea
-			}
-			has_government = democratic
-			is_subject = no
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			give_guarantee = XSS 
-		}
-	}
-
-	focus = {	
-		id = XFR_paris_conference
-		icon = GFX_focus_chi_reach_out_to_france
-		prerequisite = { focus = XFR_cooperate_with_neighbours }
-		x = -3
-		y = 1
-		relative_position_id = XFR_cooperate_with_neighbours
-
-		available = {
-			is_subject = no
-			has_government = democratic
-			OR = {
-				16 = { is_fully_controlled_by = ROOT }
-				XPR = {
-					OR = {
-						is_subject_of = ROOT
-						has_opinion = { target = ROOT value > 50 }
-					}
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					16 = {
-						is_fully_controlled_by = ROOT
-						NOT = { is_owned_by = ROOT }
-					}
-				}
-				16 = { transfer_state_to = ROOT }
-			}
-			set_party_rule = {
-				ideology = democratic
-				can_create_factions = yes
-			}
-			create_faction = "French Federation"
-		}
-	}
-
-	focus = {	
-		id = XFR_expand_the_pact
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = XFR_paris_conference }
-		x = 0
-		y = 1
-		relative_position_id = XFR_paris_conference
-
-		available = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {	
-		id = XFR_restore_the_french_republic
-		icon = GFX
-		prerequisite = { focus = XFR_paris_conference }
-		mutually_exclusive = { focus = XFR_a_french_federation }
-		x = -1
-		y = 2
-		relative_position_id = XFR_paris_conference
-
-		available = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {	
-		id = XFR_a_french_federation
-		icon = GFX
-		prerequisite = { focus = XFR_paris_conference }
-		mutually_exclusive = { focus = XFR_restore_the_french_republic }
-		x = 1
-		y = 2
-		relative_position_id = XFR_paris_conference
-
-		available = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {	
-		id = XFR_cooperate_with_lesser_gaul
-		icon = GFX
-		prerequisite = { focus = XFR_reclaim_french_territories focus = XFR_cooperate_with_neighbours }
-		mutually_exclusive = { focus = XFR_no_deal_with_mad_men }
-		x = -1
-		y = 1
-		relative_position_id = XFR_reclaim_french_territories
-
-		available = {
-			has_country_flag = will_bypass_through_event_tt
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			974 = {
-				transfer_state_to = XAQ
-				add_core_of = XAQ
-				remove_core_of = XFR
-			}
-		}
-	}
-
-	focus = {	
-		id = XFR_no_deal_with_mad_men
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = XFR_reclaim_french_territories focus = XFR_cooperate_with_neighbours }
-		mutually_exclusive = { focus = XFR_cooperate_with_lesser_gaul }
-		x = 1
-		y = 1
-		relative_position_id = XFR_reclaim_french_territories
-
-		available = {
-			has_country_flag = will_bypass_through_event_tt
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		completion_reward = {
-			
-		}
-	}
-
 		focus = {	
 		id = XFR_hand_over_centre
 		icon = GFX_goal_generic_dangerous_deal
@@ -1797,27 +1371,8 @@
 		y = 2
 		relative_position_id = XFR_the_new_empire
 
-		offset = {
-			x = 5
-			trigger = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					has_completed_focus = XFR_dennounce_democracy
-				}
-				else = {
-					always = no
-				}
-			}
-		}
-
 
 		available = {
-			has_completed_focus = XFR_cooperate_with_lesser_gaul
 			has_government = fascism
 			OR = {
 				is_subject = no
@@ -1873,35 +1428,18 @@
 		id = XFR_alcase_lorraine_diplomacy
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = XFR_democracy_lives_on }
-		x = -6
-		y = 0
-		relative_position_id = XFR_cooperate_with_neighbours
+		x = -5
+		y = 1
+		relative_position_id = XFR_democracy_lives_on
 
 		available = {
 			XAL = {
 				exists = yes
-				28 = { is_owned_by = XAL }
 			}
 		}
 
-		offset = {
-			x = -1
-			trigger = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					NOT = {
-						OR = {
-							has_completed_focus = XFR_dennounce_democracy
-							has_completed_focus = XFR_support_parliament
-						}
-					}
-				}
-			}
+		bypass = {
+			XAL = { has_government = fascism }
 		}
 
 		cost = 2
@@ -1935,7 +1473,6 @@
 			XAL = {
 				exists = yes
 				NOT = { has_war_with = ROOT }
-				has_opinion = { target = ROOT value > 49 }
 			}
 		}
 

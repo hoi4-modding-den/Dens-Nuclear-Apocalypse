@@ -18,10 +18,15 @@ set_technology = {
 }
 
 add_ideas = {
+	XFR_allow_women
 	XAL_burgundy_volunteers
+	partial_economic_mobilisation
 }
 
 recruit_character = XAL_military_junta
+recruit_character = XAL_josef_schuhmann
+recruit_character = XAL_otto_sommer
+recruit_character = XAL_jacque_anthoine
 
 add_opinion_modifier = {
 	target = XFR

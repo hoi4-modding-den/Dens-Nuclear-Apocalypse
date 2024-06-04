@@ -29,4 +29,27 @@ on_actions = {
 			100 = XFR_events.7 # 2236
 		}
 	}
+
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							XAL = { has_government = fascism }
+							XFR = { NOT = { has_government = fascism } }
+						}
+						AND = {
+							XFR = { has_government = fascism }
+							XAL = { NOT = { has_government = fascism } }
+						}
+					}
+				}
+				remove_opinion_modifier = {
+					target = XFR
+					modifier = XFR_supports_our_government
+				}
+			}
+		}
+	}
 }

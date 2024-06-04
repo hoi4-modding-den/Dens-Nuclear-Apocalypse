@@ -203,6 +203,10 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 65 40 110 }
 			}
+
+			XFR_german_revanchism = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {

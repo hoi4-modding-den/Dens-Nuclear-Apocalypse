@@ -1,10 +1,10 @@
 characters = {
 
 	XFR_parliament = {
-		name = "Burgundian Parliament"
+		name = XFR_parliament_name
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_XFR_parliament"
+				large = "GFX_portrait_POL_the_sejm"
 			}
 		}
 		country_leader = {
@@ -14,8 +14,25 @@ characters = {
 		}
 	}
 
+	XFR_herzog_julius = {
+		name = XFR_herzog_julius_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_herzog_julius"
+			}
+			army = {
+				large = "GFX_portrait_XFR_herzog_julius"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { XFR_herzog_von_burgund }
+			expire = "3000.1.1"
+		}
+	}
+
 	XFR_anarchists = {
-		name = "Anarchists"
+		name = XFR_anarchists_name
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_SPR_anarchist_commune"
