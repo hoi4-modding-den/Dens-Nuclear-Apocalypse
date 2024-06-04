@@ -808,6 +808,14 @@ add_resource = {
 				type = annex_everything
 				target = XAD
 			}
+        declare_war_on = {
+       target = XBC
+        type = annex_everything
+            }
+        declare_war_on = {
+       target = XHP
+        type = annex_everything
+            }
 
         
         }
@@ -826,8 +834,10 @@ add_resource = {
 
 
     completion_reward = {
-
-        #### War with italian anarchy tags #####
+			create_wargoal = {
+				type = annex_everything
+				target = XLA
+			}
 
         
         }
@@ -850,10 +860,6 @@ add_resource = {
 			create_wargoal = {
 				type = annex_everything
 				target = XCA
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = XAG
 			}
 			create_wargoal = {
 				type = annex_everything
@@ -1107,11 +1113,34 @@ add_resource = {
        target = XAR
         type = annex_everything
             }
+        declare_war_on = {
+       target = XBC
+        type = annex_everything
+            }
+        declare_war_on = {
+       target = XHP
+        type = annex_everything
+            }
         165 = {add_claim_by = XAD}            
         794 = {add_claim_by = XAD}   
         166 = {add_claim_by = XAD}   
         176 = {add_claim_by = XAD}   
-        791 = {add_claim_by = XAD}     
+        791 = {add_claim_by = XAD}  
+        172 = {add_claim_by = XAD}   
+        792 = {add_claim_by = XAD}   
+        793 = {add_claim_by = XAD}    
+        41 = {add_claim_by = XAD}   
+        175 = {add_claim_by = XAD}   
+        170 = {add_claim_by = XAD} 
+        788 = {add_claim_by = XAD}   
+        179 = {add_claim_by = XAD}   
+        795 = {add_claim_by = XAD} 
+        112 = {add_claim_by = XAD}   
+        181 = {add_claim_by = XAD}   
+        180 = {add_claim_by = XAD} 
+        171 = {add_claim_by = XAD}   
+        790 = {add_claim_by = XAD}   
+
         }
         
 
@@ -2690,7 +2719,7 @@ set_politics = {
     }
 
     completion_reward = {
-################################# modify after anarchy drops############################
+
         2 = {
             add_core_of = XIA
         }
@@ -2710,18 +2739,16 @@ set_politics = {
             add_core_of = XIA
         }
         XIA = {
-        transfer_state= 2
-        transfer_state= 849
-        transfer_state= 117
-        transfer_state= 162
-        transfer_state= 156
-        transfer_state= 157
-        transfer_state= 161
-        transfer_state= 158
-        transfer_state= 162
-        transfer_state= 735
+			create_wargoal = {
+				type = annex_everything
+				target = XLA
+			}
 
         }
+			create_wargoal = {
+				type = annex_everything
+				target = XLA
+			}
 
         
 
@@ -3101,7 +3128,7 @@ country_event = {
 
     completion_reward = {
 
-        ############ Re work when anarchy tags drop #######################
+
 
        declare_war_on = {
        target = XOO
@@ -3316,7 +3343,7 @@ country_event = {
     prerequisite = { focus = XSS_ardennes_push }
 
     completion_reward = {
-        ##################### Rework when Anarchy drops #############
+
       
       declare_war_on = {
        target = XFW
@@ -5499,12 +5526,12 @@ add_equipment_to_stockpile = {
     prerequisite = {focus = XSS_swiss_air  }
 
     completion_reward = {
-        ############ re-work anarchy
 
-        transfer_state = 158
-        transfer_state = 735
-        transfer_state = 161
-        transfer_state = 162     
+        declare_war_on = {
+       target = XLA
+        type = annex_everything
+            }
+  
 
         }
         
@@ -5545,47 +5572,13 @@ add_equipment_to_stockpile = {
         850 = {add_core_of = XSS}
         39 = {add_core_of = XSS}    
         153 = {add_core_of = XSS} 
-        }
-        
-
-    }
-
-
-    focus = {
-    id = XSS_road_to_rome
-    x = 80
-    y = 28
-    icon = GFX_focus_SOV_the_true_tsars
-    cost = 5
-    prerequisite = {focus = XSS_new_cantons  }
-
-
-    completion_reward = {
-       ########################### Anarchy rework ########################
-        transfer_state = 2
-
-        }
-        
-
-    }
-
-    focus = {
-    id = XSS_roman_cantons
-    x = 80
-    y = 29
-    icon = GFX_focus_SWE_socialist_reforms
-    cost = 2
-    prerequisite = {focus = XSS_road_to_rome  }
-
-
-    completion_reward = {
-       
         2 = {add_core_of = XSS}
-
         }
         
 
     }
+
+
 
 
     focus = {
@@ -7274,12 +7267,15 @@ annex_country = {
 
 
     completion_reward = {
-        ################ rework when anarchy ################
 
-        transfer_state = 158
-        transfer_state = 161
-        transfer_state = 162
-        transfer_state = 2
+
+      XLA = {
+        country_event = {
+        id = XSS_test_event.40
+        days = 1
+        random_hours = 12
+            }
+        }
 
 
 
