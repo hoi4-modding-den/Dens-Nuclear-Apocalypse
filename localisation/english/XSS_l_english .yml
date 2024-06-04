@@ -1547,3 +1547,55 @@ XSS_test_event.46.t:0 "End of Switzerland"
 XSS_test_event.46.desc:0 "Today Dammed King Éric decided to surrender to Burgundian Kingdom. Hope for Citizens of Switzerland is not yet lost though, as ex-enemies decided to become allies and started a revolution in Switzerland. Rote Armee, NSS and Green Army altrough weakend by civl war decided to rebel. First shots were fired in German city of Schwyz. They have continued their march on Bern. The King Éric was found weeping somewhere in forest not far away from Geneva."
 XSS_test_event.46.a:0 "We shall crush these Nazis!"
 
+
+
+XRM_war_with_swiss:0 "Great Independence War"
+XRM_war_with_swiss_desc:0 "Swiss were oppressing us for too long. To arms brothers."
+
+XRM_schwyz_defence:0 "Schwyz Defence"
+XRM_schwyz_defence_desc:0 "We have held Schwyz for long enough. Our soldiers will fortify the city."
+
+XRM_schwyz_partisans:0 "Schwyz Partisans"
+XRM_schwyz_partisans_desc:0 "Schwyz has fallen, but our brothers are still in the city."
+
+XRM_fortify_chur:0 "Chur Defence"
+XRM_fortify_chur_desc:0 "Schwyz has fallen. We must fortify our next major city."
+
+XRM_fortify_samnaun:0 "Last stand at Samnaun"
+XRM_fortify_samnaun_desc:0 "We have lost all of our main cities. Samnaun a small village in mountains will be our Moscow. We shall defend it to the last man."
+
+XRM_create_italian_battalions:0 "Create Italian Battalions"
+XRM_create_italian_battalions_desc:0 "We are in controll of Ticino. We shall conscript those who wish to join us."
+
+XRM_rally_men:0 "Rally men"
+XRM_rally_men_desc:0 "The war is needed to purify the generation. We shall rally the most man we can."
+
+XRM_victory_at_zurich:0 "Victory at Zurich"
+XRM_victory_at_zurich_desc:0 "We have captured Zurich. We shall fortify it for long defence."
+
+XRM_victory_at_lucerna:0 "Victory at Lucerna"
+XRM_victory_at_lucerna_desc:0 "Lucerna is ours we shall prepare plans for Bern offensive."
+
+XRM_warplans:0 "Warplans"
+XRM_warplans_desc:0 "To conquer Bern we need to create complicated warplans."
+
+XRM_bern_offensive:0 "Bern offensive"
+XRM_bern_offensive_desc:0 "We shall invade Bern. This will be our final offensive."
+
+XRM_bern_offensive_idea:0 "Bern offensive"
+XRM_bern_offensive_idea_desc:0 "We have 30 days to capture Bern otherwise we will be forced to dig up."
+
+XRM_peace:0 "Romansh have defended their independence."
+
+XRM_victory:0 "Victory"
+XRM_victory_desc:0 "We have fought well and Switzerland now needs to accept our peace."
+
+XRM_dig_up_trenches:0 "Dig up Trenches"
+XRM_dig_up_trenches_desc:0 "We have failed to capture Bern. We must settle down and wait the Swiss out."
+
+XRM_defeat_at_bern:0 "Defeat at Bern"
+XRM_defeat_at_bern_desc:0 "We haven't kept up with our advance. We were stopped at Bern and now we shall dig down and try to starve the Swiss out."
+
+XRM_victory_by_exhaustion:0 "Victory by exhaustion"
+XRM_victory_by_exhaustion_desc:0 "20 weeks and Switzerland will beg for peace. We must hold our home land till then."
+

@@ -787,6 +787,29 @@ ideas = {
             }
         }
 
+        XRM_bern_offensive_idea = {
+           removal_cost = -1
+            picture = ETH_peacekeeping_forces
+            modifier = {
+            weekly_manpower = 500 
+            conscription = 1
+            }
+                targeted_modifier = {
+                tag = XSS
+                 attack_bonus_against = 0.5
+                }
+        }
+        XRM_defeat_at_bern = {
+           removal_cost = -1
+            picture = chi_army_corruption3
+            modifier = {
+            offence = -0.8
+            defence = 1
+            conscription = 0.05
+            }
+
+        }
+
 
     }
 }

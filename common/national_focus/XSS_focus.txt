@@ -8795,3 +8795,340 @@ add_equipment_to_stockpile = {
 
 }
 
+focus_tree = {
+
+country = {
+    factor = 0
+    modifier = {
+        add = 20
+        original_tag = XRM
+    }
+}
+
+
+
+    focus = {
+    id = XRM_war_with_swiss
+    x = 20
+    y = 0
+    icon = GFX_focus_attack_switzerland
+    cost = 1
+    available = {has_war_with = XSS}
+    
+
+    completion_reward = {
+        
+        add_manpower = 1500
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_schwyz_defence
+    x = 15
+    y = 1
+    icon = GFX_goal_generic_fortify_city
+    cost = 2
+    available = {has_war_with = XSS controls_province = 11601}
+    prerequisite = {focus = XRM_war_with_swiss}
+
+    completion_reward = {
+        
+        151 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 11601
+                }
+
+        }      
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_schwyz_partisans
+    x = 17
+    y = 1
+    icon = GFX_focus_SWE_lottakoren
+    cost = 1
+    available = {has_war_with = XSS 
+    NOT = {controls_province = 11601}}
+    prerequisite = {focus = XRM_war_with_swiss}
+
+    completion_reward = {
+        
+        XSS = {
+        add_timed_idea = {
+        idea = XSS_romash_partisans_strong
+        days = 60
+                } 
+
+        }
+
+
+              
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_fortify_chur
+    x = 19
+    y = 1
+    icon = GFX_focus_SWE_varnplikt
+    cost = 3
+    available = {has_war_with = XSS controls_province = 658 NOT = {controls_province = 11601}}
+    prerequisite = {focus = XRM_war_with_swiss}
+
+    completion_reward = {
+        
+        151 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 658
+                }
+
+        } 
+
+
+              
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_fortify_samnaun
+    x = 21
+    y = 1
+    icon = GFX_focus_generic_manpower
+    cost = 3
+    available = {has_war_with = XSS  controls_province = 3660 NOT = {controls_province = 11601  controls_province = 658}}
+    prerequisite = {focus = XRM_war_with_swiss}
+
+    completion_reward = {
+                   
+        151 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 3660
+                }
+
+        } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_create_italian_battalions
+    x = 23
+    y = 1
+    icon = GFX_focus_ITA_italian_irredentism
+    cost = 5
+    available = {has_war_with = XSS controls_state = 846 }
+    prerequisite = {focus = XRM_war_with_swiss}
+
+    completion_reward = {
+                   
+        hidden_effect = {load_oob = "XSS_ITA"}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_rally_men
+    x = 25
+    y = 1
+    icon = GFX_focus_ITA_generic_fascist_workers
+    cost = 1
+    available = {has_war_with = XSS  }
+    prerequisite = {focus = XRM_war_with_swiss}
+
+    completion_reward = {
+                   
+        add_manpower = 4500
+
+        }
+        
+
+    }
+
+################# Victories at independence #############################
+
+    focus = {
+    id = XRM_victory_at_zurich
+    x = 20
+    y = 2
+    icon = GFX_focus_generic_workers_and_farmers_rise
+    cost = 2
+    available = {has_war_with = XSS  controls_province = 663 }
+    prerequisite = {focus = XRM_war_with_swiss}
+
+    completion_reward = {
+                   
+        3 = {
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 663
+                }
+
+        } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_victory_at_lucerna
+    x = 19
+    y = 3
+    icon = GFX_focus_POL_riot_of_37
+    cost = 2
+    available = {has_war_with = XSS  controls_province = 11604 }
+    prerequisite = {focus = XRM_victory_at_zurich}
+
+    completion_reward = {
+                   
+        3 = {
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 11604
+                }
+
+        } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_warplans
+    x = 21
+    y = 3
+    icon = GFX_focus_generic_treaty
+    cost = 2
+    available = {has_war_with = XSS }
+    prerequisite = {focus = XRM_victory_at_zurich}
+
+    completion_reward = {
+                   
+        add_ideas = {XSS_warplans_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_bern_offensive
+    x = 20
+    y = 4
+    icon = GFX_focus_generic_total_war
+    cost = 1
+    available = {has_war_with = XSS }
+    prerequisite = {focus = XRM_warplans focus = XRM_victory_at_lucerna}
+
+    completion_reward = {
+                   
+       add_timed_idea = {
+        idea = XRM_bern_offensive_idea
+        days = 30
+                }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_victory
+    x = 21
+    y = 5
+    icon = GFX_focus_generic_spread_fascism
+    cost = 0
+    available = {has_war_with = XSS  controls_province = 9620}
+    prerequisite = {focus = XRM_bern_offensive}
+    mutually_exclusive = {focus = XRM_dig_up_trenches }    
+    completion_reward = {
+                   
+white_peace = {
+    tag = XSS
+    message = XRM_peace
+}
+    846 = {add_core_of = XRM transfer_state_to = XRM}
+    3 = {    set_demilitarized_zone = yes }
+    847 = {    set_demilitarized_zone = yes}
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_dig_up_trenches
+    x = 19
+    y = 5
+    icon = GFX_focus_prc_infiltration
+    cost = 1
+    available = {has_war_with = XSS NOT = {controls_province = 9620 has_idea = XRM_bern_offensive_idea} }
+    prerequisite = {focus = XRM_bern_offensive}
+    mutually_exclusive = {focus = XRM_victory }
+
+    completion_reward = {
+
+        add_ideas = {XRM_defeat_at_bern}   
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_victory_by_exhaustion
+    x = 19
+    y = 6
+    icon = GFX_focus_SWE_varnplikt
+    cost = 20
+    available = {has_war_with = XSS controls_state = 151}
+    prerequisite = {focus = XRM_dig_up_trenches}
+
+    completion_reward = {
+white_peace = {
+    tag = XSS
+    message = XRM_peace
+}
+  remove_ideas = {XRM_defeat_at_bern}
+
+        }
+        
+
+    }
+
+
+
+
+
+}
+
