@@ -1,0 +1,28 @@
+XAD_military = { 
+	icon = GFX_idea_the_catalusian_army
+	
+	#Effects
+	
+	offence = XAD_re_offence 
+	defence = XAD_re_defence
+	army_morale_factor = XAD_re_army_morale_factor
+	breakthrough_factor = XAD_re_breakthrough_factor
+	max_planning_factor = XAD_re_max_planning_factor
+	org_loss_when_moving = XAD_re_org_loss_when_moving
+	planning_speed = XAD_re_planning_speed
+	army_org_factor = XAD_re_army_org_factor
+	army_speed_factor = XAD_re_army_speed_factor
+	conscription = XAD_re_conscription
+	training_time_factor = XAD_re_training_time_factor
+	political_power_cost = XAD_re_political_power_cost
+	production_speed_arms_factory_factor = XAD_re_production_speed_arms_factory_factor
+	# offence = -0.25
+	# defence = -0.25
+	# army_morale_factor = -0.10
+	# breakthrough_factor = -0.15
+	# max_planning_factor = -0.15
+	# org_loss_when_moving = -0.05
+	# planning_speed = -0.25
+	# army_org_factor = -0.10
+	# army_speed_factor = -0.15
+}

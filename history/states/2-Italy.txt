@@ -1,33 +1,16 @@
 state = {
 	id = 2
 	name = "STATE_2" # Latium
-manpower=1854647
+	manpower = 115667
 	
-	state_category = city
+	state_category = large_town
 
 	history = {
-		owner = LIB # ITA
+		owner = XLA
+		add_core_of = XLA
 		victory_points = { 9904 40 } #Rome
-		victory_points = { 11846 1 } #Anzio (was 5)
 		buildings = {
-			infrastructure = 4
-			#air_base = 8
-			#arms_factory = 1
-			#industrial_complex = 4
-			11751 = {
-				naval_base = 5
-			}
-			11846 = {
-				naval_base = 2
-			}
-		}
-		#add_core_of = ITA
-		#add_core_of = PAP
-		1939.1.1 = {
-			buildings = {
-				#arms_factory = 2
-				#industrial_complex = 5
-			}
+			infrastructure = 3
 		}
 	}
 

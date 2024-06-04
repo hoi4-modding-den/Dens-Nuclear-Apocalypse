@@ -1,0 +1,19 @@
+leader_traits = {
+	XLA_Altwigitian_Acolyte = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.05
+		war_support_factor = 0.1
+		stability_factor = -0.05
+		attrition = 0.05
+	}
+
+	XLA_Druidic = {
+		random = no
+		sprite = 13
+		democratic_drift = 0.05
+		stability_factor = 0.1
+		war_support_factor = -0.05
+		production_factory_efficiency_gain_factor = -0.05
+	}
+}

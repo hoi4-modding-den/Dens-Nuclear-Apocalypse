@@ -3,6 +3,25 @@
  LIB_DEF: "the Anarchy"
  LIB_ADJ: "Anarchy"
  
+ 
+ XIT_fascism:0 "Southern Italy"
+ XIT_fascism_DEF:0 "Southern Italian empire"
+ XIT_fascism_ADJ:0 "Italian"
+ XIT_democratic:0 "Republic of Southern Italy"
+ XIT_democratic_DEF:0 "The Republic of Southern Italy"
+ XIT_democratic_ADJ:0 "Italian"
+ XIT_neutrality:0 "Kingdom of Southern Italy"
+ XIT_neutrality_DEF:0 "Kingdom fo Southern Italy"
+ XIT_neutrality_ADJ:0 "Italian"
+ XIT_communism:0 "Peoples Republic of Southern Italy"
+ XIT_communism_DEF:0 "Peoples Republic of Southern Italy"
+ XIT_communism_ADJ:0 "Italian"
+ XIT:0 "Italy"
+ XIT_DEF:0 "Italy"
+ XIT_ADJ:0 "Italian"
+ XIT_subject:0 "$OVERLORDADJ$ $XIT$"
+ 
+ 
  XDK_fascism:0 "Danish Reich"
  XDK_fascism_DEF:0 "Danish Socialdemokratiske Reich"
  XDK_fascism_ADJ:0 "Danish"

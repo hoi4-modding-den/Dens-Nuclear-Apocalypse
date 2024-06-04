@@ -2,6 +2,10 @@ LIB = {
 	color = rgb { 1 1 1 }
 	color_ui = rgb { 1 1 1 }
 }
+XIT = {
+	color = rgb { 53 87 102 }
+	color_ui = rgb { 53 87 102 }
+}
 XAD = {
 	color = rgb { 51 204 51 }
 	color_ui = rgb { 51 204 51 }
@@ -9,6 +13,10 @@ XAD = {
 XAG = {
 	color = rgb { 105 115 145 }
 	color_ui = rgb { 105 115 145 }
+}
+XAP = {
+	color = rgb { 192 192 192 }
+	color_ui = rgb { 192 192 192 }
 }
 XAQ = {
 	color = rgb { 58 151 29 }

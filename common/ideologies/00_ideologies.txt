@@ -37,7 +37,12 @@ ideologies = {
 			XHP_corrupt_democracy = {
 				can_be_randomly_selected = no
 				color = { 41 39 66 }
-			}		
+			}
+			
+			XLA_fey = {
+				can_be_randomly_selected = no
+				color = { 60 115 65 }
+			}
 				
 		}
 
@@ -192,7 +197,16 @@ ideologies = {
 			XRP_american_supremacism = {
 				can_be_randomly_selected = no
 				color = { 0 20 137 }
-			} 			
+			} 
+
+			XLA_mages = {
+				can_be_randomly_selected = no
+				color = { 65 40 110 }
+			}
+
+			XFR_german_revanchism = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
@@ -258,6 +272,11 @@ ideologies = {
 
 			XFR_military_government  = {
 				can_be_randomly_selected = no
+			}
+
+			XLA_council = {
+				can_be_randomly_selected = no
+				color = { 220 215 165 }
 			}
 		}
 

@@ -1,15 +1,57 @@
 spriteTypes = {
 
+    # Ideology
+
+    spriteType = {
+        name = "GFX_ideology_XFR_despotism"
+        texturefile = "gfx/interface/ideologies/XFR_despotism_haus_burgund.png"
+    }
+
+    spriteType = {
+        name = "GFX_ideology_anarchist_communism"
+        texturefile = "gfx/interface/ideologies/anarchism.dds"
+    }
+
     # Portraits
 
     spriteType = {
         name = "GFX_portrait_XFR_parliament"
-        texturefile = "gfx/leaders/XFR/portrait_XFR_parliament.dds"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_parliament.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_herzog_julius"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_herzog_julius.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_jacob_d_amboise"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_jacob_d_amboise.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_gabriel_moreau"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_gabriel_moreau.dds"
     }
 
     spriteType = {
         name = "GFX_portrait_XAL_military_gov"
         texturefile = "gfx/leaders/XAL/portrait_XAL_military_gov.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XAL_josef_schuhmann"
+        texturefile = "gfx/leaders/XAL/portrait_XAL_josef_schuhmann.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XAL_otto_sommer"
+        texturefile = "gfx/leaders/XAL/portrait_XAL_otto_sommer.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XAL_jacque_anthoine"
+        texturefile = "gfx/leaders/XAL/portrait_XAL_jacque_anthoine.dds"
     }
 
 }
