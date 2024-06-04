@@ -1,0 +1,15 @@
+leader_traits = {
+
+	XIT_king = {
+		random = no
+		political_power_factor = 0.1
+        local_non_core_manpower = 0.23
+		war_support_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+}

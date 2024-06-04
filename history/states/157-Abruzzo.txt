@@ -7,13 +7,13 @@ manpower=1986223
 	state_category = city
 
 	history = {
-		owner = LIB # ITA
+		owner = XIT
 		victory_points = {
 			925 1 
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
-			#industrial_complex = 1
+			industrial_complex = 1
 			925 = {
 				naval_base = 4
 			}
@@ -21,8 +21,7 @@ manpower=1986223
 				naval_base = 1
 			}
 		}
-		#add_core_of = ITA
-		#add_core_of = PAP
+		add_core_of = XIT
 	}
 
 	provinces = {
