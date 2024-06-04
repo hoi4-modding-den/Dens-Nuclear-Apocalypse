@@ -2040,8 +2040,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_to_variable = {
+					var = XAD_re_production_speed_arms_factory_factor
+					value = 0.15
 				}
+				custom_effect_tooltip = XAD_insufficent_industry_variable
+			}
 		}
 		focus = {
 			id = XAD_develop_industry_in_casablanca
@@ -2072,8 +2076,15 @@
 			 
 	
 			completion_reward = {
-				
+				789 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
 				}
+			}
 		}
 		focus = {
 			id = XAD_develop_industry_in_tablina
@@ -2104,8 +2115,15 @@
 			 
 	
 			completion_reward = {
-				
+				179 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
 				}
+			}
 		}
 		focus = {
 			id = XAD_develop_in_mililla
@@ -2137,8 +2155,15 @@
 			 
 	
 			completion_reward = {
-				
+				173 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
 				}
+			}
 		}
 		focus = {
 			id = XAD_develop_in_marrakech
@@ -2170,8 +2195,15 @@
 			 
 	
 			completion_reward = {
-				
+				167 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
 				}
+			}
 		}
 		focus = {
 			id = XAD_develop_in_ceuta
@@ -2203,8 +2235,15 @@
 			 
 	
 			completion_reward = {
-				
+				169 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
 				}
+			}
 		}
 		focus = {
 			id = XAD_build_forts_in_the_north
@@ -2237,8 +2276,18 @@
 			 
 	
 			completion_reward = {
-				
+				every_owned_state = {			
+					add_building_construction = {
+  					type = bunker
+    				level = 2
+    				instant_build = yes
+   						province = {
+        					all_provinces = yes
+        					limit_to_border = yes
+    					}
+					}
 				}
+			}
 		}
 		focus = {
 			id = XAD_supply_in_the_north
@@ -2269,8 +2318,15 @@
 			 
 	
 			completion_reward = {
-				
+				179 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 11851
+					}
 				}
+			}
 		}
 		focus = {
 			id = XAD_better_guns
@@ -2302,8 +2358,8 @@
 			 
 	
 			completion_reward = {
-				
-				}
+				add_ideas = XAD_better_guns
+			}
 		}
 		focus = {
 			id = XAD_cheaper_guns
@@ -2335,8 +2391,8 @@
 			 
 	
 			completion_reward = {
-				
-				}
+				add_ideas = XAD_cheaper_guns
+			}
 		}
 		focus = {
 			id = XAD_better_artillery
@@ -2367,7 +2423,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_better_artillery
 				}
 		}
 		focus = {
@@ -2399,8 +2455,8 @@
 			 
 	
 			completion_reward = {
-				
-				}
+				add_ideas = XAD_cheaper_artillery	
+			}
 		}
 		focus = {
 			id = XAD_develop_tanks
@@ -2431,7 +2487,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_developing_tanks
 				}
 		}
 		focus = {
@@ -2463,8 +2519,8 @@
 			 
 	
 			completion_reward = {
-				
-				}
+				add_ideas = XAD_trucks
+			}
 		}
 		focus = {
 			id = XAD_horrible_tactic_problem

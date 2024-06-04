@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_XNE_propoganda"
+		texturefile = "gfx/XNE/XNE_propoganda.dds"
+	}
+	spriteType = {
 		name = "GFX_Portrait_XNE_communist"
 		texturefile = "gfx/leaders/XNE/Portrait_XNE_communist.dds"
 	}
