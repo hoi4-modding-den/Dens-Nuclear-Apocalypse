@@ -3095,8 +3095,9 @@
 	
 	focus = {
 		id = XNE_police_state
-    	icon = GFX_focus_generic_national_security
+    	icon = GFX_focus_NORDIC_com_army
     	prerequisite = { focus = XNE_the_ministry_of_truth }
+    	prerequisite = { focus = XNE_the_ministry_of_peace }
     	x = 1
     	y = 1
     	relative_position_id = XNE_the_ministry_of_truth
@@ -3113,7 +3114,339 @@
     	available_if_capitulated = yes
     	
     	completion_reward = {
-			add_ideas = XNE_policy_state_i
+			add_ideas = XNE_police_state_idea
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_internal_election_tampering
+    	icon = GFX_focus_NORDIC_com_institution_2
+    	prerequisite = { focus = XNE_the_ministry_of_truth }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_the_ministry_of_truth
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_stability = 0.05
+			add_command_power = 50
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_mandatory_9_hour_shifts
+    	icon = GFX_focus_NORDIC_com_selector_civilian
+    	prerequisite = { focus = XNE_the_ministry_of_plenty }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_the_ministry_of_plenty
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_add_civ = yes
+			XNE_add_mil = yes
+			XNE_add_civ = yes
+			XNE_add_mil = yes
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_saturday_schools
+    	icon = GFX_focus_NORDIC_com_capstone_research
+    	prerequisite = { focus = XNE_the_ministry_of_love }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_the_ministry_of_love
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_ideas = XNE_saturday_schools_idea
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_controlled_media
+    	icon = GFX_focus_NORDIC_com_capstone_materiel
+    	prerequisite = { focus = XNE_the_ministry_of_love }
+    	prerequisite = { focus = XNE_the_ministry_of_peace }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_the_ministry_of_peace
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 10000
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_minimum_wage
+    	icon = GFX_focus_NORDIC_com_capstone_materiel
+    	prerequisite = { focus = XNE_saturday_schools focus = XNE_mandatory_9_hour_shifts }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_saturday_schools
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_ideas = XNE_minimum_wage_idea
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_social_division
+    	icon = GFX_focus_NORDIC_com_selector_army
+    	prerequisite = { focus = XNE_police_state }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_police_state
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_unified_state }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			swap_ideas = {
+				remove_idea = XNE_police_state_idea
+				add_idea = XNE_division_state
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_heavy_factories
+    	icon = GFX_focus_NORDIC_com_materiel
+    	prerequisite = { focus = XNE_minimum_wage }
+    	prerequisite = { focus = XNE_mandatory_9_hour_shifts }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_minimum_wage
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_add_mil = yes
+			XNE_add_mil = yes
+			XNE_add_mil = yes
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_unified_state
+    	icon = GFX_focus_NORDIC_com_institution_1
+    	prerequisite = { focus = XNE_police_state }
+    	prerequisite = { focus = XNE_controlled_media }
+    	x = 2
+    	y = 1
+    	relative_position_id = XNE_police_state
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_social_division }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			swap_ideas = {
+				remove_idea = XNE_police_state_idea
+				add_idea = XNE_unified_state_idea
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_national_icons
+    	icon = GFX_focus_NORDIC_com_selector_material
+    	prerequisite = { focus = XNE_unified_state }
+    	prerequisite = { focus = XNE_saturday_schools }
+    	x = 2
+    	y = 1
+    	relative_position_id = XNE_unified_state
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			swap_ideas = {
+				remove_idea = XNE_unified_state_idea
+				add_idea = XNE_icon_state_idea
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_competitive_focus
+    	icon = GFX_focus_NORDIC_com_form_alliance
+    	prerequisite = { focus = XNE_social_division }
+    	prerequisite = { focus = XNE_internal_election_tampering }
+    	x = -2
+    	y = 1
+    	relative_position_id = XNE_social_division
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			swap_ideas = {
+				remove_idea = XNE_division_state
+				add_idea = XNE_competitive_focus_idea
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_collective_technocracy
+    	icon = GFX_focus_NORDIC_com_selector_research
+    	prerequisite = { focus = XNE_social_division focus = XNE_unified_state }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_social_division
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_research_slot = 1
     	}
     	
     	ai_will_do = {
