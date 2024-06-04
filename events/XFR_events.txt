@@ -165,6 +165,10 @@ country_event = { # XFR wants to annex XAL
         name = XFR_events.6.b
         ai_chance = {
             base = 1
+            modifier = {
+                add = 2
+                has_idea = neutrality_idea
+            }
         }
         XFR = { country_event = { id = XFR_events.8 days = 1 } }
         effect_tooltip = {

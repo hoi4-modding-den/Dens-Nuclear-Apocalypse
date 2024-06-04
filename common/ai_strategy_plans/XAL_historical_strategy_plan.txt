@@ -1,0 +1,67 @@
+XAL_historical_plan = {
+	name = "Alsatian historical plan"
+	desc = "Historical behavior for Alsace-Lorraine"
+
+	allowed = {
+		original_tag = XAL
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = XAL_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = XAL_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = XAL_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		# Do whenever possible 
+		XAL_military_government
+		XAL_fortify_alsace_lorraine
+		XAL_increase_political_freedoms
+		XAL_ensure_council_leadership
+		
+		XAL_improve_relations
+		XAL_extend_military_support
+
+		XAL_international_trade
+		XAL_finalize_infrastructure_projects
+
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		XAL_request_closer_cooperation = 0
+		XAL_alsatian_neutrality = 0
+		
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

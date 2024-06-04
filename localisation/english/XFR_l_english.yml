@@ -498,6 +498,19 @@ XFR_news_events.2.t: "Centre Crisis escalates!"
 XFR_news_events.2.desc: "After not managing to keep back the mutants roaming the Centre region, the [XFR.GetAdjective] Government has made the decision to permanently erase mutants from France once and for all. They have detonated large amounts of explosives all across [24.GetCapitalVictoryPointName], the nest of the creatures. While the fallout from the explosion will probably stay for a long time, the [XFR.GetAdjective] Government has not made any further announcement about the state of Centre."
 XFR_news_events.2.a: "How irresponsible."
 
+# Game Rules
+
+XAL_ai_behavior: "@XAL Alsacian Territories"
+RULE_OPTION_HISTORICAL_XAL_AI_DESC: "Alsace keeps the Junta in charge. They will neither approach Burgundy directly nor declare neutrality."
+RULE_OPTION_FASCIST_XAL_AI_DESC: "The Nationalists stage a coup and eventually attack the Rhineland."
+RULE_OPTION_DEM_NEUTRAL: "Democracy - Neutrality"
+RULE_DEM_NEUTRAL_XAL_AI_DESC: "Alsace transitions into a democratic regime. They will declare neutrality."
+RULE_OPTION_DEM_PUPPET: "Democracy - Protection"
+RULE_DEM_PUPPET_XAL_AI_DESC: "Alsace transitions into a democratic regime. They will ask for Protection from Burgundy."
+RULE_OPTION_MIL_NEUTRAL: "Military Junta - Neutrality"
+RULE_MIL_NEUTRAL_XAL_AI_DESC: "Alsace keeps the Junta in charge. They will declare neutrality."
+RULE_OPTION_MIL_PUPPET: "Military Junta - Protection"
+RULE_MIL_PUPPET_XAL_AI_DESC: "Alsace keeps the Junta in charge. They will ask for Protection from Burgundy."
 
 # Bookmark
 
