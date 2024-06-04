@@ -1,0 +1,320 @@
+ideas = {
+	aircraft_manufacturer = {
+
+		XAP_ideas_delegat_council_for_heavy_aircraft_manufacturing = {
+			picture = XAP_ideas_delegat_council_for_heavy_aircraft_manufacturing-644346
+			traits = {
+				 heavy_aircraft_manufacturer
+			}
+			available = {
+				original_tag = XAP
+			}
+		}
+
+	}
+	country = {
+
+		XAP_ideas_militant_anarchy = {
+			picture = XAP_ideas_militant_anarchy-1792
+			modifier = {
+				conscription_factor = 0.1
+
+
+training_time_factor = -0.3
+
+army_core_attack_factor = 0.1
+
+army_core_defence_factor = 0.1
+			}
+		}
+
+		XAP_ideas_sowing_anarchy = {
+			picture = XAP_ideas_sowing_anarchy-2116
+			modifier = {
+				local_non_core_manpower = 0.9
+
+
+starting_compliance = 0.3
+
+resistance_growth = -0.3
+
+
+			}
+		}
+
+		XAP_ideas_clerical_resistance = {
+			picture = XAP_ideas_clerical_resistance-122545
+			modifier = {
+				        political_power_factor = -0.3
+	stability_factor = -0.15
+	stability_weekly = -0.01
+	war_support_weekly = -0.01
+
+
+			}
+		}
+
+		XAP_ideas_underground_clerical_resistance = {
+			picture = XAP_ideas_underground_clerical_resistance-122545
+			modifier = {
+				
+	stability_factor = -0.05
+
+	political_power_cost = -0.1
+
+			}
+		}
+
+		XAP_ideas_organized_iconoclasm = {
+			picture = XAP_ideas_organized_iconoclasm-643188
+			modifier = {
+				stability_factor = -0.35
+
+
+			}
+		}
+
+		XAP_ideas_faithless_soceity = {
+			picture = XAP_ideas_faithless_soceity-1091
+			modifier = {
+				research_speed_factor = 0.1
+
+political_power_gain = 0.5
+
+
+			}
+		}
+
+		XAP_ideas_the_freed_human_spirit = {
+			picture = XAP_ideas_the_freed_human_spirit-643173
+			modifier = {
+				stability_weekly = 0.01
+
+political_power_gain = 0.75
+
+research_speed_factor = 0.1
+			}
+		}
+
+		XAP_ideas_promoted_polygamy = {
+			picture = XAP_ideas_promoted_polygamy-1463
+			modifier = {
+				monthly_population = 0.3
+
+stability_weekly = 0.005
+
+
+			}
+		}
+
+		XAP_ideas_deconstruction_of_genderoles = {
+			picture = XAP_ideas_deconstruction_of_genderoles-643193
+			modifier = {
+				recruitable_population_factor = 0.1
+
+stability_weekly = 0.003
+
+
+			}
+		}
+
+		XAP_ideas_statist_remnants = {
+			picture = XAP_ideas_statist_remnants-1227
+			modifier = {
+				stability_weekly = -0.01
+
+political_power_cost = 0.5
+
+
+			}
+		}
+
+		XAP_ideas_anarchist_thinking = {
+			picture = XAP_ideas_anarchist_thinking-645174
+			modifier = {
+				stability_weekly = 0.005
+
+political_power_gain = 0.25
+			}
+		}
+
+		XAP_ideas_common_statist_thinking = {
+			picture = XAP_ideas_common_statist_thinking-643827
+			modifier = {
+				stability_weekly = -0.005
+
+political_power_cost = 0.25
+			}
+		}
+
+		XAP_ideas_a_place_for_everyone = {
+			picture = XAP_ideas_a_place_for_everyone-644346
+			modifier = {
+				weekly_manpower = 1000 
+
+war_support_weekly = 0.01
+
+
+			}
+		}
+
+		XAP_ideas_very_militant_anarchy = {
+			picture = XAP_ideas_very_militant_anarchy-1792
+			modifier = {
+				conscription_factor = 0.15
+
+
+training_time_factor = -0.5
+
+army_core_attack_factor = 0.15
+
+army_core_defence_factor = 0.15
+
+			}
+		}
+
+		XAP_ideas_extremly_militant_anarchy = {
+			picture = XAP_ideas_extremly_militant_anarchy-1793
+			modifier = {
+				conscription_factor = 0.1
+
+
+training_time_factor = -0.3
+
+army_core_attack_factor = 0.1
+
+army_core_defence_factor = 0.1
+			}
+		}
+
+		XAP_ideas_ultra_militant_anarchy = {
+			picture = XAP_ideas_ultra_militant_anarchy-1793
+			modifier = {
+				conscription_factor = 0.2
+
+training_time_factor = -0.7
+
+army_core_attack_factor = 0.10
+
+army_core_defence_factor = 0.10
+army_org_factor = 0.1
+
+army_attack_factor = 0.1
+
+army_defence_factor = 0.1
+
+			}
+		}
+
+		XAP_ideas_communal_child_upbringing = {
+			picture = XAP_ideas_communal_child_upbringing-643184
+		}
+
+		XAP_ideas_overt_clerical_resistance = {
+			picture = XAP_ideas_overt_clerical_resistance-122545
+			modifier = {
+				political_power_factor = -0.5
+	stability_factor = -0.2
+	stability_weekly = -0.02
+	war_support_weekly = -0.02
+
+
+
+			}
+		}
+
+	}
+	high_command = {
+
+		XAP_ideas_delegated_council_of_concealment_specialist = {
+			picture = XAP_ideas_delegated_council_of_concealment_specialist-643173
+			ledger = army
+			traits = {
+				 army_concealment_1
+			}
+			available = {
+				original_tag = XAP
+			}
+		}
+
+	}
+	naval_manufacturer = {
+
+		XAP_ideas_delegat_council_for_submarine_production = {
+			picture = XAP_ideas_delegat_council_for_submarine_production-643173
+			traits = {
+				 submarine_specialist
+			}
+		}
+
+	}
+	political_advisor = {
+
+		XAP_ideas_delegated_council_for_intelligence = {
+			picture = XAP_ideas_delegated_council_for_intelligence-644346
+			traits = {
+				 compassionate_gentleman
+			}
+			allowed = {
+				XAP = {
+	has_intelligence_agency = yes
+
+
+}
+
+			}
+			available = {
+				original_tag = XAP
+			}
+		}
+
+		XAP_ideas_council_for_minority_representation = {
+			picture = XAP_ideas_council_for_minority_representation-644346
+			available = {
+				original_tag = XAP
+			}
+			modifier = {
+				political_power_gain = 0.3
+
+
+stability_weekly_factor = 0.2
+
+
+			}
+			on_add = {
+				add_stability = -0.1
+
+
+
+			}
+		}
+
+	}
+	tank_manufacturer = {
+
+		XAP_ideas_delegated_council_of_tank_enthusiast = {
+			picture = XAP_ideas_delegated_council_of_tank_enthusiast-644346
+			traits = {
+				 infantry_tank_manufacturer
+			}
+			available = {
+				original_tag = XAP
+
+
+			}
+		}
+
+	}
+	theorist = {
+
+		XAP_ideas_council_of_delegat_theorist = {
+			picture = XAP_ideas_council_of_delegat_theorist-643173
+			traits = {
+				 council_of_theorists
+			}
+			available = {
+				original_tag = XAP
+			}
+		}
+	}
+}
