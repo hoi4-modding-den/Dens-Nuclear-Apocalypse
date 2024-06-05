@@ -865,6 +865,22 @@ ideas = {
                send_volunteer_size = 5
             }
         }
+        XRM_ANARCHISM = {
+           removal_cost = -1
+            picture = SPR_anarchist_society
+            modifier = {
+               stability_weekly = -0.01
+            }
+        }
+
+        XRM_ANARCHISM_no_borders_idea = {
+           removal_cost = -1
+            picture = SPR_anarchist_society
+            modifier = {
+               stability_weekly = -0.01
+               justify_war_goal_time = -1
+            }
+        }
 
 
 

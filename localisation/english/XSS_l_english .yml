@@ -6,6 +6,7 @@
  XRM:0 "Romanchia"
  XRM_DEF:0 "Romanchia"
  XRM_ADJ:0 "Romansh"
+ XRM_neutrality:0 "Anarchist Romanchia"
 
  XRA:0 "Rote Armee"
  XRA_DEF:0 "Rote Armee"
@@ -17,6 +18,12 @@
 
  XRM_fascism_party:0 "Grüne Armee"
  XRM_fascism_party_long:0 "Grüne Armee"
+ XRM_democratic_party:0 "Chur Parlament"
+ XRM_democratic_party_long:0 "Chur Parlament"
+ XRM_communism_party:0 "ANS"
+ XRM_communism_party_long:0 "Anti-Nuclear Society"
+ XRM_neutrality_party:0 "AF"
+ XRM_neutrality_party_long:0 "Anarchist Federation"
 
  XSS_communism_party:0 "KP/SSA/RA"
  XSS_communism_party_long:0 "Kommunistische Partei/Schweizerische Sozialisten und Arbeitergewerkschaft/Rote Armee"
@@ -1653,4 +1660,28 @@ XRM_demilitarize_government:0 "Demilitarize Government"
 XRM_demilitarize_government_desc:0 "Romanchia is free. It no longer needs Green army to control the country and now our great leader needs to lead country like a politician not a soldier."
 
 
+XRM_independece_peacefully:0 "Independence"
+XRM_independece_peacefully_desc:0 "Our peaceful independence efforts payed out. We have not been torn by war nor suffered much. Now Romanchia will rise in their new climate."
 
+
+XRM_ANARCHISM:0 "Anarchist Society"
+XRM_ANARCHISM_desc:0 "Freedom for all."
+
+XRM_anarchy_in_romanchia:0 "Anarchy in Romanchia"
+XRM_anarchy_in_romanchia_desc:0 "Direct democracy is what doomed Switzerland. We shall abolish our chains and liberate workers."
+
+XRM_steady_path:0 "Steady path"
+XRM_steady_path_desc:0 "We shall continue with our politics of direct democracy."
+
+XRM_arms_communes:0 "Arms Communes"
+XRM_arms_communes_desc:0 "We shall encourage some communes to start development of weapons."
+
+XRM_improve_romansh_spirit_anarchist:0 "Improve Romansh Spirit"
+XRM_improve_romansh_spirit_anarchist_desc:0 "We shall bring anarchism to the world and not limit ourselfs to Switzerland."
+
+XRM_anarchism_no_borders:0 "Anarchism knows no borders"
+XRM_anarchism_no_borders_desc:0 "We shall spread anarchy around wastelands."
+
+
+XRM_ANARCHISM_no_borders_idea:0 "Anarchist Society"
+XRM_ANARCHISM_no_borders_idea_desc:0 "Freedom for all."

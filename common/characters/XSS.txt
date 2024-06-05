@@ -345,6 +345,68 @@ corps_commander = {
 }
 
 	}
+	XRM_senat = {
+		name = "Parlament"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ITA_cln"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {   }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+
+
+	}
+	XRM_anarchy = {
+		name = "Rosamunda Verde"
+		portraits = {
+			civilian = {
+				large = "GFX_RAJ_lakshmi_sahgal"
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			traits = {  transnational_anarchist }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+corps_commander = {
+    skill = 3
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 1
+    logistics_skill = 4
+}
+
+
+	}
+	XRM_moritz = {
+		name = "Oscar Moritz"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_TUR_sefik_husnu"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {   }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+corps_commander = {
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+}
+
+
+	}
 ################# Back to normal ################################
 
 	XSS_industrial_circle = {

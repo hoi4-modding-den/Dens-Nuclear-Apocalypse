@@ -1,6 +1,9 @@
 capital = 151
 
 recruit_character = XRM_bohr
+recruit_character = XRM_senat
+recruit_character = XRM_anarchy
+recruit_character = XRM_moritz
 
 add_ideas = {
 
