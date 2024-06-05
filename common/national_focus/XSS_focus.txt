@@ -9179,7 +9179,20 @@ white_peace = {
     y = 8
     icon = GFX_goal_generic_national_unity
     cost = 1
-    available = {has_war = no has_government = fascism NOT = {has_completed_focus = XRM_independece_peacefully}}
+    available = {has_war = no has_government = fascism 
+    OR = {
+    AND = {
+    NOT = {has_completed_focus = XRM_independece_peacefully has_completed_focus = XRM_war_with_burgundy}        
+    }
+
+    AND = {
+    NOT = {has_completed_focus = XRM_independece_peacefully } has_completed_focus = XRM_war_with_burgundy  
+    has_completed_focus = XRM_beaten_but_not_destroyed       
+    }
+      
+    }
+ 
+    has_completed_focus = XRM_war_with_swiss}
 
 
     completion_reward = {
@@ -9398,13 +9411,8 @@ add_trait = {
     icon = GFX_focus_ARG_defense_and_democracy
     cost = 1
     available = {has_war = no 
-    OR = {
-        has_government = democratic 
-        has_government = neutrality 
-        has_government = communism 
-    }
     
-    NOT = { has_completed_focus = XRM_peace_at_last}}
+    NOT = { has_completed_focus = XRM_peace_at_last has_completed_focus = XRM_war_with_swiss}}
     mutually_exclusive = {focus = XRM_steady_path}
 
     completion_reward = {
@@ -9671,6 +9679,280 @@ set_politics = {
         }
 
 
+        }
+        
+
+    }
+########################## Burgundy war ##############################
+    focus = {
+    id = XRM_war_with_burgundy
+    x = 35
+    y = 0
+    icon = GFX_goal_generic_defence
+    cost = 1
+    available = {has_war_with = XFR}
+    
+
+    completion_reward = {
+        
+        army_experience = 50
+
+        }
+        
+
+    }
+    focus = {
+    id = XRM_defend_bern
+    x = 36
+    y = 1
+    icon = GFX_goal_generic_national_unity
+    cost = 2
+    available = {has_war_with = XFR controls_province = 9620}
+    prerequisite = {focus = XRM_war_with_burgundy}
+    mutually_exclusive = {focus = XRM_romansh_offensive }
+    completion_reward = {
+        
+        add_timed_idea = {
+        idea = XRM_bern_defence
+        days = 60
+                }         
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_romansh_offensive
+    x = 34
+    y = 1
+    icon = GFX_goal_generic_major_war
+    cost = 2
+    available = {has_war_with = XFR }
+    prerequisite = {focus = XRM_war_with_burgundy}
+    mutually_exclusive = {focus = XRM_defend_bern }
+
+    completion_reward = {
+        add_timed_idea = {
+        idea = XRM_romansh_offensive_idea
+        days = 60
+                }          
+       
+
+        }
+        
+
+    }
+    focus = {
+    id = XRM_fortify_geneva
+    x = 35
+    y = 2
+    icon = GFX_goal_generic_fortify_city
+    cost = 2
+    available = {has_war_with = XFR controls_province = 6666}
+    prerequisite = {focus = XRM_romansh_offensive focus = XRM_defend_bern}
+
+    completion_reward = {
+       
+        845 = {
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 6666
+                }
+
+        }       
+
+        }
+        
+
+    }
+    focus = {
+    id = XRM_desperate_measures
+    x = 35
+    y = 3
+    icon = GFX_focus_SOV_penal_battalions
+    cost = 1
+    available = {has_war_with = XFR }
+    prerequisite = {focus = XRM_fortify_geneva }
+
+    completion_reward = {
+       
+        hidden_effect = { load_oob = "PenalBattalions" }
+
+        }
+        
+
+    }
+    focus = {
+    id = XRM_dig_up_trenches_fr
+    x = 35
+    y = 4
+    icon = GFX_focus_generic_workers_and_farmers_rise
+    cost = 5
+    available = {has_war_with = XFR NOT = {controls_province = 9620}}
+    prerequisite = {focus = XRM_desperate_measures }
+
+    completion_reward = {
+       
+        add_ideas = {XRM_defeat_at_bern}
+
+        }
+        
+
+    }
+    focus = {
+    id = XRM_beaten_but_not_destroyed
+    x = 35
+    y = 5
+    icon = GFX_focus_generic_population_growth
+    cost = 20
+    available = {has_war_with = XFR NOT = {controls_province = 9620} controls_state = 151}
+    prerequisite = {focus = XRM_dig_up_trenches_fr }
+
+    completion_reward = {
+       
+white_peace = {
+    tag = XFR
+    message = XRM_peace_fr
+}
+3 = {transfer_state_to = XFR}
+remove_ideas = {XRM_defeat_at_bern}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_kill_king
+    x = 32
+    y = 1
+    icon = GFX_focus_SWE_liquidate_the_monarchy
+    cost = 5
+    available = {has_war_with = XFR }
+    prerequisite = {focus = XRM_war_with_burgundy}
+
+    completion_reward = {
+        XSS ={
+                    retire_character = XSS_e_burgund
+        }
+
+        add_war_support = 1
+        }
+        
+
+    }
+    focus = {
+    id = XRM_rally_italians
+    x = 30
+    y = 1
+    icon = GFX_focus_ITA_italian_irredentism
+    cost = 2
+    available = {has_war_with = XFR NOT={has_completed_focus = XRM_create_italian_battalions} controls_state = 846}
+    prerequisite = {focus = XRM_war_with_burgundy}
+
+    completion_reward = {
+                hidden_effect = { load_oob = "XSS_ITA" }
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_ratify_united_front
+    x = 38
+    y = 1
+    icon = GFX_focus_prc_infiltration
+    cost = 1
+    available = {has_war_with = XFR }
+    prerequisite = {focus = XRM_war_with_burgundy}
+
+    completion_reward = {
+
+    swap_ideas = {
+        add_idea = XRM_ratified_united_front
+        remove_idea = XRM_romansh_spirit
+    }
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_capture_besancon
+    x = 40
+    y = 1
+    icon = GFX_focus_SWI_embrace_panoramaheim
+    cost = 5
+    available = {has_war_with = XFR controls_state = 975}
+    prerequisite = {focus = XRM_war_with_burgundy}
+
+    completion_reward = {
+
+        975 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 9642
+                }
+
+        }
+        
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_victory_at_besancon
+    x = 39
+    y = 2
+    icon = GFX_focus_SWE_varnplikt
+    cost = 1
+    available = {has_war_with = XFR controls_state = 975}
+    prerequisite = {focus = XRM_capture_besancon}
+    prerequisite = {focus = XRM_ratify_united_front}
+
+    completion_reward = {
+white_peace = {
+    tag = XFR
+    message = XRM_peace_fr
+}
+    845 = {add_core_of = XRM transfer_state_to = XRM}
+    975 = {transfer_state_to = XRM}
+    17 = {set_demilitarized_zone = yes}
+    	every_owned_state = { 
+            remove_core_of = XFR
+         }
+         hidden_effect = {975 = {add_core_of = XFR}}
+            remove_ideas = {XRM_defeat_at_bern}
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XRM_white_peace_with_burgundy
+    x = 32
+    y = 2
+    icon = GFX_focus_SOV_organization_centralization_discipline
+    cost = 20
+    available = {has_war_with = XFR controls_state = 845 has_completed_focus = XRM_ratify_united_front}
+    prerequisite = {focus = XRM_kill_king}
+
+    completion_reward = {
+
+white_peace = {
+    tag = XFR
+    message = XRM_peace_fr
+}
+    845 = {add_core_of = XRM transfer_state_to = XRM}
+        remove_ideas = {XRM_defeat_at_bern}
         }
         
 

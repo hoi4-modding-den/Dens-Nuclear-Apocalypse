@@ -1339,6 +1339,11 @@ annex_country = {
         846 = {transfer_state_to = XRM add_core_of = XRM}
         151 = {transfer_state_to = XRM}
         XRM = {
+        set_party_name = {
+        ideology = fascism
+        long_name = "Alpine Unity Front"
+        name = "AUF"
+            }
         load_oob = "GreenArmy"
         load_oob = "RoteArmee_civilwar"
         load_oob = "XSS_freikorps"

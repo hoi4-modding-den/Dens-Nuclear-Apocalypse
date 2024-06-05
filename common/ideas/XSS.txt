@@ -881,6 +881,33 @@ ideas = {
                justify_war_goal_time = -1
             }
         }
+        XRM_bern_defence = {
+           removal_cost = -1
+            picture = generic_shield_against_communism
+            modifier = {
+               defence = 0.3
+            }
+        }
+        XRM_romansh_offensive_idea = {
+           removal_cost = -1
+            picture = CZE_planning_bonus
+            modifier = {
+               offence = 0.3
+            }
+        }
+
+        XRM_ratified_united_front = {
+           removal_cost = -1
+            picture = ger_revive_the_kaiserreich
+            modifier = {
+
+                conscription = 0.1
+                surrender_limit = 1
+                army_core_attack_factor = 0.2
+                army_core_defence_factor = 0.3
+            }
+
+        }
 
 
 
