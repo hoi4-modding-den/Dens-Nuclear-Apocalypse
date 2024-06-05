@@ -800,6 +800,7 @@ add_resource = {
 				type = annex_everything
 				target = XPY
 			}
+
 			create_wargoal = {
 				type = annex_everything
 				target = XAR
@@ -808,14 +809,18 @@ add_resource = {
 				type = annex_everything
 				target = XAD
 			}
-        declare_war_on = {
-       target = XBC
-        type = annex_everything
-            }
-        declare_war_on = {
-       target = XHP
-        type = annex_everything
-            }
+			create_wargoal = {
+				type = annex_everything
+				target = XBC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XHP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XGL
+			}
 
         
         }
@@ -1123,6 +1128,10 @@ add_resource = {
             }
         declare_war_on = {
        target = XHP
+        type = annex_everything
+            }
+        declare_war_on = {
+       target = XGL
         type = annex_everything
             }
         165 = {add_claim_by = XAD}            
@@ -4796,6 +4805,14 @@ set_power_balance = {
             } 
        declare_war_on = {
        target = XBC
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XHP
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XGL
         type = annex_everything
             } 
 
