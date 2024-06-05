@@ -8,14 +8,17 @@ state = {
 	history = {
 		owner = XLA
 		add_core_of = XLA
-		victory_points = { 9904 40 } #Rome
+		victory_points = { 9904 20 } #Rome
+		victory_points = {
+			6862 5
+		}
 		buildings = {
 			infrastructure = 3
 		}
 	}
 
 	provinces = {
-		923 6862 9794 9904 11751 11846 11882
+		6862 9794 9904 11751
  	}
 
 	local_supplies = 0.0 
