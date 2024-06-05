@@ -1,8 +1,8 @@
 regional_balance_gui_initial = {
 	# Each state gets one vote. Subject to change.
-	add_to_array = { regional_balance_seat_array = 2 } # Neutrals
-	add_to_array = { regional_balance_seat_array = 4 } # Spiritualists
-	add_to_array = { regional_balance_seat_array = 3 } # Altwigitans
+	add_to_array = { regional_balance_seat_array = 3 } # Neutrals
+	add_to_array = { regional_balance_seat_array = 8 } # Spiritualists
+	add_to_array = { regional_balance_seat_array = 6 } # Altwigitans
 
 	add_to_array = { regional_balance_member_array = 1 } # Neutrals
 	add_to_array = { regional_balance_member_array = 2 } # Spiritualists
@@ -150,24 +150,58 @@ clear_regional_balance_gui_arrays = {
 }
 
 regional_balance_gui_positions = {
-	add_to_array = { regional_balance_x_array = 0 } # 1
-	add_to_array = { regional_balance_y_array = 23 }
-	add_to_array = { regional_balance_x_array = 10 } # 2
-	add_to_array = { regional_balance_y_array = 23 }
-	add_to_array = { regional_balance_x_array = 8 } # 3
-	add_to_array = { regional_balance_y_array = 12 }
-	add_to_array = { regional_balance_x_array = 20 } # 4
-	add_to_array = { regional_balance_y_array = 15 }
-	add_to_array = { regional_balance_x_array = 20 } # 5
+	## Neutrals
+	# 1
+	add_to_array = { regional_balance_x_array = 0 }
+	add_to_array = { regional_balance_y_array = 45 }
+	# 2
+	add_to_array = { regional_balance_x_array = 13 }
+	add_to_array = { regional_balance_y_array = 45 }
+	# 3
+	add_to_array = { regional_balance_x_array = 26 }
+	add_to_array = { regional_balance_y_array = 45 }
+	## Spiritualists
+	# 1 (4)
+	add_to_array = { regional_balance_x_array = 9 }
+	add_to_array = { regional_balance_y_array = 24 }
+	# 2 (5)
+	add_to_array = { regional_balance_x_array = 22 }
+	add_to_array = { regional_balance_y_array = 28 }
+	# 3 (6)
+	add_to_array = { regional_balance_x_array = 27 }
+	add_to_array = { regional_balance_y_array = 10 }
+	# 4 (7)
+	add_to_array = { regional_balance_x_array = 39 }
+	add_to_array = { regional_balance_y_array = 32 }
+	# 5 (8)
+	add_to_array = { regional_balance_x_array = 39 }
+	add_to_array = { regional_balance_y_array = 19 }
+	# 6 (9)
+	add_to_array = { regional_balance_x_array = 49 }
 	add_to_array = { regional_balance_y_array = 5 }
-	add_to_array = { regional_balance_x_array = 33 } # 6
-	add_to_array = { regional_balance_y_array = 5 }
-	add_to_array = { regional_balance_x_array = 33 } # 7
-	add_to_array = { regional_balance_y_array = 15 }
-	add_to_array = { regional_balance_x_array = 45 } # 8
-	add_to_array = { regional_balance_y_array = 12 }
-	add_to_array = { regional_balance_x_array = 45 } # 9
-	add_to_array = { regional_balance_y_array = 30 }
-	add_to_array = { regional_balance_x_array = 33 } # 10
-	add_to_array = { regional_balance_y_array = 30 }
+	# 7 (10)
+	add_to_array = { regional_balance_x_array = 59 }
+	add_to_array = { regional_balance_y_array = 19 }
+	# 8 (11)
+	add_to_array = { regional_balance_x_array = 59 }
+	add_to_array = { regional_balance_y_array = 32 }
+	## Altwigitians
+	# 1 (12)
+	add_to_array = { regional_balance_x_array = 71 }
+	add_to_array = { regional_balance_y_array = 10 }
+	# 2 (13)
+	add_to_array = { regional_balance_x_array = 75 }
+	add_to_array = { regional_balance_y_array = 28 }
+	# 3 (14)
+	add_to_array = { regional_balance_x_array = 89 }
+	add_to_array = { regional_balance_y_array = 24 }
+	# 4 (15)
+	add_to_array = { regional_balance_x_array = 72 }
+	add_to_array = { regional_balance_y_array = 45 }
+	# 5 (16)
+	add_to_array = { regional_balance_x_array = 85 }
+	add_to_array = { regional_balance_y_array = 45 }
+	# 6 (17)
+	add_to_array = { regional_balance_x_array = 98 }
+	add_to_array = { regional_balance_y_array = 45 }
 }

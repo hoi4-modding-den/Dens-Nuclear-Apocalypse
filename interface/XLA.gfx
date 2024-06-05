@@ -35,7 +35,7 @@ spriteTypes = {
 	# Regional Balance
 	spriteType = {
 		name = "GFX_regional_balance_party_icon"
-		texturefile = "gfx/interface/parliament_parties.dds"
+		texturefile = "gfx/interface/XLA_regional_balance_factions.dds"
 		noOfFrames = 3 # number of parties you have in the gfx file
 	}
 	spriteType = {
