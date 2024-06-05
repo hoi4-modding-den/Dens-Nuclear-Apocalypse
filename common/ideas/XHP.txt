@@ -1,0 +1,39 @@
+ideas = {
+	country = {
+		idea_XHP_crusader_crisis = {
+			picture = XHP_crusader_crisis
+			modifier = {
+				stability_factor = -0.25
+				consumer_goods_factor = 0.1
+				army_org_factor = -0.2
+				army_morale_factor = -0.1
+			}
+		}
+	}
+	country = {
+		idea_XHP_chaotic_military = {
+			picture = XHP_chaotic_military
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				breakthrough_factor = -0.05
+			}
+		}
+		idea_XHP_chaotic_military1 = { # Padded armor
+			picture = XHP_chaotic_military
+			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+			}
+		}
+		idea_XHP_chaotic_military2 = { # Numbers
+			picture = XHP_chaotic_military
+			modifier = {
+				army_org_factor = 0.15
+				army_attack_factor = 0.05
+				breakthrough_factor = -0.15
+			}
+		}
+	}
+}

@@ -1,0 +1,228 @@
+#	focus = {
+#		id = PRC_
+#		icon = GFX_goal_unknown
+#		prerequisite = { focus = }
+#		#mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+focus_tree = {
+	id = XHP_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = XHP
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 3000 }
+
+
+
+	### Fuck the Crusaders :P
+	focus = {
+		id = XHP_quell_the_crusaders
+		icon = GFX_focus_XHP_quell
+		mutually_exclusive = { focus = XHP_offer_concessions }
+		x = 20
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		immediate = {
+			hidden_effect = {
+				174 = {
+					set_demilitarized_zone = yes
+				}
+			}
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = {
+				extensive_conscription
+			}
+		}
+	}
+
+	focus = {
+		id = XHP_crack_into_reserves
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = XHP_quell_the_crusaders }
+		x = 0
+		y = 1
+		relative_position_id = XHP_quell_the_crusaders
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = XHP
+			}
+		}
+	}
+	focus = {
+		id = XHP_pad_the_armor
+		icon = GFX_focus_XHP_pad
+		prerequisite = { focus = XHP_crack_into_reserves }
+		mutually_exclusive = { focus = XHP_our_faith_in_numbers }
+		x = 1
+		y = 1
+		relative_position_id = XHP_crack_into_reserves
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = idea_XHP_chaotic_military
+				add_idea = idea_XHP_chaotic_military1
+			}
+		}
+	}
+	focus = {
+		id = XHP_our_faith_in_numbers
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = XHP_crack_into_reserves }
+		mutually_exclusive = { focus = XHP_pad_the_armor }
+		x = -2
+		y = 1
+		relative_position_id = XHP_crack_into_reserves
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = idea_XHP_chaotic_military
+				add_idea = idea_XHP_chaotic_military2
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	### #### Offering Concessions
+	focus = {
+		id = XHP_offer_concessions
+		icon = GFX_focus_XHP_cc_concessions
+		mutually_exclusive = { focus = XHP_quell_the_crusaders }
+		x = 30
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		immediate = {
+			hidden_effect = {
+				174 = {
+					set_demilitarized_zone = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+}
