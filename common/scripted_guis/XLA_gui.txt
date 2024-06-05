@@ -26,12 +26,12 @@ scripted_gui = {
 
 		effects = {
 			regional_balance_modify_button_control_click = {
-				set_temp_variable = { temp_member = rbf }
+				set_temp_variable = { temp_member = v }
 				set_temp_variable = { temp_seats = 5 }
 				modify_regional_balance_seat = yes
 			}
 			regional_balance_modify_button_shift_click = {
-				set_temp_variable = { temp_member = rbf }
+				set_temp_variable = { temp_member = v }
 				set_temp_variable = { temp_seats = -5 }
 				modify_regional_balance_seat = yes
 			}
@@ -39,15 +39,15 @@ scripted_gui = {
 
 		properties = {
 			regional_balance_main_icon = {
-				frame = rbf
+				frame = v
 			}
 			regional_balance_semicircle_main_icon = {
-				frame = rbf
+				frame = v
 				x = regional_balance_x_array^regional_balance_main_index
 				y = regional_balance_y_array^regional_balance_main_index
 			}
 			regional_balance_member_icon = {
-				frame = rbf
+				frame = v
 			}
 		}
 	}

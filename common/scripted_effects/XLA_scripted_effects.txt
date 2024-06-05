@@ -166,4 +166,8 @@ regional_balance_gui_positions = {
 	add_to_array = { regional_balance_y_array = 15 }
 	add_to_array = { regional_balance_x_array = 45 } # 8
 	add_to_array = { regional_balance_y_array = 12 }
+	add_to_array = { regional_balance_x_array = 45 } # 9
+	add_to_array = { regional_balance_y_array = 30 }
+	add_to_array = { regional_balance_x_array = 33 } # 10
+	add_to_array = { regional_balance_y_array = 30 }
 }
