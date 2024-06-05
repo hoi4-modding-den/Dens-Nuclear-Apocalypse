@@ -12,7 +12,19 @@ XAD_military = {
 	planning_speed = XAD_re_planning_speed
 	army_org_factor = XAD_re_army_org_factor
 	army_speed_factor = XAD_re_army_speed_factor
-	
+	conscription = XAD_re_conscription
+	training_time_factor = XAD_re_training_time_factor
+	political_power_cost = XAD_re_political_power_cost
+	production_speed_arms_factory_factor = XAD_re_production_speed_arms_factory_factor
+	modifier_army_sub_unit_camelry_attack_factor = XAD_re_modifier_army_sub_unit_camelry_attack_factor
+	modifier_army_sub_unit_camelry_defence_factor = XAD_re_modifier_army_sub_unit_camelry_defence_factor
+	modifier_army_sub_unit_camelry_speed_factor = XAD_re_modifier_army_sub_unit_camelry_speed_factor
+	acclimatization_hot_climate_gain_factor = XAD_re_acclimatization_hot_climate_gain_factor
+	heat_attrition_factor = XAD_re_heat_attrition_factor
+	supply_consumption_factor = XAD_re_supply_consumption_factor
+	modifier_army_sub_unit_mountaineers_defence_factor = XAD_re_modifier_army_sub_unit_mountaineers_defence_factor
+	special_forces_cap = XAD_re_special_forces_cap
+	modifier_army_sub_unit_mountaineers_max_org_factor = XAD_re_modifier_army_sub_unit_mountaineers_max_org_factor
 	# offence = -0.25
 	# defence = -0.25
 	# army_morale_factor = -0.10
@@ -22,4 +34,12 @@ XAD_military = {
 	# planning_speed = -0.25
 	# army_org_factor = -0.10
 	# army_speed_factor = -0.15
+	#modifier_army_sub_unit_camelry_attack_factor = 0.75
+	#modifier_army_sub_unit_camelry_defence_factor = 0.75
+	#modifier_army_sub_unit_camelry_speed_factor = 0.75
+	#heat_attrition_factor = 0.15
+	#acclimatization_hot_climate_gain_factor = 0.25
+	#add_to_variable = { ITA_re_special_forces_cap = 0.02 }
+	#add_to_variable = { ITA_re_modifier_army_sub_unit_mountaineers_defence_factor = 0.03 }
+	#add_to_variable = { ITA_re_modifier_army_sub_unit_mountaineers_max_org_factor = 0.05 }
 }

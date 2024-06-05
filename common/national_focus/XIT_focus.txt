@@ -1,0 +1,54 @@
+﻿focus_tree = {
+	id = XIT_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XIT
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+
+			focus = {
+		id = political_start
+		icon = political_start
+		x = 2 
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		cost = 10
+		prerequisite = { focus = expand_the_economy }
+
+
+		available = {
+			#NOT = { is_in_faction_with = USA }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+		
+				ai_will_do = {
+			}
+		}
+
+
+
+
+
+
+}

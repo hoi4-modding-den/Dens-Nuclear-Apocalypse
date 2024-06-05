@@ -130,7 +130,7 @@ ideas = {
 
         XRM_romansh_spirit = {
            removal_cost = -1
-            picture = ger_revive_the_kaiserreich
+            picture = hol_liberation
             modifier = {
 
                 conscription = 0.1
@@ -229,7 +229,7 @@ ideas = {
         }
         XSS_warplans_idea = {
            removal_cost = -1
-            picture = cze_planning_bonus
+            picture = CZE_planning_bonus
             modifier = {
                 planning_speed = 0.15
                 max_planning = 0.05
@@ -786,6 +786,86 @@ ideas = {
 
             }
         }
+
+        XRM_bern_offensive_idea = {
+           removal_cost = -1
+            picture = ETH_peacekeeping_forces
+            modifier = {
+            weekly_manpower = 500 
+            conscription = 1
+            }
+                targeted_modifier = {
+                tag = XSS
+                 attack_bonus_against = 0.5
+                }
+        }
+        XRM_defeat_at_bern = {
+           removal_cost = -1
+            picture = chi_army_corruption3
+            modifier = {
+            offence = -0.8
+            defence = 1
+            conscription = 0.05
+            }
+
+        }
+        XRM_cheap_housing_idea = {
+           removal_cost = -1
+            picture = SWE_folkhemmet
+            modifier = {
+			political_power_gain = -0.15
+            monthly_population = 0.1
+            }
+        }
+        XRM_neutrality_idea = {
+           removal_cost = -1
+            picture = generic_army_problems
+            modifier = {
+               join_faction_tension = 1
+               justify_war_goal_time = 5
+               enemy_justify_war_goal_time = 5
+               annex_cost_factor = 5
+            }
+        }
+        XRM_romansh_spirit_2 = {
+           removal_cost = -1
+            picture = hol_liberation
+            modifier = {
+
+                conscription = 0.05
+                production_speed_buildings_factor = 0.1
+                surrender_limit = 1
+                army_core_attack_factor = 0.15
+                army_core_defence_factor = 0.3
+            }
+
+        }
+        XRM_civil_war_studies = {
+           removal_cost = -1
+            picture = sour_loser
+            modifier = {
+
+            }
+                targeted_modifier = {
+                tag = XSS
+                attack_bonus_against = 0.35
+                defense_bonus_against = 0.5
+                }
+        }
+        XRM_neutrality_idea_2 = {
+           removal_cost = -1
+            picture = usa_desegregation_1
+            modifier = {
+               join_faction_tension = 1
+               justify_war_goal_time = 5
+               enemy_justify_war_goal_time = 5
+               annex_cost_factor = 5
+               send_volunteer_divisions_required = -1
+               send_volunteers_tension = -1
+               send_volunteer_size = 5
+            }
+        }
+
 
 
     }

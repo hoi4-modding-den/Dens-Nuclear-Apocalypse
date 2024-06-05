@@ -43,6 +43,7 @@ if = {
 set_variable = { var = XFR_mutant_hunt_progress value = 0 }
 
 add_ideas = {
+	XFR_allow_women
 	closed_economy
 	XFR_chaos_in_centre
 }
@@ -62,6 +63,9 @@ set_variable = { var = XFR_industry_monthly_population value = 0 }
 
 recruit_character = XFR_anarchists
 recruit_character = XFR_parliament
+recruit_character = XFR_herzog_julius
+recruit_character = XFR_gabriel_moreau
+recruit_character = XFR_jacob_d_amboise
 
 set_politics = {
 	ruling_party = democratic
@@ -71,9 +75,10 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 78
-	fascism = 18
+	fascism = 17
+	communism = 1
 	neutrality = 4
 }
 
-set_stability = 0.3
+set_stability = 0.4
 set_war_support = 0.5

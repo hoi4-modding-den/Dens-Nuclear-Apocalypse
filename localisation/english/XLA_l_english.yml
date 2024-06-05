@@ -1,12 +1,15 @@
 ﻿l_english:
+ ## Country Names
  XLA:0 "The Lost Tribes of Arnmouth"
  XLA_DEF:0 "The Lost Tribes of Arnmouth"
  XLA_ADJ:0 "Arnmouthen"
  
+ ## Parties
  XLA_neutrality_party:0 "The Elder's Council"
  XLA_democratic_party:0 "Spiritual Alliance"
  XLA_fascism_party:0 "The Altwigite Order"
 
+ ## Ideologies
  # Democratic
  XLA_fey:0 "Spiritualist"
  XLA_fey_desc:0 "The Spiritualist Faction belives that the world has gone astray ever since the return of modern civilization. The Spiritualists believe that returning back to how the world once was prior to the founding of any great Kingdoms or Empires will bring about inner harmony and peace for everyone. The Spiritualists are deeply connected with nature, and strongly support ecological efforts. The Spiritualists are strongly opposed to the Altwigitians."
@@ -17,5 +20,36 @@
  XLA_council:0 "Councilitte"
  XLA_council_desc:0 "The Councilittes is a faction that maintains order within the Lost Tribes. The Councillites are composed of 8 members from across the union, with one being elected as their Chairperson and International Representative for a given time. The Councillites believe in keeping the status quo, while trying to balance the demands of the Spiritualists and Altwigitians."
 
+ ## Leader Traits
  XLA_Altwigitian_Acolyte:0 "Altwigitian Acolyte"
  XLA_Druidic:0 "Druidic Connections"
+
+
+ ## States
+ STATE_162:0 "Auctermunty" # Neutral
+ STATE_978:0 "Orlesari" # Spiritualist
+ STATE_2:0 "Galhlond" # Spiritualist
+ STATE_979:0 "Nobblemoor" # Altwigitian
+ STATE_980:0 "Ferndochty" # Neutral
+ STATE_981:0 "Esve Themar" # Spiritualist
+ STATE_161:0 "Esve Lenmar" # Spiritualist
+ STATE_158:0 "Pludenn" # Altwigitian
+ STATE_982:0 "Vexvale" # Altwigitian
+
+ ## VPs
+ # Neutrals
+ VICTORY_POINTS_11833:0 "Auctermunty"
+ VICTORY_POINTS_9907:0 "Lysa"
+ # Spiritualists
+ VICTORY_POINTS_923:0 "Sylhneas"
+ VICTORY_POINTS_9904:0 "Sinya Roma"
+ VICTORY_POINTS_6862:0 "Rasenoris"
+ VICTORY_POINTS_782:0 "Nyfhil"
+ VICTORY_POINTS_9924:0 "Handiac"
+ VICTORY_POINTS_3976:0 "Arangorn"
+ # Altwigitians
+ VICTORY_POINTS_910:0 "Daradin"
+ VICTORY_POINTS_6780:0 "Kinevale"
+ VICTORY_POINTS_6635:0 "Charvale"
+ VICTORY_POINTS_3772:0 "Nubbikport"
+ VICTORY_POINTS_771:0 "Kammora" 

@@ -1,4 +1,31 @@
 ideas = {
+    hidden_ideas = {
+		XFR_allow_women = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			
+			}
+
+			removal_cost = -1
+			
+            rule = {
+                can_generate_female_aces = yes
+                can_generate_female_country_leaders = yes
+                can_generate_female_unit_leaders = yes
+            }
+
+			modifier = {
+				
+			}
+		}
+		
+	}
     country = {
 
         XFR_chaos_in_centre = {

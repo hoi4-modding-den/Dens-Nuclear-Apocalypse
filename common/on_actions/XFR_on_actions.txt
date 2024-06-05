@@ -1,4 +1,92 @@
 on_actions = {
+
+	on_startup = {
+		effect = {
+			XAL = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = XAL_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = XAL_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						10 = {
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_unaligned = no
+							}
+							XAL = {
+								set_country_flag = XAL_AI_RANDOM_HISTORICAL
+								set_add_unaligned_game_weight_large = yes
+							}
+						}
+						20 = {
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_fascist = no
+							}
+							XAL = {
+								set_country_flag = XAL_AI_RANDOM_FASCIST
+								set_add_fascist_game_weight_large = yes
+							}
+						}
+						15 = {
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_democratic = no
+							}
+							XAL = {
+								set_country_flag = XAL_AI_RANDOM_DEM_NEUTRAL
+								set_add_democratic_game_weight_large = yes
+							}
+						}
+						20 = {
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_democratic = no
+							}
+							XAL = {
+								set_country_flag = XAL_AI_RANDOM_DEM_PUPPET
+								set_add_democratic_game_weight_large = yes
+							}
+						}
+						15 = {
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_unaligned = no
+							}
+							XAL = {
+								set_country_flag = XAL_AI_RANDOM_MIL_NEUTRAL
+								set_add_unaligned_game_weight_large = yes
+							}
+						}
+						20 = {
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_unaligned = no
+							}
+							XAL = {
+								set_country_flag = XAL_AI_RANDOM_MIL_PUPPET
+								set_add_unaligned_game_weight_large = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
 	on_state_control_changed = {
 		effect = {
 			if = {
@@ -27,6 +115,29 @@ on_actions = {
 	on_new_term_election = {
 		random_events = {
 			100 = XFR_events.7 # 2236
+		}
+	}
+
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							XAL = { has_government = fascism }
+							XFR = { NOT = { has_government = fascism } }
+						}
+						AND = {
+							XFR = { has_government = fascism }
+							XAL = { NOT = { has_government = fascism } }
+						}
+					}
+				}
+				remove_opinion_modifier = {
+					target = XFR
+					modifier = XFR_supports_our_government
+				}
+			}
 		}
 	}
 }

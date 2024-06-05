@@ -5,11 +5,29 @@
  
  XBC_fascism:0 "Euskal Herria"
  
- XBC_history_desc:0 "Basque el funny"
+ XBC_history_desc:0 "Despite being oficially disbanded in 2018, the ETA has survived in the underground, and after the Apocalypse has established a free and independent Basque state. For over a century it was able to maintain an isolationst, auhoritarian government. However, a wind of change can be felt in the Pyrenees. The ETA is now split into various factions, ranging from communist Left to ultranationalist Right. There is also a vocal group of democratic activists, who wish to abolish the dictatorship and stop the repressions of Spanish people. Time will tell, which vision of a Basque state shall emerge victorious…"
  
  XBC_neutrality_party:0 "ETA-Centroa"
  XBC_fascism_party:0 "ETA-Ezkubidea"
  XBC_communism_party:0 "ETA-Ezkerra"
- XBC_democratic_party:0 "EHAD"
+ XBC_democratic_party:0 "Liga Democrática"
+ 
+ # Ideas
+ 
+ XBC_unrest_in_navarre_1:0 "Unrest in Navarre"
+ XBC_unrest_in_navarre_2:0 "Unrest in Navarre"
+ XBC_unrest_in_navarre_3:0 "Unrest in Navarre"
+ XBC_unrest_in_navarre_4:0 "Unrest in Navarre"
+ 
+ # Focus
+ 
+ XBC_future_of_the_basque_country:0 "Future of the Basque Country"
+ XBC_expanding_the_basque_army:0 "Expanding the Basque Army"
+ XBC_developing_our_lands:0 "Developing our Lands"
+ XBC_opening_to_the_world:0 "Opening to the World"
+ XBC_the_spanish_question:0 "The Spanish Question"
+ XBC_the_economic_direction:0 "The Economic Direction"
+ XBC_our_new_leader:0 "Our New Leader"
+ XBC_rein_in_pamplona:0 "Rein in Pamplona"
  
  

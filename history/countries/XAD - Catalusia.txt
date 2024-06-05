@@ -87,7 +87,7 @@ add_ideas = {
 	XAD_remember_ceuta
 	XAD_impending_communist_coup
 	XAD_devided_lenguage
-	
+
 }
 
 add_dynamic_modifier = { modifier = XAD_military }
@@ -120,11 +120,46 @@ XAD = {
 	set_variable = {
 		XAD_re_army_speed_factor = -0.15
 	}
+	set_variable = {
+		XAD_re_conscription = 0
+	}
+	set_variable = {
+		XAD_re_training_time_factor = 0.30
+	}
+	set_variable = {
+		XAD_re_political_power_cost = 0
+	}
+	set_variable = {
+		XAD_re_production_speed_arms_factory_factor = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_camelry_attack_factor = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_camelry_defence_factor = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_camelry_speed_factor = 0
+	}
+	set_variable = {
+		XAD_re_acclimatization_hot_climate_gain_factor = 0
+	}
+	set_variable = {
+		XAD_re_heat_attrition_factor = 0
+	}
+	set_variable = {
+		XAD_re_supply_consumption_factor = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_mountaineers_defence_factor = 0
+	}
+	set_variable = {
+		XAD_re_special_forces_cap = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_mountaineers_max_org_factor = 0
+	}
 }
-
-
-
-
 
 
 

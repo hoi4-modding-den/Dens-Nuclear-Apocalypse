@@ -118,7 +118,7 @@
 		id = XAL_request_closer_cooperation
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = XAL_improve_relations }
-		mutually_exclusive = { focus = XAL_alsacian_neutrality }
+		mutually_exclusive = { focus = XAL_alsatian_neutrality }
 		x = 0
 		y = 2
 		relative_position_id = XAL_improve_relations
@@ -514,7 +514,7 @@
 	}
 
 	focus = {
-		id = XAL_alsacian_neutrality
+		id = XAL_alsatian_neutrality
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = XAL_restore_democracy focus = XAL_ensure_council_leadership }
 		mutually_exclusive = { focus = XAL_request_closer_cooperation }
@@ -761,6 +761,15 @@
 			swap_ideas = {
 				remove_idea = XAL_memories_of_the_reich_idea
 				add_idea = XAL_delusions_of_grandeur_idea
+			}
+			add_trait = {
+     			character = XAL_josef_schuhmann
+     			ideology = XFR_german_revanchism
+     			trait = XAL_regent_of_germany
+			}
+			add_named_threat = {
+    			threat = 5
+    			name = XAL_delusions_of_grandeur
 			}
 		}
 	}
@@ -1042,6 +1051,10 @@
 					level = 1
 					instant_build = yes
 				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 1000
 			}
 			add_tech_bonus = {
 				name = XAL_military_modernisation

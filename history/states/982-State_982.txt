@@ -1,0 +1,28 @@
+state = {
+	id = 982
+	name = "STATE_982"
+	state_category = town
+	manpower=71664
+
+	history = {
+		owner = XLA
+		add_core_of = XLA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			dockyard = 1
+		}
+
+		victory_points = {
+			3772 20
+		}
+
+		victory_points = {
+			771 5
+		}
+	}
+
+	provinces = {
+		770 771 3772 6788 11721 11723 11891
+	}
+}

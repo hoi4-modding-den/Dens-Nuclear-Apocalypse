@@ -264,7 +264,26 @@ ideas = {
 				global_building_slots_factor = 0.1
 			}			
 		}
-		XNE_police_state_i = {
+		XNE_minimum_wage_idea = {
+			picture = man_five_year_plan_industry
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				stability_factor = -0.05
+			}			
+		}
+		XNE_police_state_idea = {
 			picture = generic_spy_political
 			
 			allowed = {
@@ -278,9 +297,106 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				drift_defence_factor = 0.35
-				stability_weekly_factor = 0.003
+				drift_defence_factor = 0.15
 				party_popularity_stability_factor = 0.1
+			}			
+		}
+		XNE_unified_state_idea = {
+			picture = generic_spy_political
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.15
+				stability_weekly = 0.002
+				party_popularity_stability_factor = 0.1
+			}			
+		}
+		XNE_icon_state_idea = {
+			picture = generic_spy_political
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.15
+				stability_weekly = 0.002
+				party_popularity_stability_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}			
+		}
+		XNE_division_state = {
+			picture = generic_spy_political
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.15
+				political_power_factor = 0.25
+				party_popularity_stability_factor = 0.1
+			}			
+		}
+		XNE_competitive_focus_idea = {
+			picture = generic_spy_political
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.15
+				political_power_factor = 0.25
+				party_popularity_stability_factor = 0.1
+				global_building_slots = 1
+				industry_free_repair_factor = 0.25
+			}			
+		}
+		XNE_saturday_schools_idea = {
+			picture = jap_duplicate_research
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.025
+				conscription = 0.025
 			}			
 		}
 		

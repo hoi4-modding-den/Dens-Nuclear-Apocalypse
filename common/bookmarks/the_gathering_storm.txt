@@ -37,6 +37,16 @@ bookmarks = {
 		"XNE" = {
 			ideology = democratic
 			history = "XNE_bookmark_history"
+			focuses = {
+				XNE_escalate_tensions_with_mercia
+				XNE_federation_of_the_british_isles
+				XNE_colchester_vault
+			}
+			ideas = {
+				XNE_internal_conflict
+				XNE_tensions_on_the_trent
+				XNE_minimum_wage_idea
+			}
 		}		
 		"XGE" = {
 			ideology = communism
@@ -171,7 +181,17 @@ bookmarks = {
 				
 			}
 			ideas = {
-				
+				XBC_unrest_in_navarre_2
+			}
+		}
+			"XIT" = {
+			ideology = neutrality
+			history = "for fun"
+			focuses = {
+			
+			}
+			ideas = {
+			
 			}
 		}
 

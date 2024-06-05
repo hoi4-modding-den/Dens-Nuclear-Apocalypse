@@ -1,0 +1,311 @@
+XAL_dem_neutral_plan = {
+	name = "Alsatian Democratic+Neutrality plan"
+	desc = "Democratic behavior for Alsace-Lorraine, will stay neutral"
+
+	allowed = {
+		original_tag = XAL
+	}
+	enable = {
+		OR = {
+			has_country_flag = XAL_AI_RANDOM_DEM_NEUTRAL
+			has_game_rule = {
+				rule = XAL_ai_behavior
+				option = XAL_DEM_NEUTRAL
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		# Do whenever possible 
+		XAL_military_government
+		XAL_fortify_alsace_lorraine
+		XAL_increase_political_freedoms
+		XAL_restore_democracy
+		XAL_alsatian_neutrality
+		
+		XAL_improve_relations
+		XAL_extend_military_support
+
+		XAL_international_trade
+		XAL_finalize_infrastructure_projects
+		
+
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+XAL_dem_puppet_plan = {
+	name = "Alsatian Democratic + Puppet plan"
+	desc = "Democratic behavior for Alsace-Lorraine, will become puppet"
+
+	allowed = {
+		original_tag = XAL
+	}
+	enable = {
+		OR = {
+			has_country_flag = XAL_AI_RANDOM_DEM_PUPPET
+			has_game_rule = {
+				rule = XAL_ai_behavior
+				option = XAL_DEM_PUPPET
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		# Do whenever possible 
+		XAL_military_government
+		XAL_fortify_alsace_lorraine
+		XAL_increase_political_freedoms
+		XAL_restore_democracy
+		
+		XAL_improve_relations
+		XAL_extend_military_support
+
+		XAL_request_closer_cooperation
+
+		XAL_international_trade
+		XAL_finalize_infrastructure_projects
+		
+
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+XAL_mil_neutral_plan = {
+	name = "Alsatian Military Gov + Neutrality plan"
+	desc = "Non-Aligned behavior for Alsace-Lorraine, will stay neutral"
+
+	allowed = {
+		original_tag = XAL
+	}
+	enable = {
+		OR = {
+			has_country_flag = XAL_AI_RANDOM_MIL_NEUTRAL
+			has_game_rule = {
+				rule = XAL_ai_behavior
+				option = XAL_MIL_NEUTRAL
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		# Do whenever possible 
+		XAL_military_government
+		XAL_fortify_alsace_lorraine
+		XAL_increase_political_freedoms
+		XAL_ensure_council_leadership
+		XAL_alsatian_neutrality
+		
+		XAL_improve_relations
+		XAL_extend_military_support
+
+		XAL_international_trade
+		XAL_finalize_infrastructure_projects
+		
+
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+XAL_mil_puppet_plan = {
+	name = "Alsatian Military Gov + Puppet plan"
+	desc = "Non-Aligned behavior for Alsace-Lorraine, will become puppet"
+
+	allowed = {
+		original_tag = XAL
+	}
+	enable = {
+		OR = {
+			has_country_flag = XAL_AI_RANDOM_MIL_PUPPET
+			has_game_rule = {
+				rule = XAL_ai_behavior
+				option = XAL_MIL_PUPPET
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		# Do whenever possible 
+		XAL_military_government
+		XAL_fortify_alsace_lorraine
+		XAL_increase_political_freedoms
+		XAL_ensure_council_leadership
+		
+		XAL_improve_relations
+		XAL_extend_military_support
+
+		XAL_request_closer_cooperation
+
+		XAL_international_trade
+		XAL_finalize_infrastructure_projects
+		
+
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+XAL_fascist_plan = {
+	name = "Alsatian Nationalist Coup plan"
+	desc = "Nationalist Coup in Alsace"
+
+	allowed = {
+		original_tag = XAL
+	}
+	enable = {
+		OR = {
+			has_country_flag = XAL_AI_RANDOM_FASCIST
+			has_game_rule = {
+				rule = XAL_ai_behavior
+				option = XAL_FASCIST
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		# Do whenever possible 
+		XAL_nationalist_coup
+
+		XAL_international_trade
+		XAL_finalize_infrastructure_projects
+		
+		XAL_attack_the_rhineland
+		XAL_delusions_of_grandeur
+
+		XAL_improve_relations
+		XAL_extend_military_support
+
+		
+		
+
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		XAL_military_government = 0
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	traits = {
+		fascist_demagogue = 100
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

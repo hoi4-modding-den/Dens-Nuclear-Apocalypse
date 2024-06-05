@@ -1,0 +1,22 @@
+state = {
+	id = 978
+	name = "STATE_978"
+	state_category = rural
+	manpower = 60421
+
+	history = {
+		owner = XLA
+		add_core_of = XLA
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			923 5
+		}
+	}
+
+	provinces = {
+		923 11846 11882
+	}
+}

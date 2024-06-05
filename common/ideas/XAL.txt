@@ -79,9 +79,11 @@ ideas = {
 			}
 
             cancel = {
-                42 = {
-                    is_owned_and_controlled_by = ROOT
+                OR = {
+                    NOT = { has_government = fascism }
+                    42 = { is_owned_and_controlled_by = ROOT }
                 }
+                
             }
 
            removal_cost = -1
@@ -109,6 +111,10 @@ ideas = {
                 always = yes
 			}
 
+            cancel = {
+                NOT = { has_government = fascism }
+            }
+
            removal_cost = -1
 
             picture = ger_revive_the_kaiserreich
@@ -133,6 +139,11 @@ ideas = {
 			allowed_civil_war = {
                 always = yes
 			}
+
+            cancel = {
+                NOT = { has_government = fascism }
+            }
+
 
            removal_cost = -1
 

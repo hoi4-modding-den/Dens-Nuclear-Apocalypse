@@ -42,3 +42,15 @@ XHP_INF_01 = {
 		31 = { "Infantería Nacional Española %s." }
 	}
 }
+
+XHP_MIL_01 = {
+	name = "Reclutas"
+	for_countries = { XHP }
+	can_use = { always = yes }
+	division_types = { militia }
+	fallback_name = "Reclutas División %s."
+
+	ordered = {
+		1 = { "Reclutas División %s." }
+	}
+}

@@ -332,7 +332,7 @@ corps_commander = {
 		}
 		country_leader = {
 			ideology = nazism
-			traits = {  }
+			traits = { veteran_guerrilla_fighter  }
 			expire = "3000.9.9.9"
 			id = -1
 		}

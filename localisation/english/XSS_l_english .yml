@@ -653,7 +653,7 @@ XSS_germania_nation_ADJ:0 "German"
 XSS_germania_nation_neutrality:0 "Deutsches Kaiserreich"
 
 
-XSS_conquer_south:0 "Conquer south"
+XSS_conquer_south:0 "Conquer Italy"
 XSS_conquer_south_desc:0 "We shall support Italians in their one last offensive then they can lead on their own."
 
 XSS_NSS_3:0 "Neu Schutzstaffel"
@@ -1546,4 +1546,111 @@ XSS_end_of_switzerland_desc:0 "Welp the time is now. We shall became a state rul
 XSS_test_event.46.t:0 "End of Switzerland"
 XSS_test_event.46.desc:0 "Today Dammed King Éric decided to surrender to Burgundian Kingdom. Hope for Citizens of Switzerland is not yet lost though, as ex-enemies decided to become allies and started a revolution in Switzerland. Rote Armee, NSS and Green Army altrough weakend by civl war decided to rebel. First shots were fired in German city of Schwyz. They have continued their march on Bern. The King Éric was found weeping somewhere in forest not far away from Geneva."
 XSS_test_event.46.a:0 "We shall crush these Nazis!"
+
+
+
+XRM_war_with_swiss:0 "Great Independence War"
+XRM_war_with_swiss_desc:0 "Swiss were oppressing us for too long. To arms brothers."
+
+XRM_schwyz_defence:0 "Schwyz Defence"
+XRM_schwyz_defence_desc:0 "We have held Schwyz for long enough. Our soldiers will fortify the city."
+
+XRM_schwyz_partisans:0 "Schwyz Partisans"
+XRM_schwyz_partisans_desc:0 "Schwyz has fallen, but our brothers are still in the city."
+
+XRM_fortify_chur:0 "Chur Defence"
+XRM_fortify_chur_desc:0 "Schwyz has fallen. We must fortify our next major city."
+
+XRM_fortify_samnaun:0 "Last stand at Samnaun"
+XRM_fortify_samnaun_desc:0 "We have lost all of our main cities. Samnaun a small village in mountains will be our Moscow. We shall defend it to the last man."
+
+XRM_create_italian_battalions:0 "Create Italian Battalions"
+XRM_create_italian_battalions_desc:0 "We are in controll of Ticino. We shall conscript those who wish to join us."
+
+XRM_rally_men:0 "Rally men"
+XRM_rally_men_desc:0 "The war is needed to purify the generation. We shall rally the most man we can."
+
+XRM_victory_at_zurich:0 "Victory at Zurich"
+XRM_victory_at_zurich_desc:0 "We have captured Zurich. We shall fortify it for long defence."
+
+XRM_victory_at_lucerna:0 "Victory at Lucerna"
+XRM_victory_at_lucerna_desc:0 "Lucerna is ours we shall prepare plans for Bern offensive."
+
+XRM_warplans:0 "Warplans"
+XRM_warplans_desc:0 "To conquer Bern we need to create complicated warplans."
+
+XRM_bern_offensive:0 "Bern offensive"
+XRM_bern_offensive_desc:0 "We shall invade Bern. This will be our final offensive."
+
+XRM_bern_offensive_idea:0 "Bern offensive"
+XRM_bern_offensive_idea_desc:0 "We have 30 days to capture Bern otherwise we will be forced to dig up."
+
+XRM_peace:0 "Romansh have defended their independence."
+
+XRM_victory:0 "Victory"
+XRM_victory_desc:0 "We have fought well and Switzerland now needs to accept our peace."
+
+XRM_dig_up_trenches:0 "Dig up Trenches"
+XRM_dig_up_trenches_desc:0 "We have failed to capture Bern. We must settle down and wait the Swiss out."
+
+XRM_defeat_at_bern:0 "Defeat at Bern"
+XRM_defeat_at_bern_desc:0 "We haven't kept up with our advance. We were stopped at Bern and now we shall dig down and try to starve the Swiss out."
+
+XRM_victory_by_exhaustion:0 "Victory by exhaustion"
+XRM_victory_by_exhaustion_desc:0 "20 weeks and Switzerland will beg for peace. We must hold our home land till then."
+
+XRM_home_arms:0 "Home arms production"
+XRM_home_arms_desc:0 "Our citizens must produce weapons at their homes. All to support the war effort."
+
+XRM_international_trade:0 "International Trade"
+XRM_international_trade_desc:0 "Our citizens shall create some goods for trade with other nations to support our war effort."
+
+XRM_peace_at_last:0 "Peace at last"
+XRM_peace_at_last_desc:0 "Our nation suffered trough ages and now we are free and at peace. It's time to create a country of 23th century."
+
+XRM_state_sponsored_housing:0 "State sponsored housing"
+XRM_state_sponsored_housing_desc:0 "War has tripled our homeless population. We need to create cheap housing to support them."
+
+XRM_cheap_housing_idea:0 "State funded Housing"
+XRM_cheap_housing_idea_desc:0 "Every citizen in Romanchia will have a roof over their head."
+
+XRM_proclaim_neutrality:0 "Proclaim Neutrality"
+XRM_proclaim_neutrality_desc:0 "War has torn the nation apart. We shall never go to war again."
+
+XRM_neutrality_idea:0 "Romansh Neutrality"
+XRM_neutrality_idea_desc:0 "Romanchia suffered through ages and they wish to go the Swiss way."
+
+XRM_post_war_fortification_program:0 "Post-war fortification Program"
+XRM_post_war_fortification_program_desc:0 "We shall fortify Romanchia to protect it from invaders."
+
+XRM_romansh_spirit_2:0 "Romansh Spirit"
+XRM_romansh_spirit_2_desc:0 "We have won against Switzerland and now we shall rebuild the nation and drive out any invaders."
+
+XRM_improve_romansh_spirit:0 "Improve Romansh Spirit"
+XRM_improve_romansh_spirit_desc:0 "We have defended out homeland. It's time to rebuild and stop fearing the Swiss."
+
+XRM_study_civil_war:0 "Study Civil War"
+XRM_study_civil_war_desc:0 "War has been won. Now it's time to learn from our mistakes to never let Swiss triumph over us."
+
+XRM_civil_war_studies:0 "Civil war studies"
+XRM_civil_war_studies_desc:0 "We have won the civil war, but the swiss threat may be looming over us."
+
+XRM_interventionist_neutrality:0 "Interventionist Neutrality"
+XRM_interventionist_neutrality_desc:0 "Even though we are neutral we shall support independence struggles around the world."
+
+XRM_neutrality_idea_2:0 "Romansh Neutrality"
+XRM_neutrality_idea_2_desc:0 "We have won against Switzerland and now we shall rebuild the nation and drive out any invaders. We shall also support independence movments around the world."
+
+XRM_expand_civil_sector:0 "Expand civil sector"
+XRM_expand_civil_sector_desc:0 "We must rebuild after the war. Creation of new workplaces and mass production of goods will be our priority."
+
+XRM_father_of_nation:0 "Father of Nation"
+XRM_father_of_nation_desc:0 "Bohr has lead Green Army to Victory. His Victory will be forever written down in history."
+
+XRM_father_trait:0 "Father of Romanchia"
+
+XRM_demilitarize_government:0 "Demilitarize Government"
+XRM_demilitarize_government_desc:0 "Romanchia is free. It no longer needs Green army to control the country and now our great leader needs to lead country like a politician not a soldier."
+
+
 

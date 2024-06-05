@@ -17,7 +17,7 @@ state={
 		victory_points = { 425 3 }
 		buildings = {
 			infrastructure = 2
-			#industrial_complex = 1
+			industrial_complex = 2
 		}
 		add_core_of = XGE
 		1939.1.1 = {

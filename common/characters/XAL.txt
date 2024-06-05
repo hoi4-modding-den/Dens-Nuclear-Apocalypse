@@ -1,7 +1,8 @@
 characters = {
 
 	XAL_military_junta = {
-		name = "Alsacian Military Junta"
+		name = XAL_military_junta_name
+		
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_XAL_military_gov"
@@ -9,7 +10,56 @@ characters = {
 		}
 		country_leader = {
 			ideology = XFR_military_government
+			desc = XAL_military_junta_desc
 			traits = { XAL_military_junta_trait }
+			expire = "3000.1.1"
+		}
+	}
+
+	XAL_josef_schuhmann = {
+		name = XAL_josef_schuhmann_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XAL_josef_schuhmann"
+			}
+		}
+		country_leader = {
+			ideology = XFR_german_revanchism
+			desc = XAL_josef_schuhmann_desc
+			traits = { XAL_german_nationalist }
+			expire = "3000.1.1"
+		}
+	}
+
+	XAL_otto_sommer = {
+		name = XAL_otto_sommer_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XAL_otto_sommer"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			desc = XAL_otto_sommer_desc
+			traits = { }
+			expire = "3000.1.1"
+		}
+	}
+
+	XAL_jacque_anthoine = {
+		name = XAL_jacque_anthoine_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XAL_jacque_anthoine"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = XAL_jacque_anthoine_desc
+			traits = { }
 			expire = "3000.1.1"
 		}
 	}
