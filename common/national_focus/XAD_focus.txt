@@ -17,8 +17,8 @@
 #	focus = {
 #		id = PRC_
 #		icon = GFX_goal_unknown
-#		prerequisite = { focus = }
-#		#mutually_exclusive = { focus =  }
+#		#prerequisite = { focus = }
+#		##mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
 #		relative_position_id = 
@@ -52,8 +52,8 @@
 	focus = {
 		id = XAD_start_the_casablanca_project
 		icon = GFX_goal_generic_production
-		#prerequisite = { focus = }
-		#mutually_exclusive = { focus =  }
+		##prerequisite = { focus = }
+		##mutually_exclusive = { focus =  }
 		x = 2
 		y = 0
 
@@ -95,7 +95,7 @@
 		id = XAD_develop_the_casablanca_university
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = -3
 		y = 1
 
@@ -127,7 +127,7 @@
 		id = XAD_work_on_the_sevilla_projects
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 
@@ -168,7 +168,7 @@
 		id = XAD_develop_tabilina
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 
@@ -209,7 +209,7 @@
 		id = XAD_develop_melilla
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 3
 		y = 1
 
@@ -250,7 +250,7 @@
 		id = XAD_develop_marakkech
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 5
 		y = 1
 
@@ -291,7 +291,7 @@
 		id = XAD_enstablish_the_cataban_west
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 1
 		y = 2
 
@@ -347,7 +347,7 @@
 		id = XAD_enstablish_the_cataban_east
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = XAD_develop_marakkech focus = XAD_develop_melilla focus = XAD_develop_tabilina focus = XAD_work_on_the_sevilla_projects }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 3
 		y = 2
 
@@ -404,7 +404,7 @@
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = XAD_enstablish_the_cataban_east }
 		prerequisite = { focus = XAD_enstablish_the_cataban_west }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 2
 		y = 3
 
@@ -460,7 +460,7 @@
 		id = XAD_the_casablanca_airport
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = XAD_develop_the_cities }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 0
 		y = 4
 
@@ -500,7 +500,7 @@
 		id = XAD_increase_the_gibraltar_tariffs
 		icon = GFX_focus_tax_the_strait
 		prerequisite = { focus = XAD_develop_the_cities }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 2
 		y = 4
 
@@ -537,7 +537,7 @@
 		id = XAD_invite_swiss_investors
 		icon = GFX_focus_SWI_swiss_guiding_principles
 		prerequisite = { focus = XAD_develop_the_cities }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = -2
 		y = 4
 
@@ -569,7 +569,7 @@
 		id = XAD_fund_the_CIAMP
 		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = XAD_develop_the_cities }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 4
 		y = 4
 
@@ -604,7 +604,7 @@
 		id = XAD_the_civilian_problems
 		icon = GFX_focus_generic_improve_the_administration
 		prerequisite = { focus = XAD_develop_the_cities }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 6
 		y = 4
 
@@ -635,7 +635,7 @@
 		id = XAD_encorauge_turism
 		icon = GFX_focus_SWE_privately_managed_vacation
 		prerequisite = { focus = XAD_the_civilian_problems }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 6
 		y = 5
 
@@ -733,7 +733,7 @@
 		id = XAD_further_industrialization
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = XAD_industrialization }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 2
 		y = 7
 
@@ -776,7 +776,7 @@
 		id = XAD_enstablish_full_employement
 		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = XAD_further_industrialization }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 2
 		y = 8
 
@@ -866,7 +866,7 @@
 		id = XAD_enstablish_the_port_of_valencia
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 2
 		y = 10
 
@@ -905,7 +905,7 @@
 		id = XAD_destroy_random_places
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = XAD_enstablish_the_port_of_valencia }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 2
 		y = 11
 
@@ -952,7 +952,7 @@
 		id = XAD_connect_the_country
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 4
 		y = 10
 
@@ -990,7 +990,7 @@
 		id = XAD_self_sufficence
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = XAD_dont_allow_women_to_work focus = XAD_allow_women_to_work }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 0
 		y = 10
 
@@ -1019,7 +1019,7 @@
 		id = XAD_tiblina_mines
 		icon = GFX_focus_generic_tungsten
 		prerequisite = { focus = XAD_start_the_casablanca_project }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 8
 		y = 1
 
@@ -1055,7 +1055,7 @@
 		id = XAD_oil_in_the_meditarrean
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = XAD_tiblina_mines }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 8
 		y = 2
 
@@ -1091,7 +1091,7 @@
 		id = XAD_iron_in_cordoba
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = XAD_oil_in_the_meditarrean }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 8
 		y = 3
 
@@ -1127,7 +1127,7 @@
 		id = XAD_selling_iron_to_the_swiss
 		icon = GFX_focus_SWI_swiss_guiding_principles
 		prerequisite = { focus = XAD_iron_in_cordoba }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 8
 		y = 4
 
@@ -1165,7 +1165,7 @@
 		id = XAD_the_cromium_in_the_north
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = XAD_iron_in_cordoba }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 10
 		y = 4
 
@@ -1277,7 +1277,7 @@
 		id = XAD_self_sufficence_2
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = XAD_building_slots }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 10
 		y = 8
 
@@ -1306,7 +1306,7 @@
 		id = XAD_birthrates_improvements
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XAD_self_sufficence_2 }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 10
 		y = 9
 
@@ -1335,7 +1335,7 @@
 		id = XAD_agricultural_education
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = XAD_self_sufficence_2 }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 12
 		y = 9
 
@@ -1364,7 +1364,7 @@
 		id = XAD_expand_crack_market
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = XAD_self_sufficence_2 }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 8
 		y = 9
 
@@ -1392,7 +1392,7 @@
 		id = XAD_develop_focus_on_grain_production
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = XAD_expand_crack_market focus = XAD_birthrates_improvements focus = XAD_agricultural_education }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 9
 		y = 10
 
@@ -1428,7 +1428,7 @@
 		id = XAD_arm_citizens
 		icon = GFX_focus_SOV_mobilization_plan
 		prerequisite = { focus = XAD_expand_crack_market focus = XAD_birthrates_improvements focus = XAD_agricultural_education }
-		#mutually_exclusive = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 11
 		y = 10
 
@@ -1476,8 +1476,8 @@
 	focus = {
 		id = XAD_borgir
 		icon = GFX_
-		#prerequisite = { focus =  }
-		#mutually_exclusive = { focus =  }
+		##prerequisite = { focus =  }
+		##mutually_exclusive = { focus =  }
 		x = 0
 		y = 15
 
@@ -1508,8 +1508,8 @@
 	focus = {
 		id = XAD_army_problems
 		icon = GFX_
-		#prerequisite = { focus = }
-		#mutually_exclusive = { focus =  }
+		##prerequisite = { focus = }
+		##mutually_exclusive = { focus =  }
 		x = 30
 		y = 0
 
@@ -1541,7 +1541,7 @@
 			id = XAD_develop_military_industry
 			icon = GFX_
 			prerequisite = { focus = XAD_army_problems }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 30
 			y = 1
 	
@@ -1588,7 +1588,7 @@
 				id = XAD_enemies_in_the_north
 				icon = GFX_
 				prerequisite = { focus = XAD_develop_military_industry }
-				#mutually_exclusive = { focus =  }
+				##mutually_exclusive = { focus =  }
 				x = 28
 				y = 2
 		
@@ -1627,7 +1627,7 @@
 			id = XAD_men_lead_the_army
 			icon = GFX_
 			prerequisite = { focus = XAD_develop_military_industry }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 30
 			y = 2
 	
@@ -1664,7 +1664,7 @@
 			id = XAD_bad_generals
 			icon = GFX_
 			prerequisite = { focus = XAD_develop_military_industry }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 32
 			y = 2
 	
@@ -1706,7 +1706,7 @@
 			prerequisite = { focus = XAD_enemies_in_the_north }
 			prerequisite = { focus = XAD_men_lead_the_army }
 			prerequisite = { focus = XAD_bad_generals }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 30
 			y = 3
 	
@@ -1742,7 +1742,7 @@
 			id = XAD_enstablish_the_ADPPG
 			icon = GFX_
 			prerequisite = { focus = XAD_insufficent_training_problem }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 30
 			y = 4
 	
@@ -1774,7 +1774,7 @@
 			id = XAD_force_military_loyalty
 			icon = GFX_
 			prerequisite = { focus = XAD_insufficent_training_problem }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 32
 			y = 4
 	
@@ -1810,7 +1810,7 @@
 			id = XAD_prepare_the_generation_for_a_war
 			icon = GFX_
 			prerequisite = { focus = XAD_insufficent_training_problem }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 28
 			y = 4
 	
@@ -1851,7 +1851,7 @@
 			id = XAD_never_another_ceuta
 			icon = GFX_
 			prerequisite = { focus = XAD_insufficent_training_problem }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 26
 			y = 4
 	
@@ -1896,7 +1896,7 @@
 			prerequisite = { focus = XAD_enstablish_the_ADPPG }
 			prerequisite = { focus = XAD_prepare_the_generation_for_a_war }
 			prerequisite = { focus = XAD_force_military_loyalty }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 30
 			y = 5
 	
@@ -2015,7 +2015,7 @@
 			prerequisite = { focus = XAD_enemies_in_the_north }
 			prerequisite = { focus = XAD_men_lead_the_army }
 			prerequisite = { focus = XAD_bad_generals }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 20
 			y = 3
 	
@@ -2051,7 +2051,7 @@
 			id = XAD_develop_industry_in_casablanca
 			icon = GFX_
 			prerequisite = { focus = XAD_insufficent_industry }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 19
 			y = 4
 	
@@ -2090,7 +2090,7 @@
 			id = XAD_develop_industry_in_tablina
 			icon = GFX_
 			prerequisite = { focus = XAD_insufficent_industry }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 21
 			y = 4
 	
@@ -2130,7 +2130,7 @@
 			icon = GFX_
 			prerequisite = { focus = XAD_develop_industry_in_tablina }
 			prerequisite = { focus = XAD_develop_industry_in_casablanca }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 20
 			y = 5
 	
@@ -2170,7 +2170,7 @@
 			icon = GFX_
 			prerequisite = { focus = XAD_develop_industry_in_tablina }
 			prerequisite = { focus = XAD_develop_industry_in_casablanca }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 22
 			y = 5
 	
@@ -2210,7 +2210,7 @@
 			icon = GFX_
 			prerequisite = { focus = XAD_develop_industry_in_tablina }
 			prerequisite = { focus = XAD_develop_industry_in_casablanca }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 24
 			y = 5
 	
@@ -2251,7 +2251,7 @@
 			prerequisite = { focus = XAD_develop_in_mililla }
 			prerequisite = { focus = XAD_develop_in_marrakech }
 			prerequisite = { focus = XAD_develop_in_ceuta }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 22
 			y = 6
 	
@@ -2293,7 +2293,7 @@
 			id = XAD_supply_in_the_north
 			icon = GFX_
 			prerequisite = { focus = XAD_build_forts_in_the_north }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 22
 			y = 7
 	
@@ -2528,7 +2528,7 @@
 			prerequisite = { focus = XAD_enemies_in_the_north }
 			prerequisite = { focus = XAD_men_lead_the_army }
 			prerequisite = { focus = XAD_bad_generals }
-			#mutually_exclusive = { focus =  }
+			##mutually_exclusive = { focus =  }
 			x = 40
 			y = 3
 	
@@ -2593,8 +2593,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_doctrine_cost_reduction  = {
+					cost_reduction = 0.5
+					category = cat_mobile_warfare
 				}
+				army_experience = 50
+			}
 		}
 		focus = {
 			id = XAD_a_gun_is_all_a_man_needs
@@ -2625,8 +2629,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_doctrine_cost_reduction  = {
+					cost_reduction = 0.5
+					category = cat_grand_battle_plan
 				}
+				army_experience = 50
+			}
 		}
 		focus = {
 			id = XAD_artillery_is_always_key
@@ -2657,8 +2665,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_doctrine_cost_reduction  = {
+					cost_reduction = 0.5
+					category = cat_superior_firepower
 				}
+				army_experience = 50
+			}
 		}
 		focus = {
 			id = XAD_cats_of_the_desert
@@ -2685,12 +2697,18 @@
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
-			 
-	
+
 			completion_reward = {
-				
+				add_to_variable = {
+					var = XAD_re_acclimatization_hot_climate_gain_factor
+					value = 0.15
 				}
+				add_to_variable = {
+					var = XAD_re_heat_attrition_factor
+					value = -0.25
+				}
+				custom_effect_tooltip = XAD_cats_of_the_desert_variable
+			}
 		}
 		focus = {
 			id = XAD_tactical_camel
@@ -2717,12 +2735,78 @@
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
-			 
+		 
 	
 			completion_reward = {
-				
+				add_to_variable = {
+					var = XAD_re_modifier_army_sub_unit_camelry_attack_factor
+					value = 0.25
 				}
+				add_to_variable = {
+					var = XAD_re_modifier_army_sub_unit_camelry_defence_factor
+					value = 0.25
+				}
+				add_to_variable = {
+					var = XAD_re_modifier_army_sub_unit_camelry_speed_factor
+					value = 0.15
+				}
+				custom_effect_tooltip = XAD_tactical_camel_variable
+				division_template = {
+					name = "División de camellos"
+					division_names_group = XAD_INF_01
+					priority = 2
+					is_locked = yes
+					regiments = {
+						camelry = { x = 0 y = 0 }
+						camelry = { x = 0 y = 1 }
+						camelry = { x = 0 y = 2 }
+						camelry = { x = 1 y = 0 }
+						camelry = { x = 1 y = 1 }
+						camelry = { x = 1 y = 2 }
+						camelry = { x = 2 y = 0 }
+						camelry = { x = 2 y = 1 }
+						camelry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0}
+					}
+				}
+				random_owned_controlled_state = {
+				create_unit = {
+							division = "name = \"División de camellos\" division_template = \"División de camellos\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 1
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+								division = "name = \"División de camellos\" division_template = \"División de camellos\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+								owner = ROOT
+								count = 1
+						}
+					}
+					random_owned_controlled_state = {
+				create_unit = {
+							division = "name = \"División de camellos\" division_template = \"División de camellos\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 1
+					}
+				}
+				random_owned_controlled_state = {
+				create_unit = {
+							division = "name = \"División de camellos\" division_template = \"División de camellos\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 1
+					}
+				}
+				random_owned_controlled_state = {
+				create_unit = {
+							division = "name = \"División de camellos\" division_template = \"División de camellos\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 1
+					}
+				}
+			}
 		}
 		focus = {
 			id = XAD_cats_in_the_mountains
@@ -2749,12 +2833,29 @@
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "Cats in the mountain"
+					bonus = 1.5
+					uses = 1
+					category = mountaineers_tech
 				}
+				add_to_variable = {
+					var = XAD_re_modifier_army_sub_unit_mountaineers_defence_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = XAD_re_special_forces_cap
+					value = 0.05
+				}
+				add_to_variable = {
+					var = XAD_re_modifier_army_sub_unit_mountaineers_max_org_factor
+					value = 0.10
+				}
+				custom_effect_tooltip = XAD_cats_in_the_mountains_variable
+			}
 		}
 		focus = {
 			id = XAD_supply_problems
@@ -2785,8 +2886,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_to_variable = {
+					var = XAD_re_supply_consumption_factor
+					value = -0.10
 				}
+				custom_effect_tooltip = XAD_supply_problems_variable
+			}
 		}
 		focus = {
 			id = XAD_the_paratroopers
@@ -2817,7 +2922,16 @@
 			 
 	
 			completion_reward = {
-				
+				hidden_effect = {
+					load_oob = "unlock_paratroopers"
 				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "division_template = \"Paratroopers\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 3
+					}
+				}
+			}
 		}
 	}	
