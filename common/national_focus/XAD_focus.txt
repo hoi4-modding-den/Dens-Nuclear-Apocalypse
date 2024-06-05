@@ -1507,7 +1507,7 @@
 	}
 	focus = {
 		id = XAD_army_problems
-		icon = GFX_
+		icon = GFX_focus_generic_industry_3
 		##prerequisite = { focus = }
 		##mutually_exclusive = { focus =  }
 		x = 30
@@ -1539,7 +1539,7 @@
 		}
 		focus = {
 			id = XAD_develop_military_industry
-			icon = GFX_
+			icon = GFX_focus_generic_tank_production
 			prerequisite = { focus = XAD_army_problems }
 			##mutually_exclusive = { focus =  }
 			x = 30
@@ -1586,7 +1586,7 @@
 		}
 		focus = {
 				id = XAD_enemies_in_the_north
-				icon = GFX_
+				icon = GFX_focus_usa_focus_on_europe
 				prerequisite = { focus = XAD_develop_military_industry }
 				##mutually_exclusive = { focus =  }
 				x = 28
@@ -1625,7 +1625,7 @@
 		}
 		focus = {
 			id = XAD_men_lead_the_army
-			icon = GFX_
+			icon = GFX_focus_generic_manpower
 			prerequisite = { focus = XAD_develop_military_industry }
 			##mutually_exclusive = { focus =  }
 			x = 30
@@ -1662,7 +1662,7 @@
 		}
 		focus = {
 			id = XAD_bad_generals
-			icon = GFX_
+			icon = GFX_focus_generic_military_academy
 			prerequisite = { focus = XAD_develop_military_industry }
 			##mutually_exclusive = { focus =  }
 			x = 32
@@ -1702,7 +1702,7 @@
 		}
 		focus = {
 			id = XAD_insufficent_training_problem
-			icon = GFX_
+			icon = GFX_goal_generic_military_deal
 			prerequisite = { focus = XAD_enemies_in_the_north }
 			prerequisite = { focus = XAD_men_lead_the_army }
 			prerequisite = { focus = XAD_bad_generals }
@@ -1740,7 +1740,7 @@
 		}
 		focus = {
 			id = XAD_enstablish_the_ADPPG
-			icon = GFX_
+			icon = GFX_goal_tfv_generic_tech_sharing
 			prerequisite = { focus = XAD_insufficent_training_problem }
 			##mutually_exclusive = { focus =  }
 			x = 30
@@ -1768,11 +1768,12 @@
 	
 			completion_reward = {
 					add_ideas = XAD_ADPPG
+					add_research_slot = 1
 				}
 		}
 		focus = {
 			id = XAD_force_military_loyalty
-			icon = GFX_
+			icon = GFX_focus_mex_caudillo_private_armies
 			prerequisite = { focus = XAD_insufficent_training_problem }
 			##mutually_exclusive = { focus =  }
 			x = 32
@@ -1808,7 +1809,7 @@
 		}
 		focus = {
 			id = XAD_prepare_the_generation_for_a_war
-			icon = GFX_
+			icon = GFX_focus_generic_provoke_border_clashes
 			prerequisite = { focus = XAD_insufficent_training_problem }
 			##mutually_exclusive = { focus =  }
 			x = 28
@@ -1849,7 +1850,7 @@
 		}
 		focus = {
 			id = XAD_never_another_ceuta
-			icon = GFX_
+			icon = GFX_goal_generic_demand_territory
 			prerequisite = { focus = XAD_insufficent_training_problem }
 			##mutually_exclusive = { focus =  }
 			x = 26
@@ -1892,7 +1893,7 @@
 		}
 		focus = {
 			id = XAD_best_army_in_iberia
-			icon = GFX_
+			icon = GFX_focus_ITA_moschettieri_del_duce
 			prerequisite = { focus = XAD_enstablish_the_ADPPG }
 			prerequisite = { focus = XAD_prepare_the_generation_for_a_war }
 			prerequisite = { focus = XAD_force_military_loyalty }
@@ -1935,7 +1936,7 @@
 		}
 		focus = {
 			id = XAD_extensive_recruitment_efforts
-			icon = GFX_
+			icon = GFX_goal_rhineland
 			prerequisite = { focus = XAD_best_army_in_iberia }
 			mutually_exclusive = { focus = XAD_small_recruitment_efforts }
 			x = 31
@@ -1975,7 +1976,7 @@
 		}
 		focus = {
 			id = XAD_small_recruitment_efforts
-			icon = GFX_
+			icon = GFX_goal_generic_axis_build_infantry
 			prerequisite = { focus = XAD_best_army_in_iberia }
 			mutually_exclusive = { focus = XAD_extensive_recruitment_efforts }
 			x = 29
@@ -2011,7 +2012,7 @@
 		}
 		focus = {
 			id = XAD_insufficent_industry
-			icon = GFX_
+			icon = GFX_goal_continuous_naval_production
 			prerequisite = { focus = XAD_enemies_in_the_north }
 			prerequisite = { focus = XAD_men_lead_the_army }
 			prerequisite = { focus = XAD_bad_generals }
@@ -2049,7 +2050,7 @@
 		}
 		focus = {
 			id = XAD_develop_industry_in_casablanca
-			icon = GFX_
+			icon = GFX_goal_generic_production
 			prerequisite = { focus = XAD_insufficent_industry }
 			##mutually_exclusive = { focus =  }
 			x = 19
@@ -2088,7 +2089,7 @@
 		}
 		focus = {
 			id = XAD_develop_industry_in_tablina
-			icon = GFX_
+			icon = GFX_goal_continuous_repairments
 			prerequisite = { focus = XAD_insufficent_industry }
 			##mutually_exclusive = { focus =  }
 			x = 21
@@ -2127,7 +2128,7 @@
 		}
 		focus = {
 			id = XAD_develop_in_mililla
-			icon = GFX_
+			icon = GFX_goal_panzerwaffe
 			prerequisite = { focus = XAD_develop_industry_in_tablina }
 			prerequisite = { focus = XAD_develop_industry_in_casablanca }
 			##mutually_exclusive = { focus =  }
@@ -2167,7 +2168,7 @@
 		}
 		focus = {
 			id = XAD_develop_in_marrakech
-			icon = GFX_
+			icon = GFX_goal_reichsautobahn
 			prerequisite = { focus = XAD_develop_industry_in_tablina }
 			prerequisite = { focus = XAD_develop_industry_in_casablanca }
 			##mutually_exclusive = { focus =  }
@@ -2207,7 +2208,7 @@
 		}
 		focus = {
 			id = XAD_develop_in_ceuta
-			icon = GFX_
+			icon = GFX_focus_generic_torpedo_production
 			prerequisite = { focus = XAD_develop_industry_in_tablina }
 			prerequisite = { focus = XAD_develop_industry_in_casablanca }
 			##mutually_exclusive = { focus =  }
@@ -2247,7 +2248,7 @@
 		}
 		focus = {
 			id = XAD_build_forts_in_the_north
-			icon = GFX_
+			icon = GFX_goal_generic_construct_military
 			prerequisite = { focus = XAD_develop_in_mililla }
 			prerequisite = { focus = XAD_develop_in_marrakech }
 			prerequisite = { focus = XAD_develop_in_ceuta }
@@ -2291,7 +2292,7 @@
 		}
 		focus = {
 			id = XAD_supply_in_the_north
-			icon = GFX_
+			icon = GFX_goal_generic_axis_build_infantry
 			prerequisite = { focus = XAD_build_forts_in_the_north }
 			##mutually_exclusive = { focus =  }
 			x = 22
@@ -2330,7 +2331,7 @@
 		}
 		focus = {
 			id = XAD_better_guns
-			icon = GFX_
+			icon = GFX_focus_focus_fra_maquis
 			prerequisite = { focus = XAD_develop_industry_in_tablina }
 			prerequisite = { focus = XAD_develop_industry_in_casablanca }
 			mutually_exclusive = { focus = XAD_cheaper_guns }
@@ -2363,7 +2364,7 @@
 		}
 		focus = {
 			id = XAD_cheaper_guns
-			icon = GFX_
+			icon = GFX_goal_generic_small_arms
 			prerequisite = { focus = XAD_develop_industry_in_tablina }
 			prerequisite = { focus = XAD_develop_industry_in_casablanca }
 			mutually_exclusive = { focus = XAD_better_guns }
@@ -2396,7 +2397,7 @@
 		}
 		focus = {
 			id = XAD_better_artillery
-			icon = GFX_
+			icon = GFX_goal_generic_army_artillery2
 			prerequisite = { focus = XAD_better_guns focus = XAD_cheaper_guns }
 			mutually_exclusive = { focus = XAD_cheaper_artillery }
 			x = 17
@@ -2428,7 +2429,7 @@
 		}
 		focus = {
 			id = XAD_cheaper_artillery
-			icon = GFX_
+			icon = GFX_goal_generic_army_artillery
 			prerequisite = { focus = XAD_better_guns focus = XAD_cheaper_guns }
 			mutually_exclusive = { focus = XAD_better_artillery }
 			x = 19
@@ -2460,7 +2461,7 @@
 		}
 		focus = {
 			id = XAD_develop_tanks
-			icon = GFX_
+			icon = GFX_focus_generic_tankette
 			prerequisite = { focus = XAD_better_artillery focus = XAD_cheaper_artillery }
 			#mutually_exclusive = { focus = XAD_cheaper_artillery }
 			x = 17
@@ -2492,7 +2493,7 @@
 		}
 		focus = {
 			id = XAD_equip_mechanized
-			icon = GFX_
+			icon = GFX_focus_generic_truck
 			prerequisite = { focus = XAD_better_artillery focus = XAD_cheaper_artillery }
 			#mutually_exclusive = { focus = XAD_better_artillery }
 			x = 19
@@ -2524,7 +2525,7 @@
 		}
 		focus = {
 			id = XAD_horrible_tactic_problem
-			icon = GFX_
+			icon = GFX_goal_generic_major_war
 			prerequisite = { focus = XAD_enemies_in_the_north }
 			prerequisite = { focus = XAD_men_lead_the_army }
 			prerequisite = { focus = XAD_bad_generals }
@@ -2566,7 +2567,7 @@
 		}
 		focus = {
 			id = XAD_the_faster_the_better
-			icon = GFX_
+			icon = GFX_goal_continuous_armor_production
 			prerequisite = { focus = XAD_horrible_tactic_problem }
 			mutually_exclusive = { focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs  }
 			x = 40
@@ -2602,7 +2603,7 @@
 		}
 		focus = {
 			id = XAD_a_gun_is_all_a_man_needs
-			icon = GFX_
+			icon = GFX_goal_generic_small_arms
 			prerequisite = { focus = XAD_horrible_tactic_problem }
 			mutually_exclusive = { focus = XAD_artillery_is_always_key focus = XAD_the_faster_the_better  }
 			x = 38
@@ -2638,7 +2639,7 @@
 		}
 		focus = {
 			id = XAD_artillery_is_always_key
-			icon = GFX_
+			icon = GFX_goal_generic_army_artillery2
 			prerequisite = { focus = XAD_horrible_tactic_problem }
 			mutually_exclusive = { focus = XAD_a_gun_is_all_a_man_needs focus = XAD_the_faster_the_better }
 			x = 42
@@ -2674,7 +2675,7 @@
 		}
 		focus = {
 			id = XAD_cats_of_the_desert
-			icon = GFX_
+			icon = GFX_focus_generic_conspiracy
 			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
 			#mutually_exclusive = { }
 			x = 40
@@ -2712,7 +2713,7 @@
 		}
 		focus = {
 			id = XAD_tactical_camel
-			icon = GFX_
+			icon = GFX_focus_ITA_comandante_diavolo
 			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
 			#mutually_exclusive = { }
 			x = 38
@@ -2740,11 +2741,11 @@
 			completion_reward = {
 				add_to_variable = {
 					var = XAD_re_modifier_army_sub_unit_camelry_attack_factor
-					value = 0.25
+					value = 0.10
 				}
 				add_to_variable = {
 					var = XAD_re_modifier_army_sub_unit_camelry_defence_factor
-					value = 0.25
+					value = 0.10
 				}
 				add_to_variable = {
 					var = XAD_re_modifier_army_sub_unit_camelry_speed_factor
@@ -2810,7 +2811,7 @@
 		}
 		focus = {
 			id = XAD_cats_in_the_mountains
-			icon = GFX_
+			icon = GFX_focus_ITA_alpine_division
 			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
 			#mutually_exclusive = { }
 			x = 36
@@ -2859,7 +2860,7 @@
 		}
 		focus = {
 			id = XAD_supply_problems
-			icon = GFX_
+			icon = GFX_goal_generic_major_war
 			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
 			#mutually_exclusive = { }
 			x = 42
@@ -2895,7 +2896,7 @@
 		}
 		focus = {
 			id = XAD_the_paratroopers
-			icon = GFX_
+			icon = GFX_goal_generic_small_arms
 			prerequisite = { focus = XAD_the_faster_the_better focus = XAD_artillery_is_always_key focus = XAD_a_gun_is_all_a_man_needs }
 			#mutually_exclusive = { }
 			x = 44
