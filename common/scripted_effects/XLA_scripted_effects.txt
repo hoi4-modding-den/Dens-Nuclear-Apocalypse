@@ -1,0 +1,169 @@
+regional_balance_gui_initial = {
+	# Each state gets one vote. Subject to change.
+	add_to_array = { regional_balance_seat_array = 2 } # Neutrals
+	add_to_array = { regional_balance_seat_array = 4 } # Spiritualists
+	add_to_array = { regional_balance_seat_array = 3 } # Altwigitans
+
+	add_to_array = { regional_balance_member_array = 1 } # Neutrals
+	add_to_array = { regional_balance_member_array = 2 } # Spiritualists
+	add_to_array = { regional_balance_member_array = 3 } # Altwigitans
+
+	regional_balance_gui_positions = yes
+	reload_regional_balance_gui = yes
+}
+
+reload_regional_balance_gui = {
+	clear_array = regional_balance_main_array
+	for_each_loop = {
+		array = regional_balance_seat_array
+
+		add_to_array = { temp_seat = regional_balance_seat_array^i }
+	}
+
+	set_temp_variable = { temp_index_1 = 0 }
+	set_temp_variable = { temp_index_2 = 1 }
+
+	set_temp_variable = { temp_size = temp_seat^num }
+	subtract_from_temp_variable = { temp_size = 1 }
+
+	while_loop_effect = {
+		limit = {
+			check_variable = { temp_index_1 < temp_size }
+		}
+		add_to_variable = { temp_seat^temp_index_2 = temp_seat^temp_index_1 }
+		add_to_temp_variable = { temp_index_1 = 1 }
+		add_to_temp_variable = { temp_index_2 = 1 }
+	}
+
+	for_loop_effect = {
+		start = 0
+		end = temp_seat^num
+
+		resize_array = { array = regional_balance_main_array value = regional_balance_member_array^rbf size = temp_seat^rbf }
+	}
+	clear_array = temp_seat
+}
+
+# Balance seat numbers
+modify_regional_balance_seat = {
+	subtract_from_temp_variable = { temp_member = 1 }
+
+	set_temp_variable = { temp = regional_balance_seat_array^temp_member }
+	add_to_temp_variable = { temp = temp_seats }
+
+	if = {
+		limit = {
+			check_variable = { temp > regional_balance_main_array^num }
+		}
+		subtract_from_temp_variable = { temp = regional_balance_main_array^num }
+		subtract_from_temp_variable = { temp_seats = temp }
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp < 0 }
+		}
+		multiply_temp_variable = { temp = -1 }
+		subtract_from_temp_variable = { temp_seats = temp }
+	}
+
+	# adds all parties to temp_array
+	for_loop_effect = {
+		start = 0
+		end = regional_balance_seat_array^num
+
+		add_to_temp_array = { temp_array = rbf }
+	}
+
+	# remove from list of parties the party to be added/subtracted
+	remove_from_temp_array = { array = temp_array value = temp_member }
+
+	# give party new seat value
+	add_to_variable = { regional_balance_seat_array^temp_member = temp_seats }
+
+	# if its add
+	if = {
+		limit = {
+			check_variable = { temp_seats > 0 }
+		}
+		# loop until seats to be added is 0
+		while_loop_effect = {
+			limit = {
+				check_variable = { temp_seats > 0 }
+			}
+
+			# loops through remaining parties, subtracting 1 seat each time
+			for_loop_effect = {
+				start = 0
+				end = temp_array^num
+
+				if = {
+					limit = {
+						check_variable = { regional_balance_seat_array^temp_array^rbf > 0 } # party must have more than 0 seats to be subtracted
+						check_variable = { temp_seats > 0 } # seats to be added is bigger than 0 currently
+					}
+					subtract_from_variable = { regional_balance_seat_array^temp_array^rbf = 1 } # subtract from party 1 seat
+					subtract_from_temp_variable = { temp_seats = 1 } # subtract from seats to be added
+				}
+			}
+		}
+	}
+	# if its subtract
+	else_if = {
+		limit = {
+			check_variable = { temp_seats < 0 }
+		}
+		# loop until seats to be subtracted is 0
+		while_loop_effect = {
+			limit = {
+				check_variable = { temp_seats < 0 }
+			}
+
+			# loops through remaining parties, adding 1 seat each time
+			for_loop_effect = {
+				start = 0
+				end = temp_array^num
+
+				if = {
+					limit = {
+						check_variable = { regional_balance_array^temp_array^rbf < regional_balance_main_array^num } # party must have less than max seats to be added
+						check_variable = { temp_seats < 0 } # seats to be subtracted is less than 0 currently
+					}
+					add_to_variable = { regional_balance_array^temp_array^rbf = 1 } # add to party 1 seat
+					add_to_temp_variable = { temp_seats = 1 } # add to seats to be subtracted
+				}
+			}
+		}
+	}
+	# do nothing if 0
+
+	# Modify what shows up in the gui
+	reload_regional_balance_gui = yes
+}
+
+# Clear all arrays (for debugging)
+clear_regional_balance_gui_arrays = {
+	clear_array = regional_balance_main_array
+	clear_array = regional_balance_member_array
+	clear_array = regional_balance_seat_array
+	clear_array = regional_balance_x_array
+	clear_array = regional_balance_y_array
+}
+
+regional_balance_gui_positions = {
+	add_to_array = { regional_balance_x_array = 0 } # 1
+	add_to_array = { regional_balance_y_array = 23 }
+	add_to_array = { regional_balance_x_array = 10 } # 2
+	add_to_array = { regional_balance_y_array = 23 }
+	add_to_array = { regional_balance_x_array = 8 } # 3
+	add_to_array = { regional_balance_y_array = 12 }
+	add_to_array = { regional_balance_x_array = 20 } # 4
+	add_to_array = { regional_balance_y_array = 15 }
+	add_to_array = { regional_balance_x_array = 20 } # 5
+	add_to_array = { regional_balance_y_array = 5 }
+	add_to_array = { regional_balance_x_array = 33 } # 6
+	add_to_array = { regional_balance_y_array = 5 }
+	add_to_array = { regional_balance_x_array = 33 } # 7
+	add_to_array = { regional_balance_y_array = 15 }
+	add_to_array = { regional_balance_x_array = 45 } # 8
+	add_to_array = { regional_balance_y_array = 12 }
+}

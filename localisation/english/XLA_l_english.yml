@@ -53,3 +53,22 @@
  VICTORY_POINTS_6635:0 "Charvale"
  VICTORY_POINTS_3772:0 "Nubbikport"
  VICTORY_POINTS_771:0 "Kammora" 
+
+ ## Regional Balance
+ # Decisions
+  regional_balance_gui_decision_category:0 "Regional Balance§!"
+  regional_balance_gui_decision_category_desc:0 ""
+
+ ### Scripted GUIs ###
+  semicircle_regional_balance_gui_title:0 "The Council of Arnmouth"
+  regional_balance_main_icon_tt:0 "[GetRegionalBalanceSeatName] - [GetRegionalBalancePartyName]"
+  regional_balance_seat_text:0 "Seat [?temp_seat|Y0]"
+  regional_balance_member_text:0 "[GetRegionalBalancePartyName] - [?regional_balance_seat_array^regional_balance_member_index] Seats"
+  regional_balance_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetRegionalBalancePartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetRegionalBalancePartyName]"
+
+  party_1_text:0 "§RNeutrals§!"
+  party_2_text:0 "§2Spiritualists§!"
+  party_3_text:0 "§1Altwigitians§!"
+  
+  ### Tooltips ###
+  XLA_regional_balance_main_icon_tt:0 "§HVivat Respublica Merciorum!§!"

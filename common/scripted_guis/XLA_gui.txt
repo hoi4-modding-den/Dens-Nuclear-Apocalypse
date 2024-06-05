@@ -1,0 +1,54 @@
+scripted_gui = {
+	XLA_regional_balance = {
+		window_name = "XLA_regional_balance"
+		context_type = decision_category
+
+		dynamic_lists = {
+			regional_balance_main_grid = {
+				array = regional_balance_main_array
+				index = regional_balance_main_index
+				change_scope = no
+				entry_container = XLA_regional_balance_main_entry
+			}		
+			regional_balance_semicircle_main_grid = {
+				array = regional_balance_main_array
+				index = regional_balance_main_index
+				change_scope = no
+				entry_container = regional_balance_semicircle_main_entry
+			}
+			regional_balance_member_grid = {
+				array = regional_balance_member_array
+				index = regional_balance_member_index
+				change_scope = no
+				entry_container = regional_balance_member_entry
+			}
+		}
+
+		effects = {
+			regional_balance_modify_button_control_click = {
+				set_temp_variable = { temp_member = rbf }
+				set_temp_variable = { temp_seats = 5 }
+				modify_regional_balance_seat = yes
+			}
+			regional_balance_modify_button_shift_click = {
+				set_temp_variable = { temp_member = rbf }
+				set_temp_variable = { temp_seats = -5 }
+				modify_regional_balance_seat = yes
+			}
+		}
+
+		properties = {
+			regional_balance_main_icon = {
+				frame = rbf
+			}
+			regional_balance_semicircle_main_icon = {
+				frame = rbf
+				x = regional_balance_x_array^regional_balance_main_index
+				y = regional_balance_y_array^regional_balance_main_index
+			}
+			regional_balance_member_icon = {
+				frame = rbf
+			}
+		}
+	}
+}

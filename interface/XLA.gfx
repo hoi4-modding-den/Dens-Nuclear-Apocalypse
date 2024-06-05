@@ -31,4 +31,19 @@ spriteTypes = {
 		name = "GFX_Advisor_Samio"
 		textureFile = "gfx/interface/ideas/XLA/Advisor_Samio.dds"
 	}
+
+	# Regional Balance
+	spriteType = {
+		name = "GFX_regional_balance_party_icon"
+		texturefile = "gfx/interface/parliament_parties.dds"
+		noOfFrames = 3 # number of parties you have in the gfx file
+	}
+	spriteType = {
+		name = "GFX_regional_balance_empty_button"
+		texturefile = "gfx/interface/parliament_empty_button.dds"
+	}
+	spriteType = {
+		name = "GFX_regional_balance_XLA_government_seal"
+		texturefile = "gfx/XNM/XNM_coat_of_arms.png"
+	}
 }

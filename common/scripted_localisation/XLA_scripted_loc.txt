@@ -1,0 +1,37 @@
+defined_text = {
+	name = GetRegionalBalanceFactionName
+	text = {
+		trigger = {
+			check_variable = { rbf = 1 }
+		}
+		localization_key = faction_1_text
+	}
+	text = {
+		trigger = {
+			check_variable = { rbf = 2 }
+		}
+		localization_key = faction_2_text
+	}
+	text = {
+		trigger = {
+			check_variable = { rbf = 3 }
+		}
+		localization_key = faction_3_text
+	}
+	text = {
+		localization_key = "Error"
+	}
+}
+
+# Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
+defined_text = {
+	name = GetRegionalBalanceSeatName
+	text = {
+		trigger = {
+			set_temp_variable = { temp_seat = regional_balance_main_array }
+			add_to_temp_variable = { temp_seat = 1 }
+			check_variable = { temp_seat > 0 }
+		}
+		localization_key = regional_balance_seat_text
+	}
+}

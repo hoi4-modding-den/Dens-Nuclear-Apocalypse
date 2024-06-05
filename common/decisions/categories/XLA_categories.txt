@@ -1,0 +1,12 @@
+regional_balance_gui_decision_category = {
+	icon = usa_congress
+
+	# picture = 
+
+	allowed = { original_tag = XLA }
+
+	priority = 1000
+
+	scripted_gui = XLA_regional_balance
+	visible_when_empty = yes
+}
