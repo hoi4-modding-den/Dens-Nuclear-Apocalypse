@@ -13,7 +13,7 @@
 	reset_on_civilwar = no
 
 	focus = {
-		id = XBC_future_of_the_basque_country
+		id = XBC_last_days_of_liderra_uribe
 		icon = GFX_focus_generic_improve_the_administration
 		x = 12
 		y = 0
@@ -29,16 +29,17 @@
 		completion_reward = {
 			
 		}
-	}	
-	
-	focus = {
-		id = XBC_expanding_the_basque_army
-		icon = GFX_focus_generic_manpower
-		x = -2
-		y = 1
+	}
 
-		relative_position_id = XBC_future_of_the_basque_country
-		prerequisite = { focus = XBC_future_of_the_basque_country }
+	focus = {
+		id = XBC_work_with_the_left
+		icon = GFX_goal_support_communism
+		x = -3
+		y = 1
+		
+		relative_position_id = XBC_last_days_of_liderra_uribe
+		prerequisite = { focus = XBC_last_days_of_liderra_uribe }
+		mutually_exclusive = { focus = XBC_maintain_the_status_quo focus = XBC_cooperate_with_the_right }
 		
 		cost = 5
 		ai_will_do = {
@@ -51,13 +52,14 @@
 	}
 
 	focus = {
-		id = XBC_developing_our_lands
-		icon = GFX_goal_generic_construction2
+		id = XBC_maintain_the_status_quo
+		icon = GFX_focus_generic_self_management
 		x = 0
 		y = 1
-
-		relative_position_id = XBC_future_of_the_basque_country
-		prerequisite = { focus = XBC_future_of_the_basque_country }
+		
+		relative_position_id = XBC_last_days_of_liderra_uribe
+		prerequisite = { focus = XBC_last_days_of_liderra_uribe }
+		mutually_exclusive = { focus = XBC_work_with_the_left focus = XBC_cooperate_with_the_right }
 		
 		cost = 5
 		ai_will_do = {
@@ -68,57 +70,156 @@
 			
 		}
 	}
-
-	focus = {
-		id = XBC_opening_to_the_world
-		icon = GFX_goal_generic_dangerous_deal
-		x = 2
-		y = 1
-
-		relative_position_id = XBC_future_of_the_basque_country
-		prerequisite = { focus = XBC_future_of_the_basque_country }
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = XBC_the_spanish_question
-		icon = GFX_focus_ARG_invite_spanish_nationalists
-		x = -1
-		y = 1
-
-		relative_position_id = XBC_developing_our_lands
-		prerequisite = { focus = XBC_expanding_the_basque_army }
-		prerequisite = { focus = XBC_developing_our_lands }
-		prerequisite = { focus = XBC_opening_to_the_world }
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			
-		}
-	}	
 	
 	focus = {
-		id = XBC_the_economic_direction
-		icon = GFX_focus_generic_industrialists
+		id = XBC_cooperate_with_the_right
+		icon = GFX_goal_support_fascism
+		x = 3
+		y = 1
+		
+		relative_position_id = XBC_last_days_of_liderra_uribe
+		prerequisite = { focus = XBC_last_days_of_liderra_uribe }
+		mutually_exclusive = { focus = XBC_maintain_the_status_quo focus = XBC_work_with_the_left }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_redirecting_our_budget
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_work_with_the_left
+		prerequisite = { focus = XBC_work_with_the_left focus = XBC_maintain_the_status_quo focus = XBC_cooperate_with_the_right }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_areas_of_development
+		icon = GFX_focus_generic_improve_the_administration
 		x = 1
 		y = 1
+		
+		relative_position_id = XBC_redirecting_our_budget
+		prerequisite = { focus = XBC_redirecting_our_budget }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
 
-		relative_position_id = XBC_developing_our_lands
-		prerequisite = { focus = XBC_expanding_the_basque_army }
-		prerequisite = { focus = XBC_developing_our_lands }
-		prerequisite = { focus = XBC_opening_to_the_world }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_reinforcing_our_garrisons
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_work_with_the_left
+		prerequisite = { focus = XBC_work_with_the_left focus = XBC_maintain_the_status_quo focus = XBC_cooperate_with_the_right }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_a_look_outside
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_reinforcing_our_garrisons
+		prerequisite = { focus = XBC_reinforcing_our_garrisons }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_dissident_repression_act
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_cooperate_with_the_right
+		prerequisite = { focus = XBC_work_with_the_left focus = XBC_maintain_the_status_quo focus = XBC_cooperate_with_the_right }
+		mutually_exclusive = { focus = XBC_equal_rights_act }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_equal_rights_act
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_cooperate_with_the_right
+		prerequisite = { focus = XBC_work_with_the_left focus = XBC_maintain_the_status_quo focus = XBC_cooperate_with_the_right }
+		mutually_exclusive = { focus = XBC_dissident_repression_act }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_a_basque_thaw
+		icon = GFX_focus_generic_improve_the_administration
+		x = 0
+		y = 2
+		
+		relative_position_id = XBC_cooperate_with_the_right
+		prerequisite = { focus = XBC_dissident_repression_act focus = XBC_equal_rights_act }
+		mutually_exclusive = { }
 		
 		cost = 5
 		ai_will_do = {
@@ -133,12 +234,13 @@
 	focus = {
 		id = XBC_our_new_leader
 		icon = GFX_focus_CHL_address_the_mapuche_conflict
-		x = 1
-		y = 1
+		x = 0
+		y = 4
 
-		relative_position_id = XBC_the_spanish_question
-		prerequisite = { focus = XBC_the_spanish_question }
-		prerequisite = { focus = XBC_the_economic_direction }
+		relative_position_id = XBC_last_days_of_liderra_uribe
+		prerequisite = { focus = XBC_areas_of_development }
+		prerequisite = { focus = XBC_a_look_outside }
+		prerequisite = { focus = XBC_a_basque_thaw }
 		
 		cost = 5
 		ai_will_do = {

@@ -1,0 +1,25 @@
+XBC_power_struggle_category = {	
+
+	XBC_test = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		
+		available = { }
+		
+		fire_only_once = yes
+		days_remove = 25
+		selectable_mission = yes
+		
+		visible = {
+			tag = XBC
+		}
+		
+		complete_effect  = {
+		    
+		}		
+	}
+}
