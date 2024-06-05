@@ -1685,3 +1685,23 @@ XRM_anarchism_no_borders_desc:0 "We shall spread anarchy around wastelands."
 
 XRM_ANARCHISM_no_borders_idea:0 "Anarchist Society"
 XRM_ANARCHISM_no_borders_idea_desc:0 "Freedom for all."
+
+XRM_industry_expansion:0 "Industrial expansion"
+XRM_industry_expansion_desc:0 "Romanchia is a rual country with no heavy industry and people call for construction of new workplaces."
+
+XRM_fortify_romanchia:0 "Fortify Romachia"
+XRM_fortify_romanchia_desc:0 "The defences will be built to protect our fatherland from invaders."
+
+XRM_state_sponsored_housing_dem:0 "State sponsored housing"
+XRM_state_sponsored_housing_dem_desc:0 "Our population was always neglected by Swiss government. We shall fight poverty and give free housing to our population."
+
+XRM_improve_romansh_spirit_dem:0 "Improve Romansh Spirit"
+XRM_improve_romansh_spirit_dem_desc:0 "Our defence shouldn't be prepared only for nation of Switzerland."
+
+XRM_neutrality_2:0 "Neutrality"
+XRM_neutrality_2_desc:0 "Our nation should never go to war. We shall go the Swiss path."
+
+XRM_neutrality_intervention_dem:0 "Interventionist Neutrality"
+XRM_neutrality_intervention_dem_desc:0 "We shall stay away for conflicts but we shall allow mercenaries"
+
+XRM_volounteers_description:0 "We will be allowed to send volounteers"
