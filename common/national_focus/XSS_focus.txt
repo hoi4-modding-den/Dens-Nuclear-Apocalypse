@@ -2702,6 +2702,21 @@ set_politics = {
         158 = {
             add_core_of = XIA
         }
+        982 = {
+            add_core_of = XIA
+        }
+        981 = {
+            add_core_of = XIA
+        }
+        980 = {
+            add_core_of = XIA
+        }
+        979 = {
+            add_core_of = XIA
+        }
+        978 = {
+            add_core_of = XIA
+        }
         735 = {
             add_core_of = XIA
         }
@@ -9970,6 +9985,150 @@ white_peace = {
 }
     845 = {add_core_of = XRM transfer_state_to = XRM}
         remove_ideas = {XRM_defeat_at_bern}
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XRM_alpine_victory
+    x = 35
+    y = 8
+    icon = GFX_focus_generic_spread_fascism
+    cost = 0
+    available = {has_war = no  
+    OR = {
+    has_completed_focus = XRM_victory_at_besancon
+    has_completed_focus = XRM_white_peace_with_burgundy    
+    }  
+    }
+
+
+    completion_reward = {
+
+        add_stability = 0.25
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XRM_fight_tirol
+    x = 36
+    y = 9
+    icon = GFX_focus_jap_strike_south
+    cost = 5
+    prerequisite = {focus = XRM_alpine_victory}
+
+
+    completion_reward = {
+
+    			create_wargoal = {
+				type = annex_everything
+				target = XTI
+			}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_fight_lombardy
+    x = 34
+    y = 9
+    icon = GFX_focus_ITA_italian_irredentism
+    cost = 5
+    prerequisite = {focus = XRM_alpine_victory}
+
+
+    completion_reward = {
+
+    			create_wargoal = {
+				type = annex_everything
+				target = XLV
+			}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_fight_tribals
+    x = 35
+    y = 10
+    icon = GFX_focus_ETH_freedom_at_gunpoint
+    cost = 5
+    prerequisite = {focus = XRM_fight_lombardy}
+    prerequisite = {focus = XRM_fight_tirol}
+
+
+    completion_reward = {
+
+    			create_wargoal = {
+				type = annex_everything
+				target = XLA
+			}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XRM_alps_united
+    x = 35
+    y = 11
+    icon = GFX_focus_renounce_the_treaty_of_trianon
+    cost = 10
+    prerequisite = { focus = XRM_fight_tribals }
+
+
+    available = {
+            controls_state = 39
+            controls_state = 153
+            controls_state = 159
+            controls_state = 850
+            controls_state = 160
+    }
+
+
+    completion_reward = {
+        39 = {
+
+            add_core_of = XSS
+
+        }
+        158 = {
+
+            add_core_of = XSS
+
+        }
+        153 = {
+
+            add_core_of = XSS
+
+        }
+        159 = {
+
+            add_core_of = XSS
+
+        }
+        850 = {
+
+            add_core_of = XSS
+
+        }
+        160 = {
+
+            add_core_of = XSS
+
+        }
+        set_cosmetic_tag = XSS_alpine
         }
         
 

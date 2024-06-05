@@ -1756,3 +1756,18 @@ XRM_dig_up_trenches_fr_desc:0 "We have lost Bern. We must create a long line of 
 XRM_beaten_but_not_destroyed:0 "Beaten but not Destroyed"
 XRM_beaten_but_not_destroyed_desc:0 "We have lost the war, but the Burgundian army cannot pass to romanchia proper. We shall sue for peace while we still can."
 
+XRM_alpine_victory:0 "Alpine Victory"
+XRM_alpine_victory_desc:0 "Alpine Unity Front has sucessfully defended against invaders and now will try to protect all of the alps."
+
+XRM_fight_tirol:0 "Fight Tirol"
+XRM_fight_tirol_desc:0 "Tirol is 2nd country that is covered by alps. We must unite with them."
+
+XRM_fight_lombardy:0 "Fight Lombardy"
+XRM_fight_lombardy_desc:0 "Lombardy controls ceirtain parts of Tirol and they need to be united with us."
+
+XRM_fight_tribals:0 "Fight Tribals"
+XRM_fight_tribals_desc:0 "Tribes to the south hold some of alpine Territiories and we shall strike them to free our alpine brothers."
+
+XRM_alps_united:0 "Alps United"
+XRM_alps_united_desc:0 "We have captured all of the alpine states. Now we must unite them into Alpine Federation."
+
