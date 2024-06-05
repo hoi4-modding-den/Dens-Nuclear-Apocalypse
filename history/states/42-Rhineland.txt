@@ -2,53 +2,59 @@
 state={
 	id=42
 	name="STATE_42"
-manpower=2018493
 	resources={
-		steel=50 #was 21 #was 35 was 59 # was: 100
-		aluminium=14 # was: 24
+		steel=50.000
+		aluminium=14.000
 	}
-	
-	state_category = metropolis
 
 	history={
-		owner = XRP # GER
-		victory_points = { 11435 5 }
-		victory_points = { 11547 15 }
-		victory_points = { 9575 1 }
-		victory_points = { 11531 5 }
-		victory_points = { 3423 1 }
-		victory_points = { 11560 5 }
-		victory_points = { 3558 3 }
+		owner = XRP
+		victory_points = {
+			11547 15 
+		}
+		victory_points = {
+			9575 1 
+		}
+		victory_points = {
+			11531 5 
+		}
+		victory_points = {
+			3423 1 
+		}
+		victory_points = {
+			11560 5 
+		}
+		victory_points = {
+			3558 3 
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
-            arms_factory = 3
+			arms_factory = 3
 			fuel_silo = 1
 			air_base = 7
 
-
 		}
 		add_core_of = XRP
-	
-		
-		
 		1936.3.7 = {
-			
-		}
 
-		1939.1.1 ={
+		}
+		1939.1.1 = {
 			buildings = {
 				radar_station = 1
 				synthetic_refinery = 3
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		529 563 3423 3558 9575 11435 11470 11494 11531 11547 11560
+		563 3423 3558 9575 11531 11547 11560 
 	}
-	
-	
-
-	local_supplies=0.0 
+	manpower=1516072
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
 }

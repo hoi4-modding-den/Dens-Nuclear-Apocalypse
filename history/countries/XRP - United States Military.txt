@@ -130,10 +130,14 @@ add_ideas = {
 	service_by_requirement #it's a military tag, also intended to offset planned debuffs
 	free_trade
 	XRP_deutsch_apartheid
-	#reminder to add planned national spirits
+	XRP_american_ideals
+	XRP_radical_youth
+	XRP_economy_nuked
+	XRP_agarian_pop
 }
 
 recruit_character = XRP_Cavoli
+recruit_character = XRP_Williams
 
 set_politics = {
 	ruling_party = fascism #I'm not *just* being edgy, I have a lore reason for this

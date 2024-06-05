@@ -46,9 +46,18 @@
  #Ideas#
  XRP_deutsch_apartheid:0 "German Segregation"
  XRP_deutsch_apartheid_desc:0 "The Government of the Rhineland is primarily run by and for Americans, the descendants of the soldiers and officers who occupied the US military installations that peppered the state of Rhineland-Palatinate, prior to the Third World War. German 'civilians' are not granted the same protections, rights, or opportunities, as American 'citizens', and are generally seen as 'obstructive' at best by senior officers of the armed forces." 
- #add idea for "lingering US democratic ideals" type of thing
+ XRP_american_ideals:0 "Lingering Liberal Ideals"
+ XRP_american_ideals_desc:0 "America was always held up as a 'shining beacon of liberty and democracy', starkly in contrast to our current military government. Despite our authoritarian leanings, many in our government still see us as upholding those standards, and wish to eventually transition our state to a more democratic government."
+ XRP_radical_youth:0 "Disillusioned Cadets"
+ XRP_radical_youth_desc:0 "Despite our propaganda efforts, the new generation of American soldiers seem to be increasingly disillusioned in both our military government and the ideals of democracy, seeing them as lies in the face of german oppression, and military service as a waste of their youth. While there's not much they can do about it currently, it could be a weakness if we are invaded from the north."
+ XRP_economy_nuked:0 "Neglected Industral Capabilities"
+ XRP_economy_nuked_desc:0 "Even ignoring how a significant portion of our factories were outright destroyed in the war, we simply don't have the technology to use many pre-war factories to their fullest extent."
+ XRP_agarian_pop:0 "Undeveloped Rural Population"
+ XRP_agarian_pop_desc:0 "Since the Third World War, the majority of our population has been forced to live an agarian lifestyle to survive. While our agarian development has some benefit, as it keeps the German population busy, it does not help our transition to a more modern industralized economy."
  
  #Characters
  XRP_Cavoli:0 "Gavin C. Cavoli"
  XRP_Cavoli_desc:0 "A distant descendant of Christopher G. Cavoli, who led EUCOM during the Third World War, Gavin C. Cavoli was trained from birth to eventually hold the office of 'Supreme Allied Commander', and has done so since 2230. Despite this, Cavoli has had a seeming lack of interest in military affairs, and has instead commanded more as a monarch than a true military leader, being more content to hold the spotlight and give speeches than actually command or even understand his role in the military. However, this arrangement is considered acceptable by high command due to him ‘rubber stamping’ any bills or commands given to him. Some in high command have had concerns that this arrangement could collapse if he ever takes a more firm stance on anything, but for now, everything is ‘smooth sailing’."
+ XRP_Williams:0 "Marcus D. Williams"
+ XRP_Williams_desc:0 "Descendant of General Darryl A. Williams, who led the U.S. Army Europe and Africa during the Third World War, Marcus D. Williams has taken over leadership of the country in the chaos of Cavoli’s assassination. Having graduated from Ramstine Military Academy in 2195, Williams served in the final conquests of the Rhineland, where he was established as a skilled commander in the Battle of Westerwaldkreis. Since then, he has entrenched himself in the army, having acted as one of the most democratically inclined generals, having pushed for more democratic reforms, but having been rejected on most efforts. With the democratic generals now in power, the American Rhineland can fully reform to a democratic republic, though some doubt how far Williams will actually take the reforms, or if elections will even occur."
  
