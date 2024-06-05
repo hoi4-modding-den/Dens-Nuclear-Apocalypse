@@ -1,14 +1,8 @@
-
 state = {
-	id = 161
-	name = "STATE_161"
-	manpower = 61553
-	
+	id = 979
+	name = "STATE_979"
 	state_category = town
-	
-	resources = {
-		aluminium=9 # was: 16
-	}
+	manpower= 61235
 
 	history = {
 		owner = XLA
@@ -16,15 +10,12 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-
 		victory_points = {
-			3976 20
+			910 5
 		}
 	}
 
 	provinces = {
-		3773 3976 6790 9752 
+		910 3885 6875 9750
 	}
-
-	local_supplies = 0.0 
 }

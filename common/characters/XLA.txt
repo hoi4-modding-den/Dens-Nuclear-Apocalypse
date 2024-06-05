@@ -40,6 +40,11 @@ characters = {
 
 	XLA_Socellia_Luzi = {
 		name = "Socellia Luzi"
+		portraits = {
+			army = {
+				small = "GFX_Advisor_Socellia_Luzi"
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = XLA_Luzi
@@ -54,6 +59,11 @@ characters = {
 
 	XLA_Samio = {
 		name = "Samio"
+		portraits = {
+			army = {
+				small = "GFX_Advisor_Samio"
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = XLA_Samio_Token

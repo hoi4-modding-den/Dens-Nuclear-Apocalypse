@@ -1,0 +1,18 @@
+characters = {
+
+	XBC_augusto_uribe = {
+		name = "Augusto Uribe"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SPR_niceto_alcala_zamora"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+}

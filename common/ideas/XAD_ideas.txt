@@ -692,10 +692,8 @@ ideas = {
 					mechanized_defence_factor = 0.05
 				}
 			}
+			
 	}
 }
 
-#medium_tank_chassis
-#light_tank_chassis
-#heavy_tank_chassis
-#modern_tank_chassis
+#cavalry_attack_factor

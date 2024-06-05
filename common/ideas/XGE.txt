@@ -9,6 +9,22 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
+		XGE_new_german_worker = {
+			picture = ARG_construction_guilds
+			modifier = {
+				repair_speed_arms_factory_factor = 0.1
+				repair_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		XGE_equality_idea = {
+			picture = SOV_trotskyite_plot_purged
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
 		XGE_devastation_5 = {
 			picture = POL_disjointed_industry
 			modifier = {

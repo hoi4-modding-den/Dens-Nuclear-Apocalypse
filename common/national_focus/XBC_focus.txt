@@ -1,0 +1,171 @@
+﻿focus_tree = {
+	id = XBC_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XBC
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = XBC_future_of_the_basque_country
+		icon = GFX_focus_generic_improve_the_administration
+		x = 12
+		y = 0
+
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+	
+	focus = {
+		id = XBC_expanding_the_basque_army
+		icon = GFX_focus_generic_manpower
+		x = -2
+		y = 1
+
+		relative_position_id = XBC_future_of_the_basque_country
+		prerequisite = { focus = XBC_future_of_the_basque_country }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XBC_developing_our_lands
+		icon = GFX_goal_generic_construction2
+		x = 0
+		y = 1
+
+		relative_position_id = XBC_future_of_the_basque_country
+		prerequisite = { focus = XBC_future_of_the_basque_country }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XBC_opening_to_the_world
+		icon = GFX_goal_generic_dangerous_deal
+		x = 2
+		y = 1
+
+		relative_position_id = XBC_future_of_the_basque_country
+		prerequisite = { focus = XBC_future_of_the_basque_country }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XBC_the_spanish_question
+		icon = GFX_focus_ARG_invite_spanish_nationalists
+		x = -1
+		y = 1
+
+		relative_position_id = XBC_developing_our_lands
+		prerequisite = { focus = XBC_expanding_the_basque_army }
+		prerequisite = { focus = XBC_developing_our_lands }
+		prerequisite = { focus = XBC_opening_to_the_world }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+	
+	focus = {
+		id = XBC_the_economic_direction
+		icon = GFX_focus_generic_industrialists
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_developing_our_lands
+		prerequisite = { focus = XBC_expanding_the_basque_army }
+		prerequisite = { focus = XBC_developing_our_lands }
+		prerequisite = { focus = XBC_opening_to_the_world }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_our_new_leader
+		icon = GFX_focus_CHL_address_the_mapuche_conflict
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_the_spanish_question
+		prerequisite = { focus = XBC_the_spanish_question }
+		prerequisite = { focus = XBC_the_economic_direction }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_rein_in_pamplona
+		icon = GFX_focus_ETH_boots_on_the_shore
+		x = 0
+		y = 1
+
+		relative_position_id = XBC_our_new_leader
+		prerequisite = { focus = XBC_our_new_leader }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+}

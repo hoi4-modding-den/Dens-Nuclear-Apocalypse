@@ -132,12 +132,34 @@ XAD = {
 	set_variable = {
 		XAD_re_production_speed_arms_factory_factor = 0
 	}
-	#production_speed_arms_factory_factor
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_camelry_attack_factor = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_camelry_defence_factor = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_camelry_speed_factor = 0
+	}
+	set_variable = {
+		XAD_re_acclimatization_hot_climate_gain_factor = 0
+	}
+	set_variable = {
+		XAD_re_heat_attrition_factor = 0
+	}
+	set_variable = {
+		XAD_re_supply_consumption_factor = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_mountaineers_defence_factor = 0
+	}
+	set_variable = {
+		XAD_re_special_forces_cap = 0
+	}
+	set_variable = {
+		XAD_re_modifier_army_sub_unit_mountaineers_max_org_factor = 0
+	}
 }
-
-
-
-
 
 
 

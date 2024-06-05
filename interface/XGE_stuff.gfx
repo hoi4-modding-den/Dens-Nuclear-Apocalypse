@@ -5,6 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/XGE/computer_ideology.dds"
 	}
 	spriteType = {
+		name = "GFX_intelligence_agency_logo_xge"
+		texturefile = "gfx/XGE/agency_logo_xge.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
 		name = "GFX_idea_XGE_computer_clique"
 		texturefile = "gfx/XGE/computer_clique_idea.dds"
 	}
@@ -23,6 +28,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_XGE_skull_emoji"
 		texturefile = "gfx/XGE/XGE_skull_emoji.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_XGE_ddr_image"
+		texturefile = "gfx/XGE/XGE_ddr_image.dds"
 		legacy_lazy_load = no
 	}
 	SpriteType = {
@@ -99,5 +109,79 @@ spriteTypes = {
 		#alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
+	
+	
+	##focus icons
+	
+	spriteType = {
+		name = "GFX_focus_XGE_defend_the_cybernetic_revolution"
+		texturefile = "gfx/XGE/XGE_defend_the_operating_system.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_XGE_defend_the_cybernetic_revolution_shine"
+		texturefile = "gfx/XGE/XGE_defend_the_operating_system.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/XGE/XGE_defend_the_operating_system.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/XGE/XGE_defend_the_operating_system.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_focus_XGE_computer_directed_secret_police"
+		texturefile = "gfx/XGE/XGE_computer_directed_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_XGE_computer_directed_secret_police_shine"
+		texturefile = "gfx/XGE/XGE_computer_directed_secret_police.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/XGE/XGE_computer_directed_secret_police.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/XGE/XGE_computer_directed_secret_police.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}	
 
 }

@@ -1,4 +1,6 @@
 spriteTypes = {
+
+	# Country Leaders
 	spriteType = {
 		name = "GFX_Portrait_Elder_Borani"
 		textureFile = "gfx/leaders/XLA/Portrait_Elder_Borani.dds"
@@ -17,5 +19,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Voiceless_Grotto"
 		textureFile = "gfx/leaders/XLA/Portrait_Voiceless_Grotto.dds"
+	}
+
+	# Advisors
+	spriteType = {
+		name = "GFX_Advisor_Socellia_Luzi"
+		textureFile = "gfx/interface/ideas/XLA/Advisor_Socellia_Luzi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Advisor_Samio"
+		textureFile = "gfx/interface/ideas/XLA/Advisor_Samio.dds"
 	}
 }
