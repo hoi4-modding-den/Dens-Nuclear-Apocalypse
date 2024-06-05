@@ -194,6 +194,16 @@ bookmarks = {
 			
 			}
 		}
+			"XHP" = {
+				ideology = democratic
+				history = XHP_history_desc
+				focuses = {
+
+				}
+				ideas = {
+					
+				}	
+		}
 
 
 		effect = {
