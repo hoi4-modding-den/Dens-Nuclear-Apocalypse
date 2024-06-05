@@ -61,10 +61,10 @@
 
  ### Scripted GUIs ###
   semicircle_regional_balance_gui_title:0 "The Council of Arnmouth"
-  regional_balance_main_icon_tt:0 "[GetRegionalBalanceSeatName] - [GetRegionalBalancePartyName]"
+  regional_balance_main_icon_tt:0 "[GetRegionalBalanceSeatName] - [GetRegionalBalanceFactionName]"
   regional_balance_seat_text:0 "Seat [?temp_seat|Y0]"
-  regional_balance_member_text:0 "[GetRegionalBalancePartyName] - [?regional_balance_seat_array^regional_balance_member_index] Seats"
-  regional_balance_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetRegionalBalancePartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetRegionalBalancePartyName]"
+  regional_balance_member_text:0 "[GetRegionalBalanceFactionName] - [?regional_balance_seat_array^regional_balance_member_index] Seats"
+  regional_balance_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetRegionalBalanceFactionName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetRegionalBalanceFactionName]"
 
   faction_1_text:0 "§RNeutrals§!"
   faction_2_text:0 "§2Spiritualists§!"
