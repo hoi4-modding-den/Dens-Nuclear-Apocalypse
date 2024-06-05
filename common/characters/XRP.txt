@@ -23,4 +23,26 @@ characters = {
 			legacy_id=-1
 		}
 	}
+	XRP_Williams = { 		#democratic leader
+		name = XRP_Williams
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XRP/XRP_Williams.dds"
+			}
+		}
+		country_leader = {
+			ideology = XRP_american_republicanism
+			desc = XRP_Williams_desc
+			id = -1	
+		}
+		corps_commander = {
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
 }

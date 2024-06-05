@@ -1,0 +1,98 @@
+guiTypes = {
+	containerWindowType = {
+        name = "regional_balance_gui_container"
+        position = { x = 0 y = 0 }
+		size = { width = 400 height = 400 }
+
+		instantTextBoxType = {
+			name = "semicircle_regional_balance_gui_title"
+			position = { x = 40 y = 0 }
+			font = "hoi_24header"
+			text = "semicircle_regional_balance_gui_title"
+			maxWidth = 400
+			maxHeight = 24
+			format = center
+		}
+
+		containerWindowType = {
+			name = "regional_balance_semicircle_main_container"
+			position = { x = 0 y = 30 }
+			size = { width = 490 height = 255 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+		
+			containerWindowType = {
+				name = "XLA_regional_balance_main_entry"
+				position = { x = 205 y = 185 }
+				
+				iconType = {
+					name = "XLA_regional_balance_main_icon"
+					spriteType = "GFX_regional_balance_XLA_government_seal"
+					position = { x = 10 y = -25 }
+					pdx_tooltip = "XLA_regional_balance_main_icon_tt"
+				}
+			}
+		
+
+			gridboxtype = {
+				name = "regional_balance_semicircle_main_grid"
+				position = { x = 35 y = 25 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+		gridboxtype = {
+			name = "regional_balance_member_grid"
+			position = { x = -150 y = 300 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 200 height = 18 }
+			max_slots_vertical = 8
+			add_horizontal = no
+		}
+
+		containerWindowType = {
+			name = "regional_balance_semicircle_main_entry"
+			position = { x = 0 y = 0 }
+	
+			iconType = {
+				name = "regional_balance_semicircle_main_icon"
+				spriteType = "GFX_regional_balance_party_icon"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "regional_balance_main_icon_tt"
+			}
+		}
+	
+		containerWindowType = {
+			name = "regional_balance_member_entry"
+			position = { x = 45 y = 0 }
+			size = { width = 500 height = 100 }
+	
+			iconType = {
+				name = "regional_balance_member_icon"
+				spriteType = "GFX_regional_balance_party_icon"
+				position = { x = -20 y = 0 }
+			}
+			buttonType = {
+				name = "regional_balance_modify_button"
+				spriteType = "GFX_regional_balance_empty_button"
+				position = { x = -20 y = 0 }
+				pdx_tooltip = "parliament_modify_button_tt"
+			}
+			instantTextboxType = {
+				name = "regional_balance_member_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_16mbs"
+				maxWidth = 300
+				maxHeight = 16
+				format = left
+				text = "regional_balance_member_text"
+			}
+		}
+	}
+}	

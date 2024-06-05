@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			XLA = {
+				regional_balance_gui_initial = yes
+			}
+		}
+	}
+}

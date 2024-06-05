@@ -1,0 +1,14 @@
+regional_balance_gui_decision_category = {
+	XLA_debug_regional_balance = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		fire_only_once = no		
+		days_re_enable = 1
+	}
+}
