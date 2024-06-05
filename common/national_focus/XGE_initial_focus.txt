@@ -112,7 +112,7 @@
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = XGE_reconnect_old_powergrids }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = XGE_reconnect_old_powergrids
 
@@ -126,8 +126,8 @@
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
-						size > 0
+						building = arms_factory
+						size > 1
 						include_locked = yes
 					}
 					OR = {
@@ -136,8 +136,8 @@
 							owner = {
 								any_owned_state = {
 									free_building_slots = {
-										building = industrial_complex
-										size > 0
+										building = arms_factory
+										size > 1
 										include_locked = yes
 									}
 									is_in_home_area = yes
@@ -146,10 +146,10 @@
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -462,4 +462,622 @@
 		}
 	}
 
+	focus = {
+		id = XGE_enforce_the_full_employment_policy
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_generic_public_works
+		prerequisite = { focus = XGE_societal_rebirth }
+		#mutually_exclusive = { focus =  }
+		x = -4
+		y = 1
+		relative_position_id = XGE_societal_rebirth
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XGE_decrease_devastation_time = yes
+			
+			add_to_variable = {
+				XGE_cc_stability_factor_variable = 0.05
+			}
+			
+			custom_effect_tooltip = XGE_buff_computer_clique
+		}
+	}
+	focus = {
+		id = XGE_low_cost_housing
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_generic_low_cost_housing
+		prerequisite = { focus = XGE_enforce_the_full_employment_policy }
+		prerequisite = { focus = XGE_the_new_german_worker }
+		
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_enforce_the_full_employment_policy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 3491
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+		}
+	}
+	focus = {
+		id = XGE_socialist_welfare
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = { focus = XGE_low_cost_housing}
+		#prerequisite = { focus = XGE_the_new_german_worker }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_low_cost_housing
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				XGE_cc_pp_factor = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_research_speed_variable = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_stability_factor_variable = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_war_support_factor_variable = 0.02
+			}
+			custom_effect_tooltip = XGE_buff_computer_clique
+		}
+	}
+	focus = {
+		id = XGE_expand_the_mining_industry
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = XGE_enforce_the_full_employment_policy }
+		prerequisite = { focus = XGE_reconnect_old_powergrids }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_enforce_the_full_employment_policy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XGE_decrease_devastation_time = yes
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 60
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = XGE_streamline_our_production_lines
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_generic_socialist_science
+		prerequisite = { focus = XGE_expand_the_mining_industry }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_expand_the_mining_industry
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XGE_decrease_devastation_time = yes
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			
+		}
+	}
+	focus = {
+		id = XGE_VEB_saschenring_works
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = XGE_expand_the_mining_industry }
+		
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_expand_the_mining_industry
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XGE_decrease_devastation_time = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = XGE_new_era_of_german_heavy_industry
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = XGE_VEB_saschenring_works }
+		prerequisite = { focus = XGE_streamline_our_production_lines }
+		
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XGE_VEB_saschenring_works
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XGE_decrease_devastation_time = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				XGE_cc_pp_variable = 0.02
+			}
+			custom_effect_tooltip = XGE_buff_computer_clique
+		}
+	}
+	focus = {
+		id = XGE_the_new_german_worker
+		icon = GFX_focus_ARG_women_in_industry
+		#icon = GFX_focus_generic_public_works
+		prerequisite = { focus = XGE_societal_rebirth }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_societal_rebirth
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = { XGE_new_german_worker }
+		}
+	}
+	focus = {
+		id = XGE_a_push_towards_egletarianism
+		icon = GFX_focus_generic_soviet_politics
+		#icon = GFX_focus_generic_public_works
+		prerequisite = { focus = XGE_the_new_german_worker }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_the_new_german_worker
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = XGE_equality_idea
+				days = 100
+			}
+		}
+	}
+	focus = {
+		id = XGE_purge_reactionary_elements
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		#icon = GFX_focus_generic_public_works
+		prerequisite = { focus = XGE_a_push_towards_egletarianism }
+		prerequisite = { focus = XGE_ministerium_fur_staatssicherheit }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_a_push_towards_egletarianism
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_socialist_education
+		icon = GFX_focus_NOR_moscows_education_centers
+		#icon = GFX_focus_generic_public_works
+		prerequisite = { focus = XGE_purge_reactionary_elements }
+		prerequisite = { focus = XGE_socialist_welfare }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XGE_purge_reactionary_elements
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XGE_defend_the_cybernetic_revolution
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_societal_rebirth }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 1
+		relative_position_id = XGE_societal_rebirth
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_to_variable = {
+				XGE_cc_war_support_factor_variable = 0.02
+			}
+			custom_effect_tooltip = XGE_buff_computer_clique
+		}
+	}
+	focus = {
+		id = XGE_ministerium_fur_staatssicherheit
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_generic_secret_service_agency
+		prerequisite = { focus = XGE_defend_the_cybernetic_revolution }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_defend_the_cybernetic_revolution
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "Stasi"
+				icon = GFX_intelligence_agency_logo_xge
+			}
+		}
+	}
+	focus = {
+		id = XGE_computer_directed_secret_police
+		#icon = GFX_Focus_ARG_women_in_industry
+		icon = GFX_focus_XGE_computer_directed_secret_police
+		prerequisite = { focus = XGE_ministerium_fur_staatssicherheit }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_ministerium_fur_staatssicherheit
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = XGE_system_controls_intelligence_false
+					add_idea = XGE_system_controls_intelligence
+				}
+			}
+			set_country_flag = operating_system_controls_intelligence
+			set_country_flag = XGE_bloom_gui_visible  #cuz the gui changed!!!
+			custom_effect_tooltip = XGE_intelligence_switch_tt
+		}
+	}
+	focus = {
+		id = XGE_antifaschistischer_schutzwall
+		#icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = XGE_defend_the_cybernetic_revolution }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_defend_the_cybernetic_revolution
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			65 = {
+				add_building_construction = { type = bunker province = 9441 level = 2 instant_build = yes }
+			}
+			60 = {
+				add_building_construction = { type = bunker province = 9497 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 482 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3500 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3561 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 425 level = 2 instant_build = yes }
+			}
+			64 = {
+				add_building_construction = { type = bunker province = 6487 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3522 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11359 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11219 level = 2 instant_build = yes }
+			}
+			61 = {
+				add_building_construction = { type = bunker province = 9294 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11305 level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = XGE_the_berlin_wall
+		#icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = XGE_antifaschistischer_schutzwall }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_antifaschistischer_schutzwall
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			64 = {
+				add_building_construction = { type = bunker province = 6521 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3499 level = 3 instant_build = yes }
+			}
+			
+		}
+	}
+	focus = {
+		id = XGE_sink_the_reactionaries
+		#icon = GFX_focus
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = XGE_antifaschistischer_schutzwall }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_antifaschistischer_schutzwall
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			61 = {
+				add_building_construction = { type = coastal_bunker province = 321 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11305 level = 2 instant_build = yes }
+			}
+			62 = {
+				add_building_construction = { type = coastal_bunker province = 9388 level = 2 instant_build = yes }
+			}
+			
+		}
+	}
+	focus = {
+		id = XGE_shoot_down_the_fascists
+		#icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = XGE_antifaschistischer_schutzwall }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_antifaschistischer_schutzwall
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			64 = {
+				add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+			}
+			
+		}
+	}
+	focus = {
+		id = XGE_keep_the_masses_in_check
+		#icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		prerequisite = { focus = XGE_the_berlin_wall }
+		prerequisite = { focus = XGE_computer_directed_secret_police }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_the_berlin_wall
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#64 = {
+			#	add_building_construction = { type = bunker province = 6521 level = 3 instant_build = yes }
+			#	add_building_construction = { type = bunker province = 3499 level = 3 instant_build = yes }
+			#}
+			
+		}
+	}
+	focus = {
+		id = XGE_the_path_of_marx_engels_and_lenin
+		#icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		prerequisite = { focus = XGE_keep_the_masses_in_check }
+		prerequisite = { focus = XGE_socialist_education }
+		prerequisite = { focus = XGE_new_era_of_german_heavy_industry }
+		prerequisite = { focus = XGE_death_from_above }
+		prerequisite = { focus = XGE_trust_the_operating_system }
+		#mutually_exclusive = { focus =  }
+		x = -8
+		y = 1
+		relative_position_id = XGE_keep_the_masses_in_check
+		available = { has_idea = XGE_devastation_1 }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				XGE_cc_pp_factor = 0.1
+			}
+			add_to_variable = {
+				XGE_cc_research_speed_variable = 0.05
+			}
+			add_to_variable = {
+				XGE_cc_stability_factor_variable = 0.05
+			}
+			add_to_variable = {
+				XGE_cc_war_support_factor_variable = 0.05
+			}
+			custom_effect_tooltip = XGE_buff_computer_clique
+			remove_ideas = { XGE_devastation_1 }
+		}
+	}
+	focus = {
+		id = XGE_formally_declare_the_ddr
+		#icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		prerequisite = { focus = XGE_the_path_of_marx_engels_and_lenin }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_the_path_of_marx_engels_and_lenin
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_cosmetic_tag = XGE_ddr
+			}
+			custom_effect_tooltip = XGE_declare_ddr_tt
+			
+		}
+	}
 }
