@@ -1,0 +1,23 @@
+XHP_crusader_crisis = {
+	XHP_crusader_crisis1 = {
+		icon = x
+		days_mission_timeout = 50
+		is_good = no
+		allowed = {
+			original_tag = XHP
+		}
+		activation = {	
+			original_tag = XHP
+			has_country_flag = cf_crusader_crisis
+		}
+		available = { # what to do in order to get the complete_effect
+			has_completed_focus = XHP_offer_concessions
+		}
+		complete_effect = { # Crisis averted
+			add_stability = 0.1
+		}
+		timeout_effect = { # start civil war with Knights
+			
+		}
+	}
+}

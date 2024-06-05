@@ -1,8 +1,95 @@
 spriteTypes = {
-
+	### Portraits
 	spriteType = {
 		name = "GFX_portrait_spain_senate"
 		texturefile = "gfx/leaders/XHP/spain_senate.dds"
 	}
+	
+	### Goals
+	spriteType = { 
+		name = "GFX_focus_XHP_quell"
+		texturefile = "gfx/XHP/goals/focus_XHP_quell.dds"
+	}
+	spriteType = { 
+		name = "GFX_focus_XHP_cc_concessions"
+		texturefile = "gfx/XHP/goals/focus_XHP_cc_concessions.dds"
+	}
+	spriteType = { 
+		name = "GFX_focus_XHP_pad"
+		texturefile = "gfx/XHP/goals/focus_XHP_pad.dds"
+	}
 
+	### Goals Shines
+	SpriteType = {
+		name = "GFX_focus_XHP_quell_shine"
+		texturefile = "gfx/XHP/goals/focus_XHP_quell.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/XHP/goals/focus_XHP_quell.dds"
+			animationtexturefile = "gfx/XHP/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/XHP/goals/focus_XHP_quell.dds"
+			animationtexturefile = "gfx/XHP/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_XHP_cc_concessions_shine"
+		texturefile = "gfx/XHP/goals/focus_XHP_cc_concessions.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/XHP/goals/focus_XHP_cc_concessions.dds"
+			animationtexturefile = "gfx/XHP/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/XHP/goals/focus_XHP_cc_concessions.dds"
+			animationtexturefile = "gfx/XHP/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	### Ideas
+	spriteType = { 
+		name = "GFX_idea_XHP_crusader_crisis"
+		texturefile = "gfx/XHP/ideas/idea_XHP_crusader_crisis.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_XHP_chaotic_military"
+		texturefile = "gfx/XHP/ideas/idea_XHP_chaotic_military.dds"
+	}
 }
