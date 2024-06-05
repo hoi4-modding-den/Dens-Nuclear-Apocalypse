@@ -1,0 +1,19 @@
+XAL_characters_join_XFR = {
+	hidden_effect = {
+		XAL = {
+            set_nationality = {
+				target_country = ROOT
+				character = XAL_alban_picard
+			}
+			set_nationality = {
+				target_country = ROOT
+				character = XAL_gervais_devillers
+			}
+			set_nationality = {
+				target_country = ROOT
+				character = XAL_josef_schuhmann_army
+			}
+        }
+	}
+	custom_effect_tooltip = XAL_characters_join_XFR_tt
+}

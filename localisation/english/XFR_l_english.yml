@@ -119,6 +119,14 @@ XFR_jacob_d_amboise_name: "Jacob D'Amboise"
 XFR_jacob_d_amboise_desc: "WIP"
 XFR_gabriel_moreau_name: "Gabriel Moreau"
 XFR_anarchists_name: "Anarchists"
+XFR_emilien_delacroix_name: "Émilien Delacroix"
+XFR_daniel_cellier_name: "Daniel Cellier"
+XFR_richard_bacque_name: "Richard Bacque"
+XFR_sebastien_about_name: "Sébastien About"
+XFR_luc_joubert_name: "Luc Joubert"
+XFR_leonard_desgrais_name: "Léonard Desgrais"
+XFR_nathalie_gardet_name: "Nathalie Gardet"
+XFR_dominique_gounelle_name: "Dominique Gounelle"
 
 XAL_military_junta_name: "Alsatian Military Junta"
 XAL_military_junta_desc: "The Alsace-Lorraine Military Government has been in charge since the takeover in 2230. And looking into the future, they will probably stay there for a while."
@@ -128,6 +136,8 @@ XAL_otto_sommer_name: "Otto Sommer"
 XAL_otto_sommer_desc: "WIP?"
 XAL_jacque_anthoine_name: "Jacque Anthoine"
 XAL_jacque_anthoine_desc: "WIP?"
+XAL_gervais_devillers_name: "Gervais Devillers"
+XAL_alban_picard_name: "Alban Picard"
 
 
 # Traits
@@ -289,6 +299,8 @@ XFR_pilot_training_desc: "WIP"
 # Navy Branch #
 XFR_rebuild_the_fleet: "Rebuild the Fleet"
 XFR_rebuild_the_fleet_desc: "WIP"
+XFR_rebuild_the_fleet_tt: "§Y$XFR_nathalie_gardet_name$§! becomes an admiral."
+XFR_rebuild_the_fleet_tt2: "§Y$XFR_dominique_gounelle_name$§! becomes an admiral."
 XFR_submarine_effort: "Submarine Primacy"
 XFR_submarine_effort_desc: "WIP"
 XFR_cruiser_effort: "Cruiser Effort"
@@ -523,9 +535,10 @@ RULE_MIL_PUPPET_XAL_AI_DESC: "Alsace keeps the Junta in charge. They will ask fo
 
 # Bookmark
 
-XFR_history_desc: "The Republic of Burgundy was born from struggle. The inhabitants of the region known before the cataclysm as 'Eastern France' bonded together to create new hope. They rebuild their homes, their nation, their democracy. But now, that very democracy is in grave danger. To the southwest lie the lands of Lesser Gaul, a 'divine' dictatorship starving for land to take. To the east lie the lands of the former Germany, now under control of many strange factions, out of which most of them surely be hostile to this newborn democracy. How will Burgundy survive this age of strife? Will they stand strong against the fascist threat or join them in their cause?"
+XFR_history_desc: "Burgundy. The Last Stronghold of French Democracy.\n£GFX_XFR_bookmark_image\nThe inhabitants of the region known before the cataclysm as 'Eastern France' bonded together to create new hope. They rebuild their homes, their nation, their democracy. But now, that very democracy is in grave danger, both from internal as well as external threats. How will Burgundy survive this age of strife? Will they stand strong against the fascist threat or join them in their cause?"
 
 # Misc
 
+XAL_characters_join_XFR_tt: "\n§Y[XAL.GetAdjectiveCap]§! Generals join §Y[XFR.GetNameDef]§!.\n "
 monthly_population_tt: " $MODIFIER_GLOBAL_MONTHLY_POPULATION$: $RIGHT|+=%1$"
 production_speed_rail_way_factor_tt: " $modifier_production_speed_rail_way_factor$: $RIGHT|+=%1$"

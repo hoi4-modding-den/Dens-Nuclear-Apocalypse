@@ -15,11 +15,6 @@ spriteTypes = {
     # Portraits
 
     spriteType = {
-        name = "GFX_portrait_XFR_parliament"
-        texturefile = "gfx/leaders/XFR/portrait_XFR_parliament.png"
-    }
-
-    spriteType = {
         name = "GFX_portrait_XFR_herzog_julius"
         texturefile = "gfx/leaders/XFR/portrait_XFR_herzog_julius.png"
     }
@@ -35,6 +30,74 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_XFR_emilien_delacroix"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_emilien_delacroix.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XFR_emilien_delacroix_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_emilien_delacroix.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_daniel_cellier"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_daniel_cellier.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XFR_daniel_cellier_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_daniel_cellier.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_richard_bacque"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_richard_bacque.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XFR_richard_bacque_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_richard_bacque.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_sebastien_about"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_sebastien_about.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XFR_sebastien_about_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_sebastien_about.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_luc_joubert"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_luc_joubert.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XFR_luc_joubert_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_luc_joubert.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_leonard_desgrais"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_leonard_desgrais.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XFR_leonard_desgrais_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_leonard_desgrais.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_nathalie_gardet"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_nathalie_gardet.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_dominique_gounelle"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_dominique_gounelle.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XFR_dominique_gounelle_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_dominique_gounelle.dds"
+    }
+
+    spriteType = {
         name = "GFX_portrait_XAL_military_gov"
         texturefile = "gfx/leaders/XAL/portrait_XAL_military_gov.png"
     }
@@ -43,15 +106,49 @@ spriteTypes = {
         name = "GFX_portrait_XAL_josef_schuhmann"
         texturefile = "gfx/leaders/XAL/portrait_XAL_josef_schuhmann.dds"
     }
+    spriteType = {
+        name = "GFX_portrait_XAL_josef_schuhmann_small"
+        texturefile = "gfx/interface/ideas/XAL/idea_XAL_josef_schuhmann.dds"
+    }
 
     spriteType = {
         name = "GFX_portrait_XAL_otto_sommer"
         texturefile = "gfx/leaders/XAL/portrait_XAL_otto_sommer.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XAL_otto_sommer_small"
+        texturefile = "gfx/interface/ideas/XAL/idea_XAL_otto_sommer.dds"
     }
 
     spriteType = {
         name = "GFX_portrait_XAL_jacque_anthoine"
         texturefile = "gfx/leaders/XAL/portrait_XAL_jacque_anthoine.dds"
     }
+
+    spriteType = {
+        name = "GFX_portrait_XAL_gervais_devillers"
+        texturefile = "gfx/leaders/XAL/portrait_XAL_gervais_devillers.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XAL_gervais_devillers_small"
+        texturefile = "gfx//interface/ideas/XAL/idea_XAL_gervais_devillers.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XAL_alban_picard"
+        texturefile = "gfx//leaders/XAL/portrait_XAL_alban_picard.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_XAL_alban_picard_small"
+        texturefile = "gfx//interface/ideas/XAL/idea_XAL_alban_picard.dds"
+    }
+
+    # Bookmark
+
+    spriteType = {
+		name = "GFX_XFR_bookmark_image"
+		texturefile = "gfx/XFR/XFR_bookmark_image.dds"
+		legacy_lazy_load = no
+	}
 
 }

@@ -1439,7 +1439,10 @@
 		}
 
 		bypass = {
-			XAL = { has_government = fascism }
+			OR = {
+				XAL = { has_government = fascism }
+				XAL = { is_subject_of = ROOT }
+			}
 		}
 
 		cost = 2
@@ -2087,9 +2090,14 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_NAVY_XP }
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_MILITARY_CHARACTER }
 		completion_reward = {
 			navy_experience = 25
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				custom_effect_tooltip = XFR_rebuild_the_fleet_tt
+			}
+			custom_effect_tooltip = XFR_rebuild_the_fleet_tt2
 		}
 	}
 

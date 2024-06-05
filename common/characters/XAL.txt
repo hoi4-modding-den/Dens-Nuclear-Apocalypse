@@ -22,6 +22,27 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_XAL_josef_schuhmann"
+				small = "GFX_portrait_XAL_josef_schuhmann_small"
+			}
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = josef_schuhmann
+			allowed = {
+				original_tag = XAL
+			}
+			available = {
+				OR = {
+					NOT = { has_completed_focus = XAL_arrest_dissidents }
+					has_government = fascism
+				}
+			}
+			traits = {
+				fascist_demagogue
+			}
+			cost =  200
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		country_leader = {
@@ -32,12 +53,47 @@ characters = {
 		}
 	}
 
+	XAL_josef_schuhmann_army = {
+		name = XAL_josef_schuhmann_name
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XAL_josef_schuhmann"
+				small = "GFX_portrait_XAL_josef_schuhmann_small"
+			}
+		}
+		corps_commander={
+			visible = { has_government = fascism }
+			traits={ media_personality }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	XAL_otto_sommer = {
 		name = XAL_otto_sommer_name
 		
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_XAL_otto_sommer"
+				small = "GFX_portrait_XAL_otto_sommer_small"
+			}
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = josef_schuhmann
+			allowed = {
+				original_tag = XAL
+			}
+			traits = {
+				democratic_reformer
+			}
+			cost =  200
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		country_leader = {
@@ -61,6 +117,98 @@ characters = {
 			desc = XAL_jacque_anthoine_desc
 			traits = { }
 			expire = "3000.1.1"
+		}
+	}
+
+	XAL_gervais_devillers = {
+		name = XAL_gervais_devillers_name
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XAL_gervais_devillers"
+				small = "GFX_portrait_XAL_gervais_devillers_small"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = gervais_devillers
+			ledger = army
+			allowed = {
+				OR = {
+					original_tag = XAL
+					original_tag = XFR
+				}
+			}
+			available = {
+				NOT = { 
+					OR = {
+						has_government = fascism 
+						has_government = communism
+					}
+				}
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			visible = { NOT = { OR = { has_government = fascism  has_government = communism } } }
+			traits={ defensive_doctrine }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	XAL_alban_picard = {
+		name = XAL_alban_picard_name
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XAL_alban_picard"
+				small = "GFX_portrait_XAL_alban_picard_small"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = alban_picard
+			ledger = army
+			allowed = {
+				OR = {
+					original_tag = XAL
+					original_tag = XFR
+				}
+			}
+			available = {
+				NOT = { 
+					OR = {
+						has_government = fascism 
+						has_government = communism
+					}
+				}
+			}
+			traits = {
+				army_cavalry_1
+			}
+			cost =  100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			visible = { NOT = { OR = { has_government = fascism  has_government = communism } } }
+			traits={ old_guard cavalry_officer cavalry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
 

@@ -44,7 +44,7 @@
 		}
 
 		bypass = {
-			
+			is_subject_of = XFR
 		}
 
 
@@ -144,7 +144,7 @@
 		}
 
 		bypass = {
-			
+			is_subject_of = XFR 
 		}
 
 
@@ -523,6 +523,8 @@
 		relative_position_id = XAL_increase_political_freedoms
 
 		available = {
+			is_subject = no
+			is_in_faction = no
 			OR = {
 				has_government = democratic
 				has_country_leader = {

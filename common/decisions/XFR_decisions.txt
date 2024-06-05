@@ -492,6 +492,7 @@ XFR_integration = {
 				}
 				add_core_of = ROOT
 			}
+			XAL_characters_join_XFR = yes
         }
 	}
 

@@ -297,6 +297,7 @@ country_event = { # XFR wants to annex XAL -> XAL accepts
 			limit = { is_core_of = XAL }
 			add_core_of = XFR
 		}
+        XAL_characters_join_XFR = yes
     }
 }
 

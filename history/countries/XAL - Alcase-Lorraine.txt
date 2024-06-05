@@ -1,6 +1,8 @@
 capital = 976
 oob = "XAL"
 
+set_country_flag = dont_use_default_political_advisors
+
 set_research_slots = 2
 
 set_technology = {
@@ -24,7 +26,10 @@ add_ideas = {
 }
 
 recruit_character = XAL_military_junta
+recruit_character = XAL_gervais_devillers
+recruit_character = XAL_alban_picard
 recruit_character = XAL_josef_schuhmann
+recruit_character = XAL_josef_schuhmann_army
 recruit_character = XAL_otto_sommer
 recruit_character = XAL_jacque_anthoine
 

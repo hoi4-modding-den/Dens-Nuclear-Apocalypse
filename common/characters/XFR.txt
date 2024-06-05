@@ -47,6 +47,15 @@ characters = {
 			traits = { XFR_herzog_von_burgund }
 			expire = "3000.1.1"
 		}
+		corps_commander={
+			visible = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
+			traits={ cavalry_officer media_personality }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
 	}
 
 	XFR_anarchists = {
@@ -60,6 +69,236 @@ characters = {
 			ideology = anarchist_communism
 			traits = {  }
 			expire = "3000.1.1"
+		}
+	}
+
+	XFR_emilien_delacroix={
+		name=XFR_emilien_delacroix_name
+		portraits={
+			army={
+				large=GFX_portrait_XFR_emilien_delacroix
+				small=GFX_portrait_XFR_emilien_delacroix_small
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = emilien_delacroix
+			ledger = army
+			allowed = {
+				original_tag = XFR
+			}
+			traits = {
+				army_logistics_3
+			}
+			cost =  200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist cavalry_officer old_guard }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+
+	XFR_daniel_cellier={
+		name=XFR_daniel_cellier_name
+		portraits={
+			army={
+				large=GFX_portrait_XFR_daniel_cellier
+				small=GFX_portrait_XFR_daniel_cellier_small
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = daniel_cellier
+			ledger = army
+			allowed = {
+				original_tag = XFR
+			}
+			available = {
+			
+			}
+			traits = {
+				army_cavalry_2
+			}
+			cost =  100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	XFR_richard_bacque={
+		name=XFR_richard_bacque_name
+		portraits={
+			army={
+				large=GFX_portrait_XFR_richard_bacque
+				small=GFX_portrait_XFR_richard_bacque_small
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = richard_bacque
+			ledger = army
+			allowed = {
+				original_tag = XFR
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost =  100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	XFR_sebastien_about={
+		name=XFR_sebastien_about_name
+		portraits={
+			army={
+				large=GFX_portrait_XFR_sebastien_about
+				small=GFX_portrait_XFR_sebastien_about_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_cautious }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+	XFR_luc_joubert={
+		name=XFR_luc_joubert_name
+		portraits={
+			army={
+				large=GFX_portrait_XFR_luc_joubert
+				small=GFX_portrait_XFR_luc_joubert_small
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	XFR_leonard_desgrais={
+		name=XFR_leonard_desgrais_name
+		portraits={
+			army={
+				large=GFX_portrait_XFR_leonard_desgrais
+				small=GFX_portrait_XFR_leonard_desgrais_small
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = leonard_desgrais
+			ledger = army
+			allowed = {
+				original_tag = XFR
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost =  100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={ inflexible_strategist defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=3
+		}
+	}
+
+	XFR_nathalie_gardet = {
+		name = XFR_nathalie_gardet_name
+		gender = female
+		
+		portraits = {
+			navy = {
+				large = "GFX_portrait_XFR_nathalie_gardet"
+			}
+		}
+		navy_leader={
+			visible = {
+				NOT = { has_government = fascism }
+				has_completed_focus = XFR_rebuild_the_fleet 
+			}
+			traits={ navy_career_officer }
+			skill = 3
+  			attack_skill = 2
+  			defense_skill = 3
+  			planning_skill = 3
+  			logistics_skill = 5
+		}
+	}
+
+	XFR_dominique_gounelle = {
+		name = XFR_dominique_gounelle_name
+		
+		portraits = {
+			navy = {
+				large = "GFX_portrait_XFR_dominique_gounelle"
+				small = "GFX_portrait_XFR_dominique_gounelle_small"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = dominique_gounelle
+			allowed = {
+				original_tag = XFR
+			}
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={
+			visible = {
+				has_completed_focus = XFR_rebuild_the_fleet 
+			}
+			traits={ old_guard_navy }
+			skill = 3
+  			attack_skill = 2
+  			defense_skill = 2
+  			planning_skill = 5
 		}
 	}
 

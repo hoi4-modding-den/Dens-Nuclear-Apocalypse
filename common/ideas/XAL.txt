@@ -14,7 +14,10 @@ ideas = {
 			}
 
             cancel = {
-                has_war_with = XFR
+                OR = {
+                    has_war_with = XFR
+                    XFR = { exists = no }
+                }
             }
 
             on_remove = {
