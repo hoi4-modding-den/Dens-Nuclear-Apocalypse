@@ -1614,10 +1614,10 @@
 		
 				completion_reward = {
 					789 = {
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 3
 						instant_build = yes
 						}
 					}
@@ -2756,7 +2756,6 @@
 					name = "División de camellos"
 					division_names_group = XAD_INF_01
 					priority = 2
-					is_locked = yes
 					regiments = {
 						camelry = { x = 0 y = 0 }
 						camelry = { x = 0 y = 1 }
@@ -2935,4 +2934,650 @@
 				}
 			}
 		}
+		focus = {
+			id = XAD_kickstart_naval_producion
+			icon = GFX_
+			prerequisite = { focus = XAD_army_problems }
+			##mutually_exclusive = { focus =  }
+			x = 50
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_dockyards_in_tablina
+			icon = GFX_
+			prerequisite = { focus = XAD_kickstart_naval_producion }
+			##mutually_exclusive = { focus =  }
+			x = 52
+			y = 2
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_dockyards_in_grenada
+			icon = GFX_
+			prerequisite = { focus = XAD_dockyards_in_tablina }
+			##mutually_exclusive = { focus =  }
+			x = 52
+			y = 3
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_create_a_naval_sector
+			icon = GFX_
+			prerequisite = { focus = XAD_kickstart_naval_producion }
+			##mutually_exclusive = { focus =  }
+			x = 48
+			y = 2
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_small_naval_spending
+			icon = GFX_
+			prerequisite = { focus = XAD_create_a_naval_sector }
+			mutually_exclusive = { focus = XAD_huge_naval_spending }
+			x = 47
+			y = 3
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_huge_naval_spending
+			icon = GFX_
+			prerequisite = { focus = XAD_create_a_naval_sector }
+			mutually_exclusive = { focus = XAD_small_naval_spending }
+			x = 49
+			y = 3
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_u-boats_focus
+			icon = GFX_
+			prerequisite = { focus = XAD_small_naval_spending focus = XAD_huge_naval_spending }
+			##mutually_exclusive = { focus =  }
+			x = 48
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_submarine_model
+			icon = GFX_
+			prerequisite = { focus = XAD_u-boats_focus }
+			##mutually_exclusive = { focus =  }
+			x = 48
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_visibility_bonus
+			icon = GFX_
+			prerequisite = { focus = XAD_submarine_model }
+			##mutually_exclusive = { focus =  }
+			x = 48
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_men_of_the_sea
+			icon = GFX_
+			prerequisite = { focus = XAD_submarine_model focus = XAD_destroyer_and_battleship_model }
+			##mutually_exclusive = { focus =  }
+			x = 50
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_our_lake
+			icon = GFX_
+			prerequisite = { focus = XAD_men_of_the_sea }
+			##mutually_exclusive = { focus =  }
+			x = 50
+			y = 7
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_find_old_german_boats
+			icon = GFX_
+			prerequisite = { focus = XAD_submarine_model }
+			##mutually_exclusive = { focus =  }
+			x = 46
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_invest_in_uboat_research
+			icon = GFX_
+			prerequisite = { focus = XAD_find_old_german_boats }
+			##mutually_exclusive = { focus =  }
+			x = 46
+			y = 7
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_big_ass_navy_focus
+			icon = GFX_
+			prerequisite = { focus = XAD_small_naval_spending focus = XAD_huge_naval_spending }
+			prerequisite = { focus = XAD_dockyards_in_grenada }
+			##mutually_exclusive = { focus =  }
+			x = 52
+			y = 4
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_destroyer_and_battleship_model
+			icon = GFX_
+			prerequisite = { focus = XAD_big_ass_navy_focus }
+			##mutually_exclusive = { focus =  }
+			x = 52
+			y = 5
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_toughter_steel
+			icon = GFX_
+			prerequisite = { focus = XAD_destroyer_and_battleship_model }
+			##mutually_exclusive = { focus =  }
+			x = 52
+			y = 6
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_invest_in-destroyer_research
+			icon = GFX_
+			prerequisite = { focus = XAD_toughter_steel }
+			##mutually_exclusive = { focus =  }
+			x = 52
+			y = 7
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_invest_in_destroyer_research
+			icon = GFX_
+			prerequisite = { focus = XAD_toughter_steel }
+			##mutually_exclusive = { focus =  }
+			x = 52
+			y = 7
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_invest_in_battleship_research
+			icon = GFX_
+			prerequisite = { focus = XAD_toughter_steel }
+			##mutually_exclusive = { focus =  }
+			x = 54
+			y = 7
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XAD_invest_in_carriers_research
+			icon = GFX_
+			prerequisite = { focus = XAD_invest_in-destroyer_research }
+			prerequisite = { focus = XAD_invest_in_battleship_research }
+			##mutually_exclusive = { focus =  }
+			x = 53
+			y = 8
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+				
+			}
+		}
+
+
+
+
 	}	
