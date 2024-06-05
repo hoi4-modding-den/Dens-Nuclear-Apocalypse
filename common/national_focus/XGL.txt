@@ -1,0 +1,34 @@
+﻿focus_tree = {
+	id = XGL_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XGL
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = XGL_hi
+		#icon = 
+		x = 12
+		y = 0
+
+		#allow_branch = { }
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+}

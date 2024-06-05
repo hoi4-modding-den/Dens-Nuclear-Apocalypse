@@ -1,0 +1,28 @@
+characters = {
+
+	XGL_antonio_costa = {
+		name = "António Costa"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XGL_antonio_costa"
+			}			
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "3000.9.9.9"
+			desc = XGL_antonio_costa_desc
+			id = -1
+		}
+		#field_marshal={
+			#traits={ }
+			#skill=3
+			#attack_skill=2
+			#defense_skill=1
+			#planning_skill=4
+			#logistics_skill=2
+			#legacy_id=-1
+		#}		
+	}
+
+}

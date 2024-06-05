@@ -1,0 +1,22 @@
+capital = 180
+
+oob = "XGL_1936"
+
+set_war_support = 0.2
+set_stability = 0.15
+set_convoys = 15
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 50
+	communism = 0
+	fascism = 0
+	neutrality = 50
+}
+
+recruit_character = XGL_antonio_costa

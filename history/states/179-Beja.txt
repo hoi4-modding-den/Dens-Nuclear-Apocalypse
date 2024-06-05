@@ -5,6 +5,8 @@ state={
 
 	history={
 		owner = XAD
+		add_claim_by = XGL #okay'd by i_will_explode
+		
 		victory_points = {
 			3790 1 
 		}
