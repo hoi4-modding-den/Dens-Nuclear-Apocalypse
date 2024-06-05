@@ -7,6 +7,13 @@ oob = XHP_1936
 set_war_support = 0
 set_stability = 0.2
 set_convoys = 0
+set_country_flag = cf_crusader_crisis
+
+
+add_ideas = {
+	idea_XHP_crusader_crisis
+	idea_XHP_chaotic_military
+}
 
 set_politics = {
 	ruling_party = democratic
@@ -20,6 +27,7 @@ set_popularities = {
 	fascism = 25
 }
 
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -29,7 +37,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
-	gw_truck = 1
+	early_motorized = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
