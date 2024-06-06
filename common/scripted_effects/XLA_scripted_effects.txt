@@ -1,4 +1,4 @@
-regional_balance_initial_values= {
+regional_balance_initial_values = {
 	set_variable = {
 		var = XLA_Neutral_Councilmembers
 		value = 3

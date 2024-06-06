@@ -69,6 +69,7 @@
  XLA_State_161_tooltip:0 "[161.GetName] consists of 2 §GSpiritualists§!"
  XLA_State_158_tooltip:0 "[158.GetName] consists of 2 §1Altwigitians§!"
  XLA_State_982_tooltip:0 "[982.GetName] consists of 2 §1Altwigitians§!"
+ XLA_Regional_Alignment_Text:0 "[GetRegionalAlignment]"
   #semicircle_regional_balance_gui_title:0 "The Council of Arnmouth"
   #regional_balance_main_icon_tt:0 "[GetRegionalBalanceSeatName] - [GetRegionalBalanceFactionName]"
   #regional_balance_seat_text:0 "Seat [?temp_seat|Y0]"

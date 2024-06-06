@@ -23,6 +23,78 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetRegionalAlignment
+	text = {
+		trigger = {
+			state = 162
+		}
+		localization_key = XLA_State_162_tooltip
+	}
+	text = {
+		trigger = {
+			state = 978
+		}
+		localization_key = XLA_State_978_tooltip
+	}
+
+	text = {
+		trigger = {
+			state = 2
+		}
+
+		localization_key = XLA_State_2_tooltip
+	}
+
+	text = {
+		trigger = {
+			state = 979
+		}
+
+		localization_key = XLA_State_979_tooltip
+	}
+
+	text = {
+		trigger = {
+			state = 980
+		}
+
+		localization_key = XLA_State_980_tooltip
+	}
+
+	text = {
+		trigger = {
+			state = 981
+		}
+
+		localization_key = XLA_State_981_tooltip
+	}
+
+	text = {
+		trigger = {
+			state = 161
+		}
+
+		localization_key = XLA_State_161_tooltip
+	}
+
+	text = {
+		trigger = {
+			state = 158
+		}
+
+		localization_key = XLA_State_158_tooltip
+	}
+
+	text = {
+		trigger = {
+			state = 982
+		}
+		
+		localization_key = XLA_State_982_tooltip
+	}
+}
+
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {
 	name = GetRegionalBalanceSeatName

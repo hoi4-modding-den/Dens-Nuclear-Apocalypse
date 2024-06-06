@@ -1,14 +1,13 @@
 scripted_gui = {
-	XLA_regional_allignment = {
-		window_name = "regional_alignment_gui_container"
+	XLA_regional_alignment = {
+		window_name = "XLA_regional_alignment_window"
 		context_type = selected_state_context
+		parent_window_token = selected_state_view
 
-		
+		visible = {
+			has_state_flag = XLA_regional_alignment
+		}
 	}
-
-
-
-
 
 	XLA_regional_balance = {
 		window_name = "regional_balance_gui_container"

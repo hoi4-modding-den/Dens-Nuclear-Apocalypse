@@ -4,6 +4,7 @@ on_actions = {
 			XLA = {
 				#regional_balance_gui_initial = yes
 				regional_balance_initial_values = yes
+				#regional_balance_state_tooltips_scripted_effect = yes
 			}
 		}
 	}
