@@ -1,0 +1,40 @@
+scripted_map_modes = {
+    UDB_map_mode = {
+        top = {
+            type = country
+            color = {
+                FROM = {
+                    set_temp_variable = { alpha = 1 }
+                    set_temp_variable = { highlighted = 0 }
+                    set_temp_variable = { thickness = 0.0 }
+                    if = {
+                        limit = {
+                            has_idea = XFR_customs_agreement_head_idea
+                        }
+                        set_temp_variable = { red = 0 }
+                        set_temp_variable = { blue = 1 }
+                        set_temp_variable = { green = 1 }
+                    }
+                    else_if = {
+                        limit = {
+                            has_idea = XFR_customs_agreement_idea
+                        }
+                        set_temp_variable = { red = 0.0 }
+                        set_temp_variable = { blue = 0.6 }
+                        set_temp_variable = { green = 0.6 }
+                    }
+                    else = {
+                        set_temp_variable = { red = 0.45 }
+                        set_temp_variable = { blue = 0.45 }
+                        set_temp_variable = { green = 0.45 }
+                    }
+                }
+                
+            }
+            targets = {
+                target_array = global.countries
+            }
+            thickness = yes
+        }
+    }
+}

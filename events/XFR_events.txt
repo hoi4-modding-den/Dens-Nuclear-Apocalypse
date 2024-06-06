@@ -169,6 +169,10 @@ country_event = { # XFR wants to annex XAL
                 add = 2
                 has_idea = neutrality_idea
             }
+            modifier = {
+                add = 1
+                XFR = { NOT = { has_government = ROOT } }
+            }
         }
         XFR = { country_event = { id = XFR_events.8 days = 1 } }
         effect_tooltip = {
@@ -223,6 +227,12 @@ country_event = { # Elections 2236
             long_name = XFR_democratic_party_federalists_long
             name = XFR_democratic_party_federalists
         }   
+        set_power_balance = {
+            id = XFR_federalists_restaurationists_bop
+            left_side = XFR_restaurationist_side
+            right_side = XFR_federalist_side
+            set_value = 0.15
+        }
 
     }
 
@@ -247,6 +257,12 @@ country_event = { # Elections 2236
             long_name = XFR_democratic_party_restauration_long
             name = XFR_democratic_party_restauration
         }       
+        set_power_balance = {
+            id = XFR_federalists_restaurationists_bop
+            left_side = XFR_restaurationist_side
+            right_side = XFR_federalist_side
+            set_value = -0.15
+        }
 
     }
 
@@ -291,8 +307,14 @@ country_event = { # XFR wants to annex XAL -> XAL accepts
         }
         annex_country = {
     		target = XAL
-    		transfer_troops = no
+    		transfer_troops = yes
 		}
+        hidden_effect = {
+            delete_units = {
+				division_template = "Brigade des Volontaires Bourguignons"
+				disband = yes
+			}
+        }
 		every_state = {
 			limit = { is_core_of = XAL }
 			add_core_of = XFR
@@ -368,6 +390,175 @@ country_event = { # XFR rejects (WHY?)
     }
 }
 
+country_event = { # XFR proposes easing of customs barrier
+    id = XFR_events.12
+    title = XFR_events.12.t
+    picture = GFX_report_event_generic_sign_treaty2
+    desc = XFR_events.12.desc
+    
+    is_triggered_only = yes
+
+    option = { # accept
+        name = XFR_events.12.a
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 2
+                has_government = democratic
+            }
+            modifier = {
+                add = 3
+                has_opinion = { target = XFR value > 19 }
+            }
+            modifier = {
+                add = 1
+                has_opinion = { target = XFR value > 49 }
+            }
+            modifier = {
+                factor = 1000
+                is_subject_of = XFR
+            }
+        }
+        XFR = { country_event = { id = XFR_events.13 days = 1 } }
+        effect_tooltip = {
+            XFR = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = XFR_accepted_customs
+                }
+            }
+        }
+        add_ai_strategy = {
+            type = befriend
+            id = XFR
+            value = 50
+        }
+        add_ai_strategy = {
+            type = equipment_market_trade_desire
+            value = 50
+        }
+        add_ideas = XFR_customs_agreement_idea
+    }
+    option = { # decline
+        name = XFR_events.12.b
+        ai_chance = {
+            base = 3
+        }
+        XFR = { country_event = { id = XFR_events.14 days = 1 } }
+        effect_tooltip = {
+            XFR = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = XFR_rejected_customs
+                }
+            }
+        }
+    }
+}
+
+country_event = { # country accepts customs agreement
+    id = XFR_events.13
+    title = XFR_events.13.t
+    picture = GFX_report_event_generic_sign_treaty2
+    desc = XFR_events.13.desc
+    
+    is_triggered_only = yes
+
+    option = {
+        name = XFR_events.13.a
+        ai_chance = {
+            base = 1
+        }
+        add_opinion_modifier = {
+            target = FROM
+            modifier = XFR_accepted_customs
+        }
+        add_power_balance_value = {
+			id = XFR_federalists_restaurationists_bop
+			value = 0.025
+		}
+    }
+}
+
+country_event = { # country rejects customs agreement
+    id = XFR_events.14
+    title = XFR_events.14.t
+    picture = GFX_report_event_generic_sign_treaty2
+    desc = XFR_events.14.desc
+    
+    is_triggered_only = yes
+
+    option = {
+        name = XFR_events.14.a
+        ai_chance = {
+            base = 1
+        }
+        add_opinion_modifier = {
+            target = FROM
+            modifier = XFR_rejected_customs
+        }
+    }
+}
+
+country_event = { # country kicked from BCA
+    id = XFR_events.15
+    title = XFR_events.15.t
+    picture = GFX_report_event_generic_sign_treaty1
+    desc = XFR_events.15.desc
+    
+    is_triggered_only = yes
+
+    option = {
+        name = XFR_events.15.a
+        ai_chance = {
+            base = 1
+        }
+    }
+}
+
+country_event = { # XFR notification about Nationalist Coup
+    id = XFR_events.16
+    title = XFR_events.16.t
+    picture = GFX_report_event_fascist_speech
+    desc = XFR_events.16.desc
+    
+    is_triggered_only = yes
+
+    option = {
+        name = XFR_events.16.a
+        ai_chance = {
+            base = 1
+        }
+        add_opinion_modifier = {
+            target = XAL
+            modifier = XFR_isolate_fascists
+        }
+        add_ai_strategy = {
+            type = antagonize
+            id = XAL
+            value = -100
+        }
+        upgrade_economy_law = yes
+        add_war_support = 0.05
+    }
+    option = {
+        name = XFR_events.16.b
+        ai_chance = {
+            base = 1
+        }
+        add_opinion_modifier = {
+            target = XAL
+            modifier = XFR_isolate_fascists
+        }
+        add_ai_strategy = {
+            type = antagonize
+            id = XAL
+            value = -100
+        }
+        add_political_power = 200
+    }
+}
+
 
 # NEWS EVENTS #
 
@@ -401,6 +592,56 @@ news_event = { # Centre Crisis escalates
     
     option = {
         name = XFR_news_events.2.a
+    }
+
+}
+
+news_event = { # Coup in Alsace
+    id = XFR_news_events.3
+    title = XFR_news_events.3.t
+    picture = GFX_news_event_fascist_gathering
+    desc = XFR_news_events.3.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.3.a
+        trigger = {
+            NOT = { has_government = fascism }
+            NOT = { tag = XFR }
+            NOT = { tag = XAL }
+        }
+    }
+    option = {
+        name = XFR_news_events.3.b
+        trigger = {
+            has_government = fascism
+            NOT = { tag = XFR }
+            NOT = { tag = XAL }
+        }
+    }
+    option = {
+        name = XFR_news_events.3.c
+        trigger = {
+            tag = XFR
+        }
+    }
+
+    option = {
+        name = XFR_news_events.3.d
+        trigger = {
+            tag = XAL
+        }
+        42 = { add_claim_by = ROOT }
+        983 = { add_claim_by = ROOT }
+        add_ai_strategy = {
+            type = conquer
+            id = XRP
+            value = 100
+        }
     }
 
 }

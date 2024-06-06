@@ -146,7 +146,7 @@ bookmarks = {
 			ideology = democratic
 			history = XFR_history_desc
 			focuses = {
-				XFR_democracy_lives_on
+				XFR_proclaim_french_government
 				XFR_dennounce_the_illigitimate_government
 				XFR_the_new_empire
 			}

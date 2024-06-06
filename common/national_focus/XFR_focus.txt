@@ -62,7 +62,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -104,7 +104,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -132,7 +132,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -141,6 +141,7 @@
 				popularity = -0.1
 			}
 			custom_effect_tooltip = XFR_raid_fascist_hideouts_tt
+			set_country_flag = XFR_fascists_eliminated
 		}
 	}
 
@@ -164,7 +165,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -173,6 +174,7 @@
 				popularity = 0.05
 			}
 			custom_effect_tooltip = XFR_work_with_anarchists_tt
+			set_country_flag = XFR_anarchists_eliminated
 		}
 	}
 
@@ -197,7 +199,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -206,6 +208,7 @@
 				popularity = -0.05
 			}
 			custom_effect_tooltip = XFR_arrest_the_duke_tt
+			set_country_flag = XFR_duke_arrested
 		}
 	}
 
@@ -279,7 +282,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -395,7 +398,7 @@
 
 	focus = {
 		id = XFR_colonise_centre
-		icon = GFX_focus_BRA_amazon_colonization
+		icon = GFX_focus_generic_land_reclamation
 		prerequisite = { focus = XFR_crisis_averted }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -430,12 +433,12 @@
 
 
 	focus = {
-		id = XFR_democracy_lives_on
+		id = XFR_stabilise_the_republic
 		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = XFR_elections }
 		prerequisite = { focus = XFR_crisis_averted }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = XFR_elections
 
@@ -459,43 +462,479 @@
 	}
 
 	focus = {
+		id = XFR_european_ambitions
+		icon = GFX_focus_usa_focus_on_europe
+		prerequisite = { focus = XFR_stabilise_the_republic }
+		#mutually_exclusive = { focus =  }
+		x = -5
+		y = 1
+		relative_position_id = XFR_stabilise_the_republic
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = XFR_lessen_internal_borders
+		icon = GFX_focus_SWI_fortify_border_with_france
+		prerequisite = { focus = XFR_stabilise_the_republic }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XFR_stabilise_the_republic
+
+		available = {
+			has_government = democratic
+			has_power_balance = { id = XFR_federalists_restaurationists_bop }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+			custom_effect_tooltip = XFR_lessen_internal_borders_tt
+		}
+	}
+
+	focus = {
+		id = XFR_expand_the_capital
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XFR_stabilise_the_republic }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XFR_stabilise_the_republic
+
+		available = {
+			has_government = democratic
+			capital_scope = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+
+	focus = {
+		id = XFR_reform_the_government
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = XFR_stabilise_the_republic }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_stabilise_the_republic
+
+		available = {
+			has_government = democratic
+			has_power_balance = { id = XFR_federalists_restaurationists_bop }
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_federalists
+		icon = GFX_focus_fra_french_union
+		prerequisite = { focus = XFR_reform_the_government }
+		mutually_exclusive = { focus = XFR_restaurationists }
+		x = -2
+		y = 1
+		relative_position_id = XFR_reform_the_government
+
+		available = {
+			has_government = democratic
+			power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value > 0.3
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_restaurationists
+		icon = GFX_focus_fra_le_deluge
+		prerequisite = { focus = XFR_reform_the_government }
+		mutually_exclusive = { focus = XFR_federalists }
+		x = 2
+		y = 1
+		relative_position_id = XFR_reform_the_government
+
+		available = {
+			has_government = democratic
+			power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value < -0.3
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_anti_corruption_laws
+		icon = GFX_focus_ARG_anti_corruption_policies
+		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 2
+		relative_position_id = XFR_reform_the_government
+
+		available = {
+			has_government = democratic
+			power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value > 0.5
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_new_legal_system
+		icon = GFX_focus_generic_court
+		prerequisite = { focus = XFR_anti_corruption_laws }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_anti_corruption_laws
+
+		available = {
+			has_government = democratic
+			power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value > 0.7
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_subdue_opposition
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
+		#mutually_exclusive = { focus = }
+		x = 2
+		y = 2
+		relative_position_id = XFR_reform_the_government
+
+		available = {
+			has_government = democratic
+			power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value < -0.5
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_the_silver_standard
+		icon = GFX_focus_CHL_silverworking
+		prerequisite = { focus = XFR_subdue_opposition }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_subdue_opposition
+
+		available = {
+			has_government = democratic
+			power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value < -0.7
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_state_of_the_constitution
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_reform_the_government
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_social_reform
+		icon = GFX_focus_DEN_civilian_preparations
+		prerequisite = { focus = XFR_state_of_the_constitution }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_state_of_the_constitution
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_the_dream_of_france
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		prerequisite = { focus = XFR_social_reform }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_social_reform
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_restore_internationalism
+		icon = GFX_focus_generic_league_of_nations
+		prerequisite = { focus = XFR_the_dream_of_france }
+		#mutually_exclusive = { focus = XFR_the_lion_roars_alone }
+		x = -1
+		y = 1
+		relative_position_id = XFR_the_dream_of_france
+
+		available = {
+			has_government = democratic
+			power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value > 0.9
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+			# unlocks LoN minigame
+		}
+	}
+
+	focus = {
+		id = XFR_return_of_the_pope
+		icon = GFX_focus_generic_catholic_dominion
+		prerequisite = { focus = XFR_the_dream_of_france }
+		#mutually_exclusive = { focus = XFR_restore_internationalism }
+		x = 1
+		y = 1
+		relative_position_id = XFR_the_dream_of_france
+
+		available = {
+			has_government = democratic
+			power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value < -0.9
+			}
+			2 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			978 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+			# releases the pope
+		}
+	}
+
+
+	focus = {
+		id = XFR_proclaim_french_government
+		icon = GFX_focus_focus_fra_border
+		prerequisite = { focus = XFR_the_dream_of_france } 
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_the_dream_of_france
+
+		available = {
+			has_government = democratic
+			OR = {
+				power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value > 1
+				}
+				power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value < -1
+				}
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_paris_conference
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = XFR_european_ambitions }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_european_ambitions
+
+		available = {
+			has_government = democratic
+			16 = {
+				is_owned_and_controlled_by = XPR
+			}
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				XPR = { is_subject_of = ROOT }
+				16 = { is_owned_and_controlled_by = ROOT }
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+			# event chain with Paris, either integration, puppet or wargoal
+		}
+	}
+
+	
+	focus = {
 		id = XFR_rhone_expedition
 		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = XFR_democracy_lives_on focus = XFR_the_new_empire }
+		prerequisite = { focus = XFR_stabilise_the_republic focus = XFR_the_new_empire }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
 		relative_position_id = XFR_crisis_averted
-
-		offset = {
-			x = 1
-			trigger = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					has_completed_focus = XFR_dennounce_democracy
-				}
-			}
-		}
-
-		offset = {
-			x = -1
-			trigger = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					has_completed_focus = XFR_support_parliament
-				}
-			}
-		}
 
 		available = {
 			has_army_manpower = {
@@ -508,6 +947,7 @@
 						is_in_faction_with = ROOT
 						is_subject_of = ROOT
 						ROOT = { is_subject_of = PREV }
+						tag = XFW
 					}
 				}
 			}
@@ -557,6 +997,9 @@
 		relative_position_id = XFR_rhone_expedition
 
 		available = {
+			is_neighbor_of = XNF
+			NOT = { is_ally_with = XNF }
+			is_subject = no
 		}
 
 		cost = 5
@@ -570,6 +1013,10 @@
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			create_wargoal = {
+				target = XNF
+				type = annex_everything
+			}
 		}
 	}
 
@@ -739,7 +1186,7 @@
 		icon = GFX_focus_generic_industry_2
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 30
+		x = 31
 		y = 0
 		#relative_position_id = 
 
@@ -847,7 +1294,7 @@
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = XFR_raze_forests_for_factories }
 		#mutually_exclusive = { focus = }
-		x = -4
+		x = -5
 		y = 2
 		relative_position_id = XFR_industrial_investments
 
@@ -953,7 +1400,7 @@
 		prerequisite = { focus = XFR_better_machinery }
 		prerequisite = { focus = XFR_expand_the_railroads }
 		#mutually_exclusive = { focus = }
-		x = -3
+		x = -4
 		y = 3
 		relative_position_id = XFR_industrial_investments
 
@@ -989,11 +1436,33 @@
 	}
 
 	focus = {
+		id = XFR_support_the_population
+		icon = GFX_focus_generic_low_cost_housing
+		prerequisite = { focus = XFR_civilian_industry_expansion }
+		#mutually_exclusive = { focus = }
+		x = 1
+		y = 1
+		relative_position_id = XFR_civilian_industry_expansion
+
+		available = {
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = XFR_alsatian_steel_industry
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = XFR_civilian_industry_expansion }
 		#mutually_exclusive = { focus = }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = XFR_civilian_industry_expansion
 
@@ -1239,7 +1708,7 @@
 		icon = GFX_focus_generic_hydroelectric_energy
 		prerequisite = { focus = XFR_industrial_investments }
 		#mutually_exclusive = { focus = }
-		x = -5
+		x = -6
 		y = 1
 		relative_position_id = XFR_industrial_investments
 
@@ -1427,10 +1896,10 @@
 	focus = {	
 		id = XFR_alcase_lorraine_diplomacy
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = XFR_democracy_lives_on }
-		x = -5
+		prerequisite = { focus = XFR_european_ambitions }
+		x = -3
 		y = 1
-		relative_position_id = XFR_democracy_lives_on
+		relative_position_id = XFR_european_ambitions
 
 		available = {
 			XAL = {
@@ -1502,6 +1971,7 @@
 					limit = { is_core_of = XAL }
 					add_core_of = XFR
 				}
+				XAL_characters_join_XFR = yes
 			}
 			
 			custom_effect_tooltip = XFR_ultimatum_to_alcase_lorraine_tt
@@ -1516,7 +1986,7 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 39
+		x = 40
 		y = 0
 		#relative_position_id = 
 
@@ -1700,7 +2170,7 @@
 	
 	focus = {
 		id = XFR_cavalry_modernisation
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_generic_horse_studs
 		prerequisite = { focus = XFR_army_funds }
 		#mutually_exclusive = { focus = }
 		x = 3
@@ -1840,7 +2310,7 @@
 		icon = GFX_goal_generic_build_airforce
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 47
+		x = 48
 		y = 0
 		#relative_position_id = 
 
@@ -2053,7 +2523,7 @@
 		icon = GFX_goal_generic_build_navy
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 55
+		x = 56
 		y = 0
 		#relative_position_id = 
 

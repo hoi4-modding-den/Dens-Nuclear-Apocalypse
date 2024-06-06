@@ -19,13 +19,28 @@ opinion_modifiers = {
 	XFR_open_borders = {
 		value = 25
 	}
+	XFR_sent_support = {
+		value = 20
+	}
 	XFR_improve_relations = {
 		value = 25
 	}
 	XFR_recalled_support = {
 		value = -50
 	}
+	XFR_rejected_customs = {
+		value = -15
+	}
+	XFR_accepted_customs = {
+		value = 15
+	}
 	XFR_refused_to_protect = {
 		value = -25
+	}
+	XFR_kicked_from_udb = {
+		value = -20
+	}
+	XFR_isolate_fascists = {
+		value = -100
 	}
 }

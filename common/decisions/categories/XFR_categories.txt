@@ -53,3 +53,13 @@ XFR_integration = {
 	visible = {	
 	}
 }
+
+XFR_bop_decision_cat = {		
+	icon = GFX_decision_category_generic_formable_nations
+	
+	allowed = {
+		original_tag = XFR
+	}
+	visible = {	
+	}
+}

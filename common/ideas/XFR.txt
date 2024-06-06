@@ -110,5 +110,62 @@ ideas = {
 
         }
 
+        XFR_customs_agreement_head_idea = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+            }
+
+            do_effect = {
+                NOT = { has_idea = closed_economy }
+            }
+
+           removal_cost = -1
+
+            picture = HUN_treaty_of_triannon
+
+            modifier = {
+			    consumer_goods_factor = -0.05
+                min_export = 0.1
+                trade_opinion_factor = 0.5
+            }
+
+        }
+
+        XFR_customs_agreement_idea = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XFR
+            }
+
+            do_effect = {
+                NOT = { has_idea = closed_economy }
+            }
+
+           removal_cost = -1
+
+            picture = HUN_treaty_of_triannon
+
+            modifier = {
+			    consumer_goods_factor = -0.05
+                min_export = 0.2
+                trade_opinion_factor = 0.2
+            }
+
+        }
+
     }
 }

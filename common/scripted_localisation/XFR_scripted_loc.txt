@@ -30,3 +30,51 @@ defined_text = {
 		localization_key = "Expand the [XFR.GetFactionName]"
 	}
 }
+
+defined_text = {
+	name = UDB_map_mode_tooltip
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_idea = XFR_customs_agreement_head_idea
+				}
+			}
+		}
+		localization_key = UDB_map_mode_tooltip_UDB_nonexistant_tt
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    has_idea = XFR_customs_agreement_head_idea
+                }
+            }
+		}
+		localization_key = UDB_map_mode_tooltip_UDB_burgundy_tt
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    has_idea = XFR_customs_agreement_idea
+                }
+            }
+		}
+		localization_key = UDB_map_mode_tooltip_UDB_1_tt
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    NOT = {
+                        OR = {
+                            has_idea = XFR_customs_agreement_idea
+                        }
+                    }
+                }
+            }
+		}
+		localization_key = UDB_map_mode_tooltip_UDB_0_tt
+    }
+}

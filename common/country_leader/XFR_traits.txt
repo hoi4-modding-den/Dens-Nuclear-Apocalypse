@@ -31,7 +31,7 @@ leader_traits = {
 
 		army_attack_against_major_factor = 0.15
 		army_breakthrough_against_major_factor = 0.05
-		generate_wargoal_tension = -0.25
+		justify_war_goal_time = -0.25
 
 		ai_will_do = {
 			factor = 1
@@ -52,7 +52,8 @@ leader_traits = {
 	XFR_federalist_leader = {
 		random = no
 
-		political_power_factor = 0.15
+		political_power_factor = 0.05
+		power_balance_weekly = 0.001
 		
 
 		ai_will_do = {
@@ -63,7 +64,8 @@ leader_traits = {
 	XFR_restaurationist_leader = {
 		random = no
 
-		political_power_factor = 0.15
+		political_power_factor = 0.05
+		power_balance_weekly = -0.001
 		
 
 		ai_will_do = {

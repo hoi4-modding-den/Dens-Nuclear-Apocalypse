@@ -363,7 +363,7 @@
 		}
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -564,7 +564,7 @@
 				character = XAL_military_junta
 				ruling_only = yes
 			}
-			fascism > 0.25
+			fascism > 0.10
 		}
 
 		bypass = {
@@ -584,6 +584,12 @@
 				popularity = 0.1
 			}
 			set_politics = { ruling_party = fascism elections_allowed = no }
+			hidden_effect = { news_event = { id = XFR_news_events.3 days = 1 } }
+			hidden_effect = { XFR = { country_event = { id = XFR_events.16 days = 2 } } }
+			add_named_threat = {
+    			threat = 1
+    			name = XAL_nationalist_coup
+			}
 		}
 	}
 
@@ -664,17 +670,12 @@
 		available = {
 			has_government = fascism
 			is_subject = no
-			42 = {
-				owner = {
-					NOT = {
-						is_ally_with = ROOT
-					}
-				}
-			}
+			42 = { is_owned_and_controlled_by = ROOT }
+			983 = { is_owned_and_controlled_by = ROOT }
 		}
 
 		bypass = {
-			42 = {
+			51 = {
 				is_owned_and_controlled_by = ROOT
 			}
 		}
@@ -687,15 +688,8 @@
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			42 = { add_claim_by = ROOT }
-			42 = {
-				ROOT = {
-					create_wargoal = {
-						target = PREV
-						type = take_state_focus
-						generator = { 42 }
-					}
-				}
+			51 = {
+				transfer_state_to = ROOT
 			}
 		}
 	}
@@ -711,10 +705,7 @@
 
 		available = {
 			has_government = fascism
-			42 = {
-				is_owned_and_controlled_by = ROOT
-				is_core_of = ROOT
-			}
+			has_war = no
 		}
 
 		bypass = {

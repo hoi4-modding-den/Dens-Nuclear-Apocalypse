@@ -1,0 +1,170 @@
+XFR_federalists_restaurationists_bop = {
+	initial_value = 1
+	left_side = XFR_restaurationist_side 
+	right_side = XFR_federalist_side
+	decision_category = XFR_bop_decision_cat
+
+	range = { #Balanced Range, neither Councils nor Cantons
+		id = XFR_bop_balanced 
+		min = -0.1
+		max = 0.1
+		modifier = {
+			political_advisor_cost_factor = -0.5
+			surrender_limit	= 0.1
+		}
+	}
+
+	side = {
+		id = XFR_restaurationist_side
+		icon = GFX_bop_ITA_democratic_side
+
+		range = {
+			id = XFR_restaurationist_low_control_range
+			min = -0.3
+			max = -0.1
+			modifier = {
+				democratic_drift = 0.01
+				civil_war_involvement_tension = -0.02
+				guarantee_tension = -0.02
+				puppet_cost_factor = -0.3
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = XFR_restaurationist_medium_control_range
+			min = -0.6
+			max = -0.3
+			modifier = {
+				democratic_drift = 0.02
+				civil_war_involvement_tension = -0.04
+				guarantee_tension = -0.04
+				puppet_cost_factor = -0.6
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = XFR_restaurationist_high_control_range
+			min = -0.9
+			max = -0.6
+			modifier = {
+				democratic_drift = 0.03
+				civil_war_involvement_tension = -0.06
+				guarantee_tension = -0.06
+				puppet_cost_factor = -0.9
+				starting_compliance = 0.1
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = XFR_restaurationist_total_control_range
+			min = -1
+			max = -0.9
+			modifier = {
+				democratic_drift = 0.04
+				civil_war_involvement_tension = -0.1
+				guarantee_tension = -0.1
+				puppet_cost_factor = -0.15
+				starting_compliance = 0.2
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+
+	side = {
+		id = XFR_federalist_side
+		icon = GFX_bop_SWI_centralization_canton_side
+
+		range = {
+			id = XFR_federalist_low_control_range
+			min = 0.1
+			max = 0.3
+			modifier = {
+				democratic_drift = 0.01
+				civil_war_involvement_tension = -0.02
+				guarantee_tension = -0.02
+				puppet_cost_factor = -0.3
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = XFR_federalist_medium_control_range
+			min = 0.3
+			max = 0.6
+			modifier = {
+				democratic_drift = 0.02
+				civil_war_involvement_tension = -0.04
+				guarantee_tension = -0.04
+				puppet_cost_factor = -0.6
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = XFR_federalist_high_control_range
+			min = 0.6
+			max = 0.9
+			modifier = {
+				democratic_drift = 0.03
+				civil_war_involvement_tension = -0.06
+				guarantee_tension = -0.06
+				puppet_cost_factor = -0.9
+				starting_compliance = 0.1
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = XFR_federalist_total_control_range
+			min = 0.9
+			max = 1
+			modifier = {
+				democratic_drift = 0.04
+				civil_war_involvement_tension = -0.1
+				guarantee_tension = -0.1
+				puppet_cost_factor = -0.15
+				starting_compliance = 0.2
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+} 
