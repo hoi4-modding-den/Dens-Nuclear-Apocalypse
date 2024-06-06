@@ -4,11 +4,45 @@ regional_balance_gui_decision_category = {
 			original_tag = XLA
 		}
 
-		visible = {
-			is_debug = yes
+		available = {
+			is_ai = no
 		}
 
-		fire_only_once = no		
-		days_re_enable = 1
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		remove_effect = {
+			regional_balance_get_num_elders = yes
+		}
+	}
+
+	XLA_debug_print_num_elders = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		remove_effect = {
+			log = "XLA_debug_num_elders proceeding..."
+			log = "Neutrals: [?XLA_Neutral_Councilmembers]"
+			log = "Spiritualists: [?XLA_Spiritualist_Councilmembers]"
+			log = "Antwigians: [?XLA_Altwigitian_Councilmembers]"
+		}
 	}
 }

@@ -27,71 +27,11 @@ defined_text = {
 	name = GetRegionalAlignment
 	text = {
 		trigger = {
-			state = 162
+			THIS = {
+				has_state_flag = XLA_regional_alignment
+			}
 		}
-		localization_key = XLA_State_162_tooltip
-	}
-	text = {
-		trigger = {
-			state = 978
-		}
-		localization_key = XLA_State_978_tooltip
-	}
-
-	text = {
-		trigger = {
-			state = 2
-		}
-
-		localization_key = XLA_State_2_tooltip
-	}
-
-	text = {
-		trigger = {
-			state = 979
-		}
-
-		localization_key = XLA_State_979_tooltip
-	}
-
-	text = {
-		trigger = {
-			state = 980
-		}
-
-		localization_key = XLA_State_980_tooltip
-	}
-
-	text = {
-		trigger = {
-			state = 981
-		}
-
-		localization_key = XLA_State_981_tooltip
-	}
-
-	text = {
-		trigger = {
-			state = 161
-		}
-
-		localization_key = XLA_State_161_tooltip
-	}
-
-	text = {
-		trigger = {
-			state = 158
-		}
-
-		localization_key = XLA_State_158_tooltip
-	}
-
-	text = {
-		trigger = {
-			state = 982
-		}
-		
-		localization_key = XLA_State_982_tooltip
+		localization_key = XLA_State_tooltip
 	}
 }
 
@@ -100,7 +40,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { v = 1 }
+			check_variable = { THIS.XLA_alignment = 1 }
 		}
 
 		localization_key = XLA_N
@@ -108,7 +48,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { v = 2 }
+			check_variable = { THIS.XLA_alignment = 2 }
 		}
 
 		localization_key = XLA_S
@@ -116,7 +56,7 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			check_variable = { v = 3 }
+			check_variable = { THIS.XLA_alignment = 3 }
 		}
 
 		localization_key = XLA_A
@@ -124,7 +64,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { v = 4 }
+			check_variable = { THIS.XLA_alignment = 4 }
 		}
 
 		localization_key = XLA_NN
@@ -132,7 +72,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { v = 5 }
+			check_variable = { THIS.XLA_alignment = 5 }
 		}
 
 		localization_key = XLA_SS
@@ -140,7 +80,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { v = 6 }
+			check_variable = { THIS.XLA_alignment = 6 }
 		}
 
 		localization_key = XLA_AA
@@ -148,7 +88,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { v = 7 }
+			check_variable = { THIS.XLA_alignment = 7 }
 		}
 
 		localization_key = XLA_NS
@@ -156,7 +96,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { v = 8 }
+			check_variable = { THIS.XLA_alignment = 8 }
 		}
 
 		localization_key = XLA_NA
@@ -164,10 +104,14 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { v = 9 }
+			check_variable = { THIS.XLA_alignment = 9 }
 		}
 
 		localization_key = XLA_AS
+	}
+
+	text = {
+		localization_key = XLA_alignment_broke
 	}
 }
 

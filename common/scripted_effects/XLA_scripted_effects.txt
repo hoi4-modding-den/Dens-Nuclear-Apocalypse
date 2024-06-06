@@ -1,19 +1,18 @@
 regional_balance_initial_values = {
+	# Sets the state flag. If you are making something similar, simply change the tag in the limit and rename all of the XLA's in
+	# this file with your countries tag.
 	set_variable = {
 		var = XLA_Neutral_Councilmembers
-		value = 3
+		value = 2
 	}
-
 	set_variable = {
 		var = XLA_Spiritualist_Councilmembers
-		value = 8
+		value = 7
 	}
-
 	set_variable = {
 		var = XLA_Altwigitian_Councilmembers
-		value = 6
+		value = 5
 	}
-
 	every_state = {
 		limit = {
 			is_owned_and_controlled_by = XLA
@@ -77,7 +76,7 @@ regional_balance_initial_values = {
 	}
 }
 
-regional_balance_state_tooltips_scripted_effect = {
+regional_balance_num_elders = {
 	every_state = {
 		limit = {
 			has_state_flag = XLA_regional_alignment
@@ -87,7 +86,7 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 162
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_162_tooltip
+				XLA_alignment = 1
 			}
 		}
 		else_if = {
@@ -95,7 +94,7 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 978
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_978_tooltip
+				XLA_alignment = 5
 			}
 		}
 		else_if = {
@@ -103,7 +102,7 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 2
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_2_tooltip
+				XLA_alignment = 5
 			}
 		}
 		else_if = {
@@ -111,7 +110,7 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 979
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_979_tooltip
+				XLA_alignment = 6
 			}
 		}
 		else_if = {
@@ -119,7 +118,7 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 980
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_980_tooltip
+				XLA_alignment = 4
 			}
 		}
 		else_if = {
@@ -127,7 +126,7 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 981
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_981_tooltip
+				XLA_alignment = 5
 			}
 		}
 		else_if = {
@@ -135,7 +134,7 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 161
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_161_tooltip
+				XLA_alignment = 5
 			}
 		}
 		else_if = {
@@ -143,7 +142,7 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 158
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_158_tooltip
+				XLA_alignment = 6
 			}
 		}
 		else_if = {
@@ -151,13 +150,153 @@ regional_balance_state_tooltips_scripted_effect = {
 				state = 982
 			}
 			set_variable = {
-				"state_tooltip_text" = XLA_State_982_tooltip
+				XLA_alignment = 6
 			}
 		}
 	}
 }
 
+regional_balance_get_num_elders = {
+	log = "Began regional_balance_get_num_elders"
+	set_variable = {
+		var = XLA_Neutral_Councilmembers
+		value = 0
+	}
+	set_variable = {
+		var = XLA_Spiritualist_Councilmembers
+		value = 0
+	}
+	set_variable = {
+		var = XLA_Altwigitian_Councilmembers
+		value = 0
+	}
+	#log = "[regional_balance_get_num_elders] elder variables cleared"
+	for_each_scope_loop = {
+		array = XLA.owned_controlled_states
+		#log = "[regional_balance_get_num_elders] entered for_each loop"
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 1 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Neutral_Councilmembers
+				value = 1
+			}
+		}
 
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 2 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Spiritualist_Councilmembers
+				value = 1
+			}
+		}
+
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 3 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Altwigitian_Councilmembers
+				value = 1
+			}
+		}
+
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 4 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Neutral_Councilmembers
+				value = 2
+			}
+		}
+
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 5 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Spiritualist_Councilmembers
+				value = 2
+			}
+		}
+
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 6 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Altwigitian_Councilmembers
+				value = 2
+			}
+		}
+
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 7 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Neutral_Councilmembers
+				value = 1
+			}
+			add_to_variable = {
+				var = XLA_Spiritualist_Councilmembers
+				value = 1
+			}
+		}
+
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 8 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Neutral_Councilmembers
+				value = 1
+			}
+			add_to_variable = {
+				var = XLA_Altwigitian_Councilmembers
+				value = 1
+			}
+		}
+
+		if = {
+			limit = {
+				THIS = {
+					check_variable = { XLA_alignment = 9 }
+				}
+			}
+			add_to_variable = {
+				var = XLA_Altwigitian_Councilmembers
+				value = 1
+			}
+			add_to_variable = {
+				var = XLA_Spiritualist_Councilmembers
+				value = 1
+			}
+		}
+	}
+}
+
+## Anything below this point is failed, and should be ignored. I will remove it later.
 
 regional_balance_gui_initial = {
 	# Each state gets one vote. Subject to change.
