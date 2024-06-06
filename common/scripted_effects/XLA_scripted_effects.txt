@@ -1,3 +1,23 @@
+regional_balance_initial_values= {
+	set_variable = {
+		var = XLA_Neutral_Councilmembers
+		value = 3
+	}
+
+	set_variable = {
+		var = XLA_Spiritualist_Councilmembers
+		value = 8
+	}
+
+	set_variable = {
+		var = XLA_Altwigitian_Councilmembers
+		value = 6
+	}
+}
+
+
+
+
 regional_balance_gui_initial = {
 	# Each state gets one vote. Subject to change.
 	add_to_array = { regional_balance_seat_array = 3 } # Neutrals

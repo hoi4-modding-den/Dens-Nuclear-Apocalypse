@@ -7,6 +7,6 @@ regional_balance_gui_decision_category = {
 
 	priority = 1000
 
-	scripted_gui = XLA_regional_balance
+	#scripted_gui = XLA_regional_balance
 	visible_when_empty = yes
 }

@@ -38,7 +38,7 @@
 
  ## VPs
  # Neutrals
- VICTORY_POINTS_11833:0 "Auctermunty [GetRegionalBalanceFactionName]"
+ VICTORY_POINTS_11833:0 "Auctermunty"
  VICTORY_POINTS_9907:0 "Lysa"
  # Spiritualists
  VICTORY_POINTS_923:0 "Sylhneas"
@@ -56,19 +56,19 @@
 
  ## Regional Balance
  # Decisions
-  regional_balance_gui_decision_category:0 "Regional Balance§!"
-  regional_balance_gui_decision_category_desc:0 ""
+  regional_balance_gui_decision_category:0 "The Council of Arnmouth§!"
+  regional_balance_gui_decision_category_desc:0 "Within Arnmouth, there exist 3 major factions. The §WNeutrals§!, the §GSpiritualists$!, and the §1Altwigitians§!. They co-exist within a delicate balance of power within the Council. The Council of Arnmouth consists of 2 members from each region, as well as 1 from the Capital region Auctermunty. Each member, or elder, aligns with one of these factions, but may be tempted to any side for a cost. \n\nCurrently, the Council of Arnmouth consists of the following. \n\n§W[?XLA_Neutral_Councilmembers] Neutrals§! \n\n§G[?XLA_Spiritualist_Councilmembers] Spirutalists§! \n\n§1[?XLA_Altwigitian_Councilmembers] Altwigitians§! \n\nHow the future of the nation unfolds remains in the hands of the council, and whoever can maintain a majority will rule the nation in whatever way they see fit."
 
  ### Scripted GUIs ###
-  semicircle_regional_balance_gui_title:0 "The Council of Arnmouth"
-  regional_balance_main_icon_tt:0 "[GetRegionalBalanceSeatName] - [GetRegionalBalanceFactionName]"
-  regional_balance_seat_text:0 "Seat [?temp_seat|Y0]"
-  regional_balance_member_text:0 "[GetRegionalBalanceFactionName] - [?regional_balance_seat_array^regional_balance_member_index] Seats"
-  regional_balance_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetRegionalBalanceFactionName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetRegionalBalanceFactionName]"
+  #semicircle_regional_balance_gui_title:0 "The Council of Arnmouth"
+  #regional_balance_main_icon_tt:0 "[GetRegionalBalanceSeatName] - [GetRegionalBalanceFactionName]"
+  #regional_balance_seat_text:0 "Seat [?temp_seat|Y0]"
+  #regional_balance_member_text:0 "[GetRegionalBalanceFactionName] - [?regional_balance_seat_array^regional_balance_member_index] Seats"
+  #regional_balance_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetRegionalBalanceFactionName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetRegionalBalanceFactionName]"
 
-  faction_1_text:0 "§RNeutrals§!"
-  faction_2_text:0 "§2Spiritualists§!"
-  faction_3_text:0 "§1Altwigitians§!"
+  #faction_1_text:0 "§RNeutrals§!"
+  #faction_2_text:0 "§2Spiritualists§!"
+  #faction_3_text:0 "§1Altwigitians§!"
   
   ### Tooltips ###
-  XLA_regional_balance_main_icon_tt:0 "§HFreedom and Harmony!§!"
+  #XLA_regional_balance_main_icon_tt:0 "§HFreedom and Harmony!§!"
