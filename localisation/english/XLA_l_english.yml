@@ -38,7 +38,7 @@
 
  ## VPs
  # Neutrals
- VICTORY_POINTS_11833:0 "Auctermunty"
+ VICTORY_POINTS_11833:0 "Auctermunty [GetRegionalBalanceFactionName]"
  VICTORY_POINTS_9907:0 "Lysa"
  # Spiritualists
  VICTORY_POINTS_923:0 "Sylhneas"
@@ -71,4 +71,4 @@
   faction_3_text:0 "§1Altwigitians§!"
   
   ### Tooltips ###
-  XLA_regional_balance_main_icon_tt:0 "§HVivat Respublica Merciorum!§!"
+  XLA_regional_balance_main_icon_tt:0 "§HFreedom and Harmony!§!"
