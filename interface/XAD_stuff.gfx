@@ -18,9 +18,35 @@ spriteTypes = {
 		texturefile = "gfx/leaders/XAD/focus_XAD_gibraltar.png"
 	}
 	spriteType = {
-		name = "GFX_focus_tax_the_strait_shine"
-		texturefile = "gfx/leaders/XAD/focus_XAD_gibraltar.png"
-	}
+        name = "GFX_focus_tax_the_strait_shine" # Change the name, note to keep _shine in the end
+        texturefile = "gfx/leaders/XAD/focus_XAD_gibraltar.png" # Change to the focus icon
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/leaders/XAD/focus_XAD_gibraltar.png" # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/leaders/XAD/focus_XAD_gibraltar.png" # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
 	
 	spriteType = {
 		name = "GFX_idea_the_catalusian_army"
