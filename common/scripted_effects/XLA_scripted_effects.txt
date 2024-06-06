@@ -20,6 +20,61 @@ regional_balance_initial_values = {
 		}
 		set_state_flag = XLA_regional_alignment
 	}
+
+	# Used for determining number of representatives
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 1 Neutral
+		value = 1
+	}
+
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 1 Spiritualist
+		value = 2
+	}
+
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 1 Altwigitian
+		value = 3
+	}
+
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 2 Neutrals
+		value = 4
+	}
+
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 2 Spiritualists
+		value = 5
+	}
+
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 2 Altwigitians
+		value = 6
+	}
+
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 1 Neutral 1 Spiritualist
+		value = 7
+	}
+
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 1 Neutral 1 Altwigitian
+		value = 8
+	}
+
+	add_to_array = {
+		array = XLA_alignment_levels
+		# 1 Spiritualist 1 Altwigitian
+		value = 9
+	}
 }
 
 regional_balance_state_tooltips_scripted_effect = {
