@@ -20,6 +20,7 @@ country_event = {
                 transfer_state_to = XWA
                 add_core_of = XW2
             }
+
         XWA = {
                 retire_country_leader = yes
                 promote_character = {
@@ -38,6 +39,7 @@ country_event = {
                     BEZ_membership
                 }
                 retire_character = XWA_Gerallt_Havard
+                load_focus_tree = XWA_horde_focus
             }
         XW2 = {
                 set_politics = {
@@ -55,6 +57,7 @@ country_event = {
                 set_cosmetic_tag = XWA_NewRepublic
                 remove_ideas = XWA_TheSplit    
                 retire_character = XW2_Arwyn_Blood  
+                load_focus_tree = XWA_union_focus
         }
         }
 	}
@@ -71,6 +74,7 @@ country_event = {
                 transfer_state_to = XWA
                 add_core_of = XW2
             }
+
             XWA = {
                 set_politics = {
                     ruling_party = democratic
@@ -87,6 +91,7 @@ country_event = {
                 set_cosmetic_tag = XWA_NewRepublic
                 remove_ideas = XWA_TheSplit
                 retire_character = XWA_Arwyn_Blood
+                load_focus_tree = XWA_union_focus
             }
             XW2 = {
                 retire_country_leader = yes
@@ -106,6 +111,7 @@ country_event = {
                 BEZ_membership
                 }
                 retire_character = XW2_Gerallt_Havard
+                load_focus_tree = XWA_horde_focus
             }
         }
 	}

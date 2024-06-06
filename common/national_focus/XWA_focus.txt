@@ -1,0 +1,122 @@
+﻿focus_tree = {
+	id = XWA_focus
+
+	country = {
+
+        factor = 0
+		modifier = {
+			add = 100
+            OR = {
+			tag = XWA
+
+            }
+		}
+
+	 }
+	 default = no
+	 continuous_focus_position = { x = 100 y = 2000 }
+
+	 focus = {
+		id = XWA_StateofEmergency
+
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 10
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+     }
+
+	 
+	 focus = {
+		id = XWA_StateofEmergency2
+
+		prerequisite = {focus = XWA_StateofEmergency }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 8
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+     }
+
+	 focus = {
+		id = XWA_StateofEmergency3
+
+		prerequisite = {focus = XWA_StateofEmergency }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 12
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+     }
+	 focus = {
+		id = XWA_StateofEmergency4
+
+		prerequisite = {focus = XWA_StateofEmergency }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 10
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+     }
+} #endbracketlol

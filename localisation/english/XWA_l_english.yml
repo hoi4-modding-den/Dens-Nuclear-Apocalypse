@@ -3,7 +3,15 @@
  XWA:0 "Welsh Republic"
  XWA_DEF:0 "Wales"
  XWA_ADJ:0 "Welsh"
+
  XWA_neutrality_party:0 "Mutants Party"
+ XWA_democratic_party:0 "WDP"
+ XWA_democratic_party_long:0 "Wales Democratic Party"
+ XWA_communism_party:0 "PWWP"
+ XWA_communism_party_long:0 "People of Wales Workers Party"
+ XWA_fascism_party:0 "Mutant Extremists"
+ XWA_fascism_party_long:0 "Mutant Extremists"
+
  XWA_TheSplit:0 "Divided Politics"
  XWA_TheSplit_desc:0 "The Welsh Republic has long had an internal division between the mutants seeking a cure and those proud of their mutant identity. These tensions have grown rapidly and could lead to a civil war."
  XWA_Horde:0 "Welsh Horde"
@@ -13,8 +21,15 @@
  XW2:0 "Welsh Republic"
  XW2_DEF:0 "Wales"
  XW2_ADJ:0 "Welsh"
- XW2_neutrality_party:0 "Mutants Party"
 
+ XW2_neutrality_party:0 "Mutants Party"
+ XW2_democratic_party:0 "WDP"
+ XW2_democratic_party_long:0 "Wales Democratic Party"
+ XW2_communism_party:0 "PWWP"
+ XW2_communism_party_long:0 "People of Wales Workers Party"
+ XW2_fascism_party:0 "Mutant Extremists"
+ XW2_fascism_party_long:0 "Mutant Extremists"
+ 
 #Dr Pepper lol
  XPW:0 "P.H.D Worcestershire"
  XPW_DEF:0 "P.H.D Worcestershire Company"

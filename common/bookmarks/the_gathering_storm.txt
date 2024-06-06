@@ -206,7 +206,17 @@ bookmarks = {
 					
 				}	
 		}
+			"XWA" = {
+				ideology = neutrality
+				history = XWA_history_desc
+				focuses = {
 
+				}
+				ideas = {
+					XWA_TheSplit
+					BEZ_membership
+				}	
+		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

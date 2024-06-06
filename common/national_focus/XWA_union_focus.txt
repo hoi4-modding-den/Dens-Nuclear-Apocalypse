@@ -1,0 +1,41 @@
+﻿focus_tree = {
+	id = XWA_union_focus
+
+	country = {
+
+        factor = 0
+
+	 }
+	 default = no
+	 continuous_focus_position = { x = 100 y = 3000 }
+
+
+
+    #Welsh Union
+	 focus = {
+		id = XWA_UnionFocus
+
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            always = no
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 10
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+
+} #endbracketlol
