@@ -13,8 +13,94 @@ regional_balance_initial_values= {
 		var = XLA_Altwigitian_Councilmembers
 		value = 6
 	}
+
+	every_state = {
+		limit = {
+			is_owned_and_controlled_by = XLA
+		}
+		set_state_flag = XLA_regional_alignment
+	}
 }
 
+regional_balance_state_tooltips_scripted_effect = {
+	every_state = {
+		limit = {
+			has_state_flag = XLA_regional_alignment
+		}
+		if = {
+			limit = {
+				state = 162
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_162_tooltip
+			}
+		}
+		else_if = {
+			limit = {
+				state = 978
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_978_tooltip
+			}
+		}
+		else_if = {
+			limit = {
+				state = 2
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_2_tooltip
+			}
+		}
+		else_if = {
+			limit = {
+				state = 979
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_979_tooltip
+			}
+		}
+		else_if = {
+			limit = {
+				state = 980
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_980_tooltip
+			}
+		}
+		else_if = {
+			limit = {
+				state = 981
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_981_tooltip
+			}
+		}
+		else_if = {
+			limit = {
+				state = 161
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_161_tooltip
+			}
+		}
+		else_if = {
+			limit = {
+				state = 158
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_158_tooltip
+			}
+		}
+		else_if = {
+			limit = {
+				state = 982
+			}
+			set_variable = {
+				"state_tooltip_text" = XLA_State_982_tooltip
+			}
+		}
+	}
+}
 
 
 

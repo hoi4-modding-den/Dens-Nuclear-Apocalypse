@@ -1,4 +1,15 @@
 scripted_gui = {
+	XLA_regional_allignment = {
+		window_name = "regional_alignment_gui_container"
+		context_type = selected_state_context
+
+		
+	}
+
+
+
+
+
 	XLA_regional_balance = {
 		window_name = "regional_balance_gui_container"
 		context_type = decision_category

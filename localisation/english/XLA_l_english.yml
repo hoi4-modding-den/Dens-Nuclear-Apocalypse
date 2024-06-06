@@ -57,9 +57,18 @@
  ## Regional Balance
  # Decisions
   regional_balance_gui_decision_category:0 "The Council of Arnmouth§!"
-  regional_balance_gui_decision_category_desc:0 "Within Arnmouth, there exist 3 major factions. The §WNeutrals§!, the §GSpiritualists$!, and the §1Altwigitians§!. They co-exist within a delicate balance of power within the Council. The Council of Arnmouth consists of 2 members from each region, as well as 1 from the Capital region Auctermunty. Each member, or elder, aligns with one of these factions, but may be tempted to any side for a cost. \n\nCurrently, the Council of Arnmouth consists of the following. \n\n§W[?XLA_Neutral_Councilmembers] Neutrals§! \n\n§G[?XLA_Spiritualist_Councilmembers] Spirutalists§! \n\n§1[?XLA_Altwigitian_Councilmembers] Altwigitians§! \n\nHow the future of the nation unfolds remains in the hands of the council, and whoever can maintain a majority will rule the nation in whatever way they see fit."
+  regional_balance_gui_decision_category_desc:0 "Within Arnmouth, there exist 3 major factions. The §8Neutrals§!, the §GSpiritualists§!, and the §1Altwigitians§!. They co-exist within a delicate balance of power within the Council. The Council of Arnmouth consists of 2 members from each region, as well as 1 from the Capital region Auctermunty. Each member, or elder, aligns with one of these factions, but may be tempted to any side for a cost. \n\nCurrently, the Council of Arnmouth consists of the following. \n\n§8[?XLA_Neutral_Councilmembers] Neutrals§! \n\n§G[?XLA_Spiritualist_Councilmembers] Spirutalists§! \n\n§1[?XLA_Altwigitian_Councilmembers] Altwigitians§! \n\nHow the future of the nation unfolds remains in the hands of the council, and whoever can maintain a majority will rule the nation in whatever way they see fit."
 
  ### Scripted GUIs ###
+ XLA_State_162_tooltip:0 "[162.GetName] consists of 1 §8Neutral§!"
+ XLA_State_978_tooltip:0 "[978.GetName] consists of 2 §GSpiritualists§!"
+ XLA_State_2_tooltip:0 "[2.GetName] consists of 2 §GSpiritualists§!"
+ XLA_State_979_tooltip:0 "[979.GetName] consists of 2 §1Altwigitians§!"
+ XLA_State_980_tooltip:0 "[980.GetName] consists of 2 §8Neutrals§!"
+ XLA_State_981_tooltip:0 "[981.GetName] consists of 2 §GSpiritualists§!"
+ XLA_State_161_tooltip:0 "[161.GetName] consists of 2 §GSpiritualists§!"
+ XLA_State_158_tooltip:0 "[158.GetName] consists of 2 §1Altwigitians§!"
+ XLA_State_982_tooltip:0 "[982.GetName] consists of 2 §1Altwigitians§!"
   #semicircle_regional_balance_gui_title:0 "The Council of Arnmouth"
   #regional_balance_main_icon_tt:0 "[GetRegionalBalanceSeatName] - [GetRegionalBalanceFactionName]"
   #regional_balance_seat_text:0 "Seat [?temp_seat|Y0]"

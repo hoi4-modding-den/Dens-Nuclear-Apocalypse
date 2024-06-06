@@ -1,4 +1,28 @@
 guiTypes = {
+
+	containerWindowType = {
+		name = "regional_alignment_gui_container"
+		position = { x = 0 y = 0 }
+		size = { width = 200 height = 200 }
+
+		containerWindowType = {
+			name = "state_tooltip_container"
+			position = { x = 0 y = 0 }
+			size = { width = 200 height = 200 }
+			moveable = no
+			
+			instantTextBoxType = {
+				name = "state_tooltip_textbox"
+				position = { x = 10 y = 10 }
+				maxHeight = 100
+				maxWidth = 200
+				font = "hoi_16mbs"
+				text = "state_tooltip_default"
+				tooltip = "[GetVariable('state_tooltip_text')]"
+			}
+		}
+	}
+
 	containerWindowType = {
         name = "regional_balance_gui_container"
         position = { x = 0 y = 0 }
