@@ -108,5 +108,6 @@ create_country_leader = {
 }
 
 add_ideas = { 
-     XMD_Small_probability_of_Spanish_coup
+     XMD_Spanish_coup_1
+	 XMD_British_people_1
 }

@@ -2,9 +2,8 @@ ideas = {
 	
 	
 	country = {
-	
-		XMD_Small_probability_of_Spanish_coup = {
-			name = XMD_Small_probability_of_Spanish_coup
+	    XMD_Spanish_coup_1 = {
+			name = XMD_Spanish_coup_1
 
 			removal_cost = -1
 
@@ -19,4 +18,90 @@ ideas = {
 				
 			}
 		}
+		
+		XMD_Spanish_coup_2 = {
+			name = XMD_Spanish_coup_2
+
+			removal_cost = -1
+
+			picture = spa_maquis
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.05
+				
+			}
+		}
+		
+		XMD_Spanish_coup_3 = {
+			name = XMD_Spanish_coup_3
+
+			removal_cost = -1
+
+			picture = spa_maquis
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+			}
+		}
+		
+		XMD_British_people_1 = {
+			name = XMD_British_people_1
+
+			removal_cost = -1
+
+			picture = spa_maquis
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		XMD_British_people_2 = {
+			name = XMD_British_people_2
+
+			removal_cost = -1
+
+			picture = spa_maquis
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		
+		XMD_British_people_3 = {
+			name = XMD_British_people_3
+
+			removal_cost = -1
+
+			picture = spa_maquis
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.2
+			}
+		}
+	
+	}	
 }
