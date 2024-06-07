@@ -1771,3 +1771,85 @@ XRM_fight_tribals_desc:0 "Tribes to the south hold some of alpine Territiories a
 XRM_alps_united:0 "Alps United"
 XRM_alps_united_desc:0 "We have captured all of the alpine states. Now we must unite them into Alpine Federation."
 
+XIA_create_italian_army:0 "Create Italian Army"
+XIA_create_italian_army_desc:0 "We need an army to start our Italian conquests."
+
+XIA_army_reform:0 "Army reform"
+XIA_army_reform_desc:0 "We need to up our army quality."
+
+XIA_tank_research:0 "Tank research"
+XIA_tank_research_desc:0 "We need to create armored battalions to support our infantry."
+
+XIA_NSS_italien:0 "NSS Italien"
+XIA_NSS_italien_desc:0 "NSS recomends us creation of NSS divisions in Italy."
+
+XIA_mobilize:0 "Mobilization"
+XIA_mobilize_desc:0 "We shall prepare our nation for war! §G This will increase our mobilization level by 1 §!"
+
+XIA_artilery_research:0 "Artillery Research"
+XIA_artilery_research_desc:0 "We need to shell our enemies with better artillery."
+
+XIA_expand_milan:0 "Expand Milan"
+XIA_expand_milan_desc:0 "We shall expand our industry in Milan."
+
+XIA_gov_bonds:0 "Government Bonds"
+XIA_gov_bonds_desc:0 "War is taking a heavy toll on our economy. We must engage in spread of government bonds to fund our war machine."
+
+XIA_venetia_industry:0 "Venice Industry"
+XIA_venetia_industry_desc:0 "We must modernize Veneto region."
+
+XIA_lombardian_arms:0 "Lombardian Arms"
+XIA_lombardian_arms_desc:0 "We must create better weapons for our army. New factories will be built."
+
+XIA_rome_industry:0 "Expand Rome Industry"
+XIA_rome_industry_desc:0 "Rome has been captured and is in dire need of industrialization."
+
+XIA_navy_expansion:0 "Navy Expansion"
+XIA_navy_expansion_desc:0 "Italian navy will be great."
+
+XIA_roman_docks:0 "Roman Docks"
+XIA_roman_docks_desc:0 "After capture of rome we must build dockyards there to improve our navy."
+
+XIA_develop_south:0 "Develop South"
+XIA_develop_south_desc:0 "Southern Italy has been ravaged by war and now we need to build basic infrastructure there."
+
+XIA_italian_rule:0 "Italian Rule"
+XIA_italian_rule_desc:0 "Italy even though a puppet must be ruled by Italians!"
+
+XIA_nss_rule:0 "NSS Rule"
+XIA_nss_rule_desc:0 "The influence of NSS in Italy is massive. They should hold the rule over their own state."
+
+XIA_conquest_of_rome:0 "Conquest of Rome"
+XIA_conquest_of_rome_desc:0 "The city the world desires is now in our hands."
+
+XIA_capital_in_rome:0 "Capital in Rome"
+XIA_capital_in_rome_desc:0 "Rome is a historical capital of Italy. We shall retreat to our homeland."
+
+XIA_capital_in_milan:0 "Capital in Milan"
+XIA_capital_in_milan_desc:0 "Milan is closer to our parent nation Switzerland. We shall grow closer to them by maintaining our capital in alps."
+
+XIA_italy_united:0 "Italy United"
+XIA_italy_united_desc:0 "We have conquered Italia proper. Now we must reclaim rest of our kingdom."
+
+XIA_retake_sardinia:0 "Retake Sardinia"
+XIA_retake_sardinia_desc:0 "Colonialists have taken away our sardinian clay. We must retake it!"
+
+XIA_retake_sicily:0 "Retake Sicily"
+XIA_retake_sicily_desc:0 "Sicily is our Island. We must reinvite it back to Kingdom."
+
+XIA_italian_kingdom_united:0 "Italian Kingdom United"
+XIA_italian_kingdom_united_desc:0 "All of our Italian Territiories are now in our control. We now can hope for a better future."
+
+XIA_king_of_italy_trait:0 "King of Italy"
+
+XIA_colonize_tunis:0 "Colonize Tunis"
+XIA_colonize_tunis_desc:0 "We shall increase our control in Mediterranean by colonization of Tunis."
+
+XIA_demand_gibraltar:0 "Demand Gibraltar"
+XIA_demand_gibraltar_desc:0 "Gibraltar is a gate to Mediterranean. We must take hold of it."
+
+XSS_test_event.47.t:0 "Italy demands Gibraltar"
+XSS_test_event.47.desc:0 "King of italy has requested our widthdrawal from Gibraltar and transfer of it's military bases to them."
+XSS_test_event.47.a:0 "We agree"
+XSS_test_event.47.b:0 "Gibraltar is ours"
+

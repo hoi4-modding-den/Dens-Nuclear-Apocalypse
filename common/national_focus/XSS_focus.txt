@@ -2676,7 +2676,6 @@ set_politics = {
         transfer_state= 160
         transfer_state= 850
         add_ideas = {XSS_NSS_italy}
-        hidden_effect = { load_oob = "XSS_ITA" }
         }
         puppet = XIA
         remove_ideas = {XSS_ticino_government}
@@ -10141,3 +10140,592 @@ white_peace = {
 
 }
 
+
+focus_tree = {
+
+country = {
+    factor = 0
+    modifier = {
+        add = 20
+        original_tag = XIA
+    }
+}
+
+
+
+    focus = {
+    id = XIA_create_italian_army
+    x = 20
+    y = 0
+    icon = GFX_focus_ITA_by_blood_alone
+    cost = 5
+    
+
+    completion_reward = {
+        
+                hidden_effect = {load_oob = "XIA"}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_army_reform
+    x = 20
+    y = 1
+    icon = GFX_goal_generic_axis_build_infantry
+    cost = 5
+    prerequisite = {focus = XIA_create_italian_army}
+
+    completion_reward = {
+        
+        army_experience = 50
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_tank_research
+    x = 21
+    y = 2
+    icon = GFX_goal_generic_army_tanks
+    cost = 5
+    prerequisite = {focus = XIA_army_reform}
+
+    completion_reward = {
+        
+
+
+        add_tech_bonus = {
+        bonus = 1
+        uses = 1
+        category = armor
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_NSS_italien
+    x = 19
+    y = 2
+    icon = GFX_focus_SWI_patriotic_shooting_clubs
+    cost = 5
+    prerequisite = {focus = XIA_army_reform}
+
+    completion_reward = {
+        
+       hidden_effect = {load_oob = "XIA_NSS"}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_mobilize
+    x = 17
+    y = 2
+    icon = GFX_focus_generic_manpower
+    cost = 5
+    prerequisite = {focus = XIA_army_reform}
+
+    completion_reward = {
+        
+        upgrade_economy_law = yes
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_artilery_research
+    x = 23
+    y = 2
+    icon = GFX_goal_generic_army_artillery2
+    cost = 5
+    prerequisite = {focus = XIA_army_reform}
+
+    completion_reward = {
+        
+
+
+        add_tech_bonus = {
+        bonus = 1
+        uses = 1
+        category = artillery
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_expand_milan
+    x = 30
+    y = 0
+    icon = GFX_goal_generic_construction
+    cost = 10
+    available = {controls_state = 159}
+
+    completion_reward = {
+        
+     159 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_gov_bonds
+    x = 29
+    y = 1
+    icon = GFX_focus_mex_privatisation
+    cost = 5
+    prerequisite = {focus = XIA_expand_milan}
+
+    completion_reward = {
+
+    add_ideas = {XSS_government_bonds_idea}
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_navy_expansion
+    x = 28
+    y = 2
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 10
+    prerequisite = {focus = XIA_expand_milan}
+    available = {controls_state = 982}
+
+    completion_reward = {
+
+    982 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = dockyard
+    level = 3
+    instant_build = yes
+        }
+    }    
+      
+
+ 
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XIA_roman_docks
+    x = 29
+    y = 3
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 10
+    prerequisite = {focus = XIA_navy_expansion}
+    prerequisite = {focus = XIA_rome_industry}
+    available = {controls_state = 2}
+
+    completion_reward = {
+
+    2 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = dockyard
+    level = 3
+    instant_build = yes
+        }
+    }    
+      
+
+ 
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_develop_south
+    x = 31
+    y = 3
+    icon = GFX_focus_ITA_southern_industry
+    cost = 20
+    prerequisite = {focus = XIA_lombardian_arms}
+    prerequisite = {focus = XIA_rome_industry}
+    available = { controls_state = 117 controls_state = 849}
+
+
+    completion_reward = {
+
+    117 = {
+    add_extra_state_shared_building_slots = 6 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    }   
+
+    849 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    }  
+      
+
+ 
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_venetia_industry
+    x = 31
+    y = 1
+    icon = GFX_goal_generic_construct_civ_factory
+    cost = 5
+    prerequisite = {focus = XIA_expand_milan}
+    available = {controls_state = 160}
+
+    completion_reward = {
+     160 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_lombardian_arms
+    x = 32
+    y = 2
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 10
+    prerequisite = {focus = XIA_venetia_industry}
+    available = {controls_state = 159}
+
+    completion_reward = {
+     159 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+        }
+    } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_rome_industry
+    x = 30
+    y = 2
+    icon = GFX_goal_generic_construct_civ_factory
+    cost = 10
+    prerequisite = {focus = XIA_venetia_industry}
+    available = {controls_state = 2}
+
+    completion_reward = {
+     2 = {
+    add_extra_state_shared_building_slots = 3 
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+        }
+    } 
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XIA_italian_rule
+    x = 36
+    y = 0
+    icon = GFX_focus_ITA_italian_hegemony
+    cost = 1
+    mutually_exclusive = {focus = XIA_nss_rule}
+    completion_reward = {
+        add_stability = 0.1
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_nss_rule
+    x = 38
+    y = 0
+    icon = GFX_focus_ger_reichskommisariats
+    cost = 1
+    mutually_exclusive = {focus = XIA_italian_rule}
+
+    completion_reward = {
+        retire_character = XSS_zino
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_conquest_of_rome
+    x = 37
+    y = 1
+    icon = GFX_focus_ITA_italian_irredentism
+    cost = 1
+    prerequisite  = {focus = XIA_nss_rule focus = XIA_italian_rule}
+    available = {controls_province = 9904}
+
+    completion_reward = {
+        add_stability = 0.1
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_capital_in_rome
+    x = 38
+    y = 2
+    icon = GFX_goal_generic_demand_territory
+    cost = 5
+    prerequisite  = {focus = XIA_conquest_of_rome }
+    available = {controls_province = 9904}
+    mutually_exclusive = {focus = XIA_capital_in_milan}
+    completion_reward = {
+set_capital = {
+  state = 2
+  remember_old_capital = no
+}
+add_war_support = 0.15
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_capital_in_milan
+    x = 36
+    y = 2
+    icon = GFX_goal_generic_dangerous_deal
+    cost = 5
+    prerequisite  = {focus = XIA_conquest_of_rome }
+    available = {controls_province = 3780}
+    mutually_exclusive = {focus = XIA_capital_in_rome}
+
+    completion_reward = {
+add_stability = 0.05
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XIA_italy_united
+    x = 37
+    y = 3
+    icon = GFX_focus_ITA_to_live_as_a_lion
+    cost = 5
+    prerequisite  = {focus = XIA_capital_in_milan focus = XIA_capital_in_rome }
+    available = {XLA = {exists = no} XIT = {exists = no}}
+
+    completion_reward = {
+
+        add_stability = 0.05
+        add_war_support = 0.15
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XIA_retake_sardinia
+    x = 36
+    y = 4
+    icon = GFX_goal_generic_major_war
+    cost = 5
+    prerequisite  = {focus = XIA_italy_united }
+
+    completion_reward = {
+
+       declare_war_on = {
+       target = XMD
+        type = annex_everything
+            } 
+        114 = {add_core_of = XIA}
+        116 = {add_core_of = XIA}
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XIA_retake_sicily
+    x = 38
+    y = 4
+    icon = GFX_goal_generic_major_war
+    cost = 5
+    prerequisite  = {focus = XIA_italy_united }
+
+    completion_reward = {
+
+       declare_war_on = {
+       target = XCA
+        type = annex_everything
+            } 
+       declare_war_on = {
+       target = XNR
+        type = annex_everything
+            } 
+        115 = {add_core_of = XIA}
+        972 = {add_core_of = XIA}
+        971 = {add_core_of = XIA}
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_italian_kingdom_united
+    x = 37
+    y = 5
+    icon = GFX_focus_ITA_greater_italy
+    cost = 5
+    prerequisite  = {focus = XIA_retake_sicily }
+    prerequisite  = {focus = XIA_retake_sardinia }
+    available = {XCA = {exists = no} XNR = {exists = no } XMD = {exists = no}
+    
+        OR = {
+
+            XSS = {controls_state = 736 controls_state = 852 controls_state = 735}
+            AND = {
+            XIA = { controls_state = 735 }
+            LIB = {controls_state = 736 controls_state = 852}                
+            }
+
+
+
+        }
+    
+    }
+
+
+    completion_reward = {
+
+    add_country_leader_trait = XIA_king_of_italy_trait
+
+    transfer_state = 736
+    transfer_state = 852
+    transfer_state = 735
+    736 = {add_core_of = XIA}
+    852 = {add_core_of = XIA}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XIA_colonize_tunis
+    x = 37
+    y = 6
+    icon = GFX_focus_ITA_ministry_of_italian_africa
+    cost = 5
+    prerequisite  = {focus = XIA_italian_kingdom_united }
+    available = {XTR = {controls_state = 458 controls_state = 665}}
+
+
+    completion_reward = {
+
+    transfer_state = 458
+    transfer_state = 665
+    458 = {add_core_of = XIA}
+    665 = {add_core_of = XIA}
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XIA_demand_gibraltar
+    x = 37
+    y = 7
+    icon = GFX_focus_SMB_a_land_of_mountains
+    cost = 5
+    prerequisite  = {focus = XIA_colonize_tunis }
+    available = {XAD = {controls_state = 118}}
+
+
+    completion_reward = {
+
+XAD = {
+country_event = {
+    id = XSS_test_event.47
+    days = 1
+    random_hours = 12
+}
+}
+
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
+}

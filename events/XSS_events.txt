@@ -1367,6 +1367,37 @@ annex_country = {
 
 }
 
+#################### Demand gibraltar ########################
+
+country_event = {
+    id = XSS_test_event.47
+    title = XSS_test_event.47.t
+    picture = GFX_report_event_bunker_01
+    desc = XSS_test_event.47.desc
+    
+    
+    is_triggered_only = yes
+
+    
+    option = {
+        name = XSS_test_event.47.a
+        XIA = {transfer_state = 118 }
+        118 = {add_core_of = XIA}
+        
+    }
+    option = {
+        name = XSS_test_event.47.b
+        118 = {add_core_of = XIA}
+        XIA = {
+        declare_war_on = {
+        target = XAD
+        type = annex_everything
+            }
+        }
+        
+    }
+}
+
 
 ################ TE JEBANE EVENTY TO KURWA AIDS UTNE SE CHUJA ################################
 ### tak robie te zajebane gówno pierwszy raz i mam ochote jebnąc magika ######################

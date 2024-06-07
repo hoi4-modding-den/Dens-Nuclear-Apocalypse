@@ -486,6 +486,64 @@ corps_commander = {
 		}
 
 	}
+
+	XSS_nostitz = {
+		name = "Ralph Nostitz"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_maximilian_von_weichs"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+corps_commander = {
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 1
+}
+
+	}
+	XSS_herrlein = {
+		name = "Heiner Herrlein"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_wilhelm_marschall"
+			}
+		}
+
+corps_commander = {
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 4
+    logistics_skill = 2
+}
+
+	}
+
+	XSS_orio = {
+		name = "Albrico Orio"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ITA_francesco_zingales"
+			}
+		}
+
+corps_commander = {
+    skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+	}
 ###################### Normal ######################################
 
 	XSS_lohmiller = {

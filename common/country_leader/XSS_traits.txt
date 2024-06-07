@@ -169,5 +169,13 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 		army_core_attack_factor = 0.1
 	}
+	XIA_king_of_italy_trait = {
+		random = no
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		political_power_factor = 0.1
+		army_core_defence_factor = 0.1
+		army_core_attack_factor = 0.1
+	}
 
 }
