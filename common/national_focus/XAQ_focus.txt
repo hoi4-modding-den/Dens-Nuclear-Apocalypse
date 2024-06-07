@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = XAQ_focus
 	
 	country = {
@@ -76,10 +76,10 @@ focus_tree = {
 				add_state_core = 20
 				transfer_state = 20
 			}
-			LIB = {
+			XFW = {
 				remove_state_core = 20
 			}
-			
+
 		}
 	}
 	focus = {
