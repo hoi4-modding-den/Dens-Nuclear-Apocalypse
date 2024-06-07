@@ -74,6 +74,8 @@ regional_balance_initial_values = {
 		# 1 Spiritualist 1 Altwigitian
 		value = 9
 	}
+
+
 }
 
 regional_balance_num_elders = {
@@ -296,212 +298,79 @@ regional_balance_get_num_elders = {
 	}
 }
 
-## Anything below this point is failed, and should be ignored. I will remove it later.
-
-regional_balance_gui_initial = {
-	# Each state gets one vote. Subject to change.
-	add_to_array = { regional_balance_seat_array = 3 } # Neutrals
-	add_to_array = { regional_balance_seat_array = 8 } # Spiritualists
-	add_to_array = { regional_balance_seat_array = 6 } # Altwigitans
-
-	add_to_array = { regional_balance_member_array = 1 } # Neutrals
-	add_to_array = { regional_balance_member_array = 2 } # Spiritualists
-	add_to_array = { regional_balance_member_array = 3 } # Altwigitans
-
-	regional_balance_gui_positions = yes
-	reload_regional_balance_gui = yes
-}
-
-reload_regional_balance_gui = {
-	clear_array = regional_balance_main_array
-	for_each_loop = {
-		array = regional_balance_seat_array
-
-		add_to_array = { temp_seat = regional_balance_seat_array^i }
+XLA_setup_popularities = {
+	log = "[XLA] Establishing popularities"
+	set_variable = {
+		var = XLA_max_popularities
+		value = 100
 	}
 
-	set_temp_variable = { temp_index_1 = 0 }
-	set_temp_variable = { temp_index_2 = 1 }
-
-	set_temp_variable = { temp_size = temp_seat^num }
-	subtract_from_temp_variable = { temp_size = 1 }
-
-	while_loop_effect = {
-		limit = {
-			check_variable = { temp_index_1 < temp_size }
-		}
-		add_to_variable = { temp_seat^temp_index_2 = temp_seat^temp_index_1 }
-		add_to_temp_variable = { temp_index_1 = 1 }
-		add_to_temp_variable = { temp_index_2 = 1 }
+	set_variable = {
+		var = XLA_democratic_popularity
+		value = XLA_Spiritualist_Councilmembers
 	}
 
-	for_loop_effect = {
-		start = 0
-		end = temp_seat^num
-
-		resize_array = { array = regional_balance_main_array value = regional_balance_member_array^rbf size = temp_seat^rbf }
-	}
-	clear_array = temp_seat
-}
-
-# Balance seat numbers
-modify_regional_balance_seat = {
-	subtract_from_temp_variable = { temp_member = 1 }
-
-	set_temp_variable = { temp = regional_balance_seat_array^temp_member }
-	add_to_temp_variable = { temp = temp_seats }
-
-	if = {
-		limit = {
-			check_variable = { temp > regional_balance_main_array^num }
-		}
-		subtract_from_temp_variable = { temp = regional_balance_main_array^num }
-		subtract_from_temp_variable = { temp_seats = temp }
-	}
-	else_if = {
-		limit = {
-			check_variable = { temp < 0 }
-		}
-		multiply_temp_variable = { temp = -1 }
-		subtract_from_temp_variable = { temp_seats = temp }
+	multiply_variable = {
+		var = XLA_democratic_popularity
+		value = 4.5
 	}
 
-	# adds all parties to temp_array
-	for_loop_effect = {
-		start = 0
-		end = regional_balance_seat_array^num
+	log = "Democratic - [?XLA.XLA_democratic_popularity]"
 
-		add_to_temp_array = { temp_array = rbf }
+	set_variable = {
+		var = XLA_fascist_popularity
+		value = XLA_Altwigitian_Councilmembers
 	}
 
-	# remove from list of parties the party to be added/subtracted
-	remove_from_temp_array = { array = temp_array value = temp_member }
-
-	# give party new seat value
-	add_to_variable = { regional_balance_seat_array^temp_member = temp_seats }
-
-	# if its add
-	if = {
-		limit = {
-			check_variable = { temp_seats > 0 }
-		}
-		# loop until seats to be added is 0
-		while_loop_effect = {
-			limit = {
-				check_variable = { temp_seats > 0 }
-			}
-
-			# loops through remaining parties, subtracting 1 seat each time
-			for_loop_effect = {
-				start = 0
-				end = temp_array^num
-
-				if = {
-					limit = {
-						check_variable = { regional_balance_seat_array^temp_array^rbf > 0 } # party must have more than 0 seats to be subtracted
-						check_variable = { temp_seats > 0 } # seats to be added is bigger than 0 currently
-					}
-					subtract_from_variable = { regional_balance_seat_array^temp_array^rbf = 1 } # subtract from party 1 seat
-					subtract_from_temp_variable = { temp_seats = 1 } # subtract from seats to be added
-				}
-			}
-		}
+	multiply_variable = {
+		var = XLA_fascist_popularity
+		value = 4.5
 	}
-	# if its subtract
-	else_if = {
-		limit = {
-			check_variable = { temp_seats < 0 }
-		}
-		# loop until seats to be subtracted is 0
-		while_loop_effect = {
-			limit = {
-				check_variable = { temp_seats < 0 }
-			}
 
-			# loops through remaining parties, adding 1 seat each time
-			for_loop_effect = {
-				start = 0
-				end = temp_array^num
+	log = "Fascist - [?XLA.XLA_fascist_popularity]"
 
-				if = {
-					limit = {
-						check_variable = { regional_balance_array^temp_array^rbf < regional_balance_main_array^num } # party must have less than max seats to be added
-						check_variable = { temp_seats < 0 } # seats to be subtracted is less than 0 currently
-					}
-					add_to_variable = { regional_balance_array^temp_array^rbf = 1 } # add to party 1 seat
-					add_to_temp_variable = { temp_seats = 1 } # add to seats to be subtracted
-				}
-			}
-		}
+	set_variable = {
+		var = XLA_neutral_popularity
+		value = XLA_max_popularities
 	}
-	# do nothing if 0
 
-	# Modify what shows up in the gui
-	reload_regional_balance_gui = yes
-}
+	subtract_from_variable = {
+		var = XLA_neutral_popularity
+		value = XLA_fascist_popularity
+	}
 
-# Clear all arrays (for debugging)
-clear_regional_balance_gui_arrays = {
-	clear_array = regional_balance_main_array
-	clear_array = regional_balance_member_array
-	clear_array = regional_balance_seat_array
-	clear_array = regional_balance_x_array
-	clear_array = regional_balance_y_array
-}
+	subtract_from_variable = {
+		var = XLA_neutral_popularity
+		value = XLA_democratic_popularity
+	}
 
-regional_balance_gui_positions = {
-	## Neutrals
-	# 1
-	add_to_array = { regional_balance_x_array = 0 }
-	add_to_array = { regional_balance_y_array = 45 }
-	# 2
-	add_to_array = { regional_balance_x_array = 13 }
-	add_to_array = { regional_balance_y_array = 45 }
-	# 3
-	add_to_array = { regional_balance_x_array = 26 }
-	add_to_array = { regional_balance_y_array = 45 }
-	## Spiritualists
-	# 1 (4)
-	add_to_array = { regional_balance_x_array = 9 }
-	add_to_array = { regional_balance_y_array = 24 }
-	# 2 (5)
-	add_to_array = { regional_balance_x_array = 22 }
-	add_to_array = { regional_balance_y_array = 28 }
-	# 3 (6)
-	add_to_array = { regional_balance_x_array = 27 }
-	add_to_array = { regional_balance_y_array = 10 }
-	# 4 (7)
-	add_to_array = { regional_balance_x_array = 39 }
-	add_to_array = { regional_balance_y_array = 32 }
-	# 5 (8)
-	add_to_array = { regional_balance_x_array = 39 }
-	add_to_array = { regional_balance_y_array = 19 }
-	# 6 (9)
-	add_to_array = { regional_balance_x_array = 49 }
-	add_to_array = { regional_balance_y_array = 5 }
-	# 7 (10)
-	add_to_array = { regional_balance_x_array = 59 }
-	add_to_array = { regional_balance_y_array = 19 }
-	# 8 (11)
-	add_to_array = { regional_balance_x_array = 59 }
-	add_to_array = { regional_balance_y_array = 32 }
-	## Altwigitians
-	# 1 (12)
-	add_to_array = { regional_balance_x_array = 71 }
-	add_to_array = { regional_balance_y_array = 10 }
-	# 2 (13)
-	add_to_array = { regional_balance_x_array = 75 }
-	add_to_array = { regional_balance_y_array = 28 }
-	# 3 (14)
-	add_to_array = { regional_balance_x_array = 89 }
-	add_to_array = { regional_balance_y_array = 24 }
-	# 4 (15)
-	add_to_array = { regional_balance_x_array = 72 }
-	add_to_array = { regional_balance_y_array = 45 }
-	# 5 (16)
-	add_to_array = { regional_balance_x_array = 85 }
-	add_to_array = { regional_balance_y_array = 45 }
-	# 6 (17)
-	add_to_array = { regional_balance_x_array = 98 }
-	add_to_array = { regional_balance_y_array = 45 }
+	log = "Neutral - [?XLA.XLA_neutral_popularity]"
+
+	set_variable = {
+		var = XLA_total
+		value = 0
+	}
+
+	add_to_variable = {
+		var = XLA_total
+		value = XLA_neutral_popularity
+	}
+
+	add_to_variable = {
+		var = XLA_total
+		value = XLA_fascist_popularity
+	}
+
+	add_to_variable = {
+		var = XLA_total
+		value = XLA_democratic_popularity
+	}
+
+	log = "Total - [?XLA.XLA_total]"
+
+	set_popularities = {
+		neutrality = [?XLA.XLA_neutral_popularity]
+		democratic = [?XLA.XLA_democratic_popularity]
+		fascism = [?XLA.XLA_fascist_popularity]
+	}
 }

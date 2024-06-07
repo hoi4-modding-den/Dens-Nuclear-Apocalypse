@@ -73,15 +73,3 @@
  XLA_NA:0 "§81 Neutral§! and §11 Altwigitian§!"
  XLA_AS:0 "§11 Altwigitian§! and §G1 Spiritualist§!"
  XLA_alignment_broke:0 "0 elders."
-  #semicircle_regional_balance_gui_title:0 "The Council of Arnmouth"
-  #regional_balance_main_icon_tt:0 "[GetRegionalBalanceSeatName] - [GetRegionalBalanceFactionName]"
-  #regional_balance_seat_text:0 "Seat [?temp_seat|Y0]"
-  #regional_balance_member_text:0 "[GetRegionalBalanceFactionName] - [?regional_balance_seat_array^regional_balance_member_index] Seats"
-  #regional_balance_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetRegionalBalanceFactionName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetRegionalBalanceFactionName]"
-
-  #faction_1_text:0 "§RNeutrals§!"
-  #faction_2_text:0 "§2Spiritualists§!"
-  #faction_3_text:0 "§1Altwigitians§!"
-  
-  ### Tooltips ###
-  #XLA_regional_balance_main_icon_tt:0 "§HFreedom and Harmony!§!"

@@ -6,6 +6,7 @@ on_actions = {
 				regional_balance_initial_values = yes
 				regional_balance_num_elders = yes
 				regional_balance_get_num_elders = yes
+				XLA_setup_popularities = yes
 			}
 		}
 	}

@@ -1,29 +1,4 @@
 defined_text = {
-	name = GetRegionalBalanceFactionName
-	text = {
-		trigger = {
-			check_variable = { v = 1 }
-		}
-		localization_key = faction_1_text
-	}
-	text = {
-		trigger = {
-			check_variable = { v = 2 }
-		}
-		localization_key = faction_2_text
-	}
-	text = {
-		trigger = {
-			check_variable = { v = 3 }
-		}
-		localization_key = faction_3_text
-	}
-	text = {
-		localization_key = "Error"
-	}
-}
-
-defined_text = {
 	name = GetRegionalAlignment
 	text = {
 		trigger = {
@@ -121,61 +96,51 @@ defined_text = {
 		trigger = {
 			OR = {
 				check_variable = {
-					THIS.XLA_alignment = 1
+					XLA_alignment = 1
 				}
+
 				check_variable = {
-					THIS.XLA_alignment = 4
+					XLA_alignment = 4
 				}
 			}
 		}
-			
-		localization_key = "GFX_regional_alignment_button:1"
+
+		localization_key = "GFX_XLA_neutral_alignment"
 	}
 
 	text = {
 		trigger = {
 			OR = {
 				check_variable = {
-					THIS.XLA_alignment = 2
+					XLA_alignment = 2
 				}
+
 				check_variable = {
-					THIS.XLA_alignment = 5
+					XLA_alignment = 5
 				}
 			}
 		}
 
-		localization_key = "GFX_regional_alignment_button:2"
+		localization_key = "GFX_XLA_spiritualist_alignment"
 	}
 
 	text = {
 		trigger = {
 			OR = {
 				check_variable = {
-					THIS.XLA_alignment = 3
+					XLA_alignment = 3
 				}
+
 				check_variable = {
-					THIS.XLA_alignment = 6
+					XLA_alignment = 6
 				}
 			}
 		}
 
-		localization_key = "GFX_regional_alignment_button:3"
+		localization_key = "GFX_XLA_altwigitian_alignment"
 	}
 
 	text = {
 		localization_key = "GFX_regional_alignment_backup"
-	}
-}
-
-# Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
-defined_text = {
-	name = GetRegionalBalanceSeatName
-	text = {
-		trigger = {
-			set_temp_variable = { temp_seat = regional_balance_main_array }
-			add_to_temp_variable = { temp_seat = 1 }
-			check_variable = { temp_seat > 0 }
-		}
-		localization_key = regional_balance_seat_text
 	}
 }

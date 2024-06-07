@@ -25,8 +25,15 @@ set_politics = {
 	election_frequency = 98
 	elections_allowed = no
 }
+
 set_popularities = {
 	neutrality = 73
 	democratic = 14
 	fascism = 13
 }
+
+#set_popularities = {
+#	neutrality = [?XLA.XLA_neutral_popularity]
+#	democratic = [?XLA.XLA_democratic_popularity]
+#	fascism = [?XLA.XLA_fascist_popularity]
+#}

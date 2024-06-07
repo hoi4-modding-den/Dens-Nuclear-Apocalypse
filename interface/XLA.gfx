@@ -40,21 +40,22 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_regional_alignment_backup"
-		textureFile = "gfx/interface/add_pol_idea_button.dds"
+		name = "GFX_XLA_neutral_alignment"
+		textureFile = "gfx/interface/XLA/XLA_Neutrals.dds"
 	}
 
 	spriteType = {
-		name = "GFX_regional_balance_party_icon"
-		texturefile = "gfx/interface/XLA_regional_balance_factions.png"
-		noOfFrames = 3 # number of parties you have in the gfx file
+		name = "GFX_XLA_spiritualist_alignment"
+		textureFile = "gfx/interface/XLA/XLA_Spiritualists.dds"
 	}
+
 	spriteType = {
-		name = "GFX_regional_balance_empty_button"
-		texturefile = "gfx/interface/parliament_empty_button.dds"
+		name = "GFX_XLA_altwigitian_alignment"
+		textureFile = "gfx/interface/XLA/XLA_Altwigitian.dds"
 	}
+
 	spriteType = {
-		name = "GFX_regional_balance_XLA_government_seal"
-		texturefile = "gfx/XNM/XNM_coat_of_arms.png"
+		name = "GFX_regional_alignment_backup"
+		textureFile = "gfx/interface/add_pol_idea_button.dds"
 	}
 }
