@@ -1853,3 +1853,7 @@ XSS_test_event.47.desc:0 "King of italy has requested our widthdrawal from Gibra
 XSS_test_event.47.a:0 "We agree"
 XSS_test_event.47.b:0 "Gibraltar is ours"
 
+XSS_anti_british_agitator_trait:0 "Anti-British Agitator"
+XSS_romash_parlament_trait:0 "Romansh Parlament"
+XSS_shooting_clubs_trait:0 "Shooting Clubs"
+

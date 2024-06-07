@@ -665,6 +665,351 @@ corps_commander = {
 		}
 	}
 
+	XSS_vogel = {
+		name = "Maximilian Vogelstein"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ger_fritz_kuhn"
+			}
+			army = {
+				small = "GFX_idea_GER_generic_land_5"
+			}
+		}
+		corps_commander = {
+    	skill = 2
+    	attack_skill = 2
+    	defense_skill = 1
+    	planning_skill = 3
+    	logistics_skill = 2
+			}
+		advisor = {
+			slot = high_command
+			idea_token = XSS_vogel_idea
+			ledger = army
+			allowed = {
+				original_tag = XSS
+			}
+
+			traits = {
+				army_chief_morale_2 
+			}
+		}
+	}
+	XSS_schor = {
+		name = "Carl Schor"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_hermann_hoth"
+			}
+		}
+		corps_commander = {
+    	skill = 1
+    	attack_skill = 1
+    	defense_skill = 1
+    	planning_skill = 2
+    	logistics_skill = 1
+			}
+	}
+	XSS_fabozzi = {
+		name = "Cesare Fabozzi"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ITA_italo_gariboldi"
+			}
+		}
+		corps_commander = {
+    	skill = 2
+    	attack_skill = 4
+    	defense_skill = 1
+    	planning_skill = 2
+    	logistics_skill = 3
+			}
+	}
+
+
+	XSS_tino = {
+		name = "Gaspare Tino"
+		portraits = {
+			army = {
+				small = "GFX_idea_POL_edward_osobka_morawski"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_tino_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_reinstate_nobel_prize
+
+			}
+			traits = {
+				ARG_nobel_peace_prize_winner
+			}
+		}
+	}
+	XSS_lattke = {
+		name = "Till Lattke"
+		portraits = {
+			army = {
+				small = "GFX_idea_POL_jerzy_rutkowski"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_lattke_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+			traits = {
+				BRA_modernist_architect
+			}
+		}
+	}
+	XSS_fassbender = {
+		name = "Jörn Fassbender"
+		portraits = {
+			army = {
+				small = "GFX_idea_POL_jan_mosdorf"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_fassbender_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {
+				has_completed_focus = XSS_reinstate_nobel_prize
+
+			}
+			traits = {
+				BRA_nobel_peace_prize_nominee
+			}
+		}
+	}
+	XSS_kaulbach = {
+		name = "Isaak Kaulbach"
+		portraits = {
+			army = {
+				small = "GFX_idea_pavel_zhigarev"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_kaulbach_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+			traits = {
+				international_revolutionary
+			}
+		}
+	}
+
+	XSS_Freudstein = {
+		name = "Maximilian Freudenstein"
+		portraits = {
+			army = {
+				small = "GFX_idea_pavel_rychagov"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_Freudstein_idea
+			allowed = {
+				original_tag = XSS
+			}
+			available = {has_government = communism}
+
+			traits = {
+				political_commissar
+			}
+		}
+	}
+
+	XSS_girault = {
+		name = "Jacques Girault"
+		portraits = {
+			army = {
+				small = "GFX_idea_ROM_armand_calinescu"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_girault_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+
+			traits = {
+				ecomonist_publicist
+			}
+		}
+	}
+
+	XSS_romansh_parlament = {
+		name = "Romansh Parlament"
+		portraits = {
+			army = {
+				small = "GFX_idea_pol_the_sejm"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_romansh_parlament_idea
+			allowed = {
+				original_tag = XSS
+			}
+		available = { XRM = {exist = no}}
+
+
+			traits = {
+				XSS_romash_parlament_trait
+			}
+		}
+	}
+
+	XSS_massa = {
+		name = "Venceslao Massa"
+		portraits = {
+			army = {
+				small = "GFX_idea_EST_august_rei"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_massa_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+
+			traits = {
+				liberal_journalist
+			}
+		}
+	}
+
+	XSS_massa = {
+		name = "Venceslao Massa"
+		portraits = {
+			army = {
+				small = "GFX_idea_EST_august_rei"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_massa_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+
+			traits = {
+				liberal_journalist
+			}
+		}
+	}
+	XSS_mose = {
+		name = "Julius Mose"
+		portraits = {
+			army = {
+				small = "GFX_idea_LIT_vincas_mickevicius_kapsukas"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_mose_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+
+			traits = {
+				traditionalist_theorist
+			}
+		}
+	}
+	XSS_ross = {
+		name = "Edward Ross"
+		portraits = {
+			army = {
+				small = "GFX_idea_ENG_palme_dutt"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_ross_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+
+			traits = {
+				socialist_writer
+			}
+		}
+	}
+	XSS_shooting_clubs = {
+		name = "Shooting Clubs"
+		portraits = {
+			army = {
+				small = "GFX_idea_por_volunteers_in_the_war3"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_ross_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+
+			traits = {
+				XSS_shooting_clubs_trait
+			}
+		}
+	}
+	XSS_güldenstädt = {
+		name = "Oscar Güldenstädt"
+		portraits = {
+			army = {
+				small = "GFX_idea_LIT_jonas_staugaitis"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XSS_güldenstädt_idea
+			allowed = {
+				original_tag = XSS
+			}
+
+
+			traits = {
+				NOR_radical_trade_unionist
+			}
+		}
+	}
+
+
 
 
 

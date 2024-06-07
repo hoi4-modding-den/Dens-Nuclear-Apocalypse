@@ -177,5 +177,30 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 		army_core_attack_factor = 0.1
 	}
+	XSS_anti_british_agitator_trait = {
+		random = no
+		sprite = 13
+                targeted_modifier = {
+                tag = XNE
+                attack_bonus_against = 0.05
+                defense_bonus_against = 0.05
+                }
+                targeted_modifier = {
+                tag = XNM
+                attack_bonus_against = 0.05
+                defense_bonus_against = 0.05
+                }
+	}
+
+	XSS_romash_parlament_trait = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		opinion_gain_monthly = 5
+	}
+	XSS_shooting_clubs_trait = {
+		random = no
+		army_core_defence_factor = 0.1
+	}
 
 }
