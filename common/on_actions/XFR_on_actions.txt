@@ -21,63 +21,33 @@ on_actions = {
 					}
 					random_list = {
 						10 = {
-							modifier = {
-								factor = 0.25
-								game_weight_can_add_unaligned = no
-							}
 							XAL = {
 								set_country_flag = XAL_AI_RANDOM_HISTORICAL
-								set_add_unaligned_game_weight_large = yes
 							}
 						}
 						20 = {
-							modifier = {
-								factor = 0.25
-								game_weight_can_add_fascist = no
-							}
 							XAL = {
 								set_country_flag = XAL_AI_RANDOM_FASCIST
-								set_add_fascist_game_weight_large = yes
 							}
 						}
 						15 = {
-							modifier = {
-								factor = 0.25
-								game_weight_can_add_democratic = no
-							}
 							XAL = {
 								set_country_flag = XAL_AI_RANDOM_DEM_NEUTRAL
-								set_add_democratic_game_weight_large = yes
 							}
 						}
 						20 = {
-							modifier = {
-								factor = 0.25
-								game_weight_can_add_democratic = no
-							}
 							XAL = {
 								set_country_flag = XAL_AI_RANDOM_DEM_PUPPET
-								set_add_democratic_game_weight_large = yes
 							}
 						}
 						15 = {
-							modifier = {
-								factor = 0.25
-								game_weight_can_add_unaligned = no
-							}
 							XAL = {
 								set_country_flag = XAL_AI_RANDOM_MIL_NEUTRAL
-								set_add_unaligned_game_weight_large = yes
 							}
 						}
 						20 = {
-							modifier = {
-								factor = 0.25
-								game_weight_can_add_unaligned = no
-							}
 							XAL = {
 								set_country_flag = XAL_AI_RANDOM_MIL_PUPPET
-								set_add_unaligned_game_weight_large = yes
 							}
 						}
 					}

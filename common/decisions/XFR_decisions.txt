@@ -210,7 +210,7 @@ XFR_centre_crisis_cat = {
 
 		fire_only_once = yes
 
-    	days_mission_timeout = 365
+    	days_mission_timeout = 500
 
     	complete_effect = {
     	    add_political_power = 100
@@ -404,8 +404,10 @@ foreign_politics = {
 		visible = {
 			FROM = {
 				NOT = { has_war_with = ROOT }
-				has_military_access_to = ROOT
-				gives_military_access_to = ROOT
+				NOT = {
+					has_military_access_to = ROOT
+					gives_military_access_to = ROOT
+				}
 			}
 			NOT = { has_completed_focus = XFR_dennounce_democracy }
 		}
@@ -507,9 +509,8 @@ foreign_politics = {
 		}
 
 		visible = {
-			has_power_balance = { id = XFR_federalists_restaurationists_bop }
 			FROM = {
-				has_government = neutrality
+				has_country_leader = { character = XNF_napoleon_x ruling_only = yes }
 			}
 			
 		}
@@ -726,6 +727,7 @@ XFR_bop_decision_cat = {
 		available = {
 			any_neighbor_country = {
 				has_government = democratic
+				NOT = { has_war_with = ROOT }
 			}
 		}
 
@@ -759,6 +761,7 @@ XFR_bop_decision_cat = {
 			every_neighbor_country = {
 				limit = {
 					has_government = democratic
+					NOT = { has_war_with = ROOT }
 				}
 				add_stability = 0.05
 				add_offsite_building = { type = industrial_complex level = 1 }
@@ -789,6 +792,7 @@ XFR_bop_decision_cat = {
 					has_government = democratic
 					has_government = neutrality
 				}
+				NOT = { has_war_with = ROOT }
 				NOT = {has_idea = closed_economy }
 				NOT = {has_idea = XFR_customs_agreement_idea }
 				hidden_trigger = { NOT = {has_idea = anarchy_idea_max } }
@@ -830,17 +834,10 @@ XFR_bop_decision_cat = {
 					}
 					NOT = {has_idea = closed_economy }
 					NOT = {has_idea = XFR_customs_agreement_idea }
+					NOT = { has_war_with = ROOT }
 					hidden_trigger = { NOT = {has_idea = anarchy_idea_max } }
 				}
 				country_event = { id = XFR_events.12 days = 1 random_hours = 12 random_days = 1 }
-			}
-			hidden_effect = {
-				if = {
-           		limit = {
-            		NOT = { has_idea = XFR_customs_agreement_head_idea }
-            		}
-            		add_ideas = XFR_customs_agreement_head_idea
-        		}
 			}
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {

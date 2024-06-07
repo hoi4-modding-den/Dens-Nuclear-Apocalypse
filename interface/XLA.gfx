@@ -35,12 +35,18 @@ spriteTypes = {
 	# Regional Balance
 	spriteType = {
 		name = "GFX_regional_alignment_button"
+		textureFile = "gfx/interface/XLA/XLA_Regional_Alignment_Icons.png"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_regional_alignment_backup"
 		textureFile = "gfx/interface/add_pol_idea_button.dds"
 	}
 
 	spriteType = {
 		name = "GFX_regional_balance_party_icon"
-		texturefile = "gfx/interface/XLA_regional_balance_factions.dds"
+		texturefile = "gfx/interface/XLA_regional_balance_factions.png"
 		noOfFrames = 3 # number of parties you have in the gfx file
 	}
 	spriteType = {

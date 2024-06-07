@@ -7,6 +7,12 @@ scripted_gui = {
 		visible = {
 			has_state_flag = XLA_regional_alignment
 		}
+
+		properties = {
+			regional_alignment_tooltip_icon = {
+				image = "[THIS.getFlag]"
+			}
+		}
 	}
 
 	XLA_regional_balance = {

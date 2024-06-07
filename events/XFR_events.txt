@@ -348,17 +348,17 @@ country_event = { # XAL wants to become XFR puppet
 					}
 				}
 			}
-			if = {
-				limit = { XFR = { NOT = { has_government = fascism } } }
-				XFR = {
-					set_autonomy = {
-    					target = XAL
-    					autonomous_state = autonomy_puppet
-    					end_wars = no
-    					end_civil_wars = no
-					}
+		if = {
+			limit = { XFR = { NOT = { has_government = fascism } } }
+			XFR = {
+				set_autonomy = {
+    				target = XAL
+    				autonomous_state = autonomy_puppet
+    				end_wars = no
+    				end_civil_wars = no
 				}
 			}
+		}
     }
 
     option = {
@@ -403,7 +403,7 @@ country_event = { # XFR proposes easing of customs barrier
         ai_chance = {
             base = 1
             modifier = {
-                add = 2
+                factor = 2
                 has_government = democratic
             }
             modifier = {
@@ -411,15 +411,23 @@ country_event = { # XFR proposes easing of customs barrier
                 has_opinion = { target = XFR value > 19 }
             }
             modifier = {
-                add = 1
+                add = 2
                 has_opinion = { target = XFR value > 49 }
+            }
+            modifier = {
+                add = 5
+                is_ally_with = XFR
+            }
+            modifier = {
+                add = 1
+                XFR = { is_faction_leader = yes }
             }
             modifier = {
                 factor = 1000
                 is_subject_of = XFR
             }
         }
-        XFR = { country_event = { id = XFR_events.13 days = 1 } }
+        XFR = { country_event = { id = XFR_events.13 days = 2 random_hours = 12 random_days = 1 } }
         effect_tooltip = {
             XFR = {
                 add_opinion_modifier = {
@@ -438,13 +446,22 @@ country_event = { # XFR proposes easing of customs barrier
             value = 50
         }
         add_ideas = XFR_customs_agreement_idea
+        hidden_effect = {
+				if = {
+           		limit = {
+            		XFR = { NOT = { has_idea = XFR_customs_agreement_head_idea } }
+            		}
+            		XFR = { add_ideas = XFR_customs_agreement_head_idea }
+                    news_event = { id = XFR_news_events.4 }
+        		}
+			}
     }
     option = { # decline
         name = XFR_events.12.b
         ai_chance = {
-            base = 3
+            base = 2
         }
-        XFR = { country_event = { id = XFR_events.14 days = 1 } }
+        XFR = { country_event = { id = XFR_events.14 days = 2 random_hours = 12 random_days = 1 } }
         effect_tooltip = {
             XFR = {
                 add_opinion_modifier = {
@@ -500,7 +517,7 @@ country_event = { # country rejects customs agreement
     }
 }
 
-country_event = { # country kicked from BCA
+country_event = { # country kicked from UDB
     id = XFR_events.15
     title = XFR_events.15.t
     picture = GFX_report_event_generic_sign_treaty1
@@ -540,6 +557,7 @@ country_event = { # XFR notification about Nationalist Coup
         }
         upgrade_economy_law = yes
         add_war_support = 0.05
+        send_embargo = XAL
     }
     option = {
         name = XFR_events.16.b
@@ -556,9 +574,210 @@ country_event = { # XFR notification about Nationalist Coup
             value = -100
         }
         add_political_power = 200
+        send_embargo = XAL
     }
 }
 
+country_event = { # Paris Conference: Choose Goal
+    id = XFR_events.17
+    title = XFR_events.17.t
+    picture = GFX_report_event_generic_sign_treaty1
+    desc = XFR_events.17.desc
+    
+    is_triggered_only = yes
+
+    option = { # demand puppet
+        name = XFR_events.17.a
+        ai_chance = {
+            base = 10
+        }
+        set_global_flag = XFR_paris_con_puppet
+        add_power_balance_value = {
+			id = XFR_federalists_restaurationists_bop
+			value = 0.05
+		}
+        XPR = { country_event = { id = XFR_events.18 days = 1 } }
+        custom_effect_tooltip = if_they_accept_tt
+        effect_tooltip = {
+                XFR = {
+		    	    set_autonomy = {
+    		          	target = XPR
+    		        	autonomous_state = autonomy_integrated_puppet
+    		    	    end_wars = no
+    		    	    end_civil_wars = no
+    		    	}
+	    	    }
+            }
+        
+    }
+    option = { # demand puppet and direct control of paris
+        name = XFR_events.17.b
+        ai_chance = {
+            base = 5
+        }
+        set_global_flag = XFR_paris_con_puppet
+        set_global_flag = XFR_paris_con_transfer
+        XPR = { country_event = { id = XFR_events.18 days = 1 } }
+        custom_effect_tooltip = if_they_accept_tt
+        effect_tooltip = { 16 = { transfer_state_to = ROOT add_core_of = ROOT } }
+        effect_tooltip = {
+                XFR = {
+		    	    set_autonomy = {
+    		          	target = XPR
+    		        	autonomous_state = autonomy_integrated_puppet
+    		    	    end_wars = no
+    		    	    end_civil_wars = no
+    		    	}
+	    	    }
+            }
+    }
+
+    option = { # demand direct control of paris
+        name = XFR_events.17.c
+        ai_chance = {
+            base = 1
+        }
+        set_global_flag = XFR_paris_con_transfer
+        add_power_balance_value = {
+			id = XFR_federalists_restaurationists_bop
+			value = -0.05
+		}
+        XPR = { country_event = { id = XFR_events.18 days = 1 } }
+        custom_effect_tooltip = if_they_accept_tt
+        effect_tooltip = { 16 = { transfer_state_to = ROOT add_core_of = ROOT } }
+        
+    }
+}
+
+country_event = { # Paris Conference: Message for XPR
+    id = XFR_events.18
+    title = XFR_events.18.t
+    picture = GFX_report_event_generic_sign_treaty1
+    desc = XFR_events.18.desc
+    
+    is_triggered_only = yes
+
+    option = { # accept
+        name = XFR_events.18.a
+        ai_chance = {
+            base = 2
+            modifier = {
+                NOT = { has_global_flag = XFR_paris_con_transfer }
+                add = 1
+            }
+            modifier = {
+                add = 2
+                ROOT = { is_guaranteed_by = XFR }
+            }
+            modifier = {
+                factor = 1.5
+                has_opinion = { target = XFR value > 49 }
+            }
+            modifier = {
+                add = 2
+                has_idea = XFR_customs_agreement_idea
+            }
+            modifier = {
+                add = 1
+                democratic > 0.24
+            }
+        }
+        if = {
+            limit = {
+                has_global_flag = XFR_paris_con_transfer
+            }
+            effect_tooltip = { 16 = { transfer_state_to = XFR add_core_of = XFR } }
+        }
+        if = {
+            limit = {
+                has_global_flag = XFR_paris_con_puppet
+            }
+	    	effect_tooltip = {
+                XFR = {
+		    	    set_autonomy = {
+    		          	target = XPR
+    		        	autonomous_state = autonomy_integrated_puppet
+    		    	    end_wars = no
+    		    	    end_civil_wars = no
+    		    	}
+	    	    }
+            }
+        }
+        XFR = { country_event = { id = XFR_events.19 days = 1 } }
+    }
+    option = { # reject
+        name = XFR_events.18.b
+        ai_chance = {
+            base = 2
+            modifier = {
+                has_global_flag = XFR_paris_con_transfer
+                add = 5
+            }
+        }
+        XFR = { country_event = { id = XFR_events.20 days = 1 } }
+    }
+}
+
+country_event = { # Paris Conference: XPR accepts
+    id = XFR_events.19
+    title = XFR_events.19.t
+    picture = GFX_report_event_generic_sign_treaty2
+    desc = XFR_events.19.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.19.a
+        ai_chance = {
+            base = 1
+        }
+        if = {
+            limit = {
+                has_global_flag = XFR_paris_con_transfer
+            }
+            16 = {
+                transfer_state_to = ROOT 
+                add_core_of = ROOT
+            }
+        }
+        if = {
+            limit = {
+                has_global_flag = XFR_paris_con_puppet
+            }
+	    	XFR = {
+		    	set_autonomy = {
+    		    	target = XPR
+    		       	autonomous_state = autonomy_integrated_puppet
+    			    end_wars = no
+    			    end_civil_wars = no
+    			}
+	    	}
+        }
+        add_stability = 0.05
+    }
+}
+
+country_event = { # Paris Conference: XPR rejects
+    id = XFR_events.20
+    title = XFR_events.20.t
+    picture = GFX_report_event_military_planning
+    desc = XFR_events.20.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.20.a
+        ai_chance = {
+            base = 1
+        }
+        create_wargoal = {
+			target = XPR
+			type = take_state_focus
+			generator = { 16 }
+		}
+        add_war_support = 0.05
+    }
+}
 
 # NEWS EVENTS #
 
@@ -613,6 +832,7 @@ news_event = { # Coup in Alsace
             NOT = { has_government = fascism }
             NOT = { tag = XFR }
             NOT = { tag = XAL }
+            NOT = { tag = XRP }
         }
     }
     option = {
@@ -621,6 +841,7 @@ news_event = { # Coup in Alsace
             has_government = fascism
             NOT = { tag = XFR }
             NOT = { tag = XAL }
+            NOT = { tag = XRP }
         }
     }
     option = {
@@ -642,6 +863,47 @@ news_event = { # Coup in Alsace
             id = XRP
             value = 100
         }
+        add_opinion_modifier = {
+			target = XRP
+    		modifier = XFR_hostility
+		}
+    }
+
+    option = {
+        name = XFR_news_events.3.d
+        trigger = {
+            tag = XRP
+        }
+        effect_tooltip = {
+            42 = { add_claim_by = XAL }
+        983 = { add_claim_by = XAL }
+        }
+        add_ai_strategy = {
+            type = consider_weak
+            id = XRP
+            value = 50
+        }
+        add_opinion_modifier = {
+			target = XAL
+    		modifier = XFR_hostility
+		}
+    }
+
+}
+
+news_event = { # UDB announced
+    id = XFR_news_events.4
+    title = XFR_news_events.4.t
+    picture = GFX_news_event_generic_sign_treaty2
+    desc = XFR_news_events.4.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.4.a
     }
 
 }

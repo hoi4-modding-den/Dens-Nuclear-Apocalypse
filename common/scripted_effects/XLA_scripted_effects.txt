@@ -157,7 +157,7 @@ regional_balance_num_elders = {
 }
 
 regional_balance_get_num_elders = {
-	log = "Began regional_balance_get_num_elders"
+	#log = "Began regional_balance_get_num_elders"
 	set_variable = {
 		var = XLA_Neutral_Councilmembers
 		value = 0
@@ -176,121 +176,121 @@ regional_balance_get_num_elders = {
 		#log = "[regional_balance_get_num_elders] entered for_each loop"
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 1 }
-				}
+				check_variable = { XLA_alignment = 1 }
 			}
-			add_to_variable = {
-				var = XLA_Neutral_Councilmembers
-				value = 1
+			PREV = {
+				add_to_variable = {
+					var = XLA_Neutral_Councilmembers
+					value = 1
+				}
 			}
 		}
 
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 2 }
-				}
+				check_variable = { XLA_alignment = 2 }
 			}
-			add_to_variable = {
-				var = XLA_Spiritualist_Councilmembers
-				value = 1
+			PREV = {
+				add_to_variable = {
+					var = XLA_Spiritualist_Councilmembers
+					value = 1
+				}
 			}
 		}
 
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 3 }
-				}
+				check_variable = { XLA_alignment = 3 }
 			}
-			add_to_variable = {
-				var = XLA_Altwigitian_Councilmembers
-				value = 1
+			PREV = {
+				add_to_variable = {
+					var = XLA_Altwigitian_Councilmembers
+					value = 1
+				}
 			}
 		}
 
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 4 }
-				}
+				check_variable = { XLA_alignment = 4 }
 			}
-			add_to_variable = {
-				var = XLA_Neutral_Councilmembers
-				value = 2
+			PREV = {
+				add_to_variable = {
+					var = XLA_Neutral_Councilmembers
+					value = 2
+				}
 			}
 		}
 
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 5 }
-				}
+				check_variable = { XLA_alignment = 5 }
 			}
-			add_to_variable = {
-				var = XLA_Spiritualist_Councilmembers
-				value = 2
+			PREV = {
+				add_to_variable = {
+					var = XLA_Spiritualist_Councilmembers
+					value = 2
+				}
 			}
 		}
 
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 6 }
-				}
+				check_variable = { XLA_alignment = 6 }
 			}
-			add_to_variable = {
-				var = XLA_Altwigitian_Councilmembers
-				value = 2
+			PREV = {
+				add_to_variable = {
+					var = XLA_Altwigitian_Councilmembers
+					value = 2
+				}
 			}
 		}
 
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 7 }
+				check_variable = { XLA_alignment = 7 }
+			}
+			PREV = {
+				add_to_variable = {
+					var = XLA_Neutral_Councilmembers
+					value = 1
 				}
-			}
-			add_to_variable = {
-				var = XLA_Neutral_Councilmembers
-				value = 1
-			}
-			add_to_variable = {
-				var = XLA_Spiritualist_Councilmembers
-				value = 1
+				add_to_variable = {
+					var = XLA_Spiritualist_Councilmembers
+					value = 1
+				}
 			}
 		}
 
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 8 }
+				check_variable = { XLA_alignment = 8 }
+			}
+			PREV = {
+				add_to_variable = {
+					var = XLA_Neutral_Councilmembers
+					value = 1
 				}
-			}
-			add_to_variable = {
-				var = XLA_Neutral_Councilmembers
-				value = 1
-			}
-			add_to_variable = {
-				var = XLA_Altwigitian_Councilmembers
-				value = 1
+				add_to_variable = {
+					var = XLA_Altwigitian_Councilmembers
+					value = 1
+				}
 			}
 		}
 
 		if = {
 			limit = {
-				THIS = {
-					check_variable = { XLA_alignment = 9 }
+				check_variable = { XLA_alignment = 9 }
+			}
+			PREV = {
+				add_to_variable = {
+					var = XLA_Altwigitian_Councilmembers
+					value = 1
 				}
-			}
-			add_to_variable = {
-				var = XLA_Altwigitian_Councilmembers
-				value = 1
-			}
-			add_to_variable = {
-				var = XLA_Spiritualist_Councilmembers
-				value = 1
+				add_to_variable = {
+					var = XLA_Spiritualist_Councilmembers
+					value = 1
+				}
 			}
 		}
 	}

@@ -143,6 +143,17 @@ spriteTypes = {
         texturefile = "gfx//interface/ideas/XAL/idea_XAL_alban_picard.dds"
     }
 
+    # Mapmode Icons
+
+    spriteType = {
+        name = "GFX_mapmode_buttons_deselected_small_economy_map_mode"
+        textureFile = "gfx/interface/mapmodes/mapmode_buttons_deselected_small_economy_mode.dds"
+    }
+    spriteType = {
+        name = "GFX_mapmode_buttons_selected_small_economy_map_mode"
+        textureFile = "gfx/interface/mapmodes/mapmode_buttons_selected_small_economy_mode.dds"
+    }
+
     # Bookmark
 
     spriteType = {
