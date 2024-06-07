@@ -13,10 +13,20 @@ country_event = {
     option = {
         name = XSS_test_event.1.a
         complete_national_focus = XSS_triumph_of_democracy
+        ai_chance = {
+            base = 1
+        }
     }
     option = {
         name = XSS_test_event.1.b
         complete_national_focus = XSS_storm_the_council
+        ai_chance = {
+            base = 1
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
     }
 }
 

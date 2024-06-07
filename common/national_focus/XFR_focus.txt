@@ -62,7 +62,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -108,7 +108,12 @@
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			# Events to introduce candidates
+			add_political_power = 75
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = XFR_prepare_for_elections_tt
 		}
 	}
 
@@ -282,7 +287,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -314,7 +319,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -348,7 +353,7 @@
 		cost = 2
 
 		ai_will_do = {
-			factor = 1
+			factor = 1000
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -466,12 +471,14 @@
 		icon = GFX_focus_usa_focus_on_europe
 		prerequisite = { focus = XFR_stabilise_the_republic }
 		#mutually_exclusive = { focus =  }
-		x = -5
+		x = -6
 		y = 1
 		relative_position_id = XFR_stabilise_the_republic
 
 		available = {
 			has_government = democratic
+			is_subject = no
+			is_in_faction = no
 		}
 
 		cost = 5
@@ -482,6 +489,7 @@
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_war_support = 0.1
+			XFR_create_faction = yes
 		}
 	}
 
@@ -504,7 +512,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			custom_effect_tooltip = XFR_lessen_internal_borders_tt
 		}
@@ -554,13 +562,14 @@
 			has_power_balance = { id = XFR_federalists_restaurationists_bop }
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 
@@ -569,7 +578,7 @@
 		icon = GFX_focus_fra_french_union
 		prerequisite = { focus = XFR_reform_the_government }
 		mutually_exclusive = { focus = XFR_restaurationists }
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = XFR_reform_the_government
 
@@ -581,12 +590,12 @@
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		}
 	}
@@ -596,7 +605,7 @@
 		icon = GFX_focus_fra_le_deluge
 		prerequisite = { focus = XFR_reform_the_government }
 		mutually_exclusive = { focus = XFR_federalists }
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = XFR_reform_the_government
 
@@ -608,12 +617,12 @@
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
 		completion_reward = {
 		}
 	}
@@ -623,7 +632,7 @@
 		icon = GFX_focus_ARG_anti_corruption_policies
 		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
 		#mutually_exclusive = { focus =  }
-		x = -2
+		x = 2
 		y = 2
 		relative_position_id = XFR_reform_the_government
 
@@ -640,7 +649,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		}
 	}
@@ -667,7 +676,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
 		completion_reward = {
 		}
 	}
@@ -677,7 +686,7 @@
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
 		#mutually_exclusive = { focus = }
-		x = 2
+		x = -2
 		y = 2
 		relative_position_id = XFR_reform_the_government
 
@@ -694,7 +703,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
 		completion_reward = {
 		}
 	}
@@ -721,7 +730,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
 		completion_reward = {
 		}
 	}
@@ -744,7 +753,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		}
 	}
@@ -767,7 +776,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		}
 	}
@@ -785,12 +794,12 @@
 			has_government = democratic
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		}
 	}
@@ -800,7 +809,7 @@
 		icon = GFX_focus_generic_league_of_nations
 		prerequisite = { focus = XFR_the_dream_of_france }
 		#mutually_exclusive = { focus = XFR_the_lion_roars_alone }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = XFR_the_dream_of_france
 
@@ -817,7 +826,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			# unlocks LoN minigame
 		}
@@ -828,7 +837,7 @@
 		icon = GFX_focus_generic_catholic_dominion
 		prerequisite = { focus = XFR_the_dream_of_france }
 		#mutually_exclusive = { focus = XFR_restore_internationalism }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = XFR_the_dream_of_france
 
@@ -851,7 +860,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
 		completion_reward = {
 			# releases the pope
 		}
@@ -886,7 +895,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		}
 	}
@@ -896,7 +905,7 @@
 		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
@@ -911,6 +920,7 @@
 		bypass = {
 			OR = {
 				XPR = { is_subject_of = ROOT }
+				XPR = { has_war_with = ROOT }
 				16 = { is_owned_and_controlled_by = ROOT }
 			}
 		}
@@ -920,9 +930,28 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			# event chain with Paris, either integration, puppet or wargoal
+			if = {
+				limit = {
+					XPR = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+							is_subject = yes
+						}
+					}
+				}
+				create_wargoal = {
+					target = XPR
+					type = take_state_focus
+					generator = { 16 }
+				}
+			}
+			else = {
+				country_event = { id = XFR_events.17 }
+				custom_effect_tooltip = XFR_paris_con_acceptance_triggers_tt
+			}
 		}
 	}
 
@@ -1452,8 +1481,13 @@
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				hidden_effect = {}
+			}
+			add_ideas = XFR_living_standards
 		}
 	}
 
@@ -1639,7 +1673,7 @@
 			NOT = { has_idea = closed_economy }
 		}
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1693,7 +1727,7 @@
 		completion_reward = {
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
-				XFR_industry_consumer_goods_factor = 0.05
+				XFR_industry_consumer_goods_factor = -0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			add_to_variable = {
@@ -1897,7 +1931,7 @@
 		id = XFR_alcase_lorraine_diplomacy
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = XFR_european_ambitions }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = XFR_european_ambitions
 

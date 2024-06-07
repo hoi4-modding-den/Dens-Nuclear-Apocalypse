@@ -167,5 +167,31 @@ ideas = {
 
         }
 
+        XFR_living_standards = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            do_effect = {
+                NOT = { has_war = yes }
+            }
+
+           removal_cost = -1
+
+            picture = ARG_civilian_economy_boost
+
+            modifier = {
+			    consumer_goods_factor = 0.1
+                monthly_population = 0.15
+                stability_factor = 0.05
+                compliance_gain = 0.2
+            }
+
+        }
+
     }
 }
