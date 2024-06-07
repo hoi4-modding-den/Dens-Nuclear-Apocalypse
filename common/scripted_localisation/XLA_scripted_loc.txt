@@ -115,6 +115,58 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = get_regional_balance_icon
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					THIS.XLA_alignment = 1
+				}
+				check_variable = {
+					THIS.XLA_alignment = 4
+				}
+			}
+		}
+			
+		localization_key = "GFX_regional_alignment_button:1"
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					THIS.XLA_alignment = 2
+				}
+				check_variable = {
+					THIS.XLA_alignment = 5
+				}
+			}
+		}
+
+		localization_key = "GFX_regional_alignment_button:2"
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					THIS.XLA_alignment = 3
+				}
+				check_variable = {
+					THIS.XLA_alignment = 6
+				}
+			}
+		}
+
+		localization_key = "GFX_regional_alignment_button:3"
+	}
+
+	text = {
+		localization_key = "GFX_regional_alignment_backup"
+	}
+}
+
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {
 	name = GetRegionalBalanceSeatName

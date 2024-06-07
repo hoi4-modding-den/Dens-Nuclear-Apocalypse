@@ -1,0 +1,108 @@
+DEN_is_french_nation = {
+	OR = {
+		original_tag = XLX
+		original_tag = XAL
+		original_tag = XFR
+		original_tag = XFW
+		original_tag = XAQ
+		original_tag = XLF
+		original_tag = XBR
+		#original_tag = XNF
+	}
+}
+
+DEN_is_iberian_nation = {
+	OR = {
+		original_tag = XPY
+		original_tag = XAD
+		original_tag = XHP
+		original_tag = XAR
+		original_tag = XBC
+		original_tag = XGL
+	}
+}
+
+DEN_is_british_nation = {
+	OR = {
+		original_tag = XIE
+		original_tag = XNI
+		original_tag = XPW
+		original_tag = XWA
+		original_tag = XNE
+		original_tag = XNM
+		original_tag = XTY
+		original_tag = XCT
+	}
+}
+
+DEN_is_german_nation = {
+	OR = {
+		original_tag = XRP
+		original_tag = XOO
+		original_tag = XLH
+		original_tag = XAP
+		original_tag = XGE
+		original_tag = XSH
+		original_tag = XJY
+		original_tag = XDK
+	}
+}
+
+DEN_is_alpine_italian_island_nation = {
+	OR = {
+		original_tag = XSS
+		original_tag = XTI
+		original_tag = XLV
+		original_tag = XLA
+		original_tag = XIT
+		original_tag = XCA
+		original_tag = XNR
+		original_tag = XMD
+		#original_tag = XNF
+	}
+}
+
+DEN_is_in_valid_region = {
+	OR = {
+		region = 210
+		region = 209
+		region = 41
+		region = 68
+		region = 169
+		region = 29
+		region = 23
+		region = 21
+		region = 20
+		region = 10
+		region = 208
+		region = 5
+		region = 7
+		region = 6
+		region = 8
+		region = 275
+		region = 1
+		region = 2
+		region = 4
+		region = 3
+		region = 16
+		region = 38
+		region = 22
+		region = 27
+	}
+}
+
+is_diplomatic_action_valid_generate_wargoal = {
+	NOT = {
+		original_tag = LIB
+		FROM = { original_tag = LIB }
+	}
+}
+
+is_diplomatic_action_valid_declare_war = {
+	NOT = {
+		OR = {
+			original_tag = LIB
+			FROM = { original_tag = LIB }
+		}
+	}
+}

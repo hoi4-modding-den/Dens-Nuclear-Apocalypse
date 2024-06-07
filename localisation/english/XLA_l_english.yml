@@ -60,7 +60,7 @@
   regional_balance_gui_decision_category_desc:0 "Within Arnmouth, there exist 3 major factions. The §8Neutrals§!, the §GSpiritualists§!, and the §1Altwigitians§!. They co-exist within a delicate balance of power within the Council. The Council of Arnmouth consists of 2 members from each region, as well as 1 from the Capital region Auctermunty. Each member, or elder, aligns with one of these factions, but may be tempted to any side for a cost. \n\nCurrently, the Council of Arnmouth consists of the following. \n\n§8[?XLA_Neutral_Councilmembers] Neutrals§! \n\n§G[?XLA_Spiritualist_Councilmembers] Spirutalists§! \n\n§1[?XLA_Altwigitian_Councilmembers] Altwigitians§! \n\nHow the future of the nation unfolds remains in the hands of the council, and whoever can maintain a majority will rule the nation in whatever way they see fit."
 
  ### Scripted GUIs ###
- XLA_State_tooltip:0 "[THIS.GetName] consists of [GetNumElders] \n\nNeutrals: [?XLA_Neutral_Councilmembers]"
+ XLA_State_tooltip:0 "[THIS.GetName] consists of [GetNumElders]"
  XLA_Regional_Alignment_Text:0 "[GetRegionalAlignment]"
 
  XLA_N:0 "§81 Neutral§!"
