@@ -1,6 +1,7 @@
 capital = 792
 
 recruit_character = XBC_augusto_uribe
+recruit_character = XBC_basque_council
 
 add_ideas = XBC_unrest_in_navarre_2
 #oob = ""
@@ -28,8 +29,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 30
+	neutrality = 60
 	democratic = 40
-	fascism = 15
-	communism = 15
+	fascism = 0
+	communism = 0
 }

@@ -1,13 +1,14 @@
 XBC_power_struggle_category = {		
 	priority = 10		
 	icon = GFX_decision_category_generic_industry
-	picture = GFX_XGE_reconstruction_picture
+	picture = GFX_decision_cat_picture_NOR_building_fascist_support
 	
 	allowed = {
 		original_tag = XBC
 	}
 	visible = {	
-		always = yes
+		has_country_flag = XBC_powerstruggle
 	}
+	scripted_gui = xbc_power_struggle_ui
 }
 
