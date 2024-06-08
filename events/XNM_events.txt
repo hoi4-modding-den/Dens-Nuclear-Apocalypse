@@ -56,21 +56,40 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
+    immediate = {
+        set_country_flag = XNM_southern_border_crisis
+    }
+
 	option = {
 		name = XNM_country.2.a
 		128 = {
             remove_core_of = ROOT
-            hidden_effect = { force_enable_resistance = XNM start_resistance = yes }
-            set_resistance = 50
+            hidden_effect = { 
+				force_enable_resistance = XNM 
+				start_resistance = yes 
+				add_resistance_target = 60
+			}
+            set_resistance = 45
 			set_compliance = 10
 		}
+		hidden_effect = { complete_national_focus = XNM_the_southern_border_crisis }
+		custom_effect_tooltip = XNM_local_government_collapse_1
 		ai_chance = { factor = 5 }	
 	}
 	option = {
 		name = XNM_country.2.b
 		128 = {
-			remove_core_of = XNM
-		}		
+            remove_core_of = ROOT
+            hidden_effect = { 
+				force_enable_resistance = XNM 
+				start_resistance = yes 
+				add_resistance_target = 60
+			}
+            set_resistance = 40
+			set_compliance = 10
+		}
+		hidden_effect = { complete_national_focus = XNM_the_southern_border_crisis }
+		custom_effect_tooltip = XNM_local_government_collapse_2		
 		ai_chance = { factor = 1 }	
 	}	
 }
@@ -83,7 +102,6 @@ news_event = {
 	picture = GFX_news_event_gathering_protest
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	major = yes
 	
 	option = {

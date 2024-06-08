@@ -5,7 +5,7 @@ on_actions = {
                 country_event = { 
                     id = XNM_country.1
                     days = 45
-                    random_days = 0     # Fires in ...
+                    random_days = 0     # Fires in 45d
                 }
             }
         }
@@ -14,7 +14,7 @@ on_actions = {
                 country_event = { 
                     id = XNM_country.2
                     days = 59 
-                    random_days = 0     # Fires in ...
+                    random_days = 0     # Fires in 59d
                 }
             }
         }		
@@ -23,7 +23,7 @@ on_actions = {
                 news_event = { 
                     id = XNM_news.1 
                     days = 60  
-                    random_days = 0     # Fires in ...
+                    random_days = 0     # Fires in 60d
                 }
             }
         }		

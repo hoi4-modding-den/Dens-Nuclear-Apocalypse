@@ -3,11 +3,11 @@ parliament_gui_initial = {
 	# Put simply an array stores a list of things, used here to store the list of parties and list of seats.
 
 	# parliament_seat_array stores the list of seat numbers for each party
-	add_to_array = { parliament_seat_array = 7 } # Crimson Revolutionaries
-	add_to_array = { parliament_seat_array = 28 } # New Dawn Party
-	add_to_array = { parliament_seat_array = 16 } # Union for Culturalism
-	add_to_array = { parliament_seat_array = 15 } # Iclingatists
-	add_to_array = { parliament_seat_array = 4 } # National Mercian Front	
+	add_to_array = { parliament_seat_array = thornist_revolutionaries } # Crimson Revolutionaries = 7 seats
+	add_to_array = { parliament_seat_array = new_dawn_party } # New Dawn Party = 28 seats
+	add_to_array = { parliament_seat_array = union_for_culturalism } # Union for Culturalism = 16 seats
+	add_to_array = { parliament_seat_array = iclingatists } # Iclingatists = 15 seats
+	add_to_array = { parliament_seat_array = national_mercian_front } # National Mercian Front = 4 seats
 
 	# parliament_member_array stores the list of parties
 	# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
@@ -323,4 +323,58 @@ parliament_gui_positions = {
 	add_to_array = { parliament_y_array = 181 }
 	add_to_array = { parliament_x_array = 373 }
 	add_to_array = { parliament_y_array = 181 }
+}
+
+XNM_clear_all_alliance = {
+	clr_country_flag = thornist_revolutionaries_allied
+	clr_country_flag = new_dawn_party_allied
+	clr_country_flag = union_for_culturalism_allied
+	clr_country_flag = iclingatists_allied
+	clr_country_flag = national_mercian_front_allied
+	XNM_recalculate_parliament_alliance = yes
+}
+
+XNM_recalculate_parliament_alliance = {
+    set_variable = { var = udm_alliance value = 0 } 
+	if = {
+        limit = {
+            has_country_flag = thornist_revolutionaries_allied
+        }
+        add_to_variable = { var = udm_alliance value = thornist_revolutionaries }
+    }
+    if = {
+        limit = {
+            has_country_flag = new_dawn_party_allied
+        }
+        add_to_variable = { var = udm_alliance value = new_dawn_party }
+    }
+    if = {
+        limit = {
+            has_country_flag = union_for_culturalism_allied
+        }
+        add_to_variable = { var = udm_alliance value = union_for_culturalism }
+    }
+	if = {
+        limit = {
+            has_country_flag = iclingatists_allied
+        }
+        add_to_variable = { var = udm_alliance value = iclingatists }
+    }
+	if = {
+        limit = {
+            has_country_flag = national_mercian_front_allied
+        }
+        add_to_variable = { var = udm_alliance value = national_mercian_front }
+    }
+	set_variable = {
+		var = udm_alliance_percent
+		value = udm_alliance
+	}
+	multiply_variable = {
+		udm_alliance_percent = 100
+	}
+	divide_variable = {
+		udm_alliance_percent = seatNumbers
+	}
+    reload_parliament_gui = yes
 }

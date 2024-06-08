@@ -5,17 +5,17 @@ XNM_election_season_category = {
 		icon = GFX_decision_generic_political_rally
 
 		allowed = {
-			tag = POR
+			tag = XNM
 		}
 		
 		available = { }
 		
 		fire_only_once = yes
 		days_remove = 25
-		selectable_mission = yes
 		
 		visible = {
-			tag = POR
+			tag = XNM
+			has_completed_focus = XNM_visit_to_the_heartland
 		}
 		
 		complete_effect  = {
@@ -23,3 +23,22 @@ XNM_election_season_category = {
 		}		
 	}
 }
+
+parliament_gui_decision_category = {
+	XNM_recalculate_parliament_alliance = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			XNM_recalculate_parliament_alliance = yes
+		}
+	}
+	XNM_clear_all_alliance = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			XNM_clear_all_alliance = yes
+		}
+	}
+}	
