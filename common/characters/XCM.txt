@@ -1,0 +1,53 @@
+characters = {
+
+	XCM_Konrad_Goldmann = { 		#starting leader
+		name = Konrad Goldmann
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XCM/XCM_Konrad_Goldmann.dds"
+			}
+		}
+		country_leader = {
+			ideology = XCM_sudo_plutocracy
+			traits = {  }
+			desc = XCM_Konrad_desc
+			id = -1
+		}
+
+		country_leader = {
+			ideology = XCM_one_mans_economya
+			traits = {  }
+			desc = XCM_Konrad_desc
+			id = -1	
+		}
+	}
+	XCM_Walter_Lindenhof = { 		#democratic leader
+		name = Walter Lindenhof
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XCM/XCM_Walter_Lindenhof.dds"
+			}
+		}
+		country_leader = {
+			ideology = populism
+			desc = XCM_Walter_desc
+			id = -1	
+		}
+	}
+	XCM_Gustav_Bergheim = { 		#communist leader
+		name = Gustav Bergheim
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XCM/XCM_Gustav_Bergheim.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			desc = XCM_Gustav_desc
+			id = -1	
+		}
+	}
+}

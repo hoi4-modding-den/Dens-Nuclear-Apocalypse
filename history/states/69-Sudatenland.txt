@@ -20,7 +20,7 @@ manpower=1886667
 		victory_points = {
 			11401 3
 		}
-		owner = LIB # CZE
+		owner = XCM # CZE
 		buildings = {
 			infrastructure = 4
 			#industrial_complex = 2
@@ -58,7 +58,7 @@ manpower=1886667
 		#add_core_of = CZE
 
 		1938.9.30 = {
-			owner = LIB # GER
+			owner = XCM # GER
 			#controller = GER
 		}
 	}

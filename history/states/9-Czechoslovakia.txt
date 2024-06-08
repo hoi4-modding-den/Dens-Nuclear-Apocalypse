@@ -9,7 +9,7 @@ manpower=2995067
 	state_category = large_city
 	
 	history={
-		owner = LIB # CZE
+		owner = XCM # CZE
 		victory_points = { 11542 30 }
 		victory_points = { 6418 5 }
 		victory_points = { 9569 5 }
@@ -24,7 +24,7 @@ manpower=2995067
 		#add_core_of = CZE
 
 		1939.3.14 = {
-			owner = LIB # GER
+			owner = XCM # GER
 			#controller = GER
 		}
 	}

@@ -16,6 +16,11 @@ ideologies = {
 			populism = {
 			}
 			
+			XCM_sudo_plutocracy = {
+				can_be_randomly_selected = no
+				color = { 38 224 134 }
+			}
+
 			XNE_party_liberalism = {
 				can_be_randomly_selected = no
 				color = { 191 191 2 }
@@ -184,6 +189,11 @@ ideologies = {
 			}
 
 			rexism = {
+			}
+
+			XCM_one_mans_economy = {
+				can_be_randomly_selected = no
+				color = { 128 108 69 }
 			}
 
 			XAQ_esoteric_caesarism = {

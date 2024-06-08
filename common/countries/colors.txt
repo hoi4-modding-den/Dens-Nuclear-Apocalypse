@@ -183,3 +183,8 @@ XHP = {
 	color = rgb { 189 217 213 }
 	color_ui = rgb { 82 55 102 }
 }
+
+XCM = {
+	color = rgb {  219 145 227 }
+	color_ui = rgb {  109 77 112 }
+}

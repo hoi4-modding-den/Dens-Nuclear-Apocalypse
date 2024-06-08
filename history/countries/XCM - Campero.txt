@@ -1,0 +1,40 @@
+capital = 9
+
+oob = "XCM"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	basic_train = 1
+}
+
+
+set_war_support = 0.30
+set_stability = 0.4
+
+recruit_character = XCM_Konrad_Goldmann
+recruit_character = XCM_Walter_Lindenhof
+recruit_character = XCM_Gustav_Bergheim
+add_ideas = {
+	XCM_incompetent_leader
+	XCM_severe_corruption
+	XCM_plutocracy
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2230.1.30"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 50
+	communism = 5
+	fascism = 20
+	neutrality = 25
+}
