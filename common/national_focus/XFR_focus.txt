@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = XFR_focus_tree
 	
 	country = {
@@ -2897,28 +2897,6 @@
 		x = 8
 		y = 0
 		relative_position_id = XFR_air_force
-
-		offset = {
-			x = -7
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_support_parliament
-			}
-		}
-
-		offset = {
-			x = -4
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_dennounce_democracy
-			}
-		}
 
 		available = {
 			any_owned_state = {
