@@ -31,6 +31,22 @@ scripted_map_modes = {
                         set_temp_variable = { blue = 0.2 }
                         set_temp_variable = { green = 0.1 }
                     }
+                    else_if = {
+                        limit = {
+                            has_idea = XSS_SEU
+                        }
+                        set_temp_variable = { red = 0.6 }
+                        set_temp_variable = { blue = 0.1 }
+                        set_temp_variable = { green = 0.1 }
+                    }
+                    else_if = {
+                        limit = {
+                            has_idea = XSS_continental_union_idea
+                        }
+                        set_temp_variable = { red = 0.8 }
+                        set_temp_variable = { blue = 0.2 }
+                        set_temp_variable = { green = 0.4 }
+                    }
                     else = {
                         set_temp_variable = { red = 0.45 }
                         set_temp_variable = { blue = 0.45 }

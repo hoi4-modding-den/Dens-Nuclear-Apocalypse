@@ -14,22 +14,6 @@ defined_text = {
 		localization_key = "[XFR.GetAgency] Operations"
 	}
 }
-defined_text = {
-	name = XFR_focus_expand_the_pact
-
-	text = {
-		trigger = {
-			is_in_faction = no
-		}
-		localization_key = "Expand the Faction"
-	}
-	text = {
-		trigger = {
-			is_in_faction = yes
-		}
-		localization_key = "Expand the [XFR.GetFactionName]"
-	}
-}
 
 defined_text = {
 	name = ECONOMY_MAP_MODE_tooltip
@@ -37,11 +21,7 @@ defined_text = {
 		trigger = {
 			FROM = {
                 controller = {
-                    NOT = {
-						has_idea = XFR_customs_agreement_idea
-						has_idea = XFR_customs_agreement_head_idea
-						has_idea = BEZ_membership
-					}
+                    XFR_no_economic_membership = yes
                 }
             }
 		}
@@ -77,6 +57,26 @@ defined_text = {
 		}
 		localization_key = ECONOMY_MAP_MODE_tooltip_BEZ_member_tt
 	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    has_idea = XSS_SEU
+                }
+            }
+		}
+		localization_key = ECONOMY_MAP_MODE_tooltip_SEU_member_tt
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    has_idea = XSS_continental_union_idea
+                }
+            }
+		}
+		localization_key = ECONOMY_MAP_MODE_tooltip_continental_union_member_tt
+	}
 }
 defined_text = {
 	name = ECONOMY_MAP_MODE_tooltip2
@@ -84,11 +84,7 @@ defined_text = {
 		trigger = {
 			FROM = {
                 controller = {
-                    NOT = {
-						has_idea = XFR_customs_agreement_idea
-						has_idea = XFR_customs_agreement_head_idea
-						has_idea = BEZ_membership
-					}
+                    XFR_no_economic_membership = yes
                 }
             }
 		}
@@ -123,5 +119,25 @@ defined_text = {
             }
 		}
 		localization_key = ECONOMY_MAP_MODE_tooltip_BEZ_member_tt2
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    has_idea = XSS_SEU
+                }
+            }
+		}
+		localization_key = ECONOMY_MAP_MODE_tooltip_SEU_member_tt2
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    has_idea = XSS_continental_union_idea
+                }
+            }
+		}
+		localization_key = ECONOMY_MAP_MODE_tooltip_continental_union_member_tt2
 	}
 }

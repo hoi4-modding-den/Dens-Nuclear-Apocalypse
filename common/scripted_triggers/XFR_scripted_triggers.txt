@@ -1,0 +1,8 @@
+XFR_no_economic_membership = {
+	NOT = { has_idea = BEZ_membership }
+	NOT = { has_idea = XFR_customs_agreement_idea }
+	NOT = { has_idea = XFR_customs_agreement_head_idea }
+	NOT = { has_idea = XSS_SEU }
+	NOT = { has_idea = XSS_continental_union_idea }
+}
+

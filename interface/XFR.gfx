@@ -146,11 +146,11 @@ spriteTypes = {
     # Mapmode Icons
 
     spriteType = {
-        name = "GFX_mapmode_buttons_deselected_small_economy_map_mode"
+        name = "GFX_mapmode_buttons_deselected_small_ECONOMY_MAP_MODE"
         textureFile = "gfx/interface/mapmodes/mapmode_buttons_deselected_small_economy_mode.dds"
     }
     spriteType = {
-        name = "GFX_mapmode_buttons_selected_small_economy_map_mode"
+        name = "GFX_mapmode_buttons_selected_small_ECONOMY_MAP_MODE"
         textureFile = "gfx/interface/mapmodes/mapmode_buttons_selected_small_economy_mode.dds"
     }
 
