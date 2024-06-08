@@ -29,6 +29,28 @@ set_popularities = {
 	neutrality = 21
 }
 
+set_country_flag = dont_use_default_political_advisors
+set_country_flag = dont_use_default_military_advisors
+set_country_flag = XNM_welcome_message_flag
+
+# Initial Country Parliament + Coalition
+set_variable = { var = thornist_revolutionaries value = 7 } 
+set_variable = { var = new_dawn_party value = 28 } 
+set_variable = { var = union_for_culturalism value = 16 }
+set_variable = { var = iclingatists value = 15 } 
+set_variable = { var = national_mercian_front value = 4 } 
+set_variable = { var = seatNumbers value = 70 }
+
+set_variable = { parliament_seat_array^0 = thornist_revolutionaries }
+set_variable = { parliament_seat_array^1 = new_dawn_party }
+set_variable = { parliament_seat_array^2 = union_for_culturalism }
+set_variable = { parliament_seat_array^3 = iclingatists }
+set_variable = { parliament_seat_array^4 = national_mercian_front }
+
+set_country_flag = new_dawn_party_allied
+set_country_flag = union_for_culturalism_allied
+XNM_recalculate_parliament_alliance  = yes 
+
 create_country_leader = {
 	name = XNM_arthur_gainsborough
 	desc = XNM_arthur_gainsborough_desc

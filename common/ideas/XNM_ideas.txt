@@ -1,5 +1,6 @@
 ideas = {
 	country = {
+		# Starting Spirits
 		XNM_compromise_of_29 = {
 			picture = generic_constitutional_guarantees
 			
@@ -40,28 +41,7 @@ ideas = {
 				fascism_drift = 0.01
 
 			}
-		}
-		XNM_midlands_protests_light = {
-			picture = GFX_idea_XNM_midlands_protests
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_factor = -0.17
-				resistance_activity = 0.15
-				neutrality_drift = 0.02
-				fascism_drift = 0.01
-
-			}
-		}		
+		}	
 		XNM_tensions_on_the_trent = {
 			picture = GFX_idea_XNM_tensions_on_the_trent
 			
@@ -149,6 +129,111 @@ ideas = {
 					trade_opinion_factor = 0.2				
 				}				
 			}			
+		}	
+		
+		# General National Spirits
+		XNM_midlands_protests_light = {
+			picture = GFX_idea_XNM_midlands_protests
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.17
+				resistance_activity = 0.15
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+
+			}
+		}
+		XNM_midlands_protests_heavy = {
+			picture = GFX_idea_XNM_midlands_protests
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.20
+				resistance_activity = 0.30
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+
+			}
 		}		
+		XNM_nationwide_public_violence = {
+			picture = GFX_idea_XNM_midlands_protests
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = { # WIP
+				stability_weekly = -0.002
+				drift_defence_factor = -0.1
+				resistance_garrison_penetration_chance = 0.15
+			}
+		}		
+		XNM_albion_booming_heart_1 = {
+			picture = GFX_idea_XNM_albion_booming_heart
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.12 
+				production_lack_of_resource_penalty_factor = 0.15
+			}
+		}
+		XNM_albion_booming_heart_worker = {
+			picture = GFX_idea_XNM_albion_booming_heart
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.18
+				production_speed_buildings_factor = 0.06
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				production_lack_of_resource_penalty_factor = 0.15
+			}
+		}
 	}
 }	

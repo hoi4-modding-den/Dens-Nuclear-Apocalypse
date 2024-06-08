@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		XBC_unrest_in_navarre_1 = {
-			picture = GFX_idea_DEN_occupation_laws
+			picture = DEN_occupation_laws
 			
 			removal_cost = -1
 			modifier = {
@@ -9,7 +9,7 @@ ideas = {
 			}
 		}
 		XBC_unrest_in_navarre_2 = {
-			picture = GFX_idea_chi_war_of_resistance
+			picture = chi_war_of_resistance
 			
 			removal_cost = -1
 			modifier = {
@@ -17,7 +17,7 @@ ideas = {
 			}
 		}
 		XBC_unrest_in_navarre_3 = {
-			picture = GFX_idea_chi_war_of_resistance2
+			picture = chi_war_of_resistance2
 			
 			removal_cost = -1
 			modifier = {
@@ -25,7 +25,7 @@ ideas = {
 			}
 		}
 		XBC_unrest_in_navarre_4 = {
-			picture = GFX_idea_chi_war_of_resistance3
+			picture = chi_war_of_resistance3
 			
 			removal_cost = -1
 			modifier = {

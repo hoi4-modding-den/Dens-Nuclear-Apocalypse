@@ -14,5 +14,19 @@ characters = {
 			id = -1
 		}
 	}
+	XBC_basque_council = {
+		name = "XBC_basque_council"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_POL_the_sejm"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
 
 }

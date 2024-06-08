@@ -1,0 +1,28 @@
+
+add_namespace = XBC
+country_event = {
+    id = XBC.1
+    title = XBC.1.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.1.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.1.a
+		set_country_flag = XBC_powerstruggle
+		XBC_basque_council = {
+			promote_character = oligarchism
+		}
+		set_variable = { xbc_spanish_unrest_var = 30 }
+		set_variable = { xbc_left_influence_var = 25 }
+		set_variable = { xbc_center_influence_var = 50 }
+		set_variable = { xbc_right_influence_var = 25 }
+        ai_chance = {
+			base = 1
+		}
+    }
+	
+}

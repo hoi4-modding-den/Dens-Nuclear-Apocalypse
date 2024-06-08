@@ -5,12 +5,14 @@
  
  XBC_fascism:0 "Euskal Herria"
  
- XBC_history_desc:0 "Despite being oficially disbanded in 2018, the ETA has survived in the underground, and after the Apocalypse has established a free and independent Basque state. For over a century it was able to maintain an isolationst, auhoritarian government. However, a wind of change can be felt in the Pyrenees. The ETA is now split into various factions, ranging from communist Left to ultranationalist Right. There is also a vocal group of democratic activists, who wish to abolish the dictatorship and stop the repressions of Spanish people. Time will tell, which vision of a Basque state shall emerge victorious…"
+ XBC_history_desc:0 "Despite being oficially disbanded in 2018, the ETA has survived in the underground, and after the Apocalypse has established a free and independent Basque state. For over a century it was able to maintain an isolationst, auhoritarian government.\n\nHowever, a wind of change can be felt in the Pyrenees. The ETA is now split into various factions, ranging from communist Left to ultranationalist Right. There is also a vocal group of democratic activists, who wish to abolish the dictatorship and stop the repressions of Spanish people. Time will tell, which vision of a Basque state shall emerge victorious..."
  
- XBC_neutrality_party:0 "ETA-Centroa"
+ XBC_neutrality_party:0 "ETA"
  XBC_fascism_party:0 "ETA-Ezkubidea"
  XBC_communism_party:0 "ETA-Ezkerra"
  XBC_democratic_party:0 "Liga Democrática"
+ 
+ XBC_basque_council:0 "Basque Council"
  
  # Ideas
  
@@ -35,4 +37,12 @@
  XBC_our_new_leader:0 "Our New Leader"
  XBC_rein_in_pamplona:0 "Rein in Pamplona"
  
+ # Events
  
+ XBC.1.t:0 "Death of Augusto Uribe"
+ XBC.1.d:0 "He died lol."
+ XBC.1.a:0 "Nothing will remain the same."
+ 
+ # Decisions
+ XBC_power_struggle_category:0 "The Uribe's Heir"
+ XBC_power_struggle_category_desc:0 "Left Influence: [?xbc_left_influence_var]\nCenter Influence: [?xbc_center_influence_var]\nRight Influence: [?xbc_right_influence_var]\n\nSpanish Unrest: [?xbc_spanish_unrest_var]"

@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {
         name = "parliament_gui_container"
         position = { x = 0 y = 0 }
-		size = { width = 400 height = 400 }
+		size = { width = 400 height = 450 }
 
 		instantTextBoxType = {
 			name = "semicircle_parliament_gui_title"
@@ -49,12 +49,22 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "parliament_member_grid"
-			position = { x = -150 y = 300 }
+			position = { x = -150 y = 330 }
 			size = { width = 100%% height = 100%% }
 			slotsize = { width = 200 height = 18 }
 			max_slots_vertical = 8
 			add_horizontal = no
 		}
+		
+		instantTextBoxType = {
+			name = "XNM_parliament_desc"
+			position = { x = 50 y = 300 }
+			font = "hoi_16mbs"
+			text = "XNM_parliament_desc"
+			maxWidth = 400
+			maxHeight = 16
+			format = center
+		}		
     }
 
 	containerWindowType = {
@@ -89,7 +99,7 @@ guiTypes = {
 			name = "parliament_member_text"
 			position = { x = 0 y = 0 }
 			font = "hoi_16mbs"
-			maxWidth = 300
+			maxWidth = 400
 			maxHeight = 16
 			format = left
 			text = "parliament_member_text"

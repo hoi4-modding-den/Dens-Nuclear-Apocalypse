@@ -2,7 +2,7 @@ focus_tree = {
 	id = XNM_focus
 	default = no
 	reset_on_civilwar = no	
-	continuous_focus_position = { x = -40 y = 1050 } 
+	continuous_focus_position = { x = 3150 y = 1550 } 
 	country = {
 		factor = 0
 		modifier = {
@@ -74,10 +74,20 @@ focus_tree = {
 
 		relative_position_id = XNM_visit_to_the_heartland
 		prerequisite = { focus = XNM_visit_to_the_heartland }
-		available = { always = false }
+		available = { 
+			always = no
+			if = { has_country_flag = XNM_southern_border_crisis }
+		}
 		bypass = {}		
 		
 		completion_reward = {
+			add_ideas = {
+				XNM_nationwide_public_violence
+			}
+			swap_ideas = {
+				remove_idea = XNM_midlands_protests_light
+				add_idea = XNM_midlands_protests_heavy
+			}
 		}
 		
 		ai_will_do = {
@@ -93,7 +103,9 @@ focus_tree = {
 
 		relative_position_id = XNM_the_southern_border_crisis
 		prerequisite = { focus = XNM_the_southern_border_crisis }
-		available = {}
+		available = { 
+			if = { has_country_flag = XNM_southern_border_crisis }
+		}
 		bypass = {}		
 		
 		completion_reward = {
@@ -116,6 +128,26 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			130 ={
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			132 ={
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = XNM_albion_booming_heart
+				add_idea = XNM_albion_booming_heart_1
+			}
 		}
 		
 		ai_will_do = {
@@ -132,10 +164,24 @@ focus_tree = {
 		relative_position_id = XNM_second_to_none
 		prerequisite = { focus = XNM_second_to_none }
 		mutually_exclusive = { focus = XNM_tyne_technologies }
-		available = {}
+		available = {
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = XNM_majority_seats
+					check_variable = {
+						udm_alliance > 36
+					}
+				}
+			}
+		}
 		bypass = {}		
 		
 		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = XNM_albion_booming_heart_1
+				add_idea = XNM_albion_booming_heart_worker
+			}
 		}
 		
 		ai_will_do = {
@@ -293,6 +339,655 @@ focus_tree = {
 			focus = XNM_automation_movement
 			focus = XNM_the_equinox_deal
 		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_century_of_democracy # democratic branch
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_autumn_elections
+		prerequisite = { focus = XNM_the_autumn_elections }	
+		mutually_exclusive = {
+			focus = XNM_the_eagle_rises
+			focus = XNM_the_purple_coalition
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_liberal_values_triumphant # can be picked to go liberal again
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_century_of_democracy
+		prerequisite = { focus = XNM_century_of_democracy }	
+		mutually_exclusive = {
+			focus = XNM_the_conservative_sweep
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_the_conservative_sweep # can be picked to go conservative
+		icon = GFX_focus_unknown
+		x = 1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_century_of_democracy
+		prerequisite = { focus = XNM_century_of_democracy }	
+		mutually_exclusive = {
+			focus = XNM_liberal_values_triumphant
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_concessions_for_the_people # bring promised concessions during the campaign and benefit eco situation
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_conservative_sweep
+		prerequisite = { 
+			focus = XNM_the_conservative_sweep
+			focus = XNM_liberal_values_triumphant
+		}	
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_coalition_promises # Hold coalition promises with both conservatives and communists (if chosen)
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_liberal_values_triumphant
+		prerequisite = { focus = XNM_liberal_values_triumphant }	
+		available = {}
+		bypass = {}		
+		
+		completion_reward = { # gain more ministers from one/both coalition members + support
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_revoke_act_2_07 # Revoke act banning monarchist symbols within the government
+		icon = GFX_focus_unknown
+		x = 1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_conservative_sweep
+		prerequisite = { focus = XNM_the_conservative_sweep }	
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_the_great_debacle # autocompleted when UDM faces a near-collapse
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_concessions_for_the_people
+		prerequisite = { focus = XNM_concessions_for_the_people }	
+		prerequisite = { 
+			focus = XNM_coalition_promises 
+			focus = XNM_revoke_act_2_07
+		}		
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_emergency_relief_bill # enact a bill to retain governmental influence for a bit more in order to prevent total collapse (adds 30d to timed mission)
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_great_debacle
+		prerequisite = { focus = XNM_the_great_debacle }			
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_find_common_grounds # try to agree with conservatives and opposing powers
+		icon = GFX_focus_unknown
+		x = 1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_great_debacle
+		prerequisite = { focus = XNM_the_great_debacle }	
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_operational_once_more # can be done if successfully brought back UDM together
+		icon = GFX_focus_unknown
+		x = -2
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_emergency_relief_bill
+		prerequisite = { 
+			focus = XNM_find_common_grounds
+			focus = XNM_emergency_relief_bill
+		}
+		mutually_exclusive = { focus = XNM_the_national_catastrophe	}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_yet_another_compromise # modifies nat spirit "Compromise of 29'" and slightly worsens it, can fix later on thru "New Dawn Domination" focus
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_operational_once_more
+		prerequisite = { focus = XNM_operational_once_more }		
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNM_the_national_catastrophe # can be done if the Conservatives split off from the UDM
+		icon = GFX_focus_unknown
+		x = 2
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_find_common_grounds
+		prerequisite = { 
+			focus = XNM_find_common_grounds
+			focus = XNM_emergency_relief_bill
+		}
+		mutually_exclusive = { focus = XNM_operational_once_more }			
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_right_wing_split # now aligns the countries party with the Conservatives + starts "Weak Governmental Reach" spirit
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_national_catastrophe
+		prerequisite = { focus = XNM_the_national_catastrophe }		
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	
+	# WIP Midlands Riots Branches #
+	focus = {
+		id = XNM_quell_the_riots # Suppress the riots to cool situation
+		icon = GFX_focus_unknown
+		x = 4
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_purple_coalition
+		prerequisite = {
+			focus = XNM_century_of_democracy 
+			focus = XNM_the_purple_coalition
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_organize_counter_marches # Organize communist/socialist counter protests
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_quell_the_riots
+		prerequisite = { focus = XNM_quell_the_riots }
+		mutually_exclusive = {
+			focus = XNM_paramilitary_involvement
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_censor_local_medias # introduce policy of censorship and media control by the situation (mostly used by communists)
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_organize_counter_marches
+		prerequisite = { focus = XNM_organize_counter_marches }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNM_dismantle_ultranationalist_outposts # remove outposts being responsible for arming/motivating the royalists and far-rightists
+		icon = GFX_focus_unknown
+		x = -2
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_organize_counter_marches
+		prerequisite = { focus = XNM_organize_counter_marches }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNM_paramilitary_involvement # Increase funding for the police force
+		icon = GFX_focus_unknown
+		x = 1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_quell_the_riots
+		prerequisite = { focus = XNM_quell_the_riots }
+		mutually_exclusive = {
+			focus = XNM_organize_counter_marches
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_de_escelation_tactics # begin cooperating with opponents in riots and make deals to resolve
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_paramilitary_involvement
+		prerequisite = { focus = XNM_paramilitary_involvement }
+
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_community_policing # engage with the community to build trust and gather intelligence to prevent violence
+		icon = GFX_focus_unknown
+		x = 2
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_paramilitary_involvement
+		prerequisite = { focus = XNM_paramilitary_involvement }
+
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNM_expand_regional_martial_law # expand martial law in region to have stricter curfews
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_de_escelation_tactics
+		prerequisite = {
+			focus = XNM_de_escelation_tactics 
+			focus = XNM_censor_local_medias
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_end_it_once_and_for_all # can be done 180d after curfew and remove effect
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_expand_regional_martial_law
+		prerequisite = { focus = XNM_expand_regional_martial_law }
+
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNM_utilize_the_rampage # use the midlands riots to our advantage to boost support of either conservative strong grip or bolster monarchist presence in gov
+		icon = GFX_focus_unknown
+		x = -4
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_eagle_rises
+		prerequisite = {
+			focus = XNM_century_of_democracy 
+			focus = XNM_the_eagle_rises
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_fuel_to_the_fire # purposefuly denounce the liberal's useless actions to put down movement on radio and promise a harsh solution by conservatives 
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_utilize_the_rampage
+		prerequisite = { focus = XNM_utilize_the_rampage }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_covert_funding_operations # secretely funnel vital aid and promote the movement but in peaceful way
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_fuel_to_the_fire
+		prerequisite = { focus = XNM_fuel_to_the_fire }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_call_for_restraint # try to negotiate with low-tier membership to restrain from using violence
+		icon = GFX_focus_unknown
+		x = -2
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_fuel_to_the_fire
+		prerequisite = { focus = XNM_fuel_to_the_fire }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_pressure_the_rioters # politically and economically pressure the rioters to begin reducing operations
+		icon = GFX_focus_unknown
+		x = 2
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_fuel_to_the_fire
+		prerequisite = { focus = XNM_fuel_to_the_fire }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNM_final_showdown # use violence to reprimand movement and make it come to an end
+		icon = GFX_focus_unknown
+		x = 1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_covert_funding_operations
+		prerequisite = { focus = XNM_covert_funding_operations }
+		prerequisite = { focus = XNM_pressure_the_rioters }
+		mutually_exclusive = {
+			focus = XNM_contact_the_general
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_contact_the_general # can make deal to end the riots by including a special branch of gov of royalists and give them own milita
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_covert_funding_operations
+		prerequisite = { focus = XNM_covert_funding_operations }
+		prerequisite = { focus = XNM_call_for_restraint }
+		mutually_exclusive = {
+			focus = XNM_final_showdown
+		}
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}			
+
+
+	# WIP Political Branches #
+	focus = {
+		id = XNM_the_purple_coalition
+		icon = GFX_focus_unknown
+		x = -10
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_autumn_elections
+		prerequisite = { focus = XNM_the_autumn_elections }	
+		mutually_exclusive = { focus = XNM_century_of_democracy }
+		mutually_exclusive = { focus = XNM_the_eagle_rises }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_the_eagle_rises
+		icon = GFX_focus_unknown
+		x = 10
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_autumn_elections
+		prerequisite = { focus = XNM_the_autumn_elections }	
+		mutually_exclusive = { focus = XNM_century_of_democracy }
+		mutually_exclusive = { focus = XNM_the_purple_coalition }
 		available = {}
 		bypass = {}		
 		

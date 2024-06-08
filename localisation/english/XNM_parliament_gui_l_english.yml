@@ -8,8 +8,11 @@
   semicircle_parliament_gui_title:0 "Grand Mercian Council"
   parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"
   parliament_seat_text:0 "Seat [?temp_seat|Y0]"
-  parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats"
+  parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats [GetParliamentPartyAlliance]"
   parliament_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetParliamentPartyName]"
+  XNM_parliament_desc:0 "We are controlling [?udm_alliance|Y0] seats ([?udm_alliance_percent] %)"
+
+  XNM_parliament_allied:0 "§G(Coalition Member)§!"
 
   party_1_text:0 "§RThornist Revolutionaries§!"
   party_2_text:0 "§2New Dawn Party§!"
