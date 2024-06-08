@@ -189,8 +189,8 @@ recruit_character = XFR_dominique_gounelle
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "2234.6.1"
-	election_frequency = 24
+	last_election = "2233.1.1"
+	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {

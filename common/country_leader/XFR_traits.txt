@@ -72,4 +72,27 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	XFR_anarchists_trait = {
+		random = no
+
+		political_power_factor = 0.1
+		drift_defence_factor = 0.2
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_anti_fascists = {
+		random = no
+
+		fascism_drift = -0.1
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

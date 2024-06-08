@@ -67,7 +67,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = anarchist_communism
-			traits = {  }
+			traits = { XFR_anarchists_trait }
 			expire = "3000.1.1"
 		}
 	}

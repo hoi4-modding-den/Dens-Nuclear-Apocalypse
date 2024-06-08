@@ -12,6 +12,20 @@ XFR_mutant_state_modifier = {
 	state_production_speed_buildings_factor = -0.8
 }
 
+XFR_anarchists_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_ETH_state_development 
+
+	attrition_for_controller = 0.25
+	enemy_attrition = 0.25
+	state_resources_factor = -1
+	local_building_slots = -1
+	local_factories = -1
+	local_supplies = -0.75
+	local_manpower = -1
+	state_production_speed_buildings_factor = -1
+}
+
 XFR_colonisation_state_modifier = {
 	enable = { always = yes }
 	icon = GFX_modifiers_ETH_state_development 

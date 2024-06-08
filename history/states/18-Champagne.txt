@@ -2,7 +2,7 @@
 state={
 	id=18
 	name="STATE_18"
-manpower=913867
+manpower=1913867
 	
 	state_category = city
 
@@ -20,7 +20,6 @@ manpower=913867
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
-			arms_factory = 1
 			#air_base = 10
 		}
 		add_core_of = XFR

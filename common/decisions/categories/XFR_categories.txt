@@ -6,9 +6,19 @@ XFR_centre_crisis_cat = {
 		original_tag = XFR
 	}
 	visible = {	
-		original_tag = XFR
 		has_idea = XFR_chaos_in_centre
 		24 = { is_owned_by = XFR }
+	}
+}
+XFR_other_crisis_cat = {		
+	priority = 100	
+	icon = GFX_decision_category_generic_crisis
+	
+	allowed = {
+		original_tag = XFR
+	}
+	visible = {	
+		has_country_flag = XFR_times_of_turmoil
 	}
 }
 
@@ -22,7 +32,7 @@ XFR_country_development_cat = {
 		original_tag = XFR
 	}
 	visible = {	
-		has_completed_focus = XFR_electrify_the_country
+		has_completed_focus  = XFR_industrial_investments
 	}
 
 	visibility_type = map_and_decisions_view
@@ -41,21 +51,58 @@ XFR_country_development_cat = {
 	}
 }
 
-XFR_integration = {		
-	icon = GFX_decision_category_generic_formable_nations
+XFR_last_modernisation = {			
+	icon = GFX_decision_category_ger_military_buildup
+	priority = 10000	
+
+	visible_when_empty = no	
 	
 	allowed = {
-		OR = {
-			original_tag = XFR
-			original_tag = XAL
-		}
+		original_tag = XFR
+	}
+	visible = {	
+		has_country_flag = XFR_last_modernisation_active
+	}
+}
+
+XFR_udb_cat = {			
+	icon = GFX_decision_category_ITA_reggianes_exports
+	priority = 9
+
+	visible_when_empty = yes	
+	
+	allowed = {
+		original_tag = XFR
+	}
+
+	visible = {
+		has_completed_focus = XFR_economic_cooperation
+	}
+}
+
+XFR_integration = {		
+	icon = GFX_decision_category_intervention_overseas
+	
+	allowed = {
+		original_tag = XFR
 	}
 	visible = {	
 	}
 }
 
+XAL_integration = {		
+	icon = GFX_decision_category_ger_reichskommissariats
+	
+	allowed = {
+		original_tag = XAL
+	}
+	visible = {	
+		has_government = fascism
+	}
+}
+
 XFR_bop_decision_cat = {		
-	icon = GFX_decision_category_generic_formable_nations
+	icon = GFX_decision_category_power_struggle
 	
 	allowed = {
 		original_tag = XFR

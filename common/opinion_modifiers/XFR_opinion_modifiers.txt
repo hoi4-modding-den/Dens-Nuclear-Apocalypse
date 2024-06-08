@@ -29,7 +29,7 @@ opinion_modifiers = {
 		value = -50
 	}
 	XFR_rejected_customs = {
-		value = -15
+		value = -5
 	}
 	XFR_accepted_customs = {
 		value = 15
@@ -46,4 +46,8 @@ opinion_modifiers = {
 	XFR_hostility = {
 		value = -100
 	}
+	XFR_bez_agreement = {
+        trade = yes
+        value = 50
+    }
 }

@@ -90,6 +90,318 @@ ideas = {
 
         }
 
+        XFR_modern_cavalry2 = {
+            name = XFR_modern_cavalry
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = ast_volunteer_defence_corps
+
+            modifier = {
+			    cavalry_attack_factor = 0.3
+                cavalry_defence_factor = 0.3
+                cavalry_speed_factor = 0.5
+            }
+
+        }
+
+        XFR_modern_tanks = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_armor
+
+            modifier = {
+			    army_armor_attack_factor = 0.1
+                army_armor_defence_factor = 0.1
+                army_armor_speed_factor = 0.25
+            }
+
+        }
+
+        XFR_modern_tanks2 = {
+            name = XFR_modern_tanks
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_armor
+
+            modifier = {
+			    army_armor_attack_factor = 0.2
+                army_armor_defence_factor = 0.2
+                army_armor_speed_factor = 0.5
+            }
+
+        }
+
+        XFR_modern_army_hq = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = general_staff
+
+            modifier = {
+			    experience_gain_army_factor = 0.5
+                experience_gain_air_factor = 0.5
+                experience_gain_navy_factor = 0.5
+                max_planning_factor = 0.2
+                planning_speed = 0.2
+            }
+
+        }
+
+        XFR_modern_infantry = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_infantry_bonus
+
+            modifier = {
+			    army_infantry_attack_factor = 0.1
+                army_infantry_defence_factor = 0.1
+            }
+
+        }
+
+        XFR_modern_infantry2 = {
+            name = XFR_modern_infantry
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_infantry_bonus
+
+            modifier = {
+			    army_infantry_attack_factor = 0.2
+                army_infantry_defence_factor = 0.2
+            }
+
+        }
+
+        XFR_modern_artillery = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_artillery_regiments
+
+            modifier = {
+			    army_artillery_attack_factor = 0.1
+                army_artillery_defence_factor = 0.1
+            }
+
+        }
+
+        XFR_modern_artillery2 = {
+            name = XFR_modern_artillery
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_artillery_regiments
+
+            modifier = {
+			    army_artillery_attack_factor = 0.2
+                army_artillery_defence_factor = 0.2
+            }
+
+        }
+
+        XFR_modern_army = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = ARG_war_division
+
+            modifier = {
+                cavalry_attack_factor = 0.3
+                cavalry_defence_factor = 0.3
+                cavalry_speed_factor = 0.5
+                army_infantry_attack_factor = 0.2
+                army_infantry_defence_factor = 0.2
+			    army_artillery_attack_factor = 0.2
+                army_artillery_defence_factor = 0.2
+            }
+
+        }
+
+        XFR_modern_army_tanks = {
+            name = XFR_modern_army
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = ARG_war_division
+
+            modifier = {
+                cavalry_attack_factor = 0.3
+                cavalry_defence_factor = 0.3
+                cavalry_speed_factor = 0.5
+                army_infantry_attack_factor = 0.2
+                army_infantry_defence_factor = 0.2
+			    army_armor_attack_factor = 0.2
+                army_armor_defence_factor = 0.2
+                army_armor_speed_factor = 0.5
+            }
+
+        }
+
+        XFR_special_forces_idea = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = eng_special_air_service
+
+            modifier = {
+			    special_forces_cap = 0.5
+                special_forces_attack_factor = 0.25
+                special_forces_defence_factor = 0.25
+            }
+
+        }
+
+        XFR_special_forces_idea1 = {
+            name = XFR_special_forces_idea
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = eng_special_air_service
+
+            modifier = {
+			    special_forces_cap = 0.5
+                special_forces_attack_factor = 0.25
+                special_forces_defence_factor = 0.25
+                mountaineers_special_forces_contribution_factor = -0.75
+            }
+
+        }
+
+        XFR_special_forces_idea2 = {
+            name = XFR_special_forces_idea
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = eng_special_air_service
+
+            modifier = {
+			    special_forces_cap = 0.5
+                special_forces_attack_factor = 0.25
+                special_forces_defence_factor = 0.25
+                paratroopers_special_forces_contribution_factor = -0.75
+            }
+
+        }
+
+        XFR_special_forces_idea3 = {
+            name = XFR_special_forces_idea
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = eng_special_air_service
+
+            modifier = {
+			    special_forces_cap = 0.5
+                special_forces_attack_factor = 0.25
+                special_forces_defence_factor = 0.25
+                marines_special_forces_contribution_factor = -0.75
+            }
+
+        }
+
         XFR_propaganda_department_idea = {
             allowed = {
 				always = yes
@@ -106,6 +418,86 @@ ideas = {
             modifier = {
 			    stability_factor = 0.05
                 war_support_factor = 0.1
+            }
+
+        }
+
+        XFR_fascist_tensions = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_fascist_workers
+
+            modifier = {
+			    stability_factor = -0.05
+                fascism_drift = 0.05
+            }
+
+        }
+
+        XFR_herzogs_speeches = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_monarchist_uprising
+
+            modifier = {
+			    stability_factor = -0.05
+                fascism_drift = 0.05
+            }
+
+        }
+
+        XFR_fascism_banned = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_fascism_banned
+
+            modifier = {
+                fascism_drift = -0.1
+            }
+
+        }
+
+        XFR_anarchists_appeased = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = SPR_anarchist_society
+
+            modifier = {
+			    stability_factor = -0.025
+                communism_drift = 0.01
+                democratic_drift = 0.02
             }
 
         }
@@ -177,7 +569,7 @@ ideas = {
 			}
 
             do_effect = {
-                NOT = { has_war = yes }
+                has_war = no
             }
 
            removal_cost = -1
