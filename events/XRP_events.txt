@@ -1,0 +1,38 @@
+add_namespace = XRP_focus_event
+add_namespace = XRP_natural_event
+add_namespace = XRP_news_event
+add_namespace = XRP_diplo_event
+
+country_event = {
+    id = XRP_focus_event.1
+    title = XRP.1.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.1.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.1.a
+		XRP = { country_event = XRP.2 }
+		ai_chance = {
+			base = 100
+		}
+    	}
+}
+
+country_event = {
+    id = XRP_focus_event.2
+    title = XRP.2.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.2.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.2.a
+		XRP = { country_event = XRP.2 }
+		ai_chance = {
+			base = 100
+		}
+    	}
+}

@@ -1,0 +1,556 @@
+focus_tree = {
+	id = XRP_fake_first_tree
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XRP
+		}
+	}
+
+	default = no
+    continuous_focus_position = { x = 0 y = 0 }
+
+	focus = {
+		id = XRP_intro_focus
+		icon = GFX_focus_usa_focus_on_europe
+		x = 12
+		y = 0
+		#relative_position_id = 1
+
+		cost = 10
+		prerequisite = {  }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_stability = 0.1
+			country_event = { id = XRP_focus_event.1 }
+		}
+	}
+
+	focus = {
+		id = XRP_ceremony
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 12
+		y = 1
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_intro_focus }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 150
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_war_support = 0.1
+			country_event = { id = XRP_focus_event.2 }
+		}
+	}
+
+	focus = {
+		id = XRP_economy_autobahn
+		icon = GFX_
+		x = 4
+		y = 2
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_ceremony }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_agrarian
+		icon = GFX_
+		x = 2
+		y = 3
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_autobahn }
+		mutually_exclusive = { focus = XRP_economy_industrial }
+		mutually_exclusive = { focus = XRP_economy_agrarian }  
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_industrial
+		icon = GFX_
+		x = 6
+		y = 3
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_autobahn }
+		mutually_exclusive = { focus = XRP_economy_agrarian } 
+		mutually_exclusive = { focus = XRP_economy_industrial }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_farm_modern
+		icon = GFX_
+		x = 0
+		y = 4
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_agrarian } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_wine_time
+		icon = GFX_
+		x = 2
+		y = 4
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_agrarian } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_military
+		icon = GFX_
+		x = 4
+		y = 4
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_agrarian focus =  XRP_economy_industrial } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_fix_automation
+		icon = GFX_
+		x = 6
+		y = 4
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_industrial } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_gem_mines
+		icon = GFX_
+		x = 8
+		y = 4
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_industrial } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_american_farms
+		icon = GFX_
+		x = 2
+		y = 5
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_wine_time} 
+		available = {
+			num_of_controlled_states > 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_research_slot
+		icon = GFX_
+		x = 4
+		y = 5
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_wine_time focus =  XRP_economy_fix_automation } 
+		available = {
+			num_of_controlled_states > 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_american_factories
+		icon = GFX_
+		x = 6
+		y = 5
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_fix_automation} 
+		available = {
+			num_of_controlled_states > 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_economy_miracle
+		icon = GFX_
+		x = 4
+		y = 6
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_american_farms} 
+		prerequisite = { focus =  XRP_economy_american_factories} 
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_recruit_germans
+		icon = GFX_
+		x = 8
+		y = 2
+		#relative_position_id = 2
+		mutually_exclusive = { focus = XRP_recruit_americans } 
+		cost = 10
+		prerequisite = { focus =  XRP_ceremony} 
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_recruit_americans
+		icon = GFX_
+		x = 10
+		y = 2
+		#relative_position_id = 2
+		mutually_exclusive = { focus = XRP_recruit_germans } 
+		cost = 10
+		prerequisite = { focus =  XRP_ceremony} 
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+
+#fake focuses past here#
+
+	focus = {
+		id = XRP_false_1
+		icon = GFX_
+		x = 12
+		y = 2
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_ceremony }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_2
+		icon = GFX_
+		x = 9
+		y = 3
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_recruit_americans  focus =  XRP_recruit_germans}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_3
+		icon = GFX_
+		x = 11
+		y = 3
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_false_1}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_4
+		icon = GFX_
+		x = 13
+		y = 3
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_false_1}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_5
+		icon = GFX_
+		x = 15
+		y = 2
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_ceremony}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_6
+		icon = GFX_
+		x = 15
+		y = 3
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_false_5}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_7
+		icon = GFX_
+		x = 17
+		y = 3
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_false_5}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_8
+		icon = GFX_
+		x = 10
+		y = 4
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_false_2}
+		prerequisite = { focus =  XRP_false_3}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_9
+		icon = GFX_
+		x = 14
+		y = 4
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_false_4}
+		prerequisite = { focus =  XRP_false_6}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XRP_false_10
+		icon = GFX_
+		x = 12
+		y = 5
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_false_9}
+		prerequisite = { focus =  XRP_false_8}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = XAP
+				type = annex_everything
+			}
+			custom_effect_tooltip = XRP_tooltip_lying_lmao
+		}
+	}
+
+	#focus = {
+	#	id = XRP_
+	#	icon = XRP_
+	#	x =
+	#	y = 
+	#	relative_position_id = 
+	#
+	#	cost = 7
+	#	prerequisite = { focus =  }
+	#	available = {
+	#		NOT = {  }
+	#	}	
+	#
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	completion_reward = {
+	#		
+	#	}
+	#}
+
+}
