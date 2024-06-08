@@ -1,0 +1,616 @@
+focus_tree = {
+
+	id = 914
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XCM
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	focus = {
+		#revolution to ...
+		id = XCM_this_aint_democracy
+		icon = GFX_focus_generic_workers
+		mutually_exclusive = { focus =  XCM_control_the_people}
+		x = 3
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_raise_the_militia
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = XCM_this_aint_democracy }
+		x = 1
+		y = 1
+		relative_position_id = XCM_this_aint_democracy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_the_democratic_revolution
+		icon = GFX_focus_POL_riot_of_37
+		prerequisite = { focus = XCM_raise_the_militia }
+		prerequisite = { focus = XCM_anti_corruption_campaign }
+
+		mutually_exclusive = { focus =  XMC_the_social_cause}
+		x = -1
+		y = 1
+		relative_position_id = XCM_raise_the_militia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_capitalism_for_the_people
+		icon = GFX_focus_generic_full_employment
+		prerequisite = { focus = XCM_the_democratic_revolution }
+
+		x = -2
+		y = 1
+		relative_position_id = XCM_the_democratic_revolution
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_the_social_cause
+		icon = GFX_focus_CHL_union_of_hispanic_republics
+		prerequisite = { focus = XCM_raise_the_militia }
+		mutually_exclusive = { focus =  XCM_the_democratic_revolution}
+		x = 3
+		y = 1
+		relative_position_id = XCM_raise_the_militia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_work_for_the_revolution
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		prerequisite = { focus = XCM_the_social_cause }
+		x = 2
+		y = 1
+		relative_position_id = XCM_the_social_cause
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_social_outreach
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = XCM_the_social_cause }
+		x = 0
+		y = 1
+		relative_position_id = XCM_the_social_cause
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_recruit_revolutionaries
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		prerequisite = { focus = XCM_social_outreach }
+		x = 0
+		y = 1
+		relative_position_id = XCM_social_outreach
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_commandeer_civilian_vehicles
+		icon = GFX_focus_generic_truck
+		prerequisite = { focus = XCM_the_democratic_revolution }
+		x = 0
+		y = 1
+		relative_position_id = XCM_the_democratic_revolution
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_oppose_autocracy
+		icon = GFX_focus_SWE_undermine_fascism
+		prerequisite = { focus = XCM_the_democratic_revolution 
+						focus = XCM_the_social_cause }
+		x = 2
+		y = 1
+		relative_position_id = XCM_the_democratic_revolution
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_bycicle_division
+		icon = GFX_focus_SWE_bicycle
+		prerequisite = { focus = XCM_oppose_autocracy  }
+		x = 0
+		y = 1
+		relative_position_id = XCM_oppose_autocracy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = XCM_for_the_people
+		icon = GFX_focus_FIN_socialist_welfare
+		prerequisite = { focus = XCM_work_for_the_revolution }
+		x = 0
+		y = 1
+		relative_position_id = XCM_work_for_the_revolution
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_rebuild_the_economy
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = XCM_for_the_people }
+		x = 0
+		y = 1
+		relative_position_id = XCM_for_the_people
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_socialist_science
+		icon = GFX_focus_generic_socialist_science
+		prerequisite = { focus = XCM_work_for_the_revolution }
+		x = 1.5
+		y = 1
+		relative_position_id = XCM_work_for_the_revolution
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_socialist_reforms
+		icon = GFX_focus_SWE_socialist_reforms
+		prerequisite = { focus = XCM_socialist_science }
+		x = 0
+		y = 1
+		relative_position_id = XCM_socialist_science
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_anti_corruption_campaign
+		icon = GFX_focus_ARG_crackdown_on_corruption
+		prerequisite = { focus = XCM_this_aint_democracy }
+		x = -1
+		y = 1
+		relative_position_id = XCM_this_aint_democracy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_form_the_supreme_court
+		icon = GFX_focus_generic_court
+		prerequisite = { focus = XCM_anti_corruption_campaign }
+		x = -1
+		y = 1
+		relative_position_id = XCM_anti_corruption_campaign
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		#
+		id = XCM_h
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = XCM_its_about_faith
+						focus = XCM_its_about_fear }
+		x = 6
+		y = 1
+		relative_position_id = XCM_its_about_fear
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		#
+		id = XCM_bribe_the_unions
+		icon = GFX_focus_NOR_approach_kretsen
+		prerequisite = { focus = XCM_h }
+		mutually_exclusive = { focus =  XCM_form_the_state_union}
+		x = -1
+		y = 1
+		relative_position_id = XCM_h
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		#
+		id = XCM_sieze_control_of_civillian_industries
+		icon = GFX_focus_DEN_heavy_regulations
+		prerequisite = { focus = XCM_bribe_the_unions }
+		x = 0
+		y = 1
+		relative_position_id = XCM_bribe_the_unions
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		#
+		id = XCM_form_the_state_union
+		icon = GFX_focus_generic_industrialists
+		prerequisite = { focus = XCM_h }
+		mutually_exclusive = { focus =  XCM_bribe_the_unions}
+		x = 1
+		y = 1
+		relative_position_id = XCM_h
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		#
+		id = XCM_whats_minimum_wages?
+		icon = GFX_focus_SWE_rations
+		prerequisite = { focus = XCM_bribe_the_unions 
+						 focus = XCM_form_the_state_union }
+		
+		x = 1.5
+		y = 1
+		relative_position_id = XCM_bribe_the_unions
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	focus = {
+		id = XCM_control_the_people
+		icon = GFX_focus_generic_annex_country_2
+		mutually_exclusive = { focus =  XCM_this_aint_democracy }
+
+		relative_position_id = XCM_this_aint_democracy
+		add_stability = 0.15
+		x = 17
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	focus = {
+		id = XCM_ban_on_communism
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		prerequisite = { focus = XCM_its_about_faith
+						focus = XCM_its_about_fear }	
+		add_stability = 0.15
+		x = 4
+		y = 1
+		relative_position_id = XCM_its_about_fear
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		add_ideas = {XCM_divided_country}
+
+	}
+	focus = {
+		id = XCM_nationalize_the_food_reserves
+		icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = XCM_its_about_faith
+						focus = XCM_its_about_fear }	
+		add_stability = 0.15
+		x = 2
+		y = 1
+		relative_position_id = XCM_its_about_fear
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		add_ideas = {XCM_divided_country}
+
+	}
+
+	focus = {
+		id = XCM_its_about_faith
+		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+
+		x = 4
+		y = 1
+		relative_position_id = XCM_control_the_people
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = XCM_control_the_people }
+		mutually_exclusive = {focus = XCM_its_about_fear }
+
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+	}
+
+	focus = {
+		id = XCM_its_about_fear
+		icon = GFX_goal_generic_fortify_city
+
+		x = -3
+		y = 1
+		relative_position_id = XCM_control_the_people
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = XCM_control_the_people }
+		mutually_exclusive = {focus = XCM_its_about_faith }
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+
+		id = XCM_appointed_by_god
+		icon = GFX_focus_generic_catholic_dominion
+		prerequisite = { focus = XCM_its_about_faith }
+		x = 1.5
+		y = 1
+		relative_position_id = XCM_its_about_faith
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+
+		id = XCM_fight_for_god
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = XCM_appointed_by_god }
+
+		x = 0
+		y = 1
+		relative_position_id = XCM_appointed_by_god
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+
+		id = XCM_praise_god
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = XCM_fight_for_god }
+
+		x = 0
+		y = 1
+		relative_position_id = XCM_fight_for_god
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+
+		id = XCM_fight_for_the_leader
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = XCM_its_about_fear }
+
+		x = 0
+		y = 1
+		relative_position_id = XCM_its_about_fear
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}focus = {
+
+		id = XCM_dismantle_the_council
+		icon = GFX_focus_SWE_organize_a_putsch
+		prerequisite = { focus = XCM_its_about_fear }
+
+		x = -2
+		y = 1
+		relative_position_id = XCM_its_about_fear
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}focus = {
+
+		id = XCM_XRP_combined_arms_training
+		icon = GFX_f
+		prerequisite = { focus = XCM_dismantle_the_council }
+
+		x = 0
+		y = 1
+		relative_position_id = XCM_dismantle_the_council
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = XCM_form_the_holy_allience
+		icon = GFX_focus_CHL_invite_french_aristocracy
+		prerequisite = { focus = XCM_its_about_faith }
+		x = 3
+		y = 1
+		relative_position_id = XCM_its_about_faith
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        
+        create_faction = "The Holy Allience"
+
+        }
+	}
+	focus = {
+		id = XCM_approach_close_monarchs
+		icon = GFX_focus_CHL_invite_french_aristocracy
+		prerequisite = { focus = XCM_form_the_holy_allience }
+		x = 0
+		y = 1
+		relative_position_id = XCM_form_the_holy_allience
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_divert_resources_to_the_army
+		icon = GFX_focus_POL_beck_ribbentrop
+		prerequisite = { focus = XCM_nationalize_the_food_reserves }
+		x = -0.5
+		y = 1
+		relative_position_id = XCM_nationalize_the_food_reserves
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_reimange_capital
+		icon = GFX_focus_spa_the_spanish_miracle
+		prerequisite = { focus = XCM_nationalize_the_food_reserves }
+		x = 1
+		y = 1
+		relative_position_id = XCM_nationalize_the_food_reserves
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XCM_modernize_the_city
+		icon = GFX_focus_generic_energy
+		prerequisite = { focus = XCM_reimange_capital }
+		x = 0
+		y = 1
+		relative_position_id = XCM_reimange_capital
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+	continuous_focus_position = { x = 0 y = 1800 }
+	
+}
