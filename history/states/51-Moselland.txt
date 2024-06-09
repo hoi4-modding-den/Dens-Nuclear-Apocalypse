@@ -21,9 +21,9 @@ manpower=4096495
 		#victory_points = {
 		#	3444 5
 		#}
-		#victory_points = {
-		#	3547 1
-		#}
+		victory_points = {
+			3547 1
+		}
 		buildings = {
 			infrastructure = 4
 			#arms_factory = 3

@@ -119,6 +119,14 @@
  XRP_tooltip_lying_lmao:0 "We will §Gunlock§W a new §YForeign Policy§W tree."
  
  #Events#
- XRP.1.t:0 "Just One Mistake"
- XRP.2.t:0 "The Ceremony"
+ 
+ XRP.NE_1.t:0 "The American Occupation Zone"
+ XRP.NE_1.d:0 "Ever since the end of the Second World War in 1945, the United States armed forces has maintained one of the largest overseas military detachments in the world in Western Germany. All with one goal in mind — to guarantee American control over Germany, either against the Germans in the Second World War, or with the Germans in the Third World War. \n\n 'The State of Rhineland-Palatinate', as it was formerly known, was placed directly under the martial law of the 'United States European Command' following the outbreak of the Third World War. Only through a combination of the enemy's poor maintenance of their nuclear arsenal, experimental anti-nuclear satellites, and pure luck, that Ramstein Air Base avoided being reduced to just a memory of a mushroom cloud. The Americans who survived the cataclysm lied in wait in their bunkers, coming out from the dust around 2050 to a world reduced to tribalism. These stranded Americans rebuilt Ramstein Air Base into a true American-style city, and the large surplus of modern military equipment meant the Americans were always a step ahead of the nearby Germans, who had become nearly feudalistic in the aftermath of the war. Ramstein would become a full nation-state in its own right, asserting itself in the world in the face of attempted invasions from neighboring German city-states. These cities ultimately failed to assert control over Ramstein, and would in-turn be conquered themselves over the course of the 22nd century. With the full 'reconquest' of the state of Rhineland-Palatinate around 2200 fueling expansionist appetites within the Rhinish government, the American forces have been further radicalized by the recent rise of the anarchists and the techno-communists to the north. These 'commie bastards' only further solidified what the military high-command always knew, that the German people cannot be trusted to run themselves. However, with American forces already over-stretched from the occupation of the whole state, and the German population here becoming increasingly recalcitrant to American governance, it's clear that something has to change."
+ XRP.NE_1.a:0 "Hail, Columbia"
+ XRP.FE_1.t:0 "Just One Mistake"
+ XRP.FE_1.d:0 "Hey! I haven't actually written this yet! Come back later! \n\n - Carrera"
+ XRP.FE_1.a:0 "Fine"
+ XRP.FE_2.t:0 "The Ceremony"
+ XRP.FE_2.d:0 "ah fuck, I can't believe ya've done this (WIP, go away)"
+ XRP.FE_2.a:0 "seriously, I haven't finished anything yet"
  

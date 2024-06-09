@@ -1,0 +1,13 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            XRP = {
+                country_event = { 
+                    id = XRP_natural_event.1
+                    days = 0
+                    random_days = 0     # Fires in 45d
+                }
+            }
+        }
+    }
+}
