@@ -159,7 +159,6 @@ regional_balance_num_elders = {
 }
 
 regional_balance_get_num_elders = {
-	#log = "Began regional_balance_get_num_elders"
 	set_variable = {
 		var = XLA_Neutral_Councilmembers
 		value = 0
@@ -172,10 +171,8 @@ regional_balance_get_num_elders = {
 		var = XLA_Altwigitian_Councilmembers
 		value = 0
 	}
-	#log = "[regional_balance_get_num_elders] elder variables cleared"
 	for_each_scope_loop = {
 		array = XLA.owned_controlled_states
-		#log = "[regional_balance_get_num_elders] entered for_each loop"
 		if = {
 			limit = {
 				check_variable = { XLA_alignment = 1 }
@@ -299,52 +296,45 @@ regional_balance_get_num_elders = {
 }
 
 XLA_setup_popularities = {
-	log = "[XLA] Establishing popularities"
-	set_variable = {
+	set_temp_variable = {
 		var = XLA_max_popularities
 		value = 100
 	}
 
 	set_variable = {
-		var = XLA_democratic_popularity
+		var = XLA_spiritualist_popularity
 		value = XLA_Spiritualist_Councilmembers
 	}
 
 	multiply_variable = {
-		var = XLA_democratic_popularity
+		var = XLA_spiritualist_popularity
 		value = 4.5
 	}
 
-	log = "Democratic - [?XLA.XLA_democratic_popularity]"
-
 	set_variable = {
-		var = XLA_fascist_popularity
+		var = XLA_altwigitian_popularity
 		value = XLA_Altwigitian_Councilmembers
 	}
 
 	multiply_variable = {
-		var = XLA_fascist_popularity
+		var = XLA_altwigitian_popularity
 		value = 4.5
 	}
 
-	log = "Fascist - [?XLA.XLA_fascist_popularity]"
-
 	set_variable = {
-		var = XLA_neutral_popularity
+		var = XLA_council_popularity
 		value = XLA_max_popularities
 	}
 
 	subtract_from_variable = {
-		var = XLA_neutral_popularity
-		value = XLA_fascist_popularity
+		var = XLA_council_popularity
+		value = XLA_altwigitian_popularity
 	}
 
 	subtract_from_variable = {
-		var = XLA_neutral_popularity
-		value = XLA_democratic_popularity
+		var = XLA_council_popularity
+		value = XLA_spiritualist_popularity
 	}
-
-	log = "Neutral - [?XLA.XLA_neutral_popularity]"
 
 	set_variable = {
 		var = XLA_total
@@ -353,24 +343,40 @@ XLA_setup_popularities = {
 
 	add_to_variable = {
 		var = XLA_total
-		value = XLA_neutral_popularity
+		value = XLA_council_popularity
 	}
 
 	add_to_variable = {
 		var = XLA_total
-		value = XLA_fascist_popularity
+		value = XLA_altwigitian_popularity
 	}
 
 	add_to_variable = {
 		var = XLA_total
-		value = XLA_democratic_popularity
+		value = XLA_spiritualist_popularity
 	}
 
-	log = "Total - [?XLA.XLA_total]"
-
-	set_popularities = {
-		neutrality = [?XLA.XLA_neutral_popularity]
-		democratic = [?XLA.XLA_democratic_popularity]
-		fascism = [?XLA.XLA_fascist_popularity]
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					XLA.XLA_total = XLA_max_popularities
+				}
+			}
+		}
+	
+		log = "[XLA] An error occurred in popularity variables."
+		set_popularities = {
+			neutrality = 73
+			democratic = 14
+			fascism = 13
+		}
+	}
+	else = {
+		set_popularities = {
+			neutrality = XLA.XLA_council_popularity
+			democratic = XLA.XLA_spiritualist_popularity
+			fascism = XLA.XLA_altwigitian_popularity
+		}
 	}
 }

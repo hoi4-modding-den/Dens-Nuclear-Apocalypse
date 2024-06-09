@@ -13,6 +13,13 @@ set_technology = {
 
 set_country_flag = dont_use_default_political_advisors
 
+# Setup the regional balance system.
+# Note that party popularities is established in XLA_setup_popularities
+regional_balance_initial_values = yes
+regional_balance_num_elders = yes
+regional_balance_get_num_elders = yes
+XLA_setup_popularities = yes
+
 recruit_character = XLA_Elder_Borani
 recruit_character = XLA_Altwigite_Order
 recruit_character = XLA_Voiceless_Grotto
@@ -25,15 +32,3 @@ set_politics = {
 	election_frequency = 98
 	elections_allowed = no
 }
-
-set_popularities = {
-	neutrality = 73
-	democratic = 14
-	fascism = 13
-}
-
-#set_popularities = {
-#	neutrality = [?XLA.XLA_neutral_popularity]
-#	democratic = [?XLA.XLA_democratic_popularity]
-#	fascism = [?XLA.XLA_fascist_popularity]
-#}
