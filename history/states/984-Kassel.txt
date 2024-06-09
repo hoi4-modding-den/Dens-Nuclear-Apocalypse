@@ -1,0 +1,22 @@
+state={
+	id=984
+	name="STATE_984"
+	history = {
+		owner = XAP
+		add_core_of = XAP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			564 3
+		}
+	}
+	provinces={
+		564 3397 3524 6549 9524 9547 11445 11533 
+	}
+	manpower=844052
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+}

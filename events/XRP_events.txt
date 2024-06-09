@@ -33,7 +33,9 @@ country_event = {
     fire_only_once = no
 	option = {
         name = XRP.FE_1.a
-		XRP = { country_event = XRP.2 }
+		983 = {
+                    add_manpower = -53
+          	}
 		ai_chance = {
 			base = 100
 		}
@@ -50,7 +52,7 @@ country_event = {
     fire_only_once = no
 	option = {
         name = XRP.FE_2.a
-		XRP = { country_event = XRP.2 }
+		#XRP = { country_event = XRP.2 }
 		ai_chance = {
 			base = 100
 		}
