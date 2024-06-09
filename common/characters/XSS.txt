@@ -872,7 +872,7 @@ corps_commander = {
 			allowed = {
 				original_tag = XSS
 			}
-		available = { XRM = {exist = no}}
+		available = { XRM = {exists = no}}
 
 
 			traits = {
@@ -903,27 +903,6 @@ corps_commander = {
 		}
 	}
 
-	XSS_massa = {
-		name = "Venceslao Massa"
-		portraits = {
-			army = {
-				small = "GFX_idea_EST_august_rei"
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = XSS_massa_idea
-			allowed = {
-				original_tag = XSS
-			}
-
-
-			traits = {
-				liberal_journalist
-			}
-		}
-	}
 	XSS_mose = {
 		name = "Julius Mose"
 		portraits = {

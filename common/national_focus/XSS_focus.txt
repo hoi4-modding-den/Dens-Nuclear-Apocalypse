@@ -9444,7 +9444,7 @@ add_trait = {
     available = {has_war = no 
     
     NOT = { has_completed_focus = XRM_peace_at_last has_completed_focus = XRM_war_with_swiss}}
-    mutually_exclusive = {focus = XRM_steady_path}
+
 
     completion_reward = {
 
@@ -9466,6 +9466,7 @@ add_trait = {
     icon = GFX_focus_ARG_no_gods_no_masters
     cost = 1
     prerequisite = {focus = XRM_independece_peacefully}
+    mutually_exclusive = {focus = XRM_steady_path}
 
     completion_reward = {
 
