@@ -25,7 +25,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_XNM_tyne_technologies"
 		texturefile = "gfx/XNM/XNM_tyne_technologies.png"
-	}		
+	}	
+
+### Welcome Intro ###
+	frameAnimatedSpriteType = {
+		name = "GFX_XNM_welcome_window_animation_loop"
+		texturefile = "gfx/XGE/XNM_bastion_animation.dds"
+		noOfFrames = 3
+		animation_rate_fps = 0.2
+		transparencecheck = no
+		looping = yes
+		play_on_show = yes
+		#pause_on_loop = 0.2
+		#alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}	
 
 ### Portraits ###
 	spriteType = {

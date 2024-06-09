@@ -76,7 +76,7 @@ focus_tree = {
 		prerequisite = { focus = XNM_visit_to_the_heartland }
 		available = { 
 			always = no
-			if = { has_country_flag = XNM_southern_border_crisis }
+			has_country_flag = XNM_southern_border_crisis
 		}
 		bypass = {}		
 		
@@ -104,7 +104,7 @@ focus_tree = {
 		relative_position_id = XNM_the_southern_border_crisis
 		prerequisite = { focus = XNM_the_southern_border_crisis }
 		available = { 
-			if = { has_country_flag = XNM_southern_border_crisis }
+			has_country_flag = XNM_southern_border_crisis
 		}
 		bypass = {}		
 		
@@ -349,9 +349,11 @@ focus_tree = {
 			factor = 10
 		}		
 	}
+
+	# Democratic (Liberal/Conservative) Branch
 	focus = {
-		id = XNM_century_of_democracy # democratic branch
-		icon = GFX_focus_unknown
+		id = XNM_century_of_democracy
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -374,7 +376,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_liberal_values_triumphant # can be picked to go liberal again
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -1
 		y = 1
 		cost = 1
@@ -396,7 +398,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_the_conservative_sweep # can be picked to go conservative
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 1
 		y = 1
 		cost = 1
@@ -418,7 +420,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_concessions_for_the_people # bring promised concessions during the campaign and benefit eco situation
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -1
 		y = 1
 		cost = 1
@@ -440,7 +442,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_coalition_promises # Hold coalition promises with both conservatives and communists (if chosen)
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -1
 		y = 1
 		cost = 1
@@ -459,7 +461,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_revoke_act_2_07 # Revoke act banning monarchist symbols within the government
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 1
 		y = 1
 		cost = 1
@@ -478,7 +480,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_the_great_debacle # autocompleted when UDM faces a near-collapse
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -501,7 +503,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_emergency_relief_bill # enact a bill to retain governmental influence for a bit more in order to prevent total collapse (adds 30d to timed mission)
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -1
 		y = 1
 		cost = 1
@@ -520,7 +522,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_find_common_grounds # try to agree with conservatives and opposing powers
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 1
 		y = 1
 		cost = 1
@@ -539,7 +541,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_operational_once_more # can be done if successfully brought back UDM together
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -2
 		y = 1
 		cost = 1
@@ -562,7 +564,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_yet_another_compromise # modifies nat spirit "Compromise of 29'" and slightly worsens it, can fix later on thru "New Dawn Domination" focus
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -581,7 +583,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = XNM_the_national_catastrophe # can be done if the Conservatives split off from the UDM
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 2
 		y = 1
 		cost = 1
@@ -604,7 +606,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_right_wing_split # now aligns the countries party with the Conservatives + starts "Weak Governmental Reach" spirit
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -621,11 +623,56 @@ focus_tree = {
 			factor = 10
 		}		
 	}	
+
 	
+	# WIP Political Branches #
+	focus = {
+		id = XNM_the_purple_coalition
+		icon = GFX_goal_unknown
+		x = -10
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_autumn_elections
+		prerequisite = { focus = XNM_the_autumn_elections }	
+		mutually_exclusive = { focus = XNM_century_of_democracy }
+		mutually_exclusive = { focus = XNM_the_eagle_rises }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNM_the_eagle_rises
+		icon = GFX_goal_unknown
+		x = 10
+		y = 1
+		cost = 1
+
+		relative_position_id = XNM_the_autumn_elections
+		prerequisite = { focus = XNM_the_autumn_elections }	
+		mutually_exclusive = { focus = XNM_century_of_democracy }
+		mutually_exclusive = { focus = XNM_the_purple_coalition }
+		available = {}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+
 	# WIP Midlands Riots Branches #
 	focus = {
 		id = XNM_quell_the_riots # Suppress the riots to cool situation
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 4
 		y = 1
 		cost = 1
@@ -647,7 +694,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_organize_counter_marches # Organize communist/socialist counter protests
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -1
 		y = 1
 		cost = 1
@@ -669,7 +716,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_censor_local_medias # introduce policy of censorship and media control by the situation (mostly used by communists)
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -688,7 +735,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = XNM_dismantle_ultranationalist_outposts # remove outposts being responsible for arming/motivating the royalists and far-rightists
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -2
 		y = 1
 		cost = 1
@@ -707,7 +754,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = XNM_paramilitary_involvement # Increase funding for the police force
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 1
 		y = 1
 		cost = 1
@@ -729,7 +776,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_de_escelation_tactics # begin cooperating with opponents in riots and make deals to resolve
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -749,7 +796,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_community_policing # engage with the community to build trust and gather intelligence to prevent violence
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 2
 		y = 1
 		cost = 1
@@ -769,7 +816,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = XNM_expand_regional_martial_law # expand martial law in region to have stricter curfews
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -1
 		y = 1
 		cost = 1
@@ -791,7 +838,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_end_it_once_and_for_all # can be done 180d after curfew and remove effect
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -811,7 +858,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = XNM_utilize_the_rampage # use the midlands riots to our advantage to boost support of either conservative strong grip or bolster monarchist presence in gov
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -4
 		y = 1
 		cost = 1
@@ -833,7 +880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_fuel_to_the_fire # purposefuly denounce the liberal's useless actions to put down movement on radio and promise a harsh solution by conservatives 
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -851,8 +898,8 @@ focus_tree = {
 		}		
 	}
 	focus = {
-		id = XNM_covert_funding_operations # secretely funnel vital aid and promote the movement but in peaceful way
-		icon = GFX_focus_unknown
+		id = XNM_covert_funding_operations # secretely funnel vital aid and promote the movement but in peaceful way (control the movement)
+		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 1
@@ -871,7 +918,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_call_for_restraint # try to negotiate with low-tier membership to restrain from using violence
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -2
 		y = 1
 		cost = 1
@@ -890,7 +937,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_pressure_the_rioters # politically and economically pressure the rioters to begin reducing operations
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 2
 		y = 1
 		cost = 1
@@ -909,7 +956,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = XNM_final_showdown # use violence to reprimand movement and make it come to an end
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = 1
 		y = 1
 		cost = 1
@@ -932,7 +979,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_contact_the_general # can make deal to end the riots by including a special branch of gov of royalists and give them own milita
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		x = -1
 		y = 1
 		cost = 1
@@ -952,50 +999,5 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}		
-	}			
-
-
-	# WIP Political Branches #
-	focus = {
-		id = XNM_the_purple_coalition
-		icon = GFX_focus_unknown
-		x = -10
-		y = 1
-		cost = 1
-
-		relative_position_id = XNM_the_autumn_elections
-		prerequisite = { focus = XNM_the_autumn_elections }	
-		mutually_exclusive = { focus = XNM_century_of_democracy }
-		mutually_exclusive = { focus = XNM_the_eagle_rises }
-		available = {}
-		bypass = {}		
-		
-		completion_reward = {
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}		
-	}
-	focus = {
-		id = XNM_the_eagle_rises
-		icon = GFX_focus_unknown
-		x = 10
-		y = 1
-		cost = 1
-
-		relative_position_id = XNM_the_autumn_elections
-		prerequisite = { focus = XNM_the_autumn_elections }	
-		mutually_exclusive = { focus = XNM_century_of_democracy }
-		mutually_exclusive = { focus = XNM_the_purple_coalition }
-		available = {}
-		bypass = {}		
-		
-		completion_reward = {
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}		
-	}		
+	}					
 }	

@@ -13,12 +13,10 @@ country_event = {
 	
 	option = {
 		name = XNM_focus.1.a
-		custom_effect_tooltip = XNM_visit_to_the_heartland_tt
-		complete_effect = {			
-			XNM = {
-				set_country_flag = XNM_visit_to_the_heartland
-			}
-		}	
+		custom_effect_tooltip = XNM_visit_to_the_heartland_tt	
+		XNM = {
+			set_country_flag = XNM_visit_to_the_heartland
+		}
 		ai_chance = { factor = 1 }	
 	}
 }
@@ -106,8 +104,6 @@ news_event = {
 	
 	option = {
 		name = XNM_news.1.a
-		complete_effect = {	
-		}	
 		ai_chance = { factor = 1 }	
 	}
 }
