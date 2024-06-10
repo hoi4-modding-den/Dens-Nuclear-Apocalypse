@@ -12,45 +12,6 @@ spriteTypes = {
         texturefile = "gfx/interface/ideologies/anarchism.dds"
     }
 
-    # Focus Icons
-
-    spriteType = {
-        name = "GFX_focus_XFR_attack_lesser_gaul"
-        texturefile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XAL_attack_us_military"
-        texturefile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XAL_burgundy_alsace_cooperation"
-        texturefile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XFR_restore_france"
-        texturefile = "gfx/interface/goals/XFR/XFR_restore_france.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XFR_france_triumphs"
-        texturefile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
-    }
-    spriteType = {
-        name = "GFX_focus_generic_befriend_alsace"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
-    }
-    spriteType = {
-        name = "GFX_focus_generic_befriend_mercia"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
-    }
-    spriteType = {
-        name = "GFX_focus_generic_befriend_paris"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
-    }
-    spriteType = {
-        name = "GFX_focus_generic_befriend_burgundy"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
-    }
-
 
     # Portraits
 
@@ -219,5 +180,333 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_XFR_france.png"
 		legacy_lazy_load = no
 	}
+
+    # Focus Icons
+
+     spriteType = {
+        name = "GFX_focus_XFR_attack_lesser_gaul"
+        texturefile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
+    }
+    spriteType = {
+        name = "GFX_focus_XAL_attack_us_military"
+        texturefile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
+    }
+    spriteType = {
+        name = "GFX_focus_XAL_burgundy_alsace_cooperation"
+        texturefile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
+    }
+    spriteType = {
+        name = "GFX_focus_XFR_restore_france"
+        texturefile = "gfx/interface/goals/XFR/XFR_restore_france.png"
+    }
+    spriteType = {
+        name = "GFX_focus_XFR_france_triumphs"
+        texturefile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_befriend_alsace"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_befriend_mercia"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_befriend_paris"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_befriend_burgundy"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
+    }
+
+    SpriteType = {
+		name = "GFX_focus_XFR_attack_lesser_gaul_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_focus_XAL_attack_us_military"
+		texturefile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_focus_XAL_burgundy_alsace_cooperation"
+		texturefile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_focus_XFR_restore_france"
+		texturefile = "gfx/interface/goals/XFR/XFR_restore_france.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_restore_france.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_restore_france.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_focus_XFR_france_triumphs"
+		texturefile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_focus_generic_befriend_alsace"
+		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_focus_generic_befriend_mercia"
+		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_focus_generic_befriend_paris"
+		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_focus_generic_befriend_burgundy"
+		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 
 }
