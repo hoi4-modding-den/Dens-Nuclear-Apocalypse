@@ -1,8 +1,7 @@
 characters = {
 
 	XCM_Konrad_Goldmann = { 		#starting leader
-		name = Konrad Goldmann
-		gender = male
+		name = "Konrad Goldmann"
 		portraits = {
 			civilian = {
 				large = "gfx/XCM/XCM_Konrad_Goldmann.dds"
@@ -16,15 +15,14 @@ characters = {
 		}
 
 		country_leader = {
-			ideology = XCM_one_mans_economya
+			ideology = XCM_one_mans_economy
 			traits = {  }
 			desc = XCM_Konrad_desc
 			id = -1	
 		}
 	}
 	XCM_Walter_Lindenhof = { 		#democratic leader
-		name = Walter Lindenhof
-		gender = male
+		name = "Walter Lindenhof"
 		portraits = {
 			civilian = {
 				large = "gfx/XCM/XCM_Walter_Lindenhof.dds"
@@ -37,8 +35,7 @@ characters = {
 		}
 	}
 	XCM_Gustav_Bergheim = { 		#communist leader
-		name = Gustav Bergheim
-		gender = male
+		name = "Gustav Bergheim"
 		portraits = {
 			civilian = {
 				large = "gfx/XCM/XCM_Gustav_Bergheim.dds"

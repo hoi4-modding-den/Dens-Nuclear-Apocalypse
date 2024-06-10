@@ -2,8 +2,10 @@ characters = {
 
 	XLV_the_committee = {
 		name = "The Committee"
-		expire = "1.1.1"
-		ideology = oligarchism
+		country_leader = {
+			ideology = oligarchism
+			expire = "9999.1.1"
+		}
 		portraits = {
 			civilian = {
 				large = ""
