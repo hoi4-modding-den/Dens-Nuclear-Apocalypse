@@ -1,0 +1,65 @@
+XLA_is_fully_neutral = {
+	OR = {
+		check_variable = {
+			XLA_alignment = 1
+		}
+		check_variable = {
+			XLA_alignment = 4
+		}
+	}
+}
+
+XLA_is_fully_spiritualist = {
+	OR = {
+		check_variable = {
+			XLA_alignment = 2
+		}
+		check_variable = {
+			XLA_alignment = 5
+		}
+	}
+}
+
+XLA_is_fully_altwigitian = {
+	OR = {
+		check_variable = {
+			XLA_alignment = 3
+		}
+		check_variable = {
+			XLA_alignment = 6
+		}
+	}
+}
+
+XLA_is_parially_neutral = {
+	OR = {
+		check_variable = {
+			XLA_alignment = 7
+		}
+		check_variable = {
+			XLA_alignment = 8
+		}
+	}
+}
+
+XLA_is_partially_spiritualist = {
+	OR = {
+		check_variable = {
+			XLA_alignment = 7
+		}
+		check_variable = {
+			XLA_alignment = 9
+		}
+	}
+}
+
+XLA_is_partially_altwigitian = {
+	OR = {
+		check_variable = {
+			XLA_alignment = 8
+		}
+		check_variable = {
+			XLA_alignment = 9
+		}
+	}
+}

@@ -1,0 +1,157 @@
+ideas = {
+	country = {
+		XLA_Elders_Council = {
+			picture = XLA_neutral_alignment
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		XLA_Naval_Aversion = {
+			picture = XLA_Naval_Aversion
+			modifier = {
+				experience_gain_navy_factor = -0.25
+				hidden_modifier = {
+					naval_accidents_chance = 0.25
+					naval_damage_factor = 0.25
+					naval_defense_factor = -0.25
+				}
+			}
+		}
+
+		XLA_Aero_Aversion = {
+			picture = XLA_Aero_Aversion
+			modifier = {
+				experience_gain_air_factor = -0.15
+				hidden_modifier = {
+					air_accidents_factor = 0.15
+					air_attack_factor = -0.15
+					air_defence_factor = -0.15
+					production_speed_air_base_factor = -0.15
+					production_speed_anti_air_building_factor = -0.15
+				}
+			}
+		}
+
+		XLA_Altwigitian_Revolutionaries = {
+			picture = XLA_Altwigitan_Revolutionaries
+
+			on_add = {
+				every_state = {
+					limit = {
+						XLA_is_fully_altwigitian = yes
+					}
+
+					add_dynamic_modifier = {
+						modifier = XLA_Spiritualist_Revolutionary_I
+					}
+				}
+
+				every_state = {
+					limit = {
+						XLA_is_partially_altwigitian = yes
+					}
+
+					add_dynamic_modifier = {
+						modifier = XLA_Spiritualist_Revolutionary_II
+					}
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.025
+			}
+		}
+
+		XLA_Altwigitian_Revolutionaries_Crushed = {
+			picture = XLA_Altwigitan_Revolutionaries
+
+			on_add = {
+				every_state = {
+					limit = {
+						XLA_is_fully_altwigitian = yes
+					}
+
+					add_dynamic_modifier = {
+						modifier = XLA_Spiritualist_Revolutionary_III
+					}
+				}
+
+				every_state = {
+					limit = {
+						XLA_is_partially_altwigitian = yes
+					}
+
+					add_dynamic_modifier = {
+						modifier = XLA_Spiritualist_Revolutionary_IV
+					}
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.01
+			}
+		}
+
+		XLA_Spiritualist_Revolutionaries = {
+			picture = XLA_Spiritualist_Revolutionaries
+
+			on_add = {
+				every_state = {
+					limit = {
+						XLA_is_fully_spiritualist = yes
+					}
+
+					add_dynamic_modifier = {
+						modifier = XLA_Spiritualist_Revolutionary_I
+					}
+				}
+
+				every_state = {
+					limit = {
+						XLA_is_partially_spiritualist = yes
+					}
+
+					add_dynamic_modifier = {
+						modifier = XLA_Spiritualist_Revolutionary_II
+					}
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.025
+			}
+		}
+
+		XLA_Spiritualist_Revolutionaries_Crushed = {
+			picture = XLA_Spiritualist_Revolutionaries
+
+			on_add = {
+				every_state = {
+					limit = {
+						XLA_is_fully_spiritualist = yes
+					}
+
+					add_dynamic_modifier = {
+						modifier = XLA_Spiritualist_Revolutionary_III
+					}
+				}
+
+				every_state = {
+					limit = {
+						XLA_is_partially_spiritualist = yes
+					}
+
+					add_dynamic_modifier = {
+						modifier = XLA_Spiritualist_Revolutionary_IV
+					}
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.01
+			}
+		}
+	}
+}

@@ -20,6 +20,12 @@ regional_balance_num_elders = yes
 regional_balance_get_num_elders = yes
 XLA_setup_popularities = yes
 
+add_ideas = {
+	XLA_Elders_Council
+	XLA_Naval_Aversion
+	XLA_Aero_Aversion
+}
+
 recruit_character = XLA_Elder_Borani
 recruit_character = XLA_Altwigite_Order
 recruit_character = XLA_Voiceless_Grotto

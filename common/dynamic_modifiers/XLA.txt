@@ -1,0 +1,59 @@
+XLA_Spiritualist_Revolutionary_I = {
+	enable = { has_idea = XLA_Spiritualist_Revolutionaries }
+
+	local_manpower = -0.1
+	local_supplies = -0.15
+	local_resources = -0.1
+}
+
+XLA_Spiritualist_Revolutionary_II = {
+	enable = { has_idea = XLA_Spiritualist_Revolutionaries }
+
+	local_manpower = -0.075
+	local_supplies = 0.05
+	local_resources = -0.05
+}
+
+XLA_Spiritualist_Revolutionary_III = {
+	enable = { has_idea = XLA_Spiritualist_Revolutionaries_Crushed }
+
+	local_supplies = -0.05
+	local_manpower = -0.025
+}
+
+XLA_Spiritualist_Revolutionary_IV = {
+	enable = { has_idea = XLA_Spiritualist_Revolutionaries_Crushed }
+
+	local_supplies = -0.025
+	local_manpower = -0.01
+}
+
+XLA_Altwigitian_Revolutionary_I = {
+	enable = { has_idea = XLA_Altwigitian_Revolutionaries }
+
+	local_factory_sabotage = 0.1
+	local_factories = -0.15
+	local_resources = -0.1	
+}
+
+XLA_Altwigitian_Revolutionary_II= {
+	enable = { has_idea = XLA_Altwigitian_Revolutionaries }
+
+	local_factories = -0.075
+	local_factory_sabotage = 0.05
+	local_resources = -0.05
+}
+
+XLA_Altwigitian_Revolutionary_III = {
+	enable = { has_idea = XLA_Altwigitian_Revolutionaries }
+
+	local_factory_sabotage = 0.05
+	local_factories = -0.025	
+}
+
+XLA_Altwigitian_Revolutionary_IV = {
+	enable = { has_idea = XLA_Altwigitian_Revolutionaries }
+
+	local_factories = -0.025
+	local_factory_sabotage = 0.01
+}

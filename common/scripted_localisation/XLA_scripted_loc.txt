@@ -141,6 +141,36 @@ defined_text = {
 	}
 
 	text = {
+		trigger = {
+			check_variable = {
+				XLA_alignment = 7
+			}
+		}
+
+		localization_key = "GFX_XLA_Neutral_Spiritualist_alignment"
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				XLA_alignment = 8
+			}
+		}
+
+		localization_key = "GFX_XLA_Neutral_Altwigitian_alignment"
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				XLA_alignment = 9
+			}
+		}
+
+		localization_key = "GFX_XLA_Altwigitan_Spiritualist_alignment"
+	}
+
+	text = {
 		localization_key = "GFX_regional_alignment_backup"
 	}
 }

@@ -34,12 +34,6 @@ spriteTypes = {
 
 	# Regional Balance
 	spriteType = {
-		name = "GFX_regional_alignment_button"
-		textureFile = "gfx/interface/XLA/XLA_Regional_Alignment_Icons.png"
-		noOfFrames = 3
-	}
-
-	spriteType = {
 		name = "GFX_XLA_neutral_alignment"
 		textureFile = "gfx/interface/XLA/XLA_Neutrals.dds"
 	}
@@ -55,7 +49,65 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_XLA_Neutral_Spiritualist_alignment"
+		textureFile = "gfx/interface/XLA/XLA_NeutralSpiritualist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XLA_Neutral_Altwigitian_alignment"
+		textureFile = "gfx/interface/XLA/XLA_NeutralAltwigitian.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XLA_Altwigitan_Spiritualist_alignment"
+		textureFile = "gfx/interface/XLA_SpiritualistAltwigitian.dds"
+	}
+
+	spriteType = {
 		name = "GFX_regional_alignment_backup"
 		textureFile = "gfx/interface/add_pol_idea_button.dds"
+	}
+
+	# Spirits
+	spriteType = {
+		name = "GFX_idea_XLA_Naval_Aversion"
+		textureFile = "gfx/interface/ideas/XLA/XLA_Naval_Aversion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_XLA_Aero_Aversion"
+		textureFile = "gfx/interface/ideas/XLA/XLA_Aerial_Aversion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_XLA_Altwigitan_Revolutionaries"
+		textureFile = "gfx/interface/ideas/XLA/XLA_Altwigitian_Revolutionaries.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_XLA_Spiritualist_Revolutionaries"
+		textureFile = "gfx/interface/ideas/XLA/XLA_Spiritualist_Revolutionaries.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_XLA_neutral_alignment"
+		textureFile = "gfx/interface/XLA/XLA_Neutrals.dds"
+	}
+
+	# Text Icons
+
+	spriteType = {
+		name = "GFX_XLA_neutral_texticon"
+		textureFile = "gfx/inteface/XLA/XLA_neutral_texticon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XLA_spiritualist_texticon"
+		textureFile = "gfx/interface/XLA/XLA_spiritualist_texticon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XLA_altwigitian_texticon"
+		textureFile = "gfx/interface/XLA/XLA_altwigitian_texticon.dds"
 	}
 }

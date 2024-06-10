@@ -380,3 +380,694 @@ XLA_setup_popularities = {
 		}
 	}
 }
+
+XLA_on_pop_change = {
+	set_temp_variable = {
+		var = XLA_current_neutral
+		value = XLA.party_popularity@neutrality
+	}
+
+	set_temp_variable = {
+		var = XLA_current_fascism
+		value = XLA.party_popularity@fascism
+	}
+
+	set_temp_variable = {
+		var = XLA_current_democratic
+		value = XLA.party_popularity@democratic
+	}
+
+	set_temp_variable = {
+		var = XLA_neutral_range_max
+		value = XLA_council_popularity
+	}
+
+	add_to_temp_variable = {
+		var = XLA_neutral_range_max
+		value = 6
+	}
+
+	set_temp_variable = {
+		var = XLA_neutral_range_min
+		value = XLA_council_popularity
+	}
+
+	subtract_from_temp_variable = {
+		var = XLA_neutral_range_min
+		value = 6
+	}
+
+	set_temp_variable = {
+		var = XLA_fascist_range_max
+		value = XLA_altwigitian_popularity
+	}
+
+	add_to_temp_variable = {
+		var = XLA_fascist_range_max
+		value = 6
+	}
+
+	set_temp_variable = {
+		var = XLA_fascist_range_min
+		value = XLA_altwigitian_popularity
+	}
+
+	subtract_from_temp_variable = {
+		var = XLA_fascist_range_max
+		value = 6
+	}
+
+	set_temp_variable = {
+		var = XLA_democratic_range_max
+		value = XLA_spiritualist_popularity
+	}
+
+	add_to_temp_variable = {
+		var = XLA_democratic_range_max
+		value = 6
+	}
+
+	set_temp_variable = {
+		var = XLA_democratic_range_min
+		value = XLA_spiritualist_popularity
+	}
+
+	subtract_from_temp_variable = {
+		var = XLA_democratic_range_min
+		value = 6
+	}
+
+	# Neutral Grows
+	if = {
+		limit = {
+			check_variable = {
+				XLA_current_neutral > XLA_neutral_range_max
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					XLA_current_democratic < XLA_democratic_range_min
+				}
+			}
+			if = {
+				limit = {
+					162 = {
+						check_variable = {
+							XLA_alignment = 1
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 5
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 7
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 7
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 4
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 9
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 8
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 2
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 1
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 5
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 7
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 7
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 4
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 9
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 8
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					XLA_current_fascism < XLA_fascist_range_min
+				}
+			}
+			if = {
+				limit = {
+					162 = {
+						check_variable = {
+							XLA_alignment = 1
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 6
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 8
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 8
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 4
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 9
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 7
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 3
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 1
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 6
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 8
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 8
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 4
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 9
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 7
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Spiritualists Grow
+	if = {
+		limit = {
+			check_variable = {
+				XLA_current_democratic > XLA_democratic_range_max
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					XLA_current_neutral < XLA_neutral_range_min
+				}
+			}
+			if = {
+				limit = {
+					162 = {
+						check_variable = {
+							XLA_alignment = 2
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 4
+							}
+						}
+						set_variable = {
+							XLA_alignment = 7
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 7
+							}
+						}
+						set_variable = {
+							XLA_alignment = 5
+						}
+					}
+					else_if = {
+						limit = { 
+							check_variable = {
+								XLA_alignment = 8
+							}
+						}
+						set_variable = {
+							XLA_alignment = 9
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 1
+							}
+						}
+						set_variable = {
+							XLA_alignment = 2
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 4
+							}
+						}
+						set_variable = {
+							XLA_alignment = 7
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 7
+							}
+						}
+						set_variable = {
+							XLA_alignment = 5
+						}
+					}
+					else_if = {
+						limit = { 
+							check_variable = {
+								XLA_alignment = 8
+							}
+						}
+						set_variable = {
+							XLA_alignment = 9
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					XLA_current_fascism < XLA_fascist_range_min
+				}
+			}
+			if = {
+				limit = {
+					162 = {
+						check_variable = {
+							XLA_alignment = 2
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 6
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 9
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 9
+							}
+						}
+						set_variable = {
+							XLA_alignment = 5
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 8
+							}
+						}
+						set_variable = {
+							XLA_alignment = 7
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 3
+							}
+						}
+						set_variable = {
+							XLA_alignment = 2
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 6
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 9
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 9
+							}
+						}
+						set_variable = {
+							XLA_alignment = 5
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 8
+							}
+						}
+						set_variable = {
+							XLA_alignment = 7
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Altwigitians Grow
+	if = {
+		limit = {
+			check_variable = {
+				XLA_current_fascism > XLA_fascist_range_max
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					XLA_current_democratic < XLA_democratic_range_min
+				}
+			}
+			if = {
+				limit = {
+					162 = {
+						check_variable = {
+							XLA_alignment = 3
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 5
+							}
+						}
+						set_variable = {
+							XLA_alignment = 9
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 9
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 6
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 7
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 8
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 2
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 3
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 5
+							}
+						}
+						set_variable = {
+							XLA_alignment = 9
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 9
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 6
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 7
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 8
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					XLA_current_neutral < XLA_neutral_range_min
+				}
+			}
+			if = {
+				limit = {
+					162 = {
+						check_variable = {
+							XLA_alignment = 3
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 4
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 8
+						}
+					}
+
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 8
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 6
+						}
+					}
+
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 7
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 9
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 1
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 3
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 4
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 8
+						}
+					}
+
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 8
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 6
+						}
+					}
+
+					else_if = {
+						limit = {
+							check_variable = {
+								XLA_alignment = 7
+							}
+						}
+
+						set_variable = {
+							XLA_alignment = 9
+						}
+					}
+				}
+			}
+		}
+	}
+
+	log = "[XLA] Updated alignment based on popularity changes."
+	regional_balance_get_num_elders = yes
+}
