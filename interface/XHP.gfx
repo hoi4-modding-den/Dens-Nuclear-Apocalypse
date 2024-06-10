@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_portrait_spain_senate"
 		texturefile = "gfx/leaders/XHP/spain_senate.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_high_council"
+		texturefile = "gfx/leaders/XHP/high_council.dds"
+	}
 	
 	### Goals
 	spriteType = { 

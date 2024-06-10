@@ -1293,3 +1293,7 @@ XWA_NewRepublic = {
 	color = rgb { 255 255 51 }
 	color_ui = rgb { 255 255 51 }	
 }
+ct_XTH_rise = {
+	color = rgb { 240 12 12 }
+	color_ui = rgb { 255 255 255 }
+}

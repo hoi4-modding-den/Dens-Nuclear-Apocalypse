@@ -12,4 +12,17 @@ characters = {
 			id = -1
 		}
 	}
+	XHP_high_council = {
+		name = XHP_high_council
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_high_council"
+			}
+		}
+		country_leader = {
+			ideology = XHP_templaric_order # change later to custom ideology --> white color
+			desc = XHP_high_council_desc
+			id = -1
+		}
+	}
 }
