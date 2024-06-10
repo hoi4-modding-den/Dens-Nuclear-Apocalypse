@@ -16,7 +16,36 @@ defined_text = {
 }
 
 defined_text = {
-	name = ECONOMY_MAP_MODE_tooltip
+	name = XFR_combined_arms_loc
+
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = XFR_combined_arms_LAT
+	}
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = XFR_combined_arms_FRA
+	}
+	text = {
+		trigger = {
+			has_government = neutrality
+		}
+		localization_key = XFR_combined_arms_GER
+	}
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = XFR_combined_arms_ENG
+	}
+}
+
+defined_text = {
+	name = economy_map_mode_tooltip
 	text = {
 		trigger = {
 			FROM = {
@@ -25,7 +54,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_no_membership_tt
+		localization_key = economy_map_mode_tooltip_no_membership_tt
 	}
 	text = {
 		trigger = {
@@ -35,7 +64,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_UDB_burgundy_tt
+		localization_key = economy_map_mode_tooltip_UDB_burgundy_tt
 	}
 	text = {
 		trigger = {
@@ -45,7 +74,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_UDB_member_tt
+		localization_key = economy_map_mode_tooltip_UDB_member_tt
 	}
 	text = {
 		trigger = {
@@ -55,7 +84,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_BEZ_member_tt
+		localization_key = economy_map_mode_tooltip_BEZ_member_tt
 	}
 	text = {
 		trigger = {
@@ -65,7 +94,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_SEU_member_tt
+		localization_key = economy_map_mode_tooltip_SEU_member_tt
 	}
 	text = {
 		trigger = {
@@ -75,11 +104,11 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_continental_union_member_tt
+		localization_key = economy_map_mode_tooltip_continental_union_member_tt
 	}
 }
 defined_text = {
-	name = ECONOMY_MAP_MODE_tooltip2
+	name = economy_map_mode_tooltip2
 	text = {
 		trigger = {
 			FROM = {
@@ -88,7 +117,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_no_membership_tt2
+		localization_key = economy_map_mode_tooltip_no_membership_tt2
 	}
 	text = {
 		trigger = {
@@ -98,7 +127,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_UDB_burgundy_tt2
+		localization_key = economy_map_mode_tooltip_UDB_burgundy_tt2
 	}
 	text = {
 		trigger = {
@@ -108,7 +137,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_UDB_member_tt2
+		localization_key = economy_map_mode_tooltip_UDB_member_tt2
 	}
 	text = {
 		trigger = {
@@ -118,7 +147,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_BEZ_member_tt2
+		localization_key = economy_map_mode_tooltip_BEZ_member_tt2
 	}
 	text = {
 		trigger = {
@@ -128,7 +157,7 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_SEU_member_tt2
+		localization_key = economy_map_mode_tooltip_SEU_member_tt2
 	}
 	text = {
 		trigger = {
@@ -138,6 +167,6 @@ defined_text = {
                 }
             }
 		}
-		localization_key = ECONOMY_MAP_MODE_tooltip_continental_union_member_tt2
+		localization_key = economy_map_mode_tooltip_continental_union_member_tt2
 	}
 }

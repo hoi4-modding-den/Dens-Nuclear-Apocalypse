@@ -1253,7 +1253,6 @@ XFR_bop_decision_cat = {
 
 		available = {
 			has_completed_focus = XFR_lessen_internal_borders
-			NOT = { has_country_flag = XFR_spreading_unity_propaganda }
 			any_neighbor_country = {
 				NOT = { has_war_with = ROOT }
 				hidden_trigger = { NOT = { has_idea = anarchy_idea_max } }
@@ -1272,7 +1271,7 @@ XFR_bop_decision_cat = {
 
 		cost = 75
 
-		priority = 2
+		priority = 20
 
 		fire_only_once = no
 
@@ -1285,10 +1284,9 @@ XFR_bop_decision_cat = {
 			has_power_balance = { id = XFR_federalists_restaurationists_bop }
 		}
 
-		days_remove = 70
+		days_remove = 30
 
 		complete_effect = {
-			set_country_flag = XFR_spreading_unity_propaganda
 		}
 
 		remove_effect = {
@@ -1306,7 +1304,6 @@ XFR_bop_decision_cat = {
 				}
 				add_stability = 0.05
 			}
-			clr_country_flag = XFR_spreading_unity_propaganda
 			add_power_balance_value = {
 				id = XFR_federalists_restaurationists_bop
 				value = -0.05
@@ -1324,7 +1321,6 @@ XFR_bop_decision_cat = {
 
 		available = {
 			has_completed_focus = XFR_lessen_internal_borders
-			NOT = { has_country_flag = XFR_spreading_unity_propaganda }
 			any_neighbor_country = {
 				NOT = { has_war_with = ROOT }
 				hidden_trigger = { NOT = { has_idea = anarchy_idea_max } }
@@ -1339,7 +1335,7 @@ XFR_bop_decision_cat = {
 
 		cost = 75
 
-		priority = 1
+		priority = 10
 
 		fire_only_once = no
 
@@ -1352,10 +1348,9 @@ XFR_bop_decision_cat = {
 			has_power_balance = { id = XFR_federalists_restaurationists_bop }
 		}
 
-		days_remove = 70
+		days_remove = 30
 
 		complete_effect = {
-			set_country_flag = XFR_spreading_unity_propaganda
 		}
 
 		remove_effect = {
@@ -1372,7 +1367,6 @@ XFR_bop_decision_cat = {
 					popularity = 0.1
 				}
 			}
-			clr_country_flag = XFR_spreading_unity_propaganda
 			add_power_balance_value = {
 				id = XFR_federalists_restaurationists_bop
 				value = 0.05
@@ -1396,7 +1390,7 @@ XFR_bop_decision_cat = {
 
 		cost = 100
 
-		priority = 4
+		priority = 40
 
 		fire_only_once = no
 
@@ -1411,7 +1405,7 @@ XFR_bop_decision_cat = {
 
 		days_remove = 35
 
-		days_re_enable = 180
+		days_re_enable = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -1457,7 +1451,7 @@ XFR_bop_decision_cat = {
 
 		cost = 75
 
-		priority = 3
+		priority = 30
 
 		fire_only_once = no
 
@@ -1472,7 +1466,7 @@ XFR_bop_decision_cat = {
 
 		days_remove = 35
 
-		days_re_enable = 180
+		days_re_enable = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -1512,7 +1506,279 @@ XFR_bop_decision_cat = {
 			}
 		}
 	}
-	
+
+	XFR_revise_the_constitution = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		available = {
+			has_completed_focus = XFR_state_of_the_constitution
+		}
+
+		cost = 100
+
+		priority = 9
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = democratic
+			has_power_balance = { id = XFR_federalists_restaurationists_bop }
+		}
+
+		days_remove = 70
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = XFR_constitutional_revisions
+				days = 365
+			} 
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_federalist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = 0.1
+				}
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_restaurationist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = -0.1
+				}
+			}
+			
+		}
+	}
+
+	XFR_increase_social_spending = {
+
+		icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		available = {
+			has_completed_focus = XFR_social_reform
+		}
+
+		cost = 75
+
+		priority = 8
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = democratic
+			has_power_balance = { id = XFR_federalists_restaurationists_bop }
+		}
+
+		days_remove = 60
+
+		days_re_enable = 30
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_stability = 0.05
+			if = {
+				limit = { has_country_leader_with_trait = XFR_federalist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = 0.05
+				}
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_restaurationist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = -0.05
+				}
+			}
+			
+		}
+	}
+
+	XFR_support_integration_efforts = {
+
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		available = {
+			has_completed_focus = XFR_social_reform
+			any_owned_state = {
+				NOT = { is_core_of = ROOT }
+			}
+		}
+
+		cost = 75
+
+		priority = 8
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = democratic
+			has_power_balance = { id = XFR_federalists_restaurationists_bop }
+		}
+
+		days_remove = 70
+
+		days_re_enable = 30
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					NOT = { is_core_of = ROOT }
+				}
+				add_compliance = 5
+			}
+			if = {
+				limit = {
+					all_owned_state = {
+						is_core_of = ROOT
+					}
+				}
+				effect_tooltip = { every_state = { add_compliance = 5 } }
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_federalist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = 0.05
+				}
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_restaurationist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = -0.05
+				}
+			}
+			
+		}
+	}
+
+	XFR_increase_marechaussee_budget = {
+
+		icon = GFX_decision_generic_police_action
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		available = {
+			has_completed_focus = XFR_social_reform
+			any_owned_state = {
+				NOT = { is_core_of = ROOT }
+			}
+		}
+
+		cost = 75
+
+		priority = 8
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = democratic
+			has_power_balance = { id = XFR_federalists_restaurationists_bop }
+		}
+
+		days_remove = 70
+
+		days_re_enable = 30
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					NOT = { is_core_of = ROOT }
+				}
+				add_resistance = -10
+			}
+			if = {
+				limit = {
+					all_owned_state = {
+						is_core_of = ROOT
+					}
+				}
+				effect_tooltip = { every_state = { add_resistance = -10 } }
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_federalist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = -0.05
+				}
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_restaurationist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = 0.05
+				}
+			}
+			
+		}
+	}
 
 	XFR_promise_swiss_autonomy = {
 
@@ -1543,7 +1809,7 @@ XFR_bop_decision_cat = {
 
 		cost = 75
 
-		priority = 10
+		priority = 60
 
 		fire_only_once = no
 
@@ -1657,13 +1923,58 @@ XFR_bop_decision_cat = {
         }
 	}
 
+	XFR_restore_the_papacy  = { 
+		
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 2
+				state = 978
+			}
+		}
+
+		available = {
+			has_completed_focus = XFR_return_of_the_pope
+			2 = { is_owned_and_controlled_by = ROOT }
+			978 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		visible = { 
+			has_power_balance = { id = XFR_federalists_restaurationists_bop }
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		priority = 1
+
+        ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			# Release the Papal States as a nation
+			2 = { remove_claim_by = ROOT }
+			978 = { remove_claim_by = ROOT }
+			add_power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value = -0.1
+			}
+        }
+	}
+
 }
 
 XAL_integration = {
 
 	XAL_integrate_rhineland  = { 
 		
-		icon = GFX_decision_ger_reichskommissariats
+		icon = GFX_decision_generic_pickelhaube
 
 		allowed = {
 			original_tag = XAL
@@ -1747,12 +2058,18 @@ XAL_integration = {
 
 XFR_integration = {
 
-	XFR_integrate_alsace_lorraine  = { 
+	XFR_integrate_alsace_lorraine = { 
 		
-		icon = GFX_decision_infiltrate_state
+		icon = GFX_decision_generic_form_nation
 
 		allowed = {
 			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_core_of = XAL
+			}
 		}
 
 		available = {
@@ -1809,6 +2126,186 @@ XFR_integration = {
 			}
 			XAL_characters_join_XFR = yes
         }
+	}
+
+	XFR_regain_french_territories = { 
+		
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		state_target = yes
+
+		available = {
+			has_completed_focus = XFR_take_down_stragglers
+		}
+
+		visible = { 
+			FROM = {
+				any_neighbor_state = { owner = { tag = ROOT } }
+				NOT = {
+					owner = {
+						OR = {
+							is_ally_with = ROOT
+							tag = ROOT
+							tag = XAL
+							tag = XBR
+							tag = XAQ
+							tag = XNF
+							tag = XFW
+						}					
+					}
+				}
+				DEN_is_french_state = yes
+				owner = {
+					any_core_state = {
+						NOT = { DEN_is_french_state = yes }
+					}
+				}
+			}
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = no
+
+		cost = 50
+
+		days_re_enable = 100
+
+        ai_will_do = {
+			base = 100
+		}
+
+		complete_effect = {
+			FROM = { save_event_target_as = demanded_prov_target }
+			FROM = {
+				owner = {
+					country_event = { id = generic.23 days = 1 }
+				}
+			}
+		}
+	
+	}
+
+	XFR_french_anarchy_annex = { 
+		
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_owned_and_controlled_by = XFW
+			}
+		}
+
+		available = {
+			has_completed_focus = XFR_take_down_stragglers
+			XNF = {
+				exists = no
+			}
+			
+		}
+
+		target_trigger = { 
+			FROM = { original_tag = XFW }
+		}
+
+		visible = { 
+			FROM = {
+				original_tag = XFW
+			}
+			
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = no
+
+		cost = 100
+
+		#days_re_enable = 180
+
+        ai_will_do = {
+			base = 100
+		}
+
+		complete_effect = {
+			FROM = {
+				every_owned_state = {
+					transfer_state_to = ROOT
+				}
+			}
+		}
+	
+	}
+
+
+	XFR_restore_french_republic = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				DEN_is_french_state = yes
+			}
+		}
+
+		available = {
+			DEN_controls_french_states = yes
+		}
+
+		visible = { 
+			
+		}
+
+		cancel_trigger = {
+			
+		}
+
+		fire_only_once = yes
+
+		#days_re_enable = 180
+
+        ai_will_do = {
+			base = 100
+		}
+
+		complete_effect = {
+			set_country_flag = XFR_is_france
+			every_state = {
+				limit = { DEN_is_french_state = yes }
+				add_core_of = ROOT
+			}
+			set_cosmetic_tag = XFR_FRANCE_TEMP
+			if = {
+				limit = { has_country_leader_with_trait = XFR_federalist_leader }
+				add_power_balance_modifier = {
+    				id = XFR_federalists_restaurationists_bop
+    				modifier = XFR_united_france_federalists
+				}
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_restaurationist_leader }
+				add_power_balance_modifier = {
+    				id = XFR_federalists_restaurationists_bop
+    				modifier = XFR_united_france_restaurationists
+				}
+			}
+			hidden_effect = {
+				news_event = { id = XFR_news_events.8 }
+			}
+		}
+	
 	}
 
 }

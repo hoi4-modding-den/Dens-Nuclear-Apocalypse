@@ -48,6 +48,10 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 60 115 65 }
 			}
+
+			XFR_emergency_government = {
+				can_be_randomly_selected = no
+			}
 				
 		}
 

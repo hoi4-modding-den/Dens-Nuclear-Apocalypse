@@ -935,6 +935,10 @@ ideas = {
 					limit = { original_tag = XNE }
 					NOT = { has_idea = XNE_high_import_taxes }
 				}
+				if = {
+					limit = { original_tag = XFR }
+					has_completed_focus = XFR_reopen_trade
+				}
 				else = {
 					always = yes
 				}

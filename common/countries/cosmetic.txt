@@ -14,6 +14,18 @@ ALP_CONF = {
 	color = rgb { 54 99 46 }
 	color_ui = rgb { 54 99 46 }
 }
+XFR_FRANCE = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+XFR_FRANCE_FED = {
+	color = rgb { 0 106 176 }
+	color_ui = rgb { 74 147 255 }
+}
+XFR_FRANCE_TEMP = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
 MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }

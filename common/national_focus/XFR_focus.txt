@@ -12,7 +12,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 0 y = 3000 }
+	continuous_focus_position = { x = 0 y = 2200 }
 
 # POLITICS
 
@@ -180,8 +180,17 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.05
 			}
-			remove_dynamic_modifier = { modifier = XFR_anarchists_state_modifier }
-			add_ideas = XFR_anarchists_appeased
+			if = {
+				limit = { 18 = { has_dynamic_modifier = { modifier = XFR_anarchists_state_modifier } } }
+				18 = {
+					set_demilitarized_zone = no
+					remove_dynamic_modifier = { modifier = XFR_anarchists_state_modifier }
+				}
+			}
+			add_timed_idea = {
+				idea = XFR_anarchists_appeased
+				days = 365
+			}
 		}
 	}
 
@@ -249,7 +258,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_investigate_centre
-		icon = GFX
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = XFR_support_parliament focus = XFR_dennounce_democracy }
 		#mutually_exclusive = { focus =  }
 		x = 13
@@ -263,7 +272,7 @@ focus_tree = {
 		bypass ={
 			OR = {
 				NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
-				24 = { is_demilitarized_zone = no }
+				NOT = { 24 = { has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } } }
 			}
 		}
 
@@ -296,15 +305,19 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			24 = { set_demilitarized_zone = no }
 			hidden_effect = { news_event = { id = XFR_news_events.5 } }
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 250
+    			producer = FRA
+			}
 		}
 	}
 
 
 	focus = {
 		id = XFR_deal_with_the_mutants
-		icon = GFX
+		icon = GFX_focus_generic_total_war
 		prerequisite = { focus = XFR_investigate_centre }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -336,7 +349,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_crisis_averted
-		icon = GFX
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = XFR_deal_with_the_mutants }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -354,6 +367,7 @@ focus_tree = {
 
 		bypass ={
 			NOT = {has_idea = XFR_chaos_in_centre }
+			24 = { is_demilitarized_zone = no }
 		}
 
 		cost = 2
@@ -363,6 +377,7 @@ focus_tree = {
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			24 = { set_demilitarized_zone = no }
 			remove_ideas = { XFR_chaos_in_centre }
 		}
 	}
@@ -389,7 +404,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			24 = {
 				add_extra_state_shared_building_slots = 2
@@ -397,6 +412,10 @@ focus_tree = {
     				type = industrial_complex
     				level = 2
     				instant_build = yes
+				}
+				add_resource = {
+				    type = tungsten
+				    amount = 5
 				}
 			}
 			custom_effect_tooltip = XFR_industry_modifier_tt
@@ -492,19 +511,252 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.15
 			}
+			add_ideas = XFR_torch_of_democracy
 			hidden_effect = {
 				news_event = { id = XFR_news_events.6 }
 			}
 		}
 	}
 
+	focus = {
+		id = XFR_european_ambitions
+		icon = GFX_focus_usa_focus_on_europe
+		prerequisite = { focus = XFR_democracy_prevails }
+		#mutually_exclusive = { focus =  }
+		x = -6
+		y = 2
+		relative_position_id = XFR_democracy_prevails
+
+		available = {
+			has_government = democratic
+			is_subject = no
+			is_in_faction = no
+		}
+
+		bypass = {
+			has_government = democratic
+			is_faction_leader = yes
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			add_war_support = 0.1
+			set_rule = {
+    			can_create_factions = yes
+				can_send_volunteers = yes
+			}
+			XFR_create_faction = yes
+		}
+	}
+
+	focus = {
+		id = XFR_england_focus
+		icon = GFX_focus_eng_the_sun_never_sets
+		prerequisite = { focus = XFR_european_ambitions }
+		#mutually_exclusive = { focus =  }
+		x = -5
+		y = 2
+		relative_position_id = XFR_european_ambitions
+
+		available = {
+			has_government = democratic
+			is_subject = no
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			if = {
+				limit = { XNE = { has_government = ROOT } }
+				reverse_add_opinion_modifier = {
+					target = XNE
+    				modifier = XFR_improve_relations
+				}
+			}
+			if = {
+				limit = { XNM = { has_government = ROOT } }
+				reverse_add_opinion_modifier = {
+					target = XNM
+    				modifier = XFR_improve_relations
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_across_the_channel
+		icon = GFX_focus_generic_befriend_denmark
+		prerequisite = { focus = XFR_england_focus }
+		mutually_exclusive = { focus = XFR_across_the_channel2 }
+		x = -1
+		y = 1
+		relative_position_id = XFR_england_focus
+
+		available = {
+			is_faction_leader = yes
+			has_government = democratic
+			XNE = {
+				has_government = democratic
+			}
+			is_subject = no
+			XNE = {
+				is_subject = no
+				is_in_faction = no
+				NOT = { has_completed_focus = XNE_isolation }
+			}
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+		bypass = {
+			OR = {
+				AND = {
+					XNE = { is_ally_with = ROOT }
+					is_subject = no
+				}
+				XNE = { has_war_with = ROOT }
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				XNE = { has_war = yes }
+			}
+		}
+		search_filters = { }
+		completion_reward = {
+			XNE = { country_event = { id = XFR_events.22 days = 1 } }
+			custom_effect_tooltip = XFR_across_the_channel_tt
+		}
+	}
+
+	focus = {
+		id = XFR_across_the_channel2
+		icon = GFX_focus_XNM_second_to_none
+		prerequisite = { focus = XFR_england_focus }
+		mutually_exclusive = { focus = XFR_across_the_channel }
+		x = 1
+		y = 1
+		relative_position_id = XFR_england_focus
+
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
+			has_government = democratic
+			XNM = {
+				has_government = democratic
+			}
+			is_subject = no
+			XNM = {
+				is_subject = no
+			}
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+		bypass = {
+			OR = {
+				AND = {
+					XNM = { is_ally_with = ROOT }
+					is_subject = no
+				}
+				XNM = { has_war_with = ROOT }
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				XNM = { has_war = yes }
+			}
+		}
+		search_filters = { }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XFR_keep_good_relations
+		icon = GFX_focus_generic_british_trade
+		prerequisite = { focus = XFR_across_the_channel focus = XFR_across_the_channel2 }
+		mutually_exclusive = { focus = XFR_intervention_in_england }
+		x = -1
+		y = 2
+		relative_position_id = XFR_england_focus
+
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XFR_intervention_in_england
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = XFR_across_the_channel focus = XFR_across_the_channel2 }
+		mutually_exclusive = { focus = XFR_keep_good_relations }
+		x = 1
+		y = 2
+		relative_position_id = XFR_england_focus
+
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {	
 		id = XFR_economic_cooperation
 		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = XFR_democracy_prevails }
-		x = -4
+		prerequisite = { focus = XFR_european_ambitions }
+		x = -3
 		y = 1
-		relative_position_id = XFR_democracy_prevails
+		relative_position_id = XFR_european_ambitions
 
 		available = {
 			has_government = democratic
@@ -529,101 +781,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_european_ambitions
-		icon = GFX_focus_usa_focus_on_europe
-		prerequisite = { focus = XFR_democracy_prevails }
-		#mutually_exclusive = { focus =  }
-		x = -8
-		y = 2
-		relative_position_id = XFR_democracy_prevails
-
-		available = {
-			has_government = democratic
-			is_subject = no
-			is_in_faction = no
-		}
-
-		bypass = {
-			has_government = democratic
-			is_faction_leader = yes
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-			add_war_support = 0.1
-			XFR_create_faction = yes
-		}
-	}
-
-	focus = {
-		id = XFR_across_the_channel
-		icon = GFX_focus_generic_befriend_denmark
-		prerequisite = { focus = XFR_european_ambitions }
-		#mutually_exclusive = { focus =  }
-		x = -5
-		y = 1
-		relative_position_id = XFR_european_ambitions
-
-		available = {
-			has_government = democratic
-			XNE = {
-				has_government = democratic
-			}
-			is_subject = no
-			is_faction_leader = yes
-			XNE = {
-				is_in_faction = no
-				is_subject = no
-			}
-			OR = {
-				any_owned_state = {
-					is_coastal = yes
-				}
-				any_enemy_country = {
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-			}
-		}
-
-		bypass = {
-			OR = {
-				AND = {
-					XNE = { is_ally_with = ROOT }
-					is_subject = no
-				}
-				XNE = { has_war_with = ROOT }
-			}
-		}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				XNE = { has_war = yes }
-			}
-		}
-		search_filters = { }
-		completion_reward = {
-			XNE = { country_event = { id = XFR_events.22 days = 1 } }
-			custom_effect_tooltip = XFR_across_the_channel_tt
-		}
-	}
-
-	focus = {
 		id = XFR_guarantee_swiss_freedom
 		icon = GFX_focus_SWI_swiss_guiding_principles
 		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = -3
+		x = -6
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
@@ -651,20 +813,49 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			give_guarantee = XSS
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XFR_french_reunification
+		icon = GFX_focus_focus_fra_border
+		prerequisite = { focus = XFR_european_ambitions }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_european_ambitions
+
+		available = {
+			has_completed_focus = XFR_the_dream_of_france
+		}
+
+		bypass = {
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			add_war_support = 0.25
+			custom_effect_tooltip = XFR_french_reunification_tt
 		}
 	}
 
 	focus = {
 		id = XFR_strike_the_madman
 		icon = GFX_focus_generic_attack_vichy_france
-		prerequisite = { focus = XFR_european_ambitions }
+		prerequisite = { focus = XFR_french_reunification }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 2
-		relative_position_id = XFR_european_ambitions
+		y = 1
+		relative_position_id = XFR_french_reunification
 
 		available = {
 			has_government = democratic
@@ -681,6 +872,8 @@ focus_tree = {
 				OR = {
 					is_ally_with = ROOT
 					has_war_with = ROOT
+					exists = no
+					NOT = { has_government = fascism }
 				}
 			}
 		}
@@ -700,14 +893,15 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = XFR_paris_conference
 		icon = GFX_focus_chi_reach_out_to_france
-		prerequisite = { focus = XFR_european_ambitions }
+		prerequisite = { focus = XFR_french_reunification }
 		#mutually_exclusive = { focus =  }
-		x = 1
+		x = -2
 		y = 1
-		relative_position_id = XFR_european_ambitions
+		relative_position_id = XFR_french_reunification
 
 		available = {
 			has_government = democratic
@@ -719,8 +913,11 @@ focus_tree = {
 
 		bypass = {
 			OR = {
-				XPR = { is_subject_of = ROOT }
-				XPR = { has_war_with = ROOT }
+				XPR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
 				16 = { is_owned_and_controlled_by = ROOT }
 			}
 		}
@@ -761,7 +958,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_paris_conference }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = XFR_paris_conference
 
 		available = {
@@ -776,6 +973,7 @@ focus_tree = {
 				OR = {
 					is_ally_with = ROOT
 					has_war_with = ROOT
+					exists = no
 				}
 			}
 		}
@@ -799,20 +997,21 @@ focus_tree = {
 		id = XFR_alcase_lorraine_diplomacy
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = XFR_european_ambitions }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
 		available = {
-			XAL = {
-				exists = yes
-			}
 		}
 
 		bypass = {
-			OR = {
-				XAL = { has_government = fascism }
-				XAL = { is_subject_of = ROOT }
+			XAL = {
+				OR = { 
+					has_government = fascism 
+					has_war_with = ROOT
+					is_ally_with = ROOT
+					exists = no
+				}		
 			}
 		}
 
@@ -827,10 +1026,6 @@ focus_tree = {
 				target = XAL
     			modifier = XFR_improve_relations
 			}
-			add_opinion_modifier = {
-				target = XAL
-    			modifier = XFR_improve_relations
-			}
 			custom_effect_tooltip = XFR_alcase_lorraine_diplomacy_tt
 		}
 	}
@@ -840,13 +1035,19 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = XFR_alcase_lorraine_diplomacy }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = XFR_alcase_lorraine_diplomacy
 
 		available = {
+		}
+
+		bypass = {
 			XAL = {
-				exists = yes
-				NOT = { has_war_with = ROOT }
+				OR = {
+					has_war_with = ROOT
+					is_ally_with = ROOT
+					exists = no
+				}
 			}
 		}
 
@@ -882,6 +1083,78 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XFR_invitation
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = XFR_norman_invasion }
+		prerequisite = { focus = XFR_strike_the_madman }
+		prerequisite = { focus = XFR_ultimatum_to_alcase_lorraine }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 3
+		relative_position_id = XFR_french_reunification
+
+		available = {
+			has_government = democratic
+			is_subject = no
+		}
+
+		bypass = {
+			DEN_controls_french_states = yes
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					any_core_state = {
+						DEN_is_french_state = yes
+					}
+					NOT = { has_war_with = ROOT }
+					OR = {
+						has_government = democratic
+						is_ally_with = ROOT
+					}
+				}
+				country_event = { id = XFR_events.27 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_take_down_stragglers
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = XFR_invitation }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_invitation
+
+		available = {
+			has_government = democratic
+			is_subject = no
+		}
+
+		bypass = {
+			DEN_controls_french_states = yes
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			custom_effect_tooltip = XFR_take_down_stragglers_tt
+		}
+	}
+
+	focus = {
 		id = XFR_lessen_internal_borders
 		icon = GFX_focus_SWI_fortify_border_with_france
 		prerequisite = { focus = XFR_democracy_prevails }
@@ -908,7 +1181,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_expand_the_capital
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_spa_the_spanish_miracle
 		prerequisite = { focus = XFR_democracy_prevails }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -983,8 +1256,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 
@@ -1010,8 +1284,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 
@@ -1021,7 +1296,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
 		#mutually_exclusive = { focus =  }
 		x = 2
-		y = 2
+		y = 3
 		relative_position_id = XFR_reform_the_government
 
 		available = {
@@ -1037,45 +1312,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			add_ideas = XFR_anti_corruption_act
 		}
 	}
 
 	focus = {
-		id = XFR_new_legal_system
-		icon = GFX_focus_generic_court
-		prerequisite = { focus = XFR_anti_corruption_laws }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 1
-		relative_position_id = XFR_anti_corruption_laws
-
-		available = {
-			has_government = democratic
-			power_balance_value = {
-				id = XFR_federalists_restaurationists_bop
-				value > 0.7
-			}
-		}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = XFR_subdue_opposition
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		id = XFR_corporate_connections
+		icon = GFX_focus_generic_industrialists
 		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
 		#mutually_exclusive = { focus = }
 		x = -2
-		y = 2
+		y = 3
 		relative_position_id = XFR_reform_the_government
 
 		available = {
@@ -1091,35 +1340,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = XFR_the_silver_standard
-		icon = GFX_focus_CHL_silverworking
-		prerequisite = { focus = XFR_subdue_opposition }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 1
-		relative_position_id = XFR_subdue_opposition
-
-		available = {
-			has_government = democratic
-			power_balance_value = {
-				id = XFR_federalists_restaurationists_bop
-				value < -0.7
-			}
-		}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
-		completion_reward = {
+			add_ideas = XFR_industrialist_support
 		}
 	}
 
@@ -1136,13 +1359,14 @@ focus_tree = {
 			has_government = democratic
 		}
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			custom_effect_tooltip = XFR_state_of_the_constitution_tt
 		}
 	}
 
@@ -1166,6 +1390,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			custom_effect_tooltip = XFR_social_reform_tt
 		}
 	}
 
@@ -1180,6 +1405,16 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
+			OR = {
+				power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value > 0.9
+				}
+				power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value < -0.9
+				}
+			}
 		}
 
 		cost = 5
@@ -1187,8 +1422,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XFR_torch_of_democracy
+				add_idea = XFR_dream_of_france
+			}
 		}
 	}
 
@@ -1206,6 +1445,10 @@ focus_tree = {
 			power_balance_value = {
 				id = XFR_federalists_restaurationists_bop
 				value > 0.9
+			}
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
 			}
 		}
 
@@ -1235,12 +1478,8 @@ focus_tree = {
 				id = XFR_federalists_restaurationists_bop
 				value < -0.9
 			}
-			2 = {
-				is_owned_and_controlled_by = ROOT
-			}
-			978 = {
-				is_owned_and_controlled_by = ROOT
-			}
+			#2 = { is_owned_and_controlled_by = ROOT }
+			#978 = { is_owned_and_controlled_by = ROOT }
 		}
 
 		cost = 10
@@ -1250,14 +1489,16 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
 		completion_reward = {
-			# releases the pope
+			2 = { add_claim_by = ROOT }
+			978 = { add_claim_by = ROOT }
+			custom_effect_tooltip = XFR_return_of_the_pope_tt
 		}
 	}
 
 
 	focus = {
 		id = XFR_proclaim_french_government
-		icon = GFX_focus_focus_fra_border
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = XFR_the_dream_of_france } 
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -1266,6 +1507,11 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
+			custom_trigger_tooltip = {
+				tooltip = XFR_proclaim_french_government_trigger
+				DEN_controls_french_states = yes
+				has_country_flag = XFR_is_france
+			}
 			OR = {
 				power_balance_value = {
 					id = XFR_federalists_restaurationists_bop
@@ -1283,8 +1529,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XFR_dream_of_france
+				add_idea = XFR_france_restored
+			}
+			every_state = {
+				limit = {
+					DEN_is_french_state = yes
+					NOT = { is_core_of = ROOT }
+				}
+				add_claim_by = ROOT
+			}
+			if = {
+				limit = {
+					power_balance_value = {
+						id = XFR_federalists_restaurationists_bop
+						value > 1
+					}
+				}
+				set_cosmetic_tag = XFR_FRANCE_FED
+			}
+			else = {
+				set_cosmetic_tag = XFR_FRANCE
+			}
 		}
 	}
 	
@@ -1306,7 +1575,6 @@ focus_tree = {
 				owner = {
 					NOT = {
 						is_ally_with = ROOT
-						tag = XFW
 					}
 				}
 			}
@@ -1325,24 +1593,31 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			start_border_war = {
-				change_state_after_war = yes
-				attacker = {
-					state = 27
-					num_provinces = 2
-					on_win = XFR_events.4
-					on_lose = XFR_events.3
-					modifier = 0.2
-					dig_in_factor = 0
-				}
-				defender = {
-					state = 973
-					num_provinces = 1
-					on_win = XFR_events.3
-					on_lose = XFR_events.4
-					modifier = -0.2
+			if = { 
+				limit = { 973 = { owner = { tag = XFW } } }
+				973 = { transfer_state_to = ROOT }
+			}
+			else = {
+				start_border_war = {
+					change_state_after_war = yes
+					attacker = {
+						state = 27
+						num_provinces = 2
+						on_win = XFR_events.4
+						on_lose = XFR_events.3
+						modifier = 0.2
+						dig_in_factor = 0
+					}
+					defender = {
+						state = 973
+						num_provinces = 1
+						on_win = XFR_events.3
+						on_lose = XFR_events.4
+						modifier = -0.2
+					}
 				}
 			}
+			
 		}
 	}
 
@@ -1518,7 +1793,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_crisis_averted }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 5
+		y = 6
 		relative_position_id = XFR_dennounce_democracy
 
 		available = {
@@ -1546,7 +1821,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 31
+		x = 32
 		y = 0
 		#relative_position_id = 
 
@@ -1658,6 +1933,7 @@ focus_tree = {
 		id = XFR_better_machinery
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = XFR_raze_forests_for_factories }
+		prerequisite = { focus = XFR_learn_from_mistakes }
 		#mutually_exclusive = { focus = }
 		x = -5
 		y = 2
@@ -1730,7 +2006,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_expand_the_railroads
-		icon = GFX_focus_generic_railroad
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = XFR_raze_forests_for_factories }
 		#mutually_exclusive = { focus = }
 		x = -2
@@ -1749,7 +2025,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
-				XFR_industry_production_speed_rail_way_factor = 0.2
+				XFR_industry_production_speed_rail_way_factor = 0.25
 				tooltip = production_speed_rail_way_factor_tt
 			}
 			add_to_variable = {
@@ -1871,10 +2147,10 @@ focus_tree = {
 
 	focus = {
 		id = XFR_electrify_the_country
-		icon = GFX_focus_ARG_develop_the_electricity_sector
+		icon = GFX_focus_generic_energy # GFX_focus_ARG_develop_the_electricity_sector
 		prerequisite = { focus = XFR_industrial_investments }
 		#mutually_exclusive = { focus = }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = XFR_industrial_investments
 
@@ -1900,12 +2176,13 @@ focus_tree = {
 				}
 				add_dynamic_modifier = { modifier = XFR_electricity_state_modifier }
 			}
-			custom_effect_tooltip = XFR_electrify_the_country_tt
+			
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
 				XFR_industry_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
 			}
+			custom_effect_tooltip = XFR_electrify_the_country_tt
 		}
 	}
 
@@ -1928,9 +2205,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			add_tech_bonus = {
+				name = XFR_scientific_advancement
+    			bonus = 0.75
+    			uses = 1
+    			category = electronics
+			}
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
-				XFR_industry_research_speed_factor = 0.15
+				XFR_industry_research_speed_factor = 0.05
 				tooltip = research_speed_factor_tt
 			}
 		}
@@ -1956,6 +2239,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			add_research_slot = 1
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_research_speed_factor = 0.05
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 
@@ -1963,20 +2251,18 @@ focus_tree = {
 		id = XFR_international_research_society
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = XFR_besancon_university }
+		prerequisite = { focus = XFR_reopen_trade }
 		#mutually_exclusive = { focus = }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = XFR_besancon_university
 
 		available = {
+			is_subject = no
 			any_other_country = {
 				OR = {
-					is_in_faction_with = ROOT
-					is_subject_of = ROOT
-					AND = {
-						has_government = democratic
-						ROOT = { has_government = democratic }
-					}
+					is_ally_with = ROOT
+					has_government = ROOT
 				}
 			}
 		}
@@ -1987,8 +2273,21 @@ focus_tree = {
 			factor = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-			add_research_slot = 1
+		completion_reward = { 
+			every_country = {
+				limit = {
+					OR = {
+						is_ally_with = ROOT
+						has_government = ROOT
+					}
+				}
+				add_to_tech_sharing_group = XFR_tech_sharing
+			}
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_research_speed_factor = 0.05
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 
@@ -1997,8 +2296,8 @@ focus_tree = {
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = XFR_industrial_investments }
 		#mutually_exclusive = { focus = }
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = XFR_industrial_investments
 
 		available = {
@@ -2022,55 +2321,44 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_finance_private_companies
-		icon = GFX_focus_mex_privatisation
+		id = XFR_transcontinental_railways
+		icon = GFX_focus_generic_railroad
 		prerequisite = { focus = XFR_reopen_trade }
+		prerequisite = { focus = XFR_expand_the_railroads }
 		#mutually_exclusive = { focus = }
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = XFR_reopen_trade
 
 		available = {
+			OR = {
+				2 = { is_owned_and_controlled_by = ROOT }
+				9 = { is_owned_and_controlled_by = ROOT }
+				64 = { is_owned_and_controlled_by = ROOT }
+				7 = { is_owned_and_controlled_by = ROOT }
+				789 = { is_owned_and_controlled_by = ROOT }
+				180 = { is_owned_and_controlled_by = ROOT }
+				115 = { is_owned_and_controlled_by = ROOT }
+				4 = { is_owned_and_controlled_by = ROOT }
+				55 = { is_owned_and_controlled_by = ROOT }
+				21 = { is_owned_and_controlled_by = ROOT }
+				14 = { is_owned_and_controlled_by = ROOT }
+			}
 		}
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE }
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = XFR_agriculture
-		icon = GFX_focus_SOV_breadbasket_of_the_union
-		prerequisite = { focus = XFR_industrial_investments }
-		#mutually_exclusive = { focus = }
-		x = 3
-		y = 2
-		relative_position_id = XFR_industrial_investments
-
-		available = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
-				XFR_industry_consumer_goods_factor = -0.05
-				tooltip = consumer_goods_factor_tt
+				XFR_industry_production_speed_rail_way_factor = 0.25
+				tooltip = production_speed_rail_way_factor_tt
 			}
-			add_to_variable = {
-				XFR_industry_monthly_population = 0.1
-				tooltip = monthly_population_tt
-			}
+			custom_effect_tooltip = XFR_transcontinental_railways_tt
 		}
 	}
 
@@ -2110,12 +2398,43 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XFR_agriculture
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		prerequisite = { focus = XFR_learn_from_mistakes }
+		#mutually_exclusive = { focus = }
+		x = -1
+		y = 1
+		relative_position_id = XFR_learn_from_mistakes
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				XFR_industry_monthly_population = 0.1
+				tooltip = monthly_population_tt
+			}
+		}
+	}
+
+	focus = {
 		id = XFR_war_industry
 		icon = GFX_focus_generic_reorient_production
 		prerequisite = { focus = XFR_industrial_investments focus = XFR_army_funds }
 		prerequisite = {  }
 		#mutually_exclusive = { focus = }
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = XFR_industrial_investments
 
@@ -2195,72 +2514,9 @@ focus_tree = {
 			}
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
-				XFR_industry_production_speed_arms_factory_factor = 0.2
+				XFR_industry_production_speed_arms_factory_factor = 0.1
 				tooltip = production_speed_arms_factory_factor_tt
 			}
-		}
-	}
-
-# DIPLOMACY
-
-		focus = {	
-		id = XFR_hand_over_centre
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = XFR_the_new_empire }
-		x = 2
-		y = 2
-		relative_position_id = XFR_the_new_empire
-
-
-		available = {
-			has_government = fascism
-			OR = {
-				is_subject = no
-				is_subject_of = XAQ
-			}
-			24 = { is_owned_by = ROOT }
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { }
-		completion_reward = {
-			24 = {
-				transfer_state_to = XAQ
-			}
-			XAQ = {
-				give_guarantee = XFR 
-			}
-		}
-	}
-
-	focus = {	
-		id = XFR_the_noviodunum_deal
-		icon = GFX_focus_CZE_german_puppet
-		prerequisite = { focus = XFR_the_new_empire }
-		x = 0
-		y = 1
-		relative_position_id = XFR_hand_over_centre
-
-		available = {
-			has_government = fascism
-			is_subject = no
-		}
-
-		bypass = {
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
-		completion_reward = {
-			
 		}
 	}
 
@@ -2345,11 +2601,51 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_rolling_metal
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = XFR_motorise_the_army focus = XFR_field_training }
-		mutually_exclusive = { focus = XFR_raining_fire }
-		x = 0
+		id = XFR_tank_industry
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = XFR_motorise_the_army focus = XFR_military_production }
+		#mutually_exclusive = { focus = }
+		x = -1
+		y = 2
+		relative_position_id = XFR_motorise_the_army
+
+		available = {
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+    					building = arms_factory
+    					size > 0
+    					include_locked = no
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_tank_research
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = XFR_motorise_the_army }
+		prerequisite = { focus = XFR_army_doctrines }
+		#mutually_exclusive = { focus = }
+		x = 1
 		y = 2
 		relative_position_id = XFR_motorise_the_army
 
@@ -2364,24 +2660,48 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
-				name = XFR_rolling_metal
+				name = XFR_tank_research
 				bonus = 0.75
 				uses = 3
 				category = armor
 			}
 			add_tech_bonus = {
-				name = XFR_rolling_metal
+				name = XFR_tank_research
 				bonus = 2
 				uses = 1
 				category = cat_light_armor
 			}
 			add_tech_bonus = {
-				name = XFR_rolling_metal
+				name = XFR_tank_research
 				bonus = 2
 				uses = 1
 				category = cat_medium_armor
 			}
+		}
+	}
+
+	focus = {
+		id = XFR_rolling_metal
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = XFR_tank_industry }
+		prerequisite = { focus = XFR_tank_research }
+		mutually_exclusive = { focus = XFR_raining_fire }
+		x = 0
+		y = 3
+		relative_position_id = XFR_motorise_the_army
+
+		available = {
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
 			add_ideas = XFR_modern_tanks
+			army_experience = 20
 		}
 	}
 
@@ -2419,6 +2739,7 @@ focus_tree = {
 		id = XFR_army_doctrines
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = XFR_army_academy }
+		prerequisite = { focus = XFR_field_training }
 		#mutually_exclusive = { focus = }
 		x = 0
 		y = 1
@@ -2467,7 +2788,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = XFR_field_training
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = infantry_weapons
 			}
 			add_ideas = XFR_modern_infantry
@@ -2475,12 +2796,40 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_raining_fire
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = XFR_motorise_the_army focus = XFR_field_training }
-		mutually_exclusive = { focus = XFR_rolling_metal }
+		id = XFR_artillery_research
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = XFR_field_training }
+		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 2
+		relative_position_id = XFR_army_academy
+
+		available = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = XFR_artillery_research
+				bonus = 0.75
+				uses = 3
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_raining_fire
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = XFR_artillery_research }
+		mutually_exclusive = { focus = XFR_rolling_metal }
+		x = 2
+		y = 3
 		relative_position_id = XFR_army_academy
 
 		available = {
@@ -2491,15 +2840,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
-			add_tech_bonus = {
-				name = XFR_raining_fire
-				bonus = 0.75
-				uses = 3
-				category = artillery
-			}
 			add_ideas = XFR_modern_artillery
+			army_experience = 20
 		}
 	}
 	
@@ -2508,8 +2852,8 @@ focus_tree = {
 		icon = GFX_focus_generic_horse_studs
 		prerequisite = { focus = XFR_army_funds }
 		#mutually_exclusive = { focus = }
-		x = 3
-		y = 2
+		x = 4
+		y = 1
 		relative_position_id = XFR_army_funds
 
 		available = {
@@ -2528,12 +2872,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XFR_take_a_bike
+		icon = GFX_focus_SWE_bicycle
+		prerequisite = { focus = XFR_cavalry_modernisation }
+		#mutually_exclusive = { focus = }
+		x = 0
+		y = 2
+		relative_position_id = XFR_cavalry_modernisation
+
+		available = {
+		}
+
+		cost = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_technology = {
+				bicycle_infantry = 1
+				popup = no
+			}
+		}
+	}
+
+	focus = {
 		id = XFR_combined_arms
+		dynamic = yes
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = XFR_rolling_metal focus = XFR_raining_fire }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 3
+		y = 4
 		relative_position_id = XFR_army_academy
 
 		available = {
@@ -2544,10 +2915,12 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_country_flag = XFR_last_modernisation_active }
-				has_idea = XFR_modern_army_hq
-				OR = {
-					has_idea = XFR_modern_army
-					has_idea = XFR_modern_army_tanks
+				AND = {
+					has_idea = XFR_modern_army_hq
+					OR = {
+						has_idea = XFR_modern_army
+						has_idea = XFR_modern_army_tanks
+					}
 				}
 			}
 		}
@@ -2558,6 +2931,7 @@ focus_tree = {
 			factor = 1
 		}
 		search_filters = { FOCUS_FILTER_ARMY_XP }
+
 		cancel_if_invalid = no
 		continue_if_invalid = no
 
@@ -2591,6 +2965,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = XFR_special_forces_idea
+			add_tech_bonus = {
+				name = XFR_special_forces
+				bonus = 0.75
+				uses = 1
+				category = special_forces_doctrine
+			}
 		}
 	}
 	focus = {
@@ -2616,6 +2996,12 @@ focus_tree = {
 				remove_idea = XFR_special_forces_idea
 				add_idea = XFR_special_forces_idea1
 			}
+			add_tech_bonus = {
+				name = XFR_special_forces1
+				bonus = 0.5
+				uses = 2
+				category = cat_mountaineers_doctrine
+			}
 		}
 	}
 	focus = {
@@ -2640,6 +3026,12 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = XFR_special_forces_idea
 				add_idea = XFR_special_forces_idea2
+			}
+			add_tech_bonus = {
+				name = XFR_special_forces2
+				bonus = 0.5
+				uses = 2
+				category = cat_paratroopers_doctrine
 			}
 		}
 	}
@@ -2667,6 +3059,12 @@ focus_tree = {
 				remove_idea = XFR_special_forces_idea
 				add_idea = XFR_special_forces_idea3
 			}
+			add_tech_bonus = {
+				name = XFR_special_forces3
+				bonus = 0.5
+				uses = 2
+				category = cat_marines_doctrine
+			}
 		}
 	}
 
@@ -2675,7 +3073,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 30
+		x = 32
 		y = 8
 		#relative_position_id = 
 
@@ -2735,7 +3133,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = XFR_fighter_crafts
+				bonus = 0.75
+				uses = 2
+				category = light_fighter
+			}
+			air_experience = 20
 		}
 	}
 
@@ -2758,7 +3162,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = XFR_CAS
+				bonus = 0.75
+				uses = 2
+				category = cas_bomber
+			}
+			air_experience = 20
 		}
 	}
 
@@ -2781,7 +3191,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		completion_reward = {
-			
+			add_ideas = XFR_pilot_training_idea
 		}
 	}
 
@@ -2834,6 +3244,20 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			if = {
+				limit = {
+					975 = {
+						is_controlled_by = ROOT
+					}
+				}
+				975 = {
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 1.0
@@ -2862,7 +3286,69 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			if = {
+				limit = {
+					17 = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+    						building = anti_air_building
+    						size > 1
+    						include_locked = no
+						}
+					}
+				}
+				17 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					975 = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+    						building = anti_air_building
+    						size > 1
+    						include_locked = no
+						}
+					}
+				}
+				975 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					27 = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+    						building = anti_air_building
+    						size > 1
+    						include_locked = no
+						}
+					}
+				}
+				27 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = XFR_anti_air
+				bonus = 0.5
+				uses = 1
+				category = cat_anti_air
+			}
 		}
 	}
 
@@ -2876,6 +3362,7 @@ focus_tree = {
 		relative_position_id = XFR_air_force
 
 		available = {
+			has_tech = experimental_rockets
 		}
 
 		cost = 10
@@ -2885,7 +3372,26 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			if = {
+				limit = {
+					27 = {
+						is_controlled_by = ROOT
+					}
+				}
+				27 = {
+					add_building_construction = {
+						type = rocket_site
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = XFR_restore_old_missile_silos
+				bonus = 1
+				uses = 1
+				category = rocketry
+			}
 		}
 	}
 
@@ -2939,7 +3445,20 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = XFR_naval_aviation
+				bonus = 0.75
+				uses = 2
+				category = naval_air
+			}
+			air_experience = 20
+			add_tech_bonus = {
+				name = XFR_naval_aviation
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_carrier_and_modules
+			}
+			navy_experience = 20
 		}
 	}
 
@@ -2962,7 +3481,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = XFR_submarine_effort
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+			}
 		}
 	}
 
@@ -2985,7 +3509,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = XFR_cruiser_effort
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_cruiser_and_modules
+			}
 		}
 	}
 
@@ -3011,7 +3540,35 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+			every_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_controlled_by = ROOT
+					free_building_slots = {
+    					building = arms_factory
+    					size > 0
+    					include_locked = no
+					}
+				}
+				random_select_amount = 1
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { NOT = { any_owned_state = { is_coastal = yes } } }
+				15 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -3034,7 +3591,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_NAVY_XP }
 		completion_reward = {
-			
+			navy_experience = 20
 		}
 	}
 
@@ -3079,16 +3636,130 @@ focus_tree = {
 		relative_position_id = XFR_rebuild_the_fleet
 
 		available = {
+			15 = {
+				is_owned_and_controlled_by = ROOT
+			}
 		}
 
-		cost = 30
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+			custom_effect_tooltip = XFR_the_grand_fleet_tt
+			hidden_effect = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					set_technology = {
+						basic_naval_mines = 1
+						submarine_mine_laying = 1
+						early_ship_hull_light = 1
+						early_ship_hull_cruiser = 1
+						basic_ship_hull_cruiser = 1
+						early_ship_hull_submarine = 1
+						basic_battery = 1
+						basic_torpedo = 1
+						basic_depth_charges = 1
+						basic_cruiser_armor_scheme = 1
+					}
+					create_equipment_variant = {
+						name = "Grande Class"
+						type = ship_hull_cruiser_1
+						name_group = FRA_CA_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_medium_battery_2
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = cruiser_ship_engine_1
+							fixed_ship_armor_slot = ship_armor_cruiser_2
+							fixed_ship_secondaries_slot = ship_secondaries_1
+							mid_1_custom_slot = ship_airplane_launcher_1
+							mid_2_custom_slot = ship_torpedo_1
+							rear_1_custom_slot = ship_medium_battery_2
+						}
+					}
+					create_equipment_variant = {
+						name = "Français Class"
+						type = ship_hull_cruiser_2
+						name_group = FRA_CL_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_medium_battery_2
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = cruiser_ship_engine_2
+							fixed_ship_armor_slot = ship_armor_cruiser_1
+							front_1_custom_slot = empty
+							mid_1_custom_slot = ship_torpedo_1
+							mid_2_custom_slot = ship_airplane_launcher_1
+							rear_1_custom_slot = ship_light_medium_battery_2
+						}
+					}
+					create_equipment_variant = {
+						name = "Écran Class"
+						type = ship_hull_light_1
+						name_group = FRA_DD_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+							mid_1_custom_slot = empty
+							rear_1_custom_slot = ship_depth_charge_1
+						}
+					}
+					
+					load_oob = "XFR_naval"
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Français Class"
+						type = light_cruiser_1
+						upgrades = {
+							ship_reliability_upgrade = 2
+							ship_engine_upgrade = 2
+							ship_gun_upgrade = 2
+							ship_anti_air_upgrade = 2
+						}
+					}
+	
+					create_equipment_variant = {
+						name = "Grande Class"
+						type = heavy_cruiser_1
+						upgrades = {
+							ship_reliability_upgrade = 2
+							ship_engine_upgrade = 2
+							ship_armor_upgrade = 2
+							ship_gun_upgrade = 2
+						}
+					}	
+					create_equipment_variant = {
+						name = "Écran Class"
+						type = destroyer_1
+						upgrades = {
+							ship_reliability_upgrade = 1
+							ship_engine_upgrade = 1
+							ship_armor_upgrade = 1
+							ship_gun_upgrade = 1
+						}
+					}				
+					set_technology = {
+						early_destroyer = 1
+						early_light_cruiser = 1
+						early_heavy_cruiser = 1
+						early_submarine = 1
+					}
+					load_oob = "XFR_naval_legacy"
+				}	
+			}
 		}
 	}
 
@@ -3111,7 +3782,24 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP} 
 		completion_reward = {
-			
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = {
+					torpedo_cruiser_mtg = 1
+					popup = no
+				}
+				set_technology = {
+					cruiser_submarines = 1
+					popup = no
+				}
+				
+			}
+			else = {
+				set_technology = {
+					torpedo_cruiser = 1
+					popup = no
+				}
+			}
 		}
 	}
 
@@ -3126,17 +3814,20 @@ focus_tree = {
 		relative_position_id = XFR_rebuild_the_fleet
 
 		available = {
-			has_completed_focus = XFR_reopen_trade
+			NOT = { has_idea = closed_economy }
 		}
 
-		cost = 10
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
 		}
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 		completion_reward = {
-			
+			add_equipment_to_stockpile = {
+    			type = convoy
+    			amount = 100
+			}
 		}
 	}
 
@@ -3155,6 +3846,10 @@ focus_tree = {
 				is_coastal = yes
 				is_controlled_by = ROOT
 			}
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
 		}
 
 		cost = 10
@@ -3164,12 +3859,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					is_coastal = yes
-					is_controlled_by = ROOT
-				}
-				random_select_amount = 1
+			capital_scope = {
 				add_resource = {
 				    type = oil
 				    amount = 16
@@ -3188,6 +3878,10 @@ focus_tree = {
 		relative_position_id = XFR_rebuild_the_fleet
 
 		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
 		}
 
 		cost = 5
@@ -3208,7 +3902,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 29
+		x = 30
 		y = 5
 		#relative_position_id = 
 
@@ -3274,7 +3968,7 @@ focus_tree = {
 			has_intelligence_agency = yes
 			OR = {
 				NOT = { has_government = democratic }
-				surrender_progress > 0.5
+				surrender_progress > 0.25
 			}
 		}
 
@@ -3301,7 +3995,7 @@ focus_tree = {
 
 	focus = {	
 		id = XFR_agency_upgrade
-		icon = GFX_focus_generic_secret_service_agency
+		icon = GFX_focus_generic_secret_service_agency  # GFX_focus_generic_national_security
 		prerequisite = { focus = XFR_create_intelligence_agency }
 		#mutually_exclusive = { focus = }
 		x = 0
@@ -3351,7 +4045,7 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			# unlock unique spy actions
+			custom_effect_tooltip = XFR_burgundian_infiltration_squad_tt
 		}
 	}
 

@@ -1,0 +1,70 @@
+﻿units = {
+
+	fleet = {
+		name = "The Grand Fleet"			
+		naval_base = 9434 # Le Havre
+		task_force = {
+			name = "1er Escadron"
+			location = 9434 # Le Havre
+			ship = { 
+				name = "Besançon" 
+				pride_of_the_fleet = yes 
+				definition = heavy_cruiser
+				equipment = { heavy_cruiser_1 = { amount = 1 owner = XFR version_name = "Grande Class" } }
+			}
+			ship = { 
+				name = "de Gaulle"  
+				definition = heavy_cruiser 
+				equipment = { heavy_cruiser_1 = { amount = 1 owner = XFR version_name = "Grande Class" } } 
+			}
+			ship = { 
+				name = "Dijon" 
+				definition = light_cruiser 
+				equipment = { light_cruiser_1 = { amount = 1 owner = XFR version_name = "Français Class" } 
+			} 
+			}
+			ship = { 
+				name = "Maintenon" 
+				definition = light_cruiser 
+				equipment = { light_cruiser_1 = { amount = 1 owner = XFR version_name = "Vision Class" } }
+			}
+			ship = { 
+				name = "Strasbourg" 
+				definition = destroyer 
+				equipment = { destroyer_1 = { amount = 1 owner = XFR version_name = "Écran Class" } } 
+			}
+			ship = { 
+				name = "Aquitaine" 
+				definition = destroyer 
+				equipment = { destroyer_1 = { amount = 1 owner = XFR version_name = "Écran Class" } } 
+			}
+			ship = { 
+				name = "Bourgogne" 
+				definition = destroyer 
+				equipment = { destroyer_1 = { amount = 1 owner = XFR version_name = "Écran Class" } } 
+			}
+			ship = { 
+				name = "Orléans" 
+				definition = destroyer 
+				equipment = { destroyer_1 = { amount = 1 owner = XFR version_name = "Écran Class" } } 
+			}
+			ship = { 
+				name = "Scudéry" 
+				definition = destroyer 
+				equipment = { destroyer_1 = { amount = 1 owner = XFR version_name = "Écran Class" } } 
+			}
+			ship = { 
+				name = "Reynie" 
+				definition = destroyer 
+				equipment = { destroyer_1 = { amount = 1 owner = XFR version_name = "Écran Class" } } 
+			}
+			ship = { 
+				name = "Cardillac" 
+				definition = destroyer 
+				equipment = { destroyer_1 = { amount = 1 owner = XFR version_name = "Écran Class" } } 
+			}
+		}				
+	}
+}
+
+

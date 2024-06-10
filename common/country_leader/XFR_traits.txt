@@ -38,6 +38,21 @@ leader_traits = {
 		}
 	}
 
+	XFR_parliament_trait = {
+		random = no
+
+		political_power_factor = -0.05
+		political_advisor_cost_factor = 0.5
+		drift_defence_factor = 0.1
+		party_popularity_stability_factor = -0.75
+		enemy_declare_war_tension = 1
+		enemy_justify_war_goal_time = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	XFR_herzog_von_burgund = {
 		random = no
 
@@ -52,7 +67,6 @@ leader_traits = {
 	XFR_federalist_leader = {
 		random = no
 
-		political_power_factor = 0.05
 		power_balance_weekly = 0.001
 		
 
@@ -64,8 +78,34 @@ leader_traits = {
 	XFR_restaurationist_leader = {
 		random = no
 
-		political_power_factor = 0.05
 		power_balance_weekly = -0.001
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_banker = {
+		random = no
+
+		political_power_factor = 0.05
+		trade_opinion_factor = 0.1
+		consumer_goods_factor = -0.10
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_journalist = {
+		random = no
+
+		political_advisor_cost_factor = -0.2
+		drift_defence_factor = 0.33
+		opinion_gain_monthly_factor = 0.25
+		communism_acceptance = 10
 		
 
 		ai_will_do = {

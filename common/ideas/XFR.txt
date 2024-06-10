@@ -12,6 +12,13 @@ ideas = {
 			
 			}
 
+            cancel = {
+                OR = {
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+
 			removal_cost = -1
 			
             rule = {
@@ -21,12 +28,41 @@ ideas = {
             }
 
 			modifier = {
-				
+                stability_factor = 0.01
+				female_random_army_leader_chance = 0.25
+                female_random_admiral_chance = 0.25
+                female_divisional_commander_chance = 0.25
+                female_random_country_leader_chance = 0.25
 			}
 		}
 		
 	}
     country = {
+
+        XFR_fake_economy_idea = {
+            name = XFR_industry_modifier
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = SOV_third_five_year_plan_civilian
+
+            modifier = {
+                research_speed_factor = -0.1
+                production_factory_max_efficiency_factor = -0.05
+                production_speed_industrial_complex_factor = 0.05
+                consumer_goods_factor = 0.05
+                industrial_capacity_dockyard = -0.1
+                industrial_capacity_factory = -0.1
+            }
+
+        }
 
         XFR_chaos_in_centre = {
             allowed = {
@@ -39,7 +75,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = GFX
+            picture = tur_kemalist_army_officers_minimal_power_neutral
 
             modifier = {
                 political_power_factor = -0.05
@@ -60,7 +96,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = GFX
+            picture = tur_kemalist_army_officers_minimal_power_disloyal
 
             modifier = {
                 political_power_factor = -0.1
@@ -80,7 +116,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = ast_volunteer_defence_corps
+            picture = ETH_national_studs
 
             modifier = {
 			    cavalry_attack_factor = 0.1
@@ -102,7 +138,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = ast_volunteer_defence_corps
+            picture = ETH_national_studs
 
             modifier = {
 			    cavalry_attack_factor = 0.3
@@ -323,9 +359,9 @@ ideas = {
             picture = eng_special_air_service
 
             modifier = {
-			    special_forces_cap = 0.5
-                special_forces_attack_factor = 0.25
-                special_forces_defence_factor = 0.25
+			    special_forces_cap = 0.25
+                special_forces_attack_factor = 0.1
+                special_forces_defence_factor = 0.1
             }
 
         }
@@ -345,10 +381,10 @@ ideas = {
             picture = eng_special_air_service
 
             modifier = {
-			    special_forces_cap = 0.5
-                special_forces_attack_factor = 0.25
-                special_forces_defence_factor = 0.25
-                mountaineers_special_forces_contribution_factor = -0.75
+			    special_forces_cap = 0.25
+                special_forces_attack_factor = 0.1
+                special_forces_defence_factor = 0.1
+                mountaineers_special_forces_contribution_factor = -0.5
             }
 
         }
@@ -368,10 +404,10 @@ ideas = {
             picture = eng_special_air_service
 
             modifier = {
-			    special_forces_cap = 0.5
-                special_forces_attack_factor = 0.25
-                special_forces_defence_factor = 0.25
-                paratroopers_special_forces_contribution_factor = -0.75
+			    special_forces_cap = 0.25
+                special_forces_attack_factor = 0.1
+                special_forces_defence_factor = 0.1
+                paratroopers_special_forces_contribution_factor = -0.5
             }
 
         }
@@ -391,10 +427,31 @@ ideas = {
             picture = eng_special_air_service
 
             modifier = {
-			    special_forces_cap = 0.5
-                special_forces_attack_factor = 0.25
-                special_forces_defence_factor = 0.25
-                marines_special_forces_contribution_factor = -0.75
+			    special_forces_cap = 0.25
+                special_forces_attack_factor = 0.1
+                special_forces_defence_factor = 0.1
+                marines_special_forces_contribution_factor = -0.5
+            }
+
+        }
+
+        XFR_pilot_training_idea = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_air_bonus
+
+            modifier = {
+			    air_training_xp_gain_factor = 0.1
+                air_wing_xp_loss_when_killed_factor = -0.25
+                air_untrained_pilots_penalty_factor = -0.5
             }
 
         }
@@ -415,6 +472,7 @@ ideas = {
             modifier = {
 			    stability_factor = 0.05
                 war_support_factor = 0.1
+                surrender_limit = 0.25
             }
 
         }
@@ -454,7 +512,7 @@ ideas = {
 
             modifier = {
 			    stability_factor = -0.05
-                fascism_drift = 0.05
+                neutrality_drift = 0.05
             }
 
         }
@@ -499,6 +557,145 @@ ideas = {
 
         }
 
+        XFR_torch_of_democracy = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_democratic_drift_bonus
+
+            modifier = {
+			    political_power_gain = 0.02
+                democratic_drift = 0.05
+                drift_defence_factor = 0.75
+                army_core_defence_factor = 0.1
+                army_core_attack_factor = 0.1
+            }
+
+        }
+
+        XFR_industrialist_support = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_central_management
+
+            modifier = {
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                production_speed_buildings_factor = 0.05
+                power_balance_weekly = -0.001
+            }
+
+        }
+
+        XFR_constitutional_revisions = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_constitutional_guarantees
+
+            modifier = {
+                stability_weekly = 0.01
+                democratic_drift = 0.05
+                political_power_gain = 0.1
+            }
+
+        }
+
+        XFR_anti_corruption_act = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = gre_schachtplan2
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                power_balance_weekly = 0.001
+                stability_factor = 0.02
+                political_advisor_cost_factor = -0.1
+            }
+
+        }
+
+        XFR_dream_of_france = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = FRA_liberte_egalite_solidarite
+
+            modifier = {
+			    political_power_gain = 0.05
+                democratic_drift = 0.05
+                drift_defence_factor = 0.75
+                army_core_defence_factor = 0.15
+                army_core_attack_factor = 0.15
+                stability_factor = 0.05
+                war_support_factor = 0.05
+            }
+
+        }
+
+        XFR_france_restored = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = FRA_undividable
+
+            modifier = {
+			    political_power_gain = 0.1
+                democratic_drift = 0.05
+                drift_defence_factor = 0.75
+                army_core_defence_factor = 0.2
+                army_core_attack_factor = 0.2
+                stability_factor = 0.05
+                war_support_factor = 0.05
+                compliance_gain = 0.25
+            }
+
+        }
+
         XFR_customs_agreement_head_idea = {
             allowed = {
 				always = yes
@@ -517,7 +714,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = HUN_treaty_of_triannon
+            picture = HUN_treaty_of_triannon 
 
             modifier = {
 			    consumer_goods_factor = -0.05

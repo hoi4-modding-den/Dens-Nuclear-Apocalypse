@@ -224,7 +224,7 @@ country_event = { # Elections 2237
                 ideology = socialism
                 desc = XFR_jacob_d_amboise_desc
                 expire = "3000.1.1"
-            traits = { XFR_federalist_leader }
+            traits = { XFR_journalist XFR_federalist_leader }
             }
         }
         set_party_name = {
@@ -254,7 +254,7 @@ country_event = { # Elections 2237
                 ideology = liberalism
                 desc = XFR_gabriel_moreau_desc
                 expire = "3000.1.1"
-            traits = { XFR_restaurationist_leader }
+            traits = { XFR_banker XFR_restaurationist_leader }
             }
         }
         set_party_name = {
@@ -273,7 +273,7 @@ country_event = { # Elections 2237
 
 }
 
-country_event = { # XFR wants to annex XAL -> XAL declines
+country_event = { # ROOT wants to annex FROM -> FROM declines
     id = XFR_events.8
     title = XFR_events.8.t
     picture = GFX_report_event_military_planning
@@ -287,11 +287,11 @@ country_event = { # XFR wants to annex XAL -> XAL declines
             base = 1
         }
         if = {
-            limit = { XAL = { is_subject_of = ROOT }}
-            end_puppet = XAL
+            limit = { FROM = { is_subject_of = ROOT } }
+            end_puppet = FROM
         }
         declare_war_on = {
-            target = XAL
+            target = FROM
             type = annex_everything
         }
     }
@@ -945,6 +945,7 @@ country_event = { # Anti-Fascists organise
             NOT = { has_completed_focus = XFR_dennounce_democracy }
         }
         18 = {
+            set_demilitarized_zone = yes
             add_dynamic_modifier = {
 				modifier = XFR_anarchists_state_modifier
 			}
@@ -971,6 +972,12 @@ country_event = { # Anti-Fascists organise
         trigger = {
             has_completed_focus = XFR_dennounce_democracy
         }
+        18 = {
+            set_demilitarized_zone = yes
+            add_dynamic_modifier = {
+				modifier = XFR_anarchists_state_modifier
+			}
+        }
         set_party_name = {
             ideology = communism
             long_name = XFR_communism_party_real_long
@@ -989,7 +996,7 @@ country_event = { # Anti-Fascists organise
 country_event = { # The Herzog speaks
     id = XFR_events.26
     title = XFR_events.26.t
-    picture = GFX_report_event_journalists_speech
+    picture = GFX_report_event_generic_sign_treaty1
     desc = XFR_events.26.desc
     
     is_triggered_only = yes
@@ -1009,7 +1016,172 @@ country_event = { # The Herzog speaks
     }
 }
 
+country_event = { # Burgundy wants to integrate us into France
+    id = XFR_events.27
+    title = XFR_events.30.t
+    picture = GFX_report_event_generic_sign_treaty1
+    desc = XFR_events.30.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.30.a
+        ai_chance = {
+            base = 1
+        }
+        effect_tooltip = {
+            FROM = {
+                annex_country = {
+    		        target = ROOT
+    		        transfer_troops = no
+		        }
+            }
+        }
+        custom_effect_tooltip = GAME_OVER_TT
+        
+    }
+    option = { 
+        name = XFR_events.30.b
+        ai_chance = {
+            base = 1
+            modifier = {
+                factor = 0
+                is_ally_with = XFR
+            }
+        }
+        if = {
+            limit = { ROOT = { is_subject_of = FROM } }
+            FROM = { end_puppet = ROOT }
+        }
+        if = {
+            limit = { ROOT = { is_in_faction_with = FROM } }
+            ROOT = { leave_faction = yes }
+        }
+        effect_tooltip = {
+            FROM = {
+                create_wargoal = {
+                    target = ROOT
+                    type = annex_everything
+                }
+            }
+        }
+
+        
+    }
+}
+
+country_event = { # Burgundy wants to integrate us into France -> accepted
+    id = XFR_events.28
+    title = XFR_events.28.t
+    picture = GFX_report_event_generic_sign_treaty1
+    desc = XFR_events.28.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.28.a
+        ai_chance = {
+            base = 1
+        }
+        annex_country = {
+    	    target = FROM
+    		transfer_troops = no
+		}
+        
+    }
+}
+
+country_event = { # Burgundy wants to integrate us into France -> rejected
+    id = XFR_events.29
+    title = XFR_events.29.t
+    picture = GFX_report_event_generic_sign_treaty1
+    desc = XFR_events.29.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.29.a
+        ai_chance = {
+            base = 1
+        }
+        create_wargoal = {
+            target = FROM
+            type = annex_everything
+        }
+        
+    }
+}
+
+country_event = { # XFR demands XBR subjugation
+    id = XFR_events.30
+    title = XFR_events.30.t
+    picture = GFX_report_event_generic_sign_treaty1
+    desc = XFR_events.30.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.30.a
+        ai_chance = {
+            base = 1
+            modifier = {
+                is_ally_with = FROM
+                factor = 0
+            }
+        } 
+        FROM = { country_event = { id = XFR_events.8 days = 1 } }
+        effect_tooltip = {
+            FROM = {
+                declare_war_on = {
+                    type = annex_everything
+                    target = ROOT
+                }
+            }  
+        }
+        
+    }
+    option = { 
+        name = XFR_events.30.b
+        ai_chance = {
+            base = 1
+        }
+        FROM = { country_event = { id = XFR_events.31 days = 1 } }
+        effect_tooltip = {
+            FROM = {
+                annex_country = {
+    		        target = ROOT
+    		        transfer_troops = no
+		        }
+            }
+        }
+        custom_effect_tooltip = GAME_OVER_TT
+    }
+}
+
+country_event = { # XFR demands XBR subjugation -> XBR accepts
+    id = XFR_events.31
+    title = XFR_events.31.t
+    picture = GFX_report_event_generic_peaceful_annexation
+    desc = XFR_events.31.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.31.a
+        ai_chance = {
+            base = 1
+        } 
+        annex_country = {
+    		target = FROM
+    		transfer_troops = no
+		}
+        
+    }
+}
+
+###############
 # NEWS EVENTS #
+###############
 
 news_event = { # Centre Crisis resolved
     id = XFR_news_events.1
@@ -1186,6 +1358,66 @@ news_event = { # Democracy prevails!
     }
     option = {
         name = XFR_news_events.6.b
+        trigger = { tag = XFR }
+    }
+
+}
+
+news_event = { # France Reunification Announcement
+    id = XFR_news_events.7
+    title = XFR_news_events.7.t
+    picture = GFX_news_event_051
+    desc = XFR_news_events.7.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.7.a
+        trigger = {
+            NOT = { tag = XFR }
+            any_core_state = {
+                DEN_is_french_state = yes
+            }
+        }
+    }
+    option = {
+        name = XFR_news_events.7.b
+        trigger = {
+            NOT = { tag = XFR }
+            NOT = {
+                any_core_state = {
+                   DEN_is_french_state = yes
+                }
+            }
+        }
+    }
+    option = {
+        name = XFR_news_events.7.c
+        trigger = { tag = XFR }
+    }
+
+}
+
+news_event = { # France Reunified!
+    id = XFR_news_events.8
+    title = XFR_news_events.8.t
+    picture = GFX_news_event_051
+    desc = XFR_news_events.8.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.8.a
+        trigger = { NOT = { tag = XFR } }
+    }
+    option = {
+        name = XFR_news_events.8.b
         trigger = { tag = XFR }
     }
 

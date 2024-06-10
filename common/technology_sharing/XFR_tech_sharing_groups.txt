@@ -1,0 +1,16 @@
+technology_sharing_group = {
+
+	id = XFR_tech_sharing
+	name = XFR_tech_sharing_name
+	desc = XFR_tech_sharing_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.1
+
+	available = {
+		OR = {
+			is_ally_with = XFR
+			has_government = XFR
+		}
+		NOT = { has_war_with = XFR }
+	}
+}

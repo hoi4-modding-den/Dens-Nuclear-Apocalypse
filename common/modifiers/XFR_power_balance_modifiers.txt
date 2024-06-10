@@ -1,0 +1,6 @@
+XFR_united_france_restaurationists = {
+	power_balance_daily = -0.1
+}
+XFR_united_france_federalists = {
+	power_balance_daily = 0.1
+}

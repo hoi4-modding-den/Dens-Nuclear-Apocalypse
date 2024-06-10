@@ -4,12 +4,12 @@ characters = {
 		name = XFR_parliament_name
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_POL_the_sejm"
+				large = "GFX_portrait_XFR_parliament"
 			}
 		}
 		country_leader = {
-			ideology = conservatism
-			traits = {  }
+			ideology = XFR_emergency_government
+			traits = { XFR_parliament_trait }
 			expire = "3000.1.1"
 		}
 	}

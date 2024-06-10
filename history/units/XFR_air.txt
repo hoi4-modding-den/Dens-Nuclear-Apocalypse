@@ -1,0 +1,40 @@
+﻿air_wings = {
+	975 = {
+		small_plane_airframe_1 =  {
+			owner = "XFR" 
+			amount = 100
+			creator = "XFR"
+			version_name = "Guerrier du Ciel"
+		}
+		small_plane_airframe_1 =  {
+			owner = "XFR" 
+			amount = 60
+			creator = "XFR"
+			version_name = "Guerrier du Ciel"
+		}
+	}
+	27 = {
+		small_plane_cas_airframe_0 =  {
+			owner = "XFR" 
+			amount = 100
+			creator = "XFR"
+			version_name = "Apporteur de Lumière"
+		}
+	}
+}
+
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "XFR" 
+			version_name = "Guerrier du Ciel"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+}

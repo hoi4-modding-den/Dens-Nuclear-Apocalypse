@@ -82,11 +82,15 @@ XFR_udb_cat = {
 
 XFR_integration = {		
 	icon = GFX_decision_category_intervention_overseas
+
+	picture = GFX_decision_cat_XFR_france
 	
 	allowed = {
 		original_tag = XFR
 	}
 	visible = {	
+		has_completed_focus = XFR_french_reunification
+		has_government = democratic
 	}
 }
 

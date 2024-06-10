@@ -1,0 +1,19 @@
+﻿air_wings = {
+
+	975 = {
+		fighter_equipment_1 =  {
+			owner = "XFR" 
+			amount = 100
+		}
+		fighter_equipment_1 =  {
+			owner = "XFR" 
+			amount = 60
+		}
+	}
+	27 = {
+		CAS_equipment_1 =  {
+			owner = "XFR" 
+			amount = 100
+		}
+	}
+}

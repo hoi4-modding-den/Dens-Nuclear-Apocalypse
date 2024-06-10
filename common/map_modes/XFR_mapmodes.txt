@@ -1,5 +1,5 @@
 scripted_map_modes = {
-    ECONOMY_MAP_MODE = {
+    economy_map_mode = {
         top = {
             type = country
             color = {

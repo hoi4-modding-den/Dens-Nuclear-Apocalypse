@@ -2,6 +2,9 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			XFR = {
+				remove_ideas = XFR_fake_economy_idea
+			}
 			XAL = {
 				if = {
 					limit = {
@@ -106,6 +109,32 @@ on_actions = {
 				remove_opinion_modifier = {
 					target = XFR
 					modifier = XFR_supports_our_government
+				}
+			}
+			if = {
+				limit = {
+					XFR = {
+						NOT = { has_government = democratic }
+						has_cosmetic_tag = XFR_FRANCE_FED
+					}
+				}
+				XFR = {
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = XFR_FRANCE
+					set_country_flag = XFR_FRANCE_FED_lost
+				}
+			}
+			if = {
+				limit = {
+					XFR = {
+						has_government = democratic
+						has_country_flag = XFR_FRANCE_FED_lost
+					}
+				}
+				XFR = {
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = XFR_FRANCE_FED
+					clr_country_flag = XFR_FRANCE_FED_lost
 				}
 			}
 		}

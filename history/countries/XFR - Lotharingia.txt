@@ -50,6 +50,7 @@ add_ideas = {
 	XFR_allow_women
 	closed_economy
 	XFR_chaos_in_centre
+	XFR_fake_economy_idea
 }
 
 add_dynamic_modifier = { modifier = XFR_industry_modifier }
@@ -186,6 +187,49 @@ recruit_character = XFR_dominique_gounelle
 			army = { small = GFX_idea_generic_air_warfare_theorist }
 		}
 	}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "XFR_air"
+		create_equipment_variant = {
+			name = "Guerrier du Ciel" 
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+		}
+		create_equipment_variant = {
+			name = "Apporteur de Lumière" 
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = lmg_defense_turret
+			}
+		}
+		set_technology = {
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			early_bombs = 1
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+		}
+	else = {
+		set_air_oob = "XFR_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
 
 set_politics = {
 	ruling_party = democratic

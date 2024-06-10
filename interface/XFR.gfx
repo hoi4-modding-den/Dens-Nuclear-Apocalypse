@@ -20,6 +20,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_XFR_parliament"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_parliament.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_XFR_jacob_d_amboise"
         texturefile = "gfx/leaders/XFR/portrait_XFR_jacob_d_amboise.dds"
     }
@@ -146,12 +151,12 @@ spriteTypes = {
     # Mapmode Icons
 
     spriteType = {
-        name = "GFX_mapmode_buttons_deselected_small_ECONOMY_MAP_MODE"
-        textureFile = "gfx/interface/mapmodes/mapmode_buttons_deselected_small_economy_mode.dds"
+        name = "GFX_mapmode_buttons_deselected_small_economy_map_mode"
+        textureFile = "gfx/interface/mapmode/mapmode_buttons_deselected_small_economy_mode.dds"
     }
     spriteType = {
-        name = "GFX_mapmode_buttons_selected_small_ECONOMY_MAP_MODE"
-        textureFile = "gfx/interface/mapmodes/mapmode_buttons_selected_small_economy_mode.dds"
+        name = "GFX_mapmode_buttons_selected_small_economy_map_mode"
+        textureFile = "gfx/interface/mapmode/mapmode_buttons_selected_small_economy_mode.dds"
     }
 
     # Bookmark
@@ -159,6 +164,14 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_XFR_bookmark_image"
 		texturefile = "gfx/XFR/XFR_bookmark_image.dds"
+		legacy_lazy_load = no
+	}
+
+    # Decision Category
+
+    spriteType = {
+		name = "GFX_decision_cat_XFR_france"
+		texturefile = "gfx/interface/decisions/decision_cat_XFR_france.png"
 		legacy_lazy_load = no
 	}
 

@@ -6,3 +6,34 @@ XFR_no_economic_membership = {
 	NOT = { has_idea = XSS_continental_union_idea }
 }
 
+DEN_controls_french_states = {
+	controls_state = 1
+	controls_state = 851
+	controls_state = 735
+	controls_state = 21
+	controls_state = 32
+	controls_state = 20
+	controls_state = 22
+	controls_state = 26
+	controls_state = 31
+	controls_state = 806
+	controls_state = 19
+	controls_state = 25
+	controls_state = 33
+	controls_state = 23
+	controls_state = 27
+	controls_state = 17
+	controls_state = 28
+	controls_state = 18
+	controls_state = 24
+	controls_state = 785
+	controls_state = 29
+	controls_state = 30
+	controls_state = 15
+	controls_state = 14
+	controls_state = 973
+	controls_state = 974
+	controls_state = 975
+	controls_state = 976
+	controls_state = 16
+}
