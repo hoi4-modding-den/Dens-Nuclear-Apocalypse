@@ -69,7 +69,7 @@
 
 	focus = {
 		id = XAL_improve_relations
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_generic_befriend_burgundy
 		prerequisite = { focus = XAL_reinforce_burgundian_friendship }
 		#mutually_exclusive = { focus = }
 		x = 0
@@ -116,7 +116,7 @@
 
 	focus = {
 		id = XAL_request_closer_cooperation
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_XAL_burgundy_alsace_cooperation
 		prerequisite = { focus = XAL_improve_relations }
 		mutually_exclusive = { focus = XAL_alsatian_neutrality }
 		x = 0
@@ -659,7 +659,7 @@
 
 	focus = {
 		id = XAL_attack_the_rhineland
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_XAL_attack_us_military
 		prerequisite = { focus = XAL_ready_for_war }
 		prerequisite = { focus = XAL_panzer_armee }
 		#mutually_exclusive = { focus = }
@@ -670,8 +670,9 @@
 		available = {
 			has_government = fascism
 			is_subject = no
-			42 = { is_owned_and_controlled_by = ROOT }
-			983 = { is_owned_and_controlled_by = ROOT }
+			XRP = {
+				exists = yes
+			}
 		}
 
 		bypass = {
@@ -688,6 +689,10 @@
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			create_wargoal = {
+				target = XRP
+				type = annex_everything
+			}
 			51 = {
 				transfer_state_to = ROOT
 			}

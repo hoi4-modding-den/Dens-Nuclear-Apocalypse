@@ -12,6 +12,46 @@ spriteTypes = {
         texturefile = "gfx/interface/ideologies/anarchism.dds"
     }
 
+    # Focus Icons
+
+    spriteType = {
+        name = "GFX_focus_XFR_attack_lesser_gaul"
+        texturefile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
+    }
+    spriteType = {
+        name = "GFX_focus_XAL_attack_us_military"
+        texturefile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
+    }
+    spriteType = {
+        name = "GFX_focus_XAL_burgundy_alsace_cooperation"
+        texturefile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
+    }
+    spriteType = {
+        name = "GFX_focus_XFR_restore_france"
+        texturefile = "gfx/interface/goals/XFR/XFR_restore_france.png"
+    }
+    spriteType = {
+        name = "GFX_focus_XFR_france_triumphs"
+        texturefile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_befriend_alsace"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_befriend_mercia"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_befriend_paris"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_befriend_burgundy"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
+    }
+
+
     # Portraits
 
     spriteType = {
@@ -22,6 +62,11 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_XFR_parliament"
         texturefile = "gfx/leaders/XFR/portrait_XFR_parliament.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XFR_regnault_guillaume"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_regnault_guillaume.dds"
     }
 
     spriteType = {

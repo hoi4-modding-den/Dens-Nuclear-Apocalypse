@@ -646,7 +646,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_across_the_channel2
-		icon = GFX_focus_XNM_second_to_none
+		icon = GFX_focus_generic_befriend_mercia
 		prerequisite = { focus = XFR_england_focus }
 		mutually_exclusive = { focus = XFR_across_the_channel }
 		x = 1
@@ -850,7 +850,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_strike_the_madman
-		icon = GFX_focus_generic_attack_vichy_france
+		icon = GFX_focus_XFR_attack_lesser_gaul
 		prerequisite = { focus = XFR_french_reunification }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -896,7 +896,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_paris_conference
-		icon = GFX_focus_chi_reach_out_to_france
+		icon = GFX_focus_generic_befriend_paris
 		prerequisite = { focus = XFR_french_reunification }
 		#mutually_exclusive = { focus =  }
 		x = -2
@@ -995,7 +995,7 @@ focus_tree = {
 
 	focus = {	
 		id = XFR_alcase_lorraine_diplomacy
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_generic_befriend_alsace
 		prerequisite = { focus = XFR_european_ambitions }
 		x = 2
 		y = 1
@@ -1084,7 +1084,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_invitation
-		icon = GFX_focus_attack_france
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = XFR_norman_invasion }
 		prerequisite = { focus = XFR_strike_the_madman }
 		prerequisite = { focus = XFR_ultimatum_to_alcase_lorraine }
@@ -1109,6 +1109,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			custom_effect_tooltip = XFR_invitation_tt
 			every_other_country = {
 				limit = {
 					any_core_state = {
@@ -1127,7 +1128,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_take_down_stragglers
-		icon = GFX_focus_attack_france
+		icon = GFX_focus_XFR_restore_france
 		prerequisite = { focus = XFR_invitation }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -1498,7 +1499,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_proclaim_french_government
-		icon = GFX_focus_chi_reach_out_to_france
+		icon = GFX_focus_XFR_france_triumphs
 		prerequisite = { focus = XFR_the_dream_of_france } 
 		#mutually_exclusive = { focus =  }
 		x = 0

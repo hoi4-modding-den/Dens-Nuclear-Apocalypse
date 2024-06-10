@@ -221,6 +221,10 @@ ideologies = {
 			XFR_german_revanchism = {
 				can_be_randomly_selected = no
 			}
+
+			XFR_lotharingian_nationalism = {
+				can_be_randomly_selected = no
+			}
 			XHP_templaric_order = {
 				can_be_randomly_selected = no
 				color = { 255 255 255 }

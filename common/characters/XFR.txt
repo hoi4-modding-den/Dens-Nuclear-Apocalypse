@@ -58,6 +58,20 @@ characters = {
 		}
 	}
 
+	XFR_regnault_guillaume = {
+		name = XFR_regnault_guillaume_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_regnault_guillaume"
+			}
+		}
+		country_leader = {
+			ideology = XFR_lotharingian_nationalism
+			traits = { }
+			expire = "3000.1.1"
+		}
+	}
+
 	XFR_anarchists = {
 		name = XFR_anarchists_name
 		portraits = {

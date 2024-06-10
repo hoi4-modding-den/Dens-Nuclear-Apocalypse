@@ -599,6 +599,9 @@ XFR_country_development_cat = {
 
 		available = {
 			NOT = { has_country_flag = XFR_using_industry_fund }
+			any_owned_state = {
+				industrial_complex > 0
+			}
 		}
 
 		cost = 75
@@ -630,14 +633,22 @@ XFR_country_development_cat = {
 			consumer_goods_factor = 0.1
 		}
 
-		cancel_trigger = {
-			has_country_flag = XFR_using_industry_fund
-		}
-
 		complete_effect = {
+			set_country_flag = XFR_gathering_funds
 		}
 
 		remove_effect = {
+			clr_country_flag = XFR_gathering_funds
+			random_owned_state = {
+				limit = {
+					industrial_complex > 0
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+			}
 			add_to_variable = {
 				var = XFR_industrial_fund_var
 				value = 1
@@ -655,6 +666,7 @@ XFR_country_development_cat = {
 		}
 
 		available = {
+			NOT = { has_country_flag = XFR_gathering_funds }
 			check_variable = {
     			var = XFR_industrial_fund_var
     			value = 1
