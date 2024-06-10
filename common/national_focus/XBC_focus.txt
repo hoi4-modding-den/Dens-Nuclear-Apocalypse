@@ -47,7 +47,7 @@
 		}
 
 		completion_reward = {
-			
+			XBC_left_increase_small_effect = yes
 		}
 	}
 
@@ -67,7 +67,7 @@
 		}
 
 		completion_reward = {
-			
+			XBC_center_increase_small_effect = yes
 		}
 	}
 	
@@ -87,7 +87,7 @@
 		}
 
 		completion_reward = {
-			
+			XBC_right_increase_small_effect = yes
 		}
 	}
 	
@@ -178,7 +178,7 @@
 		y = 1
 		
 		relative_position_id = XBC_cooperate_with_the_right
-		prerequisite = { focus = XBC_work_with_the_left focus = XBC_maintain_the_status_quo focus = XBC_cooperate_with_the_right }
+		prerequisite = { focus = XBC_maintain_the_status_quo focus = XBC_cooperate_with_the_right }
 		mutually_exclusive = { focus = XBC_equal_rights_act }
 		
 		cost = 4
@@ -187,7 +187,7 @@
 		}
 
 		completion_reward = {
-			
+			XBC_right_increase_small_effect = yes
 		}
 	}
 	
@@ -198,7 +198,7 @@
 		y = 1
 		
 		relative_position_id = XBC_cooperate_with_the_right
-		prerequisite = { focus = XBC_work_with_the_left focus = XBC_maintain_the_status_quo focus = XBC_cooperate_with_the_right }
+		prerequisite = { focus = XBC_work_with_the_left focus = XBC_maintain_the_status_quo }
 		mutually_exclusive = { focus = XBC_dissident_repression_act }
 		
 		cost = 4
@@ -207,7 +207,7 @@
 		}
 
 		completion_reward = {
-			
+			XBC_left_increase_small_effect = yes
 		}
 	}
 	
@@ -248,7 +248,7 @@
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = XBC_our_new_leader_tt
 		}
 	}
 	
@@ -267,7 +267,7 @@
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = XBC_rein_in_pamplona_tt
 		}
 	}
 }
