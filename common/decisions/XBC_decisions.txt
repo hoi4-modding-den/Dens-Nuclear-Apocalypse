@@ -22,4 +22,32 @@ XBC_power_struggle_category = {
 		    
 		}		
 	}
+	XBC_stir_up_factionalism = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		cost = 10
+		visible = { 
+			OR = 
+			{
+				has_completed_focus = XBC_work_with_the_left
+				has_completed_focus = XBC_cooperate_with_the_right
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove = 25
+		selectable_mission = yes
+		
+		visible = {
+			tag = XBC
+		}
+		
+		complete_effect  = {
+		    
+		}		
+	}
 }

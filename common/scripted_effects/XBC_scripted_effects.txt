@@ -1,0 +1,39 @@
+#Remember to change the tooltips if the effects are changed
+#State scope. Prev is target country.
+
+#Increase
+XBC_left_increase_small_effect = {
+	add_to_variable = { xbc_left_influence_var = 2 }
+	subtract_from_variable = { xbc_center_influence_var = 1 }
+	subtract_from_variable = { xbc_right_influence_var = 1 }
+	custom_effect_tooltip = XBC_left_increase_small_effect_tt
+}
+XBC_center_increase_small_effect = {
+	add_to_variable = { xbc_center_influence_var = 2 }
+	subtract_from_variable = { xbc_left_influence_var = 1 }
+	subtract_from_variable = { xbc_right_influence_var = 1 }
+	custom_effect_tooltip = XBC_center_increase_small_effect_tt
+}
+XBC_right_increase_small_effect = {
+	add_to_variable = { xbc_right_influence_var = 2 }
+	subtract_from_variable = { xbc_center_influence_var = 1 }
+	subtract_from_variable = { xbc_left_influence_var = 1 }
+	custom_effect_tooltip = XBC_right_increase_small_effect_tt
+}
+
+#Decrease
+XBC_left_decrease_small_effect = {
+	subtract_from_variable = { xbc_left_influence_var = 2 }
+	add_to_variable = { xbc_center_influence_var = 1 }
+	add_to_variable = { xbc_right_influence_var = 1 }
+}
+XBC_center_decrease_small_effect = {
+	subtract_from_variable = { xbc_center_influence_var = 2 }
+	add_to_variable = { xbc_left_influence_var = 1 }
+	add_to_variable = { xbc_right_influence_var = 1 }
+}
+XBC_right_decrease_small_effect = {
+	subtract_from_variable = { xbc_right_influence_var = 2 }
+	add_to_variable = { xbc_center_influence_var = 1 }
+	add_to_variable = { xbc_left_influence_var = 1 }
+}
