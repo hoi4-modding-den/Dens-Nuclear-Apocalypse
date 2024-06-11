@@ -64,6 +64,26 @@ ideas = {
 
         }
 
+        XFR_swiss_protectorate = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = YUG_federal_defense_council
+
+            modifier = {
+                research_speed_factor = 0.1
+                consumer_goods_factor = -0.05
+            }
+
+        }
+
         XFR_chaos_in_centre = {
             allowed = {
 				always = yes

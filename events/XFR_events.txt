@@ -344,6 +344,19 @@ country_event = { # XAL wants to become XFR puppet
         give_guarantee = XAL
         if = {
 			limit = { XFR = { has_government = fascism } }
+            every_other_country = {
+                limit = {
+                    is_subject_of = XAL
+                }
+                XFR = { 
+                       set_autonomy = {
+    			    	target = PREV
+    				    autonomous_state = autonomy_reichsprotectorate
+    			    	end_wars = no
+    			    	end_civil_wars = no
+				    }
+                }
+            }
 				XFR = {
 					set_autonomy = {
     					target = XAL
@@ -351,10 +364,24 @@ country_event = { # XAL wants to become XFR puppet
     					end_wars = no
     					end_civil_wars = no
 					}
+            
 				}
 			}
 		if = {
 			limit = { XFR = { NOT = { has_government = fascism } } }
+            every_other_country = {
+                limit = {
+                    is_subject_of = XAL
+                }
+                XFR = { 
+                       set_autonomy = {
+    			    	target = PREV
+    				    autonomous_state = autonomy_puppet
+    			    	end_wars = no
+    			    	end_civil_wars = no
+				    }
+                }
+            }
 			XFR = {
 				set_autonomy = {
     				target = XAL
@@ -362,6 +389,7 @@ country_event = { # XAL wants to become XFR puppet
     				end_wars = no
     				end_civil_wars = no
 				}
+                
 			}
 		}
     }
@@ -608,6 +636,19 @@ country_event = { # Paris Conference: Choose Goal
     		    	    end_civil_wars = no
     		    	}
 	    	    }
+                every_other_country = {
+                limit = {
+                    is_subject_of = XPR
+                }
+                XFR = { 
+                       set_autonomy = {
+    			    	target = PREV
+    				    autonomous_state = autonomy_puppet
+    			    	end_wars = no
+    			    	end_civil_wars = no
+				    }
+                }
+            }
             }
         
     }
@@ -622,6 +663,19 @@ country_event = { # Paris Conference: Choose Goal
         custom_effect_tooltip = if_they_accept_tt
         effect_tooltip = { 16 = { transfer_state_to = ROOT add_core_of = ROOT } }
         effect_tooltip = {
+            every_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                }
+                XFR = { 
+                       set_autonomy = {
+    			    	target = PREV
+    				    autonomous_state = autonomy_puppet
+    			    	end_wars = no
+    			    	end_civil_wars = no
+				    }
+                }
+            }
                 XFR = {
 		    	    set_autonomy = {
     		          	target = XPR
@@ -630,6 +684,7 @@ country_event = { # Paris Conference: Choose Goal
     		    	    end_civil_wars = no
     		    	}
 	    	    }
+                
             }
     }
 
@@ -694,6 +749,19 @@ country_event = { # Paris Conference: Message for XPR
                 has_global_flag = XFR_paris_con_puppet
             }
 	    	effect_tooltip = {
+                every_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                }
+                XFR = { 
+                       set_autonomy = {
+    			    	target = PREV
+    				    autonomous_state = autonomy_puppet
+    			    	end_wars = no
+    			    	end_civil_wars = no
+				    }
+                }
+            }
                 XFR = {
 		    	    set_autonomy = {
     		          	target = XPR
@@ -702,6 +770,7 @@ country_event = { # Paris Conference: Message for XPR
     		    	    end_civil_wars = no
     		    	}
 	    	    }
+                
             }
         }
         XFR = { country_event = { id = XFR_events.19 days = 1 } }
@@ -745,6 +814,19 @@ country_event = { # Paris Conference: XPR accepts
             limit = {
                 has_global_flag = XFR_paris_con_puppet
             }
+            every_other_country = {
+                limit = {
+                    is_subject_of = FROM
+                }
+                XFR = { 
+                       set_autonomy = {
+    			    	target = PREV
+    				    autonomous_state = autonomy_puppet
+    			    	end_wars = no
+    			    	end_civil_wars = no
+				    }
+                }
+            }
 	    	XFR = {
 		    	set_autonomy = {
     		    	target = XPR
@@ -753,6 +835,7 @@ country_event = { # Paris Conference: XPR accepts
     			    end_civil_wars = no
     			}
 	    	}
+            
         }
         add_stability = 0.05
     }
@@ -846,7 +929,18 @@ country_event = { # Generic Invite to Faction
                 }
             }
         }
+        FROM = { country_event = { id = XFR_events.35 days = 1 } }
         FROM = { add_to_faction = ROOT }
+        if = {
+            limit = {
+                original_tag = XSS
+                is_faction_leader = yes
+            }
+            every_other_country = {
+		    	limit = { is_in_faction_with = ROOT }
+		    	FROM = { add_to_faction = PREV }
+		    }
+        }
     }
     option = { 
         name = XFR_events.22.b
@@ -1175,6 +1269,140 @@ country_event = { # XFR demands XBR subjugation -> XBR accepts
     		target = FROM
     		transfer_troops = no
 		}
+        
+    }
+}
+
+country_event = { # XFR wants to protect Switzerland
+    id = XFR_events.32
+    title = XFR_events.32.t
+    picture = GFX_report_event_generic_sign_treaty3
+    desc = XFR_events.32.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.32.a
+        ai_chance = {
+            base = 10
+        } 
+        XFR = { country_event = { id = XFR_events.33 days = 1 } }
+        effect_tooltip = {
+            every_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                }
+                XFR = { 
+                       set_autonomy = {
+    			    	target = PREV
+    				    autonomous_state = autonomy_puppet
+    			    	end_wars = no
+    			    	end_civil_wars = no
+				    }
+                }
+            }
+            XFR = {
+				set_autonomy = {
+    				target = XSS
+    				autonomous_state = autonomy_puppet
+    				end_wars = no
+    				end_civil_wars = no
+				}
+			}
+            
+        }
+        add_ideas = XFR_swiss_protectorate
+    }
+    option = { 
+        name = XFR_events.32.b
+        ai_chance = {
+            base = 1
+        } 
+        XFR = { country_event = { id = XFR_events.34 days = 1 } }
+        effect_tooltip = {
+            XFR = {
+				add_opinion_modifier = {
+                    target = XSS
+                    modifier = XFR_declined_protection
+                }
+			}
+        }
+        add_political_power = -100
+    }
+}
+
+country_event = { # XFR wants to protect Switzerland -> Swiss accept
+    id = XFR_events.33
+    title = XFR_events.33.t
+    picture = GFX_report_event_generic_peaceful_annexation
+    desc = XFR_events.33.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.33.a
+        ai_chance = {
+            base = 1
+        } 
+        every_other_country = {
+                limit = {
+                    is_subject_of = FROM
+                }
+                XFR = { 
+                       set_autonomy = {
+    			    	target = PREV
+    				    autonomous_state = autonomy_puppet
+    			    	end_wars = no
+    			    	end_civil_wars = no
+				    }
+                }
+            }
+        set_autonomy = {
+    		target = XSS
+    		autonomous_state = autonomy_puppet
+    		end_wars = no
+    		end_civil_wars = no
+		}
+        
+        effect_tooltip = { XSS = { add_ideas = XFR_swiss_protectorate } }
+    }
+}
+
+country_event = { # XFR wants to protect Switzerland -> Swiss decline
+    id = XFR_events.34
+    title = XFR_events.34.t
+    picture = GFX_report_event_military_planning
+    desc = XFR_events.31.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.34.a
+        ai_chance = {
+            base = 1
+        } 
+        add_opinion_modifier = {
+            target = XSS
+            modifier = XFR_declined_protection
+        }
+        
+    }
+}
+
+country_event = { # generic Faction invite accepted
+    id = XFR_events.35
+    title = XFR_events.35.t
+    picture = GFX_report_event_generic_sign_treaty2
+    desc = XFR_events.31.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.35.a
+        ai_chance = {
+            base = 1
+        } 
+        
         
     }
 }
