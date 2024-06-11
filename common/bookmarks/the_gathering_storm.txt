@@ -13,10 +13,10 @@ bookmarks = {
 		}
 		"XSS" = {
 			ideology = democratic
-			history = "PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS "
+			history = "XSS_bookmark_history_description"
 			focuses = {
 				XSS_host_italian_exile_government
-				XSS_soviet_economic_union
+				XSS_proclaim_hre
 				XSS_UN
 			}
 			ideas = {
