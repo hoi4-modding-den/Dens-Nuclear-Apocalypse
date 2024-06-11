@@ -2,17 +2,17 @@ capital = 1
 
 set_variable = { xnf_sen_lyl = 10 }
 set_variable = { xnf_sen_lyl_100 = 100 }
-set_variable = { xnf_leg_lyl = 50 }
+set_variable = { xnf_leg_lyl = 100 }
 
-set_variable = { xnfloyalists = 25 }
-set_variable = { xnfradicals = 25 }
-set_variable = { xnfrepublicans = 25 }
-set_variable = { xnfultnationalists = 25 }
+set_variable = { xnfloyalists = 90 }
+set_variable = { xnfradicals = 1 }
+set_variable = { xnfrepublicans = 2 }
+set_variable = { xnfultnationalists = 7 }
 
 set_variable = { xnfloyalists_happy = 100 }
-set_variable = { xnfradicals_happy = 10 }
-set_variable = { xnfrepublicans_happy = 70 }
-set_variable = { xnfultnationalists_happy = 90 }
+set_variable = { xnfradicals_happy = 75 }
+set_variable = { xnfrepublicans_happy = 75 }
+set_variable = { xnfultnationalists_happy = 95 }
 
 1 = { set_variable = {  vpsize = 1 } }
 851 = { set_variable = {  vpsize = 1 } }

@@ -11,9 +11,33 @@ scripted_gui = {
 			always = no
 		}
 
-		dirty = pie_chart_dirty
+		effects = {
+			XNF_Departments_click = {
+				if = {
+					limit = {
+						has_country_flag = XNF_map_open
+					}
+					clr_country_flag = XNF_map_open
+				}
+				else = {
+					set_country_flag = XNF_map_open
+				}
+			}
+			XNF_EditGov_click = {
+				if = {
+					limit = {
+						has_country_flag = XNF_laws_open
+					}
+					clr_country_flag = XNF_laws_open
+				}
+				else = {
+					set_country_flag = XNF_laws_open
+				}
+			}
+		}
 
 		properties = {
+
 			XNF_Senate_status = { frame = xnf_sen_lyl_100 }
 			XNF_Leg_status = { frame = xnf_leg_lyl }
 
@@ -119,6 +143,47 @@ scripted_gui = {
 			pie99 = { frame = pie_chart^99 }
 		}
 
+	}
+
+	XNF_state_map_gui = {
+		context_type = player_context
+		window_name = "xnf_french_state_map"
+
+		visible = {
+			is_ai = no
+			has_country_flag = XNF_map_open
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		effects = {
+			XNF_state_map_close_click = {
+				clr_country_flag = XNF_map_open
+			}
+		}
+
+	}
+
+	XNF_voter_rules_gui = {
+		context_type = player_context
+		window_name = "xnf_laws_view"
+
+		visible = {
+			is_ai = no
+			has_country_flag = XNF_laws_open
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		effects = {
+			XNF_law_close_click = {
+				clr_country_flag = XNF_laws_open
+			}
+		}
 	}
 
 }

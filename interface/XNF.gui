@@ -11,35 +11,16 @@ guiTypes = {
 			position = { x = -5 y = -20 }
 			scale = 1.1
 		}
-
-		instantTextBoxType = {
-			name = "xnf_s"
-			position = {
-				x = 35
-				y = -15
-			}
-			font = "hoi_16mbs"
-			text = xnf_s_color
-		}
-		instantTextBoxType = {
-			name = "xnf_l"
-			position = {
-				x = 85
-				y = -15
-			}
-			font = "hoi_16mbs"
-			text = xnf_l_color
-		}
         iconType = {
             name = "XNF_Senate_status"
             quadTextureSprite = "GFX_senate_bar"
-            position = { x = 15 y = 5 }
+            position = { x = 25 y = -15 }
 			pdx_tooltip = senate_xnf
         }
         iconType = {
             name = "XNF_Leg_status"
             quadTextureSprite = "GFX_leg_bar"
-            position = { x = 65 y = 5 }
+            position = { x = 75 y = -15 }
 			pdx_tooltip = leg_xnf
         }
 		instantTextBoxType = {
@@ -57,11 +38,60 @@ guiTypes = {
             position = { x = 275 y = 65 }
 		}
 		buttonType = {
+			name = "XNF_EditGov"
+			buttonText = xnf_govedit_text
+			quadTextureSprite ="GFX_xnf_gov_edit_button"
+			buttonFont = "hoi_16mbs"
+            position = { x = 20 y = 185 }
+		}
+		buttonType = {
 			name = "XNF_Departments"
-			buttonText = "Open Map of Departments"			
+			buttonText = xnf_department_text
 			quadTextureSprite ="GFX_button_359x34"
 			buttonFont = "hoi_16mbs"
             position = { x = 130 y = 185 }
+		}
+		iconType = {
+			name = "xnf_s_shadow"
+			spriteType  = "GFX_txt_shadow_xnf"
+			position = {
+				x = 28
+				y = 74
+			}
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "xnf_l_shadow"
+			spriteType  = "GFX_txt_shadow_xnf"
+			position = {
+				x = 78
+				y = 74
+			}
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "xnf_s"
+			position = {
+				x = 35
+				y = 75
+			}
+			maxWidth = 10
+			maxHeight = 10
+			text = xnf_s_color
+			font = "hoi_16mbs"
+			pdx_tooltip = senate_xnf
+		}
+		instantTextBoxType = {
+			name = "xnf_l"
+			position = {
+				x = 85
+				y = 75
+			}
+			maxWidth = 10
+			maxHeight = 10
+			text = xnf_l_color
+			font = "hoi_16mbs"
+			pdx_tooltip = leg_xnf
 		}
 
 		containerWindowType = {
@@ -972,7 +1002,107 @@ guiTypes = {
 			}
 	
 		}
-	
+
+		iconType = {
+			name = "XNF_pie_overlay"
+			quadTextureSprite = "XNF_gui_piechart"
+			position = { x = 121 y = 37 }
+			scale = 0.29
+			pdx_tooltip = pie_percents
+		}
+
+	}
+
+	containerWindowType = {
+		name = "xnf_french_state_map"
+		position = { x = 600 y = 300 }
+		size = { width = 470 height = 220 }
+		moveable = yes
+
+		background = {
+			name = "state_bg"
+			quadTextureSprite = "XNF_state_gui_bg"
+		}
+		buttonType = {
+			name = "XNF_state_map_close"
+			spriteType = "GFX_closebutton"
+			position = { x = 15 y = 26 }
+		}
+		instantTextBoxType = {
+			name = "XNF_state_map_title"
+			text = "Departments of France"
+			font = "hoi_30header"
+			maxWidth = 1000
+            position = { x = 95 y = 26 }
+		}
+	}
+
+	containerWindowType = {
+		name = "xnf_laws_view"
+		position = { x = 600 y = 300 }
+		size = { width = 500 height = 400 }
+		moveable = yes
+
+		background = {
+			name = "law_bg"
+			quadTextureSprite = "GFX_xnf_law_bg"
+			scale = 3
+		}
+		buttonType = {
+			name = "XNF_law_close"
+			spriteType = "GFX_closebutton"
+			position = { x = 26 y = 27 }
+		}
+		instantTextBoxType = {
+			name = "XNF_laws_title"
+			text = "Laws of the French Government"
+			font = "hoi_30header"
+			maxWidth = 250
+			format = centre
+            position = { x = 70 y = 28 }
+		}
+		buttonType = {
+			name = "XNF_law_all_vote"
+			spriteType = "GFX_XNF_law_all_vote"
+			frame = 1
+			position = { x = 280 y = 120 }
+		}
+		buttonType = {
+			name = "XNF_law_men_vote"
+			spriteType = "GFX_XNF_law_men_vote"
+			frame = 2
+			position = { x = 205 y = 120 }
+		}
+		buttonType = {
+			name = "XNF_law_nobles_vote"
+			spriteType = "GFX_XNF_law_nobles_vote"
+			frame = 1
+			position = { x = 130 y = 120 }
+		}
+		buttonType = {
+			name = "XNF_law_none_vote"
+			spriteType = "GFX_XNF_law_no_vote"
+			frame = 1
+			position = { x = 55 y = 120 }
+		}
+		buttonType = {
+			name = "XNF_law_vote_leg"
+			spriteType = "GFX_XNF_law_vote_leg"
+			frame = 2
+			position = { x = 90 y = 220 }
+		}
+		buttonType = {
+			name = "XNF_law_vote_sen"
+			spriteType = "GFX_XNF_law_vote_sen"
+			frame = 1
+			position = { x = 165 y = 220 }
+		}
+		buttonType = {
+			name = "XNF_law_total_control"
+			spriteType = "GFX_XNF_law_total_control"
+			frame = 1
+			position = { x = 240 y = 220 }
+		}
 	}
 
 }

@@ -1,4 +1,20 @@
 spriteTypes = {
+
+	spriteType = {
+		name = "GFX_xnf_gov_edit_button"
+		textureFile = "gfx/XNF/gov_rules_btn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_txt_shadow_xnf"
+		textureFile = "gfx/XNF/EPICFUCKINGSHADOW.dds"
+	}
+
+	spriteType = {
+		name = "GFX_xnf_law_bg"
+		textureFile = "gfx/XNF/laws_bg.dds"
+	}
+
 	spriteType = {
 		name = "GFX_pie_chart_segment"
 		texturefile = "gfx/XNF/pie_chart_segment.dds"
@@ -9,6 +25,18 @@ spriteTypes = {
 		name = "XNF_gui_bg"
 		legacy_lazy_load = no
 		texturefile = "gfx/XNF/xnf_gov_bg.dds"
+	}
+
+	spriteType = {
+		name = "XNF_state_gui_bg"
+		legacy_lazy_load = no
+		texturefile = "gfx/XNF/state_map_bg.dds"
+	}
+
+	spriteType = {
+		name = "XNF_gui_piechart"
+		legacy_lazy_load = no
+		texturefile = "gfx/XNF/piechart.dds"
 	}
 
 	spriteType = {
@@ -42,6 +70,48 @@ spriteTypes = {
 		}
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = no
+	}
+
+	spriteType = {
+		name = "GFX_XNF_law_all_vote"
+		texturefile = "gfx/XNF/all_vote_law.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_XNF_law_men_vote"
+		texturefile = "gfx/XNF/men_vote_law.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_XNF_law_no_vote"
+		texturefile = "gfx/XNF/no_vote_law.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_XNF_law_nobles_vote"
+		texturefile = "gfx/XNF/nobles_vote.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_XNF_law_total_control"
+		texturefile = "gfx/XNF/total_control.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_XNF_law_vote_leg"
+		texturefile = "gfx/XNF/vote_leg.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_XNF_law_vote_sen"
+		texturefile = "gfx/XNF/vote_sen.dds"
+		noOfFrames = 2
 	}
 
 }

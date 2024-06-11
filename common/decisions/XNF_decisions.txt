@@ -66,6 +66,12 @@ XNF_rebuilding_france_cat = {
 	}
 }
 XNF_loyalist_royalty_cat = {
+	XNF_test_something = {
+		complete_effect = {
+			set_variable = { xnf_sen_lyl = 2 }
+			set_variable = { xnf_sen_lyl_100 = 20 }
+		}
+	}
 	XNF_spread_monarchy_support = {
 		state_target = yes
 		target_trigger = {
@@ -75,7 +81,7 @@ XNF_loyalist_royalty_cat = {
 			}
 		}
 		complete_effect = {
-			add_political_power = 1000
+			add_political_power = 100
 		}
 	}
 	XNF_build_palace_here = {

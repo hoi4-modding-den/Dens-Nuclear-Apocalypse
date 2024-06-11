@@ -58,6 +58,11 @@
   L_YAY: "§GL§!"
   L_MEH: "§YL§!"
   L_BOO: "§RL§!"
+  pie_percents: "Loyalists: §g[?xnfloyalists]%§!\nUltranationalists: §L[?xnfultnationalists]%§!\nRepublicans: §2[?xnfrepublicans]%§!\nRadicals: §R[?xnfradicals]%§!"
+  xnf_open: "Open"
+  xnf_close: "Close"
+  xnf_department_text: "[open_or_close_xnf] Map of Departments"	
+  xnf_govedit_text: "Rules"
 
 # FOCUS TREE
 

@@ -247,3 +247,22 @@ defined_text = {
 		localization_key = XNF_boo_nat
 	}
 }
+defined_text = {
+	name = open_or_close_xnf
+
+	text = {
+		trigger = {
+			has_country_flag = XNF_map_open
+		}
+		localization_key = xnf_close
+	}
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = XNF_map_open
+			}
+		}
+		localization_key = xnf_open
+	}
+}
