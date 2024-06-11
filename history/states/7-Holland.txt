@@ -6,8 +6,9 @@ state={
 	}
 
 	history={
-		owner = LIB # HOL
-		#add_core_of = HOL
+		owner = XNL
+		add_core_of = XNL
+		
 		victory_points = {
 			391 40 
 		}
@@ -25,21 +26,17 @@ state={
 			#air_base = 5
 			3314 = {
 				naval_base = 5
-
 			}
 			9498 = {
 				naval_base = 10
-
 			}
-
 		}
-
 	}
 
 	provinces={
 		68 391 3211 3314 9498 
 	}
-manpower=2748667
+	manpower=2748667
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 

@@ -58,6 +58,10 @@ XNI = {
 	color = rgb { 206 130 95 }
 	color_ui = rgb { 206 130 95 }
 }
+XNL = {
+	color = rgb { 100 80 80 }
+	color_ui = rgb { 100 80 80 }
+}
 XNM = {
 	color = rgb { 41 74 173 }
 	color_ui = rgb { 41 74 173 }

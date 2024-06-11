@@ -1,0 +1,24 @@
+capital = 7
+oob = "XNL_2236"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+
+# TODO: characters
+# TODO: ideas
+# TODO: technology
+
+set_popularities = {
+	democratic = 55
+	fascism = 30
+	neutrality = 10
+	communism = 5
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = 2234.6.4
+	election_frequency = 24
+	elections_allowed = no
+}
