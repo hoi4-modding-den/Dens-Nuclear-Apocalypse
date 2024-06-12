@@ -65,7 +65,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_autobahn
-		icon = GFX_
+		icon = GFX_focus_generic_road_investment
 		x = 4
 		y = 2
 		#relative_position_id = 2
@@ -84,7 +84,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_agrarian
-		icon = GFX_
+		icon = GFX_focus_CHL_focus_on_cattle_and_wool
 		x = 2
 		y = 3
 		#relative_position_id = 2
@@ -104,7 +104,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_industrial
-		icon = GFX_
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 6
 		y = 3
 		#relative_position_id = 2
@@ -124,7 +124,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_farm_modern
-		icon = GFX_
+		icon = GFX_focus_generic_public_works
 		x = 0
 		y = 4
 		#relative_position_id = 2
@@ -143,7 +143,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_wine_time
-		icon = GFX_
+		icon = GFX_focus_generic_royal_wedding
 		x = 2
 		y = 4
 		#relative_position_id = 2
@@ -162,7 +162,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_military
-		icon = GFX_
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 4
 		y = 4
 		#relative_position_id = 2
@@ -181,7 +181,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_fix_automation
-		icon = GFX_
+		icon = GFX_focus_DEN_no_regulations
 		x = 6
 		y = 4
 		#relative_position_id = 2
@@ -200,7 +200,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_gem_mines
-		icon = GFX_
+		icon = GFX_focus_generic_tungsten
 		x = 8
 		y = 4
 		#relative_position_id = 2
@@ -219,7 +219,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_american_farms
-		icon = GFX_
+		icon = GFX_focus_generic_farmland
 		x = 2
 		y = 5
 		#relative_position_id = 2
@@ -240,7 +240,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_research_slot
-		icon = GFX_
+		icon = GFX_focus_research
 		x = 4
 		y = 5
 		#relative_position_id = 2
@@ -261,7 +261,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_american_factories
-		icon = GFX_
+		icon = GFX_focus_generic_tank_production
 		x = 6
 		y = 5
 		#relative_position_id = 2
@@ -282,7 +282,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_economy_miracle
-		icon = GFX_
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 4
 		y = 6
 		#relative_position_id = 2
@@ -301,7 +301,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_recruit_germans
-		icon = GFX_
+		icon = GFX_focus_generic_workers_and_farmers_rise
 		x = 8
 		y = 2
 		#relative_position_id = 2
@@ -319,7 +319,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_recruit_americans
-		icon = GFX_
+		icon = GFX_focus_usa_recruit_the_free_corps
 		x = 10
 		y = 2
 		#relative_position_id = 2
@@ -340,7 +340,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_1
-		icon = GFX_
+		icon = GFX_goal_generic_construction
 		x = 12
 		y = 2
 		#relative_position_id = 2
@@ -359,7 +359,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_2
-		icon = GFX_
+		icon = GFX_focus_spr_crush_the_revolution
 		x = 9
 		y = 3
 		#relative_position_id = 2
@@ -378,7 +378,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_3
-		icon = GFX_
+		icon = GFX_focus_BRA_cafe_com_leite_politics
 		x = 11
 		y = 3
 		#relative_position_id = 2
@@ -397,7 +397,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_4
-		icon = GFX_
+		icon = GFX_focus_generic_agricultural_subsidies
 		x = 13
 		y = 3
 		#relative_position_id = 2
@@ -416,7 +416,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_5
-		icon = GFX_
+		icon = GFX_focus_generic_military_mission
 		x = 15
 		y = 2
 		#relative_position_id = 2
@@ -435,7 +435,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_6
-		icon = GFX_
+		icon = GFX_focus_ger_reichskommisariats
 		x = 15
 		y = 3
 		#relative_position_id = 2
@@ -454,7 +454,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_7
-		icon = GFX_
+		icon = GFX_focus_usa_voter_registration_act
 		x = 17
 		y = 3
 		#relative_position_id = 2
@@ -473,7 +473,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_8
-		icon = GFX_
+		icon = GFX_focus_ger_great_red_menace
 		x = 10
 		y = 4
 		#relative_position_id = 2
@@ -492,7 +492,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_9
-		icon = GFX_
+		icon = GFX_focus_generic_provoke_border_clashes
 		x = 14
 		y = 4
 		#relative_position_id = 2
@@ -511,7 +511,7 @@ focus_tree = {
 
 	focus = {
 		id = XRP_false_10
-		icon = GFX_
+		icon = GFX_focus_attack_soviet
 		x = 12
 		y = 5
 		#relative_position_id = 2

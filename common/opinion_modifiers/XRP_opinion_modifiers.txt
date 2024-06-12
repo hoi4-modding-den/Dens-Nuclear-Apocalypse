@@ -1,0 +1,14 @@
+opinion_modifiers = {
+	XRP_Anti-German = {
+		value = -25
+	}
+	XRP_Anti-Nazi = {
+		value = -100
+	}
+	XRP_Anti-German_Confused = {
+		value = -10
+	}
+	XRP_Anti-Muslim = {
+		value = -50
+	}
+}

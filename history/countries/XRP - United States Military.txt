@@ -147,10 +147,10 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 42 #lingering american ideals of democracy
-    fascism = 30
-    communism = 20 #do you remember Aaron Bushnell? 
-    neutrality = 8
+	democratic = 38 #lingering american ideals of democracy
+    fascism = 35
+    communism = 15 #do you remember Aaron Bushnell? 
+    neutrality = 12
 }
 
 #country_event = { id = XRP_natural_event.1 days = 1 }

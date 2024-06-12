@@ -5,8 +5,22 @@ on_actions = {
                 country_event = { 
                     id = XRP_natural_event.1
                     days = 0
-                    random_days = 0     # Fires in 45d
+                    random_days = 0     # Fires instantly
                 }
+		add_opinion_modifier = { target = XAP modifier = XRP_Anti-German }
+		add_opinion_modifier = { target = XGE modifier = XRP_Anti-German }
+		add_opinion_modifier = { target = XOO modifier = XRP_Anti-German }
+		add_opinion_modifier = { target = XSH modifier = XRP_Anti-German }
+		add_opinion_modifier = { target = XLH modifier = XRP_Anti-Nazi }
+		add_opinion_modifier = { target = XTI modifier = XRP_Anti-German_Confused }
+		add_opinion_modifier = { target = XSS modifier = XRP_Anti-German_Confused }
+		add_opinion_modifier = { target = XNL modifier = XRP_Anti-German_Confused }
+		add_opinion_modifier = { target = XLX modifier = XRP_Anti-German_Confused }
+		add_opinion_modifier = { target = XJY modifier = XRP_Anti-German_Confused }
+		add_opinion_modifier = { target = XDK modifier = XRP_Anti-German_Confused }
+		add_opinion_modifier = { target = XAL modifier = XRP_Anti-German_Confused }
+		add_opinion_modifier = { target = XAD modifier = XRP_Anti-Muslim }
+		add_opinion_modifier = { target = XTR modifier = XRP_Anti-Muslim }
             }
         }
     }
