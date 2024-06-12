@@ -581,6 +581,16 @@ news_event = {
             add_core_of = XSS
 
         }
+        984 = {
+
+            add_core_of = XSS
+
+        }
+        983 = {
+
+            add_core_of = XSS
+
+        }
 set_capital = {
   state = 64
   remember_old_capital = no
