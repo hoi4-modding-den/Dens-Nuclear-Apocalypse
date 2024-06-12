@@ -3169,11 +3169,11 @@
 		}
 	}
 	focus = {
-		id = XTI_colonize_piedmonte
+		id = XTI_piedmonte_puppet
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_strike_the_lombards focus = XTI_trent_or_war }
-		mutually_exclusive = { focus = XTI_establish_piedmonte_puppet }
+		mutually_exclusive = { focus = XTI_strike_prague }
 		x = 0
 		y = 1
 		relative_position_id = XTI_strike_the_lombards
@@ -3202,9 +3202,10 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			transfer_state = 158
-			add_state_core = 158
-			add_political_power = -150
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XLA
+			}
 		}
 	}
 	focus = {
@@ -3246,11 +3247,11 @@
 		}
 	}
 	focus = {
-		id = XTI_establish_piedmonte_puppet
+		id = XTI_strike_prague
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_strike_the_lombards focus = XTI_trent_or_war }
-		mutually_exclusive = { focus = XTI_colonize_piedmonte }
+		mutually_exclusive = { focus = XTI_piedmonte_puppet }
 		x = 2
 		y = 1
 		relative_position_id = XTI_strike_the_lombards
@@ -3278,11 +3279,10 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			XPE = {
-				add_state_core = 158
-				transfer_state = 158
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XCM
 			}
-			puppet = XPE
 		}
 	}
 	focus = {
@@ -3652,6 +3652,10 @@
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
+				target = XNL
+			}
+			create_wargoal = {
+				type = annex_everything
 				target = XLX
 			}
 			create_wargoal = {
@@ -3719,7 +3723,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_consolidate_swiss }
-		prerequisite = { focus = XTI_colonize_piedmonte focus = XTI_establish_piedmonte_puppet }
+		prerequisite = { focus = XTI_piedmonte_puppet focus = XTI_strike_prague }
 		prerequisite = { focus = XTI_integrate_lowlands }
 		prerequisite = { focus = XTI_core_americans }
 		prerequisite = { focus = XTI_core_saxony }
@@ -5647,7 +5651,7 @@
 		icon = GFX_
 		
 		prerequisite = { focus = XTI_bomber focus = XTI_fighter }
-		mutually_exclusive = { focus = XTI_fighter }
+#		mutually_exclusive = { focus = XTI_fighter }
 		x = 1
 		y = 1
 		relative_position_id = XTI_fighter
