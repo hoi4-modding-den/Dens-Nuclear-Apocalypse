@@ -1,0 +1,123 @@
+division_template = {
+	name = "Santa-Infantería"
+	division_names_group = XTH_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		light_armor = { x = 3 y = 0 }
+	}
+	template_counter = 33
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+	override_model = FIN_infantry_entity
+}
+
+division_template = {
+	name = "Santa-Reclutas"
+	division_names_group = XTH_MIL_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 1 }
+	}
+	template_counter = 14
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	override_model = FIN_infantry_alt_1_entity
+}
+
+units = {
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 6907
+		division_template = "Santa-Reclutas"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 6907
+		division_template = "Santa-Reclutas"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 3
+		}
+		location = 13232
+		division_template = "Santa-Reclutas"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 4
+		}
+		location = 13232
+		division_template = "Santa-Reclutas"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+
+
+
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 726
+		division_template = "Santa-Infantería"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 3727
+		division_template = "Santa-Infantería"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 9699
+		division_template = "Santa-Infantería"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+
+}

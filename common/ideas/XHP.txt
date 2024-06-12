@@ -8,6 +8,9 @@ ideas = {
 				army_org_factor = -0.2
 				army_morale_factor = -0.1
 			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
 		}
 	}
 	country = {
@@ -19,12 +22,18 @@ ideas = {
 				army_defence_factor = -0.10
 				breakthrough_factor = -0.05
 			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
 		}
 		idea_XHP_chaotic_military1 = { # Padded armor
 			picture = XHP_chaotic_military
 			modifier = {
 				army_org_factor = -0.05
 				army_attack_factor = -0.05
+			}
+			allowed_civil_war = {
+				has_government = democratic
 			}
 		}
 		idea_XHP_chaotic_military2 = { # Numbers
@@ -33,6 +42,9 @@ ideas = {
 				army_org_factor = 0.15
 				army_attack_factor = 0.05
 				breakthrough_factor = -0.15
+			}
+			allowed_civil_war = {
+				has_government = democratic
 			}
 		}
 	}

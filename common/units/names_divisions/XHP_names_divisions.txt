@@ -54,3 +54,33 @@ XHP_MIL_01 = {
 		1 = { "Reclutas División %s." }
 	}
 }
+
+
+### XTH
+
+XTH_MIL_01 = {
+	name = "Santa-Reclutas"
+	for_countries = { XHP }
+	can_use = { always = yes }
+	division_types = { militia }
+	fallback_name = "Reclutas División %s."
+
+	ordered = {
+		1 = { "Reclutas División %s." }
+	}
+}
+
+XTH_INF_01 = {
+	name = "Santa-Infantería"
+
+	for_countries = { XHP }
+	can_use = { always = yes }
+
+	division_types = { infantry }
+
+	fallback_name = "Santa-Infantería %s."
+
+	ordered = {
+		1 = { "Santa-Infantería %s." }
+	}
+}

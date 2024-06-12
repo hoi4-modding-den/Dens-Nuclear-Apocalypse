@@ -1,8 +1,9 @@
-XHP_crusader_crisis = {
+XHP_crusader_crisis = { ### Initial uprising of XTH
 	XHP_crusader_crisis1 = {
 		icon = x
 		days_mission_timeout = 50
 		is_good = no
+		fire_only_once = yes
 		allowed = {
 			original_tag = XHP
 		}
@@ -23,7 +24,8 @@ XHP_crusader_crisis = {
 				}
 				start_civil_war = {
 					ideology = fascism
-					size = 0
+					size = 0.1
+					army_ratio = 0
 					capital = 174
 					states = {
 						174
@@ -32,8 +34,161 @@ XHP_crusader_crisis = {
 				}
 				XTH = {
 					set_cosmetic_tag = ct_XTH_rise
+					add_manpower = 110489
+					load_oob = XTH_rise
+					delete_unit_template_and_units = {
+						division_template = "Reclutas"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Infantería Nacional Española"
+						disband = yes
+					}
+				}
+				XHP = {
+					add_manpower = 57489
+					set_political_party = {
+						ideology = fascism
+						popularity = 0
+					}
+					
 				}
 			}
 		}
 	}
+}
+
+XTH_partisan_uprising = {
+	XTH_partisan_up1 = { # selectable mission to sway mobilizing armies
+		icon = x
+		fire_only_once = yes
+		state_target = yes
+		cost = 25
+		target_trigger = {
+			FROM = {
+				is_controlled_by = XHP
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = { #what needs to be done to do this
+			NOT = {
+				has_country_flag = cf_xth_swaying # make sure only one can be done at a time
+			}
+		}
+		complete_effect = { # when you click the button
+			hidden_effect = {
+				set_country_flag = cf_xth_swaying
+				FROM = {
+					set_state_flag = sf_xth_swaying
+				}
+			}
+
+		}
+	}
+	XTH_partisan_up2 = {
+		icon = x
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 10
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_trigger = {
+			FROM = {
+				has_state_flag = sf_xth_swaying
+			}
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			has_country_flag = cf_xth_swaying
+		}
+		complete_effect = { # this should be empty
+
+		}
+
+		timeout_effect  = { # when it timeouts
+			if = {
+				limit = { 41 = { has_state_flag = sf_xth_swaying } }
+				FROM = { # if its madrid we're making a standard infantry unit
+					create_unit = {
+						division = "name = \"Partisano\" division_template = \"Santa-Reclutas\" start_experience_factor = 0.35 start_manpower_factor = 1 start_equipment_factor = 1"
+						owner = XTH
+						count = 3
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 3
+							modifier = {
+								factor = 10
+								tag = XHP
+							}
+						}
+					}
+					create_unit = {
+						division = "name = \"Santa-Infanteria-de-Madrid\" division_template = \"Santa-Infantería\" start_experience_factor = 0.5 start_manpower_factor = 1 start_equipment_factor = 1"
+						owner = XTH
+						count = 3
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 3
+							modifier = {
+								factor = 10
+								tag = XHP
+							}
+						}
+					}
+					hidden_effect = {
+						clr_country_flag = cf_xth_swaying
+						FROM = {
+							clr_state_flag = sf_xth_swaying
+						}
+					}
+				}
+				else = {
+					FROM = {
+						create_unit = {
+							division = "name = \"Partisano\" division_template = \"Santa-Reclutas\" start_experience_factor = 0.35 start_manpower_factor = 1 start_equipment_factor = 1"
+							owner = XTH
+							count = 3
+							allow_spawning_on_enemy_provs = yes
+							country_score = {
+								base = 3
+								modifier = {
+									factor = 10
+									tag = XHP
+								}
+							}
+						}
+						hidden_effect = {
+							create_unit = {
+								division = "name = \"Partisano\" division_template = \"Reclutas\" start_experience_factor = 0.35 start_manpower_factor = 1 start_equipment_factor = 1"
+								owner = XHP
+								count = 1
+								allow_spawning_on_enemy_provs = yes
+								country_score = {
+									base = 3
+									modifier = {
+										factor = 10
+										tag = XHP
+									}
+								}
+							}
+						}
+					}
+					hidden_effect = {
+						clr_country_flag = cf_xth_swaying
+						FROM = {
+							clr_state_flag = sf_xth_swaying
+						}
+					}
+				}
+			}
+			
+			# Add the divisions or whatever
+
+		}
+	}
+
 }

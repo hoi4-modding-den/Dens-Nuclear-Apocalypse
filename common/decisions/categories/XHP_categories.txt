@@ -9,3 +9,16 @@ XHP_crusader_crisis = {
 		has_country_flag = cf_crusader_crisis
 	}
 }
+
+XTH_partisan_uprising = {
+	priority = 10
+	icon = GFX_category_icon
+	visible = {
+		XTH = {
+			has_civil_war = yes
+		}
+	}
+	allowed = {
+		tag = XTH
+	}
+}

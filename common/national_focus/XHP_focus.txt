@@ -61,7 +61,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				174 = {
 					set_demilitarized_zone = yes
@@ -202,7 +202,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				174 = {
 					set_demilitarized_zone = yes

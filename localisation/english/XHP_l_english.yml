@@ -29,6 +29,9 @@ XHP_crusader_crisis:0 "The Crusader Crisis"
 XHP_crusader_crisis_desc:0 "The Order of Santiago, originally known as the Order of Saint James of the Sword, is one of the most renowned chivalric orders in Spain. Founded in the 12th century during the Reconquista, the period in which Christian kingdoms sought to retake the Iberian Peninsula from Islamic rule.\n\nInitially established as a religious and military institution, the Order of Santiago attracted noble knights who pledged their allegiance to defend the Christian faith and territories. Over time, it evolved into a powerful organization with vast landholdings and significant political influence.\n\nNow they serve as a political behemoth heavily influencing the politics of the Imperial Court while draining the little political power that it has. In the recent weeks, the Holy Order has begun organizing its forces independent from government operations..."
 XHP_crusader_crisis1:0 "The Order of Santiago is Mobilizing against Us!"
 
+XTH_partisan_uprising:0 "Reach out to the Provincial Governors"
+XTH_partisan_up1:0 "Sway [FROM.GetName]"
+XTH_partisan_up2:0 "Swaying [FROM.GetName]"
 
 ### Characters
 XHP_senate:0 "Corte Imperial"
