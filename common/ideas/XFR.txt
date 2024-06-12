@@ -70,8 +70,12 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				is_subject_of = XFR
 			}
+
+            cancel = {
+                NOT = { is_subject_of = XFR }
+            }
 
            removal_cost = -1
 
@@ -80,6 +84,32 @@ ideas = {
             modifier = {
                 research_speed_factor = 0.1
                 consumer_goods_factor = -0.05
+            }
+
+        }
+
+        XFR_swiss_burgundian_democracy = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+            cancel = {
+                NOT = { has_government = democratic }
+            }
+
+           removal_cost = -1
+
+            picture = generic_democratic_drift_bonus
+
+            modifier = {
+                democratic_drift = 0.1
+                democratic_acceptance = 25
+                stability_factor = 0.05
+                improve_relations_maintain_cost_factor = -0.2
             }
 
         }
@@ -503,8 +533,12 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = democratic
 			}
+            
+            cancel = {
+                has_government = fascism
+            }
 
            removal_cost = -1
 
@@ -543,8 +577,12 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				NOT = { has_government = fascism }
 			}
+
+            cancel = {
+                has_government = fascism
+            }
 
            removal_cost = -1
 
@@ -588,7 +626,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = generic_democratic_drift_bonus
+            picture = generic_victors_of_ww1
 
             modifier = {
 			    political_power_gain = 0.02
@@ -754,7 +792,10 @@ ideas = {
 			}
 
             cancel = {
-                has_war_with = XFR
+                any_other_country = {
+                    has_war_with = ROOT
+                    has_idea = XFR_customs_agreement_head_idea
+                }
             }
 
             do_effect = {

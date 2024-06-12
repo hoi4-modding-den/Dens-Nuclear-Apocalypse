@@ -928,6 +928,10 @@ country_event = { # Generic Invite to Faction
                     FROM = { has_military_access_to = ROOT }
                 }
             }
+            modifier = {
+                add = 1000000
+                original_tag = XSS
+            }
         }
         FROM = { country_event = { id = XFR_events.35 days = 1 } }
         FROM = { add_to_faction = ROOT }
@@ -946,6 +950,10 @@ country_event = { # Generic Invite to Faction
         name = XFR_events.22.b
         ai_chance = {
             base = 1
+            modifier = {
+                factor = 0
+                original_tag = XSS
+            }
         }
         FROM = { country_event = { id = XFR_events.23 days = 1 } }
     }
@@ -1284,7 +1292,7 @@ country_event = { # XFR wants to protect Switzerland
     option = { 
         name = XFR_events.32.a
         ai_chance = {
-            base = 10
+            base = 1000
         } 
         XFR = { country_event = { id = XFR_events.33 days = 1 } }
         effect_tooltip = {
@@ -1316,7 +1324,7 @@ country_event = { # XFR wants to protect Switzerland
     option = { 
         name = XFR_events.32.b
         ai_chance = {
-            base = 1
+            base = 0
         } 
         XFR = { country_event = { id = XFR_events.34 days = 1 } }
         effect_tooltip = {
@@ -1325,9 +1333,14 @@ country_event = { # XFR wants to protect Switzerland
                     target = XSS
                     modifier = XFR_declined_protection
                 }
+                create_wargoal = {
+                    target = FROM
+                    type = puppet_wargoal_focus
+                }
 			}
         }
         add_political_power = -100
+        add_stability = -0.15
     }
 }
 
@@ -1345,18 +1358,18 @@ country_event = { # XFR wants to protect Switzerland -> Swiss accept
             base = 1
         } 
         every_other_country = {
-                limit = {
-                    is_subject_of = FROM
-                }
-                XFR = { 
-                       set_autonomy = {
-    			    	target = PREV
-    				    autonomous_state = autonomy_puppet
-    			    	end_wars = no
-    			    	end_civil_wars = no
-				    }
-                }
+            limit = {
+                is_subject_of = FROM
             }
+            XFR = { 
+                set_autonomy = {
+    			    target = PREV
+    			    autonomous_state = autonomy_puppet
+    			    end_wars = no
+    			    end_civil_wars = no
+				}
+            }
+        }
         set_autonomy = {
     		target = XSS
     		autonomous_state = autonomy_puppet
@@ -1382,10 +1395,13 @@ country_event = { # XFR wants to protect Switzerland -> Swiss decline
             base = 1
         } 
         add_opinion_modifier = {
-            target = XSS
+            target = FROM
             modifier = XFR_declined_protection
         }
-        
+        create_wargoal = {
+            target = FROM
+            type = puppet_wargoal_focus
+        }
     }
 }
 
@@ -1488,11 +1504,6 @@ news_event = { # Coup in Alsace
         }
         42 = { add_claim_by = ROOT }
         983 = { add_claim_by = ROOT }
-        add_ai_strategy = {
-            type = conquer
-            id = XRP
-            value = 100
-        }
         add_opinion_modifier = {
 			target = XRP
     		modifier = XFR_hostility

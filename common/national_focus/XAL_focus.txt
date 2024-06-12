@@ -670,14 +670,14 @@
 		available = {
 			has_government = fascism
 			is_subject = no
-			XRP = {
-				exists = yes
-			}
 		}
 
 		bypass = {
-			51 = {
-				is_owned_and_controlled_by = ROOT
+			OR = {
+				has_war_with = XRP
+				XRP = {
+					exists = no
+				}
 			}
 		}
 
@@ -692,9 +692,6 @@
 			create_wargoal = {
 				target = XRP
 				type = annex_everything
-			}
-			51 = {
-				transfer_state_to = ROOT
 			}
 		}
 	}
@@ -769,6 +766,22 @@
     			threat = 5
     			name = XAL_delusions_of_grandeur
 			}
+			50 = {
+				add_claim_by = ROOT
+			}
+			add_ai_strategy = {
+            	type = conquer
+       	    	id = XAP
+       	    	value = 1000
+        	}
+			55 = {
+				add_claim_by = ROOT
+			}
+			add_ai_strategy = {
+            	type = conquer
+            	id = XOO
+            	value = 1000
+        	}
 		}
 	}
 

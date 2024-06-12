@@ -1996,7 +1996,6 @@ XAL_integration = {
 			highlight_state_targets = {
 				state = 42
 				state = 983
-				state = 51
 			}
 		}
 
@@ -2007,20 +2006,16 @@ XAL_integration = {
 			983 = {
 				is_owned_and_controlled_by = ROOT
 			}
-			51 = {
-				is_owned_and_controlled_by = ROOT
-			}
 		}
 
 		visible = { 
+			42 = { is_claimed_by = ROOT }
+			983 = { is_claimed_by = ROOT }
 			NOT = {
 				42 = {
 					is_core_of = ROOT
 				}
 				983 = {
-					is_core_of = ROOT
-				}
-				51 = {
 					is_core_of = ROOT
 				}
 			}
@@ -2033,9 +2028,6 @@ XAL_integration = {
 						is_owned_and_controlled_by = ROOT
 					}
 					983 = {
-						is_owned_and_controlled_by = ROOT
-					}
-					51 = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
@@ -2061,6 +2053,120 @@ XAL_integration = {
 				add_core_of = XAL
 			}
 			51 = {
+				add_claim_by = XAL
+			}
+        }
+	}
+
+	XAL_integrate_hessen  = { 
+		
+		icon = GFX_decision_generic_pickelhaube
+
+		allowed = {
+			original_tag = XAL
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 55
+			}
+		}
+
+		available = {
+			55 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+
+		visible = { 
+			55 = { is_claimed_by = ROOT }
+			NOT = {
+				55 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		cancel_trigger = {
+			NOT = {
+				OR = {
+					55 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		days_remove = 150
+
+		#days_re_enable = 180
+
+        ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			55 = {
+				add_core_of = XAL
+			}
+        }
+	}
+
+	XAL_integrate_wuerttemberg  = { 
+		
+		icon = GFX_decision_generic_pickelhaube
+
+		allowed = {
+			original_tag = XAL
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 50
+			}
+		}
+
+		available = {
+			50 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+
+		visible = { 
+			50 = { is_claimed_by = ROOT }
+			NOT = {
+				50 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		cancel_trigger = {
+			NOT = {
+				OR = {
+					50 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+
+		days_remove = 150
+
+		#days_re_enable = 180
+
+        ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			50 = {
 				add_core_of = XAL
 			}
         }
