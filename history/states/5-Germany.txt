@@ -10,8 +10,7 @@ state={
 		owner = XKR
 		add_core_of = XKR
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 2
 		}
 
 	}
@@ -19,7 +18,7 @@ state={
 	provinces={
 		266 281 395 3384 6375 9327 9372 9398 11245 11386 
 	}
-	manpower=825405
+	manpower=321030
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=12.000
