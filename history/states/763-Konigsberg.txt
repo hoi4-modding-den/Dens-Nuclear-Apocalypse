@@ -2,19 +2,15 @@
 state={
 	id=763
 	name="STATE_763"
-manpower=1426823
-	state_category = city
 
 	history={
-		owner = LIB # GER
-		
+		owner = XKR
+		add_core_of = XKR
 		victory_points = {
 			6332 10 
 		}
-
 		buildings = {
-			infrastructure = 3 #was: 6
-			#industrial_complex = 2
+			infrastructure = 3
 			6332 = {
 				bunker = 1
 
@@ -24,19 +20,23 @@ manpower=1426823
 				naval_base = 5
 
 			}
-			#air_base = 6
+
 		}
-		#add_core_of = GER
 		1939.1.1 = {
 			buildings = {
 				anti_air_building = 5
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		281 348 395 3384 6332 11265
+		348 6332 6402 11265 
 	}
-
-	local_supplies=0.0 
+	manpower=1426823
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

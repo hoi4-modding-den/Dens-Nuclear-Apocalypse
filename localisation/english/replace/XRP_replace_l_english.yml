@@ -8,7 +8,7 @@
  STATE_68:0 "Lubuskie"
  STATE_66:0 "Dolnoslaskie"
  STATE_67:0 "Opole"
- STATE_85:0 "Gdansk"
+ STATE_85:0 "Grande Casino"
  STATE_5:0 "Warmia-Mazury"
  STATE_763:0 "Kaliningrad"
  STATE_784:0 "Vilnius"
@@ -96,7 +96,6 @@
  
  VICTORY_POINTS_6282:0 "Szczecin"
  VICTORY_POINTS_11372:0 "Koszalin"
- VICTORY_POINTS_362:0 "Gdańsk"
  VICTORY_POINTS_6375:0 "Olsztyn"
  VICTORY_POINTS_6332:0 "Kaliningrad"
  VICTORY_POINTS_9206:0 "Vyborg"

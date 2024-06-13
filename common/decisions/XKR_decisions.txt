@@ -1,0 +1,56 @@
+XKR_debug_decisions = {	
+	XKR_drop_cosmetic_tag = {		
+		icon = GFX_decision_icon_default	
+
+		cost = 0
+
+		complete_effect = {
+			drop_cosmetic_tag = yes
+		}
+	}
+	XKR_switch_to_hearts = {		
+		icon = GFX_decision_icon_default	
+
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XKR_hearts
+		}
+	}
+	XKR_switch_to_diamonds = {		
+		icon = GFX_decision_icon_default	
+
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XKR_diamonds
+		}
+	}
+	XKR_switch_to_clubs = {		
+		icon = GFX_decision_icon_default	
+
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XKR_clubs
+		}
+	}
+	XKR_switch_to_red = {		
+		icon = GFX_decision_icon_default	
+
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XKR_red_alliance
+		}
+	}
+	XKR_switch_to_black = {		
+		icon = GFX_decision_icon_default	
+
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XKR_black_alliance
+		}
+	}
+}

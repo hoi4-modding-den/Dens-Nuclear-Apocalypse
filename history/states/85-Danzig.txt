@@ -1,37 +1,33 @@
+
 state={
 	id=85
 	name="STATE_85"
-manpower=244487
-	
-	state_category = city
+
 	history={
-		owner = LIB # POL
+		owner = XKR
+		add_core_of = XKR
 		victory_points = {
-			362 10
+			362 10 
 		}
-		
-		
-		
 		buildings = {
 			infrastructure = 3
-			#arms_factory = 2
-			#industrial_complex = 1
-			#dockyard = 3
 			362 = {
 				naval_base = 5
+
 			}
+
 		}
-		#add_core_of = POL
-		#add_core_of = DNZ
-		#add_core_of = KSH
 		1938.3.12 = {
-			#add_claim_by = GER
+
 		}
+
 	}
 
 	provinces={
-		362
+		362 389 3380 9263 
 	}
-
-	local_supplies=0.0 
+	manpower=244487
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

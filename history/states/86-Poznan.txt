@@ -6,7 +6,8 @@ manpower=1404333
 	
 	state_category = city
 	history={
-		owner = LIB # POL
+		owner = XKR
+		add_core_of = XKR
 		victory_points = {
 			6558 10
 		}
