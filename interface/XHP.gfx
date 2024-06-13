@@ -96,4 +96,8 @@ spriteTypes = {
 		name = "GFX_idea_XHP_chaotic_military"
 		texturefile = "gfx/XHP/ideas/idea_XHP_chaotic_military.dds"
 	}
+	spriteType = { 
+		name = "GFX_idea_XHP_disloyalty"
+		texturefile = "gfx/XHP/ideas/idea_XHP_disloyalty.dds"
+	}
 }

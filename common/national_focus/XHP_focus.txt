@@ -226,3 +226,40 @@ focus_tree = {
 	}
 
 }
+
+
+
+
+focus_tree = {
+	id = XTH_focus
+
+	country = {
+		factor = 0
+	}
+	default = no
+
+	focus = {
+		id = XTH_new_state
+		icon = GFX_focus_XHP_cc_concessions
+
+		x = 15
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		select_effect = {
+
+		}
+		available = {
+			NOT = {
+				has_civil_war = yes
+			}
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+}

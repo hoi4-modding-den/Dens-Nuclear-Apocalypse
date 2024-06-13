@@ -48,4 +48,26 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		idea_XHP_disloyalty_everywhere = {
+			picture = XHP_disloyalty
+			modifier = {
+				org_loss_when_moving = 0.15
+				planning_speed = -0.1
+				recon_factor -0.05
+				stability_factor = -0.05
+				army_speed_factor = -0.15
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+		}
+	}
+	hidden_ideas = {
+		idea_XHP_fight_longer = { # a hidden idea to make them fight longer
+			modifier = {
+				surrender_limit = 3
+			}
+		}
+	}
 }

@@ -1,0 +1,108 @@
+add_namespace = XHP
+
+country_event = {
+	id = XHP.1
+	title = XHP.1.t
+	desc = XHP.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Stay with Spain
+		name = XHP.1.a
+		ai_chance = {
+			factor = 5
+		}
+		
+		hidden_effect = {
+			174 = {
+				set_demilitarized_zone = no
+			}
+			start_civil_war = {
+				ideology = fascism
+				size = 0.1
+				army_ratio = 0
+				capital = 174
+				states = {
+					174
+				}
+				set_country_flag = cf_XHP_crusader_state_trigger
+			}
+			XTH = {
+				set_cosmetic_tag = ct_XTH_rise
+				add_manpower = 110489
+				load_oob = XTH_rise
+				delete_unit_template_and_units = {
+					division_template = "Reclutas"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Infantería Nacional Española"
+					disband = yes
+				}
+			}
+			XHP = {
+				add_manpower = 57489
+				set_political_party = {
+					ideology = fascism
+					popularity = 0
+				}
+			}
+		}
+		hidden_effect = {
+			XTH = {
+				load_focus_tree = XTH_focus
+			}
+		}
+	}
+	option = { # Go with the Templaric Order
+		name = XHP.1.b
+		ai_chance = {
+			factor = 5
+		}
+		
+		hidden_effect = {
+			174 = {
+				set_demilitarized_zone = no
+			}
+			start_civil_war = {
+				ideology = fascism
+				size = 0.1
+				army_ratio = 0
+				capital = 174
+				states = {
+					174
+				}
+				set_country_flag = cf_XHP_crusader_state_trigger
+			}
+			XTH = {
+				set_cosmetic_tag = ct_XTH_rise
+				add_manpower = 110489
+				load_oob = XTH_rise
+				delete_unit_template_and_units = {
+					division_template = "Reclutas"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Infantería Nacional Española"
+					disband = yes
+				}
+			}
+			XHP = {
+				add_manpower = 57489
+				set_political_party = {
+					ideology = fascism
+					popularity = 0
+				}
+			}
+		}
+		XTH = {
+			change_tag_from = XHP
+		}
+		hidden_effect = {
+			XTH = {
+				load_focus_tree = XTH_focus
+			}
+		}
+	}
+}

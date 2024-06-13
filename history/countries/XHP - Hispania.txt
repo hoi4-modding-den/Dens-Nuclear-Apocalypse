@@ -14,6 +14,8 @@ set_country_flag = cf_crusader_crisis
 add_ideas = {
 	idea_XHP_crusader_crisis
 	idea_XHP_chaotic_military
+	idea_XHP_disloyalty_everywhere
+	idea_XHP_fight_longer
 }
 
 set_politics = {

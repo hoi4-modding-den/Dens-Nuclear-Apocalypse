@@ -23,6 +23,10 @@ XHP_quell_the_crusaders:0 "Enact General Mobilization"
 XHP_offer_concessions:0 "Offer Concessions to the Crusaders"
 XHP_crack_into_reserves:0 "Crack into the Reserves"
 ### Events
+XHP.1.t:0 "The Order of Santiago Rises Up!"
+XHP.1.d:0 "Recent reports show of the Knights Templar, a heavily influencial faction within the Spanish government, seizing garisons in Leon and across the Spanish government.\n\nIt is unclear why they are proving to be hostile towards us, however many speculate it was due to our inaction to grant them concessions within the Imperial Court.\n\nNow we stand at a crossroads as to what the fate of our country will be."
+XHP.1.a:0 "We will crush these insurgents immediately!"
+XHP.1.b:0 "For the Knights of the Holy Order!"
 
 ### Decisions
 XHP_crusader_crisis:0 "The Crusader Crisis"
@@ -52,6 +56,40 @@ idea_XHP_crusader_crisis:0 "Crusader Crisis"
 idea_XHP_chaotic_military:0 "Chaotic Military"
 idea_XHP_chaotic_military1:0 "Chaotic Military"
 idea_XHP_chaotic_military2:0 "Chaotic Military"
+idea_XHP_disloyalty_everywhere:0 "Disloyalty Everywhere"
+idea_XHP_fight_longer:0 "Relentless Resolve"
+
+
+# Spanish General, not in uniform, but in a dark grey foot soldier uniform. He is an experienced general, so make his face accordingly. the picture should just be shoulders up. make him a little tired. the background should be just a gray-greenish fade with lighter areas toward the body of the general and darker toward the edges of the portrait, following the same format of a leader portrait from Hearts of Iron IV. Make multiple different generals with first and last names. Be sure the leaders have color.
+
+# Spanish General, not in uniform, but in a dark grey foot soldier uniform. He is an experienced general, so make his face accordingly. the picture should just be shoulders up. make him a little tired. the background should be just a gray-greenish fade with lighter areas toward the body of the general and darker toward the edges of the portrait, following the same format of a leader portrait from Hearts of Iron IV. Make multiple different generals with first and last names. Be sure the leaders have color. have them look slightly to their right, imitating a portrait of them
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
