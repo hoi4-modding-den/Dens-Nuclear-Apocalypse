@@ -165,19 +165,19 @@ spriteTypes = {
         textureFile = "gfx/interface/mapmode/mapmode_buttons_selected_small_economy_mode.dds"
     }
 
+	# Decision Category
+
+    spriteType = {
+		name = "GFX_decision_cat_XFR_france"
+		texturefile = "gfx/interface/decisions/decision_cat_XFR_france.png"
+		legacy_lazy_load = no
+	}
+
     # Bookmark
 
     spriteType = {
 		name = "GFX_XFR_bookmark_image"
 		texturefile = "gfx/XFR/XFR_bookmark_image.dds"
-		legacy_lazy_load = no
-	}
-
-    # Decision Category
-
-    spriteType = {
-		name = "GFX_decision_cat_XFR_france"
-		texturefile = "gfx/interface/decisions/decision_cat_XFR_france.png"
 		legacy_lazy_load = no
 	}
 
@@ -187,92 +187,7 @@ spriteTypes = {
         name = "GFX_focus_XFR_attack_lesser_gaul"
         texturefile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
     }
-    spriteType = {
-        name = "GFX_focus_XAL_attack_us_military"
-        texturefile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XAL_burgundy_alsace_cooperation"
-        texturefile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XFR_restore_france"
-        texturefile = "gfx/interface/goals/XFR/XFR_restore_france.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XFR_france_triumphs"
-        texturefile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
-    }
-    spriteType = {
-        name = "GFX_focus_generic_befriend_alsace"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
-    }
-    spriteType = {
-        name = "GFX_focus_generic_befriend_mercia"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
-    }
-    spriteType = {
-        name = "GFX_focus_generic_befriend_paris"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
-    }
-    spriteType = {
-        name = "GFX_focus_generic_befriend_burgundy"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
-    }
-	spriteType = {
-        name = "GFX_focus_generic_befriend_basque_country"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_basque_country.png"
-    }
-	spriteType = {
-        name = "GFX_focus_generic_befriend_cordoba"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_cordoba.png"
-    }
-	spriteType = {
-        name = "GFX_focus_generic_befriend_portugal_galicia"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_portugal_galicia.png"
-    }
-	spriteType = {
-        name = "GFX_focus_generic_befriend_lotharingia"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_lotharingia.png"
-    }
-	spriteType = {
-        name = "GFX_focus_generic_befriend_switzerland"
-        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_switzerland.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XFR_swiss_burgundian_alliance"
-        texturefile = "gfx/interface/goals/XFR/XFR_swiss_burgundian_alliance.png"
-    }
-    spriteType = {
-        name = "GFX_focus_XFR_protect_switzerland"
-        texturefile = "gfx/interface/goals/XFR/XFR_protect_switzerland.png"
-    }
-	spriteType = {
-        name = "GFX_focus_XFR_democratic_alliance"
-        texturefile = "gfx/interface/goals/XFR/XFR_democratic_alliance.png"
-    }
-	spriteType = {
-        name = "GFX_focus_XFR_little_entente_base"
-        texturefile = "gfx/interface/goals/XFR/XFR_little_entente_base.png"
-    }
-	spriteType = {
-        name = "GFX_focus_XFR_little_entente_cordoba"
-        texturefile = "gfx/interface/goals/XFR/XFR_little_entente_cordoba.png"
-    }
-	spriteType = {
-        name = "GFX_focus_XFR_little_entente_portugal_galicia"
-        texturefile = "gfx/interface/goals/XFR/XFR_little_entente_portugal_galicia.png"
-    }
-	spriteType = {
-        name = "GFX_focus_XFR_little_entente_new_new_england"
-        texturefile = "gfx/interface/goals/XFR/XFR_little_entente_new_new_england.png"
-    }
-	spriteType = {
-        name = "GFX_focus_XFR_great_economic_bloc"
-        texturefile = "gfx/interface/goals/XFR/XFR_great_economic_bloc.png"
-    }
-
-    SpriteType = {
+	SpriteType = {
 		name = "GFX_focus_XFR_attack_lesser_gaul_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -303,8 +218,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_XAL_attack_us_military"
+        texturefile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_XAL_attack_us_military_shine"
 		texturefile = "gfx/interface/goals/XFR/XAL_attack_us_military.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -335,8 +253,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_XAL_burgundy_alsace_cooperation"
+        texturefile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_XAL_burgundy_alsace_cooperation_shine"
 		texturefile = "gfx/interface/goals/XFR/XAL_burgundy_alsace_cooperation.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -367,8 +288,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_XFR_restore_france"
+        texturefile = "gfx/interface/goals/XFR/XFR_restore_france.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_XFR_restore_france_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_restore_france.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -399,8 +323,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_XFR_france_triumphs"
+        texturefile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_XFR_france_triumphs_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_france_triumphs.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -431,8 +358,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_generic_befriend_alsace"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_generic_befriend_alsace_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_alsace.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -463,8 +393,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_generic_befriend_mercia"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_generic_befriend_mercia_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -495,8 +428,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_generic_befriend_paris"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_generic_befriend_paris_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_paris.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -527,8 +463,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_generic_befriend_burgundy"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_generic_befriend_burgundy_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_burgundy.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -559,7 +498,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_generic_befriend_basque_country"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_basque_country.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_generic_befriend_basque_country_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_basque_country.png"
@@ -591,7 +533,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_generic_befriend_cordoba"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_cordoba.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_generic_befriend_cordoba_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_cordoba.png"
@@ -623,7 +568,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_generic_befriend_portugal_galicia"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_portugal_galicia.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_generic_befriend_portugal_galicia_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_portugal_galicia.png"
@@ -655,7 +603,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_generic_befriend_lotharingia"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_lotharingia.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_generic_befriend_lotharingia_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_lotharingia.png"
@@ -687,7 +638,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_generic_befriend_switzerland"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_switzerland.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_generic_befriend_switzerland_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_generic_befriend_switzerland.png"
@@ -719,8 +673,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_XFR_swiss_burgundian_alliance"
+        texturefile = "gfx/interface/goals/XFR/XFR_swiss_burgundian_alliance.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_XFR_swiss_burgundian_alliance_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_swiss_burgundian_alliance.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -751,8 +708,11 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-    SpriteType = {
+    spriteType = {
+        name = "GFX_focus_XFR_protect_switzerland"
+        texturefile = "gfx/interface/goals/XFR/XFR_protect_switzerland.png"
+    }
+	SpriteType = {
 		name = "GFX_focus_XFR_protect_switzerland_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_protect_switzerland.png"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -783,7 +743,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_XFR_democratic_alliance"
+        texturefile = "gfx/interface/goals/XFR/XFR_democratic_alliance.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_XFR_democratic_alliance_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_democratic_alliance.png"
@@ -815,7 +778,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_XFR_little_entente_base"
+        texturefile = "gfx/interface/goals/XFR/XFR_little_entente_base.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_XFR_little_entente_base_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_little_entente_base.png"
@@ -847,7 +813,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_XFR_little_entente_cordoba"
+        texturefile = "gfx/interface/goals/XFR/XFR_little_entente_cordoba.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_XFR_little_entente_cordoba_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_little_entente_cordoba.png"
@@ -879,7 +848,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_XFR_little_entente_portugal_galicia"
+        texturefile = "gfx/interface/goals/XFR/XFR_little_entente_portugal_galicia.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_XFR_little_entente_portugal_galicia_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_little_entente_portugal_galicia.png"
@@ -911,7 +883,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_XFR_little_entente_new_new_england"
+        texturefile = "gfx/interface/goals/XFR/XFR_little_entente_new_new_england.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_XFR_little_entente_new_new_england_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_little_entente_new_new_england.png"
@@ -943,7 +918,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+        name = "GFX_focus_XFR_great_economic_bloc"
+        texturefile = "gfx/interface/goals/XFR/XFR_great_economic_bloc.png"
+    }
 	SpriteType = {
 		name = "GFX_focus_XFR_great_economic_bloc_shine"
 		texturefile = "gfx/interface/goals/XFR/XFR_great_economic_bloc.png"

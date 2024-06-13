@@ -19,6 +19,9 @@ opinion_modifiers = {
 	XFR_open_borders = {
 		value = 25
 	}
+	XFR_fascist_cooperation = {
+		value = 40
+	}
 	XFR_sent_support = {
 		value = 20
 	}

@@ -47,17 +47,6 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = 3
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_support_parliament
-			}
-		}
-
 		cost = 5
 
 		ai_will_do = {
@@ -70,15 +59,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			hidden_effect = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					mark_focus_tree_layout_dirty = yes
-				}
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}
@@ -259,11 +240,11 @@ focus_tree = {
 	focus = {
 		id = XFR_investigate_centre
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = XFR_support_parliament focus = XFR_dennounce_democracy }
-		#mutually_exclusive = { focus =  }
-		x = 13
+		prerequisite = { focus = XFR_support_parliament }
+		#mutually_exclusive = { focus = }
+		x = 3
 		y = 1
-		#relative_position_id = XFR_support_parliament
+		relative_position_id = XFR_support_parliament
 
 		available = {
 			24 = { is_owned_and_controlled_by = ROOT }
@@ -273,28 +254,6 @@ focus_tree = {
 			OR = {
 				NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
 				NOT = { 24 = { has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } } }
-			}
-		}
-
-		offset = {
-			x = 3
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_support_parliament
-			}
-		}
-
-		offset = {
-			x = -3
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_dennounce_democracy
 			}
 		}
 
@@ -523,7 +482,7 @@ focus_tree = {
 		icon = GFX_focus_usa_focus_on_europe
 		prerequisite = { focus = XFR_democracy_prevails }
 		#mutually_exclusive = { focus =  }
-		x = -6
+		x = -8
 		y = 2
 		relative_position_id = XFR_democracy_prevails
 
@@ -558,7 +517,7 @@ focus_tree = {
 		id = XFR_economic_cooperation
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = XFR_european_ambitions }
-		x = -3
+		x = 2
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
@@ -589,13 +548,14 @@ focus_tree = {
 		icon = GFX_focus_eng_the_sun_never_sets
 		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = -6
+		x = 1
 		y = 2
 		relative_position_id = XFR_european_ambitions
 
 		available = {
 			has_government = democratic
 			is_subject = no
+			has_completed_focus = XFR_proclaim_french_government
 		}
 
 		bypass = {
@@ -698,6 +658,7 @@ focus_tree = {
 				always = no
 				tooltip = WIP
 			}
+			has_idea = XFR_customs_agreement_head_idea
 			has_government = democratic
 			XNM = {
 				has_government = democratic
@@ -738,7 +699,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_intervention_in_england
-		icon = GFX_focus_attack_britain
+		icon = GFX_focus_ICE_infiltrating_the_british_isles
 		prerequisite = { focus = XFR_england_focus focus = XFR_england_focus }
 		mutually_exclusive = { focus = XFR_across_the_channel focus = XFR_across_the_channel2 }
 		x = 2
@@ -753,6 +714,7 @@ focus_tree = {
 				always = no
 				tooltip = WIP
 			}
+			XNE = { NOT = { has_government = democratic } }
 		}
 
 		cost = 10
@@ -771,7 +733,7 @@ focus_tree = {
 		icon = GFX_focus_SWI_swiss_guiding_principles
 		prerequisite = { focus = XFR_european_ambitions }
 		mutually_exclusive = { focus = XFR_rescue_the_swiss }
-		x = -9
+		x = -2
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
@@ -932,13 +894,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			XSS = { country_event = { id = XFR_events.22 days = 1 } }
-			ai_strategy = {
+			add_ai_strategy = {
     			type = alliance
     			id = XSS
     			value = 1000
 			}
 			XSS = {
-				ai_strategy = {
+				add_ai_strategy = {
     				type = alliance
     				id = XFR
     				value = 1000
@@ -998,13 +960,14 @@ focus_tree = {
 		icon = GFX_focus_por_iberian_summit
 		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = -14
+		x = -7
 		y = 2
 		relative_position_id = XFR_european_ambitions
 
 		available = {
 			has_government = democratic
 			is_subject = no
+			has_completed_focus = XFR_proclaim_french_government
 			custom_trigger_tooltip = {
 				always = no
 				tooltip = WIP
@@ -1261,8 +1224,9 @@ focus_tree = {
 		id = XFR_french_reunification
 		icon = GFX_focus_focus_fra_border
 		prerequisite = { focus = XFR_european_ambitions }
+		prerequisite = { focus = XFR_lessen_internal_borders }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = 8
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
@@ -1290,8 +1254,8 @@ focus_tree = {
 		icon = GFX_focus_XFR_attack_lesser_gaul
 		prerequisite = { focus = XFR_french_reunification }
 		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 1
+		x = -1
+		y = 2
 		relative_position_id = XFR_french_reunification
 
 		available = {
@@ -1336,7 +1300,7 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_paris
 		prerequisite = { focus = XFR_french_reunification }
 		#mutually_exclusive = { focus =  }
-		x = -2
+		x = 1
 		y = 1
 		relative_position_id = XFR_french_reunification
 
@@ -1434,9 +1398,9 @@ focus_tree = {
 		id = XFR_alcase_lorraine_diplomacy
 		icon = GFX_focus_generic_befriend_alsace
 		prerequisite = { focus = XFR_european_ambitions }
-		x = 2
+		x = -4
 		y = 1
-		relative_position_id = XFR_european_ambitions
+		relative_position_id = XFR_french_reunification
 
 		available = {
 		}
@@ -1523,10 +1487,11 @@ focus_tree = {
 		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = XFR_norman_invasion }
 		prerequisite = { focus = XFR_strike_the_madman }
+		prerequisite = { focus = XFR_dennounce_the_illigitimate_government }
 		prerequisite = { focus = XFR_ultimatum_to_alcase_lorraine }
 		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 3
+		x = -1
+		y = 4
 		relative_position_id = XFR_french_reunification
 
 		available = {
@@ -1535,21 +1500,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				NOT = {
-					any_other_country = {
-						any_core_state = {
-							DEN_is_french_state = yes
-						}
-						NOT = { has_war_with = ROOT }
-						OR = {
-							has_government = democratic
-							is_ally_with = ROOT
-						}
-					}
-				}
-				DEN_controls_french_states = yes
-			}
+			DEN_controls_french_states = yes
 		}
 
 		cost = 5
@@ -1610,7 +1561,7 @@ focus_tree = {
 		icon = GFX_focus_SWI_fortify_border_with_france
 		prerequisite = { focus = XFR_democracy_prevails }
 		#mutually_exclusive = { focus =  }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = XFR_democracy_prevails
 
@@ -1632,10 +1583,10 @@ focus_tree = {
 
 	focus = {
 		id = XFR_expand_the_capital
-		icon = GFX_focus_spa_the_spanish_miracle
+		icon = GFX_focus_SWE_urbanization
 		prerequisite = { focus = XFR_democracy_prevails }
 		#mutually_exclusive = { focus =  }
-		x = 2
+		x = -4
 		y = 1
 		relative_position_id = XFR_democracy_prevails
 
@@ -1659,13 +1610,42 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = XFR_the_centre_of_france
+		icon = GFX_focus_spa_the_spanish_miracle
+		prerequisite = { focus = XFR_expand_the_capital }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_expand_the_capital
+
+		available = {
+			has_government = democratic
+			capital_scope = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 4
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  }
+		completion_reward = {
+			capital_scope = { }
+			add_ideas = XFR_economic_centre
+		}
+	}
+
 
 	focus = {
 		id = XFR_reform_the_government
 		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = XFR_democracy_prevails }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = 4
 		y = 1
 		relative_position_id = XFR_democracy_prevails
 
@@ -1747,7 +1727,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
 		#mutually_exclusive = { focus =  }
 		x = 2
-		y = 3
+		y = 2
 		relative_position_id = XFR_reform_the_government
 
 		available = {
@@ -1775,7 +1755,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_restaurationists focus = XFR_federalists }
 		#mutually_exclusive = { focus = }
 		x = -2
-		y = 3
+		y = 2
 		relative_position_id = XFR_reform_the_government
 
 		available = {
@@ -2011,11 +1991,11 @@ focus_tree = {
 	focus = {
 		id = XFR_rhone_expedition
 		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = XFR_democracy_prevails focus = XFR_the_new_empire }
+		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 3
-		relative_position_id = XFR_crisis_averted
+		x = -3
+		y = 0
+		relative_position_id = XFR_french_reunification
 
 		available = {
 			has_army_manpower = {
@@ -2119,10 +2099,6 @@ focus_tree = {
 			is_subject = no
 			has_government = democratic
 			NOT = { has_country_flag = XFR_2236_elections_over }
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
 		}
 
 		bypass = {
@@ -2144,7 +2120,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -8
+			x = -15
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -2158,7 +2134,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -2168,33 +2144,62 @@ focus_tree = {
 				popularity = -0.2
 			}
 			hidden_effect = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					mark_focus_tree_layout_dirty = yes
-				}
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}
 
-
 	focus = {
-		id = XFR_fascist_coup
-		icon = GFX_focus_generic_fascist_troops
+		id = XFR_prepare_for_civil_war
+		icon = GFX_focus_FIN_weapon_caches
 		prerequisite = { focus = XFR_dennounce_democracy }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = XFR_dennounce_democracy
 
-		cost = 10
+		cost = 5
 
 		available = {
-			fascism > 0.5
+			
+		}
+
+		bypass = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XFR_fascist_tensions
+				add_idea = XFR_fascist_mobilising
+			}
+			if = {
+				limit = {
+					XAQ = { has_government = fascism }
+				}
+				XAQ = { country_event = { id = XFR_events.36 days = 1 } }
+				custom_effect_tooltip = XFR_prepare_for_civil_war_tt
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_stir_up_the_population
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = XFR_dennounce_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_dennounce_democracy
+
+		cost = 5
+
+		available = {
+			
 		}
 
 		bypass = {
@@ -2206,23 +2211,265 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			set_politics = { ruling_party = fascism elections_allowed = no }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_sabotage_the_anarchists
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = XFR_stir_up_the_population }
+		prerequisite = { focus = XFR_prepare_for_civil_war }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_dennounce_democracy
+
+		cost = 5
+
+		available = {
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			18 = {
+				remove_dynamic_modifier = { modifier = XFR_anarchists_state_modifier }
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_fascist_coup
+		icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = XFR_sabotage_the_anarchists }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 3
+		relative_position_id = XFR_dennounce_democracy
+
+		cost = 10
+
+		available = {
+			fascism > 0.5
+			has_stability < 0.5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			effect_tooltip = {
+				set_politics = { ruling_party = fascism elections_allowed = no }
+			}
+			news_event = { id = XFR_news_events.9 }
+			custom_effect_tooltip = XFR_fascist_coup_tt
+			hidden_effect = {
+			if = {
+				limit = {
+					XAQ = { has_government = fascism }
+				}
+				country_event = { id = XFR_events.38 days = 2 }
+			}
+			start_civil_war = {
+    			ruling_party = fascism
+    			ideology = communism
+    			size = 0.3
+    			capital = 18
+    			states = {
+    			    18 17 974
+    			}
+    			keep_political_leader = no
+				keep_political_party_members = yes
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.4
+				}
+				add_ideas = { XFR_anarchist_revolt XFR_anarchist_democrat_cooperation }
+			}
+			load_oob = "XFR_civil_war_fascists"
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_civil_war1
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = XFR_fascist_coup }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 1
+		relative_position_id = XFR_fascist_coup
+
+		cost = 2
+
+		available = {
+			
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = XFR_herzogs_speeches
+				add_idea = XFR_bund_support
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_civil_war2
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = XFR_fascist_coup }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_fascist_coup
+
+		cost = 1
+
+		available = {
+			
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			add_timed_idea = {
+				idea = XFR_civil_war_bonus
+				days = 30
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_civil_war3
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = XFR_fascist_coup }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_fascist_coup
+
+		cost = 1
+
+		available = {
+			
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 500
+    			producer = XFR
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_civil_war4
+		icon = GFX_focus_SWE_revoke_militia_law
+		prerequisite = { focus = XFR_fascist_coup }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = XFR_fascist_coup
+
+		cost = 2
+
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XFR_nationalists_victorious
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = XFR_civil_war4 }
+		prerequisite = { focus = XFR_civil_war2 focus = XFR_civil_war3 }
+		mutually_exclusive = { focus = XFR_monarchist_coup }
+		x = 2
+		y = 2
+		relative_position_id = XFR_fascist_coup
+
+		available = {
+			has_government = fascism
+			is_subject = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 		}
 	}
 
 	focus = {
 		id = XFR_monarchist_coup
 		icon = GFX_focus_rom_royal_dictatorship
-		prerequisite = { focus = XFR_fascist_coup }
-		#mutually_exclusive = { focus =  }
-		x = 2
+		prerequisite = { focus = XFR_civil_war1 }
+		prerequisite = { focus = XFR_civil_war2 focus = XFR_civil_war3 }
+		mutually_exclusive = { focus = XFR_nationalists_victorious }
+		x = -2
 		y = 2
 		relative_position_id = XFR_fascist_coup
 
 		available = {
-			NOT = { has_completed_focus = XFR_the_new_empire }
-			has_civil_war = yes
-			neutrality > 0.4
+			neutrality > 0.5
 			has_government = fascism
 			is_subject = no
 		}
@@ -2234,25 +2481,21 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			set_politics = { ruling_party = neutrality elections_allowed = no }
 		}
 	}
 
 	focus = {
-		id = XFR_the_new_empire
+		id = XFR_consolidate_power
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = XFR_fascist_coup }
-		prerequisite = { focus = XFR_crisis_averted }
+		prerequisite = { focus = XFR_monarchist_coup }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 6
-		relative_position_id = XFR_dennounce_democracy
+		y = 1
+		relative_position_id = XFR_monarchist_coup
 
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
-			has_civil_war = no
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 		}
 
 		cost = 5
@@ -2260,10 +2503,985 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { }
+		completion_reward = {
+			add_timed_idea = {
+				idea = XFR_little_purge
+				days = 140
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_the_coronation
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = XFR_consolidate_power }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_monarchist_coup
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = XFR_madman_in_charge
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = XFR_the_coronation }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_the_coronation
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_end_democracy
+		icon = GFX_focus_generic_strike_at_democracy3
+		prerequisite = { focus = XFR_the_coronation }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_the_coronation
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_regain_lost_titles
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = XFR_madman_in_charge }
+		prerequisite = { focus = XFR_end_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_the_coronation
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = XFR_francian_propaganda
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = XFR_regain_lost_titles }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XFR_regain_lost_titles
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_kriegsmaschine
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = XFR_regain_lost_titles }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_regain_lost_titles
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+    					building = arms_factory
+    					size > 0
+    					include_locked = no
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_nationalist_cooperation
+		icon = GFX_focus_generic_befriend_lotharingia
+		prerequisite = { focus = XFR_regain_lost_titles }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XFR_regain_lost_titles
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+
+
+	focus = {
+		id = XFR_announce_francian_ambitions
+		icon = GFX_focus_rom_parties_end
+		prerequisite = { focus = XFR_francian_propaganda }
+		prerequisite = { focus = XFR_kriegsmaschine }
+		prerequisite = { focus = XFR_nationalist_cooperation }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_kriegsmaschine
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_march_towards_victory
+		icon = GFX_focus_generic_full_social_mobilization
+		prerequisite = { focus = XFR_announce_francian_ambitions }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_announce_francian_ambitions
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_restore_the_francian_empire
+		icon = GFX_focus_generic_spread_fascism
+		#mutually_exclusive = { focus =  }
+		x = 15
+		y = 3
+		relative_position_id = XFR_kriegsmaschine
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			has_completed_focus = XFR_announce_francian_ambitions
+		}
+
+		allow_branch = {
+			NOT = { has_completed_focus = XFR_support_parliament }
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_warplan_west_francia
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = XFR_restore_the_francian_empire }
+		#mutually_exclusive = { focus =  }
+		x = -5
+		y = 1
+		relative_position_id = XFR_restore_the_francian_empire
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_march_to_paris
+		icon = GFX
+		prerequisite = { focus = XFR_warplan_west_francia }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_warplan_west_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_only_one_madman
+		icon = GFX_focus_XFR_attack_lesser_gaul
+		prerequisite = { focus = XFR_warplan_west_francia }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XFR_warplan_west_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_storm_the_beaches
+		icon = GFX_focus_up_joan_of_arc
+		prerequisite = { focus = XFR_march_to_paris focus = XFR_only_one_madman }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 2
+		relative_position_id = XFR_warplan_west_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_demand_the_pyrenees
+		icon = GFX
+		prerequisite = { focus = XFR_only_one_madman }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_only_one_madman
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_the_spanish_wall
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = XFR_demand_the_pyrenees }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_demand_the_pyrenees
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_west_francia_restored
+		icon = GFX_focus_generic_spread_fascism
+		prerequisite = { focus = XFR_march_to_paris }
+		prerequisite = { focus = XFR_demand_the_pyrenees }
+		prerequisite = { focus = XFR_storm_the_beaches }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 5
+		relative_position_id = XFR_warplan_west_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_finally_brittany
+		icon = GFX
+		prerequisite = { focus = XFR_west_francia_restored }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_west_francia_restored
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_warplan_middle_francia
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = XFR_restore_the_francian_empire }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_restore_the_francian_empire
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_influence_our_enemies
+		icon = GFX_focus_generic_secret_service_agency
+		prerequisite = { focus = XFR_warplan_middle_francia }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_warplan_middle_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_invade_switzerland
+		icon = GFX_focus_attack_switzerland
+		prerequisite = { focus = XFR_warplan_middle_francia }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 2
+		relative_position_id = XFR_warplan_middle_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_rhone_expedition2
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = XFR_warplan_middle_francia }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_warplan_middle_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_secure_northern_italy
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = XFR_invade_switzerland focus = XFR_rhone_expedition2 }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_invade_switzerland
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_improve_italian_industry
+		icon = GFX_focus_ITA_northern_industry
+		prerequisite = { focus = XFR_secure_northern_italy }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_secure_northern_italy
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_no_more_napoleons
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = XFR_rhone_expedition2 }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_rhone_expedition2
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_conquer_the_united_kingdom
+		icon = GFX
+		prerequisite = { focus = XFR_warplan_middle_francia }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XFR_warplan_middle_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_retake_the_lowlands
+		icon = GFX
+		prerequisite = { focus = XFR_conquer_the_united_kingdom }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_conquer_the_united_kingdom
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_rebuild_the_trade_centre
+		icon = GFX_focus_hol_gateway_to_europe
+		prerequisite = { focus = XFR_retake_the_lowlands }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_retake_the_lowlands
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_middle_francia_restored
+		icon = GFX_focus_generic_spread_fascism
+		prerequisite = { focus = XFR_secure_northern_italy }
+		prerequisite = { focus = XFR_no_more_napoleons }
+		prerequisite = { focus = XFR_retake_the_lowlands }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 5
+		relative_position_id = XFR_warplan_middle_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_warplan_east_francia
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = XFR_restore_the_francian_empire }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 1
+		relative_position_id = XFR_restore_the_francian_empire
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_end_alsace_independence
+		icon = GFX
+		prerequisite = { focus = XFR_warplan_east_francia }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_warplan_east_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_defeat_the_us_army
+		icon = GFX_focus_XAL_attack_us_military
+		prerequisite = { focus = XFR_end_alsace_independence focus = XFR_conquer_the_united_kingdom }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 2
+		relative_position_id = XFR_warplan_east_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_claim_the_black_spot
+		icon = GFX
+		prerequisite = { focus = XFR_defeat_the_us_army }
+		prerequisite = { focus = XFR_liberate_south_germany }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 3
+		relative_position_id = XFR_warplan_east_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_hamburg
+		icon = GFX
+		prerequisite = { focus = XFR_claim_the_black_spot }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_claim_the_black_spot
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_liberate_south_germany
+		icon = GFX
+		prerequisite = { focus = XFR_end_alsace_independence }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 2
+		relative_position_id = XFR_warplan_east_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_the_austrian_mountains
+		icon = GFX
+		prerequisite = { focus = XFR_liberate_south_germany }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 3
+		relative_position_id = XFR_warplan_east_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_party_in_vienna
+		icon = GFX
+		prerequisite = { focus = XFR_the_austrian_mountains }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_the_austrian_mountains
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = XFR_east_francia_restored
+		icon = GFX_focus_generic_spread_fascism
+		prerequisite = { focus = XFR_hamburg }
+		prerequisite = { focus = XFR_the_austrian_mountains }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 5
+		relative_position_id = XFR_warplan_east_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_all_hail_kaiser_julius
+		icon = GFX_focus_generic_spread_fascism
+		prerequisite = { focus = XFR_west_francia_restored }
+		prerequisite = { focus = XFR_middle_francia_restored }
+		prerequisite = { focus = XFR_east_francia_restored }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_middle_francia_restored
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = XFR_the_commie_menace
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = XFR_east_francia_restored }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_east_francia_restored
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { }
+		completion_reward = {
+		}
+	}
+
+	
+
 
 # INDUSTRY
 
@@ -2277,7 +3495,7 @@ focus_tree = {
 		#relative_position_id = 
 
 		offset = {
-			x = -7
+			x = -8
 			trigger = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -2288,7 +3506,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -4
+			x = -15
 			trigger = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -2978,31 +4196,9 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 40
+		x = 8
 		y = 0
-		#relative_position_id = 
-
-		offset = {
-			x = -7
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_support_parliament
-			}
-		}
-
-		offset = {
-			x = -4
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_dennounce_democracy
-			}
-		}
+		relative_position_id = XFR_industrial_investments
 
 		available = {
 		}
@@ -3524,31 +4720,9 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 32
+		x = 0
 		y = 8
-		#relative_position_id = 
-
-		offset = {
-			x = -7
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_support_parliament
-			}
-		}
-
-		offset = {
-			x = -4
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_dennounce_democracy
-			}
-		}
+		relative_position_id = XFR_industrial_investments
 
 		available = {
 			
@@ -4353,42 +5527,20 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 30
+		x = -2
 		y = 5
-		#relative_position_id = 
+		relative_position_id = XFR_industrial_investments
 
 		available = {
 			OR = {
 				NOT = { has_government = democratic }
-				threat > 0.05
+				threat > 0.1
 				has_war = yes
 			}
 		}
 
 		allow_branch = {
 			has_dlc = "La Resistance"
-		}
-
-		offset = {
-			x = -7
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_support_parliament
-			}
-		}
-
-		offset = {
-			x = -4
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = XFR_dennounce_democracy
-			}
 		}
 
 		bypass = {
