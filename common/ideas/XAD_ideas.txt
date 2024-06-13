@@ -698,7 +698,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_coastal_defense_ships
 			
 				removal_cost = -1
 				
@@ -717,7 +717,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_coastal_defense_ships2
 			
 				removal_cost = -1
 				
@@ -765,7 +765,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_the_london_naval_treaty
 			
 				removal_cost = -1
 				
@@ -785,7 +785,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_naval_manufacturer_1
 			
 				removal_cost = -1
 				
@@ -803,7 +803,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_infantry_bonus
 			
 				removal_cost = -1
 				
@@ -821,7 +821,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = marenostrum
 			
 				removal_cost = -1
 				
@@ -841,7 +841,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_coastal_navy
 			
 				removal_cost = -1
 				
@@ -860,7 +860,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_flexible_foreign_policy2
 			
 				removal_cost = -1
 				
@@ -880,7 +880,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = strategic_bombing_focus
 			
 				removal_cost = -1
 				
@@ -899,7 +899,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_air_research
 			
 				removal_cost = -1
 				
@@ -918,7 +918,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = generic_air_research
 			
 				removal_cost = -1
 				
@@ -937,7 +937,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = strategic_bombing_focus
 			
 				removal_cost = -1
 				
@@ -956,7 +956,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = cheaperplanes
 			
 				removal_cost = -1
 				
@@ -977,7 +977,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = fasterplanes
 			
 				removal_cost = -1
 				
@@ -996,7 +996,7 @@ ideas = {
 					original_tag = XAD
 				}
 	
-				picture = generic_sea_focused_navy
+				picture = strongplanes
 			
 				removal_cost = -1
 				

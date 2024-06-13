@@ -2936,7 +2936,7 @@
 		}
 		focus = {
 			id = XAD_kickstart_naval_producion
-			icon = GFX_
+			icon = GFX_goal_generic_navy_battleship
 			prerequisite = { focus = XAD_army_problems }
 			##mutually_exclusive = { focus =  }
 			x = 50
@@ -2975,7 +2975,7 @@
 		}
 		focus = {
 			id = XAD_dockyards_in_tablina
-			icon = GFX_
+			icon = GFX_goal_generic_build_navy
 			prerequisite = { focus = XAD_kickstart_naval_producion }
 			##mutually_exclusive = { focus =  }
 			x = 53
@@ -3014,7 +3014,7 @@
 		}
 		focus = {
 			id = XAD_dockyards_in_grenada
-			icon = GFX_
+			icon = GFX_goal_generic_build_navy
 			prerequisite = { focus = XAD_dockyards_in_tablina }
 			##mutually_exclusive = { focus =  }
 			x = 53
@@ -3053,7 +3053,7 @@
 		}
 		focus = {
 			id = XAD_create_a_naval_sector
-			icon = GFX_
+			icon = GFX_goal_generic_navy_cruiser
 			prerequisite = { focus = XAD_kickstart_naval_producion }
 			##mutually_exclusive = { focus =  }
 			x = 48
@@ -3085,7 +3085,7 @@
 		}
 		focus = {
 			id = XAD_small_naval_spending
-			icon = GFX_
+			icon = GFX_focus_tiny_naval_spending
 			prerequisite = { focus = XAD_create_a_naval_sector }
 			mutually_exclusive = { focus = XAD_huge_naval_spending }
 			x = 47
@@ -3117,7 +3117,7 @@
 		}
 		focus = {
 			id = XAD_huge_naval_spending
-			icon = GFX_
+			icon = GFX_focus_big_naval_spending
 			prerequisite = { focus = XAD_create_a_naval_sector }
 			mutually_exclusive = { focus = XAD_small_naval_spending }
 			x = 49
@@ -3149,7 +3149,7 @@
 		}
 		focus = {
 			id = XAD_u-boats_focus
-			icon = GFX_
+			icon = GFX_goal_generic_navy_anti_submarine
 			prerequisite = { focus = XAD_small_naval_spending focus = XAD_huge_naval_spending }
 			mutually_exclusive = { focus = XAD_big_ass_navy_focus }
 			x = 48
@@ -3181,7 +3181,7 @@
 		}
 		focus = {
 			id = XAD_submarine_model
-			icon = GFX_
+			icon = GFX_goal_generic_navy_submarine
 			prerequisite = { focus = XAD_u-boats_focus }
 			##mutually_exclusive = { focus =  }
 			x = 48
@@ -3349,7 +3349,7 @@
 		}
 		focus = {
 			id = XAD_visibility_bonus
-			icon = GFX_
+			icon = GFX_focus_invisibility
 			prerequisite = { focus = XAD_submarine_model }
 			##mutually_exclusive = { focus =  }
 			x = 48
@@ -3381,7 +3381,7 @@
 		}
 		focus = {
 			id = XAD_men_of_the_sea
-			icon = GFX_
+			icon = GFX_focus_navy_men
 			prerequisite = { focus = XAD_submarine_model focus = XAD_destroyer_and_battleship_model }
 			##mutually_exclusive = { focus =  }
 			x = 50
@@ -3413,7 +3413,7 @@
 		}
 		focus = {
 			id = XAD_our_lake
-			icon = GFX_
+			icon = GFX_focus_marenostro
 			prerequisite = { focus = XAD_men_of_the_sea }
 			##mutually_exclusive = { focus =  }
 			x = 50
@@ -3448,7 +3448,7 @@
 		}
 		focus = {
 			id = XAD_find_old_german_boats
-			icon = GFX_
+			icon = GFX_focus_germany_xad
 			prerequisite = { focus = XAD_submarine_model }
 			##mutually_exclusive = { focus =  }
 			x = 46
@@ -3485,7 +3485,7 @@
 		}
 		focus = {
 			id = XAD_invest_in_uboat_research
-			icon = GFX_
+			icon = GFX_goal_generic_navy_submarine
 			prerequisite = { focus = XAD_find_old_german_boats }
 			##mutually_exclusive = { focus =  }
 			x = 46
@@ -3522,7 +3522,7 @@
 		}
 		focus = {
 			id = XAD_big_ass_navy_focus
-			icon = GFX_
+			icon = GFX_goal_generic_navy_doctrines_tactics
 			prerequisite = { focus = XAD_small_naval_spending focus = XAD_huge_naval_spending }
 			prerequisite = { focus = XAD_dockyards_in_grenada }
 			mutually_exclusive = { focus = XAD_u-boats_focus }
@@ -3555,7 +3555,7 @@
 		}
 		focus = {
 			id = XAD_destroyer_and_battleship_model
-			icon = GFX_
+			icon = GFX_focus_generic_navy_battleship2
 			prerequisite = { focus = XAD_big_ass_navy_focus }
 			##mutually_exclusive = { focus =  }
 			x = 53
@@ -3598,7 +3598,7 @@
 		}
 		focus = {
 			id = XAD_toughter_steel
-			icon = GFX_
+			icon = GFX_focus_strong_navy
 			prerequisite = { focus = XAD_destroyer_and_battleship_model }
 			##mutually_exclusive = { focus =  }
 			x = 53
@@ -3630,7 +3630,7 @@
 		}
 		focus = {
 			id = XAD_invest_in_destroyer_research
-			icon = GFX_
+			icon = GFX_focus_generic_destroyer
 			prerequisite = { focus = XAD_toughter_steel }
 			##mutually_exclusive = { focus =  }
 			x = 52
@@ -3667,7 +3667,7 @@
 		}
 		focus = {
 			id = XAD_invest_in_battleship_research
-			icon = GFX_
+			icon = GFX_focus_generic_cruiser2
 			prerequisite = { focus = XAD_toughter_steel }
 			##mutually_exclusive = { focus =  }
 			x = 54
@@ -3704,7 +3704,7 @@
 		}
 		focus = {
 			id = XAD_invest_in_carriers_research
-			icon = GFX_
+			icon = GFX_goal_generic_navy_carrier
 			prerequisite = { focus = XAD_invest_in_destroyer_research }
 			prerequisite = { focus = XAD_invest_in_battleship_research }
 			##mutually_exclusive = { focus =  }
@@ -4233,7 +4233,7 @@
 		}
 		focus = {
 			id = XAD_meow_jet
-			icon = GFX_
+			icon = GFX_focus_generic_jet_planes
 			prerequisite = { focus = XAD_lighter_planes focus = XAD_stronger_planes focus = XAD_cheaper_planes }
 			#mutually_exclusive = {  }
 			x = 58
