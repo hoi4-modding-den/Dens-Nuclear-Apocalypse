@@ -1451,7 +1451,6 @@
 		completion_reward = {
 			division_template = {
                 name = "Divisiones de agricultores"
-                division_names_group = SIC_INF_01
                 priority = 1
                 regiments = {
                     infantry = { x = 0 y = 0 }
@@ -1534,7 +1533,9 @@
 		 
 
 		completion_reward = {
-				army_experience = 25
+				army_experience = 50
+				navy_experience = 50
+				air_experience = 50
 			}
 		}
 		focus = {
@@ -2320,12 +2321,12 @@
 	
 			completion_reward = {
 				179 = {
-				add_building_construction = {
-					type = supply_node
-					level = 1
-					instant_build = yes
-					province = 11851
-					}
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						instant_build = yes
+						province = 11851
+						}
 				}
 			}
 		}
@@ -2754,7 +2755,6 @@
 				custom_effect_tooltip = XAD_tactical_camel_variable
 				division_template = {
 					name = "División de camellos"
-					division_names_group = XAD_INF_01
 					priority = 2
 					regiments = {
 						camelry = { x = 0 y = 0 }
@@ -2978,7 +2978,7 @@
 			icon = GFX_
 			prerequisite = { focus = XAD_kickstart_naval_producion }
 			##mutually_exclusive = { focus =  }
-			x = 52
+			x = 53
 			y = 2
 	
 			cost = 5
@@ -3017,7 +3017,7 @@
 			icon = GFX_
 			prerequisite = { focus = XAD_dockyards_in_tablina }
 			##mutually_exclusive = { focus =  }
-			x = 52
+			x = 53
 			y = 3
 	
 			cost = 5
@@ -3080,7 +3080,7 @@
 			 
 	
 			completion_reward = {
-				custom_effect_tooltip = "It will allow for Naval Ministers to be hired"
+				custom_effect_tooltip = "It will allow for a Chief Of Navy to be hired"
 			}
 		}
 		focus = {
@@ -3112,7 +3112,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_tiny_naval_spending
 			}
 		}
 		focus = {
@@ -3144,14 +3144,14 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_big_naval_spending
 			}
 		}
 		focus = {
 			id = XAD_u-boats_focus
 			icon = GFX_
 			prerequisite = { focus = XAD_small_naval_spending focus = XAD_huge_naval_spending }
-			##mutually_exclusive = { focus =  }
+			mutually_exclusive = { focus = XAD_big_ass_navy_focus }
 			x = 48
 			y = 4
 	
@@ -3176,7 +3176,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_u_boats
 			}
 		}
 		focus = {
@@ -3208,7 +3208,143 @@
 			 
 	
 			completion_reward = {
-				
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					hidden_effect = {
+						set_technology = {
+							basic_ship_hull_submarine = 1
+						}
+					}
+					create_equipment_variant = {
+						name = "Meow Class"
+						type = ship_hull_submarine_2
+						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_2
+							fixed_ship_engine_slot = sub_ship_engine_2
+							front_1_custom_slot = ship_mine_layer_sub
+							mid_1_custom_slot = empty
+							rear_1_custom_slot = ship_torpedo_sub_2
+						}
+					}
+					#Line Production
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_submarine_2
+							creator = "XAD"
+							version_name = "Meow Class"
+						}
+						name = "AquaCat"
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_submarine_2
+							creator = "XAD"
+							version_name = "Meow Class"
+						}
+						name = "MeowMarine"
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_submarine_2
+							creator = "XAD"
+							version_name = "Meow Class"
+						}
+						name = "NyanNautilus"
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_submarine_2
+							creator = "XAD"
+							version_name = "Meow Class"
+						}
+						name = "PurrPoseidon"
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+				}
+	
+				##############
+				### NO MTG ###
+				##############
+				else = {
+					if = { #Submarine 3 if available
+						
+						hidden_effect = {
+							set_technology = {
+								basic_submarine = 1
+							}
+						}
+						create_equipment_variant = {
+							name = "Meow Class"
+							type = submarine_2
+							allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+							upgrades = {
+								ship_reliability_upgrade = 3
+								sub_engine_upgrade = 3
+								sub_stealth_upgrade = 2
+								sub_torpedo_upgrade = 3
+							}
+						}
+						add_equipment_production = {
+							equipment = {
+								type = submarine_2
+								creator = "XAD"
+								version_name = "Meow Class"
+							}
+							name = "AquaCat"
+							requested_factories = 1
+							progress = 0.95
+							amount = 1
+						}
+						add_equipment_production = {
+							equipment = {
+								type = submarine_2
+								creator = "XAD"
+								version_name = "Meow Class"
+							}
+							name = "MeowMarine"
+							requested_factories = 1
+							progress = 0.95
+							amount = 1
+						}
+						add_equipment_production = {
+							equipment = {
+								type = submarine_2
+								creator = "XAD"
+								version_name = "Meow Class"
+							}
+							name = "NyanNautilus"
+							requested_factories = 1
+							progress = 0.95
+							amount = 1
+						}
+						add_equipment_production = {
+							equipment = {
+								type = submarine_2
+								creator = "XAD"
+								version_name = "Meow Class"
+							}
+							name = "PurrPoseidon"
+							requested_factories = 1
+							progress = 0.95
+							amount = 1
+						}
+					}
+				}
 			}
 		}
 		focus = {
@@ -3240,7 +3376,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_visibility
 			}
 		}
 		focus = {
@@ -3272,7 +3408,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_men_of_the_sea
 			}
 		}
 		focus = {
@@ -3304,7 +3440,10 @@
 			 
 	
 			completion_reward = {
-				
+				swap_ideas = {
+					remove_idea = XAD_men_of_the_sea
+					add_idea = XAD_our_lake
+				}
 			}
 		}
 		focus = {
@@ -3336,7 +3475,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "German U-boat projects"
+					ahead_reduction = 2
+					uses = 1
+					category = ss_tech
+				}
 			}
 		}
 		focus = {
@@ -3368,7 +3512,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "Insane uboat investment"
+					ahead_reduction = 2
+					uses = 2
+					category = ss_tech
+				}
 			}
 		}
 		focus = {
@@ -3376,8 +3525,8 @@
 			icon = GFX_
 			prerequisite = { focus = XAD_small_naval_spending focus = XAD_huge_naval_spending }
 			prerequisite = { focus = XAD_dockyards_in_grenada }
-			##mutually_exclusive = { focus =  }
-			x = 52
+			mutually_exclusive = { focus = XAD_u-boats_focus }
+			x = 53
 			y = 4
 	
 			cost = 5
@@ -3401,7 +3550,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_bis_ass_navy
 			}
 		}
 		focus = {
@@ -3409,7 +3558,7 @@
 			icon = GFX_
 			prerequisite = { focus = XAD_big_ass_navy_focus }
 			##mutually_exclusive = { focus =  }
-			x = 52
+			x = 53
 			y = 5
 	
 			cost = 5
@@ -3433,7 +3582,18 @@
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "Invested in screens models"
+					bonus = 10
+					uses = 1
+					category = mio_cat_tech_all_screen_ship_and_modules
+				}
+				add_tech_bonus = {
+					name = "Invested in capital ships models"
+					bonus = 10
+					uses = 1
+					category = mio_cat_tech_all_capital_ship_and_modules
+				}
 			}
 		}
 		focus = {
@@ -3441,7 +3601,7 @@
 			icon = GFX_
 			prerequisite = { focus = XAD_destroyer_and_battleship_model }
 			##mutually_exclusive = { focus =  }
-			x = 52
+			x = 53
 			y = 6
 	
 			cost = 5
@@ -3465,7 +3625,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_toughter_steel
 			}
 		}
 		focus = {
@@ -3529,7 +3689,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "Invested in screens models"
+					bonus = 2
+					uses = 1
+					category = mio_cat_tech_all_screen_ship_and_modules
+				}
 			}
 		}
 		focus = {
@@ -3561,7 +3726,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "Invested in capital ships models"
+					bonus = 2
+					uses = 1
+					category = mio_cat_tech_all_capital_ship_and_modules
+				}
 			}
 		}
 		focus = {
@@ -3594,7 +3764,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "Invested in capital ships models"
+					bonus = 4
+					uses = 1
+					category = mio_cat_tech_all_carrier_and_modules
+				}
 			}
 		}
 		focus = {
@@ -3626,7 +3801,14 @@
 			 
 	
 			completion_reward = {
-				
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -3658,7 +3840,14 @@
 			 
 	
 			completion_reward = {
-				
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -3690,7 +3879,13 @@
 			 
 	
 			completion_reward = {
-				
+				179 = {
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -3712,7 +3907,13 @@
 			}
 			
 			bypass = {
-	
+				167 = {
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+				}
 			}
 	
 			cancel_if_invalid = yes
@@ -3754,7 +3955,14 @@
 			 
 	
 			completion_reward = {
-				
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -3787,7 +3995,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_importing_designs
 			}
 		}
 		focus = {
@@ -3820,7 +4028,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "Our designs"
+					bonus = 2
+					uses = 2
+					category = air_equipment
+				}
 			}
 		}
 		focus = {
@@ -3852,7 +4065,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_naval_bombers
 			}
 		}
 		focus = {
@@ -3884,7 +4097,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_cas
 			}
 		}
 		focus = {
@@ -3916,7 +4129,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_fighters
 			}
 		}
 		focus = {
@@ -3948,7 +4161,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_bombers
 			}
 		}
 		focus = {

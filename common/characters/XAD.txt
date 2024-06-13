@@ -248,6 +248,9 @@ characters = {
 			slot = navy_chief
 			idea_token = XDA_navy_chief_reform_2_idea
 			traits = { navy_chief_reform_2 }      # Unspecified cost defaults to 150.
+			available = {
+                has_completed_focus = XAD_create_a_naval_sector
+            }
 		}
 	}
 	XDA_navy_chief_maneuver_3 = {
@@ -261,6 +264,9 @@ characters = {
 			slot = navy_chief
 			idea_token = XDA_navy_chief_maneuver_3_idea
 			traits = { navy_chief_maneuver_3 }      # Unspecified cost defaults to 150.
+			available = {
+                has_completed_focus = XAD_create_a_naval_sector
+            }
 		}
 	}
 	XDA_navy_fleet_logistics_3 = {
@@ -274,6 +280,9 @@ characters = {
 			slot = navy_chief
 			idea_token = XDA_navy_fleet_logistics_3_idea
 			traits = { navy_fleet_logistics_3 }      # Unspecified cost defaults to 150.
+			available = {
+                has_completed_focus = XAD_create_a_naval_sector
+            }
 		}
 	}
 	

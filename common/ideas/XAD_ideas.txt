@@ -692,8 +692,265 @@ ideas = {
 					mechanized_defence_factor = 0.05
 				}
 			}
+			XAD_big_naval_spending = {
 			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					industrial_capacity_dockyard = +0.15
+					political_power_gain = -0.15
+				}
+			}
+			XAD_tiny_naval_spending = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					industrial_capacity_dockyard = 0.05
+					political_power_gain = 0.15
+				}
+			}
+			XAD_bis_ass_navy = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				equipment_bonus = {
+					ship_hull_heavy = {
+						instant = yes
+						build_cost_ic = -0.1
+					}
+					screen_ship = {
+						instant = yes
+						build_cost_ic = -0.1
+					}
+					capital_ship = {
+						instant = yes
+						build_cost_ic = -0.1
+					}
+				}
+			}
+			XAD_u_boats = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				equipment_bonus = {
+					submarine = {
+						build_cost_ic = -0.1 instant = yes
+					}
+				}
+			}
+			XAD_visibility = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					navy_visibility = -0.15
+				}
+			}
+			XAD_men_of_the_sea = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					conscription = 0.025
+				}
+			}
+			XAD_our_lake = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					conscription = 0.025
+					navy_submarine_attack_factor = 0.1
+					navy_submarine_defence_factor = 0.1
+				}
+			}
+			XAD_toughter_steel = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					navy_screen_defence_factor = 0.1
+					navy_capital_ship_defence_factor = 0.1
+				}
+			}
+			XAD_importing_designs = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					improve_relations_maintain_cost_factor = -0.25
+					license_purchase_cost = -0.5
+					license_production_speed = 0.10
+				}
+			}
+			XAD_bombers = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					air_strategic_bomber_attack_factor = 0.1
+					air_strategic_bomber_defence_factor = 0.1
+				}
+			}
+			XAD_fighters = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					air_air_superiority_attack_factor = 0.1
+					air_air_superiority_defence_factor = 0.1
+				}
+			}
+			XAD_cas = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					air_close_air_support_attack_factor = 0.1
+					air_close_air_support_defence_factor = 0.1
+				}
+			}
+			XAD_naval_bombers = { 
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = generic_sea_focused_navy
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					naval_strike_attack_factor = 0.1
+					naval_strike_agility_factor = 0.1
+				}
+			}
 	}
 }
 
-#cavalry_attack_factor
+#conscription = 0.02

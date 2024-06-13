@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "División de Infantería"			# 1st - 5th divisions = fully equipped, others = reserve divisions
-	division_names_group = XAD_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -17,7 +16,6 @@
 }
 division_template = {
 	name = "Brigada de Caballería"
-	division_names_group = XAD_CAV_02
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -31,7 +29,6 @@ division_template = {
 }
 division_template = {
 	name = "Guardia real del rey"			# 1st - 5th divisions = fully equipped, others = reserve divisions
-	division_names_group = XAD_GRDR_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }

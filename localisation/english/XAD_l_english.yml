@@ -139,13 +139,19 @@
  XAD_trucks:0 "Truck focus"
  
  
+ XAD_santarem_core:0 "Send cats to Santarem"
  
- 
- 
- 
- 
- 
- 
+
+ XAD_lower_taxes:0 "Lower taxes"
+ XAD_distribute_bread:0 "Devaluate the Peseta"
+ XAD_the_northern_threat:0 "Print propagnada leaflets"
+ XAD_spanish_official_lenguage:0 "Decleare spanish as the official lenguage"
+ XAD_arab_official_lenguage:0 "Decleare arab as the official lenguage"
+ XAD_crack_down_on_strikers:0 "Crackdown on strikers"
+ XAD_break_in_communist_hideouts:0 "Break in communist hideouts"
+ XAD_crack_down_on_corruption:0 "Arrest corrupt ministers"
+ XAD_jobs_to_the_people:0 "Put the unemployed to work on building infrastructure"
+ XAD_build_civis:0 "Fund Civilian Factories"
  
  
  
