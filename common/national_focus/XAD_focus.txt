@@ -3629,38 +3629,6 @@
 			}
 		}
 		focus = {
-			id = XAD_invest_in-destroyer_research
-			icon = GFX_
-			prerequisite = { focus = XAD_toughter_steel }
-			##mutually_exclusive = { focus =  }
-			x = 52
-			y = 7
-	
-			cost = 5
-	
-			ai_will_do = {
-				factor = 1
-			}
-	
-			available = {
-				
-			}
-			
-			bypass = {
-	
-			}
-	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-	
-			 
-	
-			completion_reward = {
-				
-			}
-		}
-		focus = {
 			id = XAD_invest_in_destroyer_research
 			icon = GFX_
 			prerequisite = { focus = XAD_toughter_steel }
@@ -3737,7 +3705,7 @@
 		focus = {
 			id = XAD_invest_in_carriers_research
 			icon = GFX_
-			prerequisite = { focus = XAD_invest_in-destroyer_research }
+			prerequisite = { focus = XAD_invest_in_destroyer_research }
 			prerequisite = { focus = XAD_invest_in_battleship_research }
 			##mutually_exclusive = { focus =  }
 			x = 53
@@ -3907,13 +3875,7 @@
 			}
 			
 			bypass = {
-				167 = {
-					add_building_construction = {
-						type = air_base
-						level = 4
-						instant_build = yes
-					}
-				}
+				
 			}
 	
 			cancel_if_invalid = yes
@@ -3923,7 +3885,13 @@
 			 
 	
 			completion_reward = {
-				
+				167 = {
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -4194,7 +4162,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_cheaper_airplanes
 			}
 		}
 		focus = {
@@ -4227,7 +4195,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_lighter_airplanes
 			}
 		}
 		focus = {
@@ -4260,7 +4228,7 @@
 			 
 	
 			completion_reward = {
-				
+				add_ideas = XAD_stronger_airplanes
 			}
 		}
 		focus = {
@@ -4292,7 +4260,12 @@
 			 
 	
 			completion_reward = {
-				
+				add_tech_bonus = {
+					name = "Jet designers"
+					bonus = 2
+					uses = 2
+					category = jet_technology
+				}
 			}
 		}
 	}	
