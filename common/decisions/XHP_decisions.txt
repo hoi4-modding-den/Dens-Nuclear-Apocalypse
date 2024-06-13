@@ -104,11 +104,12 @@ XTH_partisan_uprising = {
 							}
 						}
 					}
-					hidden_effect = {
-						clr_country_flag = cf_xth_swaying
-						FROM = {
-							clr_state_flag = sf_xth_swaying
-						}
+					
+				}
+				hidden_effect = {
+					clr_country_flag = cf_xth_swaying
+					FROM = {
+						clr_state_flag = sf_xth_swaying
 					}
 				}
 				else = {
