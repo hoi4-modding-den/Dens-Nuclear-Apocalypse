@@ -315,7 +315,7 @@ country_event = { # XFR wants to annex XAL -> XAL accepts
     		transfer_troops = yes
 		}
         hidden_effect = {
-            delete_units = {
+            delete_unit_template_and_units = {
 				division_template = "Brigade des Volontaires Bourguignons"
 				disband = yes
 			}
@@ -1529,6 +1529,99 @@ country_event = { # Nationalists sell Centre Pt. 3
     }
 }
 
+country_event = { # Coronation
+    id = XFR_events.39
+    title = XFR_events.39.t
+    picture = GFX_report_event_german_reichstag_gathering
+    desc = XFR_events.39.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.39.a
+        ai_chance = {
+            base = 1
+        } 
+        if = {
+            limit = {
+                XAL = { has_government = fascism }
+            }
+            XAL = { country_event = { id = XFR_events.40 days = 1 } }
+            custom_effect_tooltip = XAL_may_join_us_tt
+        }
+        
+    }
+}
+
+country_event = { # Coronation: Fascist Alsace Reaction
+    id = XFR_events.40
+    title = XFR_events.40.t
+    picture = GFX_report_event_german_reichstag_gathering
+    desc = XFR_events.40.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.40.a
+        ai_chance = {
+            base = 100
+        } 
+        effect_tooltip = {
+            XFR = {
+               annex_country = {
+                   target = XAL
+                   transfer_troops = yes
+               }
+            }
+            every_state = {
+		    	limit = { is_core_of = XAL }
+		    	add_core_of = XFR
+		    }
+        }
+        custom_effect_tooltip = GAME_OVER_TT
+        
+    }
+    option = { 
+        name = XFR_events.40.b
+        ai_chance = {
+            base = 0
+        } 
+        add_political_power = -1000
+        add_stability = -0.25
+    }
+}
+
+country_event = { # Coronation: Positive Fascist Alsace Reaction
+    id = XFR_events.41
+    title = XFR_events.41.t
+    picture = GFX_report_event_german_reichstag_gathering
+    desc = XFR_events.41.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.41.a
+        ai_chance = {
+            base = 1
+        } 
+        annex_country = {
+            target = XAL
+            transfer_troops = yes
+        }
+        every_state = {
+			limit = { is_core_of = XAL }
+			add_core_of = XFR
+		}
+        XAL_characters_join_XFR = yes
+        hidden_effect = {
+            delete_unit_template_and_units = {
+				division_template = "Brigade des Volontaires Bourguignons"
+				disband = yes
+			}
+        }
+        
+    }
+}
 
 ###############
 # NEWS EVENTS #
@@ -1772,7 +1865,7 @@ news_event = { # France Reunified!
 news_event = { # Civil War!
     id = XFR_news_events.9
     title = XFR_news_events.9.t
-    picture = GFX_news_event_051
+    picture = GFX_news_event_ger_civil_war
     desc = XFR_news_events.9.desc
     
     
@@ -1797,6 +1890,23 @@ news_event = { # Civil War!
     option = {
         name = XFR_news_events.9.c
         trigger = { tag = XFR }
+    }
+
+}
+
+news_event = { # Coronation
+    id = XFR_news_events.10
+    title = XFR_news_events.10.t
+    picture = GFX_news_event_german_speech
+    desc = XFR_news_events.10.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.10.a
     }
 
 }

@@ -75,35 +75,45 @@ recruit_character = XFR_jacob_d_amboise
 recruit_character = XFR_emilien_delacroix
 recruit_character = XFR_daniel_cellier
 recruit_character = XFR_richard_bacque
+recruit_character = XFR_gaylord_abbadie
 recruit_character = XFR_sebastien_about
 recruit_character = XFR_luc_joubert
 recruit_character = XFR_leonard_desgrais
 recruit_character = XFR_nathalie_gardet
 recruit_character = XFR_dominique_gounelle
 
+
 	generate_character = {
-		token_base = generic_army_chief_off # token will be TAG_token_base
+		token_base = generic_captain_of_industry # token will be TAG_token_base
 		advisor = {
-			slot = army_chief
-			traits = { army_chief_offensive_1 }
-			cost = 50
+			slot = political_advisor
+			traits = { captain_of_industry }
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_army_chief_off }
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
-	# generic navy chiefs
 	generate_character = {
-		token_base = generic_navy_chief_decisive_bat # token will be TAG_token_base
+		token_base = generic_fortification_engineer # token will be TAG_token_base
 		advisor = {
-			slot = navy_chief
-			traits = { navy_chief_decisive_battle_2 }
-			cost = 100
+			slot = political_advisor
+			traits = { fortification_engineer }
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_navy_chief_decisive_bat }
+			army = { small = GFX_idea_generic_fortification_engineer }
 		}
 	}
+	generate_character = {
+		token_base = generic_war_industrialist # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { war_industrialist }
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_war_industrialist }
+		}
+	}
+
 	# generic air chiefs
 	generate_character = {
 		token_base = generic_air_close_air_sup # token will be TAG_token_base
@@ -141,18 +151,6 @@ recruit_character = XFR_dominique_gounelle
 		}
 	}
 	generate_character = {
-		token_base = generic_navy_fleet_log # token will be TAG_token_base
-		advisor = {
-			slot = high_command
-			traits = { navy_fleet_logistics_1 }
-			ledger = navy
-			cost = 50
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_navy_fleet_log }
-		}
-	}
-	generate_character = {
 		token_base = generic_air_air_combat_trainer # token will be TAG_token_base
 		advisor = {
 			slot = high_command
@@ -162,18 +160,6 @@ recruit_character = XFR_dominique_gounelle
 		}
 		portraits = { 
 			army = { small = GFX_idea_generic_air_air_combat_trainer }
-		}
-	}
-	generate_character = {
-		token_base = generic_naval_theorist # token will be TAG_token_base
-		advisor = {
-			slot = theorist
-			traits = { naval_theorist }
-			ledger = navy
-			cost = 50
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_naval_theorist }
 		}
 	}
 	generate_character = {
@@ -188,6 +174,8 @@ recruit_character = XFR_dominique_gounelle
 			army = { small = GFX_idea_generic_air_warfare_theorist }
 		}
 	}
+
+recruit_character = XFR_la_reynie
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }

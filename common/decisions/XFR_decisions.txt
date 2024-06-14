@@ -1059,6 +1059,7 @@ XFR_udb_cat = {
 		available = {
 			NOT = {has_idea = closed_economy }
 			any_neighbor_country = {
+				any_core_state = { DEN_is_french_state = yes }
 				OR = {
 					has_government = democratic
 					has_government = neutrality
@@ -1090,6 +1091,7 @@ XFR_udb_cat = {
 			# event for every neighbouring democracy and neutral country
 			every_neighbor_country = {
 				limit = {
+					any_core_state = { DEN_is_french_state = yes }
 					OR = {
 						has_government = democratic
 						has_government = neutrality
@@ -1182,6 +1184,7 @@ XFR_udb_cat = {
 			FROM = {
 				NOT = {has_idea = anarchy_idea_max }
 				NOT = { original_tag = XNF }
+				any_core_state = { DEN_is_french_state = yes }
 				any_neighbor_country = {
 					OR = {
 						has_idea = XFR_customs_agreement_idea

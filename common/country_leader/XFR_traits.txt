@@ -55,8 +55,32 @@ leader_traits = {
 	XFR_herzog_von_burgund = {
 		random = no
 
-		political_power_factor = -0.15
+		political_power_factor = -0.25
 		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_herzog_von_burgund2 = {
+		random = no
+
+		political_power_factor = -0.15
+		war_support_factor = 0.05
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_regency_council_trait = {
+		random = no
+
+		political_power_factor = -0.05
+		political_advisor_cost_factor = 1
+		justify_war_goal_time = 0.25
 
 		ai_will_do = {
 			factor = 1
@@ -132,6 +156,46 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	XFR_herzog_julius_advisor_trait = {
+		random = no
+		sprite = 13
+		neutrality_drift = 0.1
+		stability_weekly = -0.001
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_completed_focus = XFR_civil_war1
+				factor = 100
+			}
+		}
+	}
+
+	XFR_marechaussee_chief = {
+		random = no
+		sprite = 15
+		resistance_decay = 0.1
+		foreign_subversive_activites = -0.25
+		operative_slot = 1
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	XFR_naval_rearmament_proponent = {
+		sprite = 3
+		industrial_capacity_dockyard = 0.2
+		critical_receive_chance = -0.1
+		experience_gain_navy = 0.05
+
+		command_cap = 10
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

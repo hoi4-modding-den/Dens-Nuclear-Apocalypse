@@ -19,7 +19,10 @@ XAL_characters_join_XFR = {
 }
 XFR_create_faction = {
 	if = {
-		limit = { has_government = fascism }
+		limit = {
+			has_government = fascism
+			NOT = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
+		}
 		create_faction = "Lotharingian Hegemony"
 	}
 	if = {
@@ -31,7 +34,14 @@ XFR_create_faction = {
 		create_faction = "Accords de Bourgogne"
 	}
 	if = {
-		limit = { has_government = neutrality }
-		create_faction = "Francian Restauration Pact"
+		limit = {
+			has_government = neutrality
+			NOT = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
+		}
+		create_faction = "Accords de Bourgogne"
+	}
+	if = {
+		limit = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
+		create_faction = "Fränkischer Bund"
 	}
 }

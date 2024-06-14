@@ -19,6 +19,10 @@ spriteTypes = {
         name = "GFX_portrait_XFR_herzog_julius"
         texturefile = "gfx/leaders/XFR/portrait_XFR_herzog_julius.png"
     }
+	spriteType = {
+        name = "GFX_portrait_XFR_herzog_julius_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_herzog_julius.png"
+    }
 
     spriteType = {
         name = "GFX_portrait_XFR_parliament"
@@ -28,6 +32,10 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_XFR_regnault_guillaume"
         texturefile = "gfx/leaders/XFR/portrait_XFR_regnault_guillaume.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_regnault_guillaume_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_regnault_guillaume.dds"
     }
 
     spriteType = {
@@ -108,6 +116,11 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/XFR/idea_XFR_dominique_gounelle.dds"
     }
 
+	spriteType = {
+        name = "GFX_portrait_XFR_la_reynie_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_la_reynie.dds"
+    }
+
     spriteType = {
         name = "GFX_portrait_XAL_military_gov"
         texturefile = "gfx/leaders/XAL/portrait_XAL_military_gov.png"
@@ -183,7 +196,7 @@ spriteTypes = {
 
     # Focus Icons
 
-     spriteType = {
+    spriteType = {
         name = "GFX_focus_XFR_attack_lesser_gaul"
         texturefile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
     }
@@ -206,6 +219,216 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_lesser_gaul.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+        name = "GFX_focus_XFR_attack_alsace"
+        texturefile = "gfx/interface/goals/XFR/XFR_attack_alsace.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_attack_alsace_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_attack_alsace.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_alsace.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_alsace.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+        name = "GFX_focus_XFR_attack_ddr"
+        texturefile = "gfx/interface/goals/XFR/XFR_attack_ddr.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_attack_ddr_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_attack_ddr.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_ddr.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_ddr.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+        name = "GFX_focus_XFR_attack_luxonie"
+        texturefile = "gfx/interface/goals/XFR/XFR_attack_luxonie.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_attack_luxonie_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_attack_luxonie.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_luxonie.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_luxonie.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+        name = "GFX_focus_XFR_attack_paris"
+        texturefile = "gfx/interface/goals/XFR/XFR_attack_paris.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_attack_paris_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_attack_paris.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_paris.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_paris.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+        name = "GFX_focus_XFR_attack_pyrenees"
+        texturefile = "gfx/interface/goals/XFR/XFR_attack_pyrenees.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_attack_pyrenees_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_attack_pyrenees.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_pyrenees.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_pyrenees.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+        name = "GFX_focus_XFR_attack_tirol"
+        texturefile = "gfx/interface/goals/XFR/XFR_attack_tirol.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_attack_tirol_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_attack_tirol.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_tirol.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_attack_tirol.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -416,6 +639,41 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_befriend_mercia.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+        name = "GFX_focus_generic_mercian_trade"
+        texturefile = "gfx/interface/goals/XFR/XFR_generic_mercian_trade.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_generic_mercian_trade_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_generic_mercian_trade.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_mercian_trade.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_generic_mercian_trade.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -953,6 +1211,40 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	spriteType = {
+        name = "GFX_focus_XFR_reichsland_lothringen"
+        texturefile = "gfx/interface/goals/XFR/XFR_reichsland_lothringen.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_reichsland_lothringen_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_reichsland_lothringen.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_reichsland_lothringen.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
 
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_reichsland_lothringen.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 
 }

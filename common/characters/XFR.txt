@@ -37,9 +37,28 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_XFR_herzog_julius"
+				small = "GFX_portrait_XFR_herzog_julius_small"
 			}
 			army = {
 				large = "GFX_portrait_XFR_herzog_julius"
+			}
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = herzog_julius
+			allowed = {
+				original_tag = XFR
+			}
+			available = {
+				has_completed_focus = XFR_dennounce_democracy
+				NOT = { has_completed_focus = XFR_monarchist_coup }
+			}
+			traits = {
+				XFR_herzog_julius_advisor_trait
+			}
+			cost =  100
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		country_leader = {
@@ -58,11 +77,38 @@ characters = {
 		}
 	}
 
+	XFR_regency_council = {
+		name = XFR_regency_council_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_parliament"
+			}
+		}
+	}
+
 	XFR_regnault_guillaume = {
 		name = XFR_regnault_guillaume_name
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_XFR_regnault_guillaume"
+				small = "GFX_portrait_XFR_regnault_guillaume_small"
+			}
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = regnault_guillaume
+			allowed = {
+				original_tag = XFR
+			}
+			available = {
+				has_completed_focus = XFR_dennounce_democracy
+			}
+			traits = {
+				SWI_fascist_propagandist
+			}
+			cost =  100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		country_leader = {
@@ -191,6 +237,40 @@ characters = {
 		}
 	}
 
+	XFR_gaylord_abbadie={
+		name=XFR_gaylord_abbadie_name
+		portraits={
+			army={
+				large=GFX_portrait_XFR_gaylord_abbadie
+				small=GFX_portrait_XFR_gaylord_abbadie_small
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = gaylord_abbadie
+			ledger = army
+			allowed = {
+				original_tag = XFR
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
 	XFR_sebastien_about={
 		name=XFR_sebastien_about_name
 		portraits={
@@ -298,8 +378,26 @@ characters = {
 			allowed = {
 				original_tag = XFR
 			}
-			traits = { navy_chief_decisive_battle_2 }
+			available = {
+				has_completed_focus = XFR_rebuild_the_fleet
+			}
+			traits = { XFR_naval_rearmament_proponent }
 			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = dominique_gounelle2
+			allowed = {
+				original_tag = XFR
+			}
+			available = {
+				has_completed_focus = XFR_rebuild_the_fleet
+			}
+			traits = { naval_theorist }
+			cost = 50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -313,6 +411,36 @@ characters = {
   			attack_skill = 2
   			defense_skill = 2
   			planning_skill = 5
+		}
+	}
+
+	XFR_la_reynie = {
+		name = XFR_la_reynie_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_la_reynie_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = la_reynie
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				has_dlc = "La Resistance"
+				NOT = { has_completed_focus = XFR_dennounce_democracy }
+			}
+			available = {
+				has_completed_focus = XFR_raid_fascist_hideouts
+				has_intelligence_agency = yes
+			}
+			traits = { XFR_marechaussee_chief }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
