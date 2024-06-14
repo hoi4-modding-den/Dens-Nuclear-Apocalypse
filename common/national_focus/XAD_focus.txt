@@ -3742,7 +3742,7 @@
 		}
 		focus = {
 			id = XAD_kickstart_plane_producion
-			icon = GFX_
+			icon = GFX_focus_industry3
 			prerequisite = { focus = XAD_army_problems }
 			##mutually_exclusive = { focus =  }
 			x = 58
@@ -3781,7 +3781,7 @@
 		}
 		focus = {
 			id = XAD_plane_heavy_industry
-			icon = GFX_
+			icon = GFX_focus_industry2
 			prerequisite = { focus = XAD_kickstart_plane_producion }
 			##mutually_exclusive = { focus =  }
 			x = 58
@@ -3820,7 +3820,7 @@
 		}
 		focus = {
 			id = XAD_tablina_airport
-			icon = GFX_
+			icon = GFX_focus_tab_air
 			prerequisite = { focus = XAD_plane_heavy_industry }
 			##mutually_exclusive = { focus =  }
 			x = 56
@@ -3858,7 +3858,7 @@
 		}
 		focus = {
 			id = XAD_marrkaech_airport
-			icon = GFX_
+			icon = GFX_focus_mar_air
 			prerequisite = { focus = XAD_plane_heavy_industry }
 			##mutually_exclusive = { focus =  }
 			x = 60
@@ -3896,7 +3896,7 @@
 		}
 		focus = {
 			id = XAD_expand_heavy_industry
-			icon = GFX_
+			icon = GFX_focus_industry1
 			prerequisite = { focus = XAD_plane_heavy_industry }
 			##mutually_exclusive = { focus =  }
 			x = 58
@@ -3935,7 +3935,7 @@
 		}
 		focus = {
 			id = XAD_import_designs
-			icon = GFX_
+			icon = GFX_focus_designs_foreign_air
 			prerequisite = { focus = XAD_tablina_airport focus = XAD_marrkaech_airport }
 			prerequisite = { focus = XAD_expand_heavy_industry }
 			mutually_exclusive = { focus = XAD_our_designs }
@@ -3968,7 +3968,7 @@
 		}
 		focus = {
 			id = XAD_our_designs
-			icon = GFX_
+			icon = GFX_focus_designs_me_air
 			prerequisite = { focus = XAD_tablina_airport focus = XAD_marrkaech_airport }
 			prerequisite = { focus = XAD_expand_heavy_industry }
 			mutually_exclusive = { focus = XAD_import_designs }
@@ -4006,7 +4006,7 @@
 		}
 		focus = {
 			id = XAD_naval_bombers
-			icon = GFX_
+			icon = GFX_focus_naval_bombers
 			prerequisite = { focus = XAD_import_designs focus = XAD_our_designs }
 			#mutually_exclusive = { }
 			x = 61
@@ -4038,7 +4038,7 @@
 		}
 		focus = {
 			id = XAD_cas
-			icon = GFX_
+			icon = GFX_focus_cas
 			prerequisite = { focus = XAD_import_designs focus = XAD_our_designs }
 			#mutually_exclusive = { }
 			x = 59
@@ -4070,7 +4070,7 @@
 		}
 		focus = {
 			id = XAD_fighter
-			icon = GFX_
+			icon = GFX_focus_fighters
 			prerequisite = { focus = XAD_import_designs focus = XAD_our_designs }
 			#mutually_exclusive = { }
 			x = 57
@@ -4102,7 +4102,7 @@
 		}
 		focus = {
 			id = XAD_bombers
-			icon = GFX_
+			icon = GFX_focus_bombers
 			prerequisite = { focus = XAD_import_designs focus = XAD_our_designs }
 			#mutually_exclusive = { }
 			x = 55
@@ -4134,7 +4134,7 @@
 		}
 		focus = {
 			id = XAD_cheaper_planes
-			icon = GFX_
+			icon = GFX_focus_cheaper
 			prerequisite = { focus = XAD_fighter }
 			prerequisite = { focus = XAD_cas }
 			mutually_exclusive = { focus = XAD_stronger_planes focus = XAD_lighter_planes }
@@ -4167,7 +4167,7 @@
 		}
 		focus = {
 			id = XAD_lighter_planes
-			icon = GFX_
+			icon = GFX_focus_lighter
 			prerequisite = { focus = XAD_fighter }
 			prerequisite = { focus = XAD_cas }
 			mutually_exclusive = { focus = XAD_stronger_planes focus = XAD_cheaper_planes }
@@ -4200,7 +4200,7 @@
 		}
 		focus = {
 			id = XAD_stronger_planes
-			icon = GFX_
+			icon = GFX_focus_strong
 			prerequisite = { focus = XAD_fighter }
 			prerequisite = { focus = XAD_cas }
 			mutually_exclusive = { focus = XAD_lighter_planes focus = XAD_cheaper_planes }
@@ -4233,7 +4233,7 @@
 		}
 		focus = {
 			id = XAD_meow_jet
-			icon = GFX_focus_generic_jet_planes
+			icon = GFX_focus_jetmeow
 			prerequisite = { focus = XAD_lighter_planes focus = XAD_stronger_planes focus = XAD_cheaper_planes }
 			#mutually_exclusive = {  }
 			x = 58
