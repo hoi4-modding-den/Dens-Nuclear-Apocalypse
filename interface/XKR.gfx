@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Leader_Rory_Sabatini"
+		texturefile = "gfx/leaders/XKR/Leader_Rory_Sabatino.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Jean-Luc_Francisci"
+		texturefile = "gfx/leaders/XKR/Leader_Jean-Luc_Francisci.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Jack_Gatlin"
+		texturefile = "gfx/leaders/XKR/Leader_Jack_Gatlin.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Yuri_Serdtse"
+		texturefile = "gfx/leaders/XKR/Leader_Yuri_Serdtse.dds"
+	}
+}
+

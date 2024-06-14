@@ -1,0 +1,58 @@
+characters = {
+	XKR_Rory_Sabatini = {
+		name = "Rory Sabatini"
+		portraits = {
+			civilian = {
+				large = "GFX_Leader_Rory_Sabatini"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XKR_Jean_Luc_Francisci = {
+		name = "Jean-Luc Francisci"
+		portraits = {
+			civilian = {
+				large = "GFX_Leader_Jean-Luc_Francisci"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XKR_Jack_Gatlin = {
+		name = "Jack Gatlin"
+		portraits = {
+			civilian = {
+				large = "GFX_Leader_Jack_Gatlin"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XKR_Yuri_Serdtse = {
+		name = "Yuri Serdtse"
+		portraits = {
+			civilian = {
+				large = "GFX_Leader_Yuri_Serdtse"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+}

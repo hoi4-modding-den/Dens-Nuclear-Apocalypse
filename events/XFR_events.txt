@@ -1409,7 +1409,7 @@ country_event = { # generic Faction invite accepted
     id = XFR_events.35
     title = XFR_events.35.t
     picture = GFX_report_event_generic_sign_treaty2
-    desc = XFR_events.31.desc
+    desc = XFR_events.35.desc
     
     is_triggered_only = yes
 
@@ -1418,10 +1418,117 @@ country_event = { # generic Faction invite accepted
         ai_chance = {
             base = 1
         } 
-        
+        custom_effect_tooltip = XFR_sell_centre_tt
+        effect_tooltip = {
+            XFR = {
+                add_equipment_to_stockpile = {
+    	    		type = infantry_equipment
+    	    		amount = 1000
+    	    		producer = XAQ
+		    	}
+            }
+        }
+    }
+}
+
+country_event = { # Nationalists sell Centre
+    id = XFR_events.36
+    title = XFR_events.36.t
+    picture = GFX_report_event_generic_sign_treaty3
+    desc = XFR_events.36.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.36.a
+        ai_chance = {
+            base = 1
+        } 
+        add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = -10000
+		}
+        custom_effect_tooltip = XFR_when_civil_war_starts_tt
+        effect_tooltip = {
+            XFR = {
+                add_equipment_to_stockpile = {
+    		    	type = infantry_equipment
+    		    	amount = 10000
+    		    	producer = XAQ
+			    }
+            }
+            24 = { transfer_state_to = ROOT }
+        }
         
     }
 }
+
+country_event = { # Nationalists sell Centre Pt. 2
+    id = XFR_events.37
+    title = XFR_events.37.t
+    picture = GFX_report_event_military_planning
+    desc = XFR_events.37.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.37.a
+        ai_chance = {
+            base = 1
+        } 
+        effect_tooltip = {
+            XFR = {
+                add_equipment_to_stockpile = {
+    		    	type = infantry_equipment
+    		    	amount = 10000
+    		    	producer = ROOT
+			    }
+            }
+        }
+        24 = { transfer_state_to = ROOT }
+        hidden_effect = {
+            24 = { set_demilitarized_zone = yes }
+            add_opinion_modifier = {
+                target = XFR
+                modifier = XFR_fascist_cooperation
+            }
+        }
+        
+    }
+}
+
+country_event = { # Nationalists sell Centre Pt. 3
+    id = XFR_events.38
+    title = XFR_events.38.t
+    picture = GFX_report_event_military_planning
+    desc = XFR_events.38.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.38.a
+        ai_chance = {
+            base = 1
+        } 
+        add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 10000
+    		producer = XAQ
+		}
+        XAQ = { country_event = { id = XFR_events.37 days = 1 } }
+        effect_tooltip = {
+            24 = { transfer_state_to = XAQ }
+        }
+        hidden_effect = {
+            add_opinion_modifier = {
+                target = XAQ
+                modifier = XFR_fascist_cooperation
+            }
+        }
+        
+    }
+}
+
 
 ###############
 # NEWS EVENTS #
@@ -1657,6 +1764,38 @@ news_event = { # France Reunified!
     }
     option = {
         name = XFR_news_events.8.b
+        trigger = { tag = XFR }
+    }
+
+}
+
+news_event = { # Civil War!
+    id = XFR_news_events.9
+    title = XFR_news_events.9.t
+    picture = GFX_news_event_051
+    desc = XFR_news_events.9.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.9.a
+        trigger = {
+            NOT = { tag = XFR }
+            has_government = fascism
+        }
+    }
+    option = {
+        name = XFR_news_events.9.b
+        trigger = {
+            NOT = { tag = XFR }
+            NOT = { has_government = fascism }
+        }
+    }
+    option = {
+        name = XFR_news_events.9.c
         trigger = { tag = XFR }
     }
 

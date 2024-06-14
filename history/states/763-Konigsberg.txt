@@ -10,26 +10,20 @@ state={
 			6332 10 
 		}
 		buildings = {
-			infrastructure = 3
-			6332 = {
-				bunker = 1
-
-			}
+			infrastructure = 4
+			arms_factory = 2
+			dockyard = 1
 			anti_air_building = 2
+			air_base = 4
+			
 			6332 = {
-				naval_base = 5
-
+				bunker = 3
+			}
+			6332 = {
+				naval_base = 4
 			}
 
 		}
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-
-			}
-
-		}
-
 	}
 
 	provinces={

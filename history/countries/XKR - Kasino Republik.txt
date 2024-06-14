@@ -6,18 +6,21 @@ capital = 85
 #set_stability = 0.8
 #set_convoys = 5
 
-
+recruit_character = XKR_Rory_Sabatini
+recruit_character = XKR_Jean_Luc_Francisci
+#recruit_character = XKR_Jack_Gatlin
+recruit_character = XKR_Yuri_Serdtse
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "2000.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 100
+	democratic = 13
 	communism = 0
-	fascism = 0
-	neutrality = 0
+	fascism = 23
+	neutrality = 64
 }
 

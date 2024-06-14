@@ -11,22 +11,22 @@ state={
 		owner = XKR
 		add_core_of = XKR
 		victory_points = {
-			6282 5 
+			6282 10
 		}
 		victory_points = {
 			11372 3 
 		}
 		buildings = {
 			infrastructure = 3
+			air_base = 2
+			dockyard = 1
+			industrial_complex = 2
 			11372 = {
 				naval_base = 1
-
 			}
 			6282 = {
 				naval_base = 4
-
 			}
-
 		}
 
 	}
@@ -34,8 +34,8 @@ state={
 	provinces={
 		6282 6309 6334 6390 9252 9277 9306 9334 9361 9387 11260 11288 11316 11343 11372 
 	}
-	manpower=749611
+	manpower=1126500
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=7.000
 }

@@ -1,9 +1,7 @@
 state={
 	id=86
 	name="STATE_86"
-manpower=1404333
-	
-	
+	manpower=1404333
 	state_category = city
 	history={
 		owner = XKR
@@ -13,24 +11,7 @@ manpower=1404333
 		}
 		buildings = {
 			infrastructure = 3
-			#industrial_complex = 1
-			11232 = {
-				bunker = 1
-
-			}
-			9532 = {
-				bunker = 1
-
-			}
-			3381 = {
-				bunker = 1
-
-			}
-			#air_base = 3
-		}
-		#add_core_of = POL
-		1938.3.12 = {
-			#add_claim_by = GER
+			industrial_complex = 2
 		}
 	}
 

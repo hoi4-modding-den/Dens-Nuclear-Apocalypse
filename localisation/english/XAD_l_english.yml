@@ -32,6 +32,54 @@
  XAD_increased_birthrates:0 "Birthrates programs"
  XAD_crack_market:0 "Illegal market"
  XAD_grain_production:0 "Focus on grain production"
+ XAD_big_naval_spending:0 "Big naval spending"
+ XAD_tiny_naval_spending:0 "Tiny naval spending"
+ XAD_bis_ass_navy:0 "Huge navy"
+ XAD_u_boats:0 "Submarine focus"
+ XAD_visibility:0 "Invisible in the sea"
+ XAD_men_of_the_sea:0 "Men of the sea"
+ XAD_our_lake:0 "Nuestro mar"
+ XAD_toughter_steel:0 "Better armor"
+ XAD_importing_designs:0 "Importing foreign designs"
+ XAD_bombers:0 "Bombers"
+ XAD_fighters:0 "Fighters"
+ XAD_cas:0 "Cas"
+ XAD_naval_bombers:0 "Naval bombers"
+ XAD_cheaper_airplanes:0 "Cheaper planes"
+ XAD_lighter_airplanes:0 "Lighter planes"
+ XAD_stronger_airplanes:0 "Stronger planes"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  XAD_borgir:0 "borgir"
  
  
@@ -137,6 +185,44 @@
  XAD_ADPPG:0 "The ADPPG"
  XAD_developing_tanks:0 "Investing in tanks"
  XAD_trucks:0 "Truck focus"
+ XAD_kickstart_naval_producion:0 "Kickstart naval production"
+ XAD_dockyards_in_tablina:0 "Develop the Tablina ports"
+ XAD_dockyards_in_grenada:0 "Develop port in the mediterranean"
+ XAD_create_a_naval_sector:0 "Form the naval sector in the army"
+ XAD_small_naval_spending:0 "Small spending"
+ XAD_huge_naval_spending:0 "Huge spending"
+ XAD_u-boats_focus:0 "Submarine focus"
+ XAD_submarine_model:0 "Develop submarine models"
+ XAD_visibility_bonus:0 "Invisibility in the sea"
+ XAD_men_of_the_sea:0 "The cats in the fishs house"
+ XAD_our_lake:0 "Nuestro mar"
+ XAD_find_old_german_boats:0 "Study old ww2 german submarines"
+ XAD_invest_in_uboat_research:0 "Invest in submarine research"
+ XAD_big_ass_navy_focus:0 "Fund a big navy"
+ XAD_destroyer_and_battleship_model:0 "Develop models for our navy"
+ XAD_toughter_steel:0 "Improve welding"
+ XAD_invest_in_destroyer_research:0 "Invest in destroyer research"
+ XAD_invest_in_battleship_research:0 "Invest in battleship research"
+ XAD_invest_in_carriers_research:0 "Invest in carrier research"
+ XAD_kickstart_plane_producion:0 "Kickstart plane production"
+ XAD_plane_heavy_industry:0 "Heavy plane industry"
+ XAD_tablina_airport:0 "Fund the Tablina airport"
+ XAD_marrkaech_airport:0 "Fund the Marrakech airport"
+ XAD_expand_heavy_industry:0 "Fund industry"
+ XAD_import_designs:0 "Import foreign designs"
+ XAD_our_designs:0 "Create our own designs"
+ XAD_naval_bombers:0 "Develop naval bombers"
+ XAD_cas:0 "Develop CAS"
+ XAD_fighter:0 "Develop fighters"
+ XAD_bombers:0 "Develop bombers"
+ XAD_cheaper_planes:0 "Cheaper airplanes"
+ XAD_lighter_planes:0 "Lighter airplanes"
+ XAD_stronger_planes:0 "Stronger airplanes"
+ XAD_meow_jet:0 "The meow jet"
+ 
+ 
+  
+ 
  
  
  XAD_santarem_core:0 "Send cats to Santarem"

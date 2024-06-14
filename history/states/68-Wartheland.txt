@@ -8,13 +8,13 @@ state={
 
 	history={
 		victory_points = {
-			3473 1 
+			3473 5 
 		}
 		owner = XKR
 		add_core_of = XKR
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 1
 		}
 
 	}
@@ -22,8 +22,8 @@ state={
 	provinces={
 		444 537 3473 3572 6236 11478 
 	}
-	manpower=833893
+	manpower=513200
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 	local_supplies=0.000
 }

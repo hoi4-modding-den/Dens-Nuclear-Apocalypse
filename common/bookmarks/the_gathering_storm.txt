@@ -147,8 +147,8 @@ bookmarks = {
 			history = XFR_history_desc
 			focuses = {
 				XFR_proclaim_french_government
-				XFR_dennounce_the_illigitimate_government
-				XFR_the_new_empire
+				XFR_deal_with_the_mutants
+				XFR_alliance_of_free_nations
 			}
 			ideas = {
 				XFR_chaos_in_centre

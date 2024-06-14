@@ -26,12 +26,66 @@ XFR_centre_crisis_cat = {
 			is_ai = no
 		}
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		complete_effect = {
 			24 = { remove_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
         }
 	}
+
+	XFR_clear_centre_not_XFR = { 
+		
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			NOT = { original_tag = XFR }
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 24 
+			}
+		}
+
+		available = {
+			24 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		visible = { 
+			24 = { has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
+			24 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+		custom_cost_text = decision_cost_100_guns
+
+		days_remove = 70
+
+        ai_will_do = {
+			base = 1000
+		}
+		cancel_trigger = {
+			NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = -100
+				}
+			}
+		}
+
+		remove_effect = {
+			24 = { remove_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
+			24 = { set_demilitarized_zone = no }
+        }
+	}
+
 	XFR_centre_hunt_down_mutants  = { 
 		
 		icon = GFX_decision_generic_ignite_civil_war
@@ -68,6 +122,9 @@ XFR_centre_crisis_cat = {
 
         ai_will_do = {
 			base = 1000
+		}
+		cancel_trigger = {
+			NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -153,6 +210,7 @@ XFR_centre_crisis_cat = {
 		}
 
 		cancel_trigger = {
+			NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
 			OR = {
 				24 = { infrastructure > 4 }
 				has_completed_focus = XFR_crisis_averted
@@ -197,9 +255,6 @@ XFR_centre_crisis_cat = {
 
     	allowed = {
     	    original_tag = XFR
-    	}
-
-    	cancel_trigger = {
     	}
 
     	available = {
