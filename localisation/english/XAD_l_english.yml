@@ -48,29 +48,40 @@
  XAD_cheaper_airplanes:0 "Cheaper planes"
  XAD_lighter_airplanes:0 "Lighter planes"
  XAD_stronger_airplanes:0 "Stronger planes"
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+ XAD.1.t:0 "A trade deal in Iberia"
+ XAD.1.d:0 "Today a message has arrived from the country of Catalusia, a country which is located in the south of Iberia. Swiss citizens have always gone to that country for it’s beautiful branches and today [XAD.GetLeader] has allowed us to get the Steel in mines of Melilla in exchange of a big sum of money"
+ XAD.1.a:0 "Tell those cats to never message us again"
+ XAD.1.b:0 "It is a beutiful offer, accept it immediately"
+ XAD.2.t:0 "The swiss have refused!"
+ XAD.2.d:0 "A message from the swiss has expressed thier anger at our offer"
+ XAD.2.a:0 "Those bastards"
+ XAD.3.t:0 "The swiss have accepted"
+ XAD.3.d:0 "The swiss have alredy sent thier money to us"
+ XAD.3.a:0 "Inshallah"
+ XAD.4.t:0 "We were victorius" #catalusia victory
+ XAD.4.d:0 "Our forces have pushed the enemy ones and our flag flies in the new land"
+ XAD.4.a:0 "It is time to enstablish our presence in the state"
+ XAD.5.t:0 "A stalemate" #catalusia nobody won
+ XAD.5.d:0 "Our forces tried the hardest to push the enemy out but they failed, luckily they were atleast able to defend"
+ XAD.5.a:0 "It could have been worse"
+ XAD.6.t:0 "We lost!" #catalusia lost
+ XAD.6.d:0 "Our forces not only were defeated by the superior enemies, but they were also able to completely destroy our army"
+ XAD.6.a:0 "How did we fail!?"
+ XAD.7.t:0 "The cats have been halted" #portugal win
+ XAD.7.d:0 "Today we have been informed that the cats which tried to launch a sneak attack in our southern lands have been pushed out and thier forces were destroyed at thier borders"
+ XAD.7.a:0 "Teach em cats how to act"
+ XAD.8.t:0 "A stalemate" #portugal stalemate
+ XAD.8.d:0 "Our forces tried the hardest to push the enemy out but they failed, luckily they were atleast able to defend"
+ XAD.8.a:0 "Could have gone way worse"
+ XAD.9.t:0 "We lost" #portugal lost
+ XAD.9.d:0 "Today, the cats have pushed us away from our borders and they have anstablished control in Santarèm, it is a shame and shows the weakness of our maybe not so great army"
  
  
  

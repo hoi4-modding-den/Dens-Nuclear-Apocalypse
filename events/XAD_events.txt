@@ -74,5 +74,86 @@ country_event = {
 			add_core_of = XSA
 			start_resistance = yes
 		}
+        add_war_support = 0.1
+    }
+}
+country_event = {
+    id = XAD.5
+    title = XAD.5.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XAD.5.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.5.a
+        army_experience = 25
+        add_war_support = -0.05
+    }
+}
+country_event = {
+    id = XAD.6
+    title = XAD.6.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XAD.6.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.6.a
+        army_experience = 10
+        add_war_support = -0.1
+    }
+}
+
+country_event = {
+    id = XAD.7
+    title = XAD.7.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XAD.7.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.7.a
+        add_war_support = 0.15
+        army_experience = 15
+    }
+}
+country_event = {
+    id = XAD.8
+    title = XAD.8.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XAD.8.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.8.a
+        army_experience = 25
+    }
+}
+country_event = {
+    id = XAD.9
+    title = XAD.9.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XAD.9.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XAD.9.a
+        add_war_support = -0.05
+        army_experience = 50
     }
 }
