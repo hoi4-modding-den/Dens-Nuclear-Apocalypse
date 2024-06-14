@@ -841,7 +841,7 @@
 	focus = {
 		id = XGE_computer_directed_secret_police
 		#icon = GFX_Focus_ARG_women_in_industry
-		icon = GFX_focus_XGE_computer_directed_secret_police
+		icon = GFX_focus_SWI_embrace_rote_drei
 		prerequisite = { focus = XGE_ministerium_fur_staatssicherheit }
 		#mutually_exclusive = { focus =  }
 		x = 0
