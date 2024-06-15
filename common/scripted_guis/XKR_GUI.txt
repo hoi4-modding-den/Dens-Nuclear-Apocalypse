@@ -21,25 +21,4 @@ scripted_gui = {
 			}
 		}
 	}
-
-	XKR_open_welcome = { 
-		context_type = player_context
-		window_name = "XKR_open_welcome_window"
-		visible = { 
-			original_tag = XKR
-		}
-		effects = {
-			XKR_open_welcome_button_click = {
-				if = {
-					limit = {
-						has_country_flag = XKR_welcome_message_flag
-					}
-					clr_country_flag = XKR_welcome_message_flag
-				}
-				else = {
-					set_country_flag = XKR_welcome_message_flag
-				}
-			}
-		}
-	}
 }

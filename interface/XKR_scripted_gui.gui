@@ -3,23 +3,16 @@
 guiTypes = {
 	containerWindowType = {
 		name = "XKR_welcome_window"
-		#clipping = no
 		moveable = yes
 		position = { x = -400 y = -300 }
-		#show_position = { x = 538 y = 220 }
-		#show_animation_type = decelerated
-		#hide_animation_type = accelerated
-		#animation_time = 300
 		orientation = center
 		size = { width = 800 height = 600 }
-		fade_time = 20000
-		fade_type = accelerated
 		
 		background = {
 			name = "background"
 			quadTextureSprite = "GFX_tiled_plain_bg"
 		}
-		iconType ={
+		iconType = {
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
 			position = { x= 5 y = 07 }
@@ -48,11 +41,10 @@ guiTypes = {
 				quadTextureSprite ="GFX_tiled_window_thin_border2"
 			}
 			iconType ={
-				name ="XKR_welcome_window_animation"
+				name ="XKR_welcome_window_image"
 				spriteType = "GFX_XKR_welcome"
 				position = { x= 9 y = 12 }
 				Orientation = "UPPER_LEFT"
-				#clipping = no
 				scale = 0.97
 			}	
 		}
@@ -60,7 +52,8 @@ guiTypes = {
 			name = "XKR_welcome_message_close"
 			spriteType = "GFX_closebutton"
 			position = { x = 764 y = 4 }
-			
+			shortcut = "ESCAPE"
+			pdx_tooltip = XKR_exit_tooltip
 		}
 		buttonType = {
 			name ="XKR_welcome_message_continue"
@@ -68,13 +61,13 @@ guiTypes = {
 			position = { x=20 y=553 }
 			buttonText = "Continue"
 			buttonFont = "hoi_16mbs"
-			shortcut = "ESCAPE"
+			shortcut = "SPACE"
+			pdx_tooltip = XKR_continue_tooltip
 		}
 		iconType = {
 			name = "XKR_continue_button_bloom"
 			spriteType = "GFX_XGE_continue_button_bloom"
 			position = { x=20 y=553 }
-			#pdx_tooltip = XGE_bloom_hint_loc
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
@@ -84,11 +77,8 @@ guiTypes = {
 			text = "Continue"
 			maxWidth = 300
 			maxHeight = 375
-			#multiline = yes
 			format = center
-			
-			
-			#pdx_tooltip = "XGE_intelligence_control_tt"
+			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "XKR_introduction_text" 
@@ -99,9 +89,6 @@ guiTypes = {
 			maxHeight = 375
 			multiline = yes
 			format = left
-			
-			
-			#pdx_tooltip = "XGE_intelligence_control_tt"
 		}
 		buttonType = {
 			name ="XKR_welcome_message_credits"
@@ -109,7 +96,6 @@ guiTypes = {
 			position = { x=400 y=555 }
 			buttonText = "Credits?"
 			buttonFont = "hoi_16mbs"
-			#shortcut = "ESCAPE"
 			pdx_tooltip = XKR_credits
 		}
 		

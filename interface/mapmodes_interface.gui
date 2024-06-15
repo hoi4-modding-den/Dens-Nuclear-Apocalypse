@@ -5,20 +5,6 @@ guiTypes = {
 	#	position = { x=41 y=0 }
 	#}
 
-	containerWindowType = {
-		name = "XKR_open_welcome_window"
-		position = { x = -38 y = -286 }
-		size = { width = 32 height = 32 }
-		Orientation = lower_RIGHT
-		
-		buttonType = {
-			name ="XKR_open_welcome_button"
-			quadTextureSprite ="GFX_XKR_open_welcome_window_button"
-			position = { x=0 y=0 }
-			pdx_tooltip = XKR_open_welcome_tooltip
-		}
-	}
-
 	containerWindowType =  {
 		name = "MapmodesInterface_Ingame"
 		position = { x=-631 y=-244 }
