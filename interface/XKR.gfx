@@ -16,5 +16,14 @@ spriteTypes = {
 		name = "GFX_Leader_Yuri_Serdtse"
 		texturefile = "gfx/leaders/XKR/Leader_Yuri_Serdtse.dds"
 	}
+
+	spriteType = {
+		name = "GFX_XKR_welcome"
+		texturefile = "gfx/interface/XKR/XKR_Intro_Picture.dds"
+	}
+	spriteType = {
+		name = "GFX_XKR_open_welcome_window_button"
+		texturefile = "gfx/interface/XKR/open_welcome_window_button.dds"
+	}
 }
 

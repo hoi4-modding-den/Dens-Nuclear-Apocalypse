@@ -1,0 +1,118 @@
+### COPIED FROM XGE ###
+
+guiTypes = {
+	containerWindowType = {
+		name = "XKR_welcome_window"
+		#clipping = no
+		moveable = yes
+		position = { x = -400 y = -300 }
+		#show_position = { x = 538 y = 220 }
+		#show_animation_type = decelerated
+		#hide_animation_type = accelerated
+		#animation_time = 300
+		orientation = center
+		size = { width = 800 height = 600 }
+		fade_time = 20000
+		fade_type = accelerated
+		
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		iconType ={
+			name ="production_header_bg"
+			spriteType = "GFX_header_bg"
+			position = { x= 5 y = 07 }
+			Orientation = "UPPER_LEFT"
+		}	
+		instantTextboxType = {
+			name = "XKR_welcome_Desc"
+			position = { x = 3 y = 7 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "The Casino Republic"
+			maxWidth = 500
+			maxHeight = 20
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "XKR_welcome_image_window"
+			position = { x=500 y=0 }
+			size = { width = 300 height = 600 }
+			#moveable = yes
+			
+			background = {
+				name = "XKR_welcome_Image_Border"
+				quadTextureSprite ="GFX_tiled_window_thin_border2"
+			}
+			iconType ={
+				name ="XKR_welcome_window_animation"
+				spriteType = "GFX_XKR_welcome"
+				position = { x= 9 y = 12 }
+				Orientation = "UPPER_LEFT"
+				#clipping = no
+				scale = 0.97
+			}	
+		}
+		buttonType = {
+			name = "XKR_welcome_message_close"
+			spriteType = "GFX_closebutton"
+			position = { x = 764 y = 4 }
+			
+		}
+		buttonType = {
+			name ="XKR_welcome_message_continue"
+			quadTextureSprite ="GFX_button_359x34"
+			position = { x=20 y=553 }
+			buttonText = "Continue"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+		}
+		iconType = {
+			name = "XKR_continue_button_bloom"
+			spriteType = "GFX_XGE_continue_button_bloom"
+			position = { x=20 y=553 }
+			#pdx_tooltip = XGE_bloom_hint_loc
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "XKR_continue_button_text" 
+			position = { x=50 y=563 }
+			font = "hoi_16mbs"
+			text = "Continue"
+			maxWidth = 300
+			maxHeight = 375
+			#multiline = yes
+			format = center
+			
+			
+			#pdx_tooltip = "XGE_intelligence_control_tt"
+		}
+		instantTextboxType = {
+			name = "XKR_introduction_text" 
+			position = { x=10 y=52 }
+			font = "hoi_18mbs"
+			text = XKR_intro_loc
+			maxWidth = 493
+			maxHeight = 375
+			multiline = yes
+			format = left
+			
+			
+			#pdx_tooltip = "XGE_intelligence_control_tt"
+		}
+		buttonType = {
+			name ="XKR_welcome_message_credits"
+			quadTextureSprite ="GFX_button_94x31"
+			position = { x=400 y=555 }
+			buttonText = "Credits?"
+			buttonFont = "hoi_16mbs"
+			#shortcut = "ESCAPE"
+			pdx_tooltip = XKR_credits
+		}
+		
+	}
+	
+}
