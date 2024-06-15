@@ -81,6 +81,24 @@ recruit_character = XFR_luc_joubert
 recruit_character = XFR_leonard_desgrais
 recruit_character = XFR_nathalie_gardet
 recruit_character = XFR_dominique_gounelle
+recruit_character = XFR_regency_council
+# Advisors for all
+recruit_character = XFR_science_minister_advisor
+recruit_character = XFR_economics_minister_advisor
+recruit_character = XFR_trade_minister_advisor
+recruit_character = XFR_agriculture_minister_advisor
+# Democratic Advisors
+recruit_character = XFR_democrat_advisor
+recruit_character = XFR_weeb_advisor
+recruit_character = XFR_political_activist_advisor
+recruit_character = XFR_la_reynie
+recruit_character = XFR_anarchist_author_advisor
+recruit_character = XFR_social_reformist_advisor
+recruit_character = XFR_diplomat_advisor
+# Fascist/Monarchist Advisors
+recruit_character = XFR_reichskommisar_advisor
+recruit_character = XFR_militia_advisor
+recruit_character = XFR_herzog_sidekick_advisor
 
 
 	generate_character = {
@@ -175,8 +193,6 @@ recruit_character = XFR_dominique_gounelle
 		}
 	}
 
-recruit_character = XFR_la_reynie
-
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "XFR_air"
@@ -218,6 +234,15 @@ if = {
 			CAS1 = 1
 		}
 	}
+}
+
+add_opinion_modifier = {
+	target = XNF
+	modifier = XFR_hostility
+}
+add_opinion_modifier = {
+	target = XAL
+	modifier = XFR_support_their_government
 }
 
 set_politics = {

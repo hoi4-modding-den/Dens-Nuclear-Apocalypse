@@ -13,6 +13,9 @@ opinion_modifiers = {
 	XFR_supports_our_government = {
 		value = 50
 	}
+	XFR_support_their_government = {
+		value = 30
+	}
 	XAL_increased_political_freedoms = {
 		value = 20
 	}

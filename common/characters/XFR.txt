@@ -49,14 +49,20 @@ characters = {
 			allowed = {
 				original_tag = XFR
 			}
+			visible = {
+				NOT = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
+			}
 			available = {
-				has_completed_focus = XFR_dennounce_democracy
-				NOT = { has_completed_focus = XFR_monarchist_coup }
+				custom_trigger_tooltip = {
+					tooltip = unlock_through_event_tt
+					has_country_flag = XFR_herzog_unlocked
+				}
+				NOT = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
 			}
 			traits = {
 				XFR_herzog_julius_advisor_trait
 			}
-			cost =  100
+			cost =  75
 			ai_will_do = {
 				factor = 1
 			}
@@ -81,8 +87,13 @@ characters = {
 		name = XFR_regency_council_name
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_XFR_parliament"
+				large = "GFX_portrait_XFR_regency_council"
 			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = { XFR_regency_council_trait }
+			expire = "3000.1.1"
 		}
 	}
 
@@ -100,20 +111,24 @@ characters = {
 			allowed = {
 				original_tag = XFR
 			}
+			visible = {
+				has_country_leader = { character = XFR_regnault_guillaume ruling_only = yes }
+			}
 			available = {
 				has_completed_focus = XFR_dennounce_democracy
+				NOT = { has_country_leader = { character = XFR_regnault_guillaume ruling_only = yes } }
 			}
 			traits = {
 				SWI_fascist_propagandist
 			}
-			cost =  100
+			cost = 75
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		country_leader = {
 			ideology = XFR_lotharingian_nationalism
-			traits = { }
+			traits = { XFR_lotharingian_nationalist }
 			expire = "3000.1.1"
 		}
 	}
@@ -347,6 +362,22 @@ characters = {
 		portraits = {
 			navy = {
 				large = "GFX_portrait_XFR_nathalie_gardet"
+				small = "GFX_portrait_XFR_nathalie_gardet_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = nathalie_gardet
+			allowed = {
+				original_tag = XFR
+			}
+			available = {
+				has_completed_focus = XFR_rebuild_the_fleet
+			}
+			traits = { naval_theorist }
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		navy_leader={
@@ -387,21 +418,6 @@ characters = {
 				factor = 1.000
 			}
 		}
-		advisor = {
-			slot = theorist
-			idea_token = dominique_gounelle2
-			allowed = {
-				original_tag = XFR
-			}
-			available = {
-				has_completed_focus = XFR_rebuild_the_fleet
-			}
-			traits = { naval_theorist }
-			cost = 50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		navy_leader={
 			visible = {
 				has_completed_focus = XFR_rebuild_the_fleet 
@@ -411,6 +427,230 @@ characters = {
   			attack_skill = 2
   			defense_skill = 2
   			planning_skill = 5
+		}
+	}
+
+	XFR_democrat_advisor = {
+		name = XFR_democrat_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_democrat_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = democrat_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_dennounce_democracy }
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = { resolute_social_democrat }
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_anarchist_author_advisor = {
+		name = XFR_anarchist_author_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_anarchist_author_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = anarchist_author_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_dennounce_democracy }
+			}
+			available = {
+				OR = {
+					has_completed_focus = XFR_work_with_anarchists
+					has_government = communism
+				}
+			}
+			traits = { XFR_anarchist_author_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_science_minister_advisor = {
+		name = XFR_science_minister_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_science_minister_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = science_minister_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+			}
+			available = {
+				has_completed_focus = XFR_besancon_university
+			}
+			traits = { XFR_science_minister_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_economics_minister_advisor = {
+		name = XFR_economics_minister_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_economics_minister_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = economics_minister_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+			}
+			available = {
+				has_completed_focus = XFR_industrial_investments
+			}
+			traits = { XFR_economic_minister_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_agriculture_minister_advisor = {
+		name = XFR_agriculture_minister_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_agriculture_minister_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = agriculture_minister_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+			}
+			available = {
+				has_completed_focus = XFR_agriculture
+			}
+			traits = { XFR_agriculture_minister_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_trade_minister_advisor = {
+		name = XFR_trade_minister_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_trade_minister_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = trade_minister_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				
+			}
+			available = {
+				has_completed_focus = XFR_reopen_trade
+			}
+			traits = { JUNO_minister_trade_development }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_weeb_advisor = {
+		name = XFR_weeb_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_weeb_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = weeb_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_dennounce_democracy }
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = { XFR_weeb_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_political_activist_advisor = {
+		name = XFR_political_activist_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_political_activist_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = political_activist_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_dennounce_democracy }
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = { XFR_political_activist_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -437,6 +677,153 @@ characters = {
 				has_intelligence_agency = yes
 			}
 			traits = { XFR_marechaussee_chief }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_social_reformist_advisor = {
+		name = XFR_social_reformist_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_social_reformist_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = social_reformist_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_dennounce_democracy }
+			}
+			available = {
+				has_completed_focus = XFR_social_reform
+			}
+			traits = { XFR_union_representative }
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_diplomat_advisor = {
+		name = XFR_diplomat_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_diplomat_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = diplomat_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_dennounce_democracy }
+			}
+			available = {
+				has_completed_focus = XFR_european_ambitions
+				NOT = { has_war_with = XNM }
+			}
+			traits = { XFR_diplomat_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_militia_advisor = {
+		name = XFR_militia_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_militia_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = militia_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_support_parliament }
+			}
+			available = {
+				OR = {
+					has_government = fascism
+					has_completed_focus = XFR_allow_nationalist_militias
+				}
+			}
+			traits = { XFR_militia_advisor_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_reichskommisar_advisor = {
+		name = XFR_reichskommisar_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_reichskommisar_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = reichskommisar_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_support_parliament }
+			}
+			available = {
+				OR = {
+					has_government = fascism
+					has_completed_focus = XFR_nationalist_cooperation
+				}
+			}
+			traits = { XFR_reichskommisar_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XFR_herzog_sidekick_advisor = {
+		name = XFR_herzog_sidekick_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_XFR_herzog_sidekick_advisor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = herzog_sidekick_advisor
+			allowed = {
+				original_tag = XFR
+			}
+			visible  = {
+				NOT = { has_completed_focus = XFR_support_parliament }
+			}
+			available = {
+				has_completed_focus = XFR_civil_war1
+			}
+			traits = { XFR_herzogs_sidekick_trait }
 			cost = 100
 			ai_will_do = {
 				factor = 1.000

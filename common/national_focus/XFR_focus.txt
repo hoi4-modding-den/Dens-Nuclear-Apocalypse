@@ -160,7 +160,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
@@ -177,6 +177,8 @@ focus_tree = {
 				idea = XFR_anarchists_appeased
 				days = 365
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = anarchist_author_advisor
 		}
 	}
 
@@ -494,12 +496,6 @@ focus_tree = {
 		available = {
 			has_government = democratic
 			is_subject = no
-			is_in_faction = no
-		}
-
-		bypass = {
-			has_government = democratic
-			is_faction_leader = yes
 		}
 
 		cost = 5
@@ -507,14 +503,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_war_support = 0.1
 			set_rule = {
     			can_create_factions = yes
 				can_puppet = yes
 			}
-			XFR_create_faction = yes
+			if = {
+				limit = {
+					is_faction_leader = no
+				}
+				if = {
+					limit = { is_in_faction = yes }
+					leave_faction = yes
+				}
+				XFR_create_faction = yes
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = diplomat_advisor
 		}
 	}
 
@@ -1664,8 +1671,15 @@ focus_tree = {
 		}
 		search_filters = {  }
 		completion_reward = {
+			if = {
+				limit = { 975 = { is_capital = yes } }
+				add_victory_points = {
+					province = 9642
+					value = 10
+				}
+			}
 			capital_scope = {
-				add_extra_state_shared_building_slots = 2
+				increase_state_category = yes
 			}
 		}
 	}
@@ -1879,8 +1893,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = social_reformist_advisor
 			custom_effect_tooltip = XFR_social_reform_tt
 		}
 	}
@@ -2052,7 +2068,7 @@ focus_tree = {
 
 		available = {
 			has_army_manpower = {
-    			size > 100000
+    			size > 10000
 			}
 			27 = { is_owned_and_controlled_by = ROOT }
 			973 = {
@@ -2189,9 +2205,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = -0.1
+			add_political_power = 100
 			add_popularity = {
 				ideology = democratic
 				popularity = -0.2
@@ -2201,8 +2218,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = regnault_guillaume
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = herzog_julius
 		}
 	}
 
@@ -2270,7 +2285,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.15
+				popularity = 0.2
 			}
 		}
 	}
@@ -2289,6 +2304,10 @@ focus_tree = {
 
 		available = {
 			
+		}
+
+		bypass = {
+			NOT = { 18 = { has_dynamic_modifier = { modifier = XFR_anarchists_state_modifier } } }
 		}
 
 		ai_will_do = {
@@ -2315,7 +2334,7 @@ focus_tree = {
 
 		available = {
 			fascism > 0.5
-			has_stability < 0.5
+			has_stability < 0.25
 		}
 
 		ai_will_do = {
@@ -2329,6 +2348,7 @@ focus_tree = {
 			news_event = { id = XFR_news_events.9 }
 			custom_effect_tooltip = XFR_fascist_coup_tt
 			hidden_effect = {
+				add_ideas = war_economy
 			if = {
 				limit = {
 					XAQ = { has_government = fascism }
@@ -2351,6 +2371,20 @@ focus_tree = {
 				}
 				add_ideas = { XFR_anarchist_revolt XFR_anarchist_democrat_cooperation }
 			}
+			set_party_name = {
+            	ideology = communism
+            	long_name = XFR_communism_party_long
+            	name = XFR_communism_party
+        	} 
+			create_country_leader = {
+				name = XFR_anarchists_name
+				picture = GFX_portrait_SPR_anarchist_commune
+				expire = "3000.1.1"
+				ideology = anarchist_communism
+				traits = {
+					XFR_anarchists_trait
+				}
+				}
 			load_oob = "XFR_civil_war_fascists"
 			}
 		}
@@ -2368,7 +2402,7 @@ focus_tree = {
 		cost = 2
 
 		available = {
-			neutrality > 0.25
+			neutrality > 0.15
 		}
 
 		bypass = {
@@ -2379,16 +2413,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.1
+				popularity = 0.15
 			}
 			swap_ideas = {
 				remove_idea = XFR_herzogs_speeches
 				add_idea = XFR_bund_support
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = herzog_sidekick_advisor
 		}
 	}
 
@@ -2470,13 +2506,14 @@ focus_tree = {
 		relative_position_id = XFR_fascist_coup
 
 		available = {
-			neutrality > 0.5
 			has_government = fascism
+			fascism < 0.5
 			is_subject = no
 		}
 
 		bypass = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 		
 
@@ -2488,6 +2525,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			set_politics = { ruling_party = neutrality elections_allowed = no }
+			add_political_power = 100
 		}
 	}
 
@@ -2502,6 +2540,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2525,7 +2564,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_the_coronation
-		icon = GFX_focus_generic_monarchy_2
+		icon = GFX_focus_XFR_haus_burgund
 		prerequisite = { focus = XFR_consolidate_power }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -2534,6 +2573,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 			has_civil_war = no
 		}
 
@@ -2542,9 +2582,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			hidden_effect = { news_event = { id = XFR_news_events.10 days = 3 } }
+			hidden_effect = {
+				975 = { set_state_name = "Bisanz" }
+				set_province_name = { id = 9642 name = "Bisanz" }
+				add_victory_points = {
+					province = 9642
+					value = 15
+				}
+				news_event = { id = XFR_news_events.10 days = 3 }
+			}
 			country_event = { id = XFR_events.39 }
 		}
 	}
@@ -2560,6 +2608,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 			has_civil_war = no
 		}
 
@@ -2568,10 +2617,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_stability = 0.15
 			add_popularity = {
 				ideology = democratic
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = communism
 				popularity = -1
 			}
 		}
@@ -2588,10 +2642,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
+			is_subject = no
 		}
 
 		cost = 5
@@ -2601,6 +2652,10 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
+			custom_effect_tooltip = XFR_regain_lost_titles_tt
+			hidden_effect = {
+				swap_ruler_traits = { remove = XFR_herzog_von_burgund2 add = XFR_herzog_von_burgund3 }
+			}
 		}
 	}
 
@@ -2616,6 +2671,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2640,6 +2696,11 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
 		}
 
 		cost = 2
@@ -2663,6 +2724,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2689,6 +2751,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			upgrade_economy_law = yes
 		}
 	}
 
@@ -2703,6 +2766,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2710,12 +2774,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = reichskommisar_advisor
 		}
 	}
 
@@ -2730,6 +2796,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2737,11 +2804,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
+			}
+			custom_effect_tooltip = XFR_allow_nationalist_militias_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = militia_advisor
+			hidden_effect = {
+				load_oob = "XFR_civil_war_fascists"
+				set_division_force_allow_recruiting = {
+					division_template = "Lotharingian Militia"
+				}
 			}
 		}
 	}
@@ -2760,6 +2836,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2787,6 +2864,11 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
 		}
 
 		cost = 10
@@ -2810,6 +2892,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 10
@@ -2833,6 +2916,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 10
@@ -2856,6 +2940,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2866,7 +2951,7 @@ focus_tree = {
 		search_filters = { }
 		completion_reward = {
 			every_owned_state = {
-				add_manpower = -10000
+				add_manpower = -1000
 			}
 		}
 	}
@@ -2882,6 +2967,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2911,6 +2997,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2935,6 +3022,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2959,6 +3047,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2983,6 +3072,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -2992,15 +3082,7 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			add_country_leader_role = {
-            	character = XFR_regency_council
-            	promote_leader = yes
-            	country_leader = {
-            	    ideology = oligarchism
-            	    expire = "3000.1.1"
-            	traits = { XFR_regency_council_trait }
-            	}
-        	}
+			XFR_regency_council = { promote_character = yes }
 		}
 	}
 
@@ -3015,9 +3097,10 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_regency_council ruling_only = yes }
+			is_subject = no
 		}
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -3038,6 +3121,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_regency_council ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3066,6 +3150,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 			has_completed_focus = XFR_all_hail_kaiser_julius
 		}
 
@@ -3101,7 +3186,12 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 			has_completed_focus = XFR_announce_francian_ambitions
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
 		}
 
 		allow_branch = {
@@ -3155,15 +3245,34 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
+			is_neighbor_of = XPR
+			NOT = { is_ally_with = XPR }
 		}
+
+		bypass = {
+			XPR = {
+				OR = {
+					is_ally_with = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+		
 
 		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		will_lead_to_war_with = XPR
 		completion_reward = {
+			create_wargoal = {
+				target = XPR
+				type = annex_everything
+			}
 		}
 	}
 
@@ -3178,6 +3287,19 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
+			is_neighbor_of = XAQ
+			NOT = { is_ally_with = XAQ }
+		}
+
+		bypass = {
+			XAQ = {
+				OR = {
+					is_ally_with = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
 		}
 
 		cost = 5
@@ -3185,8 +3307,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		will_lead_to_war_with = XAQ
 		completion_reward = {
+			create_wargoal = {
+				target = XAQ
+				type = annex_everything
+			}
 		}
 	}
 
@@ -3201,6 +3328,19 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
+			is_neighbor_of = XLF
+			NOT = { is_ally_with = XLF }
+		}
+
+		bypass = {
+			XLF = {
+				OR = {
+					is_ally_with = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
 		}
 
 		cost = 5
@@ -3208,8 +3348,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		will_lead_to_war_with = XLF
 		completion_reward = {
+			create_wargoal = {
+				target = XLF
+				type = annex_everything
+			}
 		}
 	}
 
@@ -3224,6 +3369,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3247,6 +3393,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3272,6 +3419,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3295,6 +3443,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3344,6 +3493,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3367,6 +3517,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3390,6 +3541,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3413,6 +3565,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3436,6 +3589,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3459,6 +3613,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3482,6 +3637,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3505,6 +3661,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3528,6 +3685,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3553,6 +3711,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3602,6 +3761,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3625,6 +3785,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3649,6 +3810,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3663,7 +3825,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_hamburg
-		icon = GFX
+		icon = GFX_focus_XFR_hamburg
 		prerequisite = { focus = XFR_claim_the_black_spot }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -3672,6 +3834,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3695,6 +3858,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3718,6 +3882,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3741,6 +3906,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3766,6 +3932,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3791,6 +3958,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3814,6 +3982,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
 		}
 
 		cost = 5
@@ -3873,7 +4042,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			27 = {
 				add_extra_state_shared_building_slots = 2
@@ -3902,6 +4071,8 @@ focus_tree = {
     			var = XFR_industrial_fund_var
     			value = 0
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = economics_minister_advisor
 		}
 	}
 
@@ -4251,7 +4422,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_research_slot = 1
 			custom_effect_tooltip = XFR_industry_modifier_tt
@@ -4259,6 +4430,8 @@ focus_tree = {
 				XFR_industry_research_speed_factor = 0.05
 				tooltip = research_speed_factor_tt
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = science_minister_advisor
 		}
 	}
 
@@ -4328,10 +4501,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_ideas = export_focus
-			custom_effect_tooltip = XFR_reopen_trade_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = trade_minister_advisor
+			if = {
+				limit = {
+					has_government = democratic
+					XNM = { has_government = democratic }
+				}
+				custom_effect_tooltip = XFR_reopen_trade_tt
+			}
 		}
 	}
 
@@ -4433,7 +4614,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
@@ -4444,6 +4625,8 @@ focus_tree = {
 				XFR_industry_monthly_population = 0.1
 				tooltip = monthly_population_tt
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = agriculture_minister_advisor
 		}
 	}
 
@@ -5401,7 +5584,7 @@ focus_tree = {
 			custom_effect_tooltip = available_chief_of_navy
 			show_ideas_tooltip = dominique_gounelle
 			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = dominique_gounelle2
+			show_ideas_tooltip = nathalie_gardet
 		}
 	}
 

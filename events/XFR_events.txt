@@ -1114,7 +1114,9 @@ country_event = { # The Herzog speaks
 			popularity = 0.15
 		}
         add_stability = -0.05
-        
+        set_country_flag = XFR_herzog_unlocked
+        custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = herzog_julius
     }
 }
 
@@ -1542,6 +1544,12 @@ country_event = { # Coronation
         ai_chance = {
             base = 1
         } 
+        add_stability = 0.1
+        swap_ruler_traits = { remove = XFR_herzog_von_burgund add = XFR_herzog_von_burgund2 }
+        set_character_name = {
+	        character = XFR_herzog_julius
+	        name = XFR_herzog_julius_name2
+        }
         if = {
             limit = {
                 XAL = { has_government = fascism }

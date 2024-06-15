@@ -68,6 +68,21 @@ leader_traits = {
 
 		political_power_factor = -0.15
 		war_support_factor = 0.05
+		offensive_war_stability_factor = -0.1
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_herzog_von_burgund3 = {
+		random = no
+
+		political_power_factor = -0.15
+		war_support_factor = 0.1
+		offensive_war_stability_factor = -0.25
+		justify_war_goal_time = 0.25
 		
 
 		ai_will_do = {
@@ -159,6 +174,18 @@ leader_traits = {
 		}
 	}
 
+	XFR_lotharingian_nationalist = {
+		random = no
+
+		fascism_drift = 0.1
+		war_support_factor = 0.05
+		surrender_limit = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	XFR_herzog_julius_advisor_trait = {
 		random = no
 		sprite = 13
@@ -184,6 +211,122 @@ leader_traits = {
 		ai_will_do = {
 			factor = 100
 		}
+	}
+
+	XFR_weeb_trait = {
+		random = no
+		sprite = 13
+		
+		political_power_factor = 0.1
+		opinion_gain_monthly_factor = 0.1
+		enemy_justify_war_goal_time = 0.2
+		research_speed_factor = 0.01
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	XFR_diplomat_trait = {
+		random = no
+		sprite = 13
+			
+		opinion_gain_monthly_factor = 0.1
+		trade_opinion_factor = 0.1
+		resistance_damage_to_garrison = -0.05
+		enemy_justify_war_goal_time = 0.2
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	XFR_science_minister_trait = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.1
+		political_power_factor = 0.05
+	}
+
+	XFR_agriculture_minister_trait = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.05
+		monthly_population = 0.05
+		production_speed_infrastructure_factor = 0.2
+		production_speed_rail_way_factor = 0.1
+	}
+
+	XFR_economic_minister_trait = {
+		sprite = 13
+		random = no
+
+		trade_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		consumer_goods_factor = -0.15
+		production_factory_max_efficiency_factor = 0.1
+
+	}
+
+	XFR_reichskommisar_trait = {
+		sprite = 18
+		random = no
+
+		fascism_drift = 0.03
+		resistance_decay = 0.25
+		resistance_garrison_penetration_chance = -0.2
+		non_core_manpower = 0.1
+
+	}
+
+	XFR_militia_advisor_trait = {
+		sprite = 18
+		random = no
+
+		fascism_drift = 0.04
+		army_org_factor = -0.1
+		modifier_army_sub_unit_militia_attack_factor = 0.25
+        modifier_army_sub_unit_militia_defence_factor = 0.25
+
+	}
+
+	XFR_anarchist_author_trait = {
+		sprite = 13
+		random = no
+
+		communism_drift = 0.02
+		political_power_gain = 0.1
+		industry_free_repair_factor = 0.15
+
+	}
+
+	XFR_political_activist_trait = {
+		sprite = 13
+		random = no
+
+		political_power_factor = 0.2
+
+	}
+
+	XFR_union_representative = {
+		sprite = 13
+		random = no
+
+		stability_weekly = 0.002
+		production_factory_max_efficiency_factor = 0.25
+		production_factory_efficiency_gain_factor = 0.25
+
+	}
+
+	XFR_herzogs_sidekick_trait = {
+		sprite = 13
+		random = no
+
+
+		party_popularity_stability_factor = 0.05
+		political_power_factor = 0.25
+		neutrality_drift = 0.07
+
 	}
 
 	XFR_naval_rearmament_proponent = {

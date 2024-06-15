@@ -261,6 +261,10 @@ XFR_centre_crisis_cat = {
 			has_completed_focus = XFR_crisis_averted
     	}
 
+		cancel_trigger = {
+			NOT = { 42 = { is_owned_and_controlled_by = ROOT } }
+		}
+
     	is_good = no
 
 		fire_only_once = yes
@@ -770,10 +774,13 @@ XFR_country_development_cat = {
 		}
 
 		available = {
-			any_neighbor_country = {
-				has_government = democratic
-				NOT = { has_war_with = ROOT }
-			}
+			has_government = democratic
+			XNM = { has_government = democratic }
+		}
+
+		visible = {
+			has_government = democratic
+			XNM = { has_government = democratic }
 		}
 
 		cost = 100

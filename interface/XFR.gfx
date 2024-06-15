@@ -3,11 +3,6 @@ spriteTypes = {
     # Ideology
 
     spriteType = {
-        name = "GFX_ideology_XFR_despotism"
-        texturefile = "gfx/interface/ideologies/XFR_despotism_haus_burgund.png"
-    }
-
-    spriteType = {
         name = "GFX_ideology_anarchist_communism"
         texturefile = "gfx/interface/ideologies/anarchism.dds"
     }
@@ -18,6 +13,10 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_XFR_herzog_julius"
         texturefile = "gfx/leaders/XFR/portrait_XFR_herzog_julius.png"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_regency_council"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_regency_council.png"
     }
 	spriteType = {
         name = "GFX_portrait_XFR_herzog_julius_small"
@@ -106,6 +105,10 @@ spriteTypes = {
         name = "GFX_portrait_XFR_nathalie_gardet"
         texturefile = "gfx/leaders/XFR/portrait_XFR_nathalie_gardet.dds"
     }
+	spriteType = {
+        name = "GFX_portrait_XFR_nathalie_gardet_small"
+        texturefile = "gfx/interface/ideas/XFR/idea_XFR_nathalie_gardet.dds"
+    }
 
     spriteType = {
         name = "GFX_portrait_XFR_dominique_gounelle"
@@ -119,6 +122,58 @@ spriteTypes = {
 	spriteType = {
         name = "GFX_portrait_XFR_la_reynie_small"
         texturefile = "gfx//interface/ideas/XFR/idea_XFR_la_reynie.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_science_minister_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_science_minister_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_economics_minister_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_economics_minister_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_agriculture_minister_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_agriculture_minister_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_reichskommisar_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_reichskommisar_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_anarchist_author_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_anarchist_author_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_diplomat_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_diplomat_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_social_reformist_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_social_reformist_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_weeb_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_weeb_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_trade_minister_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_trade_minister_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_militia_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_militia_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_political_activist_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_political_activist_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_democrat_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_democrat_advisor.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XFR_herzog_sidekick_advisor_small"
+        texturefile = "gfx//interface/ideas/XFR/idea_XFR_herzog_sidekick_advisor.dds"
     }
 
     spriteType = {
@@ -166,6 +221,13 @@ spriteTypes = {
         name = "GFX_portrait_XAL_alban_picard_small"
         texturefile = "gfx//interface/ideas/XAL/idea_XAL_alban_picard.dds"
     }
+
+	# Ideas
+
+	spriteType = {
+		name = "GFX_idea_XFR_anarchist_democrat_cooperation"
+		texturefile = "gfx/interface/ideas/XFR/idea_XFR_anti_fascist_cooperation.dds"
+	}	
 
     # Mapmode Icons
 
@@ -1234,6 +1296,78 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/XFR/XFR_reichsland_lothringen.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+        name = "GFX_focus_XFR_hamburg"
+        texturefile = "gfx/interface/goals/XFR/XFR_hamburg.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_hamburg_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_hamburg.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_hamburg.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_hamburg.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+        name = "GFX_focus_XFR_haus_burgund"
+        texturefile = "gfx/interface/goals/XFR/XFR_haus_burgund.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XFR_haus_burgund_shine"
+		texturefile = "gfx/interface/goals/XFR/XFR_haus_burgund.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_haus_burgund.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XFR/XFR_haus_burgund.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
