@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = XAQ_focus
 	
 	country = {
@@ -135,7 +135,7 @@
 	focus = {
 		id = XAQ_movere_admirari
 		icon = GFX_focus_generic_railroad
-		x = -5
+		x = -6
 		y = 1
 
 		prerequisite = { focus = XAQ_secure_our_land } 
@@ -221,8 +221,8 @@
 	}
 	focus = {
 		id = XAQ_griffin
-		icon = GFX_XAQ_griffin
-		x = 0
+		icon = GFX_goal_support_fascism
+		x = -1
 		y = 2
 
 		prerequisite = { focus = XAQ_long_march_home } 
@@ -246,7 +246,7 @@
 	focus = {
 		id = XAQ_spqr
 		icon = GFX_focus_generic_improve_the_administration
-		x = -5
+		x = -6
 		y = 2
 
 		prerequisite = { focus = XAQ_long_march_home } 
@@ -271,4 +271,265 @@
 			}
 		}
 	}
+	focus = {
+		id = XAQ_tribunes
+		icon = GFX_focus_generic_military_mission
+		x = 2
+		y = 1
+
+		prerequisite = { focus = XAQ_repeating_mistakes } 
+		
+
+		relative_position_id = XAQ_repeating_mistakes
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_ensure_loyalties
+		icon = GFX_focus_generic_military_dictatorship
+		x = -2
+		y = 1
+
+		prerequisite = { focus = XAQ_repeating_mistakes } 
+		
+
+		relative_position_id = XAQ_repeating_mistakes
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_rightfully_ours
+		icon = GFX_focus_usa_focus_on_europe
+		x = 1
+		y = 2
+
+		prerequisite = { focus = XAQ_long_march_home } 
+		
+
+		relative_position_id = XAQ_long_march_home
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_remobilise_economy
+		icon = GFX_focus_NORDIC_com_civilian
+		x = 0
+		y = 1
+
+		prerequisite = { focus = XAQ_another_hundred } 
+		
+
+		relative_position_id = XAQ_another_hundred
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_bunker_bordeaux
+		icon = GFX_focus_SWI_fortify_border_with_france
+		x = -3
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_land_recolonisation } 
+		prerequisite = { focus = XAQ_movere_admirari }
+		
+
+		relative_position_id = XAQ_land_recolonisation
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_restart_reconquest_gallia
+		icon = GFX_focus_focus_fra_border
+		x = 0
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_rightfully_ours } 
+
+
+		relative_position_id = XAQ_rightfully_ours
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			XAQ = {
+				create_wargoal = {
+    					type = annex_everything
+    					target = XLF
+				}
+				create_wargoal = {
+    					type = annex_everything
+    					target = XBR
+				}
+			}
+		}
+	}
+	focus = {
+		id = XAQ_cure_rome
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = -2
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_spqr } 
+		mutually_exclusive = { focus = XAQ_two_way_power }
+
+
+		relative_position_id = XAQ_spqr
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_two_way_power
+		icon = GFX_focus_SWI_embrace_panoramaheim
+		x = 2
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_spqr } 
+		mutually_exclusive = { focus = XAQ_cure_rome }
+
+
+		relative_position_id = XAQ_spqr
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_two_way_power
+		icon = GFX_focus_SWI_embrace_panoramaheim
+		x = 2
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_spqr } 
+		mutually_exclusive = { focus = XAQ_cure_rome }
+
+
+		relative_position_id = XAQ_spqr
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_establish_technology_committee
+		icon = GFX_focus_research2
+		x = 0
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_bunker_bordeaux } 
+
+
+		relative_position_id = XAQ_bunker_bordeaux
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+
 }
