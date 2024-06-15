@@ -3453,4 +3453,432 @@
     		factor = 10
     	}
     }
+	
+	focus = {
+		id = XNE_expansion_of_eurasia
+    	icon = GFX_focus_ARG_the_war_machine
+    	prerequisite = {}
+    	x = -2
+    	y = 1
+    	relative_position_id = XNE_23rd_century_nne
+    
+    	cost = 8
+		
+		allow_branch = { 
+			has_country_flag = XNE_1984
+			#has_completed_focus = XNE_oligarchical_collectivism
+		}
+    	available = {
+			has_completed_focus = XNE_competitive_focus
+			has_completed_focus = XNE_collective_technocracy
+			has_completed_focus = XNE_national_icons
+			has_completed_focus = XNE_heavy_factories
+		}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			every_state = {
+				limit = { 
+					NOT = { is_owned_by = ROOT } 
+					NOT = { is_owned_by = LIB } 
+				}
+				add_claim_by = ROOT
+			}
+			every_country = {
+				limit = { 
+					NOT = { has_government = communism } 
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = XNE_expansionism
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_open_new_dockyards
+    	icon = GFX_goal_generic_construct_naval_dockyard
+    	prerequisite = { focus = XNE_expansion_of_eurasia }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_expansion_of_eurasia
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_put_the_people_to_work
+    	icon = GFX_focus_generic_combined_arms
+    	prerequisite = { focus = XNE_expansion_of_eurasia }
+    	x = 2
+    	y = 1
+    	relative_position_id = XNE_expansion_of_eurasia
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_stability = -0.05
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_factories_for_the_homeless
+    	icon = GFX_focus_generic_population_growth
+    	prerequisite = { focus = XNE_put_the_people_to_work }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_put_the_people_to_work
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_stability = -0.05
+			add_ideas = XNE_factories_for_the_homeless
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_mandatory_military_service
+    	icon = GFX_focus_generic_military_academy
+    	prerequisite = { focus = XNE_factories_for_the_homeless }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_factories_for_the_homeless
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_war_support = -0.05
+			add_ideas = XNE_mandatory_military_service
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_move_onto_the_continent
+    	icon = GFX_focus_focus_fra_revolution_utmost
+    	prerequisite = { focus = XNE_open_new_dockyards }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_open_new_dockyards
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			every_country = {
+				limit = { 
+					OR = {
+						owns_state = 14
+						owns_state = 15
+						owns_state = 785
+						owns_state = 29
+						owns_state = 6
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_reclaim_gibraltar
+    	icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+    	prerequisite = { focus = XNE_open_new_dockyards }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_open_new_dockyards
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {
+			owns_state = 118
+		}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			every_country = {
+				limit = { 
+					OR = {
+						owns_state = 118
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 118 }
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+    	}
+    }
+	
+	focus = {
+		id = XNE_reintegrate_former_lands
+    	icon = GFX_focus_generic_annex_country
+    	prerequisite = { focus = XNE_move_onto_the_continent }
+    	prerequisite = { focus = XNE_reclaim_gibraltar }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_move_onto_the_continent
+    
+    	cost = 6
+		
+    	available = {
+			owns_state = 14
+			owns_state = 30
+			owns_state = 15
+			owns_state = 118
+		}
+    	bypass = {
+			owns_state = 118
+		}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_state_core = 14
+			add_state_core = 30
+			add_state_core = 15
+			add_state_core = 118
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_for_the_glory_of_nne
+    	icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+    	prerequisite = { focus = XNE_reintegrate_former_lands }
+    	prerequisite = { focus = XNE_mandatory_military_service }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_reintegrate_former_lands
+    
+    	cost = 6
+		
+    	available = {
+			has_war = no
+		}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			add_war_support = 0.15
+			add_stability = 0.05
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_establish_states_of_eurasia
+    	icon = GFX_focus_generic_military_dictatorship
+    	prerequisite = { focus = XNE_for_the_glory_of_nne }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_for_the_glory_of_nne
+    
+    	cost = 6
+		
+    	available = {
+			has_war = no
+		}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			set_country_flag = XNE_states_of_eurasia
+			XNE_establish_eurasian_states = yes
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_eurasian_community
+    	icon = GFX_focus_ETH_callout_to_the_world
+    	prerequisite = { focus = XNE_for_the_glory_of_nne }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_for_the_glory_of_nne
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			set_country_flag = XNE_states_of_eurasia
+			add_ideas = XNE_eurasian_community
+			hidden_effect = {
+				every_country = {
+					limit = { is_subject_of = ROOT }
+					add_ideas = XNE_eurasian_community
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
 }

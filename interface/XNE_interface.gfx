@@ -2,6 +2,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_XNE_propoganda"
 		texturefile = "gfx/XNE/XNE_propoganda.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_Portrait_XNE_communist"

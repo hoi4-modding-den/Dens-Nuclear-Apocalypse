@@ -1,0 +1,66 @@
+on_actions = {
+	#ROOT is subject FROM is previous overlord
+	on_subject_free = {
+		effect = {
+			IF = {
+				limit = {
+					FROM = {
+						tag = XNE
+						has_country_flag = XNE_1984
+					}
+				}
+				ROOT = {
+					XNE_colonial_colour = yes
+				}
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			IF = {
+				limit = {
+					FROM = {
+						tag = XNE
+						has_country_flag = XNE_1984
+					}
+				}
+				ROOT = {
+					XNE_colonial_colour = yes
+				}
+			}
+		}
+	}
+
+	on_liberate = {
+		effect = {
+			IF = {
+				limit = {
+					FROM = {
+						tag = XNE
+						has_country_flag = XNE_1984
+					}
+				}
+				ROOT = {
+					XNE_colonial_colour = yes
+				}
+			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			IF = {
+				limit = {
+					FROM = {
+						tag = XNE
+						has_country_flag = XNE_1984
+					}
+				}
+				ROOT = {
+					XNE_colonial_colour = yes
+				}
+			}
+		}
+	}
+}

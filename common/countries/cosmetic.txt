@@ -6,6 +6,10 @@ XNE_OC = {
 	color = rgb { 28 15 107 }
 	color_ui = rgb { 52 29 196 }
 }
+XNE_OC_puppet = {
+	color = rgb { 28 15 107 }
+	color_ui = rgb { 52 29 196 }
+}
 NEW_TIR = {
 	color = rgb { 163 179 204 }
 	color_ui = rgb { 163 179 204 }

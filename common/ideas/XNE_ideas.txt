@@ -493,6 +493,57 @@ ideas = {
 				conscription_factor = -0.5
 			}
 		}
+		XNE_factories_for_the_homeless = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		XNE_mandatory_military_service = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = citizen_militia_2
+			
+			modifier = {
+				conscription = 0.1
+			}
+		}
+		XNE_eurasian_community = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = citizen_militia_2
+			
+			modifier = {
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.25
+				production_speed_buildings_factor = 0.2
+				hidden_modifier = {
+					trade_opinion_factor = 0.5
+				}
+			}
+		}
 		
 	}
 

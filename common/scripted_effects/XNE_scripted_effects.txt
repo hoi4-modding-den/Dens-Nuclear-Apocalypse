@@ -417,3 +417,215 @@ XNE_add_mil = {
 		}
 	}
 }
+XNE_colonial_colour = {
+	if = {
+		limit = {
+			is_subject = yes
+		}
+		if = {
+			limit = { 
+				overlord = { 
+					tag = XNE
+					has_country_flag = XNE_1984
+				} 
+			}
+			set_cosmetic_tag = XNE_OC_puppet
+		}
+	}
+	else = {
+		drop_cosmetic_tag = yes
+	}
+}
+
+XNE_colonial_puppet = {
+	if = {
+		limit = { ROOT = { has_country_flag = XNE_eurasian_community } }
+		PREV = {
+			puppet = PREV
+			hidden_effect = { 
+				PREV = { 
+					XNE_colonial_colour = yes
+					add_ideas = XNE_eurasian_community
+				}
+			}
+		}
+	}
+	else = {
+		PREV = {
+			puppet = PREV
+			hidden_effect = { 
+				PREV = { 
+					XNE_colonial_colour = yes
+				}
+			}
+		}
+	}
+}
+XNE_french_eurasia = {
+	if = {
+		limit = {
+			XPR = {
+				OR = {
+					country_exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = XAL
+						is_core_of = XFR
+						is_core_of = XFW
+						is_core_of = XAQ
+						is_core_of = XLF
+						is_core_of = XBR
+						is_core_of = XPR
+					}
+				}
+				transfer_state_to = XPR
+				add_core_of = XPR
+			}
+		}
+		if = { 
+			limit = { XPR = { NOT = { is_subject_of = ROOT } } }
+			XPR = { XNE_colonial_puppet = yes }
+		}
+	}
+}
+XNE_german_eurasia = {
+	if = {
+		limit = {
+			XKR = {
+				OR = {
+					country_exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = XRP
+						is_core_of = XOO
+						is_core_of = XLH
+						is_core_of = XAP
+						is_core_of = XGE
+						is_core_of = XSH
+						is_core_of = XJY
+						is_core_of = XDK
+					}
+				}
+				transfer_state_to = XKR
+				add_core_of = XKR
+			}
+		}
+		if = { 
+			limit = { XKR = { NOT = { is_subject_of = ROOT } } }
+			XKR = { XNE_colonial_puppet = yes }
+		}
+	}
+}
+XNE_italian_eurasia = {
+	if = {
+		limit = {
+			XIT = {
+				OR = {
+					country_exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}	
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = XSS
+						is_core_of = XTI
+						is_core_of = XLV
+						is_core_of = XLA
+						is_core_of = XIT
+						is_core_of = XCA
+						is_core_of = XNR
+						is_core_of = XMD
+					}
+				}
+				transfer_state_to = XIT
+				add_core_of = XIT
+			}
+		}
+		if = { 
+			limit = { XIT = { NOT = { is_subject_of = ROOT } } }
+			XIT = { XNE_colonial_puppet = yes }
+		}
+	}
+}
+XNE_cattish_eurasia = {
+	if = {
+		limit = {
+			XAD = {
+				OR = {
+					country_exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = XPY
+						is_core_of = XAD
+						is_core_of = XHP
+						is_core_of = XAR
+						is_core_of = XBC
+						is_core_of = XGL
+					}
+				}
+				transfer_state_to = XAD
+				add_core_of = XAD
+			}
+		}
+		if = { 
+			limit = { XAD = { NOT = { is_subject_of = ROOT } } }
+			XAD = { XNE_colonial_puppet = yes }
+		}
+	}
+}
+XNE_belgian_eurasia = {
+	if = {
+		limit = {
+			XLX = {
+				OR = {
+					country_exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = XLX
+						is_core_of = XNL
+					}
+				}
+				transfer_state_to = XLX
+				add_core_of = XLX
+			}
+		}
+		if = { 
+			limit = { XLX = { NOT = { is_subject_of = ROOT } } }
+			XLX = { XNE_colonial_puppet = yes }
+		}
+	}
+}
+XNE_establish_eurasian_states = {
+	XNE_belgian_eurasia = yes
+	XNE_french_eurasia = yes
+	XNE_cattish_eurasia = yes
+	XNE_german_eurasia = yes
+	XNE_italian_eurasia = yes
+}
