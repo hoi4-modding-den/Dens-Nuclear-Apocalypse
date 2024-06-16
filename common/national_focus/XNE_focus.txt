@@ -3455,6 +3455,70 @@
     }
 	
 	focus = {
+		id = XNE_integrate_the_british_isles
+    	icon = GFX_focus_NORDIC_com_capstone_army
+    	prerequisite = { focus = XNE_collective_technocracy }
+    	prerequisite = { focus = XNE_competitive_focus focus = XNE_national_icons }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_collective_technocracy
+    
+    	cost = 8
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			every_state = {
+				limit = { 
+					OR = {
+						is_owned_by = XIE
+						is_owned_by = XNI
+						is_owned_by = XCT
+						is_owned_by = XTY
+						is_owned_by = XNM
+						is_owned_by = XWA
+						is_owned_by = XPW
+					}
+				}
+				add_core_of = ROOT
+			}
+			custom_effect_tooltip = XNE_integrate_the_british_isles_tooltip
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = XIE
+							tag = XNI
+							tag = XCT
+							tag = XTY
+							tag = XNM
+							tag = XWA
+							tag = XPW
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+						}
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
 		id = XNE_expansion_of_eurasia
     	icon = GFX_focus_ARG_the_war_machine
     	prerequisite = {}
@@ -3469,10 +3533,7 @@
 			#has_completed_focus = XNE_oligarchical_collectivism
 		}
     	available = {
-			has_completed_focus = XNE_competitive_focus
-			has_completed_focus = XNE_collective_technocracy
-			has_completed_focus = XNE_national_icons
-			has_completed_focus = XNE_heavy_factories
+			has_completed_focus = XNE_integrate_the_british_isles
 		}
     	bypass = {}
 		mutually_exclusive = {}
@@ -3493,6 +3554,7 @@
 			every_country = {
 				limit = { 
 					NOT = { has_government = communism } 
+					NOT = { tag = LIB }
 				}
 				add_opinion_modifier = {
 					target = ROOT
@@ -3789,7 +3851,7 @@
     	icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
     	prerequisite = { focus = XNE_reintegrate_former_lands }
     	prerequisite = { focus = XNE_mandatory_military_service }
-    	x = 1
+    	x = -1
     	y = 1
     	relative_position_id = XNE_reintegrate_former_lands
     
@@ -3819,10 +3881,10 @@
 	focus = {
 		id = XNE_establish_states_of_eurasia
     	icon = GFX_focus_generic_military_dictatorship
-    	prerequisite = { focus = XNE_for_the_glory_of_nne }
-    	x = -1
+    	prerequisite = { focus = XNE_reintegrate_former_lands }
+    	x = 1
     	y = 1
-    	relative_position_id = XNE_for_the_glory_of_nne
+    	relative_position_id = XNE_reintegrate_former_lands
     
     	cost = 6
 		
@@ -3851,6 +3913,7 @@
 		id = XNE_eurasian_community
     	icon = GFX_focus_ETH_callout_to_the_world
     	prerequisite = { focus = XNE_for_the_glory_of_nne }
+    	prerequisite = { focus = XNE_establish_states_of_eurasia }
     	x = 1
     	y = 1
     	relative_position_id = XNE_for_the_glory_of_nne
@@ -3873,6 +3936,47 @@
 				every_country = {
 					limit = { is_subject_of = ROOT }
 					add_ideas = XNE_eurasian_community
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_true_eurasia
+    	icon = GFX_focus_SOV_builder_of_the_red_army
+    	prerequisite = { focus = XNE_establish_states_of_eurasia }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_establish_states_of_eurasia
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			custom_effect_tooltip = XNE_true_eurasia_tooltip
+			hidden_effect = {
+				every_country = {
+					limit = {
+						NOT = { tag = LIB }
+					}
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+						}
+					}
 				}
 			}
     	}

@@ -241,8 +241,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.075
-				line_change_production_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.035
+				line_change_production_efficiency_factor = 0.03
 			}			
 		}
 		XNE_modern_industry_2 = {
@@ -259,8 +259,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				line_change_production_efficiency_factor = 0.08
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.06
 				global_building_slots_factor = 0.1
 			}			
 		}
@@ -536,9 +536,9 @@ ideas = {
 			picture = citizen_militia_2
 			
 			modifier = {
-				political_power_gain = 0.2
-				consumer_goods_factor = -0.25
-				production_speed_buildings_factor = 0.2
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
 				hidden_modifier = {
 					trade_opinion_factor = 0.5
 				}

@@ -63,4 +63,14 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_XNE = {
+		effect = {
+			if = { 
+				limit = {
+					has_country_flag = XNE_1984
+				}
+			}
+			XNE_establish_eurasian_states = yes
+		}
+	}
 }
