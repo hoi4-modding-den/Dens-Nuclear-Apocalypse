@@ -1574,6 +1574,7 @@ country_event = { # Coronation: Fascist Alsace Reaction
         ai_chance = {
             base = 100
         } 
+        XFR = { country_event = { id = XFR_events.41 days = 1 } }
         effect_tooltip = {
             XFR = {
                annex_country = {
