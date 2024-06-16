@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = XAQ_secure_our_land
 		icon = GFX_goal_generic_military_sphere
-		x = 10
+		x = 13
 		y = 0
 
 		prerequisite = {}
@@ -229,6 +229,7 @@ focus_tree = {
 		
 
 		relative_position_id = XAQ_long_march_home
+		mutually_exclusive = { focus = XAQ_spqr }
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -480,17 +481,16 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = XAQ_two_way_power
-		icon = GFX_focus_SWI_embrace_panoramaheim
-		x = 2
+		id = XAQ_study_covid
+		icon = GFX_focus_generic_field_hostpital
+		x = -2
 		y = 1
 
 		
-		prerequisite = { focus = XAQ_spqr } 
-		mutually_exclusive = { focus = XAQ_cure_rome }
+		prerequisite = { focus = XAQ_another_hundred } 
 
 
-		relative_position_id = XAQ_spqr
+		relative_position_id = XAQ_another_hundred
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -508,7 +508,182 @@ focus_tree = {
 	focus = {
 		id = XAQ_establish_technology_committee
 		icon = GFX_focus_research2
+		x = -1
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_bunker_bordeaux } 
+
+
+		relative_position_id = XAQ_bunker_bordeaux
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_volantem_admiratio
+		icon = GFX_focus_generic_copy_plane_designs
 		x = 0
+		y = 2
+
+		
+		prerequisite = { focus = XAQ_movere_admirari } 
+
+
+		relative_position_id = XAQ_movere_admirari
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_inspire_thinking
+		icon = GFX_focus_generic_military_academy
+		x = 8
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_repeating_mistakes } 
+
+
+		relative_position_id = XAQ_repeating_mistakes
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_learning_mistakes
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_inspire_thinking } 
+
+
+		relative_position_id = XAQ_inspire_thinking
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_fourth_time
+		icon = GFX_focus_rocketry
+		x = 0
+		y = 2
+
+		
+		prerequisite = { focus = XAQ_repeating_mistakes } 
+
+
+		relative_position_id = XAQ_repeating_mistakes
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_consular_vision
+		icon = GFX_focus_generic_secret_service_agency
+		x = 0
+		y = 2
+
+		
+		prerequisite = { focus = XAQ_cure_rome focus = XAQ_two_way_power } 
+
+
+		relative_position_id = XAQ_spqr
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_divine_rule
+		icon = GFX_goal_generic_political_pressure
+		x = -2
+		y = 2
+
+		
+		prerequisite = { focus = XAQ_griffin } 
+
+
+		relative_position_id = XAQ_griffin
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_search_teams
+		icon = GFX_focus_generic_industrialists
+		x = 1
 		y = 1
 
 		
@@ -530,6 +705,479 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = XAQ_dirigism
+		icon = GFX_focus_DEN_heavy_regulations
+		x = -2
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_study_covid } 
+
+
+		mutually_exclusive = { focus = XAQ_laissez_faire }
+
+		relative_position_id = XAQ_study_covid
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_laissez_faire
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 2
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_study_covid } 
+
+		mutually_exclusive = { focus = XAQ_dirigism }
+
+		relative_position_id = XAQ_study_covid
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_review_agricultural_policy
+		icon = GFX_goal_generic_construction2
+		x = 2
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_another_hundred } 
+
+
+		relative_position_id = XAQ_another_hundred
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	} 
+	focus = {
+		id = XAQ_review_strategy
+		icon = GFX_goal_generic_cavalry
+		x = 3
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_inspire_thinking focus = XAQ_tribunes } 
+
+
+		relative_position_id = XAQ_tribunes
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_armatae_currus
+		icon = GFX_focus_generic_army_tanks2
+		x = -2
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_movere_admirari } 
+
+
+		relative_position_id = XAQ_movere_admirari
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_rebuild_lugdunum
+		icon = GFX_focus_generic_modernize_industry
+		x = -1
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_land_recolonisation } 
+
+
+		relative_position_id = XAQ_land_recolonisation
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_migration
+		icon = GFX_focus_generic_workers
+		x = 1
+		y = 1
+
+		
+		prerequisite = { focus = XAQ_land_recolonisation} 
+
+
+		relative_position_id = XAQ_land_recolonisation
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_cost_plus
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 2
+
+		
+		prerequisite = { focus = XAQ_rebuild_lugdunum focus = XAQ_migration } 
+		prerequisite = { focus = XAQ_dirigism } 
+
+
+		relative_position_id = XAQ_rebuild_lugdunum
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_break_treaty_pyrenees
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 0`
+		y = 2
+
+		
+
+		
+		prerequisite = { focus = XAQ_divine_rule focus = XAQ_consular_vision} 
+		mutually_exclusive = { focus = XAQ_renew_pyrenees_treaty }
+
+		relative_position_id = XAQ_divine_rule
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_abide_by_pyrenees_treaty
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 2
+
+		
+		
+		
+		prerequisite = { focus = XAQ_consular_vision focus = XAQ_divine_rule } 
+
+
+		mutually_exclusive = { focus = XAQ_break_treaty_pyrenees }
+		relative_position_id = XAQ_consular_vision
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_spread_slander
+		icon = GFX_goal_generic_propaganda
+		x = -1
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_cure_rome } 
+
+		relative_position_id = XAQ_cure_rome
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_increase_senate_influence
+		icon = GFX_focus_ARG_strengthening_the_concordancia
+		x = 1
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_spread_slander focus = XAQ_consular_vision } 
+
+		relative_position_id = XAQ_spread_slander
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_conquest_narbonensis
+		icon = GFX_goal_generic_territory_or_war
+		x = 4
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_break_treaty_pyrenees } 
+		prerequisite = { focus = XAQ_reversal_circumstance } 
+
+		relative_position_id = XAQ_break_treaty_pyrenees
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_weaken_senate
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = -1
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_griffin } 
+
+		relative_position_id = XAQ_griffin
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XAQ_senate_1
+				add_idea = XAQ_senate_0
+			}
+			
+		}
+	}
+	focus = {
+		id = XAQ_footsteps_mussolini
+		icon = GFX_focus_ITA_culto_del_duce
+		x = 1
+		y = 2
+
+		
+		
+		
+		prerequisite = { focus = XAQ_griffin } 
+
+		relative_position_id = XAQ_griffin
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XAQ_dissolve_senate
+		icon = GFX_focus_SWE_organize_a_putsch
+		x = 1
+		y = 2
+
+		cancelable = no
+		
+		
+		
+		prerequisite = { focus = XAQ_weaken_senate } 
+		prerequisite = { focus = XAQ_footsteps_mussolini } 
+
+		relative_position_id = XAQ_weaken_senate
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	
+		
+		
+		completion_reward = {
+			custom_effect_tooltip = XAQ_dissolve_senate_tooltip
+			add_stability = 0.1
+			add_political_power = 150
+			hidden_effect = {
+				remove_ideas = {
+					XAQ_senate_chaos
+
+				}
+			}
+		}
+		select_effect = { 
+			swap_ideas = {
+				remove_idea = XAQ_senate_0
+				add_idea = XAQ_senate_chaos
+			}
+		}
+	}
+	focus = {
+		id = XAQ_reversal_circumstance
+		icon = GFX_focus_SWE_hygienic_housing
+		x = 0
+		y = 2
+
+		
+		
+		
+		prerequisite = { focus = XAQ_restart_reconquest_gallia }
+		available  = {
+			XAQ = {
+				controls_state = 30
+				controls_state = 15
+				controls_state = 14
+			}
+		} 
+
+		relative_position_id = XAQ_restart_reconquest_gallia
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
 	
 
 }

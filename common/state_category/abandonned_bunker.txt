@@ -1,0 +1,8 @@
+state_categories={
+	abandonned_bunker = {
+		local_building_slots = 0
+	
+		color = { 175 80 80 }
+
+	}
+}

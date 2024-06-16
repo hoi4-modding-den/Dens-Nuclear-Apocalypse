@@ -1,22 +1,22 @@
-﻿on_actions = {
+on_actions = {
 	on_state_control_changed = {
 		effect = {
 			if = {
-            	limit = {
-                	FROM.FROM = { state = 20 }
-            	}
-            	if =  {
-                	limit = {
-                    	tag = XAQ
-                	}
-                	FROM.FROM = {
-                    	set_state_name = STATE_20_XAQ
-                    	set_province_name = {
-                        	id = 6613
-                        	name = VICTORY_POINTS_6613_XAQ
-                    	}
-                	}
-            	}
+            			limit = {
+                			FROM.FROM = { state = 20 }
+            			}
+            			if =  {
+                			limit = {
+                    				tag = XAQ
+                			}
+                			FROM.FROM = {
+                    				set_state_name = STATE_20_XAQ
+                    				set_province_name = {
+                        				id = 6613
+                        				name = VICTORY_POINTS_6613_XAQ
+                    				}
+                			}
+            			}
 			}
 		}
 	}
