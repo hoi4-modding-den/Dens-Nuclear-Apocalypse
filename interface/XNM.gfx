@@ -7,13 +7,32 @@ spriteTypes = {
 		texturefile = "gfx/XNM/XNM_albion_booming_heart.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_XNM_albion_booming_heart_1"
+		texturefile = "gfx/XNM/XNM_albion_booming_heart.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XNM_albion_booming_heart_worker"
+		texturefile = "gfx/XNM/XNM_albion_booming_heart.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_XNM_tensions_on_the_trent"
 		texturefile = "gfx/XNM/XNM_tensions_on_the_trent.dds"
 	}
+
 	spriteType = {
 		name = "GFX_idea_XNM_midlands_protests"
 		texturefile = "gfx/XNM/XNM_midlands_protests.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XNM_midlands_protests_light"
+		texturefile = "gfx/XNM/XNM_midlands_protests.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XNM_midlands_protests_heavy"
+		texturefile = "gfx/XNM/XNM_midlands_protests.dds"
+	}
+
 	spriteType = {
 		name = "GFX_focus_XNM_political_continuation"
 		texturefile = "gfx/XNM/XNM_political_continuation.png"
@@ -30,7 +49,7 @@ spriteTypes = {
 ### Welcome Intro ###
 	frameAnimatedSpriteType = {
 		name = "GFX_XNM_welcome_window_animation_loop"
-		texturefile = "gfx/XGE/XNM_bastion_animation.dds"
+		texturefile = "gfx/XNM/XNM_bastion_animation.dds"
 		noOfFrames = 3
 		animation_rate_fps = 0.2
 		transparencecheck = no
@@ -39,7 +58,38 @@ spriteTypes = {
 		#pause_on_loop = 0.2
 		#alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}	
+	}
+	SpriteType = {
+		name = "GFX_XNM_continue_button_bloom"
+		texturefile = "gfx/interface/button_359x34.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/button_359x34.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1.75			# in seconds
+			animationdelay = 0.35			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/button_359x34.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1.75				# in seconds
+			animationdelay = 0.35			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 
 ### Portraits ###
 	spriteType = {

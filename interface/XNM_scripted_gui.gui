@@ -71,7 +71,7 @@ guiTypes = {
 			#moveable = yes
 			
 			background = {
-				name = "XGE_welcome_Image_Border"
+				name = "XNM_welcome_Image_Border"
 				quadTextureSprite ="GFX_tiled_window_thin_border2"
 			}
 			iconType ={
@@ -84,13 +84,13 @@ guiTypes = {
 			}	
 		}
 		buttonType = {
-			name = "XGE_welcome_message_close"
+			name = "XNM_welcome_message_close"
 			spriteType = "GFX_closebutton"
 			position = { x = 764 y = 4 }
 			
 		}
 		buttonType = {
-			name ="XGE_welcome_message_continue"
+			name ="XNM_welcome_message_continue"
 			quadTextureSprite ="GFX_button_359x34"
 			position = { x=20 y=553 }
 			buttonText = "Continue"
@@ -98,14 +98,14 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 		iconType = {
-			name = "XGE_continue_button_bloom"
-			spriteType = "GFX_XGE_continue_button_bloom"
+			name = "XNM_continue_button_bloom"
+			spriteType = "GFX_XNM_continue_button_bloom"
 			position = { x=20 y=553 }
-			#pdx_tooltip = XGE_bloom_hint_loc
+			#pdx_tooltip = XNM_bloom_hint_loc
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
-			name = "XGE_continue_button_text" 
+			name = "XNM_continue_button_text" 
 			position = { x=50 y=563 }
 			font = "hoi_16mbs"
 			text = "Continue"
@@ -115,7 +115,7 @@ guiTypes = {
 			format = center
 			
 			
-			#pdx_tooltip = "XGE_intelligence_control_tt"
+			#pdx_tooltip = "XNM_intelligence_control_tt"
 		}
 		instantTextboxType = {
 			name = "XNM_introduction_text" 

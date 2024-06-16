@@ -133,7 +133,7 @@ ideas = {
 		
 		# General National Spirits
 		XNM_midlands_protests_light = {
-			picture = GFX_idea_XNM_midlands_protests
+			picture = GFX_idea_XNM_midlands_protests_light
 			
 			allowed = {
 				always = no
@@ -154,7 +154,7 @@ ideas = {
 			}
 		}
 		XNM_midlands_protests_heavy = {
-			picture = GFX_idea_XNM_midlands_protests
+			picture = GFX_idea_XNM_midlands_protests_heavy
 			
 			allowed = {
 				always = no
@@ -194,7 +194,7 @@ ideas = {
 			}
 		}		
 		XNM_albion_booming_heart_1 = {
-			picture = GFX_idea_XNM_albion_booming_heart
+			picture = GFX_idea_XNM_albion_booming_heart_1
 			
 			allowed = {
 				always = no
@@ -215,7 +215,7 @@ ideas = {
 			}
 		}
 		XNM_albion_booming_heart_worker = {
-			picture = GFX_idea_XNM_albion_booming_heart
+			picture = GFX_idea_XNM_albion_booming_heart_worker
 			
 			allowed = {
 				always = no

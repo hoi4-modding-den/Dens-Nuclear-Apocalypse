@@ -13,7 +13,8 @@
  XTY_ADJ:0 "Tynes" 
  
  ### Introduction Event ###
- XNM_intro_loc:0 "WIP"
+ XNM_intro_loc:0 "WIP \n\n§HCurrent Content:§! \n\n §G-Content 1.\n -Content 2.\n -Content 3."
+ XNM_credits:0 "Credits for the Mercian Content: §Hfuriousky/Sky§!, \nCredits for the rest of the content: \n§HThe HOI4 Modding Den Discord Server§!"
 
  ### Leaders ###
  XNM_arthur_gainsborough:0 "Arthur Gainsborough"
@@ -171,7 +172,7 @@
  XNM_visit_to_the_heartland_tt:0 "§YArthur Gainsborough's§! speech will allow the §2New Dawn Party§! to gain §Y3§! seats in the upcoming elections." 
  XNM_local_government_collapse_1:0 "\nWe will try to resolve the issue later while focusing on maintaining §Gstability§!."
  XNM_local_government_collapse_2:0 "\nThe government will openly blame [XNE.GetName] for this incident and hold them responsibles for the recent troubles. \n\n§RThis may have dire consequences in the future.§!"
- XNM_majority_seats:0 "The current coalition or party has a §Gmajority§! in the §OGrand Mercian Council.§!"
+ XNM_majority_seats:0 "The current coalition or party has a §Gmajority§! in the §OGrand Mercian Council.§!"       
  
  ### Set Flags ###
  XNM_southern_border_crisis:0 "The Sūþerne Crisis is ongoing"
