@@ -51,8 +51,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 90
-	neutrality = 10
+	fascism = 85
+	neutrality = 5
+	democratic = 5
+	communism = 5
 }
 
 recruit_character = XAQ_marcel_pietot

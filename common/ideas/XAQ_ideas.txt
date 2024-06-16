@@ -44,6 +44,43 @@ ideas = {
 
 				}
 		}
+		XAQ_senate_chaos = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = GFX_idea_XAQ_senate
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = -0.15
+					political_power_factor = -0.50
+				}
+		}
+		XAQ_senate_0 = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = GFX_idea_XAQ_senate
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = 0.01
+				}
+		}
 		XAQ_senate_1 = {
 				allowed = {
 					original_tag = XAQ
@@ -60,7 +97,7 @@ ideas = {
 	
 				modifier = {
 					stability_factor = 0.05
-
+					political_power_factor = 0.05
 				}
 		}
 		XAQ_senate_2 = {

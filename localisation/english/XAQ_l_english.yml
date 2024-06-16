@@ -20,6 +20,44 @@
  XAQ_long_march_home:0 "The Long March Home"
  XAQ_griffin:0 "The Griffin"
  XAQ_spqr:0 "Senatus Populusque Romanus"
+ XAQ_cure_rome:0 "Cure Rome"
+ XAQ_two_way_power:0 "Dual Power"
+ XAQ_consular_vision:0 "Consular Vision"
+ XAQ_divine_rule:0 "Divine Rule"
+ XAQ_rightfully_ours:0 "To Grasp What is Rightfully Ours"
+ XAQ_restart_reconquest_gallia:0 "Restart the Conquest of Gaul"
+ XAQ_ensure_loyalties:0 "Ensure Loyalties"
+ XAQ_tribunes:0 "Reestablish Tribunes"
+ XAQ_fourth_time:0 "Fourth Time's the Charm"
+ XAQ_inspire_thinking:0 "Inspire Military Innovation"
+ XAQ_learning_mistakes:0 "Learning from the Mistakes of the Past"
+ XAQ_review_strategy:0 "Review Military Strategy"
+ XAQ_armatae_currus:0 "Armatae Currus"
+ XAQ_volantem_admiratio:0 "Volantem Admiratio"
+ XAQ_bunker_bordeaux:0 "Investigate the Bunker-Bordeaux"
+ XAQ_establish_technology_committee:0 "Establish Technology Committee"
+ XAQ_search_teams:0 "Gather Search Teams"
+ XAQ_rebuild_lugdunum:0 "Rebuild Lugdunum"
+ XAQ_migration:0 "Encourage Migration"
+ XAQ_dirigism:0 "Dirigism"
+ XAQ_laissez_faire:0 "Laissez-Faire"
+ XAQ_cost_plus:0 "Cost-Plus"
+ XAQ_study_covid:0 "Study the Coronavirus Pandemic"
+ XAQ_remobilise_economy:0 "Remobilise the Economy"
+ XAQ_review_agricultural_policy:0 "Review Agricultural Policy"
+ XAQ_break_treaty_pyrenees:0 "Break Pyrénées Treaty"
+ XAQ_abide_by_pyrenees_treaty:0 "Renew Pyrénées Treaty"
+ XAQ_spread_slander:0 "Slander the Griffin"
+ XAQ_increase_senate_influence:0 "Increase Senate Influence"
+ XAQ_conquest_narbonensis:0 "Reclaim Narbonensis"
+ XAQ_weaken_senate:0 "Weaken Senate"
+ XAQ_footsteps_mussolini:0 "The Footsteps of Mussolini"
+ XAQ_dissolve_senate:0 "Dissolve the Senate"
+ XAQ_reversal_circumstance:0 "Reversal of Circumstance"
+
+
+
+
 
 #focus descriptions
  XAQ_secure_our_land_desc:0 "In these tumultuous times, we must ensure that we stay strong, lest we are consumed by our neighbours."
@@ -31,7 +69,11 @@
  XAQ_griffin_desc:0 "Marcel Pietot has been nothing but beneficial to the development of the nation, we must ensure that we enable him to execute absolute power as was intended by Mars himself."
  XAQ_spqr_desc:0 "In ancient rome, the senate was an advisory council to the Emperor and has been of great importance in enacting fair bureaucracy and laws. It is foolish to reject Petiot's rule but we must also empower the Senate to ensure prosperity."
 
+#custom effect tooltips
+ XAQ_dissolve_senate_tooltip:0 "§RThis will cause chaos in the Senate until this focus is complete!§!"
+
 #ideas
+ XAQ_senate_0:0 "The Senate"
  XAQ_senate_1:0 "The Senate"
  XAQ_senate_2:0 "The Senate"
  XAQ_senate_3:0 "The Senate"
@@ -42,10 +84,12 @@
 
 
 #idea descriptions
- XAQ_senate_1_desc:0 "The last remnants of the old Aquitaine Republic, the senate stands now as a ceremonial piece of Roman unity."
+ XAQ_senate_chaos_desc:0 "With the looming dissolution of the Senate, the senators and democracy loving peoples are causing unrest."
+ XAQ_senate_0_desc:0 "The Senate now barely plays any role in the politics of Lesser Gaul."
+ XAQ_senate_1_desc:0 "The last remnants of the old Aquitaine Republic, the senate stands now as a mostly ceremonial piece of Roman unity."
  XAQ_senate_2_desc:0 "The Senate now holds more power than before, but government function mostly remains in the griffin's hands."
- XAQ_senate_3_desc:0 "The Senate's increasing influence in the government is easily recognisable. The government's efficency is at an all time peak."
- XAQ_senate_4_desc:0 "The Senate has become the primary government function, the griffin is simply a figurehead of a new Roman Republic."
+ XAQ_senate_3_desc:0 "The Senate's increased influence in the government is easily recognisable. The government's efficency is at an all time peak."
+ XAQ_senate_4_desc:0 "The Senate has become the primary government function, with the First Consul as its leader."
  XAQ_annos_interitus_desc:0 "At the turn of the 23rd century, the Divine Realm of Lesser Gaul was shattered by its short-sighted attempt to realise its conquest of Gaul. Now, with its territories in Gallia Lugdunensis stripped, Lesser Gaul isn't what it used to be."
  XAQ_roman_revanchism_desc:0 "At the heart of every Roman lies a great nationalist fervour to grasp what is theirs."
 
