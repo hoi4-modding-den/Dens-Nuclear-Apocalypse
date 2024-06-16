@@ -17,3 +17,10 @@
  XKR_open_welcome_tooltip:0 "Open §Ywelcome screen§!"
  XKR_continue_tooltip:0 "§YGambling awaits...§!"
  XKR_exit_tooltip:0 "§YExit§!"
+
+ ### MISC ###
+
+ XKR_jazz_star:0 "§2Popular Jazz Musician§!"
+ XKR_seductress:0 "§RSeductress§!"
+ XKR_cutthroat_businessman:0 "Cutthroat Businessman"
+ XKR_enforcer:0 "Enforcer"
