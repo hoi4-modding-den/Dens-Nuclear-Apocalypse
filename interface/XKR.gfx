@@ -1,5 +1,7 @@
 spriteTypes = {
 
+	### CHARACTERS ###
+
 	spriteType = {
 		name = "GFX_Leader_Rory_Sabatini"
 		texturefile = "gfx/leaders/XKR/Leader_Rory_Sabatino.dds"
@@ -16,6 +18,104 @@ spriteTypes = {
 		name = "GFX_Leader_Yuri_Serdtse"
 		texturefile = "gfx/leaders/XKR/Leader_Yuri_Serdtse.dds"
 	}
+	spriteType = {
+		name = "GFX_Leader_Felix_Menard"
+		texturefile = "gfx/leaders/XKR/Leader_Felix_Menard.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Felix_Menard"
+		texturefile = "gfx/leaders/XKR/Minister_Felix_Menard.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Krysov_Olegovich"
+		texturefile = "gfx/leaders/XKR/Leader_Krysov_Olegovich.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Krysov_Olegovich"
+		texturefile = "gfx/leaders/XKR/Minister_Krysov_Olegovich.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Mario_Manitoni"
+		texturefile = "gfx/leaders/XKR/Leader_Mario_Manitoni.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Oliver_Watson"
+		texturefile = "gfx/leaders/XKR/Leader_Oliver_Watson.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Oliver_Watson"
+		texturefile = "gfx/leaders/XKR/Minister_Oliver_Watson.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Remy_Chauvre"
+		texturefile = "gfx/leaders/XKR/Leader_Remy_Chauvre.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Remy_Chauvre"
+		texturefile = "gfx/leaders/XKR/Minister_Remy_Chauvre.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Austin_Knight"
+		texturefile = "gfx/leaders/XKR/Minister_Austin_Knight.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Benito_Grella"
+		texturefile = "gfx/leaders/XKR/Minister_Benito_Grella.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Iona_Sabatini"
+		texturefile = "gfx/leaders/XKR/Minister_Iona_Sabatini.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Luigi_Manitoni"
+		texturefile = "gfx/leaders/XKR/Minister_Luigi_Manitoni.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Niccolo_Ceresa"
+		texturefile = "gfx/leaders/XKR/Minister_Niccolo_Ceresa.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Steven_Fox"
+		texturefile = "gfx/leaders/XKR/Minister_Steven_Fox.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Luke_Thompson"
+		texturefile = "gfx/leaders/XKR/Leader_Luke_Thompson.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Mathieu_Bechard"
+		texturefile = "gfx/leaders/XKR/Leader_Mathieu_Bechard.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Patrice_Assinau"
+		texturefile = "gfx/leaders/XKR/Leader_Patrice_Assinau.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Vincent_Devaux"
+		texturefile = "gfx/leaders/XKR/Leader_Vincent_Devaux.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Cyril_Marais"
+		texturefile = "gfx/leaders/XKR/Minister_Cyril_Marais.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Lukov_Ivanovich"
+		texturefile = "gfx/leaders/XKR/Minister_Lukov_Ivanovich.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Marcel_Delon"
+		texturefile = "gfx/leaders/XKR/Minister_Marcel_Delon.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Marco_Ceto"
+		texturefile = "gfx/leaders/XKR/Minister_Marco_Ceto.dds"
+	}
+	spriteType = {
+		name = "GFX_Advisor_Vincent_Devaux"
+		texturefile = "gfx/leaders/XKR/Minister_Vincent_Devaux.dds"
+	}
+
+	### WELCOME SCREEN ###
 
 	spriteType = {
 		name = "GFX_XKR_welcome"

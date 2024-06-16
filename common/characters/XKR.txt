@@ -1,4 +1,7 @@
 characters = {
+
+	### COUNTRY LEADERS ###
+
 	XKR_Rory_Sabatini = {
 		name = "Rory Sabatini"
 		portraits = {
@@ -53,6 +56,332 @@ characters = {
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1
+		}
+	}
+
+	### ADVISORS ###
+
+	XKR_Felix_Menard = {
+		name = "Felix Menard"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Felix_Menard"
+			}
+			civilian = {
+				small = "GFX_Advisor_Felix_Menard"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XKR_Felix_Menard_Idea
+			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Krysov_Olegovich = {
+		name = "Krysov Olegovich"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Krysov_Olegovich"
+			}
+			civilian = {
+				small = "GFX_Advisor_Krysov_Olegovich"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XKR_Krysov_Olegovich_Idea
+			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Mario_Manitoni = {
+		name = "Mario Manitoni"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Mario_Manitoni"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+	XKR_Oliver_Watson = {
+		name = "Oliver Watson"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Oliver_Watson"
+			}
+			civilian = {
+				small = "GFX_Advisor_Oliver_Watson"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XKR_Oliver_Watson_Idea
+			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Remy_Chauvre = {
+		name = "Remy Chauvre"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Remy_Chauvre"
+			}
+			civilian = {
+				small = "GFX_Advisor_Remy_Chauvre"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = XKR_Remy_Chauvre_Idea
+			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Austin_Knight = {
+		name = "Austin Knight"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Austin_Knight"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Austin_Knight_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Benito_Grella = {
+		name = "Benito Grella"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Benito_Grella"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Benito_Grella_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Iona_Sabatini = {
+		name = "Iona Sabatini"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Iona_Sabatini"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Iona_Sabatini_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Luigi_Manitoni = {
+		name = "Luigi Manitoni"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Luigi_Manitoni"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Luigi_Manitoni_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Niccolo_Ceresa = {
+		name = "Niccolo Ceresa"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Niccolo_Ceresa"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Niccolo_Ceresa_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Steven_Fox = {
+		name = "Steven Fox"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Steven_Fox"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Steven_Fox_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Luke_Thompson = {
+		name = "Luke Thompson"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Luke_Thompson"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+	XKR_Mathieu_Bechard = {
+		name = "Mathieu Bechard"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Mathieu_Bechard"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+	XKR_Patrice_Assinau = {
+		name = "Patrice Assinau"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Patrice_Assinau"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+	XKR_Vincent_Devaux = {
+		name = "Vincent Devaux"
+		portraits = {
+			army = {
+				large = "GFX_Leader_Vincent_Devaux"
+			}
+			civilian = {
+				small = "GFX_Advisor_Vincent_Devaux"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Vincent_Devaux_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Cyril_Marais = {
+		name = "Cyril Marais"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Cyril_Marais"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Cyril_Marais_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Lukov_Ivanovich = {
+		name = "Lukov Ivanovich"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Lukov_Ivanovich"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Lukov_Ivanovich_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Marcel_Delon = {
+		name = "Marcel Delon"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Marcel_Delon"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Marcel_Delon_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Marco_Ceto = {
+		name = "Marco Ceto"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Marco_Ceto"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Marco_Ceto_Idea
+			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
 		}
 	}
 }
