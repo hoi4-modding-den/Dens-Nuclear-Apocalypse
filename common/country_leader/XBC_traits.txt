@@ -1,0 +1,15 @@
+leader_traits = {
+
+	XBC_basque_council_trait = {
+		random = no
+
+		political_power_gain = -0.5
+		stability_factor = -0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+}

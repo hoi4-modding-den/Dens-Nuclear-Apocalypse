@@ -26,14 +26,76 @@ XBC_left_decrease_small_effect = {
 	subtract_from_variable = { xbc_left_influence_var = 2 }
 	add_to_variable = { xbc_center_influence_var = 1 }
 	add_to_variable = { xbc_right_influence_var = 1 }
+	custom_effect_tooltip = XBC_left_decrease_small_effect_tt
 }
 XBC_center_decrease_small_effect = {
 	subtract_from_variable = { xbc_center_influence_var = 2 }
 	add_to_variable = { xbc_left_influence_var = 1 }
 	add_to_variable = { xbc_right_influence_var = 1 }
+	custom_effect_tooltip = XBC_center_decrease_small_effect_tt
 }
 XBC_right_decrease_small_effect = {
 	subtract_from_variable = { xbc_right_influence_var = 2 }
 	add_to_variable = { xbc_center_influence_var = 1 }
 	add_to_variable = { xbc_left_influence_var = 1 }
+	custom_effect_tooltip = XBC_right_decrease_small_effect_tt
+}
+
+#Spanish Unrest
+XBC_unrest_increase_small_effect = {
+	add_to_variable = { xbc_spanish_unrest_var = 1 }
+	XBC_spanish_unrest_check_effect = yes
+	custom_effect_tooltip = XBC_unrest_increase_small_effect_tt
+}
+XBC_unrest_decrease_small_effect = {
+	subtract_from_variable = { xbc_spanish_unrest_var = 1 }
+	XBC_spanish_unrest_check_effect = yes
+	custom_effect_tooltip = XBC_unrest_decrease_small_effect_tt
+}
+
+XBC_unrest_increase_medium_effect = {
+	add_to_variable = { xbc_spanish_unrest_var = 3 }
+	XBC_spanish_unrest_check_effect = yes
+	custom_effect_tooltip = XBC_unrest_increase_medium_effect_tt
+}
+XBC_unrest_decrease_medium_effect = {
+	subtract_from_variable = { xbc_spanish_unrest_var = 3 }
+	XBC_spanish_unrest_check_effect = yes
+	custom_effect_tooltip = XBC_unrest_decrease_medium_effect_tt
+}
+
+XBC_unrest_increase_high_effect = {
+	add_to_variable = { xbc_spanish_unrest_var = 5 }
+	XBC_spanish_unrest_check_effect = yes
+	custom_effect_tooltip = XBC_unrest_increase_high_effect_tt
+}
+XBC_unrest_decrease_high_effect = {
+	subtract_from_variable = { xbc_spanish_unrest_var = 5 }
+	XBC_spanish_unrest_check_effect = yes
+	custom_effect_tooltip = XBC_unrest_decrease_high_effect_tt
+}
+
+XBC_spanish_unrest_check_effect = {
+	clamp_variable = {
+		var = xbc_spanish_unrest_var
+		min = 0
+		max = 100
+	}
+	if = {
+		limit = {
+			check_variable = {
+			var = xbc_spanish_unrest_var
+			value = 50
+			compare = greater_than_or_equals
+			}
+		}
+		172 = {
+			set_demilitarized_zone = yes
+		}
+		else = {
+			172 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
 }

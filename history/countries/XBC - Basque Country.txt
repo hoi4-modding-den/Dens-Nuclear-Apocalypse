@@ -2,6 +2,9 @@ capital = 792
 
 recruit_character = XBC_augusto_uribe
 recruit_character = XBC_basque_council
+recruit_character = XBC_gaspar_diaz
+recruit_character = XBC_claudio_salazar
+recruit_character = XBC_arturo_uribe
 
 add_ideas = XBC_unrest_in_navarre_2
 #oob = ""
@@ -33,4 +36,8 @@ set_popularities = {
 	democratic = 40
 	fascism = 0
 	communism = 0
+}
+
+add_ideas = {
+	closed_economy
 }

@@ -3,6 +3,10 @@
  XBC_DEF:0 "the Basque Country"
  XBC_ADJ:0 "Basque"
  
+ XBC_republic:0 "Republic of Navarre"
+ XBC_republic_DEF:0 "the Republic of Navarre"
+ XBC_republic_ADJ:0 "Navarrese"
+ 
  XBC_fascism:0 "Euskal Herria"
  
  XBC_history_desc:0 "Despite being oficially disbanded in 2018, the ETA has survived in the underground, and after the Apocalypse has established a free and independent Basque state. For over a century it was able to maintain an isolationst, auhoritarian government.\n\nHowever, a wind of change can be felt in the Pyrenees. The ETA is now split into various factions, ranging from communist Left to ultranationalist Right. There is also a vocal group of democratic activists, who wish to abolish the dictatorship and stop the repressions of Spanish people. Time will tell, which vision of a Basque state shall emerge victorious..."
@@ -43,6 +47,10 @@
  XBC.1.d:0 "He died lol."
  XBC.1.a:0 "Nothing will remain the same."
  
+ XBC.2.t:0 "A Basque Thaw?"
+ XBC.2.a:0 "A change is gonna come..."
+ XBC.2.b:0 "Let's strenghten our institutions instead."
+ 
  # Decisions
  XBC_power_struggle_category:0 "The Uribe's Heir"
  XBC_power_struggle_category_desc:0 "Left Influence: [?xbc_left_influence_var]\nCenter Influence: [?xbc_center_influence_var]\nRight Influence: [?xbc_right_influence_var]\n\nSpanish Unrest: [?xbc_spanish_unrest_var]"
@@ -54,5 +62,20 @@
  XBC_center_increase_small_effect_tt:0 "The §gCenter Faction§! influence will slightly §Gincrease§!."
  XBC_right_increase_small_effect_tt:0 "The §ORight Faction§! influence will slightly §Gincrease§!."
  
+ XBC_left_decrease_small_effect_tt:0 "The §RLeft Faction§! influence will slightly §Rdecrease§!."
+ XBC_center_decrease_small_effect_tt:0 "The §RCenter Faction§! influence will slightly §Rdecrease§!."
+ XBC_right_decrease_small_effect_tt:0 "The §RRight Faction§! influence will slightly §Rdecrease§!."
+ 
  XBC_our_new_leader_tt:0 "§YFaction with the highest influence will take power in our country."
  XBC_rein_in_pamplona_tt:0 "§RIf Spanish unrest gets too high, this action may have unpredictable consequences.§!"
+ 
+ XBC_unrest_increase_small_effect_tt:0 "This will slightly §Ranger§! the Spanish people."
+ XBC_unrest_decrease_small_effect_tt:0 "This will slightly §Gcalm§! the Spanish people."
+ 
+ XBC_unrest_increase_medium_effect_tt:0 "This will moderately §Ranger§! the Spanish people."
+ XBC_unrest_decrease_medium_effect_tt:0 "This will moderately §Gcalm§! the Spanish people."
+ 
+ XBC_unrest_increase_high_effect_tt:0 "This will noticeably §Ranger§! the Spanish people."
+ XBC_unrest_decrease_high_effect_tt:0 "This will noticeably §Gcalm§! the Spanish people."
+ 
+ XBC_power_struggle_mission_tt:0 "§YAllegiances in the Party are shifting...\n\nUnrest is growing among the Spanish people...§!"

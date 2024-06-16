@@ -1,12 +1,10 @@
 
 add_namespace = XBC
-country_event = {
+country_event = { # Death of Uribe
     id = XBC.1
     title = XBC.1.t
     # picture = GFX_report_event_DEN_celebration
     desc = XBC.1.d
-    
-    
     is_triggered_only = yes
     fire_only_once = no
     
@@ -16,7 +14,7 @@ country_event = {
 		XBC_basque_council = {
 			promote_character = oligarchism
 		}
-		set_variable = { xbc_spanish_unrest_var = 30 }
+		set_variable = { xbc_spanish_unrest_var = 33 }
 		set_variable = { xbc_left_influence_var = 25 }
 		set_variable = { xbc_center_influence_var = 50 }
 		set_variable = { xbc_right_influence_var = 25 }
@@ -24,5 +22,280 @@ country_event = {
 			base = 1
 		}
     }
-	
+}
+
+country_event = { # A Basque Thaw?
+    id = XBC.2
+    title = XBC.2.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.2.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.2.a
+		XBC_unrest_decrease_small_effect = yes
+		add_political_power = -5
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XBC.2.b
+		add_stability = 0.02
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Redirecting Our Budget
+    id = XBC.3
+    title = XBC.3.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.3.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.3.a
+		XBC_unrest_decrease_small_effect = yes
+		XBC_left_increase_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XBC.3.b
+		add_stability = 0.03
+		XBC_center_increase_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XBC.3.c
+		army_experience = 10
+		XBC_right_increase_small_effect	= yes	
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Areas of Development
+    id = XBC.4
+    title = XBC.4.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.4.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.4.a
+		792 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		XBC_right_increase_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XBC.4.b
+		172 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		XBC_left_increase_small_effect = yes
+		XBC_unrest_decrease_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XBC.4.c
+		add_political_power = -5
+		792 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		172 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		XBC_center_increase_small_effect = yes
+		XBC_unrest_decrease_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Reinforcing Our Garrisons
+    id = XBC.5
+    title = XBC.5.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.5.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.5.a
+		add_manpower = 1000
+		XBC_left_decrease_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XBC.5.b
+		add_manpower = 2000
+		XBC_left_increase_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XBC.5.c
+		add_manpower = 3000
+		XBC_left_decrease_small_effect = yes
+		XBC_right_increase_small_effect = yes
+		XBC_unrest_increase_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # A Look Outside
+    id = XBC.6
+    title = XBC.6.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.6.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.6.a
+		XBC_left_decrease_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = {
+        name = XBC.6.b
+		add_ideas = {
+			limited_exports
+		}
+		XBC_unrest_decrease_small_effect = yes
+		XBC_left_increase_small_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Our New Leader
+    id = XBC.7
+    title = XBC.7.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.7.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = { # Left
+        name = XBC.7.a
+		trigger = {
+			AND = {
+				check_variable = {
+					var = xbc_left_influence_var
+					value = xbc_center_influence_var
+					compare = greater_than
+				}
+				check_variable = {
+					var = xbc_left_influence_var
+					value = xbc_right_influence_var
+					compare = greater_than
+				}
+			}
+		}
+		XBC_gaspar_diaz = {
+			promote_character = yes
+		}
+		clr_country_flag = XBC_powerstruggle
+		XBC_spanish_unrest_check_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = { # Center
+        name = XBC.7.b
+		trigger = {
+			AND = {
+				check_variable = {
+					var = xbc_center_influence_var
+					value = xbc_left_influence_var
+					compare = greater_than
+				}
+				check_variable = {
+					var = xbc_center_influence_var
+					value = xbc_right_influence_var
+					compare = greater_than
+				}
+			}
+		}
+		XBC_arturo_uribe = {
+			promote_character = yes
+		}
+		clr_country_flag = XBC_powerstruggle
+		XBC_spanish_unrest_check_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+	option = { # Right
+        name = XBC.7.c
+		trigger = {
+			AND = {
+				check_variable = {
+					var = xbc_right_influence_var
+					value = xbc_center_influence_var
+					compare = greater_than
+				}
+				check_variable = {
+					var = xbc_right_influence_var
+					value = xbc_left_influence_var
+					compare = greater_than
+				}
+			}
+		}
+		XBC_claudio_salazar = {
+			promote_character = yes
+		}
+		clr_country_flag = XBC_powerstruggle
+		XBC_spanish_unrest_check_effect = yes
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Pamplona Uprising
+    id = XBC.8
+    title = XBC.8.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.8.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.8.a
+		start_civil_war = {
+			ideology = democratic
+			size = 0.5
+			states = all			
+			set_cosmetic_tag = XBC_republic # Sets a country flag that gets used in a country tag alias.
+		}
+        ai_chance = {
+			base = 1
+		}
+    }
 }

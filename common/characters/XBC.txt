@@ -23,6 +23,50 @@ characters = {
 		}
 		country_leader = {
 			ideology = oligarchism
+			traits = { XBC_basque_council_trait }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XBC_gaspar_diaz = {
+		name = "Gaspar Díaz"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_south_america_generic_6"
+			}
+		}
+		country_leader = {
+			#ideology = marxism
+			ideology = oligarchism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XBC_claudio_salazar = {
+		name = "Claudio Salazar"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GUA_jorge_ubico"
+			}
+		}
+		country_leader = {
+			#ideology = gen_nazism
+			ideology = oligarchism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XBC_arturo_uribe = {
+		name = "Arturo Uribe"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_URG_gabriel_terra"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1

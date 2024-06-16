@@ -1,27 +1,39 @@
 XBC_power_struggle_category = {	
 
-	XBC_test = {
-		
-		icon = GFX_decision_generic_political_rally
-
-		allowed = {
-			tag = XBC
+	XBC_power_struggle_mission = {
+		activation = {
+			has_country_flag = XBC_powerstruggle
 		}
-		
-		available = { }
-		
-		fire_only_once = yes
-		days_remove = 25
-		selectable_mission = yes
-		
-		visible = {
-			tag = XBC
+		available = {
+			always = no
 		}
-		
-		complete_effect  = {
-		    
-		}		
+		cancel_trigger = {
+			NOT = { 
+				has_country_flag = XBC_powerstruggle 
+			}
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		days_mission_timeout = 7
+		selectable_mission = no
+#		complete_effect = {
+#	
+#		}
+			timeout_effect = {
+				custom_effect_tooltip = XBC_power_struggle_mission_tt
+				hidden_effect = {
+					random_list = {
+						1 = { XBC_left_decrease_small_effect = yes }
+						1 = { XBC_center_decrease_small_effect = yes }
+						1 = { XBC_right_decrease_small_effect = yes	}					
+					}
+					add_to_variable = { xbc_spanish_unrest_var = 1 }
+					XBC_unrest_increase_small_effect = yes
+				}
+			}
+		days_re_enable = 0	
 	}
+	
 	XBC_stir_up_factionalism = {
 		
 		icon = GFX_decision_generic_political_rally
@@ -38,7 +50,6 @@ XBC_power_struggle_category = {
 			}
 		}
 		
-		fire_only_once = yes
 		days_remove = 25
 		selectable_mission = yes
 		
@@ -47,7 +58,131 @@ XBC_power_struggle_category = {
 		}
 		
 		complete_effect  = {
-		    
+		    XBC_center_decrease_small_effect = yes
+			add_stability = -0.01
+		}		
+	}
+	
+	XBC_empower_the_left = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		cost = 10
+		visible = { 
+				has_completed_focus = XBC_work_with_the_left			
+		}
+		
+		days_remove = 25
+		selectable_mission = yes
+		
+		visible = {
+			tag = XBC
+		}
+		
+		complete_effect  = {
+		    XBC_left_increase_small_effect = yes
+		}		
+	}
+	
+	XBC_empower_the_right = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		cost = 10
+		visible = { 
+				has_completed_focus = XBC_cooperate_with_the_right			
+		}
+		
+		days_remove = 25
+		selectable_mission = yes
+		
+		visible = {
+			tag = XBC
+		}
+		
+		complete_effect  = {
+		    XBC_right_increase_small_effect = yes
+			XBC_unrest_increase_small_effect = yes
+		}		
+	}
+	
+	XBC_call_for_unity = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		cost = 10
+		visible = { 
+				has_completed_focus = XBC_maintain_the_status_quo		
+		}
+		
+		days_remove = 25
+		selectable_mission = yes
+		
+		visible = {
+			tag = XBC
+		}
+		
+		complete_effect  = {
+		    XBC_center_increase_small_effect = yes
+			add_stability = 0.01
+		}		
+	}
+	
+	XBC_placate_the_spanish = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		cost = 10
+		visible = { 
+				has_completed_focus = XBC_equal_rights_act		
+		}
+		
+		days_remove = 25
+		selectable_mission = yes
+		
+		visible = {
+			tag = XBC
+		}
+		
+		complete_effect  = {
+		    XBC_unrest_decrease_small_effect = yes
+		}		
+	}
+	
+	XBC_enforce_stability = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		cost = 10
+		visible = { 
+				has_completed_focus = XBC_dissident_repression_act		
+		}
+		
+		days_remove = 25
+		selectable_mission = yes
+		
+		visible = {
+			tag = XBC
+		}
+		
+		complete_effect  = {
+			add_stability = 0.03
+		    XBC_unrest_increase_small_effect = yes
 		}		
 	}
 }

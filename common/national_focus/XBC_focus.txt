@@ -48,6 +48,7 @@
 
 		completion_reward = {
 			XBC_left_increase_small_effect = yes
+			XBC_unrest_decrease_small_effect = yes
 		}
 	}
 
@@ -88,6 +89,7 @@
 
 		completion_reward = {
 			XBC_right_increase_small_effect = yes
+			XBC_unrest_increase_small_effect = yes
 		}
 	}
 	
@@ -107,7 +109,7 @@
 		}
 
 		completion_reward = {
-			
+			country_event = XBC.3
 		}
 	}
 	
@@ -127,7 +129,7 @@
 		}
 
 		completion_reward = {
-			
+			country_event = XBC.4
 		}
 	}
 	
@@ -147,7 +149,7 @@
 		}
 
 		completion_reward = {
-			
+			country_event = XBC.5
 		}
 	}
 	
@@ -167,7 +169,7 @@
 		}
 
 		completion_reward = {
-			
+			country_event = XBC.6
 		}
 	}
 	
@@ -187,7 +189,9 @@
 		}
 
 		completion_reward = {
+			add_stability = 0.05
 			XBC_right_increase_small_effect = yes
+			XBC_unrest_increase_high_effect = yes
 		}
 	}
 	
@@ -208,6 +212,7 @@
 
 		completion_reward = {
 			XBC_left_increase_small_effect = yes
+			XBC_unrest_decrease_medium_effect = yes
 		}
 	}
 	
@@ -227,7 +232,7 @@
 		}
 
 		completion_reward = {
-			
+			country_event = XBC.2
 		}
 	}
 	
@@ -248,6 +253,7 @@
 		}
 
 		completion_reward = {
+			country_event = XBC.7
 			custom_effect_tooltip = XBC_our_new_leader_tt
 		}
 	}
@@ -265,9 +271,31 @@
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			has_civil_war = yes
+		}
 		completion_reward = {
 			custom_effect_tooltip = XBC_rein_in_pamplona_tt
+		}
+		select_effect = { 
+			if = {
+				limit = {
+					check_variable = {
+						var = xbc_spanish_unrest_var
+						value = 50
+						compare = greater_than_or_equals
+					}
+				}
+				country_event = {
+					id = XBC.8
+					days = 10
+					random_hours = 12
+					random_days = 10
+				}
+				else = {
+					
+				}
+			}
 		}
 	}
 }

@@ -9,6 +9,6 @@ XBC_power_struggle_category = {
 	visible = {	
 		has_country_flag = XBC_powerstruggle
 	}
-	scripted_gui = xbc_power_struggle_ui
+	visible_when_empty = yes
 }
 

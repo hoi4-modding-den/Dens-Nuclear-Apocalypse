@@ -1321,3 +1321,11 @@ XKR_black_alliance = {
 	color = rgb { 40 40 40 }
 	color_ui = rgb { 40 40 40 }	
 }
+XBC_republic = {
+	color = rgb { 252 209 100 }
+	color_ui = rgb { 252 209 100 }	
+}
+XBC_monarchy = {
+	color = rgb { 249 140 79 }
+	color_ui = rgb { 249 140 79 }	
+}
