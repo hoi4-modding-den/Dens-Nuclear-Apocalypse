@@ -564,6 +564,7 @@
 				character = XAL_military_junta
 				ruling_only = yes
 			}
+			is_subject = no
 			fascism > 0.10
 		}
 
@@ -585,7 +586,14 @@
 			}
 			set_politics = { ruling_party = fascism elections_allowed = no }
 			hidden_effect = { news_event = { id = XFR_news_events.3 days = 1 } }
-			hidden_effect = { XFR = { country_event = { id = XFR_events.16 days = 2 } } }
+			hidden_effect = {
+				if = {
+					limit = {
+						XFR = { NOT = { has_completed_focus = XFR_dennounce_democracy } }
+					}
+					XFR = { country_event = { id = XFR_events.16 days = 2 } }
+				}
+			}
 			add_named_threat = {
     			threat = 1
     			name = XAL_nationalist_coup
@@ -668,6 +676,10 @@
 		relative_position_id = XAL_nationalist_coup
 
 		available = {
+			strength_ratio = {
+    			tag = XRP
+    			ratio > 1
+			}
 			has_government = fascism
 			is_subject = no
 		}

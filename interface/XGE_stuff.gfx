@@ -99,8 +99,8 @@ spriteTypes = {
 	}
 	frameAnimatedSpriteType = {
 		name = "GFX_XGE_welcome_window_animation_loop"
-		texturefile = "gfx/XGE/XGE_neo_ddr_animation.dds"
-		noOfFrames = 3
+		texturefile = "gfx/XGE/XGE_neo_ddr_animation.png"
+		noOfFrames = 6
 		animation_rate_fps = 0.2
 		transparencecheck = no
 		looping = yes

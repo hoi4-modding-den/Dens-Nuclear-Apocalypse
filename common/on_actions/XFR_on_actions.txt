@@ -106,9 +106,17 @@ on_actions = {
 						}
 					}
 				}
-				remove_opinion_modifier = {
-					target = XFR
-					modifier = XFR_supports_our_government
+				XAL = {
+					remove_opinion_modifier = {
+						target = XFR
+						modifier = XFR_supports_our_government
+					}
+				}
+				XFR = {
+					remove_opinion_modifier = {
+						target = XAL
+						modifier = XFR_support_their_government
+					}
 				}
 			}
 			if = {

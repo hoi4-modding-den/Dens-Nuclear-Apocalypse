@@ -38,3 +38,181 @@ DEN_controls_french_states = {
 	controls_state = 16
 	controls_state = 985
 }
+
+XFR_is_west_francian_state = {
+	OR = {
+		state = 15
+		state = 16
+		state = 19
+		state = 22
+		state = 23
+		state = 24
+		state = 25
+		state = 26
+		state = 27
+		state = 29
+		state = 30
+		state = 31
+		state = 33
+		state = 165
+		state = 785
+		state = 806
+		state = 974
+		state = 985
+	}
+}
+
+XFR_controls_west_francian_states = {
+	custom_trigger_tooltip = {
+		tooltip = XFR_controls_west_francian_states_tt
+		controls_state = 15
+		controls_state = 16
+		controls_state = 19
+		controls_state = 22
+		controls_state = 23
+		controls_state = 24
+		controls_state = 25
+		controls_state = 26
+		controls_state = 27
+		controls_state = 29
+		controls_state = 30
+		controls_state = 31
+		controls_state = 33	
+		controls_state = 165
+		controls_state = 785
+		controls_state = 806
+		controls_state = 974
+		controls_state = 985
+	}
+}
+
+XFR_is_middle_francian_state = {
+	OR = {
+		state = 1
+		state = 2
+		state = 3
+		state = 6
+		state = 7
+		state = 8
+		state = 17
+		state = 18
+		state = 20
+		state = 21
+		state = 28
+		state = 32
+		state = 34
+		state = 35
+		state = 36
+		state = 39
+		state = 51
+		state = 151
+		state = 157
+		state = 158
+		state = 159
+		state = 160
+		state = 161
+		state = 162
+		state = 735
+		state = 736
+		state = 845
+		state = 846
+		state = 850
+		state = 851
+		state = 847
+		state = 973
+		state = 975
+		state = 976
+		state = 978
+		state = 979
+		state = 980
+		state = 981
+		state = 982
+	}
+}
+
+XFR_controls_middle_francian_states = {
+	custom_trigger_tooltip = {
+		tooltip = XFR_controls_middle_francian_states_tt
+		controls_state = 1
+		controls_state = 2
+		controls_state = 3
+		controls_state = 6
+		controls_state = 7
+		controls_state = 8
+		controls_state = 17
+		controls_state = 18
+		controls_state = 20
+		controls_state = 21
+		controls_state = 28
+		controls_state = 32
+		controls_state = 34
+		controls_state = 35
+		controls_state = 36
+		controls_state = 39
+		controls_state = 51
+		controls_state = 151
+		controls_state = 157
+		controls_state = 158
+		controls_state = 159
+		controls_state = 160
+		controls_state = 161
+		controls_state = 162
+		controls_state = 735
+		controls_state = 736
+		controls_state = 845
+		controls_state = 846
+		controls_state = 850
+		controls_state = 851
+		controls_state = 847
+		controls_state = 973
+		controls_state = 975
+		controls_state = 976
+		controls_state = 978
+		controls_state = 979
+		controls_state = 980
+		controls_state = 981
+		controls_state = 982
+	}
+}
+
+XFR_is_east_francian_state = {
+	OR = {
+		state = 42
+		state = 50
+		state = 52
+		state = 53
+		state = 54
+		state = 55
+		state = 56
+		state = 57
+		state = 58
+		state = 59
+		state = 152
+		state = 153
+		state = 848
+		state = 983
+		state = 984
+		
+	}
+}
+
+XFR_controls_east_francian_states = {
+	custom_trigger_tooltip = { 
+		tooltip = XFR_controls_east_francian_states_tt
+		controls_state = 42
+		controls_state = 50
+		controls_state = 52
+		controls_state = 53
+		controls_state = 54
+		controls_state = 55
+		controls_state = 56
+		controls_state = 57
+		controls_state = 58
+		controls_state = 59
+		controls_state = 152
+		controls_state = 153
+		controls_state = 848
+		controls_state = 983
+		controls_state = 984
+	}
+}

@@ -63,7 +63,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			visible = { has_government = fascism }
+			visible = { OR = { has_government = fascism } has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
 			traits={ media_personality }
 			skill=1
 			attack_skill=2
@@ -156,7 +156,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			visible = { NOT = { OR = { has_government = fascism  has_government = communism } } }
+			visible = { NOT = { OR = { has_government = fascism has_country_leader = { character = XFR_herzog_julius ruling_only = yes } has_government = communism } } }
 			traits={ defensive_doctrine }
 			skill=1
 			attack_skill=2
@@ -202,7 +202,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			visible = { NOT = { OR = { has_government = fascism  has_government = communism } } }
+			visible = { NOT = { OR = { has_government = fascism has_country_leader = { character = XFR_herzog_julius ruling_only = yes } has_government = communism } } }
 			traits={ old_guard cavalry_officer cavalry_leader }
 			skill=1
 			attack_skill=1
