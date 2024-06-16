@@ -207,7 +207,7 @@ country_event = {
 	option = {
 		name = XNE_focus.999.b
 		ai_chance = { factor = 1 }
-		XNE_establish_eurasian_states = yes
+		complete_national_focus = XNE_integration_of_the_midlands
 	}
 	option = {
 		name = XNE_focus.999.c

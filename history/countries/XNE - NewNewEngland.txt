@@ -21,11 +21,11 @@ set_popularities = {
 	neutrality = 8
 }
 
-set_variable = { var = XNE_fascism_support value = 0.18 }
-set_variable = { var = XNE_neutrality_support value = 0.14 }
+set_variable = { var = XNE_fascism_support value = 0.15 }
+set_variable = { var = XNE_neutrality_support value = 0.11 }
 set_variable = { var = XNE_conservative_support value = 0.41 }
 set_variable = { var = XNE_liberal_support value = 0.21 }
-set_variable = { var = XNE_communism_support value = 0.06 }
+set_variable = { var = XNE_communism_support value = 0.12 }
 
 add_ideas = XNE_tensions_on_the_trent
 add_ideas = XNE_internal_conflict
@@ -46,6 +46,14 @@ recruit_character = XNE_harold_saxon
 recruit_character = XNE_james_hurley
 recruit_character = XNE_millard_cale
 recruit_character = XNE_edward_mills
+recruit_character = XNE_gus_march_phillips
+recruit_character = XNE_anders_lassen
+recruit_character = XNE_james_francis
+recruit_character = XNE_john_miller
+recruit_character = XNE_william_schofield
+recruit_character = XNE_joseph_blake
+recruit_character = XNE_thomas_blake
+recruit_character = XNE_benjamin_willard
 
 create_country_leader = {
 	name = XNE_king_henry_x

@@ -24,7 +24,7 @@
 		x = 8
 		y = 0
 
-		cost = 12
+		cost = 5
 
 		available = { has_tech = radio }
 		bypass = {}
@@ -805,6 +805,10 @@
 					target = XWA
 					type = annex_everything
 				}
+				declare_war_on = {
+					target = XW2
+					type = annex_everything
+				}
 				XPW = {
 					add_to_war = {
 						targeted_alliance = ROOT
@@ -816,6 +820,10 @@
 			else = {
 				declare_war_on = {
 					target = XPW
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = XW2
 					type = annex_everything
 				}
 				XWA = {
@@ -959,6 +967,7 @@
 							tag = XCT
 							tag = XTY
 							tag = XWA
+							tag = XW2
 							tag = XPW
 							tag = XIE
 							tag = XNI
@@ -1036,6 +1045,10 @@
 					transfer_troops = yes
 				}
 				annex_country = {
+					target = XW2
+					transfer_troops = yes
+				}
+				annex_country = {
 					target = XPW
 					transfer_troops = yes
 				}
@@ -1054,6 +1067,7 @@
 							is_core_of = XTY
 							is_core_of = XCT
 							is_core_of = XWA
+							is_core_of = XW2
 							is_core_of = XPW
 							is_core_of = XIE
 							is_core_of = XNI
@@ -1771,6 +1785,7 @@
     	bypass = { 
 			AND = {
 				NOT = { country_exists = XWA }
+				NOT = { country_exists = XW2 }
 				NOT = { country_exists = XPW }
 			}
 		}
@@ -1789,6 +1804,14 @@
 				create_wargoal = {
 					type = annex_everything
 					target = XWA
+					expire = 180
+				}
+			}
+    		if = {
+				limit = { country_exists = XW2 }
+				create_wargoal = {
+					type = annex_everything
+					target = XW2
 					expire = 180
 				}
 			}
@@ -1920,6 +1943,7 @@
 			AND = {
 				NOT = { country_exists = XCT }
 				NOT = { country_exists = XWA }
+				NOT = { country_exists = XW2 }
 				NOT = { country_exists = XPW }
 				NOT = { country_exists = XTY }
 			}
@@ -1937,12 +1961,16 @@
     		XNE_gain_fascism_support = yes
     		add_stability = 0.1
 			add_country_leader_trait = indomitable_perseverance
+			set_rule = {
+				desc = XNE_an_english_victory
+				can_create_factions = yes
+			}
     	}
     	
     	ai_will_do = {
     		factor = 10
 			modifier = {
-				factor = 0.5
+				factor = 0.75
 				OR = {
 					country_exists = XIE
 					country_exists = XNI
@@ -1968,6 +1996,7 @@
 			AND = {
 				NOT = { country_exists = XCT }
 				NOT = { country_exists = XWA }
+				NOT = { country_exists = XW2 }
 				NOT = { country_exists = XPW }
 				NOT = { country_exists = XTY }
 				NOT = { country_exists = XIE }
@@ -1994,6 +2023,7 @@
 							is_core_of = XTY
 							is_core_of = XCT
 							is_core_of = XWA
+							is_core_of = XW2
 							is_core_of = XPW
 							is_core_of = XIE
 							is_core_of = XNI
@@ -3484,6 +3514,7 @@
 						is_owned_by = XTY
 						is_owned_by = XNM
 						is_owned_by = XWA
+						is_owned_by = XW2
 						is_owned_by = XPW
 					}
 				}
@@ -3500,6 +3531,7 @@
 							tag = XTY
 							tag = XNM
 							tag = XWA
+							tag = XW2
 							tag = XPW
 						}
 					}
@@ -3976,6 +4008,272 @@
 							type = annex_everything
 							target = PREV
 						}
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_reformation_of_the_army
+    	icon = GFX_focus_mex_restore_the_army_of_christ
+    	#prerequisite = { focus = }
+    	x = 30
+    	y = 0
+    	#relative_position_id =
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_fascism_support = yes
+			XNE_gain_communism_support = yes
+			XNE_gain_neutrality_support = yes
+			army_experience = 35
+			set_country_flag = XNE_reformation_of_the_army
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_military_parades
+    	icon = GFX_focus_generic_armored_air_support
+    	prerequisite = { focus = XNE_reformation_of_the_army }
+    	x = -2
+    	y = 1
+    	relative_position_id = XNE_reformation_of_the_army
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			set_country_flag = XNE_military_parade
+			army_experience = 35
+			add_war_support = 0.03
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_initiate_recruitment_program
+    	icon = GFX_focus_generic_full_social_mobilization
+    	prerequisite = { focus = XNE_reformation_of_the_army }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_reformation_of_the_army
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_neutrality_support = yes
+			add_political_power = 20
+			add_manpower = 10000
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_expand_training
+    	icon = GFX_focus_generic_little_entente
+    	prerequisite = { focus = XNE_reformation_of_the_army }
+    	x = 2
+    	y = 1
+    	relative_position_id = XNE_reformation_of_the_army
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_fascism_support = yes
+			XNE_gain_communism_support = yes
+			army_experience = 50
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_bristol_recruitment
+    	icon = GFX_focus_generic_military_mission
+    	prerequisite = { focus = XNE_initiate_recruitment_program }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_initiate_recruitment_program
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			add_advisor_role = {
+				character = XNE_john_miller
+				advisor={
+					slot = army_chief
+					idea_token = XNE_john_miller
+					cost = 100
+					
+					traits  = { army_chief_offensive_1 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+			add_advisor_role = {
+				character = XNE_william_schofield
+				advisor={
+					slot = high_command
+					ledger = army
+					idea_token = XNE_william_schofield
+					cost = 125
+					
+					traits  = { army_concealment_1 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+			add_advisor_role = {
+				character = XNE_joseph_blake
+				advisor={
+					slot = high_command
+					ledger = army
+					idea_token = XNE_joseph_blake
+					cost = 125
+					
+					traits  = { army_CombinedArms_2 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_london_recruitment
+    	icon = GFX_focus_generic_manpower
+    	prerequisite = { focus = XNE_initiate_recruitment_program }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_initiate_recruitment_program
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_liberal_support = yes
+			add_advisor_role = {
+				character = XNE_gus_march_phillips
+				advisor={
+					slot = army_chief
+					idea_token = XNE_gus_march_phillips
+					cost = 100
+					
+					traits  = { army_chief_defensive_1 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+			add_advisor_role = {
+				character = XNE_anders_lassen
+				advisor={
+					slot = army_chief
+					idea_token = XNE_anders_lassen
+					cost = 100
+					
+					traits  = { army_chief_offensive_2 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+			add_advisor_role = {
+				character = XNE_james_francis
+				advisor={
+					slot = high_command
+					ledger = army
+					idea_token = XNE_james_francis
+					cost = 125
+					
+					traits  = { army_logistics_3 }
+					
+					ai_will_do  = {
+						factor  = 50
 					}
 				}
 			}
