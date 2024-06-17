@@ -6,17 +6,5 @@ characters = {
 			ideology = oligarchism
 			expire = "9999.1.1"
 		}
-		portraits = {
-			civilian = {
-				large = ""
-			}
-		}
-	}
-	create_country_leader = {
-		name = XLV_Alberto_Cartoni
-		desc = XLV_Alberto_Cartoni_desc
-		picture = GFX_portrait_XLV_Alberto_Cartoni
-		expire = "1.1.1"
-		ideology = oligarchism
 	}
 }

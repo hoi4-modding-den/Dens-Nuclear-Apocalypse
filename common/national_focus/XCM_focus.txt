@@ -47,7 +47,7 @@ focus_tree = {
 		prerequisite = { focus = XCM_raise_the_militia }
 		prerequisite = { focus = XCM_anti_corruption_campaign }
 
-		mutually_exclusive = { focus =  XMC_the_social_cause}
+		#mutually_exclusive = { focus =  XMC_the_social_cause}
 		x = -1
 		y = 1
 		relative_position_id = XCM_raise_the_militia
@@ -77,7 +77,7 @@ focus_tree = {
 		id = XCM_the_social_cause
 		icon = GFX_focus_CHL_union_of_hispanic_republics
 		prerequisite = { focus = XCM_raise_the_militia }
-		mutually_exclusive = { focus =  XCM_the_democratic_revolution}
+		#mutually_exclusive = { focus =  XCM_the_democratic_revolution}
 		x = 3
 		y = 1
 		relative_position_id = XCM_raise_the_militia
@@ -266,7 +266,7 @@ focus_tree = {
 						focus = XCM_its_about_fear }
 		x = 6
 		y = 1
-		relative_position_id = XCM_its_about_fear
+		#relative_position_id = XCM_its_about_fear
 
 		cost = 10
 
@@ -347,7 +347,6 @@ focus_tree = {
 		mutually_exclusive = { focus =  XCM_this_aint_democracy }
 
 		relative_position_id = XCM_this_aint_democracy
-		add_stability = 0.15
 		x = 17
 		y = 0
 
@@ -363,17 +362,15 @@ focus_tree = {
 		icon = GFX_focus_eng_liberate_the_home_of_marx
 		prerequisite = { focus = XCM_its_about_faith
 						focus = XCM_its_about_fear }	
-		add_stability = 0.15
 		x = 4
 		y = 1
-		relative_position_id = XCM_its_about_fear
+		#relative_position_id = XCM_its_about_fear
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 1
 		}
-		add_ideas = {XCM_divided_country}
 
 	}
 	focus = {
@@ -381,17 +378,15 @@ focus_tree = {
 		icon = GFX_focus_generic_agricultural_subsidies
 		prerequisite = { focus = XCM_its_about_faith
 						focus = XCM_its_about_fear }	
-		add_stability = 0.15
 		x = 2
 		y = 1
-		relative_position_id = XCM_its_about_fear
+		#relative_position_id = XCM_its_about_fear
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 1
 		}
-		add_ideas = {XCM_divided_country}
 
 	}
 
@@ -496,7 +491,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		relative_position_id = XCM_its_about_fear
+		#relative_position_id = XCM_its_about_fear
 
 		cost = 10
 
@@ -511,7 +506,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		relative_position_id = XCM_its_about_fear
+		#relative_position_id = XCM_its_about_fear
 
 		cost = 10
 

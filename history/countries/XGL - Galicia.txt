@@ -6,8 +6,12 @@ set_war_support = 0.2
 set_stability = 0.15
 set_convoys = 15
 
+set_technology = {
+	gw_artillery = 1	
+}
+
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = democratic
 	last_election = "2235.1.15"
 	election_frequency = 48
 	elections_allowed = no

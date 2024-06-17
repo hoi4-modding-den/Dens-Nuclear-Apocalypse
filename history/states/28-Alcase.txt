@@ -20,11 +20,6 @@ manpower=577067
 		}
 		add_core_of = XAL
 		#add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-			}
-		}
 	}
 
 	provinces={

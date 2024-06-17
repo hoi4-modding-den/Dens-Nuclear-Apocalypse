@@ -305,16 +305,16 @@ stability_weekly_factor = 0.2
 		}
 
 	}
-	theorist = {
-
-		XAP_ideas_council_of_delegat_theorist = {
-			picture = XAP_ideas_council_of_delegat_theorist-643173
-			traits = {
-				 council_of_theorists
-			}
-			available = {
-				original_tag = XAP
-			}
-		}
-	}
+	#theorist = {
+	#
+	#	XAP_ideas_council_of_delegat_theorist = {
+	#		picture = XAP_ideas_council_of_delegat_theorist-643173
+	#		traits = {
+	#			 council_of_theorists
+	#		}
+	#		available = {
+	#			original_tag = XAP
+	#		}
+	#	}
+	#}
 }

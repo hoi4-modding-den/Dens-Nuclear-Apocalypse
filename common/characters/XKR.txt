@@ -10,7 +10,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = XKR_casino_council
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1
@@ -37,12 +37,12 @@ characters = {
 				large = "GFX_Leader_Jack_Gatlin"
 			}
 		}
-		country_leader = {
-			ideology = oligarchism
-			traits = {  }
-			expire = "3000.9.9.9"
-			id = -1
-		}
+		#country_leader = {
+		#	ideology = oligarchism
+		#	traits = {  }
+		#	expire = "3000.9.9.9"
+		#	id = -1
+		#}
 	}
 	XKR_Yuri_Serdtse = {
 		name = "Yuri Serdtse"

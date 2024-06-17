@@ -23,7 +23,7 @@
 		#relative_position_id = AST_empower_the_workers
 		
 		cost = 10
-		prerequisite = { focus = expand_the_economy }
+		#prerequisite = { focus = expand_the_economy }
 
 
 		available = {

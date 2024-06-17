@@ -24,12 +24,6 @@ manpower=2456823
 			3301 1
 		}		
 		#add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				#arms_factory = 3
-				#industrial_complex = 4
-			}
-		}
 	}
 
 	provinces={
