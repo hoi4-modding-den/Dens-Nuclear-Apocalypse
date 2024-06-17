@@ -21,11 +21,6 @@ manpower=867
 
 		}
 		add_core_of = XFR
-		1939.1.1 = {
-			buildings = {
-				#industrial_complex = 4
-			}
-		}
 		set_demilitarized_zone = yes
 		add_dynamic_modifier = {
 			modifier = XFR_mutant_state_modifier

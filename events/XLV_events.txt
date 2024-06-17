@@ -500,7 +500,7 @@ country_event = {
 			base = 1
         }
         kill_country_leader = yes
-        manpower = -1
+        add_manpower = -1
         country_event = {
             id = XLV_events.1
             days = 7
@@ -513,7 +513,7 @@ country_event = {
             character = XLV_the_committee
             promote_leader = yes
             country_leader = {
-                ideology = fascism_type
+                ideology = fascism_ideology
                 expire = "2300.1.1.1"
             }
         }

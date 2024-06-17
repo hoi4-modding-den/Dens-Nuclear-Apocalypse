@@ -25,15 +25,6 @@ state={
 
 		}
 		add_core_of = XGE
-
-		1939.1.1 = {
-			buildings = {
-				#air_base = 10
-				
-				#arms_factory = 10
-				#industrial_complex = 7
-			}
-		}
 	}
 
 	provinces={

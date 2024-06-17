@@ -227,7 +227,18 @@ bookmarks = {
 			}
 			ideas = {
 				
-			}	
+			}
+		}
+
+		"XLA" = {
+			ideology = neutrality
+			history = XLA_history_desc
+			focuses = {
+
+			}
+			ideas = {
+				XLA_Elders_Council
+			}
 		}
 
 		effect = {
