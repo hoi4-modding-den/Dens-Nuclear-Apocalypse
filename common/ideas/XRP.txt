@@ -1,5 +1,6 @@
 ideas = {
 	country = {
+		#German Segregation Ideas#
 		XRP_deutsch_apartheid = {
 			picture = saf_history_of_segregation
 			allowed = {
@@ -18,6 +19,62 @@ ideas = {
     				can_join_factions = no
 			}	
 		}
+		XRP_deutsch_apartheid_factions = {
+			picture = saf_history_of_segregation
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.75
+				stability_factor = -0.1
+			}
+			rule = {
+    				can_join_factions = yes
+			}	
+		}
+		XRP_deutsch_apartheid_recruitment = {
+			picture = saf_history_of_segregation
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.60
+				stability_factor = -0.15
+			}
+			rule = {
+    				can_join_factions = no
+			}	
+		}
+		XRP_deutsch_apartheid_recruitment_factions = {
+			picture = saf_history_of_segregation
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.60
+				stability_factor = -0.12
+			}
+			rule = {
+    				can_join_factions = yes
+			}	
+		}
+
+		#Ideology Ideas#
 		XRP_american_ideals = {
 			picture = ARG_american_allyship
 			removal_cost = -1
@@ -28,8 +85,16 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
+		XRP_american_ideals_improved = {
+			picture = ARG_american_allyship
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.02
+				democratic_acceptance = 25
+			}
+		}
 		XRP_radical_youth = {
-			picture = chi_war_of_resistance
+			picture = chi_war_of_resistance2
 			removal_cost = -1
 			modifier = {
 				communism_drift = 0.01
@@ -45,12 +110,39 @@ ideas = {
 				defense_bonus_against = -0.1
 			}			
 		}
+		XRP_radical_youth_improved = {
+			picture = chi_war_of_resistance
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.01
+				army_org_factor = -0.05
+
+			}
+			targeted_modifier = {
+				tag = XAP
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = XGE
+				defense_bonus_against = -0.05
+			}			
+		}
+
+		#Economy Ideas#
 		XRP_economy_nuked = {
 			picture = SPA_recovering_from_the_civil_war
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = -0.2
 				production_factory_max_efficiency_factor = -0.1
+			}						
+		}
+		XRP_economy_nuked_improved = {
+			picture = POL_disjointed_industry
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.05
 			}						
 		}
 		XRP_agarian_pop = {
@@ -62,6 +154,51 @@ ideas = {
 				research_speed_factor = -0.1
 			}						
 		}
-
+		XRP_military_buff = {
+			picture = SWE_hodgepodge_of_equipment
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				equipment_conversion_speed = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}						
+		}
+		XRP_four_year_plan = {
+			picture = ARG_economic_reactivation
+			removal_cost = -1
+			modifier = {
+				global_building_slots = 1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.05
+			}						
+		}
+		XRP_bread_and_circuses = {
+			picture = SWE_hungershield
+			removal_cost = -1
+			modifier = {
+				supply_factor = 0.05
+				stability_weekly = 0.001
+				required_garrison_factor = -0.05
+			}						
+		}
+		#Army Ideas#
+		XRP_american_army = {
+			picture = usa_desegregation_1
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}						
+		XRP_yummy_mre = {
+			picture = ARG_argentine_beef_trade
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1
+				initiative_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
 	}
 }

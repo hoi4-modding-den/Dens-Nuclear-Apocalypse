@@ -1,0 +1,42 @@
+XRP_german_uprising = {
+	XRP_german_uprising_counter = {
+		icon = {
+			key = GFX_decision_revolt
+		}
+		visible = { has_government  = fascism }
+		
+		cancel_trigger  = {
+			NOT = {
+				has_government  = fascism
+			}
+		}
+		available = {
+			
+			neutrality > party_popularity@fascism
+			
+		}
+		activation = {
+			has_government  = fascism
+		}
+		is_good = yes 
+		fire_only_once = yes
+		days_mission_timeout = 70
+		complete_effect = {
+			if = {
+				limit= {
+					XSS = { has_government = democratic }
+				}
+				country_event = { id = XRP_natural_event.3 }
+			}
+			else = {
+				country_event = { id = XRP_natural_event.4 }
+			}
+		}
+		timeout_effect = {
+			activate_mission = XRP_german_uprising_counter
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
