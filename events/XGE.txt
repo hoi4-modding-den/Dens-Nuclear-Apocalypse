@@ -1,0 +1,15 @@
+add_namespace = XGE
+
+country_event = { #debug event
+	id = XGE.1
+	title = XGE.1.t
+	desc = XGE.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.1.a
+		load_focus_tree = XGE_second
+	}
+}
