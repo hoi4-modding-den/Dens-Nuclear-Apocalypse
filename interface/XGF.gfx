@@ -1,0 +1,41 @@
+spriteTypes = {
+
+ # IDEOS
+	SpriteType = {
+	name = "GFX_ideology_XGF_technocratic_socialism"
+	texturefile = "gfx/interface/ideas/XGF/technocratic_socialism.dds"			
+	}	
+ # IDEAS
+	SpriteType = {
+	name = "GFX_idea_XGF_broken_reactors"
+	texturefile = "gfx/interface/ideas/XGF/XGF_broken_reactors.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_idea_XGF_repaired_reactors"
+	texturefile = "gfx/interface/ideas/XGF/XGF_repaired_reactors.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_XGF_complete_isolation"
+	texturefile = "gfx/interface/ideas/XGF/XGF_complete_isolation.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_idea_XGF_old_world_blues"
+	texturefile = "gfx/interface/ideas/XGF/XGF_old_world_blues.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_idea_XGF_police_state"
+	texturefile = "gfx/interface/ideas/XGF/XGF_police_state.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_idea_XGF_battery_1"
+	texturefile = "gfx/interface/ideas/XGF/XGF_battery_1.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_idea_XGF_battery_2"
+	texturefile = "gfx/interface/ideas/XGF/XGF_battery_1.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_idea_XGF_battery_3"
+	texturefile = "gfx/interface/ideas/XGF/XGF_battery_1.dds"			
+	}	
+}

@@ -1,0 +1,24 @@
+state={
+	id=986
+	name="STATE_986"
+	provinces={
+		11467 
+	}
+	history={
+		owner = XGF
+		victory_points = {
+			11467 50
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 3
+			air_base = 3
+		}
+		add_core_of = XGF
+	}
+	state_category = megalopolis
+	manpower=654321
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

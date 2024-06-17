@@ -1,0 +1,25 @@
+﻿l_english:
+ XGF:0 "CITY 01"
+ XGF_DEF:0 "The Academy of Sciences"
+ XGF_ADJ:0 "Acedemic"
+ XGF_technocratic_socialism:0 "Technocratic Socialism"
+ XGF_technocratic_socialism_desc:0 "Established from a combination of the Neo-Bolshevik and Technocratic ideals of the East and West in the latter half of the 21st Century, the Technocratic Socialist system prioritises scientific progress as the primary way to achieve Proletarian liberation, with welfare being provided by a vanguard party of scientifically minded proletarians. In the aftermath of the Nuclear War, the greatest thinkers of CITY 01 and of the neo-Bolshevik Academy of Sciences fled into bunkers to hide in relative obscurity in the former territory of the once nation of Poland. However, untethered by ideological restrictions, the Academy of Sciences has reemerged as the self proclaimed 'defender of old world proletarian culture', with Technocratic Socialism being the new thought for a reemerging Bolshevik power on the world stage."
+ XGF_history_desc:0 "The Academy of Sciences was established first before the Great Calamity, with the Neo-Bolshevik Slavic Union creating the organisation in order to manage the various scientific endevours of the State.However, as the world turned to cinders, the scientists retreated into their bunker system and into cryosleep, with the entire city falling into disrepair. Now in the 23rd century, the reawoken scientists of CITY 01 have begun their work once more, setting their sights on expanding their vision for Technocratic Utopia, as Marx, Lenin and Stalin would've wanted."
+ XGF_fascism_party:0 "Academy of Sciences"
+ XGF_neutrality_party:0 "Academy of Sciences"
+ XGF_democratic_party:0 "Academy of Sciences"
+ XGF_communism_party:0 "Academy of Sciences"
+ 
+## TRAITS
+
+ XGF_mr_director:0 "§1Mr. Director§!"
+
+## IDEAS
+ XGF_broken_reactor:0 "Broken Reactor"
+ XGF_reactivated_reactor:0 "§4Repaired Reactor§!"
+ XGF_complete_isolation:0 "Complete Isolation"
+ XGF_old_world_blues:0 "Old World Blues"
+ XGF_police_state:0 "Police State"
+ XGF_battery_level_1:0 "§4BATTERY STORES: §!§RLOW§!"
+ XGF_battery_level_2:0 "§4BATTERY STORES: §!§9MEDIUM§!"
+ XGF_battery_level_3:0 "§4BATTERY STORES: §!§GFULL§!"
