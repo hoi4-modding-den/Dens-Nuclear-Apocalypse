@@ -1,0 +1,18 @@
+﻿focus_tree = {
+	id = XGE_second
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 9
+			tag = XGE
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 0 y = 3000 }
+	
+	
+}

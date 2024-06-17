@@ -1053,6 +1053,7 @@
 		completion_reward = {
 			hidden_effect = {
 				set_cosmetic_tag = XGE_ddr
+				load_focus_tree = XGE_second
 			}
 			custom_effect_tooltip = XGE_declare_ddr_tt
 			
