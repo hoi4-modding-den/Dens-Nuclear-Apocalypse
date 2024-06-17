@@ -300,6 +300,11 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 220 215 165 }
 			}
+
+			XKR_casino_council = {
+				can_be_randomly_selected = no
+				color = { 73 123 85 }
+			}
 		}
 
 		dynamic_faction_names = {

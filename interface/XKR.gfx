@@ -159,6 +159,13 @@ spriteTypes = {
 		texturefile = "gfx/leaders/XKR/Minister_Pankin_Zyrkensky.dds"
 	}
 
+	### MISC ###
+
+	spriteType = {
+		name = "GFX_ideology_XKR_casino_council"
+		texturefile = "gfx/interface/XKR/XKR_casino_ideology.dds"
+	}
+
 	### WELCOME SCREEN ###
 
 	spriteType = {

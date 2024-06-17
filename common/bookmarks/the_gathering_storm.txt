@@ -188,7 +188,7 @@ bookmarks = {
 				XBC_unrest_in_navarre_2
 			}
 		}
-			"XIT" = {
+		"XIT" = {
 			ideology = neutrality
 			history = "for fun"
 			focuses = {
@@ -198,26 +198,36 @@ bookmarks = {
 			
 			}
 		}
-			"XHP" = {
-				ideology = democratic
-				history = XHP_history_desc
-				focuses = {
+		"XHP" = {
+			ideology = democratic
+			history = XHP_history_desc
+			focuses = {
 
-				}
-				ideas = {
-					
-				}	
+			}
+			ideas = {
+				
+			}	
 		}
-			"XWA" = {
-				ideology = neutrality
-				history = XWA_history_desc
-				focuses = {
+		"XWA" = {
+			ideology = neutrality
+			history = XWA_history_desc
+			focuses = {
 
-				}
-				ideas = {
-					XWA_TheSplit
-					BEZ_membership
-				}	
+			}
+			ideas = {
+				XWA_TheSplit
+				BEZ_membership
+			}	
+		}
+		"XKR" = {
+			ideology = neutrality
+			history = XKR_history_desc
+			focuses = {
+
+			}
+			ideas = {
+				
+			}	
 		}
 
 		effect = {
