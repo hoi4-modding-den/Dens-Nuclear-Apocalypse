@@ -54,6 +54,8 @@ recruit_character = XNE_william_schofield
 recruit_character = XNE_joseph_blake
 recruit_character = XNE_thomas_blake
 recruit_character = XNE_benjamin_willard
+recruit_character = XNE_henry_potter
+recruit_character = XNE_john_potter
 
 create_country_leader = {
 	name = XNE_king_henry_x

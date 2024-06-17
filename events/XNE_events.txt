@@ -207,12 +207,8 @@ country_event = {
 	option = {
 		name = XNE_focus.999.b
 		ai_chance = { factor = 1 }
-		complete_national_focus = XNE_integration_of_the_midlands
-	}
-	option = {
-		name = XNE_focus.999.c
-		ai_chance = { factor = 1 }
-		complete_national_focus = XNE_establish_states_of_eurasia
+		complete_national_focus = XNE_royal_navalist
+		complete_national_focus = XNE_submarine_genius
 	}
 }
 

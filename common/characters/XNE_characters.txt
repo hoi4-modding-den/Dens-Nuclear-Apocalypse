@@ -403,7 +403,10 @@ characters = {
 		name=XNE_thomas_blake
 		portraits={
 			army={
-				small="GFX_idea_ENG_tom_moore"
+				small="GFX_idea_archibald_wavell"
+			}
+			army={
+				large=GFX_portrait_ENG_archibald_wavell
 			}
 		}
 	}
@@ -412,7 +415,26 @@ characters = {
 		name=XNE_benjamin_willard
 		portraits={
 			army={
-				small="GFX_idea_ENG_thomas_jacomb_hutton"
+				large=GFX_portrait_ENG_william_gott
+				small=GFX_portrait_ENG_william_gott_small
+			}
+		}
+	}
+	
+	XNE_henry_potter={
+		name=XNE_henry_potter
+		portraits={
+			army={
+				small="GFX_idea_ENG_charles_forbes"
+			}
+		}
+	}
+	
+	XNE_john_potter={
+		name=XNE_john_potter
+		portraits={
+			army={
+				small="GFX_idea_ENG_bruce_fraser"
 			}
 		}
 	}

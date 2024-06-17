@@ -4019,10 +4019,455 @@
     }
 	
 	focus = {
+		id = XNE_reestablish_the_navy
+    	icon = GFX_goal_generic_navy_battleship
+    	#prerequisite = { focus = XNE_air_land_battle }
+    	x = 29
+    	y = 0
+    	#relative_position_id = XNE_air_land_battle
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_neutrality_support = yes
+			XNE_gain_conservative_support = yes
+			navy_experience = 35
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_trade_interception
+    	icon = GFX_goal_generic_wolf_pack
+    	prerequisite = { focus = XNE_reestablish_the_navy }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_reestablish_the_navy
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_fascism_support = yes
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+				category = decryption_tech
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_submarine_genius
+    	icon = GFX_goal_generic_navy_submarine
+    	prerequisite = { focus = XNE_trade_interception }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_trade_interception
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_royal_navalist }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_fascism_support = yes
+			XNE_gain_liberal_support = yes
+			add_advisor_role = {
+				character = XNE_henry_potter
+				advisor={
+					slot = theorist
+					ledger = navy
+					idea_token = XNE_henry_potter
+					cost = 150
+					
+					traits  = { XNE_submarine_genius }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_invisibility_is_invincibility
+    	icon = GFX_focus_generic_midget_submarines
+    	prerequisite = { focus = XNE_submarine_genius }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_submarine_genius
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_fascism_support = yes
+			add_ideas = XNE_invisibility_is_invincibility
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_channel_bombing_program
+    	icon = GFX_goal_generic_air_naval_bomber
+    	prerequisite = { focus = XNE_invisibility_is_invincibility }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_invisibility_is_invincibility
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_fascism_support = yes
+			127 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			123 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_royal_navalist
+    	icon = GFX_focus_eng_chiefs_of_staff_committee
+    	prerequisite = { focus = XNE_reestablish_the_navy }
+    	x = 1
+    	y = 2
+    	relative_position_id = XNE_reestablish_the_navy
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_submarine_genius }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			XNE_gain_neutrality_support = yes
+			add_advisor_role = {
+				character = XNE_john_potter
+				advisor={
+					slot = theorist
+					ledger = navy
+					idea_token = XNE_john_potter
+					cost = 150
+					
+					traits  = { XNE_royal_navalist }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_root_out_the_enemy
+    	icon = GFX_goal_generic_navy_anti_submarine
+    	prerequisite = { focus = XNE_royal_navalist }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_royal_navalist
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_neutrality_support = yes
+			add_ideas = XNE_root_out_the_enemy
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_trade_protection_programs
+    	icon = GFX_goal_generic_positive_trade_relations
+    	prerequisite = { focus = XNE_root_out_the_enemy }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_root_out_the_enemy
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_liberal_support = yes
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+				category = encryption_tech
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_dockyard_expansion
+    	icon = GFX_focus_generic_naval_discipline
+    	prerequisite = { focus = XNE_root_out_the_enemy focus = XNE_invisibility_is_invincibility }
+    	x = 1
+    	y = 2
+    	relative_position_id = XNE_invisibility_is_invincibility
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_communism_support = yes
+			129 = {
+				if = { 
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			125 = {
+				if = { 
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_lure_and_destroy
+    	icon = GFX_focus_generic_long_range_aircraft
+    	prerequisite = { focus = XNE_channel_bombing_program }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_channel_bombing_program
+		
+    	cost = 6
+		
+    	available = { has_tech = interwar_antiair }
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			127 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			123 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_radio_towers
+    	icon = GFX_goal_generic_radar
+    	prerequisite = { focus = XNE_lure_and_destroy focus = XNE_dockyard_expansion }
+    	x = 2
+    	y = 1
+    	relative_position_id = XNE_lure_and_destroy
+		
+    	cost = 6
+		
+    	available = { has_tech = radio_detection }
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			XNE_gain_fascism_support = yes
+			126 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			338 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
 		id = XNE_reformation_of_the_army
     	icon = GFX_focus_mex_restore_the_army_of_christ
     	#prerequisite = { focus = }
-    	x = 30
+    	x = 34
     	y = 0
     	#relative_position_id =
     
@@ -4071,6 +4516,7 @@
     	
     	completion_reward = {
 			XNE_gain_conservative_support = yes
+			XNE_gain_neutrality_support = yes
 			set_country_flag = XNE_military_parade
 			army_experience = 35
 			add_war_support = 0.03
@@ -4276,6 +4722,388 @@
 						factor  = 50
 					}
 				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_norwich_program
+    	icon = GFX_focus_generic_university_2
+    	prerequisite = { focus = XNE_bristol_recruitment focus = XNE_london_recruitment }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_bristol_recruitment
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_liberal_support = yes
+			XNE_gain_conservative_support = yes
+			add_corps_commander_role = {
+				character = XNE_benjamin_willard
+				traits = { brilliant_strategist }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			add_field_marshal_role = {
+				character = XNE_thomas_blake
+				traits = { brilliant_strategist }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_organisation_focus
+    	icon = GFX_focus_generic_limited_social_mobilization
+    	prerequisite = { focus = XNE_expand_training }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_expand_training
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_communism_support = yes
+			XNE_gain_fascism_support = yes
+			add_ideas = XNE_organisation_focus
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_defence_of_nne
+    	icon = GFX_goal_generic_fortify_city
+    	prerequisite = { focus = XNE_military_parades }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_military_parades
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			XNE_gain_communism_support = yes
+			add_ideas = XNE_defence_of_nne
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_planned_offensives
+    	icon = GFX_focus_generic_copy_plane_designs
+    	prerequisite = { focus = XNE_norwich_program }
+    	prerequisite = { focus = XNE_organisation_focus }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_norwich_program
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_women_in_the_army }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			XNE_gain_neutrality_support = yes
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_women_in_the_army
+    	icon = GFX_focus_generic_women_in_military
+    	prerequisite = { focus = XNE_norwich_program }
+    	prerequisite = { focus = XNE_defence_of_nne }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_norwich_program
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_planned_offensives }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_communism_support = yes
+			XNE_gain_liberal_support = yes
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_stand_strong
+    	icon = GFX_goal_generic_military_sphere
+    	prerequisite = { focus = XNE_women_in_the_army }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_women_in_the_army
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_communism_support = yes
+			XNE_gain_neutrality_support = yes
+			swap_ideas = {
+				remove_idea = XNE_defence_of_nne
+				add_idea = XNE_defence_of_nne_strong
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_council_of_command
+    	icon = GFX_focus_BUL_form_a_regency_council
+    	prerequisite = { focus = XNE_planned_offensives }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_planned_offensives
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			XNE_gain_liberal_support = yes
+			swap_ideas = {
+				remove_idea = XNE_organisation_focus
+				add_idea = XNE_organisation_focus_council
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_air_land_battle
+    	icon = GFX_focus_generic_multi_role_aircraft
+    	prerequisite = { focus = XNE_planned_offensives focus = XNE_women_in_the_army }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_women_in_the_army
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			XNE_gain_fascism_support = yes
+			air_experience = 25
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_from_above
+    	icon = GFX_focus_generic_paratrooper
+    	prerequisite = { focus = XNE_air_land_battle }
+    	x = 3
+    	y = 1
+    	relative_position_id = XNE_air_land_battle
+		
+    	cost = 6
+		
+    	available = { has_tech = paratroopers }
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_fascism_support = yes
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = para_tech
+				category = light_fighter
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_department_of_national_defence
+    	icon = GFX_focus_SMB_mountain_guns
+    	prerequisite = { focus = XNE_air_land_battle }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_air_land_battle
+		
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_conservative_support = yes
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = recon_tech
+				category = artillery
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_enter_the_european_theatre
+    	icon = GFX_focus_generic_cruiser_submarines
+    	prerequisite = { focus = XNE_air_land_battle }
+    	prerequisite = { focus = XNE_trade_protection_programs }
+    	x = -3
+    	y = 1
+    	relative_position_id = XNE_air_land_battle
+		
+    	cost = 6
+		
+    	available = { has_tech = marines }
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = {
+			XNE_gain_neutrality_support = yes
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = marine_tech
+				category = base_strike_main
 			}
     	}
     	
