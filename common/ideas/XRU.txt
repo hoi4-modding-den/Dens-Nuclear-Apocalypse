@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		XRU_Looming_Disaster = {
+			picture = Looming_Disaster
+			modifier = {
+				stability_factor = -0.5
+				custom_modifier_tooltip = XRU_looming_disaster_tt
+				   }
+			}
+		   }
+	}

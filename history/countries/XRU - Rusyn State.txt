@@ -8,7 +8,6 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 30
-	communism = 0
 	fascism = 20
 	neutrality = 50
 }
@@ -37,4 +36,19 @@ set_party_name = {
     ideology = communism
     long_name = XRU_communism_party_long
     name = XRU_communism_party
+}
+
+add_ideas = {
+	XRU_Looming_Disaster
+}
+
+create_country_leader = {
+	name = XRU_Dimitry_Sydor
+	desc = XRU_Dimitry_Sydor_desc
+	picture = GFX_Portrait_Dimitry_Sydor
+	expire = "1.1.1"
+	ideology = fascism_ideology
+	traits = {
+
+	}
 }

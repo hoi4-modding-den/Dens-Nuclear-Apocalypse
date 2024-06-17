@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	# Ideas
+	spriteType = {
+		name = "GFX_idea_Looming_Disaster"
+		textureFile = "gfx/interface/XRU/XRU_Looming_Disaster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Dimitry_Sydor"
+		textureFile = "gfx/leaders/XRU/Portrait_Dimitry_Sydor.dds"
+	}
+}
