@@ -1,6 +1,6 @@
 capital = 162
 
-#oob = "XLA_2036"
+oob = "XLA_2036"
 set_stability = 0.41
 set_war_support = 0.26
 
@@ -29,6 +29,7 @@ add_ideas = {
 recruit_character = XLA_Elder_Borani
 recruit_character = XLA_Altwigite_Order
 recruit_character = XLA_Voiceless_Grotto
+recruit_character = XLA_Elders_Council
 recruit_character = XLA_Socellia_Luzi
 recruit_character = XLA_Samio
 

@@ -1,0 +1,65 @@
+XLA_patria_defensionis = {
+	name = "Patria Defensionis"
+
+	for_countries = {
+		XLA
+	}
+
+	can_use = {
+		always = yes
+	}
+
+	division_types = {
+		"infantry"
+	}
+
+	fallback_name = "%d Patria Defensionis"
+
+	ordered = {
+		1 = { "%d Auctermunty Patria Defensionis"}
+		2 = { "%d Auctermunty Patria Defensionis"}
+		3 = { "%d Auctermunty Patria Defensionis"}
+		4 = { "%d Auctermunty Patria Defensionis"}
+		5 = { "%d Auctermunty Patria Defensionis"}
+		11 = { "%d Orlesari Patria Defensionis"}
+		12 = { "%d Orlesari Patria Defensionis"}
+		13 = { "%d Orlesari Patria Defensionis"}
+		14 = { "%d Orlesari Patria Defensionis"}
+		15 = { "%d Orlesari Patria Defensionis"}
+		21 = { "%d Galhlond Patria Defensionis"}
+		22 = { "%d Galhlond Patria Defensionis"}
+		23 = { "%d Galhlond Patria Defensionis"}
+		24 = { "%d Galhlond Patria Defensionis"}
+		25 = { "%d Galhlond Patria Defensionis"}
+		31 = { "%d Nobblemoor Patria Defensionis"}
+		32 = { "%d Nobblemoor Patria Defensionis"}
+		33 = { "%d Nobblemoor Patria Defensionis"}
+		34 = { "%d Nobblemoor Patria Defensionis"}
+		35 = { "%d Nobblemoor Patria Defensionis"}
+		41 = { "%d Ferndochty Patria Defensionis"}
+		42 = { "%d Ferndochty Patria Defensionis"}
+		43 = { "%d Ferndochty Patria Defensionis"}
+		44 = { "%d Ferndochty Patria Defensionis"}
+		45 = { "%d Ferndochty Patria Defensionis"}
+		51 = { "%d Esve Themar Patria Defensionis"}
+		52 = { "%d Esve Themar Patria Defensionis"}
+		53 = { "%d Esve Themar Patria Defensionis"}
+		54 = { "%d Esve Themar Patria Defensionis"}
+		55 = { "%d Esve Themar Patria Defensionis"}
+		61 = { "%d Esve Lenmar Patria Defensionis"}
+		62 = { "%d Esve Lenmar Patria Defensionis"}
+		63 = { "%d Esve Lenmar Patria Defensionis"}
+		64 = { "%d Esve Lenmar Patria Defensionis"}
+		65 = { "%d Esve Lenmar Patria Defensionis"}
+		71 = { "%d Pludenn Patria Defensionis"}
+		72 = { "%d Pludenn Patria Defensionis"}
+		73 = { "%d Pludenn Patria Defensionis"}
+		74 = { "%d Pludenn Patria Defensionis"}
+		75 = { "%d Pludenn Patria Defensionis"}
+		81 = { "%d Vexvale Patria Defensionis"}
+		82 = { "%d Vexvale Patria Defensionis"}
+		83 = { "%d Vexvale Patria Defensionis"}
+		84 = { "%d Vexvale Patria Defensionis"}
+		85 = { "%d Vexvale Patria Defensionis"}
+	}
+}

@@ -38,6 +38,19 @@ characters = {
 		}
 	}
 
+	XLA_Elders_Council = {
+		name = "The Council of Arnmouth"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Elders_Council"
+			}
+		}
+
+		country_leader = {
+			ideology = XLA_council
+		}
+	}
+
 	XLA_Socellia_Luzi = {
 		name = "Socellia Luzi"
 		portraits = {
