@@ -27,12 +27,6 @@ state={
 			9471 5 
 		}
 		add_core_of = XGE
-		1939.1.1 = {
-			buildings = {
-				#arms_factory = 5
-				#industrial_complex = 10
-			}
-		}
 	}
 
 	provinces={

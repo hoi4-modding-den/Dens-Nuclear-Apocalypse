@@ -1,5 +1,5 @@
 ﻿oob = "XAP_1936"
-capital = 48
+capital = 56
 set_research_slots = 3
 set_stability = 0.25
 set_war_support = 0.55
@@ -111,7 +111,7 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "2234"
+	last_election = "2234.1.1"
 	election_frequency = 60
 	elections_allowed = no
 }
@@ -123,13 +123,13 @@ set_popularities = {
 }
 
 
-recruit_character = general_versammlung
-recruit_character = general_rat
-recruit_character = sebastian_deinbracher
-recruit_character = andreaskrotenbach
+#recruit_character = general_versammlung
+#recruit_character = general_rat
+#recruit_character = sebastian_deinbracher
+#recruit_character = andreaskrotenbach
 
-recruit_character = frederick_ibrahim
-recruit_character = keriam_schmidt
-recruit_character = karlmaxkarsten
-recruit_character = andreas_von
+#recruit_character = frederick_ibrahim
+#recruit_character = keriam_schmidt
+#recruit_character = karlmaxkarsten
+#recruit_character = andreas_von
 

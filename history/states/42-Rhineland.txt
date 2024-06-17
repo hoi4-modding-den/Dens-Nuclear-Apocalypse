@@ -36,18 +36,6 @@ state={
 
 		}
 		add_core_of = XRP
-		1936.3.7 = {
-
-		}
-		1939.1.1 = {
-			buildings = {
-				radar_station = 1
-				synthetic_refinery = 3
-
-			}
-
-		}
-
 	}
 
 	provinces={

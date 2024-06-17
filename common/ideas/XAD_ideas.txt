@@ -964,12 +964,12 @@ ideas = {
 					always = yes
 				}
 	
-				equipment_bonus = {
-					air_equipment = {
-						instant = yes
-						build_cost_ic = -0.2
-					}
-				}
+				#equipment_bonus = {
+				#	air_equipment = {
+				#		instant = yes
+				#		build_cost_ic = -0.2
+				#	}
+				#}
 			}
 			XAD_lighter_airplanes = { 
 			

@@ -37,11 +37,6 @@ state={
 		}
 		add_claim_by = XLF
 		add_core_of = XBR
-		1939.1.1 = {
-			buildings = {
-				#dockyard = 5
-			}
-		}
 	}
 
 	provinces={

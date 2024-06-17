@@ -208,16 +208,27 @@ bookmarks = {
 					
 				}	
 		}
-			"XWA" = {
-				ideology = neutrality
-				history = XWA_history_desc
-				focuses = {
+		"XWA" = {
+			ideology = neutrality
+			history = XWA_history_desc
+			focuses = {
 
-				}
-				ideas = {
-					XWA_TheSplit
-					BEZ_membership
-				}	
+			}
+			ideas = {
+				XWA_TheSplit
+				BEZ_membership
+			}
+		}
+
+		"XLA" = {
+			ideology = neutrality
+			history = XLA_history_desc
+			focuses = {
+
+			}
+			ideas = {
+				XLA_Elders_Council
+			}
 		}
 
 		effect = {

@@ -346,9 +346,9 @@ focus_tree = {
 			
 			
 			XAP = {
-				activate_mission = my_mission
+				#activate_mission = my_mission
 			
-				activate_mission_tooltip = my_mission
+				#activate_mission_tooltip = my_mission
 			
 			
 			}
@@ -551,43 +551,6 @@ focus_tree = {
 			
 			
 		}
-	}
-
-	focus = {
-		id = XAP_arming_the_free_people
-		icon = GFX_goal_generic_small_arms
-		x = 30
-		y = 4
-		cost = 5
-		search_filters = {
-			FOCUS_FILTER_WAR_SUPPORT
-		}
-		prerequisite = { focus = XAP_the_black_spot_of_europe  }
-		available = {						
-			OR = {	has_completed_focus = XAP_a_parasite_free_society        has_completed_focus = XAP_paying_thier_debt}
-			has_equipment = {
-			    infantry_equipment_1 > 24999
-			}			
-		}
-
-
-			XAP = {
-	swap_ideas = {
-    remove_idea = my_idea_1
-    add_idea = my_idea_2
-	}
-		select_effect = {
-			add_equipment_to_stockpile = {
-    			type = infantry_equipment
-    			amount = -25000
-   				producer = XAP
-}
-
-
-
-}
-
-}
 	}
 
 	focus = {
