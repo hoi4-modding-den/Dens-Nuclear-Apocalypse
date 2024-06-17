@@ -32,6 +32,15 @@ characters = {
 		}
 	}
 
+	XFR_cat = {
+		name = XFR_cat_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_cat"
+			}
+		}
+	}
+
 	XFR_herzog_julius = {
 		name = XFR_herzog_julius_name
 		portraits = {
@@ -483,6 +492,7 @@ characters = {
 					has_completed_focus = XFR_work_with_anarchists
 					has_government = communism
 				}
+				NOT = { has_completed_focus = XFR_end_anarchist_cooperation }
 			}
 			traits = { XFR_anarchist_author_trait }
 			cost = 100

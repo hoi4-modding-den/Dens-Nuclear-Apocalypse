@@ -52,6 +52,10 @@ ideologies = {
 			XFR_emergency_government = {
 				can_be_randomly_selected = no
 			}
+
+			XFR_catist_democracy = {
+				can_be_randomly_selected = no
+			}
 				
 		}
 

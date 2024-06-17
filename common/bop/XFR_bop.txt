@@ -58,8 +58,8 @@ XFR_federalists_restaurationists_bop = {
 			max = -0.6
 			modifier = {
 				democratic_drift = 0.03
-				industrial_capacity_factory = 0.25
-				industrial_capacity_dockyard = 0.25
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
 				consumer_goods_factor = 0.05
 				resistance_growth_on_our_occupied_states = 0.1
 			}
@@ -77,11 +77,10 @@ XFR_federalists_restaurationists_bop = {
 			max = -0.9
 			modifier = {
 				democratic_drift = 0.04
-				industrial_capacity_factory = 0.5
-				industrial_capacity_dockyard = 0.5
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
 				consumer_goods_factor = 0.1
-				resistance_growth_on_our_occupied_states = 0.25
-				power_balance_weekly = -1
+				resistance_growth_on_our_occupied_states = 0.15
 			}
 			on_activate = {
 			}
@@ -117,7 +116,7 @@ XFR_federalists_restaurationists_bop = {
 			modifier = {
 				democratic_drift = 0.02
 				starting_compliance = 0.1
-				global_building_slots_factor = 0.2
+				global_building_slots_factor = 0.1
 				production_speed_buildings_factor = -0.025
 			}
 			on_activate = {
@@ -135,7 +134,7 @@ XFR_federalists_restaurationists_bop = {
 			modifier = {
 				democratic_drift = 0.03
 				starting_compliance = 0.2
-				global_building_slots_factor = 0.5
+				global_building_slots_factor = 0.15
 				production_speed_buildings_factor = -0.05
 			}
 			on_activate = {
@@ -153,9 +152,8 @@ XFR_federalists_restaurationists_bop = {
 			modifier = {
 				democratic_drift = 0.04
 				starting_compliance = 0.3
-				global_building_slots_factor = 0.75
+				global_building_slots_factor = 0.25
 				production_speed_buildings_factor = -0.075
-				power_balance_weekly = 1
 			}
 			on_activate = {
 			}

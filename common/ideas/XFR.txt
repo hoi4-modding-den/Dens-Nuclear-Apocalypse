@@ -35,6 +35,51 @@ ideas = {
                 female_random_country_leader_chance = 0.25
 			}
 		}
+
+         XFR_france_restored_federalists = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+           removal_cost = -1
+
+            picture = FRA_undividable
+
+            modifier = {
+			    democratic_drift = 0.04
+				starting_compliance = 0.3
+				global_building_slots_factor = 0.25
+				production_speed_buildings_factor = -0.075
+            }
+
+        }
+
+        XFR_france_restored_restorationists = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+           removal_cost = -1
+
+            picture = FRA_undividable
+
+            modifier = {
+			    democratic_drift = 0.04
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				consumer_goods_factor = 0.1
+				resistance_growth_on_our_occupied_states = 0.15
+            }
+
+        }
 		
 	}
     country = {
@@ -599,6 +644,27 @@ ideas = {
 
         }
 
+        XFR_all_seeing_eye = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_secret_police
+
+            modifier = {
+                war_support_factor = 0.1
+                operative_slot = 1
+                foreign_subversive_activites = -0.25
+            }
+
+        }
+
         XFR_fascist_tensions = {
             allowed = {
 				always = yes
@@ -847,6 +913,27 @@ ideas = {
 
         }
 
+        XFR_government_reform = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_constitutional_guarantees
+
+            modifier = {
+                stability_weekly = 0.01
+                political_power_gain = -0.25
+                surrender_limit = -0.1
+            }
+
+        }
+
         XFR_constitutional_revisions = {
             allowed = {
 				always = yes
@@ -886,6 +973,28 @@ ideas = {
                 power_balance_weekly = 0.001
                 stability_factor = 0.02
                 political_advisor_cost_factor = -0.1
+            }
+
+        }
+
+        XFR_non_american_healthcare = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = gre_schachtplan1
+
+            modifier = {
+                consumer_goods_factor = 0.05
+                army_morale_factor = 0.1
+                research_speed_factor = 0.01
+                monthly_population = 0.02
             }
 
         }

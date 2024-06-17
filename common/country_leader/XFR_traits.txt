@@ -151,6 +151,23 @@ leader_traits = {
 		}
 	}
 
+	XFR_catist_representative = {
+		random = no
+
+		political_advisor_cost_factor = -0.2
+		stability_factor = -0.05
+		
+		targeted_modifier = {
+    		tag = XAD
+    		extra_trade_to_target_factor = 0.25
+		}
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	XFR_anarchists_trait = {
 		random = no
 
