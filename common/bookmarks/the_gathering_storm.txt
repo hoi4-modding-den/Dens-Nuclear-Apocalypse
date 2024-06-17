@@ -240,6 +240,17 @@ bookmarks = {
 				XLA_Elders_Council
 			}
 		}
+		"XRU" = {
+		ideology = fascism
+		history = XRU_history_desc
+		focuses = {
+
+		}
+		ideas = {
+
+		}	
+	}
+
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

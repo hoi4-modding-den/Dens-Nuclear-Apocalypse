@@ -1,0 +1,50 @@
+focus_tree = {
+	id = XRU_focus
+	continuous_focus_position = { x = -30 y = 1200 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XRU
+		}
+	}
+
+	focus = {
+		id = XRU_just_another_year
+		icon = GFX_XRU_just_another_year
+		x = 2
+		y = 1
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			country_event = XRU.1
+		}
+
+	focus = {
+		id = XRU_dismiss_unrest
+		icon = GFX_XRU_dismiss_unrest
+		x = 2
+		y = 2
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			country_event = XRU.2
+		}
+
+	focus = {
+		id = XRU_everything_is_fine
+		icon = GFX_XRU_everything_is_fine
+		x = 2
+		y = 3
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			country_event = XRU.3
+		}
+}
