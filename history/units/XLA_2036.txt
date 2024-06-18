@@ -1,0 +1,114 @@
+division_template = {
+	name = "Patria Defensionis"
+	division_names_group = XLA_patria_defensionis
+	priority = 0
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11833
+		division_template = "Patria Defensionis"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11833
+		division_template = "Patria Defensionis"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 923
+		division_template = "Patria Defensionis"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 6862
+		division_template = "Patria Defensionis"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 9907
+		division_template = "Patria Defensionis"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 3976
+		division_template = "Patria Defensionis"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 71
+		}
+		location = 6635
+		division_template = "Patria Defensionis"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 81
+		}
+		location = 3772
+		division_template = "Patria Defensionis"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "XLA"
+		}
+		requested_factories = 1
+		progress = 0.53
+		efficiency = 74
+	}
+}

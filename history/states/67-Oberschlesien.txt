@@ -12,21 +12,19 @@ manpower=935061
 
 	history={
 		victory_points = {
-			11467 5
-		}
-		victory_points = {
 			9511 3
 		}
-		owner = LIB # GER
+		owner = XGF
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
 		}
-		#add_core_of = GER
-		#add_core_of = SIL
+		add_core_of = XGF
 	}
 
 	provinces={
-		479 6512 9457 9511 11467 
+		479 6512 9457 9511 
 	}
 
 	local_supplies=4.0 

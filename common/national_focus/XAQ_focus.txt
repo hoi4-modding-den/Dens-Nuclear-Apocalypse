@@ -925,7 +925,7 @@ focus_tree = {
 
 		
 		prerequisite = { focus = XAQ_divine_rule focus = XAQ_consular_vision} 
-		mutually_exclusive = { focus = XAQ_renew_pyrenees_treaty }
+		#mutually_exclusive = { focus = XAQ_renew_pyrenees_treaty }
 
 		relative_position_id = XAQ_divine_rule
 		cost = 5
@@ -954,7 +954,7 @@ focus_tree = {
 		prerequisite = { focus = XAQ_consular_vision focus = XAQ_divine_rule } 
 
 
-		mutually_exclusive = { focus = XAQ_break_treaty_pyrenees }
+		#mutually_exclusive = { focus = XAQ_break_treaty_pyrenees }
 		relative_position_id = XAQ_consular_vision
 		cost = 5
 		ai_will_do = {

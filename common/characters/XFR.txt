@@ -32,6 +32,15 @@ characters = {
 		}
 	}
 
+	XFR_cat = {
+		name = XFR_cat_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_cat"
+			}
+		}
+	}
+
 	XFR_herzog_julius = {
 		name = XFR_herzog_julius_name
 		portraits = {
@@ -72,7 +81,7 @@ characters = {
 			traits = { XFR_herzog_von_burgund }
 			expire = "3000.1.1"
 		}
-		corps_commander={
+		field_marshal={
 			visible = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
 			traits={ cavalry_officer media_personality }
 			skill=2
@@ -112,7 +121,7 @@ characters = {
 				original_tag = XFR
 			}
 			visible = {
-				has_country_leader = { character = XFR_regnault_guillaume ruling_only = yes }
+				NOT = { has_country_leader = { character = XFR_regnault_guillaume ruling_only = yes } }
 			}
 			available = {
 				has_completed_focus = XFR_dennounce_democracy
@@ -171,7 +180,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist cavalry_officer old_guard }
+			traits={ organizer cavalry_officer old_guard }
 			skill=4
 			attack_skill=3
 			defense_skill=2
@@ -276,7 +285,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={  }
+			traits={ trait_reckless cavalry_officer }
 			skill=3
 			attack_skill=4
 			defense_skill=1
@@ -338,7 +347,7 @@ characters = {
 				original_tag = XFR
 			}
 			traits = {
-				army_chief_planning_2
+				army_chief_planning_1
 			}
 			cost =  100
 			ai_will_do = {
@@ -371,6 +380,9 @@ characters = {
 			allowed = {
 				original_tag = XFR
 			}
+			visible = {
+				has_idea = XFR_allow_women
+			}
 			available = {
 				has_completed_focus = XFR_rebuild_the_fleet
 			}
@@ -382,7 +394,7 @@ characters = {
 		}
 		navy_leader={
 			visible = {
-				NOT = { has_government = fascism }
+				has_idea = XFR_allow_women
 				has_completed_focus = XFR_rebuild_the_fleet 
 			}
 			traits={ navy_career_officer }
@@ -480,6 +492,7 @@ characters = {
 					has_completed_focus = XFR_work_with_anarchists
 					has_government = communism
 				}
+				NOT = { has_completed_focus = XFR_end_anarchist_cooperation }
 			}
 			traits = { XFR_anarchist_author_trait }
 			cost = 100
@@ -790,10 +803,7 @@ characters = {
 				NOT = { has_completed_focus = XFR_support_parliament }
 			}
 			available = {
-				OR = {
-					has_government = fascism
-					has_completed_focus = XFR_nationalist_cooperation
-				}
+				has_completed_focus = XFR_establish_occupation_commissions
 			}
 			traits = { XFR_reichskommisar_trait }
 			cost = 100

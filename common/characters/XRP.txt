@@ -15,6 +15,7 @@ characters = {
 			id = -1	
 		}
 		field_marshal = {
+			traits = { media_personality reckless }
 			skill=1
 			attack_skill=1
 			defense_skill=2
@@ -37,6 +38,7 @@ characters = {
 			id = -1	
 		}
 		corps_commander = {
+			traits = { old_guard war_hero ranger}
 			skill=3
 			attack_skill=4
 			defense_skill=2

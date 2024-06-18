@@ -4,6 +4,8 @@ oob = "XFR"
 set_country_flag = dont_use_default_political_advisors
 set_country_flag = dont_use_default_head_of_intelligence
 set_country_flag = dont_use_default_military_advisors
+set_country_flag = XFR_welcome_message_flag
+set_country_flag = XFR_bloom_gui_visible
 
 set_research_slots = 3
 
@@ -72,6 +74,7 @@ recruit_character = XFR_herzog_julius
 recruit_character = XFR_regnault_guillaume
 recruit_character = XFR_gabriel_moreau
 recruit_character = XFR_jacob_d_amboise
+recruit_character = XFR_cat
 recruit_character = XFR_emilien_delacroix
 recruit_character = XFR_daniel_cellier
 recruit_character = XFR_richard_bacque

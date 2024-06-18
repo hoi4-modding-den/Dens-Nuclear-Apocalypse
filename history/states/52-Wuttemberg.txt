@@ -24,12 +24,6 @@ manpower=1786275
 			#air_base = 6
 		}
 		add_core_of = XOO
-
-		1939.1.1 = {
-			buildings = {
-				#air_base = 10
-			}
-		}
 	}
 
 	provinces={

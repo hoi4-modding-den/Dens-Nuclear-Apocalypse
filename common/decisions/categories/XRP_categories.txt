@@ -1,0 +1,7 @@
+XRP_german_uprising = {
+	priority = 10
+	allowed = {
+		original_tag = XRP
+	}
+
+}

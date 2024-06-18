@@ -1,0 +1,54 @@
+capital = 73
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2235.1.10"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	fascism = 20
+	neutrality = 50
+}
+
+set_country_flag = XRU
+
+set_party_name = {
+    ideology = neutrality
+    long_name = XRU_neutrality_party_long
+    name = XRU_neutrality_party
+}
+
+set_party_name = {
+    ideology = democratic
+    long_name = XRU_democracy_party_long
+    name = XRU_democracy_party
+}
+
+set_party_name = {
+    ideology = fascism
+    long_name = XRU_fascism_party_long
+    name = XRU_fascism_party
+}
+
+set_party_name = {
+    ideology = communism
+    long_name = XRU_communism_party_long
+    name = XRU_communism_party
+}
+
+add_ideas = {
+	XRU_Looming_Disaster
+}
+
+create_country_leader = {
+	name = XRU_Dimitry_Sydor
+	desc = XRU_Dimitry_Sydor_desc
+	picture = GFX_Portrait_Dimitry_Sydor
+	expire = "1.1.1"
+	ideology = fascism_ideology
+	traits = {
+
+	}
+}

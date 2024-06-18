@@ -27,6 +27,20 @@ country_event = {
 					174
 				}
 				set_country_flag = cf_XHP_crusader_state_trigger
+				PREV = {
+					XTH_Enceladus = {
+						set_nationality = PREV.PREV
+					}
+					XTH_Aetius = {
+						set_nationality = PREV.PREV
+					}
+					XTH_Severus = {
+						set_nationality = PREV.PREV
+					}
+					XTH_Ignotus = {
+						set_nationality = PREV.PREV
+					}
+			}
 			}
 			XTH = {
 				set_cosmetic_tag = ct_XTH_rise
@@ -46,6 +60,11 @@ country_event = {
 				set_political_party = {
 					ideology = fascism
 					popularity = 0
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = XHP_gen_fascist_long
+					name = XHP_gen_fascist_short
 				}
 			}
 		}
@@ -74,6 +93,20 @@ country_event = {
 					174
 				}
 				set_country_flag = cf_XHP_crusader_state_trigger
+				PREV = {
+					XTH_Enceladus = {
+						set_nationality = PREV.PREV
+					}
+					XTH_Aetius = {
+						set_nationality = PREV.PREV
+					}
+					XTH_Severus = {
+						set_nationality = PREV.PREV
+					}
+					XTH_Ignotus = {
+						set_nationality = PREV.PREV
+					}
+				}
 			}
 			XTH = {
 				set_cosmetic_tag = ct_XTH_rise
@@ -93,6 +126,11 @@ country_event = {
 				set_political_party = {
 					ideology = fascism
 					popularity = 0
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = XHP_gen_fascist_long
+					name = XHP_gen_fascist_short
 				}
 			}
 		}

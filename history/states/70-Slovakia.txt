@@ -10,7 +10,7 @@ manpower=820333
 	}
 
 	history={
-		owner = LIB # CZE
+		owner = XRU
 		victory_points = {
 			9692 10
 		}
@@ -23,12 +23,11 @@ manpower=820333
 			#arms_factory = 2
 			#air_base = 3
 		}
-		#add_core_of = CZE
+		add_core_of = XRU
 
 		1939.3.14 = {
-			owner = LIB # SLO
-			#controller = SLO
-			#add_core_of = SLO
+			owner = XRU
+			add_core_of = XRU
 		}
 	}
 

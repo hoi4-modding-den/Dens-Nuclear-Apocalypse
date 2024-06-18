@@ -1,0 +1,9 @@
+leader_traits = {
+
+	XGF_mr_director = {
+		random = no
+		political_power_factor = 0.2
+        stability_factor = 0.1
+		research_speed_factor = 0.05
+	}
+}

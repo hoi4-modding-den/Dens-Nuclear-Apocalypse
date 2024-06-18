@@ -1,14 +1,24 @@
 capital = 85
 
-#oob = "XTI_1936"
+oob = "XKR_2236"
 
-#set_war_support = 0.1
-#set_stability = 0.8
-#set_convoys = 5
+set_war_support = 0.1
+set_stability = 0.9
+set_convoys = 214
+
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+}
 
 recruit_character = XKR_Rory_Sabatini
 recruit_character = XKR_Jean_Luc_Francisci
-#recruit_character = XKR_Jack_Gatlin
+recruit_character = XKR_Jack_Gatlin
 recruit_character = XKR_Yuri_Serdtse
 recruit_character = XKR_Felix_Menard
 recruit_character = XKR_Krysov_Olegovich
@@ -29,6 +39,16 @@ recruit_character = XKR_Cyril_Marais
 recruit_character = XKR_Lukov_Ivanovich
 recruit_character = XKR_Marcel_Delon
 recruit_character = XKR_Marco_Ceto
+recruit_character = XKR_Christophe_Bissau
+recruit_character = XKR_Dmitriyev_Bostich
+recruit_character = XKR_Ed_Lewis
+recruit_character = XKR_Falco_Del_Monico
+recruit_character = XKR_Leo_Chevalier
+recruit_character = XKR_Frank_Lloyd
+recruit_character = XKR_Cino_Marcello
+recruit_character = XKR_Eliott_Armstrong
+recruit_character = XKR_Maximillian_Scotch
+recruit_character = XKR_Pankin_Zyrkensky
 
 set_politics = {
 	ruling_party = neutrality
@@ -44,3 +64,29 @@ set_popularities = {
 }
 
 set_country_flag = XKR_welcome_message_flag
+set_country_flag = dont_use_default_political_advisors
+set_country_flag = dont_use_default_military_advisors
+
+set_party_name = {
+    ideology = neutrality
+    long_name = XKR_neutrality_party_long
+    name = XKR_neutrality_party
+}
+
+set_party_name = {
+    ideology = democratic
+    long_name = XKR_democracy_party_long
+    name = XKR_democracy_party
+}
+
+set_party_name = {
+    ideology = fascism
+    long_name = XKR_fascism_party_long
+    name = XKR_fascism_party
+}
+
+set_party_name = {
+    ideology = communism
+    long_name = XKR_communism_party_long
+    name = XKR_communism_party
+}

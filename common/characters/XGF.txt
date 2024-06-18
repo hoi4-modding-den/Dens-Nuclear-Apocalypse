@@ -1,0 +1,103 @@
+characters = {
+
+	###LEADERS
+
+	XGF_the_director = {
+		name = "Isaac Volk"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XGF/portrait_XGF_the_director.dds"
+			}
+		}
+		country_leader = {
+			ideology = XGF_technocratic_socialism
+			traits = { XGF_mr_director }
+			expire = "3000.9.9.9"
+		}
+	}
+	
+	XGF_commander_01 ={
+		name="COMMANDER 01"
+		portraits={
+			army={
+				large = "gfx/leaders/XGF/portrait_XGF_gasmask.dds"
+			}
+		}
+		corps_commander={
+			traits = {  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}	
+
+	XGF_marshal ={
+		name="THE MARSHAL"
+		portraits={
+			army={
+				large = "gfx/leaders/XGF/portrait_XGF_gasmask.dds"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+
+	XGF_dimitri_petrov ={
+		name="Dimitri Petrov"
+		portraits={
+			army={
+				large = "gfx/leaders/XGF/portrait_XGF_dimitri_petrov.dds"
+			}
+		}
+		field_marshal={
+			traits={ harsh_leader offensive_doctrine }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}		
+	
+	XGF_commander_02 ={
+		name="COMMANDER 02"
+		portraits={
+			army={
+				large = "gfx/leaders/XGF/portrait_XGF_gasmask.dds"
+			}
+		}
+		corps_commander={
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	XGF_commander_03 ={
+		name="COMMANDER 03"
+		portraits={
+			army={
+				large = "gfx/leaders/XGF/portrait_XGF_gasmask.dds"
+			}
+		}
+		corps_commander={
+			traits = {  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+}

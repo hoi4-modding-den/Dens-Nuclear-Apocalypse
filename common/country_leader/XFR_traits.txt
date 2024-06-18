@@ -68,7 +68,7 @@ leader_traits = {
 
 		political_power_factor = -0.15
 		war_support_factor = 0.05
-		offensive_war_stability_factor = -0.1
+		offensive_war_stability_factor = 0.1
 		
 
 		ai_will_do = {
@@ -81,7 +81,7 @@ leader_traits = {
 
 		political_power_factor = -0.15
 		war_support_factor = 0.1
-		offensive_war_stability_factor = -0.25
+		offensive_war_stability_factor = 0.25
 		justify_war_goal_time = 0.25
 		
 
@@ -144,6 +144,23 @@ leader_traits = {
 		drift_defence_factor = 0.33
 		opinion_gain_monthly_factor = 0.25
 		communism_acceptance = 10
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_catist_representative = {
+		random = no
+
+		political_advisor_cost_factor = -0.2
+		stability_factor = -0.05
+		
+		targeted_modifier = {
+    		tag = XAD
+    		extra_trade_to_target_factor = 0.25
+		}
 		
 
 		ai_will_do = {

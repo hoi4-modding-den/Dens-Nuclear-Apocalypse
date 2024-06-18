@@ -207,11 +207,12 @@ XFR_centre_crisis_cat = {
 			24 = { is_owned_and_controlled_by = ROOT }
 			24 = { infrastructure < 5 }
 			has_completed_focus = XFR_deal_with_the_mutants
+			NOT = { has_completed_focus = XFR_crisis_averted }
 		}
 
 		cancel_trigger = {
-			NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
 			OR = {
+				NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
 				24 = { infrastructure > 4 }
 				has_completed_focus = XFR_crisis_averted
 			}
@@ -262,7 +263,7 @@ XFR_centre_crisis_cat = {
     	}
 
 		cancel_trigger = {
-			NOT = { 42 = { is_owned_and_controlled_by = ROOT } }
+			NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
 		}
 
     	is_good = no
@@ -821,6 +822,60 @@ XFR_country_development_cat = {
 
 foreign_politics = {
 
+	XFR_restore_the_papacy  = { 
+		
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 2
+				state = 978
+			}
+		}
+
+		available = {
+			has_completed_focus = XFR_return_of_the_pope
+			2 = { is_owned_and_controlled_by = ROOT }
+			978 = { is_owned_and_controlled_by = ROOT }
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = WIP
+			}
+		}
+
+		visible = { 
+			has_completed_focus = XFR_democracy_prevails
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		priority = 1
+
+        ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			# Release the Papal States as a nation
+			2 = { remove_claim_by = ROOT }
+			978 = { remove_claim_by = ROOT }
+			if = {
+				limit = {
+					has_power_balance = { id = XFR_federalists_restaurationists_bop }
+				}
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = -0.1
+				}
+			}
+        }
+	}
+
 	XFR_retract_XAL_military_support = {
 
 		icon = GFX_decision_generic_military
@@ -1203,6 +1258,7 @@ XFR_udb_cat = {
 					has_government = democratic
 					has_government = neutrality
 				}
+				is_ally_with = ROOT
 			 }
 		}
 
@@ -1215,6 +1271,7 @@ XFR_udb_cat = {
 				}
 				NOT = { has_war_with = ROOT }
 				NOT = {has_idea = closed_economy }
+				is_ally_with = ROOT
 			}
 		}
 
@@ -1857,83 +1914,6 @@ XFR_bop_decision_cat = {
 		}
 	}
 
-	XFR_promise_swiss_autonomy = {
-
-		icon = GFX_decision_SWI_focus_on_swiss_unity
-
-		allowed = {
-			original_tag = XFR
-		}
-
-		target_trigger = { 
-			FROM = {
-				original_tag = XSS
-			 }
-		}
-
-		available = {
-			FROM = {
-				has_government = democratic
-				NOT = { has_idea = XSS_neutrality_idea }
-				any_owned_state = {
-					custom_trigger_tooltip = {
-						DEN_is_french_state = yes
-						tooltip = XFR_is_french_state_tt
-					}
-				}
-			}
-		}
-
-		cost = 75
-
-		priority = 60
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 1000
-		}
-
-		visible = {
-			has_government = democratic
-			has_power_balance = { id = XFR_federalists_restaurationists_bop }
-			FROM = {
-				any_owned_state = {
-					DEN_is_french_state = yes
-				}
-				has_completed_focus = XSS_triumph_of_democracy
-			}
-			
-		}
-
-		days_remove = 70
-
-		complete_effect = {
-		}
-
-		remove_effect = {
-			FROM = {
-				
-			}
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				every_country = {
-					limit = {
-						XSS = { is_faction_leader = yes }
-						is_in_faction_with = XSS
-						NOT = { tag = XSS }
-					}
-					ROOT = { add_to_faction = PREV }
-				}	
-				if = {
-					limit = { XSS = { NOT = { is_in_faction_with = ROOT } } }
-					XSS = { ROOT = { add_to_faction = PREV } }
-				}
-			}
-			custom_effect_tooltip = XFR_promise_swiss_autonomy_tt
-		}
-	}
-
 	XFR_move_to_paris  = { 
 		
 		icon = GFX_decision_SOV_place_hq
@@ -1993,51 +1973,6 @@ XFR_bop_decision_cat = {
 				16 = { add_core_of = ROOT }
 			}
 			set_capital  = { state = 16 }
-			add_power_balance_value = {
-				id = XFR_federalists_restaurationists_bop
-				value = -0.1
-			}
-        }
-	}
-
-	XFR_restore_the_papacy  = { 
-		
-		icon = GFX_decision_eng_trade_unions_demand
-
-		allowed = {
-			original_tag = XFR
-		}
-
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 2
-				state = 978
-			}
-		}
-
-		available = {
-			has_completed_focus = XFR_return_of_the_pope
-			2 = { is_owned_and_controlled_by = ROOT }
-			978 = { is_owned_and_controlled_by = ROOT }
-		}
-
-		visible = { 
-			has_power_balance = { id = XFR_federalists_restaurationists_bop }
-		}
-
-		fire_only_once = yes
-
-		cost = 100
-
-		priority = 1
-
-        ai_will_do = {
-			base = 100
-		}
-		complete_effect = {
-			# Release the Papal States as a nation
-			2 = { remove_claim_by = ROOT }
-			978 = { remove_claim_by = ROOT }
 			add_power_balance_value = {
 				id = XFR_federalists_restaurationists_bop
 				value = -0.1
@@ -2373,7 +2308,7 @@ XFR_integration = {
 	
 	}
 
-	XFR_french_anarchy_annex = { 
+	XFR_french_anarchy_annex = { # THIS IS TEMPORARY
 		
 		icon = GFX_decision_hol_draw_up_staff_plans
 
@@ -2408,7 +2343,9 @@ XFR_integration = {
 
 		on_map_mode = map_and_decisions_view
 
-		fire_only_once = no
+		fire_only_once = yes
+
+		days_remove = 70
 
 		cost = 100
 
@@ -2418,7 +2355,7 @@ XFR_integration = {
 			base = 100
 		}
 
-		complete_effect = {
+		remove_effect = {
 			FROM = {
 				every_owned_state = {
 					transfer_state_to = ROOT
@@ -2562,6 +2499,457 @@ prospect_for_resources = {
 				}
 			}
 		}
+	}
+
+}
+
+XFR_francia_cat = {
+
+	XFR_show_west_francia = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				XFR_is_west_francian_state = yes
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XFR_controls_west_francian_states = yes
+		}
+
+		visible = { 
+			NOT = { XFR_controls_west_francian_states = yes }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			unlock_national_focus = XFR_west_francia_restored
+		}
+	
+	}
+
+	XFR_show_middle_francia = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				XFR_is_middle_francian_state = yes
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XFR_controls_middle_francian_states = yes
+		}
+
+		visible = { 
+			NOT = { XFR_controls_middle_francian_states = yes }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			unlock_national_focus = XFR_middle_francia_restored
+		}
+	
+	}
+
+	XFR_show_east_francia = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				XFR_is_east_francian_state = yes
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XFR_controls_east_francian_states = yes
+		}
+
+		visible = { 
+			NOT = { XFR_controls_east_francian_states = yes }
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			unlock_national_focus = XFR_east_francia_restored
+		}
+	
+	}
+
+	XFR_show_francia = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				OR = {
+					XFR_is_west_francian_state = yes
+					XFR_is_middle_francian_state = yes
+					XFR_is_east_francian_state = yes
+				}
+				
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XFR_controls_west_francian_states = yes
+			XFR_controls_middle_francian_states = yes
+			XFR_controls_east_francian_states = yes
+		}
+
+		visible = { 
+			NOT = { XFR_controls_west_francian_states = yes }
+			NOT = { XFR_controls_middle_francian_states = yes }
+			NOT = { XFR_controls_east_francian_states = yes }
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			unlock_national_focus = XFR_all_hail_kaiser_julius
+		}
+	
+	}
+
+	XFR_french_anarchy_annex2 = { # THIS IS TEMPORARY
+		
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_owned_and_controlled_by = XFW
+			}
+		}
+
+		available = {
+			has_completed_focus = XFR_rhone_expedition2
+			XNF = {
+				exists = no
+			}
+			
+		}
+
+		target_trigger = { 
+			FROM = { original_tag = XFW }
+		}
+
+		visible = { 
+			FROM = {
+				original_tag = XFW
+			}
+			
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = yes
+
+		cost = 100
+
+		days_remove = 70
+
+		#days_re_enable = 180
+
+        ai_will_do = {
+			base = 100
+		}
+
+		remove_effect = {
+			FROM = {
+				every_owned_state = {
+					transfer_state_to = ROOT
+				}
+			}
+		}
+	
+	}
+
+}
+
+XFR_intervention = {
+
+	XFR_war_against_the_tribes = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = XLA
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XLA = {
+				any_neighbor_country = {
+					OR = {
+						is_ally_with = ROOT
+						tag = ROOT
+					}
+				}
+			}
+		}
+
+		visible = { 
+			XLA = {
+				NOT = { is_ally_with = ROOT }
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		
+		cost = 100
+
+		fire_only_once = no
+
+		war_with_on_remove = XLA
+
+		days_remove = 35
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				strength_ratio = {
+    				tag = XLA
+    				ratio > 1
+				}
+			}
+		}
+
+		remove_effect = {
+			create_wargoal = {
+				target = XLA
+				type = puppet_wargoal_focus
+			}
+		}
+	
+	}
+
+	XFR_south_german_expedition = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = XOO
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XOO = {
+				any_neighbor_country = {
+					OR = {
+						is_ally_with = ROOT
+						tag = ROOT
+					}
+				}
+			}
+		}
+
+		visible = { 
+			XOO = {
+				NOT = { is_ally_with = ROOT }
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		
+		cost = 100
+
+		fire_only_once = no
+
+		war_with_on_remove = XOO
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				strength_ratio = {
+    				tag = XOO
+    				ratio > 1
+				}
+			}
+		}
+
+		days_remove = 35
+
+		remove_effect = {
+			create_wargoal = {
+				target = XOO
+				type = puppet_wargoal_focus
+			}
+		}
+	
+	}
+
+	XFR_war_against_nazis = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = XLH
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XLH = {
+				any_neighbor_country = {
+					OR = {
+						is_ally_with = ROOT
+						tag = ROOT
+					}
+				}
+			}
+		}
+
+		visible = { 
+			XLH = {
+				NOT = { is_ally_with = ROOT }
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		
+		cost = 100
+
+		fire_only_once = no
+
+		war_with_on_remove = XLH
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				strength_ratio = {
+    				tag = XLH
+    				ratio > 1
+				}
+			}
+		}
+
+		days_remove = 35
+
+		remove_effect = {
+			create_wargoal = {
+				target = XLH
+				type = puppet_wargoal_focus
+			}
+		}
+	
+	}
+
+	XFR_war_against_knights = { 
+		
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = XHP
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XHP = {
+				any_neighbor_country = {
+					OR = {
+						is_ally_with = ROOT
+						tag = ROOT
+					}
+				}
+			}
+		}
+
+		visible = { 
+			XHP = {
+				NOT = { is_ally_with = ROOT }
+				NOT = { has_war_with = ROOT }
+				has_government = fascism
+			}
+		}
+		
+		cost = 100
+
+		fire_only_once = no
+
+		war_with_on_remove = XHP
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				strength_ratio = {
+    				tag = XHP
+    				ratio > 1
+				}
+			}
+		}
+
+		days_remove = 35
+
+		remove_effect = {
+			create_wargoal = {
+				target = XHP
+				type = puppet_wargoal_focus
+			}
+		}
+	
 	}
 
 }

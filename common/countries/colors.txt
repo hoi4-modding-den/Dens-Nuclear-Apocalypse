@@ -197,3 +197,11 @@ XBC = {
 	color = rgb { 163 219 129 }
 	color_ui = rgb { 163 219 129 }
 }
+XGF = {
+	color = rgb { 124 83 83 }
+	color_ui = rgb { 124 83 83 }
+}
+XRU = {
+	color = rgb { 47 81 102 }
+	color_ui = rgb { 47 81 102 }
+}

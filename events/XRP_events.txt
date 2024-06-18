@@ -3,7 +3,9 @@ add_namespace = XRP_natural_event
 add_namespace = XRP_news_event
 add_namespace = XRP_diplo_event
 
-country_event = {
+
+#Natural Events#
+country_event = { #intro event
     id = XRP_natural_event.1
     title = XRP.NE_1.t
     # picture = GFX_report_event_DEN_celebration
@@ -18,12 +20,12 @@ country_event = {
 		}
 	hidden_effect = {
 			country_event = { id = XRP_natural_event.2 days = 35 }
-			country_event = { id = XRP_natural_event.3 days = 105 }
+			#country_event = { id = XRP_natural_event.3 days = 105 }
 		}
     	}
 }
 
-country_event = {
+country_event = { #dinner scene
     id = XRP_natural_event.2
     title = XRP.NE_2.t
     # picture = GFX_report_event_DEN_celebration
@@ -42,7 +44,140 @@ country_event = {
 			}
     	}
 }
-country_event = {
+country_event = { #german overthrow
+    id = XRP_natural_event.3
+    title = XRP.NE_3.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.NE_3.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.NE_3.a
+		ai_chance = {
+			base = 100
+		}
+			news_event = {id = XRP_news_event.1}
+			add_named_threat = {
+				threat = 5
+				name = XRP_violent_overthrow
+			}
+			set_politics = {
+    				ruling_party = neutrality
+    				elections_allowed = no
+    				long_name = XRP_german_party_initial_long
+    				name = XRP_german_party_initial
+			}
+			set_party_name = {
+   				ideology = fascism
+    				long_name = XRP_americans_overthrown_long
+    				name = XRP_americans_overthrown
+			}
+			add_stability = -0.10
+    	}
+}
+country_event = { #german overthrow alt
+    id = XRP_natural_event.4
+    title = XRP.NE_3.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.NE_4.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.NE_3.a
+		ai_chance = {
+			base = 100
+		}
+			news_event = { id = XRP_news_event.1}
+			add_named_threat = {
+				threat = 5
+				name = XRP_violent_overthrow
+			}
+			set_politics = {
+    				ruling_party = neutrality
+    				elections_allowed = no
+    				long_name = XRP_german_party_initial_long
+    				name = XRP_german_party_initial
+			}
+			set_party_name = {
+   				ideology = fascism
+    				long_name = XRP_americans_overthrown_long
+    				name = XRP_americans_overthrown
+			}
+			add_stability = -0.10
+    	}
+}
+
+#News Events#
+news_event = { #German Overthrow of American Government
+    id = XRP_news_event.1
+    title = XRP.WE_1.t
+    picture = GFX_news_event_ger_civil_war
+    desc = XRP.WE_1.d
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+       		name = XRP.WE_1.a
+			trigger = {
+				NOT = { has_government = communism}
+           		NOT = { tag = XRP }
+            	NOT = { tag = XGE }
+            	NOT = { tag = XAP }
+           		NOT = { tag = XOO }
+            	NOT = { tag = XLH }
+            	NOT = { tag = XSH }
+				NOT = { tag = LIB }
+    		}
+	}
+	option = { 
+		name = XRP.WE_1.c
+		trigger = {	
+			tag = XRP 
+		}
+	}
+	option = {#I spent like an hour on this and I couldn't figure out for the life of me how to put this all in one option, so I just made a bunch of identical options
+        name = XRP.WE_1.b
+		trigger = {	
+			has_government = communism 
+		}
+	}
+
+	option = {
+        name = XRP.WE_1.b
+		trigger = {	
+			tag = XOO 
+		}
+	}
+	option = {
+        name = XRP.WE_1.b
+		trigger = {	
+			tag = XAP 
+		}
+	}
+	option = {
+        name = XRP.WE_1.b
+		trigger = {	
+			tag = XSH
+		}
+	}
+	option = {
+        name = XRP.WE_1.b
+		trigger = {	
+			tag = XLH
+		}
+	}
+	option = {
+		name = XRP.WE_1.e
+		trigger = {	
+			tag = LIB
+		}
+	}
+}
+
+#Focus Events#
+country_event = { #massacure in Nurburg
     id = XRP_focus_event.1
     title = XRP.FE_1.t
     # picture = GFX_report_event_DEN_celebration
@@ -62,7 +197,7 @@ country_event = {
     	}
 }
 
-country_event = {
+country_event = { #ceremony event
     id = XRP_focus_event.2
     title = XRP.FE_2.t
     # picture = GFX_report_event_DEN_celebration
@@ -72,7 +207,93 @@ country_event = {
     fire_only_once = no
 	option = {
         name = XRP.FE_2.a
-		#XRP = { country_event = XRP.2 }
+		
+			set_country_flag = XRP_flag1
+			load_focus_tree = { tree = XRP_actual_fascist_tree  keep_completed = yes }
+			
+		ai_chance = {
+			base = 100
+		}
+    	}
+}
+
+#economy events#
+country_event = {
+    id = XRP_focus_event.3 #the question of industry
+    title = XRP.FE_eco1.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.FE_eco1.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_eco1.a
+		ai_chance = {
+			base = 100
+		}
+    	}
+	option = {
+        name = XRP.FE_eco1.b
+		ai_chance = {
+			base = 100
+		}
+    	}
+}
+country_event = {
+    id = XRP_focus_event.4 #the question of agriculture
+    title = XRP.FE_eco2.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.FE_eco2.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_eco2.a
+		ai_chance = {
+			base = 100
+		}
+    	}
+	option = {
+        name = XRP.FE_eco2.b
+		ai_chance = {
+			base = 100
+		}
+    	}
+}
+country_event = {
+    id = XRP_focus_event.5 #miltary industry event
+    title = XRP.FE_eco3.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.FE_eco3.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_eco3.a
+		ai_chance = {
+			base = 100
+		}
+    	}
+	option = {
+        name = XRP.FE_eco3.b
+		ai_chance = {
+			base = 100
+		}
+    	}
+}
+#easter egg event#
+country_event = {
+    id = XRP_focus_event.false_8
+    title = XRP.FE_false_8.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.FE_false_8.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_false_8.a
+		add_political_power = -1000
+		custom_effect_tooltip = XRP_snarky_tooltip
 		ai_chance = {
 			base = 100
 		}

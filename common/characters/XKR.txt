@@ -10,7 +10,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = XKR_casino_council
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1
@@ -37,12 +37,12 @@ characters = {
 				large = "GFX_Leader_Jack_Gatlin"
 			}
 		}
-		country_leader = {
-			ideology = oligarchism
-			traits = {  }
-			expire = "3000.9.9.9"
-			id = -1
-		}
+		#country_leader = {
+		#	ideology = oligarchism
+		#	traits = {  }
+		#	expire = "3000.9.9.9"
+		#	id = -1
+		#}
 	}
 	XKR_Yuri_Serdtse = {
 		name = "Yuri Serdtse"
@@ -81,7 +81,7 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = XKR_Felix_Menard_Idea
-			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+			traits = { army_chief_defensive_1 }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -105,7 +105,7 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = XKR_Krysov_Olegovich_Idea
-			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+			traits = { army_chief_offensive_2 }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -143,9 +143,9 @@ characters = {
 			logistics_skill = 5
 		}
 		advisor = {
-			slot = army_chief
+			slot = high_command
 			idea_token = XKR_Oliver_Watson_Idea
-			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+			traits = { army_infantry_3 }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -169,7 +169,7 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = XKR_Remy_Chauvre_Idea
-			traits = { army_chief_offensive_3 }      # Unspecified cost defaults to 150.
+			traits = { army_chief_reform_2 }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -183,7 +183,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = XKR_Austin_Knight_Idea
-			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+			traits = { backroom_backstabber }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -211,7 +211,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = XKR_Iona_Sabatini_Idea
-			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+			traits = { XKR_seductress }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -225,7 +225,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = XKR_Luigi_Manitoni_Idea
-			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+			traits = { XKR_enforcer }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -237,9 +237,9 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = political_advisor
+			slot = high_command
 			idea_token = XKR_Niccolo_Ceresa_Idea
-			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+			traits = { submarine_specialist }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -263,6 +263,9 @@ characters = {
 			army = {
 				large = "GFX_Leader_Luke_Thompson"
 			}
+			civilian = {
+				small = "GFX_Advisor_Luke_Thompson"
+			}
 		}
 		corps_commander = {
 			skill = 1
@@ -270,6 +273,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 5
+		}
+		advisor = {
+			slot = theorist
+			idea_token = XKR_Luke_Thompson_Idea
+			ledger = army
+			traits = { blitzkrieg_theorist }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -325,7 +334,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = XKR_Vincent_Devaux_Idea
-			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+			traits = { XKR_cutthroat_businessman }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -337,9 +346,9 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = political_advisor
+			slot = high_command
 			idea_token = XKR_Cyril_Marais_Idea
-			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+			traits = { army_commando_2 }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -351,9 +360,9 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = political_advisor
+			slot = high_command
 			idea_token = XKR_Lukov_Ivanovich_Idea
-			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+			traits = { army_logistics_2 }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -367,7 +376,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = XKR_Marcel_Delon_Idea
-			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+			traits = { XKR_jazz_star }      # Unspecified cost defaults to 150.
 		}
 	}
 
@@ -379,9 +388,151 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = political_advisor
+			slot = theorist
 			idea_token = XKR_Marco_Ceto_Idea
+			ledger = navy
+			traits = { naval_theorist }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Christophe_Bissau = {
+		name = "Christophe Bissau"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Christophe_Bissau"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Christophe_Bissau_Idea
+			traits = { captain_of_industry }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Dmitriyev_Bostich = {
+		name = "Dmitriyev Bostich"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Dmitriyev_Bostich"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Dmitriyev_Bostich_Idea
+			traits = { prince_of_terror }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Ed_Lewis = {
+		name = "Ed Lewis"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Ed_Lewis"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = XKR_Ed_Lewis_Idea
+			traits = { close_air_support_proponent }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Falco_Del_Monico = {
+		name = "Falco Del Monico"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Falco_Del_Monico"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Falco_Del_Monico_Idea
 			traits = { silent_workhorse }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Leo_Chevalier = {
+		name = "Leo Chevalier"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Leo_Chevalier"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = XKR_Leo_Chevalier_Idea
+			ledger = air
+			traits = { air_warfare_theorist }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Frank_Lloyd = {
+		name = "Frank Lloyd"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Frank_Lloyd"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XKR_Frank_Lloyd_Idea
+			traits = { smooth_talking_charmer }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Cino_Marcello = {
+		name = "Cino Marcello"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Cino_Marcello"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = XKR_Cino_Marcello_Idea
+			traits = { navy_chief_reform_2 }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Eliott_Armstrong = {
+		name = "Eliott Armstrong"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Eliott_Armstrong"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = XKR_Eliott_Armstrong_Idea
+			traits = { air_pilot_training_2 }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Maximillian_Scotch = {
+		name = "Maximillian Scotch"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Maximillian_Scotch"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = XKR_Maximillian_Scotch_Idea
+			traits = { air_air_superiority_3 }      # Unspecified cost defaults to 150.
+		}
+	}
+
+	XKR_Pankin_Zyrkensky = {
+		name = "Pankin Zyrkensky"
+		portraits = {
+			civilian = {
+				small = "GFX_Advisor_Pankin_Zyrkensky"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = XKR_Pankin_Zyrkensky_Idea
+			traits = { navy_chief_maneuver_2 }      # Unspecified cost defaults to 150.
 		}
 	}
 }

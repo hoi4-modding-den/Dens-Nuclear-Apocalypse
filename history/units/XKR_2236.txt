@@ -1,0 +1,72 @@
+division_template = {
+    name = "Casino Guards"
+    division_names_group = XLR_INF_01
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 2 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+units = {
+    division = {
+        name = "Casino Guards"
+        location = 362
+        division_template = "Casino Guards"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
+    }
+
+    division = {
+        name = "Casino Guards"
+        location = 6282
+        division_template = "Casino Guards"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
+    }
+
+    division = {
+        name = "Casino Guards"
+        location = 6558
+        division_template = "Casino Guards"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
+    }
+
+    division = {
+        name = "Casino Guards"
+        location = 6332
+        division_template = "Casino Guards"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
+    }
+
+    division = {
+        name = "Casino Guards"
+        location = 3473
+        division_template = "Casino Guards"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
+    }
+}
+instant_effect = {
+    add_equipment_production = {
+        equipment = {
+            type = infantry_equipment_0
+            creator = XKR
+        }
+        requested_factories = 2
+        efficiency = 0.42
+    }
+}

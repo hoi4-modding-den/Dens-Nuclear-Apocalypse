@@ -466,7 +466,7 @@ XNE_french_eurasia = {
 		limit = {
 			XPR = {
 				OR = {
-					country_exists = no
+					exists = no
 					is_subject_of = ROOT
 				}
 			}
@@ -482,6 +482,8 @@ XNE_french_eurasia = {
 						is_core_of = XLF
 						is_core_of = XBR
 						is_core_of = XPR
+						is_core_of = XNF
+						is_core_of = XFW
 					}
 				}
 				transfer_state_to = XPR
@@ -494,12 +496,69 @@ XNE_french_eurasia = {
 		}
 	}
 }
+XNE_bohemian_eurasia = {
+	if = {
+		limit = {
+			XCM = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = XCM
+					}
+					NOT = { state = 66 }
+				}
+				transfer_state_to = XCM
+				add_core_of = XCM
+			}
+		}
+		if = { 
+			limit = { XCM = { NOT = { is_subject_of = ROOT } } }
+			XCM = { XNE_colonial_puppet = yes }
+		}
+	}
+}
+XNE_danish_eurasia = {
+	if = {
+		limit = {
+			XDK = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = XSH
+						is_core_of = XJY
+						is_core_of = XDK
+					}
+				}
+				transfer_state_to = XDK
+				add_core_of = XDK
+			}
+		}
+		if = { 
+			limit = { XDK = { NOT = { is_subject_of = ROOT } } }
+			XDK = { XNE_colonial_puppet = yes }
+		}
+	}
+}
 XNE_german_eurasia = {
 	if = {
 		limit = {
 			XKR = {
 				OR = {
-					country_exists = no
+					exists = no
 					is_subject_of = ROOT
 				}
 			}
@@ -516,6 +575,9 @@ XNE_german_eurasia = {
 						is_core_of = XSH
 						is_core_of = XJY
 						is_core_of = XDK
+						is_core_of = XKR
+						state = 51
+						state = 66
 					}
 				}
 				transfer_state_to = XKR
@@ -533,7 +595,7 @@ XNE_italian_eurasia = {
 		limit = {
 			XIT = {
 				OR = {
-					country_exists = no
+					exists = no
 					is_subject_of = ROOT
 				}
 			}
@@ -567,7 +629,7 @@ XNE_cattish_eurasia = {
 		limit = {
 			XAD = {
 				OR = {
-					country_exists = no
+					exists = no
 					is_subject_of = ROOT
 				}
 			}
@@ -582,7 +644,9 @@ XNE_cattish_eurasia = {
 						is_core_of = XAR
 						is_core_of = XBC
 						is_core_of = XGL
+						state = 790
 					}
+					NOT = { state = 118 }
 				}
 				transfer_state_to = XAD
 				add_core_of = XAD
@@ -599,7 +663,7 @@ XNE_belgian_eurasia = {
 		limit = {
 			XLX = {
 				OR = {
-					country_exists = no
+					exists = no
 					is_subject_of = ROOT
 				}
 			}
@@ -611,6 +675,7 @@ XNE_belgian_eurasia = {
 						is_core_of = XLX
 						is_core_of = XNL
 					}
+					NOT = { state = 51 }
 				}
 				transfer_state_to = XLX
 				add_core_of = XLX
@@ -625,6 +690,8 @@ XNE_belgian_eurasia = {
 XNE_establish_eurasian_states = {
 	XNE_belgian_eurasia = yes
 	XNE_french_eurasia = yes
+	XNE_bohemian_eurasia = yes
+	XNE_danish_eurasia = yes
 	XNE_cattish_eurasia = yes
 	XNE_german_eurasia = yes
 	XNE_italian_eurasia = yes

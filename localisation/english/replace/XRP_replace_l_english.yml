@@ -5,7 +5,6 @@
 
  #some silly things that have bothered me
  STATE_66:0 "Dolnoslaskie"
- STATE_67:0 "Opole"
  STATE_784:0 "Vilnius"
  STATE_146:0 "Kareliya"
  STATE_722:0 "Pechengsk"
@@ -119,8 +118,6 @@
  VICTORY_POINTS_11411:0 "Ivano-Frankivsk"
  VICTORY_POINTS_3548:0 "Mukachevo"
  VICTORY_POINTS_9570:0 "Wrocław"
- VICTORY_POINTS_9511:0 "Opole"
- VICTORY_POINTS_11467:0 "Gliwice"
  VICTORY_POINTS_11954:0 "Benghazi"
  VICTORY_POINTS_11617:0 "Sokhumi"
  VICTORY_POINTS_11437:0 "Dnipro"

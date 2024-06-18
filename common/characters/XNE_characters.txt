@@ -345,4 +345,98 @@ characters = {
 		# }
 	}
 	
+	XNE_gus_march_phillips={
+		name=XNE_gus_march_phillips
+		portraits={
+			army={
+				small="GFX_idea_ENG_alan_brooke"
+			}
+		}
+	}
+	
+	XNE_anders_lassen={
+		name=XNE_anders_lassen
+		portraits={
+			army={
+				small="GFX_idea_ENG_alan_cunningham"
+			}
+		}
+	}
+	
+	XNE_james_francis={
+		name=XNE_james_francis
+		portraits={
+			army={
+				small="GFX_idea_ENG_archibald_wavell"
+			}
+		}
+	}
+	
+	XNE_john_miller={
+		name=XNE_john_miller
+		portraits={
+			army={
+				small="GFX_idea_eng_oswald_mosley"
+			}
+		}
+	}
+	
+	XNE_william_schofield={
+		name=XNE_william_schofield
+		portraits={
+			army={
+				small="GFX_idea_ENG_neil_ritchie"
+			}
+		}
+	}
+	
+	XNE_joseph_blake={
+		name=XNE_joseph_blake
+		portraits={
+			army={
+				small="GFX_idea_eng_stewart_menzies"
+			}
+		}
+	}
+	
+	XNE_thomas_blake={
+		name=XNE_thomas_blake
+		portraits={
+			army={
+				small="GFX_idea_archibald_wavell"
+			}
+			army={
+				large=GFX_portrait_ENG_archibald_wavell
+			}
+		}
+	}
+	
+	XNE_benjamin_willard={
+		name=XNE_benjamin_willard
+		portraits={
+			army={
+				large=GFX_portrait_ENG_william_gott
+				small=GFX_portrait_ENG_william_gott_small
+			}
+		}
+	}
+	
+	XNE_henry_potter={
+		name=XNE_henry_potter
+		portraits={
+			army={
+				small="GFX_idea_ENG_charles_forbes"
+			}
+		}
+	}
+	
+	XNE_john_potter={
+		name=XNE_john_potter
+		portraits={
+			army={
+				small="GFX_idea_ENG_bruce_fraser"
+			}
+		}
+	}
+	
 }

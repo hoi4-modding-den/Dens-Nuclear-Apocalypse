@@ -79,6 +79,22 @@ XFR_udb_cat = {
 	}
 }
 
+XFR_intervention = {			
+	icon = GFX_decision_category_usa_intervention_mandate
+	priority = 9
+
+	visible_when_empty = no	
+	
+	allowed = {
+		original_tag = XFR
+	}
+
+	visible = {
+		has_completed_focus = XFR_restore_internationalism
+		has_completed_focus = XFR_proclaim_french_government
+	}
+}
+
 XFR_integration = {		
 	icon = GFX_decision_category_intervention_overseas
 
@@ -102,6 +118,22 @@ XAL_integration = {
 	visible = {	
 		has_government = fascism
 	}
+}
+
+XFR_francia_cat = {			
+	icon = GFX_decision_category_ger_reichskommissariats
+	priority = 10	
+
+	visible_when_empty = no	
+	
+	allowed = {
+		original_tag = XFR
+	}
+	visible = {	
+		has_completed_focus  = XFR_restore_the_francian_empire
+		NOT = { has_completed_focus = XFR_all_hail_kaiser_julius }
+	} 
+
 }
 
 XFR_bop_decision_cat = {		

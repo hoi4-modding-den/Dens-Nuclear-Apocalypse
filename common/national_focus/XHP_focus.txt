@@ -148,7 +148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XHP_our_faith_in_numbers
-		icon = GFX_focus_ETH_freedom_at_gunpoint
+		icon = GFX_focus_XHP_numbers
 		prerequisite = { focus = XHP_crack_into_reserves }
 		mutually_exclusive = { focus = XHP_pad_the_armor }
 		x = -2
@@ -176,6 +176,80 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = XHP_unify_cause
+		icon = GFX_focus_XHP_numbers
+		prerequisite = { focus = XHP_our_faith_in_numbers focus = XHP_pad_the_armor }
+		mutually_exclusive = { focus = XHP_court_council }
+		x = 1
+		y = 1
+		relative_position_id = XHP_pad_the_armor
+		cost = 2
+
+		completion_reward = {
+			# modify disloyalty everywhere heavily
+		}
+	}
+	focus = {
+		id = XHP_court_council
+		icon = x
+		prerequisite = { focus = XHP_our_faith_in_numbers focus = XHP_pad_the_armor }
+		mutually_exclusive = { focus = XHP_unify_cause }
+		x = -1
+		y = 1
+		relative_position_id = XHP_pad_the_armor
+		cost = 2
+
+		completion_reward = {
+			# replace chaotic military with a more centrialized control or something idk
+		}
+	}
+	focus = {
+		id = XHP_the_fight
+		icon = x
+		prerequisite = { focus = XHP_unify_cause focus = XHP_court_council }
+		x = -0.5
+		y = 1
+		relative_position_id = XHP_court_council
+		cost = 3
+
+		completion_reward = {
+			# something cool here idk
+		}
+	}
+	
+	### Crisis Resolved
+	focus = {
+		id = XHP_crisis_resolved
+		icon = x
+		x = 25
+		y = 5
+		cost = 3
+
+		available = {
+			NOT = {
+				has_civil_war = yes
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = extensive_conscription }
+				swap_ideas = {
+					remove_idea = extensive_conscription
+					add_idea = volunteer_only
+				}
+			}
+			if = {
+				limit = { has_idea = idea_XHP_crusader_crisis }
+				remove_ideas = {
+					idea_XHP_crusader_crisis
+				}
+			}
+			add_stability = 0.15
+		}
+
+	}
 	
 	
 	
@@ -189,9 +263,7 @@ focus_tree = {
 	
 	
 	
-	
-	
-	### #### Offering Concessions
+	### Offering Concessions
 	focus = {
 		id = XHP_offer_concessions
 		icon = GFX_focus_XHP_cc_concessions

@@ -238,7 +238,10 @@ country_event = { # Elections 2237
             right_side = XFR_federalist_side
             set_value = 0.15
         }
-
+        custom_effect_tooltip = elections_unlock_branch_tt
+        hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
     }
 
     option = {
@@ -251,7 +254,7 @@ country_event = { # Elections 2237
             character = XFR_gabriel_moreau
             promote_leader = yes
             country_leader = {
-                ideology = liberalism
+                ideology = populism
                 desc = XFR_gabriel_moreau_desc
                 expire = "3000.1.1"
             traits = { XFR_banker XFR_restaurationist_leader }
@@ -268,6 +271,10 @@ country_event = { # Elections 2237
             right_side = XFR_federalist_side
             set_value = -0.15
         }
+        custom_effect_tooltip = elections_unlock_branch_tt
+        hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
 
     }
 
@@ -1574,6 +1581,7 @@ country_event = { # Coronation: Fascist Alsace Reaction
         ai_chance = {
             base = 100
         } 
+        XFR = { country_event = { id = XFR_events.41 days = 1 } }
         effect_tooltip = {
             XFR = {
                annex_country = {
@@ -1629,6 +1637,82 @@ country_event = { # Coronation: Positive Fascist Alsace Reaction
         }
         
     }
+}
+
+country_event = { # Elections 2241
+    id = XFR_events.42
+    title = XFR_events.42.t
+    picture = GFX_report_event_election_vote
+    desc = XFR_events.42.desc
+
+    trigger = {
+		tag = XFR
+        has_country_flag = XFR_2236_elections_over
+		date > 2240.12.1
+		date < 2241.2.1
+	}
+    
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = XFR_2240_elections_over
+    }
+    
+    option = {
+        name = XFR_events.42.a
+        ai_chance = {
+            base = 1
+        }
+        if = {
+            limit = { has_power_balance = { id = XFR_federalists_restaurationists_bop } }
+            if = {
+				limit = { has_country_leader_with_trait = XFR_federalist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = 0.1
+				}
+			}
+			if = {
+				limit = { has_country_leader_with_trait = XFR_restaurationist_leader }
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = -0.1
+				}
+			}
+        }
+        #custom_effect_tooltip = elections_unlock_branch_tt
+        hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
+    }
+
+    option = {
+        name = XFR_events.42.b
+        ai_chance = {
+            base = 1
+        }
+        hidden_effect = { retire_ideology_leader = democratic }
+        add_country_leader_role = {
+            character = XFR_cat
+            promote_leader = yes
+            country_leader = {
+                ideology = XFR_catist_democracy
+                expire = "3000.1.1"
+            traits = { XFR_catist_representative }
+            }
+        }
+        set_party_name = {
+            ideology = democratic
+            long_name = XFR_democratic_party_catism_long
+            name = XFR_democratic_party_catism
+        }       
+        custom_effect_tooltip = elections_unlock_branch_tt
+        hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
+
+    }
+
 }
 
 ###############

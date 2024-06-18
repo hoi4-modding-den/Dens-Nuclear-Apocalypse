@@ -21,6 +21,11 @@ spriteTypes = {
 		textureFile = "gfx/leaders/XLA/Portrait_Voiceless_Grotto.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_Elders_Council"
+		textureFile = "gfx/leaders/XLA/Portrait_Elders_Council.dds"
+	}
+
 	# Advisors
 	spriteType = {
 		name = "GFX_Advisor_Socellia_Luzi"

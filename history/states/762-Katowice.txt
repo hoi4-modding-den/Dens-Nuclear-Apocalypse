@@ -14,13 +14,12 @@ manpower=666667
 		victory_points = {
 			6464 5
 		}
-		owner = LIB # POL
+		owner = XGF
 		buildings = {
-			infrastructure = 3 #was: 6
-			#industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 1
 		}
-		#add_core_of = POL
-		#add_core_of = SIL
+		add_core_of = XGF
 	}
 
 	local_supplies=0.0 

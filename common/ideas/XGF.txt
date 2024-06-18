@@ -1,0 +1,181 @@
+ideas = {
+	economy = {
+		law = yes
+		XGF_broken_reactor = {
+			picture = XGF_broken_reactors
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.45
+				production_speed_industrial_complex_factor = -0.5
+				production_lack_of_resource_penalty_factor = 0.1
+				industry_repair_factor = 0.25
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			cancel_if_invalid = no
+		}
+	
+		XGF_reactivated_reactor = {
+			picture = XGF_repaired_reactors
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				production_speed_industrial_complex_factor = 0.2
+				industry_repair_factor = 0.25
+				production_speed_arms_factory_factor = 0.2
+				conversion_cost_civ_to_mil_factor= -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+
+	trade_laws = {
+		law = yes
+		XGF_complete_isolation = {
+			picture = isolation
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.0
+				civilian_intel_to_others = -10.0
+				navy_intel_to_others = -10.0
+				guarantee_tension = 1.0
+				join_faction_tension = 1.0
+				lend_lease_tension = 1.0
+				request_lease_tension = 1.0
+				send_volunteers_tension = 1.0
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+
+	country = {
+		XGF_old_world_blues = {
+			
+				allowed = {
+					original_tag = XGF
+				}
+	
+				picture = XGF_old_world_blues
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					research_speed_factor = 0.1
+					war_support_factor = -0.2
+					communism_drift = 0.01
+				}
+			}
+		XGF_police_state = {
+			
+				allowed = {
+					original_tag = XGF
+				}
+	
+				picture = XGF_police_state
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					stability_factor = 0.3
+					political_power_gain = 0.1
+					drift_defence_factor = 0.2
+				}
+			}
+		XGF_battery_level_1 = {
+			
+				allowed = {
+					original_tag = XGF
+				}
+	
+				picture = XGF_battery_1
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					
+				}
+			}
+
+		XGF_battery_level_2 = {
+			
+				allowed = {
+					original_tag = XGF
+				}
+	
+				picture = XGF_battery_2
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					production_speed_buildings_factor = 0.1
+					cic_construction_boost_factor = 0.1
+				}
+			}
+
+		XGF_battery_level_3 = {
+			
+				allowed = {
+					original_tag = XGF
+				}
+	
+				picture = XGF_battery_3
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					production_speed_buildings_factor = 0.2
+					cic_construction_boost_factor = 0.2
+				}
+			}
+	}

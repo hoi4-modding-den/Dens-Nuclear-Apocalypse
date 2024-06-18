@@ -207,15 +207,8 @@ country_event = {
 	option = {
 		name = XNE_focus.999.b
 		ai_chance = { factor = 1 }
-		XNM = { XNE_colonial_puppet = yes }
-		XWA = { XNE_colonial_puppet = yes }
-		XPR = { XNE_colonial_puppet = yes }
-		XAD = { XNE_colonial_puppet = yes }
-	}
-	option = {
-		name = XNE_focus.999.c
-		ai_chance = { factor = 1 }
-		complete_national_focus = XNE_establish_states_of_eurasia
+		complete_national_focus = XNE_royal_navalist
+		complete_national_focus = XNE_submarine_genius
 	}
 }
 

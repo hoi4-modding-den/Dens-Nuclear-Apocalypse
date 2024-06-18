@@ -241,8 +241,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.075
-				line_change_production_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.035
+				line_change_production_efficiency_factor = 0.03
 			}			
 		}
 		XNE_modern_industry_2 = {
@@ -259,8 +259,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				line_change_production_efficiency_factor = 0.08
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.06
 				global_building_slots_factor = 0.1
 			}			
 		}
@@ -536,12 +536,110 @@ ideas = {
 			picture = citizen_militia_2
 			
 			modifier = {
-				political_power_gain = 0.2
-				consumer_goods_factor = -0.25
-				production_speed_buildings_factor = 0.2
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
 				hidden_modifier = {
 					trade_opinion_factor = 0.5
 				}
+			}
+		}
+		XNE_organisation_focus = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = chi_army_corruption3
+			
+			modifier = {
+				army_org_regain = 0.08
+			}
+		}
+		XNE_organisation_focus_council = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = chi_army_corruption3
+			
+			modifier = {
+				army_org_regain = 0.125
+				army_speed_factor = -0.05
+				army_chief_cost_factor = -0.25
+				high_command_cost_factor = -0.25
+			}
+		}
+		XNE_defence_of_nne = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_fortify_the_borders
+			
+			modifier = {
+				army_defence_factor = 0.05
+				production_speed_bunker_factor = 0.1
+			}
+		}
+		XNE_defence_of_nne_strong = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_fortify_the_borders
+			
+			modifier = {
+				army_defence_factor = 0.075
+				production_speed_bunker_factor = 0.1
+				army_morale_factor = 0.075
+			}
+		}
+		XNE_invisibility_is_invincibility = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_coastal_navy
+			
+			modifier = {
+				navy_visibility = -0.075
+				sub_retreat_speed = 0.15
+			}
+		}
+		XNE_root_out_the_enemy = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_coastal_navy
+			
+			modifier = {
+				naval_detection = 0.1
+				naval_night_attack = 0.08
 			}
 		}
 		

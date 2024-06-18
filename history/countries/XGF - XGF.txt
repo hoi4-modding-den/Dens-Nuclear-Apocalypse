@@ -1,0 +1,49 @@
+capital = 986
+
+oob = "XGF"
+
+set_war_support = 1
+set_stability = 1
+
+set_research_slots = 4
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	basic_train = 1
+	electronic_mechanical_engineering = 1
+}
+# LEADERS
+recruit_character = XGF_the_director
+# MILITARY
+recruit_character = XGF_marshal
+recruit_character = XGF_dimitri_petrov
+recruit_character = XGF_commander_01
+recruit_character = XGF_commander_02
+recruit_character = XGF_commander_03
+
+add_ideas = {
+XGF_broken_reactor
+XGF_complete_isolation
+XGF_old_world_blues
+XGF_police_state
+XGF_battery_level_1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "2230.1.30"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	communism = 40
+	fascism = 20
+	neutrality = 20
+}
+

@@ -88,6 +88,7 @@ on_actions = {
 	on_new_term_election = {
 		random_events = {
 			100 = XFR_events.7 # 2237
+			100 = XFR_events.42 # 2241
 		}
 	}
 
@@ -106,9 +107,17 @@ on_actions = {
 						}
 					}
 				}
-				remove_opinion_modifier = {
-					target = XFR
-					modifier = XFR_supports_our_government
+				XAL = {
+					remove_opinion_modifier = {
+						target = XFR
+						modifier = XFR_supports_our_government
+					}
+				}
+				XFR = {
+					remove_opinion_modifier = {
+						target = XAL
+						modifier = XFR_support_their_government
+					}
 				}
 			}
 			if = {

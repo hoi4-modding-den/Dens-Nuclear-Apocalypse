@@ -25,4 +25,72 @@ characters = {
 			id = -1
 		}
 	}
+
+
+	### Knights
+
+	XTH_Enceladus = {
+		name = XTH_Enceladus
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_xth_enceladus"
+			}
+		}
+		field_marshal = {
+			traits = { trait_XTH_templaric }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	XTH_Aetius = {
+		name = XTH_Aetius
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_xth_aetius"
+			}
+		}
+		corps_commander = {
+			traits = { trait_XTH_templaric }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	XTH_Severus = {
+		name = XTH_Severus
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_xth_severus"
+			}
+		}
+		corps_commander = {
+			traits = { trait_XTH_templaric }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	XTH_Ignotus = {
+		name = XTH_Ignotus
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_xth_ignotus"
+			}
+		}
+		corps_commander = {
+			traits = { trait_XTH_templaric }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
 }

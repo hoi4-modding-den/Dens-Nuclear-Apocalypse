@@ -1,0 +1,17 @@
+characters = {
+	XRU_Dimitry_Sydor = {
+		name = "Dimitry Sydor"
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XRU/Portrait_Dimitry_Sydor.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+}

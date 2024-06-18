@@ -8,5 +8,30 @@ focus_tree = {
 	default = no
     continuous_focus_position = { x = 450 y = 2000 }
 
-	#WIP
+	shared_focus = XRP_intro_focus 
+	shared_focus = XRP_ceremony
+	shared_focus = XRP_economy_autobahn
+	shared_focus = XRP_economy_miracle
+
+	focus = {
+			id = XRP_WIP
+			icon = XAR_perm_peace
+			x = 12
+			y = 2
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_ceremony }
+			available = {
+				NOT = {  }
+			}	
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
 }

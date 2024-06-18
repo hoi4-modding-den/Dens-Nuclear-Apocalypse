@@ -1,0 +1,1397 @@
+shared_focus = {
+		id = XRP_intro_focus
+		icon = GFX_focus_usa_focus_on_europe
+		x = 12
+		y = 0
+		#relative_position_id = 1
+
+		cost = 10
+		prerequisite = {  }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_stability = 0.1
+			country_event = { id = XRP_focus_event.1 }
+		}
+	}
+
+	shared_focus = {
+		id = XRP_ceremony
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 12
+		y = 1
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_intro_focus }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 150
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_war_support = 0.1
+			country_event = { id = XRP_focus_event.2 }
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_autobahn
+		icon = GFX_focus_generic_road_investment
+		x = 4
+		y = 2
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_ceremony }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+			42 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+					}
+	
+			}
+			983 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+					}
+	
+			}
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_agrarian
+		icon = GFX_focus_CHL_focus_on_cattle_and_wool
+		x = 2
+		y = 3
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_autobahn }
+		mutually_exclusive = { focus = XRP_economy_industrial }
+		mutually_exclusive = { focus = XRP_economy_agrarian }  
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			country_event = { id = XRP_focus_event.4 }
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_industrial
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 3
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_autobahn }
+		mutually_exclusive = { focus = XRP_economy_agrarian } 
+		mutually_exclusive = { focus = XRP_economy_industrial }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = XRP_economy_nuked
+				add_idea = XRP_economy_nuked_improved
+			}
+			country_event = { id = XRP_focus_event.3 }
+			#add these to event
+			#983 = {
+			#	set_state_category = large_town
+			#	add_building_construction = {
+			#	type = industrial_complex
+			#	level = 1
+			#	instant_build = yes
+			#		}
+			#
+			#}
+			#42 = {
+			#	add_building_construction = {
+			#	type = industrial_complex
+			#	level = 1
+			#	instant_build = yes
+			#		}
+			#
+			#}
+			
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_farm_modern
+		icon = GFX_focus_generic_public_works
+		x = 0
+		y = 4
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_agrarian } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_wine_time
+		icon = GFX_focus_generic_royal_wedding
+		x = 2
+		y = 4
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_agrarian } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_military
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 4
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_agrarian focus =  XRP_economy_industrial } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = XRP_military_buff
+			country_event = { id = XRP_focus_event.5 }
+			#ditto
+			#983 = {
+			#	add_building_construction = {
+			#	type = arms_factory
+			#	level = 2
+			#	instant_build = yes
+			#		}
+			#
+			#}
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_fix_automation
+		icon = GFX_focus_DEN_no_regulations
+		x = 6
+		y = 4
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_industrial } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XRP_fix_automation_tooltip
+			remove_ideas = XRP_economy_nuked_improved
+			hidden_effect = {
+			add_tech_bonus = {
+				name = industry_production_bonus
+				bonus = 1.0
+				uses = 2
+				technology = concentrated_industry
+				technology = concentrated_industry2
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5 
+				technology = dispersed_industry 
+				technology = dispersed_industry2
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5 
+			}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_gem_mines
+		icon = GFX_focus_generic_tungsten
+		x = 8
+		y = 4
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_industrial } 
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_american_farms
+		icon = GFX_focus_generic_farmland
+		x = 2
+		y = 5
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_wine_time} 
+		available = {
+			num_of_controlled_states > 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	shared_focus = {
+		id = XRP_research_slot
+		icon = GFX_focus_research
+		x = 4
+		y = 5
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_wine_time focus =  XRP_economy_fix_automation } 
+		available = {
+			num_of_controlled_states > 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_american_factories
+		icon = GFX_focus_generic_tank_production
+		x = 6
+		y = 5
+		#relative_position_id = 2
+
+		cost = 5
+		prerequisite = { focus =  XRP_economy_fix_automation} 
+		available = {
+			num_of_controlled_states > 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	shared_focus = {
+		id = XRP_economy_miracle
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 4
+		y = 6
+		#relative_position_id = 2
+
+		cost = 10
+		prerequisite = { focus =  XRP_economy_american_farms} 
+		prerequisite = { focus =  XRP_economy_american_factories} 
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+#Army Tree#
+shared_focus = {
+	id = XRP_create_cia
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 20
+	y = 2
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_ceremony}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		#create Intellgence Agency, somehow
+	}
+}
+
+shared_focus = {
+	id = XRP_fix_army
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 32
+	y = 2
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_ceremony}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_electric_war
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 20
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_create_cia}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_fuck_computers
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 20
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_electric_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		#bonus against XGE
+	}
+}
+
+shared_focus = {
+	id = XRP_cyber_war
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 20
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_fuck_computers }
+	prerequisite = { focus =  XRP_radar_stuff }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_military_infra
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 22
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_fix_army}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_reverse_engineering
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 25
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_fix_army}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_radar_stuff
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 22
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_military_infra}
+	prerequisite = { focus =  XRP_electric_war}
+	
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_american_war
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 28
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_fix_army}
+
+	mutually_exclusive = { focus = XRP_american_war }
+	mutually_exclusive = { focus = XRP_german_war } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_big_guns
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 24
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_american_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_special_forces
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 26
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_american_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_officer_autonomy
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 28
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_american_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_old_tanks
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 30
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_american_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_army_motorized
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 32
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_american_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_rain_hell
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 27
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_big_guns}
+	prerequisite = { focus =  XRP_special_forces}
+	prerequisite = { focus =  XRP_officer_autonomy}
+
+	mutually_exclusive = { focus = XRP_american_blitz }
+	mutually_exclusive = { focus = XRP_rain_hell }  
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_american_blitz
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 29
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_old_tanks}
+	prerequisite = { focus =  XRP_army_motorized}
+	prerequisite = { focus =  XRP_officer_autonomy}
+
+	mutually_exclusive = { focus = XRP_american_blitz }
+	mutually_exclusive = { focus = XRP_rain_hell }  
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_german_war
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 37
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_fix_army}
+
+	mutually_exclusive = { focus = XRP_american_war }
+	mutually_exclusive = { focus = XRP_german_war }  
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_centralized_army
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 34
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_german_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_american_guerillas 
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 36
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_german_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_bleed_dry
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 38
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_german_war}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_fortress_europe
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 34
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_centralized_army}
+
+	mutually_exclusive = { focus = XRP_werewolf_guerillas }
+	mutually_exclusive = { focus = XRP_fortress_europe } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_werewolf_guerillas
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 36
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_american_guerillas}
+
+	mutually_exclusive = { focus = XRP_werewolf_guerillas }
+	mutually_exclusive = { focus = XRP_fortress_europe } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_landmine_everything
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 38
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_bleed_dry}
+
+	mutually_exclusive = { focus = XRP_landmine_everything }
+	mutually_exclusive = { focus = XRP_bomb_the_earth } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_bomb_the_earth
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 40
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_bleed_dry}
+	prerequisite = { focus =  XRP_space_force}
+
+	mutually_exclusive = { focus = XRP_landmine_everything }
+	mutually_exclusive = { focus = XRP_bomb_the_earth } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_black_spot
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 36
+	y = 6
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_fortress_europe focus =  XRP_werewolf_guerillas}
+
+	mutually_exclusive = { focus = XRP_black_spot }
+	mutually_exclusive = { focus = XRP_second_volley } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_second_volley
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 38
+	y = 6
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_landmine_everything focus =  XRP_bomb_the_earth}
+
+	mutually_exclusive = { focus = XRP_black_spot }
+	mutually_exclusive = { focus = XRP_second_volley } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+
+#Air Tree#
+shared_focus = {
+	id = XRP_ramstein_focus
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 46
+	y = 2
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_ceremony}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_reverse_engineering_jets
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 44
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_ramstein_focus}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_air_doctrine
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 46
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_ramstein_focus}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_air_standards
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 48
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_ramstein_focus}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_space_force
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 42
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_reverse_engineering_jets}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_fast_planes
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 44
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_reverse_engineering_jets}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_strat_bombing
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 46
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_air_doctrine}
+
+	mutually_exclusive = { focus = XRP_strat_bombing }
+	mutually_exclusive = { focus = XRP_fighters_and_carrier_fighters } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_fighters_and_carrier_fighters
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 48
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_air_doctrine focus =  XRP_carrier_fleet}
+
+	mutually_exclusive = { focus = XRP_strat_bombing }
+	mutually_exclusive = { focus = XRP_fighters_and_carrier_fighters } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+
+shared_focus = {
+	id = XRP_rocket_go_boom
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 42
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_space_force}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_amerikabomber
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 45
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_strat_bombing}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_new_f35
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 47
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_strat_bombing focus = XRP_fighters_and_carrier_fighters}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_bomb_the_seas
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 49
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus = XRP_fighters_and_carrier_fighters}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_bomb_dresden
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 46
+	y = 6
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_strat_bombing}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_mass_production_planes
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 48
+	y = 6
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_fighters_and_carrier_fighters }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_american_sky
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 47
+	y = 7
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_mass_production_planes focus =  XRP_bomb_dresden }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+
+
+#Navy Tree#
+shared_focus = {
+	id = XRP_sea_access
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 52
+	y = 2
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_ceremony}
+	available = {
+		any_state = {
+			is_owned_by = XRP
+			is_coastal = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_carrier_fleet
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 50
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_sea_access}
+
+	mutually_exclusive = { focus = XRP_submarine_fleet }
+	mutually_exclusive = { focus = XRP_carrier_fleet } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_submarine_fleet
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 52
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_sea_access}
+
+	mutually_exclusive = { focus = XRP_submarine_fleet }
+	mutually_exclusive = { focus = XRP_carrier_fleet } 
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_base_strike
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 50
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_carrier_fleet}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_unrestricted_sub_war
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 52
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_submarine_fleet}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_american_ocean
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 51
+	y = 5
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_unrestricted_sub_war focus = XRP_base_strike }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_dockyards
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 54
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_sea_access}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_convoys
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 56
+	y = 3
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_sea_access}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_rebuild_wilhelmshaven
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 54
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_dockyards}
+	available = {
+		56 = {
+			is_owned_by = XRP
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = XRP_retrofit_calais
+	#icon = GFX_focus_usa_voter_registration_act
+	x = 56
+	y = 4
+	#relative_position_id = 2
+
+	cost = 5
+	prerequisite = { focus =  XRP_dockyards}
+	available = {
+		29 = {
+			is_owned_by = XRP
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}

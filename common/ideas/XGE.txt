@@ -20,9 +20,9 @@ ideas = {
 			}
 		}
 		XGE_equality_idea = {
-			picture = SOV_trotskyite_plot_purged
+			picture = trotskyite_plot
 			modifier = {
-				stability_weekly = 0.01
+				stability_weekly = 0.005
 			}
 		}
 		XGE_devastation_5 = {
