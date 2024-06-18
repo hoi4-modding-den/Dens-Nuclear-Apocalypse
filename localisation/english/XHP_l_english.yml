@@ -22,6 +22,12 @@ XHP_subject:0 "$OVERLORDADJ$ $XHP$"
 XHP_quell_the_crusaders:0 "Enact General Mobilization"
 XHP_offer_concessions:0 "Offer Concessions to the Crusaders"
 XHP_crack_into_reserves:0 "Crack into the Reserves"
+XHP_pad_the_armor:0 "Pad the Armor"
+XHP_our_faith_in_numbers:0 "Our Faith in Numbers"
+XHP_unify_cause:0 "Unify the Cause"
+XHP_court_council:0 "The Court Council"
+XHP_the_fight:0 "The Fight"
+XHP_crisis_resolved:0 "A Crisis Resolved"
 ### Events
 XHP.1.t:0 "The Order of Santiago Rises Up!"
 XHP.1.d:0 "Recent reports show of the Knights Templar, a heavily influencial faction within the Spanish government, seizing garisons in Leon and across the Spanish government.\n\nIt is unclear why they are proving to be hostile towards us, however many speculate it was due to our inaction to grant them concessions within the Imperial Court.\n\nNow we stand at a crossroads as to what the fate of our country will be."
@@ -39,7 +45,7 @@ XTH_partisan_up2:0 "Swaying [FROM.GetName]"
 
 ### Characters
 XHP_senate:0 "Corte Imperial"
-XHP_senate_desc:0 "The "Corte Imperial" or Imperial Court, is the legislative body that rules whats left of the Spanish State. Founded in 2025 as a result of the dropping of the bombs, the Imperial Court serves as all three branches of government including executive, legislative, and judiccial powers within the Spanish State.\n\nDue to its relative neutrality, advantagous geography, and hasty preparations, the countryside of Spain was mostly spared and the population was able to thrive underground. However, due to the overpopulation of the underground societies and the mismanagement by the government, many died due to malnutrition and starvation, forcing the government to expand back upwards into the wastelands.\n\nNot being prepared for what was to come on the surface, the central government was quickly stretched to its limits and was forced to abandon many surface outposts, leading to a drastic shrinkage of territory, manpower, and resources.\n\nMany saw this weakness as an opportunity to vie for power within the Court, causing a majority of the power of the government to lie within the corrupt Court Leaders and their families.\n\nNow, lying on the precipice for disaster as the Catholic-led Order of Santiago mobilizes its forces, the government must make concessions to this cultist group or face a civil war. A civil war, that the government will most likely not win..."
+XHP_senate_desc:0 "The "Corte Imperial" or Imperial Court, is the legislative body that rules whats left of the Spanish State. Founded in 2025 as a result of the dropping of the bombs, the Imperial Court serves as all three branches of government including executive, legislative, and judicial powers within the Spanish State.\n\nDue to its relative neutrality, advantagous geography, and hasty preparations, the countryside of Spain was mostly spared and the population was able to thrive underground. However, due to the overpopulation of the underground societies and the mismanagement by the government, many died due to malnutrition and starvation, forcing the government to expand back upwards into the wastelands.\n\nNot being prepared for what was to come on the surface, the central government was quickly stretched to its limits and was forced to abandon many surface outposts, leading to a drastic shrinkage of territory, manpower, and resources.\n\nMany saw this weakness as an opportunity to vie for power within the Court, causing a majority of the power of the government to lie within the corrupt Court Leaders and their families.\n\nNow, lying on the precipice for disaster as the Catholic-led Order of Santiago mobilizes its forces, the government must make concessions to this cultist group or face a civil war. A civil war, that the government will most likely not win..."
 XHP_high_council:0 "Templaric High Council"
 XHP_high_council_desc:0 "The Order of Santiago is a religious and military order founded in the 12th century. It owes its name to the patron saint of Spain, Santiago (St. James the Greater). Its initial objective was to protect the pilgrims on the Way of St. James, to defend Christendom and to remove the Muslim Moors from the Iberian Peninsula with the Reconquista. Entrance was not restricted to nobility of Spain exclusively, and some members have been Catholic Europeans from other parts of Europe.\n\nAt the timing of the fall of the bombs, the Order was at its weakest, having less than 100 members. However, through the course of living underground, the order started to amass a larger following as it provided a structure on how to live admist the chaos and violence that plagued the Imperial Court.\n\nToday it serves as one of the most powerful political identities within the Spanish government with thousands of followers from all across Spain. It serves as a bastion of stability and prosperity amongst the corrupt beauracracy that is the Spanish government."
 
@@ -50,6 +56,29 @@ XHP_high_council_desc:0 "The Order of Santiago is a religious and military order
 
 ### Cosmetic Tags
 ct_XTH_rise:0 "Order of Santiago"
+ct_XTH_rise_DEF:0 "The Order of Santiago
+
+### Party Names
+XHP_democrat_imp_court_long:0 "Bureaucrat Stability Party"
+XHP_democrat_imp_court_short:0 "BSP"
+XHP_templaric_short:0 "Templaric Order"
+XHP_templaric_long:0 "Order of Santiago"
+XHP_communist_short:0 "SWP"
+XHP_communist_long:0 "Socialite Workers Party"
+XHP_kings_long:0 "The King's Party"
+XHP_kings_short:0 "King's Party"
+XHP_gen_fascist_long:0 "Fascist National Party"
+XHP_gen_fascist_short:0 "FNP"
+
+
+### Characters
+XTH_Enceladus:0 "Knight Enceladus"
+XTH_Aetius:0 "Knight Aetius"
+XTH_Severus:0 "Knight Severus"
+XTH_Ignotus:0 "Knight Ignotus"
+trait_XTH_templaric:0 "Knight of the Templaric Order"
+
+
 
 ### Idea
 idea_XHP_crusader_crisis:0 "Crusader Crisis"

@@ -2,6 +2,10 @@ capital = 41
 
 recruit_character = XHP_senate
 recruit_character = XHP_high_council
+recruit_character = XTH_Enceladus
+recruit_character = XTH_Aetius
+recruit_character = XTH_Severus
+recruit_character = XTH_Ignotus
 
 oob = XHP_1936
 
@@ -21,13 +25,33 @@ add_ideas = {
 set_politics = {
 	ruling_party = democratic
 	elections_allowed = no
+	long_name = XHP_democrat_imp_court_long
+	name = XHP_democrat_imp_court_short
 }
 
 set_popularities = {
-	democratic = 25
-	communism = 25
-	neutrality = 25
-	fascism = 25
+	democratic = 24
+	communism = 16
+	neutrality = 17
+	fascism = 43
+}
+
+set_party_name = {
+	ideology = communism
+	long_name = XHP_communist_long
+	name = XHP_communist_short
+}
+
+set_party_name = {
+	ideology = fascism
+	long_name = XHP_templaric_long
+	name = XHP_templaric_short
+}
+
+set_party_name = {
+	ideology = neutrality
+	long_name = XHP_kings_long
+	name = XHP_kings_short
 }
 
 
