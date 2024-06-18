@@ -1,6 +1,6 @@
 XFR_mutant_state_modifier = {
 	enable = { always = yes }
-	icon = GFX_modifiers_ETH_state_development 
+	icon = GFX_modifiers_XFR_mutants 
 
 	attrition_for_controller = 0.5
 	enemy_attrition = 0.5
@@ -14,7 +14,7 @@ XFR_mutant_state_modifier = {
 
 XFR_anarchists_state_modifier = {
 	enable = { always = yes }
-	icon = GFX_modifiers_ETH_state_development 
+	icon = GFX_modifiers_XFR_anarchists 
 
 	attrition_for_controller = 0.25
 	enemy_attrition = 0.25
@@ -28,7 +28,7 @@ XFR_anarchists_state_modifier = {
 
 XFR_colonisation_state_modifier = {
 	enable = { always = yes }
-	icon = GFX_modifiers_ETH_state_development 
+	icon = GFX_modifiers_generic_immigration_promoted 
 
 	local_manpower = -0.1
 	recruitable_population_factor = 0.2

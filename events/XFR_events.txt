@@ -1332,9 +1332,9 @@ country_event = { # XFR wants to protect Switzerland
     				end_civil_wars = no
 				}
 			}
-            
+            add_ideas = XFR_swiss_protectorate
         }
-        add_ideas = XFR_swiss_protectorate
+        custom_effect_tooltip = XFR_loads_generic_focus_tree_tt
     }
     option = { 
         name = XFR_events.32.b
@@ -1391,8 +1391,10 @@ country_event = { # XFR wants to protect Switzerland -> Swiss accept
     		end_wars = no
     		end_civil_wars = no
 		}
-        
-        effect_tooltip = { XSS = { add_ideas = XFR_swiss_protectorate } }
+        hidden_effect = {
+            XSS = { load_focus_tree = generic_focus }
+        }
+        XSS = { add_ideas = XFR_swiss_protectorate }
     }
 }
 

@@ -129,6 +129,10 @@ ideas = {
             modifier = {
                 research_speed_factor = 0.1
                 consumer_goods_factor = -0.05
+                enemy_justify_war_goal_time = 0.75
+                guarantee_tension = 1
+                stability_weekly = 0.01
+                democratic_drift = 0.1
             }
 
         }

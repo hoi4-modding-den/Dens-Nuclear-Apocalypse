@@ -1444,10 +1444,18 @@ focus_tree = {
 			is_neighbor_of = XLF
 			is_subject = no
 			NOT = { is_ally_with = XLF }
+			NOT = { is_ally_with = XBR }
 		}
 
 		bypass = {
 			XLF = {
+				OR = {
+					is_ally_with = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+			XBR = {
 				OR = {
 					is_ally_with = ROOT
 					has_war_with = ROOT
@@ -1462,11 +1470,34 @@ focus_tree = {
 			factor = 1
 		}
 		will_lead_to_war_with = XLF
+		will_lead_to_war_with = XBR
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			create_wargoal = {
-				target = XLF
-				type = annex_everything
+			if = {
+				limit = {
+					XLF = {
+						exists = yes
+						NOT = { is_ally_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				create_wargoal = {
+					target = XLF
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					XBR = {
+						exists = yes
+						NOT = { is_ally_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				create_wargoal = {
+					target = XBR
+					type = annex_everything
+				}
 			}
 		}
 	}
@@ -2093,7 +2124,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_ideas = XFR_non_american_healthcare
+					has_idea = XFR_non_american_healthcare
 				}
 				swap_ideas = {
 					remove_idea = XFR_non_american_healthcare

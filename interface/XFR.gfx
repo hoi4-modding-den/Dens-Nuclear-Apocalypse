@@ -1,12 +1,5 @@
 spriteTypes = {
 
-    # Ideology
-
-    spriteType = {
-        name = "GFX_ideology_anarchist_communism"
-        texturefile = "gfx/interface/ideologies/anarchism.dds"
-    }
-
 
     # Portraits
 
@@ -266,6 +259,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_XFR_france.png"
 		legacy_lazy_load = no
 	}
+
+	# State Modifiers
+
+	spriteType = {
+		name = "GFX_modifiers_XFR_anarchists"
+		textureFile = "gfx/XFR/modifiers_XFR_anarchists.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_XFR_mutants"
+		textureFile = "gfx/XFR/modifiers_XFR_mutants.png"
+	}
+
+	# Ideology
+
+    spriteType = {
+        name = "GFX_ideology_anarchist_communism"
+        texturefile = "gfx/interface/ideologies/anarchism.dds"
+    }
 
     # Bookmark
 
