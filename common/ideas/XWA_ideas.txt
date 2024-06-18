@@ -12,5 +12,16 @@ ideas = {
             
             allowed = { tag = XWA }
         }
+        XWA_ExtremistIdeals = {
+            picture = Triumphant_will
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+                fascism_drift = 0.2
+            }
+            
+            allowed = { tag = XWA }
+        }
     }
 }

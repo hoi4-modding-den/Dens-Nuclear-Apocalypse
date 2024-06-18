@@ -30,6 +30,18 @@
  XW2_fascism_party:0 "Mutant Extremists"
  XW2_fascism_party_long:0 "Mutant Extremists"
  
+ XWA_ExtremistIdeals:0 "Extremist Propoganda"
+#Focuses
+
+XWA_HordeFocus:0 "Glory to the Horde!"
+XWA_HordeFocus_desc:0 "With the dissolution of the Welsh Republic the horde shall be the controller of Wales."
+
+XWA_HordeFocusBrownParty:0 "Promote Exremist Ideals"
+XWA_HordeFocusBrownParty2:0 "Propaganda Efforts"
+
+XWA_HordeFocusAntiBrownParty:0 "Jail Extremists"
+
+
 #Dr Pepper lol
  XPW:0 "P.H.D Worcestershire"
  XPW_DEF:0 "P.H.D Worcestershire Company"
