@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = XAQ_secure_our_land
 		icon = GFX_goal_generic_military_sphere
-		x = 13
+		x = 14
 		y = 0
 
 		prerequisite = {}
@@ -391,7 +391,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			custom_effect_tooltip = XAQ_bunker_bordeaux_tooltip
 		}
 	}
 	focus = {
@@ -430,7 +430,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XAQ_cure_rome
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		x = -2
 		y = 1
 
@@ -451,7 +451,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			add_stability = -0.05
+			add_political_power = 50
+			set_party_name = { 
+    				ideology = democratic 
+    				long_name = XAQ_democratic_party_long_spqr
+    				name = XAQ_democratic_party_spqr
+			}
 		}
 	}
 	focus = {
@@ -652,7 +658,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			add_ideas = XAQ_consular_vision
 		}
 	}
 	focus = {
@@ -677,7 +683,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			add_ideas = XAQ_divine_rule
 		}
 	}
 	focus = {
@@ -987,7 +993,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			add_popularity = {
+    				ideology = fascism
+    				popularity = -0.15
+			}
 		}
 	}
 	focus = {
@@ -1013,7 +1022,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = XAQ_senate_2
+				add_idea = XAQ_senate_3
+			}
 		}
 	}
 	focus = {
@@ -1113,7 +1125,7 @@ focus_tree = {
 		prerequisite = { focus = XAQ_footsteps_mussolini } 
 
 		relative_position_id = XAQ_weaken_senate
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1163,6 +1175,37 @@ focus_tree = {
 		} 
 
 		relative_position_id = XAQ_restart_reconquest_gallia
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			remove_ideas = XAQ_annos_interitus
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = XAQ_gather_farmer_support
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = -1
+		y = 3
+
+		
+		
+		
+		prerequisite = { focus = XAQ_review_agricultural_policy }
+		prerequisite = { focus = XAQ_spread_slander }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_review_agricultural_policy
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1174,7 +1217,36 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+
+		}
+	}
+	focus = {
+		id = XAQ_principate
+		icon = GFX_focus_NOR_approach_kretsen
+		x = 0
+		y = 2
+
+		
+		
+		
+		prerequisite = { focus = XAQ_two_way_power }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_two_way_power
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
 		}
 	}
 	

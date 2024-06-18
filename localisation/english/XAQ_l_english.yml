@@ -19,7 +19,7 @@
  XAQ_repeating_mistakes:0 "Repeating the Mistakes of the Past"
  XAQ_long_march_home:0 "The Long March Home"
  XAQ_griffin:0 "The Griffin"
- XAQ_spqr:0 "Senatus Populusque Romanus"
+ XAQ_spqr:0 "Senatus PopulusQue Romanus"
  XAQ_cure_rome:0 "Cure Rome"
  XAQ_two_way_power:0 "Dual Power"
  XAQ_consular_vision:0 "Consular Vision"
@@ -51,9 +51,10 @@
  XAQ_increase_senate_influence:0 "Increase Senate Influence"
  XAQ_conquest_narbonensis:0 "Reclaim Narbonensis"
  XAQ_weaken_senate:0 "Weaken Senate"
- XAQ_footsteps_mussolini:0 "The Footsteps of Mussolini"
+ XAQ_footsteps_mussolini:0 "The Footsteps of our Forebearer"
  XAQ_dissolve_senate:0 "Dissolve the Senate"
  XAQ_reversal_circumstance:0 "Reversal of Circumstance"
+ XAQ_gather_farmer_support:0 "Gather Support from Farmers"
 
 
 
@@ -65,12 +66,15 @@
  XAQ_another_hundred_desc:0 "Like our predecessors, we will continue our rule in Europe for centuries to come. With the 100th anniversary of our regime, its time to jump towards a century of prosperity thrice as prosperous of that of the previous one."
  XAQ_movere_admirari_desc:0 "The ancients had amazing technology besides the nuclear bombs, including the illustrous "train". There exist trains in bunkers and storages which we can use to supply our troops for the reconquest of Gaul."
  XAQ_repeating_mistakes_desc:0 "If we could get ahold of the weaponry the ancients used to annihalate each other, we could easily dominate europe. Charles Sapiens, an expert on the Great Calamity and life before it, can help us acquire this technology."
- XAQ_long_march_home_desc:0 "Following the fall of the Western Roman Empire in 476 AD nearly 2 millenium ago, the world has degenerated into a flux of false and misintentioned governments. We must reclaim rome and truly restore its glory."
- XAQ_griffin_desc:0 "Marcel Pietot has been nothing but beneficial to the development of the nation, we must ensure that we enable him to execute absolute power as was intended by Mars himself."
- XAQ_spqr_desc:0 "In ancient rome, the senate was an advisory council to the Emperor and has been of great importance in enacting fair bureaucracy and laws. It is foolish to reject Petiot's rule but we must also empower the Senate to ensure prosperity."
+ XAQ_long_march_home_desc:0 "Following the fall of the Western Roman Empire in 476 AD nearly 2 millenium ago, the world has degenerated into a flux of false and misintentioned governments. Rome is the birthplace of our great civilisation, to be without it is to be an eagle without its wings, a legion without its standard, in order to truly be worthy of our birthright, we must have it rendered unto Caesar"
+ XAQ_griffin_desc:0 "Our Caesar has led us bravely though these turbulent times, he of all men is deserving to cross the rubicon and receive a Triumph in the streets of rome. We must ensure that we enable him to execute absolute power as was intended by Mars himself. Ave!"
+ XAQ_spqr_desc:0 "In Ancient Rome, the senate was an advisory council and constituting assembly of the Roman Republic. It has been and is of great importance in enacting fair bureaucracy and laws. It is foolish to reject Petiot's rule but we must also empower the Senate to ensure prosperity."
+ XAQ_rightfully_ours_desc:0 "Our Historicus have slaved away, piecing together maps of our grand domain at its peak, and it’s beautiful, stretching all across the known world, to not strive for its rebirth is to defy the gods, for it is clearly of divine inspiration. Ave Mars, guide our legions!"
+ XAQ_cure_rome_desc:0 "What are we thinking, that Griffin is a raving mad man, his policies will kill us all, no god, not even the war hungry Mars would choose a beast like this, we cannot let him continue,  we must cure Romeo of his putride infection, before it's too late..."
 
 #custom effect tooltips
  XAQ_dissolve_senate_tooltip:0 "§RThis will cause chaos in the Senate until this focus is complete!§!"
+ XAQ_bunker_bordeaux_tooltip:0 "§HUnlocks decisions related to investigating the Bunker-Bordeaux§!"
 
 #ideas
  XAQ_senate_0:0 "The Senate"
@@ -112,3 +116,12 @@
 #states
  STATE_20_XAQ:0 "Lugdunum"
  VICTORY_POINTS_6613_XAQ:0 "Lugdunum"
+
+ #party names
+ XAQ_democratic_party_spqr:0 "SPQR"
+ XAQ_democratic_party_long_spqr:0 "Senatus PopulusQue Romanus"
+
+ #decisions
+ XAQ_open_bunker_investigations:0 "Open Bunker Investigations"
+ XAQ_research_nuclear_silos:0 "Research Defunct Nuclear Silos"
+ XAQ_research_control_board:0 "Research OpenAI Server Databases"
