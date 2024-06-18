@@ -140,7 +140,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_work_with_anarchists
-		icon = GFX_focus_generic_workers_and_farmers_rise
+		icon = GFX_focus_generic_befriend_burgundian_anarchists
 		prerequisite = { focus = XFR_prepare_for_elections }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -175,7 +175,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = XFR_anarchists_appeased
-				days = 365
+				days = 730
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = anarchist_author_advisor
@@ -272,11 +272,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			hidden_effect = { news_event = { id = XFR_news_events.5 } }
-			add_equipment_to_stockpile = {
-    			type = infantry_equipment
-    			amount = 250
-    			producer = FRA
-			}
 		}
 	}
 
@@ -314,9 +309,44 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XFR_gather_weapons
+		icon = GFX_focus_focus_fra_maquis
+		prerequisite = { focus = XFR_deal_with_the_mutants }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_deal_with_the_mutants
+
+		available = {
+			24 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		bypass ={
+			OR = {
+				NOT = { 24 = { is_owned_and_controlled_by = ROOT } }
+				NOT = { 24 = { has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } } }
+			}
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 1000
+    			producer = FRA
+			}
+		}
+	}
+
+	focus = {
 		id = XFR_crisis_averted
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = XFR_deal_with_the_mutants }
+		prerequisite = { focus = XFR_gather_weapons }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
@@ -824,7 +854,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
 				target = XSS
@@ -870,7 +900,7 @@ focus_tree = {
 				XSS = { is_ai = yes }
 			}
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			XSS = { country_event = { id = XFR_events.32 days = 1 } }
 			custom_effect_tooltip = if_they_accept_tt
@@ -1278,7 +1308,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_war_support = 0.25
 			every_state = {
@@ -1287,6 +1317,10 @@ focus_tree = {
 					NOT = { is_core_of = ROOT }
 				}
 				add_claim_by = ROOT
+			}
+			add_named_threat = {
+				threat = 5
+				name = XFR_french_reunification
 			}
 			custom_effect_tooltip = XFR_french_reunification_tt
 		}
@@ -1723,12 +1757,12 @@ focus_tree = {
 		icon = GFX_focus_XFR_french_elections
 		#prerequisite = { focus = XFR_reform_the_government }
 		#mutually_exclusive = { focus = XFR_gabriel_moreau_wins }
-		x = -5
-		y = -4
-		relative_position_id = XFR_elections
+		x = -12
+		y = 0
+		relative_position_id = XFR_support_parliament
 
 		allow_branch = {
-			has_country_leader = { character = XFR_jacob_d_amboise ruling_only = yes }
+			has_country_flag = XFR_first_term_federalists
 		}
 
 		available = {
@@ -1741,7 +1775,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL  FOCUS_FILTER_POLITICAL_CHARACTER}
 		completion_reward = {
 			add_political_power = 25
 		}
@@ -1773,63 +1807,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_support_regional_cultures
-		icon = GFX_focus_chi_reach_out_to_france
-		prerequisite = { focus = XFR_anti_corruption_laws }
-		prerequisite = { focus = XFR_strengthen_healthcare_system }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 1
-		relative_position_id = XFR_anti_corruption_laws
-
-		available = {
-			has_government = democratic
-			has_country_leader = { character = XFR_jacob_d_amboise ruling_only = yes }
-		}
-
-		bypass = {
-			NOT = { has_power_balance = { id = XFR_federalists_restaurationists_bop } }
-			NOT = {
-				any_other_country = {
-					any_core_state = { DEN_is_french_state = yes } 
-					OR = {
-						has_government = democratic
-						is_ally_with = ROOT
-					}
-				}
-			}
-		}
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-			if = {
-				limit = {
-					has_power_balance = { id = XFR_federalists_restaurationists_bop }
-				}
-				add_power_balance_value = {
-					id = XFR_federalists_restaurationists_bop
-					value = 0.1
-				}
-			}
-			every_other_country = {
-				limit = {
-					any_core_state = { DEN_is_french_state = yes }
-					OR = {
-						has_government = democratic
-						is_ally_with = ROOT
-					}
-					}
-				add_stability = 0.1
-			}
-		}
-	}
-
-	focus = {
 		id = XFR_strengthen_healthcare_system
 		icon = GFX_focus_generic_field_hostpital
 		prerequisite = { focus = XFR_jacob_d_amboise_wins }
@@ -1848,7 +1825,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_tech_bonus = {
 				name = XFR_strengthen_healthcare_system
@@ -1863,12 +1840,11 @@ focus_tree = {
 	focus = {
 		id = XFR_expand_regional_administrations
 		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = XFR_anti_corruption_laws }
-		prerequisite = { focus = XFR_strengthen_healthcare_system }
+		prerequisite = { focus = XFR_jacob_d_amboise_wins }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 1
-		relative_position_id = XFR_strengthen_healthcare_system
+		y = 2
+		relative_position_id = XFR_jacob_d_amboise_wins
 
 		available = {
 			has_government = democratic
@@ -1880,7 +1856,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			if = {
 				limit = {
@@ -1896,42 +1872,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_jacobs_successful_term
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = XFR_support_regional_cultures }
-		prerequisite = { focus = XFR_expand_regional_administrations }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 3
-		relative_position_id = XFR_jacob_d_amboise_wins
-
-		available = {
-			has_government = democratic
-			has_country_leader = { character = XFR_jacob_d_amboise ruling_only = yes }
-		}
-
-		cost = 1
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-			custom_effect_tooltip = XFR_jacobs_successful_term_tt
-		}
-	}
-
-	focus = {
 		id = XFR_gabriel_moreau_wins
 		icon = GFX_focus_XFR_french_elections
 		#prerequisite = { focus = XFR_reform_the_government }
 		#mutually_exclusive = { focus = XFR_jacob_d_amboise_wins }
-		x = -5
-		y = -4
-		relative_position_id = XFR_elections
+		x = -12
+		y = 0
+		relative_position_id = XFR_support_parliament
 
 		allow_branch = {
-			has_country_leader = { character = XFR_gabriel_moreau ruling_only = yes }
+			has_country_flag = XFR_first_term_restorationists
 		}
 
 		available = {
@@ -1944,7 +1894,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_political_power = 25
 		}
@@ -1980,14 +1930,45 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_support_pan_french_organisations
-		icon = GFX_focus_XFR_french_protection
-		prerequisite = { focus = XFR_corporate_connections }
-		prerequisite = { focus = XFR_end_anarchist_cooperation }
+		id = XFR_strengthen_central_administration
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = XFR_gabriel_moreau_wins }
 		#mutually_exclusive = { focus = }
 		x = 0
+		y = 2
+		relative_position_id = XFR_gabriel_moreau_wins
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_gabriel_moreau ruling_only = yes }
+		}
+
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_production_speed_buildings_factor = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XFR_end_anarchist_cooperation
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		prerequisite = { focus = XFR_gabriel_moreau_wins }
+		#mutually_exclusive = { focus = }
+		x = 1
 		y = 1
-		relative_position_id = XFR_corporate_connections
+		relative_position_id = XFR_gabriel_moreau_wins
 
 		available = {
 			has_government = democratic
@@ -1995,7 +1976,251 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = { has_power_balance = { id = XFR_federalists_restaurationists_bop } }
+			NOT = { has_idea = XFR_anarchists_appeased }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
+		completion_reward = {
+			remove_ideas = XFR_anarchists_appeased
+		}
+	}
+
+	focus = {
+		id = XFR_doctor_monteil_wins
+		icon = GFX_focus_XFR_french_elections
+		#prerequisite = { focus = XFR_reform_the_government }
+		#mutually_exclusive = { focus = XFR_gabriel_moreau_wins }
+		x = -12
+		y = 3
+		relative_position_id = XFR_support_parliament
+
+		allow_branch = {
+			has_country_flag = XFR_second_term_federalists
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_orianne_monteil ruling_only = yes }
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = XFR_extend_ties_with_other_countries
+		icon = GFX_focus_BRA_rio_protocol
+		prerequisite = { focus = XFR_doctor_monteil_wins }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_doctor_monteil_wins
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_orianne_monteil ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					NOT = { has_war_with = ROOT }
+					NOT = { has_government = fascism }
+					NOT = { has_government = communism }
+					OR = {
+						is_subject = no
+						is_subject_of = ROOT
+					}
+				}
+				add_opinion_modifier = {
+					target = XFR
+    				modifier = XFR_improve_relations
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_support_poor_people
+		icon = GFX_focus_FIN_socialist_welfare
+		prerequisite = { focus = XFR_doctor_monteil_wins }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_doctor_monteil_wins
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_orianne_monteil ruling_only = yes }
+		}
+
+		bypass = {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			if = {
+				limit = {
+					has_power_balance = { id = XFR_federalists_restaurationists_bop }
+				}
+				add_power_balance_value = {
+					id = XFR_federalists_restaurationists_bop
+					value = 0.1
+				}
+			}
+			if = {
+				limit = {
+					has_ideas = XFR_non_american_healthcare
+				}
+				swap_ideas = {
+					remove_idea = XFR_non_american_healthcare
+					add_idea = XFR_social_system_healthcare
+				}
+			}
+			else = {
+				add_ideas = XFR_social_system
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_lower_the_bar_for_immigration
+		icon = GFX_focus_ARG_immigration_wave
+		prerequisite = { focus = XFR_doctor_monteil_wins }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_doctor_monteil_wins
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_orianne_monteil ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			add_ideas = XFR_easy_immigration
+		}
+	}
+
+	focus = {
+		id = XFR_marshal_desgrais_wins
+		icon = GFX_focus_XFR_french_elections
+		#prerequisite = { focus = XFR_reform_the_government }
+		#mutually_exclusive = { focus = XFR_gabriel_moreau_wins }
+		x = -12
+		y = 3
+		relative_position_id = XFR_support_parliament
+
+		allow_branch = {
+			has_country_flag = XFR_second_term_restorationists
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_leonard_desgrais ruling_only = yes }
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = XFR_divert_civilian_funds
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = XFR_marshal_desgrais_wins }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_marshal_desgrais_wins
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_leonard_desgrais ruling_only = yes }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					industrial_complex > 0
+					free_building_slots = {
+    					building = arms_factory
+    					size > 0
+    					include_locked = no
+					}
+				}
+				random_select_amount = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_support_unification_sentiment
+		icon = GFX_focus_XFR_french_protection
+		prerequisite = { focus = XFR_marshal_desgrais_wins }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_marshal_desgrais_wins
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_leonard_desgrais ruling_only = yes }
+		}
+
+		bypass = {
 			NOT = {
 				any_other_country = {
 					any_core_state = { DEN_is_french_state = yes }
@@ -2033,47 +2258,18 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_end_anarchist_cooperation
-		icon = GFX_focus_generic_workers_and_farmers_rise
-		prerequisite = { focus = XFR_gabriel_moreau_wins }
-		#mutually_exclusive = { focus = }
-		x = 1
-		y = 1
-		relative_position_id = XFR_gabriel_moreau_wins
-
-		available = {
-			has_government = democratic
-			has_country_leader = { character = XFR_gabriel_moreau ruling_only = yes }
-		}
-
-		bypass = {
-			NOT = { has_idea = XFR_anarchists_appeased }
-		}
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
-		completion_reward = {
-			remove_ideas = XFR_anarchists_appeased
-		}
-	}
-
-	focus = {
-		id = XFR_strengthen_central_administration
-		icon = GFX_focus_hol_the_foundations_of_defense
-		prerequisite = { focus = XFR_corporate_connections }
-		prerequisite = { focus = XFR_end_anarchist_cooperation }
-		#mutually_exclusive = { focus = }
+		id = XFR_aggressive_foreign_policy
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = XFR_marshal_desgrais_wins }
+		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 1
-		relative_position_id = XFR_end_anarchist_cooperation
+		y = 2
+		relative_position_id = XFR_marshal_desgrais_wins
 
 		available = {
 			has_government = democratic
-			has_country_leader = { character = XFR_gabriel_moreau ruling_only = yes }
+			has_country_leader = { character = XFR_leonard_desgrais ruling_only = yes }
+			has_political_power > 50
 		}
 
 		cost = 5
@@ -2083,32 +2279,27 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			if = {
-				limit = {
-					has_power_balance = { id = XFR_federalists_restaurationists_bop }
-				}
-				add_power_balance_value = {
-					id = XFR_federalists_restaurationists_bop
-					value = -0.1
-				}
-			}
-			add_political_power = 100
+			add_political_power = -100
+			add_ideas = XFR_aggressive_foreign_policy_idea
 		}
 	}
 
 	focus = {
-		id = XFR_gabriels_successful_term
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = XFR_support_pan_french_organisations }
-		prerequisite = { focus = XFR_strengthen_central_administration }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 3
-		relative_position_id = XFR_gabriel_moreau_wins
+		id = XFR_feds_win
+		icon = GFX_focus_XFR_french_elections
+		prerequisite = { focus = XFR_lower_the_bar_for_immigration }
+		#mutually_exclusive = { focus = XFR_jacob_d_amboise_wins }
+		x = -12
+		y = 6
+		relative_position_id = XFR_support_parliament
+
+		allow_branch = {
+			has_country_flag = XFR_third_term_federalists
+		}
 
 		available = {
 			has_government = democratic
-			has_country_leader = { character = XFR_jacob_d_amboise ruling_only = yes }
+			has_country_leader = { character = XFR_orianne_monteil ruling_only = yes }
 		}
 
 		cost = 1
@@ -2116,28 +2307,83 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			custom_effect_tooltip = XFR_gabriels_successful_term_tt
+			add_political_power = 25
 		}
 	}
 
 	focus = {
-		id = XFR_cat_wins
-		icon = GFX_focus_XFR_french_elections
-		#prerequisite = { focus = XFR_reform_the_government }
+		id = XFR_egalitarianism
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		prerequisite = { focus = XFR_feds_win }
 		#mutually_exclusive = { focus = XFR_jacob_d_amboise_wins }
-		x = -5
-		y = -4
-		relative_position_id = XFR_elections
+		x = 0
+		y = 1
+		relative_position_id = XFR_feds_win
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_orianne_monteil ruling_only = yes }
+			has_completed_focus = XFR_proclaim_french_government
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XFR_france_restored
+				add_idea = XFR_french_egalitarianism
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_restorationists_win
+		icon = GFX_focus_XFR_french_elections
+		prerequisite = { focus = XFR_aggressive_foreign_policy }
+		#mutually_exclusive = { focus = XFR_jacob_d_amboise_wins }
+		x = -12
+		y = 6
+		relative_position_id = XFR_support_parliament
 
 		allow_branch = {
-			has_country_leader = { character = XFR_cat ruling_only = yes }
+			has_country_flag = XFR_third_term_restorationists
 		}
 
 		available = {
 			has_government = democratic
-			has_country_leader = { character = XFR_cat ruling_only = yes }
+			has_country_leader = { character = XFR_leonard_desgrais ruling_only = yes }
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = XFR_military_over_welfare
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = XFR_restorationists_win }
+		#mutually_exclusive = { focus = XFR_jacob_d_amboise_wins }
+		x = 0
+		y = 1
+		relative_position_id = XFR_restorationists_win
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_leonard_desgrais ruling_only = yes }
+			has_completed_focus = XFR_proclaim_french_government
 		}
 
 		cost = 1
@@ -2146,6 +2392,38 @@ focus_tree = {
 			factor = 1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XFR_france_restored
+				add_idea = XFR_french_militarism
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_cat_wins
+		icon = GFX_focus_XFR_french_elections
+		#prerequisite = { focus = XFR_reform_the_government }
+		#mutually_exclusive = { focus = XFR_jacob_d_amboise_wins }
+		x = -12
+		y = 6
+		relative_position_id = XFR_support_parliament
+
+		allow_branch = {
+			has_country_flag = XFR_third_term_cats
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { character = XFR_cat ruling_only = yes }
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_political_power = 25
 		}
@@ -2221,6 +2499,10 @@ focus_tree = {
 			}
 			is_subject = no
 			is_faction_leader = yes
+		}
+
+		bypass = {
+			is_ally_with = XAD
 		}
 
 		cost = 5
@@ -2351,10 +2633,6 @@ focus_tree = {
 				id = XFR_federalists_restaurationists_bop
 				value > 0.9
 			}
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
 		}
 
 		cost = 10
@@ -2420,11 +2698,11 @@ focus_tree = {
 			OR = {
 				power_balance_value = {
 					id = XFR_federalists_restaurationists_bop
-					value > 1
+					value > 0.99
 				}
 				power_balance_value = {
 					id = XFR_federalists_restaurationists_bop
-					value < -1
+					value < -0.99
 				}
 			}
 		}
@@ -2444,7 +2722,7 @@ focus_tree = {
 				limit = {
 					power_balance_value = {
 						id = XFR_federalists_restaurationists_bop
-						value > 1
+						value > 0.99
 					}
 				}
 				set_cosmetic_tag = XFR_FRANCE_FED
@@ -2537,6 +2815,16 @@ focus_tree = {
 			is_neighbor_of = XNF
 			NOT = { is_ally_with = XNF }
 			is_subject = no
+		}
+
+		bypass = {
+			XNF = {
+				OR = {
+					is_ally_with = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
 		}
 
 		cost = 5
@@ -2759,6 +3047,14 @@ focus_tree = {
 			news_event = { id = XFR_news_events.9 }
 			custom_effect_tooltip = XFR_fascist_coup_tt
 			hidden_effect = {
+				swap_ideas = {
+					remove_idea = XFR_fascist_mobilising
+					add_idea = XFR_fascist_militias
+				}
+				add_named_threat = {
+					threat = 5
+					name = XFR_fascist_coup
+				}
 				add_ideas = war_economy
 			if = {
 				limit = {
@@ -3002,7 +3298,7 @@ focus_tree = {
 				idea = XFR_little_purge
 				days = 70
 			}
-			remove_ideas = XFR_fascist_mobilising
+			remove_ideas = XFR_fascist_militias
 			delete_unit_template_and_units = {
 				division_template = "Lotharingian Militia"
 				disband = no
@@ -3078,6 +3374,10 @@ focus_tree = {
 					value = 15
 				}
 				news_event = { id = XFR_news_events.10 days = 3 }
+				add_named_threat = {
+					threat = 2.5
+					name = XFR_the_coronation
+				}
 			}
 			country_event = { id = XFR_events.39 }
 		}
@@ -3185,7 +3485,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -3302,6 +3602,10 @@ focus_tree = {
     			can_create_factions = yes
 			}
 			XFR_create_faction = yes
+			add_named_threat = {
+				threat = 5
+				name = XFR_announce_francian_ambitions
+			}
 		}
 	}
 
@@ -3742,9 +4046,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			hidden_effect = {
+			if = {
+				limit = { NOT = { has_tech = radio } }
 				set_technology = {
 					radio = 1
 					popup = no
@@ -4012,7 +4317,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -4153,6 +4458,10 @@ focus_tree = {
 					NOT = { is_core_of = ROOT }
 				}
 				add_claim_by = ROOT
+			}
+			add_named_threat = {
+				threat = 2.5
+				name = XFR_warplan_west_francia
 			}
 		}
 	}
@@ -4461,6 +4770,10 @@ focus_tree = {
 					NOT = { is_core_of = ROOT }
 				}
 				add_claim_by = ROOT
+			}
+			add_named_threat = {
+				threat = 2.5
+				name = XFR_warplan_middle_francia
 			}
 		}
 	}
@@ -4948,6 +5261,10 @@ focus_tree = {
 					NOT = { is_core_of = ROOT }
 				}
 				add_claim_by = ROOT
+			}
+			add_named_threat = {
+				threat = 2.5
+				name = XFR_warplan_east_francia
 			}
 		}
 	}
@@ -5531,7 +5848,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = XFR_better_machinery
     			bonus = 0.75
-    			uses = 2
+    			uses = 1
     			category = cat_production
 			}
 			custom_effect_tooltip = XFR_industry_modifier_tt
@@ -5644,7 +5961,7 @@ focus_tree = {
     					include_locked = no
 					}
 				}
-				random_select_amount = 3
+				random_select_amount = 2
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -5977,7 +6294,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
@@ -6105,10 +6422,10 @@ focus_tree = {
 					}
 				}
 				random_select_amount = 2
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -6245,7 +6562,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = XFR_tank_research
 				bonus = 0.75
-				uses = 3
+				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
@@ -6400,7 +6717,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = XFR_artillery_research
 				bonus = 0.75
-				uses = 3
+				uses = 2
 				category = artillery
 			}
 		}
@@ -7496,11 +7813,6 @@ focus_tree = {
 		relative_position_id = XFR_industrial_investments
 
 		available = {
-			OR = {
-				NOT = { has_government = democratic }
-				threat > 0.1
-				has_war = yes
-			}
 			has_country_flag = XFR_situation_stabilised
 		}
 
@@ -7537,7 +7849,7 @@ focus_tree = {
 			has_intelligence_agency = yes
 			OR = {
 				NOT = { has_government = democratic }
-				surrender_progress > 0.25
+				surrender_progress > 0.1
 			}
 		}
 

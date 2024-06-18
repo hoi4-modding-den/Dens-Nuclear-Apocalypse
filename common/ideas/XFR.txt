@@ -711,6 +711,28 @@ ideas = {
 
         }
 
+        XFR_fascist_militias = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+           removal_cost = -1
+
+            picture = generic_fascism_drift_bonus
+
+            modifier = {
+                fascism_drift = 0.05
+                stability_factor = -0.05
+                modifier_army_sub_unit_militia_attack_factor = 0.1
+                modifier_army_sub_unit_militia_defence_factor = 0.1
+            }
+
+        }
+
         XFR_herzogs_speeches = {
             allowed = {
 				always = yes
@@ -988,13 +1010,105 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gre_schachtplan1
+            picture = gfx
 
             modifier = {
                 consumer_goods_factor = 0.05
                 army_morale_factor = 0.1
                 research_speed_factor = 0.01
                 monthly_population = 0.02
+            }
+
+        }
+
+        XFR_social_system_healthcare = {
+            name = XFR_social_system
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = gfx
+
+            modifier = {
+                consumer_goods_factor = 0.15
+                army_morale_factor = 0.1
+                research_speed_factor = 0.02
+                monthly_population = 0.05
+                stability_factor = 0.05
+                political_power_gain = 0.02
+            }
+
+        }
+
+        XFR_social_system = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = gfx
+
+            modifier = {
+                consumer_goods_factor = 0.1
+                research_speed_factor = 0.01
+                monthly_population = 0.03
+                stability_factor = 0.05
+                political_power_gain = 0.02
+            }
+
+        }
+
+        XFR_easy_immigration = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = gfx
+
+            modifier = {
+                weekly_manpower = 200
+                monthly_population = 0.05
+            }
+
+        }
+
+        XFR_aggressive_foreign_policy_idea = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { has_country_leader = { character = XFR_leonard_desgrais ruling_only = yes } }
+            }
+
+           removal_cost = -1
+
+            picture = gfx
+
+            modifier = {
+                justify_war_goal_time = -0.25
+                generate_wargoal_tension = -0.5
             }
 
         }
@@ -1044,6 +1158,60 @@ ideas = {
                 army_core_defence_factor = 0.2
                 army_core_attack_factor = 0.2
                 stability_factor = 0.05
+                war_support_factor = 0.05
+                compliance_gain = 0.2
+            }
+
+        }
+
+        XFR_french_militarism = {
+            name = XFR_france_restored
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = FRA_undividable
+
+            modifier = {
+			    political_power_gain = 0.1
+                democratic_drift = 0.05
+                drift_defence_factor = 1
+                army_core_defence_factor = 0.3
+                army_core_attack_factor = 0.3
+                stability_factor = 0.05
+                war_support_factor = 0.15
+                compliance_gain = 0.25
+            }
+
+        }
+
+        XFR_french_egalitarianism = {
+            name = XFR_france_restored
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = FRA_undividable
+
+            modifier = {
+			    political_power_gain = 0.15
+                democratic_drift = 0.1
+                drift_defence_factor = 1
+                army_core_defence_factor = 0.2
+                army_core_attack_factor = 0.2
+                stability_factor = 0.15
                 war_support_factor = 0.05
                 compliance_gain = 0.25
             }

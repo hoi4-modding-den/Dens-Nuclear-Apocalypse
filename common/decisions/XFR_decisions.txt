@@ -1158,6 +1158,7 @@ XFR_udb_cat = {
 						has_government = democratic
 						has_government = neutrality
 					}
+					NOT = { is_subject_of = ROOT }
 					NOT = {has_idea = closed_economy }
 					XFR_no_economic_membership = yes
 					NOT = { has_war_with = ROOT }
@@ -1629,6 +1630,15 @@ XFR_bop_decision_cat = {
 						instant_build = yes
 					}
 				}
+				if = {
+					limit = {
+						is_subject_of = ROOT
+					}
+					add_autonomy_score = {
+    					value = -100
+    					localization = XFR_support_neighbours
+					}
+				}
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = XFR_sent_support
@@ -1774,8 +1784,9 @@ XFR_bop_decision_cat = {
 
 		available = {
 			has_completed_focus = XFR_social_reform
-			any_owned_state = {
+			any_controlled_state = {
 				NOT = { is_core_of = ROOT }
+				compliance < 100
 			}
 		}
 
@@ -1807,15 +1818,16 @@ XFR_bop_decision_cat = {
 		}
 
 		remove_effect = {
-			every_owned_state = {
+			every_controlled_state = {
 				limit = {
 					NOT = { is_core_of = ROOT }
+					compliance < 100
 				}
 				add_compliance = 5
 			}
 			if = {
 				limit = {
-					all_owned_state = {
+					all_controlled_state = {
 						is_core_of = ROOT
 					}
 				}
@@ -1849,8 +1861,9 @@ XFR_bop_decision_cat = {
 
 		available = {
 			has_completed_focus = XFR_social_reform
-			any_owned_state = {
+			any_controlled_state = {
 				NOT = { is_core_of = ROOT }
+				resistance > 10
 			}
 		}
 
@@ -1882,16 +1895,20 @@ XFR_bop_decision_cat = {
 		}
 
 		remove_effect = {
-			every_owned_state = {
+			every_controlled_state = {
 				limit = {
 					NOT = { is_core_of = ROOT }
+					resistance > 10
 				}
 				add_resistance = -10
 			}
 			if = {
 				limit = {
-					all_owned_state = {
-						is_core_of = ROOT
+					all_controlled_state = {
+						OR = {
+							is_core_of = ROOT
+							resistance < 10
+						}
 					}
 				}
 				effect_tooltip = { every_state = { add_resistance = -10 } }
@@ -2269,7 +2286,6 @@ XFR_integration = {
 							is_ally_with = ROOT
 							tag = ROOT
 							tag = XAL
-							tag = XBR
 							tag = XAQ
 							tag = XNF
 							tag = XFW

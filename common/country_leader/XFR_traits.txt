@@ -143,8 +143,35 @@ leader_traits = {
 		political_advisor_cost_factor = -0.2
 		drift_defence_factor = 0.33
 		opinion_gain_monthly_factor = 0.25
-		communism_acceptance = 10
+		political_power_factor = 0.05
 		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_archeologist = {
+		random = no
+
+		send_volunteer_size = 2
+		send_volunteers_tension = -0.5
+		civil_war_involvement_tension = -0.5
+		weekly_convoys_war_support = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_the_old_marshal = {
+		random = no
+
+		command_power_gain = 0.25
+		experience_gain_army_factor = 0.1
+		ai_desired_divisions_factor = 20
+		ai_focus_military_advancements_factor = 20
+		ai_focus_military_equipment_factor = 50
 
 		ai_will_do = {
 			factor = 1

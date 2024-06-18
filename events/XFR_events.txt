@@ -239,6 +239,7 @@ country_event = { # Elections 2237
             set_value = 0.15
         }
         custom_effect_tooltip = elections_unlock_branch_tt
+        set_country_flag = XFR_first_term_federalists
         hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -272,6 +273,7 @@ country_event = { # Elections 2237
             set_value = -0.15
         }
         custom_effect_tooltip = elections_unlock_branch_tt
+        set_country_flag = XFR_first_term_restorationists
         hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -488,10 +490,14 @@ country_event = { # XFR proposes easing of customs barrier
         add_ideas = XFR_customs_agreement_idea
         hidden_effect = {
 				if = {
-           		limit = {
-            		XFR = { NOT = { has_idea = XFR_customs_agreement_head_idea } }
-            		}
-            		XFR = { add_ideas = XFR_customs_agreement_head_idea }
+           		    limit = {
+            	    	XFR = { NOT = { has_idea = XFR_customs_agreement_head_idea } }
+            	    }
+            	    XFR = { add_ideas = XFR_customs_agreement_head_idea }
+                    every_country = {
+                        limit = { is_subject_of = XFR }
+                        add_ideas = XFR_customs_agreement_idea
+                    }
                     news_event = { id = XFR_news_events.4 }
         		}
 			}
@@ -1427,15 +1433,20 @@ country_event = { # generic Faction invite accepted
         ai_chance = {
             base = 1
         } 
-        custom_effect_tooltip = XFR_sell_centre_tt
         effect_tooltip = {
-            XFR = {
-                add_equipment_to_stockpile = {
-    	    		type = infantry_equipment
-    	    		amount = 1000
-    	    		producer = XAQ
-		    	}
-            }
+            add_to_faction = FROM
+            if = {
+                limit = {
+                    FROM = {
+                        original_tag = XSS
+                        is_faction_leader = yes
+                    }
+                }
+            every_other_country = {
+		    	limit = { is_in_faction_with = FROM }
+		    	add_to_faction = PREV
+		    }
+        }
         }
     }
 }
@@ -1663,6 +1674,96 @@ country_event = { # Elections 2241
         ai_chance = {
             base = 1
         }
+        hidden_effect = { retire_ideology_leader = democratic }
+        add_country_leader_role = {
+            character = XFR_orianne_monteil
+            promote_leader = yes
+            country_leader = {
+                ideology = socialism
+                expire = "3000.1.1"
+            traits = { XFR_archeologist XFR_federalist_leader }
+            }
+        }
+        set_party_name = {
+            ideology = democratic
+            long_name = XFR_democratic_party_federalists_long
+            name = XFR_democratic_party_federalists
+        }    
+        if = {
+            limit = { has_power_balance = { id = XFR_federalists_restaurationists_bop } }
+            add_power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value = 0.1
+			}
+        }
+        custom_effect_tooltip = elections_unlock_branch_tt
+        set_country_flag = XFR_second_term_federalists
+        hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
+    }
+
+    option = {
+        name = XFR_events.42.b
+        ai_chance = {
+            base = 1
+        }
+        hidden_effect = { retire_ideology_leader = democratic }
+        add_country_leader_role = {
+            character = XFR_leonard_desgrais
+            promote_leader = yes
+            country_leader = {
+                ideology = conservatism
+                expire = "3000.1.1"
+            traits = { XFR_the_old_marshal XFR_restaurationist_leader }
+            }
+        }
+        set_party_name = {
+            ideology = democratic
+            long_name = XFR_democratic_party_restauration_long
+            name = XFR_democratic_party_restauration
+        }      
+        if = {
+            limit = { has_power_balance = { id = XFR_federalists_restaurationists_bop } }
+            add_power_balance_value = {
+				id = XFR_federalists_restaurationists_bop
+				value = -0.1
+			}
+        }
+        custom_effect_tooltip = elections_unlock_branch_tt
+        set_country_flag = XFR_second_term_restorationists
+        hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
+
+    }
+
+}
+
+country_event = { # Elections 2245
+    id = XFR_events.43
+    title = XFR_events.43.t
+    picture = GFX_report_event_election_vote
+    desc = XFR_events.43.desc
+
+    trigger = {
+		tag = XFR
+        has_country_flag = XFR_2240_elections_over
+		date > 2244.12.1
+		date < 2245.2.1
+	}
+    
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = XFR_2244_elections_over
+    }
+    
+    option = {
+        name = XFR_events.43.a
+        ai_chance = {
+            base = 1
+        }
         if = {
             limit = { has_power_balance = { id = XFR_federalists_restaurationists_bop } }
             if = {
@@ -1671,6 +1772,7 @@ country_event = { # Elections 2241
 					id = XFR_federalists_restaurationists_bop
 					value = 0.1
 				}
+                set_country_flag = XFR_third_term_federalists
 			}
 			if = {
 				limit = { has_country_leader_with_trait = XFR_restaurationist_leader }
@@ -1678,16 +1780,18 @@ country_event = { # Elections 2241
 					id = XFR_federalists_restaurationists_bop
 					value = -0.1
 				}
+                set_country_flag = XFR_third_term_restorationists
 			}
         }
         #custom_effect_tooltip = elections_unlock_branch_tt
         hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 		}
+        custom_effect_tooltip = XFR_no_more_elections_tt
     }
 
     option = {
-        name = XFR_events.42.b
+        name = XFR_events.43.b
         ai_chance = {
             base = 1
         }
@@ -1707,10 +1811,11 @@ country_event = { # Elections 2241
             name = XFR_democratic_party_catism
         }       
         custom_effect_tooltip = elections_unlock_branch_tt
+        set_country_flag = XFR_third_term_cats
         hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 		}
-
+        custom_effect_tooltip = XFR_no_more_elections_tt
     }
 
 }
