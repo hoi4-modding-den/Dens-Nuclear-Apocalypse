@@ -56,6 +56,12 @@ recruit_character = XNE_thomas_blake
 recruit_character = XNE_benjamin_willard
 recruit_character = XNE_henry_potter
 recruit_character = XNE_john_potter
+recruit_character = XNE_anthony_walker
+recruit_character = XNE_luke_walker
+recruit_character = XNE_hannibal_solon
+recruit_character = XNE_jeremy_hammond
+recruit_character = XNE_chesley_turnberger
+recruit_character = XNE_frank_abagnale
 
 create_country_leader = {
 	name = XNE_king_henry_x

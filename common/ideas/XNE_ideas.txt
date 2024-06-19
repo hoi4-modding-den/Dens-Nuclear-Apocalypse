@@ -642,6 +642,43 @@ ideas = {
 				naval_night_attack = 0.08
 			}
 		}
+		XNE_arrow_storm = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_air_bonus
+			
+			modifier = {
+				air_fuel_consumption_factor = -0.2
+				air_agility_factor = 0.05
+			}
+		}
+		XNE_flying_out_of_the_factories = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = SWE_land_air_warfare
+			
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
 		
 	}
 
