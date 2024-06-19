@@ -32,7 +32,7 @@ units = {
             is_name_ordered = no
 		}
 		location = 11467 # Dijon
-		division_template = "CIVIL ORDER DIVISION"
+		division_template = "Civil Order Division"
 		start_experience_factor = 0.6
 	}
 	division = { 
@@ -40,7 +40,7 @@ units = {
             is_name_ordered = no
 		}
 		location = 11467 # Dijon
-		division_template = "CIVIL ORDER DIVISION"
+		division_template = "Civil Order Division"
 		start_experience_factor = 0.6
 	}
 
