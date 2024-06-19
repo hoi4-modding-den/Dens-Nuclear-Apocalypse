@@ -5,12 +5,24 @@ spriteTypes = {
 		name = "GFX_idea_Looming_Disaster"
 		textureFile = "gfx/interface/XRU/XRU_Looming_Disaster.dds"
 	}
-
+	
+	# Leaders
 	spriteType = {
 		name = "GFX_Portrait_Dimitry_Sydor"
 		textureFile = "gfx/leaders/XRU/Portrait_Dimitry_Sydor.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_Revolutionary"
+		textureFile = "gfx/leaders/XRU/Portrait_Revolutionary.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Gabriel_Bosko"
+		textureFile = "gfx/leaders/XRU/Portrait_Gabriel_Bosko.dds"
+	}
+
+	# Foci Icons
 	spriteType = {
 		name = "GFX_focus_Just_Another_Year"
 		textureFile = "gfx/interface/XRU/XRU_Just_Another_Year.dds"
@@ -115,5 +127,11 @@ spriteTypes = {
         }
         legacy_lazy_load = no
     }
+
+	# Event Pictures
+	spriteType = {
+			name = "GFX_Rusyn_Civil_War"
+			texturefile = "gfx/event_pictures/Rusyn_Civil_War.dds"
+	}
 
 }

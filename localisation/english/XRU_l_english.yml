@@ -41,6 +41,10 @@ XRU_looming_disaster_tt:0 "§RSomething horrible is coming.§"
 # Leaders
 XRU_Dimitry_Sydor:0 "Dimitry Sydor"
 XRU_Dimitry_Sydor_desc:0 "Dimitry Sydor feels empty inside. His days as an archpriest made him believe that God was on the side of the Rusyns in taking back their homeland and more, but now, the frozen state he has created begins to thaw. Sydor feels a sense of dread overcome him - it will not be much longer until disaster strikes."
+XRU_Gabriel_Bosko:0 "Gabriel Bosko"
+XRU_Gabriel_Bosko_desc:0 "WIP"
+XRU_Revolutionary:0 "Revolutionary"
+XRU_Revolutionary_desc:0 "WIP"
 
 # Ideas
 XRU_Looming_Disaster:0 "§RLooming Disaster§"
@@ -67,6 +71,8 @@ XRU.start_3.d:0 "Dimitry Sydor carefully creaked open the door to the palace. He
 XRU.start_3.a:0 "§RBehold, the rise of the mastermind.§"
 XRU.start_3.b:0 "For liberation! For Slovakia!"
 XRU.start_3.c:0 "Order must be maintained at all costs!"
+
+Rusyn.1.d:0 "This morning, news came of disaster in the Rusyn State - partisans and communists had split the country in three, forcing it to descend into anarchy as all three sides fight to control the whole state. The victor of this conflict could undoubtedly upset the balance of power in Eastern Europe..."
 
 ### Cosmetic Tags
 ct_XSO_begin:0 "Slovakian Militarist Union"

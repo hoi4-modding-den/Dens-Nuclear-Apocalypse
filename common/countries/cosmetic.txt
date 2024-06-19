@@ -1301,10 +1301,6 @@ ct_XTH_rise = {
 	color = rgb { 240 12 12 }
 	color_ui = rgb { 255 255 255 }
 }
-ct_XSO_begin = {
-	color = rgb { 25 13 189 }
-	color_ui = rgb { 25 13 189 }
-}
 XKR_hearts = {
 	color = rgb { 231 0 18 }
 	color_ui = rgb { 231 0 18 }	
