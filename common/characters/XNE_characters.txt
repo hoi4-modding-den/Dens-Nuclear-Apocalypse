@@ -13,7 +13,7 @@ characters = {
 			
 			visible  = {
 				tag = XNE
-				XNE = { NOT = { has_country_flag = XNE_1984 } }
+				XNE = { NOT = { has_completed_focus = XNE_oligarchical_collectivism } }
 			}
 			available  = {}
 			allowed = {}
@@ -43,7 +43,7 @@ characters = {
 			
 			visible  = {
 				tag = XNE
-				XNE = { NOT = { has_country_flag = XNE_1984 } }
+				XNE = { NOT = { has_completed_focus = XNE_oligarchical_collectivism } }
 			}
 			available  = {}
 			allowed = {}
@@ -73,7 +73,7 @@ characters = {
 			
 			visible  = {
 				tag = XNE
-				XNE = { NOT = { has_country_flag = XNE_1984 } }
+				XNE = { NOT = { has_completed_focus = XNE_oligarchical_collectivism } }
 			}
 			available  = {}
 			allowed = {}
@@ -103,7 +103,7 @@ characters = {
 			
 			visible  = {
 				tag = XNE
-				XNE = { NOT = { has_country_flag = XNE_1984 } }
+				XNE = { NOT = { has_completed_focus = XNE_oligarchical_collectivism } }
 			}
 			available  = {}
 			allowed = {}
@@ -133,7 +133,7 @@ characters = {
 			
 			visible  = {
 				tag = XNE
-				XNE = { NOT = { has_country_flag = XNE_1984 } }
+				XNE = { NOT = { has_completed_focus = XNE_oligarchical_collectivism } }
 			}
 			available  = {}
 			allowed = {}
@@ -163,7 +163,7 @@ characters = {
 			
 			visible  = {
 				tag = XNE
-				XNE = { NOT = { has_country_flag = XNE_1984 } }
+				XNE = { NOT = { has_completed_focus = XNE_oligarchical_collectivism } }
 			}
 			available  = {}
 			allowed = {}
@@ -193,7 +193,7 @@ characters = {
 			
 			visible  = {
 				tag = XNE
-				XNE = { NOT = { has_country_flag = XNE_1984 } }
+				XNE = { NOT = { has_completed_focus = XNE_oligarchical_collectivism } }
 			}
 			available  = {}
 			allowed = {}
@@ -223,7 +223,7 @@ characters = {
 			
 			visible  = {
 				tag = XNE
-				XNE = { NOT = { has_country_flag = XNE_1984 } }
+				XNE = { NOT = { has_completed_focus = XNE_oligarchical_collectivism } }
 			}
 			available  = {}
 			allowed = {}
@@ -435,6 +435,60 @@ characters = {
 		portraits={
 			army={
 				small="GFX_idea_ENG_bruce_fraser"
+			}
+		}
+	}
+	
+	XNE_anthony_walker={
+		name=XNE_anthony_walker
+		portraits={
+			army={
+				small="GFX_idea_ENG_bernard_rawlings"
+			}
+		}
+	}
+	
+	XNE_luke_walker={
+		name=XNE_luke_walker
+		portraits={
+			army={
+				small="GFX_idea_ENG_harold_alexander"
+			}
+		}
+	}
+	
+	XNE_hannibal_solon={
+		name=XNE_hannibal_solon
+		portraits={
+			army={
+				small="GFX_idea_ENG_jock_campbell"
+			}
+		}
+	}
+	
+	XNE_jeremy_hammond={
+		name=XNE_jeremy_hammond
+		portraits={
+			army={
+				small="GFX_idea_ENG_harry_pollitt"
+			}
+		}
+	}
+	
+	XNE_chesley_turnberger={
+		name=XNE_chesley_turnberger
+		portraits={
+			army={
+				small="GFX_idea_ENG_john_jackie_smyth"
+			}
+		}
+	}
+	
+	XNE_frank_abagnale={
+		name=XNE_frank_abagnale
+		portraits={
+			army={
+				small="GFX_idea_ENG_tom_moore"
 			}
 		}
 	}

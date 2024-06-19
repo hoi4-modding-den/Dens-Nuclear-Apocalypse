@@ -478,7 +478,7 @@ XNE_army_reformation = {
 	XNE_military_parade = {
 	
 		icon = GFX_decision_generic_army_support
-        priority = 5
+        priority = 15
 		
 		visible = { has_country_flag = XNE_military_parade }
         available = { has_war_support > 0.5 }
@@ -510,8 +510,74 @@ XNE_army_reformation = {
 		}
 		
 		ai_will_do = {
-			base = 50
+			base = 15
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
 		}
 		
+    }
+	XNE_local_recruitment = {
+	
+		icon = GFX_decision_generic_army_support
+        priority = 10
+		
+		visible = { has_country_flag = XNE_expand_training }
+        available = { has_war_support > 0.75 }
+        on_map_mode = map_and_decisions_view 
+		
+		#days_re_enable = 60
+        days_remove = 210
+		fire_only_once = yes
+		cost = 50
+		
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = XNE_military_parade_flag
+				NOT = { has_state_flag = XNE_local_recruitment_flag }
+				is_core_of = ROOT
+			}
+		}
+		
+		modifier = {
+			weekly_manpower = 4000
+		}
+		
+        remove_effect = {
+			army_experience = 15
+			FROM = {
+				set_state_flag = XNE_local_recruitment_flag
+			}
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.25
+				has_war = yes
+			}
+		}
+    }
+	XNE_defensive_focus = {
+        visible = { has_country_flag = XNE_defence_of_nne }
+        available = {}
+        icon = GFX_decision_category_generic_fortification
+        priority = 5
+        days_re_enable = 180
+        cost = 50
+        days_remove = 180
+		modifier = {
+			production_speed_bunker_factor = 0.2
+			consumer_goods_factor = 0.1
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.25
+				has_war = yes
+			}
+		}
     }
 }
