@@ -5,21 +5,55 @@
  XGF_technocratic_socialism:0 "Technocratic Socialism"
  XGF_technocratic_socialism_desc:0 "Established from a combination of the Neo-Bolshevik and Technocratic ideals of the East and West in the latter half of the 21st Century, the Technocratic Socialist system prioritises scientific progress as the primary way to achieve Proletarian liberation, with welfare being provided by a vanguard party of scientifically minded proletarians. In the aftermath of the Nuclear War, the greatest thinkers of CITY 01 and of the neo-Bolshevik Academy of Sciences fled into bunkers to hide in relative obscurity in the former territory of the once nation of Poland. However, untethered by ideological restrictions, the Academy of Sciences has reemerged as the self proclaimed 'defender of old world proletarian culture', with Technocratic Socialism being the new thought for a reemerging Bolshevik power on the world stage."
  XGF_history_desc:0 "The Academy of Sciences was established first before the Great Calamity, with the Neo-Bolshevik Slavic Union creating the organisation in order to manage the various scientific endevours of the State.However, as the world turned to cinders, the scientists retreated into their bunker system and into cryosleep, with the entire city falling into disrepair. Now in the 23rd century, the reawoken scientists of CITY 01 have begun their work once more, setting their sights on expanding their vision for Technocratic Utopia, as Marx, Lenin and Stalin would've wanted."
- XGF_fascism_party:0 "Academy of Sciences"
- XGF_neutrality_party:0 "Academy of Sciences"
- XGF_democratic_party:0 "Academy of Sciences"
- XGF_communism_party:0 "Academy of Sciences"
- 
+ XGF_fascism_party:0 "Academy of Sciences (Department Heads)"
+ XGF_neutrality_party:0 "Academy of Sciences (Janitorial)"
+ XGF_democratic_party:0 "Academy of Sciences (Junior Scientists)"
+ XGF_communism_party:0 "Academy of Sciences (The Director)"
+
+## OPINIONS
+
+ XGF_mutie:0 "Disgusting mutants"
+ XGF_underground_weirdos:0 "Underground weirdos"
+ XGF_extra_mutie:0 "Complete abominations"
+ XGF_revisionist:0 "§RDIRTY REVISIONISTS!§!"
+ XGF_morons:0 "Morons, morons, more morons"
+ XGF_western_scum:0 "Western filth" 
+ XGF_nazi:0 "How many times, old man?" 
+ XGF_how:0 "Scientific Curiosity" 
+
 ## TRAITS
 
+ XGF_the_director_desc:0 "Isaac Volk is the face and guiding light of the Academy of Sciences, with each step around the white-tiled halls being under his thoughtful gaze.\n\nBorn in a rural villiage in Ukraine under the yolk of the resurrgent Russian State (Referred to by the government as the Slavic Union), the Director was a gifted child sent up the educational ladder through skill, until he reached the doorstep of the Army, as a chemist working on the most deadly forms of chemical weaponry. Morality became a suggestion for the Academy of Sciences led by the newly crowned Director, with ideology and morbid curiosity driving forth experimentation and butchery, until the world came crashing down upon them. The nuclear war caused the Director to issue orders for an immediate usage of the prototype cryogenics program in the laboratories, with the system's flaws killing hundreds, but nonetheless saving the Director and the valuable staff from death. In the modern world, the Director sees no problem with continuing as they were, though this time, without Moscow breathing down their neck, and under their own terms."
  XGF_mr_director:0 "§1Mr. Director§!"
 
 ## IDEAS
  XGF_broken_reactor:0 "Broken Reactor"
+ XGF_broken_reactor_desc:0 "The Reactor system of CITY 01 has been turned to veritable scrap by close to 200 years of disrepair and salvaging, but the core components still remain, humming with radioactivity. While in disrepair, our systems have been jerryrigged to run off liquid fuels to stay afloat, but if repaired, the reactor would provide a boom in our domestic economy."
  XGF_reactivated_reactor:0 "§4Repaired Reactor§!"
+ XGF_reactivated_reactor_desc:0 "POWER: §4EXPECTED LEVELS§!\nCOOLANT: §4EXPECTED LEVELS§!\nINTEGRITY: §4EXPECTED LEVELS§!\n§4ONLINE§!"
+ XGF_inhumane_experiments:0 "Inhumane Experimentation"
+ XGF_inhumane_experiments_desc:0 "The military of the Academy is primarily made up of research experiments made from old POWs and wastelanders. These experiments are oftentimes barbaric and inhumane, with lobotomies and cybernetics oftentimes being used to either enhance combat ability or ensure obedience. However, these experiments, generally, cannot be described as successful, with most troops being scarred emotionally and physically, without any benefit."
+ XGF_perfected_soldiers:0 "§4Perfected Soldiers§!"
+ XGF_perfected_soldiers_desc:0 "After a grand total of 200 years of work, the perfect soldier has finally been made. Emotionless, subservient and physicallu unmatched; perfection in the flesh.\n\nAll it took was a few thousand dead."
  XGF_complete_isolation:0 "Complete Isolation"
+ XGF_complete_isolation_desc:0 "Since the nuclear war, City 01 has remained a near enough ecological deadzone for the post-atomic world, with its walls and the echoes of our prior experiments being reduced to remnants of the past. With our unthawing from the cryogenic pods however, this isolation has continued, with most scientists viewing the mutants and 'tribals' of the outside world to be filth and squatters, unable to contribute to the socialist cause. These perceptions will be difficult to uproot, but whilst they exist, we are cut off from the world."
  XGF_old_world_blues:0 "Old World Blues"
+ XGF_old_world_blues_desc:0 "§4SCIENCE! SCIENCE! SCIENCE!§!\n\nThe Academy of Sciences has existed for centuries as an entity, and with most of its membership being made up from cryogenically frozen old worlders, this has placed us in the unique position of having both historical and technological knowledge centuries ahead of our enemies. With rememberence however, comes the issue of disgusting pacifisism, with many junior scientists (Utter morons) stating their opposition to warfare and expansion; begging the Director to look upon the past and 'learn from humanity's mistakes'. Bah! The only mistake we made was not invading the west sooner!"
  XGF_police_state:0 "Police State"
+ XGF_police_state_desc:0 "“War is peace. Freedom is slavery. Ignorance is strength.”\n\nThe Academy of Sciences operate a complete police state within CITY 01, with the entire state being placed under unmatched surveillance from the state and secret police. Houses and laboratories are guarded by soldiers, with dissenters and revisionists being dragged away based on the slightest of words, with their fate being either execution or subjection to the experiments of the other scientists. Nineteen Eighty Four? That's capitalist propaganda!"
  XGF_battery_level_1:0 "§4BATTERY STORES: §!§RLOW§!"
+ XGF_battery_level_1_desc:0 "The battery stores of CITY 01 is our current power level to be dedicated towards new expansions and repairs. The higher our power surplus, the more we can do, though with each action, our power is once more drained."
  XGF_battery_level_2:0 "§4BATTERY STORES: §!§9MEDIUM§!"
+ XGF_battery_level_2_desc:0 "The battery stores of CITY 01 is our current power level to be dedicated towards new expansions and repairs. The higher our power surplus, the more we can do, though with each action, our power is once more drained."
  XGF_battery_level_3:0 "§4BATTERY STORES: §!§GFULL§!"
+ XGF_battery_level_3_desc:0 "The battery stores of CITY 01 is our current power level to be dedicated towards new expansions and repairs. The higher our power surplus, the more we can do, though with each action, our power is once more drained."
+ 
+## FOCUSES
+
+ XGF_political1_politburo:0 "LOADING: §4POLITBURO.EXE§!"
+ XGF_politicalside1_address_the_schedule_concerns:0 "Address scheduling concerns"
+ XGF_politicalside2_address_meal_concerns:0 "Address meal concerns"
+ XGF_political2_address_the_staff:0 "Address the staff"
+ XGF_politicaldirector1_youre_all_morons:0 "§R“YOU'RE ALL MORONS!”§!"
+ XGF_politicalfascist1_some_are_fine:0 "§L“I suppose some of you are fine.”§!"
+ XGF_politicalother1_fine_lets_hear_them_out:0 "§3“FINE! Let's hear them out.”§!"

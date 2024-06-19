@@ -1,0 +1,507 @@
+﻿focus_tree = {
+	id = XGF_focus
+
+	country = {
+		modifier = {
+			add = 10
+			tag = XGF
+		}
+        factor = 0
+
+	 }
+	 default = no
+	 continuous_focus_position = { x = 100 y = 3000 }
+
+	 focus = {
+		id = XGF_political1_politburo
+
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 15
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+
+	 focus = {
+		id = XGF_politicalside1_address_the_schedule_concerns
+
+		prerequisite = { focus = XGF_political1_politburo }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 14
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+
+	 focus = {
+		id = XGF_politicalside2_address_meal_concerns
+
+		prerequisite = { focus = XGF_political1_politburo }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 16
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_political2_address_the_staff
+
+		prerequisite = { focus = XGF_political1_politburo }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 15
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	
+	## DIRECTOR
+	
+	 focus = {
+		id = XGF_politicaldirector1_youre_all_morons
+
+		prerequisite = { focus = XGF_political2_address_the_staff }
+		mutually_exclusive = {  focus = XGF_politicalother1_fine_lets_hear_them_out focus = XGF_politicalfascist1_some_are_fine }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 15
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+
+	 focus = {
+		id = XGF_politicaldirector2_liquidate_the_katowice_muties
+
+		prerequisite = { focus = XGF_politicaldirector1_youre_all_morons }
+		mutually_exclusive = { focus = XGF_politicaldirector3_the_katowice_ghetto }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 16
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+
+	 focus = {
+		id = XGF_politicaldirector3_the_katowice_ghetto
+
+		prerequisite = { focus = XGF_politicaldirector1_youre_all_morons }
+		mutually_exclusive = { focus = XGF_politicaldirector2_liquidate_the_katowice_muties }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 14
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_politicaldirector4_remembering_zhandov
+
+		prerequisite = { focus = XGF_politicaldirector3_the_katowice_ghetto focus = XGF_politicaldirector2_liquidate_the_katowice_muties }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 15
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_politicaldirector5_youre_janitors
+
+		prerequisite = { focus = XGF_politicaldirector4_remembering_zhandov }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 14
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_politicaldirector6_purge_markov
+
+		prerequisite = { focus = XGF_politicaldirector4_remembering_zhandov }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 16
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_politicaldirector7_shoot_a_few_scientists
+
+		prerequisite = { focus = XGF_politicaldirector4_remembering_zhandov }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 14
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_politicaldirector8_demote_both_petrovs
+
+		prerequisite = { focus = XGF_politicaldirector4_remembering_zhandov }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 16
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_politicaldirector9_a_few_more
+
+		prerequisite = { focus = XGF_politicaldirector8_demote_both_petrovs }
+		prerequisite = { focus = XGF_politicaldirector7_shoot_a_few_scientists }
+		prerequisite = { focus = XGF_politicaldirector6_purge_markov }
+		prerequisite = { focus = XGF_politicaldirector5_youre_janitors }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 15
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_politicaldirector10_the_only_voice
+
+		prerequisite = { focus = XGF_politicaldirector9_a_few_more }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 15
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+# ECON
+
+	 focus = {
+		id = XGF_politicaldirector11_technocratic_socialist_industry
+
+		prerequisite = { focus = XGF_politicaldirector10_the_only_voice }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 13
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+
+	 focus = {
+		id = XGF_politicaldirector12_neo_lysenkoism
+
+		prerequisite = { focus = XGF_politicaldirector11_technocratic_socialist_industry }
+		mutually_exclusive = { focus = XGF_politicaldirector13_automated_agrarianism }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 13
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XGF_politicaldirector13_automated_agrarianism
+
+		prerequisite = { focus = XGF_politicaldirector11_technocratic_socialist_industry }
+		mutually_exclusive = { focus = XGF_politicaldirector12_neo_lysenkoism }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 11
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 focus = {
+		id = XGF_politicaldirector14_new_economic_policy
+
+		prerequisite = { focus = XGF_politicaldirector13_automated_agrarianism }
+		prerequisite = { focus = XGF_politicaldirector12_neo_lysenkoism }
+		mutually_exclusive = {  }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 14
+		y = 14
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+# MILITARY
+
+	 ## HEAD SCIENTISTS
+	 
+	 focus = {
+		id = XGF_politicalfascist1_some_are_fine
+
+		prerequisite = { focus = XGF_political2_address_the_staff }
+		mutually_exclusive = { focus = XGF_politicaldirector1_youre_all_morons focus = XGF_politicalother1_fine_lets_hear_them_out }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 19
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 
+	 ## OTHERS
+	 
+	 
+	 focus = {
+		id = XGF_politicalother1_fine_lets_hear_them_out
+
+		prerequisite = { focus = XGF_political2_address_the_staff }
+		mutually_exclusive = { focus = XGF_politicaldirector1_youre_all_morons focus = XGF_politicalfascist1_some_are_fine }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 11
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+}

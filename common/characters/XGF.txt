@@ -12,7 +12,7 @@ characters = {
 		country_leader = {
 			ideology = XGF_technocratic_socialism
 			traits = { XGF_mr_director }
-			expire = "3000.9.9.9"
+            desc = XGF_the_director_desc
 		}
 	}
 	

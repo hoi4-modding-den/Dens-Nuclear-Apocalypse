@@ -19,6 +19,14 @@ spriteTypes = {
 	texturefile = "gfx/interface/ideas/XGF/XGF_complete_isolation.dds"			
 	}	
 	SpriteType = {
+	name = "GFX_idea_XGF_inhumane_experiments"
+	texturefile = "gfx/interface/ideas/XGF/XGF_inhumane_experiments.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_XGF_perfected_soldiers"
+	texturefile = "gfx/interface/ideas/XGF/XGF_perfected_soldiers.dds"			
+	}
+	SpriteType = {
 	name = "GFX_idea_XGF_old_world_blues"
 	texturefile = "gfx/interface/ideas/XGF/XGF_old_world_blues.dds"			
 	}	
