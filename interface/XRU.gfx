@@ -10,4 +10,110 @@ spriteTypes = {
 		name = "GFX_Portrait_Dimitry_Sydor"
 		textureFile = "gfx/leaders/XRU/Portrait_Dimitry_Sydor.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_Just_Another_Year"
+		textureFile = "gfx/interface/XRU/XRU_Just_Another_Year.dds"
+	}
+    	spriteType = {
+        	name = GFX_focus_Just_Another_Year_shine # Change the name, note to keep _shine in the end
+        	texturefile = gfx/interface/XRU/XRU_Just_Another_Year.dds # Change to the focus icon
+        	effectFile = gfx/FX/buttonstate.lua
+        	animation = {
+            		animationmaskfile = gfx/interface/XRU/XRU_Just_Another_Year.dds # Change to the focus icon
+            		animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            		animationrotation = -90.0
+            		animationlooping = no
+            		animationtime = 0.75
+            		animationdelay = 0
+            		animationblendmode = "add"
+            		animationtype = "scrolling"
+            		animationrotationoffset = { x = 0.0 y = 0.0 }
+            		animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/XRU/XRU_Just_Another_Year.dds # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = "GFX_focus_Ignore_Opposition"
+		textureFile = "gfx/interface/XRU/XRU_Ignore_Opposition.dds"
+	}
+    	spriteType = {
+        	name = GFX_focus_Ignore_Opposition_shine # Change the name, note to keep _shine in the end
+        	texturefile = gfx/interface/XRU/XRU_Ignore_Opposition.dds # Change to the focus icon
+        	effectFile = gfx/FX/buttonstate.lua
+        	animation = {
+            		animationmaskfile = gfx/interface/XRU/XRU_Ignore_Opposition.dds # Change to the focus icon
+            		animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            		animationrotation = -90.0
+            		animationlooping = no
+            		animationtime = 0.75
+            		animationdelay = 0
+            		animationblendmode = "add"
+            		animationtype = "scrolling"
+            		animationrotationoffset = { x = 0.0 y = 0.0 }
+            		animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/XRU/XRU_Ignore_Opposition.dds # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = "GFX_focus_Everything_Is_Fine"
+		textureFile = "gfx/interface/XRU/XRU_Everything_Is_Fine.dds"
+	}
+    	spriteType = {
+        	name = GFX_focus_Everything_Is_Fine_shine # Change the name, note to keep _shine in the end
+        	texturefile = gfx/interface/XRU/XRU_Everything_Is_Fine.dds # Change to the focus icon
+        	effectFile = gfx/FX/buttonstate.lua
+        	animation = {
+            		animationmaskfile = gfx/interface/XRU/XRU_Everything_Is_Fine.dds # Change to the focus icon
+            		animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            		animationrotation = -90.0
+            		animationlooping = no
+            		animationtime = 0.75
+            		animationdelay = 0
+            		animationblendmode = "add"
+            		animationtype = "scrolling"
+            		animationrotationoffset = { x = 0.0 y = 0.0 }
+            		animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/XRU/XRU_Everything_Is_Fine.dds # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
 }
