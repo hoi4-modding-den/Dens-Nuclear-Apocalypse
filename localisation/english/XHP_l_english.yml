@@ -28,6 +28,11 @@ XHP_unify_cause:0 "Unify the Cause"
 XHP_court_council:0 "The Court Council"
 XHP_the_fight:0 "The Fight"
 XHP_crisis_resolved:0 "A Crisis Resolved"
+XHP_open_cathedral:0 "Reopen Cathedral Santiago"
+XHP_xth_incorporate:0 "Incorporate Christianity into the Government"
+XHP_xth_different_approach:0 "A Different Approach..."
+XHP_xth_new_masters:0 "Hail to our New Masters..."
+XHP_into_coalition:0 "Invite the Church to our Coalition"
 ### Events
 XHP.1.t:0 "The Order of Santiago Rises Up!"
 XHP.1.d:0 "Recent reports show of the Knights Templar, a heavily influencial faction within the Spanish government, seizing garisons in Leon and across the Spanish government.\n\nIt is unclear why they are proving to be hostile towards us, however many speculate it was due to our inaction to grant them concessions within the Imperial Court.\n\nNow we stand at a crossroads as to what the fate of our country will be."
@@ -76,8 +81,9 @@ XTH_Enceladus:0 "Knight Enceladus"
 XTH_Aetius:0 "Knight Aetius"
 XTH_Severus:0 "Knight Severus"
 XTH_Ignotus:0 "Knight Ignotus"
+XTH_Arcturus:0 "Arcturus"
 trait_XTH_templaric:0 "Knight of the Templaric Order"
-
+trait_XTH_templaric_desc:0 "As a sworn knight of the Order of Santiago, these men are loyal to the Catholic church tasked with upholding the true values of Christendom."
 
 
 ### Idea

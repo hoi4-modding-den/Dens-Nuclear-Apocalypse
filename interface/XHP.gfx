@@ -24,6 +24,10 @@ spriteTypes = {
 		name = "GFX_portrait_xth_ignotus"
 		texturefile = "gfx/leaders/XHP/portrait_xth_ignotus.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_xth_arcturus"
+		texturefile = "gfx/leaders/XHP/portrait_xth_arcturus.dds"
+	}
 	
 	### Goals
 	spriteType = { 
@@ -154,7 +158,7 @@ spriteTypes = {
 
 	### Traits
 	spriteType = { 
-		name = "GFX_trait_XTH_templaric"
-		texturefile = "gfx/XHP/traits/trait_templaric.dds"
+		name = "GFX_trait_trait_XTH_templaric"
+		texturefile = "gfx/XHP/traits/templaric.dds"
 	}
 }
