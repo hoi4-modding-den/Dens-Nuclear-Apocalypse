@@ -200,6 +200,10 @@ XFR_puppet_nation = {
 		}
 		load_focus_tree = generic_focus
 		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.1
+		}
+		add_popularity = {
     		ideology = neutrality
     		popularity = 0.05
 		}

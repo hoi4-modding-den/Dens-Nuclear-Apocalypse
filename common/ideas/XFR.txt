@@ -901,8 +901,8 @@ ideas = {
 
             cancel = {
                 OR = {
-                    fascism > 0.01
-                    is_subject_of = XFR
+                    fascism < 0.01
+                    NOT = { is_subject_of = XFR }
                 }
             }
 
