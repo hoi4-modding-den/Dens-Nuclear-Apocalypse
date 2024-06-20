@@ -31,13 +31,18 @@
  XW2_fascism_party_long:0 "Mutant Extremists"
  
  XWA_ExtremistIdeals:0 "Extremist Propoganda"
+ XWA_ExtremistIdeals2:0 "Extremist Propoganda"
 #Focuses
 
 XWA_HordeFocus:0 "Glory to the Horde!"
 XWA_HordeFocus_desc:0 "With the dissolution of the Welsh Republic the horde shall be the controller of Wales."
 
 XWA_HordeFocusBrownParty:0 "Promote Exremist Ideals"
+XWA_HordeFocusBrownParty_desc:0 "The first step of the Horde is to begin promoting extremism among our people. The first step of many."
 XWA_HordeFocusBrownParty2:0 "Propaganda Efforts"
+XWA_HordeFocusBrownParty2_desc:0 "We can begin spreading pamphlets as well as putting up posters encouraging support for the Mutant Extremists."
+XWA_HordeFocusBrownParty3:0 "Overthrow the Mutant's Party"
+XWA_HordeFocusBrownParty3_desc:0 "We have lobbied enough support. We must overthrow the weak Mutants Party."
 
 XWA_HordeFocusAntiBrownParty:0 "Jail Extremists"
 

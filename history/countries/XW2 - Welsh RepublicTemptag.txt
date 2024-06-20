@@ -25,6 +25,8 @@ add_ideas = {
 	BEZ_membership
 }
 
+set_convoys = 35
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2230.1.30"

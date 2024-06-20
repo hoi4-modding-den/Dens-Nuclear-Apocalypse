@@ -16,7 +16,7 @@
 		prerequisite = {}
 		mutually_exclusive = {}
 		
-		icon = GFX_focus_CHL_protect_the_easter_island
+		icon = GFX_focus_generic_improve_the_administration
 		available = {
 		}
 		bypass = {
@@ -43,7 +43,7 @@
 		prerequisite = {focus = XWA_HordeFocus}
 		mutually_exclusive = {focus = XWA_HordeFocusAntiBrownParty}
 		
-		icon = GFX_focus_CHL_protect_the_easter_island
+		icon = GFX_focus_ITA_generic_fascist_workers
 		available = {
 		}
 		bypass = {
@@ -55,7 +55,7 @@
 		y = 5
 		cost = 5
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -68,7 +68,7 @@
 		prerequisite = {focus = XWA_HordeFocusBrownParty}
 		mutually_exclusive = {}
 		
-		icon = GFX_focus_CHL_protect_the_easter_island
+		icon = GFX_focus_SWI_embrace_panoramaheim
 		available = {
 		}
 		bypass = {
@@ -90,7 +90,156 @@
 			
 		}
      }
+	 focus = {
+		id = XWA_HordeFocusBrownParty3
 
+		prerequisite = {focus = XWA_HordeFocusBrownParty2}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+			if = {
+				fascism > 0.5
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 6
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = .05
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+     }
+	 focus = {
+		id = XWA_HordeFocusBrownParty4
+
+		prerequisite = {focus = XWA_HordeFocusBrownParty3}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 8
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XWA_ExtremistIdeals
+				add_idea = XWA_ExtremistIdeals2
+			}
+		}
+     }
+	 focus = {
+		id = XWA_TakeBackWales
+
+		prerequisite = {focus = XWA_HordeFocusBrownParty3}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+		}
+		bypass = {
+			if = {
+				owns_state = 977
+				owns_state = 970
+				owns_state = 122
+			}
+		}
+
+		cancel_if_invalid = yes
+
+		x = 4
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = .2
+			if = {
+				limit = {
+					tag = XWA
+				}
+				create_wargoal = {
+					target = XW2
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					tag = XW2
+				}
+				create_wargoal = {
+					target = XWA
+					type = annex_everything
+				}
+			}
+				create_wargoal = {
+					target = XPW
+					type = annex_everything
+				}
+		}
+     }
+	 focus = {
+		id = XWA_ClaimIreland
+
+		prerequisite = {focus = XWA_HordeFocusBrownParty3}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+			if = {
+				owns_state = 977
+				owns_state = 970
+				owns_state = 122
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 4
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = {
+				target = XIE
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = XNI
+				type = annex_everything
+			}
+		}
+     }
 	#Neutrality
 	 focus = {
 		id = XWA_HordeFocusAntiBrownParty
@@ -98,7 +247,7 @@
 		prerequisite = {focus = XWA_HordeFocus}
 		mutually_exclusive = {focus = XWA_HordeFocusBrownParty}
 		
-		icon = GFX_focus_CHL_protect_the_easter_island
+		icon = GFX_focus_SWE_undermine_fascism
 		available = {
 		}
 		bypass = {
@@ -110,16 +259,151 @@
 		y = 5
 		cost = 5
 		ai_will_do = {
-			factor = 2
+			factor = 1
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_stability = -0.2
 			add_popularity = {
 				ideology = fascism
-				popularity = -0.1
+				popularity = -0.4
 			}
 		
+		}
+     }
+	 #both
+	 focus = {
+		id = XWA_HordeIndustryStart
+
+		prerequisite = {focus = XWA_HordeFocusBrownParty focus = XWA_HordeFocusAntiBrownParty}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 10
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XWA_HordeIndustry2
+
+		prerequisite = {focus = XWA_HordeIndustryStart}
+		mutually_exclusive = {focus = XWA_HordeIndustry3 }
+		
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 8
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XWA_HordeIndustry3
+
+		prerequisite = {focus = XWA_HordeIndustryStart}
+		mutually_exclusive = {focus = XWA_HordeIndustry2 }
+		
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 12
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XWA_HordeIndustry4
+
+		prerequisite = {focus = XWA_HordeIndustry2 focus = XWA_HordeIndustry3 }
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_generic_construct_infrastructure
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 10
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
      }
 } #endbracketlol
