@@ -659,7 +659,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = generic_secret_police
+            picture = FIN_maan_turva
 
             modifier = {
                 war_support_factor = 0.1
@@ -778,6 +778,50 @@ ideas = {
 
         }
 
+        XFR_fraenkischer_bund = {
+            name = XFR_bund_support
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+           removal_cost = -1
+
+            picture = generic_monarchist_uprising
+
+            modifier = {
+                neutrality_drift = 0.05
+                production_speed_arms_factory_factor = 0.05
+            }
+
+        }
+
+        XFR_fraenkischer_bund2 = {
+            name = XFR_bund_support
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+           removal_cost = -1
+
+            picture = generic_monarchist_uprising
+
+            modifier = {
+                neutrality_drift = 0.05
+                production_speed_arms_factory_factor = 0.05
+                army_org_factor = 0.05
+                breakthrough_factor = 0.05
+            }
+
+        }
+
         XFR_little_purge = {
             allowed = {
 				always = yes
@@ -802,6 +846,27 @@ ideas = {
 
         }
 
+        XFR_moral_support = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+           removal_cost = -1
+
+            picture = XFR_morale_support
+
+            modifier = {
+                neutrality_drift = 0.01
+                army_morale_factor = 0.1
+            }
+
+        }
+
         XFR_fascism_banned = {
             allowed = {
 				always = yes
@@ -821,6 +886,78 @@ ideas = {
 
             modifier = {
                 fascism_drift = -0.1
+            }
+
+        }
+
+        XFR_anti_nazi_operations = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				is_subject_of = XFR
+			}
+
+            cancel = {
+                OR = {
+                    fascism > 0.01
+                    is_subject_of = XFR
+                }
+            }
+
+            on_remove = {
+                if = {
+                    limit = {
+                        is_subject_of = XFR
+                        XOO = {
+                            is_subject_of = XFR
+                        }
+                    }
+                    XOO = {
+                        annex_country = {
+                            target = ROOT
+                            transfer_troops = yes
+                        }
+                    }
+                    ROOT = {
+                        every_core_state = {
+                            add_core_of = XOO
+                            remove_core_of = ROOT
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        is_subject = yes
+                    }
+                    OVERLORD = {
+                        annex_country = {
+                            target = ROOT
+                            transfer_troops = yes
+                        }
+                    }
+                    ROOT = {
+                        every_core_state = {
+                            remove_core_of = ROOT
+                        }
+                    }
+                }
+            }
+
+           removal_cost = -1
+
+            picture = generic_fascism_banned
+
+            modifier = {
+                fascism_drift = -0.1
+                stability_weekly = -0.01
+                required_garrison_factor = 0.1
+                custom_modifier_tooltip = XFR_anti_nazi_operations_tt
+            }
+
+            rule = {
+                can_send_volunteers = no
             }
 
         }
@@ -1278,6 +1415,73 @@ ideas = {
 			    consumer_goods_factor = -0.05
                 min_export = 0.2
                 trade_opinion_factor = 0.2
+            }
+
+        }
+
+        XFR_BEZ_cooperation = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XNM
+            }
+
+            do_effect = {
+                NOT = { has_idea = closed_economy }
+            }
+
+           removal_cost = -1
+
+            picture = HUN_treaty_of_triannon
+
+            modifier = {
+			    consumer_goods_factor = -0.05
+            }
+
+            targeted_modifier = {
+                tag = XNM
+                trade_cost_for_target_factor = -0.1
+                extra_trade_to_target_factor = 0.25
+            }
+
+        }
+
+        XFR_BEZ_cooperation2 = {
+            name = XFR_BEZ_cooperation
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XFR
+            }
+
+            do_effect = {
+                NOT = { has_idea = closed_economy }
+            }
+
+           removal_cost = -1
+
+            picture = HUN_treaty_of_triannon
+
+            modifier = {
+			    consumer_goods_factor = -0.05
+            }
+
+            targeted_modifier = {
+                tag = XFR
+                trade_cost_for_target_factor = -0.1
+                extra_trade_to_target_factor = 0.25
             }
 
         }

@@ -132,6 +132,7 @@ characters = {
 			}
 			visible = {
 				NOT = { has_country_leader = { character = XFR_regnault_guillaume ruling_only = yes } }
+				NOT = { has_completed_focus = XFR_support_parliament }
 			}
 			available = {
 				has_completed_focus = XFR_dennounce_democracy

@@ -234,6 +234,12 @@ ideologies = {
 			XFR_lotharingian_nationalism = {
 				can_be_randomly_selected = no
 			}
+			XFR_corporate_capitalism = {
+				can_be_randomly_selected = no
+			}
+			XFR_reichsregierung = {
+				can_be_randomly_selected = no
+			}
 			XHP_templaric_order = {
 				can_be_randomly_selected = no
 				color = { 255 255 255 }
@@ -301,10 +307,12 @@ ideologies = {
 				color = { 76 10 122 }
 			}
 
-			XFR_military_government  = {
+			XFR_military_government = {
 				can_be_randomly_selected = no
 			}
-
+			XFR_reichsregierung_neutral = {
+				can_be_randomly_selected = no
+			}
 			XLA_council = {
 				can_be_randomly_selected = no
 				color = { 220 215 165 }

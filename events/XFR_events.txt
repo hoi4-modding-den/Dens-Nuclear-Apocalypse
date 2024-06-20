@@ -9,19 +9,14 @@ country_event = { # Activate the Centre Crisis
     picture = GFX_report_event_military_planning
     desc = XFR_events.1.desc
     
-    trigger = {
-		date > 2236.1.7
-		date < 2236.1.21
-        original_tag = XFR
-		country_exists = XFR
-	}
 
     immediate = {
         hidden_effect = {
-            country_event = { id = XFR_events.24 days = 30 }
+            country_event = { id = XFR_events.24 days = 7 }
         }
     }
 
+    is_triggered_only = yes
     fire_only_once = yes
     
     option = {
@@ -1017,6 +1012,7 @@ country_event = { # March in Clamecy
 			popularity = 0.15
 		}
         add_stability = -0.05
+        set_country_flag = XFR_fascist_marches
     }
 
     option = { 
@@ -1033,7 +1029,7 @@ country_event = { # March in Clamecy
 			popularity = 0.15
 		}
         add_stability = -0.05
-        
+        set_country_flag = XFR_fascist_marches
     }
 }
 
@@ -1076,6 +1072,7 @@ country_event = { # Anti-Fascists organise
 			popularity = 0.1
 		}
         add_stability = -0.05
+        set_country_flag = XFR_anarchist_actions
         
     }
 
@@ -1104,7 +1101,7 @@ country_event = { # Anti-Fascists organise
 			popularity = 0.1
 		}
         add_stability = -0.05
-        
+        set_country_flag = XFR_anarchist_actions
     }
 }
 
@@ -1820,6 +1817,123 @@ country_event = { # Elections 2245
         custom_effect_tooltip = XFR_no_more_elections_tt
     }
 
+}
+
+country_event = { 
+    id = XFR_events.44
+    title = XFR_events.44.t
+    picture = GFX_report_event_journalists_speech
+    desc = XFR_events.44.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.44.a
+        ai_chance = {
+            base = 1
+        } 
+        add_political_power = 100
+        add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+    }
+}
+
+country_event = { 
+    id = XFR_events.45
+    title = XFR_events.45.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.45.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.45.a
+        ai_chance = {
+            base = 1
+        } 
+        set_politics = { ruling_party = democratic elections_allowed = no }
+    }
+}
+
+country_event = { 
+    id = XFR_events.46
+    title = XFR_events.46.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.46.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.46.a
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 2
+                XFR = {
+                    XFR_diplomat_advisor = {
+                        is_hired_as_advisor = yes
+                    }
+                }
+            }
+        } 
+        add_ideas = XFR_BEZ_cooperation2
+        FROM = { country_event = { id = XFR_events.47 days = 1 } }
+    }
+    option = { 
+        name = XFR_events.46.b
+        ai_chance = {
+            base = 1
+        } 
+        XFR = {
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = XFR_rejected_bez_agreement
+            }
+        }
+        add_political_power = -75
+        FROM = { country_event = { id = XFR_events.48 days = 1 } }
+    }
+}
+
+country_event = { 
+    id = XFR_events.47
+    title = XFR_events.47.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.47.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.47.a
+        ai_chance = {
+            base = 1
+        } 
+        add_ideas = XFR_BEZ_cooperation
+    }
+}
+
+country_event = { 
+    id = XFR_events.48
+    title = XFR_events.48.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.48.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.48.a
+        ai_chance = {
+            base = 1
+        } 
+        effect_tooltip = {
+            add_opinion_modifier = {
+                target = FROM
+                modifier = XFR_rejected_bez_agreement
+            }
+        }
+    }
 }
 
 ###############
