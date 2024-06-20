@@ -140,6 +140,7 @@ create_country_leader = {
 		}
 	}
 	news_event = XRU.1
+	remove_ideas = XRU_looming_disaster
 }
 		option = {
 		name = XRU.start_3.b
@@ -240,6 +241,7 @@ create_country_leader = {
 		}
 	}
 	news_event = XRU.1
+	remove_ideas = XRU_looming_disaster
 		}
 		option = {
 		name = XRU.start_3.c
@@ -338,6 +340,7 @@ create_country_leader = {
 			 }
 		}
 	news_event = XRU.1
+	remove_ideas = XRU_looming_disaster
 		}
 	}
 }
@@ -364,6 +367,10 @@ country_event = {
 	}
 	option = {
 		name = "We must fight for our beliefs!"
-		trigger = { TAG = XRU }
+		trigger = {
+			TAG = XRU
+			TAG = XSO
+			TAG = XSP
+		}
 	}
 }

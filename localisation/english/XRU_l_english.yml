@@ -49,13 +49,25 @@ XRU_Revolutionary_desc:0 "WIP"
 # Ideas
 XRU_Looming_Disaster:0 "§RLooming Disaster§"
 
-# Foci
+# Foci (Tree Start)
 XRU_just_another_year:0 "Just Another Year"
 XRU_just_another_year_desc:0 "It's just another year for the Rusyn State Authority. Nothing is wrong. Everything is fine. The people are happy. We all know this."
 XRU_ignore_opposition:0 "Ignore Opposition"
 XRU_ignore_opposition_desc:0 "There is no longer any opposition to the supreme rule of the Rusyn State Authority. There are no partisans left. There is nothing to be afraid of except breaking the law. We all know this."
 XRU_everything_is_fine:0 "Everything Is Fine"
 XRU_everything_is_fine_desc:0 "We have never been wrong. We can never be wrong. We are the Rusyn State Authority, and with Dimitry Sydor at our head, we are unstoppable. We all know this."
+
+# Foci (War Tree Rusyns)
+XRU_remain_calm:0 "Remain Calm, Order Shall Be Restored"
+XRU_remain_calm_desc:0 "Dimitry Sydor has passed, but our new glorious leader is the Savior of All Rusyns, sent by God himself. None of these partisans shall last."
+XRU_knowing_our_enemies:0 "Knowing Our Enemies"
+XRU_knowing_our_enemies_desc:0 "Although initially unprepared for the revolt of Revolutionary, we are making efforts to learn more about his strange clique. Despite the mystery surrounding the Mastermind's identity, we have gathered more info on his goals, as well as some of his subordinates."
+XRU_resistance_without_within:0 "Resistance Without, Resistance Within"
+XRU_resistance_without_within_desc:0 "We cannot allow ourselves to be crushed by foolish revolutionaries. We must be aware that not all of our dissenters have risen up just yet - the Slovakian Democrats still lurk in the shadows. We will do well to be wary of them..."
+XRU_operation_second_vengeance:0 "§YOperation Second Vengeance§"
+XRU_operation_second_vengeance_desc:0 "We have taken our vengeance against the Slovaks and traitors once before. §YWe shall now do so once again.§"
+XRU_order_restored:0 "Order Restored!"
+XRU_order_restored_desc:0 "At long last, we have restored order to the Rusyn State. Gabriel Bosko is dead, and Revolutionary has fled for the Scientist's City. Was their really ever any doubt that we would win? Now, to look at our internal matters-"
 
 # Events
 XRU.start_1.t:0 "Cold Night in the Church"
@@ -73,6 +85,11 @@ XRU.start_3.b:0 "For liberation! For Slovakia!"
 XRU.start_3.c:0 "Order must be maintained at all costs!"
 
 Rusyn.1.d:0 "This morning, news came of disaster in the Rusyn State - partisans and communists had split the country in three, forcing it to descend into anarchy as all three sides fight to control the whole state. The victor of this conflict could undoubtedly upset the balance of power in Eastern Europe..."
+
+# Opinions
+XRU_Anti_Communist:0 "Mortal Enemy of the Far-Right State"
+XRU_Fellow_Fascist:0 "Wise in Political Alignment"
+XRU_Nazi_Scum:0 "Mortal Enemy of the Rusyn People"
 
 ### Cosmetic Tags
 ct_XSO_begin:0 "Slovakian Militarist Union"

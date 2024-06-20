@@ -1,0 +1,11 @@
+opinion_modifiers = {
+	XRU_Anti_Communist = {
+		value = -50
+	}
+	XRU_Fellow_Fascist = {
+		value = 50
+	}
+	XRU_Nazi_Scum = {
+		value = -200
+	}
+}

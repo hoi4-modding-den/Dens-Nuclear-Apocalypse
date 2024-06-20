@@ -52,3 +52,40 @@ create_country_leader = {
 
 	}
 }
+
+add_opinion_modifier = {
+	target = D01
+	modifier = XRU_Fellow_Fascist
+}
+add_opinion_modifier = {
+	target = XRP
+	modifier = XRU_Fellow_Fascist
+}
+add_opinion_modifier = {
+	target = XLH
+	modifier = XRU_Nazi_Scum
+}
+add_opinion_modifier = {
+	target = XSP
+	modifier = XRU_Anti_Communist
+}
+add_opinion_modifier = {
+	target = XGE
+	modifier = XRU_Anti_Communist
+}
+add_opinion_modifier = {
+	target = XGF
+	modifier = XRU_Anti_Communist
+}
+add_opinion_modifier = {
+	target = XPY
+	modifier = XRU_Fellow_Fascist
+}
+add_opinion_modifier = {
+	target = XAQ
+	modifier = XRU_Fellow_Fascist
+}
+add_opinion_modifier = {
+	target = XNI
+	modifier = XRU_Fellow_Fascist
+}

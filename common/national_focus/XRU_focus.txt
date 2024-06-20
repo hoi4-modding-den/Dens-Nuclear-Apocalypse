@@ -62,9 +62,78 @@ focus_tree = {
 		factor = 0
 	}
 	default = no
-
 	focus = {
-		
+		id = XRU_remain_calm
+		icon = GFX_focus_Remain_Calm
+		x = 7
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = XRU_knowing_our_enemies
+		icon = GFX_focus_Knowing_Our_Enemies
+		x = 7
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = XRU_remain_calm }
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = XRU_resistance_without_within
+		icon = GFX_focus_Resistance_Without_Within
+		x = 7
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = XRU_knowing_our_enemies }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = XRU_operation_second_vengeance
+		icon = GFX_focus_Second_Vengeance
+		x = 7
+		y = 4
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = XRU_resistance_without_within }
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = XRU_order_restored
+		icon = GFX_focus_Order_Restored
+		x = 7
+		y = 5
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = XRU_operation_second_vengeance
+			XSO = {exists = no}
+			XSP = {exists = no}
+		}
+		completion_reward = {
+			load_focus_tree = XRU_real_focus
+		}
 	}
 }
 
@@ -78,6 +147,19 @@ focus_tree = {
 
 	focus = {
 		
+	}
+}
+
+focus_tree = {
+	id = XRU_real_focus
+
+	country = {
+		factor = 0
+	}
+	default = no
+
+	focus = {
+
 	}
 }
 
