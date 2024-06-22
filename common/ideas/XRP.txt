@@ -93,6 +93,14 @@ ideas = {
 				democratic_acceptance = 25
 			}
 		}
+		XRP_american_ideals_improved_alt = {
+			picture = ARG_american_allyship
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.01
+				democratic_acceptance = 25
+			}
+		}
 		XRP_radical_youth = {
 			picture = chi_war_of_resistance2
 			removal_cost = -1

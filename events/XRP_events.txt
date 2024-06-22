@@ -20,7 +20,7 @@ country_event = { #intro event
 		}
 	hidden_effect = {
 			country_event = { id = XRP_natural_event.2 days = 35 }
-			#country_event = { id = XRP_natural_event.3 days = 105 }
+			country_event = { id = XRP_natural_event.7 days = 80 }
 		}
     	}
 }
@@ -109,6 +109,194 @@ country_event = { #german overthrow alt
     	}
 }
 
+country_event = { #communist overthrow
+    id = XRP_natural_event.5
+    title = XRP.NE_5.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.NE_5.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.NE_5.a
+		ai_chance = {
+			base = 100
+		}
+			news_event = {id = XRP_news_event.2}
+			add_named_threat = {
+				threat = 5
+				name = XRP_violent_overthrow
+			}
+			set_politics = {
+    				ruling_party = communism
+    				elections_allowed = no
+    				long_name = XRP_communist_initial_long
+    				name = XRP_communist_initial
+			}
+			remove_power_balance = {
+				id = XRP_fascist_balance 
+			}
+			add_stability = -0.10
+			hidden_effect = {
+				set_cosmetic_tag = XRP_communist_color 
+				remove_opinion_modifier = {
+					target = XAD
+					modifier = XRP_Anti-Muslim
+				}
+				remove_opinion_modifier = {
+					target = XTR
+					modifier = XRP_Anti-Muslim
+				}
+				remove_opinion_modifier = {
+					target = XAP
+					modifier = XRP_Anti-German 
+				}
+				remove_opinion_modifier = {
+					target = XGE
+					modifier = XRP_Anti-German 
+				}
+				remove_opinion_modifier = {
+					target = XOO
+					modifier = XRP_Anti-German 
+				}
+				remove_opinion_modifier = {
+					target = XSH
+					modifier = XRP_Anti-German 
+				}
+				remove_opinion_modifier = {
+					target = XTI 
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XSS 
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XNL
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XLX
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XJY
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XDK
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XAL
+					modifier = XRP_Anti-German_Confused 
+				}
+			}
+    	}
+}
+
+country_event = { #democratic overthrow
+    id = XRP_natural_event.6
+    title = XRP.NE_6.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.NE_6.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.NE_6.a
+		ai_chance = {
+			base = 100
+		}
+			news_event = {id = XRP_news_event.2}
+			add_named_threat = {
+				threat = 5
+				name = XRP_violent_overthrow
+			}
+			set_politics = {
+    				ruling_party = democratic
+    				elections_allowed = no
+    				long_name = XRP_democratic_initial_long
+    				name = XRP_democratic_initial
+			}
+			remove_power_balance = {
+				id = XRP_fascist_balance 
+			}
+			add_stability = -0.10
+			hidden_effect = {
+				set_cosmetic_tag = XRP_democratic_color
+				remove_opinion_modifier = {
+					target = XAD
+					modifier = XRP_Anti-Muslim
+				}
+				remove_opinion_modifier = {
+					target = XTR
+					modifier = XRP_Anti-Muslim
+				}
+				remove_opinion_modifier = {
+					target = XAP
+					modifier = XRP_Anti-German 
+				}
+				remove_opinion_modifier = {
+					target = XGE
+					modifier = XRP_Anti-German 
+				}
+				remove_opinion_modifier = {
+					target = XOO
+					modifier = XRP_Anti-German 
+				}
+				remove_opinion_modifier = {
+					target = XSH
+					modifier = XRP_Anti-German 
+				}
+				remove_opinion_modifier = {
+					target = XTI 
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XSS 
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XNL
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XLX
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XJY
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XDK
+					modifier = XRP_Anti-German_Confused 
+				}
+				remove_opinion_modifier = {
+					target = XAL
+					modifier = XRP_Anti-German_Confused 
+				}
+			}
+    	}
+}
+
+country_event = { #meeting with general
+    id = XRP_natural_event.7
+    title = XRP.NE_7.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.NE_7.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.NE_7.a
+		ai_chance = {
+			base = 100
+		}
+    	}
+}
+
 #News Events#
 news_event = { #German Overthrow of American Government
     id = XRP_news_event.1
@@ -175,6 +363,18 @@ news_event = { #German Overthrow of American Government
 		}
 	}
 }
+news_event = { #Assassination of Cavoli
+    id = XRP_news_event.2
+    title = XRP.WE_2.t
+    picture = GFX_news_event_ITA_mussolini_execution
+    desc = XRP.WE_2.d
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+       		name = XRP.WE_2.a
+	}
+}
 
 #Focus Events#
 country_event = { #massacure in Nurburg
@@ -207,10 +407,29 @@ country_event = { #ceremony event
     fire_only_once = no
 	option = {
         name = XRP.FE_2.a
-		
 			set_country_flag = XRP_flag1
+			kill_country_leader = yes
 			load_focus_tree = { tree = XRP_actual_fascist_tree  keep_completed = yes }
-			
+			complete_national_focus = XRP_rip_idiot
+			set_power_balance = {
+				id = XRP_fascist_balance
+			}
+			promote_character = XRP_Council 
+			add_stability = -0.15
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.075
+			}
+			add_political_power = -100
+			news_event = {id = XRP_news_event.2}
 		ai_chance = {
 			base = 100
 		}
@@ -281,6 +500,7 @@ country_event = {
 		}
     	}
 }
+
 #easter egg event#
 country_event = {
     id = XRP_focus_event.false_8

@@ -138,6 +138,13 @@ add_ideas = {
 
 recruit_character = XRP_Cavoli
 recruit_character = XRP_Williams
+recruit_character = XRP_Davis
+recruit_character = XRP_Backer
+recruit_character = XRP_Council
+recruit_character = XRP_Stevens
+recruit_character = XRP_Byrnes 
+recruit_character = XRP_Basham 
+recruit_character = XRP_Abernethy 
 
 set_politics = {
 	ruling_party = fascism #I'm not *just* being edgy, I have a lore reason for this

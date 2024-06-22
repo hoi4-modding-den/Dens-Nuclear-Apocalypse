@@ -51,7 +51,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_autobahn
 		icon = GFX_focus_generic_road_investment
-		x = 4
+		x = 1
 		y = 2
 		#relative_position_id = 2
 
@@ -86,7 +86,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_agrarian
 		icon = GFX_focus_CHL_focus_on_cattle_and_wool
-		x = 2
+		x = -1
 		y = 3
 		#relative_position_id = 2
 
@@ -106,7 +106,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_industrial
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 6
+		x = 3
 		y = 3
 		#relative_position_id = 2
 
@@ -150,7 +150,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_farm_modern
 		icon = GFX_focus_generic_public_works
-		x = 0
+		x = -3
 		y = 4
 		#relative_position_id = 2
 
@@ -169,7 +169,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_wine_time
 		icon = GFX_focus_generic_royal_wedding
-		x = 2
+		x = -1
 		y = 4
 		#relative_position_id = 2
 
@@ -188,7 +188,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_military
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 4
+		x = 1
 		y = 4
 		#relative_position_id = 2
 
@@ -217,7 +217,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_fix_automation
 		icon = GFX_focus_DEN_no_regulations
-		x = 6
+		x = 3
 		y = 4
 		#relative_position_id = 2
 
@@ -254,7 +254,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_gem_mines
 		icon = GFX_focus_generic_tungsten
-		x = 8
+		x = 5
 		y = 4
 		#relative_position_id = 2
 
@@ -273,7 +273,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_american_farms
 		icon = GFX_focus_generic_farmland
-		x = 2
+		x = -1
 		y = 5
 		#relative_position_id = 2
 
@@ -294,7 +294,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_research_slot
 		icon = GFX_focus_research
-		x = 4
+		x = 1
 		y = 5
 		#relative_position_id = 2
 
@@ -315,7 +315,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_american_factories
 		icon = GFX_focus_generic_tank_production
-		x = 6
+		x = 3
 		y = 5
 		#relative_position_id = 2
 
@@ -336,7 +336,7 @@ shared_focus = {
 	shared_focus = {
 		id = XRP_economy_miracle
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 4
+		x = 1
 		y = 6
 		#relative_position_id = 2
 

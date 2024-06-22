@@ -1,0 +1,105 @@
+XRP_fascist_balance = {
+    initial_value = 0.0
+    left_side = XRP_communist_cadet_side
+    right_side = XRP_democratic_officer_side
+
+    range = { #for what's called a 'balance of power', rarely do you ever actually want to keep it balanced in-game.
+        id = XRP_fascist_control
+        min = -0.20
+        max = 0.20
+        modifier = {
+		political_power_gain = 0.1
+		stability_factor = 0.1
+		fascism_drift = 0.01
+        }
+    }
+
+    range = {
+        id = XRP_communist_cadet_low
+        min = -0.50
+        max = -0.20
+        modifier = {
+        	stability_factor = -0.05
+        }
+    }
+    range = {
+        id = XRP_democratic_officer_low
+        min = 0.20
+        max = 0.50
+        modifier = {
+            war_support_factor = -0.05
+        }
+    }
+
+
+
+    range = {
+        id = XRP_communist_cadet_medium
+        min = -0.80
+        max = -0.50
+        modifier = {
+            stability_factor = -0.1
+            communism_drift = 0.01
+        }
+    }
+    range = {
+        id = XRP_democratic_officer_medium
+        min = 0.50
+        max = 0.80
+        modifier = {
+            war_support_factor = -0.1
+            democratic_drift = 0.01
+        }
+    }
+
+    range = {
+        id = XRP_communist_cadet_high
+            min = -0.95
+            max = -0.80
+            modifier = {
+            	stability_factor = -0.15
+            	communism_drift = 0.03
+            }
+    }
+    range = {
+        id = XRP_democratic_officer_high
+            min = 0.80
+            max = 0.95
+            modifier = {
+                war_support_factor = -0.15
+            	democratic_drift = 0.03
+            }
+    }
+
+    side = {
+        id = XRP_communist_cadet_side
+        icon = GFX_idea_generic_communist_army
+        range = {
+            id = XRP_communist_cadet_total
+            min = -1
+            max = -0.95
+            modifier = {
+                communism_drift = 0.05
+            }
+	    on_activate = {
+		country_event = XRP_natural_event.5
+            }
+        }
+    }
+
+    side = {
+        id = XRP_democratic_officer_side
+        icon = GFX_idea_generic_democratic_drift_bonus
+        range = {
+            id = XRP_democratic_officer_total
+            min = 0.95
+            max = 1
+            modifier = {
+                democratic_drift = 0.05
+            }
+	    on_activate = {
+		country_event = XRP_natural_event.6
+            }
+        }
+    }
+}

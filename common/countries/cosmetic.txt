@@ -1353,3 +1353,14 @@ XBC_monarchy = {
 	color = rgb { 249 140 79 }
 	color_ui = rgb { 249 140 79 }	
 }
+
+#XRP#
+XRP_communist_color = {
+    color = rgb { 180 24 29 }
+    color_ui = rgb { 180 24 29 }
+}
+XRP_democratic_color = {
+    color = rgb { 20 133 237 }
+    color_ui = rgb { 20 133 237 }
+}
+#will include more later#

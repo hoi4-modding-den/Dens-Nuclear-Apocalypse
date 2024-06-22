@@ -1,6 +1,6 @@
 characters = {
 
-	XRP_Cavoli = { 		#starting leader
+	XRP_Cavoli = { 		#starting Fascist leader
 		name = XRP_Cavoli
 		gender = male
 		portraits = {
@@ -15,7 +15,7 @@ characters = {
 			id = -1	
 		}
 		field_marshal = {
-			traits = { media_personality reckless }
+			traits = { media_personality trait_reckless }
 			skill=1
 			attack_skill=1
 			defense_skill=2
@@ -24,7 +24,7 @@ characters = {
 			legacy_id=-1
 		}
 	}
-	XRP_Williams = { 		#democratic leader
+	XRP_Williams = { 		#Democratic leader
 		name = XRP_Williams
 		gender = male
 		portraits = {
@@ -38,12 +38,132 @@ characters = {
 			id = -1	
 		}
 		corps_commander = {
-			traits = { old_guard war_hero ranger}
+			traits = { old_guard war_hero ranger disgruntled }
 			skill=3
 			attack_skill=4
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	XRP_Davis = { 		#Communist leader
+		name = XRP_Davis
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XRP/XRP_Davis.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { XRP_inexperienced_commander }
+			desc = XRP_Davis_desc
+			id = -1	
+		}
+	}
+	XRP_Backer = { 		#Neutrality leader
+		name = XRP_Backer
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XRP/XRP_Backer.dds"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { agrarian_nationalist }
+			desc = XRP_Backer_desc
+			id = -1	
+		}
+	}
+	XRP_Council = { 	#post-cavoli temporary Fascist leader
+		name = XRP_Council
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XRP/XRP_Military_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = XRP_american_supremacism
+			traits = { the_grand_council divided_interests }
+			desc = XRP_Council_desc
+			id = -1	
+		}
+	}
+	XRP_Stevens = { 		#hardliner Fascist leader (Steven Seagal can go fuck himself)
+		name = XRP_Stevens
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/XRP/XRP_Stevens.dds"
+			}
+		}
+		country_leader = {
+			ideology = XRP_american_supremacism
+			traits = { unscrupulous_orchestrator warmonger fascist_sympathies }
+			desc = XRP_Stevens_desc
+			id = -1	
+		}
+		corps_commander = {
+			traits = { career_officer harsh_leader }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	XRP_Byrnes = { 		#moderate Fascist leader
+		name = XRP_Byrnes
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/XRP/XRP_Byrnes.dds"
+			}
+		}
+		country_leader = {
+			ideology = XRP_american_supremacism
+			traits = { feminist_ultranationalist staunch_constitutionalist }
+			desc = XRP_Byrnes_desc
+			id = -1	
+		}
+	}
+	XRP_Basham = { 		#General
+		name = XRP_Basham
+		gender = male
+		portraits = {
+			army = {
+				large = "gfx/XRP/XRP_Basham.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	XRP_Abernethy = { 	#General
+		name = XRP_Abernethy
+		gender = male
+		portraits = {
+			army = {
+				large = "gfx/XRP/XRP_Abernethy.dds"
+			}
+		}
+		corps_commander = {
+			traits = { organizer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}

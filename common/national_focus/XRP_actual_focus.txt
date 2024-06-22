@@ -14,8 +14,8 @@ focus_tree = {
 	shared_focus = XRP_economy_miracle
 
 	focus = {
-			id = XRP_WIP
-			icon = XAR_perm_peace
+			id = XRP_rip_idiot
+			#icon = XAR_perm_peace
 			x = 12
 			y = 2
 			#relative_position_id = 
@@ -34,4 +34,612 @@ focus_tree = {
 				
 			}
 		}
+		focus = {
+			id = XRP_bribe_officers
+			#icon = XAR_perm_peace
+			x = 6
+			y = 3
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_rip_idiot }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_bribe_officers }
+			mutually_exclusive = { focus = XRP_intimidate_officers }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = -0.15
+					tooltip_side = XRP_communist_cadet_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_intimidate_officers
+			#icon = XAR_perm_peace
+			x = 8
+			y = 3
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_rip_idiot }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_bribe_officers }
+			mutually_exclusive = { focus = XRP_intimidate_officers }
+					
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = -0.15
+					tooltip_side = XRP_communist_cadet_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_identify_cracks
+			#icon = XAR_perm_peace
+			x = 10
+			y = 3
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_rip_idiot }
+			available = {
+				NOT = {  }
+			}	
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = -0.1
+					tooltip_side = XRP_communist_cadet_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_oversight_committee
+			#icon = XAR_perm_peace
+			x = 12
+			y = 3
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_rip_idiot }
+			available = {
+				NOT = {  }
+			}	
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = -0.20
+					tooltip_side = XRP_communist_cadet_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_curfews
+			#icon = XAR_perm_peace
+			x = 14
+			y = 3
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_rip_idiot }
+			available = {
+				NOT = {  }
+			}	
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = 0.10
+					tooltip_side = XRP_democratic_officer_side
+				}
+			}
+		}
+	focus = {
+			id = XRP_control_media
+			#icon = XAR_perm_peace
+			x = 18
+			y = 3
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_rip_idiot }
+			available = {
+				NOT = {  }
+			}	
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = 0.15
+					tooltip_side = XRP_democratic_officer_side
+				}				
+			}
+		}
+		focus = {
+			id = XRP_purge_officers
+			#icon = XAR_perm_peace
+			x = 9
+			y = 4
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_oversight_committee }
+			prerequisite = { focus =  XRP_identify_cracks }
+			prerequisite = { focus =  XRP_intimidate_officers  focus = XRP_bribe_officers }
+			available = {
+				NOT = {  }
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = XRP_american_ideals 
+					add_idea = XRP_american_ideals_improved_alt 
+				}
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = -0.25
+					tooltip_side = XRP_communist_cadet_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_no_tolerance
+			#icon = XAR_perm_peace
+			x = 13
+			y = 4
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_curfews }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_no_tolerance }
+			mutually_exclusive = { focus = XRP_reward_snitching }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = 0.15
+					tooltip_side = XRP_democratic_officer_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_reward_snitching
+			#icon = XAR_perm_peace
+			x = 15
+			y = 4
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_curfews }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_no_tolerance }
+			mutually_exclusive = { focus = XRP_reward_snitching }
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = 0.15
+					tooltip_side = XRP_democratic_officer_side
+				}
+			}
+		}
+	focus = {
+			id = XRP_red_scare
+			#icon = XAR_perm_peace
+			x = 18
+			y = 4
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_control_media }
+			available = {
+				NOT = {  }
+			}	
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = XRP_radical_youth 
+					add_idea = XRP_radical_youth_improved 
+				}
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = 0.20
+					tooltip_side = XRP_democratic_officer_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_centralized_command
+			#icon = XAR_perm_peace
+			x = 11
+			y = 5
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_purge_officers }
+			available = {
+				NOT = {  }
+			}	
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = -0.15
+					tooltip_side = XRP_communist_cadet_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_reward_loyality
+			#icon = XAR_perm_peace
+			x = 7
+			y = 5
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_purge_officers }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_reward_loyality }
+			mutually_exclusive = { focus = XRP_expand_surveilance }
+				
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = -0.15
+					tooltip_side = XRP_communist_cadet_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_expand_surveilance
+			#icon = XAR_perm_peace
+			x = 9
+			y = 5
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_purge_officers }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_reward_loyality }
+			mutually_exclusive = { focus = XRP_expand_surveilance }
+				
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = -0.15
+					tooltip_side = XRP_communist_cadet_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_discipline
+			#icon = XAR_perm_peace
+			x = 14
+			y = 5
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_no_tolerance focus =  XRP_reward_snitching }
+			available = {
+				NOT = {  }
+			}	
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = 0.25
+					tooltip_side = XRP_democratic_officer_side
+				}
+			}
+		}
+	focus = {
+			id = XRP_make_an_example
+			#icon = XAR_perm_peace
+			x = 18
+			y = 5
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_red_scare }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_quietly_handle_it }
+			mutually_exclusive = { focus = XRP_make_an_example }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = 0.15
+					tooltip_side = XRP_democratic_officer_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_quietly_handle_it
+			#icon = XAR_perm_peace
+			x = 16
+			y = 5
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_red_scare }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_make_an_example }
+			mutually_exclusive = { focus = XRP_quietly_handle_it }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_power_balance_value = {
+					id = XRP_fascist_balance
+					value = 0.15
+					tooltip_side = XRP_democratic_officer_side
+				}
+			}
+		}
+		focus = {
+			id = XRP_secure_at_last
+			#icon = XAR_perm_peace
+			x = 9
+			y = 6
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_reward_loyality focus = XRP_expand_surveilance }
+			prerequisite = { focus = XRP_centralized_command }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				remove_ideas = XRP_american_ideals_improved_alt 
+			}
+		}
+		focus = {
+			id = XRP_good_soldier
+			#icon = XAR_perm_peace
+			x = 16
+			y = 6
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_quietly_handle_it focus = XRP_make_an_example }
+			prerequisite = { focus = XRP_discipline }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				remove_ideas = XRP_radical_youth_improved 
+			}
+		}
+		focus = {
+			id = XRP_american_way
+			#icon = XAR_perm_peace
+			x = 9
+			y = 7
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_secure_at_last }
+			prerequisite = { focus = XRP_good_soldier }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_american_way }
+			mutually_exclusive = { focus = XRP_law_and_order }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				promote_character = XRP_Byrnes
+			}
+		}
+		focus = {
+			id = XRP_law_and_order
+			#icon = XAR_perm_peace
+			x = 16
+			y = 7
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+		
+			cost = 5
+			prerequisite = { focus =  XRP_secure_at_last }
+			prerequisite = { focus = XRP_good_soldier }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_american_way }
+			mutually_exclusive = { focus = XRP_law_and_order }
+		
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				promote_character = XRP_Stevens
+			}
+		}
+		focus = {
+			id = XRP_new_america
+			#icon = XAR_perm_peace
+			x = 9
+			y = 8
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_american_way }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_recruit_germans_alt
+			icon = GFX_focus_generic_workers_and_farmers_rise
+			x = 11
+			y = 8
+			
+			allow_branch = { has_country_flag = XRP_flag1  }
+			mutually_exclusive = { focus = XRP_recruit_americans_alt } 
+			cost = 5
+			prerequisite = { focus =  XRP_american_way focus = XRP_law_and_order } 
+			ai_will_do = {
+				factor = 1
+			}
+		
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = XRP_deutsch_apartheid
+					add_idea = XRP_deutsch_apartheid_recruitment
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
+			}
+		}
+		
+		focus = {
+			id = XRP_recruit_americans_alt
+			icon = GFX_focus_usa_recruit_the_free_corps
+			x = 14
+			y = 8
+			
+			allow_branch = { has_country_flag = XRP_flag1  }
+			mutually_exclusive = { focus = XRP_recruit_germans_alt } 
+			cost = 5
+			prerequisite = { focus =  XRP_american_way focus = XRP_law_and_order } 
+			ai_will_do = {
+				factor = 1
+			}
+		
+			completion_reward = {
+					add_ideas = XRP_american_army 
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.05
+					}
+			}
+		}
+		focus = {
+			id = XRP_a_germany_for_americans
+			#icon = XAR_perm_peace
+			x = 16
+			y = 8
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_law_and_order }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
 }
+

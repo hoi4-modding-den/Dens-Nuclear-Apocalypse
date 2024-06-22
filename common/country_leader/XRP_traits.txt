@@ -10,4 +10,11 @@ leader_traits = {
 		}
 	}
 
+	XRP_inexperienced_commander = {
+		random = no
+		political_power_factor = -0.1
+		party_popularity_stability_factor = -0.1
+		ai_badass_factor = -0.25
+	}
+
 }
