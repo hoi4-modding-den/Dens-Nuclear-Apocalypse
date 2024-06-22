@@ -87,7 +87,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = XFR_frankish_monarchism
 			traits = { XFR_herzog_von_burgund }
 			expire = "3000.1.1"
 		}
@@ -133,10 +133,12 @@ characters = {
 			visible = {
 				NOT = { has_country_leader = { character = XFR_regnault_guillaume ruling_only = yes } }
 				NOT = { has_completed_focus = XFR_support_parliament }
+				NOT = { has_country_flag = XFR_guillaume_dead }
 			}
 			available = {
 				has_completed_focus = XFR_dennounce_democracy
 				NOT = { has_country_leader = { character = XFR_regnault_guillaume ruling_only = yes } }
+				NOT = { has_completed_focus = XFR_undermine_the_fascists }
 			}
 			traits = {
 				SWI_fascist_propagandist
@@ -314,6 +316,18 @@ characters = {
 				small=GFX_portrait_XFR_sebastien_about_small
 			}
 		}
+		advisor = {
+			slot = theorist
+			idea_token = sebastien_about
+			allowed = {
+				original_tag = XFR
+			}
+			traits = { military_theorist }
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={
 			traits={ infantry_officer trait_cautious }
 			skill=2
@@ -469,6 +483,7 @@ characters = {
 			}
 			visible  = {
 				NOT = { has_completed_focus = XFR_dennounce_democracy }
+				has_idea = XFR_allow_women
 			}
 			available = {
 				has_government = democratic
@@ -752,6 +767,7 @@ characters = {
 			}
 			visible  = {
 				NOT = { has_completed_focus = XFR_dennounce_democracy }
+				has_idea = XFR_allow_women
 			}
 			available = {
 				has_completed_focus = XFR_european_ambitions
@@ -787,6 +803,7 @@ characters = {
 					has_government = fascism
 					has_completed_focus = XFR_allow_nationalist_militias
 				}
+				NOT = { has_completed_focus = XFR_undermine_the_fascists }
 			}
 			traits = { XFR_militia_advisor_trait }
 			cost = 100

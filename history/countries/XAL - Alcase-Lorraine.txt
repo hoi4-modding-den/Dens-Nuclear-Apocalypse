@@ -37,6 +37,12 @@ add_opinion_modifier = {
 	target = XFR
 	modifier = XFR_supports_our_government
 }
+add_relation_rule_override = {
+    target = XFR
+    usage_desc = XFR_alsace_burgundy_market_desc
+    trigger = XFR_allow_alsace_market
+    can_access_market = yes
+}
 
 set_politics = {
 	ruling_party = neutrality

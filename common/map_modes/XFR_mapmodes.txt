@@ -26,6 +26,15 @@ scripted_map_modes = {
                     else_if = {
                         limit = {
                             has_idea = BEZ_membership
+                            original_tag = XNM
+                        }
+                        set_temp_variable = { red = 0.6 }
+                        set_temp_variable = { blue = 0.2 }
+                        set_temp_variable = { green = 0.1 }
+                    }
+                    else_if = {
+                        limit = {
+                            has_idea = BEZ_membership
                         }
                         set_temp_variable = { red = 0.8 }
                         set_temp_variable = { blue = 0.2 }

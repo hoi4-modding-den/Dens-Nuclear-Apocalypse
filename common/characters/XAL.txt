@@ -63,7 +63,13 @@ characters = {
 			}
 		}
 		corps_commander={
-			visible = { OR = { has_government = fascism } has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
+			visible = { 
+				OR = { 
+					has_government = fascism 
+					has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+					has_country_leader = { character = XFR_regency_council ruling_only = yes } 
+				} 
+			}
 			traits={ media_personality }
 			skill=1
 			attack_skill=2
@@ -134,10 +140,7 @@ characters = {
 			idea_token = gervais_devillers
 			ledger = army
 			allowed = {
-				OR = {
-					original_tag = XAL
-					original_tag = XFR
-				}
+				original_tag = XAL
 			}
 			available = {
 				NOT = { 
@@ -156,7 +159,16 @@ characters = {
 			}
 		}
 		corps_commander={
-			visible = { NOT = { OR = { has_government = fascism has_country_leader = { character = XFR_herzog_julius ruling_only = yes } has_government = communism } } }
+			visible = {
+				NOT = { 
+					OR = { 
+						has_government = fascism 
+						has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+						has_country_leader = { character = XFR_regency_council ruling_only = yes } 
+						has_government = communism 
+					} 
+				} 
+			}
 			traits={ defensive_doctrine }
 			skill=1
 			attack_skill=2
@@ -180,10 +192,7 @@ characters = {
 			idea_token = alban_picard
 			ledger = army
 			allowed = {
-				OR = {
-					original_tag = XAL
-					original_tag = XFR
-				}
+				original_tag = XAL
 			}
 			available = {
 				NOT = { 
@@ -202,7 +211,16 @@ characters = {
 			}
 		}
 		corps_commander={
-			visible = { NOT = { OR = { has_government = fascism has_country_leader = { character = XFR_herzog_julius ruling_only = yes } has_government = communism } } }
+			visible = {
+				NOT = { 
+					OR = { 
+						has_government = fascism 
+						has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+						has_country_leader = { character = XFR_regency_council ruling_only = yes } 
+						has_government = communism 
+					} 
+				} 
+			}
 			traits={ old_guard cavalry_officer cavalry_leader }
 			skill=1
 			attack_skill=1

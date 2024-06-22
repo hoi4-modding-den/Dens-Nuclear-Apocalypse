@@ -244,9 +244,20 @@ add_opinion_modifier = {
 	target = XNF
 	modifier = XFR_hostility
 }
+reverse_add_opinion_modifier = {
+	target = XNF
+	modifier = XFR_hostility
+}
 add_opinion_modifier = {
 	target = XAL
 	modifier = XFR_support_their_government
+}
+
+add_relation_rule_override = {
+    target = XAL
+    usage_desc = XFR_alsace_burgundy_market_desc
+    trigger = XFR_allow_alsace_market
+    can_access_market = yes
 }
 
 set_politics = {

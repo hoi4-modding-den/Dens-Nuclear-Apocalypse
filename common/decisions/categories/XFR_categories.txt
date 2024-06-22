@@ -65,7 +65,7 @@ XFR_last_modernisation = {
 }
 
 XFR_udb_cat = {			
-	icon = GFX_decision_category_ITA_reggianes_exports
+	icon = GFX_decision_category_generic_trade
 	priority = 9
 
 	visible_when_empty = yes	
@@ -106,6 +106,28 @@ XFR_integration = {
 	visible = {	
 		has_completed_focus = XFR_french_reunification
 		has_government = democratic
+	}
+}
+
+XFR_occupation_decisions = {		
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	priority = 100
+	
+	allowed = {
+		original_tag = XFR
+	}
+	visible = {	
+	}
+}
+
+XFR_reclamation = {		
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	
+	allowed = {
+		original_tag = XFR
+	}
+	visible = {	
 	}
 }
 

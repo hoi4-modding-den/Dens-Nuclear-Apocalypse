@@ -277,7 +277,6 @@ XFR_other_crisis_cat = {
 				OR = {
 					has_idea = XFR_fascist_tensions
 					has_idea = XFR_fascist_mobilising
-					has_idea = XFR_fascist_militias
 				}
 			}
     	}
@@ -925,9 +924,68 @@ XFR_country_development_cat = {
 
 foreign_politics = {
 
-	XFR_restore_the_papacy  = { 
+	XFR_demand_papacy_states  = { 
 		
 		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 2
+				state = 978
+			}
+		}
+
+		available = {
+			has_completed_focus = XFR_proclaim_french_government
+		}
+
+		target_trigger = {
+			FROM = {	
+				OR = {
+					state = 2
+					state = 978
+				}
+			}
+		}
+
+
+		visible = { 
+			has_completed_focus = XFR_return_of_the_pope
+			NOT = { FROM = { is_controlled_by_ROOT_or_ally = yes } }
+		}
+
+		targets_dynamic = yes
+
+		state_target = yes
+
+		fire_only_once = yes
+
+		on_map_mode = decision_view_only
+
+		cost = 100
+
+		priority = 100
+
+        ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			FROM = { save_event_target_as = demanded_prov_target }
+			FROM = {
+				owner = {
+					country_event = { id = generic.23 days = 1 }
+				}
+			}
+        }
+	}
+
+	XFR_restore_the_papacy  = { 
+		
+		icon = GFX_decision_generic_form_nation
 
 		allowed = {
 			original_tag = XFR
@@ -945,10 +1003,6 @@ foreign_politics = {
 			has_completed_focus = XFR_proclaim_french_government
 			2 = { is_owned_and_controlled_by = ROOT }
 			978 = { is_owned_and_controlled_by = ROOT }
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
 		}
 
 		visible = { 
@@ -959,15 +1013,57 @@ foreign_politics = {
 
 		cost = 100
 
-		priority = 1
+		priority = 100
 
         ai_will_do = {
 			base = 100
 		}
 		complete_effect = {
-			# Release the Papal States as a nation
-			2 = { remove_claim_by = ROOT }
-			978 = { remove_claim_by = ROOT }
+			2 = {
+				hidden_effect = {
+					remove_claim_by = ROOT
+					remove_core_of = XLA
+				}
+				add_core_of = XPA
+				transfer_state_to = XPA
+				set_state_name = "Upper Lazio"
+			}
+			978 = { 
+				hidden_effect = {
+					remove_claim_by = ROOT
+					remove_core_of = XLA
+				}
+				add_core_of = XPA
+				transfer_state_to = XPA
+				set_state_name = "Lower Lazio"
+			}
+			hidden_effect = {
+				set_province_name = { id = 9904 name = "Roma" }
+				add_victory_points = {
+					province = 9904
+					value = 10
+				}
+				set_victory_points = {
+					province = 6862
+					value = 0
+				}
+				set_victory_points = {
+					province = 923
+					value = 0
+				}
+			}
+			set_autonomy = {
+    			target = XPA
+    			autonomous_state = autonomy_integrated_puppet
+    			end_wars = no
+    			end_civil_wars = no
+			}
+			hidden_effect = {
+				XPA = {
+					add_offsite_building = { type = industrial_complex level = 5 }
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+			}
 			if = {
 				limit = {
 					has_power_balance = { id = XFR_federalists_restaurationists_bop }
@@ -1186,7 +1282,7 @@ foreign_politics = {
 
 		cost = 75
 
-		priority = 100
+		priority = 90
 
 		fire_only_once = no
 
@@ -2755,9 +2851,8 @@ XFR_francia_cat = {
 		}
 
 		visible = { 
-			NOT = { XFR_controls_west_francian_states = yes }
-			NOT = { XFR_controls_middle_francian_states = yes }
-			NOT = { XFR_controls_east_francian_states = yes }
+			has_completed_focus = XFR_restore_the_francian_empire
+			NOT = { has_completed_focus = XFR_all_hail_kaiser_julius }
 		}
 
 		fire_only_once = no
@@ -2827,11 +2922,16 @@ XFR_francia_cat = {
 
 }
 
-XFR_intervention = {
+XFR_reclamation = {
 
-	XFR_war_against_the_tribes = { 
+	XFR_reclaim_land_from_anarchy = {
 		
-		icon = GFX_decision_generic_prepare_civil_war
+		icon = GFX_decision_generic_forestry
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+		custom_cost_text = decision_cost_100_guns
 
 		allowed = {
 			original_tag = XFR
@@ -2839,14 +2939,81 @@ XFR_intervention = {
 
 		highlight_states = { 
 			highlight_states_trigger = {
-				is_controlled_by = XLA
+				is_reclaimable_state = yes
+				any_neighbor_state = { controls_or_subject_of = yes }
+				is_owned_and_controlled_by = LIB
+			}
+		}
+
+		available = {
+			FROM = { any_neighbor_state = { controls_or_subject_of = yes } }
+		}
+
+		visible = {
+
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cancel_trigger = {
+			FROM = { NOT = { is_owned_and_controlled_by = LIB } }
+		}
+
+
+		targets_dynamic = yes
+
+		state_target = yes
+
+		on_map_mode = map_and_decisions_view  
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = LIB
+				any_neighbor_state = { controls_or_subject_of = yes }
+				is_reclaimable_state = yes
+			}
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = -100
+				}
+			}
+		}
+
+		remove_effect = {
+			FROM = { transfer_state_to = ROOT }
+		}
+	}
+
+}
+
+XFR_intervention = {
+
+	XFR_topple_italian_monarchy = { 
+		
+		icon = GFX_decision_eng_support_imperialist_coup
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = XIT
 			}
 		}
 
 		on_map_mode = decision_view_only
 
 		available = {
-			XLA = {
+			XIT = {
 				any_neighbor_country = {
 					OR = {
 						is_ally_with = ROOT
@@ -2857,17 +3024,18 @@ XFR_intervention = {
 		}
 
 		visible = { 
-			XLA = {
+			XIT = {
 				NOT = { is_ally_with = ROOT }
 				NOT = { has_war_with = ROOT }
+				has_government = neutrality
 			}
 		}
 		
 		cost = 100
 
-		fire_only_once = no
+		fire_only_once = yes
 
-		war_with_on_remove = XLA
+		war_with_on_remove = XIT
 
 		days_remove = 35
 
@@ -2876,7 +3044,7 @@ XFR_intervention = {
 			modifier = {
 				add = 100
 				strength_ratio = {
-    				tag = XLA
+    				tag = XIT
     				ratio > 1
 				}
 			}
@@ -2884,7 +3052,7 @@ XFR_intervention = {
 
 		remove_effect = {
 			create_wargoal = {
-				target = XLA
+				target = XIT
 				type = puppet_wargoal_focus
 			}
 		}
@@ -2927,7 +3095,7 @@ XFR_intervention = {
 		
 		cost = 100
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		war_with_on_remove = XOO
 
@@ -2989,7 +3157,7 @@ XFR_intervention = {
 		
 		cost = 100
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		war_with_on_remove = XLH
 
@@ -3017,7 +3185,7 @@ XFR_intervention = {
 
 	XFR_attack_hamburg = { 
 		
-		icon = GFX_decision_generic_prepare_civil_war
+		icon = GFX_decision_generic_protection
 
 		allowed = {
 			original_tag = XFR
@@ -3051,7 +3219,7 @@ XFR_intervention = {
 		
 		cost = 100
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		war_with_on_remove = XSH
 
@@ -3114,7 +3282,7 @@ XFR_intervention = {
 		
 		cost = 100
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		war_with_on_remove = XHP
 
@@ -3135,6 +3303,77 @@ XFR_intervention = {
 			create_wargoal = {
 				target = XHP
 				type = puppet_wargoal_focus
+			}
+		}
+	
+	}
+
+}
+
+demobilization = {
+
+	XFR_remove_lotharingian_militias = { 
+		
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			NOT = { tag = XFR }
+		}
+
+		available = {
+			has_template_majority_unit = militia
+		}
+
+		visible = { 
+			has_template = "Lotharingian Militia"
+		}
+		
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+		}
+
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Lotharingian Militia"
+				disband = no
+			}
+		}
+	
+	}
+
+	XFR_remove_english_militias = { 
+		
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			has_template_majority_unit = militia
+			NOT = { has_war_with = XNE }
+		}
+
+		visible = { 
+			has_template = "Anti-English Militia"
+		}
+		
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+		}
+
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Anti-English Militia"
+				disband = no
 			}
 		}
 	

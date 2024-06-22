@@ -147,6 +147,22 @@ on_actions = {
 					clr_country_flag = XFR_FRANCE_FED_lost
 				}
 			}
+			if = {
+				limit = {
+					XFR = {
+						OR = {
+							is_subject = yes
+							has_government = democratic
+							has_government = communism
+						}
+						has_cosmetic_tag = XFR_FRANCIA_final_form
+					}
+				}
+				XFR = {
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = XFR_FRANCIA
+				}
+			}
 		}
 	}
 
@@ -184,6 +200,31 @@ on_actions = {
 				FROM = { annex_country = { target = ROOT transfer_troops = no } }
 			}
 			XFR_puppet_nation = yes
+		}
+	}
+	on_subject_autonomy_level_change = {
+		effect = {
+			if = { # Generic Stuff
+				limit = {
+					FROM = { has_idea = XFR_customs_agreement_head_idea }
+					ROOT = { NOT = { has_idea = XFR_customs_agreement_idea } }
+					ROOT = { is_subject = yes }
+				}
+				ROOT = { add_ideas = XFR_customs_agreement_idea }
+			}
+			if = { # Anarchy
+				limit = {
+					ROOT = { has_idea = anarchy_idea_max }
+					ROOT = { is_subject = yes }
+				}
+				FROM = { annex_country = { target = ROOT transfer_troops = no } }
+			}
+			if = {
+				limit = {
+					ROOT = { is_subject = yes }
+				}
+				XFR_puppet_nation = yes
+			}
 		}
 	}
 	on_subject_free = {

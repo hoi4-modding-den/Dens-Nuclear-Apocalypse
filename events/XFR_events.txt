@@ -628,7 +628,7 @@ country_event = { # Paris Conference: Choose Goal
         ai_chance = {
             base = 10
         }
-        set_global_flag = XFR_paris_con_puppet
+        set_global_flag = XFR_paris_demand_puppet
         add_power_balance_value = {
 			id = XFR_federalists_restaurationists_bop
 			value = 0.05
@@ -660,55 +660,25 @@ country_event = { # Paris Conference: Choose Goal
             }
         
     }
-    option = { # demand puppet and direct control of paris
-        name = XFR_events.17.b
-        ai_chance = {
-            base = 5
-        }
-        set_global_flag = XFR_paris_con_puppet
-        set_global_flag = XFR_paris_con_transfer
-        XPR = { country_event = { id = XFR_events.18 days = 1 } }
-        custom_effect_tooltip = if_they_accept_tt
-        effect_tooltip = { 16 = { transfer_state_to = ROOT add_core_of = ROOT } }
-        effect_tooltip = {
-            every_other_country = {
-                limit = {
-                    is_subject_of = ROOT
-                }
-                XFR = { 
-                       set_autonomy = {
-    			    	target = PREV
-    				    autonomous_state = autonomy_puppet
-    			    	end_wars = no
-    			    	end_civil_wars = no
-				    }
-                }
-            }
-                XFR = {
-		    	    set_autonomy = {
-    		          	target = XPR
-    		        	autonomous_state = autonomy_integrated_puppet
-    		    	    end_wars = no
-    		    	    end_civil_wars = no
-    		    	}
-	    	    }
-                
-            }
-    }
 
-    option = { # demand direct control of paris
-        name = XFR_events.17.c
+    option = { # demand annexation
+        name = XFR_events.17.b
         ai_chance = {
             base = 1
         }
-        set_global_flag = XFR_paris_con_transfer
+        set_global_flag = XFR_paris_demand_annex
         add_power_balance_value = {
 			id = XFR_federalists_restaurationists_bop
 			value = -0.05
 		}
         XPR = { country_event = { id = XFR_events.18 days = 1 } }
         custom_effect_tooltip = if_they_accept_tt
-        effect_tooltip = { 16 = { transfer_state_to = ROOT add_core_of = ROOT } }
+        effect_tooltip = { 
+            annex_country = {
+                target = XPR
+                transfer_troops = no
+            }
+        }
         
     }
 }
@@ -726,7 +696,7 @@ country_event = { # Paris Conference: Message for XPR
         ai_chance = {
             base = 2
             modifier = {
-                NOT = { has_global_flag = XFR_paris_con_transfer }
+                NOT = { has_global_flag = XFR_paris_demand_annex }
                 add = 1
             }
             modifier = {
@@ -748,13 +718,18 @@ country_event = { # Paris Conference: Message for XPR
         }
         if = {
             limit = {
-                has_global_flag = XFR_paris_con_transfer
+                has_global_flag = XFR_paris_demand_annex
             }
-            effect_tooltip = { 16 = { transfer_state_to = XFR add_core_of = XFR } }
+            effect_tooltip = { 
+                annex_country = {
+                    target = XPR
+                    transfer_troops = no
+                }
+        }
         }
         if = {
             limit = {
-                has_global_flag = XFR_paris_con_puppet
+                has_global_flag = XFR_paris_demand_puppet
             }
 	    	effect_tooltip = {
                 every_other_country = {
@@ -788,7 +763,7 @@ country_event = { # Paris Conference: Message for XPR
         ai_chance = {
             base = 2
             modifier = {
-                has_global_flag = XFR_paris_con_transfer
+                has_global_flag = XFR_paris_demand_annex
                 add = 5
             }
         }
@@ -811,16 +786,16 @@ country_event = { # Paris Conference: XPR accepts
         }
         if = {
             limit = {
-                has_global_flag = XFR_paris_con_transfer
+                has_global_flag = XFR_paris_demand_annex
             }
-            16 = {
-                transfer_state_to = ROOT 
-                add_core_of = ROOT
+            annex_country = {
+                target = XPR
+                transfer_troops = no
             }
         }
         if = {
             limit = {
-                has_global_flag = XFR_paris_con_puppet
+                has_global_flag = XFR_paris_demand_puppet
             }
             every_other_country = {
                 limit = {
@@ -864,8 +839,7 @@ country_event = { # Paris Conference: XPR rejects
         }
         create_wargoal = {
 			target = XPR
-			type = take_state_focus
-			generator = { 16 }
+			type = annex_everything
 		}
         add_war_support = 0.05
     }
@@ -1162,10 +1136,6 @@ country_event = { # Burgundy wants to integrate us into France
                 factor = 0
                 is_ally_with = XFR
             }
-        }
-        if = {
-            limit = { ROOT = { is_subject_of = FROM } }
-            FROM = { end_puppet = ROOT }
         }
         if = {
             limit = { ROOT = { is_in_faction_with = FROM } }
@@ -1563,6 +1533,16 @@ country_event = { # Coronation
         } 
         add_stability = 0.1
         swap_ruler_traits = { remove = XFR_herzog_von_burgund add = XFR_herzog_von_burgund2 }
+        hidden_effect = {
+            XFR_herzog_julius = {
+                swap_country_leader_traits = {
+    				remove = XFR_herzog_von_burgund
+    				add = XFR_herzog_von_burgund2
+    				ideology = XFR_frankish_fascism
+				}
+            }
+            
+        }
         set_character_name = {
 	        character = XFR_herzog_julius
 	        name = XFR_herzog_julius_name2
@@ -1835,7 +1815,7 @@ country_event = {
         add_political_power = 100
         add_popularity = {
 			ideology = democratic
-			popularity = 0.05
+			popularity = 0.15
 		}
     }
 }
@@ -1933,6 +1913,143 @@ country_event = {
                 modifier = XFR_rejected_bez_agreement
             }
         }
+    }
+}
+
+country_event = { # Invasion of XNE
+    id = XFR_events.49
+    title = XFR_events.49.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.49.desc
+    
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            declare_war_on = {
+                target = XNE
+                type = annex_everything
+            }
+        }
+    }
+
+    option = { 
+        name = XFR_events.49.a
+        ai_chance = {
+            base = 1
+        } 
+        effect_tooltip = {
+            declare_war_on = {
+                target = XNE
+                type = annex_everything
+            }
+        }
+        add_war_support = 0.1
+        hidden_effect = { load_oob = "XFR_invasion_XNE" }
+        custom_effect_tooltip = XFR_invasion_of_XNE_tt
+    }
+}
+
+country_event = { # DEPARTURE
+    id = XFR_events.50
+    title = XFR_events.50.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.50.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.50.a
+        ai_chance = {
+            base = 1
+        } 
+        add_stability = -0.25
+        XFR_regency_council = { promote_character = yes }
+    }
+}
+
+country_event = { # Purges complete
+    id = XFR_events.51
+    title = XFR_events.51.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.51.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.51.a
+        ai_chance = {
+            base = 1
+        } 
+        add_stability = 0.05
+        retire_ideology_leader = fascism
+        set_country_flag = XFR_guillaume_dead
+        set_party_name = {
+            ideology = fascism
+            long_name = XFR_neutrality_party_long
+            name = XFR_neutrality_party
+        }  
+        add_country_leader_role = {
+            character = XFR_herzog_julius
+            promote_leader = yes
+            country_leader = {
+               ideology = XFR_frankish_fascism
+               expire = "3000.1.1.1"
+               traits = { XFR_herzog_von_burgund }
+            }
+        }
+    }
+}
+
+country_event = { # INITIATION
+    id = XFR_events.52
+    title = XFR_events.52.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.52.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.52.a
+        ai_chance = {
+            base = 1
+        } 
+        add_tech_bonus = {
+			name = XFR_events.52.t
+			bonus = 0.5
+			uses = 1
+			category = nuclear
+		}
+        add_tech_bonus = {
+			name = XFR_events.52.t
+			bonus = 0.5
+			uses = 1
+			category = rocketry
+		}
+        add_tech_bonus = {
+			name = XFR_events.52.t
+			bonus = 0.5
+			uses = 1
+			category = cat_strategic_bomber
+		}
+    }
+}
+
+country_event = { # RETURN
+    id = XFR_events.53
+    title = XFR_events.53.t
+    picture = GFX_report_event_cat
+    desc = XFR_events.53.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.53.a
+        ai_chance = {
+            base = 1
+        } 
+        add_ruling_to_fas = yes
+        set_politics = { ruling_party = fascism elections_allowed = no }
     }
 }
 
@@ -2220,6 +2337,28 @@ news_event = { # Coronation
     
     option = {
         name = XFR_news_events.10.a
+    }
+
+}
+
+news_event = { # Proclamation of Francia
+    id = XFR_news_events.11
+    title = XFR_news_events.11.t
+    picture = GFX_news_event_german_speech
+    desc = XFR_news_events.11.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.11.a
+        trigger = { NOT = { tag = XFR } }
+    }
+    option = {
+        name = XFR_news_events.11.b
+        trigger = { tag = XFR }
     }
 
 }

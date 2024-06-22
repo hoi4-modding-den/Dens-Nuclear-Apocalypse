@@ -62,4 +62,10 @@ opinion_modifiers = {
 	XFR_declined_protection = {
 		value = -10
 	}
+	XFR_dennounced_our_authoritarianism = {
+		value = -50
+	}
+	XFR_dennounced_their_authoritarianism = {
+		value = -100
+	}
 }

@@ -79,10 +79,41 @@ leader_traits = {
 	XFR_herzog_von_burgund3 = {
 		random = no
 
-		political_power_factor = -0.15
+		political_power_factor = -0.1
 		war_support_factor = 0.1
 		offensive_war_stability_factor = 0.25
 		justify_war_goal_time = -0.25
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_herzog_von_burgund4 = {
+		random = no
+
+		political_power_factor = -0.05
+		war_support_factor = 0.25
+		offensive_war_stability_factor = 0.25
+		justify_war_goal_time = -0.25
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XFR_herzog_von_burgund5 = {
+		random = no
+
+		war_support_factor = 0.25
+		offensive_war_stability_factor = 0.25
+		justify_war_goal_time = -0.25
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
 		
 
 		ai_will_do = {
@@ -224,7 +255,7 @@ leader_traits = {
 		global_building_slots_factor = 0.1
 		industry_free_repair_factor = 0.15
 		production_speed_buildings_factor = 0.1
-		
+		trade_laws_cost_factor = -0.25
 
 		ai_will_do = {
 			factor = 1

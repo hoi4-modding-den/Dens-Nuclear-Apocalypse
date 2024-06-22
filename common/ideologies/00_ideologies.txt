@@ -234,6 +234,9 @@ ideologies = {
 			XFR_lotharingian_nationalism = {
 				can_be_randomly_selected = no
 			}
+			XFR_frankish_fascism = {
+				can_be_randomly_selected = no
+			}
 			XFR_corporate_capitalism = {
 				can_be_randomly_selected = no
 			}
@@ -308,6 +311,9 @@ ideologies = {
 			}
 
 			XFR_military_government = {
+				can_be_randomly_selected = no
+			}
+			XFR_frankish_monarchism = {
 				can_be_randomly_selected = no
 			}
 			XFR_reichsregierung_neutral = {

@@ -116,6 +116,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = -0.1
 			}
+			retire_ideology_leader = fascism
 			remove_ideas = XFR_fascist_tensions
 			add_timed_idea = {
 				idea = XFR_fascism_banned
@@ -195,7 +196,15 @@ focus_tree = {
 				ideology = neutrality
 				popularity = -0.1
 			}
+			retire_ideology_leader = neutrality
 			remove_ideas = XFR_herzogs_speeches
+			hidden_effect = {
+				set_party_name = {
+            	ideology = neutrality
+            		long_name = "Neue Herzogspartei (New Duke's Party)"
+            		name = "Neue Herzogspartei"
+        		} 
+			}
 		}
 	}
 
@@ -527,7 +536,10 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			set_rule = {
-    			can_create_factions = yes
+				can_create_factions = yes
+			}
+			set_party_rule = {
+    			ideology = democratic
 				can_puppet = yes
 			}
 			if = {
@@ -549,7 +561,7 @@ focus_tree = {
 		id = XFR_economic_cooperation
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = XFR_european_ambitions }
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
@@ -580,7 +592,7 @@ focus_tree = {
 		icon = GFX_focus_eng_the_sun_never_sets
 		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = XFR_european_ambitions
 
@@ -687,7 +699,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_england_focus }
 		#mutually_exclusive = { focus = XFR_across_the_channel focus = XFR_intervention_in_england }
 		x = 2
-		y = 1
+		y = 2
 		relative_position_id = XFR_england_focus
 
 		available = {
@@ -744,7 +756,10 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_war_with = XNE
+			OR = {
+				has_war_with = XNE
+				XNE = { is_subject_of = ROOT }
+			}
 		}
 
 		cost = 10
@@ -767,7 +782,7 @@ focus_tree = {
 		icon = GFX_focus_SWI_swiss_guiding_principles
 		prerequisite = { focus = XFR_european_ambitions }
 		mutually_exclusive = { focus = XFR_rescue_the_swiss }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
@@ -957,7 +972,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_swiss_burgundian_alliance focus = XFR_protect_switzerland }
 		#mutually_exclusive = {  }
 		x = -1
-		y = 2
+		y = 4
 		relative_position_id = XFR_guarantee_swiss_freedom
 
 		available = {
@@ -999,8 +1014,8 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_laagland
 		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = -9
-		y = 3
+		x = -7
+		y = 4
 		relative_position_id = XFR_european_ambitions
 
 		available = {
@@ -1038,7 +1053,7 @@ focus_tree = {
 		icon = GFX_focus_XFR_iberian_relations
 		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = -6
+		x = -5
 		y = 2
 		relative_position_id = XFR_european_ambitions
 
@@ -1170,7 +1185,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_reach_out_to_laagland }
 		#mutually_exclusive = { focus = XFR_little_entente }
 		x = -1
-		y = 3
+		y = 4
 		relative_position_id = XFR_guarantee_swiss_freedom
 
 		available = {
@@ -1374,7 +1389,7 @@ focus_tree = {
 			is_subject = no
 			is_faction_leader = yes
 			any_other_country = {
-				NOT = { has_government = democratic }
+				has_elections = no
 				NOT = { is_in_faction_with = ROOT }
 				hidden_trigger = {
 					NOT = { 
@@ -1396,7 +1411,7 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-					NOT = { has_government = democratic }
+					has_elections = no
 					NOT = { is_in_faction_with = ROOT }
 					NOT = {
 						OR = {
@@ -1407,11 +1422,11 @@ focus_tree = {
 				}
 				add_opinion_modifier = {
 					target = XFR
-					modifier = XFR_hostility
+					modifier = XFR_dennounced_our_authoritarianism
 				}
 				reverse_add_opinion_modifier = {
 					target = XFR
-					modifier = XFR_hostility
+					modifier = XFR_dennounced_their_authoritarianism
 				}
 			}
 			hidden_effect = {
@@ -1549,13 +1564,15 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_border
 		prerequisite = { focus = XFR_european_ambitions }
 		prerequisite = { focus = XFR_lessen_internal_borders }
+		prerequisite = { focus = XFR_the_dream_of_france }
 		#mutually_exclusive = { focus =  }
 		x = 8
-		y = 1
+		y = 3
 		relative_position_id = XFR_european_ambitions
 
 		available = {
-			has_completed_focus = XFR_the_dream_of_france
+			has_government = democratic
+			is_subject = no
 		}
 
 		bypass = {
@@ -1592,7 +1609,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_french_reunification }
 		#mutually_exclusive = { focus =  }
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = XFR_french_reunification
 
 		available = {
@@ -1608,7 +1625,7 @@ focus_tree = {
 		bypass = {
 			XAQ = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 					NOT = { has_government = fascism }
@@ -1643,9 +1660,8 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
-			16 = {
-				is_owned_and_controlled_by = XPR
-			}
+			is_neighbor_of = XPR
+			NOT = { is_ally_with = XPR }
 			is_subject = no
 		}
 
@@ -1685,7 +1701,7 @@ focus_tree = {
 			}
 			else = {
 				country_event = { id = XFR_events.17 }
-				custom_effect_tooltip = XFR_paris_con_acceptance_triggers_tt
+				custom_effect_tooltip = XFR_ultimatum_to_alcase_lorraine_tt
 			}
 		}
 	}
@@ -1712,14 +1728,14 @@ focus_tree = {
 		bypass = {
 			XLF = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
 			}
 			XBR = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -1768,8 +1784,8 @@ focus_tree = {
 		id = XFR_alcase_lorraine_diplomacy
 		icon = GFX_focus_generic_befriend_alsace
 		prerequisite = { focus = XFR_european_ambitions }
-		x = -4
-		y = 1
+		x = -3
+		y = -1
 		relative_position_id = XFR_french_reunification
 
 		available = {
@@ -1780,7 +1796,7 @@ focus_tree = {
 				OR = { 
 					has_government = fascism 
 					has_war_with = ROOT
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					exists = no
 				}		
 			}
@@ -1806,7 +1822,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = XFR_alcase_lorraine_diplomacy }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = XFR_alcase_lorraine_diplomacy
 
 		available = {
@@ -1866,7 +1882,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_ultimatum_to_alcase_lorraine }
 		#mutually_exclusive = { focus =  }
 		x = -1
-		y = 4
+		y = 3
 		relative_position_id = XFR_french_reunification
 
 		available = {
@@ -1886,15 +1902,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			custom_effect_tooltip = XFR_invitation_tt
+			every_state = {
+				limit = { owner = { is_subject_of = ROOT } }
+				transfer_state_to = ROOT
+			}
+			custom_effect_tooltip = XFR_invitation_tt2
 			every_other_country = {
 				limit = {
 					any_core_state = {
 						DEN_is_french_state = yes
 					}
 					NOT = { has_war_with = ROOT }
+					NOT = { is_subject_of = ROOT }
 					OR = {
 						has_government = democratic
-						is_ally_with = ROOT
+						is_in_faction_with = ROOT
 					}
 				}
 				country_event = { id = XFR_events.27 days = 1 }
@@ -2016,7 +2038,6 @@ focus_tree = {
 		}
 		search_filters = {  }
 		completion_reward = {
-			capital_scope = { }
 			add_ideas = XFR_economic_centre
 		}
 	}
@@ -2027,7 +2048,7 @@ focus_tree = {
 		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = XFR_democracy_prevails }
 		#mutually_exclusive = { focus =  }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = XFR_democracy_prevails
 
@@ -2522,7 +2543,7 @@ focus_tree = {
 				any_other_country = {
 					any_core_state = { DEN_is_french_state = yes }
 					NOT = { has_government = democratic }
-					NOT = { is_ally_with = ROOT }
+					NOT = { is_subject_of = ROOT }
 				}
 			}
 		}
@@ -2920,7 +2941,7 @@ focus_tree = {
 		id = XFR_restore_internationalism
 		icon = GFX_focus_generic_league_of_nations
 		prerequisite = { focus = XFR_the_dream_of_france }
-		mutually_exclusive = { focus = XFR_return_of_the_pope }
+		#mutually_exclusive = { focus = XFR_return_of_the_pope }
 		x = 1
 		y = 1
 		relative_position_id = XFR_the_dream_of_france
@@ -2944,7 +2965,7 @@ focus_tree = {
 		id = XFR_return_of_the_pope
 		icon = GFX_focus_generic_catholic_dominion
 		prerequisite = { focus = XFR_the_dream_of_france }
-		mutually_exclusive = { focus = XFR_restore_internationalism }
+		#mutually_exclusive = { focus = XFR_restore_internationalism }
 		x = -1
 		y = 1
 		relative_position_id = XFR_the_dream_of_france
@@ -3057,11 +3078,12 @@ focus_tree = {
 		icon = GFX_focus_generic_provoke_border_clashes
 		prerequisite = { focus = XFR_european_ambitions }
 		#mutually_exclusive = { focus =  }
-		x = -3
-		y = 0
+		x = -2
+		y = -2
 		relative_position_id = XFR_french_reunification
 
 		available = {
+			has_government = democratic
 			has_army_manpower = {
     			size > 10000
 			}
@@ -3126,6 +3148,7 @@ focus_tree = {
 		relative_position_id = XFR_rhone_expedition
 
 		available = {
+			has_government = democratic
 			is_neighbor_of = XNF
 			NOT = { is_ally_with = XNF }
 			is_subject = no
@@ -3134,7 +3157,7 @@ focus_tree = {
 		bypass = {
 			XNF = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -3382,7 +3405,7 @@ focus_tree = {
     			size = 0.3
     			capital = 18
     			states = {
-    			    18 17 974
+    			    18
     			}
 				keep_all_characters = yes
 				PREV = {
@@ -3617,6 +3640,9 @@ focus_tree = {
 				division_template = "Lotharingian Militia"
 				disband = no
 			}
+			hidden_effect = {
+				country_event = { id = XFR_events.51 days = 7 }
+			}
 		}
 	}
 
@@ -3694,6 +3720,10 @@ focus_tree = {
 				}
 			}
 			country_event = { id = XFR_events.39 }
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
 		}
 	}
 
@@ -3721,6 +3751,13 @@ focus_tree = {
 			custom_effect_tooltip = XFR_regain_lost_titles_tt
 			hidden_effect = {
 				swap_ruler_traits = { remove = XFR_herzog_von_burgund2 add = XFR_herzog_von_burgund3 }
+				XFR_herzog_julius = {
+					swap_country_leader_traits = {
+    				remove = XFR_herzog_von_burgund2
+    				add = XFR_herzog_von_burgund3
+    				ideology = XFR_frankish_fascism
+				}
+				}
 			}
 		}
 	}
@@ -3766,7 +3803,7 @@ focus_tree = {
 			has_political_power > 50
 		}
 
-		cost = 2
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -3866,7 +3903,7 @@ focus_tree = {
 			is_subject = no
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -3906,7 +3943,7 @@ focus_tree = {
 			is_subject = no
 		}
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -3922,7 +3959,9 @@ focus_tree = {
 				add_idea = XFR_fraenkischer_bund2
 			}
 			set_cosmetic_tag = XFR_FRANCIA
+			custom_effect_tooltip = XFR_regain_lost_titles_tt
 			hidden_effect = {
+				news_event = { id = XFR_news_events.11 days = 1 }
 				add_named_threat = {
 					threat = 5
 					name = XFR_announce_francian_ambitions
@@ -3931,6 +3970,15 @@ focus_tree = {
 					limit = { has_cosmetic_tag = XFR_puppet }
 					set_cosmetic_tag = XFR_puppet_FRANCIA
 				}
+				swap_ruler_traits = { remove = XFR_herzog_von_burgund3 add = XFR_herzog_von_burgund4 }
+				XFR_herzog_julius = {
+					swap_country_leader_traits = {
+    				remove = XFR_herzog_von_burgund3
+    				add = XFR_herzog_von_burgund4
+    				ideology =  XFR_frankish_fascism
+				}
+				}
+				
 			}
 		}
 	}
@@ -3977,19 +4025,17 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
 		}
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			add_war_support = 0.1
+			custom_effect_tooltip = XFR_march_towards_victory_tt
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
 			}
@@ -4015,8 +4061,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			add_ideas = XFR_new_crusaders_idea
 		}
 	}
 
@@ -4039,8 +4086,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			add_ideas = XFR_order_of_lorraine_idea
 		}
 	}
 
@@ -4122,6 +4170,10 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XFR_fraenkischer_bund2
+				add_idea = XFR_fraenkischer_bund3
+			}
 		}
 	}
 
@@ -4147,6 +4199,18 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
+			custom_effect_tooltip = XFR_regain_lost_titles_tt
+			hidden_effect = {
+				swap_ruler_traits = { remove = XFR_herzog_von_burgund4 add = XFR_herzog_von_burgund5 }
+				XFR_herzog_julius = {
+					swap_country_leader_traits = {
+    				remove = XFR_herzog_von_burgund4
+    				add = XFR_herzog_von_burgund5
+    				ideology = XFR_frankish_fascism
+				}
+				}
+				
+			}
 		}
 	}
 
@@ -4172,6 +4236,10 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XFR_fraenkischer_bund3
+				add_idea = XFR_insanity
+			}
 		}
 	}
 
@@ -4197,7 +4265,7 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			XFR_regency_council = { promote_character = yes }
+			country_event = { id = XFR_events.50 }
 		}
 	}
 
@@ -4222,6 +4290,7 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
+			country_event = { id = XFR_events.52 }
 		}
 	}
 
@@ -4246,11 +4315,7 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			if = {
-				limit = { has_government = neutrality }
-				add_ruling_to_fas = yes
-			}
-			set_politics = { ruling_party = fascism elections_allowed = no }
+			country_event = { id = XFR_events.53 }
 		}
 	}
 
@@ -4294,7 +4359,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_tno_reference
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_XFR_the_new_order
 		prerequisite = { focus = XFR_bigger_dreams }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -4314,6 +4379,25 @@ focus_tree = {
 		search_filters = { }
 		completion_reward = {
 			custom_effect_tooltip = XFR_tno_reference_tt
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						NOT = { is_ally_with = ROOT }
+						NOT = {
+							OR = {
+								original_tag = LIB
+								original_tag = XFW
+							}
+						}
+					}
+					ROOT = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -4359,19 +4443,17 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
 		}
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 150
+			custom_effect_tooltip = XFR_follow_the_promise_tt
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
 			}
@@ -4390,6 +4472,13 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			XNE = {
+				NOT = { is_ally_with = ROOT }
+				exists = yes
+			}
+			any_controlled_state = {
+				is_coastal = yes
+			}
 		}
 
 		cost = 5
@@ -4397,7 +4486,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
+		will_lead_to_war_with = XNE
 		completion_reward = {
 			if = {
 				limit = { NOT = { has_tech = radio } }
@@ -4406,6 +4496,7 @@ focus_tree = {
 					popup = no
 				}
 			}
+			country_event = { id = XFR_events.49 }
 		}
 	}
 
@@ -4414,7 +4505,7 @@ focus_tree = {
 		icon = GFX_focus_FIN_oy_alkoholiliike
 		prerequisite = { focus = XFR_follow_the_promise }
 		#mutually_exclusive = { focus =  }
-		x = 3
+		x = 2
 		y = 3
 		relative_position_id = XFR_follow_the_promise
 
@@ -4443,7 +4534,7 @@ focus_tree = {
 		icon = GFX_focus_generic_court
 		prerequisite = { focus = XFR_follow_the_promise }
 		#mutually_exclusive = { focus =  }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = XFR_follow_the_promise
 
@@ -4459,32 +4550,10 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = XFR_privileges_for_burgundians
-		icon = GFX_focus_CHL_a_french_alliance
-		prerequisite = { focus = XFR_follow_the_promise }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 1
-		relative_position_id = XFR_follow_the_promise
-
-		available = {
-			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
-			is_subject = no
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { }
-		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = XFR_fraenkischer_bund2
+				add_idea = XFR_fraenkischer_bund_law
+			}
 		}
 	}
 
@@ -4493,7 +4562,7 @@ focus_tree = {
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = XFR_follow_the_promise }
 		#mutually_exclusive = { focus =  }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = XFR_follow_the_promise
 
@@ -4509,14 +4578,26 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.5
+			}
+			if = {
+				limit = {
+					has_completed_focus = XFR_allow_nationalist_militias
+				}
+				delete_unit_template_and_units = {
+					division_template = "Lotharingian Militia"
+					disband = no
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = XFR_imperial_connections
-		icon = GFX_focus_CHL_invite_french_aristocracy
-		prerequisite = { focus = XFR_privileges_for_burgundians }
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = XFR_undermine_the_fascists }
 		prerequisite = { focus = XFR_the_new_law }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -4533,16 +4614,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			
+			add_manpower = 1000000
 		}
 	}
 
 	focus = {
 		id = XFR_social_freedom
 		icon = GFX_focus_ARG_defense_and_democracy
-		prerequisite = { focus = XFR_privileges_for_burgundians }
+		prerequisite = { focus = XFR_the_new_law }
 		prerequisite = { focus = XFR_undermine_the_fascists }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -4559,15 +4640,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = XFR_fraenkischer_bund_law
+				add_idea = XFR_fraenkischer_bund_liberty
+			}
 		}
 	}
 
 	focus = {
-		id = XFR_a_free_kaiserreich
-		icon = GFX_focus_ger_revive_kaiserreich
+		id = XFR_nukes_are_the_best
+		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = XFR_imperial_connections }
 		prerequisite = { focus = XFR_social_freedom }
 		#mutually_exclusive = { focus =  }
@@ -4578,6 +4663,7 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			has_tech = atomic_research
 		}
 
 		cost = 5
@@ -4585,16 +4671,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			add_ideas = XFR_nuclear_knowledge
+			add_tech_bonus = {
+				name = XFR_nukes_are_the_best
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 
 	focus = {
-		id = XFR_the_francian_council
-		icon = GFX_focus_BRA_tribunal
-		prerequisite = { focus = XFR_a_free_kaiserreich }
+		id = XFR_strengthen_national_security
+		icon = GFX_focus_generic_national_security
+		prerequisite = { focus = XFR_nukes_are_the_best }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 4
@@ -4612,14 +4704,28 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					remove_idea = XFR_fraenkischer_bund_liberty
+					add_idea = XFR_fraenkischer_bund_security
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = XFR_fraenkischer_bund_liberty
+					add_idea = XFR_fraenkischer_bund_security_no_lar
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = XFR_the_francian_economy
 		icon = GFX_focus_SWE_hygienic_housing
-		prerequisite = { focus = XFR_the_francian_council }
+		prerequisite = { focus = XFR_strengthen_national_security }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 5
@@ -4637,7 +4743,21 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					remove_idea = XFR_fraenkischer_bund_security
+					add_idea = XFR_fraenkischer_bund_final
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = XFR_fraenkischer_bund_security_no_lar
+					add_idea = XFR_fraenkischer_bund_final_no_lar
+				}
+			}
 		}
 	}
 
@@ -4706,6 +4826,16 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			any_controlled_state = {
+				custom_trigger_tooltip = {
+					tooltip = XFR_exploit_the_territories_tt
+					NOT = {
+						XFR_is_west_francian_state = yes
+						XFR_is_middle_francian_state = yes
+						XFR_is_east_francian_state = yes
+					}
+				}
+			}
 		}
 
 		cost = 5
@@ -4732,6 +4862,16 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			any_controlled_state = {
+				custom_trigger_tooltip = {
+					tooltip = XFR_exploit_the_territories_tt
+					NOT = {
+						XFR_is_west_francian_state = yes
+						XFR_is_middle_francian_state = yes
+						XFR_is_east_francian_state = yes
+					}
+				}
+			}
 		}
 
 		cost = 5
@@ -4741,80 +4881,13 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
-			hidden_effect = {
-				every_owned_state = {
-				limit = { 
-					NOT = { is_core_of = ROOT }
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-    						resource = oil
-    						amount > 0
-						}
-					}
-					add_resource = {
-					    type = oil
-					    amount = 2
-					}
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-    						resource = aluminium
-    						amount > 0
-						}
-					}
-					add_resource = {
-					    type = aluminium
-					    amount = 2
-					}
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-    						resource = tungsten
-    						amount > 0
-						}
-					}
-					add_resource = {
-					    type = tungsten
-					    amount = 2
-					}
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-    						resource = steel
-    						amount > 0
-						}
-					}
-					add_resource = {
-					    type = steel
-					    amount = 2
-					}
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-    						resource = chromium
-    						amount > 0
-						}
-					}
-					add_resource = {
-					    type = chromium
-					    amount = 2
-					}
-				}
-			}
-			}
-			custom_effect_tooltip = XFR_exploit_the_territories_tt
+			add_ideas = XFR_territorial_exploitation_idea
 		}
 	}
 
 	focus = {
 		id = XFR_restore_the_francian_empire
-		icon = GFX_focus_generic_spread_fascism
+		icon = GFX_focus_XFR_francia_partitioned
 		#mutually_exclusive = { focus =  }
 		x = 16
 		y = 3
@@ -4909,7 +4982,7 @@ focus_tree = {
 		bypass = {
 			XPR = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -4951,7 +5024,7 @@ focus_tree = {
 		bypass = {
 			XAQ = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -4992,7 +5065,7 @@ focus_tree = {
 		bypass = {
 			XLF = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5033,7 +5106,7 @@ focus_tree = {
 		bypass = {
 			XPY = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5067,10 +5140,15 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
+		}
+
+		bypass = {
+			XBC = { exists = no }
+			XAR = { exists = no }
+			XAD = { exists = no }
+			XPY = { exists = no }
+			XHP = { exists = no }
+			XGL = { exists = no }
 		}
 
 		cost = 5
@@ -5080,12 +5158,36 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
+			custom_effect_tooltip = XFR_the_spanish_wall_tt
+			every_controlled_state = {
+				limit = {
+					any_neighbor_state = {
+						OR = {
+							owner = { original_tag = XBC }
+							owner = { original_tag = XAR }
+							owner = { original_tag = XAD }
+							owner = { original_tag = XPY }
+							owner = { original_tag = XHP }
+							owner = { original_tag = XGL }
+						}
+					}
+				}
+				add_building_construction = {
+    				type = bunker
+    				level = 5
+    				instant_build = yes
+    				province = {
+     				    all_provinces = yes
+    					limit_to_border = yes
+    				}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = XFR_west_francia_restored
-		icon = GFX_focus_generic_spread_fascism
+		icon = GFX_focus_XFR_west_francia_restored
 		prerequisite = { focus = XFR_march_to_paris }
 		prerequisite = { focus = XFR_demand_the_pyrenees }
 		prerequisite = { focus = XFR_storm_the_beaches }
@@ -5113,6 +5215,15 @@ focus_tree = {
 					NOT = { is_core_of = ROOT }
 				}
 				add_core_of = ROOT
+				hidden_effect = {
+					every_state = {
+						limit = { 
+							XFR_is_west_francian_state = yes
+							NOT = { is_owned_by = ROOT }
+						}
+						transfer_state_to = ROOT
+					}
+				}
 			}
 		}
 	}
@@ -5139,7 +5250,7 @@ focus_tree = {
 			14 = {
 				is_owned_by = ROOT
 				owner = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 				}
 			}
 		}
@@ -5265,7 +5376,7 @@ focus_tree = {
 		bypass = {
 			XSS = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5352,7 +5463,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_secure_northern_italy
-		icon = GFX_focus_attack_italy
+		icon = GFX_focus_XFR_strike_north_italy
 		prerequisite = { focus = XFR_invade_switzerland focus = XFR_rhone_expedition2 }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -5374,14 +5485,14 @@ focus_tree = {
 		bypass = {
 			XLV = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
 			}
 			XLA = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5439,7 +5550,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_northern_industry
 		prerequisite = { focus = XFR_secure_northern_italy }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = XFR_secure_northern_italy
 
@@ -5489,6 +5600,47 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XFR_subjugate_south_italy
+		icon = GFX_focus_XFR_attack_south_italy
+		prerequisite = { focus = XFR_secure_northern_italy }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_secure_northern_italy
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
+			is_neighbor_of = XIT
+			NOT = { is_ally_with = XIT }
+		}
+
+		bypass = {
+			XIT = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		will_lead_to_war_with = XIT
+		completion_reward = {
+			create_wargoal = {
+				target = XIT
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
 		id = XFR_no_more_napoleons
 		icon = GFX_focus_attack_france
 		prerequisite = { focus = XFR_rhone_expedition2 }
@@ -5507,7 +5659,7 @@ focus_tree = {
 		bypass = {
 			XNF = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5548,7 +5700,7 @@ focus_tree = {
 		bypass = {
 			XLX = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5589,7 +5741,7 @@ focus_tree = {
 		bypass = {
 			XNL = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5623,10 +5775,6 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
 		}
 
 		cost = 5
@@ -5636,12 +5784,30 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = XNL
+					free_building_slots = {
+    					building = industrial_complex
+    					size > 2
+    					include_locked = no
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = XFR_economic_centre
 		}
 	}
 
 	focus = {
 		id = XFR_middle_francia_restored
-		icon = GFX_focus_generic_spread_fascism
+		icon = GFX_focus_XFR_lotharingia_restored
 		prerequisite = { focus = XFR_secure_northern_italy }
 		prerequisite = { focus = XFR_no_more_napoleons }
 		prerequisite = { focus = XFR_retake_the_lowlands }
@@ -5669,6 +5835,15 @@ focus_tree = {
 					NOT = { is_core_of = ROOT }
 				}
 				add_core_of = ROOT
+				hidden_effect = {
+					every_state = {
+						limit = { 
+							XFR_is_west_francian_state = yes
+							NOT = { is_owned_by = ROOT }
+						}
+						transfer_state_to = ROOT
+					}
+				}
 			}
 		}
 	}
@@ -5731,7 +5906,7 @@ focus_tree = {
 		bypass = {
 			XAL = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5777,7 +5952,7 @@ focus_tree = {
 		bypass = {
 			XRP = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5819,7 +5994,7 @@ focus_tree = {
 		bypass = {
 			XAP = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5860,7 +6035,7 @@ focus_tree = {
 		bypass = {
 			XSH = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5906,14 +6081,14 @@ focus_tree = {
 		bypass = {
 			XOO = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
 			}
 			XLH = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -5985,7 +6160,7 @@ focus_tree = {
 		bypass = {
 			XTI = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -6023,10 +6198,6 @@ focus_tree = {
 				is_owned_by = ROOT
 				is_fully_controlled_by = ROOT
 			}
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
 		}
 
 		cost = 5
@@ -6039,7 +6210,7 @@ focus_tree = {
 			4 = { add_core_of = ROOT }
 			add_victory_points = {
 				province = 11666
-				value = 10
+				value = 20
 			}
 			set_province_name = { id = 11666 name = "Wien" }
 			4 = {
@@ -6051,7 +6222,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_east_francia_restored
-		icon = GFX_focus_generic_spread_fascism
+		icon = GFX_focus_XFR_east_francia_restored
 		prerequisite = { focus = XFR_hamburg }
 		prerequisite = { focus = XFR_party_in_vienna }
 		#mutually_exclusive = { focus =  }
@@ -6077,14 +6248,35 @@ focus_tree = {
 					XFR_is_east_francian_state = yes
 					NOT = { is_core_of = ROOT }
 				}
-				add_claim_by = ROOT
+				add_core_of = ROOT
+				hidden_effect = {
+					every_state = {
+						limit = { 
+							XFR_is_west_francian_state = yes
+							NOT = { is_owned_by = ROOT }
+						}
+						transfer_state_to = ROOT
+					}
+				}
 			}
 		}
 	}
 
 	focus = {
 		id = XFR_all_hail_kaiser_julius
-		icon = GFX_focus_generic_spread_fascism
+		dynamic = yes
+		icon = {
+			trigger = {
+				has_completed_focus = XFR_march_towards_victory
+			}
+			value = GFX_focus_XFR_francia_restored_esoteric
+		}
+		icon = {
+			trigger = {
+				NOT = { has_completed_focus = XFR_march_towards_victory }
+			}
+			value = GFX_focus_XFR_francia_restored
+		}
 		prerequisite = { focus = XFR_west_francia_restored }
 		prerequisite = { focus = XFR_middle_francia_restored }
 		prerequisite = { focus = XFR_east_francia_restored }
@@ -6099,10 +6291,6 @@ focus_tree = {
 			XFR_controls_west_francian_states = yes
 			XFR_controls_middle_francian_states = yes
 			XFR_controls_east_francian_states = yes
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
 		}
 
 		cost = 5
@@ -6112,6 +6300,7 @@ focus_tree = {
 		}
 		search_filters = { }
 		completion_reward = {
+			set_cosmetic_tag = XFR_FRANICA_final_form
 		}
 	}
 
@@ -6134,7 +6323,7 @@ focus_tree = {
 		bypass = {
 			XGE = {
 				OR = {
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 					exists = no
 				}
@@ -6199,7 +6388,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6449,7 +6638,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			if = {
-				limit = { NOT = { has_government = fascism } }
+				limit = { has_government = democratic }
 				hidden_effect = { country_event = { id = XFR_events.21 days = 30 } }
 			}
 			add_ideas = XFR_living_standards
@@ -6510,7 +6699,7 @@ focus_tree = {
 		available = {
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6584,7 +6773,7 @@ focus_tree = {
 		available = {
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6635,6 +6824,8 @@ focus_tree = {
 						is_ally_with = ROOT
 						has_government = ROOT
 					}
+					NOT = { original_tag = LIB }
+					NOT = { original_tag = XFW }
 				}
 				add_to_tech_sharing_group = XFR_tech_sharing
 			}
@@ -6741,7 +6932,7 @@ focus_tree = {
 		available = {
 		}
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -6857,7 +7048,7 @@ focus_tree = {
 			
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6904,7 +7095,7 @@ focus_tree = {
 			has_country_flag = XFR_situation_stabilised
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6938,10 +7129,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
-			hidden_effect = {
-				load_oob = "XFR_motorised"
-			}
-			custom_effect_tooltip = XFR_motorise_the_army_tt
 			army_experience = 25
 			add_tech_bonus = {
 				name = XFR_motorise_the_army
@@ -6964,7 +7151,7 @@ focus_tree = {
 		available = {
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -7004,7 +7191,7 @@ focus_tree = {
 		available = {
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -7069,7 +7256,7 @@ focus_tree = {
 		available = {
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -7251,7 +7438,6 @@ focus_tree = {
 
 	focus = {
 		id = XFR_combined_arms
-		dynamic = yes
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = XFR_rolling_metal focus = XFR_raining_fire }
 		#mutually_exclusive = { focus =  }
@@ -7309,7 +7495,7 @@ focus_tree = {
 		available = {
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -7457,7 +7643,7 @@ focus_tree = {
 			has_country_flag = XFR_situation_stabilised
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -7765,7 +7951,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -7895,7 +8081,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -8003,7 +8189,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 20
+		cost = 14
 
 		ai_will_do = {
 			factor = 1

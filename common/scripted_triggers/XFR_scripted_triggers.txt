@@ -7,36 +7,36 @@ XFR_no_economic_membership = {
 }
 
 DEN_controls_french_states = {
-	controls_state = 1
-	controls_state = 851
-	controls_state = 735
-	controls_state = 21
-	controls_state = 32
-	controls_state = 20
-	controls_state = 22
-	controls_state = 26
-	controls_state = 31
-	controls_state = 806
-	controls_state = 19
-	controls_state = 25
-	controls_state = 33
-	controls_state = 23
-	controls_state = 27
-	controls_state = 17
-	controls_state = 28
-	controls_state = 18
-	controls_state = 24
-	controls_state = 785
-	controls_state = 29
-	controls_state = 30
-	controls_state = 15
-	controls_state = 14
-	controls_state = 973
-	controls_state = 974
-	controls_state = 975
-	controls_state = 976
-	controls_state = 16
-	controls_state = 985
+	1 = { owns_or_subject_of = yes }
+	851 = { owns_or_subject_of = yes }
+	735 = { owns_or_subject_of = yes }
+	21 = { owns_or_subject_of = yes }
+	32 = { owns_or_subject_of = yes }
+	20 = { owns_or_subject_of = yes }
+	22 = { owns_or_subject_of = yes }
+	26 = { owns_or_subject_of = yes }
+	31 = { owns_or_subject_of = yes }
+	806 = { owns_or_subject_of = yes }
+	19 = { owns_or_subject_of = yes }
+	25 = { owns_or_subject_of = yes }
+	33 = { owns_or_subject_of = yes }
+	23 = { owns_or_subject_of = yes }
+	27 = { owns_or_subject_of = yes }
+	17 = { owns_or_subject_of = yes }
+	28 = { owns_or_subject_of = yes }
+	18 = { owns_or_subject_of = yes }
+	24 = { owns_or_subject_of = yes }
+	785 = { owns_or_subject_of = yes }
+	29 = { owns_or_subject_of = yes }
+	30 = { owns_or_subject_of = yes }
+	15 = { owns_or_subject_of = yes }
+	14 = { owns_or_subject_of = yes }
+	973 = { owns_or_subject_of = yes }
+	974 = { owns_or_subject_of = yes }
+	975 = { owns_or_subject_of = yes }
+	976 = { owns_or_subject_of = yes }
+	16 = { owns_or_subject_of = yes }
+	985 = { owns_or_subject_of = yes }
 }
 
 XFR_is_west_francian_state = {
@@ -44,6 +44,7 @@ XFR_is_west_francian_state = {
 		state = 15
 		state = 16
 		state = 19
+		state = 20
 		state = 22
 		state = 23
 		state = 24
@@ -65,24 +66,25 @@ XFR_is_west_francian_state = {
 XFR_controls_west_francian_states = {
 	custom_trigger_tooltip = {
 		tooltip = XFR_controls_west_francian_states_tt
-		controls_state = 15
-		controls_state = 16
-		controls_state = 19
-		controls_state = 22
-		controls_state = 23
-		controls_state = 24
-		controls_state = 25
-		controls_state = 26
-		controls_state = 27
-		controls_state = 29
-		controls_state = 30
-		controls_state = 31
-		controls_state = 33	
-		controls_state = 165
-		controls_state = 785
-		controls_state = 806
-		controls_state = 974
-		controls_state = 985
+		15 = { owns_or_subject_of = yes }
+		16 = { owns_or_subject_of = yes }
+		19 = { owns_or_subject_of = yes }
+		20 = { owns_or_subject_of = yes }
+		22 = { owns_or_subject_of = yes }
+		23 = { owns_or_subject_of = yes }
+		24 = { owns_or_subject_of = yes }
+		25 = { owns_or_subject_of = yes }
+		26 = { owns_or_subject_of = yes }
+		27 = { owns_or_subject_of = yes }
+		29 = { owns_or_subject_of = yes }
+		30 = { owns_or_subject_of = yes }
+		31 = { owns_or_subject_of = yes }
+		33 = { owns_or_subject_of = yes }
+		165 = { owns_or_subject_of = yes }
+		785 = { owns_or_subject_of = yes }
+		806 = { owns_or_subject_of = yes }
+		974 = { owns_or_subject_of = yes }
+		985 = { owns_or_subject_of = yes }
 	}
 }
 
@@ -96,7 +98,6 @@ XFR_is_middle_francian_state = {
 		state = 8
 		state = 17
 		state = 18
-		state = 20
 		state = 21
 		state = 28
 		state = 32
@@ -132,44 +133,43 @@ XFR_is_middle_francian_state = {
 XFR_controls_middle_francian_states = {
 	custom_trigger_tooltip = {
 		tooltip = XFR_controls_middle_francian_states_tt
-		controls_state = 1
-		controls_state = 2
-		controls_state = 3
-		controls_state = 6
-		controls_state = 7
-		controls_state = 8
-		controls_state = 17
-		controls_state = 18
-		controls_state = 20
-		controls_state = 21
-		controls_state = 28
-		controls_state = 32
-		controls_state = 34
-		controls_state = 35
-		controls_state = 36
-		controls_state = 51
-		controls_state = 151
-		controls_state = 157
-		controls_state = 158
-		controls_state = 159
-		controls_state = 160
-		controls_state = 161
-		controls_state = 162
-		controls_state = 735
-		controls_state = 736
-		controls_state = 845
-		controls_state = 846
-		controls_state = 850
-		controls_state = 851
-		controls_state = 847
-		controls_state = 973
-		controls_state = 975
-		controls_state = 976
-		controls_state = 978
-		controls_state = 979
-		controls_state = 980
-		controls_state = 981
-		controls_state = 982
+		1 = { owns_or_subject_of = yes }
+		2 = { owns_or_subject_of = yes }
+		3 = { owns_or_subject_of = yes }
+		6 = { owns_or_subject_of = yes }
+		7 = { owns_or_subject_of = yes }
+		8 = { owns_or_subject_of = yes }
+		17 = { owns_or_subject_of = yes }
+		18 = { owns_or_subject_of = yes }
+		21 = { owns_or_subject_of = yes }
+		28 = { owns_or_subject_of = yes }
+		32 = { owns_or_subject_of = yes }
+		34 = { owns_or_subject_of = yes }
+		35 = { owns_or_subject_of = yes }
+		36 = { owns_or_subject_of = yes }
+		51 = { owns_or_subject_of = yes }
+		151 = { owns_or_subject_of = yes }
+		157 = { owns_or_subject_of = yes }
+		158 = { owns_or_subject_of = yes }
+		159 = { owns_or_subject_of = yes }
+		160 = { owns_or_subject_of = yes }
+		161 = { owns_or_subject_of = yes }
+		162 = { owns_or_subject_of = yes }
+		735 = { owns_or_subject_of = yes }
+		736 = { owns_or_subject_of = yes }
+		845 = { owns_or_subject_of = yes }
+		846 = { owns_or_subject_of = yes }
+		850 = { owns_or_subject_of = yes }
+		851 = { owns_or_subject_of = yes }
+		847 = { owns_or_subject_of = yes }
+		973 = { owns_or_subject_of = yes }
+		975 = { owns_or_subject_of = yes }
+		976 = { owns_or_subject_of = yes }
+		978 = { owns_or_subject_of = yes }
+		979 = { owns_or_subject_of = yes }
+		980 = { owns_or_subject_of = yes }
+		981 = { owns_or_subject_of = yes }
+		982 = { owns_or_subject_of = yes }
 	}
 }
 
@@ -198,21 +198,60 @@ XFR_is_east_francian_state = {
 XFR_controls_east_francian_states = {
 	custom_trigger_tooltip = { 
 		tooltip = XFR_controls_east_francian_states_tt
-		controls_state = 39
-		controls_state = 42
-		controls_state = 50
-		controls_state = 52
-		controls_state = 53
-		controls_state = 54
-		controls_state = 55
-		controls_state = 56
-		controls_state = 57
-		controls_state = 58
-		controls_state = 59
-		controls_state = 152
-		controls_state = 153
-		controls_state = 848
-		controls_state = 983
-		controls_state = 984
+		39 = { owns_or_subject_of = yes }
+		42 = { owns_or_subject_of = yes }
+		50 = { owns_or_subject_of = yes }
+		52 = { owns_or_subject_of = yes }
+		53 = { owns_or_subject_of = yes }
+		54 = { owns_or_subject_of = yes }
+		55 = { owns_or_subject_of = yes }
+		56 = { owns_or_subject_of = yes }
+		57 = { owns_or_subject_of = yes }
+		58 = { owns_or_subject_of = yes }
+		59 = { owns_or_subject_of = yes }
+		152 = { owns_or_subject_of = yes }
+		153 = { owns_or_subject_of = yes }
+		848 = { owns_or_subject_of = yes }
+		983 = { owns_or_subject_of = yes }
+		984 = { owns_or_subject_of = yes }
+	}
+}
+
+is_reclaimable_state = {
+	OR = {
+		state = 4
+		state = 10
+		state = 43
+		state = 87
+		state = 88
+		state = 90
+		state = 92
+		state = 97
+		state = 98
+		state = 120
+		state = 136
+		state = 152
+		state = 154
+		state = 155
+		state = 156
+		state = 664
+		state = 736
+		state = 790
+		state = 852
+		state = 933
+	}
+}
+
+XFR_allow_alsace_market = {
+	XFR = {
+		has_government = democratic
+		is_subject = no
+	}
+	XAL = {
+		OR = {
+			has_government = democratic
+			has_government = neutrality
+		}
+		is_subject = no
 	}
 }

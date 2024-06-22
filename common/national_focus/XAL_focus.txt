@@ -28,9 +28,12 @@
 		available = {
 			OR = {
 				has_government = XFR
-				has_country_leader = {
-					character = XAL_military_junta
-					ruling_only = yes
+				AND = {
+					XFR = { has_government = democratic }
+					has_country_leader = {
+						character = XAL_military_junta
+						ruling_only = yes
+					}
 				}
 			}
 			XFR = {
@@ -79,9 +82,12 @@
 		available = {
 			OR = {
 				has_government = XFR
-				has_country_leader = {
-					character = XAL_military_junta
-					ruling_only = yes
+				AND = {
+					XFR = { has_government = democratic }
+					has_country_leader = {
+						character = XAL_military_junta
+						ruling_only = yes
+					}
 				}
 			}
 			XFR = {
@@ -126,18 +132,18 @@
 		available = {
 			OR = {
 				has_government = XFR
-				has_country_leader = {
-					character = XAL_military_junta
-					ruling_only = yes
+				AND = {
+					XFR = { has_government = democratic }
+					has_country_leader = {
+						character = XAL_military_junta
+						ruling_only = yes
+					}
 				}
 			}
 			XFR = {
 				exists = yes
 				NOT = { has_war_with = ROOT }
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-				}
+				is_subject = no
 				has_opinion = { target = ROOT value > 49 }
 				has_completed_focus = XFR_alcase_lorraine_diplomacy
 			}
@@ -233,9 +239,12 @@
 		available = {
 			OR = {
 				has_government = XFR
-				has_country_leader = {
-					character = XAL_military_junta
-					ruling_only = yes
+				AND = {
+					XFR = { has_government = democratic }
+					has_country_leader = {
+						character = XAL_military_junta
+						ruling_only = yes
+					}
 				}
 			}
 			XFR = {

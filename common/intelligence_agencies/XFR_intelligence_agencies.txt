@@ -1,0 +1,42 @@
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_fra
+	names = { "Maréchaussée" }
+	
+	default = { 
+		original_tag = XFR 
+		has_government = democratic
+	}
+	available = { 
+		original_tag = XFR 
+		has_government = democratic
+	}
+}
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_yug
+	names = { "Red Shadow" }
+	
+	default = { 
+		original_tag = XFR 
+		has_government = communism
+	}
+	available = { 
+		original_tag = XFR 
+		has_government = communism
+	}
+}
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_NOR_fascism_intelligence
+	names = { "Auge des Kaisers" }
+	
+	default = { 
+		original_tag = XFR 
+		has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+	}
+	available = { 
+		original_tag = XFR 
+		has_completed_focus = XFR_dennounce_democracy
+	}
+}

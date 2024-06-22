@@ -81,6 +81,17 @@ defined_text = {
 			FROM = {
                 controller = {
                     has_idea = BEZ_membership
+					original_tag = XNM
+                }
+            }
+		}
+		localization_key = economy_map_mode_tooltip_BEZ_mercia_tt
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    has_idea = BEZ_membership
                 }
             }
 		}
@@ -138,6 +149,17 @@ defined_text = {
             }
 		}
 		localization_key = economy_map_mode_tooltip_UDB_member_tt2
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    has_idea = BEZ_membership
+					original_tag = XNM
+                }
+            }
+		}
+		localization_key = economy_map_mode_tooltip_BEZ_mercia_tt2
 	}
 	text = {
 		trigger = {

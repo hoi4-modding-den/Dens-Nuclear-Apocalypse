@@ -42,7 +42,7 @@ XFR_create_faction = {
 	}
 	if = {
 		limit = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
-		create_faction = "Fränkischer Bund"
+		create_faction = "Großfränkische Sphäre"
 	}
 }
 XFR_puppet_nation = {
@@ -69,6 +69,7 @@ XFR_puppet_nation = {
 					OR = {
 						original_tag = XSH
 						original_tag = XLH
+						original_tag = XPA
 					}
 				}
 			}
@@ -85,6 +86,7 @@ XFR_puppet_nation = {
 					OR = {
 						original_tag = XSH
 						original_tag = XLH
+						original_tag = XPA
 					}
 				}
 			}
@@ -105,6 +107,7 @@ XFR_puppet_nation = {
 					OR = {
 						original_tag = XSH
 						original_tag = XLH
+						original_tag = XPA
 					}
 				}
 			}
@@ -120,6 +123,7 @@ XFR_puppet_nation = {
 			ROOT = {
 				NOT = {
 					OR = {
+						original_tag = XPA
 						original_tag = XSH
 						original_tag = XLH
 						AND = {
@@ -132,42 +136,6 @@ XFR_puppet_nation = {
 		}
 		ROOT = { 
 			load_focus_tree = generic_focus
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				set_politics = {
-    				ruling_party = neutrality
-					elections_allowed = no
-    				long_name = XFR_reichsregierung_name_long
-    				name = XFR_reichsregierung_name
-				}
-				create_country_leader = {
-					name = "Besatzungskommission"
-					picture = GFX_portrait_XFR_parliament
-					expire = "3000.1.1"
-					ideology = XFR_reichsregierung_neutral
-					traits = { }
-				} 
-			}
-			if = {
-				limit = {
-					has_government = fascism
-				}
-				set_politics = {
-    				ruling_party = fascism
-					elections_allowed = no
-    				long_name = XFR_reichsregierung_name_long
-    				name = XFR_reichsregierung_name
-				}
-				create_country_leader = {
-					name = "Besatzungskommission"
-					picture = GFX_portrait_XFR_parliament
-					expire = "3000.1.1"
-					ideology = XFR_reichsregierung
-					traits = { }
-				} 
-			}
 			if = {
 				limit = {
 					has_government = communism
@@ -198,30 +166,7 @@ XFR_puppet_nation = {
 				original_tag = XFR
 			}
 		}
-		load_focus_tree = generic_focus
-		add_popularity = {
-    		ideology = fascism
-    		popularity = 0.1
-		}
-		add_popularity = {
-    		ideology = neutrality
-    		popularity = 0.05
-		}
-		set_politics = {
-			ruling_party = neutrality
-			elections_allowed = no
-			long_name = "Denazification Government"
-			name = "Denazification Govt."
-		}
-		set_cosmetic_tag = XLH_no_nazis
-		create_country_leader = {
-			name = "Denazification Council"
-			picture = GFX_portrait_XFR_anti_nazi_council
-			expire = "3000.1.1"
-			ideology = XFR_military_government
-			traits = { XFR_anti_fascists }
-		} 
-		add_ideas = XFR_anti_nazi_operations
+		XFR_set_up_denazification_zone_effect = yes
 	}
 # Schleswig-Holstein
 	if = { 
@@ -233,6 +178,65 @@ XFR_puppet_nation = {
 				original_tag = XFR
 			}
 		}
+		XFR_set_up_hamburg_zone_effect = yes
+	}
+# New New England
+	if = { 
+		limit = {
+			ROOT = { 
+				original_tag = XNE
+			}
+			FROM = {
+				original_tag = XFR
+				NOT = { has_government = communism }
+			}
+		}
+		XFR_set_up_british_puppet_state_effet = yes
+	}
+}
+
+XFR_set_up_denazification_zone_effect = {
+	XFR = { set_country_flag = XFR_XLH_formation_denied }
+	XLH = {
+		load_focus_tree = generic_focus
+		unlock_national_focus = political_effort
+		if = {
+			limit = { XFR = { has_government = communism } }
+			unlock_national_focus = collectivist_ethos
+			unlock_national_focus = internationalism_focus
+		}
+		else = {
+			unlock_national_focus = liberty_ethos
+		}
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.1
+		}
+		add_popularity = {
+    		ideology = neutrality
+    		popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			long_name = "Denazification Authority"
+			name = "Denazification Authority"
+		}
+		set_cosmetic_tag = XLH_no_nazis
+		create_country_leader = {
+			name = "Denazification Council"
+			picture = GFX_portrait_XFR_anti_nazi_council
+			expire = "3000.1.1"
+			ideology = XFR_military_government
+			traits = { XFR_anti_fascists }
+		} 
+		add_ideas = XFR_anti_nazi_operations
+	}
+}
+
+XFR_set_up_hamburg_zone_effect = {
+	XFR = { set_country_flag = XFR_XSH_formation_denied }
+	XSH = {
 		load_focus_tree = generic_focus
 		set_cosmetic_tag = XSH_Hamburg
 		set_party_name = {
@@ -282,6 +286,27 @@ XFR_puppet_nation = {
 			expire = "3000.1.1"
 			ideology = anarchist_communism
 			traits = { XFR_anarchists_trait }
+		} 
+	}
+}
+
+XFR_set_up_british_puppet_state_effet = {
+	XFR = { set_country_flag = XFR_XNE_formation_denied }
+	XNE = {
+		load_focus_tree = generic_focus
+		set_cosmetic_tag = XNE_british_puppet
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			long_name = "British Military Government"
+			name = "Military Government"
+		}
+		create_country_leader = {
+			name = "British Military Government"
+			picture = GFX_portrait_XFR_english_military_gov
+			expire = "3000.1.1"
+			ideology = XFR_military_government
+			traits = { }
 		} 
 	}
 }
