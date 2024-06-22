@@ -1,0 +1,27 @@
+defined_text = {
+	name = XNE_army_decision
+	text = {
+		trigger = {
+			XNE = {
+				OR = {
+					has_completed_focus = XNE_reestablish_the_navy
+					has_completed_focus = XNE_post_nuclear_airforce
+				}
+			}
+		}
+		localization_key = XNE_army_decision_mili
+	}
+	text = {
+		trigger = {
+			XNE = {
+				NOT = {
+					OR = {
+						has_completed_focus = XNE_reestablish_the_navy
+						has_completed_focus = XNE_post_nuclear_airforce
+					}
+				}
+			}
+		}
+		localization_key = XNE_army_decision_army
+	}
+}

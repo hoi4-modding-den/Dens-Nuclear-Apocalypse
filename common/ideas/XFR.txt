@@ -129,6 +129,10 @@ ideas = {
             modifier = {
                 research_speed_factor = 0.1
                 consumer_goods_factor = -0.05
+                enemy_justify_war_goal_time = 0.75
+                guarantee_tension = 1
+                stability_weekly = 0.01
+                democratic_drift = 0.1
             }
 
         }
@@ -655,7 +659,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = generic_secret_police
+            picture = FIN_maan_turva
 
             modifier = {
                 war_support_factor = 0.1
@@ -711,6 +715,28 @@ ideas = {
 
         }
 
+        XFR_fascist_militias = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+           removal_cost = -1
+
+            picture = generic_fascism_drift_bonus
+
+            modifier = {
+                fascism_drift = 0.05
+                stability_factor = -0.05
+                modifier_army_sub_unit_militia_attack_factor = 0.1
+                modifier_army_sub_unit_militia_defence_factor = 0.1
+            }
+
+        }
+
         XFR_herzogs_speeches = {
             allowed = {
 				always = yes
@@ -752,6 +778,50 @@ ideas = {
 
         }
 
+        XFR_fraenkischer_bund = {
+            name = XFR_bund_support
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+           removal_cost = -1
+
+            picture = generic_monarchist_uprising
+
+            modifier = {
+                neutrality_drift = 0.05
+                production_speed_arms_factory_factor = 0.05
+            }
+
+        }
+
+        XFR_fraenkischer_bund2 = {
+            name = XFR_bund_support
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+           removal_cost = -1
+
+            picture = generic_monarchist_uprising
+
+            modifier = {
+                neutrality_drift = 0.05
+                production_speed_arms_factory_factor = 0.05
+                army_org_factor = 0.05
+                breakthrough_factor = 0.05
+            }
+
+        }
+
         XFR_little_purge = {
             allowed = {
 				always = yes
@@ -776,6 +846,27 @@ ideas = {
 
         }
 
+        XFR_moral_support = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+           removal_cost = -1
+
+            picture = XFR_morale_support
+
+            modifier = {
+                neutrality_drift = 0.01
+                army_morale_factor = 0.1
+            }
+
+        }
+
         XFR_fascism_banned = {
             allowed = {
 				always = yes
@@ -795,6 +886,78 @@ ideas = {
 
             modifier = {
                 fascism_drift = -0.1
+            }
+
+        }
+
+        XFR_anti_nazi_operations = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				is_subject_of = XFR
+			}
+
+            cancel = {
+                OR = {
+                    fascism < 0.01
+                    NOT = { is_subject_of = XFR }
+                }
+            }
+
+            on_remove = {
+                if = {
+                    limit = {
+                        is_subject_of = XFR
+                        XOO = {
+                            is_subject_of = XFR
+                        }
+                    }
+                    XOO = {
+                        annex_country = {
+                            target = ROOT
+                            transfer_troops = yes
+                        }
+                    }
+                    ROOT = {
+                        every_core_state = {
+                            add_core_of = XOO
+                            remove_core_of = ROOT
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        is_subject = yes
+                    }
+                    OVERLORD = {
+                        annex_country = {
+                            target = ROOT
+                            transfer_troops = yes
+                        }
+                    }
+                    ROOT = {
+                        every_core_state = {
+                            remove_core_of = ROOT
+                        }
+                    }
+                }
+            }
+
+           removal_cost = -1
+
+            picture = generic_fascism_banned
+
+            modifier = {
+                fascism_drift = -0.1
+                stability_weekly = -0.01
+                required_garrison_factor = 0.1
+                custom_modifier_tooltip = XFR_anti_nazi_operations_tt
+            }
+
+            rule = {
+                can_send_volunteers = no
             }
 
         }
@@ -988,13 +1151,105 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gre_schachtplan1
+            picture = gfx
 
             modifier = {
                 consumer_goods_factor = 0.05
                 army_morale_factor = 0.1
                 research_speed_factor = 0.01
                 monthly_population = 0.02
+            }
+
+        }
+
+        XFR_social_system_healthcare = {
+            name = XFR_social_system
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = gfx
+
+            modifier = {
+                consumer_goods_factor = 0.15
+                army_morale_factor = 0.1
+                research_speed_factor = 0.02
+                monthly_population = 0.05
+                stability_factor = 0.05
+                political_power_gain = 0.02
+            }
+
+        }
+
+        XFR_social_system = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = gfx
+
+            modifier = {
+                consumer_goods_factor = 0.1
+                research_speed_factor = 0.01
+                monthly_population = 0.03
+                stability_factor = 0.05
+                political_power_gain = 0.02
+            }
+
+        }
+
+        XFR_easy_immigration = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = gfx
+
+            modifier = {
+                weekly_manpower = 200
+                monthly_population = 0.05
+            }
+
+        }
+
+        XFR_aggressive_foreign_policy_idea = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { has_country_leader = { character = XFR_leonard_desgrais ruling_only = yes } }
+            }
+
+           removal_cost = -1
+
+            picture = gfx
+
+            modifier = {
+                justify_war_goal_time = -0.25
+                generate_wargoal_tension = -0.5
             }
 
         }
@@ -1044,6 +1299,60 @@ ideas = {
                 army_core_defence_factor = 0.2
                 army_core_attack_factor = 0.2
                 stability_factor = 0.05
+                war_support_factor = 0.05
+                compliance_gain = 0.2
+            }
+
+        }
+
+        XFR_french_militarism = {
+            name = XFR_france_restored
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = FRA_undividable
+
+            modifier = {
+			    political_power_gain = 0.1
+                democratic_drift = 0.05
+                drift_defence_factor = 1
+                army_core_defence_factor = 0.3
+                army_core_attack_factor = 0.3
+                stability_factor = 0.05
+                war_support_factor = 0.15
+                compliance_gain = 0.25
+            }
+
+        }
+
+        XFR_french_egalitarianism = {
+            name = XFR_france_restored
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = FRA_undividable
+
+            modifier = {
+			    political_power_gain = 0.15
+                democratic_drift = 0.1
+                drift_defence_factor = 1
+                army_core_defence_factor = 0.2
+                army_core_attack_factor = 0.2
+                stability_factor = 0.15
                 war_support_factor = 0.05
                 compliance_gain = 0.25
             }
@@ -1106,6 +1415,73 @@ ideas = {
 			    consumer_goods_factor = -0.05
                 min_export = 0.2
                 trade_opinion_factor = 0.2
+            }
+
+        }
+
+        XFR_BEZ_cooperation = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XNM
+            }
+
+            do_effect = {
+                NOT = { has_idea = closed_economy }
+            }
+
+           removal_cost = -1
+
+            picture = HUN_treaty_of_triannon
+
+            modifier = {
+			    consumer_goods_factor = -0.05
+            }
+
+            targeted_modifier = {
+                tag = XNM
+                trade_cost_for_target_factor = -0.1
+                extra_trade_to_target_factor = 0.25
+            }
+
+        }
+
+        XFR_BEZ_cooperation2 = {
+            name = XFR_BEZ_cooperation
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XFR
+            }
+
+            do_effect = {
+                NOT = { has_idea = closed_economy }
+            }
+
+           removal_cost = -1
+
+            picture = HUN_treaty_of_triannon
+
+            modifier = {
+			    consumer_goods_factor = -0.05
+            }
+
+            targeted_modifier = {
+                tag = XFR
+                trade_cost_for_target_factor = -0.1
+                extra_trade_to_target_factor = 0.25
             }
 
         }

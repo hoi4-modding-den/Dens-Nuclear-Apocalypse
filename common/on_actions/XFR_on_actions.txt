@@ -4,6 +4,7 @@ on_actions = {
 		effect = {
 			XFR = {
 				remove_ideas = XFR_fake_economy_idea
+				country_event = { id = XFR_events.1 days = 21 }
 			}
 			XAL = {
 				if = {
@@ -145,6 +146,59 @@ on_actions = {
 					set_cosmetic_tag = XFR_FRANCE_FED
 					clr_country_flag = XFR_FRANCE_FED_lost
 				}
+			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			if = { # Generic Stuff
+				limit = {
+					FROM = { has_idea = XFR_customs_agreement_head_idea }
+					ROOT = { NOT = { has_idea = XFR_customs_agreement_idea } }
+				}
+				ROOT = { add_ideas = XFR_customs_agreement_idea }
+			}
+			if = { # Anarchy
+				limit = {
+					ROOT = { has_idea = anarchy_idea_max }
+				}
+				FROM = { annex_country = { target = ROOT transfer_troops = no } }
+			}
+			XFR_puppet_nation = yes
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = { # Generic Stuff
+				limit = {
+					FROM = { has_idea = XFR_customs_agreement_head_idea }
+					ROOT = { NOT = { has_idea = XFR_customs_agreement_idea } }
+				}
+				ROOT = { add_ideas = XFR_customs_agreement_idea }
+			}
+			if = { # Anarchy
+				limit = {
+					ROOT = { has_idea = anarchy_idea_max }
+				}
+				FROM = { annex_country = { target = ROOT transfer_troops = no } }
+			}
+			XFR_puppet_nation = yes
+		}
+	}
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							has_cosmetic_tag = XFR_puppet
+							has_cosmetic_tag = XFR_puppet_FRANCE
+							has_cosmetic_tag = XFR_puppet_FRANCIA
+						}
+					}
+				}
+				ROOT = { drop_cosmetic_tag = yes }
 			}
 		}
 	}

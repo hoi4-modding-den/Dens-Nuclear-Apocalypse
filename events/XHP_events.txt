@@ -40,6 +40,9 @@ country_event = {
 					XTH_Ignotus = {
 						set_nationality = PREV.PREV
 					}
+					XTH_Arcturus = {
+						set_nationality = PREV.PREV
+					}
 			}
 			}
 			XTH = {
@@ -104,6 +107,9 @@ country_event = {
 						set_nationality = PREV.PREV
 					}
 					XTH_Ignotus = {
+						set_nationality = PREV.PREV
+					}
+					XTH_Arcturus = {
 						set_nationality = PREV.PREV
 					}
 				}

@@ -93,4 +93,26 @@ characters = {
 			logistics_skill = 3
 		}
 	}
+	XTH_Arcturus = {
+		name = XTH_Arcturus
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_xth_arcturus"
+			}
+		}
+		field_marshal = {
+			traits = {
+				trait_XTH_templaric
+				brilliant_strategist
+				armor_officer
+				politically_connected
+				war_hero
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 7
+			logistics_skill = 2
+		}
+	}
 }

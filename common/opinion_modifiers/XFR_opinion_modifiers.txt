@@ -56,6 +56,9 @@ opinion_modifiers = {
         trade = yes
         value = 50
     }
+	XFR_rejected_bez_agreement = {
+		value = -25
+	}
 	XFR_declined_protection = {
 		value = -10
 	}

@@ -12,5 +12,31 @@ ideas = {
             
             allowed = { tag = XWA }
         }
+        XWA_ExtremistIdeals = {
+            picture = generic_fascist_workers
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+                fascism_drift = 0.2
+                political_power_cost = 0.1
+            }
+            
+            allowed = { tag = XWA }
+        }
+        XWA_ExtremistIdeals2 = {
+            picture = generic_fascist_workers
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+                fascism_drift = 0.3
+                army_core_defence_factor = 0.1
+                army_core_attack_factor = 0.2
+                political_power_cost = 0.15
+            }
+            
+            allowed = { tag = XWA }
+        }
     }
 }

@@ -12,6 +12,34 @@ characters = {
 			traits = { }
 			expire = "3000.9.9.9"
 			id = -1
-		}
+			}
 	}
+	XRU_Gabriel_Bosko = {
+		name = "Gabriel Bosko"
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XRU/Portrait_Gabriel_Bosko.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "3000.9.9.9"
+			id = -1
+    			}
+	XRU_Revolutionary = {
+		name = "Revolutionary"
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XRU/Portrait_Revolutionary.dds"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			traits = { }
+			expire = "3000.9.9.9"
+			id = -1
+    			}
 }

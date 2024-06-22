@@ -19,16 +19,40 @@ ALP_CONF = {
 	color_ui = rgb { 54 99 46 }
 }
 XFR_FRANCE = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 0 100 188 }
+	color_ui = rgb { 0 100 188 }
 }
 XFR_FRANCE_FED = {
-	color = rgb { 0 106 176 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 0 100 188 }
+	color_ui = rgb { 0 100 188 }
 }
 XFR_FRANCE_TEMP = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 0 100 188 }
+	color_ui = rgb { 0 100 188 }
+}
+XFR_FRANCIA = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 100 100 100 }
+}
+XFR_puppet = {
+	color = rgb { 128 0 32 }
+	color_ui = rgb { 128 0 32 }
+}
+XFR_puppet_FRANCE = {
+	color = rgb { 0 76 142 }
+	color_ui = rgb { 0 100 188 }
+}
+XFR_puppet_FRANCIA = {
+	color = rgb { 80 80 80 }
+	color_ui = rgb { 100 100 100 }
+}
+XSH_Hamburg = {
+	color = rgb { 0 127 219 }
+	color_ui = rgb { 0 127 219 }
+}
+XLH_no_nazis = {
+	color = rgb { 90 90 90 }
+	color_ui = rgb { 90 90 90 }
 }
 MAL_UK = {
     color = rgb { 201 56 93 }

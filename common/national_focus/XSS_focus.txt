@@ -3341,6 +3341,127 @@ country_event = {
     }
 
    focus = {
+    id = XSS_war_in_pommerania
+    x = 58
+    y = 26
+    icon = GFX_focus_generic_fascist_troops
+    cost = 5
+    prerequisite = { focus = XSS_subjugate_rebels }
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XKR
+			}
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_war_in_silesia
+    x = 56
+    y = 26
+    icon = GFX_focus_generic_fascist_propaganda
+    cost = 10
+    prerequisite = { focus = XSS_subjugate_rebels }
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XGF
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XCM
+			}
+        
+        }
+        
+
+    }
+
+   focus = {
+    id = XSS_pressure_german_claims
+    x = 57
+    y = 27
+    icon = GFX_goal_demand_sudetenland
+    cost = 10
+    prerequisite = { focus = XSS_war_in_silesia }
+    prerequisite = { focus = XSS_war_in_pommerania }
+
+    completion_reward = {
+
+        68 = {
+
+            add_core_of = XSS
+
+        }
+        63 = {
+
+            add_core_of = XSS
+
+        }
+        86 = {
+
+            add_core_of = XSS
+
+        }
+        807 = {
+
+            add_core_of = XSS
+
+        }
+        85 = {
+
+            add_core_of = XSS
+
+        }
+        763 = {
+
+            add_core_of = XSS
+
+        }
+        5 = {
+
+            add_core_of = XSS
+
+        }
+        66 = {
+
+            add_core_of = XSS
+
+        }
+        67 = {
+
+            add_core_of = XSS
+
+        }
+        762 = {
+
+            add_core_of = XSS
+
+        }
+        986 = {
+
+            add_core_of = XSS
+
+        }
+        69 = {
+
+            add_core_of = XSS
+
+        }
+        
+        }
+        
+
+    }
+
+   focus = {
     id = XSS_ardennes_push
     x = 60
     y = 26
@@ -3431,6 +3552,7 @@ country_event = {
     icon = GFX_focus_eng_imperial_federation
     cost = 2
     prerequisite = { focus = XSS_push_forward }
+    prerequisite = {focus = XSS_pressure_german_claims}
 
     completion_reward = {
     
@@ -6690,6 +6812,98 @@ add_trait = {
     
 		}
     }
+
+
+
+    focus = {
+    id = XSS_eastern_claims
+    x = 85
+    y = 18
+    icon = GFX_focus_SOV_mobilization_plan
+    cost = 10
+    prerequisite = { focus = XSS_kaiserreich }
+
+
+    completion_reward = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = XKR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XGF
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XCM
+			}
+        
+        68 = {
+
+            add_core_of = XSS
+
+        }
+        63 = {
+
+            add_core_of = XSS
+
+        }
+        86 = {
+
+            add_core_of = XSS
+
+        }
+        807 = {
+
+            add_core_of = XSS
+
+        }
+        85 = {
+
+            add_core_of = XSS
+
+        }
+        763 = {
+
+            add_core_of = XSS
+
+        }
+        5 = {
+
+            add_core_of = XSS
+
+        }
+        66 = {
+
+            add_core_of = XSS
+
+        }
+        67 = {
+
+            add_core_of = XSS
+
+        }
+        762 = {
+
+            add_core_of = XSS
+
+        }
+        986 = {
+
+            add_core_of = XSS
+
+        }
+        69 = {
+
+            add_core_of = XSS
+
+        }
+
+        }
+
+    }
+
 
 
     focus = {

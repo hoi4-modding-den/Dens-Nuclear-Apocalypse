@@ -224,7 +224,9 @@ focus_tree = {
 		icon = x
 		x = 25
 		y = 5
-		cost = 3
+		cost = 5
+
+		prerequisite = { focus = XHP_the_fight focus = XHP_into_coalition }
 
 		available = {
 			NOT = {
@@ -296,7 +298,79 @@ focus_tree = {
 
 		}
 	}
+	focus = {
+		id = XHP_open_cathedral
+		icon = GFX_focus_XHP_cc_concessions
+		x = 0
+		y = 2
+		relative_position_id = XHP_offer_concessions
+		prerequisite = { focus = XHP_offer_concessions }
+		cost = 4
 
+		completion_reward = {
+			# idea for the church or something. research speed, stability, maybe even edit the disloyalty idea idfk
+		}
+	}
+	focus = {
+		id = XHP_xth_incorporate
+		icon = GFX_focus_XHP_cc_concessions
+		x = 0
+		y = 1
+		relative_position_id = XHP_open_cathedral
+		prerequisite = { focus = XHP_open_cathedral }
+		mutually_exclusive = { focus = XHP_xth_different_approach }
+		cost = 2
+		completion_reward = {
+			# the lose a little bit of influence, making our government stronger
+		}
+		
+	}
+	focus = {
+		id = XHP_into_coalition
+		icon = GFX_focus_XHP_cc_concessions
+		x = -1
+		y = 1
+		relative_position_id = XHP_xth_incorporate
+		prerequisite = { focus = XHP_xth_incorporate }
+		cost = 3
+		completion_reward = {
+			# lose some more influence, and they become part of our coalition
+		}
+	}
+
+
+	focus = {
+		id = XHP_xth_different_approach
+		icon = GFX_focus_XHP_cc_concessions
+		x = 2
+		y = 1
+		relative_position_id = XHP_open_cathedral
+		prerequisite = { focus = XHP_open_cathedral }
+		mutually_exclusive = { focus = XHP_xth_incorporate }
+		cost = 3
+		completion_reward = {
+			# tooltip to show that this will mean a templaric takeover
+		}
+
+	}
+	focus = {
+		id = XHP_xth_new_masters
+		icon = GFX_focus_XHP_cc_concessions
+		x = 1
+		y = 1
+		relative_position_id = XHP_xth_different_approach
+		prerequisite = { focus = XHP_xth_different_approach }
+		cost = 2
+		completion_reward = {
+			# cosmetic tag, government changes
+			# tooltip
+			# load the new focus tree
+			remove_ideas = {
+				idea_XHP_crusader_crisis
+			}
+		}
+		
+	}
 }
 
 

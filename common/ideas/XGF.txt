@@ -34,7 +34,7 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = -0.05
 				production_speed_industrial_complex_factor = 0.2
-				industry_repair_factor = 0.25
+				industry_repair_factor = -0.25
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
@@ -69,7 +69,55 @@ ideas = {
 				request_lease_tension = 1.0
 				send_volunteers_tension = 1.0
 			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+	
+	mobilization_laws = {
+		law = yes
+		XGF_inhumane_experiments = {
+			picture = XGF_inhumane_experiments
 
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+				research_speed_factor = 0.05	
+				training_time_factor = -0.05
+				army_defence_factor = -0.05	
+				army_attack_factor = -0.05					
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		XGF_perfected_soldiers = {
+			picture = XGF_perfected_soldiers
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+				research_speed_factor = 0.1	
+				training_time_factor = 0.1
+				army_defence_factor = 0.10	
+				army_attack_factor = 0.10					
+			}
+			allowed_to_remove = {
+				always = no
+			}
 			cancel_if_invalid = no
 		}
 	}

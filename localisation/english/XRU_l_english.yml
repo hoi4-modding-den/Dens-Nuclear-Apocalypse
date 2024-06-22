@@ -1,4 +1,6 @@
 ﻿l_english:
+
+# Country Name Stuff
  XRU:0 "Rusyn State"
  XRU_DEF:0 "Rusyn State"
  XRU_ADJ:0 "Rusyn"
@@ -20,8 +22,10 @@
  XRU_neutrality_ADJ:0 "Rusyn"
  XRU_subject_ADJ:0 "Neo-Rusyn"
 
+# History
 XRU_history_desc:0 "The Rusyn State is a fragile nation, forged from the fires of rebellion and vengeance. The Rusyn minority rules over a vastly larger Slovakian majority that they are constantly trying to reduce in number, mostly through ethnic assimilation. Things are quickly beginning to fall apart for the regime, however..."
 
+# Parties
 XRU_neutrality_party:0 "Slovak Militarists"
 XRU_neutrality_party_long:0 "Slovak Militarist Union for Liberation"
 XRU_communism_party:0 "Rusyn-Spartakus"
@@ -31,9 +35,64 @@ XRU_democracy_party_long:0 "The Democratic Free Party"
 XRU_fascism_party:0 "Rusyn State Authority"
 XRU_fascism_party_long:0 "Central Authority for the Revival of the Rusyns"
 
+# OMG DISASTER!!!!1
 XRU_looming_disaster_tt:0 "§RSomething horrible is coming.§"
 
+# Leaders
 XRU_Dimitry_Sydor:0 "Dimitry Sydor"
 XRU_Dimitry_Sydor_desc:0 "Dimitry Sydor feels empty inside. His days as an archpriest made him believe that God was on the side of the Rusyns in taking back their homeland and more, but now, the frozen state he has created begins to thaw. Sydor feels a sense of dread overcome him - it will not be much longer until disaster strikes."
+XRU_Gabriel_Bosko:0 "Gabriel Bosko"
+XRU_Gabriel_Bosko_desc:0 "WIP"
+XRU_Revolutionary:0 "Revolutionary"
+XRU_Revolutionary_desc:0 "WIP"
 
+# Ideas
 XRU_Looming_Disaster:0 "§RLooming Disaster§"
+
+# Foci (Tree Start)
+XRU_just_another_year:0 "Just Another Year"
+XRU_just_another_year_desc:0 "It's just another year for the Rusyn State Authority. Nothing is wrong. Everything is fine. The people are happy. We all know this."
+XRU_ignore_opposition:0 "Ignore Opposition"
+XRU_ignore_opposition_desc:0 "There is no longer any opposition to the supreme rule of the Rusyn State Authority. There are no partisans left. There is nothing to be afraid of except breaking the law. We all know this."
+XRU_everything_is_fine:0 "Everything Is Fine"
+XRU_everything_is_fine_desc:0 "We have never been wrong. We can never be wrong. We are the Rusyn State Authority, and with Dimitry Sydor at our head, we are unstoppable. We all know this."
+
+# Foci (War Tree Rusyns)
+XRU_remain_calm:0 "Remain Calm, Order Shall Be Restored"
+XRU_remain_calm_desc:0 "Dimitry Sydor has passed, but our new glorious leader is the Savior of All Rusyns, sent by God himself. None of these partisans shall last."
+XRU_knowing_our_enemies:0 "Knowing Our Enemies"
+XRU_knowing_our_enemies_desc:0 "Although initially unprepared for the revolt of Revolutionary, we are making efforts to learn more about his strange clique. Despite the mystery surrounding the Mastermind's identity, we have gathered more info on his goals, as well as some of his subordinates."
+XRU_resistance_without_within:0 "Resistance Without, Resistance Within"
+XRU_resistance_without_within_desc:0 "We cannot allow ourselves to be crushed by foolish revolutionaries. We must be aware that not all of our dissenters have risen up just yet - the Slovakian Democrats still lurk in the shadows. We will do well to be wary of them..."
+XRU_operation_second_vengeance:0 "§YOperation Second Vengeance§"
+XRU_operation_second_vengeance_desc:0 "We have taken our vengeance against the Slovaks and traitors once before. §YWe shall now do so once again.§"
+XRU_order_restored:0 "Order Restored!"
+XRU_order_restored_desc:0 "At long last, we have restored order to the Rusyn State. Gabriel Bosko is dead, and Revolutionary has fled for the Scientist's City. Was their really ever any doubt that we would win? Now, to look at our internal matters-"
+
+# Events
+XRU.start_1.t:0 "Cold Night in the Church"
+XRU.start_1.d:0 "The wind howled outside of the Cathedral of Christ the Savior. It had been lucky enough to survive the atomic bombing, and it had only been expanded after Rusyn rule began, now being the largest building in Transcarpathia. At this hour, however, very few people were here - five security guards positioned around the building, and one man inside, praying silently. Dimitry Sydor was his name, and he had been coming here to pray every night after hearing of the Bratislava Massacre. But Dimitry felt as if his prayers were not being answered - no miracle had yet come to save him from the hell he was bound to fall into when his authority collapsed. Sighing, Dimitry would stand up, walking towards the door. It was only a matter of time - he was a dead man walking."
+XRU.start_1.a:0 "§RI never would have expected him to be correct about anything.§"
+
+XRU.start_2.t:0 "Cold Night in the Alleyway"
+XRU.start_2.d:0 "The wind howled too, within the large alleyway in Bratislava where the scout was watching. A member of the Slovak Militarist Union for Liberation, he had been sent to scout out the defenses of the city, along with a few other scouts in various other alleyways. His findings were so optimistic that he almost laughed out loud and gave away his position. The Rusyns had almost completely dwindled down their military occupation of Bratislava. The scout was certain that the same could be said for the other cities. It was time for revolution!"
+XRU.start_2.a:0 "§RIn a sense, he is right. In another, he is ruined.§"
+
+XRU.start_3.t:0 "Doom"
+XRU.start_3.d:0 "Dimitry Sydor carefully creaked open the door to the palace. He had lived here for years, but now every time he came home he felt like he was entering somewhere foreign and unsafe. Frankly, Dimitry didn't feel safe anywhere anymore. He started up the long, long flight of stairs to the plateau of the lobby, and was almost halfway up when he heard the gunshots. *My God! The damned Slovak hellions! They're here!* Dimitry began to scramble up the stairs madly, as the gunshots eventually subsided. He was almost at the top when he made a bad step, falling and twisting his ankle. He screamed in pain, but refused to stop his ascent, now pulling himself up steps with his arms. By the time he reached the top, he lifted himself up, only to meet the barrel of the muzzle. Dimitry would have smiled if he had seen the face of a young Slovak boy, ready to deliver his inevitable fate. But instead, one of his own bodyguards stood over him, wearing a strange mask painted with orthodox crosses and ritualistic symbols. The bodyguard stared Dimitry down for a moment, before lowering the pistol. "You...you're a Rusyn! Is this not what you wanted?" Dimitry managed to sputter out, feeling the world spin around him. This wasn't how it was supposed to go! The man chuckled slightly, picking Dimitry up by the neck with alarming ease. "Oh no, Dimitry...this is exactly what we have wanted for quite some time." The man then lifted Dimitry over his head and chucked him down the flight of stairs. Dimitry's screams cut short after he smashed into the ground. It was only then that he lay still. The bodyguard grinned, taking off their mask and placing the gun onto the roof of their mouth before firing. His purpose was complete."
+XRU.start_3.a:0 "§RBehold, the rise of the mastermind.§"
+XRU.start_3.b:0 "For liberation! For Slovakia!"
+XRU.start_3.c:0 "Order must be maintained at all costs!"
+
+Rusyn.1.d:0 "This morning, news came of disaster in the Rusyn State - partisans and communists had split the country in three, forcing it to descend into anarchy as all three sides fight to control the whole state. The victor of this conflict could undoubtedly upset the balance of power in Eastern Europe..."
+
+# Opinions
+XRU_Anti_Communist:0 "Mortal Enemy of the Far-Right State"
+XRU_Fellow_Fascist:0 "Wise in Political Alignment"
+XRU_Nazi_Scum:0 "Mortal Enemy of the Rusyn People"
+
+### Cosmetic Tags
+ct_XSO_begin:0 "Slovakian Militarist Union"
+ct_XSO_begin_DEF:0 "The Slovakian Militarist Union"
+ct_XSP_begin:0 "Rusyn-Spartakus"
+ct_XSP_begin_DEF:0 "The Rusyn-Spartakus"

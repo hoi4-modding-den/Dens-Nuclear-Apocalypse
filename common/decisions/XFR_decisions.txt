@@ -1,37 +1,4 @@
 XFR_centre_crisis_cat = {
-	XFR_centre_hunt_down_mutants_debug = { 
-		
-		icon = GFX_decision_generic_ignite_civil_war
-
-		allowed = {
-			tag = XFR
-		}
-
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 24 
-			}
-		}
-
-		available = {
-			24 = { is_owned_and_controlled_by = ROOT }
-			has_completed_focus = XFR_deal_with_the_mutants 
-		}
-
-		visible = { 
-			24 = { has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
-			24 = { is_owned_and_controlled_by = ROOT }
-			has_completed_focus = XFR_deal_with_the_mutants
-			is_debug = yes
-			is_ai = no
-		}
-
-		fire_only_once = yes
-
-		complete_effect = {
-			24 = { remove_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
-        }
-	}
 
 	XFR_clear_centre_not_XFR = { 
 		
@@ -108,7 +75,7 @@ XFR_centre_crisis_cat = {
 		visible = { 
 			24 = { has_dynamic_modifier = { modifier = XFR_mutant_state_modifier } }
 			24 = { is_owned_and_controlled_by = ROOT }
-			has_completed_focus = XFR_deal_with_the_mutants
+			has_country_flag = XFR_centre_crisis_timer_activated
 		}
 
 		fire_only_once = no
@@ -140,16 +107,16 @@ XFR_centre_crisis_cat = {
 				add_to_variable = { XFR_mutant_hunt_progress = 20 }
 				random_list = {
 					50 = {
-						add_manpower = -200
-					}
-					25 = {
-						add_manpower = -100
-					}
-					15 = {
 						add_manpower = -50
 					}
-					9 = {
+					25 = {
 						add_manpower = -25
+					}
+					15 = {
+						add_manpower = -10
+					}
+					9 = {
+						add_manpower = -5
 					}
 					1 = {
 					}
@@ -161,16 +128,16 @@ XFR_centre_crisis_cat = {
 				add_to_variable = { XFR_mutant_hunt_progress = 10 }
 				random_list = {
 					40 = {
-						add_manpower = -200
-					}
-					25 = {
-						add_manpower = -100
-					}
-					20 = {
 						add_manpower = -50
 					}
-					10 = {
+					25 = {
 						add_manpower = -25
+					}
+					20 = {
+						add_manpower = -10
+					}
+					10 = {
+						add_manpower = -5
 					}
 					5 = {
 					}
@@ -187,6 +154,8 @@ XFR_centre_crisis_cat = {
 		
 		icon = GFX_decision_generic_construction
 
+		priority = 50
+
 		allowed = {
 			tag = XFR
 		}
@@ -200,13 +169,13 @@ XFR_centre_crisis_cat = {
 		available = {
 			24 = { is_owned_and_controlled_by = ROOT }
 			24 = { infrastructure < 5 }
-			has_completed_focus = XFR_deal_with_the_mutants 
+			has_completed_focus = XFR_investigate_centre 
 		}
 
 		visible = { 
 			24 = { is_owned_and_controlled_by = ROOT }
 			24 = { infrastructure < 5 }
-			has_completed_focus = XFR_deal_with_the_mutants
+			has_country_flag = XFR_centre_crisis_timer_activated
 			NOT = { has_completed_focus = XFR_crisis_averted }
 		}
 
@@ -270,7 +239,7 @@ XFR_centre_crisis_cat = {
 
 		fire_only_once = yes
 
-    	days_mission_timeout = 500
+    	days_mission_timeout = 365
 
     	complete_effect = {
     	    add_political_power = 100
@@ -288,6 +257,140 @@ XFR_centre_crisis_cat = {
 }
 
 XFR_other_crisis_cat = {
+
+	XFR_fascist_timer = {
+
+		icon = GFX_decision_eng_blackshirt_march
+
+		priority = 100
+
+		activation = {
+			has_country_flag = XFR_fascist_marches
+		}
+
+    	allowed = {
+    	    original_tag = XFR
+    	}
+
+    	available = {
+			NOT = {
+				OR = {
+					has_idea = XFR_fascist_tensions
+					has_idea = XFR_fascist_mobilising
+					has_idea = XFR_fascist_militias
+				}
+			}
+    	}
+
+    	is_good = no
+
+		fire_only_once = no
+
+    	days_mission_timeout = 30
+
+    	complete_effect = {
+			clr_country_flag = XFR_fascist_marches
+    	}
+
+    	timeout_effect = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+    	}
+	}
+
+	XFR_anarchist_timer = {
+
+		icon = GFX_decision_POL_organize_strike_two
+
+		priority = 90
+
+		activation = {
+			has_country_flag = XFR_anarchist_actions
+		}
+
+    	allowed = {
+    	    original_tag = XFR
+    	}
+
+    	available = {
+			NOT = { 18 = { has_dynamic_modifier = { modifier = XFR_anarchists_state_modifier } } }
+    	}
+
+    	is_good = no
+
+		fire_only_once = no
+
+    	days_mission_timeout = 30
+
+    	complete_effect = {
+			clr_country_flag = XFR_anarchist_actions
+    	}
+
+    	timeout_effect = {
+			random_list = {
+				50 = {
+					18 = {
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+					}
+				}
+				50 = {
+					18 = {
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}
+				}
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+    	}
+	}
+
+	XFR_monarchist_speech_timer = {
+
+		icon = GFX_decision_hol_radio_oranje
+
+		priority = 80
+
+		activation = {
+			has_country_flag = XFR_herzog_unlocked
+		}
+
+    	allowed = {
+    	    original_tag = XFR
+    	}
+
+    	available = {
+			NOT = { has_idea = XFR_herzogs_speeches }
+    	}
+
+    	is_good = no
+
+		fire_only_once = no
+
+    	days_mission_timeout = 70
+
+    	complete_effect = {
+			clr_country_flag = XFR_herzog_unlocked
+    	}
+
+    	timeout_effect = {
+			add_political_power = -75
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+    	}
+	}
 
 }
 
@@ -839,6 +942,7 @@ foreign_politics = {
 
 		available = {
 			has_completed_focus = XFR_return_of_the_pope
+			has_completed_focus = XFR_proclaim_french_government
 			2 = { is_owned_and_controlled_by = ROOT }
 			978 = { is_owned_and_controlled_by = ROOT }
 			custom_trigger_tooltip = {
@@ -1158,6 +1262,7 @@ XFR_udb_cat = {
 						has_government = democratic
 						has_government = neutrality
 					}
+					NOT = { is_subject_of = ROOT }
 					NOT = {has_idea = closed_economy }
 					XFR_no_economic_membership = yes
 					NOT = { has_war_with = ROOT }
@@ -1629,6 +1734,15 @@ XFR_bop_decision_cat = {
 						instant_build = yes
 					}
 				}
+				if = {
+					limit = {
+						is_subject_of = ROOT
+					}
+					add_autonomy_score = {
+    					value = -100
+    					localization = XFR_support_neighbours
+					}
+				}
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = XFR_sent_support
@@ -1774,8 +1888,9 @@ XFR_bop_decision_cat = {
 
 		available = {
 			has_completed_focus = XFR_social_reform
-			any_owned_state = {
+			any_controlled_state = {
 				NOT = { is_core_of = ROOT }
+				compliance < 100
 			}
 		}
 
@@ -1807,15 +1922,16 @@ XFR_bop_decision_cat = {
 		}
 
 		remove_effect = {
-			every_owned_state = {
+			every_controlled_state = {
 				limit = {
 					NOT = { is_core_of = ROOT }
+					compliance < 100
 				}
 				add_compliance = 5
 			}
 			if = {
 				limit = {
-					all_owned_state = {
+					all_controlled_state = {
 						is_core_of = ROOT
 					}
 				}
@@ -1849,8 +1965,9 @@ XFR_bop_decision_cat = {
 
 		available = {
 			has_completed_focus = XFR_social_reform
-			any_owned_state = {
+			any_controlled_state = {
 				NOT = { is_core_of = ROOT }
+				resistance > 10
 			}
 		}
 
@@ -1882,16 +1999,20 @@ XFR_bop_decision_cat = {
 		}
 
 		remove_effect = {
-			every_owned_state = {
+			every_controlled_state = {
 				limit = {
 					NOT = { is_core_of = ROOT }
+					resistance > 10
 				}
 				add_resistance = -10
 			}
 			if = {
 				limit = {
-					all_owned_state = {
-						is_core_of = ROOT
+					all_controlled_state = {
+						OR = {
+							is_core_of = ROOT
+							resistance < 10
+						}
 					}
 				}
 				effect_tooltip = { every_state = { add_resistance = -10 } }
@@ -2269,7 +2390,6 @@ XFR_integration = {
 							is_ally_with = ROOT
 							tag = ROOT
 							tag = XAL
-							tag = XBR
 							tag = XAQ
 							tag = XNF
 							tag = XFW
@@ -2423,6 +2543,12 @@ XFR_integration = {
 			}
 			hidden_effect = {
 				news_event = { id = XFR_news_events.8 }
+			}
+			hidden_effect = {
+				every_other_country = {
+					limit = { has_cosmetic_tag = XFR_puppet }
+					set_cosmetic_tag = XFR_puppet_FRANCE
+				}
 			}
 		}
 	
@@ -2705,7 +2831,7 @@ XFR_intervention = {
 
 	XFR_war_against_the_tribes = { 
 		
-		icon = generic_form_nation
+		icon = GFX_decision_generic_prepare_civil_war
 
 		allowed = {
 			original_tag = XFR
@@ -2767,7 +2893,7 @@ XFR_intervention = {
 
 	XFR_south_german_expedition = { 
 		
-		icon = generic_form_nation
+		icon = GFX_decision_generic_prepare_civil_war
 
 		allowed = {
 			original_tag = XFR
@@ -2829,7 +2955,7 @@ XFR_intervention = {
 
 	XFR_war_against_nazis = { 
 		
-		icon = generic_form_nation
+		icon = GFX_decision_oppression
 
 		allowed = {
 			original_tag = XFR
@@ -2889,9 +3015,71 @@ XFR_intervention = {
 	
 	}
 
+	XFR_attack_hamburg = { 
+		
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = XSH
+			}
+		}
+
+		on_map_mode = decision_view_only
+
+		available = {
+			XSH = {
+				any_neighbor_country = {
+					OR = {
+						is_ally_with = ROOT
+						tag = ROOT
+					}
+				}
+			}
+		}
+
+		visible = { 
+			XSH = {
+				NOT = { is_ally_with = ROOT }
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		
+		cost = 100
+
+		fire_only_once = no
+
+		war_with_on_remove = XSH
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				strength_ratio = {
+    				tag = XSH
+    				ratio > 1
+				}
+			}
+		}
+
+		days_remove = 35
+
+		remove_effect = {
+			create_wargoal = {
+				target = XSH
+				type = puppet_wargoal_focus
+			}
+		}
+	
+	}
+
 	XFR_war_against_knights = { 
 		
-		icon = generic_form_nation
+		icon = GFX_decision_generic_prepare_civil_war
 
 		allowed = {
 			original_tag = XFR

@@ -34,13 +34,14 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_chamberlains_speech"
 			country_event = XNE_focus.1
 			XNE_gain_conservative_support = yes
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		
 	}
@@ -65,12 +66,13 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_isolation"
 			XNE_gain_communism_support = yes
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 100
 			modifier = {
 				factor = 2.5
 				XNM = { has_country_flag = XNM_aggressive }
@@ -103,13 +105,14 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_cooperation"
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 100
 			modifier = {
 				factor = 2.5
 				XNM = { has_country_flag = XNM_coop }
@@ -142,13 +145,14 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_aggression"
 			XNE_gain_fascism_support = yes
 			XNE_gain_neutrality_support = yes
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 100
 			modifier = {
 				factor = 2.5
 				XNM = { has_country_flag = XNM_no_coop }
@@ -179,7 +183,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_expand_our_trade"
 			XNE_gain_liberal_support = yes
 			hidden_effect = {
 				add_timed_idea = {
@@ -225,7 +230,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_greater_mining_investments"
 			XNE_gain_liberal_support = yes
 			add_resource = {
 				type = aluminium
@@ -263,7 +269,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_oil_off_the_coast"
 			XNE_gain_liberal_support = yes
 			XNE_gain_communism_support = yes
 			add_resource = {
@@ -302,7 +309,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_ease_tensions_with_mercia"
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			swap_ideas = {
@@ -335,7 +343,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_lower_military_presence"
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			add_manpower = -90000
@@ -365,7 +374,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_ease_conscription"
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			if = {
@@ -407,7 +417,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_recognise_mercia"
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			add_stability = 0.05
@@ -443,7 +454,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_coalition_government"
 			hidden_effect = {
 				create_country_leader = {
 					name = XNE_harold_johnson
@@ -490,7 +502,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_summit_for_peace"
     		XNM = { country_event = XNE_focus.2 }
 			add_political_power = 75
     	}
@@ -521,7 +534,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_agree_a_way_forward"
 			add_stability = 0.05
 			hidden_effect = {
 				set_power_balance = {
@@ -562,7 +576,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_join_the_bez"
     		add_ideas = BEZ_membership
     	}
     	
@@ -589,7 +604,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_share_ideas_on_military"
     		army_experience = 40
 			XNM = { army_experience = 60 }
     	}
@@ -618,7 +634,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_approach_ireland"
     		XIE = { country_event = XNE_focus.2 }
 			add_political_power = 50
     	}
@@ -647,7 +664,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_approach_ulster"
     		XNI = { country_event = XNE_focus.3 }
 			add_political_power = 35
     	}
@@ -676,7 +694,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_irish_dependence"
     		add_political_power = 50
 			XNI = { 
 				add_political_power = 50
@@ -711,7 +730,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_treaty_with_wales"
     		XWA = { country_event = XNE_focus.2 }
 			add_political_power = 50
     	}
@@ -740,7 +760,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_a_deal_for_welsh_victory"
     		XPW = { country_event = XNE_focus.4 }
 			add_political_power = 35
     	}
@@ -769,7 +790,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_corporate_capitalism"
 			add_ideas = XNE_concessions_to_companies
 			XNI = { add_ideas = XNE_lower_taxes }
     	}
@@ -798,7 +820,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_secure_wales"
 			if = {
 				limit = { has_completed_focus = XNE_a_deal_for_welsh_victory }
 				declare_war_on = {
@@ -860,7 +883,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_pacify_ireland"
 			if = {
 				limit = { has_completed_focus = XNE_irish_dependence }
 				declare_war_on = {
@@ -914,7 +938,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_integration_of_scottish_tribes"
 			declare_war_on = {
 				target = XCT
 				type = annex_everything
@@ -957,7 +982,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_federation_of_the_british_isles"
 			create_faction = XNE_UBF_faction
 			hidden_effect = {
 				every_country = {
@@ -1018,7 +1044,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_united_britain"
 			set_cosmetic_tag = XNE_UK
 			if = {
 				limit = {
@@ -1102,7 +1129,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_fortifications_along_the_trent"
     		XNE_gain_communism_support = yes
 			338 = {
 				add_building_construction = {
@@ -1156,7 +1184,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_leicester_devolution"
     		XNE_gain_communism_support = yes
 			338 = {
 				add_building_construction = {
@@ -1224,7 +1253,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_energy_independence"
     		XNE_gain_communism_support = yes
 			XNE_gain_conservative_support = yes
 			every_owned_state = {
@@ -1262,7 +1292,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_affordable_cost_housing_initiative"
     		XNE_gain_communism_support = yes
 			XNE_gain_conservative_support = yes
 			random_owned_controlled_state = {
@@ -1308,7 +1339,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_national_unity"
     		XNE_gain_communism_support = yes
 			XNE_gain_conservative_support = yes
 			add_political_power = 75
@@ -1340,7 +1372,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_higher_import_taxes"
     		XNE_gain_communism_support = yes
     		XNE_gain_conservative_support = yes
 			if = {
@@ -1386,7 +1419,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_government_reformation"
     		XNE_gain_communism_support = yes
 			add_stability = 0.1
 			add_popularity = {
@@ -1423,7 +1457,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_escalate_tensions_with_mercia"
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
 			add_war_support = 0.05
@@ -1455,7 +1490,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_formally_denounce_mercia"
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
 			swap_ideas = {
@@ -1488,7 +1524,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_call_for_action"
     		XNE_gain_fascism_support = yes
     		add_manpower = 50000
     	}
@@ -1517,7 +1554,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_ultranationalism"
     		XNE_gain_fascism_support = yes
     		add_ideas = militarism_focus
     	}
@@ -1547,7 +1585,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_rulers_of_the_british_isles"
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		add_political_power = 120
@@ -1582,7 +1621,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_reclaim_our_steel"
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		add_political_power = 120
@@ -1640,7 +1680,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_end_the_peace"
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		declare_war_on = {
@@ -1680,7 +1721,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_integration_of_the_midlands"
     		XNE_gain_neutrality_support = yes
     		add_political_power = 35
 			set_country_flag = XNE_integration_mercia
@@ -1713,7 +1755,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_victorious"
     		XNE_gain_neutrality_support = yes
     		XNE_gain_fascism_support = yes
     		add_political_power = 65
@@ -1749,7 +1792,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_claim_the_british_isles"
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		add_state_claim = 122
@@ -1796,7 +1840,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_crush_the_welsh"
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		if = {
@@ -1852,7 +1897,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_reclaim_scotland"
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		if = {
@@ -1902,7 +1948,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_move_into_ireland"
     		XNE_gain_neutrality_support = yes
     		if = {
 				limit = { country_exists = XNI }
@@ -1957,7 +2004,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_an_english_victory"
     		XNE_gain_fascism_support = yes
     		add_stability = 0.1
 			add_country_leader_trait = indomitable_perseverance
@@ -2012,7 +2060,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_a_british_victory"
     		XNE_gain_neutrality_support = yes
     		set_cosmetic_tag = XNE_UK
 			hidden_effect = {
@@ -2072,7 +2121,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		completion_reward = {
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_colchester_vault"
 			country_event = XNE_focus.6
 			XNE_gain_conservative_support = yes
 			hidden_effect = { 
@@ -2108,7 +2158,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_books_on_military_excursions"
     		XNE_gain_fascism_support = yes
     		XNE_gain_communism_support = yes
     		army_experience = 50
@@ -2145,7 +2196,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_battle_of_france"
     		XNE_gain_conservative_support = yes
     		add_tech_bonus = {
 				name = infantry_bonus
@@ -2183,7 +2235,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_battle_of_the_bulge"
     		XNE_gain_fascism_support = yes
     		XNE_gain_communism_support = yes
     		add_tech_bonus = {
@@ -2224,7 +2277,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_operation_barbarossa"
     		XNE_gain_fascism_support = yes
     		XNE_gain_communism_support = yes
     		add_tech_bonus = {
@@ -2265,7 +2319,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_old_naval_warfare"
     		XNE_gain_conservative_support = yes
     		XNE_gain_liberal_support = yes
     		navy_experience = 50
@@ -2299,7 +2354,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_dday_landings"
     		XNE_gain_conservative_support = yes
     		XNE_gain_liberal_support = yes
     		add_tech_bonus = {
@@ -2337,7 +2393,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_dunkirk"
     		XNE_gain_conservative_support = yes
     		XNE_gain_liberal_support = yes
     		add_tech_bonus = {
@@ -2375,7 +2432,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_attack_on_pearl_harbour"
     		XNE_gain_fascism_support = yes
     		add_tech_bonus = {
 				bonus = 1.5
@@ -2412,7 +2470,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_war_in_the_skies"
     		XNE_gain_neutrality_support = yes
     		air_experience = 50
     	}
@@ -2445,7 +2504,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_battle_of_britain"
     		XNE_gain_neutrality_support = yes
     		add_tech_bonus = {
 				bonus = 1.0
@@ -2482,7 +2542,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_dresden"
     		XNE_gain_conservative_support = yes
     		XNE_gain_fascism_support = yes
     		add_tech_bonus = {
@@ -2520,7 +2581,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_operation_hailstone"
     		XNE_gain_neutrality_support = yes
     		add_tech_bonus = {
 				bonus = 1
@@ -2557,7 +2619,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_modern_industry"
     		add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -2590,7 +2653,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_military_industry"
     		add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -2626,7 +2690,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_early_computers"
     		add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
@@ -2662,7 +2727,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_advanced_computers"
     		add_research_slot = 1
     	}
     	
@@ -2695,7 +2761,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_1969_rockets"
     		XNE_gain_conservative_support = yes
     		add_tech_bonus = {
 				ahead_reduction = 2
@@ -2734,7 +2801,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_mobile_infantry"
     		XNE_gain_fascism_support = yes
     		add_tech_bonus = {
 				name = motorized_bonus
@@ -2769,7 +2837,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_arsenal_of_nne"
     		XNE_gain_communism_support = yes
     		XNE_add_mil = yes
     		XNE_add_mil = yes
@@ -2800,7 +2869,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_21st_century_radar"
     		XNE_gain_liberal_support = yes
     		add_tech_bonus = {
 				ahead_reduction = 2
@@ -2841,7 +2911,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_23rd_century_nne"
     		add_political_power = 100
 			add_research_slot = 1
     	}
@@ -2864,7 +2935,7 @@
     
 		allow_branch = { 
 			has_country_flag = XNE_1984
-			#has_completed_focus = XNE_isolation
+			has_completed_focus = XNE_isolation
 		}
     	available = { has_government = communism }
     	bypass = {}
@@ -2875,7 +2946,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_oligarchical_collectivism"
     		hidden_effect = {
 				create_country_leader = {
 					name = XNE_the_prime_minister
@@ -2935,7 +3007,7 @@
     
 		allow_branch = { 
 			has_country_flag = XNE_1984
-			#has_completed_focus = XNE_oligarchical_collectivism
+			has_completed_focus = XNE_oligarchical_collectivism
 		}
     	available = {}
     	bypass = {}
@@ -2946,7 +3018,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_the_ministry_of_truth"
 			custom_effect_tooltip = XNE_set_up_the_ministry_of_truth
     		add_advisor_role = {
 				character = XNE_harold_saxon
@@ -2985,7 +3058,7 @@
     
 		allow_branch = { 
 			has_country_flag = XNE_1984
-			#has_completed_focus = XNE_oligarchical_collectivism
+			has_completed_focus = XNE_oligarchical_collectivism
 		}
     	available = {}
     	bypass = {}
@@ -2996,7 +3069,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_the_ministry_of_peace"
 			custom_effect_tooltip = XNE_set_up_the_ministry_of_peace
     		add_advisor_role = {
 				character = XNE_james_hurley
@@ -3035,7 +3109,7 @@
     
 		allow_branch = { 
 			has_country_flag = XNE_1984
-			#has_completed_focus = XNE_oligarchical_collectivism
+			has_completed_focus = XNE_oligarchical_collectivism
 		}
     	available = {}
     	bypass = {}
@@ -3046,7 +3120,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_the_ministry_of_love"
 			custom_effect_tooltip = XNE_set_up_the_ministry_of_love
     		add_advisor_role = {
 				character = XNE_millard_cale
@@ -3085,7 +3160,7 @@
     
 		allow_branch = { 
 			has_country_flag = XNE_1984
-			#has_completed_focus = XNE_oligarchical_collectivism
+			has_completed_focus = XNE_oligarchical_collectivism
 		}
     	available = {}
     	bypass = {}
@@ -3096,7 +3171,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_the_ministry_of_plenty"
 			custom_effect_tooltip = XNE_set_up_the_ministry_of_plenty
     		add_advisor_role = {
 				character = XNE_edward_mills
@@ -3143,7 +3219,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_police_state"
 			add_ideas = XNE_police_state_idea
     	}
     	
@@ -3171,7 +3248,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_internal_election_tampering"
 			add_stability = 0.05
 			add_command_power = 50
     	}
@@ -3200,7 +3278,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_mandatory_9_hour_shifts"
 			XNE_add_civ = yes
 			XNE_add_mil = yes
 			XNE_add_civ = yes
@@ -3231,7 +3310,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_saturday_schools"
 			add_ideas = XNE_saturday_schools_idea
     	}
     	
@@ -3260,7 +3340,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_controlled_media"
 			add_war_support = 0.05
 			add_manpower = 10000
     	}
@@ -3289,7 +3370,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_minimum_wage"
 			add_ideas = XNE_minimum_wage_idea
     	}
     	
@@ -3317,7 +3399,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_social_division"
 			swap_ideas = {
 				remove_idea = XNE_police_state_idea
 				add_idea = XNE_division_state
@@ -3349,7 +3432,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_heavy_factories"
 			XNE_add_mil = yes
 			XNE_add_mil = yes
 			XNE_add_mil = yes
@@ -3380,7 +3464,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_unified_state"
 			swap_ideas = {
 				remove_idea = XNE_police_state_idea
 				add_idea = XNE_unified_state_idea
@@ -3412,7 +3497,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_national_icons"
 			swap_ideas = {
 				remove_idea = XNE_unified_state_idea
 				add_idea = XNE_icon_state_idea
@@ -3444,7 +3530,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_competitive_focus"
 			swap_ideas = {
 				remove_idea = XNE_division_state
 				add_idea = XNE_competitive_focus_idea
@@ -3475,7 +3562,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_collective_technocracy"
 			add_research_slot = 1
     	}
     	
@@ -3504,7 +3592,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_integrate_the_british_isles"
 			every_state = {
 				limit = { 
 					OR = {
@@ -3562,7 +3651,7 @@
 		
 		allow_branch = { 
 			has_country_flag = XNE_1984
-			#has_completed_focus = XNE_oligarchical_collectivism
+			has_completed_focus = XNE_oligarchical_collectivism
 		}
     	available = {
 			has_completed_focus = XNE_integrate_the_british_isles
@@ -3575,7 +3664,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_expansion_of_eurasia"
 			every_state = {
 				limit = { 
 					NOT = { is_owned_by = ROOT } 
@@ -3619,7 +3709,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_open_new_dockyards"
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
@@ -3662,7 +3753,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_put_the_people_to_work"
 			add_stability = -0.05
 			random_owned_controlled_state = {
 				limit = {
@@ -3705,7 +3797,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_factories_for_the_homeless"
 			add_stability = -0.05
 			add_ideas = XNE_factories_for_the_homeless
     	}
@@ -3734,7 +3827,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_mandatory_military_service"
 			add_war_support = -0.05
 			add_ideas = XNE_mandatory_military_service
     	}
@@ -3763,7 +3857,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_move_onto_the_continent"
 			every_country = {
 				limit = { 
 					OR = {
@@ -3813,7 +3908,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_reclaim_gibraltar"
 			every_country = {
 				limit = { 
 					OR = {
@@ -3866,7 +3962,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_reintegrate_former_lands"
 			add_state_core = 14
 			add_state_core = 30
 			add_state_core = 15
@@ -3900,7 +3997,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_for_the_glory_of_nne"
 			add_war_support = 0.15
 			add_stability = 0.05
     	}
@@ -3931,7 +4029,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_establish_states_of_eurasia"
 			set_country_flag = XNE_states_of_eurasia
 			XNE_establish_eurasian_states = yes
     	}
@@ -3961,7 +4060,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_eurasian_community"
 			set_country_flag = XNE_states_of_eurasia
 			add_ideas = XNE_eurasian_community
 			hidden_effect = {
@@ -3996,7 +4096,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_true_eurasia"
 			custom_effect_tooltip = XNE_true_eurasia_tooltip
 			hidden_effect = {
 				every_country = {
@@ -4037,7 +4138,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_reestablish_the_navy"
 			XNE_gain_neutrality_support = yes
 			XNE_gain_conservative_support = yes
 			navy_experience = 35
@@ -4067,7 +4169,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_trade_interception"
 			XNE_gain_fascism_support = yes
 			add_tech_bonus = {
 				bonus = 0.5
@@ -4101,7 +4204,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_submarine_genius"
 			XNE_gain_fascism_support = yes
 			XNE_gain_liberal_support = yes
 			add_advisor_role = {
@@ -4145,7 +4249,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_invisibility_is_invincibility"
 			XNE_gain_fascism_support = yes
 			add_ideas = XNE_invisibility_is_invincibility
     	}
@@ -4174,7 +4279,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_channel_bombing_program"
 			XNE_gain_fascism_support = yes
 			127 = {
 				add_building_construction = {
@@ -4228,7 +4334,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_royal_navalist"
 			XNE_gain_conservative_support = yes
 			XNE_gain_neutrality_support = yes
 			add_advisor_role = {
@@ -4272,7 +4379,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_root_out_the_enemy"
 			XNE_gain_neutrality_support = yes
 			add_ideas = XNE_root_out_the_enemy
     	}
@@ -4301,8 +4409,10 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_trade_protection_programs"
 			XNE_gain_liberal_support = yes
+			XNE_gain_neutrality_support = yes
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
@@ -4335,7 +4445,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_dockyard_expansion"
 			XNE_gain_communism_support = yes
 			129 = {
 				if = { 
@@ -4397,7 +4508,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_lure_and_destroy"
 			XNE_gain_conservative_support = yes
 			127 = {
 				add_building_construction = {
@@ -4439,7 +4551,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_radio_towers"
 			XNE_gain_conservative_support = yes
 			XNE_gain_fascism_support = yes
 			126 = {
@@ -4455,6 +4568,507 @@
 					level = 1
 					instant_build = yes
 				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_post_nuclear_airforce
+    	icon = GFX_goal_generic_air_fighter
+    	#prerequisite = { focus = }
+    	x = 39
+    	y = 0
+    	#relative_position_id =
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_post_nuclear_airforce"
+			XNE_gain_liberal_support = yes
+			XNE_gain_communism_support = yes
+			air_experience = 35
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_block_out_the_sky
+    	icon = GFX_goal_generic_air_fighter2
+    	prerequisite = { focus = XNE_post_nuclear_airforce }
+    	x = -1
+    	y = 1
+    	relative_position_id = XNE_post_nuclear_airforce
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_outmanned_but_not_outgunned }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_block_out_the_sky"
+			XNE_gain_liberal_support = yes
+			XNE_gain_communism_support = yes
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = {
+					iw_small_airframe = 1
+					iw_medium_airframe = 1
+				}
+			}
+			else = {
+				set_technology = {
+					early_fighter = 1
+					CAS1 = 1
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_talented_new_blood
+    	icon = GFX_focus_FIN_expand_air_force_academy
+    	prerequisite = { focus = XNE_block_out_the_sky }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_block_out_the_sky
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_talented_new_blood"
+			XNE_gain_liberal_support = yes
+			XNE_gain_communism_support = yes
+			add_advisor_role = {
+				character = XNE_luke_walker
+				advisor={
+					slot = air_chief
+					idea_token = XNE_luke_walker
+					cost = 100
+					
+					traits  = { air_chief_reform_1 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+			add_advisor_role = {
+				character = XNE_jeremy_hammond
+				advisor={
+					slot = air_chief
+					idea_token = XNE_jeremy_hammond
+					cost = 100
+					
+					traits  = { air_chief_night_operations_1 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+			add_advisor_role = {
+				character = XNE_frank_abagnale
+				advisor={
+					slot = high_command
+					ledger = air
+					idea_token = XNE_frank_abagnale
+					cost = 125
+					
+					traits  = { air_pilot_training_3 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_arrow_storm
+    	icon = GFX_focus_generic_air_defense
+    	prerequisite = { focus = XNE_talented_new_blood }
+    	x = -1
+    	y = 2
+    	relative_position_id = XNE_talented_new_blood
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_arrow_storm"
+			XNE_gain_liberal_support = yes
+			XNE_gain_fascism_support = yes
+			add_ideas = XNE_arrow_storm
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_expedite_airforce_production
+    	icon = GFX_focus_generic_aircraft_production
+    	prerequisite = { focus = XNE_block_out_the_sky focus = XNE_faith_in_experience }
+    	x = 1
+    	y = 2
+    	relative_position_id = XNE_block_out_the_sky
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_expedite_airforce_production"
+			XNE_gain_communism_support = yes
+			XNE_gain_fascism_support = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_flying_out_of_the_factories
+    	icon = GFX_focus_SMB_purchase_aircraft
+    	prerequisite = { focus = XNE_arrow_storm }
+    	prerequisite = { focus = XNE_expedite_airforce_production }
+    	x = 0
+    	y = 2
+    	relative_position_id = XNE_expedite_airforce_production
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_flying_out_of_the_factories"
+			XNE_gain_liberal_support = yes
+			XNE_gain_communism_support = yes
+			add_ideas = XNE_flying_out_of_the_factories
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_outmanned_but_not_outgunned
+    	icon = GFX_goal_generic_air_bomber
+    	prerequisite = { focus = XNE_post_nuclear_airforce }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_post_nuclear_airforce
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = { focus = XNE_block_out_the_sky }
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_outmanned_but_not_outgunned"
+			XNE_gain_conservative_support = yes
+			XNE_gain_fascism_support = yes
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = {
+					iw_medium_airframe = 1
+					iw_large_airframe = 1
+				}
+			}
+			else = {
+				set_technology = {
+					heavy_fighter1 = 1
+					strategic_bomber1 = 1
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_faith_in_experience
+    	icon = GFX_focus_BRA_air_force
+    	prerequisite = { focus = XNE_outmanned_but_not_outgunned }
+    	x = 0
+    	y = 1
+    	relative_position_id = XNE_outmanned_but_not_outgunned
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_faith_in_experience"
+			XNE_gain_conservative_support = yes
+			XNE_gain_neutrality_support = yes
+			add_advisor_role = {
+				character = XNE_anthony_walker
+				advisor={
+					slot = air_chief
+					idea_token = XNE_anthony_walker
+					cost = 100
+					
+					traits  = { air_tactical_bombing_1 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+			add_advisor_role = {
+				character = XNE_chesley_turnberger
+				advisor={
+					slot = air_chief
+					idea_token = XNE_chesley_turnberger
+					cost = 100
+					
+					traits  = { air_chief_safety_3 }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+			add_advisor_role = {
+				character = XNE_hannibal_solon
+				advisor={
+					slot = high_command
+					ledger = air
+					idea_token = XNE_hannibal_solon
+					cost = 125
+					
+					traits  = { adventurous_daredevil }
+					
+					ai_will_do  = {
+						factor  = 50
+					}
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_new_air_bases
+    	icon = GFX_focus_generic_air_bases
+    	prerequisite = { focus = XNE_faith_in_experience }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_faith_in_experience
+    
+    	cost = 6
+		
+    	available = { has_tech = interwar_antiair }
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_new_air_bases"
+			XNE_gain_communism_support = yes
+			XNE_gain_liberal_support = yes
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+    	}
+    	
+    	ai_will_do = {
+    		factor = 10
+    	}
+    }
+	
+	focus = {
+		id = XNE_air_resource_extraction
+    	icon = GFX_focus_generic_resource_extraction
+    	prerequisite = { focus = XNE_new_air_bases }
+    	prerequisite = { focus = XNE_expedite_airforce_production }
+    	x = 1
+    	y = 1
+    	relative_position_id = XNE_expedite_airforce_production
+    
+    	cost = 6
+		
+    	available = {}
+    	bypass = {}
+		mutually_exclusive = {}
+    	
+    	cancelable = yes
+    	cancel_if_invalid = yes
+    	continue_if_invalid = no
+    	available_if_capitulated = yes
+    	
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_air_resource_extraction"
+			XNE_gain_conservative_support = yes
+			XNE_gain_neutrality_support = yes
+			add_resource = {
+				type = oil
+				amount = 17
+				state = 125
+			}
+			add_resource = {
+				type = aluminium
+				amount = 24
+				state = 129
+			}
+			add_resource = {
+				type = rubber
+				amount = 13
+				state = 338
 			}
     	}
     	
@@ -4482,7 +5096,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_reformation_of_the_army"
 			XNE_gain_fascism_support = yes
 			XNE_gain_communism_support = yes
 			XNE_gain_neutrality_support = yes
@@ -4514,7 +5129,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_military_parades"
 			XNE_gain_conservative_support = yes
 			XNE_gain_neutrality_support = yes
 			set_country_flag = XNE_military_parade
@@ -4546,7 +5162,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_initiate_recruitment_program"
 			XNE_gain_neutrality_support = yes
 			add_political_power = 20
 			add_manpower = 10000
@@ -4576,9 +5193,11 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
-			XNE_gain_fascism_support = yes
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_expand_training"
+			XNE_gain_neutrality_support = yes
 			XNE_gain_communism_support = yes
+			set_country_flag = XNE_expand_training
 			army_experience = 50
     	}
     	
@@ -4606,7 +5225,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_bristol_recruitment"
 			XNE_gain_conservative_support = yes
 			add_advisor_role = {
 				character = XNE_john_miller
@@ -4678,7 +5298,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_london_recruitment"
 			XNE_gain_liberal_support = yes
 			add_advisor_role = {
 				character = XNE_gus_march_phillips
@@ -4701,7 +5322,7 @@
 					idea_token = XNE_anders_lassen
 					cost = 100
 					
-					traits  = { army_chief_offensive_2 }
+					traits  = { army_chief_organizational_1 }
 					
 					ai_will_do  = {
 						factor  = 50
@@ -4749,7 +5370,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_norwich_program"
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			add_corps_commander_role = {
@@ -4796,7 +5418,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_organisation_focus"
 			XNE_gain_communism_support = yes
 			XNE_gain_fascism_support = yes
 			add_ideas = XNE_organisation_focus
@@ -4826,9 +5449,11 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_defence_of_nne"
 			XNE_gain_conservative_support = yes
 			XNE_gain_communism_support = yes
+			set_country_flag = XNE_defence_of_nne
 			add_ideas = XNE_defence_of_nne
     	}
     	
@@ -4857,7 +5482,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_planned_offensives"
 			XNE_gain_conservative_support = yes
 			XNE_gain_neutrality_support = yes
 			add_doctrine_cost_reduction = {
@@ -4892,7 +5518,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_women_in_the_army"
 			XNE_gain_communism_support = yes
 			XNE_gain_liberal_support = yes
 			add_doctrine_cost_reduction = {
@@ -4926,7 +5553,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_stand_strong"
 			XNE_gain_communism_support = yes
 			XNE_gain_neutrality_support = yes
 			swap_ideas = {
@@ -4959,7 +5587,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_council_of_command"
 			XNE_gain_conservative_support = yes
 			XNE_gain_liberal_support = yes
 			swap_ideas = {
@@ -4992,7 +5621,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_air_land_battle"
 			XNE_gain_conservative_support = yes
 			XNE_gain_fascism_support = yes
 			air_experience = 25
@@ -5013,6 +5643,7 @@
 		id = XNE_from_above
     	icon = GFX_focus_generic_paratrooper
     	prerequisite = { focus = XNE_air_land_battle }
+    	prerequisite = { focus = XNE_arrow_storm }
     	x = 3
     	y = 1
     	relative_position_id = XNE_air_land_battle
@@ -5028,7 +5659,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_from_above"
 			XNE_gain_fascism_support = yes
 			add_tech_bonus = {
 				bonus = 0.75
@@ -5062,7 +5694,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_department_of_national_defence"
 			XNE_gain_conservative_support = yes
 			add_tech_bonus = {
 				bonus = 0.75
@@ -5097,7 +5730,8 @@
     	continue_if_invalid = no
     	available_if_capitulated = yes
     	
-    	completion_reward = {
+    	completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_enter_the_european_theatre"
 			XNE_gain_neutrality_support = yes
 			add_tech_bonus = {
 				bonus = 0.75

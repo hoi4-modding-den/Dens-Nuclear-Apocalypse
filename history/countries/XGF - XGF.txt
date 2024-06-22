@@ -29,6 +29,7 @@ recruit_character = XGF_commander_03
 add_ideas = {
 XGF_broken_reactor
 XGF_complete_isolation
+XGF_inhumane_experiments
 XGF_old_world_blues
 XGF_police_state
 XGF_battery_level_1
@@ -47,3 +48,32 @@ set_popularities = {
 	neutrality = 20
 }
 
+every_country = {
+	add_opinion_modifier = { target = XGF modifier = XGF_underground_weirdos }
+	XGF = { add_opinion_modifier = { target = PREV modifier = XGF_mutie }}
+}
+
+add_opinion_modifier = {
+    target = XGE
+    modifier = XGF_revisionist
+}
+add_opinion_modifier = {
+    target = XWA
+    modifier = XGF_extra_mutie
+}
+add_opinion_modifier = {
+    target = XRP
+    modifier = XGF_western_scum
+}
+add_opinion_modifier = {
+    target = XAP
+    modifier = XGF_morons
+}
+add_opinion_modifier = {
+    target = XLH
+    modifier = XGF_nazi
+}
+add_opinion_modifier = {
+    target = XAD
+    modifier = XGF_how
+}

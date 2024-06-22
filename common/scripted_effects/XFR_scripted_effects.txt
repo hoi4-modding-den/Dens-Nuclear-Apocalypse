@@ -45,3 +45,243 @@ XFR_create_faction = {
 		create_faction = "Fränkischer Bund"
 	}
 }
+XFR_puppet_nation = {
+	if = {
+		limit = {
+			FROM = {
+				original_tag = XFR
+			}
+		}
+		ROOT = { drop_cosmetic_tag = yes }
+	}
+# Generic Color Changes
+	if = { 
+		limit = {
+			FROM = {
+				original_tag = XFR
+				NOT = { has_cosmetic_tag = XFR_FRANCIA }
+				NOT = { has_cosmetic_tag = XFR_FRANCE_TEMP }
+				NOT = { has_cosmetic_tag = XFR_FRANCE }
+				NOT = { has_cosmetic_tag = XFR_FRANCE_FED }
+			}
+			ROOT = {
+				NOT = {
+					OR = {
+						original_tag = XSH
+						original_tag = XLH
+					}
+				}
+			}
+		}
+		ROOT = { set_cosmetic_tag = XFR_puppet }
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_cosmetic_tag = XFR_FRANCIA
+			}
+			ROOT = {
+				NOT = {
+					OR = {
+						original_tag = XSH
+						original_tag = XLH
+					}
+				}
+			}
+		}
+		ROOT = { set_cosmetic_tag = XFR_puppet_FRANCIA }
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					has_cosmetic_tag = XFR_FRANCE_TEMP
+					has_cosmetic_tag = XFR_FRANCE
+					has_cosmetic_tag = XFR_FRANCE_FED
+				}
+			}
+			ROOT = {
+				NOT = {
+					OR = {
+						original_tag = XSH
+						original_tag = XLH
+					}
+				}
+			}
+		}
+		ROOT = { set_cosmetic_tag = XFR_puppet_FRANCE }
+	}
+# Generic Country Leaders
+	if = {
+		limit = {
+			FROM = {
+				original_tag = XFR
+			}
+			ROOT = {
+				NOT = {
+					OR = {
+						original_tag = XSH
+						original_tag = XLH
+						AND = {
+							original_tag = XAL
+							FROM = { NOT = { has_government = communism } }
+						}
+					}
+				}
+			}
+		}
+		ROOT = { 
+			load_focus_tree = generic_focus
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_politics = {
+    				ruling_party = neutrality
+					elections_allowed = no
+    				long_name = XFR_reichsregierung_name_long
+    				name = XFR_reichsregierung_name
+				}
+				create_country_leader = {
+					name = "Besatzungskommission"
+					picture = GFX_portrait_XFR_parliament
+					expire = "3000.1.1"
+					ideology = XFR_reichsregierung_neutral
+					traits = { }
+				} 
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_politics = {
+    				ruling_party = fascism
+					elections_allowed = no
+    				long_name = XFR_reichsregierung_name_long
+    				name = XFR_reichsregierung_name
+				}
+				create_country_leader = {
+					name = "Besatzungskommission"
+					picture = GFX_portrait_XFR_parliament
+					expire = "3000.1.1"
+					ideology = XFR_reichsregierung
+					traits = { }
+				} 
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_politics = {
+    				ruling_party = communism
+    				elections_allowed = no
+    				long_name = "Regional Commune"
+    				name = "Regional Commune"
+				}
+				create_country_leader = {
+					name = "Anarchist Commune"
+					picture = GFX_portrait_SPR_anarchist_commune
+					expire = "3000.1.1"
+					ideology = anarchist_communism
+					traits = { }
+				} 
+			}
+		}
+	}
+# Nazis
+	if = { 
+		limit = {
+			ROOT = { 
+				original_tag = XLH
+			}
+			FROM = {
+				original_tag = XFR
+			}
+		}
+		load_focus_tree = generic_focus
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.1
+		}
+		add_popularity = {
+    		ideology = neutrality
+    		popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			long_name = "Denazification Government"
+			name = "Denazification Govt."
+		}
+		set_cosmetic_tag = XLH_no_nazis
+		create_country_leader = {
+			name = "Denazification Council"
+			picture = GFX_portrait_XFR_anti_nazi_council
+			expire = "3000.1.1"
+			ideology = XFR_military_government
+			traits = { XFR_anti_fascists }
+		} 
+		add_ideas = XFR_anti_nazi_operations
+	}
+# Schleswig-Holstein
+	if = { 
+		limit = {
+			ROOT = { 
+				original_tag = XSH
+			}
+			FROM = {
+				original_tag = XFR
+			}
+		}
+		load_focus_tree = generic_focus
+		set_cosmetic_tag = XSH_Hamburg
+		set_party_name = {
+    		ideology = democratic
+    		long_name = "Hamburger Handelskammer"
+    		name = "Handelskammer"
+		}
+		set_party_name = {
+    		ideology = neutrality			
+			long_name = "Hamburger Handelskammer"
+    		name = "Handelskammer"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "Hamburger Handelskammer"
+			name = "Handelskammer"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "Anarchistenpartei Hamburg"
+			name = "Anarchistenpartei"
+		}
+		create_country_leader = {
+			name = "Hamburger Handelskammer"
+			picture = GFX_portrait_XFR_handelskammer
+			expire = "3000.1.1"
+			ideology = liberalism
+			traits = { XFR_chamber_of_commerce }
+		} 
+		create_country_leader = {
+			name = "Hamburger Handelskammer"
+			picture = GFX_portrait_XFR_handelskammer
+			expire = "3000.1.1"
+			ideology = XFR_corporate_capitalism
+			traits = { XFR_chamber_of_commerce XFR_foreign_interests }
+		} 
+		create_country_leader = {
+			name = "Hamburger Handelskammer"
+			picture = GFX_portrait_XFR_handelskammer
+			expire = "3000.1.1"
+			ideology = oligarchism
+			traits = { XFR_chamber_of_commerce XFR_foreign_interests }
+		} 
+		create_country_leader = {
+			name = "Hamburg Communal Council"
+			picture = GFX_portrait_SPR_anarchist_commune
+			expire = "3000.1.1"
+			ideology = anarchist_communism
+			traits = { XFR_anarchists_trait }
+		} 
+	}
+}

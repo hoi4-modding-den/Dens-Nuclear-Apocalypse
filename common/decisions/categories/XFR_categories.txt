@@ -17,7 +17,7 @@ XFR_other_crisis_cat = {
 		original_tag = XFR
 	}
 	visible = {	
-		has_country_flag = XFR_times_of_turmoil
+		
 	}
 }
 

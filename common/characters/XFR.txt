@@ -32,6 +32,15 @@ characters = {
 		}
 	}
 
+	XFR_orianne_monteil = {
+		name = XFR_orianne_monteil_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_orianne_monteil"
+			}
+		}
+	}
+
 	XFR_cat = {
 		name = XFR_cat_name
 		portraits = {
@@ -60,6 +69,7 @@ characters = {
 			}
 			visible = {
 				NOT = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
+				NOT = { has_completed_focus = XFR_arrest_the_duke }
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -122,6 +132,7 @@ characters = {
 			}
 			visible = {
 				NOT = { has_country_leader = { character = XFR_regnault_guillaume ruling_only = yes } }
+				NOT = { has_completed_focus = XFR_support_parliament }
 			}
 			available = {
 				has_completed_focus = XFR_dennounce_democracy

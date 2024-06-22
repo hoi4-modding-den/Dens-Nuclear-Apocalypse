@@ -250,6 +250,19 @@ bookmarks = {
 			XRU_Looming_Disaster
 		}	
 	}
+		"XGF" = {
+		ideology = communism
+		history = XGF_history_desc
+		focuses = {
+
+		}
+		ideas = {
+			XGF_broken_reactor
+			XGF_complete_isolation
+			XGF_inhumane_experiments
+			XGF_old_world_blues
+		}	
+	}
 
 
 		effect = {

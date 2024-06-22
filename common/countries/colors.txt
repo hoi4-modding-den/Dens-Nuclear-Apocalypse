@@ -205,3 +205,11 @@ XRU = {
 	color = rgb { 47 81 102 }
 	color_ui = rgb { 47 81 102 }
 }
+XSP = {
+	color = rgb { 102 23 23 }
+	color_ui = rgb { 102 23 23 }
+}
+XSO = {
+	color = rgb { 25 13 189 }
+	color_ui = rgb { 25 13 189 }
+}

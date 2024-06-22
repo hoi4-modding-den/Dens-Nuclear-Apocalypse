@@ -1,0 +1,376 @@
+add_namespace = XRU_start_event
+add_namespace = XRU
+
+country_event = {
+	id = XRU_start_event.1
+	title = XRU.start_1.t
+	# picture = GFX_report_event_XRU_church
+	desc = XRU.start_1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+		option = {
+		name = XRU.start_1.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = XRU_start_event.2
+	title = XRU.start_2.t
+	# picture = GFX_report_event_XRU_alley
+	desc = XRU.start_2.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+		option = {
+		name = XRU.start_2.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = XRU_start_event.3
+	title = XRU.start_3.t
+	# picture = GFX_report_event_XRU_church
+	desc = XRU.start_3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+		option = {
+		name = XRU.start_3.a
+		ai_chance = {
+			base = 33.3
+		}
+		kill_country_leader = yes
+		XSO = {
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+				set_party_name = { ideology = neutrality long_name = XRU_neutrality_party_long name = XRU_neutrality_party }
+		}
+		XSO = {
+		transfer_state = 70
+		transfer_state = 71
+		set_country_flag = cf_XRU_slovak_trigger
+		set_cosmetic_tag = ct_XSO_begin
+		add_manpower = 300000
+		}
+		XSP = {
+				set_politics = {
+					ruling_party = communism
+				}
+				set_popularities = {
+					communism = 100
+				}
+				set_party_name = { ideology = communism long_name = XRU_communism_party_long name = XRU_communism_party }
+		}
+		XSP = {
+		transfer_state = 72
+		set_country_flag = cf_XRU_spartakus_trigger
+		set_cosmetic_tag = ct_XSP_begin
+		add_manpower = 300000
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = XRU_gen_communist_long
+			name = XRU_gen_communist_short
+		}
+		set_political_party = {
+			ideology = neutrality
+			popularity = 0
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = XHP_gen_neutral_long
+			name = XRU_gen_neutral_short
+		}
+	XSP = {
+	change_tag_from = XRU
+	}
+	load_focus_tree = XSP_focus
+	XSO = {
+	declare_war_on = {
+	target = XSP
+	type = annex_everything
+	}
+	add_civil_war_target = XSP
+	}
+	XRU = {
+	declare_war_on = {
+	target = XSO
+	type = annex_everything
+	}
+	add_civil_war_target = XSO
+	declare_war_on = {
+	target = XSP
+	type = annex_everything
+	}
+	add_civil_war_target = XSP
+	}
+	XSP = {
+create_country_leader = {
+	name = XRU_Revolutionary
+	desc = XRU_Revolutionary_desc
+	picture = GFX_Portrait_Revolutionary
+	expire = "3000.9.9"
+	ideology = anarchist_communism
+		traits = {
+			
+			 }
+		}
+	}
+	XSO = {
+create_country_leader = {
+	name = XRU_Gabriel_Bosko
+	desc = XRU_Gabriel_Bosko_desc
+	picture = GFX_Portrait_Gabriel_Bosko
+	expire = "3000.9.9"
+	ideology = despotism
+		traits = {
+			
+			 }
+		}
+	}
+	news_event = XRU.1
+	remove_ideas = XRU_looming_disaster
+}
+		option = {
+		name = XRU.start_3.b
+		ai_chance = {
+			base = 33.3
+		}
+		kill_country_leader = yes
+		XSO = {
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+				set_party_name = { ideology = neutrality long_name = XRU_neutrality_party_long name = XRU_neutrality_party }
+		}
+		XSO = {
+		transfer_state = 70
+		transfer_state = 71
+		set_country_flag = cf_XRU_slovak_trigger
+		set_cosmetic_tag = ct_XSO_begin
+		add_manpower = 300000
+		}
+		XSP = {
+				set_politics = {
+					ruling_party = communism
+				}
+				set_popularities = {
+					communism = 100
+				}
+				set_party_name = { ideology = communism long_name = XRU_communism_party_long name = XRU_communism_party }
+		}
+		XSP = {
+		transfer_state = 72
+		set_country_flag = cf_XRU_spartakus_trigger
+		set_cosmetic_tag = ct_XSP_begin
+		add_manpower = 300000
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = XRU_gen_communist_long
+			name = XRU_gen_communist_short
+		}
+		set_political_party = {
+			ideology = neutrality
+			popularity = 0
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = XHP_gen_neutral_long
+			name = XRU_gen_neutral_short
+		}
+	XSO = {
+	change_tag_from = XRU
+	}
+		load_focus_tree = XSO_focus
+		XSP = {
+		declare_war_on = {
+		target = XRU
+		type = annex_everything
+		}
+		add_civil_war_target = XRU
+		}
+		XSO = {
+		declare_war_on = {
+		target = XSP
+		type = annex_everything
+		}
+		add_civil_war_target = XSP
+		declare_war_on = {
+		target = XRU
+		type = annex_everything
+		}
+		add_civil_war_target = XRU
+		}
+	XSP = {
+create_country_leader = {
+	name = XRU_Revolutionary
+	desc = XRU_Revolutionary_desc
+	picture = GFX_Portrait_Revolutionary
+	expire = "3000.9.9"
+	ideology = anarchist_communism
+		traits = {
+			
+			 }
+		}
+	}
+	XSO = {
+create_country_leader = {
+	name = XRU_Gabriel_Bosko
+	desc = XRU_Gabriel_Bosko_desc
+	picture = GFX_Portrait_Gabriel_Bosko
+	expire = "3000.9.9"
+	ideology = despotism
+		traits = {
+			
+			 }
+		}
+	}
+	news_event = XRU.1
+	remove_ideas = XRU_looming_disaster
+		}
+		option = {
+		name = XRU.start_3.c
+		ai_chance = {
+			base = 33.4
+		}
+		kill_country_leader = yes
+				XSO = {
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+				set_party_name = { ideology = neutrality long_name = XRU_neutrality_party_long name = XRU_neutrality_party }
+		}
+		XSO = {
+		transfer_state = 70
+		transfer_state = 71
+		set_country_flag = cf_XRU_slovak_trigger
+		set_cosmetic_tag = ct_XSO_begin
+		add_manpower = 300000
+		}
+		XSP = {
+				set_politics = {
+					ruling_party = communism
+				}
+				set_popularities = {
+					communism = 100
+				}
+				set_party_name = { ideology = communism long_name = XRU_communism_party_long name = XRU_communism_party }
+		}
+		XSP = {
+		transfer_state = 72
+		set_country_flag = cf_XRU_spartakus_trigger
+		set_cosmetic_tag = ct_XSP_begin
+		add_manpower = 300000
+		}
+		XRU = {
+			set_party_name = {
+				ideology = communism
+				long_name = XRU_gen_communist_long
+				name = XRU_gen_communist_short
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 0
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = XHP_gen_neutral_long
+				name = XRU_gen_neutral_short
+				}
+			}
+		XRU = {
+			load_focus_tree = XRU_doom_focus
+		}
+		XSP = {
+		declare_war_on = {
+		target = XSO
+		type = annex_everything
+		}
+		add_civil_war_target = XSO
+		}
+		declare_war_on = {
+		target = XSP
+		type = annex_everything
+		}
+		add_civil_war_target = XSP
+		declare_war_on = {
+		target = XSO
+		type = annex_everything
+		}
+		add_civil_war_target = XSO
+	XSP = {
+create_country_leader = {
+	name = XRU_Revolutionary
+	desc = XRU_Revolutionary_desc
+	picture = GFX_Portrait_Revolutionary
+	expire = "3000.9.9"
+	ideology = anarchist_communism
+		traits = {
+			
+			 }
+		}
+	}
+	XSO = {
+create_country_leader = {
+	name = XRU_Gabriel_Bosko
+	desc = XRU_Gabriel_Bosko_desc
+	picture = GFX_Portrait_Gabriel_Bosko
+	expire = "3000.9.9"
+	ideology = despotism
+		traits = {
+			
+			 }
+		}
+	news_event = XRU.1
+	remove_ideas = XRU_looming_disaster
+		}
+	}
+}
+
+country_event = {
+	id = XRU.1
+	title = "Rusyn Civil War!"
+	desc = Rusyn.1.d
+	picture = GFX_Rusyn_Civil_War
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Serves them right!"
+		trigger = {
+			NOT = {
+				TAG = XRU
+				TAG = XSO
+				TAG = XSP
+			}
+		}
+	}
+	option = {
+		name = "We must fight for our beliefs!"
+		trigger = {
+			TAG = XRU
+			TAG = XSO
+			TAG = XSP
+		}
+	}
+}

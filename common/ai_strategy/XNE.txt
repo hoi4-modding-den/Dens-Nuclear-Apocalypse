@@ -18,6 +18,10 @@ XNE_british_alliance = {
 				XWA = { is_in_faction_with = XNE }
 			}
 			AND = {
+				original_tag = XW2
+				XW2 = { is_in_faction_with = XNE }
+			}
+			AND = {
 				original_tag = XPW
 				XPW = { is_in_faction_with = XNE }
 			}
@@ -177,6 +181,28 @@ XNE_alliance_XWA = {
 		value = 1000
 	}
 }
+XNE_alliance_XW2 = {
+	enable = {
+		AND = {
+			original_tag = XNE
+			XNE = { is_in_faction_with = XW2 }
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "XW2"
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XW2"
+		value = 1000
+	}
+}
 XNE_alliance_XTY = {
 	enable = {
 		AND = {
@@ -219,5 +245,21 @@ XNE_alliance_XPW = {
 		type = alliance
 		id = "XPW"
 		value = 1000
+	}
+}
+XNE_wants_radio = {
+	enable = {
+		AND = {
+			original_tag = XNE
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = radio
+		value = 2000
 	}
 }
