@@ -15,7 +15,7 @@
 	focus = {
 		id = XBC_last_days_of_liderra_uribe
 		icon = GFX_focus_generic_improve_the_administration
-		x = 12
+		x = 20
 		y = 0
 
 		prerequisite = { }
@@ -272,7 +272,7 @@
 			factor = 1
 		}
 		available = {
-			has_civil_war = yes
+			has_civil_war = no
 		}
 		completion_reward = {
 			custom_effect_tooltip = XBC_rein_in_pamplona_tt
@@ -296,6 +296,60 @@
 					
 				}
 			}
+		}
+	}
+	
+	focus = {
+		id = XBC_the_left_ascendant
+		icon = GFX_focus_generic_improve_the_administration
+		x = -5
+		y = 1
+
+		relative_position_id = XBC_rein_in_pamplona
+		prerequisite = { focus = XBC_rein_in_pamplona }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_the_center_holds
+		icon = GFX_focus_generic_improve_the_administration
+		x = 0
+		y = 1
+
+		relative_position_id = XBC_rein_in_pamplona
+		prerequisite = { focus = XBC_rein_in_pamplona }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XBC_the_right_dominant
+		icon = GFX_focus_generic_improve_the_administration
+		x = 5
+		y = 1
+
+		relative_position_id = XBC_rein_in_pamplona
+		prerequisite = { focus = XBC_rein_in_pamplona }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
 		}
 	}
 }
