@@ -227,20 +227,4 @@ on_actions = {
 			}
 		}
 	}
-	on_subject_free = {
-		effect = {
-			if = {
-				limit = {
-					ROOT = {
-						OR = {
-							has_cosmetic_tag = XFR_puppet
-							has_cosmetic_tag = XFR_puppet_FRANCE
-							has_cosmetic_tag = XFR_puppet_FRANCIA
-						}
-					}
-				}
-				ROOT = { drop_cosmetic_tag = yes }
-			}
-		}
-	}
 }

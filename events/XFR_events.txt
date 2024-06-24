@@ -2409,3 +2409,54 @@ news_event = { # Restoration of the Papacy
     }
 
 }
+
+news_event = { # Fall of Besancon
+	id = XFR_news_events.14
+	title = XFR_news_events.14.t
+	desc = XFR_news_events.14.desc
+	picture = GFX_news_event_romanian_soldiers
+	
+	major = yes
+	
+	trigger = {
+		XFR = {
+            any_enemy_country = {
+                975 = { is_controlled_by = PREV }
+            }
+        }
+		975 = { is_owned_by = XFR }
+        XFR = { has_civil_war = no }
+		NOT = { has_global_flag = fall_of_besancon }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_besancon
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = XFR_news_events.14.a
+		trigger = {
+			NOT = {
+                975 = { is_controlled_by = ROOT }
+                any_allied_country = { 975 = { is_controlled_by = PREV } }
+            }
+		}
+	}
+	option = {
+		name = XFR_news_events.14.b
+		trigger = { 
+			OR = {
+                975 = { is_controlled_by = ROOT }
+                any_allied_country = { 975 = { is_controlled_by = PREV } }
+            }
+		}
+	}
+	option = {
+		name = XFR_news_events.14.c
+		trigger = { tag = XFR }
+	}
+}
