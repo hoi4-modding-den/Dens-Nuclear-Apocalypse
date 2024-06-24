@@ -1,0 +1,25 @@
+unit_medals = {
+
+
+	white_silver_medal = {
+		
+		available = {
+			can_use_white_silver = yes
+		}
+
+		frame = 1
+		icon = "GFX_medal_icon_white_silver"
+		
+		cost = 1
+		
+		unit_modifiers = {
+			army_morale_factor = 0.1
+			experience_loss_factor = -0.25
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+}

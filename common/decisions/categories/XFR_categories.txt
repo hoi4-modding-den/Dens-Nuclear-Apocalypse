@@ -109,19 +109,8 @@ XFR_integration = {
 	}
 }
 
-XFR_occupation_decisions = {		
-	icon = GFX_decision_category_saf_anti_colonialist_crusade
-	priority = 100
-	
-	allowed = {
-		original_tag = XFR
-	}
-	visible = {	
-	}
-}
-
 XFR_reclamation = {		
-	icon = GFX_decision_category_border_conflicts
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
 	priority = 1000
 	
 	allowed = {

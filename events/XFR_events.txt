@@ -85,6 +85,13 @@ country_event = { # Rhone Border War won
     desc = XFR_events.4.desc
     
     is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { original_tag = XFR }
+            country_event = { id = XFR_events.54 }
+        }
+    }
     
     option = {
         name = XFR_events.4.a
@@ -657,7 +664,7 @@ country_event = { # Paris Conference: Choose Goal
 				    }
                 }
             }
-            }
+        }
         
     }
 
@@ -726,6 +733,7 @@ country_event = { # Paris Conference: Message for XPR
                     transfer_troops = no
                 }
         }
+        custom_effect_tooltip = GAME_OVER_TT
         }
         if = {
             limit = {
@@ -755,6 +763,7 @@ country_event = { # Paris Conference: Message for XPR
 	    	    }
                 
             }
+            custom_effect_tooltip = XFR_loads_generic_focus_tree_tt
         }
         XFR = { country_event = { id = XFR_events.19 days = 1 } }
     }
@@ -827,7 +836,7 @@ country_event = { # Paris Conference: XPR accepts
 country_event = { # Paris Conference: XPR rejects
     id = XFR_events.20
     title = XFR_events.20.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_worried_french
     desc = XFR_events.20.desc
     
     is_triggered_only = yes
@@ -1117,6 +1126,7 @@ country_event = { # Burgundy wants to integrate us into France
         ai_chance = {
             base = 1
         }
+        XFR = { country_event = { id = XFR_events.28 days = 1 } }
         effect_tooltip = {
             FROM = {
                 annex_country = {
@@ -1141,6 +1151,7 @@ country_event = { # Burgundy wants to integrate us into France
             limit = { ROOT = { is_in_faction_with = FROM } }
             ROOT = { leave_faction = yes }
         }
+        XFR = { country_event = { id = XFR_events.29 days = 1 } }
         effect_tooltip = {
             FROM = {
                 create_wargoal = {
@@ -1178,7 +1189,7 @@ country_event = { # Burgundy wants to integrate us into France -> accepted
 country_event = { # Burgundy wants to integrate us into France -> rejected
     id = XFR_events.29
     title = XFR_events.29.t
-    picture = GFX_report_event_generic_sign_treaty1
+    picture = GFX_report_event_french_resistance_01
     desc = XFR_events.29.desc
     
     is_triggered_only = yes
@@ -1192,73 +1203,6 @@ country_event = { # Burgundy wants to integrate us into France -> rejected
             target = FROM
             type = annex_everything
         }
-        
-    }
-}
-
-country_event = { # XFR demands XBR subjugation
-    id = XFR_events.30
-    title = XFR_events.30.t
-    picture = GFX_report_event_generic_sign_treaty1
-    desc = XFR_events.30.desc
-    
-    is_triggered_only = yes
-
-    option = { 
-        name = XFR_events.30.a
-        ai_chance = {
-            base = 1
-            modifier = {
-                is_ally_with = FROM
-                factor = 0
-            }
-        } 
-        FROM = { country_event = { id = XFR_events.8 days = 1 } }
-        effect_tooltip = {
-            FROM = {
-                declare_war_on = {
-                    type = annex_everything
-                    target = ROOT
-                }
-            }  
-        }
-        
-    }
-    option = { 
-        name = XFR_events.30.b
-        ai_chance = {
-            base = 1
-        }
-        FROM = { country_event = { id = XFR_events.31 days = 1 } }
-        effect_tooltip = {
-            FROM = {
-                annex_country = {
-    		        target = ROOT
-    		        transfer_troops = no
-		        }
-            }
-        }
-        custom_effect_tooltip = GAME_OVER_TT
-    }
-}
-
-country_event = { # XFR demands XBR subjugation -> XBR accepts
-    id = XFR_events.31
-    title = XFR_events.31.t
-    picture = GFX_report_event_generic_peaceful_annexation
-    desc = XFR_events.31.desc
-    
-    is_triggered_only = yes
-
-    option = { 
-        name = XFR_events.31.a
-        ai_chance = {
-            base = 1
-        } 
-        annex_country = {
-    		target = FROM
-    		transfer_troops = no
-		}
         
     }
 }
@@ -1329,7 +1273,7 @@ country_event = { # XFR wants to protect Switzerland
 country_event = { # XFR wants to protect Switzerland -> Swiss accept
     id = XFR_events.33
     title = XFR_events.33.t
-    picture = GFX_report_event_generic_peaceful_annexation
+    picture = GFX_report_event_SWI_president_talking_flag
     desc = XFR_events.33.desc
     
     is_triggered_only = yes
@@ -1368,7 +1312,7 @@ country_event = { # XFR wants to protect Switzerland -> Swiss accept
 country_event = { # XFR wants to protect Switzerland -> Swiss decline
     id = XFR_events.34
     title = XFR_events.34.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_SWI_soldier_gathering
     desc = XFR_events.31.desc
     
     is_triggered_only = yes
@@ -1452,7 +1396,7 @@ country_event = { # Nationalists sell Centre
     }
 }
 
-country_event = { # Nationalists sell Centre Pt. 2
+country_event = { # Nationalists sell Centre Pt. 3
     id = XFR_events.37
     title = XFR_events.37.t
     picture = GFX_report_event_military_planning
@@ -1486,7 +1430,7 @@ country_event = { # Nationalists sell Centre Pt. 2
     }
 }
 
-country_event = { # Nationalists sell Centre Pt. 3
+country_event = { # Nationalists sell Centre Pt. 2
     id = XFR_events.38
     title = XFR_events.38.t
     picture = GFX_report_event_military_planning
@@ -1799,7 +1743,7 @@ country_event = { # Elections 2245
 
 }
 
-country_event = { 
+country_event = { # Democratic Start Event
     id = XFR_events.44
     title = XFR_events.44.t
     picture = GFX_report_event_journalists_speech
@@ -1820,7 +1764,7 @@ country_event = {
     }
 }
 
-country_event = { 
+country_event = { # Catists stop elections
     id = XFR_events.45
     title = XFR_events.45.t
     picture = GFX_report_event_cat
@@ -1837,10 +1781,10 @@ country_event = {
     }
 }
 
-country_event = { 
+country_event = { # BEZ-UDB Cooperation
     id = XFR_events.46
     title = XFR_events.46.t
-    picture = GFX_report_event_cat
+    picture = GFX_report_event_SWE_saltsjobaden
     desc = XFR_events.46.desc
     
     is_triggered_only = yes
@@ -1877,10 +1821,10 @@ country_event = {
     }
 }
 
-country_event = { 
+country_event = { # BEZ-UDB Cooperation accepted
     id = XFR_events.47
     title = XFR_events.47.t
-    picture = GFX_report_event_cat
+    picture = GFX_report_event_generic_handshake
     desc = XFR_events.47.desc
     
     is_triggered_only = yes
@@ -1894,10 +1838,10 @@ country_event = {
     }
 }
 
-country_event = { 
+country_event = { # BEZ-UDB Cooperation rejected
     id = XFR_events.48
     title = XFR_events.48.t
-    picture = GFX_report_event_cat
+    picture = GFX_report_event_generic_sign_treaty2
     desc = XFR_events.48.desc
     
     is_triggered_only = yes
@@ -1919,7 +1863,7 @@ country_event = {
 country_event = { # Invasion of XNE
     id = XFR_events.49
     title = XFR_events.49.t
-    picture = GFX_report_event_cat
+    picture = GFX_report_event_fascist_militia
     desc = XFR_events.49.desc
     
     is_triggered_only = yes
@@ -1953,7 +1897,7 @@ country_event = { # Invasion of XNE
 country_event = { # DEPARTURE
     id = XFR_events.50
     title = XFR_events.50.t
-    picture = GFX_report_event_cat
+    picture = GFX_report_event_generic_train
     desc = XFR_events.50.desc
     
     is_triggered_only = yes
@@ -1971,7 +1915,7 @@ country_event = { # DEPARTURE
 country_event = { # Purges complete
     id = XFR_events.51
     title = XFR_events.51.t
-    picture = GFX_report_event_cat
+    picture = GFX_report_event_german_inspect_troops
     desc = XFR_events.51.desc
     
     is_triggered_only = yes
@@ -2004,7 +1948,7 @@ country_event = { # Purges complete
 country_event = { # INITIATION
     id = XFR_events.52
     title = XFR_events.52.t
-    picture = GFX_report_event_cat
+    picture = GFX_report_event_weihe
     desc = XFR_events.52.desc
     
     is_triggered_only = yes
@@ -2038,7 +1982,7 @@ country_event = { # INITIATION
 country_event = { # RETURN
     id = XFR_events.53
     title = XFR_events.53.t
-    picture = GFX_report_event_cat
+    picture = GFX_report_event_fascist_speech
     desc = XFR_events.53.desc
     
     is_triggered_only = yes
@@ -2050,6 +1994,40 @@ country_event = { # RETURN
         } 
         add_ruling_to_fas = yes
         set_politics = { ruling_party = fascism elections_allowed = no }
+    }
+}
+
+country_event = { # White Silver
+    id = XFR_events.54
+    title = XFR_events.54.t
+    picture = GFX_report_event_swedish_soldier
+    desc = XFR_events.54.desc
+    
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = white_silver_active
+        27 = {
+            random_state_division = {
+                hidden_effect = {
+                    add_history_entry = {
+                    key = rhone_expedition_won
+                    subject = "White Silver Trigger"
+                    allow = yes
+                }
+                add_unit_medal_to_latest_entry = {
+                    unit_medals = white_silver_medal
+                }
+                }
+            }
+        }
+    }
+
+    option = { 
+        name = XFR_events.54.a
+        ai_chance = {
+            base = 1
+        } 
     }
 }
 
@@ -2337,6 +2315,20 @@ news_event = { # Coronation
     
     option = {
         name = XFR_news_events.10.a
+        trigger = { 
+            NOT = { tag = XFR }
+            NOT = { is_ally_with = XFR }
+        }
+    }
+
+    option = {
+        name = XFR_news_events.10.b
+        trigger = { 
+            OR = {
+                tag = XFR
+                is_ally_with = XFR
+            }
+        }
     }
 
 }
@@ -2344,7 +2336,7 @@ news_event = { # Coronation
 news_event = { # Proclamation of Francia
     id = XFR_news_events.11
     title = XFR_news_events.11.t
-    picture = GFX_news_event_german_speech
+    picture = GFX_news_event_soldiers_marching
     desc = XFR_news_events.11.desc
     
     
@@ -2354,11 +2346,66 @@ news_event = { # Proclamation of Francia
     
     option = {
         name = XFR_news_events.11.a
-        trigger = { NOT = { tag = XFR } }
+        trigger = { 
+            NOT = { tag = XFR }
+            NOT = { is_ally_with = XFR }
+        }
     }
     option = {
         name = XFR_news_events.11.b
-        trigger = { tag = XFR }
+        trigger = { 
+            OR = {
+                tag = XFR
+                is_ally_with = XFR
+            }
+        }
+    }
+
+}
+
+news_event = { # The New Order
+    id = XFR_news_events.12
+    title = XFR_news_events.12.t
+    picture = GFX_news_event_003
+    desc = XFR_news_events.12.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.12.a
+        trigger = { 
+            NOT = { tag = XFR }
+            NOT = { is_ally_with = XFR }
+        }
+    }
+    option = {
+        name = XFR_news_events.12.b
+        trigger = { 
+            OR = {
+                tag = XFR
+                is_ally_with = XFR
+            }
+        }
+    }
+
+}
+
+news_event = { # Restoration of the Papacy
+    id = XFR_news_events.13
+    title = XFR_news_events.13.t
+    picture = GFX_news_event_ITA_papal_coronation
+    desc = XFR_news_events.13.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.13.a
     }
 
 }

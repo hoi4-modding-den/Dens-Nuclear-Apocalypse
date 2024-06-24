@@ -512,6 +512,8 @@ ideas = {
             modifier = {
                 cavalry_attack_factor = 0.25
                 cavalry_defence_factor = 0.25
+                army_speed_factor = 0.05
+                truck_attrition_factor = -0.5
             }
 
         }

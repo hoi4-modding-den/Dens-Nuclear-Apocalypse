@@ -315,6 +315,23 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/XFR_report_event_cat.png"
 	}
 
+	spriteType = {
+		name = "GFX_report_event_weihe"
+		texturefile = "gfx/event_pictures/XFR_report_event_weihe.png"
+	}
+
+	# Medal
+
+	spriteType = {
+		name = "GFX_medal_icon_white_silver"
+		texturefile = "gfx/XFR/XFR_white_silver.png"
+	}
+
+	spriteType = {
+		name = "GFX_medal_icon_white_silver_large"
+		texturefile = "gfx/XFR/XFR_white_silver_large.png"
+	}
+
     # Bookmark
 
     spriteType = {

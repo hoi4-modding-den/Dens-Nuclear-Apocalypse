@@ -255,3 +255,8 @@ XFR_allow_alsace_market = {
 		is_subject = no
 	}
 }
+
+can_use_white_silver = {
+	original_tag = XFR
+	has_country_flag = white_silver_active
+}

@@ -21,7 +21,7 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		#prerequisite = { focus =  }
 		mutually_exclusive = { focus = XFR_dennounce_democracy }
-		x = 9
+		x = 10
 		y = 0
 		#relative_position_id = 
 
@@ -518,7 +518,7 @@ focus_tree = {
 		icon = GFX_focus_usa_focus_on_europe
 		prerequisite = { focus = XFR_democracy_prevails }
 		#mutually_exclusive = { focus =  }
-		x = -8
+		x = -7
 		y = 2
 		relative_position_id = XFR_democracy_prevails
 
@@ -561,7 +561,7 @@ focus_tree = {
 		id = XFR_economic_cooperation
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = XFR_european_ambitions }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = XFR_european_ambitions
 
@@ -681,7 +681,7 @@ focus_tree = {
 				XNE = { has_war = yes }
 			}
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			XNE = { country_event = { id = XFR_events.22 days = 1 } }
 			custom_effect_tooltip = if_they_accept_tt
@@ -698,7 +698,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_economic_cooperation }
 		prerequisite = { focus = XFR_england_focus }
 		#mutually_exclusive = { focus = XFR_across_the_channel focus = XFR_intervention_in_england }
-		x = 2
+		x = 1
 		y = 2
 		relative_position_id = XFR_england_focus
 
@@ -722,7 +722,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INTERNATIONAL_TRADE }
 		completion_reward = {
 			XNM = {
 				country_event = { id = XFR_events.46 days = 1 }
@@ -972,7 +972,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_swiss_burgundian_alliance focus = XFR_protect_switzerland }
 		#mutually_exclusive = {  }
 		x = -1
-		y = 4
+		y = 2
 		relative_position_id = XFR_guarantee_swiss_freedom
 
 		available = {
@@ -1137,7 +1137,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		}
 	} 
@@ -1171,7 +1171,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 		}
 	} 
@@ -1180,7 +1180,7 @@ focus_tree = {
 		id = XFR_alliance_of_free_nations
 		icon = GFX_focus_XFR_democratic_alliance
 		prerequisite = { focus = XFR_portugese_support focus = XFR_direct_iberian_intervention }
-		prerequisite = { focus = XFR_the_two_democracies }
+		#prerequisite = { focus = XFR_the_two_democracies }
 		prerequisite = { focus = XFR_across_the_channel focus = XFR_intervention_in_england }
 		prerequisite = { focus = XFR_reach_out_to_laagland }
 		#mutually_exclusive = { focus = XFR_little_entente }
@@ -1192,16 +1192,6 @@ focus_tree = {
 			has_government = democratic
 			is_subject = no
 			is_faction_leader = yes
-			
-		}
-
-		bypass = {
-			XNL = { is_ally_with = ROOT }
-			OR = {
-				XHP = { is_subject_of = ROOT }
-				XGL = { is_ally_with = ROOT }
-			}
-			XNE = { is_ally_with = ROOT }
 		}
 
 		cost = 5
@@ -1209,8 +1199,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			custom_effect_tooltip = XFR_alliance_of_free_nations_tt
 			if = {
 				limit = {
 					has_completed_focus = XFR_reach_out_to_laagland
@@ -1247,7 +1238,13 @@ focus_tree = {
 				}
 				XNE = { country_event = { id = XFR_events.22 days = 1 } }
 			}
-			set_faction_name = "Alliance of Free Nations"
+			if = {
+				limit = { is_faction_leader = no }
+				create_faction = "Alliance of Free Nations"
+			}
+			else = {
+				set_faction_name = "Alliance of Free Nations"
+			}
 		}
 	} 
 
@@ -1255,10 +1252,9 @@ focus_tree = {
 		id = XFR_support_the_dutch_trade
 		icon = GFX_focus_hol_gateway_to_europe
 		prerequisite = { focus = XFR_reach_out_to_laagland }
-		prerequisite = { focus = XFR_alliance_of_free_nations }
 		#mutually_exclusive = { focus = }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = XFR_reach_out_to_laagland
 
 		available = {
@@ -1279,22 +1275,23 @@ focus_tree = {
 		completion_reward = {
 			XNL = {
 				every_owned_state = {
-				limit = {
-					is_controlled_by = PREV
-					free_building_slots = {
-    					building = industrial_complex
-    					size > 1
-    					include_locked = no
+					limit = {
+						is_controlled_by = PREV
+						free_building_slots = {
+    						building = industrial_complex
+    						size > 1
+    						include_locked = no
+						}
+					}
+					random_select_amount = 2
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
 					}
 				}
-				random_select_amount = 2
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
+			add_ideas = XFR_economic_centre
 			}
 		}
 	} 
@@ -1305,7 +1302,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = XFR_alliance_of_free_nations }
 		#mutually_exclusive = { focus = }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = XFR_alliance_of_free_nations
 
@@ -1390,6 +1387,7 @@ focus_tree = {
 			is_faction_leader = yes
 			any_other_country = {
 				has_elections = no
+				NOT = { has_government = democratic }
 				NOT = { is_in_faction_with = ROOT }
 				hidden_trigger = {
 					NOT = { 
@@ -1412,6 +1410,7 @@ focus_tree = {
 			every_other_country = {
 				limit = {
 					has_elections = no
+					NOT = { has_government = democratic }
 					NOT = { is_in_faction_with = ROOT }
 					NOT = {
 						OR = {
@@ -1444,7 +1443,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_support_our_allies }
 		prerequisite = { focus = XFR_secure_europa }
 		#mutually_exclusive = { focus = }
-		x = -1
+		x = -2
 		y = 2
 		relative_position_id = XFR_alliance_of_free_nations
 
@@ -1566,7 +1565,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_lessen_internal_borders }
 		prerequisite = { focus = XFR_the_dream_of_france }
 		#mutually_exclusive = { focus =  }
-		x = 8
+		x = 7
 		y = 3
 		relative_position_id = XFR_european_ambitions
 
@@ -1717,7 +1716,10 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
-			is_neighbor_of = XLF
+			OR = {
+				is_neighbor_of = XLF
+				XLF = { exists = no }
+			}
 			is_subject = no
 			OR = {
 				NOT = { is_ally_with = XLF }
@@ -1959,7 +1961,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_democracy_prevails }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = XFR_democracy_prevails
 
 		available = {
@@ -2948,6 +2950,7 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
+			NOT = { has_completed_focus = XFR_proclaim_french_government }
 		}
 
 		cost = 10
@@ -2955,7 +2958,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			custom_effect_tooltip = XFR_restore_internationalism_tt
 		}
@@ -2972,6 +2975,7 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
+			NOT = { has_completed_focus = XFR_proclaim_french_government }
 		}
 
 		cost = 10
@@ -2979,7 +2983,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
+		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			2 = { add_claim_by = ROOT }
 			978 = { add_claim_by = ROOT }
@@ -4340,7 +4344,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -4376,7 +4380,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			custom_effect_tooltip = XFR_tno_reference_tt
 			hidden_effect = {
@@ -6360,7 +6364,7 @@ focus_tree = {
 		#relative_position_id = 
 
 		offset = {
-			x = -11
+			x = -10
 			trigger = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -6393,7 +6397,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			27 = {
 				add_extra_state_shared_building_slots = 2
@@ -6444,7 +6448,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -6484,7 +6488,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = XFR_better_machinery
@@ -6558,17 +6562,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
-				XFR_industry_production_speed_rail_way_factor = 0.25
+				XFR_industry_production_speed_rail_way_factor = 0.1
 				tooltip = production_speed_rail_way_factor_tt
 			}
 			add_to_variable = {
 				XFR_industry_production_speed_supply_node_factor = 0.2
 				tooltip = production_speed_supply_node_factor_tt
 			}
+			custom_effect_tooltip = XFR_electrify_the_country_tt
 		}
 	}
 
@@ -6591,7 +6596,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -6615,6 +6620,7 @@ focus_tree = {
 				XFR_industry_production_speed_industrial_complex_factor = 0.05
 				tooltip = production_speed_industrial_complex_factor_tt
 			}
+			custom_effect_tooltip = XFR_electrify_the_country_tt
 		}
 	}
 
@@ -6670,7 +6676,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			976 = {
 				add_resource = {
@@ -6684,6 +6690,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = XFR_electrify_the_country_tt
 		}
 	}
 
@@ -6704,7 +6711,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -6725,6 +6732,7 @@ focus_tree = {
 				tooltip = production_speed_buildings_factor_tt
 			}
 			custom_effect_tooltip = XFR_electrify_the_country_tt
+			set_country_flag = XFR_electrifying_visible
 		}
 	}
 
@@ -6745,7 +6753,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = XFR_scientific_advancement
@@ -6778,7 +6786,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_research_slot = 1
 			custom_effect_tooltip = XFR_industry_modifier_tt
@@ -6816,7 +6824,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = { 
 			every_country = {
 				limit = {
@@ -6859,7 +6867,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			add_ideas = export_focus
 			custom_effect_tooltip = available_political_advisor
@@ -6869,54 +6877,8 @@ focus_tree = {
 					has_government = democratic
 					XNM = { has_government = democratic }
 				}
-				custom_effect_tooltip = XFR_reopen_trade_tt
+				custom_effect_tooltip = XFR_electrify_the_country_tt
 			}
-		}
-	}
-
-	focus = {
-		id = XFR_transcontinental_railways
-		icon = GFX_focus_generic_railroad
-		prerequisite = { focus = XFR_reopen_trade }
-		prerequisite = { focus = XFR_expand_the_railroads }
-		#mutually_exclusive = { focus = }
-		x = -1
-		y = 1
-		relative_position_id = XFR_reopen_trade
-
-		available = {
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
-			OR = {
-				2 = { is_owned_and_controlled_by = ROOT }
-				9 = { is_owned_and_controlled_by = ROOT }
-				64 = { is_owned_and_controlled_by = ROOT }
-				7 = { is_owned_and_controlled_by = ROOT }
-				789 = { is_owned_and_controlled_by = ROOT }
-				180 = { is_owned_and_controlled_by = ROOT }
-				115 = { is_owned_and_controlled_by = ROOT }
-				4 = { is_owned_and_controlled_by = ROOT }
-				55 = { is_owned_and_controlled_by = ROOT }
-				21 = { is_owned_and_controlled_by = ROOT }
-				14 = { is_owned_and_controlled_by = ROOT }
-			}
-		}
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			custom_effect_tooltip = XFR_industry_modifier_tt
-			add_to_variable = {
-				XFR_industry_production_speed_rail_way_factor = 0.25
-				tooltip = production_speed_rail_way_factor_tt
-			}
-			custom_effect_tooltip = XFR_transcontinental_railways_tt
 		}
 	}
 
@@ -6937,7 +6899,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
@@ -6952,6 +6914,7 @@ focus_tree = {
 				XFR_industry_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
 			}
+			custom_effect_tooltip = XFR_electrify_the_country_tt
 		}
 	}
 
@@ -6972,7 +6935,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL_CHARACTER }
 		completion_reward = {
 			custom_effect_tooltip = XFR_industry_modifier_tt
 			add_to_variable = {
@@ -7012,7 +6975,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -8189,7 +8152,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 14
+		cost = 14.2
 
 		ai_will_do = {
 			factor = 1
@@ -8409,33 +8372,6 @@ focus_tree = {
 				    amount = 16
 				}
 			}
-		}
-	}
-
-	focus = {	
-		id = XFR_conquer_the_atlantic
-		icon = GFX_focus_generic_north_atlantic_fleet
-		prerequisite = { focus = XFR_the_grand_fleet focus = XFR_merchant_navy }
-		#mutually_exclusive = { focus = }
-		x = 0
-		y = 4
-		relative_position_id = XFR_rebuild_the_fleet
-
-		available = {
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			
 		}
 	}
 

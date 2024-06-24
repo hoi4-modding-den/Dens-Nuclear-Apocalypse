@@ -688,6 +688,7 @@ XFR_country_development_cat = {
 
 		cost = 25
 
+		priority = 5
 
 		allowed = {
 			original_tag = XFR
@@ -700,16 +701,18 @@ XFR_country_development_cat = {
 		}
 
 		available = {
+			has_completed_focus = XFR_electrify_the_country
 			FROM = {
 				is_owned_and_controlled_by = ROOT
 			}
 		}
 
 		visible = {
-			has_completed_focus = XFR_electrify_the_country
+			has_completed_focus = XFR_industrial_investments
 			FROM = {
 				is_owned_and_controlled_by = ROOT
 			}
+			has_country_flag = XFR_electrifying_visible
 		}
 
 		ai_will_do = {
@@ -751,6 +754,47 @@ XFR_country_development_cat = {
 		}
 	}
 
+	XFR_electrifying_visible_switch = {
+		
+		icon = GFX_decision_generic_electricity
+
+		cost = 0
+
+		priority = 5
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = XFR_electrify_the_country
+			is_ai = no
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = XFR_electrifying_visible
+				}
+				clr_country_flag = XFR_electrifying_visible
+				custom_effect_tooltip = XFR_electrifying_visible_switch_tt
+			}
+			else = {
+				set_country_flag = XFR_electrifying_visible
+				custom_effect_tooltip = XFR_electrifying_visible_switch_tt2
+			}
+			
+		}
+
+	}
+
 	XFR_gather_funds = {
 
 		icon = GFX_decision_gre_investment_decisions
@@ -764,6 +808,7 @@ XFR_country_development_cat = {
 			any_owned_state = {
 				industrial_complex > 0
 			}
+			num_of_civilian_factories < 50
 		}
 
 		cost = 75
@@ -785,6 +830,7 @@ XFR_country_development_cat = {
     				compare = equals
 				}
 			}
+			num_of_civilian_factories < 50
 		}
 
 		days_remove = 50
@@ -834,6 +880,7 @@ XFR_country_development_cat = {
     			value = 1
     			compare = greater_than_or_equals
 			}
+			num_of_civilian_factories < 50
 		}
 
 		priority = 3
@@ -846,6 +893,7 @@ XFR_country_development_cat = {
 
 		visible = {
 			has_completed_focus = XFR_industrial_investments
+			num_of_civilian_factories < 50
 		}
 
 		days_remove = 30
@@ -877,29 +925,26 @@ XFR_country_development_cat = {
 		}
 
 		available = {
+			has_completed_focus = XFR_reopen_trade
 			has_government = democratic
 			XNM = { has_government = democratic }
 		}
 
 		visible = {
+			has_completed_focus = XFR_industrial_investments
+			any_other_country = { has_idea = BEZ_membership }
 			has_government = democratic
 			XNM = { has_government = democratic }
 		}
 
 		cost = 100
 
-		priority = 3
+		priority = 2
 
 		fire_only_once = yes
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		visible = {
-			has_completed_focus = XFR_reopen_trade
-			NOT = { has_idea = XFR_customs_agreement_head_idea }
-			any_other_country = { has_idea = BEZ_membership }
 		}
 
 		days_remove = 70
@@ -915,6 +960,272 @@ XFR_country_development_cat = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = XFR_bez_agreement
+				}
+			}
+		}
+	}
+
+	XFR_build_rhone_dam = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 973 
+			}
+		}
+
+		available = {
+			has_completed_focus = XFR_learn_from_mistakes
+			973 = { is_fully_controlled_by = ROOT }
+		}
+
+		visible = {
+			has_completed_focus = XFR_industrial_investments
+		}
+
+		cost = 75
+
+		priority = 2
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_remove = 70
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+
+		cancel_trigger = {
+			NOT = { 973 = { is_fully_controlled_by = ROOT } }
+		}
+
+		cancel_effect = {
+			add_manpower = 1000
+		}
+
+		remove_effect = {
+			add_manpower = 1000
+			973 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				XFR_industry_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
+			}
+		}
+	}
+
+	XFR_support_champagne_farmers = {
+
+		icon = GFX_decision_POL_organize_strike_two
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 18 
+			}
+		}
+
+		available = {
+			has_completed_focus = XFR_agriculture
+			18 = { is_fully_controlled_by = ROOT }
+		}
+
+		visible = {
+			has_completed_focus = XFR_industrial_investments
+		}
+
+		cost = 75
+
+		priority = 2
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_remove = 70
+
+		cancel_trigger = {
+			NOT = { 18 = { is_fully_controlled_by = ROOT } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				XFR_industry_monthly_population = 0.1
+				tooltip = monthly_population_tt
+			}
+		}
+	}
+
+	XFR_invest_in_railways = {
+
+		icon = GFX_decision_generic_train
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		available = {
+			has_completed_focus = XFR_expand_the_railroads
+		}
+
+		visible = {
+			has_completed_focus = XFR_industrial_investments
+		}
+
+		cost = 75
+
+		priority = 2
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_remove = 70
+
+		complete_effect = {
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_production_speed_rail_way_factor = 0.15
+				tooltip = production_speed_rail_way_factor_tt
+			}
+		}
+	}
+
+	XFR_expand_toaster_industry = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		available = {
+			has_completed_focus = XFR_civilian_industry_expansion
+			any_owned_state = { is_fully_controlled_by = ROOT }
+		}
+
+		visible = {
+			has_completed_focus = XFR_industrial_investments
+		}
+
+		cost = 75
+
+		priority = 2
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_remove = 70
+
+		cancel_trigger = {
+			NOT = { any_owned_state = { is_fully_controlled_by = ROOT } }
+		}
+
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+    					building = industrial_complex
+    					size > 1
+    					include_locked = no
+					}
+				}
+				random_select_amount = 1
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = XFR_industry_modifier_tt
+			add_to_variable = {
+				XFR_industry_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+		}
+	}
+
+	XFR_expand_alsace_steel_factories = {
+
+		icon = GFX_decision_steel
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 976 
+			}
+		}
+
+		available = {
+			has_completed_focus = XFR_alsatian_steel_industry
+			976 = { is_fully_controlled_by = ROOT }
+		}
+
+		visible = {
+			has_completed_focus = XFR_industrial_investments
+		}
+
+		cost = 75
+
+		priority = 2
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_remove = 35
+
+		cancel_trigger = {
+			NOT = { 976 = { is_fully_controlled_by = ROOT } }
+		}
+
+		remove_effect = {
+			976 = {
+				add_resource = {
+				    type = steel
+				    amount = 10
 				}
 			}
 		}
@@ -1007,6 +1318,10 @@ foreign_politics = {
 
 		visible = { 
 			has_completed_focus = XFR_democracy_prevails
+			OR = {
+				NOT = { has_completed_focus = XFR_proclaim_french_government}
+				has_completed_focus = XFR_return_of_the_pope
+			}
 		}
 
 		fire_only_once = yes
@@ -1063,6 +1378,7 @@ foreign_politics = {
 					add_offsite_building = { type = industrial_complex level = 5 }
 					add_offsite_building = { type = arms_factory level = 1 }
 				}
+				news_event = { id = XFR_news_events.13 }
 			}
 			if = {
 				limit = {
@@ -1947,7 +2263,7 @@ XFR_bop_decision_cat = {
 		days_re_enable = 30
 
 		modifier = {
-			consumer_goods_factor = 0.05
+			consumer_goods_factor = 0.15
 		}
 
 		complete_effect = {
@@ -1955,6 +2271,7 @@ XFR_bop_decision_cat = {
 		}
 
 		remove_effect = {
+			add_political_power = 100
 			add_stability = 0.05
 			if = {
 				limit = { has_country_leader_with_trait = XFR_federalist_leader }
@@ -1985,8 +2302,10 @@ XFR_bop_decision_cat = {
 		available = {
 			has_completed_focus = XFR_social_reform
 			any_controlled_state = {
-				NOT = { is_core_of = ROOT }
-				compliance < 100
+				any_country_with_core = {
+					NOT = { original_tag = ROOT }
+				}
+				NOT = { is_core_of = XFR }
 			}
 		}
 
@@ -2010,7 +2329,8 @@ XFR_bop_decision_cat = {
 		days_re_enable = 30
 
 		modifier = {
-			consumer_goods_factor = 0.05
+			consumer_goods_factor = 0.1
+			compliance_gain = 0.2
 		}
 
 		complete_effect = {
@@ -2018,21 +2338,6 @@ XFR_bop_decision_cat = {
 		}
 
 		remove_effect = {
-			every_controlled_state = {
-				limit = {
-					NOT = { is_core_of = ROOT }
-					compliance < 100
-				}
-				add_compliance = 5
-			}
-			if = {
-				limit = {
-					all_controlled_state = {
-						is_core_of = ROOT
-					}
-				}
-				effect_tooltip = { every_state = { add_compliance = 5 } }
-			}
 			if = {
 				limit = { has_country_leader_with_trait = XFR_federalist_leader }
 				add_power_balance_value = {
@@ -2062,8 +2367,10 @@ XFR_bop_decision_cat = {
 		available = {
 			has_completed_focus = XFR_social_reform
 			any_controlled_state = {
-				NOT = { is_core_of = ROOT }
-				resistance > 10
+				any_country_with_core = {
+					NOT = { original_tag = ROOT }
+				}
+				NOT = { is_core_of = XFR }
 			}
 		}
 
@@ -2087,7 +2394,8 @@ XFR_bop_decision_cat = {
 		days_re_enable = 30
 
 		modifier = {
-			consumer_goods_factor = 0.05
+			consumer_goods_factor = 0.1
+			resistance_growth = -0.1
 		}
 
 		complete_effect = {
@@ -2095,24 +2403,6 @@ XFR_bop_decision_cat = {
 		}
 
 		remove_effect = {
-			every_controlled_state = {
-				limit = {
-					NOT = { is_core_of = ROOT }
-					resistance > 10
-				}
-				add_resistance = -10
-			}
-			if = {
-				limit = {
-					all_controlled_state = {
-						OR = {
-							is_core_of = ROOT
-							resistance < 10
-						}
-					}
-				}
-				effect_tooltip = { every_state = { add_resistance = -10 } }
-			}
 			if = {
 				limit = { has_country_leader_with_trait = XFR_federalist_leader }
 				add_power_balance_value = {
