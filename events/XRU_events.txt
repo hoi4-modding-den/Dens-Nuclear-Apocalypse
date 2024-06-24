@@ -47,6 +47,8 @@ country_event = {
 			base = 33.3
 		}
 		kill_country_leader = yes
+		promote_character = XRU_Valery_Sydor
+		hidden_effect = {
 		XSO = {
 				set_politics = {
 					ruling_party = neutrality
@@ -61,7 +63,7 @@ country_event = {
 		transfer_state = 71
 		set_country_flag = cf_XRU_slovak_trigger
 		set_cosmetic_tag = ct_XSO_begin
-		add_manpower = 300000
+		add_manpower = 30000
 		}
 		XSP = {
 				set_politics = {
@@ -76,7 +78,7 @@ country_event = {
 		transfer_state = 72
 		set_country_flag = cf_XRU_spartakus_trigger
 		set_cosmetic_tag = ct_XSP_begin
-		add_manpower = 300000
+		add_manpower = 30000
 		}
 		set_party_name = {
 			ideology = communism
@@ -92,11 +94,14 @@ country_event = {
 			long_name = XHP_gen_neutral_long
 			name = XRU_gen_neutral_short
 		}
+		}
 	XSP = {
 	change_tag_from = XRU
 	}
+	hidden_effect = {
 	load_focus_tree = XSP_focus
 	XSO = {
+	load_focus_tree = XSO_focus
 	declare_war_on = {
 	target = XSP
 	type = annex_everything
@@ -104,6 +109,7 @@ country_event = {
 	add_civil_war_target = XSP
 	}
 	XRU = {
+	load_focus_tree = XRU_doom_focus
 	declare_war_on = {
 	target = XSO
 	type = annex_everything
@@ -140,7 +146,20 @@ create_country_leader = {
 		}
 	}
 	news_event = XRU.1
+	XRU = {
 	remove_ideas = XRU_looming_disaster
+	}
+	XRU = {
+	transfer_units_fraction = {
+	target = XSP
+	size = 0.3
+	}
+	transfer_units_fraction = {
+	target = XSO
+	size = 0.4
+	}
+	}
+	}
 }
 		option = {
 		name = XRU.start_3.b
@@ -148,6 +167,8 @@ create_country_leader = {
 			base = 33.3
 		}
 		kill_country_leader = yes
+		promote_character = XRU_Valery_Sydor
+		hidden_effect = {
 		XSO = {
 				set_politics = {
 					ruling_party = neutrality
@@ -162,7 +183,7 @@ create_country_leader = {
 		transfer_state = 71
 		set_country_flag = cf_XRU_slovak_trigger
 		set_cosmetic_tag = ct_XSO_begin
-		add_manpower = 300000
+		add_manpower = 30000
 		}
 		XSP = {
 				set_politics = {
@@ -177,7 +198,7 @@ create_country_leader = {
 		transfer_state = 72
 		set_country_flag = cf_XRU_spartakus_trigger
 		set_cosmetic_tag = ct_XSP_begin
-		add_manpower = 300000
+		add_manpower = 30000
 		}
 		set_party_name = {
 			ideology = communism
@@ -193,9 +214,11 @@ create_country_leader = {
 			long_name = XHP_gen_neutral_long
 			name = XRU_gen_neutral_short
 		}
+	}
 	XSO = {
 	change_tag_from = XRU
 	}
+	hidden_effect = {
 		load_focus_tree = XSO_focus
 		XSP = {
 		declare_war_on = {
@@ -241,14 +264,30 @@ create_country_leader = {
 		}
 	}
 	news_event = XRU.1
+	XRU = {
 	remove_ideas = XRU_looming_disaster
+	}
+	XRU = {
+	transfer_units_fraction = {
+	target = XSP
+	size = 0.3
+	}
+	transfer_units_fraction = {
+	target = XSO
+	size = 0.4
+	}
+	}
+	}
 		}
 		option = {
 		name = XRU.start_3.c
 		ai_chance = {
 			base = 33.4
 		}
+		custom_effect_tooltip = XRU_new_focus_tt
 		kill_country_leader = yes
+		promote_character = XRU_Valery_Sydor
+		hidden_effect = {
 				XSO = {
 				set_politics = {
 					ruling_party = neutrality
@@ -263,7 +302,7 @@ create_country_leader = {
 		transfer_state = 71
 		set_country_flag = cf_XRU_slovak_trigger
 		set_cosmetic_tag = ct_XSO_begin
-		add_manpower = 300000
+		add_manpower = 30000
 		}
 		XSP = {
 				set_politics = {
@@ -278,7 +317,7 @@ create_country_leader = {
 		transfer_state = 72
 		set_country_flag = cf_XRU_spartakus_trigger
 		set_cosmetic_tag = ct_XSP_begin
-		add_manpower = 300000
+		add_manpower = 30000
 		}
 		XRU = {
 			set_party_name = {
@@ -299,7 +338,11 @@ create_country_leader = {
 		XRU = {
 			load_focus_tree = XRU_doom_focus
 		}
+		XSO = {
+			load_focus_tree = XSO_focus
+		}
 		XSP = {
+		load_focus_tree = XSP_focus
 		declare_war_on = {
 		target = XSO
 		type = annex_everything
@@ -340,7 +383,20 @@ create_country_leader = {
 			 }
 		}
 	news_event = XRU.1
+	XRU = {
 	remove_ideas = XRU_looming_disaster
+	}
+	XRU = {
+	transfer_units_fraction = {
+	target = XSP
+	size = 0.3
+	}
+	transfer_units_fraction = {
+	target = XSO
+	size = 0.4
+	}
+	}
+		}
 		}
 	}
 }
@@ -359,18 +415,22 @@ country_event = {
 		name = "Serves them right!"
 		trigger = {
 			NOT = {
+			OR = {
 				TAG = XRU
 				TAG = XSO
 				TAG = XSP
+			}
 			}
 		}
 	}
 	option = {
 		name = "We must fight for our beliefs!"
 		trigger = {
+			OR = {
 			TAG = XRU
 			TAG = XSO
 			TAG = XSP
+			}
 		}
 	}
 }

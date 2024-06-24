@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = fascism_ideology
-			traits = { }
+			traits = { XRU_feeble_ex_hero }
 			expire = "3000.9.9.9"
 			id = -1
 			}
@@ -24,10 +24,11 @@ characters = {
 		}
 		country_leader = {
 			ideology = despotism
-			traits = { }
+			traits = { XRU_mighty_fighter }
 			expire = "3000.9.9.9"
 			id = -1
     			}
+}
 	XRU_Revolutionary = {
 		name = "Revolutionary"
 		gender = male
@@ -38,7 +39,23 @@ characters = {
 		}
 		country_leader = {
 			ideology = anarchist_communism
-			traits = { }
+			traits = { XRU_twisted_genius }
+			expire = "3000.9.9.9"
+			id = -1
+    			}
+}
+
+	XRU_Valery_Sydor = {
+		name = "Valery Sydor"
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XRU/Portrait_Valery_Sydor.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { XRU_valkyrie }
 			expire = "3000.9.9.9"
 			id = -1
     			}

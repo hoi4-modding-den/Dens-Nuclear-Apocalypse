@@ -1,0 +1,24 @@
+leader_traits = {
+	
+	XRU_feeble_ex_hero = {
+		random = no
+		political_power_factor = -0.5
+		war_support_factor = -0.1
+		party_popularity_stability_factor = -0.2
+		}
+
+	XRU_mighty_fighter = {
+		random = no
+		political_power_factor = +0.15
+		war_support_factor = +0.3
+		}
+	XRU_twisted_genius = {
+		random = no
+		political_power_factor = +0.5
+		war_support_factor = +0.15
+		party_popularity_stability_factor = -0.25
+		}
+	XRU_valkyrie = {
+		random = no
+		war_support_factor = +0.5
+		}

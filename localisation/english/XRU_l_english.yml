@@ -35,16 +35,23 @@ XRU_democracy_party_long:0 "The Democratic Free Party"
 XRU_fascism_party:0 "Rusyn State Authority"
 XRU_fascism_party_long:0 "Central Authority for the Revival of the Rusyns"
 
-# OMG DISASTER!!!!1
+# Tooltips
 XRU_looming_disaster_tt:0 "§RSomething horrible is coming.§"
+XRU_new_focus_tt:0 "§GA new focus tree will be unlocked.§"
 
 # Leaders
 XRU_Dimitry_Sydor:0 "Dimitry Sydor"
 XRU_Dimitry_Sydor_desc:0 "Dimitry Sydor feels empty inside. His days as an archpriest made him believe that God was on the side of the Rusyns in taking back their homeland and more, but now, the frozen state he has created begins to thaw. Sydor feels a sense of dread overcome him - it will not be much longer until disaster strikes."
 XRU_Gabriel_Bosko:0 "Gabriel Bosko"
-XRU_Gabriel_Bosko_desc:0 "WIP"
+XRU_Gabriel_Bosko_desc:0 "Gabriel Bosko was raised to be a soldier. His mother died in childbirth - his father died in combat. His uncle, the most rage-filled man Bosko ever met, took him under his wing. Luckily, his uncle only directed his rage towards the Rusyns, who quickly seized control of Slovak territory in an uprising. Now, Bosko fights for more than just his uncle, his mother, and his father - he fights for all of Slovakia. And there isn't a thing he won't do to win back their freedom."
 XRU_Revolutionary:0 "Revolutionary"
-XRU_Revolutionary_desc:0 "WIP"
+XRU_Revolutionary_desc:0 "So little is known about the man who tore the Rusyn State asunder. His name is most certainly not "Revolutionary", but there is no other name known for him to be called, and so his enemies are forced to call him an ideological crusader, much to his delight. Although his underlings are also in the shadows, none of their identities remain as hidden as their leader's. Revolutionary has plans - big plans. Plans the rest of Eastern Europe might be unprepared for."
+
+# Traits
+XRU_feeble_ex_hero:0 "Feeble Ex-Hero" # Sydor
+XRU_mighty_fighter:0 "Mighty Fighter" # Bosko
+XRU_twisted_genius:0 "Twisted Genius" # Revolutionary
+XRU_valkyrie:0 "Deathbringer Valkyrie" # Valery
 
 # Ideas
 XRU_Looming_Disaster:0 "§RLooming Disaster§"

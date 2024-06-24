@@ -1,5 +1,7 @@
 capital = 73
 
+oob = "XRU"
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "2235.1.10"
@@ -52,9 +54,10 @@ create_country_leader = {
 
 	}
 }
+recruit_character = XRU_Valery_Sydor
 
 add_opinion_modifier = {
-	target = D01
+	target = DO1
 	modifier = XRU_Fellow_Fascist
 }
 add_opinion_modifier = {

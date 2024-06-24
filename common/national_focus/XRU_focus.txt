@@ -105,7 +105,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_operation_second_vengeance
-		icon = GFX_focus_Second_Vengeance
+		icon = GFX_focus_Operation_Second_Vengeance
 		x = 7
 		y = 4
 		cost = 2
@@ -126,13 +126,16 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
-		prerequisite = {
-			focus = XRU_operation_second_vengeance
+		prerequisite = { focus = XRU_operation_second_vengeance }
+		available = {
 			XSO = {exists = no}
 			XSP = {exists = no}
 		}
 		completion_reward = {
+			custom_effect_tooltip = XRU_new_focus_tt
+			hidden_effect = {
 			load_focus_tree = XRU_real_focus
+			}
 		}
 	}
 }
