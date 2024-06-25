@@ -56,12 +56,19 @@ XHP_high_council_desc:0 "The Order of Santiago is a religious and military order
 
 
 ### Effect Tooltips
+tt_XHP_offer_conc:0 "§YWill lead to peace with the crusaders and a possible integration into the government§!"
+tt_XHP_quell:0 "§RWill lead to war with the Order of Santiago!§!"
+tt_XHP_different_approach:0 "§RWill lead to a full Templaric takeover!§!"
+tt_XHP_new_masters:0 "Change government to: §YTemplaric Order§!"
+tt_XHP_new_masters_focus:0 "Load focus tree: §YTemplaric Path§!"
+
 
 ### Trigger Tooltips
 
 ### Cosmetic Tags
 ct_XTH_rise:0 "Order of Santiago"
-ct_XTH_rise_DEF:0 "The Order of Santiago
+ct_XTH_rise_fascism_DEF:0 "The Order of Santiago"
+ct_XTH_rise_fascism_ADJ:0 "Templaric"
 
 ### Party Names
 XHP_democrat_imp_court_long:0 "Bureaucrat Stability Party"

@@ -83,6 +83,7 @@ focus_tree = {
 			add_ideas = {
 				extensive_conscription
 			}
+			custom_effect_tooltip = tt_XHP_quell
 		}
 	}
 
@@ -178,7 +179,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XHP_unify_cause
-		icon = GFX_focus_XHP_numbers
+		icon = GFX_focus_XHP_unify
 		prerequisite = { focus = XHP_our_faith_in_numbers focus = XHP_pad_the_armor }
 		mutually_exclusive = { focus = XHP_court_council }
 		x = 1
@@ -192,7 +193,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XHP_court_council
-		icon = x
+		icon = GFX_focus_XHP_court_council
 		prerequisite = { focus = XHP_our_faith_in_numbers focus = XHP_pad_the_armor }
 		mutually_exclusive = { focus = XHP_unify_cause }
 		x = -1
@@ -206,7 +207,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XHP_the_fight
-		icon = x
+		icon = GFX_focus_XHP_the_fight
 		prerequisite = { focus = XHP_unify_cause focus = XHP_court_council }
 		x = -0.5
 		y = 1
@@ -221,7 +222,7 @@ focus_tree = {
 	### Crisis Resolved
 	focus = {
 		id = XHP_crisis_resolved
-		icon = x
+		icon = GFX_focus_XHP_crisis_resolved
 		x = 25
 		y = 5
 		cost = 5
@@ -295,12 +296,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_stability = 0.05
+			custom_effect_tooltip = tt_XHP_offer_conc
 		}
 	}
 	focus = {
 		id = XHP_open_cathedral
-		icon = GFX_focus_XHP_cc_concessions
+		icon = GFX_focus_XHP_reopen_santiago
 		x = 0
 		y = 2
 		relative_position_id = XHP_offer_concessions
@@ -309,11 +311,12 @@ focus_tree = {
 
 		completion_reward = {
 			# idea for the church or something. research speed, stability, maybe even edit the disloyalty idea idfk
+			
 		}
 	}
 	focus = {
 		id = XHP_xth_incorporate
-		icon = GFX_focus_XHP_cc_concessions
+		icon = GFX_focus_XHP_church_government
 		x = 0
 		y = 1
 		relative_position_id = XHP_open_cathedral
@@ -322,12 +325,13 @@ focus_tree = {
 		cost = 2
 		completion_reward = {
 			# the lose a little bit of influence, making our government stronger
+
 		}
 		
 	}
 	focus = {
 		id = XHP_into_coalition
-		icon = GFX_focus_XHP_cc_concessions
+		icon = GFX_focus_XHP_into_coalition
 		x = -1
 		y = 1
 		relative_position_id = XHP_xth_incorporate
@@ -341,7 +345,7 @@ focus_tree = {
 
 	focus = {
 		id = XHP_xth_different_approach
-		icon = GFX_focus_XHP_cc_concessions
+		icon = GFX_focus_XHP_different_approach
 		x = 2
 		y = 1
 		relative_position_id = XHP_open_cathedral
@@ -350,12 +354,13 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			# tooltip to show that this will mean a templaric takeover
+			custom_effect_tooltip = tt_XHP_different_approach
 		}
 
 	}
 	focus = {
 		id = XHP_xth_new_masters
-		icon = GFX_focus_XHP_cc_concessions
+		icon = GFX_focus_XHP_new_masters
 		x = 1
 		y = 1
 		relative_position_id = XHP_xth_different_approach
@@ -367,6 +372,15 @@ focus_tree = {
 			# load the new focus tree
 			remove_ideas = {
 				idea_XHP_crusader_crisis
+			}
+			custom_effect_tooltip = tt_XHP_new_masters
+			custom_effect_tooltip = tt_XHP_new_masters_focus
+			hidden_effect = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_cosmetic_tag = ct_XTH_rise
 			}
 		}
 		
