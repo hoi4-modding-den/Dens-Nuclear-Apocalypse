@@ -1351,4 +1351,8 @@ XRP_democratic_color = {
     color = rgb { 20 133 237 }
     color_ui = rgb { 20 133 237 }
 }
+XRP_france = {
+    color = rgb { 28 58 114 }
+    color_ui = rgb { 28 58 114 }
+}
 #will include more later#

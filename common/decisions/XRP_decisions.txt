@@ -40,3 +40,59 @@ XRP_german_uprising = {
 		}
 	}
 }
+XRP_puppets = {
+	XRP_french_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_french_states
+			NOT = { has_country_flag = XRP_french_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_french_states }
+			has_country_flag = XRP_french_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_french_states
+			NOT = { has_country_flag = XRP_french_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.1 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.1 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_french_puppet_return_territory = { #does not work yet
+		icon = GFX_decision_hol_exchange_intelligence_data
+		allowed = {
+			tag = XRP
+		}
+		available = {
+
+		}
+		target_trigger = {
+			any_owned_state = {
+				is_core_of = XRP_france
+			}
+		}
+		complete_effect = {
+			transfer_state_to = XRP_france
+		}
+	}
+}

@@ -158,8 +158,19 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				monthly_population = 0.15
+				resistance_target = -0.01
 				consumer_goods_factor = 0.1
 				research_speed_factor = -0.1
+			}						
+		}
+		XRP_agarian_pop_improved = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.12
+				resistance_target = -0.02
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.05
 			}						
 		}
 		XRP_military_buff = {

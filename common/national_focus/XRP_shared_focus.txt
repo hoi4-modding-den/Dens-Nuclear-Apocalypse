@@ -100,6 +100,10 @@ shared_focus = {
 
 		completion_reward = {
 			country_event = { id = XRP_focus_event.4 }
+			swap_ideas = {
+				remove_idea = XRP_agarian_pop 
+				add_idea = XRP_agarian_pop_improved
+			}
 		}
 	}
 
@@ -119,30 +123,13 @@ shared_focus = {
 		}
 
 		completion_reward = {
-			
 			swap_ideas = {
 				remove_idea = XRP_economy_nuked
 				add_idea = XRP_economy_nuked_improved
 			}
 			country_event = { id = XRP_focus_event.3 }
-			#add these to event
-			#983 = {
-			#	set_state_category = large_town
-			#	add_building_construction = {
-			#	type = industrial_complex
-			#	level = 1
-			#	instant_build = yes
-			#		}
-			#
-			#}
-			#42 = {
-			#	add_building_construction = {
-			#	type = industrial_complex
-			#	level = 1
-			#	instant_build = yes
-			#		}
-			#
-			#}
+			custom_effect_tooltip = XRP_german_warning_tooltip
+			#popularity percentages by time you can do this focus: Democratic 30.39%, Communist 21.56%, Fascist 33.10%, Neutrality 14.92%
 			
 		}
 	}
