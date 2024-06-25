@@ -28,6 +28,23 @@ spriteTypes = {
 		name = "GFX_portrait_xth_arcturus"
 		texturefile = "gfx/leaders/XHP/portrait_xth_arcturus.dds"
 	}
+
+	spriteType = {
+		name = "GFX_portrait_xhp_emillio_castillo"
+		texturefile = "gfx/leaders/XHP/portrait_xhp_emillio_castillo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_xhp_diego_gonzalez"
+		texturefile = "gfx/leaders/XHP/portrait_xhp_diego_gonzalez.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_xhp_ricardo_vargas"
+		texturefile = "gfx/leaders/XHP/portrait_xhp_ricardo_vargas.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_xhp_mateo_silva"
+		texturefile = "gfx/leaders/XHP/portrait_xhp_mateo_silva.dds"
+	}
 	
 	### Goals
 	spriteType = { 

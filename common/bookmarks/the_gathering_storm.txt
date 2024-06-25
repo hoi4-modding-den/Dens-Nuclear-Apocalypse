@@ -202,10 +202,13 @@ bookmarks = {
 			ideology = democratic
 			history = XHP_history_desc
 			focuses = {
-
+				XHP_quell_the_crusaders
+				XHP_the_fight
+				XHP_xth_new_masters
 			}
 			ideas = {
-				
+				idea_XHP_crusader_crisis
+				idea_XHP_disloyalty_everywhere
 			}	
 		}
 		"XWA" = {

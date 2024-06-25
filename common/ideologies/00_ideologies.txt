@@ -43,7 +43,10 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 41 39 66 }
 			}
-			
+			XHP_democratic_junta = {
+				can_be_randomly_selected = no
+				color = { 41 39 66 }
+			}
 			XLA_fey = {
 				can_be_randomly_selected = no
 				color = { 60 115 65 }
