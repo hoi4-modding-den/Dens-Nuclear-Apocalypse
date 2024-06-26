@@ -65,6 +65,22 @@ country_event = {
 		set_cosmetic_tag = ct_XSO_begin
 		add_manpower = 30000
 		}
+		70 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		71 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		72 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		73 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
 		XSP = {
 				set_politics = {
 					ruling_party = communism
@@ -99,7 +115,9 @@ country_event = {
 	change_tag_from = XRU
 	}
 	hidden_effect = {
+	XSP = {
 	load_focus_tree = XSP_focus
+	}
 	XSO = {
 	load_focus_tree = XSO_focus
 	declare_war_on = {
@@ -129,7 +147,7 @@ create_country_leader = {
 	expire = "3000.9.9"
 	ideology = anarchist_communism
 		traits = {
-			
+			XRU_twisted_genius
 			 }
 		}
 	}
@@ -141,7 +159,7 @@ create_country_leader = {
 	expire = "3000.9.9"
 	ideology = despotism
 		traits = {
-			
+			XRU_mighty_fighter
 			 }
 		}
 	}
@@ -185,6 +203,22 @@ create_country_leader = {
 		set_cosmetic_tag = ct_XSO_begin
 		add_manpower = 30000
 		}
+		70 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		71 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		72 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		73 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
 		XSP = {
 				set_politics = {
 					ruling_party = communism
@@ -219,26 +253,30 @@ create_country_leader = {
 	change_tag_from = XRU
 	}
 	hidden_effect = {
-		load_focus_tree = XSO_focus
-		XSP = {
-		declare_war_on = {
-		target = XRU
-		type = annex_everything
-		}
-		add_civil_war_target = XRU
-		}
-		XSO = {
-		declare_war_on = {
-		target = XSP
-		type = annex_everything
-		}
-		add_civil_war_target = XSP
-		declare_war_on = {
-		target = XRU
-		type = annex_everything
-		}
-		add_civil_war_target = XRU
-		}
+	XSP = {
+	load_focus_tree = XSP_focus
+	}
+	XSO = {
+	load_focus_tree = XSO_focus
+	declare_war_on = {
+	target = XSP
+	type = annex_everything
+	}
+	add_civil_war_target = XSP
+	}
+	XRU = {
+	load_focus_tree = XRU_doom_focus
+	declare_war_on = {
+	target = XSO
+	type = annex_everything
+	}
+	add_civil_war_target = XSO
+	declare_war_on = {
+	target = XSP
+	type = annex_everything
+	}
+	add_civil_war_target = XSP
+	}
 	XSP = {
 create_country_leader = {
 	name = XRU_Revolutionary
@@ -247,7 +285,7 @@ create_country_leader = {
 	expire = "3000.9.9"
 	ideology = anarchist_communism
 		traits = {
-			
+			XRU_twisted_genius
 			 }
 		}
 	}
@@ -259,7 +297,7 @@ create_country_leader = {
 	expire = "3000.9.9"
 	ideology = despotism
 		traits = {
-			
+			XRU_mighty_fighter
 			 }
 		}
 	}
@@ -304,6 +342,22 @@ create_country_leader = {
 		set_cosmetic_tag = ct_XSO_begin
 		add_manpower = 30000
 		}
+		70 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		71 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		72 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
+		73 = {
+		add_core_of = XSO
+		add_core_of = XSP
+		}
 		XSP = {
 				set_politics = {
 					ruling_party = communism
@@ -335,30 +389,31 @@ create_country_leader = {
 				name = XRU_gen_neutral_short
 				}
 			}
-		XRU = {
-			load_focus_tree = XRU_doom_focus
-		}
-		XSO = {
-			load_focus_tree = XSO_focus
-		}
-		XSP = {
-		load_focus_tree = XSP_focus
-		declare_war_on = {
-		target = XSO
-		type = annex_everything
-		}
-		add_civil_war_target = XSO
-		}
-		declare_war_on = {
-		target = XSP
-		type = annex_everything
-		}
-		add_civil_war_target = XSP
-		declare_war_on = {
-		target = XSO
-		type = annex_everything
-		}
-		add_civil_war_target = XSO
+			hidden_effect = {
+	XSP = {
+	load_focus_tree = XSP_focus
+	}
+	XSO = {
+	load_focus_tree = XSO_focus
+	declare_war_on = {
+	target = XSP
+	type = annex_everything
+	}
+	add_civil_war_target = XSP
+	}
+	XRU = {
+	load_focus_tree = XRU_doom_focus
+	declare_war_on = {
+	target = XSO
+	type = annex_everything
+	}
+	add_civil_war_target = XSO
+	declare_war_on = {
+	target = XSP
+	type = annex_everything
+	}
+	add_civil_war_target = XSP
+	}
 	XSP = {
 create_country_leader = {
 	name = XRU_Revolutionary
@@ -367,7 +422,7 @@ create_country_leader = {
 	expire = "3000.9.9"
 	ideology = anarchist_communism
 		traits = {
-			
+			XRU_twisted_genius
 			 }
 		}
 	}
@@ -379,7 +434,7 @@ create_country_leader = {
 	expire = "3000.9.9"
 	ideology = despotism
 		traits = {
-			
+			XRU_mighty_fighter
 			 }
 		}
 	news_event = XRU.1

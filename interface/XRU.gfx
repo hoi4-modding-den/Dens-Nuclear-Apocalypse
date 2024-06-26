@@ -1,5 +1,12 @@
 spriteTypes = {
 
+	# Thumbnail
+	spriteType = {
+		name = "GFX_XRU_Church"
+		textureFile = "gfx/interface/XRU/XRU_Church.dds"
+		legacy_lazy_load = no
+	}
+
 	# Ideas
 	spriteType = {
 		name = "GFX_idea_Looming_Disaster"
