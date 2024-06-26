@@ -1,0 +1,31 @@
+
+add_namespace = XAD
+
+news_event = {
+	id = XAD.10
+	title = "The iberian war has finished"
+	desc = XAD.10.d
+	picture = GFX_Colonists
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The clouds are now gone in the sunny region"
+	}
+}
+news_event = {
+	id = XAD.11
+	title = "The iberian war has begun"
+	desc = XAD.10.d
+	picture = GFX_Colonists
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The clouds have appeared in the sunny region"
+	}
+}

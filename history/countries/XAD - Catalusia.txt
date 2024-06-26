@@ -87,7 +87,7 @@ add_ideas = {
 	XAD_remember_ceuta
 	XAD_impending_communist_coup
 	XAD_devided_lenguage
-
+	limited_conscription
 }
 
 add_dynamic_modifier = { modifier = XAD_military }

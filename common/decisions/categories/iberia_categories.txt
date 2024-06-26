@@ -1,0 +1,21 @@
+iberia_war_category = {		
+	priority = 10
+	icon = GFX_category_icon
+	
+	allowed = {
+		OR = {
+			original_tag = XAD
+			original_tag = XHP
+			original_tag = XPY
+			original_tag = XGL
+		}
+	}
+	visible = {
+		OR = {
+			original_tag = XAD
+			original_tag = XHP
+			original_tag = XPY
+			original_tag = XGL
+		}
+	}
+}
