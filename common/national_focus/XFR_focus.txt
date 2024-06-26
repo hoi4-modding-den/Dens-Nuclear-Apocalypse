@@ -3406,7 +3406,7 @@ focus_tree = {
 			start_civil_war = {
     			ruling_party = fascism
     			ideology = communism
-    			size = 0.3
+    			size = 0.5
     			capital = 18
     			states = {
     			    18
@@ -3417,11 +3417,29 @@ focus_tree = {
 						set_nationality = PREV.PREV
 					}
 				}
+				set_country_flag = XFR_anarchist_revolt
+				promote_character = XFR_anarchists
+				create_country_leader = {
+					name = XFR_parliament_name
+					picture = GFX_portrait_XFR_parliament
+					expire = "3000.1.1"
+					ideology = XFR_emergency_government
+					traits = {
+						XFR_parliament_trait
+					}
+				}
 				add_popularity = {
 					ideology = democratic
-					popularity = 0.4
+					popularity = 0.25
 				}
-				add_ideas = { XFR_anarchist_revolt XFR_anarchist_democrat_cooperation }
+				set_party_name = {
+           		 	ideology = neutrality
+            		long_name = "Neue Herzogspartei (New Duke's Party)"
+            		name = "Neue Herzogspartei"
+        		} 
+				add_ideas = { XFR_anarchist_revolt }
+				load_focus_tree = XFR_anarchist_civil_war_focus
+				set_cosmetic_tag = XFR_anarchists
 			}
 			set_party_name = {
             	ideology = communism
@@ -3436,7 +3454,7 @@ focus_tree = {
 				traits = {
 					XFR_anarchists_trait
 				}
-				}
+			}
 			load_oob = "XFR_civil_war_fascists"
 			if = {
 				limit = {
@@ -4260,6 +4278,7 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			has_completed_focus = XFR_middle_francia_restored
 		}
 
 		cost = 5
@@ -5815,6 +5834,7 @@ focus_tree = {
 		prerequisite = { focus = XFR_secure_northern_italy }
 		prerequisite = { focus = XFR_no_more_napoleons }
 		prerequisite = { focus = XFR_retake_the_lowlands }
+		prerequisite = { focus = XFR_subjugate_south_italy }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 5
@@ -6348,9 +6368,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	
-
 
 # INDUSTRY
 
@@ -8507,5 +8524,391 @@ focus_tree = {
 #			custom_effect_tooltip = XFR_burgundian_infiltration_squad_tt
 #		}
 #	}
+
+}
+
+focus_tree = {
+	id = XFR_anarchist_civil_war_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = XFR
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+			has_civil_war = yes
+		}
+	}
+	
+	default = no
+
+
+	focus = {
+		id = XFR_war_of_resistance
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			add_war_support = 0.25
+		}
+	}
+
+	focus = {
+		id = XFR_arms_against_tyranny
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = XFR_war_of_resistance }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_war_of_resistance
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 1000
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_the_republican_deal
+		icon = GFX_focus_generic_befriend_burgundy
+		prerequisite = { focus = XFR_arms_against_tyranny }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_arms_against_tyranny
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			add_ideas = XFR_anarchist_democrat_cooperation
+		}
+	}
+
+	focus = {
+		id = XFR_allow_democratic_institutions
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = XFR_the_republican_deal }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_the_republican_deal
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_ideas = XFR_democrat_bureaucrats
+		}
+	}
+
+	focus = {
+		id = XFR_mobilise_red_militias
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = XFR_war_of_resistance }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XFR_war_of_resistance
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			division_template = { 
+				name = "Red Militia"
+				is_locked = yes
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+				}
+				priority = 0
+			}
+			custom_effect_tooltip = XFR_mobilise_red_militias_tt
+			hidden_effect = {
+				18 = {
+					create_unit = {
+   						division = "name = \"Red Militia\" division_template = \"Red Militia\" start_experience_factor = 0.3"
+    					count = 5
+						allow_spawning_on_enemy_provs = yes
+						owner = ROOT
+					}
+				}
+			}
+			add_ideas = XFR_red_militias
+		}
+	}
+
+	focus = {
+		id = XFR_the_volunteer_corps
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = XFR_mobilise_red_militias }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_mobilise_red_militias
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+			XAL = { NOT = { has_idea = XAL_burgundy_volunteers } }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			add_manpower = 10000
+			division_template = { 
+				name = "Brigade des Volontaires Bourguignons"
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					artillery_brigade = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					anti_air = { x = 0 y = 2 }
+				}
+				priority = 0
+			}
+			custom_effect_tooltip = XFR_the_volunteer_corps_tt
+			hidden_effect = {
+				18 = {
+					create_unit = {
+   						division = "name = \"Brigade des Volontaires Bourguignons\" division_template = \"Brigade des Volontaires Bourguignons\" start_experience_factor = 0.8"
+						allow_spawning_on_enemy_provs = yes
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_rally_the_farmers
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		prerequisite = { focus = XFR_war_of_resistance }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_war_of_resistance
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			add_manpower = 25000
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = XFR_factory_worker_communes
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = XFR_rally_the_farmers }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_rally_the_farmers
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+    					building = arms_factory
+    					size > 1
+    					include_locked = no
+					}
+				}
+				random_select_amount = 1
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_communal_council_assembly
+		icon = GFX_focus_BRA_tribunal
+		prerequisite = { focus = XFR_factory_worker_communes }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_factory_worker_communes
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			add_ideas = XFR_council_assembly
+		}
+	}
+
+	focus = {
+		id = XFR_the_final_push
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = XFR_the_volunteer_corps }
+		prerequisite = { focus = XFR_allow_democratic_institutions }
+		prerequisite = { focus = XFR_communal_council_assembly }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_the_volunteer_corps
+
+		available = {
+			has_country_leader = { character = XFR_anarchists ruling_only = yes }
+		}
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  }
+		completion_reward = {
+			add_timed_idea = {
+				idea = XFR_civil_war_bonus
+				days = 70
+			}
+		}
+	}
 
 }

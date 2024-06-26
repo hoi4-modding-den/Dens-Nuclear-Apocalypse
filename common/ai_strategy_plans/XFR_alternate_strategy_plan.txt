@@ -1,0 +1,249 @@
+XFR_alt_dem_path = {
+	name = "Burgundian Alternate Democratic plan"
+	desc = "Burgundian Elections are no longer rigged"
+
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		OR = {
+			has_country_flag = XFR_AI_RANDOM_ALT_DEM
+			has_game_rule = {
+				rule = XFR_ai_behavior
+				option = XFR_ALT_DEM
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		XFR_support_parliament
+		XFR_investigate_centre
+		XFR_deal_with_the_mutants
+		
+		XFR_prepare_for_elections
+		XFR_work_with_anarchists
+		XFR_raid_fascist_hideouts
+		XFR_arrest_the_duke
+
+		XFR_crisis_averted
+		XFR_colonise_centre
+		XFR_stabilise_the_republic
+
+		XFR_the_dream_of_france
+		XFR_european_ambitions
+		XFR_guarantee_swiss_freedom
+		XFR_ultimatum_to_alcase_lorraine
+		XFR_protect_switzerland
+
+		XFR_return_of_the_pope
+
+		XFR_economic_cooperation
+		XFR_french_reunification
+		XFR_take_down_stragglers
+
+		XFR_proclaim_french_government
+		XFR_the_two_democracies
+		XFR_portugese_support
+		XFR_across_the_channel
+
+		XFR_alliance_of_free_nations
+
+		XFR_across_the_channel2
+
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+XFR_esoteric_path = {
+	name = "Burgundian Esoteric Monarchism plan"
+	desc = "Burgundian Civil War -> Lunatic Monarch"
+
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		OR = {
+			has_country_flag = XFR_AI_RANDOM_ESOTERIC
+			has_game_rule = {
+				rule = XFR_ai_behavior
+				option = XFR_ESOTERTIC
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		# Do whenever possible 
+		XFR_dennounce_democracy
+		XFR_fascist_coup
+		XFR_civil_war1
+		XFR_monarchist_coup
+		
+		XFR_announce_francian_ambitions
+		XFR_allow_nationalist_militias
+
+		XFR_march_towards_victory
+
+		XFR_order_of_lorraine
+
+		XFR_warplan_middle_francia
+		XFR_new_crusaders
+		XFR_dabble_in_the_esoteric3
+		XFR_middle_francia_restored
+
+		XFR_dabble_in_the_esoteric1
+		
+		XFR_improve_italian_industry
+		XFR_rebuild_the_trade_centre
+
+		XFR_dabble_in_the_esoteric6
+		XFR_dabble_in_the_esoteric7
+		XFR_dabble_in_the_esoteric8
+
+		XFR_west_francia_restored
+		XFR_finally_brittany
+
+		XFR_exploit_the_territories
+
+		XFR_east_francia_restored
+		XFR_the_commie_menace
+
+		XFR_all_hail_kaiser_julius
+
+		XFR_tno_reference
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		XFR_support_parliament = 0
+		XFR_follow_the_promise = 0
+		XFR_international_research_society = 0
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+XFR_monarchist_path = {
+	name = "Burgundian Monarchism plan"
+	desc = "Burgundian Civil War -> 'Normal' Monarch"
+
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		OR = {
+			has_country_flag = XFR_AI_RANDOM_MONARCHIST
+			has_game_rule = {
+				rule = XFR_ai_behavior
+				option = XFR_MONARCHIST
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		# Do whenever possible 
+		XFR_dennounce_democracy
+		XFR_fascist_coup
+		XFR_civil_war1
+		XFR_monarchist_coup
+		
+		XFR_announce_francian_ambitions
+
+		XFR_follow_the_promise
+
+		XFR_warplan_middle_francia
+		XFR_imperial_connections
+		XFR_nukes_are_the_best
+		XFR_middle_francia_restored
+
+		XFR_strengthen_national_security
+		
+		XFR_improve_italian_industry
+		XFR_rebuild_the_trade_centre
+
+		XFR_the_francian_economy
+
+		XFR_west_francia_restored
+		XFR_finally_brittany
+
+		XFR_exploit_the_territories
+
+		XFR_east_francia_restored
+		XFR_the_commie_menace
+
+		XFR_all_hail_kaiser_julius
+
+		XFR_tno_reference
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		XFR_support_parliament = 0
+		XFR_march_towards_victory = 0
+		XFR_allow_nationalist_militias = 0
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
