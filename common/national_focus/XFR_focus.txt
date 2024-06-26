@@ -1122,14 +1122,17 @@ focus_tree = {
 			has_government = democratic
 			is_subject = no
 			is_faction_leader = yes
-			custom_trigger_tooltip = {
-				always = no
-				tooltip = WIP
+			XGL = {
+				exists = yes
+				has_government = democratic
+				is_subject = no
 			}
 		}
 
 		bypass = {
-			
+			XGL = {
+				is_ally_with = ROOT
+			}
 		}
 
 		cost = 5
@@ -1139,6 +1142,34 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			XGL = {
+				add_opinion_modifier = {
+					target = XFR
+    				modifier = XFR_improve_relations
+				}
+				country_event = { id = XFR_events.55 days = 1 }
+			}
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				XGL = {
+					add_equipment_to_stockpile = {
+    					type = infantry_equipment
+    					amount = 5000
+    					producer = XFR
+					}
+					add_equipment_to_stockpile = {
+    					type = support_equipment
+    					amount = 2000
+    					producer = XFR
+					}
+					add_equipment_to_stockpile = {
+    					type = artillery_equipment
+    					amount = 1000
+    					producer = XFR
+					}
+					add_manpower = 10000
+				}
+			}
 		}
 	} 
 
@@ -1156,6 +1187,17 @@ focus_tree = {
 			has_government = democratic
 			is_subject = no
 			is_faction_leader = yes
+			NOT = {
+				any_country = {
+					OR = {
+						original_tag = XAD
+						original_tag = XGL
+						original_tag = XPY
+						original_tag = XHP
+					}
+					has_government = democratic
+				}
+			}
 			custom_trigger_tooltip = {
 				always = no
 				tooltip = WIP
@@ -1173,6 +1215,23 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			every_other_country = {
+				limit = { 
+					OR = {
+						original_tag = XAD
+						original_tag = XGL
+						original_tag = XPY
+						original_tag = XHP
+					}
+				}
+				XFR = {
+					declare_war_on = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+			custom_effect_tooltip = XFR_direct_iberian_intervention_tt
 		}
 	} 
 
@@ -1218,6 +1277,7 @@ focus_tree = {
 				limit = {
 					has_completed_focus = XFR_portugese_support
 					XGL = {
+						NOT = { has_country_flag = XFR_XGL_declined_support }
 						NOT = { has_war_with = ROOT }
 						NOT = { is_ally_with = ROOT }
 						is_subject = no

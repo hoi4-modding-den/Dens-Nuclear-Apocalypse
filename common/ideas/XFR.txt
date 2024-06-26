@@ -881,7 +881,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = generic_monarchist_uprising
+            picture = CHL_french_aristocracy
 
             modifier = {
                 neutrality_drift = 0.02
@@ -1458,7 +1458,7 @@ ideas = {
             picture = generic_victors_of_ww1
 
             modifier = {
-			    political_power_gain = 0.02
+			    political_power_gain = 0.1
                 democratic_drift = 0.05
                 drift_defence_factor = 0.75
                 army_core_defence_factor = 0.1
@@ -1564,7 +1564,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_constitutional_guarantees
 
             modifier = {
                 consumer_goods_factor = 0.05
@@ -1587,7 +1587,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_constitutional_guarantees
 
             modifier = {
                 consumer_goods_factor = 0.15
@@ -1611,7 +1611,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_constitutional_guarantees
 
             modifier = {
                 consumer_goods_factor = 0.1
@@ -1634,7 +1634,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_train_tracks
 
             modifier = {
                 weekly_manpower = 200
@@ -1658,7 +1658,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_war_preparation
 
             modifier = {
                 justify_war_goal_time = -0.25
@@ -1681,7 +1681,7 @@ ideas = {
             picture = FRA_liberte_egalite_solidarite
 
             modifier = {
-			    political_power_gain = 0.05
+			    political_power_gain = 0.15
                 democratic_drift = 0.05
                 drift_defence_factor = 0.75
                 army_core_defence_factor = 0.15
@@ -1706,7 +1706,7 @@ ideas = {
             picture = FRA_undividable
 
             modifier = {
-			    political_power_gain = 0.1
+			    political_power_gain = 0.25
                 democratic_drift = 0.05
                 drift_defence_factor = 0.75
                 army_core_defence_factor = 0.2
