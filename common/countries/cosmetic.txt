@@ -1305,6 +1305,10 @@ XWA_Horde = {
 	color = rgb { 107 142 35 }
 	color_ui = rgb { 107 142 35 }	
 }
+XWA_ECI = {
+	color = rgb { 166 212 159 }
+	color_ui = rgb { 166 212 159 }	
+}
 XWA_NewRepublic = {
 	color = rgb { 255 255 51 }
 	color_ui = rgb { 255 255 51 }	

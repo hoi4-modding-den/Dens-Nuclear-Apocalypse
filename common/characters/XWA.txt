@@ -23,7 +23,7 @@ characters = {
         name = "Arwyn Blood"
         portraits = {
             civilian = {
-                large = gfx/leaders/XWA/XWA_Gerallt_Havard.dds
+                large = gfx/leaders/XWA/XWA_Arwyn_Blood.dds
             }
         }
         country_leader = {
@@ -63,7 +63,7 @@ characters = {
         name = "Arwyn Blood"
         portraits = {
             civilian = {
-                large = gfx/leaders/XWA/XWA_Gerallt_Havard.dds
+                large = gfx/leaders/XWA/XWA_Arwyn_Blood.dds
             }
         }
         country_leader = {

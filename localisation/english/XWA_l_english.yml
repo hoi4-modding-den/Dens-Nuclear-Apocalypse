@@ -18,6 +18,9 @@
  XWA_Horde_DEF:0 "Welsh Horde"
  XWA_NewRepublic:0 "Welsh Union"
 
+ XWA_ECI:0 "Empire of the Celtic Mutants"
+ XWA_ECI_DEF:0 "Celtic"
+
  XW2:0 "Welsh Republic"
  XW2_DEF:0 "Wales"
  XW2_ADJ:0 "Welsh"
@@ -34,18 +37,59 @@
  XWA_ExtremistIdeals2:0 "Extremist Propoganda"
 #Focuses
 
-XWA_HordeFocus:0 "Glory to the Horde!"
-XWA_HordeFocus_desc:0 "With the dissolution of the Welsh Republic the horde shall be the controller of Wales."
 
-XWA_HordeFocusBrownParty:0 "Promote Exremist Ideals"
-XWA_HordeFocusBrownParty_desc:0 "The first step of the Horde is to begin promoting extremism among our people. The first step of many."
-XWA_HordeFocusBrownParty2:0 "Propaganda Efforts"
-XWA_HordeFocusBrownParty2_desc:0 "We can begin spreading pamphlets as well as putting up posters encouraging support for the Mutant Extremists."
-XWA_HordeFocusBrownParty3:0 "Overthrow the Mutant's Party"
-XWA_HordeFocusBrownParty3_desc:0 "We have lobbied enough support. We must overthrow the weak Mutants Party."
+  #-----Horde Focuses-----#
 
-XWA_HordeFocusAntiBrownParty:0 "Jail Extremists"
+    #Navy
 
+    XWA_HordeNavy1:0 "Develop the Navy"
+    XWA_HordeNavy1_desc:0 "In order to better defend our ports in time of war we will require a strong navy. Building dockyards will allow us to build more ships."
+
+    XWA_HordeNavy3:0 "Focus on Submarines"
+
+    XWA_HordeNavy2:0 "Focus on Heavy Ships"
+
+    #Industry
+    XWA_HordeIndustryStart:0 "Devlop Our Industry"
+
+    XWA_HordeIndustry2:0 "Promote Civilian Economy"
+
+    XWA_HordeIndustry3:0 "Promote the Military Industrial Complex"
+
+    XWA_HordeIndustry4:0 "Improve Horde Infastructure"
+
+    XWA_HordeFocus:0 "Glory to the Horde!"
+    XWA_HordeFocus_desc:0 "With the dissolution of the Welsh Republic the horde shall be the controller of Wales."
+
+
+    #brown party
+
+    XWA_HordeFocusBrownParty:0 "Promote Exremist Ideals"
+    XWA_HordeFocusBrownParty_desc:0 "The first step of the Horde is to begin promoting extremism among our people. The first step of many."
+    XWA_HordeFocusBrownParty2:0 "Propaganda Efforts"
+    XWA_HordeFocusBrownParty2_desc:0 "We can begin spreading pamphlets as well as putting up posters encouraging support for the Mutant Extremists."
+    XWA_HordeFocusBrownParty3:0 "Overthrow the Mutant's Party"
+    XWA_HordeFocusBrownParty3_desc:0 "We have lobbied enough support. We must overthrow the weak Mutants Party."
+    XWA_HordeFocusBrownParty4:0 "State Sponsored Propaganda"
+    XWA_HordeFocusBrownParty4_desc:0 "With the Mutant Extremists in charge, we can further our propaganda."
+
+    XWA_TakeBackWales:0 "Reclaim Wales"
+    XWA_TakeBackWales_desc:0 "We need to reunite Wales this time under full control of the mutants."
+
+    XWA_ClaimIreland:0 "Claim Ireland"
+    XWA_ClaimIreland_desc:0 "With Wales reunited, we must look westward. The Irsh Confederation and Ulster should bare the Welsh flag."
+
+    XWA_WalesIrelandUnify:0 "Form a new Empire"
+    XWA_WalesIrelandUnify_desc:0 "With the annexation of Ireland we need to unite the Celtic Mutants under one banner. The Empire of the Celtic Mutants."
+
+    #gray party
+
+    XWA_HordeFocusAntiBrownParty:0 "Jail Extremists"
+ 
+ 
+  #-----Union Focuses-----#
+
+    #nada yet lol
 
 #Dr Pepper lol
  XPW:0 "P.H.D Worcestershire"
