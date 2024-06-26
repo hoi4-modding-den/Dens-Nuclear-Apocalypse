@@ -1071,3 +1071,311 @@ XLA_on_pop_change = {
 	log = "[XLA] Updated alignment based on popularity changes."
 	regional_balance_get_num_elders = yes
 }
+
+XLA_raise_spiritualist_support = {
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					XLA_alignment = 1
+				}
+				check_variable = {
+					XLA_alignment = 3
+				}
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 2
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 4
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 7
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 6
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 9
+		}
+	}
+
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = {
+					XLA_alignment = 7
+				}
+				check_variable = {
+					XLA_alignment = 9
+				}
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 5
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 8
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 7
+		}
+	}
+}
+
+XLA_raise_neutral_support = {
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					XLA_alignment = 2
+				}
+				check_variable = {
+					XLA_alignment = 3
+				}
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 1
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 5
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 7
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 6
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 8
+		}
+	}
+
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = {
+					XLA_alignment = 7
+				}
+				check_variable = {
+					XLA_alignment = 8
+				}
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 4
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 9
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 7
+		}
+	}
+}
+
+XLA_raise_altwigitian_support = {
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					XLA_alignment = 1
+				}
+				check_variable = {
+					XLA_alignment = 2
+				}
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 3
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 4
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 8
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 5
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 9
+		}
+	}
+
+	else_if = {
+		limit = {
+			check_variable = {
+				XLA_alignment = 7
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 8
+		}
+	}
+
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = {
+					XLA_alignment = 8
+				}
+				check_variable = {
+					XLA_alignment = 9
+				}
+			}
+		}
+
+		set_variable = {
+			XLA_alignment = 6
+		}
+	}
+}
+
+XLA_Altwigitian_Civil_War = {
+	every_state = {
+		limit = {
+			is_owned_and_controlled_by = XLA
+		}
+		
+		add_core_of = XLB
+	}
+
+	every_state = {
+		limit = {
+			XLA_is_fully_altwigitian = yes
+		}
+
+		transfer_state_to = XLB
+	}
+
+	every_state = {
+		limit = {
+			XLA_is_partially_altwigitian = yes
+		}
+
+		random_list = {
+			50 = {
+				transfer_state_to = XLB
+			}
+			50 = {
+				#
+			}
+		}
+	}
+
+	XLB = {
+		declare_war_on = {
+			target = XLA
+		}
+
+		set_capital = {
+			state = 982
+			remember_old_capital = yes
+		}
+
+		add_civil_war_target = XLA
+	}
+}
+
+XLA_Spiritualist_Civil_War = {
+	every_state = {
+		limit = {
+			is_owned_and_controlled_by = XLA
+		}
+		
+		add_core_of = XLC
+	}
+
+	every_state = {
+		limit = {
+			XLA_is_fully_spiritualist = yes
+		}
+
+		transfer_state_to = XLC
+	}
+
+	every_state = {
+		limit = {
+			XLA_is_partially_spiritualist = yes
+		}
+
+		random_list = {
+			50 = {
+				transfer_state_to = XLC
+			}
+			50 = {
+				#
+			}
+		}
+	}
+
+	XLC = {
+		declare_war_on = {
+			target = XLA
+		}
+
+		set_capital = {
+			state = var:XLA_Spiritualist_Capital
+			remember_old_capital = yes
+		}
+
+		add_civil_war_target = XLA
+	}
+}

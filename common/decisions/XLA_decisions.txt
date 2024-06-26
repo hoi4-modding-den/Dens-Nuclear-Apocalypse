@@ -1,48 +1,1227 @@
 regional_balance_gui_decision_category = {
-	XLA_debug_regional_balance = {
+	#XLA_debug_regional_balance = {
+	#	allowed = {
+	#		original_tag = XLA
+	#	}
+
+	#	available = {
+	#		is_ai = no
+	#	}
+
+	#	visible = {
+	#		is_debug = yes
+	#		is_ai = no
+	#	}
+
+	#	fire_only_once = no
+	#	cost = 0
+
+	#	remove_effect = {
+	#		regional_balance_get_num_elders = yes
+	#	}
+	#}
+
+	#XLA_debug_print_num_elders = {
+	#	allowed = {
+	#		original_tag = XLA
+	#	}
+
+	#	available = {
+	#		is_ai = no
+	#	}
+
+	#	visible = {
+	#		is_debug = yes
+	#		is_ai = no
+	#	}
+
+	#	fire_only_once = no
+	#	cost = 0
+
+	#	remove_effect = {
+	#		log = "XLA_debug_num_elders proceeding..."
+	#		log = "Neutrals: [?XLA_Neutral_Councilmembers]"
+	#		log = "Spiritualists: [?XLA_Spiritualist_Councilmembers]"
+	#		log = "Antwigians: [?XLA_Altwigitian_Councilmembers]"
+	#	}
+	#}
+
+	## Tier 1
+
+	XLA_Spiritualist_Caverns = {
 		allowed = {
 			original_tag = XLA
+			has_country_flag = XLA_regional_balance_I
 		}
 
 		available = {
-			is_ai = no
+			NOT = {
+				has_country_flag = XLA_regional_balance_I_taken
+			}
 		}
 
 		visible = {
-			is_debug = yes
-			is_ai = no
+			NOT = {
+				has_country_flag = XLA_regional_balance_I_taken
+			}
 		}
 
-		fire_only_once = no
-		cost = 0
+		fire_only_once = yes
+		cost = 50
 
 		remove_effect = {
-			regional_balance_get_num_elders = yes
+			set_variable = {
+				XLA.XLA_Spiritualist_Favorability = 1
+			}
+
+			set_country_flag = XLA_regional_balance_I_taken
 		}
 	}
 
-	XLA_debug_print_num_elders = {
+	XLA_The_Altwigitian_Tower = {
+		allowed = {
+			original_tag = XLA
+			has_country_flag = XLA_regional_balance_I
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XLA_regional_balance_I_taken
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = XLA_regional_balance_I_taken
+			}
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		remove_effect = {
+			set_variable = {
+				XLA.XLA_Altwigitian_Favorability = 1
+			}
+
+			set_country_flag = XLA_regional_balance_I_taken
+		}
+	}
+
+	XLA_Councils_Offices = {
+		allowed = {
+			original_tag = XLA
+			has_country_flag = XLA_regional_balance_I
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XLA_regional_balance_I_taken
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = XLA_regional_balance_I_taken
+			}
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		remove_effect = {
+			set_variable = {
+				XLA.XLA_Neutral_Favorability = 1
+			}
+
+			set_country_flag = XLA_regional_balance_I_taken
+		}
+	}
+
+	XLA_Fund_Altwigitian_Newspapers = {
 		allowed = {
 			original_tag = XLA
 		}
 
-		available = {
-			is_ai = no
+		visible = {
+			has_country_flag = XLA_Altwigitian_Focus
+		}
+
+		cost = 150
+		days_re_enable = 30
+
+		remove_effect = {
+			random_list = {
+				40 = {
+					add_political_power = 10
+				}
+
+				30 = {
+					# Nothing
+				}
+
+				15 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 5
+					}
+				}
+
+				10 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 10
+					}
+				}
+
+				5 = {
+					random_owned_controlled_state = {
+						limit = {
+							NOT = {
+								OR = {
+									check_variable = {
+										XLA_alignment = 3
+									}
+									check_variable = {
+										XLA_alignment = 6		
+									}
+								}
+							}
+						}
+
+						XLA_raise_altwigitian_support = yes
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Altwigitian_Supporters_Infiltrate = {
+		allowed = {
+			original_tag = XLA
 		}
 
 		visible = {
-			is_debug = yes
-			is_ai = no
+			has_country_flag = XLA_Altwigitian_Focus
 		}
 
-		fire_only_once = no
-		cost = 0
+		cost = 150
+		days_re_enable = 30
 
 		remove_effect = {
-			log = "XLA_debug_num_elders proceeding..."
-			log = "Neutrals: [?XLA_Neutral_Councilmembers]"
-			log = "Spiritualists: [?XLA_Spiritualist_Councilmembers]"
-			log = "Antwigians: [?XLA_Altwigitian_Councilmembers]"
+			random_list = {
+				20 = {
+					add_political_power = 10
+				}
+
+				10 = {
+					# Nothing
+				}
+
+				# Caught
+				10 = {
+					add_political_power = -50
+				}
+
+				35 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 5
+					}
+				}
+
+				20 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 10
+					}
+				}
+
+				5 = {
+					random_owned_controlled_state = {
+						limit = {
+							NOT = {
+								OR = {
+									check_variable = {
+										XLA_alignment = 3
+									}
+									check_variable = {
+										XLA_alignment = 6		
+									}
+								}
+							}
+						}
+
+						XLA_raise_altwigitian_support = yes
+					}
+				}
+			}
+
+			hidden_effect = {
+				random_list = {
+					60 = {
+						# Nothing
+					}
+					20 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 1
+						}
+					}
+					10 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 2
+						}
+					}
+					5 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Altwigitian_Militias = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_country_flag = XLA_Altwigitian_Focus
+		}
+
+		cost = 200
+		days_re_enable = 30
+
+		remove_effect = {
+			random_list = {
+				20 = {
+					# Nothing
+				}
+
+				# Caught
+				20 = {
+					add_political_power = -50
+				}
+
+				35 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 5
+					}
+				}
+
+				20 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 10
+					}
+				}
+
+				15 = {
+					random_owned_controlled_state = {
+						limit = {
+							NOT = {
+								OR = {
+									check_variable = {
+										XLA_alignment = 3
+									}
+									check_variable = {
+										XLA_alignment = 6		
+									}
+								}
+							}
+						}
+
+						XLA_raise_altwigitian_support = yes
+					}
+				}
+			}
+
+			hidden_effect = {
+				random_list = {
+					50 = {
+						# Nothing
+					}
+					20 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 1
+						}
+					}
+					15 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 2
+						}
+					}
+					10 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 3
+						}
+					}
+
+					5 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 5
+						}
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Fund_Altwigitian_Businesses = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_country_flag = XLA_Altwigitian_Focus
+		}
+
+		cost = 200
+		days_re_enable = 30
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					add_political_power = 50
+				}
+				25 = {
+					# Nothing
+				}
+				15 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 5
+					}
+				}
+				10 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 10
+					}
+				}
+				5 = {
+					random_owned_controlled_state = {
+						limit = {
+							OR = {
+								XLA_is_fully_altwigitian = yes
+								XLA_is_partially_altwigitian = yes
+							}
+						}
+
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+
+			hidden_effect = {
+				random_list = {
+					60 = {
+						# Nothing
+					}
+					25 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 1
+						}
+					}
+					10 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 2
+						}
+					}
+					5 = {
+						add_to_variable = {
+							XLA_Spiritualist_Militancy = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Fund_Spiritualist_Newspapers = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_country_flag = XLA_Spiritualist_Focus
+		}
+
+		cost = 150
+		days_re_enable = 30
+
+		remove_effect = {
+			random_list = {
+				40 = {
+					add_political_power = 10
+				}
+
+				30 = {
+					# Nothing
+				}
+
+				15 = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 5
+					}
+				}
+
+				10 = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 10
+					}
+				}
+
+				5 = {
+					random_owned_controlled_state = {
+						limit = {
+							NOT = {
+								OR = {
+									check_variable = {
+										XLA_alignment = 2
+									}
+									check_variable = {
+										XLA_alignment = 5	
+									}
+								}
+							}
+						}
+
+						XLA_raise_spiritualist_support = yes
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Spiritualist_Supporters_Infiltrate = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_country_flag = XLA_Spiritualist_Focus
+		}
+
+		cost = 150
+		days_re_enable = 30
+
+		remove_effect = {
+			random_list = {
+				20 = {
+					add_political_power = 10
+				}
+
+				10 = {
+					# Nothing
+				}
+
+				# Caught
+				10 = {
+					add_political_power = -50
+				}
+
+				35 = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 5
+					}
+				}
+
+				20 = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 10
+					}
+				}
+
+				5 = {
+					random_owned_controlled_state = {
+						limit = {
+							NOT = {
+								OR = {
+									check_variable = {
+										XLA_alignment = 2
+									}
+									check_variable = {
+										XLA_alignment = 5	
+									}
+								}
+							}
+						}
+
+						XLA_raise_spiritualist_support = yes
+					}
+				}
+			}
+
+			hidden_effect = {
+				random_list = {
+					60 = {
+						# Nothing
+					}
+					20 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 1
+						}
+					}
+					10 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 2
+						}
+					}
+					5 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy =  3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Spiritualist_Militias = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_country_flag = XLA_Spiritualist_Focus
+		}
+
+		cost = 200
+		days_re_enable = 30
+
+		remove_effect = {
+			random_list = {
+				20 = {
+					# Nothing
+				}
+
+				# Caught
+				20 = {
+					add_political_power = -50
+				}
+
+				35 = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 5
+					}
+				}
+
+				20 = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 10
+					}
+				}
+
+				15 = {
+					random_owned_controlled_state = {
+						limit = {
+							NOT = {
+								OR = {
+									check_variable = {
+										XLA_alignment = 2
+									}
+									check_variable = {
+										XLA_alignment = 5	
+									}
+								}
+							}
+						}
+
+						XLA_raise_altwigitian_support = yes
+					}
+				}
+			}
+
+			hidden_effect = {
+				random_list = {
+					50 = {
+						# Nothing
+					}
+					20 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 1
+						}
+					}
+					15 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 2
+						}
+					}
+					10 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 3
+						}
+					}
+
+					5 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 5
+						}
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Fund_Spiritualist_Businesses = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_country_flag = XLA_Spiritualist_Focus
+		}
+
+		cost = 200
+		days_re_enable = 30
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					add_political_power = 50
+				}
+				25 = {
+					# Nothing
+				}
+				15 = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 5
+					}
+				}
+				10 = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 10
+					}
+				}
+				5 = {
+					random_owned_controlled_state = {
+						limit = {
+							OR = {
+								XLA_is_fully_spiritualist = yes
+								XLA_is_partially_spiritualist =  yes
+							}
+						}
+
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+
+			hidden_effect = {
+				random_list = {
+					60 = {
+						# Nothing
+					}
+					25 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 1
+						}
+					}
+					10 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 2
+						}
+					}
+					5 = {
+						add_to_variable = {
+							XLA_Altwigitian_Militancy = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Fortify_Our_Homes_Altwigitian = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_country_flag = XLA_Altwigitians_Fortify
+		}
+
+		cost = 150
+		days_remove = 30
+		days_re_enable = 60
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						XLA_is_fully_altwigitian = yes
+						XLA_is_partially_altwigitian = yes
+					}
+				}
+
+				add_building_construction = {
+					type = bunker
+					level = 1
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						XLA_is_fully_altwigitian = yes
+						XLA_is_partially_altwigitian = yes
+					}
+				}
+
+				add_building_construction = {
+					type = bunker
+					level = 1
+				}
+			}
+		}
+	}
+
+	XLA_Fortify_Our_Homes_Spiritualist = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_country_flag = XLA_Spiritualists_Fortify
+		}
+
+		cost = 150
+		days_remove = 30
+		days_re_enable = 60
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						XLA_is_fully_spiritualist = yes
+						XLA_is_partially_spiritualist = yes
+					}
+				}
+
+				add_building_construction = {
+					type = bunker
+					level = 1
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						XLA_is_fully_spiritualist = yes
+						XLA_is_partially_spiritualist = yes
+					}
+				}
+
+				add_building_construction = {
+					type = bunker
+					level = 1
+				}
+			}
+		}
+	}
+
+	XLA_Suppress_Rebellious_Spiritualists = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_idea = XLA_Spiritualist_Revolutionaries
+		}
+
+		cost = 200
+		days_remove = 45
+
+		remove_effect = {
+			swap_ideas = {
+				add_idea = XLA_Spiritualist_Revolutionaries_Crushed
+				remove_idea = XLA_Spiritualist_Revolutionaries
+			}
+		}
+	}
+
+	XLA_Suppress_Rebellious_Altwigitians = {
+		allowed = {
+			original_tag = XLA
+		}
+
+		visible = {
+			has_idea = XLA_Altwigitian_Revolutionaries
+		}
+
+		cost = 200
+		days_remove = 45
+
+		remove_effect = {
+			swap_ideas = {
+				add_idea = XLA_Altwigitian_Revolutionaries_Crushed
+				remove_idea = XLA_Altwigitian_Revolutionaries
+			}
+		}
+	}
+
+	XLA_Altwigitian_Spark_Civil_War = {
+		days_mission_timeout = 200
+		is_good = no
+		timeout_effect = {
+			XLA_Altwigitian_Civil_War = yes
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Altwigitians_Quelled
+			}
+			hidden_trigger = {
+				check_variable = {
+					XLA_Altwigitian_Quell = 5
+				}	
+			}
+		}
+	}
+
+	XLA_Spiritualist_Spark_Civil_War = {
+		days_mission_timeout = 200
+		is_good = no
+		timeout_effect = {
+			XLA_Spiritualist_Civil_War = yes
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Spiritualists_Quelled
+			}
+			hidden_trigger = {
+				check_variable = {
+					XLA_Spiritualist_Quell = 5
+				}	
+			}
+		}
+	}
+}
+
+XLA_resource_mining = {
+	XLA_Mine_Anywhere = {
+		allowed = {
+			original_tag = XLA
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XLA_Currently_Prospecting
+				}	
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+		
+		remove_effect = {
+			random_owned_controlled_state = {
+				random_list = {
+					20 = {
+						add_resource = {
+							type = aluminium
+							amount = 3
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = steel
+							amount = 3
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = tungsten
+							amount = 3
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = oil
+							amount = 3
+						}
+					}
+
+					10 = {
+						add_resource = {
+							type = steel
+							amount = 5
+						}
+					}
+
+					5 = {
+						add_resource = {
+							type = oil
+							amount = 5
+						}
+					}
+
+					5 = {
+						add_resource = {
+							type = aluminium
+							amount = 5
+						}
+					}
+				}
+			}
+
+			hidden_effect = {
+				set_country_flag = XLA_Currently_Prospecting
+				random_list = {
+					50 = {
+						#
+					}
+
+					20 = {
+						add_to_variable = {
+							XLA.XLA_Spiritualist_Militancy = 1
+						}
+					}
+
+					20 = {
+						add_to_variable = {
+							XLA.XLA_Altwigitian_Militancy = 1
+						}
+					}
+
+					10 = {
+						add_to_variable = {
+							XLA.XLA_Spiritualist_Militancy = 1
+						}
+
+						add_to_variable = {
+							XLA.XLA_Altwigitian_Militancy = 1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Mine_Altwigitians = {
+		allowed = {
+			original_tag = XLA
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XLA_Currently_Prospecting
+				}	
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+		
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						XLA_is_fully_altwigitian = yes
+						XLA_is_partially_altwigitian = yes
+					}
+				}
+				random_list = {
+					20 = {
+						add_resource = {
+							type = aluminium
+							amount = 7
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = steel
+							amount = 7
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = tungsten
+							amount = 7
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = oil
+							amount = 7
+						}
+					}
+
+					10 = {
+						add_resource = {
+							type = steel
+							amount = 15
+						}
+					}
+
+					5 = {
+						add_resource = {
+							type = oil
+							amount = 15
+						}
+					}
+
+					5 = {
+						add_resource = {
+							type = aluminium
+							amount = 15
+						}
+					}
+				}
+			}
+
+			hidden_effect = {
+				set_country_flag = XLA_Currently_Prospecting
+				random_list = {
+					60 = {
+						#
+					}
+
+					25 = {
+						add_to_variable = {
+							XLA.XLA_Spiritualist_Militancy = 1
+						}
+					}
+
+					10 = {
+						add_to_variable = {
+							XLA.XLA_Spiritualist_Militancy = 2
+						}
+					}
+
+					5 = {
+						add_to_variable = {
+							XLA.XLA_Spiritualist_Militancy = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Mine_Spiritualist = {
+		allowed = {
+			original_tag = XLA
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = XLA_Currently_Prospecting
+				}	
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+		
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						XLA_is_fully_spiritualist = yes
+						XLA_is_partially_spiritualist = yes
+					}
+				}
+				random_list = {
+					20 = {
+						add_resource = {
+							type = aluminium
+							amount = 7
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = steel
+							amount = 7
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = tungsten
+							amount = 7
+						}
+					}
+
+					20 = {
+						add_resource = {
+							type = oil
+							amount = 7
+						}
+					}
+
+					10 = {
+						add_resource = {
+							type = steel
+							amount = 15
+						}
+					}
+
+					5 = {
+						add_resource = {
+							type = oil
+							amount = 15
+						}
+					}
+
+					5 = {
+						add_resource = {
+							type = aluminium
+							amount = 15
+						}
+					}
+				}
+			}
+
+			hidden_effect = {
+				set_country_flag = XLA_Currently_Prospecting
+				random_list = {
+					60 = {
+						#
+					}
+
+					25 = {
+						add_to_variable = {
+							XLA.XLA_Altwigitian_Militancy = 1
+						}
+					}
+
+					10 = {
+						add_to_variable = {
+							XLA.XLA_Altwigitian_Militancy = 2
+						}
+					}
+
+					5 = {
+						add_to_variable = {
+							XLA.XLA_Altwigitian_Militancy = 3
+						}
+					}
+				}
+			}
 		}
 	}
 }

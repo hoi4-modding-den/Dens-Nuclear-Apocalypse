@@ -1,0 +1,1285 @@
+focus_tree = {
+	id = XLA_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XLA
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+    continuous_focus_position = { x = 0 y = 3000 }
+
+	focus = {
+		id = XLA_The_Roots
+
+		x = 10
+		y = 0
+		cost = 1
+
+		completion_reward = {
+			country_event = XLA_event.1
+		}
+	}
+
+	focus = {
+		id = XLA_Drink_Water
+
+		relative_position_id = XLA_The_Roots
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_The_Roots
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = XLA_Feed_Us
+
+		relative_position_id = XLA_Drink_Water
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Drink_Water
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = XLA_regional_balance_I
+			}
+
+			custom_effect_tooltip = XLA_regional_balance_tier_I
+		}
+	}
+
+	focus = {
+		id = XLA_Needs
+
+		relative_position_id = XLA_Feed_Us
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Feed_Us
+		}
+
+		completion_reward = {
+			add_ideas = XLA_The_Tree
+		}
+	}
+
+	focus = {
+		id = XLA_Invest_Future
+
+		relative_position_id = XLA_Needs
+		x = -2
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Needs
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Armed_Neutrality
+			focus = XLA_Sacred_Home
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = XLA_Altwigitian_Favor_Up
+			hidden_effect = {
+				add_to_variable = {
+					XLA.XLA_Altwigitian_Favorability = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Armed_Neutrality
+
+		relative_position_id = XLA_Needs
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Needs
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Invest_Future
+			focus = XLA_Sacred_Home
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = XLA_Neutral_Favor_Up
+			hidden_effect = {
+				add_to_variable = {
+					XLA.XLA_Neutral_Favorability = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Sacred_Home
+
+		relative_position_id = XLA_Needs
+		x = 2
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Needs
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Invest_Future
+			focus = XLA_Armed_Neutrality
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = XLA_Spiritualist_Favor_Up
+			hidden_effect = {
+				add_to_variable = {
+					XLA.XLA_Spiritualist_Favorability = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_The_Elders_Council
+
+		relative_position_id = XLA_Armed_Neutrality
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Sacred_Home
+			focus = XLA_Armed_Neutrality
+			focus = XLA_Invest_Future
+		}
+
+		completion_reward = {
+			country_event = XLA_event.2
+		}
+	}
+
+	focus = {
+		id = XLA_Long_Haul
+
+		relative_position_id = XLA_The_Elders_Council
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_The_Elders_Council
+		}
+
+		completion_reward = {
+			add_ideas = XLA_The_Long_Haul
+		}
+	}
+
+	focus = {
+		id = XLA_Life_Beyond_Us
+
+		relative_position_id = XLA_Long_Haul
+		x = 0
+		y = 1
+		
+		cost = 1
+		
+		prerequisite = {
+			focus = XLA_Long_Haul
+		}
+
+		completion_reward = {
+			country_event = XLA_event.3
+		}
+	}
+
+	focus = {
+		id = XLA_Borani_Fate
+		dynamic = yes
+
+		relative_position_id = XLA_Life_Beyond_Us
+		x = 0
+		y = 1
+		cost = 7
+
+		prerequisite = {
+			focus = XLA_Life_Beyond_Us
+		}
+
+		completion_reward = {
+			country_event = XLA_event.4
+		}
+	}
+
+	focus = {
+		id = XLA_Acolyte
+
+		relative_position_id = XLA_Borani_Fate
+		x = -6
+		y = 1
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Borani_Fate
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Borani_Guidance
+			focus = XLA_Ancestors_Voices
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XLA_Acolyte_Recruitable
+			hidden_effect = {
+				set_country_flag = XLA_Allowed_Recruit_Socellia
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Borani_Guidance
+
+		relative_position_id = XLA_Borani_Fate
+		x = 0
+		y = 1
+		
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Borani_Fate
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Acolyte
+			focus = XLA_Ancestors_Voices
+		}
+
+		allow_branch = {
+			NOT = {
+				has_country_flag = XLA_Borani_Dies
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XLA_Councilitte_Recruitable
+			hidden_effect = {
+				set_country_flag = XLA_Allowed_Recruit_Alexeus
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Ancestors_Voices
+
+		relative_position_id = XLA_Borani_Fate
+		x = 6
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Borani_Fate
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Acolyte
+			focus = XLA_Borani_Guidance
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XLA_Spiritualist_Recruitable
+			hidden_effect = {
+				set_country_flag = XLA_Allowed_Recruit_Samio
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Tower_Says
+
+		relative_position_id = XLA_Acolyte
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Acolyte
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XLA_Altwigitian_Alignment
+			hidden_effect = {
+				set_country_flag = XLA_Altwigitian_Focus
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Aggressive_Approach
+
+		relative_position_id = XLA_Tower_Says
+		x = -2
+		y = 1
+		
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Tower_Says
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Old_Men_Speak
+		}
+
+		completion_reward = {
+			add_ideas = XLA_On_Aggressive
+		}
+	}
+
+	focus = {
+		id = XLA_Old_Men_Speak
+
+		relative_position_id = XLA_Tower_Says
+		x = 2
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Tower_Says
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Aggressive_Approach
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascism
+				popularity = 5
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Preparations_Begin
+
+		relative_position_id = XLA_Tower_Says
+		x = 0
+		y = 2
+
+		cost = 5
+
+		prerequisite = {
+			focus = XLA_Old_Men_Speak
+			focus = XLA_Aggressive_Approach
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Spiritualist_Militancy_Risk
+			}
+			hidden_trigger = {
+				check_variable = {
+					XLA_Spiritualist_Militancy > 8
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = XLA_The_Cogs_Of_War
+			hidden_effect = {
+				set_country_flag = XLA_Altwigitians_Fortify
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Subversion_Intelligence
+
+		relative_position_id = XLA_Aggressive_Approach
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = XLA_Aggressive_Approach
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = XLA_Spiritualist_Anger_Down
+			hidden_effect = {
+				subtract_from_variable = {
+					XLA_Spiritualist_Militancy = -5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Big_Dreams
+
+		relative_position_id = XLA_Old_Men_Speak
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = XLA_Old_Men_Speak
+		}
+
+		cost = 2
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = XLA_Final_Push
+
+		relative_position_id = XLA_Preparations_Begin
+		x = 0
+		y = 2
+
+		cost = 5
+
+		prerequisite = {
+			focus = XLA_Big_Dreams
+			focus = XLA_Subversion_Intelligence
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Withstand
+
+		relative_position_id = XLA_Borani_Guidance
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Borani_Guidance
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = -5
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -5
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Revitalize_Auctermunty
+
+		relative_position_id = XLA_Withstand
+		x = -1
+		y = 1
+
+		cost = 2
+		
+		prerequisite = {
+			focus = XLA_Withstand
+		}
+
+		completion_reward = {
+			162 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Calm_Or_Storm
+
+		relative_position_id = XLA_Withstand
+		x = 1
+		y = 1
+		
+		cost = 2
+
+		prerequisite = {
+			focus = XLA_Withstand
+		}
+
+		completion_reward = {
+			country_event = XLA_event.5
+		}
+	}
+
+	focus = {
+		id = XLA_Production_Key
+
+		relative_position_id = XLA_Withstand
+		x = 0
+		y = 2
+		
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Revitalize_Auctermunty
+		}
+
+		prerequisite = {
+			focus = XLA_Calm_Or_Storm
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XLA_Resource_Mining
+			hidden_effect = {
+				set_country_flag = XLA_Resource_Mining_Time
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Consolidate_Council
+
+		relative_position_id = XLA_Production_Key
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Production_Key
+		}
+
+		completion_reward = {
+			country_event = XLA_event.6
+		}
+	}
+
+	focus = {
+		id = XLA_The_Grotto_Helps
+
+		relative_position_id = XLA_Ancestors_Voices
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Ancestors_Voices
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XLA_Spiritualist_Alignment
+			hidden_effect = {
+				set_country_flag = XLA_Spiritualist_Focus
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Whispers
+
+		relative_position_id = XLA_The_Grotto_Helps
+		x = 0
+		y = 1
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_The_Grotto_Helps
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Arrows
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = democratic
+				popularity = 5
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Arrows
+
+		relative_position_id = XLA_The_Grotto_Helps
+		x = 2
+		y = 1
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_The_Grotto_Helps
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Whispers
+		}
+
+		completion_reward = {
+			add_ideas = XLA_Arrows_Of_War
+		}
+	}
+
+	focus = {
+		id = XLA_Home_Of_Gaia
+
+		relative_position_id = XLA_Whispers
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Arrows
+			focus = XLA_Whispers
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Home_Of_Nyx
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR  = {
+						XLA_is_fully_spiritualist = yes
+						XLA_is_partially_spiritualist = yes
+					}
+				}
+
+				add_state_modifier = {
+					modifier = { 
+						local_resources_factor = 0.1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Home_Of_Nyx
+
+		relative_position_id = XLA_Arrows
+		x = 0
+		y = 1
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Arrows
+			focus = XLA_Whispers
+		}
+
+		mutually_exclusive = {
+			focus = XLA_Home_Of_Gaia
+		}
+
+		completion_reward = {
+			add_ideas = XLA_Home_Of_Nyx
+		}
+	}
+
+	focus = {
+		id = XLA_Proper_Home
+
+		relative_position_id = XLA_Home_Of_Nyx
+		x = -1
+		y = 1
+
+		cost = 2
+
+		prerequisite = {
+			focus = XLA_Home_Of_Gaia
+			focus = XLA_Home_Of_Nyx
+		}
+
+		completion_reward = {
+			country_event = XLA_event.7
+		}
+	}
+
+	focus = {
+		id = XLA_Grotto_Protects
+
+		relative_position_id = XLA_Home_Of_Gaia
+		x = -1
+		y = 1
+		cost = 5
+
+		prerequisite = {
+			focus = XLA_Home_Of_Gaia
+			focus = XLA_Home_Of_Nyx
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Altwigitian_Militancy_Risk
+			}
+			hidden_trigger = {
+				check_variable = {
+					XLA_Altwigitian_Militancy > 8
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = XLA_The_Grotto_Protects_Us
+			hidden_effect = {
+				set_country_flag = XLA_Spiritualists_Fortify
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Faith_Supports_Us
+
+		relative_position_id = XLA_Proper_Home
+		x = 0
+		y = 1
+
+		cost = 5
+
+		prerequisite = {
+			focus = XLA_Proper_Home
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Fight_Of_Our_Lives
+
+		relative_position_id = XLA_Consolidate_Council
+		x = 0
+		y = 2
+
+		cost = 1
+
+		prerequisite = {
+			focus = XLA_Consolidate_Council
+			focus = XLA_Faith_Supports_Us
+			focus = XLA_Final_Push
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					check_variable = {
+						XLA_Altwigitian_Militancy > 12
+					}
+				}
+
+				country_event = XLA_event.9
+			}
+
+			else_if = {
+				limit = {
+					check_variable = {
+						XLA_Spiritualist_Militancy > 12
+					}
+				}
+
+				country_event = XLA_event.10
+			}
+			else = {
+				country_event = XLA_event.8
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Long_Live_Arnmouth
+
+		relative_position_id = XLA_Fight_Of_Our_Lives
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = XLA_Fight_Of_Our_Lives
+		}
+
+		cost = 1
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Popularity_Requirement
+			}
+			hidden_trigger = {
+				OR = {
+					democratic > 65
+					fascism > 65
+					neutrality > 65
+				}
+			}
+		}
+
+		completion_reward = {
+			country_event = XLA_event.11
+		}
+	}
+
+	focus = {
+		id = XLA_The_New_Council
+		dynamic = yes
+
+		relative_position_id = XLA_Long_Live_Arnmouth
+		x = 0
+		y = 2
+
+		cost = 1
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_No_Civil_War
+			}
+			hidden_trigger = {
+				NOT = {
+					has_war_with = XLB
+					has_war_with = XLC
+				}
+			}
+		}
+
+		prerequisite = {
+			focus  = XLA_Long_Live_Arnmouth
+		}
+
+		completion_reward = {
+			country_event = XLA_event.12
+		}
+	}
+
+	focus = {
+		id = XLA_Quell_Opponets
+
+		relative_position_id = XLA_Fight_Of_Our_Lives
+		x = -2
+		y = 1
+
+		cost = 3
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Civil_War
+			}
+			hidden_trigger = {
+				OR = {
+					has_war_with = XLB
+					has_war_with = XLC
+					has_active_mission = XLA_Altwigitian_Spark_Civil_War
+					has_active_mission = XLA_Spiritualist_Spark_Civil_War
+				}				
+			}
+		}
+
+		prerequisite = {
+			focus = XLA_Fight_Of_Our_Lives
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XLA_Quell_Opponent
+			hidden_effect = {
+				if = {
+					limit = {
+						has_war_with = XLB
+					}
+
+					XLB = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = -400
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						has_war_with = XLC
+					}
+
+					XLC = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = -400
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						has_active_mission = XLA_Altwigitian_Spark_Civil_War
+					}
+
+					add_to_variable = {
+						XLA_Altwigitian_Quell = 1
+					}
+				}
+
+				if = {
+					limit = {
+						has_active_mission = XLA_Spiritualist_Spark_Civil_War
+					}
+
+					add_to_variable = {
+						XLA_Spiritualist_Quell = 1
+					}
+				}
+			}
+
+			add_stability = -0.05
+			add_political_power = -100
+		}
+	}
+
+	focus = {
+		id = XLA_Request_International_Support
+
+		relative_position_id = XLA_Quell_Opponets
+		x = -2
+		y = 1
+
+		cost = 5
+
+		prerequisite = {
+			focus = XLA_Quell_Opponets
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Civil_War
+			}
+			hidden_trigger = {
+				OR = {
+					has_war_with = XLB
+					has_war_with = XLC
+					has_active_mission = XLA_Altwigitian_Spark_Civil_War
+					has_active_mission = XLA_Spiritualist_Spark_Civil_War
+				}				
+			}
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = ROOT
+				}
+
+				country_event = XLA_event.13
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Drastic_Times_Call_For_Drastic_Measures
+
+		relative_position_id = XLA_Quell_Opponets
+		x = 0
+		y = 1
+		
+		cost = 3
+
+		prerequisite = {
+			focus = XLA_Quell_Opponets
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Civil_War
+			}
+			hidden_trigger = {
+				OR = {
+					has_war_with = XLB
+					has_war_with = XLC
+					has_active_mission = XLA_Altwigitian_Spark_Civil_War
+					has_active_mission = XLA_Spiritualist_Spark_Civil_War
+				}				
+			}
+		}
+
+		completion_reward = {
+			set_country_flag = XLA_Drastic_Measures
+		}
+	}
+
+	focus = {
+		id = XLA_Call_Upon_The_Antrorus_Graticas
+
+		relative_position_id = XLA_Request_International_Support
+		x = 1
+		y = 1
+
+		cost = 5
+
+		prerequisite = {
+			focus = XLA_Request_International_Support
+		}
+
+		prerequisite = {
+			focus = XLA_Drastic_Times_Call_For_Drastic_Measures
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Civil_War
+			}
+			hidden_trigger = {
+				OR = {
+					has_war_with = XLB
+					has_war_with = XLC
+					has_active_mission = XLA_Altwigitian_Spark_Civil_War
+					has_active_mission = XLA_Spiritualist_Spark_Civil_War
+				}				
+			}
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				division_template = {
+					name = "Antrous Graticas"
+					regiments = { 
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+					}
+
+					is_locked = yes
+					priority = 2
+				}
+			}
+
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Antrous Graticas\" division_template = \"Antrous Graticas\" start_experience_factor = 0.7"
+					owner = XLA
+					count = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Rally_Supporters
+
+		relative_position_id = XLA_Fight_Of_Our_Lives
+		x = 2
+		y = 1
+		
+		cost = 3
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Civil_War
+			}
+			hidden_trigger = {
+				OR = {
+					has_war_with = XLB
+					has_war_with = XLC
+					has_active_mission = XLA_Altwigitian_Spark_Civil_War
+					has_active_mission = XLA_Spiritualist_Spark_Civil_War
+				}				
+			}
+		}
+
+		prerequisite = {
+			focus = XLA_Fight_Of_Our_Lives
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = XLA_Defend_The_Heartlands
+
+		relative_position_id = XLA_Rally_Supporters
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = XLA_Rally_Supporters
+		}
+
+		cost = 3
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Civil_War
+			}
+			hidden_trigger = {
+				OR = {
+					has_war_with = XLB
+					has_war_with = XLC
+					has_active_mission = XLA_Altwigitian_Spark_Civil_War
+					has_active_mission = XLA_Spiritualist_Spark_Civil_War
+				}				
+			}
+		}
+
+		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XLA_Men_On_Inside
+
+		relative_position_id = XLA_Rally_Supporters
+		x = 2
+		y = 1
+
+		cost = 5
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XLA_Civil_War
+			}
+			hidden_trigger = {
+				OR = {
+					has_war_with = XLB
+					has_war_with = XLC
+					has_active_mission = XLA_Altwigitian_Spark_Civil_War
+					has_active_mission = XLA_Spiritualist_Spark_Civil_War
+				}				
+			}
+		}
+
+		prerequisite = {
+			focus = XLA_Rally_Supporters
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+
+				create_intelligence_agency = {
+					name = "Intelligencia Arnmonia"
+					icon = "GFX_intelligence_agency_logo_generic_5"
+				}
+			}
+
+			else = {
+				if = {
+					limit = {
+						has_war_with = XLB
+					}
+
+					add_intel = {
+						target = XLB
+						army_intel = 2
+					}
+				}
+
+				if = {
+					limit = {
+						has_war_with = XLC
+					}
+
+					add_intel = {
+						target = XLC
+						civilian_intel = 2
+					}
+				}
+			}
+		}
+	}
+}

@@ -10,6 +10,25 @@ on_actions = {
 	on_weekly = {
 		effect = {
 			XLA_on_pop_change = yes
+			if = {
+				limit = {
+					check_variable = {
+						XLA_Spiritualist_Militancy > 15
+					}
+				}
+
+				add_ideas = XLA_Spiritualist_Revolutionaries
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						XLA_Altwigitian_Militancy > 15
+					}
+				}
+
+				add_ideas = XLA_Altwigitian_Revolutionaries
+			}
 		}
 	}
 }

@@ -18,13 +18,11 @@ set_country_flag = dont_use_default_political_advisors
 regional_balance_initial_values = yes
 regional_balance_num_elders = yes
 regional_balance_get_num_elders = yes
-XLA_setup_popularities = yes
 
 add_ideas = {
 	XLA_Elders_Council
 	XLA_Naval_Aversion
 	XLA_Aero_Aversion
-	volunteer_only
 }
 
 recruit_character = XLA_Elder_Borani
@@ -36,8 +34,13 @@ recruit_character = XLA_Samio
 recruit_character = XLA_Alexeus
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "2219.4.24"
 	election_frequency = 98
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 90
+	neutrality = 10
 }

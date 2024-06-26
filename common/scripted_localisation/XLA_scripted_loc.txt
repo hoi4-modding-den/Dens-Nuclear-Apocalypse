@@ -174,3 +174,27 @@ defined_text = {
 		localization_key = "GFX_regional_alignment_backup"
 	}
 }
+
+defined_text = {
+	name = GetBoraniFate
+
+	text = {
+		trigger = {
+			has_country_flag = XLA_Borani_Lives
+		}
+
+		localization_key = XLA_Borani_Alive
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = XLA_Borani_Dies
+		}
+
+		localization_key = XLA_Borani_Dead
+	}
+
+	text = {
+		localization_key = XLA_Borani_Alive
+	}
+}

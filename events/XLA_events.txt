@@ -1,0 +1,275 @@
+add_namespace = XLA_event
+
+country_event = {
+	id = XLA_event.1
+	title = XLA_event.1.t
+	desc = XLA_event.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.1.a
+	}
+}
+
+country_event = {
+	id = XLA_event.2
+	title = XLA_event.2.t
+	desc = XLA_event.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.2.a
+		add_stability = 0.05
+		add_political_power = -100
+	}
+
+	option = {
+		name = XLA_event.2.b
+		add_stability = -0.05
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = XLA_event.3
+	title = XLA_event.3.t
+	desc = XLA_event.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.3.a
+		hidden_effect = {
+			set_country_flag = XLA_Borani_Lives
+		}
+	}
+
+	option = {
+		name = XLA_event.3.b
+		hidden_effect = {
+			set_country_flag = XLA_Borani_Dies
+		}
+	}
+}
+
+country_event = {
+	id = XLA_event.4
+	title = {
+		text = XLA_event.4.t.a
+		trigger = {
+			has_country_flag = XLA_Borani_Dies
+		}
+	}
+	title = {
+		trigger = {
+			NOT = {
+				has_country_flag = XLA_Borani_Dies
+			}
+		}
+		text = XLA_event.4.t
+	}
+	desc = XLA_event.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.4.a
+		trigger = {
+			has_country_flag = XLA_Borani_Lives
+		}
+		add_political_power = 50
+	}
+
+	option = {
+		name = XLA_event.4.b
+		trigger = {
+			has_country_flag = XLA_Borani_Dies
+		}
+		retire_character = XLA_Elder_Borani
+	}
+}
+
+country_event = {
+	id = XLA_event.5
+	title = XLA_event.5.t
+	desc = XLA_event.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.5.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = 10
+		}
+	}
+
+	option = {
+		name = XLA_event.5.b
+		add_ideas = XLA_The_Storm
+	}
+}
+
+country_event = {
+	id = XLA_event.6
+	title =XLA_event.6.t
+	desc = XLA_event.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.6.a
+	}
+}
+
+country_event = {
+	id = XLA_event.7
+	title = XLA_event.7.t
+	desc = XLA_event.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.7.a
+		hidden_effect = {
+			set_variable = {
+				XLA_Spiritualist_Capital = 2
+			}
+		}
+	}
+
+	option = {
+		name = XLA_event.7.b
+		hidden_effect = {
+			set_variable = {
+				XLA_Spiritualist_Capital = 161
+			}
+		}
+	}
+}
+
+country_event = {
+	id = XLA_event.8
+	title = XLA_event.8.t
+	desc = XLA_event.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.8.a
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = XLA_event.9
+	title = XLA_event.8.t
+	desc = XLA_event.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.9.a
+		activate_mission = XLA_Altwigitian_Spark_Civil_War
+		hidden_effect = {
+			set_variable = {
+				XLA_Altwigitian_Quell = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = XLA_event.10
+	title = XLA_event.8.t
+	desc = XLA_event.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.10.a
+		activate_mission = XLA_Spiritualist_Spark_Civil_War
+		hidden_effect = {
+			set_variable = {
+				XLA_Spiritualist_Quell = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = XLA_event.11
+	title = XLA_event.11.t
+	desc = XLA_event.11.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.11.a
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = XLA_event.12
+	title = XLA_event.12.t
+	desc = XLA_event.12.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.12.a
+		trigger = {
+			democratic > 65
+		}
+
+		set_politics = {
+			ruling_party = democratic
+		}
+	}
+
+	option = {
+		name = XLA_event.12.b
+		trigger = {
+			fascism > 65
+		}
+
+		set_politics = {
+			ruling_party = fas_pop
+		}
+	}
+
+	option = {
+		name = XLA_event.12.c
+		trigger = {
+			neutrality > 65
+		}
+
+		add_political_power = 200
+	}
+}
+
+country_event = {
+	id = XLA_event.13
+	title = XLA_event.13.t
+	desc = XLA_event.13.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.13.a
+		XLA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = XLA_event.13.b
+	}
+}

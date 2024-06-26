@@ -64,6 +64,9 @@ characters = {
 			allowed = {
 				original_tag = XLA
 			}
+			available = {
+				has_country_flag = XLA_Allowed_Recruit_Socellia
+			}
 			traits = {
 				XLA_Altwigitian_Acolyte
 			}
@@ -79,9 +82,37 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
+			available = {
+				has_country_flag = XLA_Allowed_Recruit_Samio
+			}
+			allowed = {
+				original_tag = XLA
+			}
 			idea_token = XLA_Samio_Token
 			traits = { 
 				XLA_Druidic
+			}
+		}
+	}
+
+	XLA_Alexeus = {
+		name = "Alexeus Branislav"
+		portraits = {
+			army = {
+				small = "GFX_Advisor_Alexeus_Branislav"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XLA_Alexeus_Token
+			allowed = {
+				original_tag = XLA
+			}
+			available = {
+				has_country_flag = XLA_Allowed_Recruit_Alexeus
+			}
+			traits = { 
+				XLA_Councilitte
 			}
 		}
 	}
