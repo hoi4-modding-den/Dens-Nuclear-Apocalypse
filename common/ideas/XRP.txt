@@ -200,6 +200,7 @@ ideas = {
 				required_garrison_factor = -0.05
 			}						
 		}
+
 		#Army Ideas#
 		XRP_american_army = {
 			picture = usa_desegregation_1
@@ -219,5 +220,28 @@ ideas = {
 				army_speed_factor = 0.05
 			}
 		}
+		XRP_anti_computer_buff = {
+			picture = generic_shield_against_communism
+			removal_cost = -1
+			targeted_modifier = {
+				tag = XGE
+				defense_bonus_against = 0.1
+				attack_bonus_against = 0.1
+			}
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.1
+			}
+		}
+		XRP_future_past_today = {
+			picture = SOV_atomic_bomb_project
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				army_armor_speed_factor = 0.1
+				naval_invasion_prep_speed = 0.1
+				land_night_attack = 0.1
+			}
+		}
+		
 	}
 }

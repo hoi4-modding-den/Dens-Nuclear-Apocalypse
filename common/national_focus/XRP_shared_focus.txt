@@ -344,7 +344,7 @@ shared_focus = {
 #Army Tree#
 shared_focus = {
 	id = XRP_create_cia
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_intelligence_exchange
 	x = 20
 	y = 2
 	#relative_position_id = 2
@@ -355,15 +355,20 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
-
+	bypass = {
+		has_intelligence_agency = yes
+	}
 	completion_reward = {
-		#create Intellgence Agency, somehow
+		create_intelligence_agency = {
+			name = "Central Intelligence Agency"
+			icon = GFX_XRP_cia_logo
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_fix_army
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_combined_arms
 	x = 32
 	y = 2
 	#relative_position_id = 2
@@ -376,13 +381,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+		army_experience = 50
 	}
 }
 
 shared_focus = {
 	id = XRP_electric_war
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_cryptologic_bomb
 	x = 20
 	y = 3
 	#relative_position_id = 2
@@ -395,13 +405,17 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_fuck_computers
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_XRP_kill_computers
 	x = 20
 	y = 4
 	#relative_position_id = 2
@@ -414,13 +428,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		#bonus against XGE
+		add_ideas = XRP_anti_computer_buff
 	}
 }
 
 shared_focus = {
 	id = XRP_cyber_war
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_SWE_radiotjanst
 	x = 20
 	y = 5
 	#relative_position_id = 2
@@ -434,13 +448,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_future_past_today
 	}
 }
 
 shared_focus = {
 	id = XRP_military_infra
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_offshore_oil_rig
 	x = 22
 	y = 3
 	#relative_position_id = 2
@@ -453,13 +467,32 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = synth_resources
+		}
+		983 = {
+			add_building_construction = {
+				type = infrastructure 
+				level = 1
+				instant_build = yes
+			}
+		}
+		42 = {
+			add_building_construction = {
+				type = synthetic_refinery 
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_reverse_engineering
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_FIN_weapon_caches
 	x = 25
 	y = 3
 	#relative_position_id = 2
@@ -472,13 +505,22 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = infantry_weapons
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 2500
+			producer = XRP
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_radar_stuff
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_radar
 	x = 22
 	y = 4
 	#relative_position_id = 2
@@ -493,13 +535,24 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = radar_tech
+		}
+		42 = {
+			add_building_construction = {
+				type = radar_station 
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_american_war
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_ARG_the_american_push
 	x = 28
 	y = 3
 	#relative_position_id = 2
@@ -515,7 +568,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_dynamic_modifier = { modifier = XRP_american_war }
 	}
 }
 
@@ -572,7 +625,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_to_variable = {XRP_testvar2 = 0.05} 
 	}
 }
 
@@ -664,7 +717,7 @@ shared_focus = {
 
 shared_focus = {
 	id = XRP_german_war
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_SWI_fortify_border_with_germany
 	x = 37
 	y = 3
 	#relative_position_id = 2

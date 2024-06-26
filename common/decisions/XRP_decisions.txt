@@ -88,11 +88,12 @@ XRP_puppets = {
 		}
 		target_trigger = {
 			any_owned_state = {
-				is_core_of = XRP_france
+				#is_core_of = XRP_france
 			}
 		}
 		complete_effect = {
-			transfer_state_to = XRP_france
+			
+			#transfer_state_to = XRP_france
 		}
 	}
 }

@@ -1,0 +1,12 @@
+XRP_american_war = {
+	icon = generic_usa_conflict
+	experience_gain_army = 0.2
+	stability_factor = XRP_testvar2
+	#reminder = add tooltips for variables, they don't show up in focus
+}
+
+XRP_german_war = {
+	icon = generic_fascism_rising
+
+
+}

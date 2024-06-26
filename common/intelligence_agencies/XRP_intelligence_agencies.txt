@@ -1,0 +1,14 @@
+intelligence_agency = {
+
+	picture = GFX_XRP_cia_logo
+	names = { "Central Intelligence Agency" }
+	
+	default = { 
+		original_tag = XRP
+		has_government = fascism
+	}
+	available = { 
+		original_tag = XRP
+		has_government = fascism
+	}
+}
