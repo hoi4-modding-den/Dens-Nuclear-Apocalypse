@@ -47,45 +47,6 @@
 	}
 	
 	focus = {
-		id = XNE_isolation
-		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = XNE_chamberlains_speech }
-		x = 0
-		y = 1
-		relative_position_id = XNE_chamberlains_speech
-
-		cost = 1
-
-		available = {}
-		bypass = {}
-		mutually_exclusive = { focus = XNE_cooperation }
-		mutually_exclusive = { focus = XNE_aggression }
-		
-		cancelable = yes
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		
-		completion_reward = { 
-			log = "[GetDateText]: [Root.GetName]: XNE_isolation"
-			XNE_gain_communism_support = yes
-		}
-		
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 2.5
-				XNM = { has_country_flag = XNM_aggressive }
-			}
-			modifier = {
-				factor = 5
-				date > 1937.01.01
-			}
-		}
-		
-	}
-	
-	focus = {
 		id = XNE_cooperation
 		icon = GFX_focus_generic_befriend_denmark
 		prerequisite = { focus = XNE_chamberlains_speech }
@@ -114,9 +75,40 @@
 		ai_will_do = {
 			factor = 100
 			modifier = {
-				factor = 2.5
-				XNM = { has_country_flag = XNM_coop }
+				factor = 5
+				date > 1937.01.01
 			}
+		}
+		
+	}
+	
+	focus = {
+		id = XNE_isolation
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = XNE_chamberlains_speech }
+		x = 0
+		y = 1
+		relative_position_id = XNE_chamberlains_speech
+
+		cost = 1
+
+		available = {}
+		bypass = {}
+		mutually_exclusive = { focus = XNE_cooperation }
+		mutually_exclusive = { focus = XNE_aggression }
+		
+		cancelable = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = { 
+			log = "[GetDateText]: [Root.GetName]: XNE_isolation"
+			XNE_gain_communism_support = yes
+		}
+		
+		ai_will_do = {
+			factor = 95
 			modifier = {
 				factor = 5
 				date > 1937.01.01
@@ -154,10 +146,6 @@
 		ai_will_do = {
 			factor = 100
 			modifier = {
-				factor = 2.5
-				XNM = { has_country_flag = XNM_no_coop }
-			}
-			modifier = {
 				factor = 5
 				date > 1937.01.01
 			}
@@ -185,6 +173,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_expand_our_trade"
+			XNE_political_focus_flag = yes
 			XNE_gain_liberal_support = yes
 			hidden_effect = {
 				add_timed_idea = {
@@ -208,6 +197,10 @@
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 		}
 		
 	}
@@ -232,6 +225,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_greater_mining_investments"
+			XNE_political_focus_flag = yes
 			XNE_gain_liberal_support = yes
 			add_resource = {
 				type = aluminium
@@ -247,6 +241,10 @@
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 		}
 		
 	}
@@ -271,6 +269,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_oil_off_the_coast"
+			XNE_political_focus_flag = yes
 			XNE_gain_liberal_support = yes
 			XNE_gain_communism_support = yes
 			add_resource = {
@@ -287,6 +286,10 @@
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 		}
 		
 	}
@@ -311,6 +314,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_ease_tensions_with_mercia"
+			XNE_political_focus_flag = yes
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			swap_ideas = {
@@ -321,6 +325,10 @@
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 		}
 		
 	}
@@ -345,6 +353,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_lower_military_presence"
+			XNE_political_focus_flag = yes
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			add_manpower = -90000
@@ -353,6 +362,10 @@
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 		}
 	}
 	
@@ -376,6 +389,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_ease_conscription"
+			XNE_political_focus_flag = yes
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			if = {
@@ -396,6 +410,10 @@
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 		}
 	}
 	
@@ -419,6 +437,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_recognise_mercia"
+			XNE_political_focus_flag = yes
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 			add_stability = 0.05
@@ -432,6 +451,10 @@
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 		}
 	}
 
@@ -456,6 +479,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_coalition_government"
+			XNE_political_focus_flag = yes
 			hidden_effect = {
 				create_country_leader = {
 					name = XNE_harold_johnson
@@ -480,6 +504,10 @@
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 		}
 	}
 
@@ -504,12 +532,17 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_summit_for_peace"
+			XNE_political_focus_flag = yes
     		XNM = { country_event = XNE_focus.2 }
 			add_political_power = 75
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -536,6 +569,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_agree_a_way_forward"
+			XNE_political_focus_flag = yes
 			add_stability = 0.05
 			hidden_effect = {
 				set_power_balance = {
@@ -578,6 +612,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_join_the_bez"
+			XNE_political_focus_flag = yes
     		add_ideas = BEZ_membership
     	}
     	
@@ -606,6 +641,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_share_ideas_on_military"
+			XNE_political_focus_flag = yes
     		army_experience = 40
 			XNM = { army_experience = 60 }
     	}
@@ -625,8 +661,19 @@
     
     	cost = 8
     
-    	available = {}
-    	bypass = {}
+    	available = {
+			OR = {
+				XIE = { exists = yes }
+				AND = {
+					XIE = { exists = no }
+					XNI = { exists = no }
+				}
+			}
+		}
+    	bypass = {
+			XIE = { exists = no }
+			XNI = { exists = no }
+		}
 		mutually_exclusive = { focus = XNE_approach_ulster }
     	
     	cancelable = yes
@@ -636,12 +683,17 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_approach_ireland"
+			XNE_political_focus_flag = yes
     		XIE = { country_event = XNE_focus.2 }
 			add_political_power = 50
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -655,8 +707,20 @@
     
     	cost = 8
     
-    	available = { NOT = { has_country_flag = XNE_ulster_rejects } }
-    	bypass = {}
+    	available = {
+			NOT = { has_country_flag = XNE_ulster_rejects } 
+			OR = {
+				XNI = { exists = yes }
+				AND = {
+					XIE = { exists = no }
+					XNI = { exists = no }
+				}
+			}
+		}
+    	bypass = {
+			XIE = { exists = no }
+			XNI = { exists = no }
+		}
 		mutually_exclusive = { focus = XNE_approach_ireland }
     	
     	cancelable = yes
@@ -666,12 +730,17 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_approach_ulster"
+			XNE_political_focus_flag = yes
     		XNI = { country_event = XNE_focus.3 }
 			add_political_power = 35
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -685,8 +754,20 @@
     
     	cost = 8
     
-    	available = { NOT = { has_country_flag = XNE_ulster_rejects } }
-    	bypass = {}
+    	available = {
+			NOT = { has_country_flag = XNE_ulster_rejects } 
+			OR = {
+				XNI = { exists = yes }
+				AND = {
+					XIE = { exists = no }
+					XNI = { exists = no }
+				}
+			}
+		}
+    	bypass = {
+			XIE = { exists = no }
+			XNI = { exists = no }
+		}
 		mutually_exclusive = {}
     	
     	cancelable = yes
@@ -696,6 +777,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_irish_dependence"
+			XNE_political_focus_flag = yes
     		add_political_power = 50
 			XNI = { 
 				add_political_power = 50
@@ -708,6 +790,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -721,8 +807,19 @@
     
     	cost = 8
     
-    	available = {}
-    	bypass = {}
+    	available = {
+			OR = {
+				XWA = { exists = yes }
+				AND = {
+					XPW = { exists = no }
+					XWA = { exists = no }
+				}
+			}
+		}
+    	bypass = {
+			XPW = { exists = no }
+			XWA = { exists = no }
+		}
 		mutually_exclusive = { focus = XNE_a_deal_for_welsh_victory }
     	
     	cancelable = yes
@@ -732,12 +829,17 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_treaty_with_wales"
+			XNE_political_focus_flag = yes
     		XWA = { country_event = XNE_focus.2 }
 			add_political_power = 50
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -751,8 +853,20 @@
     
     	cost = 8
 		
-    	available = { NOT = { has_country_flag = XNE_worcester_rejects } }
-    	bypass = {}
+    	available = {
+			NOT = { has_country_flag = XNE_worcester_rejects }
+			OR = {
+				XPW = { exists = yes }
+				AND = {
+					XPW = { exists = no }
+					XWA = { exists = no }
+				}
+			}
+		}
+    	bypass = {
+			XPW = { exists = no }
+			XWA = { exists = no }
+		}
 		mutually_exclusive = { focus = XNE_treaty_with_wales }
     	
     	cancelable = yes
@@ -762,12 +876,17 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_a_deal_for_welsh_victory"
+			XNE_political_focus_flag = yes
     		XPW = { country_event = XNE_focus.4 }
 			add_political_power = 35
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -781,8 +900,20 @@
     
     	cost = 8
     
-    	available = {}
-    	bypass = {}
+    	available = {
+			NOT = { has_country_flag = XNE_worcester_rejects }
+			OR = {
+				XPW = { exists = yes }
+				AND = {
+					XPW = { exists = no }
+					XWA = { exists = no }
+				}
+			}
+		}
+    	bypass = {
+			XPW = { exists = no }
+			XWA = { exists = no }
+		}
 		mutually_exclusive = {}
     	
     	cancelable = yes
@@ -792,12 +923,17 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_corporate_capitalism"
+			XNE_political_focus_flag = yes
 			add_ideas = XNE_concessions_to_companies
-			XNI = { add_ideas = XNE_lower_taxes }
+			XPW = { add_ideas = XNE_lower_taxes }
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -822,6 +958,8 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_secure_wales"
+			XNE_political_focus_flag = yes
+			set_global_flag = XNE_securing_wales
 			if = {
 				limit = { has_completed_focus = XNE_a_deal_for_welsh_victory }
 				declare_war_on = {
@@ -861,6 +999,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -885,6 +1027,8 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_pacify_ireland"
+			set_global_flag = XNE_securing_ireland
+			XNE_political_focus_flag = yes
 			if = {
 				limit = { has_completed_focus = XNE_irish_dependence }
 				declare_war_on = {
@@ -916,6 +1060,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -940,6 +1088,8 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_integration_of_scottish_tribes"
+			set_global_flag = XNE_securing_scotland
+			XNE_political_focus_flag = yes
 			declare_war_on = {
 				target = XCT
 				type = annex_everything
@@ -984,6 +1134,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_federation_of_the_british_isles"
+			XNE_political_focus_flag = yes
 			create_faction = XNE_UBF_faction
 			hidden_effect = {
 				every_country = {
@@ -1011,6 +1162,13 @@
 					else = {
 						add_ideas = UBF_membership
 					}
+				}
+				every_country = {
+					limit = {
+						owns_state = 133
+					}
+					transfer_state = 136
+					transfer_state = 120
 				}
 			}
     	}
@@ -1046,6 +1204,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_united_britain"
+			XNE_political_focus_flag = yes
 			set_cosmetic_tag = XNE_UK
 			if = {
 				limit = {
@@ -1102,6 +1261,8 @@
 					}
 					add_core_of = ROOT
 				}
+				transfer_state = 136
+				transfer_state = 120
 			}	
     	}
     	
@@ -1131,6 +1292,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_fortifications_along_the_trent"
+			XNE_political_focus_flag = yes
     		XNE_gain_communism_support = yes
 			338 = {
 				add_building_construction = {
@@ -1162,6 +1324,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1186,6 +1352,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_leicester_devolution"
+			XNE_political_focus_flag = yes
     		XNE_gain_communism_support = yes
 			338 = {
 				add_building_construction = {
@@ -1231,6 +1398,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1255,6 +1426,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_energy_independence"
+			XNE_political_focus_flag = yes
     		XNE_gain_communism_support = yes
 			XNE_gain_conservative_support = yes
 			every_owned_state = {
@@ -1270,6 +1442,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1294,6 +1470,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_affordable_cost_housing_initiative"
+			XNE_political_focus_flag = yes
     		XNE_gain_communism_support = yes
 			XNE_gain_conservative_support = yes
 			random_owned_controlled_state = {
@@ -1317,6 +1494,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -1341,6 +1522,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_national_unity"
+			XNE_political_focus_flag = yes
     		XNE_gain_communism_support = yes
 			XNE_gain_conservative_support = yes
 			add_political_power = 75
@@ -1349,6 +1531,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 
@@ -1374,6 +1560,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_higher_import_taxes"
+			XNE_political_focus_flag = yes
     		XNE_gain_communism_support = yes
     		XNE_gain_conservative_support = yes
 			if = {
@@ -1395,6 +1582,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1421,6 +1612,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_government_reformation"
+			XNE_political_focus_flag = yes
     		XNE_gain_communism_support = yes
 			add_stability = 0.1
 			add_popularity = {
@@ -1435,6 +1627,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1459,6 +1655,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_escalate_tensions_with_mercia"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
 			add_war_support = 0.05
@@ -1468,6 +1665,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1492,6 +1693,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_formally_denounce_mercia"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
 			swap_ideas = {
@@ -1502,6 +1704,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1526,12 +1732,17 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_call_for_action"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		add_manpower = 50000
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1556,12 +1767,17 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_ultranationalism"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		add_ideas = militarism_focus
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1587,6 +1803,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_rulers_of_the_british_isles"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		add_political_power = 120
@@ -1594,6 +1811,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1623,6 +1844,8 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_reclaim_our_steel"
+			XNE_political_focus_flag = yes
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		add_political_power = 120
@@ -1641,6 +1864,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1682,8 +1909,10 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_end_the_peace"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
+			set_global_flag = XNE_expansion
     		declare_war_on = {
                 target = XNM
                 type = annex_everything
@@ -1692,6 +1921,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 			modifier = {
 				factor = 10
 				date > 1938.09.01
@@ -1723,6 +1956,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_integration_of_the_midlands"
+			XNE_political_focus_flag = yes
     		XNE_gain_neutrality_support = yes
     		add_political_power = 35
 			set_country_flag = XNE_integration_mercia
@@ -1731,6 +1965,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1757,6 +1995,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_victorious"
+			XNE_political_focus_flag = yes
     		XNE_gain_neutrality_support = yes
     		XNE_gain_fascism_support = yes
     		add_political_power = 65
@@ -1769,6 +2008,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1794,6 +2037,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_claim_the_british_isles"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		add_state_claim = 122
@@ -1812,6 +2056,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1842,6 +2090,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_crush_the_welsh"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		if = {
@@ -1872,6 +2121,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1899,6 +2152,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_reclaim_scotland"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		XNE_gain_neutrality_support = yes
     		if = {
@@ -1921,6 +2175,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -1950,6 +2208,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_move_into_ireland"
+			XNE_political_focus_flag = yes
     		XNE_gain_neutrality_support = yes
     		if = {
 				limit = { country_exists = XNI }
@@ -1971,6 +2230,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -2006,6 +2269,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_an_english_victory"
+			XNE_political_focus_flag = yes
     		XNE_gain_fascism_support = yes
     		add_stability = 0.1
 			add_country_leader_trait = indomitable_perseverance
@@ -2013,10 +2277,16 @@
 				desc = XNE_an_english_victory
 				can_create_factions = yes
 			}
+			transfer_state = 136
+			transfer_state = 120
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
 			modifier = {
 				factor = 0.75
 				OR = {
@@ -2062,6 +2332,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_a_british_victory"
+			XNE_political_focus_flag = yes
     		XNE_gain_neutrality_support = yes
     		set_cosmetic_tag = XNE_UK
 			hidden_effect = {
@@ -2096,11 +2367,21 @@
 						}
 					}
 				}
+				transfer_state = 136
+				transfer_state = 120
+				set_rule = {
+					desc = XNE_an_english_victory
+					can_create_factions = yes
+				}
 			}
     	}
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = { has_country_flag = XNE_political_focus_lower }
+			}
     	}
     }
 	
@@ -2124,6 +2405,7 @@
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_colchester_vault"
 			country_event = XNE_focus.6
+			set_country_flag = XNE_colchester_vault_flag
 			XNE_gain_conservative_support = yes
 			hidden_effect = { 
 				country_event = { 
@@ -2136,6 +2418,10 @@
 		
 		ai_will_do = {
 			factor = 50
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
 		}
 	}
 	
@@ -2166,13 +2452,14 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
 			}
     	}
     }
@@ -2208,10 +2495,10 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 2
-				has_government = democratic
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
 			}
     	}
     }
@@ -2247,13 +2534,14 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
 			}
     	}
     }
@@ -2289,13 +2577,14 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
 			}
     	}
     }
@@ -2327,10 +2616,10 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				has_government = democratic
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
 			}
     	}
     }
@@ -2366,10 +2655,10 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				has_government = democratic
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
 			}
     	}
     }
@@ -2405,10 +2694,10 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				has_government = democratic
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
 			}
     	}
     }
@@ -2443,10 +2732,10 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 2
-				has_government = fascism
+				factor = 1.1
+				has_completed_focus = XNE_aggression
 			}
     	}
     }
@@ -2477,10 +2766,10 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				has_government = neutrality
+				factor = 1.1
+				has_completed_focus = XNE_aggression
 			}
     	}
     }
@@ -2515,10 +2804,10 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				has_government = neutrality
+				factor = 1.1
+				has_completed_focus = XNE_aggression
 			}
     	}
     }
@@ -2554,10 +2843,14 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 2
-				has_government = democratic
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
 			}
     	}
     }
@@ -2592,10 +2885,10 @@
     	}
     	
     	ai_will_do = {
-    		factor = 7
+    		factor = 10
 			modifier = {
-				factor = 1.5
-				has_government = neutrality
+				factor = 1.1
+				has_completed_focus = XNE_aggression
 			}
     	}
     }
@@ -2630,7 +2923,7 @@
     	}
     	
     	ai_will_do = {
-    		factor = 10
+    		factor = 12
     	}
     }
 	
@@ -2667,7 +2960,7 @@
     	}
     	
     	ai_will_do = {
-    		factor = 10
+    		factor = 11
     	}
     }
 	
@@ -2700,7 +2993,7 @@
     	}
     	
     	ai_will_do = {
-    		factor = 10
+    		factor = 12
 			modifier = {
 				factor = 3
 				date > 1938.01.01
@@ -2733,7 +3026,7 @@
     	}
     	
     	ai_will_do = {
-    		factor = 10
+    		factor = 12
 			modifier = {
 				factor = 2
 				date > 1938.01.01
@@ -2778,6 +3071,10 @@
 				factor = 0.25
 				date < 1940.01.01
 			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -2814,6 +3111,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -2846,6 +3147,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -2881,6 +3186,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -4140,6 +4449,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_reestablish_the_navy"
+			set_country_flag = XNE_reestablish_the_navy_flag
 			XNE_gain_neutrality_support = yes
 			XNE_gain_conservative_support = yes
 			navy_experience = 35
@@ -4147,6 +4457,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4182,6 +4500,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4227,6 +4549,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4257,6 +4587,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4312,6 +4646,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4357,6 +4695,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4387,6 +4733,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4423,6 +4773,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4486,6 +4844,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -4529,6 +4891,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -4573,6 +4939,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4597,6 +4971,7 @@
     	
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_post_nuclear_airforce"
+			set_country_flag = XNE_post_nuclear_airforce_flag
 			XNE_gain_liberal_support = yes
 			XNE_gain_communism_support = yes
 			air_experience = 35
@@ -4604,6 +4979,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -4647,6 +5030,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -4720,6 +5111,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -4751,6 +5150,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4826,6 +5233,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4858,6 +5273,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -4901,6 +5324,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -4974,6 +5405,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5028,6 +5467,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -5074,6 +5521,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -5107,6 +5558,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
+			modifier = {
+				factor = 1.5
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5140,6 +5599,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5171,6 +5638,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5203,6 +5674,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5276,6 +5755,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -5348,6 +5831,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -5396,6 +5883,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -5427,6 +5918,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5459,6 +5958,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -5495,6 +6002,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5531,6 +6046,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
     	}
     }
 	
@@ -5565,6 +6088,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_isolation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5599,6 +6130,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -5636,6 +6171,14 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5672,6 +6215,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 	
@@ -5707,6 +6254,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_cooperation
+			}
     	}
     }
 	
@@ -5743,6 +6294,10 @@
     	
     	ai_will_do = {
     		factor = 10
+			modifier = {
+				factor = 1.1
+				has_completed_focus = XNE_aggression
+			}
     	}
     }
 }

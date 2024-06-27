@@ -5,7 +5,7 @@ XNE_popular_support = {
 	picture = GFX_decision_cat_picture_faction_management_bulgaria
 	visible_when_empty = yes
 
-	allowed = {
+	visible = {
 		tag = XNE
 		XNE = { 
 			OR = {
@@ -20,7 +20,7 @@ XNE_federation_of_uk_decisions = {
 	priority = 10
 	icon = GFX_decision_category_generic_democracy
 
-	allowed = {
+	visible = {
 		OR = {
 			tag = XNE
 			tag = XNM
@@ -35,7 +35,7 @@ XNE_integration_of_land = {
 	visible_when_empty = yes
 	picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences
 
-	allowed = {
+	visible = {
 		has_country_flag = XNE_integration_mercia
 	}
 }
@@ -47,7 +47,7 @@ XNE_army_reformation = {
 	visible_when_empty = yes
 	picture = GFX_decision_cat_picture_NOR_fascist_war
 
-	allowed = {
+	visible = {
 		has_country_flag = XNE_reformation_of_the_army
 	}
 }
