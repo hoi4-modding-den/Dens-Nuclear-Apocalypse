@@ -574,7 +574,7 @@ shared_focus = {
 
 shared_focus = {
 	id = XRP_big_guns
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_SWE_let_fly_all_guns
 	x = 24
 	y = 4
 	#relative_position_id = 2
@@ -587,13 +587,21 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Bring in the Big Guns"
+			bonus = 1
+			uses = 2
+			category = artillery
+		}
+		custom_effect_tooltip = XRP_big_guns_tooltip
+		add_to_variable = { XRP_artyvar_1 = 0.1 }
+		add_to_variable = { XRP_artyvar_2 = 0.05 }
 	}
 }
 
 shared_focus = {
 	id = XRP_special_forces
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_special_forces
 	x = 26
 	y = 4
 	#relative_position_id = 2
@@ -606,13 +614,23 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Expand the Special Forces"
+			bonus = 1
+			uses = 1
+			category = cat_special_forces_generic
+		}
+		add_potential_special_forces_tree = yes
+		custom_effect_tooltip = XRP_special_forces_tooltip
+		add_to_variable = { XRP_specforvar_1 = -0.1 }
+		add_to_variable = { XRP_specforvar_2 = 0.15 }
+		add_to_variable = { XRP_specforvar_3 = -0.1 }
 	}
 }
 
 shared_focus = {
 	id = XRP_officer_autonomy
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_NOR_drobak_coastal_fort
 	x = 28
 	y = 4
 	#relative_position_id = 2
@@ -625,13 +643,15 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_to_variable = {XRP_testvar2 = 0.05} 
+		custom_effect_tooltip = XRP_officer_autonomy_tooltip
+		add_to_variable = { XRP_offinit_1 = 0.1 }
+		add_to_variable = { XRP_offinit_2 = 0.1 } 
 	}
 }
 
 shared_focus = {
 	id = XRP_old_tanks
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_FIN_foreign_anti_air
 	x = 30
 	y = 4
 	#relative_position_id = 2
@@ -644,13 +664,22 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Imitate Old Abrams Tanks"
+			bonus = 0.5
+			ahead_reduction = 2 
+			uses = 2
+			category = armor
+		}
+		custom_effect_tooltip = XRP_old_tanks_tooltip
+		add_to_variable = { XRP_oldtanks_1 = 0.05 }
+		add_to_variable = { XRP_oldtanks_2 = 0.05 } 
 	}
 }
 
 shared_focus = {
 	id = XRP_army_motorized
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_SWE_lynx_armored_car
 	x = 32
 	y = 4
 	#relative_position_id = 2
@@ -663,13 +692,28 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Motorize the Army"
+			bonus = 1
+			uses = 1
+			category = cat_mechanized_equipment
+		}
+		add_tech_bonus = {
+			name = "Motorize the Army"
+			bonus = 1
+			uses = 1
+			category = cat_armored_cars
+		}
+		custom_effect_tooltip = XRP_army_motorized_tooltip
+		add_to_variable = { XRP_motarmy_1 = 0.05 }
+		add_to_variable = { XRP_motarmy_2 = -0.1 } 
+		add_to_variable = { XRP_motarmy_3 = 0.05 } 
 	}
 }
 
 shared_focus = {
 	id = XRP_rain_hell
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_occupy_start_war
 	x = 27
 	y = 5
 	#relative_position_id = 2
@@ -687,13 +731,17 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		custom_effect_tooltip = XRP_rain_hell_tooltip
+		add_to_variable = { XRP_artyvar_1 = 0.05 }
+		add_to_variable = { XRP_rainhell_1 = 0.1 }
+		add_to_variable = { XRP_rainhell_2 = 0.05 }
+		add_to_variable = { XRP_rainhell_3 = 0.1 }
 	}
 }
 
 shared_focus = {
 	id = XRP_american_blitz
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_XRP_america_tank
 	x = 29
 	y = 5
 	#relative_position_id = 2
@@ -711,7 +759,11 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		custom_effect_tooltip = XRP_american_blitz_tooltip
+		add_to_variable = { XRP_oldtanks_1 = 0.05 }
+		add_to_variable = { XRP_oldtanks_2 = 0.05 } 
+		add_to_variable = { XRP_amblitz_1 = 0.1 }
+		add_to_variable = { XRP_amblitz_2 = -0.1 }
 	}
 }
 

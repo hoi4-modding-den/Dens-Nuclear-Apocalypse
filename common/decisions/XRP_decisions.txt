@@ -78,22 +78,22 @@ XRP_puppets = {
 			factor = 200
 		}
 	}
-	XRP_french_puppet_return_territory = { #does not work yet
-		icon = GFX_decision_hol_exchange_intelligence_data
-		allowed = {
-			tag = XRP
-		}
-		available = {
-
-		}
-		target_trigger = {
-			any_owned_state = {
-				#is_core_of = XRP_france
-			}
-		}
-		complete_effect = {
-			
-			#transfer_state_to = XRP_france
-		}
-	}
-}
+#	XRP_french_puppet_return_territory = { #does not work yet
+#		icon = GFX_decision_hol_exchange_intelligence_data
+#		allowed = {
+#			tag = XRP
+#		}
+#		available = {
+#
+#		}
+#		target_trigger = {
+#			any_owned_state = {
+#				is_core_of = XRP_france
+#			}
+#		}
+#		complete_effect = {
+#			
+#			transfer_state_to = XRP_france
+#		}
+#	}
+#}

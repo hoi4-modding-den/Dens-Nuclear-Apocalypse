@@ -1,7 +1,24 @@
 XRP_american_war = {
 	icon = generic_usa_conflict
 	experience_gain_army = 0.2
-	stability_factor = XRP_testvar2
+	army_artillery_attack_factor = XRP_artyvar_1
+	army_core_defence_factor = XRP_artyvar_2
+	special_forces_training_time_factor = XRP_specforvar_1
+	special_forces_cap = XRP_specforvar_2
+	special_forces_out_of_supply_factor = XRP_specforvar_3
+	army_org_factor = XRP_offinit_1
+	initiative_factor = XRP_offinit_2
+	army_armor_attack_factor = XRP_oldtanks_1
+	army_armor_defence_factor = XRP_oldtanks_2
+	army_speed_factor = XRP_motarmy_1
+	truck_attrition_factor = XRP_motarmy_2
+	land_reinforce_rate = XRP_motarmy_3
+	railway_gun_bombardment_factor = XRP_rainhell_1
+	army_attack_factor = XRP_rainhell_2
+	coordination_bonus = XRP_rainhell_3
+	army_armor_speed_factor = XRP_amblitz_1
+	org_loss_when_moving = XRP_amblitz_2
+	stability_factor = XRP_testvar1
 	#reminder = add tooltips for variables, they don't show up in focus
 }
 
