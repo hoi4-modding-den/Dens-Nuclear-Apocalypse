@@ -23,8 +23,6 @@ iberia_war_category = {
 			}
 		}
 
-		# EFFECTS OF THIS DECISION/MISSION
-
 		timeout_effect = {		#The effects to execute once the mission timer expires.
 			ROOT = {
 				declare_war_on = {
@@ -134,6 +132,16 @@ iberia_war_category = {
 			has_global_flag = iberian_war_going
 		}
 
+		activation = {
+			OR = {
+				original_tag = XAD
+				original_tag = XHP
+				original_tag = XPY
+				original_tag = XGL
+			}
+			has_global_flag = iberian_war_going
+		}
+		
 		# EFFECTS OF THIS DECISION/MISSION
 
 		complete_effect = {
@@ -144,6 +152,7 @@ iberia_war_category = {
 				hours = 2
 				random_hours = 4
 			}
+			remove_ideas = iberia_preparing_war
 		}
 		
 		

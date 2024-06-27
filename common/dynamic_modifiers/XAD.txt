@@ -3,8 +3,8 @@ XAD_military = {
 	
 	#Effects
 	
-	offence = XAD_re_offence 
-	defence = XAD_re_defence
+	army_attack_factor = XAD_re_offence 
+	army_defence_factor = XAD_re_defence
 	army_morale_factor = XAD_re_army_morale_factor
 	breakthrough_factor = XAD_re_breakthrough_factor
 	max_planning_factor = XAD_re_max_planning_factor

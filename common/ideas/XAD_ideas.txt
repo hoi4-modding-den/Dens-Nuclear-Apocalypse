@@ -1010,6 +1010,27 @@ ideas = {
 				}
 				
 			}
+		iberia_preparing_war = {
+			
+				allowed = {
+					original_tag = XAD
+				}
+	
+				picture = chi_war_of_resistance3
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					ai_desired_divisions_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+					conscription = 0.15
+				}
+			}
 			
 	}
 }
