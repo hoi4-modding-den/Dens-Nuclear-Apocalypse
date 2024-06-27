@@ -18,9 +18,9 @@
 		prerequisite = {}
 		mutually_exclusive = {}
 		
-		icon = GFX_focus_CHL_protect_the_easter_island
+		icon = GFX_focus_BRA_utilize_security_law
 		available = {
-            always = no
+            
 		}
 		bypass = {
 		}
@@ -29,13 +29,520 @@
 
 		x = 10
 		y = 3
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 50	
 		}
      }
 
+	#Commi
+	 focus = {
+		id = XWA_UnionFocusCommunism
+
+		prerequisite = {focus = XWA_UnionFocus}
+		mutually_exclusive = {focus = XWA_UnionFocusDemocracy}
+		
+		icon = GFX_focus_CHL_the_future_of_Chile
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 200
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = XWA_WorkersProtests
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusCommunism2
+
+		prerequisite = {focus = XWA_UnionFocusCommunism}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_cohen_plan
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 5
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = XWA_PoorAdministration
+				add_idea = XWA_PoorAdministration2
+			}
+			
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusCommunism3
+
+		prerequisite = {focus = XWA_UnionFocusCommunism}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_NOR_moscows_education_centers
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 9
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.15
+			}
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusCommunism4
+
+		prerequisite = {focus = XWA_UnionFocusCommunism2}
+		prerequisite = {focus = XWA_UnionFocusCommunism3}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+			}
+			remove_ideas = {
+				XWA_WorkersProtests
+				XWA_PoorAdministration2
+			} 
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusCommunism5
+
+		prerequisite = {focus = XWA_UnionFocusCommunism4}
+		mutually_exclusive = {focus = XWA_UnionFocusCommunism6}
+		
+		icon = GFX_focus_por_workers_of_iberia
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 5
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = {XWA_TheWorkers}
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusCommunism6
+
+		prerequisite = {focus = XWA_UnionFocusCommunism4}
+		mutually_exclusive = {focus = XWA_UnionFocusCommunism5}
+		
+		icon = GFX_focus_prc_agrarian_socialism
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 9
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {XWA_TheState}
+		}
+     }
+	#Dem
+	 focus = {
+		id = XWA_UnionFocusDemocracy
+
+		prerequisite = {focus = XWA_UnionFocus}
+		mutually_exclusive = {focus = XWA_UnionFocusCommunism}
+		
+		icon = GFX_focus_generic_improve_the_administration
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 13
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.05
+			}
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusDemocracy2
+
+		prerequisite = {focus = XWA_UnionFocusDemocracy}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_ARG_universidad_de_buenos_aires
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 13
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XWA_PoorAdministration
+				add_idea = XWA_PoorAdministrationDem
+			}
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusDemocracy3
+
+		prerequisite = {focus = XWA_UnionFocusDemocracy2}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 13
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism 
+				popularity = -0.1
+			}
+			add_stability = 0.05
+			add_ideas = XWA_RSSpeech
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusDemocracy4
+
+		prerequisite = {focus = XWA_UnionFocusDemocracy3}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_hol_the_foundations_of_defense
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 11
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XWA_PoorAdministrationDem
+				add_idea = XWA_NewConstitution
+			}
+		}
+     }
+	#Industry
+	 focus = {
+		id = XWA_UnionIndustryStart
+
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_generic_construct_infrastructure
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 20
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XWA_UnionIndustry2
+
+		prerequisite = {focus = XWA_UnionIndustryStart}
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 18
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XWA_UnionIndustry3
+
+		prerequisite = {focus = XWA_UnionIndustryStart}
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 22
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XWA_UnionIndustry4
+
+		prerequisite = {focus = XWA_UnionIndustry3}
+		prerequisite = {focus = XWA_UnionIndustry2}
+		mutually_exclusive = {focus = XWA_UnionIndustry5}
+		mutually_exclusive = {focus = XWA_UnionIndustry6}
+		
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 18
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XWA_UnionIndustry5
+
+		prerequisite = {focus = XWA_UnionIndustry3}
+		prerequisite = {focus = XWA_UnionIndustry2}
+		mutually_exclusive = {focus = XWA_UnionIndustry4}
+		mutually_exclusive = {focus = XWA_UnionIndustry6}
+		
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 22
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XWA_UnionIndustry6
+
+		prerequisite = {focus = XWA_UnionIndustry3}
+		prerequisite = {focus = XWA_UnionIndustry2}
+		mutually_exclusive = {focus = XWA_UnionIndustry5}
+		mutually_exclusive = {focus = XWA_UnionIndustry4}
+		
+		icon = GFX_goal_generic_construct_infrastructure
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 20
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
 } #endbracketlol

@@ -35,6 +35,29 @@
  
  XWA_ExtremistIdeals:0 "Extremist Propoganda"
  XWA_ExtremistIdeals2:0 "Extremist Propoganda"
+
+ XWA_PoorAdministration:0 "Lack of Faith in the Government"
+ XWA_PoorAdministration_desc:0 "While the WDP has tried its best to restabilize the union, many are left wondering about the effectiveness."
+
+ XWA_PoorAdministration2:0 "Lack of Faith in the Government"
+ XWA_PoorAdministration2_desc:0 "While the WDP has tried its best to restabilize the union, many are left wondering about the effectiveness."
+
+ XWA_PoorAdministrationDem:0 "Lack of Faith in the Government"
+ XWA_PoorAdministrationDem_desc:0 "While the WDP has tried its best to restabilize the union, many are left wondering about the effectiveness." 
+
+ XWA_WorkersProtests:0 "Factory Strikes"
+ XWA_WorkersProtests_desc:0 "Without the government adressing the needs of factory workers, production has heavily suffered."
+
+ XWA_TheState:0 "State First"
+ XWA_TheState_desc:0 "The Welsh government has put the needs of the state ahead of the workers leaving many upset."
+ XWA_TheWorkers:0 "Workers First"
+ XWA_TheWorkers_desc:0 "The Welsh government has put the needs of the workers first fufiling the promise that enabled them to overthrow the WDP."
+ 
+ XWA_RSSpeech:0 "The Red Scare Speech"
+ XWA_RSSpeech_desc:0 "The Red Scare Speech given by Gerallt Havard at a Welsh University spread fear throughout wales of communism leading to mass rejection of communism."
+
+ XWA_NewConstitution:0 "Constitution of Wales"
+ XWA_NewConstitution_desc:0 "The modern adaptation of the Welsh constitution limits the government heavily. However, this was a needed change to regain public certainty in the Union."
 #Focuses
 
 
@@ -89,8 +112,43 @@
  
   #-----Union Focuses-----#
 
-    #nada yet lol
+    XWA_UnionFocus:0 "The Remaining Union"
+    XWA_UnionFocus_desc:0 "With the colapse of the Welsh Republic, the Welsh Union is all that is left. The Union itself is riddled with issues mainly a political split between the WDP and the PWWP."
+   
+    #Dem
+    XWA_UnionFocusDemocracy:0 "Administration Reform"
 
+    XWA_UnionFocusDemocracy2:0 "Anti-Communist Education"
+
+    XWA_UnionFocusDemocracy3:0 "Red Scare Speech"
+    XWA_UnionFocusDemocracy3_desc:0 "Gerallt Havard wrote a speech to give at a Welsh University which aims to spread fear throughout wales of communism hopefully leading to anti-communist retoric among the general public."
+    
+    XWA_UnionFocusDemocracy4:0 "Institute a New Constitution"
+    XWA_UnionFocusDemocracy4_desc:0 "The easiest way to regain the trust in the public is a new constitution. Although this new constitution would limit the government powers, it would make sure that the government acts in the will of the people and their defense."
+
+    #Com
+    XWA_UnionFocusCommunism:0 "Protest Workers Suffrage"
+
+    XWA_UnionFocusCommunism2:0 "Bribe Journalists"
+    XWA_UnionFocusCommunism2_desc:0 "By bribing journalists, we can publish anti-government pieces that will rot the remaining public trust in democracy."
+
+    XWA_UnionFocusCommunism3:0 "Sway Universities"
+    XWA_UnionFocusCommunism3_desc:0 "Certain universities can be swayed to encourage students to study into communist ideals."
+
+    XWA_UnionFocusCommunism4:0 "Power to the PWWP"
+    XWA_UnionFocusCommunism4_desc:0 "The Wales Democratic Party has tried. It is time for a new red dawn under the People of Wales Workers Party..."
+
+    XWA_UnionFocusCommunism5:0 "The Workers..."
+
+    XWA_UnionFocusCommunism6:0 "The State..."
+
+    #Industry
+    XWA_UnionIndustryStart:0 "Improve Infastructure"
+    XWA_UnionIndustry2:0 "Construct Civilian Factory"
+    XWA_UnionIndustry3:0 "Construct Arms Factory"
+    XWA_UnionIndustry4:0 "Allocate Extra Civilian Factory"
+    XWA_UnionIndustry5:0 "Allocate Extra Arms Factory"
+    XWA_UnionIndustry6:0 "Allocate Improved Roads"
 #Dr Pepper lol
  XPW:0 "P.H.D Worcestershire"
  XPW_DEF:0 "P.H.D Worcestershire Company"
