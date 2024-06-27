@@ -1013,10 +1013,9 @@ ideas = {
 		iberia_preparing_war = {
 			
 				allowed = {
-					original_tag = XAD
 				}
 	
-				picture = chi_war_of_resistance3
+				picture = ast_volunteer_defence_corps
 			
 				removal_cost = -1
 				

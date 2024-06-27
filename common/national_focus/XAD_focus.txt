@@ -5260,6 +5260,1862 @@
 			}
 		}
 		focus = {
+			id = XAD_kill_every_communist
+			icon = GFX_
+			relative_position_id = XAD_the_king_gives_up
+			prerequisite = { focus = XAD_the_king_gives_up }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 6
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_ideological_loyalty
+			icon = GFX_
+			relative_position_id = XAD_kill_every_communist
+			prerequisite = { focus = XAD_kill_every_communist }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_freedom_for_prosperity
+			icon = GFX_
+			relative_position_id = XAD_ideological_loyalty
+			prerequisite = { focus = XAD_ideological_loyalty }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_ban_other_religions
+			icon = GFX_
+			relative_position_id = XAD_freedom_for_prosperity
+			prerequisite = { focus = XAD_freedom_for_prosperity }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_control_everything
+			icon = GFX_
+			relative_position_id = XAD_freedom_for_prosperity
+			prerequisite = { focus = XAD_freedom_for_prosperity }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_one_state_one_leader
+			icon = GFX_
+			relative_position_id = XAD_control_everything
+			prerequisite = { focus = XAD_control_everything }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_reintroduce_the_death_penalty
+			icon = GFX_
+			relative_position_id = XAD_freedom_for_prosperity
+			prerequisite = { focus = XAD_freedom_for_prosperity }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_cat_purification
+			icon = GFX_
+			relative_position_id = XAD_the_king_gives_up
+			prerequisite = { focus = XAD_the_king_gives_up }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -7
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_for_the_cat_race
+			icon = GFX_
+			relative_position_id = XAD_cat_purification
+			prerequisite = { focus = XAD_cat_purification }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_cat_purity
+			icon = GFX_
+			relative_position_id = XAD_for_the_cat_race
+			prerequisite = { focus = XAD_for_the_cat_race }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -1
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_spread_racial_propaganda
+			icon = GFX_
+			relative_position_id = XAD_cat_purity
+			prerequisite = { focus = XAD_cat_purity }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_remember_our_origins
+			icon = GFX_
+			relative_position_id = XAD_for_the_cat_race
+			prerequisite = { focus = XAD_for_the_cat_race }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_northern_expedition
+			icon = GFX_
+			relative_position_id = XAD_remember_our_origins
+			prerequisite = { focus = XAD_remember_our_origins }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_killing_every_human
+			icon = GFX_
+			relative_position_id = XAD_northern_expedition
+			prerequisite = { focus = XAD_northern_expedition }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 1
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_send_cats_to_the_place
+			icon = GFX_
+			relative_position_id = XAD_northern_expedition
+			prerequisite = { focus = XAD_northern_expedition }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -1
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_annex_northern_cattia
+			icon = GFX_
+			relative_position_id = XAD_northern_expedition
+			prerequisite = { focus = XAD_send_cats_to_the_place }
+			prerequisite = { focus = XAD_killing_every_human }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 2
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_the_king_gives_up
+			icon = GFX_
+			relative_position_id = XAD_moderate_victory
+			prerequisite = { focus = XAD_moderate_victory }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_the_fight_is_still_not_done
+			icon = GFX_
+			relative_position_id = XAD_the_king_gives_up
+			prerequisite = { focus = XAD_the_king_gives_up }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_dreams_of_an_empire
+			icon = GFX_
+			relative_position_id = XAD_the_fight_is_still_not_done
+			prerequisite = { focus = XAD_the_fight_is_still_not_done }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_integrate_spain
+			icon = GFX_
+			relative_position_id = XAD_dreams_of_an_empire
+			prerequisite = { focus = XAD_dreams_of_an_empire }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_integrate_portugal
+			icon = GFX_
+			relative_position_id = XAD_dreams_of_an_empire
+			prerequisite = { focus = XAD_dreams_of_an_empire }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_kill_the_human_population
+			icon = GFX_
+			relative_position_id = XAD_integrate_spain
+			prerequisite = { focus = XAD_integrate_spain }
+			prerequisite = { focus = XAD_integrate_portugal }
+			prerequisite = { focus = XAD_integrate_the_pyraneese }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_emigrate_cats
+			icon = GFX_
+			relative_position_id = XAD_kill_the_human_population
+			prerequisite = { focus = XAD_kill_the_human_population }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_look_in_the_past
+			icon = GFX_
+			relative_position_id = XAD_emigrate_cats
+			prerequisite = { focus = XAD_emigrate_cats }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_a_new_rome
+			icon = GFX_
+			relative_position_id = XAD_look_in_the_past
+			prerequisite = { focus = XAD_look_in_the_past }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_integrate_the_pyraneese
+			icon = GFX_
+			relative_position_id = XAD_dreams_of_an_empire
+			prerequisite = { focus = XAD_dreams_of_an_empire }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_change_the_flag
+			icon = GFX_
+			relative_position_id = XAD_a_new_rome
+			prerequisite = { focus = XAD_a_new_rome }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -3
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_ceasar_is_back
+			icon = GFX_
+			relative_position_id = XAD_change_the_flag
+			prerequisite = { focus = XAD_change_the_flag }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_form_the_ceeasar_guard
+			icon = GFX_
+			relative_position_id = XAD_ceasar_is_back
+			prerequisite = { focus = XAD_ceasar_is_back }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_an_empire_reborn
+			icon = GFX_
+			relative_position_id = XAD_form_the_ceeasar_guard
+			prerequisite = { focus = XAD_form_the_ceeasar_guard }
+			prerequisite = { focus = XAD_create_a_statue_in_the_capital }
+			prerequisite = { focus = XAD_we_are_the_new_rome }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_create_a_statue_in_the_capital
+			icon = GFX_
+			relative_position_id = XAD_ceasar_is_back
+			prerequisite = { focus = XAD_ceasar_is_back }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_we_are_the_new_rome
+			icon = GFX_
+			relative_position_id = XAD_ceasar_is_back
+			prerequisite = { focus = XAD_ceasar_is_back }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_stabilize_the_state
+			icon = GFX_
+			relative_position_id = XAD_a_new_rome
+			prerequisite = { focus = XAD_a_new_rome }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 3
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_expand_porto_dockyards
+			icon = GFX_
+			relative_position_id = XAD_stabilize_the_state
+			prerequisite = { focus = XAD_stabilize_the_state }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_expand_spanish_industries
+			icon = GFX_
+			relative_position_id = XAD_stabilize_the_state
+			prerequisite = { focus = XAD_stabilize_the_state }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_mils_in_barcellona
+			icon = GFX_
+			relative_position_id = XAD_stabilize_the_state
+			prerequisite = { focus = XAD_stabilize_the_state }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_for_the_country
+			icon = GFX_
+			relative_position_id = XAD_expand_porto_dockyards
+			prerequisite = { focus = XAD_expand_porto_dockyards focus = XAD_mils_in_barcellona focus = XAD_expand_spanish_industries }
+			mutually_exclusive = { focus = XAD_for_ceasar focus = XAD_for_your_family }
+			x = -2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_develop_the_state
+			icon = GFX_
+			relative_position_id = XAD_for_the_country
+			prerequisite = { focus = XAD_for_the_country }
+			#mutually_exclusive = { focus = XAD_for_ceasar focus = XAD_for_your_family }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_the_new_prophet
+			icon = GFX_
+			relative_position_id = XAD_for_ceasar
+			prerequisite = { focus = XAD_for_ceasar }
+			#mutually_exclusive = { focus = XAD_for_ceasar focus = XAD_for_your_family }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_increase_mobilization
+			icon = GFX_
+			relative_position_id = XAD_for_your_family
+			prerequisite = { focus = XAD_for_your_family }
+			#mutually_exclusive = { focus = XAD_for_ceasar focus = XAD_for_your_family }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_for_your_family
+			icon = GFX_
+			relative_position_id = XAD_expand_porto_dockyards
+			prerequisite = { focus = XAD_expand_porto_dockyards focus = XAD_mils_in_barcellona focus = XAD_expand_spanish_industries }
+			mutually_exclusive = { focus = XAD_for_ceasar focus = XAD_for_the_country }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_for_ceasar
+			icon = GFX_
+			relative_position_id = XAD_expand_porto_dockyards
+			prerequisite = { focus = XAD_expand_porto_dockyards focus = XAD_mils_in_barcellona focus = XAD_expand_spanish_industries }
+			mutually_exclusive = { focus = XAD_for_your_family focus = XAD_for_the_country }
+			x = 2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_march_into_acquitania
+			icon = GFX_
+			relative_position_id = XAD_a_new_rome
+			prerequisite = { focus = XAD_a_new_rome }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 12
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_push_into_normandy
+			icon = GFX_
+			relative_position_id = XAD_march_into_acquitania
+			prerequisite = { focus = XAD_march_into_acquitania }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_march_to_napoleon
+			icon = GFX_
+			relative_position_id = XAD_march_into_acquitania
+			prerequisite = { focus = XAD_march_into_acquitania }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 3
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_march_into_italia
+			icon = GFX_
+			relative_position_id = XAD_march_to_napoleon
+			prerequisite = { focus = XAD_march_to_napoleon }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_go_for_the_mountains
+			icon = GFX_
+			relative_position_id = XAD_march_into_italia
+			prerequisite = { focus = XAD_march_into_italia }
+			prerequisite = { focus = XAD_push_into_burgundy }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_take_the_isles
+			icon = GFX_
+			relative_position_id = XAD_march_to_napoleon
+			prerequisite = { focus = XAD_march_to_napoleon }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_attack_paris
+			icon = GFX_
+			relative_position_id = XAD_push_into_normandy
+			prerequisite = { focus = XAD_push_into_normandy }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_march_into_benelux
+			icon = GFX_
+			relative_position_id = XAD_attack_paris
+			prerequisite = { focus = XAD_attack_paris }
+			prerequisite = { focus = XAD_push_into_burgundy }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 1
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_march_into_the_rhine
+			icon = GFX_
+			relative_position_id = XAD_attack_paris
+			prerequisite = { focus = XAD_push_into_burgundy }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 3
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_march_into_the_rhinea
+			icon = GFX_
+			relative_position_id = XAD_march_into_the_rhine
+			prerequisite = { focus = XAD_march_into_the_rhine }
+			prerequisite = { focus = XAD_go_for_the_mountains }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 1
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_push_into_burgundy
+			icon = GFX_
+			relative_position_id = XAD_push_into_normandy
+			prerequisite = { focus = XAD_push_into_normandy }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_attack_bretogne
+			icon = GFX_
+			relative_position_id = XAD_push_into_normandy
+			prerequisite = { focus = XAD_push_into_normandy }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = -2
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_land_into_new_new_england
+			icon = GFX_
+			relative_position_id = XAD_attack_bretogne
+			prerequisite = { focus = XAD_attack_bretogne }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = XAD_conquer_britannia
+			icon = GFX_
+			relative_position_id = XAD_land_into_new_new_england
+			prerequisite = { focus = XAD_land_into_new_new_england }
+			#mutually_exclusive = { focus = XAD_no_victory focus = XAD_full_victory }
+			x = 0
+			y = 1
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				
+			}
+			
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			 
+	
+			completion_reward = {
+
+			}
+		}
+		focus = {
 			id = XAD_full_victory
 			icon = GFX_
 			relative_position_id = XAD_leòn_offensive
