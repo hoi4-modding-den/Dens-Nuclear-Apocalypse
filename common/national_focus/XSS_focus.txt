@@ -5635,7 +5635,7 @@ add_equipment_to_stockpile = {
     completion_reward = {
 
         848 = {add_core_of = XSS}
-        transfer_state = 848        
+      
 
         }
         
