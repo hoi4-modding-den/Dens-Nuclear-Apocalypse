@@ -12,7 +12,7 @@
  XAQ_communism_party:0 "Autists"
 
 #focus
- XAQ_secure_our_land:0 "Secure our Borders"
+ XAQ_secure_our_land:0 "Non Semper Erit Aestas"
  XAQ_land_recolonisation:0 "Land Recolonisation"
  XAQ_another_hundred:0 "To Another Hundred Years!"
  XAQ_movere_admirari:0 "Movere Admirari"
@@ -55,6 +55,8 @@
  XAQ_dissolve_senate:0 "Dissolve the Senate"
  XAQ_reversal_circumstance:0 "Reversal of Circumstance"
  XAQ_gather_farmer_support:0 "Gather Support from Farmers"
+ XAQ_revive_rome:0 "Reviviscat Roma Aeterna"
+ XAQ_deponere_rex:0 "Deponere Rex"
 
 
 
@@ -85,7 +87,9 @@
  XAQ_senate_chaos:0 "Senate in Chaos"
  XAQ_annos_interitus:0 "Annos Interitus"
  XAQ_roman_revanchism:0 "Roman Pride"
-
+ XAQ_agarian_collapse_1:0 "Agarian Collapse"
+ XAQ_agarian_collapse_2:0 "Agarian Collapse"
+ XAQ_devalue_denarius:0 "Devalue Denarius"
 
 #idea descriptions
  XAQ_senate_chaos_desc:0 "With the looming dissolution of the Senate, the senators and democracy loving peoples are causing unrest."
@@ -96,21 +100,28 @@
  XAQ_senate_4_desc:0 "The Senate has become the primary government function, with the First Consul as its leader."
  XAQ_annos_interitus_desc:0 "At the turn of the 23rd century, the Divine Realm of Lesser Gaul was shattered by its short-sighted attempt to realise its conquest of Gaul. Now, with its territories in Gallia Lugdunensis stripped, Lesser Gaul isn't what it used to be."
  XAQ_roman_revanchism_desc:0 "At the heart of every Roman lies a great nationalist fervour to grasp what is theirs."
+ XAQ_agarian_collapse_1_desc:0 "As it turns out, we don't know how to manage an agarian economy."
+ XAQ_agarian_collapse_2_desc:0 "Somehow, we only made the situation worse. §RCivil war looms...§!"
 
 #characters
  XAQ_marcel_pietot:0 "Marcel "Griffon" Petiot"
  XAQ_yvon_moise:0 "Yvon Moïse"
  XAQ_gnaeus_allard:0 "Gnaeus Allard"
  XAQ_charles_sapiens:0 "Charles Sapiens"
+ XAQ_autist:0 "Autists"
+ XAQ_lunatic:0 "Lunatics"
+ XAQ_retard:0 "Retards"
+ XAQ_mao_zedong:0 "Mao Zedong"
  
 #character descriptions
  XAQ_marcel_pietot_desc:0 "The Gods did toil, they waited for their champion, and one day, he answered their divine call. Mars himself possessed this mere mortal, blessing him the strength of a demigod. Now he, as chosen Caesar of the Gods, leads his nation to divine glory. No opposition will stand in his way, not from out, nor within. Ave!"
  XAQ_charles_sapiens_idea_desc:0 "A true expert on the Great Calamity, he will surely aid our quest to seize utopia."
-
+ XAQ_mao_zedong_desc:0 "We have no idea how this guy got here, but he seems to know a lot about communism. Probably best not to question it."
 
 #traits
  XAQ_devoted_servant_of_rome:0 "Devoted Servant of Rome"
  XAQ_great_calamity_historian:0 "Great Calamity Historian"
+ XAQ_postmortal:0 "Postmortal"
 
 
 #states
@@ -120,8 +131,29 @@
  #party names
  XAQ_democratic_party_spqr:0 "SPQR"
  XAQ_democratic_party_long_spqr:0 "Senatus PopulusQue Romanus"
+ XAQ_communism_party_peasants:0 "RPU"
+ XAQ_communism_party_long_peasants:0 "Roman Peasants' Union"
 
  #decisions
  XAQ_open_bunker_investigations:0 "Open Bunker Investigations"
  XAQ_research_nuclear_silos:0 "Research Defunct Nuclear Silos"
  XAQ_research_control_board:0 "Research OpenAI Server Databases"
+
+ #decision categories
+ XAQ_agarian_collapse:0 "Agarian Collapse"
+
+ #decision desc
+ XAQ_agarian_collapse_desc:0 "We need to fix our agricultural sectors or we will face instability greater than anything we've ever had before."
+
+ #events
+ XAQ_events.1.t:0 "Peasant revolts begin country-wide"
+ XAQ_events.1.d:0 "With the continuation of our defective agricultural policies, peasants have begun defying our government in an organised revolt, refusing grain aquisition. This will only worsen our current dire famine and something needs to be done immediately lest there be ramifications far worse than what we have experienced thus far."
+ XAQ_events.1.a:0 "This is a disaster!"
+ XAQ_events.2.t:0 "Peasants in open rebellion!"
+ XAQ_events.2.d:0 "In Lemovicas, the straw that broke the camel's back was an attempted grain aquisition, which triggered peasant uprisings country-wide. The situation is becoming dire for Marcel Pietot and the members of Gratia Gryphem."
+ XAQ_events.2.a:0 "Down with the Griffin!"
+ XAQ_events.2.b:0 "Mars will guide us through these tumultuous times"
+
+
+ #missions
+ XAQ_fix_agarian_collapse:0 "Fix Agarian Collapse"

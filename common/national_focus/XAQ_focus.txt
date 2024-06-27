@@ -84,7 +84,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XAQ_another_hundred
-		icon = GFX_focus_mex_privatisation
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		x = 5
 		y = 1
 
@@ -185,14 +185,14 @@ focus_tree = {
 		continue_if_invalid = no
 		completion_reward = {
 			add_political_power = 150
-			add_stability = 0.05
+
 		}
 	}
 	focus = {
 		id = XAQ_repeating_mistakes
 		icon = GFX_focus_wonderweapons
 		x = 5
-		y = 2
+		y = 3
 
 		prerequisite = { focus = XAQ_long_march_home } 
 		mutually_exclusive = { }
@@ -241,7 +241,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -276,7 +277,7 @@ focus_tree = {
 		id = XAQ_tribunes
 		icon = GFX_focus_generic_military_mission
 		x = 2
-		y = 1
+		y = 2
 
 		prerequisite = { focus = XAQ_repeating_mistakes } 
 		
@@ -324,7 +325,7 @@ focus_tree = {
 		id = XAQ_rightfully_ours
 		icon = GFX_focus_usa_focus_on_europe
 		x = 1
-		y = 2
+		y = 1
 
 		prerequisite = { focus = XAQ_long_march_home } 
 		
@@ -533,7 +534,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -565,7 +566,7 @@ focus_tree = {
 		id = XAQ_inspire_thinking
 		icon = GFX_focus_generic_military_academy
 		x = 8
-		y = 1
+		y = 2
 
 		
 		prerequisite = { focus = XAQ_repeating_mistakes } 
@@ -786,7 +787,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			
+			remove_ideas = XAQ_agarian_collapse_1
 		}
 	} 
 	focus = {
@@ -925,7 +926,7 @@ focus_tree = {
 
 		
 		prerequisite = { focus = XAQ_divine_rule focus = XAQ_consular_vision} 
-		#mutually_exclusive = { focus = XAQ_renew_pyrenees_treaty }
+		mutually_exclusive = { focus = XAQ_abide_by_pyrenees_treaty }
 
 		relative_position_id = XAQ_divine_rule
 		cost = 5
@@ -954,7 +955,7 @@ focus_tree = {
 		prerequisite = { focus = XAQ_consular_vision focus = XAQ_divine_rule } 
 
 
-		#mutually_exclusive = { focus = XAQ_break_treaty_pyrenees }
+		mutually_exclusive = { focus = XAQ_break_treaty_pyrenees }
 		relative_position_id = XAQ_consular_vision
 		cost = 5
 		ai_will_do = {
@@ -1160,7 +1161,7 @@ focus_tree = {
 		id = XAQ_reversal_circumstance
 		icon = GFX_focus_SWE_hygienic_housing
 		x = 0
-		y = 2
+		y = 3
 
 		
 		
@@ -1188,6 +1189,11 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = XAQ_annos_interitus
 			add_political_power = 50
+			XAQ = {
+				add_state_core = 14
+				add_state_core = 15
+				add_state_core = 30	
+			}
 		}
 	}
 	focus = {
@@ -1249,7 +1255,333 @@ focus_tree = {
 
 		}
 	}
+	focus = {
+		id = XAQ_burdigala_project
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_long_march_home }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_long_march_home
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = XAQ_roman_engineering
+		icon = GFX_goal_generic_production
+		x = -2
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_burdigala_project }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_burdigala_project
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = XAQ_resource_prospecting
+		icon = GFX_focus_generic_resource_extraction
+		x = 2
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_burdigala_project }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_burdigala_project
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XAQ_city_of_marble
+		icon = GFX_focus_ITA_subdue_the_sentinels
+		x = -2
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_resource_prospecting }
+		prerequisite = { focus = XAQ_roman_engineering }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_resource_prospecting
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
 	
+	focus = {
+		id = XAQ_research_crater
+		icon = GFX_focus_generic_land_reclamation
+		x = -3
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_secure_our_land }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_secure_our_land
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = XAQ_reestablish_stock_market
+		icon = GFX_focus_mex_privatisation
+		x = -2
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_laissez_faire }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_laissez_faire
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = XAQ_all_seeing_gnaeus
+		icon = GFX_focus_generic_vatican_agents
+		x = 1
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_gather_farmer_support }
+		prerequisite = { focus = XAQ_increase_senate_influence }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_gather_farmer_support
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = XAQ_deponere_rex
+		icon = GFX_focus_NOR_send_the_king_back_to_denmark
+		x = 0
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_all_seeing_gnaeus }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_all_seeing_gnaeus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = XAQ_rubber_extraction
+		icon = GFX_focus_generic_rubber
+		x = 3
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_secure_our_land }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_secure_our_land
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = XAQ_devalue_denarius
+		icon = GFX_focus_ITA_devaluate_the_lire
+		x = 7
+		y = 1
+
+		
+		
+		
+		prerequisite = { focus = XAQ_secure_our_land }
+		available  = {
+
+		} 
+
+		relative_position_id = XAQ_secure_our_land
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_timed_idea = {
+    				idea = XAQ_devalue_denarius
+    				days = 90
+			}
+			
+		}
+	}
+	focus = {
+		id = XAQ_revive_rome
+		icon = GFX_focus_ITA_mare_nostrum
+		x = 10
+		y = 20
+
+		
+		
+		
+		#prerequisite = {  }
+		available  = {
+
+		} 
+
+		#relative_position_id = XAQ_secure_our_land
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
 	
 
 }

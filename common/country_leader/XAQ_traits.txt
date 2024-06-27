@@ -18,4 +18,9 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	XAQ_postmortal = {
+		random = no
+		stability_factor = 0.05
+	}
+	
 }

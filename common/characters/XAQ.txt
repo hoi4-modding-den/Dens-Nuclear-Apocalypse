@@ -33,6 +33,7 @@ characters = {
 		portraits = {
 			civilian = {
 				small = "gfx/leaders/XAQ/gnaeus_allard.dds"
+				large = "gfx/leaders/XAQ/gnaeus_allard_large.dds"
 			}		
 		}
 		advisor = {
@@ -40,6 +41,13 @@ characters = {
 			idea_token = XAQ_gnaeus_allard_idea
 			traits = { captain_of_industry }
 		}	
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "3000.9.9.9"
+			desc = XAQ_gnaeus_allard_desc
+			id = -1
+		}
 	}
 	 XAQ_charles_sapiens = {
 		name =   XAQ_charles_sapiens
@@ -52,6 +60,42 @@ characters = {
 			slot = political_advisor
 			idea_token = XAQ_charles_sapiens_idea
 			traits = { XAQ_great_calamity_historian }
+		}	
+	}
+	XAQ_autist = {
+		name = XAQ_autist
+		country_leader = {
+			ideology = marxism
+			id = -1
+		}
+	}
+	XAQ_retard = {
+		name = XAQ_retard
+		country_leader = {
+			ideology = conservatism
+			id = -1
+		}
+	}
+	XAQ_lunatic = {
+		name = XAQ_lunatic
+		country_leader = {
+			ideology = despotism
+			id = -1
+		}
+	}
+	XAQ_mao_zedong = {
+		name =  XAQ_mao_zedong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XAQ/mao_zedong.dds"
+			}		
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { XAQ_postmortal }
+			expire = "3000.9.9.9"
+			desc = XAQ_mao_zedong_desc
+			id = -1
 		}	
 	}
 }

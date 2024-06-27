@@ -10,4 +10,20 @@ XAQ_bunker_bordeaux = {
 		has_completed_focus = XAQ_bunker_bordeaux
 	}
 }
-
+XAQ_agarian_collapse = {
+	priority = 9		
+	icon = GFX_decision_category_generic_crisis
+	
+	allowed = {
+		original_tag = XAQ
+	}
+	visible = {	
+		original_tag = XAQ
+		OR = {
+			XAQ = {
+				has_idea = XAQ_agarian_collapse_1
+				has_idea = XAQ_agarian_collapse_2
+			}
+		}
+	}
+}

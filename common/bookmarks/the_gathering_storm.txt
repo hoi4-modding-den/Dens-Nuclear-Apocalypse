@@ -136,10 +136,14 @@ bookmarks = {
 			ideology = fascism
 			history = XAQ_history_desc
 			focuses = {
-			
+				XAQ_spqr
+				XAQ_repeating_mistakes
+				XAQ_revive_rome
 			}
 			ideas = {
-			
+				XAQ_roman_revanchism
+				XAQ_annos_interitus
+				XAQ_agarian_collapse_1
 			}
 		}
 		"XFR" = {

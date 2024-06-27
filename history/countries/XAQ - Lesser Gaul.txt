@@ -34,6 +34,7 @@ set_technology = {
 
 add_ideas = {
 	XAQ_roman_revanchism
+	XAQ_agarian_collapse_1
 	XAQ_annos_interitus
 	XAQ_senate_1
 }
@@ -56,8 +57,13 @@ set_popularities = {
 	democratic = 5
 	communism = 5
 }
-
+recruit_character = XAQ_lunatic
+recruit_character = XAQ_autist
+recruit_character = XAQ_retard
 recruit_character = XAQ_marcel_pietot
 recruit_character = XAQ_yvon_moise
 recruit_character = XAQ_gnaeus_allard
 recruit_character = XAQ_charles_sapiens
+recruit_character = XAQ_mao_zedong
+
+activate_mission = XAQ_fix_agarian_collapse

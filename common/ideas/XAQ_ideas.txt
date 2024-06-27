@@ -17,9 +17,9 @@ ideas = {
 	
 				modifier = {
 					war_support_factor = 0.10
-					fascism_drift = 0.01
 					resistance_target = 0.05
 					drift_defence_factor = 0.15
+					surrender_limit = 0.2
 				}
 		}
 		XAQ_annos_interitus = {
@@ -32,7 +32,7 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
 				}
 	
 	
@@ -54,7 +54,8 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
+					NOT = { has_government = fascism }
 				}
 	
 	
@@ -73,7 +74,7 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
 				}
 	
 	
@@ -91,7 +92,7 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
 				}
 	
 	
@@ -110,7 +111,7 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
 				}
 	
 	
@@ -130,7 +131,7 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
 				}
 	
 	
@@ -152,7 +153,7 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
 				}
 	
 	
@@ -176,12 +177,12 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
 				}
 	
 	
 				modifier = {
-					stability_factor = 0.10
+					war_support_factor = 0.1
 					political_power_factor = 0.15
 					offensive_war_stability_factor = 0.4
 					defensive_war_stability_factor = 0.2
@@ -199,7 +200,7 @@ ideas = {
 				removal_cost = -1
 				
 				allowed_civil_war = {
-					always = yes
+					NOT = { has_government = communism }
 				}
 	
 	
@@ -209,6 +210,63 @@ ideas = {
 					research_speed_factor = 0.10
 					resistance_target = -0.15
 				}
+		}
+		XAQ_agarian_collapse_1 = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = POL_looming_peasants_strike
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					NOT = { has_government = communism }
+				}
+	
+	
+				modifier = {
+					stability_factor = -0.05
+					consumer_goods_factor = 0.25
+				}
+		}
+		XAQ_agarian_collapse_2 = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = POL_the_peasants_strike
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					NOT = { has_government = communism }
+				}
+	
+	
+				modifier = {
+					stability_factor = -0.15
+					consumer_goods_factor = 0.60
+					stability_weekly = -0.01
+					communism_drift = 0.1
+				}
+		}
+		XAQ_devalue_denarius = {
+			allowed = {
+				original_tag = XAQ
+			}
+			picture = ITA_devaluated_lira
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_weekly = +0.005
+			}
 		}
 	}
 }
