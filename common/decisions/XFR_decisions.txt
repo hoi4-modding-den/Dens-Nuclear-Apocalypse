@@ -417,7 +417,7 @@ XFR_last_modernisation = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1
+			factor = 10000000000000000000000
 		}
 
 		visible = {
@@ -458,7 +458,7 @@ XFR_last_modernisation = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1
+			factor = 1000000000000000000000
 		}
 
 		visible = {
@@ -503,7 +503,7 @@ XFR_last_modernisation = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1
+			factor = 1000000000000000000000
 		}
 
 		visible = {
@@ -548,7 +548,7 @@ XFR_last_modernisation = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1
+			factor = 10000000000000000000
 		}
 
 		visible = {
@@ -593,7 +593,7 @@ XFR_last_modernisation = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1
+			factor = 1000000000000000000
 		}
 
 		visible = {
@@ -641,7 +641,7 @@ XFR_last_modernisation = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1
+			factor = 100000000000000000
 		}
 
 		visible = {
@@ -1852,8 +1852,8 @@ XFR_udb_cat = {
 						NOT = { has_government = ROOT }
 						NOT = { has_government = neutrality }
 					}
-					has_opinion = { target = ROOT value < -19 }
-					ROOT = { has_opinion = { target = PREV value < -19 } }
+					has_opinion = { target = ROOT value < -49 }
+					ROOT = { has_opinion = { target = PREV value < -49 } }
 					has_added_tension_amount > 5
 					has_wargoal_against = ROOT
 				}

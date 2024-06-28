@@ -154,9 +154,9 @@ bookmarks = {
 			ideology = democratic
 			history = XFR_history_desc
 			focuses = {
-				XFR_alliance_of_free_nations
-				XFR_combined_arms
-				XFR_bigger_dreams
+				XFR_french_reunification
+				XFR_rhone_expedition
+				XFR_restore_the_francian_empire
 			}
 			ideas = {
 				XFR_chaos_in_centre
