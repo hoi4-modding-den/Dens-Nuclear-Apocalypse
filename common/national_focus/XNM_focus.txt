@@ -109,6 +109,7 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			country_event = XNM_focus.2
 		}
 		
 		ai_will_do = {
@@ -201,6 +202,19 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 17
+				state = 130
+			}
+			132 ={
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -221,6 +235,8 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			country_event = XNM_focus.3
+			add_research_slot = 1
 		}
 		
 		ai_will_do = {
@@ -240,6 +256,8 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			add_ideas = XNM_industrial_robotic_enhancements
+			country_event = XNM_focus.4
 		}
 		
 		ai_will_do = {
@@ -286,7 +304,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_approach_thorne
-		icon = GFX_focus_SOV_ally_bukharinists
+		icon = GFX_focus_SOV_ally_zinovyevists
 		x = -1
 		y = 1
 		cost = 1
@@ -318,6 +336,7 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			# add event "A Deal with the Devil"
 		}
 		
 		ai_will_do = {
@@ -353,7 +372,7 @@ focus_tree = {
 	# Democratic (Liberal/Conservative) Branch
 	focus = {
 		id = XNM_century_of_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_FIN_mustapaidat
 		x = 0
 		y = 1
 		cost = 1
@@ -628,7 +647,7 @@ focus_tree = {
 	# WIP Political Branches #
 	focus = {
 		id = XNM_the_purple_coalition
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
 		x = -10
 		y = 1
 		cost = 1
@@ -649,7 +668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XNM_the_eagle_rises
-		icon = GFX_goal_unknown
+		icon = GFX_focus_EST_republican_defence_league
 		x = 10
 		y = 1
 		cost = 1

@@ -27,7 +27,11 @@ bookmarks = {
 		"XNM" = {
 			ideology = democratic
 			history = "XNM_bookmark_history"
-			#focuses = { }
+			focuses = {
+				XNM_the_purple_coalition
+				XNM_century_of_democracy				
+				XNM_the_eagle_rises
+			}
 			ideas = {
 				XNM_compromise_of_29
 				XNM_tensions_on_the_trent

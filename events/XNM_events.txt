@@ -21,6 +21,84 @@ country_event = {
 	}
 }
 
+# Transnational Response
+country_event = {
+	id = XNM_focus.2
+	title = XNM_focus.2.title
+	desc = XNM_focus.2.desc
+	picture = GFX_report_event_por_president_military_inspection
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNM_focus.2.a
+		add_stability = -0.05
+		swap_ideas = {
+			remove_idea = XNM_nationwide_public_violence
+			add_idea = XNM_nationwide_public_violence_1
+		}
+		ai_chance = { factor = 5 }	
+	}
+	option = {
+		name = XNM_focus.2.b
+		add_stability = -0.1
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		ai_chance = { factor = 1 }	
+	}
+}
+
+# Tyne Technologies
+country_event = {
+	id = XNM_focus.3
+	title = XNM_focus.3.title
+	desc = XNM_focus.3.desc
+	picture = GFX_report_event_physics_lab_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNM_focus.3.a
+		add_stability = 0.02
+		ai_chance = { factor = 5 }	
+	}
+}
+
+# Automation Movement
+country_event = {
+	id = XNM_focus.4
+	title = XNM_focus.4.title
+	desc = XNM_focus.4.desc
+	picture = GFX_report_event_generic_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNM_focus.4.a
+		swap_ideas = {
+			remove_idea = XNM_industrial_robotic_enhancements
+			add_idea = XNM_controlled_robotic_enhancements
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = concentrated_industry_category
+		}
+		ai_chance = { factor = 5 }	
+	}
+	option = {
+		name = XNM_focus.4.b
+		add_stability = -0.05
+		ai_chance = { factor = 1 }	
+	}
+}
+
 # Midlands Situation out of Control 
 country_event = {
 	id = XNM_country.1
@@ -41,7 +119,7 @@ country_event = {
 			set_demilitarized_zone = yes
 		}
 		ai_chance = { factor = 1 }	
-	}	
+	}
 }
 
 # Local Governmental Collapse in Repton

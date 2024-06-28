@@ -3,7 +3,7 @@ state= {
 	name="STATE_132" # Lancashire
 manpower=3846969
 	
-	state_category = metropolis
+	state_category = megalopolis
 	
 	resources={
 		steel=31 # was: 56
@@ -21,10 +21,10 @@ manpower=3846969
 		
 		buildings = {
 			infrastructure = 4 #was: 8
-			#arms_factory = 1
-			#industrial_complex = 1
-			#dockyard = 3
-			#air_base = 3
+			arms_factory = 2
+			industrial_complex = 5
+			dockyard = 2
+			air_base = 2
 			6384 = {
 				naval_base = 5
 			}

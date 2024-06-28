@@ -14,7 +14,7 @@
  
  ### Introduction Event ###
  XNM_intro_loc:0 "WIP \n\n§HCurrent Content:§! \n\n §G-Content 1.\n -Content 2.\n -Content 3."
- XNM_credits:0 "Credits for the Mercian Content: §Hfuriousky/Sky§!, \nCredits for the rest of the content: \n§HThe HOI4 Modding Den Discord Server§!"
+ XNM_credits:0 "Mercian Content: §Hfuriousky/Sky§!\nIntro GUI: §CKasastul§!\nRest of the mod: \n§HThe HOI4 Modding Den§!"
 
  ### Leaders ###
  XNM_arthur_gainsborough:0 "Arthur Gainsborough"
@@ -47,6 +47,8 @@
  XNM_midlands_protests_desc:0 "Although the renewal of the dominant coalition, the §CUDM§!, has gathered a great amount of public support within a majority of the Republic's regions, the new reforms proposed by the §2New Dawn Party§!, which purposefully target the influence of nationalist and monarchist sympathizers, have faced a lot of backlashes. In reaction, the nationalists within the §LNational Mercian Front§! as well as the §gIclingatists§!, both united in a counter-coalition under the guise of the §0Ultraroyalist League§!. With the rise of this direct challenge to the current long-standing dominance of the §CUDM§!, the §0UL§! has reinforced its efforts to combat the system, by organizing massive riots in their home region of the West Midlands, in which a large number of citizens advocate for the reinstitution of the forgotten monarchy." 
  XNM_midlands_protests_light:0 "Midlands Protests"
  XNM_midlands_protests_light_desc:0 "Although the renewal of the dominant coalition, the §CUDM§!, has gathered a great amount of public support within a majority of the Republic's regions, the new reforms proposed by the §2New Dawn Party§!, which purposefully target the influence of nationalist and monarchist sympathizers, have faced a lot of backlashes. In reaction, the nationalists within the §LNational Mercian Front§! as well as the §gIclingatists§!, both united in a counter-coalition under the guise of the §0Ultraroyalist League§!. With the rise of this direct challenge to the current long-standing dominance of the §CUDM§!, the §0UL§! has reinforced its efforts to combat the system, by organizing massive riots in their home region of the West Midlands, in which a large number of citizens advocate for the reinstitution of the forgotten monarchy." 
+ XNM_midlands_protests_heavy:0 "Midlands Protests"
+ XNM_midlands_protests_heavy_desc:0 "Although the renewal of the dominant coalition, the §CUDM§!, has gathered a great amount of public support within a majority of the Republic's regions, the new reforms proposed by the §2New Dawn Party§!, which purposefully target the influence of nationalist and monarchist sympathizers, have faced a lot of backlashes. In reaction, the nationalists within the §LNational Mercian Front§! as well as the §gIclingatists§!, both united in a counter-coalition under the guise of the §0Ultraroyalist League§!. With the rise of this direct challenge to the current long-standing dominance of the §CUDM§!, the §0UL§! has reinforced its efforts to combat the system, by organizing massive riots in their home region of the West Midlands, in which a large number of citizens advocate for the reinstitution of the forgotten monarchy."
  XNM_tensions_on_the_trent:0 "Tensions on the Trent"
  XNM_tensions_on_the_trent_desc:0 "The River Trent has always served as a barrier permitting the continuing existence of the current status quo of the Mercian Republic and New New England. However, in the past years, the aggressive policies of Winston Chamberlain have led to increased pressure throughout the southern border regions. This varied from simple military demonstrations near the borders to unexpected territorial incursions. According to the Mercian National Agency, it is only a matter of time before New New London attempts at a full-scale invasion of the Republic."
  XNM_undergoing_army_modernization:0 "Undergoing Army Modernization"
@@ -55,6 +57,14 @@
  XNM_albion_booming_heart_desc:0 "Even with the chaos and destruction that unfolded after the Nuclear Apocalypse in the 21st century, ever since its humble beginnings, the Mercian Republic has always strived for an economic priority and advantage over its foreign counterparts. This is quite well represented today as the Republic stands firm as one of, if not the greatest industrial power of this post-fallout world. With the economic prowess of Mercia seemingly not reducing anytime soon, the current administration must seek to expand it with any means necessary while also maintaining the resource-hungry machine to continue the "Grand Efforts" made by our predecessors in 2204."
  BEZ_membership:0 "B.E.Z. Membership"
  BEZ_membership_desc:0 "The Britannia Economic Zone was founded as a result of the evolving relations between the Mercian Republic and The Tynes. However, today, the trade organization seeks to prosper and bring back an era of globalization, from concocting trade and tariffs agreements to aiding the development of new member countries."
+ XNM_nationwide_public_violence:0 "Nationwide Public Violence"
+ XNM_nationwide_public_violence_desc:0 "WIP"
+ XNM_nationwide_public_violence_1:0 "Nationwide Public Violence"
+ XNM_nationwide_public_violence_1_desc:0 "WIP"
+ XNM_industrial_robotic_enhancements:0 "Industrial Robotic Enhancements"
+ XNM_industrial_robotic_enhancements:0 "WIP"
+ XNM_controlled_robotic_enhancements:0 "Controlled Robotic Enhancements"
+ XNM_controlled_robotic_enhancements_desc:0 "WIP"
  
  ### National Focus ###
  XNM_the_gainsborough_administration:0 "The Gainsborough Administration"
@@ -162,7 +172,21 @@
  XNM_news.1.title:0 "Midlands Crisis in Mercia"
  XNM_news.1.desc:0 "It has been announced today in the early morning at 6:42AM by a decleration of press of the Gainsborough Administration that the volatile situation surrounding the Midlands Protests have completely spiraled out of control. Although originally based in Repton, the pro-monarchist movement has now gathered the support of the local nationalists in West Midlands, which rendered any police action practically useless. In light of these recent developments, the Republic's President, Arthur Gainsborough, is expected to make a decision on how to proceed with the situation in the coming days. In recent news, arriving reports from the Mercia counter-intelligence office has assigned a possible connections between the violent revolts in the Midlands and the government of [XNE.GetName], which could only mean an escelation of tensions between both foreign powers if proven to be true."
  XNM_news.1.a:0 "What a disaster!"
- 
+
+ XNM_focus.2.title:0 "Handling the Crisis"
+ XNM_focus.2.desc:0 "WIP"
+ XNM_focus.2.a:0 "Send in the Army!"
+ XNM_focus.2.b:0 "Let's not escalate this further"
+
+ XNM_focus.3.title:0 "The Tyne Corp. Telegram"
+ XNM_focus.3.desc:0 "WIP"
+ XNM_focus.3.a:0 "Great success!"
+
+ XNM_focus.4.title:0 "Response from the Workers"
+ XNM_focus.4.desc:0 "WIP"
+ XNM_focus.4.a:0 "Promote a more balanced approach"
+ XNM_focus.4.b:0 "Stick to the plan."
+
  ### Decisions ###
  XNM_election_season_category:0 "Election Season"
  

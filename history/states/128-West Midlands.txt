@@ -13,9 +13,8 @@ manpower=2456823
 		owner = XNM # ENG
 		buildings = {
 			infrastructure = 4 #was: 8
-			#arms_factory = 2
-			#industrial_complex = 3
-			#air_base = 6
+			arms_factory = 2
+			industrial_complex = 6
 		}
 		victory_points = {
 			9297 25
