@@ -243,5 +243,12 @@ ideas = {
 			}
 		}
 		
+		#Navy Ideas#
+		XRP_merchant_marine = {
+			picture = liberty_ships_focus
+			removal_cost = -1
+			equipment_bonus = { convoy = { build_cost_ic = -0.25 instant = yes } }
+			
+		}
 	}
 }

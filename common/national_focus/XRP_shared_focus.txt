@@ -785,13 +785,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_dynamic_modifier = { modifier = XRP_german_war }
 	}
 }
 
 shared_focus = {
 	id = XRP_centralized_army
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_limited_social_mobilization
 	x = 34
 	y = 4
 	#relative_position_id = 2
@@ -804,13 +804,16 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		custom_effect_tooltip = XRP_centralized_army_tooltip
+		add_to_variable = { XRP_centarmy_1 = 0.1 }
+		add_to_variable = { XRP_centarmy_2 = 0.1 } 
+		add_to_variable = { XRP_centarmy_3 = 20 } 
 	}
 }
 
 shared_focus = {
 	id = XRP_american_guerillas 
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_ETH_freedom_at_gunpoint
 	x = 36
 	y = 4
 	#relative_position_id = 2
@@ -823,13 +826,28 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Behind Every Blade of Grass"
+			bonus = 1
+			uses = 2
+			category = support_tech
+		}
+		add_tech_bonus = {
+			name = "Behind Every Blade of Grass"
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+		custom_effect_tooltip = XRP_american_guerillas_tooltip
+		add_to_variable = { XRP_touchgrass_1 = 0.1 }
+		add_to_variable = { XRP_touchgrass_2 = 0.1 } 
+		#add_to_variable = { XRP_touchgrass_3 = 0.05 } 
 	}
 }
 
 shared_focus = {
 	id = XRP_bleed_dry
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_SWE_neither_death_nor_dishonor
 	x = 38
 	y = 4
 	#relative_position_id = 2
@@ -842,13 +860,22 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Make Them Bleed"
+			bonus = 0.5
+			uses = 4
+			category = artillery
+		}
+		custom_effect_tooltip = XRP_bleed_dry_tooltip
+		add_to_variable = { XRP_bleeddry_1 = -0.15 } 
+		add_to_variable = { XRP_bleeddry_2 = 0.15 } 
+		add_to_variable = { XRP_bleeddry_3 = 0.15 } 
 	}
 }
 
 shared_focus = {
 	id = XRP_fortress_europe
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_fortify_the_westwall
 	x = 34
 	y = 5
 	#relative_position_id = 2
@@ -864,13 +891,16 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		custom_effect_tooltip = XRP_fortress_europe_tooltip
+		add_to_variable = { XRP_forteuro_1 = 0.15 } 
+		add_to_variable = { XRP_forteuro_2 = 0.05 } 
+		add_to_variable = { XRP_forteuro_3 = 0.05 } 
 	}
 }
 
 shared_focus = {
 	id = XRP_werewolf_guerillas
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_XRP_wolf_icon
 	x = 36
 	y = 5
 	#relative_position_id = 2
@@ -886,13 +916,22 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Werewolves"
+			bonus = 1
+			uses = 1
+			category = cat_special_forces_generic
+		}
+		custom_effect_tooltip = XRP_werewolf_guerillas_tooltip
+		add_to_variable = { XRP_wolfguer_1 = 0.15 } 
+		add_to_variable = { XRP_wolfguer_2 = 0.10 } 
+		add_to_variable = { XRP_wolfguer_3 = 0.10 } 
 	}
 }
 
 shared_focus = {
 	id = XRP_landmine_everything
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_mine_warfare
 	x = 38
 	y = 5
 	#relative_position_id = 2
@@ -908,13 +947,21 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Rigged to Blow"
+			bonus = 0.5
+			uses = 2
+			category = naval_mines
+		}
+		custom_effect_tooltip = XRP_landmine_everything_tooltip
+		add_to_variable = { XRP_landmines_1 = 0.10 }
+		add_to_variable = { XRP_landmines_2 = 0.10 }
 	}
 }
 
 shared_focus = {
 	id = XRP_bomb_the_earth
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_wonderweapons
 	x = 40
 	y = 5
 	#relative_position_id = 2
@@ -931,13 +978,28 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = "Bomb the Earth"
+			bonus = 0.5
+			uses = 2
+			category = cat_air_bombs
+		}
+		add_tech_bonus = {
+			name = "Bomb the Earth"
+			bonus = 0.5
+			uses = 2
+			category = rocketry
+		}
+		custom_effect_tooltip = XRP_bomb_the_earth_tooltip
+		add_to_variable = { XRP_bombearth_1 = 0.10 }
+		add_to_variable = { XRP_bombearth_2 = 0.10 }
+		add_to_variable = { XRP_bombearth_3 = 0.10 }
 	}
 }
 
 shared_focus = {
 	id = XRP_black_spot
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_XRP_black_spot
 	x = 36
 	y = 6
 	#relative_position_id = 2
@@ -953,13 +1015,21 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_political_power = 200
+		add_ideas = closed_economy
+		custom_effect_tooltip = XRP_black_spot_tooltip
+		add_to_variable = { XRP_blackspot_1 = 0.001 } 
+		add_to_variable = { XRP_blackspot_2 = 0.10 } 
+		every_country = {
+			add_opinion_modifier = { target = XRP modifier = XRP_Ultra_Isolationism }
+			XRP = { add_opinion_modifier = { target = PREV modifier = XRP_Ultra_Isolationism }}
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_second_volley
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_NORDIC_com_selector_research
 	x = 38
 	y = 6
 	#relative_position_id = 2
@@ -975,7 +1045,20 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_stability = -0.05
+		add_tech_bonus = {
+			name = "Prepair the Second Volley"
+			bonus = 2
+			uses = 1
+			category = nuclear
+		}
+		custom_effect_tooltip = XRP_second_volley_tooltip
+		add_to_variable = { XRP_secvol_1 = 0.15 } 
+		add_to_variable = { XRP_secvol_2 = 0.5 } 
+		add_to_variable = { XRP_secvol_3 = 0.1 } 
+		every_country = {
+			add_opinion_modifier = { target = XRP modifier = XRP_Nuclear_Threat }
+		}
 	}
 }
 
@@ -983,7 +1066,7 @@ shared_focus = {
 #Air Tree#
 shared_focus = {
 	id = XRP_ramstein_focus
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_air_bases
 	x = 46
 	y = 2
 	#relative_position_id = 2
@@ -996,7 +1079,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		air_experience = 50
 	}
 }
 
@@ -1278,7 +1361,7 @@ shared_focus = {
 #Navy Tree#
 shared_focus = {
 	id = XRP_sea_access
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_north_atlantic_fleet
 	x = 52
 	y = 2
 	#relative_position_id = 2
@@ -1295,10 +1378,114 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
-
-	completion_reward = {
-		
+	complete_tooltip = {
+		navy_experience = 50
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+			type = dockyard
+			level = 2
+			instant_build = yes
+		}
 	}
+	completion_reward = {
+		#copied from generic tree, because man this is a lot of if statements for something that seems simple
+			navy_experience = 50
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	
 }
 
 shared_focus = {
@@ -1404,26 +1591,128 @@ shared_focus = {
 
 shared_focus = {
 	id = XRP_dockyards
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_construct_naval_dockyard
 	x = 54
 	y = 3
 	#relative_position_id = 2
 
 	cost = 5
 	prerequisite = { focus =  XRP_sea_access}
-
+	available = {
+		any_state = {
+			is_owned_by = XRP
+			is_coastal = yes
+		}
+	}
+	
 	ai_will_do = {
 		factor = 1
 	}
 
 	completion_reward = {
 		
+			#copied from generic tree, because man this is a lot of if statements for something that seems simple
+				if = {
+					limit = {
+						NOT = {
+							any_owned_state = {
+								dockyard > 0
+								free_building_slots = {
+									building = dockyard
+									size > 2
+									include_locked = yes
+								}
+							}
+						}
+						any_owned_state = {
+							is_coastal = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+					set_country_flag = naval_effort_built_alt
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = naval_effort_built_alt }
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+					set_country_flag = naval_effort_built
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = naval_effort_built_alt }
+						NOT = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 2
+									include_locked = yes
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							controller = { tag = ROOT }
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+							
+			}
 	}
 }
 
 shared_focus = {
 	id = XRP_convoys
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_merchant_fleet
 	x = 56
 	y = 3
 	#relative_position_id = 2
@@ -1436,13 +1725,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_equipment_to_stockpile = {
+			type = convoy_1
+			amount = 30
+			producer = XRP
+		}
+		add_ideas = XRP_merchant_marine
 	}
 }
 
 shared_focus = {
 	id = XRP_rebuild_wilhelmshaven
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_refit_civilian_ships
 	x = 54
 	y = 4
 	#relative_position_id = 2
@@ -1460,13 +1754,25 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		56 = {
+			add_extra_state_shared_building_slots = 4
+						add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = fuel_silo
+							level = 2
+							instant_build = yes
+						}
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_retrofit_calais
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_POL_develop_polish_shipbuilding
 	x = 56
 	y = 4
 	#relative_position_id = 2
@@ -1484,6 +1790,22 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		29 = {
+			add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = naval_base 
+							level = 5
+							instant_build = yes
+							province = {
+								all_provinces = yes
+								limit_to_victory_point > 11 
+							}
+						}
+		}
 	}
 }

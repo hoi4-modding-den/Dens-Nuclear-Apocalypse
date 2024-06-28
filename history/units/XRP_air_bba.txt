@@ -1,0 +1,88 @@
+air_wings = {
+	### 435th Air Ground Operations Wing
+	42 = {
+		# 435th Air and Space Communications Group
+		# 435th Contingency Response Group
+		medium_plane_airframe_0 = {
+			owner = "XRP" 
+			amount = 24
+			version_name = "B-6A"
+		}
+		# 4th Air Support Operations Group 
+		small_plane_cas_airframe_0 = {
+			owner = "XRP" 
+			amount = 48
+			version_name = "A-12"
+		}
+	### 521st Air Mobility Operations Wing
+		# 521st Air Mobility Operations Group 
+		transport_plane_equipment_1 =  {
+			owner = "XRP" 
+			amount = 25
+			version_name = "C-17"
+		}
+		# 721st Air Mobility Operations Group
+		transport_plane_equipment_1 = {
+			owner = "XRP" 
+			amount = 25
+			version_name = "C-17"
+		}
+	### 86th Airlift Wing
+		# 86th Operations Group
+		transport_plane_equipment_1 =  {
+			owner = "XRP" 
+			amount = 25
+			version_name = "C-17"
+		}
+		# 65th Air Base Group
+		transport_plane_equipment_1 = {
+			owner = "XRP" 
+			amount = 25
+			version_name = "C-17"
+		}
+	### 406th Air Expeditionary Wing
+		# 409th Air Expeditionary Group
+		medium_plane_airframe_1 =  {
+			owner = "XRP"
+			amount = 24
+			version_name = "P-35A"
+		}
+	}
+	
+
+	### 52nd Fighter Wing
+	983 = { 
+		# 52nd Operations Group
+		small_plane_airframe_1 =  {
+			owner = "XRP"
+			amount = 24
+			version_name = "P-35A"
+		}
+		# 52nd Mission Support Group
+		small_plane_cas_airframe_0 = {
+			owner = "XRP"
+			amount = 24
+			version_name = "A-12"
+		}
+	}
+
+}
+
+
+
+#####################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "XRP"
+			version_name = "P-35A"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+}
+
+#####################
