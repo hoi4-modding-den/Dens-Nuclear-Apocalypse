@@ -249,14 +249,18 @@ focus_tree = {
 		offset = {
 			x = -11
 			trigger = {
-				always = yes
+				has_completed_focus = XFR_dennounce_democracy
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 			}
 		}
 
 		allow_branch = {
 			OR = {
 				NOT = { has_completed_focus = XFR_dennounce_democracy }
-				42 = { is_owned_and_controlled_by = ROOT }
+				24 = { is_owned_and_controlled_by = ROOT }
 			}
 		}
 

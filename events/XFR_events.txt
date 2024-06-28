@@ -1441,6 +1441,9 @@ country_event = { # Nationalists sell Centre Pt. 3
                 target = XFR
                 modifier = XFR_fascist_cooperation
             }
+            XFR = {
+                mark_focus_tree_layout_dirty = yes
+            }
         }
         
     }
@@ -1739,7 +1742,7 @@ country_event = { # Elections 2245
                 set_country_flag = XFR_third_term_restorationists
 			}
         }
-        #custom_effect_tooltip = elections_unlock_branch_tt
+        custom_effect_tooltip = elections_unlock_branch_tt
         hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 		}
