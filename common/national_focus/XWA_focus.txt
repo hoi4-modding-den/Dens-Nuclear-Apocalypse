@@ -24,6 +24,7 @@
 		
 		icon = GFX_focus_CHL_protect_the_easter_island
 		available = {
+			always = no
 		}
 		bypass = {
 		}
@@ -38,7 +39,9 @@
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			hidden_effect = {
+			load_focus_tree = XWA_union_focus
+			}
 		}
      }
 

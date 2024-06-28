@@ -36,6 +36,28 @@ ideas = {
 			}
 		}
 
+        XFR_ai_cheat_bonus = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+                NOT = { has_government = communism }
+                is_ai = yes
+			}
+			available = {
+			
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.2
+                army_core_defence_factor = 0.2
+                political_power_gain = 0.5
+			}
+		}
+
          XFR_france_restored_federalists = {
             allowed = {
 				always = yes
@@ -859,7 +881,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = generic_monarchist_uprising
+            picture = CHL_french_aristocracy
 
             modifier = {
                 neutrality_drift = 0.02
@@ -1333,6 +1355,72 @@ ideas = {
 
         }
 
+        XFR_red_militias = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+           removal_cost = -1
+
+            picture = generic_communist_army
+
+            modifier = {
+			    modifier_army_sub_unit_militia_attack_factor = 0.1
+                modifier_army_sub_unit_militia_defence_factor = 0.1
+            }
+
+        }
+
+        XFR_council_assembly = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+           removal_cost = -1
+
+            picture = eng_spirit_of_the_industrial_revolution
+
+            modifier = {
+			    industrial_capacity_dockyard = 0.2
+                industrial_capacity_factory = 0.2
+                production_speed_arms_factory_factor = 0.1
+            }
+
+        }
+
+        XFR_democrat_bureaucrats = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				OR = {
+                    has_government = communism
+                    has_government = democratic
+                }
+			}
+
+           removal_cost = -1
+
+            picture = gre_schachtplan
+
+            modifier = {
+			    political_power_gain = 0.1
+                stability_factor = 0.2
+                democratic_drift = 0.05
+                communism_drift = -0.01
+            }
+
+        }
+
         XFR_economic_centre = {
             allowed = {
 				always = yes
@@ -1370,7 +1458,7 @@ ideas = {
             picture = generic_victors_of_ww1
 
             modifier = {
-			    political_power_gain = 0.02
+			    political_power_gain = 0.1
                 democratic_drift = 0.05
                 drift_defence_factor = 0.75
                 army_core_defence_factor = 0.1
@@ -1476,7 +1564,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_constitutional_guarantees
 
             modifier = {
                 consumer_goods_factor = 0.05
@@ -1499,7 +1587,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_constitutional_guarantees
 
             modifier = {
                 consumer_goods_factor = 0.15
@@ -1523,7 +1611,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_constitutional_guarantees
 
             modifier = {
                 consumer_goods_factor = 0.1
@@ -1546,7 +1634,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_train_tracks
 
             modifier = {
                 weekly_manpower = 200
@@ -1570,7 +1658,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = gfx
+            picture = generic_war_preparation
 
             modifier = {
                 justify_war_goal_time = -0.25
@@ -1593,7 +1681,7 @@ ideas = {
             picture = FRA_liberte_egalite_solidarite
 
             modifier = {
-			    political_power_gain = 0.05
+			    political_power_gain = 0.15
                 democratic_drift = 0.05
                 drift_defence_factor = 0.75
                 army_core_defence_factor = 0.15
@@ -1618,7 +1706,7 @@ ideas = {
             picture = FRA_undividable
 
             modifier = {
-			    political_power_gain = 0.1
+			    political_power_gain = 0.25
                 democratic_drift = 0.05
                 drift_defence_factor = 0.75
                 army_core_defence_factor = 0.2

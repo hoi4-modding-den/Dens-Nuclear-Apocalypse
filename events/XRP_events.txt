@@ -2,7 +2,7 @@ add_namespace = XRP_focus_event
 add_namespace = XRP_natural_event
 add_namespace = XRP_news_event
 add_namespace = XRP_diplo_event
-
+add_namespace = XRP_annex_event
 
 #Natural Events#
 country_event = { #intro event
@@ -440,7 +440,7 @@ country_event = { #ceremony event
 country_event = {
     id = XRP_focus_event.3 #the question of industry
     title = XRP.FE_eco1.t
-    # picture = GFX_report_event_DEN_celebration
+    picture = GFX_report_event_spr_civil_war_faction_defeated
     desc = XRP.FE_eco1.d
 
     is_triggered_only = yes
@@ -448,13 +448,61 @@ country_event = {
 	option = {
         name = XRP.FE_eco1.a
 		ai_chance = {
-			base = 100
+			base = 50
+		}
+			983 = {
+				set_state_category = large_town
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+					}
+			
+			}
+			42 = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+					}
+			
+			}
+		hidden_effect = {
+			983 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 2.5
+			}
+			}
+			42 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2.5
+				}
+				}
 		}
     	}
 	option = {
         name = XRP.FE_eco1.b
 		ai_chance = {
-			base = 100
+			base = 50
+		}
+		983 = {
+			set_state_category = large_town
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+				}
+		
+		}
+		42 = {
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+				}
+		
 		}
     	}
 }
@@ -500,6 +548,68 @@ country_event = {
 		}
     	}
 }
+
+#annexation events#
+country_event = {
+    id = XRP_annex_event.1 #france
+    title = XRP.AE_1.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_1.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.AE_1.a
+		ai_chance = {
+			base = 100
+		}
+		#set_country_flag = XRP_french_states_annexed #temp until puppet added
+		create_dynamic_country = {
+			original_tag = XPR
+			set_country_flag = XRP_french_puppet
+			transfer_state = 705
+			set_cosmetic_tag = XRP_france
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_french_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_french 
+					is_owned_by = XRP
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_french
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 705 }
+		
+	}
+ #note - later, add an option for player to annex Calais/Alsace-Lorraine and still be allowed to make a french puppet later
+	
+		option = {
+			name = XRP.AE_1.b
+			ai_chance = {
+				base = 0
+			}
+			set_country_flag = XRP_french_states_annexed
+			add_political_power = -100
+			add_stability = -0.1
+			add_war_support = -0.1
+		}
+	
+}
+
+	
+
+
 
 #easter egg event#
 country_event = {

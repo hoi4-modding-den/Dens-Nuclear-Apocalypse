@@ -11,4 +11,11 @@ opinion_modifiers = {
 	XRP_Anti-Muslim = {
 		value = -50
 	}
+	XRP_Ultra_Isolationism = {
+		value = -200
+	}
+	XRP_Nuclear_Threat = {
+		value = -50
+	}
+
 }

@@ -249,9 +249,7 @@ XNE_alliance_XPW = {
 }
 XNE_wants_radio = {
 	enable = {
-		AND = {
-			original_tag = XNE
-		}
+		tag = XNE
 	}
 	abort = {
 		always = no

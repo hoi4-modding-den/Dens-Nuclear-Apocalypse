@@ -38,6 +38,8 @@ XHP.1.t:0 "The Order of Santiago Rises Up!"
 XHP.1.d:0 "Recent reports show of the Knights Templar, a heavily influencial faction within the Spanish government, seizing garisons in Leon and across the Spanish government.\n\nIt is unclear why they are proving to be hostile towards us, however many speculate it was due to our inaction to grant them concessions within the Imperial Court.\n\nNow we stand at a crossroads as to what the fate of our country will be."
 XHP.1.a:0 "We will crush these insurgents immediately!"
 XHP.1.b:0 "For the Knights of the Holy Order!"
+XHP.2.t:0 "Deciding our General"
+XHP.2.d:0 "We have chosen to unify our cause in the wake of the Templaric insurgency. In order to do this, we must choose from some of the remaining generals to serve as the Grand Commander of the Spanish Army"
 
 ### Decisions
 XHP_crusader_crisis:0 "The Crusader Crisis"
@@ -53,15 +55,32 @@ XHP_senate:0 "Corte Imperial"
 XHP_senate_desc:0 "The "Corte Imperial" or Imperial Court, is the legislative body that rules whats left of the Spanish State. Founded in 2025 as a result of the dropping of the bombs, the Imperial Court serves as all three branches of government including executive, legislative, and judicial powers within the Spanish State.\n\nDue to its relative neutrality, advantagous geography, and hasty preparations, the countryside of Spain was mostly spared and the population was able to thrive underground. However, due to the overpopulation of the underground societies and the mismanagement by the government, many died due to malnutrition and starvation, forcing the government to expand back upwards into the wastelands.\n\nNot being prepared for what was to come on the surface, the central government was quickly stretched to its limits and was forced to abandon many surface outposts, leading to a drastic shrinkage of territory, manpower, and resources.\n\nMany saw this weakness as an opportunity to vie for power within the Court, causing a majority of the power of the government to lie within the corrupt Court Leaders and their families.\n\nNow, lying on the precipice for disaster as the Catholic-led Order of Santiago mobilizes its forces, the government must make concessions to this cultist group or face a civil war. A civil war, that the government will most likely not win..."
 XHP_high_council:0 "Templaric High Council"
 XHP_high_council_desc:0 "The Order of Santiago is a religious and military order founded in the 12th century. It owes its name to the patron saint of Spain, Santiago (St. James the Greater). Its initial objective was to protect the pilgrims on the Way of St. James, to defend Christendom and to remove the Muslim Moors from the Iberian Peninsula with the Reconquista. Entrance was not restricted to nobility of Spain exclusively, and some members have been Catholic Europeans from other parts of Europe.\n\nAt the timing of the fall of the bombs, the Order was at its weakest, having less than 100 members. However, through the course of living underground, the order started to amass a larger following as it provided a structure on how to live admist the chaos and violence that plagued the Imperial Court.\n\nToday it serves as one of the most powerful political identities within the Spanish government with thousands of followers from all across Spain. It serves as a bastion of stability and prosperity amongst the corrupt beauracracy that is the Spanish government."
-
+XTH_Enceladus:0 "Knight Enceladus"
+XTH_Aetius:0 "Knight Aetius"
+XTH_Severus:0 "Knight Severus"
+XTH_Ignotus:0 "Knight Ignotus"
+XTH_Arcturus:0 "Arcturus"
+trait_XTH_templaric:0 "Knight of the Templaric Order"
+trait_XTH_templaric_desc:0 "As a sworn knight of the Order of Santiago, these men are loyal to the Catholic church tasked with upholding the true values of Christendom."
+XHP_Diego:0 "Diego Gonzalez"
+XHP_Mateo:0 "Mateo Silva"
+XHP_Emillio:0 "Emillio Castillo"
+XHP_Ricardo:0 "Ricardo Vargas"
 
 ### Effect Tooltips
+tt_XHP_offer_conc:0 "§YWill lead to peace with the crusaders and a possible integration into the government§!"
+tt_XHP_quell:0 "§RWill lead to war with the Order of Santiago!§!"
+tt_XHP_different_approach:0 "§RWill lead to a full Templaric takeover!§!"
+tt_XHP_new_masters:0 "Change government to: §YTemplaric Order§!"
+tt_XHP_new_masters_focus:0 "Load focus tree: §YTemplaric Path§!"
+
 
 ### Trigger Tooltips
 
 ### Cosmetic Tags
 ct_XTH_rise:0 "Order of Santiago"
-ct_XTH_rise_DEF:0 "The Order of Santiago
+ct_XTH_rise_fascism_DEF:0 "The Order of Santiago"
+ct_XTH_rise_fascism_ADJ:0 "Templaric"
 
 ### Party Names
 XHP_democrat_imp_court_long:0 "Bureaucrat Stability Party"
@@ -74,16 +93,6 @@ XHP_kings_long:0 "The King's Party"
 XHP_kings_short:0 "King's Party"
 XHP_gen_fascist_long:0 "Fascist National Party"
 XHP_gen_fascist_short:0 "FNP"
-
-
-### Characters
-XTH_Enceladus:0 "Knight Enceladus"
-XTH_Aetius:0 "Knight Aetius"
-XTH_Severus:0 "Knight Severus"
-XTH_Ignotus:0 "Knight Ignotus"
-XTH_Arcturus:0 "Arcturus"
-trait_XTH_templaric:0 "Knight of the Templaric Order"
-trait_XTH_templaric_desc:0 "As a sworn knight of the Order of Santiago, these men are loyal to the Catholic church tasked with upholding the true values of Christendom."
 
 
 ### Idea

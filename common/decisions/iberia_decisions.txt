@@ -1,0 +1,165 @@
+iberia_war_category = {
+	iberian_war = {		#ID of the mission, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 1460 #2The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			always = no
+		}
+		
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this mission visible, can be left blank to make it always appear.
+			OR = {
+				original_tag = XAD
+				original_tag = XHP
+				original_tag = XPY
+				original_tag = XGL
+			}
+		}
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+			ROOT = {
+				declare_war_on = {
+					target = XHP
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = XPY
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = XGL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = XAD
+					type = annex_everything
+				}
+			}
+			set_global_flag = iberian_war_going
+			news_event = {
+				id = XAD.11
+				hours = 2
+				random_hours = 4
+			}
+		}
+		
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+	end_of_the_iberian_war = {		#ID of the mission, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 5840 #730 The amount of days remaining until the mission is removed.
+		is_good = yes		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			OR = {
+				if = {
+					original_tag = XAD
+					XHP = {
+						exists = no
+					}
+					XPY = {
+						exists = no
+					}
+					XGL = {
+						exists = no
+					}
+				}
+				if = {
+					original_tag = XHP
+					XAD = {
+						exists = no
+					}
+					XPY = {
+						exists = no
+					}
+					XGL = {
+						exists = no
+					}
+				}
+				if = {
+					original_tag = XPY
+					XAD = {
+						exists = no
+					}
+					XHP = {
+						exists = no
+					}
+					XGL = {
+						exists = no
+					}
+				}
+				if = {
+					original_tag = XGL
+					XAD = {
+						exists = no
+					}
+					XHP = {
+						exists = no
+					}
+					XPY = {
+						exists = no
+					}
+				}
+			}
+			has_global_flag = iberian_war_going
+		}
+		
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this mission visible, can be left blank to make it always appear.
+			OR = {
+				original_tag = XAD
+				original_tag = XHP
+				original_tag = XPY
+				original_tag = XGL
+			}
+			has_global_flag = iberian_war_going
+		}
+
+		activation = {
+			OR = {
+				original_tag = XAD
+				original_tag = XHP
+				original_tag = XPY
+				original_tag = XGL
+			}
+			has_global_flag = iberian_war_going
+		}
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			set_global_flag = iberian_war_ended
+			clr_global_flag = iberian_war_going
+			news_event = {
+				id = XAD.10
+				hours = 2
+				random_hours = 4
+			}
+			remove_ideas = iberia_preparing_war
+		}
+		
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+}

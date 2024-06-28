@@ -60,7 +60,7 @@ ideas = {
 			}
 		}
 		XNE_tensions_on_the_trent = {
-			allowed = {}
+			allowed = { XNM = { exists = yes } }
 			available = {}
 			allowed_civil_war = { always = yes }
 
@@ -76,7 +76,7 @@ ideas = {
 			}
 		}
 		XNE_tensions_on_the_trent_fort = {
-			allowed = {}
+			allowed = { XNM = { exists = yes } }
 			available = {}
 			allowed_civil_war = { always = yes }
 
@@ -91,7 +91,7 @@ ideas = {
 			}
 		}
 		XNE_tensions_on_the_trent_devolution = {
-			allowed = {}
+			allowed = { XNM = { exists = yes } }
 			available = {}
 			allowed_civil_war = { always = yes }
 
@@ -107,7 +107,7 @@ ideas = {
 			}
 		}
 		XNE_tensions_on_the_trent_eased = {
-			allowed = {}
+			allowed = { XNM = { exists = yes } }
 			available = {}
 			allowed_civil_war = { always = yes }
 
@@ -122,7 +122,12 @@ ideas = {
 			}
 		}
 		XNE_tensions_on_the_trent_escalate = {
-			allowed = {}
+			allowed = { 
+				OR = {
+					XNM = { exists = yes }
+					has_completed_focus = XNE_end_the_peace
+				}
+			}
 			available = {}
 			allowed_civil_war = { always = yes }
 

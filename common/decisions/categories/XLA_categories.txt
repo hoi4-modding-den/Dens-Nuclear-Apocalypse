@@ -10,3 +10,15 @@ regional_balance_gui_decision_category = {
 	#scripted_gui = XLA_regional_balance
 	visible_when_empty = yes
 }
+
+XLA_resource_mining = {
+	icon = XLA_Resource_Prospecting
+
+	allowed = {
+		original_tag = XLA
+	}
+
+	visible = {
+		has_country_flag = XLA_Resource_Mining_Time
+	}
+}

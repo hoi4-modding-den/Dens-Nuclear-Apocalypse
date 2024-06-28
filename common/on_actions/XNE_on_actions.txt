@@ -73,4 +73,119 @@ on_actions = {
 			XNE_establish_eurasian_states = yes
 		}
 	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					date > 2239.01.01
+				}
+				add_threat = 5
+			}
+			else = {
+				add_threat = 2
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = { 
+				limit = { 
+					OR = { 
+						has_global_flag = XNE_securing_scotland
+						has_global_flag = XNE_expansion
+					}
+					tag = XCT
+					has_war_with = XNE
+					has_war_with = XNM
+				}
+				clr_global_flag = XNE_securing_scotland
+				every_other_country = {
+					limit = { has_war_with = ROOT }
+					white_peace = ROOT
+				}
+				every_owned_state = {
+					transfer_state_to = XNM
+				}
+			}
+			if = { 
+				limit = { 
+					OR = { 
+						has_global_flag = XNE_securing_ireland
+						has_global_flag = XNE_expansion
+					}
+					OR = {
+						tag = XNI
+						tag = XIE
+					}
+					has_war_with = XNE
+				}
+				clr_global_flag = XNE_securing_ireland
+				every_other_country = {
+					limit = { has_war_with = ROOT }
+					white_peace = ROOT
+				}
+				every_owned_state = {
+					transfer_state_to = XNE
+				}
+			}
+			if = { 
+				limit = {
+					OR = { 
+						has_global_flag = XNE_securing_wales
+						has_global_flag = XNE_expansion
+					}
+					OR = {
+						tag = XWA
+						tag = XPW
+					}
+					has_war_with = XNE
+					has_war_with = XNM
+				}
+				clr_global_flag = XNE_securing_wales
+				every_other_country = {
+					limit = { has_war_with = ROOT }
+					white_peace = ROOT
+				}
+				every_owned_state = {
+					transfer_state_to = XNE
+				}
+			}
+			if = { 
+				limit = {
+					has_global_flag = XNE_expansion
+					OR = {
+						tag = XNM
+						tag = XTY
+						AND = {
+							tag = XNM
+							is_in_faction_with = XTY
+						}
+					}
+					has_war_with = XNE
+				}
+				if = {
+					limit = {
+						tag = XNM
+						is_in_faction_with = XTY
+					}
+					every_other_country = {
+						limit = { has_war_with = XTY }
+						white_peace = XTY
+					}
+					XTY = {
+						every_owned_state = {
+							transfer_state_to = XNE
+						}
+					}
+				}
+				every_other_country = {
+					limit = { has_war_with = ROOT }
+					white_peace = ROOT
+				}
+				every_owned_state = {
+					transfer_state_to = XNE
+				}
+			}
+		}
+	}
 }

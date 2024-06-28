@@ -34,6 +34,14 @@ XFR_FRANCIA = {
 	color = rgb { 100 100 100 }
 	color_ui = rgb { 100 100 100 }
 }
+XFR = {
+	color = rgb { 128 0 32 }
+	color_ui = rgb { 128 0 32 }
+}
+XFR_anarchists = {
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
+}
 XSH_Hamburg = {
 	color = rgb { 0 127 219 }
 	color_ui = rgb { 0 127 219 }
@@ -1305,6 +1313,10 @@ XWA_Horde = {
 	color = rgb { 107 142 35 }
 	color_ui = rgb { 107 142 35 }	
 }
+XWA_ECI = {
+	color = rgb { 166 212 159 }
+	color_ui = rgb { 166 212 159 }	
+}
 XWA_NewRepublic = {
 	color = rgb { 255 255 51 }
 	color_ui = rgb { 255 255 51 }	
@@ -1350,5 +1362,9 @@ XRP_communist_color = {
 XRP_democratic_color = {
     color = rgb { 20 133 237 }
     color_ui = rgb { 20 133 237 }
+}
+XRP_france = {
+    color = rgb { 28 58 114 }
+    color_ui = rgb { 28 58 114 }
 }
 #will include more later#

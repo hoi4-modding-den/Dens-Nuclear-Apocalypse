@@ -5,7 +5,9 @@ capital = 31
 set_war_support = 0.4
 set_stability = 0.65
 set_convoys = 5
-
+add_ideas = {
+	iberia_preparing_war
+}
 set_politics = {
 	ruling_party = fascism
 	last_election = "2235.1.15"

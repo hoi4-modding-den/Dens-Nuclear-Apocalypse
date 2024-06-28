@@ -77,6 +77,62 @@ units = {
         start_equipment_factor = 1
     }
 	division= {
+        name = "5a División de Infantería"
+        location = 6906 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "6a División de Infantería"
+        location = 6906 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "7a División de Infantería"
+        location = 6906 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "8a División de Infantería"
+        location = 6906 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "9a División de Infantería"
+        location = 7183 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "10a División de Infantería"
+        location = 7183 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "11a División de Infantería"
+        location = 7183 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
+        name = "12a División de Infantería"
+        location = 7183 
+        division_template = "División de Infantería"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	division= {
         name = "1a Brigada de Caballería"
         location = 1176 
         division_template = "Brigada de Caballería"

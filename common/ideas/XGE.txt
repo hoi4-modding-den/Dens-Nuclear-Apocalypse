@@ -25,6 +25,19 @@ ideas = {
 				stability_weekly = 0.005
 			}
 		}
+		XGE_call_to_arms = {
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				mobilization_speed = 0.3
+				training_time_factor = -0.3
+			}
+		}
+		XGE_conscript_people = {
+			picture = generic_manpower_boost
+			modifier = {
+				weekly_manpower = 1000
+			}
+		}
 		XGE_devastation_5 = {
 			picture = POL_disjointed_industry
 			modifier = {

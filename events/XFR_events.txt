@@ -89,7 +89,7 @@ country_event = { # Rhone Border War won
     immediate = {
         if = {
             limit = { original_tag = XFR }
-            country_event = { id = XFR_events.54 }
+            news_event = { id = XFR_events.54 }
         }
     }
     
@@ -279,7 +279,23 @@ country_event = { # Elections 2237
         hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 		}
-
+        trigger = {
+            OR = {
+                is_ai = no
+                AND = {
+			    	is_historical_focus_on = yes
+			    	has_game_rule = {
+			    		rule = XFR_ai_behavior
+			    		option = DEFAULT
+			    	}
+			    }
+                has_country_flag = XFR_AI_RANDOM_HISTORICAL
+		    	has_game_rule = {
+			    	rule = XFR_ai_behavior
+			    	option = HISTORICAL
+			    }
+            }
+        }
     }
 
 }
@@ -1658,6 +1674,23 @@ country_event = { # Elections 2241
         hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 		}
+        trigger = {
+            OR = {
+                is_ai = no
+                AND = {
+			    	is_historical_focus_on = yes
+			    	has_game_rule = {
+			    		rule = XFR_ai_behavior
+			    		option = DEFAULT
+			    	}
+			    }
+                has_country_flag = XFR_AI_RANDOM_HISTORICAL
+		    	has_game_rule = {
+			    	rule = XFR_ai_behavior
+			    	option = HISTORICAL
+			    }
+            }
+        }
 
     }
 
@@ -1739,6 +1772,23 @@ country_event = { # Elections 2245
 			mark_focus_tree_layout_dirty = yes
 		}
         custom_effect_tooltip = XFR_no_more_elections_tt
+        trigger = {
+            OR = {
+                is_ai = no
+                AND = {
+			    	is_historical_focus_on = yes
+			    	has_game_rule = {
+			    		rule = XFR_ai_behavior
+			    		option = DEFAULT
+			    	}
+			    }
+                has_country_flag = XFR_AI_RANDOM_HISTORICAL
+		    	has_game_rule = {
+			    	rule = XFR_ai_behavior
+			    	option = HISTORICAL
+			    }
+            }
+        }
     }
 
 }
@@ -1997,10 +2047,10 @@ country_event = { # RETURN
     }
 }
 
-country_event = { # White Silver
+news_event = { # White Silver
     id = XFR_events.54
     title = XFR_events.54.t
-    picture = GFX_report_event_swedish_soldier
+    picture = GFX_news_event_battle_for_the_bosporus
     desc = XFR_events.54.desc
     
     is_triggered_only = yes
@@ -2027,6 +2077,81 @@ country_event = { # White Silver
         name = XFR_events.54.a
         ai_chance = {
             base = 1
+        } 
+    }
+}
+
+country_event = { # Support for Portugal-Galicia
+    id = XFR_events.55
+    title = XFR_events.55.t
+    picture = GFX_report_event_canadian_soldiers
+    desc = XFR_events.55.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.55.a
+        ai_chance = {
+            base = 1000
+        } 
+        add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 5000
+    		producer = XFR
+		}
+		add_equipment_to_stockpile = {
+    		type = support_equipment
+    	    amount = 2000
+    		producer = XFR
+			}
+		add_equipment_to_stockpile = {
+    		type = artillery_equipment
+    		amount = 1000
+    		producer = XFR
+		}
+        add_manpower = 10000
+        FROM = { country_event = { id = XFR_events.56 days = 1 } }
+    }
+
+    option = { 
+        name = XFR_events.55.b
+        ai_chance = {
+            base = 0
+        } 
+        set_country_flag = XFR_XGL_declined_support
+        add_political_power = -50
+        FROM = { country_event = { id = XFR_events.57 days = 1 } }
+    }
+}
+
+country_event = { # Support for Portugal-Galicia -> Portugal accepts
+    id = XFR_events.56
+    title = XFR_events.56.t
+    picture = GFX_report_event_canadian_soldiers
+    desc = XFR_events.56.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.56.a
+        ai_chance = {
+            base = 0
+        } 
+    }
+}
+
+country_event = { # Support for Portugal-Galicia -> Portugal declines
+    id = XFR_events.57
+    title = XFR_events.57.t
+    picture = GFX_report_event_canadian_soldiers
+    desc = XFR_events.57.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.57.a
+        ai_chance = {
+            base = 0
         } 
     }
 }
@@ -2441,6 +2566,7 @@ news_event = { # Fall of Besancon
 		name = XFR_news_events.14.a
 		trigger = {
 			NOT = {
+                tag = XFR
                 975 = { is_controlled_by = ROOT }
                 any_allied_country = { 975 = { is_controlled_by = PREV } }
             }

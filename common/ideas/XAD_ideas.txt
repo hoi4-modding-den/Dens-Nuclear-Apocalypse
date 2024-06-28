@@ -1010,6 +1010,26 @@ ideas = {
 				}
 				
 			}
+		iberia_preparing_war = {
+			
+				allowed = {
+				}
+	
+				picture = ast_volunteer_defence_corps
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+	
+	
+				modifier = {
+					ai_desired_divisions_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+					conscription = 0.15
+				}
+			}
 			
 	}
 }

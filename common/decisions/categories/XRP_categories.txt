@@ -5,3 +5,9 @@ XRP_german_uprising = {
 	}
 
 }
+XRP_puppets = {
+	priority = 9
+	allowed = {
+		original_tag = XRP
+	}
+}

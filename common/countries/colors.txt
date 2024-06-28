@@ -217,3 +217,15 @@ XSO = {
 	color = rgb { 25 13 189 }
 	color_ui = rgb { 25 13 189 }
 }
+XLA = {
+	color = rgb { 130 170 130 }
+	color_ui = rgb { 130 170 130  } 
+}
+XLB = {
+	color = rgb { 65 40 110 }
+	color_ui = rgb { 65 40 110 }
+}
+XLC = {
+	color = rgb { 60 115 65 }
+	color_ui = rgb { 60 115 65 }
+}

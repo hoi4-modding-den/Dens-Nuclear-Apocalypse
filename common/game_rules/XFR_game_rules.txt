@@ -1,3 +1,38 @@
+XFR_ai_behavior = {
+	name = "XFR_ai_behavior"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL_XFR"
+		desc = "RULE_OPTION_HISTORICAL_XFR_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = XFR_ALT_DEM
+		text = "RULE_OPTION_ALT_DEM_XFR"
+		desc = "RULE_OPTION_ALT_DEM_XFR_AI_DESC"
+	}
+	option = {
+		name = XFR_ESOTERTIC
+		text = "RULE_OPTION_ESOTERTIC_XFR"
+		desc = "RULE_OPTION_ESOTERTIC_XFR_AI_DESC"
+	}
+	option = {
+		name = XFR_MONARCHIST
+		text = "RULE_OPTION_MONARCHIST"
+		desc = "RULE_OPTION_MONARCHIST_XFR_AI_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
 XAL_ai_behavior = {
 	name = "XAL_ai_behavior"
 	group = "RULE_GROUP_AI_BEHAVIOR"

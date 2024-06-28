@@ -1,0 +1,88 @@
+XFR_historical_plan = {
+	name = "Burgundian historical plan"
+	desc = "Historical behavior for the Republic of Burgundy"
+
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = XFR_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = XFR_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = XFR_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	#abort = { 
+	#
+	#}
+
+	ai_national_focuses = {
+		XFR_support_parliament
+		XFR_investigate_centre
+		XFR_deal_with_the_mutants
+		
+		XFR_prepare_for_elections
+		XFR_work_with_anarchists
+		XFR_raid_fascist_hideouts
+		XFR_arrest_the_duke
+
+		XFR_crisis_averted
+		XFR_colonise_centre
+		XFR_stabilise_the_republic
+
+		XFR_the_dream_of_france
+		XFR_european_ambitions
+		XFR_guarantee_swiss_freedom
+		XFR_ultimatum_to_alcase_lorraine
+		XFR_protect_switzerland
+
+		XFR_restore_internationalism
+
+		XFR_economic_cooperation
+		XFR_french_reunification
+		XFR_take_down_stragglers
+
+		XFR_proclaim_french_government
+		XFR_the_two_democracies
+		XFR_portugese_support
+		XFR_across_the_channel
+
+		XFR_alliance_of_free_nations
+
+		XFR_across_the_channel2
+
+	}
+
+	#Focuses never to take
+	focus_factors = {
+		XFR_swiss_burgundian_alliance = 0
+		XFR_dennounce_democracy = 0
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

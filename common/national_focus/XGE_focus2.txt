@@ -14,5 +14,91 @@
 	
 	continuous_focus_position = { x = 0 y = 3000 }
 	
-	
+	focus = {
+		id = XGE_liberate_our_homeland
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 11
+		y = 0
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = XGE_call_to_arms
+				days = 70
+			} 
+		}
+	}
+	focus = {
+		id = XGE_ramp_up_conscription
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = XGE_liberate_our_homeland }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_liberate_our_homeland
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = XGE_conscript_people
+				days = 70
+			} 
+		}
+	}
+	focus = {
+		id = XGE_prepare_the_high_command
+		icon = GFX_focus_generic_full_social_mobilization
+		prerequisite = { focus = XGE_liberate_our_homeland }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_liberate_our_homeland
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_command_power = 50
+		}
+	}
+	focus = {
+		id = XGE_computerized_commander_in_chief
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_prepare_the_high_command }
+		prerequisite = { focus = XGE_ramp_up_conscription }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_prepare_the_high_command
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = XGE_system_controls_army_false
+					add_idea = XGE_system_controls_army
+				}
+			}
+			set_country_flag = operating_system_controls_army
+			set_country_flag = XGE_bloom_gui_visible  #cuz the gui changed!!!
+			custom_effect_tooltip = XGE_computerized_commander_in_chief_tt
+		}
+	}
 }

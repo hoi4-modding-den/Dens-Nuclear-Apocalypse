@@ -24,6 +24,7 @@ add_ideas = {
 	XLA_Elders_Council
 	XLA_Naval_Aversion
 	XLA_Aero_Aversion
+	volunteer_only
 }
 
 recruit_character = XLA_Elder_Borani
@@ -32,6 +33,7 @@ recruit_character = XLA_Voiceless_Grotto
 recruit_character = XLA_Elders_Council
 recruit_character = XLA_Socellia_Luzi
 recruit_character = XLA_Samio
+recruit_character = XLA_Alexeus
 
 set_politics = {
 	ruling_party = neutrality

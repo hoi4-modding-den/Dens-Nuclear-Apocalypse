@@ -1,0 +1,46 @@
+capital = 162
+
+oob = "XLA_2036"
+set_stability = 0.41
+set_war_support = 0.26
+
+set_technology = {
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	infantry_weapons = 1
+}
+
+set_country_flag = dont_use_default_political_advisors
+
+# Setup the regional balance system.
+# Note that party popularities is established in XLA_setup_popularities
+regional_balance_initial_values = yes
+regional_balance_num_elders = yes
+regional_balance_get_num_elders = yes
+
+add_ideas = {
+	XLA_Elders_Council
+	XLA_Naval_Aversion
+	XLA_Aero_Aversion
+}
+
+recruit_character = XLA_Elder_Borani
+recruit_character = XLA_Altwigite_Order
+recruit_character = XLA_Voiceless_Grotto
+recruit_character = XLA_Elders_Council
+recruit_character = XLA_Socellia_Luzi
+recruit_character = XLA_Samio
+recruit_character = XLA_Alexeus
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2219.4.24"
+	election_frequency = 98
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 90
+	neutrality = 10
+}

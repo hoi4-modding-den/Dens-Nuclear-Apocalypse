@@ -158,8 +158,19 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				monthly_population = 0.15
+				resistance_target = -0.01
 				consumer_goods_factor = 0.1
 				research_speed_factor = -0.1
+			}						
+		}
+		XRP_agarian_pop_improved = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.12
+				resistance_target = -0.02
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.05
 			}						
 		}
 		XRP_military_buff = {
@@ -189,6 +200,7 @@ ideas = {
 				required_garrison_factor = -0.05
 			}						
 		}
+
 		#Army Ideas#
 		XRP_american_army = {
 			picture = usa_desegregation_1
@@ -207,6 +219,36 @@ ideas = {
 				initiative_factor = 0.05
 				army_speed_factor = 0.05
 			}
+		}
+		XRP_anti_computer_buff = {
+			picture = generic_shield_against_communism
+			removal_cost = -1
+			targeted_modifier = {
+				tag = XGE
+				defense_bonus_against = 0.1
+				attack_bonus_against = 0.1
+			}
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.1
+			}
+		}
+		XRP_future_past_today = {
+			picture = SOV_atomic_bomb_project
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				army_armor_speed_factor = 0.1
+				naval_invasion_prep_speed = 0.1
+				land_night_attack = 0.1
+			}
+		}
+		
+		#Navy Ideas#
+		XRP_merchant_marine = {
+			picture = liberty_ships_focus
+			removal_cost = -1
+			equipment_bonus = { convoy = { build_cost_ic = -0.25 instant = yes } }
+			
 		}
 	}
 }

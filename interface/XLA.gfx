@@ -29,12 +29,17 @@ spriteTypes = {
 	# Advisors
 	spriteType = {
 		name = "GFX_Advisor_Socellia_Luzi"
-		textureFile = "gfx/interface/ideas/XLA/Advisor_Socellia_Luzi.dds"
+		textureFile = "gfx/interface/ideas/XLA/Advisor_Socellia_Luzi.png"
 	}
 
 	spriteType = {
 		name = "GFX_Advisor_Samio"
-		textureFile = "gfx/interface/ideas/XLA/Advisor_Samio.dds"
+		textureFile = "gfx/interface/ideas/XLA/Advisor_Samio.png"
+	}
+
+	spriteType = {
+		name = "GFX_Advisor_Alexeus_Branislav"
+		textureFile = "gfx/interface/ideas/XLA/Advisor_Alexeus_Branislav.png"
 	}
 
 	# Regional Balance
@@ -114,5 +119,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_XLA_altwigitian_texticon"
 		textureFile = "gfx/interface/XLA/XLA_altwigitian_texticon.dds"
+	}
+
+	# Decisions
+
+	spriteType = {
+		name = "GFX_XLA_Resource_Prospecting"
+		textureFile = "gfx/interface/XLA/XLA_Resource_Excavation.png"
 	}
 }

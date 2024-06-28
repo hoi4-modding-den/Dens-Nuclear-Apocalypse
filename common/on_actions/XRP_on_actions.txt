@@ -7,6 +7,7 @@ on_actions = {
                     days = 0
                     random_days = 0     # Fires instantly
                 }
+		add_manpower = 15000
 		add_opinion_modifier = { target = XAP modifier = XRP_Anti-German }
 		add_opinion_modifier = { target = XGE modifier = XRP_Anti-German }
 		add_opinion_modifier = { target = XOO modifier = XRP_Anti-German }
@@ -22,6 +23,235 @@ on_actions = {
 		add_opinion_modifier = { target = XAD modifier = XRP_Anti-Muslim }
 		add_opinion_modifier = { target = XTR modifier = XRP_Anti-Muslim }
             }
+		1 = { set_state_flag = annexation_trigger_french } #Corsica
+		14 = { set_state_flag = annexation_trigger_french } #Brittany
+		15 = { set_state_flag = annexation_trigger_french } #Normandy
+		16 = { set_state_flag = annexation_trigger_french } #Ile de France
+		17 = { set_state_flag = annexation_trigger_french } #Franche-Comte
+		18 = { set_state_flag = annexation_trigger_french } #Champagne
+		19 = { set_state_flag = annexation_trigger_french } #Aquitania Burdigalae
+		20 = { set_state_flag = annexation_trigger_french } #Rhone
+		21 = { set_state_flag = annexation_trigger_french } #Bouches-Du-Rhone
+		22 = { set_state_flag = annexation_trigger_french } #Languedoc
+		23 = { set_state_flag = annexation_trigger_french } #Aquitania Septentrionalis
+		24 = { set_state_flag = annexation_trigger_french } #Centre
+		25 = { set_state_flag = annexation_trigger_french } #Lemovicas
+		26 = { set_state_flag = annexation_trigger_french } #Augustonemetum
+		27 = { set_state_flag = annexation_trigger_french } #Bourgogne
+		28 = { set_state_flag = annexation_trigger_french } #Lorraine
+		29 = { set_state_flag = annexation_trigger_french } #Nord-Pas-de-Calais
+		30 = { set_state_flag = annexation_trigger_french } #Loire
+		31 = { set_state_flag = annexation_trigger_french } #Midi Pyrenees
+		32 = { set_state_flag = annexation_trigger_french } #Alpes
+		33 = { set_state_flag = annexation_trigger_french } #Rubrumcastrum
+		735 = { set_state_flag = annexation_trigger_french } #Savoy
+		785 = { set_state_flag = annexation_trigger_french } #Picardy
+		806 = { set_state_flag = annexation_trigger_french } #Pyrenees-Atlantiques
+		851 = { set_state_flag = annexation_trigger_french } #Var
+		973 = { set_state_flag = annexation_trigger_french } #Nord-Du-Rhone
+		974 = { set_state_flag = annexation_trigger_french } #Nevers
+		975 = { set_state_flag = annexation_trigger_french } #Besancon
+		976 = { set_state_flag = annexation_trigger_french } #Alsace
+		985 = { set_state_flag = annexation_trigger_french } #Bunker Bordeaux
+
+		8 = { set_state_flag = annexation_trigger_luxemburg } #Luxemburg
+
+		6 = { set_state_flag = annexation_trigger_belgium } #Vlaanderen
+		34 = { set_state_flag = annexation_trigger_belgium } #Wallonie
+
+		7 = { set_state_flag = annexation_trigger_dutch } #Holland
+		35 = { set_state_flag = annexation_trigger_dutch } #Brabant
+		36 = { set_state_flag = annexation_trigger_dutch } #Friesland
+
+		42 = { set_state_flag = annexation_trigger_german } #Rhineland-Palatinate
+		50 = { set_state_flag = annexation_trigger_german } #Wurttemberg
+		51 = { set_state_flag = annexation_trigger_german } #Rhineland
+		52 = { set_state_flag = annexation_trigger_german } #Oberbayern
+		53 = { set_state_flag = annexation_trigger_german } #Niederbayern
+		54 = { set_state_flag = annexation_trigger_german } #Franken
+		55 = { set_state_flag = annexation_trigger_german } #Hessen
+		56 = { set_state_flag = annexation_trigger_german } #Weser-Ems
+		57 = { set_state_flag = annexation_trigger_german } #Westfalen
+		58 = { set_state_flag = annexation_trigger_german } #Holstein
+		59 = { set_state_flag = annexation_trigger_german } #Hannover
+		60 = { set_state_flag = annexation_trigger_german } #Bezirk Luxemburg
+		61 = { set_state_flag = annexation_trigger_german } #Bezirk Liebknecht
+		62 = { set_state_flag = annexation_trigger_german } #Bezirk Pieck
+		64 = { set_state_flag = annexation_trigger_german } #Bezirk Engels
+		65 = { set_state_flag = annexation_trigger_german } #Bezirk Marx
+		909 = { set_state_flag = annexation_trigger_german } #Schleswig
+		983 = { set_state_flag = annexation_trigger_german } #Spangdahlem
+		984 = { set_state_flag = annexation_trigger_german } #Kassel
+
+		37 = { set_state_flag = annexation_trigger_danish } #Sjaelland
+		99 = { set_state_flag = annexation_trigger_danish } #Jylland
+		101 = { set_state_flag = annexation_trigger_danish } #Greenland
+		337 = { set_state_flag = annexation_trigger_danish } #Faroe Islands
+		910 = { set_state_flag = annexation_trigger_danish } #Bornholm
+		911 = { set_state_flag = annexation_trigger_danish } #Fyn
+		912 = { set_state_flag = annexation_trigger_danish } #Sonderjylland
+
+		3 = { set_state_flag = annexation_trigger_swiss } #Swiss Plateau
+		151 = { set_state_flag = annexation_trigger_swiss } #Eastern Swiss Alps
+		845 = { set_state_flag = annexation_trigger_swiss } #Jura Mountains
+		846 = { set_state_flag = annexation_trigger_swiss } #Ticino
+		847 = { set_state_flag = annexation_trigger_swiss } #Western Swiss Alps
+
+		4 = { set_state_flag = annexation_trigger_austria } #Lower Austria
+		152 = { set_state_flag = annexation_trigger_austria } #Upper Austria
+		153 = { set_state_flag = annexation_trigger_austria } #Tyrol
+		848 = { set_state_flag = annexation_trigger_austria } #Vorarlberg
+
+		2 = { set_state_flag = annexation_trigger_italy } #Galhlond
+		39 = { set_state_flag = annexation_trigger_italy } #Alto Adige
+		114 = { set_state_flag = annexation_trigger_italy } #Sardegna
+		115 = { set_state_flag = annexation_trigger_italy } #Catania
+		117 = { set_state_flag = annexation_trigger_italy } #Campania
+		156 = { set_state_flag = annexation_trigger_italy } #Calabria
+		157 = { set_state_flag = annexation_trigger_italy } #Abruzzo
+		158 = { set_state_flag = annexation_trigger_italy } #Pludenn
+		159 = { set_state_flag = annexation_trigger_italy } #Lombardia
+		160 = { set_state_flag = annexation_trigger_italy } #Veneto
+		161 = { set_state_flag = annexation_trigger_italy } #Esve Lenmar
+		162 = { set_state_flag = annexation_trigger_italy } #Auctermunty
+		849 = { set_state_flag = annexation_trigger_italy } #Puglia
+		850 = { set_state_flag = annexation_trigger_italy } #Trentino
+		971 = { set_state_flag = annexation_trigger_italy } #Palermo
+		972 = { set_state_flag = annexation_trigger_italy } #Agrigento
+		978 = { set_state_flag = annexation_trigger_italy } #Orlesari
+		979 = { set_state_flag = annexation_trigger_italy } #Nobblemoor
+		980 = { set_state_flag = annexation_trigger_italy } #Ferndochty
+		981 = { set_state_flag = annexation_trigger_italy } #Esve Themar
+		982 = { set_state_flag = annexation_trigger_italy } #Vexvale
+
+		116 = { set_state_flag = annexation_trigger_malta } #Malta
+
+		458 = { set_state_flag = annexation_trigger_tunisia } #Tunisia
+		665 = { set_state_flag = annexation_trigger_tunisia } #Gabes
+
+		459 = { set_state_flag = annexation_trigger_algeria } #Algiers
+		460 = { set_state_flag = annexation_trigger_algeria } #Constantine
+		513 = { set_state_flag = annexation_trigger_algeria } #Tlemcen
+
+		41 = { set_state_flag = annexation_trigger_spain } #Madrid
+		165 = { set_state_flag = annexation_trigger_spain } #Cataluna
+		166 = { set_state_flag = annexation_trigger_spain } #Western Aragon
+		167 = { set_state_flag = annexation_trigger_spain } #Valencia
+		168 = { set_state_flag = annexation_trigger_spain } #Murcia
+		169 = { set_state_flag = annexation_trigger_spain } #Sevilla
+		170 = { set_state_flag = annexation_trigger_spain } #Extremadura
+		171 = { set_state_flag = annexation_trigger_spain } #Galicia
+		172 = { set_state_flag = annexation_trigger_spain } #Navarra
+		173 = { set_state_flag = annexation_trigger_spain } #Granada
+		174 = { set_state_flag = annexation_trigger_spain } #Leon
+		175 = { set_state_flag = annexation_trigger_spain } #Ciudad Real
+		176 = { set_state_flag = annexation_trigger_spain } #Burgos
+		177 = { set_state_flag = annexation_trigger_spain } #Islas Baleares
+		178 = { set_state_flag = annexation_trigger_spain } #Islas Canarias
+		788 = { set_state_flag = annexation_trigger_spain } #Salamanca
+		789 = { set_state_flag = annexation_trigger_spain } #Cordoba
+		790 = { set_state_flag = annexation_trigger_spain } #Asturias
+		791 = { set_state_flag = annexation_trigger_spain } #Valladolid
+		792 = { set_state_flag = annexation_trigger_spain } #Pais Vasco
+		793 = { set_state_flag = annexation_trigger_spain } #Guadalajara
+		794 = { set_state_flag = annexation_trigger_spain } #Eastern Aragon
+
+		112 = { set_state_flag = annexation_trigger_portugal } #Lisbon
+		179 = { set_state_flag = annexation_trigger_portugal } #Beja
+		180 = { set_state_flag = annexation_trigger_portugal } #Porto
+		181 = { set_state_flag = annexation_trigger_portugal } #Guarda
+		697 = { set_state_flag = annexation_trigger_portugal } #Maderia
+		698 = { set_state_flag = annexation_trigger_portugal } #Azores
+		795 = { set_state_flag = annexation_trigger_portugal } #Santarem
+
+		113 = { set_state_flag = annexation_trigger_irish } #Leinster
+		134 = { set_state_flag = annexation_trigger_irish } #Connaught
+		135 = { set_state_flag = annexation_trigger_irish } #Munster
+
+		118 = { set_state_flag = annexation_trigger_britain } #Gibraltar
+		119 = { set_state_flag = annexation_trigger_britain } #Northern Ireland
+		120 = { set_state_flag = annexation_trigger_britain } #Scottish Highlands
+		121 = { set_state_flag = annexation_trigger_britain } #Lothian
+		122 = { set_state_flag = annexation_trigger_britain } #Wales
+		123 = { set_state_flag = annexation_trigger_britain } #South-West England
+		125 = { set_state_flag = annexation_trigger_britain } #East Anglia
+		126 = { set_state_flag = annexation_trigger_britain } #Greater London Area
+		127 = { set_state_flag = annexation_trigger_britain } #Sussex
+		128 = { set_state_flag = annexation_trigger_britain } #West Midlands
+		129 = { set_state_flag = annexation_trigger_britain } #East Midlands
+		130 = { set_state_flag = annexation_trigger_britain } #Yorkshire
+		131 = { set_state_flag = annexation_trigger_britain } #Northumberland
+		132 = { set_state_flag = annexation_trigger_britain } #Lancashire
+		133 = { set_state_flag = annexation_trigger_britain } #Lanark
+		136 = { set_state_flag = annexation_trigger_britain } #Aberdeenshire
+		338 = { set_state_flag = annexation_trigger_britain } #Gloucestershire
+		931 = { set_state_flag = annexation_trigger_britain } #Cumbria
+		932 = { set_state_flag = annexation_trigger_britain } #Isle of Man
+		933 = { set_state_flag = annexation_trigger_britain } #Shetland Islands
+		970 = { set_state_flag = annexation_trigger_britain } #Penb Rok
+		977 = { set_state_flag = annexation_trigger_britain } #Upper Wales
+
+		9 = { set_state_flag = annexation_trigger_czechia } #Bohemia
+		69 = { set_state_flag = annexation_trigger_czechia } #Sudetenland
+		72 = { set_state_flag = annexation_trigger_czechia } #Zaolzie
+		74 = { set_state_flag = annexation_trigger_czechia } #Eastern Sudetenland
+		75 = { set_state_flag = annexation_trigger_czechia } #Moravia
+
+		70 = { set_state_flag = annexation_trigger_slovakia } #Western Slovakia
+		71 = { set_state_flag = annexation_trigger_slovakia } #Eastern Slovakia
+		664 = { set_state_flag = annexation_trigger_slovakia } #Southern Slovakia
+
+		73 = { set_state_flag = annexation_trigger_ukraine } #Zakarpattia
+
+		102 = { set_state_flag = annexation_trigger_slovenia } #North Slovenia
+		736 = { set_state_flag = annexation_trigger_slovenia } #Litorale
+		853 = { set_state_flag = annexation_trigger_slovenia } #Ljubljana
+
+		103 = { set_state_flag = annexation_trigger_croatia} #Dalmatia
+		109 = { set_state_flag = annexation_trigger_croatia} #Croatia
+		163 = { set_state_flag = annexation_trigger_croatia} #Zadar
+		852 = { set_state_flag = annexation_trigger_croatia} #Istria
+
+		5 = { set_state_flag = annexation_trigger_poland} #Sochi
+		10 = { set_state_flag = annexation_trigger_poland} #Warszawa
+		63 = { set_state_flag = annexation_trigger_poland} #Sapphire Casino
+		66 = { set_state_flag = annexation_trigger_poland} #Dolnoslaskie
+		67 = { set_state_flag = annexation_trigger_poland} #Outer CITY 01
+		68 = { set_state_flag = annexation_trigger_poland} #River Junction
+		85 = { set_state_flag = annexation_trigger_poland} #Grande Casino
+		86 = { set_state_flag = annexation_trigger_poland} #Le Calice Chanceux
+		87 = { set_state_flag = annexation_trigger_poland} #Lodz
+		88 = { set_state_flag = annexation_trigger_poland} #Krakow
+		90 = { set_state_flag = annexation_trigger_poland} #Kielce
+		92 = { set_state_flag = annexation_trigger_poland} #Lublin
+		97 = { set_state_flag = annexation_trigger_poland} #Bialystok
+		98 = { set_state_flag = annexation_trigger_poland} #Plock
+		762 = { set_state_flag = annexation_trigger_poland} #Katowice Wasteland
+		763 = { set_state_flag = annexation_trigger_poland} #Casino de Coeur
+		807 = { set_state_flag = annexation_trigger_poland} #Abasse
+		986 = { set_state_flag = annexation_trigger_poland} #City 01 - Research Zone
+
+		43 = { set_state_flag = annexation_trigger_hungary} #Northern Hungary
+		154 = { set_state_flag = annexation_trigger_hungary} #Alfold
+		155 = { set_state_flag = annexation_trigger_hungary} #Transdanubia
         }
     }
+	on_daily_XRP = {
+		effect = {
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_french
+						}
+					}
+				}
+				 set_country_flag = XRP_french_states
+			}
+			else = {
+				clr_country_flag  = XRP_french_states
+			}
+		}
+	}
 }

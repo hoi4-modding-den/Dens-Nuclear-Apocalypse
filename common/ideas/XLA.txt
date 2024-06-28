@@ -154,4 +154,95 @@ ideas = {
 			}
 		}
 	}
+
+	hidden_ideas = {
+		XLA_The_Tree = {
+			modifier = {
+				stability_factor = 0.05
+			}
+
+			on_add = {
+				set_variable = {
+					XLA.XLA_Spiritualist_Militancy = 1
+				}
+
+				set_variable = {
+					XLA.XLA_Altwigitian_Militancy = 1
+				}
+			}
+		}
+
+		XLA_The_Long_Haul = {
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+
+		XLA_On_Aggressive = {
+			modifier = {
+				war_support_factor = 0.05
+				fascism_drift = 0.005
+			}
+
+			on_add = {
+				add_to_variable = {
+					XLA.XLA_Spiritualist_Militancy = 3
+				}
+			}
+		}
+
+		XLA_The_Cogs_Of_War = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+
+			on_add = {
+				add_to_variable = {
+					XLA.XLA_Spiritualist_Militancy = 2
+				}
+			}
+		}
+
+		XLA_The_Storm = {
+			modifier = {
+				war_support_factor = 0.05
+				recruitable_population_factor = 0.05
+			}
+		}
+
+		XLA_Arrows_Of_War = {
+			modifier = {
+				war_support_factor = 0.05
+				democratic_drift = 0.005
+			}
+
+			on_add = {
+				add_to_variable = {
+					XLA.XLA_Altwigitian_Militancy = 3
+				}
+			}
+		}
+
+		XLA_Home_Of_Nyx = {
+			modifier = {
+				recruitable_population_factor = 0.05
+				war_support_factor = 0.05
+				local_resources_factor = -0.1
+			}
+		}
+
+		XLA_The_Grotto_Protects_Us = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+
+			on_add = {
+				add_to_variable = {
+					XLA.XLA_Altwigitian_Militancy = 2
+				}
+			}
+		}
+	}
 }

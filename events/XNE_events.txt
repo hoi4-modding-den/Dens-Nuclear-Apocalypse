@@ -265,6 +265,7 @@ country_event = {
 	
 	option = {
 		name = XNE_focus.2.b
+		trigger = { tag = XNM }
 		ai_chance = { factor = 2 }
 		add_political_power = -50
 		XNE = { add_war_support = 0.25 }
@@ -294,6 +295,11 @@ country_event = {
 		ai_chance = { factor = 5 }
 		ROOT = { add_political_power = 50 }
 		FROM = { add_political_power = 50 }
+		FROM = {
+			faction_leader = {
+				add_to_faction = ROOT
+			}
+		}
 	}
 	
 	option = {
@@ -324,6 +330,11 @@ country_event = {
 		ai_chance = { factor = 5 }
 		ROOT = { add_political_power = 50 }
 		FROM = { add_political_power = 50 }
+		FROM = {
+			faction_leader = {
+				add_to_faction = ROOT
+			}
+		}
 	}
 	
 	option = {

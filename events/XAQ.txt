@@ -1,0 +1,118 @@
+ add_namespace = XAQ_events
+add_namespace = XAQ_news_events
+
+country_event = { 
+	id = XAQ_events.1
+	picture = GFX_report_event_dead_soldiers
+	title = XAQ_events.1.t
+	desc = XAQ_events.1.d
+
+	immediate = {
+		hidden_effect = {
+			XAQ = {
+				swap_ideas = {
+					remove_idea = XAQ_agarian_collapse_1
+					add_idea = XAQ_agarian_collapse_2
+				}
+				set_party_name = { 
+    					ideology = communism 
+    					long_name = XAQ_communism_party_long_peasants
+    					name = XAQ_communism_party_peasants
+				}
+				country_event = {
+					id = XAQ_events.2
+					hours = 12
+    					random_hours = 6
+				}
+			}
+			
+		}
+    	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XAQ_events.1.a
+		add_stability = -0.1
+		add_popularity = {
+    			ideology = communism
+    			popularity = 0.2
+		}
+
+	}
+}
+country_event = { 
+	id = XAQ_events.2
+	picture = GFX_report_event_german_troops
+	title = XAQ_events.2.t
+	desc = XAQ_events.2.d
+	
+	mean_time_to_happen = {
+    		days = 60
+    		
+	}
+	
+	
+	immediate = {
+		hidden_effect = {
+			XAQ = {
+				swap_ideas = {
+					remove_idea = XAQ_agarian_collapse_1
+					add_idea = XAQ_agarian_collapse_2
+				}
+				set_party_name = { 
+    					ideology = communism 
+    					long_name = XAQ_communism_party_long_peasants
+    					name = XAQ_communism_party_peasants
+				}
+				retire_ideology_leader = communism
+				#XAQ_mao_zedong = {
+					#promote_character = yes
+				#}
+
+			}
+		}
+    	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XAQ_events.2.a
+		start_civil_war = {
+    			ruling_party = communism
+    			# Original country's ideology changes to communism
+    			ideology = ROOT
+    			# Breakaway gets old ideology of ROOT
+    			size = 0.4
+    			capital = 19
+    			states = {
+        			23 19 985
+    			}
+    			keep_political_party_members = yes
+		}
+		add_stability = 0.3
+		add_popularity = {
+    			ideology = communism
+    			popularity = 0.4
+		}
+
+	}
+	option = { 
+		name = XAQ_events.2.b
+		start_civil_war = {
+    			ruling_party = ROOT
+    			# Original country's ideology changes to communism
+    			ideology = communism
+    			# Breakaway gets old ideology of ROOT
+    			size = 0.6
+    			capital = 25
+    			states = {
+        			25 26 33
+    			}
+    			keep_political_party_members = yes
+		}
+
+	}
+}

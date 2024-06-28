@@ -5,6 +5,10 @@ on_actions = {
 			XFR = {
 				remove_ideas = XFR_fake_economy_idea
 				country_event = { id = XFR_events.1 days = 21 }
+				if = {
+					limit = { is_ai = yes }
+					add_ideas = XFR_ai_cheat_bonus
+				}
 			}
 			XAL = {
 				if = {
@@ -57,9 +61,74 @@ on_actions = {
 					}
 				}
 			}
+			XFR = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = XFR_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = XFR_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						10 = {
+							XAL = {
+								set_country_flag = XFR_AI_RANDOM_HISTORICAL
+							}
+						}
+						40 = {
+							XAL = {
+								set_country_flag = XFR_AI_RANDOM_ALT_DEM
+							}
+						}
+						25 = {
+							XAL = {
+								set_country_flag = XFR_AI_RANDOM_ESOTERIC
+							}
+						}
+						25 = {
+							XAL = {
+								set_country_flag = XFR_AI_RANDOM_MONARCHIST
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = { has_focus_tree = XFR_anarchist_civil_war_focus }
+				load_focus_tree = generic_focus
+			}
+			if = {
+				limit = { has_cosmetic_tag = XFR_anarchists }
+				set_cosmetic_tag = XFR
+			}
+			if = {
+				limit = { tag = XFA }
+				every_state = {
+					remove_core_of = XFR
+				}
+			}
+			if = {
+				limit = { tag = XFR }
+				every_state = {
+					remove_core_of = XFA
+				}
+			}
+		}
+	}
 
 	on_state_control_changed = {
 		effect = {
