@@ -7,6 +7,7 @@ on_actions = {
                     days = 0
                     random_days = 0     # Fires instantly
                 }
+		add_manpower = 15000
 		add_opinion_modifier = { target = XAP modifier = XRP_Anti-German }
 		add_opinion_modifier = { target = XGE modifier = XRP_Anti-German }
 		add_opinion_modifier = { target = XOO modifier = XRP_Anti-German }

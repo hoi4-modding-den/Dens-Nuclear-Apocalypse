@@ -98,6 +98,7 @@
  XRP_anti_computer_buff_desc:0 "We've devised methods that could help in our fight against the techno-commies."
  XRP_future_past_today:0 "Prepared for Tomorrow"
  XRP_future_past_today_desc:0 "The future of war is yesterday's news. We won't be caught off guard."
+ XRP_merchant_marine:0 "Rebuilding the Merchant Marine"
  
  #Characters#
  XRP_Cavoli:0 "Gavin C. Cavoli"
@@ -122,6 +123,8 @@
  XRP_Anti-Nazi:0 "Nazi Scum" 
  XRP_Anti-German_Confused:0 "Sounds too German" 
  XRP_Anti-Muslim:0 "Probably Palestinians"
+ XRP_Ultra_Isolationism:0 "Extreme Isolationism"
+ XRP_Nuclear_Threat:0 "Nuclear Threat"
  
  #Decisions/BOP#
  XRP_german_uprising:0 "German Tensions"
@@ -259,7 +262,51 @@
  XRP_american_blitz_desc:0 "The 'Blitzkreig' may have been invented by Germans, but it was perfected by America. In particular, the Desert Storm Operation in 1991 showed the value of such a doctrine, having decisively destroyed the enemies capabilities to wage war in just 100 hours. If the Germans think they can use our tactics against us, they are sorely mistaken."
  XRP_american_blitz_tooltip:0 "Modifies §YThe American Way §Wby:\nArmor speed: §G+10.0%\n§WOrg Loss when Moving: §G-10.0%\n§WArmor Division Attack: §G+5.0%\n§WArmor Division Defense: §G+5.0%"
  XRP_german_war:0 "The National-Defense State"
- XRP_german_war_desc:0 "WIP"
+ XRP_german_war_desc:0 "We are surrounded by enemies on all sides! Commie-nazi sausage eaters want to march on our territory, and burn down our homes! The last bastion of American democracy cannot be allowed to fall. Every American will be armed, and every mile of territory shall be paid for in blood."
+ XRP_centralized_army:0 "Centralized Army Command"
+ XRP_centralized_army_desc:0 "With our soldiers being questionable in their loyalty, we need to reinforce our military hierarchy. With a strong top-down structure, we shall always have the first say on the battlefield."
+ XRP_centralized_army_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nDivision Organization: §G+10.0%\n§WMax planning factor: §G+10.0%\n§WMaximum Command Power Increase: §G+20"
+ XRP_american_guerillas:0 "Behind Every Blade of Grass"
+ XRP_american_guerillas_desc:0 "We cannot afford to lose any of our territory. We spent over a hundred years getting to this point, we shall not lose a single mile of our land. We must arm every American citizen, there must be a rifle behind every blade of grass."
+ XRP_american_guerillas_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nDivision Defense on core territory: §G+10.0%\n§WResistance Growth Speed in our states occupied by the enemy: §G+10%"
+ XRP_bleed_dry:0 "Make Them Bleed"
+ XRP_bleed_dry_desc:0 "This part of Europe was once home to a vast network of trenches, in the first two world wars. Trench warfare never became unfashionable, attrition warfare works just as well today as it did 300 years ago.\nLets show the enemy how we won World War 1."
+ XRP_bleed_dry_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nEntrenchment speed: §G+15.0%\n§WMax Entrenchment: §G+15.0%\n§WEncirclement penalty: §G-15.0%"
+ XRP_fortress_europe:0 "Fortress Europe"
+ XRP_fortress_europe_desc:0 "In [GetYear], the world has changed. A new European order has been built. We cannot let it in. Total control of our nation is just around the corner. We just need to ensure our security."
+ XRP_fortress_europe_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nDivision HP: §G+5.00%\n§WDivision Defense: §G+5:0%\n§YLand Fort §Wconstruction speed: §G+15.00%"
+ XRP_werewolf_guerillas:0 "The Werewolves"
+ XRP_werewolf_guerillas_desc:0 "In World War 2, the German nazis attempted to create 'Der Werwolfs', a plan for a full-scale guerilla war against our forces. While it was ineffectual, we should appropriate similar guerilla war tactics in our favor."
+ XRP_werewolf_guerillas_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nLand Night Attack: §G+10.0%\n§WTerrain Penalty Reduction: §G+10.0%\n§WDamage Reduction Against CAS: §G+15.0%"
+ XRP_landmine_everything:0 "Rigged to Blow"
+ XRP_landmine_everything_desc:0 "While we may not always agree with the Swiss, their means of survival are a thing of beauty. Every tunnel and bridge, rigged to explode. Developing a similar 'Redoubt' plan could guarentee our survival."
+ XRP_landmine_everything_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nResistance Target in our states occupied by the enemy: §G+10%\n§WLand Fort effectiveness: §G+10%"
+ XRP_bomb_the_earth:0 "Bomb the Earth"
+ XRP_bomb_the_earth_desc:0 "With the skies at our fingers, we can take a more 'proactive' form of defense. With bombs from the skies, we can make sure they can never reach our borders. Sometimes, the best defense is a good offense."
+ XRP_bomb_the_earth_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nNuclear Weapon Production: §G+10%\n§WRocket Damage: §G+10.0%\n§WRailway Gun Bombardment §G+10%"
+ XRP_black_spot:0 "The Black Spot of Europe"
+ XRP_black_spot_desc:0 "We've made our choice. Europe is too far gone to save. We can only ensure that we survive, at any cost. Absolute security comes at an absolute cost. We will turn the Rhineland into a fortress, and the outside world will become nothing more than a myth."
+ XRP_black_spot_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nWeekly War Support: §G+0.10%\n§YRefinery §Wconstruction speed: §G+10.00%§g"
+ XRP_second_volley:0 "Prepare the Second Volley"
+ XRP_second_volley_desc:0 "The Third World War was not an aberration. It is only the future of warfare. It is now the age of the atom bomb, the whole world will be singing its song. The Great European Plain shall be filled with a sea of radioactive cobalt, the skies shall turn to ash, and we shall stand, glourious and proud."
+ XRP_second_volley_tooltip:0 "Modifies §YThe National-Defense State §Wby:\nSurrender Limit: §G+50.00%\n§YAnti-Air §Wconstruction speed: §G+15.00%§g"
+ 
+ #Air Tree#
+ XRP_ramstein_focus:0 "Legacy of Ramstein"
+ XRP_ramstein_focus_desc:0 "WIP"
+ 
+ #Navy Tree#
+ XRP_sea_access:0 "America on the Seas Again"
+ XRP_sea_access_desc:0 "After over 200 years, we finally have access to the sea once more. Sea power has always been vital in projecting American influence, and this is no different today. We need to rebuild our navy, and ensure that Europe is still navally accessable for the government in D.C., provided they still exist."
+ 
+ XRP_dockyards:0 "Construct New Dockyards"
+ XRP_dockyards_desc:0 "We really need a lot more dockyards if we wish to rebuild a fleet on the scale of the pre-war American fleet."
+ XRP_rebuild_wilhelmshaven:0 "Rebuild Wilhelmshaven"
+ XRP_rebuild_wilhelmshaven_desc:0 "Wilhelmshaven has fallen into disrepair, under the rule of the anarchists. If rebuilt, we can put it to much greater use than they ever could."
+ XRP_retrofit_calais:0 "Retrofit Calais"
+ XRP_retrofit_calais_desc:0 "Calais was once one of the most important harbors in Europe. While it wasn't used for military purposes, it shouldn't be too hard to get it up to such a task."
+ XRP_convoys:0 "Rebuild the Merchant Marine"
+ XRP_convoys_desc:0 "The United States was known for having one of the most powerful merchant navies in the world. One out of every five ships in the US Navy were part of the merchant marine. Building our own merchant marine would go a long way towards exerting our economic influence over the world."
  
  #misc.#
  XRP_cia_name:0 "Central Intelligency Agency"
