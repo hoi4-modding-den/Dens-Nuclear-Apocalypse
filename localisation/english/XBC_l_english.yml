@@ -27,6 +27,27 @@
  
  # Focus
  
+ XBC_ministry_of_industry:0 "Ministry of Industry"
+ XBC_expand_the_iron_mines:0 "Expand the Iron Mines"
+ XBC_bilbao_pamplona_line:0 "Bilbao-Pamplona Railway"
+ XBC_invest_in_pamplona_manufactories:0 "Invest in Pamplona Manufactories"
+ XBC_university_of_bilbao:0 "University of Bilbao"
+ XBC_restore_the_dams:0 "Restore the Dams"
+ XBC_propel_the_industrialization:0 "Propel the Industrialization"
+ XBC_fishing_on_the_bay:0 "Fishing on the Bay"
+ XBC_expand_the_port_of_bilbao:0 "Expand the Port of Bilbao"
+ XBC_build_arms_factories:0 "Build Weapon Factories"
+ 
+ XBC_ministry_of_national_defense:0 "Ministry of National Defense"
+ XBC_innovative_equipment:0 "Innovative Equipment"
+ XBC_the_basque_way:0 "The Basque Way"
+ XBC_focus_on_offense:0 "Focus on Offense"
+ XBC_focus_on_defense:0 "Focus on Defense"
+ XBC_a_freedom_myth:0 "The Spirit of Freedom"
+ XBC_a_fortress_in_the_pyrenees:0 "A Fortress in the Pyrenees"
+ XBC_birth_of_an_airforce:0 "Create the Airforce"
+ XBC_armored_warfare_research:0 "Armored Warfare Department"
+ 
  XBC_last_days_of_liderra_uribe:0 "Last Days of Liderra Uribe"
  XBC_work_with_the_left:0 "Work With The Left"
  XBC_maintain_the_status_quo:0 "Maintain Status Quo"
@@ -40,6 +61,30 @@
  XBC_a_basque_thaw:0 "A Basque Thaw?"
  XBC_our_new_leader:0 "Our New Leader"
  XBC_rein_in_pamplona:0 "Rein in Pamplona"
+ 
+ XBC_the_left_ascendant:0 "The Left Ascendant"
+ XBC_the_center_holds:0 "The Center Holds"
+ XBC_the_right_dominant:0 "The Right Dominant"
+ XBC_the_basque_manifesto:0 "The Basque Manifesto"
+ XBC_the_workers_unity:0 "The Workers' Unity"
+ XBC_new_benefits_for_the_workers:0 "New Benefits for the Workers"
+ XBC_focus_on_the_third_sector:0 "Focus on the Third Sector"
+ XBC_three_year_plan:0 "Three Year Plan"
+ XBC_the_revolution_begins:0 "The Revolution Begins"
+ XBC_embrace_the_new_voices:0 "Embrace the New Voices"
+ XBC_purge_the_party:0 "Purge the Party"
+ XBC_speak_of_unity:0 "Speak of Unity"
+ XBC_the_pyrenean_unity:0 "The Pyrenean Unity"
+ XBC_basque_country_for_the_basques:0 "Basque Country for the Basques"
+ XBC_seven_in_one:0 "Seven in One"
+ XBC_the_ideological_foundations:0 "Ideological Foundations"
+ XBC_organize_paramilitaries:0 "Organize Paramilitaries"
+ XBC_opress_the_spanish:0 "Oppress the Spanish"
+ XBC_national_industrial_company:0 "National Industrial Company"
+ XBC_like_our_forefathers:0 "Like Our Forefathers"
+ XBC_the_true_masters_of_iberia:0 "The True Masters of Iberia"
+ XBC_open_the_borders:0 "Open the Borders"
+ XBC_close_the_borders:0 "Close the Borders"
  
  # Events
  

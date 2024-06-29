@@ -287,12 +287,67 @@ country_event = { # Pamplona Uprising
     
     option = {
         name = XBC.8.a
+		set_variable = { xbc_spanish_unrest_var = 1 }
 		start_civil_war = {
 			ideology = democratic
-			size = 0.5
+			size = 0.3
 			states = all			
 			set_cosmetic_tag = XBC_republic # Sets a country flag that gets used in a country tag alias.
+			# load_focus_tree = XBC_democratic_focus
 		}
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Lower Navarre border war win
+    id = XBC.9
+    title = XBC.9.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.9.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.9.a
+		XBC = {
+			set_state_owner = 806
+		}
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Lower Navarre border war lose
+    id = XBC.10
+    title = XBC.10.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.10.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.10.a
+		
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Lower Navarre border war stalemate
+    id = XBC.11
+    title = XBC.11.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.11.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.11.a
+		
         ai_chance = {
 			base = 1
 		}

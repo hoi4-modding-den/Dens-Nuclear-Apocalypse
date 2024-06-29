@@ -12,3 +12,16 @@ XBC_power_struggle_category = {
 	visible_when_empty = yes
 }
 
+XBC_iberian_war_category = {		
+	priority = 10		
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_decision_cat_picture_NOR_building_fascist_support
+	
+	allowed = {
+		original_tag = XBC
+	}
+	visible = {	
+		has_global_flag = iberian_war_going
+	}
+}
+

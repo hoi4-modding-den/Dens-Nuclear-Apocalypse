@@ -7,7 +7,7 @@ recruit_character = XBC_claudio_salazar
 recruit_character = XBC_arturo_uribe
 
 add_ideas = XBC_unrest_in_navarre_2
-#oob = ""
+oob = "XBC_2236"
 
 # Starting tech
 set_technology = {
@@ -24,6 +24,7 @@ set_technology = {
 
 set_convoys = 20
 
+set_research_slots = 2
 
 set_politics = {
 	ruling_party = neutrality
@@ -40,4 +41,5 @@ set_popularities = {
 
 add_ideas = {
 	closed_economy
+	limited_conscription
 }

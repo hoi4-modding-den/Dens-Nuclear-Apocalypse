@@ -144,7 +144,7 @@ XBC_power_struggle_category = {
 		allowed = {
 			tag = XBC
 		}
-		cost = 10
+		cost = 15
 		visible = { 
 				has_completed_focus = XBC_equal_rights_act		
 		}
@@ -185,4 +185,96 @@ XBC_power_struggle_category = {
 		    XBC_unrest_increase_small_effect = yes
 		}		
 	}
+}
+
+# Iberian War
+
+XBC_iberian_war_category = {
+	XBC_incorporate_lower_navarre = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		cost = 15
+		
+		visible = {
+			XBC = {
+				NOT = {
+					controls_state = 806
+				}
+			}
+		}
+		
+		days_remove = 14
+		selectable_mission = yes
+		
+		available = {
+			has_completed_focus = XBC_seven_in_one
+		}
+		
+		complete_effect  = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 172
+					num_provinces = 2
+					on_win = XBC.9
+					on_lose = XBC.10
+					on_cancel = XBC.11
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 806
+					num_provinces = 2
+					on_win = XBC.10
+					on_lose = XBC.9
+					on_cancel = XBC.11
+				}
+			}
+		}		
+	}
+	
+	XBC_join_the_iberian_war = {
+		
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = XBC
+		}
+		cost = 15
+		fire_only_once = yes
+		
+		days_remove = 14
+		selectable_mission = yes
+		
+		available = {
+			OR = {
+				has_completed_focus = XBC_the_revolution_begins
+				has_completed_focus = XBC_the_true_masters_of_iberia
+			}
+		}
+		
+		complete_effect  = {
+			declare_war_on = {
+					target = XHP
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = XPY
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = XGL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = XAD
+					type = annex_everything
+				}
+		}		
+	}
+	
 }

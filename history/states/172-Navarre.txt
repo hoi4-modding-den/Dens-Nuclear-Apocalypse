@@ -6,10 +6,10 @@ state={
 		owner = XBC
 		add_core_of = XBC
 		victory_points = {
-			3933 1
+			3933 3
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 2 #was: 6
 		}
 		
 
@@ -18,7 +18,7 @@ state={
 	provinces={
 		932 3737 3931 3933 9857 
 	}
-manpower=239920
+manpower=289920
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 
