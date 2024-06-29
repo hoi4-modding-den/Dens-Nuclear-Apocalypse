@@ -7,7 +7,7 @@ manpower=1986223
 	state_category = city
 
 	history = {
-		owner = XIT
+		owner = XHR
 		victory_points = {
 			925 1 
 		}
@@ -21,7 +21,7 @@ manpower=1986223
 				naval_base = 1
 			}
 		}
-		add_core_of = XIT
+		add_core_of = XHR
 	}
 
 	provinces = {

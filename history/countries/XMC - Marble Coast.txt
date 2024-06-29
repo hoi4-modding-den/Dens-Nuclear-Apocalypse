@@ -1,0 +1,25 @@
+capital = 849
+
+#create_country_leader = {
+#	name = 
+#	desc = 
+#	picture = 
+#	expire = "1.1.1"
+#	ideology = 
+#	traits = {
+#	}
+#}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "2235.1.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 11
+	communism = 55
+	fascism = 9
+	neutrality = 25
+}
+

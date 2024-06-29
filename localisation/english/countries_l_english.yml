@@ -24,6 +24,32 @@
  XIT_ADJ:0 "Italian"
  XIT_subject:0 "$OVERLORDADJ$ $XIT$"
  
+ XPS:0 "Prinicpality of Asturia"
+ XPS_DEF:0 "the Prinicpality of Asturia"
+ XPS_ADJ:0 "Asturian"
+ XPS_subject:0 "$OVERLORDADJ$ $XPS$"
+ 
+ XFC_communism:0 "Flameheir Collective"
+ XFC_communism_DEF:0 "the Flameheir Collective"
+ XFC:0 "Flameheir State"
+ XFC_DEF:0 "the Flameheir State"
+ XFC_ADJ:0 "Scottish"
+ XFC_subject:0 "$OVERLORDADJ$ $XFC$"
+
+ XCG:0 "Collapsed Austrian Government"
+ XCG_DEF:0 "the Collapsed Austrian Government"
+ XCG_ADJ:0 "Austrian"
+ XCG_subject:0 "$OVERLORDADJ$ $XCG$"
+
+ XHR:0 "Holy Remnants"
+ XHR_DEF:0 "the Holy Remnants"
+ XHR_ADJ:0 "Italian"
+ XHR_subject:0 "$OVERLORDADJ$ $XHR$"
+
+ XMC:0 "Marble Coast"
+ XMC_DEF:0 "the Marble Coast"
+ XMC_ADJ:0 "Italian"
+ XMC_subject:0 "$OVERLORDADJ$ $XMC$" 
  
  XDK_fascism:0 "Danish Reich"
  XDK_fascism_DEF:0 "Danish Socialdemokratiske Reich"

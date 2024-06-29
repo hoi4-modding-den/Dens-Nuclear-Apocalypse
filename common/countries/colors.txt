@@ -229,3 +229,24 @@ XLC = {
 	color = rgb { 60 115 65 }
 	color_ui = rgb { 60 115 65 }
 }
+
+XPS = {
+	color = rgb { 133 188 132 }
+	color_ui = rgb { 133 188 187 }
+}
+XFC = {
+	color = rgb { 188 165 64 }
+	color_ui = rgb { 188 165 64 }
+}
+XCG = {
+	color = rgb { 76 76 76 }
+	color_ui = rgb { 76 76 76 }
+}
+XHR = {
+	color = rgb { 255 255 204 }
+	color_ui = rgb { 255 255 204 }
+}
+XMC = {
+	color = rgb { 204 126 126 }
+	color_ui = rgb { 204 126 126 }
+}
