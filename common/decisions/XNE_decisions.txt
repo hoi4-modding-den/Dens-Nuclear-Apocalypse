@@ -474,6 +474,334 @@ XNE_integration_of_land = {
 		
     }
 }
+XNE_the_housing_crisis = {
+	XNE_housing_crisis_ongoing = {
+        visible = {}
+        available = {}
+        icon = GFX_decision_generic_scorched_earth
+        priority = 10
+        days_re_enable = 0
+        cost = 0
+        days_remove = 70
+		modifier = {
+			political_power_cost = 0.2
+			consumer_goods_factor = 0.2
+			production_speed_buildings_factor = -0.2
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				var = XNE_housing_crisis_var
+				value = var:XNE_housing_crisis_reduc
+			}
+			if = {
+				limit = {
+					check_variable = {
+						XNE_housing_crisis_reduc > 0
+					}
+				}
+				custom_effect_tooltip = XNE_housing_crisis_ongoing_tooltip
+			}
+			if = {
+				limit = {
+					check_variable = {
+						XNE_housing_crisis_var > 0
+					}
+				}
+				hidden_effect = {
+					activate_decision = XNE_housing_crisis_ongoing
+				}
+			}			
+		}
+		ai_will_do = {
+			base = 0
+		}
+    }
+	XNE_laissez_faire = {
+        visible = {}
+        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        icon = GFX_decision_generic_speech
+        priority = 1
+        days_re_enable = 90
+        cost = 10
+		complete_effect = {
+			set_country_flag = {
+				flag = XNE_housing_crisis_focus
+				days = 45
+			}
+			XNE_gain_conservative_support = yes
+			add_to_variable = {
+				var = XNE_housing_crisis_reduc
+				value = 0.02
+			}
+			custom_effect_tooltip = XNE_laissez_faire_tooltip
+		}
+		ai_will_do = {
+			base = 6
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_conservative_support > 0.5
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					XNE_conservative_support < 0.15
+				}
+			}
+		}
+    }
+	XNE_purchase_private_housing = {
+        visible = {}
+        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        icon = GFX_decision_generic_speech
+        priority = 5
+        days_re_enable = 90
+        cost = 50
+		complete_effect = {
+			set_country_flag = {
+				flag = XNE_housing_crisis_focus
+				days = 45
+			}
+			XNE_gain_communism_support = yes
+			subtract_from_variable = {
+				var = XNE_housing_crisis_var
+				value = 0.07
+			}
+			custom_effect_tooltip = XNE_purchase_private_housing_tooltip
+		}
+		ai_will_do = {
+			base = 6
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_communism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					XNE_communism_support < 0.05
+				}
+			}
+		}
+    }
+	XNE_deportation_campaign = {
+        visible = {}
+        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        icon = GFX_decision_generic_speech
+        priority = 2
+        days_re_enable = 90
+        cost = 20
+		complete_effect = {
+			set_country_flag = {
+				flag = XNE_housing_crisis_focus
+				days = 45
+			}
+			XNE_gain_fascism_support = yes
+			subtract_from_variable = {
+				var = XNE_housing_crisis_var
+				value = 0.09
+			}
+			custom_effect_tooltip = XNE_deportation_campaign_tooltip
+			add_manpower = -10000
+			add_war_support = 0.01
+			add_stability = -0.01
+		}
+		ai_will_do = {
+			base = 6
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_fascism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					XNE_fascism_support < 0.05
+				}
+			}
+		}
+    }
+	XNE_rent_increase_cap = {
+        visible = {}
+        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        icon = GFX_decision_generic_speech
+        priority = 3
+        days_re_enable = 90
+        cost = 30
+		complete_effect = {
+			set_country_flag = {
+				flag = XNE_housing_crisis_focus
+				days = 45
+			}
+			XNE_gain_liberal_support = yes
+			subtract_from_variable = {
+				var = XNE_housing_crisis_var
+				value = 0.05
+			}
+			custom_effect_tooltip = XNE_rent_increase_cap_tooltip
+			add_stability = 0.03
+		}
+		ai_will_do = {
+			base = 6
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_liberal_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					XNE_liberal_support < 0.05
+				}
+			}
+		}
+    }
+	XNE_bank_tax_reduction = {
+        visible = {}
+        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        icon = GFX_decision_generic_speech
+        priority = 4
+        days_re_enable = 90
+        cost = 40
+		complete_effect = {
+			set_country_flag = {
+				flag = XNE_housing_crisis_focus
+				days = 45
+			}
+			XNE_gain_neutrality_support = yes
+			subtract_from_variable = {
+				var = XNE_housing_crisis_var
+				value = 0.06
+			}
+			custom_effect_tooltip = XNE_bank_tax_reduction_tooltip
+			add_stability = 0.01
+			add_political_power = 20
+		}
+		ai_will_do = {
+			base = 6
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_neutrality_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					XNE_neutrality_support < 0.05
+				}
+			}
+		}
+    }
+
+}
+XNE_european_intervention = {
+	XNE_prepare_for_war = {
+	
+		icon = GFX_decision_SWE_set_army_budget
+        priority = 0
+		
+		visible = {}
+        available = {}
+        on_map_mode = map_and_decisions_view 
+		
+		#days_re_enable = 60
+        days_remove = 30
+		fire_only_once = yes
+		cost = 50
+		
+		target_trigger = {
+			FROM = {
+				NOT = { has_country_flag = XNE_justified }
+				NOT = { tag = LIB }
+				OR = {
+					NOT = { has_government = ROOT }
+					has_government = fascism
+					has_government = neutrality
+					has_government = communism
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_owned_state = { is_coastal = yes }
+				}
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.2
+		}
+		
+        remove_effect = {
+			FROM = {
+				every_owned_state = {
+					add_claim_by = ROOT
+				}
+				set_country_flag = XNE_justified
+			}
+		}
+		
+		ai_will_do = {
+			base = 15
+			modifier = {
+				factor = 0.8
+				has_war = yes
+			}
+		}
+    }
+	XNE_declare_war = {
+	
+		icon = GFX_decision_SWI_consolidate_council_power
+        priority = 9
+		
+		visible = {}
+        available = {}
+        on_map_mode = map_and_decisions_view 
+		war_with_target_on_remove = yes
+		
+		#days_re_enable = 60
+        days_remove = 30
+		fire_only_once = yes
+		cost = 50
+		
+		target_trigger = {
+			FROM = {
+				has_country_flag = XNE_justified
+			}
+		}
+		
+		modifier = {
+			stability_weekly = -0.002
+		}
+		
+        remove_effect = {
+			ROOT = {
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 15
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					NOT = { is_neighbor_of = ROOT }
+					NOT = { any_owned_state = { is_coastal = yes } }
+				}
+			}
+		}
+    }
+}
 XNE_army_reformation = {
 	XNE_military_parade = {
 	

@@ -33,6 +33,7 @@ if = {
 	set_technology = {
 		early_ship_hull_light = 1
 		early_ship_hull_submarine = 1
+		mtg_transport = 1
 	}
 }
 if = {
@@ -42,6 +43,7 @@ if = {
 	set_technology = {
 		early_destroyer = 1
 		early_submarine = 1
+		transport = 1
 	}
 }
 
@@ -50,6 +52,9 @@ set_variable = { var = XNE_neutrality_support value = 0.11 }
 set_variable = { var = XNE_conservative_support value = 0.41 }
 set_variable = { var = XNE_liberal_support value = 0.21 }
 set_variable = { var = XNE_communism_support value = 0.12 }
+set_variable = { var = XNE_housing_crisis_var value = 1 }
+set_variable = { var = XNE_housing_crisis_reduc value = 0.03 }
+set_variable = { var = XNE_no_fish_var value = 1 }
 
 add_ideas = XNE_tensions_on_the_trent
 add_ideas = XNE_internal_conflict
@@ -86,6 +91,16 @@ recruit_character = XNE_hannibal_solon
 recruit_character = XNE_jeremy_hammond
 recruit_character = XNE_chesley_turnberger
 recruit_character = XNE_frank_abagnale
+
+news_event = { id = XNE_news.2 days = 184 random_days = 180 }
+news_event = { id = XNE_news.3 days = 556 }
+news_event = { id = XNE_news.4 days = 292 }
+news_event = { id = XNE_news.5 days = 440 }
+news_event = { id = XNE_news.6 days = 632 }
+news_event = { id = XNE_news.7 days = 670 }
+news_event = { id = XNE_news.8 days = 0 random_days = 365 }
+news_event = { id = XNE_news.130 days = 365 random_days = 730 }
+news_event = { id = XNE_news.140 days = 746 }
 
 create_country_leader = {
 	name = XNE_king_henry_x

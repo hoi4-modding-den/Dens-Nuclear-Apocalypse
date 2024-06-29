@@ -84,6 +84,10 @@ technologies = {
 				factor = 5
 				date > "2239.8.1"
 			}
+			modifier = {
+				factor = 100
+				tag = XNE
+			}
 		}
 		
 		categories = {

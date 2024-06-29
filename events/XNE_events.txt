@@ -179,14 +179,390 @@ news_event = {
 	picture = GFX_news_event_009
 	
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = XNE_news.1.a
 		ai_chance = { factor = 1 }
 	}
 }
+# Communist Meeting
+news_event = {
+	id = XNE_news.2
+	title = XNE_news.2.title
+	desc = XNE_news.2.desc
+	picture = GFX_news_event_fascist_militia
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.2.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			XNE_gain_communism_support = yes
+		}
+	}
+}
+# Death of Fred
+news_event = {
+	id = XNE_news.3
+	title = XNE_news.3.title
+	desc = XNE_news.3.desc
+	picture = GFX_news_event_aid_pact
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.3.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			XNE_gain_conservative_support = yes
+		}
+	}
+}
+# Jesse Smith Paper
+news_event = {
+	id = XNE_news.4
+	title = XNE_news.4.title
+	desc = XNE_news.4.desc
+	picture = GFX_news_event_generic_read_write
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.4.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			XNE_gain_fascism_support = yes
+		}
+	}
+}
+# Liberal bill passes
+news_event = {
+	id = XNE_news.5
+	title = XNE_news.5.title
+	desc = XNE_news.5.desc
+	picture = GFX_news_event_generic_usa_treaty
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.5.a
+		ai_chance = { factor = 1 }
+		add_political_power = 50
+		hidden_effect = {
+			XNE_gain_liberal_support = yes
+		}
+	}
+}
+# Fascist Riots
+news_event = {
+	id = XNE_news.6
+	title = XNE_news.6.title
+	desc = XNE_news.6.desc
+	picture = GFX_news_event_generic_rally2
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.6.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.03
+		hidden_effect = {
+			XNE_gain_fascism_support = yes
+		}
+	}
+}
+# Communist Riots
+news_event = {
+	id = XNE_news.7
+	title = XNE_news.7.title
+	desc = XNE_news.7.desc
+	picture = GFX_news_event_gathering_protest
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.7.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.03
+		hidden_effect = {
+			XNE_gain_communism_support = yes
+		}
+	}
+}
+# Housing Crisis
+news_event = {
+	id = XNE_news.8
+	title = XNE_news.8.title
+	desc = XNE_news.8.desc
+	picture = GFX_news_event_generic_ruins
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.8.a
+		ai_chance = { factor = 1 }
+		set_country_flag = XNE_housing_crisis
+		hidden_effect = {
+			activate_decision = XNE_housing_crisis_ongoing
+		}
+	}
+}
+# Colchester Vault
+news_event = {
+	id = XNE_news.9
+	title = XNE_news.9.title
+	desc = XNE_news.9.desc
+	picture = GFX_news_event_german_inspect_troops
+	
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	
+	option = {
+		name = XNE_news.9.a
+		ai_chance = { factor = 1 }
+	}
+}
+# Isolation - everyone
+news_event = {
+	id = XNE_news.10
+	title = XNE_news.10.title
+	desc = XNE_news.10.desc
+	picture = GFX_news_event_canada_patriation
+	
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	
+	option = {
+		name = XNE_news.10.a
+		ai_chance = { factor = 1 }
+	}
+}
+# Isolation - xne
+news_event = {
+	id = XNE_news.100
+	title = XNE_news.100.title
+	desc = XNE_news.100.desc
+	picture = GFX_news_event_canada_patriation
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.100.a
+		ai_chance = { factor = 1 }
+		news_event = { id = XNE_news.10 days = 2 }
+	}
+}
+# Aggression - everyone
+news_event = {
+	id = XNE_news.11
+	title = XNE_news.11.title
+	desc = XNE_news.11.desc
+	picture = GFX_news_event_canada_patriation
+	
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	
+	option = {
+		name = XNE_news.11.a
+		ai_chance = { factor = 1 }
+	}
+}
+# Aggression - xne
+news_event = {
+	id = XNE_news.110
+	title = XNE_news.110.title
+	desc = XNE_news.110.desc
+	picture = GFX_news_event_canada_patriation
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.110.a
+		ai_chance = { factor = 1 }
+		news_event = { id = XNE_news.11 days = 2 }
+	}
+}
+# Cooperation - everyone
+news_event = {
+	id = XNE_news.12
+	title = XNE_news.12.title
+	desc = XNE_news.12.desc
+	picture = GFX_news_event_canada_patriation
+	
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	
+	option = {
+		name = XNE_news.12.a
+		ai_chance = { factor = 1 }
+	}
+}
+# Cooperation - xne
+news_event = {
+	id = XNE_news.120
+	title = XNE_news.120.title
+	desc = XNE_news.120.desc
+	picture = GFX_news_event_canada_patriation
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.120.a
+		ai_chance = { factor = 1 }
+		news_event = { id = XNE_news.12 days = 2 }
+	}
+}
+# Yes we have no fish - everyone
+news_event = {
+	id = XNE_news.13
+	title = XNE_news.13.title
+	desc = XNE_news.13.desc
+	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	
+	option = {
+		name = XNE_news.13.a
+		ai_chance = { factor = 1 }
+	}
+}
+# Yes we have no fish - xne
+news_event = {
+	id = XNE_news.130
+	title = XNE_news.130.title
+	desc = XNE_news.130.desc
+	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.130.a
+		ai_chance = { factor = 1 }
+		set_country_flag = XNE_no_fish
+		news_event = { id = XNE_news.13 days = 2 }
+	}
+}
+# Henry Macdonald - everyone
+news_event = {
+	id = XNE_news.14
+	title = XNE_news.14.title
+	desc = XNE_news.14.desc
+	picture = GFX_news_event_banovina_croatia
+	
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	
+	option = {
+		name = XNE_news.14.a
+		ai_chance = { factor = 1 }
+	}
+}
+# Henry Macdonald - xne
+news_event = {
+	id = XNE_news.140
+	title = XNE_news.140.title
+	desc = XNE_news.140.desc
+	picture = GFX_news_event_banovina_croatia
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.140.a
+		ai_chance = { factor = 1 }
+		news_event = { id = XNE_news.14 days = 3 }
+		hidden_effect = {
+			XNE_gain_neutrality_support = yes
+		}
+	}
+}
+# INGSOC - everyone
+news_event = {
+	id = XNE_news.15
+	title = XNE_news.15.title
+	desc = XNE_news.15.desc
+	picture = GFX_news_event_fascist_gathering
+	
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	
+	option = {
+		name = XNE_news.15.a
+		ai_chance = { factor = 1 }
+	}
+}
+# INGSOC - xne
+news_event = {
+	id = XNE_news.150
+	title = XNE_news.150.title
+	desc = XNE_news.150.desc
+	picture = GFX_news_event_fascist_gathering
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.150.a
+		ai_chance = { factor = 1 }
+		news_event = { id = XNE_news.15 days = 3 }
+	}
+}
+# British Win - everyone
+news_event = {
+	id = XNE_news.16
+	title = XNE_news.16.title
+	desc = XNE_news.16.desc
+	picture = GFX_news_event_fascist_gathering
+	
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	
+	option = {
+		name = XNE_news.16.a
+		ai_chance = { factor = 1 }
+	}
+}
+# British Win - xne
+news_event = {
+	id = XNE_news.160
+	title = XNE_news.160.title
+	desc = XNE_news.160.desc
+	picture = GFX_news_event_fascist_gathering
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = XNE_news.160.a
+		ai_chance = { factor = 1 }
+		set_country_flag = XNE_british_win
+		news_event = { id = XNE_news.16 days = 3 }
+	}
+}
 
-# Test Speech
+# Test
 country_event = {
 	id = XNE_focus.999
 	title = XNE_focus.999.title
@@ -347,6 +723,34 @@ country_event = {
 			  refund_political_power = no
 			}
 			set_country_flag = XNE_worcester_rejects
+		}
+	}
+}
+
+# Reclaim Steel
+country_event = {
+	id = XNE_focus.5
+	title = XNE_focus.5.title
+	desc = XNE_focus.5.desc
+	picture = GFX_report_event_imperial_conference
+	
+	is_triggered_only = yes
+	
+	option = { #War
+		name = XNE_focus.5.a
+		ai_chance = { factor = 2 }
+		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+	
+	option = { #Wait
+		name = XNE_focus.5.b
+		ai_chance = { factor = 5 }
+		add_timed_idea = {
+			idea = XNE_preparedness
+			days = 365
 		}
 	}
 }

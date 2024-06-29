@@ -11,7 +11,7 @@
 	
 	default = no
 	reset_on_civilwar = no
-	continuous_focus_position = { x = 3000 y = 3000 }
+	continuous_focus_position = { x = 3100 y = 1000 }
 
 	initial_show_position = {
 		focus = XNE_chamberlains_speech
@@ -68,6 +68,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_cooperation"
+			news_event = { id = XNE_news.120 days = 3 }
 			XNE_gain_liberal_support = yes
 			XNE_gain_conservative_support = yes
 		}
@@ -104,6 +105,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_isolation"
+			news_event = { id = XNE_news.100 days = 3 }
 			XNE_gain_communism_support = yes
 		}
 		
@@ -139,6 +141,7 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_aggression"
+			news_event = { id = XNE_news.110 days = 3 }
 			XNE_gain_fascism_support = yes
 			XNE_gain_neutrality_support = yes
 		}
@@ -442,10 +445,10 @@
 			XNE_gain_conservative_support = yes
 			add_stability = 0.05
 			remove_ideas = XNE_tensions_on_the_trent_eased
-			hidden_effect = {
-				every_country = {
-					news_event = XNE_news.1
-				}
+			news_event = {
+				id = my_event.1
+				days = 5
+				random_hours = 12
 			}
 		}
 		
@@ -1170,7 +1173,10 @@
 					transfer_state = 136
 					transfer_state = 120
 				}
+				remove_power_balance = { id = XNE_federation_of_uk_bop }
+				XNM = { remove_power_balance = { id = XNE_federation_of_uk_bop } }
 			}
+			news_event = { id = XNE_news.160 days = 3 }
     	}
     	
     	ai_will_do = {
@@ -1263,7 +1269,10 @@
 				}
 				transfer_state = 136
 				transfer_state = 120
-			}	
+				remove_power_balance = { id = XNE_federation_of_uk_bop }
+				XNM = { remove_power_balance = { id = XNE_federation_of_uk_bop } }
+			}
+			news_event = { id = XNE_news.160 days = 3 }
     	}
     	
     	ai_will_do = {
@@ -2277,8 +2286,11 @@
 				desc = XNE_an_english_victory
 				can_create_factions = yes
 			}
-			transfer_state = 136
-			transfer_state = 120
+			hidden_effect = {
+				transfer_state = 136
+				transfer_state = 120
+			}
+			news_event = { id = XNE_news.160 days = 3 }
     	}
     	
     	ai_will_do = {
@@ -2374,6 +2386,7 @@
 					can_create_factions = yes
 				}
 			}
+			news_event = { id = XNE_news.160 days = 3 }
     	}
     	
     	ai_will_do = {
@@ -2413,7 +2426,9 @@
 					days = 180
 					random_days = 180
 				}
+				news_event = { id = XNE_news.9 days = 3 }
 			}
+			
 		}
 		
 		ai_will_do = {
@@ -3297,6 +3312,7 @@
 			}
 			set_cosmetic_tag = XNE_OC
 			mark_focus_tree_layout_dirty = yes
+			news_event = { id = XNE_news.15 days = 2 }
     	}
     	
     	ai_will_do = {

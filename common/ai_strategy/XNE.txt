@@ -248,16 +248,31 @@ XNE_alliance_XPW = {
 	}
 }
 XNE_wants_radio = {
-	enable = {
+	allowed = {
 		tag = XNE
 	}
-	abort = {
-		always = no
+	enable = {
+		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = research_weight_factor
 		id = radio
-		value = 2000
+		value = 100
+	}
+}
+XNE_naval_invasions_please = {
+	allowed = {
+		tag = XNE
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 15
 	}
 }

@@ -25,3 +25,39 @@ defined_text = {
 		localization_key = XNE_army_decision_army
 	}
 }
+defined_text = {
+	name = XNE_housing_crisis_loc
+	text = {
+		trigger = {
+			XNE = {
+				check_variable = {
+					XNE_housing_crisis_var > 0.65
+				}
+			}
+		}
+		localization_key = XNE_housing_crisis_loc_red
+	}
+	text = {
+		trigger = {
+			XNE = {
+				check_variable = {
+					XNE_housing_crisis_var < 0.66
+				}
+				check_variable = {
+					XNE_housing_crisis_var > 0.35
+				}
+			}
+		}
+		localization_key = XNE_housing_crisis_loc_orange
+	}
+	text = {
+		trigger = {
+			XNE = {
+				check_variable = {
+					XNE_housing_crisis_var < 0.36
+				}
+			}
+		}
+		localization_key = XNE_housing_crisis_loc_green
+	}
+}

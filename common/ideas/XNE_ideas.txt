@@ -1,6 +1,21 @@
 ideas = {
 
 	country = {
+		XNE_preparedness = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_wall_line
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
 		XNE_trade_focus = {
 			allowed = {}
 			available = {}
