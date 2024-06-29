@@ -679,25 +679,13 @@ focus_tree = {
 			is_faction_leader = yes	
 			XNE = {
 				has_government = democratic
-			}
-			XNE = {
 				is_subject = no
-				is_in_faction = no
-				NOT = { has_completed_focus = XNE_isolation }
 				exists = yes
 			}
 		}
 
 		bypass = {
-			OR = {
-				XNE = { is_ally_with = ROOT }
-				AND = {
-					XNE = {
-						has_government = democratic
-						is_in_faction = yes
-					}
-				}
-			}
+			XNE = { is_ally_with = ROOT }
 			
 		}
 
@@ -712,10 +700,23 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			XNE = { country_event = { id = XFR_events.22 days = 1 } }
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				add_to_faction = XNE
+			if = {
+				limit = {
+					XNE = { is_in_faction = no }
+				}
+				XNE = { country_event = { id = XFR_events.22 days = 1 } }
+				custom_effect_tooltip = if_they_accept_tt
+				effect_tooltip = {
+					add_to_faction = XNE
+				}
+			}
+			else = {
+				XNE = { country_event = { id = XFR_events.58 days = 1 } }
+				custom_effect_tooltip = if_they_accept_tt
+				effect_tooltip = {
+					give_guarantee = XNE
+					XNE = { give_guarantee = XFR }
+				}
 			}
 			custom_effect_tooltip = XFR_across_the_channel_tt
 		}
@@ -795,6 +796,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XNE
@@ -1096,14 +1101,9 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_government = democratic
-			all_other_country = {
-				DEN_is_iberian_nation = yes
-				OR = { 
-					NOT = { has_government = democratic }
-					exists = no
-					is_subject = yes
-				} 
+			XIB = {
+				exists = yes
+				is_subject_of = ROOT
 			}
 		}
 
@@ -1167,7 +1167,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1220,18 +1220,7 @@ focus_tree = {
 			has_government = democratic
 			is_subject = no
 			is_faction_leader = yes
-			NOT = {
-				any_country = {
-					OR = {
-						original_tag = XAD
-						original_tag = XGL
-						original_tag = XPY
-						original_tag = XHP
-					}
-					has_government = democratic
-				}
-			}
-			any_controlled_state = {
+			any_owned_state = {
 				any_neighbor_state = {
 					owner = { DEN_is_iberian_nation = yes }
 				}
@@ -1246,6 +1235,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -1499,6 +1492,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -1692,9 +1689,9 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_named_threat = {
-				threat = 5
-				name = XFR_french_reunification
-			}
+					threat = 5
+					name = XFR_french_reunification
+				}
 			}
 			custom_effect_tooltip = XFR_french_reunification_tt
 		}
@@ -1730,6 +1727,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		will_lead_to_war_with = XAQ
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
@@ -1756,6 +1757,9 @@ focus_tree = {
 			is_neighbor_of = XPR
 			NOT = { is_ally_with = XPR }
 			is_subject = no
+			XPR = {
+				NOT = { has_idea = XPR_reign_of_terror }
+			}
 		}
 
 		bypass = {
@@ -1842,6 +1846,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		will_lead_to_war_with = XLF
 		will_lead_to_war_with = XBR
@@ -2128,6 +2136,7 @@ focus_tree = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 4
 			}
+			NOT = { has_idea = closed_economy }
 		}
 
 		cost = 5
@@ -3170,6 +3179,10 @@ focus_tree = {
 						remove_core_of = XAQ
 					}
 				}
+				add_named_threat = {
+					threat = -5
+					name = XFR_proclaim_french_government
+				}
 			}
 		}
 	}
@@ -4097,7 +4110,7 @@ focus_tree = {
     				ideology =  XFR_frankish_fascism
 				}
 				}
-				
+				unlock_national_focus = XFR_restore_the_francian_empire
 			}
 		}
 	}
@@ -5014,11 +5027,6 @@ focus_tree = {
 		relative_position_id = XFR_kriegsmaschine
 
 		available = {
-			has_army_manpower = {
-    			size > 250000
-			}
-			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
-			is_subject = no
 			has_completed_focus = XFR_announce_francian_ambitions
 		}
 
@@ -5059,6 +5067,9 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			has_army_manpower = {
+    			size > 500000
+			}
 			has_completed_focus = XFR_middle_francia_restored
 		}
 
@@ -5117,6 +5128,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XPR
@@ -5158,6 +5173,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XAQ
@@ -5240,6 +5259,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XPY
@@ -5353,7 +5376,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_finally_brittany
-		icon = GFX
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = XFR_west_francia_restored }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -5382,6 +5405,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -5412,6 +5439,9 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			has_army_manpower = {
+    			size > 250000
+			}
 		}
 
 		cost = 5
@@ -5510,6 +5540,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XSS
@@ -5629,6 +5663,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XLV
@@ -5755,6 +5793,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XIT
@@ -5762,6 +5804,40 @@ focus_tree = {
 			create_wargoal = {
 				target = XIT
 				type = annex_everything
+			}
+			if = {
+				limit = {
+					NOT = {
+						XHR = {
+							OR = {
+								is_ally_with = ROOT
+								has_war_with = ROOT
+								exists = no
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = XHR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						XMC = {
+							OR = {
+								is_ally_with = ROOT
+								has_war_with = ROOT
+								exists = no
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = XMC
+					type = annex_everything
+				}
 			}
 		}
 	}
@@ -5796,6 +5872,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XNF
@@ -5837,6 +5917,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XLX
@@ -5878,6 +5962,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XNL
@@ -5987,6 +6075,9 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			has_army_manpower = {
+    			size > 500000
+			}
 			has_completed_focus = XFR_middle_francia_restored
 		}
 
@@ -6044,6 +6135,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XAL
@@ -6090,6 +6185,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XRP
@@ -6103,7 +6202,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_claim_the_black_spot
-		icon = GFX
+		icon = GFX_focus_XRP_black_spot
 		prerequisite = { focus = XFR_defeat_the_us_army }
 		prerequisite = { focus = XFR_liberate_south_germany }
 		#mutually_exclusive = { focus =  }
@@ -6132,6 +6231,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XAP
@@ -6173,6 +6276,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XSH
@@ -6226,6 +6333,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XOO
@@ -6298,6 +6409,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XTI
@@ -6305,6 +6420,23 @@ focus_tree = {
 			create_wargoal = {
 				target = XTI
 				type = annex_everything
+			}
+			if = {
+				limit = {
+					NOT = {
+						XCG = {
+							OR = {
+								is_ally_with = ROOT
+								has_war_with = ROOT
+								exists = no
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = XCG
+					type = annex_everything
+				}
 			}
 		}
 	}
@@ -6461,6 +6593,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XGE

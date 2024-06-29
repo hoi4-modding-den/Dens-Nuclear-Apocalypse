@@ -283,17 +283,22 @@ country_event = { # Elections 2237
             OR = {
                 is_ai = no
                 AND = {
-			    	is_historical_focus_on = yes
-			    	has_game_rule = {
-			    		rule = XFR_ai_behavior
-			    		option = DEFAULT
-			    	}
+			    	NOT = {
+                        is_historical_focus_on = yes
+			    	    has_game_rule = {
+			    	    	rule = XFR_ai_behavior
+			    	    	option = DEFAULT
+			    	    }
+                    }
+                    NOT = { has_country_flag = XFR_AI_RANDOM_HISTORICAL }
+		    	    NOT = {
+                        has_game_rule = {
+			            	rule = XFR_ai_behavior
+			            	option = HISTORICAL
+			            }
+                    }
 			    }
-                has_country_flag = XFR_AI_RANDOM_HISTORICAL
-		    	has_game_rule = {
-			    	rule = XFR_ai_behavior
-			    	option = HISTORICAL
-			    }
+                
             }
         }
     }
@@ -1681,17 +1686,22 @@ country_event = { # Elections 2241
             OR = {
                 is_ai = no
                 AND = {
-			    	is_historical_focus_on = yes
-			    	has_game_rule = {
-			    		rule = XFR_ai_behavior
-			    		option = DEFAULT
-			    	}
+			    	NOT = {
+                        is_historical_focus_on = yes
+			    	    has_game_rule = {
+			    	    	rule = XFR_ai_behavior
+			    	    	option = DEFAULT
+			    	    }
+                    }
+                    NOT = { has_country_flag = XFR_AI_RANDOM_HISTORICAL }
+		    	    NOT = {
+                        has_game_rule = {
+			            	rule = XFR_ai_behavior
+			            	option = HISTORICAL
+			            }
+                    }
 			    }
-                has_country_flag = XFR_AI_RANDOM_HISTORICAL
-		    	has_game_rule = {
-			    	rule = XFR_ai_behavior
-			    	option = HISTORICAL
-			    }
+                
             }
         }
 
@@ -1779,17 +1789,22 @@ country_event = { # Elections 2245
             OR = {
                 is_ai = no
                 AND = {
-			    	is_historical_focus_on = yes
-			    	has_game_rule = {
-			    		rule = XFR_ai_behavior
-			    		option = DEFAULT
-			    	}
+			    	NOT = {
+                        is_historical_focus_on = yes
+			    	    has_game_rule = {
+			    	    	rule = XFR_ai_behavior
+			    	    	option = DEFAULT
+			    	    }
+                    }
+                    NOT = { has_country_flag = XFR_AI_RANDOM_HISTORICAL }
+		    	    NOT = {
+                        has_game_rule = {
+			            	rule = XFR_ai_behavior
+			            	option = HISTORICAL
+			            }
+                    }
 			    }
-                has_country_flag = XFR_AI_RANDOM_HISTORICAL
-		    	has_game_rule = {
-			    	rule = XFR_ai_behavior
-			    	option = HISTORICAL
-			    }
+                
             }
         }
     }
@@ -2138,7 +2153,7 @@ country_event = { # Support for Portugal-Galicia -> Portugal accepts
     option = { 
         name = XFR_events.56.a
         ai_chance = {
-            base = 0
+            base = 1
         } 
     }
 }
@@ -2154,7 +2169,65 @@ country_event = { # Support for Portugal-Galicia -> Portugal declines
     option = { 
         name = XFR_events.57.a
         ai_chance = {
+            base = 1
+        } 
+    }
+}
+
+country_event = { # Burgundy wants to cooperate with New New England
+    id = XFR_events.58
+    title = XFR_events.58.t
+    picture = GFX_report_event_canadian_soldiers
+    desc = XFR_events.58.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.58.a
+        ai_chance = {
+            base = 10
+            modifier = {
+                has_completed_focus = XNE_aggression
+                add = -10
+            }
+            modifier = {
+                factor = 2
+                XFR = {
+                    XFR_diplomat_advisor = {
+                        is_hired_as_advisor = yes
+                    }
+                }
+            }
+        } 
+        give_guarantee = XFR
+		XFR = { give_guarantee = XNE }
+    }
+
+    option = { 
+        name = XFR_events.58.b
+        ai_chance = {
             base = 0
+            modifier = {
+                has_completed_focus = XNE_aggression
+                add = 10
+            }
+        } 
+        XFR = { country_event = { id = XFR_events.59 days = 1 } }
+    }
+}
+
+country_event = { # Burgundy wants to cooperate with New New England -> XNE declines
+    id = XFR_events.59
+    title = XFR_events.59.t
+    picture = GFX_report_event_canadian_soldiers
+    desc = XFR_events.59.desc
+    
+    is_triggered_only = yes
+
+    option = { 
+        name = XFR_events.59.a
+        ai_chance = {
+            base = 1
         } 
     }
 }

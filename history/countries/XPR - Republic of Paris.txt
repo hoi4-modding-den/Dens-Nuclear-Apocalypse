@@ -1,5 +1,7 @@
 capital = 16
 
+oob = "XPR"
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -7,9 +9,18 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XPR_louis_morel
+recruit_character = XPR_eloi_vaugrenard
+
 set_popularities = {
-	fascism = 5
-	democratic = 5
-	neutrality = 90
+	communism = 10
+	democratic = 25
+	neutrality = 65
 }
 
+add_timed_idea = {
+	idea = XPR_reign_of_terror
+	days = 180
+}
+
+add_ideas = XPR_democratic_resistance

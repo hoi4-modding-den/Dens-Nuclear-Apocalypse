@@ -102,6 +102,9 @@ on_actions = {
 					}
 				}
 			}
+			XNM = {
+				set_country_flag = BEZ_leader
+			}
 		}
 	}
 

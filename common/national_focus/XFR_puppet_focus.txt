@@ -14,12 +14,237 @@ focus_tree = {
 				tag = XIB
 			}
 		}
+		modifier = {
+			add = 10
+			original_tag = XPR
+		}
 	}
 	
 	default = no
 	
 	continuous_focus_position = { x = 0 y = 3000 }
 
+
+	focus = {
+		id = XPR_the_reign_of_terror_continues
+		icon = GFX_goal_generic_political_pressure
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XPR_restore_democracy }
+		x = 17
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			democratic < 0.1
+			has_government = neutrality
+		}
+
+		allow_branch = {
+			original_tag = XPR
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XPR_ideas_of_expansion
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = XPR_the_reign_of_terror_continues }
+		#mutually_exclusive = { focus = }
+		x = -1
+		y = 1
+		relative_position_id = XPR_the_reign_of_terror_continues
+
+		available = {
+			has_government = neutrality
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			15 = { add_claim_by = ROOT }
+			29 = { add_claim_by = ROOT }
+			add_ai_strategy = {
+            	type = conquer
+       	    	id = XLX
+       	    	value = 1000
+        	}
+			add_ai_strategy = {
+            	type = conquer
+       	    	id = XLF
+       	    	value = 1000
+        	}
+		}
+	}
+
+	focus = {
+		id = XPR_integrate_claimed_territories
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = XPR_ideas_of_expansion }
+		#mutually_exclusive = { focus = }
+		x = 0
+		y = 1
+		relative_position_id = XPR_ideas_of_expansion
+
+		available = {
+			16 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			29 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			16 = {
+				add_core_of = ROOT
+			}
+			29 = {
+				add_core_of = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = XPR_restore_democracy
+		icon = GFX_goal_support_democracy
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XPR_the_reign_of_terror_continues }
+		x = 21
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			democratic > 0.3
+		}
+
+		allow_branch = {
+			original_tag = XPR
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+			swap_ideas = {
+				remove_idea = XPR_democratic_resistance
+				add_idea = XPR_democracy_triumphs
+			}
+			remove_ideas = XPR_reign_of_terror
+		}
+	}
+
+	focus = {
+		id = XPR_focus_on_development
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = XPR_restore_democracy focus = XPR_the_reign_of_terror_continues }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XPR_restore_democracy
+
+		available = {
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = XFR_stabilise_the_republic_tt
+		}
+	}
+
+	focus = {
+		id = XPR_reform_the_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = XPR_restore_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XPR_restore_democracy
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = {
+				idea = XFR_constitutional_revisions
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = XPR_befriend_burgundy
+		icon = GFX_focus_generic_befriend_burgundy
+		prerequisite = { focus = XPR_reform_the_constitution }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XPR_reform_the_constitution
+
+		available = {
+			has_government = democratic
+			XFR = {
+				has_government = democratic
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_opinion_modifier = {
+				target = XFR
+    			modifier = XFR_improve_relations
+			}
+			reverse_add_opinion_modifier = {
+				target = XFR
+    			modifier = XFR_improve_relations
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
 
 	focus = {
 		id = XFR_XSH_our_new_overlords
@@ -444,6 +669,15 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
+		available = {
+			if = {
+				limit = {
+					original_tag = XPR
+				}
+				has_completed_focus = XPR_focus_on_development
+			}
+		}
+
 		completion_reward = {
 			army_experience = 25
 			add_doctrine_cost_reduction = {
@@ -690,6 +924,14 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		available = {
+			if = {
+				limit = {
+					original_tag = XPR
+				}
+				has_completed_focus = XPR_focus_on_development
+			}
+		}
 
 		complete_tooltip = {
 			air_experience = 25
@@ -1002,6 +1244,12 @@ focus_tree = {
 			any_state = {
 				is_coastal = yes
 				is_controlled_by = ROOT
+			}
+			if = {
+				limit = {
+					original_tag = XPR
+				}
+				has_completed_focus = XPR_focus_on_development
 			}
 		}
 
@@ -1359,6 +1607,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
+
+		available = {
+			if = {
+				limit = {
+					original_tag = XPR
+				}
+				has_completed_focus = XPR_focus_on_development
+			}
+		}
 
 		completion_reward = {
 			add_tech_bonus = {
