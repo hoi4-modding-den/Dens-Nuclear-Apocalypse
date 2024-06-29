@@ -7,6 +7,13 @@ focus_tree = {
 			add = 10
 			is_subject_of = XFR
 		}
+		modifier = {
+			add = 10
+			OR = {
+				tag = XEN
+				tag = XIB
+			}
+		}
 	}
 	
 	default = no
@@ -213,12 +220,227 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XFR_XEN_british_administration
+		icon = GFX_focus_generic_improve_the_administration
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus =  }
+		x = 17
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			
+		}
+
+		allow_branch = {
+			original_tag = XEN
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = XFR_XEN_bez_takeover
+		icon = GFX_focus_XNM_political_continuation
+		prerequisite = { focus = XFR_XEN_british_administration }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_XEN_british_administration
+
+		available = {
+			XNM = {
+				exists = no
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNATIONAL_TRADE }
+		completion_reward = {
+			add_ideas = BEZ_membership
+			set_country_flag = BEZ_leader
+			if = {
+				limit = {
+					is_subject_of = XFR
+					XFR = { has_idea = XFR_customs_agreement_head_idea }
+				}
+				add_ideas = XFR_BEZ_cooperation2
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_XEN_gateway_to_the_atlantic
+		icon = GFX_focus_generic_british_trade
+		prerequisite = { focus = XFR_XEN_bez_takeover }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_XEN_bez_takeover
+
+		available = {
+			119 = { is_owned_and_controlled_by = ROOT }
+			970 = { is_owned_and_controlled_by = ROOT }
+			131 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				OVERLORD = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_XIB_stabilise_iberia
+		icon = GFX_goal_generic_political_pressure
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus =  }
+		x = 17
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			
+		}
+
+		allow_branch = {
+			tag = XIB
+			#NOT = { has_government = communism }
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.25
+			add_war_support = -0.1
+		}
+	}
+
+	focus = {
+		id = XFR_XIB_deal_with_catist_seperatists
+		icon = GFX_focus_generic_total_war
+		prerequisite = { focus = XFR_XIB_stabilise_iberia }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XFR_XIB_stabilise_iberia
+
+		available = {
+			XAD = {
+				all_core_state = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			XAD = {
+				every_core_state = {
+					remove_core_of = XAD
+					add_manpower = -5000
+				}
+			}
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = XFR_XIB_release_claim_on_gibraltar
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = XFR_XIB_stabilise_iberia }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_XIB_stabilise_iberia
+
+		available = {
+			118 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			is_subject = yes
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				hidden_effect = {
+					118 = {
+						remove_core_of = ROOT
+						hidden_effect = { remove_core_of = XAD }
+					}
+					OVERLORD = {
+						118 = {
+							transfer_state_to = PREV
+							add_core_of = PREV
+						}
+					}
+				}
+				custom_effect_tooltip = XFR_XIB_release_claim_on_gibraltar_tt
+			}
+			else = {
+				custom_effect_tooltip = XFR_XIB_release_claim_on_gibraltar_tt
+			}
+		}
+	}
+
+
+	focus = {
 		id = XFR_puppet_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		search_filters = {  FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 		
 		available_if_capitulated = yes
 
@@ -289,7 +511,7 @@ focus_tree = {
 		relative_position_id = XFR_puppet_army_effort
 		cost = 10
 
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		search_filters = {  FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 		
 		available_if_capitulated = yes
 
@@ -364,7 +586,7 @@ focus_tree = {
 		relative_position_id = XFR_puppet_doctrine_effort
 		cost = 10
 
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		search_filters = {  FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 		
 		available_if_capitulated = yes
 
@@ -464,7 +686,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		
-		search_filters = {   FOCUS_FILTER_RESEARCH }
+		search_filters = {   FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP }
 
 		available_if_capitulated = yes
 
@@ -601,7 +823,7 @@ focus_tree = {
 		relative_position_id = XFR_puppet_bomber_focus
 		cost = 10
 
-		search_filters = {   FOCUS_FILTER_RESEARCH }
+		search_filters = {   FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP }
 		
 		available_if_capitulated = yes
 
@@ -771,7 +993,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 
-		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		search_filters = {  FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP }
 		
 		available_if_capitulated = yes
 
@@ -1096,7 +1318,7 @@ focus_tree = {
 		relative_position_id = XFR_puppet_cruiser_effort
 		cost = 10
 
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		search_filters = {  FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
 		
 		available_if_capitulated = yes
 

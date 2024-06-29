@@ -1,0 +1,947 @@
+######################
+### DEALER'S CARDS ###
+######################
+
+defined_text = { #1
+	name = GetDealerCard1
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_dealer_card_1_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_1_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+defined_text = { #2
+	name = GetDealerCard2
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_dealer_card_2_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_2_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+defined_text = { #3
+	name = GetDealerCard3
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_dealer_card_3_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_3_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+defined_text = { #4
+	name = GetDealerCard4
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_dealer_card_4_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_4_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+defined_text = { #5
+	name = GetDealerCard5
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_dealer_card_5_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_dealer_card_5_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+##################
+### YOUR CARDS ###
+##################
+
+defined_text = { #1
+	name = GetYoursCard1
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_yours_card_1_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_1_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+defined_text = { #2
+	name = GetYoursCard2
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_yours_card_2_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_2_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+defined_text = { #3
+	name = GetYoursCard3
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_yours_card_3_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_3_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+defined_text = { #4
+	name = GetYoursCard4
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_yours_card_4_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_4_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}
+
+defined_text = { #5
+	name = GetYoursCard5
+	#text = { #None
+	#	trigger = {
+	#		check_variable = { var = black_jack_yours_card_5_var value = 0 compare = equals }
+	#	}
+	#	localization_key = "get_card_none_tt"
+	#}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 1 compare = equals }
+		}
+		localization_key = "get_card_a_tt"
+	}
+	text = { #2
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 2 compare = equals }
+		}
+		localization_key = "get_card_2_tt"
+	}
+	text = { #3
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 3 compare = equals }
+		}
+		localization_key = "get_card_3_tt"
+	}
+	text = { #4
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 4 compare = equals }
+		}
+		localization_key = "get_card_4_tt"
+	}
+	text = { #5
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 5 compare = equals }
+		}
+		localization_key = "get_card_5_tt"
+	}
+	text = { #6
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 6 compare = equals }
+		}
+		localization_key = "get_card_6_tt"
+	}
+	text = { #7
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 7 compare = equals }
+		}
+		localization_key = "get_card_7_tt"
+	}
+	text = { #8
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 8 compare = equals }
+		}
+		localization_key = "get_card_8_tt"
+	}
+	text = { #9
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 9 compare = equals }
+		}
+		localization_key = "get_card_9_tt"
+	}
+	text = { #10
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 10 compare = equals }
+		}
+		localization_key = "get_card_10_tt"
+	}
+	text = { #J
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 11 compare = equals }
+		}
+		localization_key = "get_card_j_tt"
+	}
+	text = { #Q
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 12 compare = equals }
+		}
+		localization_key = "get_card_q_tt"
+	}
+	text = { #K
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 13 compare = equals }
+		}
+		localization_key = "get_card_k_tt"
+	}
+	text = { #A
+		trigger = {
+			check_variable = { var = black_jack_yours_card_5_var value = 14 compare = equals }
+		}
+		localization_key = "get_card_a2_tt"
+	}
+}

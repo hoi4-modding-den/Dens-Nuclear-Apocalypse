@@ -1,0 +1,130 @@
+# System ported from TNO, by Yard1 and Scars
+
+defined_text = {
+	name = XFR_Get_subideology_loc
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = "[XFR_Get_democratic_subideology]"
+	}
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = "[XFR_Get_communism_subideology]"
+	}
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = "[XFR_Get_fascism_subideology]"
+	}
+	text = {
+		trigger = {
+			has_government = neutrality
+		}
+		localization_key = "[XFR_Get_neutrality_subideology]"
+	}
+}
+
+defined_text = {
+	name = XFR_Get_democratic_subideology
+	text = {
+		trigger = {
+			has_country_leader_ideology = XFR_emergency_government
+		}
+		localization_key = XFR_emergency_government
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = XFR_catist_democracy
+		}
+		localization_key = XFR_catist_democracy
+	}
+	text = {
+		trigger = {
+			original_tag = XFR
+			has_country_leader_with_trait = XFR_federalist_leader
+		}
+		localization_key = XFR_federalist_side
+	}
+	text = {
+		trigger = {
+			original_tag = XFR
+			has_country_leader_with_trait = XFR_restaurationist_leader
+		}
+		localization_key = XFR_restaurationist_side
+	}
+	text = {
+		localization_key = democratic
+	}
+}
+
+defined_text = {
+	name = XFR_Get_communism_subideology
+	text = {
+		trigger = {
+			original_tag = XFR
+			has_country_leader_ideology = anarchist_communism
+		}
+		localization_key = anarchist_communism
+	}
+	text = {
+		localization_key = communism
+	}
+}
+
+defined_text = {
+	name = XFR_Get_fascism_subideology
+	text = {
+		trigger = {
+			has_country_leader_ideology = XFR_german_revanchism
+		}
+		localization_key = XFR_german_revanchism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = XFR_lotharingian_nationalism
+		}
+		localization_key = XFR_lotharingian_nationalism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = XFR_frankish_fascism
+		}
+		localization_key = XFR_insanity
+	}
+	text = {
+		localization_key = fascism
+	}
+}
+
+defined_text = {
+	name = XFR_Get_neutrality_subideology
+	text = {
+		trigger = {
+			is_subject = yes
+			has_country_leader_ideology = XFR_military_government
+		}
+		localization_key = XFR_occupation_council
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = XFR_military_government
+		}
+		localization_key = XFR_military_government
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader_ideology = XFR_frankish_monarchism
+				has_country_leader_with_trait = XFR_regency_council_trait
+			}
+		}
+		localization_key = XFR_bund_support
+	}
+	text = {
+		localization_key = neutrality
+	}
+}

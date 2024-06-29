@@ -114,7 +114,6 @@ XFR_puppet_nation = {
 	}
 }
 XFR_set_up_denazification_zone_effect = {
-	XFR = { set_country_flag = XFR_XLH_formation_denied }
 	XLH = {
 		load_focus_tree = XFR_puppet_focus
 		add_popularity = {
@@ -144,7 +143,6 @@ XFR_set_up_denazification_zone_effect = {
 }
 
 XFR_set_up_hamburg_zone_effect = {
-	XFR = { set_country_flag = XFR_XSH_formation_denied }
 	XSH = {
 		load_focus_tree = XFR_puppet_focus
 		set_cosmetic_tag = XSH_Hamburg

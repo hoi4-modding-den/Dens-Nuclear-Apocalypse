@@ -52,8 +52,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_core_attack_factor = 0.2
-                army_core_defence_factor = 0.2
+				army_attack_factor = 0.2
+                army_defence_factor = 0.2
                 political_power_gain = 0.5
 			}
 		}
@@ -402,6 +402,33 @@ ideas = {
             modifier = {
 			    army_infantry_attack_factor = 0.05
                 army_infantry_defence_factor = 0.05
+                army_org_factor = 0.1
+                army_org_regain = 0.1
+            }
+
+        }
+
+        XFR_army_expansion = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_manpower_bonus
+
+            modifier = {
+			    conscription_factor = 0.25
+                training_time_factor = -0.2
+                mobilization_laws_cost_factor = -0.5
+                ai_desired_divisions_factor = 0.4
+                mobilization_speed = 0.5
+                experience_gain_army_factor = 0.1
             }
 
         }
@@ -423,6 +450,8 @@ ideas = {
             modifier = {
 			    army_infantry_attack_factor = 0.1
                 army_infantry_defence_factor = 0.15
+                army_org_factor = 0.1
+                army_org_regain = 0.1
             }
 
         }
@@ -488,6 +517,8 @@ ideas = {
                 army_infantry_defence_factor = 0.15
 			    army_artillery_attack_factor = 0.1
                 army_artillery_defence_factor = 0.1
+                army_org_factor = 0.1
+                army_org_regain = 0.1
             }
 
         }
@@ -514,6 +545,8 @@ ideas = {
 			    army_armor_attack_factor = 0.1
                 army_armor_defence_factor = 0.1
                 army_armor_speed_factor = 0.2
+                army_org_factor = 0.1
+                army_org_regain = 0.1
             }
 
         }
@@ -1842,7 +1875,10 @@ ideas = {
 			}
 
             cancel = {
-                has_war_with = XNM
+                OR = {
+                    has_war_with = XNM
+                    XNM = { exists = no }
+                }
             }
 
             do_effect = {
@@ -1851,7 +1887,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = HUN_treaty_of_triannon
+            picture = XFR_bez_udb_cooperation
 
             modifier = {
 			    consumer_goods_factor = -0.05
@@ -1876,7 +1912,10 @@ ideas = {
 			}
 
             cancel = {
-                has_war_with = XFR
+                OR = {
+                    has_war_with = XFR
+                    XFR = { exists = no }
+                }
             }
 
             do_effect = {
@@ -1885,7 +1924,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = HUN_treaty_of_triannon
+            picture = XFR_bez_udb_cooperation
 
             modifier = {
 			    consumer_goods_factor = -0.05

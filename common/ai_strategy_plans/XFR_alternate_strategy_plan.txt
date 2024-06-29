@@ -19,6 +19,8 @@ XFR_alt_dem_path = {
 	#}
 
 	ai_national_focuses = {
+		XFR_make_big_army
+
 		XFR_support_parliament
 		XFR_investigate_centre
 		XFR_deal_with_the_mutants
@@ -100,6 +102,8 @@ XFR_esoteric_path = {
 	#}
 
 	ai_national_focuses = {
+		XFR_make_big_army
+
 		# Do whenever possible 
 		XFR_dennounce_democracy
 		XFR_fascist_coup
@@ -187,6 +191,8 @@ XFR_monarchist_path = {
 	#}
 
 	ai_national_focuses = {
+		XFR_make_big_army
+		
 		# Do whenever possible 
 		XFR_dennounce_democracy
 		XFR_fascist_coup

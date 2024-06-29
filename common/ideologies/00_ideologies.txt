@@ -239,11 +239,9 @@ ideologies = {
 			}
 			XFR_frankish_fascism = {
 				can_be_randomly_selected = no
+				color = { 87 0 127 }
 			}
 			XFR_corporate_capitalism = {
-				can_be_randomly_selected = no
-			}
-			XFR_reichsregierung = {
 				can_be_randomly_selected = no
 			}
 			XHP_templaric_order = {
@@ -317,9 +315,6 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 			XFR_frankish_monarchism = {
-				can_be_randomly_selected = no
-			}
-			XFR_reichsregierung_neutral = {
 				can_be_randomly_selected = no
 			}
 			XLA_council = {

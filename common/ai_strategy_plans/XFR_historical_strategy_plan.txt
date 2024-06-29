@@ -26,6 +26,8 @@ XFR_historical_plan = {
 	#}
 
 	ai_national_focuses = {
+		XFR_make_big_army
+		
 		XFR_support_parliament
 		XFR_investigate_centre
 		XFR_deal_with_the_mutants

@@ -21,4 +21,228 @@ scripted_gui = {
 			}
 		}
 	}
+
+	XKR_gambling = {
+		context_type = decision_category
+		window_name = "XKR_gambling_window"
+
+		visible = {
+			#check_variable = { var = cash_menu_var value = 1 compare = equals }
+			#check_variable = { var = cash_menu_view_var value = 4 compare = equals }
+			has_country_flag = ABJ_opened_flag
+		}
+
+		triggers = {
+			ABJ_black_jack_place_bet_button_click_enabled = {
+				check_variable = { var = black_jack_place_bet_var value = 0 compare = equals }
+				check_variable = { var = black_jack_bet_var value = 0 compare = greater_than }
+				check_variable = { var = chips_var value = 0 compare = greater_than }
+				check_variable = { var = chips_var value = black_jack_bet_var compare = greater_than_or_equals }
+			}
+			ABJ_black_jack_hold_button_click_enabled = {
+				check_variable = { var = black_jack_hold_var value = 0 compare = equals }
+				check_variable = { var = black_jack_in_progress_var value = 1 compare = equals }
+				check_variable = { var = black_jack_yours_points_var value = 0 compare = greater_than }
+
+				check_variable = { var = black_jack_you_won_notification_var value = 0 compare = equals }
+				check_variable = { var = black_jack_tie_notification_var value = 0 compare = equals }
+				check_variable = { var = black_jack_you_lost_notification_var value = 0 compare = equals }
+			}
+			ABJ_black_jack_dealing_button_click_enabled = {
+				check_variable = { var = black_jack_place_bet_var value = 1 compare = equals }
+			}
+			ABJ_black_jack_bet_decrease_button_click_enabled = {
+				check_variable = { var = black_jack_in_progress_var value = 0 compare = equals }
+			}
+			ABJ_black_jack_bet_increase_button_click_enabled = {
+				check_variable = { var = black_jack_in_progress_var value = 0 compare = equals }
+			}
+			#####################
+			### NOTIFICATIONS ###
+			#####################
+			ABJ_black_jack_you_lost_notification_visible = {
+				check_variable = { var = black_jack_you_lost_notification_var value = 1 compare = equals }
+			}
+			ABJ_black_jack_you_won_notification_visible = {
+				check_variable = { var = black_jack_you_won_notification_var value = 1 compare = equals }
+			}
+			ABJ_black_jack_tie_notification_visible = {
+				check_variable = { var = black_jack_tie_notification_var value = 1 compare = equals }
+			}
+			ABJ_black_jack_dealer_holds_icon_visible = {
+				check_variable = { var = black_jack_dealer_is_not_brave_var value = 1 compare = equals }
+			}
+			ABJ_black_jack_you_holds_icon_visible = {
+				check_variable = { var = black_jack_hold_var value = 1 compare = equals }
+			}
+			ABJ_black_jack_you_won_chips_text_name_visible = {
+				OR = {
+					check_variable = { var = black_jack_you_won_notification_var value = 1 compare = equals }
+					check_variable = { var = black_jack_tie_notification_var value = 1 compare = equals }
+				}
+			}
+			ABJ_black_jack_you_lost_chips_text_name_visible = {
+				check_variable = { var = black_jack_you_lost_notification_var value = 1 compare = equals }
+			}
+		}
+
+		effects = {
+			ABJ_black_jack_close_button_click = {
+				clr_country_flag = ABJ_opened_flag
+			}
+			### Change Bet
+			ABJ_black_jack_bet_decrease_button_click = { #-25
+				if = {
+					limit = { check_variable = { var = black_jack_bet_var value = 25 compare = greater_than_or_equals } }
+					subtract_from_variable = { var = black_jack_bet_var value = 25 }
+					add_to_variable = { var = chips_var value = 25 }
+				}
+			}
+			ABJ_black_jack_bet_decrease_button_control_click = { #-250
+				if = {
+					limit = { check_variable = { var = black_jack_bet_var value = 250 compare = greater_than_or_equals } }
+					subtract_from_variable = { var = black_jack_bet_var value = 250 }
+					add_to_variable = { var = chips_var value = 250 }
+				}
+			}
+			ABJ_black_jack_bet_decrease_button_shift_click = { #-2500
+				if = {
+					limit = { check_variable = { var = black_jack_bet_var value = 2500 compare = greater_than_or_equals } }
+					subtract_from_variable = { var = black_jack_bet_var value = 2500 }
+					add_to_variable = { var = chips_var value = 2500 }
+				}
+			}
+			ABJ_black_jack_bet_increase_button_click = { #+25
+				if = {
+					limit = {
+						check_variable = { var = black_jack_bet_var value = 9975 compare = less_than_or_equals }
+						check_variable = { var = chips_var value = 25 compare = greater_than_or_equals }
+					}
+					add_to_variable = { var = black_jack_bet_var value = 25 }
+				}
+			}
+			ABJ_black_jack_bet_increase_button_control_click = { #+250
+				if = {
+					limit = {
+						check_variable = { var = black_jack_bet_var value = 9750 compare = less_than_or_equals }
+						check_variable = { var = chips_var value = 250 compare = greater_than_or_equals }
+					}
+					add_to_variable = { var = black_jack_bet_var value = 250 }
+				}
+			}
+			ABJ_black_jack_bet_increase_button_shift_click = { #+2500
+				if = {
+					limit = {
+						check_variable = { var = black_jack_bet_var value = 7500 compare = less_than_or_equals }
+						check_variable = { var = chips_var value = 2500 compare = greater_than_or_equals }
+					}
+					add_to_variable = { var = black_jack_bet_var value = 2500 }
+				}
+			}
+			ABJ_black_jack_place_bet_button_click = { # Place bet
+				if = {
+					limit = {
+						check_variable = { var = black_jack_bet_var value = 0 compare = greater_than }
+					}
+					subtract_from_variable = { var = chips_var value = black_jack_bet_var }
+					set_variable = { var = black_jack_place_bet_var value = 1 }
+					set_variable = { var = black_jack_in_progress_var value = 1 }
+					set_variable = { var = black_jack_prize_var value = black_jack_bet_var }
+					#clear_variable = black_jack_bet_var
+				}
+			}
+			ABJ_black_jack_hold_button_click = { # Hold
+				set_variable = { var = black_jack_hold_var value = 1 }
+			}
+			ABJ_black_jack_dealing_button_click = { # Dealing
+				if = {
+					limit = {
+						check_variable = { var = black_jack_place_bet_var value = 1 compare = equals }
+					}
+					ABJ_black_jack_dealing_effect = yes
+				}
+				#if = {
+				#	limit = {
+				#		check_variable = { var = black_jack_yours_final_points_var value = 0 compare = greater_than }
+				#		check_variable = { var = black_jack_dealer_final_points_var value = 0 compare = greater_than }
+				#	}
+				#}
+			}
+			ABJ_black_jack_you_lost_notification_click = {
+				clear_variable = black_jack_you_lost_notification_var
+				clear_variable = black_jack_dealer_final_points_var
+				clear_variable = black_jack_yours_final_points_var
+				clear_variable = black_jack_final_prize_var
+				clear_variable = black_jack_final_prize_negative_var
+				clear_variable = black_jack_in_progress_var
+				clear_variable = black_jack_yours_points_var
+        		clear_variable = black_jack_dealer_points_var
+
+				clear_variable = black_jack_dealer_card_1_var
+				clear_variable = black_jack_dealer_card_2_var
+				clear_variable = black_jack_dealer_card_3_var
+				clear_variable = black_jack_dealer_card_4_var
+				clear_variable = black_jack_dealer_card_5_var
+
+				clear_variable = black_jack_yours_card_1_var
+				clear_variable = black_jack_yours_card_2_var
+				clear_variable = black_jack_yours_card_3_var
+				clear_variable = black_jack_yours_card_4_var
+				clear_variable = black_jack_yours_card_5_var
+
+				clear_variable = black_jack_hold_var
+       			clear_variable = black_jack_dealer_is_not_brave_var
+			}
+			ABJ_black_jack_you_won_notification_click = {
+				clear_variable = black_jack_you_won_notification_var
+				clear_variable = black_jack_dealer_final_points_var
+				clear_variable = black_jack_yours_final_points_var
+				clear_variable = black_jack_final_prize_var
+				clear_variable = black_jack_final_prize_negative_var
+				clear_variable = black_jack_in_progress_var
+				clear_variable = black_jack_yours_points_var
+        		clear_variable = black_jack_dealer_points_var
+
+				clear_variable = black_jack_dealer_card_1_var
+				clear_variable = black_jack_dealer_card_2_var
+				clear_variable = black_jack_dealer_card_3_var
+				clear_variable = black_jack_dealer_card_4_var
+				clear_variable = black_jack_dealer_card_5_var
+
+				clear_variable = black_jack_yours_card_1_var
+				clear_variable = black_jack_yours_card_2_var
+				clear_variable = black_jack_yours_card_3_var
+				clear_variable = black_jack_yours_card_4_var
+				clear_variable = black_jack_yours_card_5_var
+
+				clear_variable = black_jack_hold_var
+       			clear_variable = black_jack_dealer_is_not_brave_var
+			}
+			ABJ_black_jack_tie_notification_click = {
+				clear_variable = black_jack_tie_notification_var
+				clear_variable = black_jack_dealer_final_points_var
+				clear_variable = black_jack_yours_final_points_var
+				clear_variable = black_jack_final_prize_var
+				clear_variable = black_jack_final_prize_negative_var
+				clear_variable = black_jack_in_progress_var
+				clear_variable = black_jack_yours_points_var
+        		clear_variable = black_jack_dealer_points_var
+
+				clear_variable = black_jack_dealer_card_1_var
+				clear_variable = black_jack_dealer_card_2_var
+				clear_variable = black_jack_dealer_card_3_var
+				clear_variable = black_jack_dealer_card_4_var
+				clear_variable = black_jack_dealer_card_5_var
+
+				clear_variable = black_jack_yours_card_1_var
+				clear_variable = black_jack_yours_card_2_var
+				clear_variable = black_jack_yours_card_3_var
+				clear_variable = black_jack_yours_card_4_var
+				clear_variable = black_jack_yours_card_5_var
+
+				clear_variable = black_jack_hold_var
+       			clear_variable = black_jack_dealer_is_not_brave_var
+			}
+		}
+	}
 }
