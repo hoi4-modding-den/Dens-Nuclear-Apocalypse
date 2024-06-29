@@ -122,7 +122,7 @@ country_event = { #communist overthrow
 		ai_chance = {
 			base = 100
 		}
-			news_event = {id = XRP_news_event.2}
+			news_event = {id = XRP_news_event.3}
 			add_named_threat = {
 				threat = 5
 				name = XRP_violent_overthrow
@@ -375,6 +375,73 @@ news_event = { #Assassination of Cavoli
        		name = XRP.WE_2.a
 	}
 }
+news_event = { #Communist Coup
+    id = XRP_news_event.3
+    title = XRP.WE_3.t
+    picture = GFX_news_event_canada_army
+    desc = XRP.WE_3.d
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = no
+		option = {
+       		name = XRP.WE_3.a
+			   trigger = {	
+				has_government = democratic 
+				}
+		}
+		option = {
+			name = XRP.WE_3.b
+			trigger = {	
+				has_government = fascism 
+			}
+		}
+		option = {
+			name = XRP.WE_3.c
+			trigger = {	
+				has_government = communism 
+			}
+		}
+		option = {
+			name = XRP.WE_3.a
+			trigger = {	
+			 has_government = neutrality 
+			}
+	 }
+}
+news_event = { #Democratic Coup
+    id = XRP_news_event.4
+    title = XRP.WE_4.t
+    picture = GFX_news_event_montreux_convention_war
+    desc = XRP.WE_4.d
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = no
+		option = {
+       		name = XRP.WE_4.a
+			   trigger = {	
+				has_government = democratic 
+				}
+		}
+		option = {
+			name = XRP.WE_4.b
+			trigger = {	
+				has_government = fascism 
+			}
+		}
+		option = {
+			name = XRP.WE_4.c
+			trigger = {	
+				has_government = communism 
+			}
+		}
+		option = {
+			name = XRP.WE_4.e
+			trigger = {	
+				has_government = neutrality 
+			}
+		}
+}
+
 
 #Focus Events#
 country_event = { #massacure in Nurburg
@@ -430,6 +497,50 @@ country_event = { #ceremony event
 			}
 			add_political_power = -100
 			news_event = {id = XRP_news_event.2}
+		ai_chance = {
+			base = 100
+		}
+    	}
+}
+
+country_event = { #execution event
+    id = XRP_focus_event.6
+    title = XRP.FE_3.t
+    picture = GFX_report_event_SWI_guisan_soldiers
+    desc = XRP.FE_3.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_3.a
+			kill_ideology_leader = communism
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		ai_chance = {
+			base = 100
+		}
+    	}
+}
+
+country_event = { #exile event
+    id = XRP_focus_event.7
+    title = XRP.FE_4.t
+    picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_4.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_4.a
+			retire_character = XRP_Davis
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
 		ai_chance = {
 			base = 100
 		}

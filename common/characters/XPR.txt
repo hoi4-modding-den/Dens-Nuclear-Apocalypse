@@ -1,0 +1,32 @@
+characters = {
+
+	XPR_louis_morel = {
+		name = XPR_louis_morel_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_YUG_milan_grol"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { XPR_despotic_president }
+			expire = "3000.1.1"
+			desc = XPR_louis_morel_desc
+		}
+	}
+
+	XPR_eloi_vaugrenard = {
+		name = XPR_eloi_vaugrenard_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_paul_reynaud"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "3000.1.1"
+		}
+	}
+
+}

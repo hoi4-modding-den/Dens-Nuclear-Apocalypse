@@ -39,6 +39,67 @@ DEN_controls_french_states = {
 	985 = { owns_or_subject_of = yes }
 }
 
+DEN_is_iberian_state = {
+	OR = {
+		state = 41
+		state = 112
+		state = 118
+		state = 165
+		state = 166
+		state = 167
+		state = 168
+		state = 169
+		state = 170
+		state = 171
+		state = 172
+		state = 173
+		state = 174
+		state = 175
+		state = 176
+		state = 177
+		state = 179
+		state = 180
+		state = 181
+		state = 788
+		state = 789
+		state = 790
+		state = 791
+		state = 792
+		state = 793
+		state = 794
+		state = 795
+	}
+}
+
+DEN_is_british_state = {
+	OR = {
+		state = 113
+		state = 119
+		state = 120
+		state = 121
+		state = 122
+		state = 123
+		state = 125
+		state = 126
+		state = 127
+		state = 128
+		state = 129
+		state = 130
+		state = 131
+		state = 132
+		state = 133
+		state = 134
+		state = 135
+		state = 136
+		state = 338
+		state = 931
+		state = 932
+		state = 933
+		state = 970
+		state = 977
+	}
+}
+
 XFR_is_west_francian_state = {
 	OR = {
 		state = 15

@@ -1,0 +1,87 @@
+ideas = {
+    country = {
+
+        XPR_reign_of_terror = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_country_leader = { character = XPR_louis_morel ruling_only = yes }
+			}
+
+            cancel = {
+                NOT = { has_country_leader = { character = XPR_louis_morel ruling_only = yes } }
+            }
+
+           removal_cost = -1
+
+            picture = generic_purge
+
+            modifier = {
+                stability_weekly = -0.01
+                democratic_drift = -0.1
+                communism_drift = -0.1
+                fascism_drift = -0.1
+                party_popularity_stability_factor = -0.1
+                political_power_cost = 0.25
+            }
+
+        }
+
+        XPR_democratic_resistance = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = democratic }
+			}
+
+            cancel = {
+                OR = {
+                    has_government = democratic
+                    democratic < 0.01
+                }
+            }
+
+           removal_cost = -1
+
+            picture = generic_democratic_drift_bonus
+
+            modifier = {
+                stability_weekly = -0.01
+                democratic_drift = 0.2
+            }
+
+        }
+
+        XPR_democracy_triumphs = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+            cancel = {
+                NOT = { has_government = democratic }
+            }
+
+           removal_cost = -1
+
+            picture = generic_democratic_drift_bonus
+
+            modifier = {
+                stability_weekly = 0.01
+                democratic_drift = 0.2
+            }
+
+        }
+
+    }
+}

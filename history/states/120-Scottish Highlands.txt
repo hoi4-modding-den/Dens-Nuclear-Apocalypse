@@ -12,8 +12,7 @@ manpower=165249
 	}
 
 	history= {
-		#add_core_of = SCO
-		owner = LIB # ENG
+		owner = XFC
 		victory_points = {
 			6062 1 #Skye/Stornoway
 		}
@@ -33,7 +32,7 @@ manpower=165249
 				naval_base = 8	
 			}
 		}
-		#add_core_of = ENG
+		add_core_of = XFC
 	}
 
 	provinces = { 

@@ -1,19 +1,442 @@
 ﻿focus_tree = {
-	id = XBC_focus
+	id = XBC_basic_focus
 	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = XBC
+			original_tag = XBC
 		}
 	}
 	
 	default = no
 	reset_on_civilwar = no
+	
+	shared_focus = XBC_ministry_of_industry
+	shared_focus = XBC_ministry_of_national_defense
+	shared_focus = XBC_last_days_of_liderra_uribe
+}
 
-	focus = {
-		id = XBC_last_days_of_liderra_uribe
+focus_tree = {
+	id = XBC_eta_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = XBC
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	shared_focus = XBC_ministry_of_industry
+	shared_focus = XBC_ministry_of_national_defense
+	shared_focus = XBC_last_days_of_liderra_uribe
+	shared_focus = XBC_the_left_ascendant
+	shared_focus = XBC_the_center_holds
+	shared_focus = XBC_the_right_dominant
+}
+
+focus_tree = {
+	id = XBC_democratic_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = XBC
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	shared_focus = XBC_ministry_of_industry
+	shared_focus = XBC_ministry_of_national_defense
+	shared_focus = XBC_the_basque_spring
+}
+	
+### FOCUS ###	
+	
+	shared_focus = { # INDUSTRIAL TREE
+		id = XBC_ministry_of_industry
+		icon = GFX_focus_generic_industry_3
+		x = 4
+		y = 0
+		available = {
+			OR = {
+				has_completed_focus = XBC_the_left_ascendant	
+				has_completed_focus = XBC_the_center_holds
+				has_completed_focus = XBC_the_right_dominant
+				has_completed_focus = XBC_partido_popular
+				has_completed_focus = XBC_asociacion_del_patria
+			}						
+		}
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_expand_the_iron_mines
+		icon = GFX_focus_generic_mining_industry
+		x = -2
+		y = 1
+		
+		relative_position_id = XBC_ministry_of_industry
+		prerequisite = { focus = XBC_ministry_of_industry }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_bilbao_pamplona_line
+		icon = GFX_focus_generic_railroad
+		x = 0
+		y = 1
+		
+		relative_position_id = XBC_ministry_of_industry
+		prerequisite = { focus = XBC_ministry_of_industry }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_invest_in_pamplona_manufactories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 1
+		
+		relative_position_id = XBC_ministry_of_industry
+		prerequisite = { focus = XBC_ministry_of_industry }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_university_of_bilbao
+		icon = GFX_focus_generic_university_1
+		x = 4
+		y = 1
+		
+		relative_position_id = XBC_ministry_of_industry
+		prerequisite = { focus = XBC_ministry_of_industry }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_restore_the_dams
+		icon = GFX_focus_generic_hydroelectric_energy
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_bilbao_pamplona_line
+		prerequisite = { focus = XBC_expand_the_iron_mines }
+		prerequisite = { focus = XBC_bilbao_pamplona_line }
+		prerequisite = { focus = XBC_invest_in_pamplona_manufactories }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_propel_the_industrialization
+		icon = GFX_focus_generic_modernize_industry
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_bilbao_pamplona_line
+		prerequisite = { focus = XBC_expand_the_iron_mines }
+		prerequisite = { focus = XBC_bilbao_pamplona_line }
+		prerequisite = { focus = XBC_invest_in_pamplona_manufactories }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_fishing_on_the_bay
+		icon = GFX_focus_generic_merchant_fleet
+		x = 0
+		y = 2
+		
+		relative_position_id = XBC_bilbao_pamplona_line
+		prerequisite = { focus = XBC_bilbao_pamplona_line }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_expand_the_port_of_bilbao
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_fishing_on_the_bay
+		prerequisite = { focus = XBC_fishing_on_the_bay }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_build_arms_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 1
+		
+		relative_position_id = XBC_propel_the_industrialization
+		prerequisite = { focus = XBC_propel_the_industrialization }
+		prerequisite = { focus = XBC_innovative_equipment }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = { # MILITARY TREE
+		id = XBC_ministry_of_national_defense
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 11
+		y = 0
+		available = {
+			OR = {
+				has_completed_focus = XBC_the_left_ascendant	
+				has_completed_focus = XBC_the_center_holds
+				has_completed_focus = XBC_the_right_dominant
+				has_completed_focus = XBC_partido_popular
+				has_completed_focus = XBC_asociacion_del_patria
+			}						
+		}
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_innovative_equipment
+		icon = GFX_focus_generic_combined_arms
+		x = -2
+		y = 2
+		
+		relative_position_id = XBC_ministry_of_national_defense
+		prerequisite = { focus = XBC_university_of_bilbao }
+		prerequisite = { focus = XBC_ministry_of_national_defense }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_the_basque_way
+		icon = GFX_goal_generic_army_doctrines
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_ministry_of_national_defense
+		prerequisite = { focus = XBC_ministry_of_national_defense }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_focus_on_offense
+		icon = GFX_goal_generic_small_arms
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_the_basque_way
+		prerequisite = { focus = XBC_the_basque_way }
+		mutually_exclusive = { focus = XBC_focus_on_defense }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_focus_on_defense
+		icon = GFX_goal_generic_defence
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_the_basque_way
+		prerequisite = { focus = XBC_the_basque_way }
+		mutually_exclusive = { focus = XBC_focus_on_offense }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_a_freedom_myth
+		icon = GFX_focus_generic_industry_3
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_focus_on_defense
+		prerequisite = { focus = XBC_focus_on_defense }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_a_fortress_in_the_pyrenees
+		icon = GFX_goal_generic_fortify_city
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_focus_on_defense
+		prerequisite = { focus = XBC_focus_on_defense }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_birth_of_an_airforce
+		icon = GFX_goal_generic_air_fighter2
+		x = -1
+		y = 2
+		
+		relative_position_id = XBC_innovative_equipment
+		prerequisite = { focus = XBC_build_arms_factories }
+		prerequisite = { focus = XBC_innovative_equipment }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_armored_warfare_research
+		icon = GFX_goal_generic_army_tanks
+		x = 1
+		y = 2
+		
+		relative_position_id = XBC_innovative_equipment
+		prerequisite = { focus = XBC_build_arms_factories }
+		prerequisite = { focus = XBC_innovative_equipment }
+		prerequisite = { focus = XBC_focus_on_offense }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		}
+	}
+
+	shared_focus = { # POLITICAL TREE
+		id = XBC_last_days_of_liderra_uribe 
 		icon = GFX_focus_generic_improve_the_administration
 		x = 20
 		y = 0
@@ -31,7 +454,7 @@
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = XBC_work_with_the_left
 		icon = GFX_goal_support_communism
 		x = -3
@@ -52,7 +475,7 @@
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = XBC_maintain_the_status_quo
 		icon = GFX_focus_generic_self_management
 		x = 0
@@ -72,7 +495,7 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_cooperate_with_the_right
 		icon = GFX_goal_support_fascism
 		x = 3
@@ -93,7 +516,7 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_redirecting_our_budget
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = -1
@@ -113,9 +536,9 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_areas_of_development
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_focus_generic_industry_2
 		x = 1
 		y = 1
 		
@@ -133,7 +556,7 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_reinforcing_our_garrisons
 		icon = GFX_focus_generic_full_social_mobilization
 		x = 1
@@ -153,9 +576,9 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_a_look_outside
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = 1
 		y = 1
 		
@@ -173,9 +596,9 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_dissident_repression_act
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_focus_generic_infiltration
 		x = 1
 		y = 1
 		
@@ -195,9 +618,9 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_equal_rights_act
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_focus_BRA_reach_out_to_military_dem
 		x = -1
 		y = 1
 		
@@ -216,9 +639,9 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_a_basque_thaw
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_focus_ARG_keep_it_in_the_party
 		x = 0
 		y = 2
 		
@@ -236,7 +659,7 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_our_new_leader
 		icon = GFX_focus_CHL_address_the_mapuche_conflict
 		x = 0
@@ -258,7 +681,7 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_rein_in_pamplona
 		icon = GFX_focus_ETH_boots_on_the_shore
 		x = 0
@@ -266,8 +689,9 @@
 
 		relative_position_id = XBC_our_new_leader
 		prerequisite = { focus = XBC_our_new_leader }
+		# mutually_exclusive = { focus = XBC_the_basque_spring }
 		
-		cost = 4
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -276,7 +700,11 @@
 		}
 		completion_reward = {
 			custom_effect_tooltip = XBC_rein_in_pamplona_tt
+			hidden_effect = {
+				load_focus_tree = XBC_eta_focus
+			}
 		}
+		
 		select_effect = { 
 			if = {
 				limit = {
@@ -298,34 +726,42 @@
 			}
 		}
 	}
+
+
+
 	
-	focus = {
+	shared_focus = {
 		id = XBC_the_left_ascendant
 		icon = GFX_focus_generic_improve_the_administration
 		x = -5
-		y = 1
-
+		y = 2
+		available = {
+			XBC_gaspar_diaz = {
+				is_country_leader = yes
+			}
+		}
 		relative_position_id = XBC_rein_in_pamplona
-		prerequisite = { focus = XBC_rein_in_pamplona }
-		
+		mutually_exclusive = { focus = XBC_the_center_holds focus = XBC_the_right_dominant }
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_the_center_holds
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_goal_generic_neutrality_focus
 		x = 0
-		y = 1
-
+		y = 2
+		available = {
+			XBC_arturo_uribe = {
+				is_country_leader = yes
+			}
+		}
 		relative_position_id = XBC_rein_in_pamplona
-		prerequisite = { focus = XBC_rein_in_pamplona }
-		
+		mutually_exclusive = { focus = XBC_the_left_ascendant focus = XBC_the_right_dominant }
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -335,15 +771,18 @@
 		}
 	}
 	
-	focus = {
+	shared_focus = {
 		id = XBC_the_right_dominant
 		icon = GFX_focus_generic_improve_the_administration
 		x = 5
-		y = 1
-
+		y = 2
+		available = {
+			XBC_claudio_salazar = {
+				is_country_leader = yes
+			}
+		}
 		relative_position_id = XBC_rein_in_pamplona
-		prerequisite = { focus = XBC_rein_in_pamplona }
-		
+		mutually_exclusive = { focus = XBC_the_left_ascendant focus = XBC_the_center_holds }
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -352,4 +791,705 @@
 			
 		}
 	}
-}
+	
+	shared_focus = {
+		id = XBC_the_basque_manifesto
+		icon = GFX_focus_NOR_moscows_education_centers
+		x = 0
+		y = 1
+
+		relative_position_id = XBC_the_left_ascendant	
+		prerequisite = { focus = XBC_the_left_ascendant }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_the_workers_unity
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		x = -1
+		y = 1
+
+		relative_position_id = XBC_the_basque_manifesto
+		prerequisite = { focus = XBC_the_basque_manifesto }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_new_benefits_for_the_workers
+		icon = GFX_focus_generic_concessions
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_the_workers_unity
+		prerequisite = { focus = XBC_the_workers_unity }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_focus_on_the_third_sector
+		icon = GFX_focus_ARG_legitimize_the_PCA
+		x = -1
+		y = 1
+
+		relative_position_id = XBC_new_benefits_for_the_workers
+		prerequisite = { focus = XBC_new_benefits_for_the_workers }
+		mutually_exclusive = { focus = XBC_three_year_plan }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_three_year_plan
+		icon = GFX_focus_generic_communist_industry
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_new_benefits_for_the_workers
+		prerequisite = { focus = XBC_new_benefits_for_the_workers }
+		mutually_exclusive = { focus = XBC_focus_on_the_third_sector }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_the_revolution_begins
+		icon = GFX_focus_ger_great_red_menace
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_focus_on_the_third_sector
+		prerequisite = { focus = XBC_focus_on_the_third_sector focus = XBC_three_year_plan }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	# Center path
+	
+	shared_focus = {
+		id = XBC_embrace_the_new_voices
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+
+		relative_position_id = XBC_the_center_holds
+		prerequisite = { focus = XBC_the_left_ascendant focus = XBC_the_center_holds }
+		mutually_exclusive = { focus = XBC_purge_the_party }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_purge_the_party
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_the_center_holds
+		prerequisite = { focus = XBC_the_right_dominant focus = XBC_the_center_holds }
+		mutually_exclusive = { focus = XBC_embrace_the_new_voices }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_speak_of_unity
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_embrace_the_new_voices
+		prerequisite = { focus = XBC_embrace_the_new_voices focus = XBC_purge_the_party }
+		prerequisite = { focus = XBC_the_center_holds }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_the_pyrenean_unity
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+
+		relative_position_id = XBC_speak_of_unity
+		prerequisite = { focus = XBC_speak_of_unity }
+		mutually_exclusive = { focus = XBC_basque_country_for_the_basques }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_basque_country_for_the_basques
+		icon = GFX_focus_generic_improve_the_administration
+		mutually_exclusive = { focus = XBC_the_pyrenean_unity }
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_speak_of_unity
+		prerequisite = { focus = XBC_speak_of_unity }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_seven_in_one
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_the_pyrenean_unity
+		prerequisite = { focus = XBC_the_pyrenean_unity focus = XBC_basque_country_for_the_basques  }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	# Fascist path
+	
+	shared_focus = {
+		id = XBC_the_ideological_foundations
+		icon = GFX_focus_generic_fascist_propaganda
+		x = 0
+		y = 1
+
+		relative_position_id = XBC_the_right_dominant
+		prerequisite = { focus = XBC_the_right_dominant  }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_organize_paramilitaries
+		icon = GFX_goal_generic_wolf_pack
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_the_ideological_foundations
+		prerequisite = { focus = XBC_the_ideological_foundations  }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_opress_the_spanish
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+
+		relative_position_id = XBC_organize_paramilitaries
+		prerequisite = { focus = XBC_organize_paramilitaries  }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_national_industrial_company
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+
+		relative_position_id = XBC_opress_the_spanish
+		prerequisite = { focus = XBC_opress_the_spanish }
+		mutually_exclusive = { focus = XBC_like_our_forefathers }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_like_our_forefathers
+		icon = GFX_focus_generic_improve_the_administration
+		mutually_exclusive = { focus = XBC_national_industrial_company }
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_opress_the_spanish
+		prerequisite = { focus = XBC_opress_the_spanish }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_the_true_masters_of_iberia
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 1
+		y = 1
+
+		relative_position_id = XBC_national_industrial_company
+		prerequisite = { focus = XBC_national_industrial_company focus = XBC_like_our_forefathers }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_open_the_borders
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 2
+		y = 1
+
+		relative_position_id = XBC_the_basque_manifesto
+		prerequisite = { focus = XBC_the_basque_manifesto focus = XBC_embrace_the_new_voices }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_close_the_borders
+		icon = GFX_focus_generic_improve_the_administration
+		x = -2
+		y = 1
+
+		relative_position_id = XBC_the_ideological_foundations
+		prerequisite = { focus = XBC_the_ideological_foundations focus = XBC_purge_the_party }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+
+	shared_focus = { # POLITICAL TREE - DEMOCRATIC
+		id = XBC_the_basque_spring
+		icon = GFX_focus_generic_improve_the_administration
+		x = 20
+		y = 0
+		
+		prerequisite = { }
+		# mutually_exclusive = { focus = XBC_rein_in_pamplona }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_civil_war = no
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_stabilize
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_the_basque_spring
+		prerequisite = { focus = XBC_the_basque_spring }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_and_rebuild
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_the_basque_spring
+		prerequisite = { focus = XBC_the_basque_spring }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_promise_the_change
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_stabilize
+		prerequisite = { focus = XBC_stabilize }
+		prerequisite = { focus = XBC_and_rebuild }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_perform_the_change
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_stabilize
+		prerequisite = { focus = XBC_stabilize }
+		prerequisite = { focus = XBC_and_rebuild }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_promote_the_change
+		icon = GFX_focus_generic_improve_the_administration
+		x = 3
+		y = 1
+		
+		relative_position_id = XBC_stabilize
+		prerequisite = { focus = XBC_stabilize }
+		prerequisite = { focus = XBC_and_rebuild }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_hold_the_elections
+		icon = GFX_focus_generic_improve_the_administration
+		x = 0
+		y = 1
+		
+		relative_position_id = XBC_perform_the_change
+		prerequisite = { focus = XBC_promise_the_change }
+		prerequisite = { focus = XBC_perform_the_change }		
+		prerequisite = { focus = XBC_promote_the_change }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_partido_popular
+		icon = GFX_focus_generic_improve_the_administration
+		x = -3
+		y = 1
+		
+		relative_position_id = XBC_hold_the_elections
+		prerequisite = { focus = XBC_hold_the_elections }
+		mutually_exclusive = { focus = XBC_asociacion_del_patria }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_asociacion_del_patria
+		icon = GFX_focus_generic_improve_the_administration
+		x = 3
+		y = 1
+		
+		relative_position_id = XBC_hold_the_elections
+		prerequisite = { focus = XBC_hold_the_elections }
+		mutually_exclusive = { focus = XBC_partido_popular }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_promote_the_economic_initiatives
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_partido_popular
+		prerequisite = { focus = XBC_partido_popular }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_equality_in_diversity
+		icon = GFX_focus_generic_improve_the_administration
+		x = 2
+		y = 1
+		
+		relative_position_id = XBC_partido_popular
+		prerequisite = { focus = XBC_partido_popular focus = XBC_asociacion_del_patria }
+		mutually_exclusive = { focus = XBC_just_a_province_of_spain }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_a_social_economy
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_promote_the_economic_initiatives
+		prerequisite = { focus = XBC_promote_the_economic_initiatives }
+		prerequisite = { focus = XBC_equality_in_diversity }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_just_a_province_of_spain
+		icon = GFX_focus_generic_improve_the_administration
+		x = -2
+		y = 1
+		
+		relative_position_id = XBC_asociacion_del_patria
+		prerequisite = { focus = XBC_asociacion_del_patria }
+		mutually_exclusive = { focus = XBC_equality_in_diversity }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	shared_focus = {
+		id = XBC_back_to_normality
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		
+		relative_position_id = XBC_asociacion_del_patria
+		prerequisite = { focus = XBC_asociacion_del_patria }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_the_return_of_the_king
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+		
+		relative_position_id = XBC_back_to_normality
+		prerequisite = { focus = XBC_back_to_normality }
+		prerequisite = { focus = XBC_equality_in_diversity focus = XBC_just_a_province_of_spain }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	shared_focus = {
+		id = XBC_claim_the_spanish_crown
+		icon = GFX_focus_generic_improve_the_administration
+		x = 0
+		y = 1
+		
+		relative_position_id = XBC_the_return_of_the_king
+		prerequisite = { focus = XBC_the_return_of_the_king }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}

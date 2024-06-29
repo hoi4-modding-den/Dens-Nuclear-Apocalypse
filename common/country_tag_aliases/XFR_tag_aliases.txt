@@ -2,3 +2,11 @@ XFA = {
 	original_tag = XFR
 	has_country_flag = XFR_anarchist_revolt
 }
+XIB = {
+	original_tag = XPY
+	has_country_flag = XFR_iberian_puppet
+}
+XEN = {
+	original_tag = XNE
+	has_country_flag = XFR_english_puppet
+}

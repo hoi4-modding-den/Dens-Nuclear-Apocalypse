@@ -11,3 +11,18 @@ XKR_debug_decisions = {
 		is_debug = yes
 	}
 }
+
+XKR_black_jack = {
+	priority = 15
+	icon = GFX_category_icon
+
+	allowed = {
+		has_country_flag = XKR_black_jack_enabled
+	}
+	visible = {
+		has_country_flag = XKR_black_jack_enabled
+	}
+
+	visible_when_empty = yes
+    scripted_gui = XKR_gambling
+}

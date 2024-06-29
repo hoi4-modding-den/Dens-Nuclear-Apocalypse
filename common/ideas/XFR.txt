@@ -1875,7 +1875,10 @@ ideas = {
 			}
 
             cancel = {
-                has_war_with = XNM
+                OR = {
+                    has_war_with = XNM
+                    XNM = { exists = no }
+                }
             }
 
             do_effect = {
@@ -1884,7 +1887,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = HUN_treaty_of_triannon
+            picture = XFR_bez_udb_cooperation
 
             modifier = {
 			    consumer_goods_factor = -0.05
@@ -1909,7 +1912,10 @@ ideas = {
 			}
 
             cancel = {
-                has_war_with = XFR
+                OR = {
+                    has_war_with = XFR
+                    XFR = { exists = no }
+                }
             }
 
             do_effect = {
@@ -1918,7 +1924,7 @@ ideas = {
 
            removal_cost = -1
 
-            picture = HUN_treaty_of_triannon
+            picture = XFR_bez_udb_cooperation
 
             modifier = {
 			    consumer_goods_factor = -0.05

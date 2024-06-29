@@ -81,7 +81,7 @@ defined_text = {
 			FROM = {
                 controller = {
                     has_idea = BEZ_membership
-					original_tag = XNM
+					has_country_flag = BEZ_leader
                 }
             }
 		}
@@ -155,7 +155,7 @@ defined_text = {
 			FROM = {
                 controller = {
                     has_idea = BEZ_membership
-					original_tag = XNM
+					has_country_flag = BEZ_leader
                 }
             }
 		}

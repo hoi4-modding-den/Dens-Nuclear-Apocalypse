@@ -90,6 +90,7 @@ characters = {
 			ideology = XFR_frankish_monarchism
 			traits = { XFR_herzog_von_burgund }
 			expire = "3000.1.1"
+			desc = XFR_herzog_julius_desc
 		}
 		field_marshal={
 			visible = { has_country_leader = { character = XFR_herzog_julius ruling_only = yes } }
