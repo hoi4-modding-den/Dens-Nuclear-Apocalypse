@@ -33,7 +33,7 @@ ideas = {
 			}
 		}
 		XGE_conscript_people = {
-			picture = generic_manpower_boost
+			picture = generic_manpower_bonus
 			modifier = {
 				weekly_manpower = 1000
 			}

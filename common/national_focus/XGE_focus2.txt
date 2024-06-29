@@ -95,10 +95,391 @@
 					remove_idea = XGE_system_controls_army_false
 					add_idea = XGE_system_controls_army
 				}
+				complete_national_focus = XGE_war_plan_north
+				complete_national_focus = XGE_war_plan_east
+				complete_national_focus = XGE_war_plan_south
 			}
 			set_country_flag = operating_system_controls_army
 			set_country_flag = XGE_bloom_gui_visible  #cuz the gui changed!!!
 			custom_effect_tooltip = XGE_computerized_commander_in_chief_tt
+			
+		}
+	}
+	focus = {
+		id = XGE_war_plan_north
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_computerized_commander_in_chief }
+		
+		#mutually_exclusive = { focus =  }
+		x = -7
+		y = 1
+		relative_position_id = XGE_computerized_commander_in_chief
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_hoist_the_red_flag_over_hamburg
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_war_plan_north }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_war_plan_north
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_socialism_in_schleswig
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_hoist_the_red_flag_over_hamburg }
+		
+		mutually_exclusive = { focus = XGE_revolution_in_the_danish_strait }
+		x = 2
+		y = 1
+		relative_position_id = XGE_hoist_the_red_flag_over_hamburg
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_revolution_in_the_danish_strait
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_hoist_the_red_flag_over_hamburg }
+		
+		mutually_exclusive = { focus = XGE_socialism_in_schleswig }
+		x = -2
+		y = 1
+		relative_position_id = XGE_hoist_the_red_flag_over_hamburg
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_war_plan_west
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_computerized_commander_in_chief }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_computerized_commander_in_chief
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_axe_out_the_anarchists
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_war_plan_west }
+		
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_war_plan_west
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_north_rhineland_campaign
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { 
+			focus = XGE_axe_out_the_anarchists 
+			focus = XGE_dismantle_the_capitalist_camp
+		}
+		
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_axe_out_the_anarchists
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XGE_re_educate_the_revisionists
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_axe_out_the_anarchists }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_axe_out_the_anarchists
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_dismantle_the_capitalist_camp
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_war_plan_west }
+		
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_war_plan_west
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_burn_down_their_bases_and_lies
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_dismantle_the_capitalist_camp }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_dismantle_the_capitalist_camp
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_war_plan_south
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_computerized_commander_in_chief }
+		
+		#mutually_exclusive = { focus =  }
+		x = 7
+		y = 1
+		relative_position_id = XGE_computerized_commander_in_chief
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_slay_the_mechanized_menace
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_war_plan_south }
+		
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_war_plan_south
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_master_their_machines
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_slay_the_mechanized_menace }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_slay_the_mechanized_menace
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_neutralize_the_nazis
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_war_plan_south }
+		
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_war_plan_south
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_never_again_in_a_million_years
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_neutralize_the_nazis }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_neutralize_the_nazis
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_socialist_and_united
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_never_again_in_a_million_years }
+		prerequisite = { focus = XGE_north_rhineland_campaign }
+		prerequisite = { focus = XGE_burn_down_their_bases_and_lies }
+		prerequisite = { focus = XGE_re_educate_the_revisionists }
+		prerequisite = { 
+			focus = XGE_socialism_in_schleswig
+			focus = XGE_revolution_in_the_danish_strait
+		}
+		prerequisite = { focus = XGE_re_educate_the_revisionists }
+		prerequisite = { focus = XGE_master_their_machines }
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_north_rhineland_campaign
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_establish_new_administrative_divisions
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_socialist_and_united }
+		
+		
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XGE_socialist_and_united
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_re_establish_the_comecon
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_establish_new_administrative_divisions }
+		
+		
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XGE_establish_new_administrative_divisions
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XGE_spread_the_revolution
+		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		prerequisite = { focus = XGE_establish_new_administrative_divisions }
+		
+		
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XGE_establish_new_administrative_divisions
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
 		}
 	}
 }
