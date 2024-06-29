@@ -27,6 +27,10 @@
  XKR_continue_tooltip:0 "§YGambling awaits...§!"
  XKR_exit_tooltip:0 "§YExit§!"
 
+ ### DECISIONS ###
+
+ XKR_black_jack:0 "Feeling lucky?"
+
  ### MISC ###
 
  XKR_jazz_star:0 "§2Popular Jazz Musician§!"

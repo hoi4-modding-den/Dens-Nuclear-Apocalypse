@@ -80,6 +80,7 @@ set_popularities = {
 set_country_flag = XKR_welcome_message_flag
 set_country_flag = dont_use_default_political_advisors
 set_country_flag = dont_use_default_military_advisors
+set_country_flag = XKR_black_jack_enabled
 
 set_party_name = {
     ideology = neutrality
