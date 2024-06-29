@@ -15,7 +15,7 @@ focus_tree = {
 
 	focus = {
 			id = XRP_rip_idiot
-			#icon = XAR_perm_peace
+			icon = GFX_focus_ger_assassinate_mussolini
 			x = 12
 			y = 2
 			#relative_position_id = 
@@ -36,7 +36,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_bribe_officers
-			#icon = XAR_perm_peace
+			icon = GFX_focus_usa_reestablish_the_gold_standard
 			x = 6
 			y = 3
 			#relative_position_id = 
@@ -54,16 +54,25 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_political_power = -50
+				add_timed_idea = {
+					idea = XRP_officers_bribed
+					days = 70
+				}
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = -0.15
 					tooltip_side = XRP_communist_cadet_side
 				}
+				add_to_variable = {
+					XRP_moderate_focuses = 1
+				}
+				custom_effect_tooltip = XRP_moderate_focuses
 			}
 		}
 		focus = {
 			id = XRP_intimidate_officers
-			#icon = XAR_perm_peace
+			icon = GFX_focus_mex_arrest_general_cedillo
 			x = 8
 			y = 3
 			#relative_position_id = 
@@ -81,16 +90,25 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_war_support = -0.05
+				add_timed_idea = {
+					idea = XRP_officers_threatened
+					days = 140
+				}
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = -0.15
 					tooltip_side = XRP_communist_cadet_side
 				}
+				add_to_variable = {
+					XRP_hardliner_focuses = 1
+				}
+				custom_effect_tooltip = XRP_hardliner_focuses
 			}
 		}
 		focus = {
 			id = XRP_identify_cracks
-			#icon = XAR_perm_peace
+			icon = GFX_focus_SOV_military_purge
 			x = 10
 			y = 3
 			#relative_position_id = 
@@ -106,6 +124,8 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				custom_effect_tooltip = XRP_identify_cracks_tooltip
+				add_political_power = -50
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = -0.1
@@ -115,7 +135,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_oversight_committee
-			#icon = XAR_perm_peace
+			icon = GFX_focus_BRA_tribunal
 			x = 12
 			y = 3
 			#relative_position_id = 
@@ -131,6 +151,7 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_ideas = XRP_overcom_idea
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = -0.20
@@ -140,7 +161,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_curfews
-			#icon = XAR_perm_peace
+			icon = GFX_focus_generic_military_academy
 			x = 14
 			y = 3
 			#relative_position_id = 
@@ -156,6 +177,8 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_ideas = XRP_curfews_idea
+				add_stability = 0.05
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = 0.10
@@ -165,7 +188,7 @@ focus_tree = {
 		}
 	focus = {
 			id = XRP_control_media
-			#icon = XAR_perm_peace
+			icon = GFX_focus_BRA_cohen_plan
 			x = 18
 			y = 3
 			#relative_position_id = 
@@ -181,6 +204,7 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_ideas = XRP_state_media
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = 0.15
@@ -190,7 +214,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_purge_officers
-			#icon = XAR_perm_peace
+			icon = GFX_focus_generic_strike_at_democracy3
 			x = 9
 			y = 4
 			#relative_position_id = 
@@ -207,6 +231,17 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				kill_ideology_leader = democratic
+				add_stability = -0.1
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.15
+				}
+
+				add_timed_idea = {
+					idea = XRP_high_purge
+					days = 180
+				}
 				swap_ideas = {
 					remove_idea = XRP_american_ideals 
 					add_idea = XRP_american_ideals_improved_alt 
@@ -220,8 +255,8 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_no_tolerance
-			#icon = XAR_perm_peace
-			x = 13
+			icon = GFX_focus_spr_crush_the_revolution
+			x = 15
 			y = 4
 			#relative_position_id = 
 			allow_branch = { has_country_flag = XRP_flag1  }
@@ -229,7 +264,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_curfews }
 			available = {
-				NOT = {  }
+
 			}	
 			mutually_exclusive = { focus = XRP_no_tolerance }
 			mutually_exclusive = { focus = XRP_reward_snitching }
@@ -238,17 +273,31 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.10
+				}
+				add_stability = 0.05
+				add_manpower = -1000
+				add_timed_idea = {
+					idea = XRP_cadets_threatened
+					days = 140
+				}
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = 0.15
 					tooltip_side = XRP_democratic_officer_side
 				}
+				add_to_variable = {
+					XRP_hardliner_focuses = 1
+				}
+				custom_effect_tooltip = XRP_hardliner_focuses
 			}
 		}
 		focus = {
 			id = XRP_reward_snitching
-			#icon = XAR_perm_peace
-			x = 15
+			icon = GFX_focus_SWI_issue_war_bonds
+			x = 13
 			y = 4
 			#relative_position_id = 
 			allow_branch = { has_country_flag = XRP_flag1  }
@@ -265,16 +314,29 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.05
+				}
+				add_political_power = -50
+				add_timed_idea = {
+					idea = XRP_cadets_bribed
+					days = 70
+				}
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = 0.15
 					tooltip_side = XRP_democratic_officer_side
 				}
+				add_to_variable = {
+					XRP_moderate_focuses = 1
+				}
+				custom_effect_tooltip = XRP_moderate_focuses
 			}
 		}
 	focus = {
 			id = XRP_red_scare
-			#icon = XAR_perm_peace
+			icon = GFX_focus_ger_great_red_menace
 			x = 18
 			y = 4
 			#relative_position_id = 
@@ -290,6 +352,12 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_political_power = -50
+				add_popularity = {
+					ideology = communism
+					popularity = -0.075
+				}
+				add_war_support = 0.1
 				swap_ideas = {
 					remove_idea = XRP_radical_youth 
 					add_idea = XRP_radical_youth_improved 
@@ -303,7 +371,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_centralized_command
-			#icon = XAR_perm_peace
+			icon = GFX_focus_FIN_strengthen_military_administration
 			x = 11
 			y = 5
 			#relative_position_id = 
@@ -319,6 +387,7 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_ideas = XRP_centcom
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = -0.15
@@ -328,7 +397,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_reward_loyality
-			#icon = XAR_perm_peace
+			icon = GFX_focus_CHL_silverworking
 			x = 7
 			y = 5
 			#relative_position_id = 
@@ -346,16 +415,25 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				remove_ideas = XRP_high_purge
+				add_timed_idea = {
+					idea = XRP_officers_bribed_alt
+					days = 70
+				}
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = -0.15
 					tooltip_side = XRP_communist_cadet_side
 				}
+				add_to_variable = {
+					XRP_moderate_focuses = 1
+				}
+				custom_effect_tooltip = XRP_moderate_focuses
 			}
 		}
 		focus = {
 			id = XRP_expand_surveilance
-			#icon = XAR_perm_peace
+			icon = GFX_focus_generic_secret_service_agency
 			x = 9
 			y = 5
 			#relative_position_id = 
@@ -373,16 +451,22 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_political_power = -100
+				add_ideas = XRP_expanded_surveilance
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = -0.15
 					tooltip_side = XRP_communist_cadet_side
 				}
+				add_to_variable = {
+					XRP_hardliner_focuses = 1
+				}
+				custom_effect_tooltip = XRP_hardliner_focuses
 			}
 		}
 		focus = {
 			id = XRP_discipline
-			#icon = XAR_perm_peace
+			icon = GFX_focus_SOV_penal_battalions
 			x = 14
 			y = 5
 			#relative_position_id = 
@@ -398,6 +482,8 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_political_power = -50
+				add_ideas = XRP_disciplined_soldiers
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = 0.25
@@ -407,7 +493,7 @@ focus_tree = {
 		}
 	focus = {
 			id = XRP_make_an_example
-			#icon = XAR_perm_peace
+			icon = GFX_focus_CZE_german_puppet
 			x = 18
 			y = 5
 			#relative_position_id = 
@@ -425,16 +511,21 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				country_event = XRP_focus_event.6
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = 0.15
 					tooltip_side = XRP_democratic_officer_side
 				}
+				add_to_variable = {
+					XRP_hardliner_focuses = 1
+				}
+				custom_effect_tooltip = XRP_hardliner_focuses
 			}
 		}
 		focus = {
 			id = XRP_quietly_handle_it
-			#icon = XAR_perm_peace
+			icon = GFX_goal_molotov_ribbentrop_pact
 			x = 16
 			y = 5
 			#relative_position_id = 
@@ -452,16 +543,21 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				country_event = XRP_focus_event.7
 				add_power_balance_value = {
 					id = XRP_fascist_balance
 					value = 0.15
 					tooltip_side = XRP_democratic_officer_side
 				}
+				add_to_variable = {
+					XRP_moderate_focuses = 1
+				}
+				custom_effect_tooltip = XRP_moderate_focuses
 			}
 		}
 		focus = {
 			id = XRP_secure_at_last
-			#icon = XAR_perm_peace
+			icon = GFX_focus_usa_guarantee_the_american_dream
 			x = 9
 			y = 6
 			#relative_position_id = 
@@ -479,11 +575,16 @@ focus_tree = {
 			}
 			completion_reward = {
 				remove_ideas = XRP_american_ideals_improved_alt 
+				add_stability = 0.05
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.075
+				}
 			}
 		}
 		focus = {
 			id = XRP_good_soldier
-			#icon = XAR_perm_peace
+			icon = GFX_focus_generic_military_mission
 			x = 16
 			y = 6
 			#relative_position_id = 
@@ -501,11 +602,17 @@ focus_tree = {
 			}
 			completion_reward = {
 				remove_ideas = XRP_radical_youth_improved 
+				add_political_power = 50
+				add_war_support = 0.05
+				add_popularity = {
+					ideology = communism
+					popularity = -0.05
+				}
 			}
 		}
 		focus = {
 			id = XRP_american_way
-			#icon = XAR_perm_peace
+			icon = GFX_focus_generic_american_investments
 			x = 9
 			y = 7
 			#relative_position_id = 
@@ -515,7 +622,14 @@ focus_tree = {
 			prerequisite = { focus =  XRP_secure_at_last }
 			prerequisite = { focus = XRP_good_soldier }
 			available = {
-				NOT = {  }
+				custom_trigger_tooltip = {
+					tooltip = XRP_moderate_tooltip_finish
+				} 
+				check_variable = {
+					var = XRP_moderate_focuses 
+					value = 2
+					compare = greater_than_or_equals 
+				}
 			}	
 			mutually_exclusive = { focus = XRP_american_way }
 			mutually_exclusive = { focus = XRP_law_and_order }
@@ -529,7 +643,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_law_and_order
-			#icon = XAR_perm_peace
+			icon = GFX_goal_generic_political_pressure
 			x = 16
 			y = 7
 			#relative_position_id = 
@@ -539,8 +653,16 @@ focus_tree = {
 			prerequisite = { focus =  XRP_secure_at_last }
 			prerequisite = { focus = XRP_good_soldier }
 			available = {
-				NOT = {  }
-			}	
+					custom_trigger_tooltip = {
+						tooltip = XRP_hardliner_tooltip_finish
+					} 
+					check_variable = {
+						var = XRP_hardliner_focuses 
+						value = 2
+						compare = greater_than_or_equals 
+					}
+				}
+				
 			mutually_exclusive = { focus = XRP_american_way }
 			mutually_exclusive = { focus = XRP_law_and_order }
 		
