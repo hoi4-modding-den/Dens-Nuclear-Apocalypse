@@ -271,6 +271,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/XFR/idea_XFR_morale_support.png"
 	}	
 
+	spriteType = {
+		name = "GFX_idea_XFR_bez_udb_cooperation"
+		texturefile = "gfx/interface/ideas/XFR/idea_XFR_bez_udb_cooperation.png"
+	}	
+
     # Mapmode Icons
 
     spriteType = {

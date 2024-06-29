@@ -2589,3 +2589,111 @@ news_event = { # Fall of Besancon
 		trigger = { tag = XFR }
 	}
 }
+
+news_event = { # Iberian Puppet State established
+    id = XFR_news_events.15
+    title = XFR_news_events.15.t
+    picture = GFX_news_event_civil_war_turkey
+    desc = XFR_news_events.15.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.15.a
+        trigger = {
+            NOT = { original_tag = XFR }
+            NOT = { DEN_is_iberian_nation = yes }
+        }
+    }
+
+    option = {
+        name = XFR_news_events.15.b
+        trigger = {
+            NOT = { original_tag = XFR }
+            DEN_is_iberian_nation = yes
+        }
+    }
+
+    option = {
+        name = XFR_news_events.15.c
+        trigger = {
+            original_tag = XFR
+            has_government = communism
+        }
+    }
+    option = {
+        name = XFR_news_events.15.d
+        trigger = {
+            original_tag = XFR
+            has_government = democratic
+        }
+    }
+    option = {
+        name = XFR_news_events.15.e
+        trigger = {
+            original_tag = XFR
+            OR = {
+                has_government = fascism
+                has_government = neutrality
+            }
+        }
+    }
+
+}
+
+news_event = { # British Puppet State established
+    id = XFR_news_events.16
+    title = XFR_news_events.16.t
+    picture = GFX_news_event_civil_war_turkey
+    desc = XFR_news_events.16.desc
+    
+    
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XFR_news_events.16.a
+        trigger = {
+            NOT = { original_tag = XFR }
+            NOT = { DEN_is_british_nation = yes }
+        }
+    }
+
+    option = {
+        name = XFR_news_events.16.b
+        trigger = {
+            NOT = { original_tag = XFR }
+            DEN_is_british_nation = yes
+        }
+    }
+
+    option = {
+        name = XFR_news_events.16.c
+        trigger = {
+            original_tag = XFR
+            has_government = communism
+        }
+    }
+    option = {
+        name = XFR_news_events.16.d
+        trigger = {
+            original_tag = XFR
+            has_government = democratic
+        }
+    }
+    option = {
+        name = XFR_news_events.16.e
+        trigger = {
+            original_tag = XFR
+            OR = {
+                has_government = fascism
+                has_government = neutrality
+            }
+        }
+    }
+
+}

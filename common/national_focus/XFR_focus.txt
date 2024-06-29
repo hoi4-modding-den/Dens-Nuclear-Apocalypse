@@ -1999,7 +1999,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = XFR_invitation_tt
 			every_state = {
-				limit = { owner = { is_subject_of = ROOT } }
+				limit = {
+					DEN_is_french_state = yes
+					owner = { is_subject_of = ROOT } 
+				}
 				transfer_state_to = ROOT
 			}
 			custom_effect_tooltip = XFR_invitation_tt2

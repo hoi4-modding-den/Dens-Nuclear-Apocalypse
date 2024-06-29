@@ -2962,6 +2962,324 @@ XFR_integration = {
 
 }
 
+XFR_puppet_states_cat = {
+
+	XFR_establish_spanish_puppet = { 
+		
+		icon = GFX_decision_generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				DEN_is_iberian_state = yes
+				owns_or_subject_of = yes
+			}
+		}
+
+		available = {
+			has_war = no
+		}
+
+		visible = { 
+			any_state = {
+				DEN_is_iberian_state = yes
+				owns_or_subject_of = yes
+			}
+		}
+
+		fire_only_once = yes
+		
+
+		cost = 0
+
+        ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			hidden_effect = {
+				news_event = { id = XFR_news_events.15 hours = 1 }
+			create_dynamic_country = {
+    			original_tag = XPY
+				load_focus_tree = XFR_puppet_focus
+					set_party_name = {
+    					ideology = communism
+    					long_name = "Confederación Nacional del Trabajo-Federación Anarquista Ibérica"
+    					name = "CNT-FAI"
+					}
+					set_party_name = {
+						ideology = fascism
+    					long_name = "Assembly of Grand Crusade Knights"
+    					name = "Grand Crusade Assembly"
+					}
+					set_party_name = {
+    					ideology = democratic
+    					long_name = "Iberian Democratic Party"
+    					name = "Iberian Democratic Party"
+					}
+					set_party_name = {
+    					ideology = neutrality
+    					long_name = "Royalist Movement"
+    					name = "Royalist Movement"
+					}
+					create_country_leader = {
+						name = "Iberian Administration"
+						picture = GFX_portrait_XFR_parliament
+						expire = "3000.1.1"
+						ideology = XFR_emergency_government
+						traits = { }
+					} 
+					create_country_leader = {
+						name = "Iberian Anarchist Council"
+						picture = GFX_portrait_SPR_anarchist_commune
+						expire = "3000.1.1"
+						ideology = anarchist_communism
+						traits = { XFR_anarchists_trait }
+					} 
+				every_state = {
+					limit = {
+						DEN_is_iberian_state = yes
+						owns_or_subject_of = yes
+					}
+					transfer_state_to = PREV
+				}
+				every_state = {
+					limit = { DEN_is_iberian_state = yes }
+					add_core_of = PREV
+				}
+				every_state = {
+					limit = { NOT = { DEN_is_iberian_state = yes } }
+					remove_core_of = PREV
+				}
+				set_country_flag = XFR_iberian_puppet
+				set_cosmetic_tag = XFR_iberia
+			}
+			set_autonomy = {
+   				target = XIB
+    			autonomous_state = autonomy_integrated_puppet
+    			end_wars = no
+   				end_civil_wars = no
+			}
+			}
+			custom_effect_tooltip = XFR_establish_spanish_puppet_tt
+        }
+	}
+
+	XFR_transfer_state_to_iberia = { 
+		
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = FROM
+			}
+		}
+
+		available = {
+			FROM = {
+				owns_or_subject_of = yes
+			}
+		}
+
+		visible = {
+			FROM = {
+				owns_or_subject_of = yes
+			}
+			XIB = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		target_trigger = {
+			FROM = {
+				DEN_is_iberian_state = yes
+				NOT = { is_core_of = ROOT }
+				owns_or_subject_of = yes
+				owner = { NOT = { tag = XIB } }
+			}
+		}
+
+		fire_only_once = no
+
+		targets_dynamic = yes
+
+		state_target = yes
+
+		cost = 0
+
+		complete_effect = {
+			FROM = { transfer_state_to = XIB }
+        }
+	}
+
+	XFR_establish_english_puppet = { 
+		
+		icon = GFX_decision_generic_form_nation
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				DEN_is_british_state = yes
+				owns_or_subject_of = yes
+			}
+		}
+
+		available = {
+			has_war = no
+		}
+
+		visible = { 
+			any_state = {
+				DEN_is_british_state = yes
+				owns_or_subject_of = yes
+			}
+		}
+
+		fire_only_once = yes
+		
+
+		cost = 0
+
+        ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			hidden_effect = {
+				news_event = { id = XFR_news_events.16 hours = 1 }
+			create_dynamic_country = {
+    			original_tag = XNE
+				load_focus_tree = XFR_puppet_focus
+					set_party_name = {
+    					ideology = communism
+    					long_name = "British Anarchist Association"
+    					name = "BAA"
+					}
+					set_party_name = {
+						ideology = fascism
+    					long_name = "New British Union of Fascists"
+    					name = "NBUF"
+					}
+					set_party_name = {
+    					ideology = democratic
+    					long_name = "Democratic Party of Britain"
+    					name = "British Democrats"
+					}
+					set_party_name = {
+    					ideology = neutrality
+    					long_name = "Royalist Movement"
+    					name = "Royalist Movement"
+					}
+					create_country_leader = {
+						name = "British Administration"
+						picture = GFX_portrait_XFR_parliament
+						expire = "3000.1.1"
+						ideology = XFR_emergency_government
+						traits = { }
+					} 
+					create_country_leader = {
+						name = "British Anarchist Council"
+						picture = GFX_portrait_SPR_anarchist_commune
+						expire = "3000.1.1"
+						ideology = anarchist_communism
+						traits = { XFR_anarchists_trait }
+					} 
+				every_state = {
+					limit = {
+						DEN_is_british_state = yes
+						owns_or_subject_of = yes
+					}
+					transfer_state_to = PREV
+				}
+				every_state = {
+					limit = { DEN_is_british_state = yes }
+					add_core_of = PREV
+				}
+				set_country_flag = XFR_english_puppet
+				set_cosmetic_tag = XFR_england
+			}
+			set_autonomy = {
+   				target = XEN
+    			autonomous_state = autonomy_integrated_puppet
+    			end_wars = no
+   				end_civil_wars = no
+			}
+			}
+			custom_effect_tooltip = XFR_establish_english_puppet_tt
+        }
+	}
+
+	XFR_transfer_state_to_britain = { 
+		
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = XFR
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = FROM
+			}
+		}
+
+		available = {
+			FROM = {
+				owns_or_subject_of = yes
+			}
+		}
+
+		visible = {
+			FROM = {
+				owns_or_subject_of = yes
+			}
+			XEN = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		target_trigger = {
+			FROM = {
+				DEN_is_british_state = yes
+				NOT = { is_core_of = ROOT }
+				owns_or_subject_of = yes
+				owner = { NOT = { tag = XEN } }
+			}
+		}
+
+		fire_only_once = no
+
+		targets_dynamic = yes
+
+		state_target = yes
+
+		cost = 0
+
+		complete_effect = {
+			FROM = { transfer_state_to = XEN }
+        }
+	}
+
+}
+
 prospect_for_resources = {
 	XFR_develop_burgundy_aluminum = { #27
 
@@ -3228,78 +3546,6 @@ XFR_francia_cat = {
 			}
 		}
 	
-	}
-
-}
-
-XFR_reclamation = {
-
-	XFR_reclaim_land_from_anarchy = {
-		
-		icon = GFX_decision_generic_forestry
-
-		custom_cost_trigger = {
-			has_equipment = { infantry_equipment > 99 }
-		}
-		custom_cost_text = decision_cost_100_guns
-
-		allowed = {
-			original_tag = XFR
-		}
-
-		highlight_states = { 
-			highlight_states_trigger = {
-				is_reclaimable_state = yes
-				any_neighbor_state = { controls_or_subject_of = yes }
-				is_owned_and_controlled_by = LIB
-			}
-		}
-
-		available = {
-			FROM = { any_neighbor_state = { controls_or_subject_of = yes } }
-		}
-
-		visible = {
-
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-
-		cancel_trigger = {
-			FROM = { NOT = { is_owned_and_controlled_by = LIB } }
-		}
-
-
-		targets_dynamic = yes
-
-		state_target = yes
-
-		on_map_mode = map_and_decisions_view  
-
-		target_trigger = {
-			FROM = {
-				is_owned_and_controlled_by = LIB
-				any_neighbor_state = { controls_or_subject_of = yes }
-				is_reclaimable_state = yes
-			}
-		}
-
-		days_remove = 30
-
-		complete_effect = {
-			hidden_effect = {
-				add_equipment_to_stockpile = {
-    				type = infantry_equipment
-    				amount = -100
-				}
-			}
-		}
-
-		remove_effect = {
-			FROM = { transfer_state_to = ROOT }
-		}
 	}
 
 }
