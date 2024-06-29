@@ -2,7 +2,7 @@
 	id = XTI_focus
 	
 	country = {
-		factor = 1
+		factor = 0
 		modifier = {
 			add = 100
 			tag = XTI

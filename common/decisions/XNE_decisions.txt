@@ -510,7 +510,15 @@ XNE_the_housing_crisis = {
 				hidden_effect = {
 					activate_decision = XNE_housing_crisis_ongoing
 				}
-			}			
+			}
+			if = {
+				limit = {
+					check_variable = {
+						XNE_housing_crisis_var < 0.01
+					}
+				}
+				clr_country_flag = XNE_housing_crisis
+			}
 		}
 		ai_will_do = {
 			base = 0
@@ -531,7 +539,7 @@ XNE_the_housing_crisis = {
 			XNE_gain_conservative_support = yes
 			add_to_variable = {
 				var = XNE_housing_crisis_reduc
-				value = 0.02
+				value = 0.01
 			}
 			custom_effect_tooltip = XNE_laissez_faire_tooltip
 		}
@@ -728,6 +736,8 @@ XNE_european_intervention = {
 					is_neighbor_of = ROOT
 					any_owned_state = { is_coastal = yes }
 				}
+				NOT = { has_war_with = ROOT }
+				exists = yes
 			}
 		}
 		
@@ -770,6 +780,8 @@ XNE_european_intervention = {
 		target_trigger = {
 			FROM = {
 				has_country_flag = XNE_justified
+				NOT = { has_war_with = ROOT }
+				exists = yes
 			}
 		}
 		

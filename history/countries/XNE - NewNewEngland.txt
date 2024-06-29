@@ -98,7 +98,7 @@ news_event = { id = XNE_news.4 days = 292 }
 news_event = { id = XNE_news.5 days = 440 }
 news_event = { id = XNE_news.6 days = 632 }
 news_event = { id = XNE_news.7 days = 670 }
-news_event = { id = XNE_news.8 days = 0 random_days = 365 }
+news_event = { id = XNE_news.8 days = 10 random_days = 195 }
 news_event = { id = XNE_news.130 days = 365 random_days = 730 }
 news_event = { id = XNE_news.140 days = 746 }
 
