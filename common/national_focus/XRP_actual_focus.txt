@@ -6,7 +6,7 @@ focus_tree = {
 		
 	}
 	default = no
-    continuous_focus_position = { x = 450 y = 2000 }
+    continuous_focus_position = { x = 2100 y = 810 }
 
 	shared_focus = XRP_intro_focus 
 	shared_focus = XRP_ceremony
@@ -675,7 +675,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_new_america
-			#icon = XAR_perm_peace
+			icon = GFX_focus_generic_befriend_usa
 			x = 9
 			y = 8
 			#relative_position_id = 
@@ -691,7 +691,8 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				add_political_power = 100
+				set_cosmetic_tag = XRP_new_america_cosmetic
 			}
 		}
 		focus = {
@@ -703,7 +704,7 @@ focus_tree = {
 			allow_branch = { has_country_flag = XRP_flag1  }
 			mutually_exclusive = { focus = XRP_recruit_americans_alt } 
 			cost = 5
-			prerequisite = { focus =  XRP_american_way focus = XRP_law_and_order } 
+			prerequisite = { focus =  XRP_american_way } 
 			ai_will_do = {
 				factor = 1
 			}
@@ -744,7 +745,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_a_germany_for_americans
-			#icon = XAR_perm_peace
+			icon = GFX_focus_POL_reassert_silesian_claims
 			x = 16
 			y = 8
 			#relative_position_id = 
@@ -760,8 +761,1297 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
+				add_political_power = -150
+				set_cosmetic_tag = XRP_occupation_zone
+				every_state = {
+					limit = { has_state_flag = annexation_trigger_german NOT = { is_owned_by = XRP } }
+					add_core_of = XRP
+				}
+				add_named_threat = {
+					threat = 5
+					name = XRP_expansionist_threat
+				}
+				hidden_effect = {
+					news_event = XRP_news_event.5
+				}
+			}
+		}
+		focus = {
+			id = XRP_leave_germans_alone
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 11
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_a_germany_for_americans focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_leave_germans_alone }
+			mutually_exclusive = { focus = XRP_steal_from_germans }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
 				
 			}
 		}
+		focus = {
+			id = XRP_steal_from_germans
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 14
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_a_germany_for_americans focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_leave_germans_alone }
+			mutually_exclusive = { focus = XRP_steal_from_germans }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+
+		###Moderate Tree###
+		focus = {
+			id = XRP_our_back_yard
+			icon = GFX_goal_rhineland
+			x = 0
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_state_core = 28
+				add_state_core = 976
+				create_wargoal = {
+					target = XAL
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_return_to_sea
+			icon = GFX_focus_generic_north_atlantic_fleet
+			x = 2
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_state_core = 8
+				add_state_claim = 29
+				add_state_claim = 34
+				create_wargoal = {
+					target = XLX
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_czech_agreement
+			icon = GFX_focus_generic_treaty
+			x = 4
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				XCM = {
+					country_event = XRP_focus_event.23
+				}
+			}
+		}
+		focus = {
+			id = XRP_pretend_democracy
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 7
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_army_with_state }
+			mutually_exclusive = { focus = XRP_pretend_democracy }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_army_with_state
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 9
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_army_with_state }
+			mutually_exclusive = { focus = XRP_pretend_democracy }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_deal_with_mephisto
+			icon = GFX_goal_generic_forceful_treaty
+			x = -1
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_deal_with_mephisto
+			}
+			mutually_exclusive = {
+				focus = XRP_demand_stuttgart
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				XOO = {
+					country_event = XRP_focus_event.20
+				}
+			}
+		}
+		focus = {
+			id = XRP_demand_stuttgart
+			icon = GFX_goal_demand_sudetenland
+			x = 1
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_deal_with_mephisto
+			}
+			mutually_exclusive = {
+				focus = XRP_demand_stuttgart
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				XOO = {
+					country_event = XRP_focus_event.17
+				}
+				add_state_core = 50
+			}
+			
+		}
+		focus = {
+			id = XRP_demand_rhineland
+			icon = GFX_focus_generic_annex_country_2
+			x = 3
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_new_america }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				XNL = {
+					country_event = XRP_focus_event.14
+				}
+				add_state_core = 51
+			}
+		}
+		focus = {
+			id = XRP_military_constitution
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 5
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_pretend_democracy focus = XRP_army_with_state }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_military_constitution
+			}
+			mutually_exclusive = {
+				focus = XRP_do_what_we_want
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_do_what_we_want
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 7
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_pretend_democracy focus = XRP_army_with_state }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_military_constitution
+			}
+			mutually_exclusive = {
+				focus = XRP_do_what_we_want
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_live_for_america
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 9
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_pretend_democracy focus = XRP_army_with_state }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_live_for_america
+			}
+			mutually_exclusive = {
+				focus = XRP_die_for_america
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_die_for_america
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 11
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_pretend_democracy focus = XRP_army_with_state }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_live_for_america
+			}
+			mutually_exclusive = {
+				focus = XRP_die_for_america
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_operation_death_blow
+			icon = GFX_focus_XFR_attack_ddr
+			x = 1
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_deal_with_mephisto focus = XRP_demand_stuttgart focus = XRP_demand_rhineland }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_state_core = 55
+				create_wargoal = {
+					target = XAP
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XGE
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_invade_laagland
+			icon = GFX_focus_XFR_attack_laagland
+			x = 3
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_deal_with_mephisto focus = XRP_demand_stuttgart focus = XRP_demand_rhineland }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XNL
+					type = annex_everything
+				}
+				add_state_claim = 35
+				add_state_claim = 6
+			}
+		}
+
+		focus = {
+			id = XRP_military_federalism
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 7
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_military_constitution focus = XRP_do_what_we_want focus = XRP_live_for_america focus = XRP_die_for_america }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_military_federalism
+			}
+			mutually_exclusive = {
+				focus = XRP_military_centralism
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_military_centralism
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 9
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_military_constitution focus = XRP_do_what_we_want focus = XRP_live_for_america focus = XRP_die_for_america }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_military_federalism
+			}
+			mutually_exclusive = {
+				focus = XRP_military_centralism
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_america_first
+			icon = GFX_focus_XRP_america_focus
+			x = 5
+			y = 12
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_operation_death_blow }
+			prerequisite = {
+				focus = XRP_military_centralism focus = XRP_military_federalism
+			}
+			available = {
+				NOT = {  }
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = XRP_deutsch_apartheid
+					add_idea = XRP_deutsch_apartheid_factions
+				}
+				custom_effect_tooltip = XRP_deutsch_apartheid_factions_tooltip
+				
+				
+			}
+		}
+
+		###Hardliner Tree###
+		focus = {
+			id = XRP_all_within
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 16
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_a_germany_for_americans }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_every_american_drafted
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 18
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_a_germany_for_americans }
+			available = {
+				NOT = {  }
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_restore_order
+			icon = GFX_focus_ARG_the_american_push
+			x = 20
+			y = 9
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_a_germany_for_americans }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_beacon_on_a_hill
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 14
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_all_within }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_true_colors }
+			mutually_exclusive = { focus = XRP_beacon_on_a_hill }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_true_colors
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 16
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_all_within }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_true_colors }
+			mutually_exclusive = { focus = XRP_beacon_on_a_hill }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_secure_alps
+			icon = GFX_focus_attack_switzerland
+			x = 20
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_restore_order }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XSS
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XTI
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XCG
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_restore_benelux
+			icon = GFX_focus_XFR_attack_laagland
+			x = 22
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_restore_order }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XNL
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XLX
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_czech_submission
+			icon = GFX_focus_CZE_german_puppet
+			x = 24
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_restore_order }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				XCM = {
+					country_event = XRP_focus_event.11
+				}
+			}
+		}
+		focus = {
+			id = XRP_alsace_puppet
+			icon = GFX_focus_generic_annex_country
+			x = 26
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_restore_order }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+				XAL = { exists = yes }
+			}	
+			mutually_exclusive = { focus = XRP_march_on_paris }
+			mutually_exclusive = { focus = XRP_alsace_puppet }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				XAL = {
+					country_event = XRP_focus_event.8
+				}
+				custom_effect_tooltip = XRP_alsace_puppet_tooltip
+			}
+		}
+		focus = {
+			id = XRP_march_on_paris
+			icon = GFX_focus_XFR_attack_paris
+			x = 28
+			y = 10
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_restore_order }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+			mutually_exclusive = { focus = XRP_march_on_paris }
+			mutually_exclusive = { focus = XRP_alsace_puppet }
+
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XPR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XFR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XAL
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_deport_germans
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 14
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_beacon_on_a_hill focus = XRP_true_colors }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_deport_germans }
+			mutually_exclusive = { focus = XRP_benevolent_dominance }
+			
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_benevolent_dominance
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 16
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_beacon_on_a_hill focus = XRP_true_colors }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = { focus = XRP_deport_germans }
+			mutually_exclusive = { focus = XRP_benevolent_dominance }
+			
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_fbi
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 18
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_all_within }
+			available = {
+				NOT = {  }
+			}	
+			
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_march_on_rome
+			icon = GFX_focus_XFR_attack_south_italy
+			x = 20
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_secure_alps }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+			
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XLV
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XLA
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XHR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XIT
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XMC
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_destroy_brittania
+			icon = GFX_focus_generic_attack_denmark
+			x = 22
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_restore_benelux }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XNE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XNM
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XWA
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XPW
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XTY
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_no_more_gambling #no fun allowed
+			icon = GFX_focus_POL_prussia_line
+			x = 24
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_czech_submission }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+			
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XKR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XGF
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XRU
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XSO
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XSP
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_mop_up_south
+			icon = GFX_focus_XFR_attack_lesser_gaul
+			x = 26
+			y = 11
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_alsace_puppet focus = XRP_march_on_paris }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+			
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XAQ
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XLF
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XBR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XFW
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XNF
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_cointelpro
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 17
+			y = 12
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_fbi }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_cointelpro
+			}
+			mutually_exclusive = {
+				focus = XRP_sovereignty_commission
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_sovereignty_commission
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 19
+			y = 12
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_fbi }
+			available = {
+				NOT = {  }
+			}	
+			mutually_exclusive = {
+				focus = XRP_cointelpro
+			}
+			mutually_exclusive = {
+				focus = XRP_sovereignty_commission
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_clean_up_the_map
+			icon = GFX_focus_generic_invade_denmark
+			x = 22
+			y = 12
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_march_on_rome focus = XRP_destroy_brittania focus = XRP_mop_up_south }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XDK
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XJY
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XTR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XCT
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XFC
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XNI
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XIE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XCA
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XNR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XMD
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XW2
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_ally_against_cats
+			icon = GFX_focus_por_iberian_summit
+			x = 24
+			y = 12
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_march_on_rome focus = XRP_destroy_brittania focus = XRP_mop_up_south }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}	
+			mutually_exclusive = {
+				focus = XRP_ally_against_cats
+			}
+			mutually_exclusive = {
+				focus = XRP_fuck_you_iberia
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_fuck_you_iberia
+			icon = GFX_focus_generic_attack_nationalist_spain_focus
+			x = 26
+			y = 12
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_march_on_rome focus = XRP_destroy_brittania focus = XRP_mop_up_south }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}
+			mutually_exclusive = {
+				focus = XRP_ally_against_cats
+			}
+			mutually_exclusive = {
+				focus = XRP_fuck_you_iberia
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XPY
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XBC
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XAR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XPS
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XHP
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = XGL
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_die_for_the_flag
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 15
+			y = 13
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_deport_germans focus = XRP_benevolent_dominance  }
+			available = {
+				NOT = {  }
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_no_quarter
+			#icon = GFX_focus_POL_reassert_silesian_claims
+			x = 18
+			y = 13
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_cointelpro focus = XRP_sovereignty_commission  }
+			available = {
+				NOT = {  }
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_demand_subjugation
+			icon = GFX_focus_generic_free_iberia
+			x = 24
+			y = 13
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+			cost = 5
+			prerequisite = { focus =  XRP_ally_against_cats  }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = XRP_no_pets_allowed
+			icon = GFX_focus_ARG_establish_the_free_association
+			x = 26
+			y = 13
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_fuck_you_iberia  }
+			available = {
+				NOT = {  XRP = { is_subject = yes }}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				create_wargoal = {
+					target = XAD
+					type = annex_everything
+				}
+			}
+		}
+		focus = {
+			id = XRP_america_over_all
+			icon = GFX_focus_XRP_american_dominance
+			x = 21
+			y = 14
+			#relative_position_id = 
+			allow_branch = { has_country_flag = XRP_flag1  }
+
+			cost = 5
+			prerequisite = { focus =  XRP_die_for_the_flag  }
+			prerequisite = { focus =  XRP_no_quarter  }
+			prerequisite = { focus =  XRP_demand_subjugation focus = XRP_no_pets_allowed  }
+			available = {
+				NOT = {  }
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_ideas = XRP_total_dominance
+			}
+		}
+
 }
 

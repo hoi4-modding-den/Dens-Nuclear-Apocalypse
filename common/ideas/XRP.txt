@@ -311,6 +311,20 @@ ideas = {
 			}						
 		}
 
+		#Moderate Ideas#
+
+
+		#Hardliner Ideas#
+		XRP_total_dominance = {
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 1
+				research_speed_factor = 0.1
+				justify_war_goal_time = -0.5
+			}
+		}
+
 		#Army Ideas#
 		XRP_american_army = {
 			picture = usa_desegregation_1

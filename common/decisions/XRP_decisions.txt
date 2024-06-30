@@ -78,6 +78,858 @@ XRP_puppets = {
 			factor = 200
 		}
 	}
+	XRP_luxemburg_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_luxemburg_states
+			NOT = { has_country_flag = XRP_luxemburg_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_luxemburg_states }
+			has_country_flag = XRP_luxemburg_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_luxemburg_states
+			NOT = { has_country_flag = XRP_luxemburg_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.2 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.2 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_belgium_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_belgium_states
+			NOT = { has_country_flag = XRP_belgium_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_belgium_states }
+			has_country_flag = XRP_belgium_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_belgium_states
+			NOT = { has_country_flag = XRP_belgium_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.3 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.3 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_dutch_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_dutch_states
+			NOT = { has_country_flag = XRP_dutch_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_dutch_states }
+			has_country_flag = XRP_dutch_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_dutch_states
+			NOT = { has_country_flag = XRP_dutch_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.4 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.4 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_german_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_german_states
+			NOT = { has_country_flag = XRP_german_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_german_states }
+			has_country_flag = XRP_german_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_german_states
+			NOT = { has_country_flag = XRP_german_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.5 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.5 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_danish_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_danish_states
+			NOT = { has_country_flag = XRP_danish_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_danish_states }
+			has_country_flag = XRP_danish_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_danish_states
+			NOT = { has_country_flag = XRP_danish_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.6 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.6 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_swiss_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_swiss_states
+			NOT = { has_country_flag = XRP_swiss_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_swiss_states }
+			has_country_flag = XRP_swiss_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_swiss_states
+			NOT = { has_country_flag = XRP_swiss_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.7 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.7 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_austria_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_austria_states
+			NOT = { has_country_flag = XRP_austria_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_austria_states }
+			has_country_flag = XRP_austria_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_austria_states
+			NOT = { has_country_flag = XRP_austria_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.8 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.8 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_italy_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_italy_states
+			NOT = { has_country_flag = XRP_italy_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_italy_states }
+			has_country_flag = XRP_italy_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_italy_states
+			NOT = { has_country_flag = XRP_italy_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.9 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.9 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_malta_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_malta_states
+			NOT = { has_country_flag = XRP_malta_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_malta_states }
+			has_country_flag = XRP_malta_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_malta_states
+			NOT = { has_country_flag = XRP_malta_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.10 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.10 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_tunisia_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_tunisia_states
+			NOT = { has_country_flag = XRP_tunisia_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_tunisia_states }
+			has_country_flag = XRP_tunisia_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_tunisia_states
+			NOT = { has_country_flag = XRP_tunisia_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.11 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.11 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_algeria_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_algeria_states
+			NOT = { has_country_flag = XRP_algeria_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_algeria_states }
+			has_country_flag = XRP_algeria_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_algeria_states
+			NOT = { has_country_flag = XRP_algeria_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.12 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.12 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_spain_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_spain_states
+			NOT = { has_country_flag = XRP_spain_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_spain_states }
+			has_country_flag = XRP_spain_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_spain_states
+			NOT = { has_country_flag = XRP_spain_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.13 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.13 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_portugal_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_portugal_states
+			NOT = { has_country_flag = XRP_portugal_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_portugal_states }
+			has_country_flag = XRP_portugal_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_portugal_states
+			NOT = { has_country_flag = XRP_portugal_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.14 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.14 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_irish_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_irish_states
+			NOT = { has_country_flag = XRP_irish_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_irish_states }
+			has_country_flag = XRP_irish_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_irish_states
+			NOT = { has_country_flag = XRP_irish_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.15 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.15 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_britain_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_britain_states
+			NOT = { has_country_flag = XRP_britain_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_britain_states }
+			has_country_flag = XRP_britain_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_britain_states
+			NOT = { has_country_flag = XRP_britain_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.16 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.16 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_czechia_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_czechia_states
+			NOT = { has_country_flag = XRP_czechia_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_czechia_states }
+			has_country_flag = XRP_czechia_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_czechia_states
+			NOT = { has_country_flag = XRP_czechia_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.17 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.17 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_slovakia_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_slovakia_states
+			NOT = { has_country_flag = XRP_slovakia_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_slovakia_states }
+			has_country_flag = XRP_slovakia_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_slovakia_states
+			NOT = { has_country_flag = XRP_slovakia_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.18 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.18 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_ukraine_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_ukraine_states
+			NOT = { has_country_flag = XRP_ukraine_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_ukraine_states }
+			has_country_flag = XRP_ukraine_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_ukraine_states
+			NOT = { has_country_flag = XRP_ukraine_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.19 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.19 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_slovenia_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_slovenia_states
+			NOT = { has_country_flag = XRP_slovenia_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_slovenia_states }
+			has_country_flag = XRP_slovenia_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_slovenia_states
+			NOT = { has_country_flag = XRP_slovenia_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.20 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.20 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_croatia_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_croatia_states
+			NOT = { has_country_flag = XRP_croatia_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_croatia_states }
+			has_country_flag = XRP_croatia_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_croatia_states
+			NOT = { has_country_flag = XRP_croatia_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.21 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.21 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_poland_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_poland_states
+			NOT = { has_country_flag = XRP_poland_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_poland_states }
+			has_country_flag = XRP_poland_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_poland_states
+			NOT = { has_country_flag = XRP_poland_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.22 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.22 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_hungary_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_hungary_states
+			NOT = { has_country_flag = XRP_hungary_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_hungary_states }
+			has_country_flag = XRP_hungary_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_hungary_states
+			NOT = { has_country_flag = XRP_hungary_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.23 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.23 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	XRP_morocco_puppet = {
+		icon = {
+			#key = GFX_decision_revolt
+		}
+		selectable_mission = yes
+		is_good = no
+		allowed = {
+			tag = XRP
+		}
+		activation = {
+			has_country_flag = XRP_morocco_states
+			NOT = { has_country_flag = XRP_morocco_states_annexed }
+		}
+		cancel_trigger  = {
+			OR = {
+			NOT = { has_country_flag = XRP_morocco_states }
+			has_country_flag = XRP_morocco_states_annexed 
+			}
+		}
+		available = {
+			has_country_flag = XRP_morocco_states
+			NOT = { has_country_flag = XRP_morocco_states_annexed }
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = XRP_annex_event.24 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = XRP_annex_event.24 }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
 #	XRP_french_puppet_return_territory = { #does not work yet
 #		icon = GFX_decision_hol_exchange_intelligence_data
 #		allowed = {

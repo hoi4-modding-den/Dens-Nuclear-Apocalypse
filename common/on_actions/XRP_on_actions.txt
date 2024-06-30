@@ -63,7 +63,7 @@ on_actions = {
 		35 = { set_state_flag = annexation_trigger_dutch } #Brabant
 		36 = { set_state_flag = annexation_trigger_dutch } #Friesland
 
-		42 = { set_state_flag = annexation_trigger_german } #Rhineland-Palatinate
+#		42 = { set_state_flag = annexation_trigger_german } #Rhineland-Palatinate/commented out for obvious reasons
 		50 = { set_state_flag = annexation_trigger_german } #Wurttemberg
 		51 = { set_state_flag = annexation_trigger_german } #Rhineland
 		52 = { set_state_flag = annexation_trigger_german } #Oberbayern
@@ -80,7 +80,7 @@ on_actions = {
 		64 = { set_state_flag = annexation_trigger_german } #Bezirk Engels
 		65 = { set_state_flag = annexation_trigger_german } #Bezirk Marx
 		909 = { set_state_flag = annexation_trigger_german } #Schleswig
-		983 = { set_state_flag = annexation_trigger_german } #Spangdahlem
+#		983 = { set_state_flag = annexation_trigger_german } #Spangdahlem/commented out for obvious reasons
 		984 = { set_state_flag = annexation_trigger_german } #Kassel
 
 		37 = { set_state_flag = annexation_trigger_danish } #Sjaelland
@@ -132,6 +132,7 @@ on_actions = {
 		459 = { set_state_flag = annexation_trigger_algeria } #Algiers
 		460 = { set_state_flag = annexation_trigger_algeria } #Constantine
 		513 = { set_state_flag = annexation_trigger_algeria } #Tlemcen
+		514 = { set_state_flag = annexation_trigger_algeria } #Algerian Desert
 
 		41 = { set_state_flag = annexation_trigger_spain } #Madrid
 		165 = { set_state_flag = annexation_trigger_spain } #Cataluna
@@ -234,10 +235,16 @@ on_actions = {
 		43 = { set_state_flag = annexation_trigger_hungary} #Northern Hungary
 		154 = { set_state_flag = annexation_trigger_hungary} #Alfold
 		155 = { set_state_flag = annexation_trigger_hungary} #Transdanubia
+
+		290 = { set_state_flag = annexation_trigger_morocco} #Rif
+		461 = { set_state_flag = annexation_trigger_morocco} #Casablanca
+		462 = { set_state_flag = annexation_trigger_morocco} #Marrakech
+		699 = { set_state_flag = annexation_trigger_morocco} #Western Sahara
+		783 = { set_state_flag = annexation_trigger_morocco} #Sidi Infi
         }
     }
-	on_daily_XRP = {
-		effect = {
+	on_daily_XRP = { #yes this probably lags the game a fair bit, but I don't know how else to do this, so suck it up
+		effect = { #france
 			if = {
 				limit = {
 					tag = XRP
@@ -253,5 +260,389 @@ on_actions = {
 				clr_country_flag  = XRP_french_states
 			}
 		}
+		effect = { #luxemburg
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_luxemburg
+						}
+					}
+				}
+				 set_country_flag = XRP_luxemburg_states
+			}
+			else = {
+				clr_country_flag  = XRP_luxemburg_states
+			}
+		}
+		effect = { #belgium
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_belgium
+						}
+					}
+				}
+				 set_country_flag = XRP_belgium_states
+			}
+			else = {
+				clr_country_flag  = XRP_belgium_states
+			}
+		}
+		effect = { #dutch
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_dutch
+						}
+					}
+				}
+				 set_country_flag = XRP_dutch_states
+			}
+			else = {
+				clr_country_flag  = XRP_dutch_states
+			}
+		}
+		effect = { #german
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_german
+						}
+					}
+				}
+				 set_country_flag = XRP_german_states
+			}
+			else = {
+				clr_country_flag  = XRP_german_states
+			}
+		}
+		effect = { #danish
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_danish
+						}
+					}
+				}
+				 set_country_flag = XRP_danish_states
+			}
+			else = {
+				clr_country_flag  = XRP_danish_states
+			}
+		}
+		effect = { #swiss
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_swiss
+						}
+					}
+				}
+				 set_country_flag = XRP_swiss_states
+			}
+			else = {
+				clr_country_flag  = XRP_swiss_states
+			}
+		}
+		effect = { #austria
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_austria
+						}
+					}
+				}
+				 set_country_flag = XRP_austria_states
+			}
+			else = {
+				clr_country_flag  = XRP_austria_states
+			}
+		}
+		effect = { #italy
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_italy
+						}
+					}
+				}
+				 set_country_flag = XRP_italy_states
+			}
+			else = {
+				clr_country_flag  = XRP_italy_states
+			}
+		}
+		effect = { #malta
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_malta
+						}
+					}
+				}
+				 set_country_flag = XRP_malta_states
+			}
+			else = {
+				clr_country_flag  = XRP_malta_states
+			}
+		}
+		effect = { #tunisia
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_tunisia
+						}
+					}
+				}
+				 set_country_flag = XRP_tunisia_states
+			}
+			else = {
+				clr_country_flag  = XRP_tunisia_states
+			}
+		}
+		effect = { #algeria
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_algeria
+						}
+					}
+				}
+				 set_country_flag = XRP_algeria_states
+			}
+			else = {
+				clr_country_flag  = XRP_algeria_states
+			}
+		}
+		effect = { #spain
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_spain
+						}
+					}
+				}
+				 set_country_flag = XRP_spain_states
+			}
+			else = {
+				clr_country_flag  = XRP_spain_states
+			}
+		}
+		effect = { #portugal
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_portugal
+						}
+					}
+				}
+				 set_country_flag = XRP_portugal_states
+			}
+			else = {
+				clr_country_flag  = XRP_portugal_states
+			}
+		}
+		effect = { #irish
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_irish
+						}
+					}
+				}
+				 set_country_flag = XRP_irish_states
+			}
+			else = {
+				clr_country_flag  = XRP_irish_states
+			}
+		}
+		effect = { #britain
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_britain
+						}
+					}
+				}
+				 set_country_flag = XRP_britain_states
+			}
+			else = {
+				clr_country_flag  = XRP_britain_states
+			}
+		}
+		effect = { #czechia
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_czechia
+						}
+					}
+				}
+				 set_country_flag = XRP_czechia_states
+			}
+			else = {
+				clr_country_flag  = XRP_czechia_states
+			}
+		}
+		effect = { #slovakia
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_slovakia
+						}
+					}
+				}
+				 set_country_flag = XRP_slovakia_states
+			}
+			else = {
+				clr_country_flag  = XRP_slovakia_states
+			}
+		}
+		effect = { #ukraine
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_ukraine
+						}
+					}
+				}
+				 set_country_flag = XRP_ukraine_states
+			}
+			else = {
+				clr_country_flag  = XRP_ukraine_states
+			}
+		}
+		effect = { #slovenia
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_slovenia
+						}
+					}
+				}
+				 set_country_flag = XRP_slovenia_states
+			}
+			else = {
+				clr_country_flag  = XRP_slovenia_states
+			}
+		}
+		effect = { #croatia
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_croatia
+						}
+					}
+				}
+				 set_country_flag = XRP_croatia_states
+			}
+			else = {
+				clr_country_flag  = XRP_croatia_states
+			}
+		}
+		effect = { #poland
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_poland
+						}
+					}
+				}
+				 set_country_flag = XRP_poland_states
+			}
+			else = {
+				clr_country_flag  = XRP_poland_states
+			}
+		}
+		effect = { #hungary
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_hungary
+						}
+					}
+				}
+				 set_country_flag = XRP_hungary_states
+			}
+			else = {
+				clr_country_flag  = XRP_hungary_states
+			}
+		}
+		effect = { #morocco
+			if = {
+				limit = {
+					tag = XRP
+					AND = {
+						any_owned_state = {
+							has_state_flag = annexation_trigger_morocco
+						}
+					}
+				}
+				 set_country_flag = XRP_morocco_states
+			}
+			else = {
+				clr_country_flag  = XRP_morocco_states
+			}
+		}
 	}
+	on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    tag = XRP
+                    FROM = {
+                        OR = {
+                            tag = XAP
+                            tag = XGE
+                        }
+                    }
+                }
+                country_event = XRP_natural_event.8
+            }
+        }
+    }
 }

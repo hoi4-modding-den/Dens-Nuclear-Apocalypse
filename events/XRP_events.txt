@@ -208,7 +208,7 @@ country_event = { #democratic overthrow
 		ai_chance = {
 			base = 100
 		}
-			news_event = {id = XRP_news_event.2}
+			news_event = {id = XRP_news_event.4}
 			add_named_threat = {
 				threat = 5
 				name = XRP_violent_overthrow
@@ -293,6 +293,34 @@ country_event = { #meeting with general
         name = XRP.NE_7.a
 		ai_chance = {
 			base = 100
+		}
+    	}
+}
+country_event = { #northern war
+    id = XRP_natural_event.8
+    title = XRP.NE_8.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.NE_8.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.NE_8.a
+		ai_chance = {
+			base = 100
+		}
+		every_country = {
+			limit = {
+				has_country_flag = XRP_join_northern_war
+			}
+			create_wargoal = {
+				target = XAP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = XGE
+				type = annex_everything
+			}
 		}
     	}
 }
@@ -441,6 +469,48 @@ news_event = { #Democratic Coup
 			}
 		}
 }
+news_event = { #Expansionist ambitions announced
+    id = XRP_news_event.5
+    title = XRP.WE_5.t
+    picture = GFX_news_event_soldiers_marching
+    desc = XRP.WE_5.d
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = no
+		option = {
+       		name = XRP.WE_5.a
+			   trigger = {	
+				has_government = democratic 
+				}
+		}
+		option = {
+			name = XRP.WE_5.b
+			trigger = {	
+				has_government = fascism 
+				NOT = {
+					tag = XRP
+				}
+			}
+		}
+		option = {
+			name = XRP.WE_5.c
+			trigger = {	
+				has_government = communism 
+			}
+		}
+		option = {
+			name = XRP.WE_5.e
+			trigger = {	
+				has_government = neutrality 
+			}
+		}
+		option = {
+			name = XRP.WE_5.f
+			trigger = {	
+				tag = XRP 
+			}
+		}
+}
 
 
 #Focus Events#
@@ -545,6 +615,490 @@ country_event = { #exile event
 			base = 100
 		}
     	}
+}
+
+country_event = { #Alsace puppet event sent to them
+    id = XRP_focus_event.8
+    title = XRP.FE_5.t
+    picture = GFX_report_event_ast_army
+    desc = XRP.FE_5.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_5.a #fuck off
+		ai_chance = {
+			base = 90
+		}
+		XRP = {
+			country_event = XRP_focus_event.9
+		}
+
+    }
+	option = {
+        name = XRP.FE_5.b #okay
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0 #XAL fascists are Germans
+				XAL = { has_government = fascism }
+			}
+			modifier = {
+				factor = 2 #I mean, we're already one, right?
+				XAL = { is_subject = yes }
+			}
+		}
+		XRP = {
+			country_event = XRP_focus_event.10
+		}
+    }
+}
+country_event = { #Alsace refuses
+    id = XRP_focus_event.9
+    title = XRP.FE_6.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_6.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_6.a #kill
+		ai_chance = {
+			base = 100
+		}
+		declare_war_on = {
+			target = XAL
+		}
+    }
+}
+country_event = { #Alsace accepts
+    id = XRP_focus_event.10
+    title = XRP.FE_7.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_7.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_7.a #lets get invading already
+		ai_chance = {
+			base = 100
+		}
+		puppet = {
+			target = XAL
+			end_wars = no
+		}
+		XAL = {
+			set_cosmetic_tag = XRP_france
+			set_country_flag = XRP_french_puppet
+			kill_ideology_leader = fascism
+		}
+    }
+}
+
+country_event = { #Czech puppet event sent to them
+    id = XRP_focus_event.11
+    title = XRP.FE_8.t
+    picture = GFX_report_event_ast_army
+    desc = XRP.FE_8.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_8.a #fuck off
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 0 #no use fighting with no divisions
+				strength_ratio = {
+					tag = XRP
+					ratio > 0.01
+				}
+			}
+		}
+
+		XRP = {
+			country_event = XRP_focus_event.12
+		}
+
+    }
+	option = {
+        name = XRP.FE_8.b #okay
+		ai_chance = {
+			base = 10
+		}
+		XRP = {
+			country_event = XRP_focus_event.13
+		}
+    }
+}
+country_event = { #Czechs refuse
+    id = XRP_focus_event.12
+    title = XRP.FE_9.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_9.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_9.a #kill
+		ai_chance = {
+			base = 100
+		}
+		declare_war_on = {
+			target = XCM
+		}
+    }
+}
+country_event = { #Czechs accepts
+    id = XRP_focus_event.13
+    title = XRP.FE_10.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_10.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_10.a 
+		ai_chance = {
+			base = 100
+		}
+		puppet = {
+			target = XCM
+			end_wars = no
+		}
+		XCM = {
+			set_cosmetic_tag = XRP_czech
+			set_country_flag = XRP_czech_puppet
+		}
+		transfer_state = 66
+    }
+}
+country_event = { #demand north rhine from Laagland
+    id = XRP_focus_event.14
+    title = XRP.FE_11.t
+    picture = GFX_report_event_ast_army
+    desc = XRP.FE_11.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_11.a #fuck off
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0 #no use fighting with no divisions
+				strength_ratio = {
+					tag = XRP
+					ratio > 0.01
+				}
+			}
+			modifier = {
+				factor = 0.5 
+				strength_ratio = {
+					tag = XRP
+					ratio > 1
+				}
+			}
+		}
+
+		XRP = {
+			country_event = XRP_focus_event.15
+		}
+    }
+	option = {
+        name = XRP.FE_11.b #okay
+		ai_chance = {
+			base = 50
+		}
+		XRP = {
+			country_event = XRP_focus_event.16
+		}
+    }
+}
+country_event = { #Laagland refuses
+    id = XRP_focus_event.15
+    title = XRP.FE_12.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_12.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_12.a #kill
+		ai_chance = {
+			base = 75
+		}
+		create_wargoal = {
+			target = XNL
+			type = annex_everything
+		}
+    }
+	option = {
+        name = XRP.FE_12.b #sorry
+		ai_chance = {
+			base = 25
+		}
+		add_political_power = -50
+    }
+}
+country_event = { #Laagland accepts
+    id = XRP_focus_event.16
+    title = XRP.FE_13.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_13.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_13.a 
+		ai_chance = {
+			base = 100
+		}
+		transfer_state = 51
+    }
+}
+country_event = { #demand stuttgart from 00-44
+    id = XRP_focus_event.17
+    title = XRP.FE_14.t
+    picture = GFX_report_event_ast_army
+    desc = XRP.FE_14.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_14.a #fuck off
+		ai_chance = {
+			base = 75
+			modifier = {
+				factor = 0 #no use fighting with no divisions
+				strength_ratio = {
+					tag = XRP
+					ratio > 0.01
+				}
+			}
+			modifier = {
+				factor = 0.5 
+				strength_ratio = {
+					tag = XRP
+					ratio > 1
+				}
+			}
+		}
+
+		XRP = {
+			country_event = XRP_focus_event.15
+		}
+    }
+	option = {
+        name = XRP.FE_14.b #okay
+		ai_chance = {
+			base = 25
+		}
+		XRP = {
+			country_event = XRP_focus_event.16
+		}
+    }
+}
+country_event = { #00-44 refuses
+    id = XRP_focus_event.18
+    title = XRP.FE_15.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_15.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_15.a #kill
+		ai_chance = {
+			base = 75
+			modifier = {
+				factor = 0.5 
+				strength_ratio = {
+					tag = XRP
+					ratio > 1
+				}
+			}
+		}
+
+		create_wargoal = {
+			target = XOO
+			type = annex_everything
+		}
+    }
+	option = {
+        name = XRP.FE_15.b #sorry
+		ai_chance = {
+			base = 25
+		}
+		add_political_power = -50
+    }
+}
+country_event = { #00-44 accepts
+    id = XRP_focus_event.19
+    title = XRP.FE_16.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_16.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_16.a 
+		ai_chance = {
+			base = 100
+		}
+		transfer_state = 50
+    }
+}
+country_event = { #deal with OO-44
+    id = XRP_focus_event.20
+    title = XRP.FE_17.t
+    picture = GFX_report_event_military_planning
+    desc = XRP.FE_17.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_17.a #sure
+		ai_chance = {
+			base = 75
+			modifier = {
+				factor = 0.5 #doesn't believe they could do it
+				strength_ratio = {
+					tag = XRP
+					ratio < 0.5
+				}
+			}
+		}
+		XRP = {
+			country_event = XRP_focus_event.22
+		}
+    }
+	option = {
+        name = XRP.FE_17.b #go away
+		ai_chance = {
+			base = 25
+		}
+		XRP = {
+			country_event = XRP_focus_event.21
+		}
+    }
+}
+country_event = { #00-44 refuses
+    id = XRP_focus_event.21
+    title = XRP.FE_18.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_18.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_18.a #ungrateful bastards, give us shit instead
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0.5 
+				strength_ratio = {
+					tag = XOO
+					ratio > 1
+				}
+			}
+		}
+		XOO = {
+			country_event = XRP_focus_event.17
+		}
+    }
+	option = {
+        name = XRP.FE_18.b #just shrug it off
+		ai_chance = {
+			base = 75
+		}
+		add_political_power = 50
+    }
+}
+country_event = { #00-44 accepts
+    id = XRP_focus_event.22
+    title = XRP.FE_19.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_19.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_19.a 
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = XRP_dealwithmephisto_success
+		XOO = { set_country_flag = XRP_join_northern_war }
+    }
+}
+country_event = { #deal with Czechs
+    id = XRP_focus_event.23
+    title = XRP.FE_17.t
+    picture = GFX_report_event_military_planning
+    desc = XRP.FE_17.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_17.a #sure
+		ai_chance = {
+			base = 75
+			modifier = {
+				factor = 0.5 #doesn't believe they could do it
+				strength_ratio = {
+					tag = XRP
+					ratio < 0.5
+				}
+			}
+		}
+		XRP = {
+			country_event = XRP_focus_event.25
+		}
+    }
+	option = {
+        name = XRP.FE_17.b #go away
+		ai_chance = {
+			base = 25
+		}
+		XRP = {
+			country_event = XRP_focus_event.24
+		}
+    }
+}
+country_event = { #Czechs refuse
+    id = XRP_focus_event.24
+    title = XRP.FE_21.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_21.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_18.b #fine
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -15
+    }
+}
+country_event = { #Czechs accepts
+    id = XRP_focus_event.25
+    title = XRP.FE_22.t
+    #picture = GFX_report_event_FIN_petsamo_melting_plant
+    desc = XRP.FE_22.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = XRP.FE_19.a 
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = XRP_dealwithmephisto_success
+		XCM = { set_country_flag = XRP_join_northern_war }
+    }
 }
 
 #economy events#
@@ -676,9 +1230,9 @@ country_event = {
 		}
 		#set_country_flag = XRP_french_states_annexed #temp until puppet added
 		create_dynamic_country = {
-			original_tag = XPR
+			original_tag = XMC
 			set_country_flag = XRP_french_puppet
-			transfer_state = 705
+			transfer_state = 385
 			set_cosmetic_tag = XRP_france
 		}
 		every_country = {
@@ -690,6 +1244,10 @@ country_event = {
 				limit = {
 					has_state_flag = annexation_trigger_french 
 					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
 				}
 				transfer_state_to = PREV
 			} 
@@ -700,11 +1258,12 @@ country_event = {
 				add_core_of = PREV
 			} 
 		}
-		LIB = { transfer_state = 705 }
-		
+		LIB = { transfer_state = 385 }
+		custom_effect_tooltip = XRP_claimedcored_territory
 	}
  #note - later, add an option for player to annex Calais/Alsace-Lorraine and still be allowed to make a french puppet later
-	
+	#If you have time, anyways
+
 		option = {
 			name = XRP.AE_1.b
 			ai_chance = {
@@ -717,10 +1276,1276 @@ country_event = {
 		}
 	
 }
+country_event = {
+    id = XRP_annex_event.2 #luxemburg
+    title = XRP.AE_2.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_2.d
+    is_triggered_only = yes
+    fire_only_once = no
 
-	
+	option = {
+        name = XRP.AE_2.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_luxemburg_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_luxemburg
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_luxemburg_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_luxemburg
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_luxemburg
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+		custom_effect_tooltip = XRP_claimedcored_territory
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_luxemburg_states_annexed
+		add_political_power = -25
+		add_stability = -0.025
+		add_war_support = -0.025
+	}
+}
+country_event = {
+    id = XRP_annex_event.3 #belgium
+    title = XRP.AE_3.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_3.d
+    is_triggered_only = yes
+    fire_only_once = no
 
+	option = {
+        name = XRP.AE_3.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_belgium_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_belgium
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_belgium_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_belgium
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_belgium
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+		custom_effect_tooltip = XRP_claimedcored_territory
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_belgium_states_annexed
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+country_event = {
+    id = XRP_annex_event.4 #dutch
+    title = XRP.AE_4.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_4.d
+    is_triggered_only = yes
+    fire_only_once = no
 
+	option = {
+        name = XRP.AE_4.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_dutch_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_dutch
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_dutch_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_dutch
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_dutch
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+		custom_effect_tooltip = XRP_claimedcored_territory
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_dutch_states_annexed
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+country_event = {
+    id = XRP_annex_event.5 #german
+    title = XRP.AE_5.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_5.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_5.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_german_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_germany
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_german_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_german
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_german
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+		custom_effect_tooltip = XRP_claimedcored_territory
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_german_states_annexed
+		add_political_power = -100
+		add_stability = -0.20
+		add_war_support = -0.1
+	}
+}
+country_event = {
+    id = XRP_annex_event.6 #danish
+    title = XRP.AE_6.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_6.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_6.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_danish_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_denmark
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_danish_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_danish
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_danish
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_danish_states_annexed
+		add_political_power = -25
+		add_stability = -0.025
+		add_war_support = -0.025
+	}
+}
+country_event = {
+    id = XRP_annex_event.7 #swiss
+    title = XRP.AE_7.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_7.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_7.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_swiss_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_swiss
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_swiss_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_swiss
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_swiss
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_swiss_states_annexed
+		add_political_power = -25
+		add_stability = -0.025
+		add_war_support = -0.025
+	}
+}
+country_event = {
+    id = XRP_annex_event.8 #austria
+    title = XRP.AE_8.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_8.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_8.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_austria_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_austria
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_austria_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_austria
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_austria
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_austria_states_annexed
+		add_political_power = -25
+		add_stability = -0.025
+		add_war_support = -0.025
+	}
+}
+country_event = {
+    id = XRP_annex_event.9 #italy
+    title = XRP.AE_9.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_9.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_9.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_italy_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_italy
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_italy_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_italy
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_italy
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_italy_states_annexed
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+country_event = {
+    id = XRP_annex_event.10 #malta
+    title = XRP.AE_10.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_10.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_10.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_malta_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_malta
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_malta_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_malta
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_malta
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_malta_states_annexed
+		add_political_power = -15
+		add_stability = -0.01
+		add_war_support = -0.01
+	}
+}
+country_event = {
+    id = XRP_annex_event.11 #tunisia
+    title = XRP.AE_11.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_11.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_11.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_tunisia_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_tunisia
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_tunisia_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_tunisia
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_tunisia
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_tunisia_states_annexed
+		add_political_power = -25
+		add_stability = -0.025
+		add_war_support = -0.025
+	}
+}
+country_event = {
+    id = XRP_annex_event.12 #algeria
+    title = XRP.AE_12.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_12.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_12.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_algeria_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_algeria
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_algeria_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_algeria
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_algeria
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_algeria_states_annexed
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+country_event = {
+    id = XRP_annex_event.13 #spain
+    title = XRP.AE_13.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_13.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_13.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_spain_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_spain
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_spain_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_spain
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_spain
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_spain_states_annexed
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+country_event = {
+    id = XRP_annex_event.14 #portugal
+    title = XRP.AE_14.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_14.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_14.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_portugal_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_portugal
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_portugal_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_portugal
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_portugal
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_portugal_states_annexed
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+country_event = {
+    id = XRP_annex_event.15 #irish
+    title = XRP.AE_15.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_15.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_15.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_irish_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_ireland
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_irish_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_irish
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_irish
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_irish_states_annexed
+		add_political_power = -33
+		add_stability = -0.033
+		add_war_support = -0.033
+	}
+}
+country_event = {
+    id = XRP_annex_event.16 #britain
+    title = XRP.AE_16.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_16.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_16.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_britain_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_united_kingdom
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_britain_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_britain
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_britain
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_britain_states_annexed
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+country_event = {
+    id = XRP_annex_event.17 #czechia
+    title = XRP.AE_17.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_17.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_17.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_czechia_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_czech
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_czechia_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_czechia
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_czechia
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_czechia_states_annexed
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+country_event = {
+    id = XRP_annex_event.18 #slovakia
+    title = XRP.AE_18.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_18.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_18.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_slovakia_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_slovakia
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_slovakia_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_slovakia
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_slovakia
+				}
+				add_core_of = PREV
+				transfer_state_to = PREV #accounting for southern slovakia
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_slovakia_states_annexed
+		add_political_power = -33
+		add_stability = -0.033
+		add_war_support = -0.033
+	}
+}
+country_event = {
+    id = XRP_annex_event.19 #ukraine
+    title = XRP.AE_19.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_19.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_19.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_ukraine_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_ukraine
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_ukraine_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_ukraine
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_ukraine
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_ukraine_states_annexed
+		add_political_power = -25 #reduced effects due to only 1 province of Ukraine being in the play-area
+		add_stability = -0.025
+		add_war_support = -0.025
+	}
+}
+country_event = {
+    id = XRP_annex_event.20 #slovenia
+    title = XRP.AE_20.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_20.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_20.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_slovenia_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_slovenia
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_slovenia_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_slovenia
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_slovenia
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_slovenia_states_annexed
+		add_political_power = -25
+		add_stability = -0.025
+		add_war_support = -0.025
+	}
+}
+country_event = {
+    id = XRP_annex_event.21 #croatia
+    title = XRP.AE_21.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_21.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_21.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_croatia_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_croatia
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_croatia_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_croatia
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_croatia
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_croatia_states_annexed
+		add_political_power = -10 #reduced effects due to only Istria theoretically being in the play-area
+		add_stability = -0.01
+		add_war_support = -0.01
+	}
+}
+country_event = {
+    id = XRP_annex_event.22 #poland
+    title = XRP.AE_22.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_22.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_22.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_poland_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_poland
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_poland_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_poland
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_poland
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_poland_states_annexed
+		add_political_power = -75
+		add_stability = -0.075
+		add_war_support = -0.075
+	}
+}
+country_event = {
+    id = XRP_annex_event.23 #hungary
+    title = XRP.AE_23.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_23.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_23.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_hungary_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_hungary
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_hungary_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_hungary
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_hungary
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_hungary_states_annexed
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+country_event = {
+    id = XRP_annex_event.24 #morocco/accounting for potential XAD plans
+    title = XRP.AE_24.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XRP.AE_24.d
+    is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+        name = XRP.AE_24.a
+		ai_chance = {
+			base = 100
+		}
+		create_dynamic_country = {
+			original_tag = XMC
+			set_country_flag = XRP_morocco_puppet
+			transfer_state = 385
+			set_cosmetic_tag = XRP_morocco
+		}
+		every_country = {
+			limit = { has_country_flag = XRP_morocco_puppet }
+			XRP = {
+				puppet = PREV 
+			}
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_morocco
+					is_owned_by = XRP
+					NOT = {
+						is_claimed_by = XRP
+						is_core_of = XRP
+					}
+				}
+				transfer_state_to = PREV
+			} 
+			every_state = {
+				limit = {
+					has_state_flag = annexation_trigger_morocco
+				}
+				add_core_of = PREV
+			} 
+		}
+		LIB = { transfer_state = 385 }
+	}
+	option = {
+		name = XRP.AE_1.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = XRP_morocco_states_annexed
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
 
 #easter egg event#
 country_event = {

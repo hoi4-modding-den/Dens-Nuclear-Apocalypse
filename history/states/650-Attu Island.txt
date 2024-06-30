@@ -8,6 +8,7 @@ manpower=13
 	history=
 	{
 		owner = LIB # USA
+		add_claim_by = XRP
 		victory_points = {
 			13067 1 
 		}

@@ -1371,8 +1371,111 @@ XRP_democratic_color = {
     color = rgb { 20 133 237 }
     color_ui = rgb { 20 133 237 }
 }
+XRP_new_america_cosmetic = { #same as default
+	color = rgb { 0 82 155 }
+	color_ui = rgb { 0 82 155 }
+}
+XRP_occupation_zone = {
+	color = rgb { 0 20 137 }
+	color_ui = rgb { 0 20 137 }
+}
 XRP_france = {
     color = rgb { 28 58 114 }
     color_ui = rgb { 28 58 114 }
 }
-#will include more later#
+XRP_czech = {
+    color = rgb { 27 84 78 }
+    color_ui = rgb { 27 84 78 }
+}
+XRP_belgium = {
+    color = rgb { 99 86 4 }
+    color_ui = rgb { 99 86 4 }
+}
+XRP_dutch = {
+    color = rgb { 114 63 19 }
+    color_ui = rgb { 114 63 19 }
+}
+XRP_denmark = {
+    color = rgb { 73 56 45 }
+    color_ui = rgb { 73 56 45 }
+}
+XRP_swiss = {
+    color = rgb { 107 3 20 }
+    color_ui = rgb { 107 3 20 }
+}
+XRP_austria = {
+    color = rgb { 109 111 119 }
+    color_ui = rgb { 109 111 119 }
+}
+XRP_poland = {
+    color = rgb { 130 40 70 }
+    color_ui = rgb { 130 40 70 }
+}
+XRP_united_kingdom = {
+    color = rgb { 119 14 42 }
+    color_ui = rgb { 119 14 42 }
+}
+XRP_italy = {
+    color = rgb { 27 51 25 }
+    color_ui = rgb { 27 51 25 }
+}
+XRP_slovakia = {
+    color = rgb { 84 86 112 }
+    color_ui = rgb { 84 86 112 }
+}
+XRP_ukraine = {
+    color = rgb { 0 22 63 }
+    color_ui = rgb { 0 22 63 }
+}
+XRP_ireland = {
+    color = rgb { 0 35 3 }
+    color_ui = rgb { 0 35 3 }
+}
+XRP_slovenia = {
+    color = rgb { 45 80 114 }
+    color_ui = rgb { 45 80 114 }
+}
+XRP_croatia = {
+    color = rgb { 84 26 66 }
+    color_ui = rgb { 84 26 66 }
+}
+XRP_malta = {
+    color = rgb { 114 56 59 }
+    color_ui = rgb { 114 56 59 }
+}
+XRP_spain = {
+    color = rgb { 107 90 41 }
+    color_ui = rgb { 107 90 41 }
+}
+XRP_portugal = {
+    color = rgb { 18 53 32 }
+    color_ui = rgb { 18 53 32 }
+}
+XRP_algeria = {
+    color = rgb { 45 30 15 }
+    color_ui = rgb { 45 30 15 }
+}
+XRP_tunisia = {
+    color = rgb { 75 75 50 }
+    color_ui = rgb { 75 75 50 }
+}
+XRP_hungary = {
+    color = rgb { 112 57 44 }
+    color_ui = rgb { 112 57 44 }
+}
+XRP_luxemburg = {
+    color = rgb { 39 104 107 }
+    color_ui = rgb { 39 104 107 }
+}
+XRP_germany = {
+    color = rgb { 32 32 38 }
+    color_ui = rgb { 32 32 38 }
+}
+XRP_bavaria = {
+    color = rgb { 62 79 99 }
+    color_ui = rgb { 62 79 99 }
+}
+XRP_morocco = {
+    color = rgb { 51 21 0 }
+    color_ui = rgb { 51 21 0 }
+}
