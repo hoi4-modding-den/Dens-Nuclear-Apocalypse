@@ -84,7 +84,7 @@
 		y = 1
 		relative_position_id = XGE_prepare_the_high_command
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -107,7 +107,7 @@
 	}
 	focus = {
 		id = XGE_war_plan_north
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_por_workers_of_iberia
 		prerequisite = { focus = XGE_computerized_commander_in_chief }
 		
 		#mutually_exclusive = { focus =  }
@@ -115,7 +115,7 @@
 		y = 1
 		relative_position_id = XGE_computerized_commander_in_chief
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -126,7 +126,7 @@
 	}
 	focus = {
 		id = XGE_hoist_the_red_flag_over_hamburg
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_CHL_union_of_hispanic_republics
 		prerequisite = { focus = XGE_war_plan_north }
 		
 		#mutually_exclusive = { focus =  }
@@ -134,37 +134,63 @@
 		y = 1
 		relative_position_id = XGE_war_plan_north
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = XSH
+			}
 		}
 	}
 	focus = {
 		id = XGE_socialism_in_schleswig
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = XGE_hoist_the_red_flag_over_hamburg }
 		
 		mutually_exclusive = { focus = XGE_revolution_in_the_danish_strait }
 		x = 2
 		y = 1
 		relative_position_id = XGE_hoist_the_red_flag_over_hamburg
+		available = { 
+			controls_state = 58
+		}
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = XGE_schelswig_border_war_tt
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 58
+					num_provinces = 3
+					on_win = XGE.2
+					#on_lose = japan_border_conflict.3
+					#on_cancel = japan_border_conflict.4
+					modifier = 0.5
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 909
+					num_provinces = 2
+					#on_win = japan_border_conflict.3
+					#on_lose = japan_border_conflict.2
+					#on_cancel = japan_border_conflict.4
+				}
+			}			
 		}
 	}
 	focus = {
 		id = XGE_revolution_in_the_danish_strait
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_SWE_danish_communists
 		prerequisite = { focus = XGE_hoist_the_red_flag_over_hamburg }
 		
 		mutually_exclusive = { focus = XGE_socialism_in_schleswig }
@@ -172,18 +198,25 @@
 		y = 1
 		relative_position_id = XGE_hoist_the_red_flag_over_hamburg
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = XJY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XDK
+			}
 		}
 	}
 	focus = {
 		id = XGE_war_plan_west
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_por_workers_of_iberia
 		prerequisite = { focus = XGE_computerized_commander_in_chief }
 		
 		#mutually_exclusive = { focus =  }
@@ -191,7 +224,7 @@
 		y = 1
 		relative_position_id = XGE_computerized_commander_in_chief
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -202,7 +235,7 @@
 	}
 	focus = {
 		id = XGE_axe_out_the_anarchists
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_spr_crush_the_revolution
 		prerequisite = { focus = XGE_war_plan_west }
 		
 		#mutually_exclusive = { focus =  }
@@ -210,21 +243,27 @@
 		y = 1
 		relative_position_id = XGE_war_plan_west
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = XAP
+			}
 		}
 	}
 	focus = {
 		id = XGE_north_rhineland_campaign
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { 
 			focus = XGE_axe_out_the_anarchists 
 			focus = XGE_dismantle_the_capitalist_camp
+		}
+		available = {
+			controls_state = 57
 		}
 		
 		#mutually_exclusive = { focus =  }
@@ -232,38 +271,58 @@
 		y = 1
 		relative_position_id = XGE_axe_out_the_anarchists
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 57
+					num_provinces = 3
+					on_win = XGE.3
+					#on_lose = japan_border_conflict.3
+					#on_cancel = japan_border_conflict.4
+					modifier = 0.5
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 51
+					num_provinces = 3
+					#on_win = japan_border_conflict.3
+					#on_lose = japan_border_conflict.2
+					#on_cancel = japan_border_conflict.4
+				}
+			}		
 		}
 	}
 	
 	focus = {
 		id = XGE_re_educate_the_revisionists
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_FIN_parmis_devils
 		prerequisite = { focus = XGE_axe_out_the_anarchists }
 		
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = XGE_axe_out_the_anarchists
-
-		cost = 2
+		available = { NOT = { country_exists = XAP } }
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_stability = 0.05
+			country_event = XGE.8
 		}
 	}
 	focus = {
 		id = XGE_dismantle_the_capitalist_camp
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_generic_attack_usa
 		prerequisite = { focus = XGE_war_plan_west }
 		
 		#mutually_exclusive = { focus =  }
@@ -271,37 +330,41 @@
 		y = 1
 		relative_position_id = XGE_war_plan_west
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = XRP
+			}
 		}
 	}
 	focus = {
 		id = XGE_burn_down_their_bases_and_lies
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_ARG_anti_american_propaganda
 		prerequisite = { focus = XGE_dismantle_the_capitalist_camp }
 		
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = XGE_dismantle_the_capitalist_camp
-
-		cost = 2
+		available = { NOT = { country_exists = XRP } }
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = XGE.7
+			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = XGE_war_plan_south
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_por_workers_of_iberia
 		prerequisite = { focus = XGE_computerized_commander_in_chief }
 		
 		#mutually_exclusive = { focus =  }
@@ -309,7 +372,7 @@
 		y = 1
 		relative_position_id = XGE_computerized_commander_in_chief
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -320,7 +383,7 @@
 	}
 	focus = {
 		id = XGE_slay_the_mechanized_menace
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = XGE_war_plan_south }
 		
 		#mutually_exclusive = { focus =  }
@@ -328,37 +391,49 @@
 		y = 1
 		relative_position_id = XGE_war_plan_south
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = XOO
+			}
 		}
 	}
 	focus = {
 		id = XGE_master_their_machines
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = XGE_slay_the_mechanized_menace }
 		
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = XGE_slay_the_mechanized_menace
-
-		cost = 2
+		available = { NOT = { country_exists = XOO } }
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_0
+				amount = 200
+				producer = XGE
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_0
+				amount = 100
+				variant_name = "Armoured Tractor"
+			}
 		}
 	}
 	focus = {
 		id = XGE_neutralize_the_nazis
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_attack_germany
 		prerequisite = { focus = XGE_war_plan_south }
 		
 		#mutually_exclusive = { focus =  }
@@ -366,37 +441,40 @@
 		y = 1
 		relative_position_id = XGE_war_plan_south
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = XLH
+			}
 		}
 	}
 	focus = {
 		id = XGE_never_again_in_a_million_years
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_ITA_liberation_or_death
 		prerequisite = { focus = XGE_neutralize_the_nazis }
 		
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = XGE_neutralize_the_nazis
-
-		cost = 2
+		available = { NOT = { country_exists = XLH } }
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = XGE.6
 		}
 	}
 	focus = {
 		id = XGE_socialist_and_united
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		prerequisite = { focus = XGE_never_again_in_a_million_years }
 		prerequisite = { focus = XGE_north_rhineland_campaign }
 		prerequisite = { focus = XGE_burn_down_their_bases_and_lies }
@@ -407,24 +485,46 @@
 		}
 		prerequisite = { focus = XGE_re_educate_the_revisionists }
 		prerequisite = { focus = XGE_master_their_machines }
+		available = {
+			NOT = {
+				country_exists = XSH 
+				country_exists = XRP
+				country_exists = XOO
+				country_exists = XLH
+				country_exists = XAP
+			}
+		}
 		
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = XGE_north_rhineland_campaign
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+				XGE_cc_pp_factor = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_research_speed_variable = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_stability_factor_variable = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_war_support_factor_variable = 0.02
+			}
+			custom_effect_tooltip = XGE_buff_computer_clique
+			hidden_effect = { news_event = XGE.5 }
 		}
 	}
 	focus = {
 		id = XGE_establish_new_administrative_divisions
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = XGE_socialist_and_united }
 		
 		
@@ -433,18 +533,53 @@
 		y = 1
 		relative_position_id = XGE_socialist_and_united
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = XOO
+						is_core_of = XLH
+						is_core_of = XRP
+						is_core_of = XAP
+						is_core_of = XSH
+					}
+				}
+				add_core_of = ROOT
+			}
+			add_state_core = 909
+			add_state_core = 51
+			hidden_effect = {
+				remove_state_core = 848
+			}
+			hidden_effect = {
+				XGE_change_state_names = yes
+				848 = { transfer_state_to = XOO }
+				puppet = XOO
+				if = {
+					limit = { controls_state = 37 }
+					37 = { transfer_state_to = XDK }
+					911 = { transfer_state_to = XDK }
+					912 = { transfer_state_to = XDK }
+					99 = { transfer_state_to = XDK }
+					XDK = {
+						add_state_core = 99
+						add_state_core = 912
+					}
+					puppet = XDK
+				}
+			}
+
 		}
 	}
 	focus = {
 		id = XGE_re_establish_the_comecon
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_SOV_the_comecon
 		prerequisite = { focus = XGE_establish_new_administrative_divisions }
 		
 		
@@ -453,18 +588,31 @@
 		y = 1
 		relative_position_id = XGE_establish_new_administrative_divisions
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			create_faction = "Comecon"
+			every_country = {
+				limit = {
+					has_government = communism
+					is_puppet = no
+					is_subject = no
+					NOT = {
+						original_tag = XGF
+						original_tag = XGE
+					}
+				}
+				country_event = XGE.4
+			}
 			
 		}
 	}
 	focus = {
 		id = XGE_spread_the_revolution
-		icon = GFX_focus_XGE_defend_the_cybernetic_revolution
+		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = XGE_establish_new_administrative_divisions }
 		
 		
@@ -473,13 +621,14 @@
 		y = 1
 		relative_position_id = XGE_establish_new_administrative_divisions
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			clr_country_flag = XGE_no_declaring_wars
+			custom_effect_tooltip = XGE_allow_wars_tt
 		}
 	}
 }

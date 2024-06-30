@@ -11,5 +11,144 @@ country_event = { #debug event
 	option = { 
 		name = XGE.1.a
 		load_focus_tree = XGE_second
+		set_cosmetic_tag = XGE_ddr
+	}
+}
+country_event = { #schleswig event
+	id = XGE.2
+	title = XGE.2.t
+	desc = XGE.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.2.a
+		909 = { transfer_state_to = XGE }
+	}
+}
+country_event = { #rhineland event
+	id = XGE.3
+	title = XGE.3.t
+	desc = XGE.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.3.a
+		51 = { transfer_state_to = XGE }
+	}
+}
+country_event = { #comecon event
+	id = XGE.4
+	title = XGE.4.t
+	desc = XGE.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.4.a
+		XGE = {
+			add_to_faction = ROOT 
+		}
+		ai_chance = {
+            base = 1
+        }
+	}
+	option = { 
+		name = XGE.4.b
+		ai_chance = {
+            base = 0
+        }
+	}
+}
+news_event = {
+	id = XGE.5
+	title = XGE.5.t
+	desc = XGE.5.d
+	
+	picture = GFX_XGE_5_image
+	
+	major = yes
+	is_triggered_only = yes
+	option = {
+        name = XGE.5.a
+        trigger = {
+            has_government = communism
+        }
+    }
+    
+    option = {
+        name = XGE.5.b
+        trigger = {
+            NOT = { has_government = communism }
+        }
+    }
+}
+country_event = {
+	id = XGE.6
+	title = XGE.6.t
+	desc = XGE.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.6.a
+		add_manpower = -1
+	}
+}
+country_event = {
+	id = XGE.7
+	title = XGE.7.t
+	desc = XGE.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.7.a
+		
+	}
+}
+country_event = {
+	id = XGE.8
+	title = XGE.8.t
+	desc = XGE.8.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.8.a
+		
+	}
+}
+country_event = {
+	id = XGE.9
+	title = XGE.9.t
+	desc = XGE.9.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.9.a
+		
+	}
+}
+country_event = {
+	id = XGE.10
+	title = XGE.10.t
+	desc = XGE.10.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XGE.10.a
+		
 	}
 }

@@ -24,6 +24,7 @@ XGE_reconstruction_category = {
 			activate_mission = XGE_devastation_4to3
 			set_country_flag = XGE_4to3_flag
 			remove_mission = XGE_devastation_5to4
+			clr_country_flag = XGE_5to4_flag
 		}
 	}
 	XGE_devastation_4to3 = {

@@ -108,6 +108,7 @@ is_diplomatic_action_valid_generate_wargoal = {
 	NOT = {
 		original_tag = LIB
 		FROM = { original_tag = LIB }
+		
 	}
 }
 

@@ -2,7 +2,7 @@ XGE_decrease_devastation_time = {
 	#custom_effect_tooltip = XGE_decrease_devastation_tt
 	if = {
 		limit = {
-			has_active_mission = XGE_devastation_5to4
+			has_idea = XGE_devastation_5
 		}
 		add_days_mission_timeout = {
 			mission = XGE_devastation_5to4
@@ -12,7 +12,7 @@ XGE_decrease_devastation_time = {
 	
 	if = {
 		limit = {
-			has_active_mission = XGE_devastation_4to3
+			has_idea = XGE_devastation_4
 		}
 		add_days_mission_timeout = {
 			mission = XGE_devastation_4to3
@@ -22,7 +22,7 @@ XGE_decrease_devastation_time = {
 	
 	if = {
 		limit = {
-			has_active_mission = XGE_devastation_3to2
+			has_idea = XGE_devastation_3
 		}
 		add_days_mission_timeout = {
 			mission = XGE_devastation_3to2
@@ -32,12 +32,28 @@ XGE_decrease_devastation_time = {
 	
 	if = {
 		limit = {
-			has_active_mission = XGE_devastation_2to1
+			has_idea = XGE_devastation_2
 		}
 		add_days_mission_timeout = {
-			mission = XGE_devastation_3to2
+			mission = XGE_devastation_2to1
 			days = -20
 		}
 	}
 	
+}
+XGE_change_state_names = {
+	58 = { set_state_name = "Bezirk Ulbricht" }
+	909 = { set_state_name = "Bezirk Meyer" }
+	59 = { set_state_name = "Bezirk Thälmann" }
+	56 = { set_state_name = "Bezirk Zetkin" }
+	57 = { set_state_name = "Bezirk Eberlein" }
+	984 = { set_state_name = "Bezirk Mehring" }
+	51 = { set_state_name = "Bezirk Arendsee" }
+	55 = { set_state_name = "Bezirk Thalheimer" }
+	983 = { set_state_name = "Bezirk Grotewohl" }
+	42 = { set_state_name = "Bezirk Bästlein" }
+	53 = { set_state_name = "Bezirk Abshagem" }
+	54 = { set_state_name = "Bezirk Ackermann" }
+	50 = { set_state_name = "Bezirk Groh-Kummerlöw" }
+	52 = { set_state_name = "Bezirk Jendretzky" }
 }
