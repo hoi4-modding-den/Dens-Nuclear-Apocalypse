@@ -13,8 +13,11 @@
  XTY_ADJ:0 "Tynes" 
  
  ### Introduction Event ###
- XNM_intro_loc:0 "WIP \n\n§HCurrent Content:§! \n\n §G-Content 1.\n -Content 2.\n -Content 3."
- XNM_credits:0 "Mercian Content: §Hfuriousky/Sky§!\nIntro GUI: §CKasastul§!\nRest of the mod: \n§HThe HOI4 Modding Den§!"
+ XNM_intro_loc:0 "As the radiation on the surface began to settle, the people of Liuerpul, previously known as the grand city of Liverpool , began to surface from both their bunkers as well as their barricaded shacks. Since then, contact was able to be established between the various towns and remnants of the countryside, in which the §HRepublic of Mercia§! was officially founded as one of the §Hfirst political entity of this post-apocalyptic world.§! Following this grand success, the republic expanded to include the diverse variety of both humans and mutants, which today remains on of the core topics of Mercia.\n\nYet, in recent times, tensions have been rising both internally and externally, seen by the rise of §gpro-monarchist sentiments§! in the South as well as the fear of an incoming warmonger over the Trent River. It is up to the §CUDM§!, the current §2ruling democratic coalition§!, to §Hrestore the Republic to its golden era§! and repeal any foreign and domestic threats or crumble under the pressure. With many proposals being passed to try and salvage the situation such as the §HCompromise of 29'§! as well as the New Dawn Party being increasingly divided between the liberals and the minority conservatives, the future is uncertain. It may seem as Mercia may one day restructure its government in order to preserve its independence or even to expand its borders like never seen before. \n\n§HCurrent Content:§! \n\n §G-Save the Republic through liberal and conservative values.\n -Seek a return of the §Hancient Mercian monarchy§! and national pride.\n -Unite the §HBritish Isles§! through §7cooperation§! or §twarfare.§!"
+ XNM_credits:0 "Mercian Content: §Hfuriousky/Sky§!\nIntro GUI: §CKasastul§!\nRest of the mod: §HThe HOI4 Modding Den§!"
+
+ ### Bookmark History ###
+ XNM_bookmark_history:0 "While the bombs destroyed a nation, it never destroyed its spirit, which is the main reason the Mercian Republic was founded shortly after the fallout came to an end and the world revived once more. £GFX_XNM_propoganda However, after the 'Glorious Century' which followed the Republic's proclamation, the once prosperous Republic of Mercia now is at a standstill, while it has proven to still posses numerous economic capabilities, on the geopolitical and domestic sphere, it has drasticall weakened over the past years, which sees possibilities for powergrabs, coups, but also the possibility that the Republic would survive this dark era and enter a new age. "
 
  ### Leaders ###
  XNM_arthur_gainsborough:0 "Arthur Gainsborough"
@@ -166,11 +169,11 @@
  XNM_country.1.desc:0 "It has been reported that the activity within the West Midlands region has recently picked up a lot of steam due to the upcoming elections and the violence used against protesters within many districts of the city of Repton. However, it seems as if the rioters have gained momentum seized many arms depots in the area, and prevented the movements of our larger and more capable forces. Due to this development, Gainsborough has reinforced the local forces and has doubled down on the pacification of the region."
  XNM_country.1.a:0 "Send the local police reinforcements."
  XNM_country.2.title:0 "Local Governmental Collapse in Repton"
- XNM_country.2.desc:0 "WIP"
+ XNM_country.2.desc:0 "The temporary measures that we have recently put in place in order to try an contain the resurgent threat in the Lowland Region has faced much backlash while experiencing low success. It all crumbled down in the recent days as both the local police and governmental bodies in the area have completely and tragically collapsed. In contrary to popular belief, it seems as the pro-monarchist and nationalist sentiments which have caused instability have only kept rising due to various factors. However, according to an investigation made by the Mercian Intelligence Bureau, there is an alledged involvement of [XNE.GetName], which could serve as another proof that [XNE.GetName] has officially started to meddle with Mercian internal affairs, which could serve as proof that something darker may loom over the horizon, yet it could also be a untrue statement, the possibilities are endless."
  XNM_country.2.a:0 "React before this spirals out of control."
  XNM_country.2.b:0 "[XNE.GetName] is definitely involved!"  
  XNM_news.1.title:0 "Midlands Crisis in Mercia"
- XNM_news.1.desc:0 "It has been announced today in the early morning at 6:42AM by a decleration of press of the Gainsborough Administration that the volatile situation surrounding the Midlands Protests have completely spiraled out of control. Although originally based in Repton, the pro-monarchist movement has now gathered the support of the local nationalists in West Midlands, which rendered any police action practically useless. In light of these recent developments, the Republic's President, Arthur Gainsborough, is expected to make a decision on how to proceed with the situation in the coming days. In recent news, arriving reports from the Mercia counter-intelligence office has assigned a possible connections between the violent revolts in the Midlands and the government of [XNE.GetName], which could only mean an escelation of tensions between both foreign powers if proven to be true."
+ XNM_news.1.desc:0 "It has been announced today in the early morning at 6:42AM by a decleration of press of the Gainsborough Administration that the volatile situation surrounding the Midlands Protests have completely spiraled out of control. Although originally based in Repton, the pro-monarchist movement has now gathered the support of the local nationalists in West Midlands, which rendered any police action practically useless. In light of these recent developments, the Republic's President, Arthur Gainsborough, is expected to make a decision on how to proceed with the situation in the coming days. In recent news, arriving reports from the Mercian Intelligence Bureau has assigned a possible connections between the violent revolts in the Midlands and the government of [XNE.GetName], which could only mean an escelation of tensions between both foreign powers if proven to be true."
  XNM_news.1.a:0 "What a disaster!"
 
  XNM_focus.2.title:0 "Handling the Crisis"
@@ -185,7 +188,21 @@
  XNM_focus.4.title:0 "Response from the Workers"
  XNM_focus.4.desc:0 "WIP"
  XNM_focus.4.a:0 "Promote a more balanced approach"
- XNM_focus.4.b:0 "Stick to the plan."
+ XNM_focus.4.b:0 "Stick to the plan"
+
+ XNM_focus.5.title:0 "Sunrise Over the Horizon"
+ XNM_focus.5.desc:0 "WIP"
+ XNM_focus.5.a:0 "With great power comes great responsibility"
+
+ XNM_focus.6.title:0 "Meeting the Revolutionaries"
+ XNM_focus.6.desc:0 "WIP"
+ XNM_focus.6.a:0 "Vouch for socio-democratic elements"
+ XNM_focus.6.b:0 "Vocal support is enough"
+
+ XNM_focus.7.title:0 "The Equinox Deal"
+ XNM_focus.7.desc:0 "WIP"
+ XNM_focus.7.a:0 "The road to success is in cooperation!"
+ XNM_focus.7.b:0 "Promise concessions for assistance"
 
  ### Decisions ###
  XNM_election_season_category:0 "Election Season"
@@ -193,9 +210,10 @@
  ### Tooltips ###
  bez_membership_idea_tt:0 "\nWhile this national spirit is active, nations around our country will be §Gmore inclined§! to trade with us."
  compromise_of_29_idea_tt:0 "\nThe fragile §CUDM§! coalition may §Rrupture§! if the Compromise of 29' is broken or sidelined in politics."
- XNM_visit_to_the_heartland_tt:0 "§YArthur Gainsborough's§! speech will allow the §2New Dawn Party§! to gain §Y3§! seats in the upcoming elections." 
+ XNM_visit_to_the_heartland_tt:0 "§YArthur Gainsborough's§! speech will allow the §2New Dawn Party§! to gain §Y3§! parliamentary seats in the upcoming elections." 
+ XNM_NDP_gain_2_seats_tt:0 "The §2New Dawn Party§! will gain §Y2§! parliamentary seats in the upcoming elections."
  XNM_local_government_collapse_1:0 "\nWe will try to resolve the issue later while focusing on maintaining §Gstability§!."
- XNM_local_government_collapse_2:0 "\nThe government will openly blame [XNE.GetName] for this incident and hold them responsibles for the recent troubles. \n\n§RThis may have dire consequences in the future.§!"
+ XNM_local_government_collapse_2:0 "\nThe government will openly §Hblame [XNE.GetName]§! for this incident and hold them responsibles for the recent troubles. \n\n§RThis may have dire consequences in the future.§!"
  XNM_majority_seats:0 "The current coalition or party has a §Gmajority§! in the §OGrand Mercian Council.§!"       
  
  ### Set Flags ###

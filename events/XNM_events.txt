@@ -99,6 +99,55 @@ country_event = {
 	}
 }
 
+# Support from the UDM
+country_event = {
+	id = XNM_focus.5
+	title = XNM_focus.5.title
+	desc = XNM_focus.5.desc
+	picture = GFX_report_event_SWI_assembly_hall
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNM_focus.5.a
+		custom_effect_tooltip = XNM_NDP_gain_2_seats_tt	
+		XNM = {
+			set_country_flag = XNM_support_from_the_UDM
+		}		
+		ai_chance = { factor = 1 }	
+	}
+}
+
+# Approach Thorne
+country_event = {
+	id = XNM_focus.6
+	title = XNM_focus.6.title
+	desc = XNM_focus.6.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNM_focus.6.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
+# The Equinox Deal
+country_event = {
+	id = XNM_focus.7
+	title = XNM_focus.7.title
+	desc = XNM_focus.7.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XNM_focus.7.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
 # Midlands Situation out of Control 
 country_event = {
 	id = XNM_country.1
@@ -161,7 +210,7 @@ country_event = {
 				start_resistance = yes 
 				add_resistance_target = 60
 			}
-            set_resistance = 40
+            set_resistance = 35
 			set_compliance = 10
 		}
 		hidden_effect = { complete_national_focus = XNM_the_southern_border_crisis }

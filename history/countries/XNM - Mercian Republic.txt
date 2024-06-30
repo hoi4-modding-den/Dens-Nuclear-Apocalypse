@@ -18,7 +18,7 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "2233.6.15"
+	last_election = "2233.9.30"
 	election_frequency = 36
 	elections_allowed = yes
 }
@@ -129,5 +129,5 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	trench_warfare = 1
-	electronic_mechanical_engineering = 1
+	electrical_engineering = 1
 }

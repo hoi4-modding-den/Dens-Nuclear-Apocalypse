@@ -1,6 +1,13 @@
 spriteTypes = {
 ### XNM, XCT, XTY ###
 
+### Bookmark ###
+	spriteType = {
+		name = "GFX_XNM_propoganda"
+		texturefile = "gfx/XNM/XNM_propoganda.dds"
+		legacy_lazy_load = no
+	}	
+
 ### Ideas ###
 	spriteType = {
 		name = "GFX_idea_XNM_albion_booming_heart"

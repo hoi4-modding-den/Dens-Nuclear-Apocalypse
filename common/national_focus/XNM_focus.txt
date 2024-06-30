@@ -202,6 +202,10 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XNM_albion_booming_heart_worker
+				add_idea = XNM_albion_booming_heart_worker_1
+			}
 			add_resource = {
 				type = steel
 				amount = 17
@@ -277,6 +281,8 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			add_stability = 0.02
+			# unlock more decisions for "Election Season"			
 		}
 		
 		ai_will_do = {
@@ -296,6 +302,9 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			# Gets event "Sunrise is Over the Horizon"
+			country_event = XNM_focus.5
+			# unlock more decisions for "Election Season"			
 		}
 		
 		ai_will_do = {
@@ -316,6 +325,8 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			# gets event "Meeting the Revolutionaries"
+			country_event = XNM_focus.6
 		}
 		
 		ai_will_do = {
@@ -337,6 +348,7 @@ focus_tree = {
 		
 		completion_reward = {
 			# add event "A Deal with the Devil"
+			country_event = XNM_focus.7
 		}
 		
 		ai_will_do = {
@@ -348,7 +360,7 @@ focus_tree = {
 		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
 		x = 0
 		y = 2
-		cost = 1
+		cost = 10
 
 		relative_position_id = XNM_transnational_response
 		prerequisite = { focus = XNM_transnational_response }		
@@ -358,7 +370,9 @@ focus_tree = {
 			focus = XNM_automation_movement
 			focus = XNM_the_equinox_deal
 		}
-		available = {}
+		available = {
+			date = 2236.7.22
+		}
 		bypass = {}		
 		
 		completion_reward = {
@@ -375,7 +389,7 @@ focus_tree = {
 		icon = GFX_focus_FIN_mustapaidat
 		x = 0
 		y = 1
-		cost = 1
+		cost = 10
 
 		relative_position_id = XNM_the_autumn_elections
 		prerequisite = { focus = XNM_the_autumn_elections }	
@@ -650,7 +664,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_corpo_volontari_della_liberta
 		x = -10
 		y = 1
-		cost = 1
+		cost = 10
 
 		relative_position_id = XNM_the_autumn_elections
 		prerequisite = { focus = XNM_the_autumn_elections }	
@@ -671,7 +685,7 @@ focus_tree = {
 		icon = GFX_focus_EST_republican_defence_league
 		x = 10
 		y = 1
-		cost = 1
+		cost = 10
 
 		relative_position_id = XNM_the_autumn_elections
 		prerequisite = { focus = XNM_the_autumn_elections }	

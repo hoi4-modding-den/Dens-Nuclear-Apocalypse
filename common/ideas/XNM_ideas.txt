@@ -256,6 +256,28 @@ ideas = {
 				production_lack_of_resource_penalty_factor = 0.15
 			}
 		}
+		XNM_albion_booming_heart_worker_1 = {
+			picture = GFX_idea_XNM_albion_booming_heart_worker
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.18
+				production_speed_buildings_factor = 0.06
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				production_lack_of_resource_penalty_factor = 0.15
+				local_resources_factor = 0.05
+			}
+		}
 		XNM_industrial_robotic_enhancements = {
 			picture = generic_improved_industries
 			
