@@ -1610,7 +1610,7 @@ foreign_politics = {
 			FROM = {
 				has_country_leader = { character = XNF_napoleon_x ruling_only = yes }
 			}
-			
+			always = no
 		}
 
 		days_remove = 70
@@ -2849,11 +2849,7 @@ XFR_integration = {
 		}
 
 		available = {
-			has_completed_focus = XFR_take_down_stragglers
-			XNF = {
-				exists = no
-			}
-			
+			has_completed_focus = XFR_rhone_expedition			
 		}
 
 		target_trigger = { 
@@ -3506,11 +3502,7 @@ XFR_francia_cat = {
 		}
 
 		available = {
-			has_completed_focus = XFR_rhone_expedition2
-			XNF = {
-				exists = no
-			}
-			
+			has_completed_focus = XFR_rhone_expedition2	
 		}
 
 		target_trigger = { 

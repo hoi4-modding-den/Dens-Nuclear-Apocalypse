@@ -1467,19 +1467,41 @@ country_event = { # Nationalists sell Centre Pt. 2
         ai_chance = {
             base = 1
         } 
-        add_equipment_to_stockpile = {
-    		type = infantry_equipment
-    		amount = 10000
-    		producer = XAQ
-		}
-        XAQ = { country_event = { id = XFR_events.37 days = 1 } }
-        effect_tooltip = {
-            24 = { transfer_state_to = XAQ }
+        if = {
+            limit = {
+                has_country_flag = XFR_centre_deal_gaul
+            }
+            add_equipment_to_stockpile = {
+    	    	type = infantry_equipment
+    	    	amount = 10000
+            	producer = XAQ
+		    }
+            XAQ = { country_event = { id = XFR_events.37 days = 1 } }
+            effect_tooltip = {
+                24 = { transfer_state_to = XAQ }
+            }
+            hidden_effect = {
+                add_opinion_modifier = {
+                    target = XAQ
+                    modifier = XFR_fascist_cooperation
+                }
+            }
         }
-        hidden_effect = {
-            add_opinion_modifier = {
-                target = XAQ
-                modifier = XFR_fascist_cooperation
+        else = {
+            add_equipment_to_stockpile = {
+    	    	type = infantry_equipment
+    	    	amount = 5000
+            	producer = XPR
+		    }
+            XPR = { country_event = { id = XFR_events.37 days = 1 } }
+            effect_tooltip = {
+                24 = { transfer_state_to = XPR }
+            }
+            hidden_effect = {
+                add_opinion_modifier = {
+                    target = XPR
+                    modifier = XFR_fascist_cooperation
+                }
             }
         }
         

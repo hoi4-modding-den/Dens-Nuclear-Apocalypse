@@ -41,10 +41,7 @@ ideas = {
 			}
 
             cancel = {
-                OR = {
-                    has_government = democratic
-                    democratic < 0.01
-                }
+                has_government = democratic
             }
 
            removal_cost = -1

@@ -241,32 +241,20 @@ focus_tree = {
 	focus = {
 		id = XFR_investigate_centre
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = XFR_support_parliament focus = XFR_dennounce_democracy }
+		prerequisite = { focus = XFR_support_parliament }
 		#mutually_exclusive = { focus = }
 		x = 3
 		y = 1
 		relative_position_id = XFR_support_parliament
 
-		offset = {
-			x = -11
-			trigger = {
-				has_completed_focus = XFR_dennounce_democracy
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-		allow_branch = {
-			OR = {
-				NOT = { has_completed_focus = XFR_dennounce_democracy }
-				24 = { is_owned_and_controlled_by = ROOT }
-			}
-		}
-
 		available = {
 			24 = { is_owned_and_controlled_by = ROOT }
+			if = {
+				limit = {
+					has_completed_focus = XFR_dennounce_democracy
+				}
+				has_completed_focus = XFR_consolidate_power
+			}
 		}
 
 		bypass ={
@@ -462,9 +450,47 @@ focus_tree = {
 			add_stability = 0.1
 			24 = {
 				add_manpower = 15000
-				add_extra_state_shared_building_slots = 2
+				set_state_category = rural
 				add_dynamic_modifier = {
 					modifier = XFR_colonisation_state_modifier
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XFR_centre_restored
+		icon = GFX_focus_generic_low_cost_housing
+		prerequisite = { focus = XFR_colonise_centre }
+		prerequisite = { focus = XFR_revitalise_industry }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XFR_colonise_centre
+
+		available = {
+			24 = { is_owned_and_controlled_by = ROOT }
+			date > 2240.1.1
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {  FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			24 = {
+				add_manpower = 20000
+				set_state_category = large_town
+				remove_dynamic_modifier = {
+					modifier = XFR_colonisation_state_modifier
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
 				}
 			}
 		}
@@ -2414,6 +2440,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_BALANCE_OF_POWER }
 		completion_reward = {
 			remove_ideas = XFR_anarchists_appeased
+			hidden_effect = {
+				set_party_name = {
+            		ideology = communism
+            		long_name = "L'ombre rouge (The Red Shadow)"
+            		name = "L'ombre rouge"
+        		} 
+			}
 		}
 	}
 
@@ -3402,10 +3435,21 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					XAQ = { has_government = fascism }
+					XAQ = {
+						has_government = fascism
+						OR = {
+							has_civil_war = no
+							surrender_progress < 0.5
+						}
+					}
 				}
 				XAQ = { country_event = { id = XFR_events.36 days = 1 } }
+				set_country_flag = XFR_centre_deal_gaul
 				custom_effect_tooltip = XFR_prepare_for_civil_war_tt
+			}
+			else = {
+				XPR = { country_event = { id = XFR_events.36 days = 1 } }
+				custom_effect_tooltip = XFR_prepare_for_civil_war2_tt
 			}
 		}
 	}
@@ -3508,12 +3552,7 @@ focus_tree = {
 					name = XFR_fascist_coup
 				}
 				add_ideas = war_economy
-			if = {
-				limit = {
-					XAQ = { has_government = fascism }
-				}
-				country_event = { id = XFR_events.38 days = 2 }
-			}
+			country_event = { id = XFR_events.38 days = 2 }
 			start_civil_war = {
     			ruling_party = fascism
     			ideology = communism
@@ -3667,7 +3706,7 @@ focus_tree = {
 			add_war_support = 0.05
 			add_timed_idea = {
 				idea = XFR_civil_war_bonus
-				days = 14
+				days = 30
 			}
 		}
 	}
@@ -3775,6 +3814,13 @@ focus_tree = {
 			}
 			hidden_effect = {
 				country_event = { id = XFR_events.51 days = 7 }
+			}
+			hidden_effect = {
+				set_party_name = {
+            		ideology = communism
+            		long_name = "L'ombre rouge (The Red Shadow)"
+            		name = "L'ombre rouge"
+        		} 
 			}
 		}
 	}
@@ -4858,7 +4904,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_the_francian_economy
-		icon = GFX_focus_SWE_hygienic_housing
+		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = XFR_strengthen_national_security }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -6887,7 +6933,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_support_the_population
-		icon = GFX_focus_generic_low_cost_housing
+		icon = GFX_focus_SWE_hygienic_housing
 		prerequisite = { focus = XFR_civilian_industry_expansion }
 		#mutually_exclusive = { focus = }
 		x = 1
@@ -7183,7 +7229,7 @@ focus_tree = {
 
 	focus = {
 		id = XFR_agriculture
-		icon = GFX_focus_SOV_breadbasket_of_the_union
+		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = XFR_learn_from_mistakes }
 		#mutually_exclusive = { focus = }
 		x = -1

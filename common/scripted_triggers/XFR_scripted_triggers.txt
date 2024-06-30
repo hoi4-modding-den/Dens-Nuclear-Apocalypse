@@ -321,3 +321,25 @@ can_use_white_silver = {
 	original_tag = XFR
 	has_country_flag = white_silver_active
 }
+
+XFR_XAQ_can_change_state_name = {
+	OR = {
+		AND = {
+			ROOT = { original_tag = XAQ }
+			NOT = { FROM = { original_tag = XAQ } } #Not civil wars
+		}
+		AND = {
+			FROM = { original_tag = XAQ }
+			NOT = { ROOT = { original_tag = XAQ } } #Not civil wars
+		}
+	}
+	OR = {
+		FROM.FROM = { state = 19 }
+		FROM.FROM = { state = 20 }
+		FROM.FROM = { state = 23 }
+		FROM.FROM = { state = 25 }
+		FROM.FROM = { state = 26 }
+		FROM.FROM = { state = 33 }
+		FROM.FROM = { state = 974 }
+	}
+}

@@ -196,3 +196,261 @@ XFR_set_up_hamburg_zone_effect = {
 		} 
 	}
 }
+
+XFR_XAQ_change_state_name = {
+	
+	IF = { # Aquitaine / Aquitania Burdigalae
+		limit = {
+			FROM.FROM = {
+				state = 19 #Aquitaine
+			}
+		}
+		IF = { #GAUL CONTROLLER
+			limit = {
+				OR = {
+					ROOT = { original_tag = XAQ }
+					ROOT = { is_subject_of = XAQ }
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_19 }
+			set_province_name = { id = 9737 name = VICTORY_POINTS_9737 }
+		}
+		ELSE_IF = { #OTHER CONTROLLER
+			limit = {
+				OR = {
+					FROM = { original_tag = XAQ }
+					FROM = { is_subject_of = XAQ }
+				}
+				ROOT = {
+					NOT = {
+						OR = {
+							original_tag = XAQ 
+							is_subject_of = XAQ
+						}
+					}
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_19_XFR }
+			set_province_name = { id = 9737 name = VICTORY_POINTS_9737_XFR }
+			
+		}
+	}
+	IF = { # Rhone / Aquitania Burdigalae
+		limit = {
+			FROM.FROM = {
+				state = 20 #Rhone
+			}
+		}
+		IF = { #GAUL CONTROLLER
+			limit = {
+				OR = {
+					ROOT = { original_tag = XAQ }
+					ROOT = { is_subject_of = XAQ }
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_20_XAQ }
+			set_province_name = { id = 6613 name = VICTORY_POINTS_6613_XAQ }
+		}
+		ELSE_IF = { #OTHER CONTROLLER
+			limit = {
+				OR = {
+					FROM = { original_tag = XAQ }
+					FROM = { is_subject_of = XAQ }
+				}
+				ROOT = {
+					NOT = {
+						OR = {
+							original_tag = XAQ 
+							is_subject_of = XAQ
+						}
+					}
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_20 }
+			set_province_name = { id = 6613 name = VICTORY_POINTS_6613 }
+			
+		}
+	}
+	IF = { # Poitou / Aquitania Septentrionalis
+		limit = {
+			FROM.FROM = {
+				state = 23 #Poitou
+			}
+		}
+		IF = { #GAUL CONTROLLER
+			limit = {
+				OR = {
+					ROOT = { original_tag = XAQ }
+					ROOT = { is_subject_of = XAQ }
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_23 }
+			set_province_name = { id = 655 name = VICTORY_POINTS_655 }
+			set_province_name = { id = 6657 name = VICTORY_POINTS_6657 }
+		}
+		ELSE_IF = { #OTHER CONTROLLER
+			limit = {
+				OR = {
+					FROM = { original_tag = XAQ }
+					FROM = { is_subject_of = XAQ }
+				}
+				ROOT = {
+					NOT = {
+						OR = {
+							original_tag = XAQ 
+							is_subject_of = XAQ
+						}
+					}
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_23_XFR }
+			set_province_name = { id = 655 name = VICTORY_POINTS_655_XFR }
+			set_province_name = { id = 6657 name = VICTORY_POINTS_6657_XFR }
+			
+		}
+	}
+	IF = { # Auvergne / Augustonemetum
+		limit = {
+			FROM.FROM = {
+				state = 25 #Auvergne
+			}
+		}
+		IF = { #GAUL CONTROLLER
+			limit = {
+				OR = {
+					ROOT = { original_tag = XAQ }
+					ROOT = { is_subject_of = XAQ }
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_25 }
+			set_province_name = { id = 620 name = VICTORY_POINTS_620 }
+		}
+		ELSE_IF = { #OTHER CONTROLLER
+			limit = {
+				OR = {
+					FROM = { original_tag = XAQ }
+					FROM = { is_subject_of = XAQ }
+				}
+				ROOT = {
+					NOT = {
+						OR = {
+							original_tag = XAQ 
+							is_subject_of = XAQ
+						}
+					}
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_25_XFR }
+			set_province_name = { id = 620 name = VICTORY_POINTS_620_XFR }
+			
+		}
+	}
+	IF = { # Auvergne / Augustonemetum
+		limit = {
+			FROM.FROM = {
+				state = 26 #Auvergne
+			}
+		}
+		IF = { #GAUL CONTROLLER
+			limit = {
+				OR = {
+					ROOT = { original_tag = XAQ }
+					ROOT = { is_subject_of = XAQ }
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_26 }
+			set_province_name = { id = 3594 name = VICTORY_POINTS_3594 }
+		}
+		ELSE_IF = { #OTHER CONTROLLER
+			limit = {
+				OR = {
+					FROM = { original_tag = XAQ }
+					FROM = { is_subject_of = XAQ }
+				}
+				ROOT = {
+					NOT = {
+						OR = {
+							original_tag = XAQ 
+							is_subject_of = XAQ
+						}
+					}
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_26_XFR }
+			set_province_name = { id = 3594 name = VICTORY_POINTS_3594_XFR }
+		}
+	}
+	IF = { # Centre-Sud / Rubrumcastrum
+		limit = {
+			FROM.FROM = {
+				state = 33 #Centre-Sud
+			}
+		}
+		IF = { #GAUL CONTROLLER
+			limit = {
+				OR = {
+					ROOT = { original_tag = XAQ }
+					ROOT = { is_subject_of = XAQ }
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_33 }
+			set_province_name = { id = 651 name = VICTORY_POINTS_651 }
+			set_province_name = { id = 6651 name = VICTORY_POINTS_6651 }
+		}
+		ELSE_IF = { #OTHER CONTROLLER
+			limit = {
+				OR = {
+					FROM = { original_tag = XAQ }
+					FROM = { is_subject_of = XAQ }
+				}
+				ROOT = {
+					NOT = {
+						OR = {
+							original_tag = XAQ 
+							is_subject_of = XAQ
+						}
+					}
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_33_XFR }
+			set_province_name = { id = 651 name = VICTORY_POINTS_651_XFR }
+			set_province_name = { id = 6651 name = VICTORY_POINTS_6651_XFR }
+		}
+	}
+	IF = { # Nevers / Noviodunum
+		limit = {
+			FROM.FROM = {
+				state = 974 #Nevers
+			}
+		}
+		IF = { #GAUL CONTROLLER
+			limit = {
+				OR = {
+					ROOT = { original_tag = XAQ }
+					ROOT = { is_subject_of = XAQ }
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_974_XAQ }
+			set_province_name = { id = 9609 name = VICTORY_POINTS_9609_XAQ }
+		}
+		ELSE_IF = { #OTHER CONTROLLER
+			limit = {
+				OR = {
+					FROM = { original_tag = XAQ }
+					FROM = { is_subject_of = XAQ }
+				}
+				ROOT = {
+					NOT = {
+						OR = {
+							original_tag = XAQ 
+							is_subject_of = XAQ
+						}
+					}
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_974 }
+			set_province_name = { id = 9609 name = VICTORY_POINTS_9609 }
+		}
+	}
+
+}

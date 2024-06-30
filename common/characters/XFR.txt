@@ -425,6 +425,7 @@ characters = {
 			}
 			available = {
 				has_completed_focus = XFR_rebuild_the_fleet
+				has_idea = XFR_allow_women
 			}
 			traits = { naval_theorist }
 			cost = 50

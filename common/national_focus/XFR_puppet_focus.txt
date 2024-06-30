@@ -35,7 +35,7 @@ focus_tree = {
 		#relative_position_id = 
 
 		available = {
-			democratic < 0.1
+			democratic < 0.5
 			has_government = neutrality
 		}
 
@@ -47,10 +47,18 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				add = 10000
+				XFR = { has_completed_focus = XFR_dennounce_democracy }
+			}
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 100
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
 		}
 	}
 
@@ -99,7 +107,7 @@ focus_tree = {
 		relative_position_id = XPR_ideas_of_expansion
 
 		available = {
-			16 = {
+			15 = {
 				is_owned_and_controlled_by = ROOT
 			}
 			29 = {
@@ -114,12 +122,37 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			16 = {
+			15 = {
 				add_core_of = ROOT
 			}
 			29 = {
 				add_core_of = ROOT
 			}
+		}
+	}
+
+	focus = {
+		id = XPR_end_the_resistance
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = XPR_the_reign_of_terror_continues }
+		#mutually_exclusive = { focus = }
+		x = 1
+		y = 2
+		relative_position_id = XPR_the_reign_of_terror_continues
+
+		available = {
+			has_government = neutrality
+			democratic < 0.3
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { }
+		completion_reward = {
+			remove_ideas = XPR_democratic_resistance
 		}
 	}
 
@@ -133,7 +166,7 @@ focus_tree = {
 		#relative_position_id = 
 
 		available = {
-			democratic > 0.3
+			democratic > 0.1
 		}
 
 		allow_branch = {
@@ -143,11 +176,19 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
+			modifier = {
+				add = 10000
+				XFR = { has_completed_focus = XFR_support_parliament }
+			}
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			set_politics = { ruling_party = democratic elections_allowed = yes }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
 			swap_ideas = {
 				remove_idea = XPR_democratic_resistance
 				add_idea = XPR_democracy_triumphs
@@ -212,7 +253,7 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_burgundy
 		prerequisite = { focus = XPR_reform_the_constitution }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = XPR_reform_the_constitution
 
@@ -221,6 +262,7 @@ focus_tree = {
 			XFR = {
 				has_government = democratic
 				NOT = { has_war_with = ROOT }
+				exists = yes
 			}
 		}
 
@@ -237,6 +279,46 @@ focus_tree = {
 			}
 			reverse_add_opinion_modifier = {
 				target = XFR
+    			modifier = XFR_improve_relations
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+
+	focus = {
+		id = XPR_befriend_laagland
+		icon = GFX_focus_generic_befriend_laagland
+		prerequisite = { focus = XPR_reform_the_constitution }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XPR_reform_the_constitution
+
+		available = {
+			has_government = democratic
+			XNL = {
+				has_government = democratic
+				NOT = { has_war_with = ROOT }
+				exists = yes
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_opinion_modifier = {
+				target = XNL
+    			modifier = XFR_improve_relations
+			}
+			reverse_add_opinion_modifier = {
+				target = XNL
     			modifier = XFR_improve_relations
 			}
 			add_offsite_building = {

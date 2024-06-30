@@ -155,6 +155,13 @@ on_actions = {
 					remove_core_of = XFW
 				}
 			}
+			# Change Latin Names
+			if = {
+				limit = {
+					XFR_XAQ_can_change_state_name = yes
+				}
+				XFR_XAQ_change_state_name = yes
+			}
 		}
 	}	
 
