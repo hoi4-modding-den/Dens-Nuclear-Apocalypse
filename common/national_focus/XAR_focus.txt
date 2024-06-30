@@ -11,7 +11,9 @@
 	
 	default = no
 	reset_on_civilwar = no
-
+	
+	continuous_focus_position = { x = 2000 y = 1800 }
+	
 	focus = {
 		id = XAR_the_hero_of_sarayosa
 		icon = GFX_focus_mex_support_general_cedillo
@@ -103,7 +105,7 @@
 		
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		bypass = {
@@ -348,7 +350,6 @@
 				add_stability = -0.10
 				add_war_support = -0.10
 			}
-			
 		}
 	}	
 
@@ -377,6 +378,489 @@
                 type = annex_everything
             }
 			
+		}
+	}		
+
+	focus = {
+		id = XAR_integrating_asturias
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_sweep_into_the_sea}
+		available = {owns_state = 790}
+		mutually_exclusive = { }
+		relative_position_id = XAR_sweep_into_the_sea
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			790 = {add_core_of = XAR}
+			
+		}
+	}		
+	
+	focus = {
+		id = XAR_industrial_development_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 1
+
+		prerequisite = {focus = XAR_integrating_asturias}
+		mutually_exclusive = {focus = XAR_convert_homes}
+		relative_position_id = XAR_integrating_asturias
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			790 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}	
+	
+	focus = {
+		id = XAR_convert_homes
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 1
+
+		prerequisite = {focus = XAR_integrating_asturias}
+		mutually_exclusive = {focus = XAR_industrial_development_plan}
+		relative_position_id = XAR_integrating_asturias
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			790 = {
+			add_extra_state_shared_building_slots = 2			
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}	
+	
+	focus = {
+		id = XAR_education_now
+		icon = GFX_focus_research
+		x = 1
+		y = 1
+
+		prerequisite = {focus = XAR_industrial_development_plan focus = XAR_convert_homes} 
+		mutually_exclusive = { }
+		relative_position_id = XAR_industrial_development_plan
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_research_slot = 1
+			
+		}
+	}	
+	
+	focus = {
+		id = XAR_kick_down_the_door
+		icon = GFX_focus_FIN_motti_tactics
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_integrating_asturias } 
+		mutually_exclusive = { }
+		relative_position_id = XAR_integrating_asturias
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			declare_war_on = {
+                target = XBC
+                type = annex_everything
+            }
+			
+		}
+	}	
+
+	
+	focus = {
+		id = XAR_loot_the_basque
+		icon = GFX_focus_POL_riot_of_37
+		x = -1
+		y = 1
+
+		prerequisite = {focus = XAR_kick_down_the_door } 
+		available = {has_war = no}
+		mutually_exclusive = { }
+		relative_position_id = XAR_kick_down_the_door
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XAR_an_army_with_a_state_improved_1
+				add_idea = XAR_an_army_with_a_state_improved_2
+			}		
+			add_political_power = 150
+			add_stability = -0.15
+			792 = {add_resistance = 30}
+			172 = {add_resistance = 30}
+		}
+	}	
+	
+	focus = {
+		id = XAR_liberation_of_basque
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_loot_the_basque } 
+		available = {
+			792 = {resistance < 5}
+			172 = {resistance < 5}
+		
+		}
+		mutually_exclusive = { }
+		relative_position_id = XAR_loot_the_basque
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			792 = {add_core_of = XAR}
+			172 = {add_core_of = XAR}
+		}
+	}	
+	
+	focus = {
+		id = XAR_the_other_sea
+		icon = GFX_goal_generic_navy_carrier
+		x = 1
+		y = 1
+
+		prerequisite = {focus = XAR_kick_down_the_door } 
+		available = {owns_state = 792}
+		mutually_exclusive = { }
+		relative_position_id = XAR_kick_down_the_door
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			declare_war_on = {
+                target = XPY
+                type = annex_everything
+            }
+			
+		}
+	}	
+	
+	focus = {
+		id = XAR_end_of_line
+		icon = GFX_focus_ICE_thungur_hnifur
+		x = 1
+		y = 1
+
+		prerequisite = {focus = XAR_the_other_sea } 
+		prerequisite = {focus = XAR_education_now } 
+		available = {owns_state = 165}
+		mutually_exclusive = { }
+		relative_position_id = XAR_the_other_sea
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			XPY = {
+				every_core_state = {
+					add_core_of = XAR
+				}
+			}
+			
+		}
+	}		
+	
+	focus = {
+		id = XAR_our_goal_nearing
+		icon = GFX_focus_SWI_establish_pro_helvetia
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_end_of_line } 
+		available = { }
+		mutually_exclusive = { }
+		relative_position_id = XAR_end_of_line
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			remove_ideas = XAR_increasing_civil_discontent_supressed
+			add_stability = 0.20
+			set_cosmetic_tag = XAR_northeast
+		}
+	}	
+	
+	focus = {
+		id = XAR_topple_madrid
+		icon = GFX_focus_generic_total_war
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_our_goal_nearing } 
+		available = { }
+		mutually_exclusive = { }
+		relative_position_id = XAR_our_goal_nearing
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			declare_war_on = {
+                target = XPY
+                type = annex_everything
+            }			
+			
+		}
+	}	
+	
+	focus = {
+		id = XAR_new_shiny_technology
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		x = -2
+		y = 1
+
+		prerequisite = {focus = XAR_topple_madrid } 
+		available = {
+		has_war = no
+		owns_state = 41
+		}
+		mutually_exclusive = { }
+		relative_position_id = XAR_topple_madrid
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = XAR_an_army_with_a_state_improved_2
+				add_idea = XAR_an_army_with_a_state_improved_3
+			}
+			XHP = {
+				every_core_state = {add_core_of = XAR}
+			}
+		}
+	}	
+	
+	focus = {
+		id = XAR_roll_into_the_other_other_sea
+		icon = GFX_focus_SWE_coastal_support
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_topple_madrid } 
+		available = {
+		has_war = no
+		owns_state = 41
+		}
+		mutually_exclusive = { }
+		relative_position_id = XAR_topple_madrid
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			declare_war_on = {
+                target = XGL
+                type = annex_everything
+            }			
+			
+		}
+	}		
+
+	focus = {
+		id = XAR_the_millionth_integration
+		icon = GFX_focus_SWE_hygienic_housing
+		x = 2
+		y = 1
+
+		prerequisite = {focus = XAR_roll_into_the_other_other_sea } 
+		available = {
+		owns_state = 112
+		}
+		mutually_exclusive = { }
+		relative_position_id = XAR_roll_into_the_other_other_sea
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			XGL = {
+				every_core_state = {add_core_of = XAR}
+			}		
+			
+		}
+	}
+
+	focus = {
+		id = XAR_redomisticate_the_cats
+		icon = GFX_focus_ARG_establish_the_free_association
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_roll_into_the_other_other_sea } 
+		available = {
+		owns_state = 789
+		}
+		mutually_exclusive = { }
+		relative_position_id = XAR_roll_into_the_other_other_sea
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			declare_war_on = {
+                target = XAD
+                type = annex_everything
+            }		
+			
+		}
+	}	
+
+	focus = {
+		id = XAR_permanent_peace_achieved
+		icon = GFX_focus_SWE_privately_managed_vacation
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_redomisticate_the_cats } 
+		available = {
+		}
+		mutually_exclusive = { }
+		relative_position_id = XAR_redomisticate_the_cats
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			set_cosmetic_tag = XAR_iberia
+
+			XAD = {
+				every_core_state = {add_core_of = XAR}
+			}		
+
+			swap_ideas = {
+				remove_idea = XAR_quest_for_eternal_peace_2
+				add_idea = XAR_quest_for_eternal_peace_achieved
+			}			
 		}
 	}		
 }
