@@ -2,6 +2,7 @@ capital = 847
 
 recruit_character = XSS_mayer
 
+oob = "generic_OOB"
 add_ideas = {
 
 }

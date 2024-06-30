@@ -1,14 +1,26 @@
 capital = 120
 
-#create_country_leader = {
-#	name = 
-#	desc = 
-#	picture = 
-#	expire = "1.1.1"
-#	ideology = 
-#	traits = {
-#	}
-#}
+set_war_support = 0.6
+set_stability = 0.4
+set_convoys = 15
+set_research_slots = 3
+
+oob = "generic_OOB"
+
+add_ideas = limited_conscription
+add_ideas = war_economy
+add_ideas = limited_exports
+
+create_country_leader = {
+	name = XFC_alrich_weber
+	desc = XFC_alrich_weber_desc
+	picture = GFX_portrait_XFC_communism
+	expire = "1.1.1"
+	ideology = anti_revisionism
+	traits = {
+		permanent_revolutionary
+	}
+}
 
 set_politics = {
 	ruling_party = communism
@@ -23,3 +35,9 @@ set_popularities = {
 	neutrality = 11
 }
 
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	gw_artillery = 1
+	basic_train = 1
+}

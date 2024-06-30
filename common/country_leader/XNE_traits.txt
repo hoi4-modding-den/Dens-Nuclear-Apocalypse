@@ -28,6 +28,9 @@ leader_traits = {
 		production_speed_buildings_factor = 0.03
 		stability_factor = 0.03
 		political_power_factor = -0.25
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	XNE_minister_of_truth = {
@@ -36,6 +39,9 @@ leader_traits = {
 		war_support_factor = 0.10
 		offensive_war_stability_factor = 0.5
 		political_power_factor = 0.25
+		ai_will_do = {
+			factor = 10
+		}
 	}
 	
 	XNE_minister_of_peace = {
@@ -45,6 +51,9 @@ leader_traits = {
 		army_core_defence_factor = 0.08
 		mobilization_speed = 0.1
 		political_power_factor = 0.25
+		ai_will_do = {
+			factor = 10
+		}
 	}
 	
 	XNE_minister_of_love = {
@@ -53,6 +62,9 @@ leader_traits = {
 		communism_drift = 0.5
 		stability_factor = 0.15
 		political_power_factor = 0.25
+		ai_will_do = {
+			factor = 10
+		}
 	}
 	
 	XNE_minister_of_plenty = {
@@ -63,6 +75,9 @@ leader_traits = {
 		production_speed_rail_way_factor = 0.15
 		production_speed_synthetic_refinery_factor = 0.15
 		political_power_factor = 0.25
+		ai_will_do = {
+			factor = 10
+		}
 	}
 	
 	XNE_submarine_genius = {

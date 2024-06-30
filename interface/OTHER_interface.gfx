@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_XFC_communism"
+		texturefile = "gfx/leaders/OTHER/Portrait_XFC_communism.dds"
+	}
+}

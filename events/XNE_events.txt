@@ -23,6 +23,7 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_ideas = XNE_internal_conflict
+		add_stability = 0.15
 	}
 	
 	option = {
@@ -54,6 +55,7 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_ideas = XNE_internal_conflict
+		add_stability = 0.15
 	}
 	
 	option = {
@@ -83,6 +85,7 @@ country_event = {
 			long_name = XNE_liberal_long
 			name = XNE_liberal
 		}
+		add_stability = 0.15
 	}
 	
 	option = {
@@ -117,6 +120,7 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_ideas = XNE_internal_conflict
+		add_stability = 0.15
 	}
 	
 	option = {
@@ -162,6 +166,7 @@ country_event = {
 		}
 		custom_effect_tooltip = XNE_coalition_government_tool
 		remove_ideas = XNE_internal_conflict
+		add_stability = 0.15
 	}
 	
 	option = {

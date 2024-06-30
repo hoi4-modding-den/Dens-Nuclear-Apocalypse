@@ -1,10 +1,11 @@
-﻿oob = "XAP_1936"
+﻿#oob = "XAP_1936"
 capital = 56
 set_research_slots = 3
 set_stability = 0.25
 set_war_support = 0.55
 set_convoys = 25
 
+oob = "generic_OOB"
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

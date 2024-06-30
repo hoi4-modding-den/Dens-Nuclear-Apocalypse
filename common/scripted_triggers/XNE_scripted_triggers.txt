@@ -9,6 +9,10 @@ XNE_full_british_alliance = {
 			NOT = { country_exists = XCT }
 		}
 		OR = {
+			is_in_faction_with = XFC
+			NOT = { country_exists = XFC }
+		}
+		OR = {
 			is_in_faction_with = XIE
 			NOT = { country_exists = XIE }
 		}
