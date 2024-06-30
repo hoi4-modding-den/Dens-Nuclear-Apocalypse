@@ -23,7 +23,7 @@
 		prerequisite = {}
 		mutually_exclusive = { }
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -257,7 +257,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_the_REAL_goal
 		
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -284,7 +284,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_the_REAL_goal
 		
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -309,7 +309,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_the_REAL_goal
 		
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -428,10 +428,10 @@
 		continue_if_invalid = no
 		completion_reward = {
 			790 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}			
@@ -534,7 +534,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_kick_down_the_door
 		
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -570,7 +570,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_loot_the_basque
 		
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -626,7 +626,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_the_other_sea
 		
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -656,7 +656,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_end_of_line
 		
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -683,7 +683,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_our_goal_nearing
 		
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -693,10 +693,17 @@
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
-			declare_war_on = {
-                target = XPY
-                type = annex_everything
-            }			
+			41 = {
+				owner = {
+					XAR = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}	
+					}
+				}
+			}
+		
 			
 		}
 	}	
@@ -715,7 +722,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_topple_madrid
 		
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -750,7 +757,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_topple_madrid
 		
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -806,12 +813,12 @@
 
 		prerequisite = {focus = XAR_roll_into_the_other_other_sea } 
 		available = {
-		owns_state = 789
+		owns_state = 112
 		}
 		mutually_exclusive = { }
 		relative_position_id = XAR_roll_into_the_other_other_sea
 		
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -841,7 +848,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_redomisticate_the_cats
 		
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
