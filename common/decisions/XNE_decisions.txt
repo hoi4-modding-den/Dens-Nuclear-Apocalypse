@@ -526,16 +526,12 @@ XNE_the_housing_crisis = {
     }
 	XNE_laissez_faire = {
         visible = {}
-        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        available = {}
         icon = GFX_decision_generic_speech
         priority = 1
         days_re_enable = 90
         cost = 10
 		complete_effect = {
-			set_country_flag = {
-				flag = XNE_housing_crisis_focus
-				days = 45
-			}
 			XNE_gain_conservative_support = yes
 			add_to_variable = {
 				var = XNE_housing_crisis_reduc
@@ -561,16 +557,12 @@ XNE_the_housing_crisis = {
     }
 	XNE_purchase_private_housing = {
         visible = {}
-        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        available = {}
         icon = GFX_decision_generic_speech
         priority = 5
         days_re_enable = 90
         cost = 50
 		complete_effect = {
-			set_country_flag = {
-				flag = XNE_housing_crisis_focus
-				days = 45
-			}
 			XNE_gain_communism_support = yes
 			subtract_from_variable = {
 				var = XNE_housing_crisis_var
@@ -599,16 +591,12 @@ XNE_the_housing_crisis = {
     }
 	XNE_deportation_campaign = {
         visible = {}
-        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        available = {}
         icon = GFX_decision_generic_speech
         priority = 2
         days_re_enable = 90
         cost = 20
 		complete_effect = {
-			set_country_flag = {
-				flag = XNE_housing_crisis_focus
-				days = 45
-			}
 			XNE_gain_fascism_support = yes
 			subtract_from_variable = {
 				var = XNE_housing_crisis_var
@@ -637,16 +625,12 @@ XNE_the_housing_crisis = {
     }
 	XNE_rent_increase_cap = {
         visible = {}
-        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        available = {}
         icon = GFX_decision_generic_speech
         priority = 3
         days_re_enable = 90
         cost = 30
 		complete_effect = {
-			set_country_flag = {
-				flag = XNE_housing_crisis_focus
-				days = 45
-			}
 			XNE_gain_liberal_support = yes
 			subtract_from_variable = {
 				var = XNE_housing_crisis_var
@@ -673,16 +657,12 @@ XNE_the_housing_crisis = {
     }
 	XNE_bank_tax_reduction = {
         visible = {}
-        available = { NOT = { has_country_flag = XNE_housing_crisis_focus } }
+        available = {}
         icon = GFX_decision_generic_speech
         priority = 4
         days_re_enable = 90
         cost = 40
 		complete_effect = {
-			set_country_flag = {
-				flag = XNE_housing_crisis_focus
-				days = 45
-			}
 			XNE_gain_neutrality_support = yes
 			subtract_from_variable = {
 				var = XNE_housing_crisis_var
