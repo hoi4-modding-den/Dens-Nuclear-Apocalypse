@@ -117,6 +117,7 @@ focus_tree = {
 				popularity = -0.1
 			}
 			retire_ideology_leader = fascism
+			set_country_flag = XFR_guillaume_dead
 			remove_ideas = XFR_fascist_tensions
 			add_timed_idea = {
 				idea = XFR_fascism_banned
@@ -6722,6 +6723,8 @@ focus_tree = {
 				 }
 				add_extra_state_shared_building_slots = 2
 			}
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = XFR_champagne_forestry
 			custom_effect_tooltip = XFR_raze_forests_for_factories_tt
 		}
 	}
@@ -6829,6 +6832,8 @@ focus_tree = {
 				XFR_industry_production_speed_supply_node_factor = 0.2
 				tooltip = production_speed_supply_node_factor_tt
 			}
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = XFR_SNCF
 			custom_effect_tooltip = XFR_electrify_the_country_tt
 		}
 	}
@@ -6946,6 +6951,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = XFR_alcase_iron_industry
 			custom_effect_tooltip = XFR_electrify_the_country_tt
 		}
 	}
@@ -8688,19 +8695,61 @@ focus_tree = {
 			has_dlc = "La Resistance"
 		}
 
-		bypass = {
-			has_intelligence_agency = yes
-			has_country_flag = XFR_situation_stabilised
-		}
-
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 		search_filters = { }
 		completion_reward = {
-			create_intelligence_agency = yes
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				if = {
+					limit = {
+						has_completed_focus = XFR_dennounce_democracy
+					}
+					create_intelligence_agency = {
+    					name = "Auge des Kaisers"
+    					icon = GFX_intelligence_agency_logo_NOR_fascism_intelligence
+					}
+				}
+				else = {
+					create_intelligence_agency = {
+    					name = "Maréchaussée"
+    					icon = GFX_intelligence_agency_logo_fra
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_completed_focus = XFR_dennounce_democracy
+						}
+						create_intelligence_agency = {
+    						name = "Auge des Kaisers"
+    						icon = GFX_intelligence_agency_logo_NOR_fascism_intelligence
+						}
+					}
+					else = {
+						create_intelligence_agency = {
+    						name = "Maréchaussée"
+    						icon = GFX_intelligence_agency_logo_fra
+						}
+					}
+				}
+			}
+			create_operative_leader = {
+				name = "Marie-Claire Asselin"
+				GFX = GFX_portrait_jennie_rousseau
+				traits = { operative_infiltrator operative_natural_orator }
+				bypass_recruitment = yes
+				available_to_spy_master = no
+				nationalities = { XFR XAL XSS }
+				gender = female
+			}
 		}
 	}
 

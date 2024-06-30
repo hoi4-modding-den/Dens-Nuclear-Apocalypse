@@ -156,6 +156,20 @@ characters = {
 		}
 	}
 
+	XFR_adam_cuvier = {
+		name = XFR_adam_cuvier_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XFR_adam_cuvier"
+			}
+		}
+		country_leader = {
+			ideology = XFR_lotharingian_nationalism
+			traits = { XFR_lotharingian_nationalist eager_collaborator }
+			expire = "3000.1.1"
+		}
+	}
+
 	XFR_anarchists = {
 		name = XFR_anarchists_name
 		portraits = {

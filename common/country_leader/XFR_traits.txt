@@ -12,6 +12,19 @@ leader_traits = {
 		}
 	}
 
+	XPR_against_tyranny = {
+		random = no
+
+		drift_defence_factor = 0.25
+		democratic_drift = 0.1
+		fascism_acceptance = -20
+		neutrality_acceptance = -20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	XAL_military_junta_trait = {
 		random = no
 

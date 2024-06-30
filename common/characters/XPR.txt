@@ -24,7 +24,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = conservatism
-			traits = { }
+			traits = { XPR_against_tyranny }
 			expire = "3000.1.1"
 		}
 	}

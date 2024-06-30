@@ -16,11 +16,6 @@ spriteTypes = {
         texturefile = "gfx/leaders/XFR/portrait_XFR_regency_council.png"
     }
 
-	spriteType = {
-        name = "GFX_portrait_XFR_fascist_council"
-        texturefile = "gfx/leaders/XFR/portrait_XFR_fascist_council.png"
-    }
-
     spriteType = {
         name = "GFX_portrait_XFR_parliament"
         texturefile = "gfx/leaders/XFR/portrait_XFR_parliament.png"
@@ -36,11 +31,6 @@ spriteTypes = {
         texturefile = "gfx/leaders/XFR/portrait_XFR_handelskammer.png"
     }
 
-	 spriteType = {
-        name = "GFX_portrait_XFR_english_military_gov"
-        texturefile = "gfx/leaders/XFR/portrait_XFR_english_military_gov.png"
-    }
-
     spriteType = {
         name = "GFX_portrait_XFR_regnault_guillaume"
         texturefile = "gfx/leaders/XFR/portrait_XFR_regnault_guillaume.dds"
@@ -48,6 +38,11 @@ spriteTypes = {
 	spriteType = {
         name = "GFX_portrait_XFR_regnault_guillaume_small"
         texturefile = "gfx/interface/ideas/XFR/idea_XFR_regnault_guillaume.dds"
+    }
+
+	spriteType = {
+        name = "GFX_portrait_XFR_adam_cuvier"
+        texturefile = "gfx/leaders/XFR/portrait_XFR_adam_cuvier.dds"
     }
 
     spriteType = {
@@ -275,6 +270,26 @@ spriteTypes = {
 		name = "GFX_idea_XFR_bez_udb_cooperation"
 		texturefile = "gfx/interface/ideas/XFR/idea_XFR_bez_udb_cooperation.png"
 	}	
+
+	SpriteType = {
+		name = "GFX_idea_XFR_alcase_iron_industry"
+		texturefile = "gfx/interface/ideas/idea_generic_exploit_mines.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_XFR_SNCF"
+		texturefile = "gfx/interface/ideas/idea_generic_railroads.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_XFR_champagne_forestry"
+		texturefile = "gfx/interface/ideas/idea_CHL_cge.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_XFR_telephones"
+		texturefile = "gfx/interface/ideas/idea_gre_aete.dds"
+	}
 
     # Mapmode Icons
 

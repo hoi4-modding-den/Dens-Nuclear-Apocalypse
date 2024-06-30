@@ -3,12 +3,14 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_fra
 	names = { "Maréchaussée" }
 	
-	default = { 
-		original_tag = XFR 
-		has_government = democratic
-	}
 	available = { 
 		original_tag = XFR
+		NOT = { has_completed_focus = XFR_dennounce_democracy }
+		NOT = { has_government = communism }
+	}
+	default = { 
+		tag = XFR 
+		NOT = { has_completed_focus = XFR_dennounce_democracy }
 		NOT = { has_government = communism }
 	}
 }
@@ -18,7 +20,7 @@ intelligence_agency = {
 	names = { "Red Shadow" }
 	
 	default = { 
-		original_tag = XFR 
+		tag = XFA
 		has_government = communism
 	}
 	available = { 
@@ -31,12 +33,14 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_NOR_fascism_intelligence
 	names = { "Auge des Kaisers" }
 	
-	default = { 
-		original_tag = XFR 
-		has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
-	}
 	available = { 
 		original_tag = XFR 
-		has_completed_focus = XFR_monarchist_coup
+		has_completed_focus = XFR_dennounce_democracy
+		NOT = { has_government = communism }
+	}
+	default = { 
+		tag = XFR 
+		has_completed_focus = XFR_dennounce_democracy
+		NOT = { has_government = communism }
 	}
 }

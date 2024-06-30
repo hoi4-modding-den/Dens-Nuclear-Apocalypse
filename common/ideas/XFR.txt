@@ -1965,4 +1965,84 @@ ideas = {
         }
 
     }
+
+    industrial_concern = {
+		
+		XFR_alcase_iron_industry = {
+			
+			allowed = {
+				OR = {
+                    tag = XFR
+                    original_tag = XAL
+                }
+			}
+
+            available = {
+                976 = {
+                    is_owned_by = ROOT
+                }
+                if = {
+                    limit = { tag = XFR }
+                    has_completed_focus = XFR_alsatian_steel_industry
+                }
+            }
+			
+			traits = { mining_company }
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		XFR_SNCF = {
+			
+			allowed = {
+				original_tag = XFR
+			}
+
+            available = {
+                has_completed_focus = XFR_expand_the_railroads
+            }
+			
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { railway_company }
+		}
+
+		XFR_champagne_forestry = {
+			
+			allowed = {
+				original_tag = XFR
+			}
+
+            ai_will_do = {
+				factor = 1
+			}
+
+            available = {
+                has_completed_focus = XFR_raze_forests_for_factories
+            }
+
+            cost = 100
+			
+			traits = { forestry_company }
+		}		
+
+        XFR_telephones = {
+			
+			allowed = {
+				original_tag = XFR
+			}
+
+            ai_will_do = {
+				factor = 2
+			}
+
+            cost = 100
+			
+			traits = { telephone_company }
+		}	
+	}
 }
