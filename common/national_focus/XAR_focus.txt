@@ -21,7 +21,7 @@
 		prerequisite = {}
 		mutually_exclusive = { }
 		
-		cost = 4
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -46,7 +46,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_the_hero_of_sarayosa
 		
-		cost = 4
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -56,6 +56,7 @@
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		completion_reward = {
+			add_stability = 0.10
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.15
@@ -73,7 +74,7 @@
 		mutually_exclusive = {focus = XAR_concessions_to_the_people}
 		relative_position_id = XAR_and_his_ungrateful_enemies
 		
-		cost = 4
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -100,7 +101,7 @@
 		mutually_exclusive = {focus = XAR_a_tough_hand}
 		relative_position_id = XAR_and_his_ungrateful_enemies
 		
-		cost = 4
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -137,7 +138,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_the_hero_of_sarayosa
 		
-		cost = 4
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -148,6 +149,7 @@
 		continue_if_invalid = no
 		completion_reward = {
 			army_experience = 50
+			
 		}
 	}
 
@@ -173,7 +175,14 @@
 		completion_reward = {
 			add_political_power = 50
 			add_stability = -0.05
-			#TODO: EVENT
+			176 = {
+			add_extra_state_shared_building_slots = 2			
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -187,7 +196,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_and_his_friends
 		
-		cost = 4
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -219,7 +228,7 @@
 		mutually_exclusive = { }
 		relative_position_id = XAR_boros_army_depot
 		
-		cost = 4
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -233,6 +242,141 @@
 				remove_idea = XAR_quest_for_eternal_peace
 				add_idea = XAR_quest_for_eternal_peace_2
 			}
+		}
+	}		
+	
+	focus = {
+		id = XAR_ready_the_forces
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = -2
+		y = 1
+
+		prerequisite = {focus = XAR_the_REAL_goal}
+		mutually_exclusive = { }
+		relative_position_id = XAR_the_REAL_goal
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XAR_an_army_with_a_state
+				add_idea = XAR_an_army_with_a_state_improved_1
+			}
+		}
+	}	
+
+	focus = {
+		id = XAR_special_recruitment_season
+		icon = GFX_focus_generic_workers
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_the_REAL_goal}
+		mutually_exclusive = { }
+		relative_position_id = XAR_the_REAL_goal
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_manpower = 25000
+			
+		}
+	}	
+
+	focus = {
+		id = XAR_cult_of_serrano
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 2
+		y = 1
+
+		prerequisite = {focus = XAR_the_REAL_goal}
+		mutually_exclusive = { }
+		relative_position_id = XAR_the_REAL_goal
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = 0.10
+		}
+	}	
+
+	focus = {
+		id = XAR_a_kind_warning
+		icon = GFX_focus_SWE_neither_death_nor_dishonor
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_ready_the_forces}
+		prerequisite = {focus = XAR_special_recruitment_season}
+		prerequisite = {focus = XAR_cult_of_serrano}
+		mutually_exclusive = { }
+		relative_position_id = XAR_special_recruitment_season
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			XPS = {
+				add_stability = -0.10
+				add_war_support = -0.10
+			}
+			
+		}
+	}	
+
+	focus = {
+		id = XAR_sweep_into_the_sea
+		icon = GFX_focus_ICE_the_viking_spirit
+		x = 0
+		y = 1
+
+		prerequisite = {focus = XAR_a_kind_warning}
+		mutually_exclusive = { }
+		relative_position_id = XAR_a_kind_warning
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			declare_war_on = {
+                target = XPS
+                type = annex_everything
+            }
+			
 		}
 	}		
 }

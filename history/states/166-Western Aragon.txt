@@ -18,8 +18,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
-			#industrial_complex = 1
-			#air_base = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 3
 
 		}
 		add_core_of = XAR
@@ -31,7 +32,7 @@ state={
 	}
 manpower=445577
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city	
 
 	local_supplies=13.0 
 }

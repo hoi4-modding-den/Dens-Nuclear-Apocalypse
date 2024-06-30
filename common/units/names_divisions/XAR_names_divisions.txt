@@ -1,0 +1,21 @@
+XAR_INF_01 = {
+	name = "Infantry Defence Forces" 
+	for_countries = { XAR } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Infantry Defence Force"
+	ordered = {
+		1 = { "%d. Infantry Defence Force" } 
+	}
+}
+
+XAR_ARM_01 = {
+	name = "Tank Defence Forces" 
+	for_countries = { XAR } 
+	can_use = { always = yes } 
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	fallback_name = "%d. Tank Defence Force"
+	ordered = {
+		1 = { "%d. Tank Defence Force" } 
+	}
+}

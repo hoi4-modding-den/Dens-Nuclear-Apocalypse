@@ -3,6 +3,8 @@
  XAR_DEF:0 "The Militarized Defence Authority of Sarayosa"
  XAR_ADJ:0 "Sarayosan"
  
+ XAR_history_desc:0 "The anarchy in Northern Spain was ceaseless with rival gangs fighting over control of resources. This would come to an end when a pretty unknown gang in Sarayosa discovered a pre-apocalypse bunker, filled to the brim with military technology built to survive for years by the long gone Spanish Government. Thanks to this newfound military tech, newly-declared Sarayosan Armed Forces swept west into Boros and Baladid under the guise of liberating the people from the anarchy. This liberation entrailing high quotas for the protection of the defence authority. Serrano now stands tall over thousands of people in his own personal empire, although this soon might change with the populace growing restless."
+ 
  XAR_neutrality_party:0 "General Directory"
  XAR_fascism_party:0 "Reclamationists"
  XAR_communism_party:0 "Radicals"
@@ -35,5 +37,15 @@
  XAR_boros_army_depot_desc:0 "Boros Army Depot"
  XAR_the_REAL_goal:0 "The REAL Goal"
  XAR_the_REAL_goal_desc:0 "The REAL Goal"
+ XAR_ready_the_forces:0 "Ready The Forces!"
+ XAR_ready_the_forces_desc:0 "Ready The Forces!"
+ XAR_special_recruitment_season:0 "Special Recruitment Season"
+ XAR_special_recruitment_season_desc:0 "Special Recruitment Season"
+ XAR_cult_of_serrano:0 "Cult of Serrano"
+ XAR_cult_of_serrano_desc:0 "Cult of Serrano"
+ XAR_a_kind_warning:0 "A Kind Warning"
+ XAR_a_kind_warning_desc:0 "A Kind Warning"
+ XAR_sweep_into_the_sea:0 "Sweep Into the Sea"
+ XAR_sweep_into_the_sea_desc:0 "Sweep Into the Sea"
  
  XAR_this_wont_work:0 "§GIn his utmost benevolent thinking, general Serrano has decided to decrease the Army budget by 1% to placate the people! The Forum will surely accept this act of kindness.§!\n\n§YEffects if they accept;§!"

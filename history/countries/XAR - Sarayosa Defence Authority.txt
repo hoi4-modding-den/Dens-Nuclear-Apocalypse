@@ -1,8 +1,9 @@
 capital = 166
 
 recruit_character = XAR_valer_serrano
+recruit_character = XAR_salseo
 
-#oob = "XAR_2236" #TODO
+oob = "XAR_2236"
 
 set_technology = {
 	infantry_weapons = 1
@@ -25,6 +26,15 @@ if = {
 		early_bomber = 1
 		naval_bomber1 = 1
 	}
+	else = {
+		set_technology = {
+			iw_small_airframe = 1
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			early_bombs = 1
+			engines_1 = 1
+		}
+	}	
 }
 
 if = {
@@ -48,6 +58,8 @@ if = {
 set_war_support = 0.55
 set_stability = 0.35
 set_convoys = 0
+
+add_ideas = extensive_conscription
 
 add_ideas = XAR_increasing_civil_discontent
 add_ideas = XAR_an_army_with_a_state

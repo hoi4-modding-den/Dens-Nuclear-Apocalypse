@@ -27,5 +27,23 @@ characters = {
 			legacy_id=-1
 		}		
 	}
+	XAR_salseo = {
+		name = "Salseo"
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Europe_Generic_land_3"
+				small = "GFX_Portrait_Europe_Generic_land_3"
+			}
+		}
 
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
 }
