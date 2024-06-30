@@ -91,6 +91,19 @@ DEN_is_in_valid_region = {
 	}
 }
 
+DEN_is_anarchy = {
+	OR = {
+		original_tag = LIB
+		original_tag = XFW
+		original_tag = XCG
+		original_tag = XFC
+		original_tag = XPS
+		original_tag = XHR
+		original_tag = XMC
+		original_tag = XIT
+	}
+}
+
 is_diplomatic_action_valid_generate_wargoal = {
 	NOT = {
 		original_tag = LIB

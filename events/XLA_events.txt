@@ -1,9 +1,11 @@
 add_namespace = XLA_event
 
+# Roots of Arnmouth
 country_event = {
 	id = XLA_event.1
 	title = XLA_event.1.t
 	desc = XLA_event.1.d
+	picture = GFX_Event_Roots_of_Arnmouth
 
 	is_triggered_only = yes
 
@@ -12,10 +14,12 @@ country_event = {
 	}
 }
 
+# The Elders Council
 country_event = {
 	id = XLA_event.2
 	title = XLA_event.2.t
 	desc = XLA_event.2.d
+	picture = GFX_report_event_canada_patriation
 
 	is_triggered_only = yes
 
@@ -32,10 +36,12 @@ country_event = {
 	}
 }
 
+# The Fate of Elder Borani
 country_event = {
 	id = XLA_event.3
 	title = XLA_event.3.t
 	desc = XLA_event.3.d
+	picture = GFX_Event_Elder_Borani
 
 	is_triggered_only = yes
 
@@ -54,47 +60,27 @@ country_event = {
 	}
 }
 
+# The Life of Elder Borani
 country_event = {
 	id = XLA_event.4
-	title = {
-		text = XLA_event.4.t.a
-		trigger = {
-			has_country_flag = XLA_Borani_Dies
-		}
-	}
-	title = {
-		trigger = {
-			NOT = {
-				has_country_flag = XLA_Borani_Dies
-			}
-		}
-		text = XLA_event.4.t
-	}
+	title = XLA_event.4.t
 	desc = XLA_event.4.d
+	picture = GFX_Event_Elder_Borani
 
 	is_triggered_only = yes
 
 	option = {
 		name = XLA_event.4.a
-		trigger = {
-			has_country_flag = XLA_Borani_Lives
-		}
 		add_political_power = 50
-	}
-
-	option = {
-		name = XLA_event.4.b
-		trigger = {
-			has_country_flag = XLA_Borani_Dies
-		}
-		retire_character = XLA_Elder_Borani
 	}
 }
 
+# The Calm Or The Storm
 country_event = {
 	id = XLA_event.5
 	title = XLA_event.5.t
 	desc = XLA_event.5.d
+	picture = GFX_Event_Calm_Or_Storm
 
 	is_triggered_only = yes
 
@@ -112,10 +98,12 @@ country_event = {
 	}
 }
 
+# The Last Council Meeting?
 country_event = {
 	id = XLA_event.6
 	title =XLA_event.6.t
 	desc = XLA_event.6.d
+	picture = GFX_report_event_DEN_celebration
 
 	is_triggered_only = yes
 
@@ -124,10 +112,12 @@ country_event = {
 	}
 }
 
+# A Proper Home
 country_event = {
 	id = XLA_event.7
 	title = XLA_event.7.t
 	desc = XLA_event.7.d
+	picture = GFX_Event_A_New_Home
 
 	is_triggered_only = yes
 
@@ -150,10 +140,12 @@ country_event = {
 	}
 }
 
+# The Fight Of Our Lives - Story
 country_event = {
 	id = XLA_event.8
 	title = XLA_event.8.t
 	desc = XLA_event.8.d
+	picture = GFX_Event_Fight_Lives_Book
 
 	is_triggered_only = yes
 
@@ -163,10 +155,12 @@ country_event = {
 	}
 }
 
+# The Fight Of Our Lives - Altwigitian
 country_event = {
 	id = XLA_event.9
 	title = XLA_event.8.t
 	desc = XLA_event.9.d
+	picture = GFX_report_event_peasant_revolt
 
 	is_triggered_only = yes
 
@@ -181,10 +175,12 @@ country_event = {
 	}
 }
 
+# The Fight Of Our Lives - Spiritualist
 country_event = {
 	id = XLA_event.10
 	title = XLA_event.8.t
 	desc = XLA_event.10.d
+	picture = GFX_report_event_peasant_revolt
 
 	is_triggered_only = yes
 
@@ -199,10 +195,12 @@ country_event = {
 	}
 }
 
+# The New Council
 country_event = {
 	id = XLA_event.11
 	title = XLA_event.11.t
 	desc = XLA_event.11.d
+	picture = GFX_report_event_gre_diplomacy
 
 	is_triggered_only = yes
 
@@ -212,10 +210,12 @@ country_event = {
 	}
 }
 
+# Arnmouth's New Council
 country_event = {
 	id = XLA_event.12
 	title = XLA_event.12.t
 	desc = XLA_event.12.d
+	picture = GFX_Event_New_Council_Arnmouth
 
 	is_triggered_only = yes
 
@@ -251,10 +251,12 @@ country_event = {
 	}
 }
 
+# The Lost Tribes Requests Support!
 country_event = {
 	id = XLA_event.13
 	title = XLA_event.13.t
 	desc = XLA_event.13.d
+	picture = GFX_Event_New_Council_Arnmouth
 
 	is_triggered_only = yes
 
@@ -271,5 +273,20 @@ country_event = {
 
 	option = {
 		name = XLA_event.13.b
+	}
+}
+
+# The Death of Elder Borani
+country_event = {
+	id = XLA_event.14
+	title = XLA_event.4.t.a
+	desc = XLA_event.14
+	picture = GFX_Event_Death_Elder_Borani
+
+	is_triggered_only = yes
+
+	option = {
+		name = XLA_event.4.b
+		retire_character = XLA_Elder_Borani
 	}
 }

@@ -127,4 +127,41 @@ spriteTypes = {
 		name = "GFX_XLA_Resource_Prospecting"
 		textureFile = "gfx/interface/XLA/XLA_Resource_Excavation.png"
 	}
+
+	# Events
+
+	spriteType = {
+		name = "GFX_Event_Roots_of_Arnmouth"
+		textureFile = "gfx/event_pictures/XLA/GFX_Event_Roots_of_Arnmouth.png"
+	}
+
+	spriteType = {
+		name = "GFX_Event_Elder_Borani"
+		textureFile = "gfx/event_pictures/XLA/GFX_Event_Elder_Borani.png"
+	}
+
+	spriteType = {
+		name = "GFX_Event_Calm_Or_Storm"
+		textureFile = "gfx/event_pictures/XLA/GFX_Event_Calm_Storm.png"
+	}
+
+	spriteType = {
+		name = "GFX_Event_A_New_Home"
+		textureFile = "gfx/event_pictures/XLA/GFX_Event_A_New_Home.png"
+	}
+
+	spriteType = {
+		name = "GFX_Event_Fight_Lives_Book"
+		textureFile = "gfx/event_pictures/XLA/GFX_Event_Fight_Book.png"
+	}
+
+	spriteType = {
+		name = "GFX_Event_New_Council_Arnmouth"
+		textureFile = "gfx/event_pictures/XLA/GFX_New_Council.png"
+	}
+
+	spriteType = {
+		name = "GFX_Event_Death_Elder_Borani"
+		textureFile = "gfx/event_pictures/XLA/GFX_Event_Elder_Borani_Dead.png"
+	}
 }

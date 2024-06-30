@@ -240,7 +240,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = XLA_event.4
+			if = {
+				limit = {
+					has_country_flag = XLA_Borani_Lives
+				}
+
+				country_event = XLA_event.4
+			}
+			else_if = {
+				limit = {
+					has_country_flag = XLA_Borani_Dies
+				}
+
+				country_event = XLA_event.14
+			}
 		}
 	}
 
@@ -1022,7 +1035,12 @@ focus_tree = {
 		completion_reward = {
 			every_country = {
 				limit = {
-					has_government = ROOT
+					AND = {
+						has_government = ROOT
+						NOT = {
+							DEN_is_anarchy = yes
+						}
+					}
 				}
 
 				country_event = XLA_event.13
