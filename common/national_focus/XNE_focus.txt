@@ -79,6 +79,18 @@
 				factor = 5
 				date > 1937.01.01
 			}
+			modifier = {
+				factor = 1.2
+				check_variable = {
+					XNE_conservative_support > 0.5
+				}
+			}
+			modifier = {
+				factor = 1.2
+				check_variable = {
+					XNE_liberal_support > 0.2
+				}
+			}
 		}
 		
 	}
@@ -114,6 +126,12 @@
 			modifier = {
 				factor = 5
 				date > 1937.01.01
+			}
+			modifier = {
+				factor = 1.2
+				check_variable = {
+					XNE_communism_support > 0.2
+				}
 			}
 		}
 		
@@ -151,6 +169,18 @@
 			modifier = {
 				factor = 5
 				date > 1937.01.01
+			}
+			modifier = {
+				factor = 1.2
+				check_variable = {
+					XNE_fascism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.2
+				check_variable = {
+					XNE_neutrality_support > 0.2
+				}
 			}
 		}
 		
@@ -446,7 +476,7 @@
 			add_stability = 0.05
 			remove_ideas = XNE_tensions_on_the_trent_eased
 			news_event = {
-				id = my_event.1
+				id = XNE_news.1
 				days = 5
 				random_hours = 12
 			}
@@ -573,7 +603,7 @@
     	completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XNE_agree_a_way_forward"
 			XNE_political_focus_flag = yes
-			add_stability = 0.05
+			add_stability = 0.15
 			hidden_effect = {
 				set_power_balance = {
 					id = XNE_federation_of_uk_bop

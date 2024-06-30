@@ -817,7 +817,7 @@ XNE_european_intervention = {
 XNE_army_reformation = {
 	XNE_military_parade = {
 	
-		icon = GFX_decision_generic_army_support
+		icon = GFX_decision_generic_prepare_civil_war
         priority = 15
 		
 		visible = { has_country_flag = XNE_military_parade }
@@ -860,7 +860,7 @@ XNE_army_reformation = {
     }
 	XNE_local_recruitment = {
 	
-		icon = GFX_decision_generic_army_support
+		icon = GFX_decision_generic_reorganize_irregulars
         priority = 10
 		
 		visible = { has_country_flag = XNE_expand_training }
@@ -903,7 +903,7 @@ XNE_army_reformation = {
 	XNE_defensive_focus = {
         visible = { has_country_flag = XNE_defence_of_nne }
         available = {}
-        icon = GFX_decision_category_generic_fortification
+        icon = GFX_decision_generic_mountain_fortification
         priority = 5
         days_re_enable = 180
         cost = 50
@@ -926,27 +926,39 @@ XNE_popular_support = {
 	XNE_public_school_funding = {
         visible = { has_country_flag = XNE_colchester_vault_flag }
         available = { NOT = { has_country_flag = XNE_research_focus } }
-        icon = GFX_decision_category_usa_congress
+        icon = GFX_decision_eng_install_government
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_research_focus
+			XNE_gain_conservative_support = yes
+			XNE_gain_liberal_support = yes
 		}
 		modifier = {
 			research_speed_factor = 0.03
 			consumer_goods_factor = 0.1
 		}
 		remove_effect = {
-			XNE_gain_conservative_support = yes
-			XNE_gain_liberal_support = yes
 			clr_country_flag = XNE_research_focus
 		}
 		ai_will_do = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_conservative_support > 0.5
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_liberal_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_cooperation
 			}
 		}
@@ -954,27 +966,39 @@ XNE_popular_support = {
 	XNE_private_school_tax_cuts = {
         visible = { has_country_flag = XNE_colchester_vault_flag }
         available = { NOT = { has_country_flag = XNE_research_focus } }
-        icon = GFX_decision_category_usa_congress
+        icon = GFX_decision_eng_install_government
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_research_focus
+			XNE_gain_fascism_support = yes
+			XNE_gain_neutrality_support = yes
 		}
 		modifier = {
 			research_speed_factor = 0.05
 			consumer_goods_factor = 0.15
 		}
 		remove_effect = {
-			XNE_gain_fascism_support = yes
-			XNE_gain_neutrality_support = yes
 			clr_country_flag = XNE_research_focus
 		}
 		ai_will_do = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_fascism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_neutrality_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_aggression
 			}
 		}
@@ -982,26 +1006,32 @@ XNE_popular_support = {
 	XNE_nationalise_private_schooling = {
         visible = { has_country_flag = XNE_colchester_vault_flag }
         available = { NOT = { has_country_flag = XNE_research_focus } }
-        icon = GFX_decision_category_usa_congress
+        icon = GFX_decision_eng_install_government
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_research_focus
+			XNE_gain_communism_support = yes
 		}
 		modifier = {
 			research_speed_factor = 0.02
 			consumer_goods_factor = 0.05
 		}
 		remove_effect = {
-			XNE_gain_communism_support = yes
 			clr_country_flag = XNE_research_focus
 		}
 		ai_will_do = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_communism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_isolation
 			}
 		}
@@ -1024,21 +1054,21 @@ XNE_popular_support = {
 				has_tech = early_destroyer
 			}
 		}
-        icon = GFX_decision_category_MTG_naval_treaties
+        icon = GFX_decision_generic_naval
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_naval_focus
+			XNE_gain_conservative_support = yes
+			XNE_gain_neutrality_support = yes
 			add_equipment_to_stockpile = { 
 				type = convoy_1
 				amount = -5
 			}
 		}
 		remove_effect = {
-			XNE_gain_conservative_support = yes
-			XNE_gain_liberal_support = yes
 			clr_country_flag = XNE_naval_focus
 			if = {
 				limit = {
@@ -1118,7 +1148,23 @@ XNE_popular_support = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_conservative_support > 0.5
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_neutrality_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.2
 				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.2
+				has_completed_focus = XNE_aggression
 			}
 		}
     }
@@ -1139,21 +1185,21 @@ XNE_popular_support = {
 				has_tech = early_submarine
 			}
 		}
-        icon = GFX_decision_category_MTG_naval_treaties
+        icon = GFX_decision_generic_naval
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_naval_focus
+			XNE_gain_fascism_support = yes
+			XNE_gain_liberal_support = yes
 			add_equipment_to_stockpile = {
 				type = convoy_1
 				amount = -5
 			}
 		}
 		remove_effect = {
-			XNE_gain_fascism_support = yes
-			XNE_gain_neutrality_support = yes
 			clr_country_flag = XNE_naval_focus
 			if = {
 				limit = {
@@ -1203,6 +1249,22 @@ XNE_popular_support = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_liberal_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_fascism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.2
+				has_completed_focus = XNE_cooperation
+			}
+			modifier = {
+				factor = 1.2
 				has_completed_focus = XNE_aggression
 			}
 		}
@@ -1210,16 +1272,16 @@ XNE_popular_support = {
 	XNE_coastal_city_build_up = {
         visible = { has_country_flag = XNE_reestablish_the_navy_flag }
         available = { NOT = { has_country_flag = XNE_naval_focus } }
-        icon = GFX_decision_category_MTG_naval_treaties
+        icon = GFX_decision_generic_naval
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_naval_focus
+			XNE_gain_communism_support = yes
 		}
 		remove_effect = {
-			XNE_gain_communism_support = yes
 			clr_country_flag = XNE_naval_focus
 			random_owned_controlled_state = {
 				limit = {
@@ -1242,6 +1304,12 @@ XNE_popular_support = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_communism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_isolation
 			}
 		}
@@ -1250,27 +1318,39 @@ XNE_popular_support = {
 	XNE_army_education_subsidies = {
         visible = { has_country_flag = XNE_reformation_of_the_army }
         available = { NOT = { has_country_flag = XNE_army_focus } }
-        icon = GFX_decision_category_army_reform
+        icon = GFX_decision_generic_army_support
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_army_focus
+			XNE_gain_conservative_support = yes
+			XNE_gain_liberal_support = yes
 		}
 		modifier = {
 			research_speed_factor = 0.01
 			weekly_manpower = 1000
 		}
 		remove_effect = {
-			XNE_gain_conservative_support = yes
-			XNE_gain_liberal_support = yes
 			clr_country_flag = XNE_army_focus
 		}
 		ai_will_do = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_conservative_support > 0.5
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_liberal_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_cooperation
 			}
 		}
@@ -1278,27 +1358,39 @@ XNE_popular_support = {
 	XNE_promote_nationalism = {
         visible = { has_country_flag = XNE_reformation_of_the_army }
         available = { NOT = { has_country_flag = XNE_army_focus } }
-        icon = GFX_decision_category_army_reform
+        icon = GFX_decision_generic_army_support
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_army_focus
+			XNE_gain_fascism_support = yes
+			XNE_gain_neutrality_support = yes
 		}
 		modifier = {
 			war_support_weekly = 0.005
 			weekly_manpower = 1000
 		}
 		remove_effect = {
-			XNE_gain_fascism_support = yes
-			XNE_gain_neutrality_support = yes
 			clr_country_flag = XNE_army_focus
 		}
 		ai_will_do = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_fascism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_neutrality_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_aggression
 			}
 		}
@@ -1306,26 +1398,32 @@ XNE_popular_support = {
 	XNE_higher_army_wages = {
         visible = { has_country_flag = XNE_reformation_of_the_army }
         available = { NOT = { has_country_flag = XNE_army_focus } }
-        icon = GFX_decision_category_army_reform
+        icon = GFX_decision_generic_army_support
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_army_focus
+			XNE_gain_communism_support = yes
 		}
 		modifier = {
 			consumer_goods_factor = -0.1
 			weekly_manpower = 1000
 		}
 		remove_effect = {
-			XNE_gain_communism_support = yes
 			clr_country_flag = XNE_army_focus
 		}
 		ai_will_do = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_communism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_isolation
 			}
 		}
@@ -1334,17 +1432,17 @@ XNE_popular_support = {
 	XNE_expand_air_bases = {
         visible = { has_country_flag = XNE_post_nuclear_airforce_flag }
         available = { NOT = { has_country_flag = XNE_air_focus } }
-        icon = GFX_decision_category_ITA_reggianes_exports
+        icon = GFX_decision_generic_air
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_air_focus
-		}
-		remove_effect = {
 			XNE_gain_conservative_support = yes
 			XNE_gain_liberal_support = yes
+		}
+		remove_effect = {
 			clr_country_flag = XNE_air_focus
 			random_owned_controlled_state = {
 				add_building_construction = {
@@ -1358,6 +1456,18 @@ XNE_popular_support = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_conservative_support > 0.5
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_liberal_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_cooperation
 			}
 		}
@@ -1365,17 +1475,17 @@ XNE_popular_support = {
 	XNE_air_training = {
         visible = { has_country_flag = XNE_post_nuclear_airforce_flag }
         available = { NOT = { has_country_flag = XNE_air_focus } }
-        icon = GFX_decision_category_ITA_reggianes_exports
+        icon = GFX_decision_generic_air
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_air_focus
-		}
-		remove_effect = {
 			XNE_gain_fascism_support = yes
 			XNE_gain_neutrality_support = yes
+		}
+		remove_effect = {
 			clr_country_flag = XNE_air_focus
 			air_experience = 25
 		}
@@ -1383,6 +1493,18 @@ XNE_popular_support = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_neutrality_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					XNE_fascism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_aggression
 			}
 		}
@@ -1393,16 +1515,16 @@ XNE_popular_support = {
 			NOT = { has_country_flag = XNE_air_focus }
 			has_tech = interwar_antiair
 		}
-        icon = GFX_decision_category_ITA_reggianes_exports
+        icon = GFX_decision_generic_air
         priority = 5
         days_re_enable = 180
         cost = 25
         days_remove = 90
 		complete_effect = {
 			set_country_flag = XNE_air_focus
+			XNE_gain_communism_support = yes
 		}
 		remove_effect = {
-			XNE_gain_communism_support = yes
 			clr_country_flag = XNE_air_focus
 			random_owned_controlled_state = {
 				add_building_construction = {
@@ -1416,6 +1538,12 @@ XNE_popular_support = {
 			base = 5
 			modifier = {
 				factor = 2
+				check_variable = {
+					XNE_communism_support > 0.2
+				}
+			}
+			modifier = {
+				factor = 1.5
 				has_completed_focus = XNE_isolation
 			}
 		}
