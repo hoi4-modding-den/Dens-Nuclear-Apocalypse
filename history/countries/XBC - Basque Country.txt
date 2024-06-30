@@ -39,6 +39,15 @@ set_popularities = {
 	communism = 0
 }
 
+promote_character = {
+    character = XBC_basque_council
+    ideology = marxism
+}
+promote_character = {
+    character = XBC_basque_council
+    ideology = gen_nazism
+}
+
 add_ideas = {
 	closed_economy
 	limited_conscription

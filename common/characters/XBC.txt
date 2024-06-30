@@ -22,6 +22,8 @@ characters = {
 			}
 		}
 		country_leader = {
+			ideology = marxism
+			ideology = gen_nazism
 			ideology = oligarchism
 			traits = { XBC_basque_council_trait }
 			expire = "3000.9.9.9"
@@ -36,8 +38,9 @@ characters = {
 			}
 		}
 		country_leader = {
-			#ideology = marxism
+			#
 			ideology = oligarchism
+			ideology = marxism
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1
@@ -51,8 +54,9 @@ characters = {
 			}
 		}
 		country_leader = {
-			#ideology = gen_nazism
+			#
 			ideology = oligarchism
+			ideology = gen_nazism
 			traits = {  }
 			expire = "3000.9.9.9"
 			id = -1

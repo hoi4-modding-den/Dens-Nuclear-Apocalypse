@@ -353,3 +353,37 @@ country_event = { # Lower Navarre border war stalemate
 		}
     }
 }
+
+country_event = { # Lower Navarre border war 2in defender
+    id = XBC.12
+    title = XBC.12.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.12.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.12.a
+		
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+
+country_event = { # Lower Navarre border war lose defender
+    id = XBC.13
+    title = XBC.13.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = XBC.13.d
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XBC.13.a
+		
+        ai_chance = {
+			base = 1
+		}
+    }
+}

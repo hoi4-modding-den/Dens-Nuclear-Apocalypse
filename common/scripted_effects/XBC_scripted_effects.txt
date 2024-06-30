@@ -101,3 +101,34 @@ XBC_spanish_unrest_check_effect = {
 		}
 	}
 }
+
+XBC_post_struggle_politics_effect = {
+	set_party_name = {
+		ideology = communism
+		name = XBC_ETA_left_party
+	}
+	set_party_name = {
+		ideology = neutrality
+		name = XBC_ETA_center_party
+	}
+	set_party_name = {
+		ideology = fascism
+		name = XBC_ETA_right_party
+	}
+	XBC_gaspar_diaz = {
+		promote_character = marxism
+	}
+	XBC_arturo_uribe = {
+		promote_character = oligarchism
+	}
+	XBC_claudio_salazar = {
+		promote_character = gen_nazism
+	}
+	set_popularities = {
+		democratic = 34
+		neutrality = 22
+		fascism = 22
+		communism = 22
+	}
+	
+}

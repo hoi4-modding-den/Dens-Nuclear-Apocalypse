@@ -32,5 +32,64 @@ ideas = {
 				stability_factor = -0.2
 			}
 		}
+		
+		XBC_basque_hydropower = {
+			picture = idea_por_hydroelectric_power
+			
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		XBC_subsidized_fishing_industry = {
+			picture = liberty_ships_focus
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		XBC_focus_on_offense = {
+			picture = idea_generic_war_preparation
+			
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		XBC_focus_on_defense = {
+			picture = idea_yug_federal_defense_council
+			
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		XBC_fort_construction_project = {
+			picture = FRA_fortification_focus
+			
+			removal_cost = -1
+			modifier = {
+				production_speed_bunker_factor = 0.1
+			}
+		}
+		XBC_spirit_of_freedom = {
+			picture = idea_SWI_spirit_of_helvetia_aggressive_war
+			
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.15
+			}
+		}
+		XBC_right_wing_paramilitaries = {
+			picture = FRA_army_of_aggression_focus
+			
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.25
+			}
+		}
 	}
 }

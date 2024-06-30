@@ -229,8 +229,8 @@ XBC_iberian_war_category = {
 				defender = {
 					state = 806
 					num_provinces = 2
-					on_win = XBC.10
-					on_lose = XBC.9
+					on_win = XBC.12
+					on_lose = XBC.13
 					on_cancel = XBC.11
 				}
 			}

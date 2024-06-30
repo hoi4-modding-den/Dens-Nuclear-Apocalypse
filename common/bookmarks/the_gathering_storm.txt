@@ -190,7 +190,9 @@ bookmarks = {
 			ideology = neutrality
 			history = XBC_history_desc
 			focuses = {
-				
+				XBC_last_days_of_liderra_uribe
+				XBC_the_left_ascendant
+				XBC_the_right_dominant
 			}
 			ideas = {
 				XBC_unrest_in_navarre_2
