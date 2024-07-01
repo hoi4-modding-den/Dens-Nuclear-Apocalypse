@@ -36,6 +36,28 @@ ideas = {
 			}
 		}
 
+        XFR_civil_war_ai_bonus = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+                NOT = { has_government = communism }
+                is_ai = yes
+			}
+
+			cancel = {
+                has_civil_war = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.5
+                army_defence_factor = 0.5
+			}
+		}
+
         XFR_ai_cheat_bonus = {
 			allowed = {
 				always = yes
@@ -45,9 +67,7 @@ ideas = {
                 NOT = { has_government = communism }
                 is_ai = yes
 			}
-			available = {
-			
-			}
+
 
 			removal_cost = -1
 
