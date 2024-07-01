@@ -27,6 +27,21 @@ characters = {
 			legacy_id=-1
 		}		
 	}
+	XAR_mr_democracy = {
+		name = "Mr.Democracy"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Europe_Generic_2"
+			}	
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+		
+	}	
 	XAR_salseo = {
 		name = "Salseo"
 		portraits = {
