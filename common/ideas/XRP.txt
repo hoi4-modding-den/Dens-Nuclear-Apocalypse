@@ -237,7 +237,33 @@ ideas = {
 				army_attack_factor = 0.05
 			}						
 		}
-	
+		XRP_tolerate_german_business = {
+			picture = ger_rebuild_the_nation
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.05
+			}	
+		}
+		XRP_seize_german_business = {
+			picture = SPR_seize_the_gold_reserves
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.1
+			}	
+		}
+		XRP_fbi_idea = {
+			picture = generic_secret_police
+			removal_cost = -1
+			modifier = {
+				resistance_activity = -0.5
+				compliance_gain = 0.05
+				
+			}	
+		}
+
 		#Economy Ideas#
 		XRP_economy_nuked = {
 			picture = SPA_recovering_from_the_civil_war
@@ -310,9 +336,53 @@ ideas = {
 				required_garrison_factor = -0.05
 			}						
 		}
+		XRP_modern_farming = {
+			picture = LIT_invested_in_farms
+			removal_cost = -1
+			modifier = {
+				supply_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		XRP_americanized_farms = {
+			picture = ARG_argentine_beef_trade
+			removal_cost = -1
+			modifier = {
+				industry_air_damage_factor = -0.15
+				industry_free_repair_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+		XRP_expanded_industry = {
+			picture = generic_improved_industries
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots = 1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		XRP_economic_miracle = {
+			picture = generic_economic_increase
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
 
 		#Moderate Ideas#
-
+		XRP_america_first_idea = {
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.25
+				research_speed_factor = 0.1
+				monthly_population = 0.2
+			}
+		}
 
 		#Hardliner Ideas#
 		XRP_total_dominance = {
@@ -322,6 +392,14 @@ ideas = {
 				political_power_gain = 1
 				research_speed_factor = 0.1
 				justify_war_goal_time = -0.5
+			}
+		}
+		XRP_conscript_americans = {
+			picture = usa_desegregation_1
+			removal_cost = -1
+			modifier = {
+				conscription = 0.1
+				stability_factor = -0.1
 			}
 		}
 
@@ -367,12 +445,125 @@ ideas = {
 			}
 		}
 		
+		#Air Ideas#
+		XRP_air_standards_idea = {
+			picture = air_war_plans_division_focus
+			removal_cost = -1
+			modifier = {
+				air_accidents_factor = -0.1
+				air_agility_factor = 0.1
+				air_maximum_speed_factor = 0.1
+			}
+		}
+		XRP_rocket_idea = {
+			picture = SOV_atomic_bomb_project
+			removal_cost = -1
+			modifier = {
+				rocket_attack_factor = 0.25
+				air_bombing_targetting = 0.15
+			}
+		}
+		XRP_speedy_planes = {
+			picture = SWE_formation_flying
+			removal_cost = -1
+			modifier = {
+				air_maximum_speed_factor = 0.25
+				air_agility_factor = 0.1
+			}
+		}
+		XRP_amerikabomber_idea = {
+			picture = SWE_marauder_bombers
+			removal_cost = -1
+			modifier = {
+				air_range_factor = 0.25
+				strategic_bomb_visibility = -0.1
+			}
+		}
+		XRP_sea_bombing = {
+			picture = combined_bomber_offensive
+			removal_cost = -1
+			modifier = {
+				mines_planting_by_air_factor = 0.25
+				air_nav_efficiency = 0.1
+				naval_strike_targetting_factor = 0.1
+			}
+		}
+		XRP_strat_bombing_idea = {
+			picture = strategic_bombing_focus
+			removal_cost = -1
+			modifier = {
+				air_bombing_targetting = 0.15
+				air_strategic_bomber_night_penalty = -0.1
+				air_strategic_bomber_bombing_factor = 0.1
+			}
+		}
+		XRP_fighter_production = {
+			picture = generic_fighter_production_diverted
+			removal_cost = -1
+			equipment_bonus = { fighter = { build_cost_ic = -0.25 instant = yes } }
+			modifier = {
+				air_superiority_efficiency = 0.1
+				air_interception_detect_factor = 0.1
+			}
+		}
+		XRP_american_skies = {
+			picture = air_support_focus
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.1
+				air_defence_factor = 0.1
+				ace_effectiveness_factor = 0.1
+				air_cas_efficiency = 0.1
+			}
+		}
+
 		#Navy Ideas#
+		XRP_rebuild_carriers = {
+			picture = generic_navy_carrier_bonus
+			removal_cost = -1
+			equipment_bonus = { carrier = { build_cost_ic = -0.25 instant = yes } }
+			
+		}
+		XRP_build_subs = {
+			picture = the_long_lance
+			removal_cost = -1
+			equipment_bonus = { submarine = { build_cost_ic = -0.25 instant = yes } }
+			
+		}
 		XRP_merchant_marine = {
 			picture = liberty_ships_focus
 			removal_cost = -1
 			equipment_bonus = { convoy = { build_cost_ic = -0.25 instant = yes } }
 			
+		}
+		XRP_base_strike_idea = {
+			picture = generic_navy_bonus
+			removal_cost = -1
+			modifier = {
+				shore_bombardment_bonus = 0.1
+				naval_strike = 0.1
+				sortie_efficiency = 0.25
+				air_carrier_night_penalty_reduction_factor = 0.1
+			}
+		}
+		XRP_sub_war = {
+			picture = SOV_shipyard_staff_purged
+			removal_cost = -1
+			modifier = {
+				submarine_attack = 5
+				navy_visibility = -0.1
+				sub_retreat_speed = 0.1
+			}
+		}
+		XRP_american_ocean_idea = {
+			picture = generic_sea_focused_navy
+			removal_cost = -1
+			modifier = {
+				navy_org_factor = 0.1
+				naval_speed_factor = 0.1
+				naval_detection = 0.1
+				naval_coordination = 0.1
+			}
 		}
 	}
 }

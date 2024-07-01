@@ -300,7 +300,7 @@ if = {
 	create_equipment_variant = {
 		name = "C-17" #post WW2 cargo plane
 		type = transport_plane_equipment_1
-		icon = "GFX_USA_transport_plane_1"
+		#icon = "GFX_USA_transport_plane_1"
 	}
 		set_technology = {
 			iw_small_airframe = 1

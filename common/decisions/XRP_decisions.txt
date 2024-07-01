@@ -929,6 +929,229 @@ XRP_puppets = {
 			factor = 200
 		}
 	}
+	XRP_alsace_invade_burgundy = {
+		allowed = {
+			tag = XRP
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = XRP_alsace_puppet
+			XAL = { has_country_flag = XRP_french_puppet }
+		}
+		available = {
+			XAL = { has_country_flag = XRP_french_puppet }
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = XFR
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	XRP_alsace_invade_paris = {
+		allowed = {
+			tag = XRP
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = XRP_alsace_puppet
+			XAL = { has_country_flag = XRP_french_puppet }
+		}
+		available = {
+			XAL = { has_country_flag = XRP_french_puppet }
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = XPR
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	XRP_destroy_OO_44 = {
+		allowed = {
+			tag = XRP
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = XRP_restore_order
+		}
+		available = {
+			has_completed_focus = XRP_restore_order
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = XOO
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				strength_ratio = {
+					tag = XOO
+					ratio > 0.75
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					has_war_with = XOO
+				}
+			}
+		}
+	}
+	XRP_destroy_XAP= {
+		allowed = {
+			tag = XRP
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = XRP_restore_order
+		}
+		available = {
+			has_completed_focus = XRP_restore_order
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = XAP
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				strength_ratio = {
+					tag = XAP
+					ratio > 0.75
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					has_war_with = XAP
+				}
+			}
+		}
+	}
+	XRP_destroy_XGE = {
+		allowed = {
+			tag = XRP
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = XRP_restore_order
+		}
+		available = {
+			has_completed_focus = XRP_restore_order
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = XGE
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				strength_ratio = {
+					tag = XGE
+					ratio > 0.75
+				}
+				any_neighbor_country = {
+					tag = XGE
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					has_war_with = XGE
+				}
+			}
+		}
+	}
+	XRP_destroy_XSH = {
+		allowed = {
+			tag = XRP
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = XRP_restore_order
+		}
+		available = {
+			has_completed_focus = XRP_restore_order
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = XSH
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				strength_ratio = {
+					tag = XSH
+					ratio > 0.75
+				}
+				any_neighbor_country = {
+					tag = XSH
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					has_war_with = XSH
+				}
+			}
+		}
+	}
+	XRP_destroy_XLH = {
+		allowed = {
+			tag = XRP
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = XRP_restore_order
+		}
+		available = {
+			has_completed_focus = XRP_restore_order
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = XLH
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				strength_ratio = {
+					tag = XLH
+					ratio > 0.75
+				}
+				any_neighbor_country = {
+					tag = XLH
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					has_war_with = XLH
+				}
+			}
+		}
+	}
 }
 #	XRP_french_puppet_return_territory = { #does not work yet
 #		icon = GFX_decision_hol_exchange_intelligence_data

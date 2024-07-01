@@ -778,7 +778,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_leave_germans_alone
-			#icon = GFX_focus_POL_reassert_silesian_claims
+			icon = GFX_focus_ger_return_of_the_kaiser
 			x = 11
 			y = 9
 			#relative_position_id = 
@@ -796,12 +796,12 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				add_ideas = XRP_tolerate_german_business
 			}
 		}
 		focus = {
 			id = XRP_steal_from_germans
-			#icon = GFX_focus_POL_reassert_silesian_claims
+			icon = GFX_focus_DEN_schleswigian_farmers
 			x = 14
 			y = 9
 			#relative_position_id = 
@@ -819,7 +819,11 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				add_ideas = XRP_seize_german_business
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
 			}
 		}
 
@@ -835,7 +839,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  }
+				NOT = {  XRP = { is_subject = yes }}
 			}	
 
 			ai_will_do = {
@@ -861,7 +865,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  }
+				NOT = {  XRP = { is_subject = yes }}
 			}	
 
 			ai_will_do = {
@@ -888,7 +892,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  }
+				NOT = {  XRP = { is_subject = yes }}
 			}	
 
 			ai_will_do = {
@@ -957,7 +961,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  }
+				NOT = {  XRP = { is_subject = yes }}
 			}	
 			mutually_exclusive = {
 				focus = XRP_deal_with_mephisto
@@ -986,7 +990,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  }
+				NOT = {  XRP = { is_subject = yes }}
 			}	
 			mutually_exclusive = {
 				focus = XRP_deal_with_mephisto
@@ -1017,7 +1021,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  }
+				NOT = {  XRP = { is_subject = yes }}
 			}	
 
 			ai_will_do = {
@@ -1149,7 +1153,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_deal_with_mephisto focus = XRP_demand_stuttgart focus = XRP_demand_rhineland }
 			available = {
-				NOT = {  }
+				NOT = {  XRP = { is_subject = yes }}
 			}	
 
 			ai_will_do = {
@@ -1178,7 +1182,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_deal_with_mephisto focus = XRP_demand_stuttgart focus = XRP_demand_rhineland }
 			available = {
-				NOT = {  }
+				NOT = {  XRP = { is_subject = yes }}
 			}	
 
 			ai_will_do = {
@@ -1266,11 +1270,23 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				swap_ideas = {
-					remove_idea = XRP_deutsch_apartheid
-					add_idea = XRP_deutsch_apartheid_factions
-				}
+				add_ideas = XRP_america_first_idea
 				custom_effect_tooltip = XRP_deutsch_apartheid_factions_tooltip
+				hidden_effect = {
+				if = {
+					limit =  { has_idea =  XRP_deutsch_apartheid }
+					swap_ideas = {
+						remove_idea = XRP_deutsch_apartheid
+						add_idea = XRP_deutsch_apartheid_factions
+					}
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = XRP_deutsch_apartheid_recruitment
+						add_idea = XRP_deutsch_apartheid_recruitment_factions
+					}
+				}
+				}
 				
 				
 			}
@@ -1279,7 +1295,7 @@ focus_tree = {
 		###Hardliner Tree###
 		focus = {
 			id = XRP_all_within
-			#icon = GFX_focus_POL_reassert_silesian_claims
+			icon = GFX_focus_generic_fascist_propaganda
 			x = 16
 			y = 9
 			#relative_position_id = 
@@ -1295,12 +1311,15 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.10
+				}
 			}
 		}
 		focus = {
 			id = XRP_every_american_drafted
-			#icon = GFX_focus_POL_reassert_silesian_claims
+			icon = GFX_focus_usa_honor_the_confederacy
 			x = 18
 			y = 9
 			#relative_position_id = 
@@ -1316,7 +1335,7 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				add_ideas = XRP_conscript_americans
 			}
 		}
 		focus = {
@@ -1337,7 +1356,7 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				custom_effect_tooltip = XRP_restore_order_tooltip
 			}
 		}
 		focus = {
@@ -1395,6 +1414,19 @@ focus_tree = {
 			allow_branch = { has_country_flag = XRP_flag1  }
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 			cost = 5
+			bypass = {
+				AND = {
+					XTI = {
+						exists = no
+					}
+					XSS = {
+						exists = no
+					}
+					XCG = {
+						exists = no
+					}
+				}
+			}
 			prerequisite = { focus =  XRP_restore_order }
 			available = {
 				NOT = {  XRP = { is_subject = yes }}
@@ -1431,7 +1463,16 @@ focus_tree = {
 			available = {
 				NOT = {  XRP = { is_subject = yes }}
 			}	
-
+			bypass = {
+				AND = {
+					XNL = {
+						exists = no
+					}
+					XLX = {
+						exists = no
+					}
+				}
+			}
 			ai_will_do = {
 				factor = 1
 			}
@@ -1455,6 +1496,11 @@ focus_tree = {
 			allow_branch = { has_country_flag = XRP_flag1  }
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 			cost = 5
+			bypass = {
+				XCM = {
+					exists = no
+				}
+			}
 			prerequisite = { focus =  XRP_restore_order }
 			available = {
 				NOT = {  XRP = { is_subject = yes }}
@@ -1505,6 +1551,19 @@ focus_tree = {
 			allow_branch = { has_country_flag = XRP_flag1  }
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 			cost = 5
+			bypass = {
+				AND = {
+				XAL = {
+					exists = no
+				}
+				XFR = {
+					exists = no
+				}
+				XPR = {
+					exists = no
+				}
+				}
+			}
 			prerequisite = { focus =  XRP_restore_order }
 			available = {
 				NOT = {  XRP = { is_subject = yes }}
@@ -1578,7 +1637,7 @@ focus_tree = {
 		}
 		focus = {
 			id = XRP_fbi
-			#icon = GFX_focus_POL_reassert_silesian_claims
+			icon = GFX_focus_generic_national_security
 			x = 18
 			y = 11
 			#relative_position_id = 
@@ -1594,7 +1653,7 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				add_ideas = XRP_fbi_idea
 			}
 		}
 		focus = {
@@ -1883,7 +1942,11 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_march_on_rome focus = XRP_destroy_brittania focus = XRP_mop_up_south }
 			available = {
+				has_country_flag = XRP_programmed_yet
 				NOT = {  XRP = { is_subject = yes }}
+				XAD = {
+					exists = yes
+				}
 			}	
 			mutually_exclusive = {
 				focus = XRP_ally_against_cats
@@ -2016,6 +2079,11 @@ focus_tree = {
 			allow_branch = { has_country_flag = XRP_flag1  }
 
 			cost = 5
+			bypass = {
+				XAD = {
+					exists = no
+				}
+			}
 			prerequisite = { focus =  XRP_fuck_you_iberia  }
 			available = {
 				NOT = {  XRP = { is_subject = yes }}
@@ -2043,7 +2111,9 @@ focus_tree = {
 			prerequisite = { focus =  XRP_no_quarter  }
 			prerequisite = { focus =  XRP_demand_subjugation focus = XRP_no_pets_allowed  }
 			available = {
-				NOT = {  }
+				NOT = { any_country = {
+					has_government = communism
+				} }
 			}
 			ai_will_do = {
 				factor = 1

@@ -1371,6 +1371,10 @@ XRP_democratic_color = {
     color = rgb { 20 133 237 }
     color_ui = rgb { 20 133 237 }
 }
+XRP_neutrality_color = {
+    color = rgb { 128 128 128 }
+    color_ui = rgb { 128 128 128 }
+}
 XRP_new_america_cosmetic = { #same as default
 	color = rgb { 0 82 155 }
 	color_ui = rgb { 0 82 155 }

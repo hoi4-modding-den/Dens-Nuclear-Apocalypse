@@ -73,6 +73,7 @@ country_event = { #german overthrow
     				long_name = XRP_americans_overthrown_long
     				name = XRP_americans_overthrown
 			}
+			set_cosmetic_tag = XRP_neutrality_color 
 			add_stability = -0.10
     	}
 }
@@ -105,6 +106,7 @@ country_event = { #german overthrow alt
     				long_name = XRP_americans_overthrown_long
     				name = XRP_americans_overthrown
 			}
+			set_cosmetic_tag = XRP_neutrality_color
 			add_stability = -0.10
     	}
 }
@@ -668,6 +670,7 @@ country_event = { #Alsace refuses
 		}
 		declare_war_on = {
 			target = XAL
+			type = annex_everything
 		}
     }
 }
@@ -747,6 +750,7 @@ country_event = { #Czechs refuse
 		}
 		declare_war_on = {
 			target = XCM
+			type = annex_everything
 		}
     }
 }
@@ -1136,13 +1140,13 @@ country_event = {
 			983 = {
 			damage_building = {
 				type = industrial_complex
-				damage = 2.5
+				damage = 1
 			}
 			}
 			42 = {
 				damage_building = {
 					type = industrial_complex
-					damage = 2.5
+					damage = 1
 				}
 				}
 		}
@@ -1156,7 +1160,7 @@ country_event = {
 			set_state_category = large_town
 			add_building_construction = {
 			type = industrial_complex
-			level = 1
+			level = 2
 			instant_build = yes
 				}
 		
@@ -1169,7 +1173,11 @@ country_event = {
 				}
 		
 		}
-    	}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
+		}
+    }
 }
 country_event = {
     id = XRP_focus_event.4 #the question of agriculture
@@ -1182,15 +1190,66 @@ country_event = {
 	option = {
         name = XRP.FE_eco2.a
 		ai_chance = {
-			base = 100
+			base = 50
+		}
+			983 = {
+				set_state_category = large_town
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+					}
+			
+			}
+			42 = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+					}
+			
+			}
+		hidden_effect = {
+			983 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			}
+			42 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+				}
 		}
     	}
 	option = {
         name = XRP.FE_eco2.b
 		ai_chance = {
-			base = 100
+			base = 50
 		}
-    	}
+		983 = {
+			set_state_category = large_town
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+				}
+		
+		}
+		42 = {
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+				}
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
+		}
+    }
 }
 country_event = {
     id = XRP_focus_event.5 #miltary industry event
@@ -1203,15 +1262,64 @@ country_event = {
 	option = {
         name = XRP.FE_eco3.a
 		ai_chance = {
-			base = 100
+			base = 50
+		}
+			983 = {
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+					}
+			
+			}
+			42 = {
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+					}
+			
+			}
+		hidden_effect = {
+			983 = {
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			}
+			42 = {
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+				}
 		}
     	}
 	option = {
         name = XRP.FE_eco3.b
 		ai_chance = {
-			base = 100
+			base = 50
 		}
-    	}
+		983 = {
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+				}
+		
+		}
+		42 = {
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+				}
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
+		}
+    }
 }
 
 #annexation events#

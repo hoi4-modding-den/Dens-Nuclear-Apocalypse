@@ -76,7 +76,7 @@ instant_effect = {
 		equipment = {
 			type = small_plane_airframe_1
 			creator = "XRP"
-			version_name = "P-35A"
+			#version_name = "P-35A"
 		}
 		requested_factories = 1
 		progress = 0.15

@@ -99,11 +99,12 @@ shared_focus = {
 		}
 
 		completion_reward = {
-			country_event = { id = XRP_focus_event.4 }
 			swap_ideas = {
 				remove_idea = XRP_agarian_pop 
 				add_idea = XRP_agarian_pop_improved
 			}
+			country_event = { id = XRP_focus_event.4 }
+			custom_effect_tooltip = XRP_german_warning_tooltip
 		}
 	}
 
@@ -149,7 +150,7 @@ shared_focus = {
 		}
 
 		completion_reward = {
-
+			add_ideas = XRP_modern_farming
 		}
 	}
 
@@ -192,15 +193,7 @@ shared_focus = {
 		completion_reward = {
 			add_ideas = XRP_military_buff
 			country_event = { id = XRP_focus_event.5 }
-			#ditto
-			#983 = {
-			#	add_building_construction = {
-			#	type = arms_factory
-			#	level = 2
-			#	instant_build = yes
-			#		}
-			#
-			#}
+			custom_effect_tooltip = XRP_german_warning_tooltip
 		}
 	}
 
@@ -256,7 +249,22 @@ shared_focus = {
 		}
 
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = XRP_economy_gem_mines_bonus
+				bonus = 0.5
+				uses = 2
+				category  = excavation_tech
+			}
+			42 = {
+			add_resource = {
+				type = chromium 
+				amount = 16
+			}
+			add_resource = {
+				type = tungsten  
+				amount = 10
+			}
+			}
 		}
 	}
 
@@ -277,7 +285,7 @@ shared_focus = {
 		}
 
 		completion_reward = {
-
+			add_ideas = XRP_americanized_farms
 		}
 	}
 
@@ -319,7 +327,7 @@ shared_focus = {
 		}
 
 		completion_reward = {
-
+			add_ideas = XRP_expanded_industry
 		}
 	}
 
@@ -331,17 +339,22 @@ shared_focus = {
 		#relative_position_id = 2
 
 		cost = 10
-		prerequisite = { focus =  XRP_economy_american_farms} 
-		prerequisite = { focus =  XRP_economy_american_factories} 
+		prerequisite = { focus =  XRP_economy_american_farms focus =  XRP_economy_american_factories } 
 		ai_will_do = {
 			factor = 1
 		}
 
 		completion_reward = {
-
+			add_ideas = XRP_economic_miracle
+			42 = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+					}	
+			}
 		}
 	}
-
 
 
 #Army Tree#
@@ -1082,13 +1095,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		air_experience = 50
+		air_experience = 100
 	}
 }
 
 shared_focus = {
 	id = XRP_reverse_engineering_jets
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_jet_planes
 	x = 44
 	y = 3
 	#relative_position_id = 2
@@ -1101,13 +1114,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = XRP_reverse_engineering_jets_bonus
+			uses = 2
+			ahead_reduction = 2
+			category = jet_technology
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_air_doctrine
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_air_defense
 	x = 46
 	y = 3
 	#relative_position_id = 2
@@ -1120,13 +1138,17 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = air_doctrine
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_air_standards
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_build_airforce
 	x = 48
 	y = 3
 	#relative_position_id = 2
@@ -1139,13 +1161,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_air_standards_idea
 	}
 }
 
 shared_focus = {
 	id = XRP_space_force
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_XRP_space_force
 	x = 42
 	y = 4
 	#relative_position_id = 2
@@ -1158,13 +1180,18 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = XRP_space_force_bonus
+			bonus = 1
+			uses = 2
+			category = rocketry
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_fast_planes
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_air_fighter2
 	x = 44
 	y = 4
 	#relative_position_id = 2
@@ -1177,13 +1204,19 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = XRP_fast_planes_bonus
+			bonus = 0.5
+			uses = 2
+			category = cat_air_engine
+		}
+		add_ideas = XRP_speedy_planes
 	}
 }
 
 shared_focus = {
 	id = XRP_strat_bombing
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_air_bomber
 	x = 46
 	y = 4
 	#relative_position_id = 2
@@ -1199,13 +1232,25 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		air_experience = 50
+		add_tech_bonus = {
+			name = XRP_strat_bombing_bonus
+			bonus = 0.5
+			uses = 2
+			category = mio_cat_all_heavy_aircraft_and_modules 
+		}
+		add_tech_bonus = {
+			name = XRP_strat_bombing_bonus
+			bonus = 1
+			uses = 1
+			technology = survivability_studies   
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_fighters_and_carrier_fighters
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_usa_escort_fighters
 	x = 48
 	y = 4
 	#relative_position_id = 2
@@ -1221,14 +1266,27 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		air_experience = 50
+		add_tech_bonus = {
+			name = XRP_fighters_bonus
+			bonus = 0.5
+			uses = 2
+			category = mio_cat_all_light_aircraft_and_modules  
+		}
+		add_tech_bonus = {
+			name = XRP_fighters_bonus
+			bonus = 1
+			uses = 1
+			technology = air_torpedoe_2  
+			technology = air_torpedoe_3
+		}
 	}
 }
 
 
 shared_focus = {
 	id = XRP_rocket_go_boom
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_rocketry
 	x = 42
 	y = 5
 	#relative_position_id = 2
@@ -1241,13 +1299,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_rocket_idea
 	}
 }
 
 shared_focus = {
 	id = XRP_amerikabomber
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_long_range_aircraft
 	x = 45
 	y = 5
 	#relative_position_id = 2
@@ -1260,13 +1318,19 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = XRP_strat_bombing_bonus
+			bonus = 1
+			uses = 1
+			technology = range_improvements  
+		}
+		add_ideas = XRP_amerikabomber_idea
 	}
 }
 
 shared_focus = {
 	id = XRP_new_f35
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_multi_role_aircraft
 	x = 47
 	y = 5
 	#relative_position_id = 2
@@ -1279,13 +1343,22 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			name = XRP_new_f35_bonus
+			bonus = 1
+			uses = 4
+			technology = photo_reconnaisance   
+			technology = aa_cannon_1 
+			technology = aa_cannon_2
+			technology = aa_cannon_3 
+			technology = aa_hmg 
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_bomb_the_seas
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_air_naval_bomber
 	x = 49
 	y = 5
 	#relative_position_id = 2
@@ -1298,13 +1371,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_sea_bombing
 	}
 }
 
 shared_focus = {
 	id = XRP_bomb_dresden
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_SWE_marauder_bombers
 	x = 46
 	y = 6
 	#relative_position_id = 2
@@ -1317,13 +1390,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_strat_bombing_idea
 	}
 }
 
 shared_focus = {
 	id = XRP_mass_production_planes
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_aircraft_production
 	x = 48
 	y = 6
 	#relative_position_id = 2
@@ -1336,13 +1409,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_fighter_production
 	}
 }
 
 shared_focus = {
 	id = XRP_american_sky
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_cas_aircraft
 	x = 47
 	y = 7
 	#relative_position_id = 2
@@ -1355,7 +1428,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_american_skies
 	}
 }
 
@@ -1391,6 +1464,11 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = naval_doctrine
+		}
 		#copied from generic tree, because man this is a lot of if statements for something that seems simple
 			navy_experience = 50
 			if = {
@@ -1493,7 +1571,7 @@ shared_focus = {
 
 shared_focus = {
 	id = XRP_carrier_fleet
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_navy_carrier
 	x = 50
 	y = 3
 	#relative_position_id = 2
@@ -1509,13 +1587,19 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_rebuild_carriers
+		add_tech_bonus = {
+			name = XRP_carrier_fleet_bonus
+			bonus = 1
+			uses = 2
+			category = mio_cat_tech_all_carrier_and_modules 
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_submarine_fleet
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_goal_generic_navy_submarine
 	x = 52
 	y = 3
 	#relative_position_id = 2
@@ -1531,13 +1615,19 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_build_subs
+		add_tech_bonus = {
+			name = XRP_carrier_fleet_bonus
+			bonus = 1
+			uses = 2
+			category = mio_cat_tech_all_submarine_and_modules  
+		}
 	}
 }
 
 shared_focus = {
 	id = XRP_base_strike
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_jap_strike_south
 	x = 50
 	y = 4
 	#relative_position_id = 2
@@ -1550,13 +1640,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_base_strike_idea
 	}
 }
 
 shared_focus = {
 	id = XRP_unrestricted_sub_war
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_cruiser_submarines
 	x = 52
 	y = 4
 	#relative_position_id = 2
@@ -1569,13 +1659,13 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_sub_war
 	}
 }
 
 shared_focus = {
 	id = XRP_american_ocean
-	#icon = GFX_focus_usa_voter_registration_act
+	icon = GFX_focus_generic_befriend_usa
 	x = 51
 	y = 5
 	#relative_position_id = 2
@@ -1588,7 +1678,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = XRP_american_ocean_idea
 	}
 }
 
