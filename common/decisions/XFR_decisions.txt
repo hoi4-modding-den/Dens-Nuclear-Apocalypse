@@ -408,7 +408,10 @@ XFR_last_modernisation = {
 		}
 
 		custom_cost_trigger = {
-			has_army_experience > 99
+			OR = {
+				is_ai = yes
+				has_army_experience > 99
+			}
 		}
 		custom_cost_text = decision_cost_100_army_xp
 
@@ -449,7 +452,10 @@ XFR_last_modernisation = {
 		}
 
 		custom_cost_trigger = {
-			has_army_experience > 99
+			OR = {
+				is_ai = yes
+				has_army_experience > 99
+			}
 		}
 		custom_cost_text = decision_cost_100_army_xp
 
@@ -494,7 +500,10 @@ XFR_last_modernisation = {
 		}
 
 		custom_cost_trigger = {
-			has_army_experience > 99
+			OR = {
+				is_ai = yes
+				has_army_experience > 99
+			}
 		}
 		custom_cost_text = decision_cost_100_army_xp
 
@@ -539,7 +548,10 @@ XFR_last_modernisation = {
 		}
 
 		custom_cost_trigger = {
-			has_army_experience > 99
+			OR = {
+				is_ai = yes
+				has_army_experience > 99
+			}
 		}
 		custom_cost_text = decision_cost_100_army_xp
 
@@ -584,7 +596,10 @@ XFR_last_modernisation = {
 		}
 
 		custom_cost_trigger = {
-			has_army_experience > 99
+			OR = {
+				is_ai = yes
+				has_army_experience > 99
+			}
 		}
 		custom_cost_text = decision_cost_100_army_xp
 
