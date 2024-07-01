@@ -133,6 +133,112 @@ on_actions = {
 		}
 	}
 
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = XFR }
+					FROM = { original_tag = XAL }
+				}
+				XFR = {
+					add_timed_idea = {
+						idea = XFR_XAL_bonus
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = XFR }
+					FROM = { original_tag = XNE }
+				}
+				XFR = {
+					add_timed_idea = {
+						idea = XFR_XNE_bonus
+						days = 365
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+						XFR = {
+							NOT = { has_tech = mtg_transport }
+						}
+					}
+					XFR = {
+						set_technology = {
+							mtg_transport = 1
+							popup = no
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = XFR }
+					FROM = { original_tag = XAQ }
+				}
+				XFR = {
+					add_timed_idea = {
+						idea = XFR_XAQ_bonus
+						days = 365
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = XAQ }
+					FROM = { original_tag = XFR }
+				}
+				XFR = {
+					add_ideas = XFR_XAQ_defensive_bonus
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = XFR }
+					FROM = { original_tag = XSS }
+				}
+				XFR = {
+					add_timed_idea = {
+						idea = XFR_XSS_bonus
+						days = 365
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = XSS }
+					FROM = { original_tag = XFR }
+				}
+				XFR = {
+					add_ideas = XFR_XSS_defensive_bonus
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = XFR }
+					FROM = { original_tag = XHP }
+				}
+				XFR = {
+					add_timed_idea = {
+						idea = XFR_XHP_bonus
+						days = 365
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = XHP }
+					FROM = { original_tag = XFR }
+				}
+				XFR = {
+					add_ideas = XFR_XHP_defensive_bonus
+				}
+			}
+		}
+	}
+
 	on_state_control_changed = {
 		effect = {
 			if = {

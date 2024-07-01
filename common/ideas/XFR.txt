@@ -1964,6 +1964,233 @@ ideas = {
 
         }
 
+        XFR_XAL_bonus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XAL
+                }
+            }
+           removal_cost = -1
+
+            picture = generic_intel_bonus
+
+            targeted_modifier = {
+                tag = XAL
+                attack_bonus_against = 0.3
+            }
+
+        }
+
+        XFR_XNE_bonus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XNE
+                }
+            }
+           removal_cost = -1
+
+            picture = generic_navy_bonus
+
+            modifier = {
+                naval_invasion_penalty = -0.1
+                naval_invasion_prep_speed = 0.25
+            }
+
+            targeted_modifier = {
+                tag = XNE
+                attack_bonus_against = 0.2
+            }
+
+        }
+
+        XFR_XAQ_bonus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XAQ
+                }
+            }
+           removal_cost = -1
+
+            picture = CZE_planning_bonus
+
+            targeted_modifier = {
+                tag = XAQ
+                attack_bonus_against = 0.25
+                defense_bonus_against = 0.1
+            }
+
+        }
+
+        XFR_XAQ_defensive_bonus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XAQ
+                }
+            }
+           removal_cost = -1
+
+            picture = YUG_federal_defense_council
+
+            targeted_modifier = {
+                tag = XAQ
+                attack_bonus_against = 0.05
+                defense_bonus_against = 0.3
+            }
+
+        }
+
+        XFR_XSS_bonus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XSS
+                }
+            }
+           removal_cost = -1
+
+            picture = CZE_planning_bonus
+
+            modifier = {
+                terrain_penalty_reduction = 0.1
+            }
+
+            targeted_modifier = {
+                tag = XSS
+                attack_bonus_against = 0.25
+                defense_bonus_against = 0.1
+            }
+
+        }
+
+        XFR_XSS_defensive_bonus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XSS
+                }
+            }
+           removal_cost = -1
+
+            picture = YUG_federal_defense_council
+
+            modifier = {
+                max_dig_in_factor = 0.2
+            }
+
+            targeted_modifier = {
+                tag = XSS
+                attack_bonus_against = 0.05
+                defense_bonus_against = 0.3
+            }
+
+        }
+
+        XFR_XHP_bonus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XHP
+                }
+            }
+           removal_cost = -1
+
+            picture = CZE_planning_bonus
+
+            targeted_modifier = {
+                tag = XHP
+                attack_bonus_against = 0.3
+                defense_bonus_against = 0.15
+            }
+
+        }
+
+        XFR_XHP_defensive_bonus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XHP
+                }
+            }
+           removal_cost = -1
+
+            picture = YUG_federal_defense_council
+
+            targeted_modifier = {
+                tag = XHP
+                attack_bonus_against = 0.1
+                defense_bonus_against = 0.4
+            }
+
+        }
+
     }
 
     industrial_concern = {

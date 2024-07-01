@@ -1552,6 +1552,15 @@ XFR_social_system_desc: "If our people are to prosper, we must ensure that a bas
 XFR_aggressive_foreign_policy_idea: "Aggressive Foreign Policy"
 XFR_easy_immigration: "Immigration Hotspot"
 
+XFR_XAL_bonus: "Alsace Offensive"
+XFR_XNE_bonus: "Crossing the Channel"
+XFR_XAQ_bonus: "Strike against [XAQ.GetNameDef]"
+XFR_XAQ_defensive_bonus: "Defense Plan Noviodunum"
+XFR_XSS_bonus: "Strike against [XSS.GetNameDef]"
+XFR_XSS_defensive_bonus: "Defense Plan Jura"
+XFR_XHP_bonus: "Strike Against [XHP.GetNameDef]"
+XFR_XHP_defensive_bonus: "Defense Plan Crusader"
+
 XFR_modern_army_hq: "Modernised General Staff"
 XFR_modern_army_hq_desc: "Our general staff is trained using a combat simulation from the Old World called Hearts of Iron."
 XFR_modern_cavalry: "Modernised Cavalry"

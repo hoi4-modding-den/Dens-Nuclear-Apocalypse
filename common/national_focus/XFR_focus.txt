@@ -88,6 +88,7 @@ focus_tree = {
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			add_political_power = 100
 			country_event = { id = XFR_events.44 }
 		}
 	}
@@ -232,9 +233,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 			custom_effect_tooltip = XFR_elections_tt
-			hidden_effect = {
-				set_country_flag = XFR_times_of_turmoil
-			}
 		}
 	}
 
@@ -338,7 +336,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = 1000
+    			amount = 2000
     			producer = FRA
 			}
 		}
@@ -552,6 +550,9 @@ focus_tree = {
 				popularity = 0.15
 			}
 			add_ideas = XFR_torch_of_democracy
+			set_rule = {
+    			can_join_opposite_factions = no
+			}
 			hidden_effect = {
 				news_event = { id = XFR_news_events.6 }
 			}
@@ -582,10 +583,6 @@ focus_tree = {
 			add_war_support = 0.1
 			set_rule = {
 				can_create_factions = yes
-			}
-			set_party_rule = {
-    			ideology = democratic
-				can_puppet = yes
 			}
 			if = {
 				limit = {
@@ -822,10 +819,14 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
-				factor = 0
-				has_war = yes
+				add = 1
+				naval_strength_ratio = {
+    				tag = XNE
+    				ratio > 1
+				}
+				has_war = no
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1690,7 +1691,7 @@ focus_tree = {
 
 		available = {
 			has_army_manpower = {
-    			size > 250000
+    			size > 200000
 			}
 			has_government = democratic
 			is_subject = no
@@ -4664,7 +4665,14 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				naval_strength_ratio = {
+    				tag = XNE
+    				ratio > 1
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
 		will_lead_to_war_with = XNE
