@@ -7798,7 +7798,27 @@ focus_tree = {
 				limit = {
 					is_ai = yes
 				}
-				army_experience = 500
+				unlock_national_focus = XFR_combined_arms
+				clr_country_flag = XFR_last_modernisation_active
+				if = {
+					limit = {
+						has_idea = XFR_modern_tanks
+					}
+					add_ideas = XFR_modern_army_tanks
+				}
+				if = {
+					limit = {
+						has_idea = XFR_modern_artillery
+					}
+					add_ideas = XFR_modern_army
+				}
+				remove_ideas = {
+					XFR_modern_infantry
+					XFR_modern_cavalry
+					XFR_modern_artillery
+					XFR_modern_tanks
+				}
+				add_ideas = XFR_modern_army_hq
 			}
 		}
 		completion_reward = {
