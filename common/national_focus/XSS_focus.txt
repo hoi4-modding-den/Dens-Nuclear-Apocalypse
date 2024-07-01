@@ -847,6 +847,14 @@ add_resource = {
 				type = annex_everything
 				target = XIT
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = XMC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XHR
+			}
 
         
         }
@@ -2774,6 +2782,14 @@ set_politics = {
 				type = annex_everything
 				target = XIT
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = XMC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XHR
+			}
 
         }
 			create_wargoal = {
@@ -2783,6 +2799,14 @@ set_politics = {
 			create_wargoal = {
 				type = annex_everything
 				target = XIT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XMC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XHR
 			}
 
         
