@@ -104,7 +104,7 @@ XAQ_agarian_collapse = {
 	XAQ_fix_agarian_collapse = { 
 		
 		icon = GFX_idea_XAQ_decision_revolt
-		days_mission_timeout = 15
+		days_mission_timeout = 360
 		is_good = no
 		allowed = {
 			tag = XAQ

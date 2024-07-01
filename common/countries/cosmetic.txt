@@ -1,3 +1,11 @@
+XAQ_FAS= {
+	color = rgb { 58 151 29 }
+	color_ui = rgb { 58 151 29 }
+}
+XAQ_COM = {
+	color = rgb { 212 44 44 }
+	color_ui = rgb { 212 44 44 }
+}
 SGS_TIR = {
 	color = rgb { 181 149 20 }
 	color_ui = rgb { 181 149 20 }

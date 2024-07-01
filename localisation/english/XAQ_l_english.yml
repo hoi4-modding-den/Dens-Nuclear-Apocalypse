@@ -89,7 +89,9 @@
  XAQ_roman_revanchism:0 "Roman Pride"
  XAQ_agarian_collapse_1:0 "Agarian Collapse"
  XAQ_agarian_collapse_2:0 "Agarian Collapse"
+ XAQ_agarian_collapse_2_n:0 "Agarian Collapse"
  XAQ_devalue_denarius:0 "Devalue Denarius"
+ XAQ_down_griffin:0 "Down with the Griffin!"
 
 #idea descriptions
  XAQ_senate_chaos_desc:0 "With the looming dissolution of the Senate, the senators and democracy loving peoples are causing unrest."
@@ -102,7 +104,7 @@
  XAQ_roman_revanchism_desc:0 "At the heart of every Roman lies a great nationalist fervour to grasp what is theirs."
  XAQ_agarian_collapse_1_desc:0 "As it turns out, we don't know how to manage an agarian economy."
  XAQ_agarian_collapse_2_desc:0 "Somehow, we only made the situation worse. §RCivil war looms...§!"
-
+ XAQ_agarian_collapse_2_n_desc:0 "Somehow, we only made the situation worse."
 #characters
  XAQ_marcel_pietot:0 "Marcel "Griffon" Petiot"
  XAQ_yvon_moise:0 "Yvon Moïse"
@@ -157,3 +159,10 @@
 
  #missions
  XAQ_fix_agarian_collapse:0 "Fix Agarian Collapse"
+
+
+ #cosmetic
+ XAQ_COM:0 "Roman Peasants' Insurgency"
+ XAQ_COM_DEF:0 "The Roman Peasants' Insurgency"
+ XAQ_COM_ADJ:0 "Roman"
+

@@ -21,8 +21,8 @@ country_event = {
 				}
 				country_event = {
 					id = XAQ_events.2
-					hours = 12
-    					random_hours = 6
+					days = 30
+    					random_days = 40
 				}
 			}
 			
@@ -47,11 +47,6 @@ country_event = {
 	picture = GFX_report_event_german_troops
 	title = XAQ_events.2.t
 	desc = XAQ_events.2.d
-	
-	mean_time_to_happen = {
-    		days = 60
-    		
-	}
 	
 	
 	immediate = {
@@ -91,12 +86,23 @@ country_event = {
         			23 19 985
     			}
     			keep_political_party_members = yes
+			set_cosmetic_tag = XAQ_FAS
+			set_country_flag = XAQ_counter_revolution #XFS
+			swap_ideas = {
+				remove_idea = XAQ_agarian_collapse_2
+				add_idea = XAQ_agarian_collapse_2_n
+			}
 		}
 		add_stability = 0.3
 		add_popularity = {
     			ideology = communism
     			popularity = 0.4
 		}
+		add_ideas = {
+			XAQ_down_griffin
+		}
+		set_cosmetic_tag = XAQ_COM #XCH
+		set_country_flag = XAQ_peasant_revolt
 
 	}
 	option = { 
@@ -112,7 +118,14 @@ country_event = {
         			25 26 33
     			}
     			keep_political_party_members = yes
+			set_country_flag = XAQ_peasant_revolt
+			set_cosmetic_tag = XAQ_COM
 		}
+		swap_ideas = {
+			remove_idea = XAQ_agarian_collapse_2
+			add_idea = XAQ_agarian_collapse_2_n
+		}
+
 
 	}
 }

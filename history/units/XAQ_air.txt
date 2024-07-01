@@ -1,0 +1,41 @@
+air_wings = {
+	19 = {
+		small_plane_airframe_1 =  {
+			owner = "XAQ" 
+			amount = 100
+			creator = "XAQ"
+			version_name = "Pugnator Avium"
+		}
+		small_plane_airframe_1 =  {
+			owner = "XFR" 
+			amount = 100
+			creator = "XFR"
+			version_name = "Pugnator Avium"
+		}
+		small_plane_airframe_1 =  {
+			owner = "XFR" 
+			amount = 100
+			creator = "XFR"
+			version_name = "Pugnator Avium"
+		}
+		small_plane_airframe_1 =  {
+			owner = "XFR" 
+			amount = 40
+			creator = "XFR"
+			version_name = "Pugnator Avium"
+		}
+		small_plane_cas_airframe_0 =  {
+			owner = "XAQ" 
+			amount = 100
+			creator = "XFR"
+			version_name = "Mors Desuper"
+		}
+		small_plane_cas_airframe_0 =  {
+			owner = "XAQ" 
+			amount = 25
+			creator = "XFR"
+			version_name = "Mors Desuper"
+		}
+	}
+}
+

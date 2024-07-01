@@ -247,7 +247,7 @@ ideas = {
 				modifier = {
 					stability_factor = -0.15
 					consumer_goods_factor = 0.60
-					stability_weekly = -0.01
+					stability_weekly = -0.005
 					communism_drift = 0.1
 				}
 		}
@@ -267,6 +267,48 @@ ideas = {
 				consumer_goods_factor = -0.15
 				stability_weekly = +0.005
 			}
+		}
+		XAQ_agarian_collapse_2_n = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				picture = POL_the_peasants_strike
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					NOT = { has_government = communism }
+				}
+	
+	
+				modifier = {
+					stability_factor = -0.20
+					consumer_goods_factor = 0.50
+				}
+		}
+		XAQ_down_griffin = {
+				allowed = {
+					original_tag = XAQ
+				}
+	
+				cancel = {
+    					has_civil_war = no
+				}
+				picture = SPR_anti_fascist_crusade
+			
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					NOT = { has_government = communism }
+				}
+	
+	
+				modifier = {
+					army_attack_factor = 0.2
+					army_defence_factor = 0.2
+					army_morale_factor = 0.3
+				}
 		}
 	}
 }
