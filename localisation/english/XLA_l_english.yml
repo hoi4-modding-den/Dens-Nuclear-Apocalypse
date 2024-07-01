@@ -124,6 +124,17 @@ XLA_Spiritualist_Revolutionaries:0 "Spiritualist Revolutionaries"
  XLA_Mine_Altwigitians:0 "Prioritize Altwigitian Regions for Prospecting"
  XLA_Mine_Spiritualist:0 "Prioritize Spiritualist Regions for Prospecting"
 
+ # Conquest
+ XLA_Reunite_Italy:0 "Reunite The Italians"
+ XLA_Reunite_Italy_desc:0 "After the collapse of civilizaiton, the Italian peninsula has been a cestpit of barbarians and warlords. With the stabilization of the Lost Tribes of Arnmouth into a stronger entity, we are now able to restore order to the peninsula under one greater government."
+ XLA_Expand_Stockpiles:0 "Expand Our Stockpiles"
+ XLA_Invade_Lombary:0 "Conquer [XLV.GetName]"
+ XLA_Invade_Holy_Remnant:0 "Invade [XHR.GetNameDefCap]"
+ XLA_Invade_Marble_Coast:0 "Invade [XMC.GetNameDefCap]"
+ XLA_Invade_Southerners:0 "Purge The Southerners"
+ XLA_Purge_Sicily:0 "Restore Order To Sicily"
+ XLA_Reclaim_Sardinia:0 "Reclaim Sardinia"
+
  ## Focus
  # Tooltips
  XLA_regional_balance_tier_I:0 "The balance of power is a mystery that we can now look further into."
@@ -144,6 +155,7 @@ XLA_Spiritualist_Revolutionaries:0 "Spiritualist Revolutionaries"
  XLA_Civil_War:0 "Emergency measures can only occur with the risk and flames of war."
  XLA_Borani_Alive:0 "The Life of Elder Borani"
  XLA_Borani_Dead:0 "The Death of Elder Borani"
+ XLA_Quell_Opponent:0 "We will attempt to suppress the enemy, in whatever way we can."
  # Names
  XLA_The_Roots:0 "The Roots..."
  XLA_The_Roots_desc:0 ""

@@ -15,6 +15,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_The_Roots
+		icon = GFX_Goal_XLA_Roots
 
 		x = 10
 		y = 0
@@ -27,6 +28,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Drink_Water
+		icon = GFX_focus_generic_naval_discipline
 
 		relative_position_id = XLA_The_Roots
 		x = 0
@@ -45,6 +47,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Feed_Us
+		icon = GFX_Goal_XLA_Regional_Balance
 
 		relative_position_id = XLA_Drink_Water
 		x = 0
@@ -67,6 +70,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Needs
+		icon = GFX_Goal_XLA_Roots
 
 		relative_position_id = XLA_Feed_Us
 		x = 0
@@ -85,6 +89,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Invest_Future
+		icon = GFX_Goal_XLA_Altwigitian_Alignment
 
 		relative_position_id = XLA_Needs
 		x = -2
@@ -114,6 +119,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Armed_Neutrality
+		icon = GFX_Goal_XLA_Neutral_Alignment
 
 		relative_position_id = XLA_Needs
 		x = 0
@@ -143,6 +149,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Sacred_Home
+		icon = GFX_Goal_XLA_Spiritualist_Alignment
 
 		relative_position_id = XLA_Needs
 		x = 2
@@ -172,6 +179,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_The_Elders_Council
+		icon = GFX_Goal_XLA_Elders_Council
 
 		relative_position_id = XLA_Armed_Neutrality
 		x = 0
@@ -192,6 +200,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Long_Haul
+		icon = GFX_focus_generic_road_investment
 
 		relative_position_id = XLA_The_Elders_Council
 		x = 0
@@ -210,6 +219,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Life_Beyond_Us
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 
 		relative_position_id = XLA_Long_Haul
 		x = 0
@@ -228,6 +238,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Borani_Fate
+		icon = GFX_Goal_XLA_Elder_Borani
 		dynamic = yes
 
 		relative_position_id = XLA_Life_Beyond_Us
@@ -259,6 +270,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Acolyte
+		icon = GFX_Goal_XLA_Acolyte
 
 		relative_position_id = XLA_Borani_Fate
 		x = -6
@@ -284,6 +296,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Borani_Guidance
+		icon = GFX_Goal_XLA_Borani_Guidance
 
 		relative_position_id = XLA_Borani_Fate
 		x = 0
@@ -316,6 +329,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Ancestors_Voices
+		icon = GFX_Goal_XLA_Ancestors_Voices
 
 		relative_position_id = XLA_Borani_Fate
 		x = 6
@@ -342,6 +356,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Tower_Says
+		icon = GFX_focus_generic_strike_at_democracy1
 
 		relative_position_id = XLA_Acolyte
 		x = 0
@@ -363,6 +378,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Aggressive_Approach
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 
 		relative_position_id = XLA_Tower_Says
 		x = -2
@@ -385,6 +401,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Old_Men_Speak
+		icon = GFX_focus_generic_university_2
 
 		relative_position_id = XLA_Tower_Says
 		x = 2
@@ -411,6 +428,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Preparations_Begin
+		icon = GFX_focus_generic_winter_warfare
 
 		relative_position_id = XLA_Tower_Says
 		x = 0
@@ -444,6 +462,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Subversion_Intelligence
+		icon = GFX_focus_generic_infiltration
 
 		relative_position_id = XLA_Aggressive_Approach
 		x = 0
@@ -468,6 +487,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Big_Dreams
+		icon = GFX_focus_generic_monarchy_2
 
 		relative_position_id = XLA_Old_Men_Speak
 		x = 0
@@ -487,6 +507,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Final_Push
+		icon = GFX_focus_generic_limited_social_mobilization
 
 		relative_position_id = XLA_Preparations_Begin
 		x = 0
@@ -509,6 +530,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Withstand
+		icon = GFX_focus_SWI_neutrality_on_the_move
 
 		relative_position_id = XLA_Borani_Guidance
 		x = 0
@@ -535,6 +557,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Revitalize_Auctermunty
+		icon = GFX_focus_generic_low_cost_housing
 
 		relative_position_id = XLA_Withstand
 		x = -1
@@ -563,6 +586,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Calm_Or_Storm
+		icon = GFX_focus_generic_improve_the_administration
 
 		relative_position_id = XLA_Withstand
 		x = 1
@@ -581,6 +605,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Production_Key
+		icon = GFX_focus_generic_mining_industry
 
 		relative_position_id = XLA_Withstand
 		x = 0
@@ -606,6 +631,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Consolidate_Council
+		icon = GFX_focus_generic_secret_service_agency
 
 		relative_position_id = XLA_Production_Key
 		x = 0
@@ -624,6 +650,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_The_Grotto_Helps
+		icon = GFX_Goal_XLA_Grotto_Helps
 
 		relative_position_id = XLA_Ancestors_Voices
 		x = 0
@@ -645,6 +672,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Whispers
+		icon = GFX_focus_generic_vatican_agents
 
 		relative_position_id = XLA_The_Grotto_Helps
 		x = 0
@@ -670,6 +698,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Arrows
+		icon = GFX_focus_generic_workers
 
 		relative_position_id = XLA_The_Grotto_Helps
 		x = 2
@@ -691,6 +720,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Home_Of_Gaia
+		icon = GFX_Goal_XLA_Gaia
 
 		relative_position_id = XLA_Whispers
 		x = 0
@@ -727,6 +757,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Home_Of_Nyx
+		icon = GFX_Goal_XLA_Nyx
 
 		relative_position_id = XLA_Arrows
 		x = 0
@@ -750,6 +781,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Proper_Home
+		icon = GFX_focus_SWI_dissolve_the_federal_council
 
 		relative_position_id = XLA_Home_Of_Nyx
 		x = -1
@@ -769,6 +801,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Grotto_Protects
+		icon = GFX_Goal_XLA_Grotto_Protects
 
 		relative_position_id = XLA_Home_Of_Gaia
 		x = -1
@@ -801,6 +834,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Faith_Supports_Us
+		icon = GFX_focus_SWE_refuge_from_war
 
 		relative_position_id = XLA_Proper_Home
 		x = 0
@@ -822,6 +856,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Fight_Of_Our_Lives
+		icon = GFX_focus_generic_military_dictatorship
 
 		relative_position_id = XLA_Consolidate_Council
 		x = 0
@@ -863,6 +898,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Long_Live_Arnmouth
+		icon = GFX_Goal_XLA_Regional_Balance
 
 		relative_position_id = XLA_Fight_Of_Our_Lives
 		x = 0
@@ -894,6 +930,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_The_New_Council
+		icon = GFX_Goal_XLA_Elders_Council
 		dynamic = yes
 
 		relative_position_id = XLA_Long_Live_Arnmouth
@@ -925,6 +962,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Quell_Opponets
+		icon = GFX_focus_spr_masters_of_our_own_fate
 
 		relative_position_id = XLA_Fight_Of_Our_Lives
 		x = -2
@@ -1007,6 +1045,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Request_International_Support
+		icon = GFX_focus_generic_diplomatic_treaty
 
 		relative_position_id = XLA_Quell_Opponets
 		x = -2
@@ -1035,11 +1074,9 @@ focus_tree = {
 		completion_reward = {
 			every_country = {
 				limit = {
-					AND = {
-						has_government = ROOT
-						NOT = {
-							DEN_is_anarchy = yes
-						}
+					has_government = ROOT
+					NOT = {
+						DEN_is_anarchy = yes
 					}
 				}
 
@@ -1050,6 +1087,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Drastic_Times_Call_For_Drastic_Measures
+		icon = GFX_focus_generic_full_social_mobilization
 
 		relative_position_id = XLA_Quell_Opponets
 		x = 0
@@ -1082,6 +1120,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Call_Upon_The_Antrorus_Graticas
+		icon = GFX_focus_generic_spread_fascism
 
 		relative_position_id = XLA_Request_International_Support
 		x = 1
@@ -1159,6 +1198,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Rally_Supporters
+		icon = GFX_goal_generic_propaganda
 
 		relative_position_id = XLA_Fight_Of_Our_Lives
 		x = 2
@@ -1196,6 +1236,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Defend_The_Heartlands
+		icon = GFX_goal_generic_defence
 
 		relative_position_id = XLA_Rally_Supporters
 		x = 0
@@ -1238,6 +1279,7 @@ focus_tree = {
 
 	focus = {
 		id = XLA_Men_On_Inside
+		icon = GFX_focus_SOV_penal_battalions
 
 		relative_position_id = XLA_Rally_Supporters
 		x = 2

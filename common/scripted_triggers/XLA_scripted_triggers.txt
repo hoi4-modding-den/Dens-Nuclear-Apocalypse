@@ -63,3 +63,11 @@ XLA_is_partially_altwigitian = {
 		}
 	}
 }
+
+XLA_Controls_Sicily = {
+	OR = {
+		owns_state = 115
+		owns_state = 972
+		owns_state = 971
+	}
+}

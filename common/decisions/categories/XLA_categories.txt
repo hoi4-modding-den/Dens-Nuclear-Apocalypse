@@ -22,3 +22,15 @@ XLA_resource_mining = {
 		has_country_flag = XLA_Resource_Mining_Time
 	}
 }
+
+XLA_Reunite_Italy = {
+	icon = SOV_soviet_academy_of_sciences
+
+	allowed = {
+		original_tag = XLA
+	}
+
+	visible = {
+		has_country_flag = XLA_Content_Finished_V1
+	}
+}

@@ -219,6 +219,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		set_country_flag = XLA_Content_Finished_V1
+	}
+
 	option = {
 		name = XLA_event.12.a
 		trigger = {
@@ -280,7 +284,7 @@ country_event = {
 country_event = {
 	id = XLA_event.14
 	title = XLA_event.4.t.a
-	desc = XLA_event.14
+	desc = XLA_event.14.d
 	picture = GFX_Event_Death_Elder_Borani
 
 	is_triggered_only = yes

@@ -1225,3 +1225,194 @@ XLA_resource_mining = {
 		}
 	}
 }
+
+XLA_Reunite_Italy = {
+	XLA_Expand_Stockpiles = {
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+		}
+	}
+
+	XLA_Invade_Lombary = {
+		available = {
+			XLV = {
+				exists = yes
+			}
+		}
+
+		cost = 100
+		days_remove = 30
+
+		complete_effect = {
+			hidden_effect = {
+				add_threat = 10
+			}
+		}
+		war_with_on_remove = XLV
+
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = XLV
+			}
+		}
+	}
+
+	XLA_Invade_Holy_Remnant = {
+		available = {
+			XHR = {
+				exists = yes
+			}
+		}
+
+		cost = 100
+		days_remove = 30
+
+		complete_effect = {
+			hidden_effect = {
+				add_threat = 10
+			}
+		}
+		war_with_on_remove = XHR
+
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = XHR
+			}
+		}
+	}
+
+	XLA_Invade_Marble_Coast = {
+		available = {
+			XMC = {
+				exists = yes
+			}
+			hidden_trigger = {
+				OR = {
+					XMC = {
+						OR = {
+							owns_state = 157
+							owns_state = 117
+						}
+					}
+					XLA = {
+						OR = {
+							owns_state = 157
+							owns_state = 117
+						}
+					}
+				}
+			}
+		}
+
+		cost = 100
+		days_remove = 30
+
+		complete_effect = {
+			hidden_effect = {
+				add_threat = 10
+			}
+		}
+		war_with_on_remove = XMC
+
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = XMC
+			}
+		}
+	}
+
+	XLA_Invade_Southerners = {
+		available = {
+			XIT = {
+				exists = yes
+			}
+		}
+
+		cost = 100
+		days_remove = 30
+
+		complete_effect = {
+			hidden_effect = {
+				add_threat = 10
+			}
+		}
+		war_with_on_remove = XIT
+
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = XIT
+			}
+		}
+	}
+
+	XLA_Purge_Sicily = {
+		available = {
+			all_other_country = {
+				limit = {
+					XLA_Controls_Sicily = yes
+				}
+			}
+		}
+
+		cost = 100
+		days_remove = 30
+
+		complete_effect = {
+			hidden_effect = {
+				add_threat = 10
+			}
+		}
+
+		remove_effect = {
+			every_country = {
+				limit = {
+					XLA_Controls_Sicily = yes
+				}
+
+				XLA = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+		}
+	}
+
+	XLA_Reclaim_Sardinia = {
+		available = {
+			XMD = {
+				exists = yes
+			}
+		}
+
+		cost = 100
+		days_remove = 30
+
+		complete_effect = {
+			hidden_effect = {
+				add_threat = 10
+			}
+		}
+		war_with_on_remove = XMD
+
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = XMD
+			}
+		}
+	}
+}
