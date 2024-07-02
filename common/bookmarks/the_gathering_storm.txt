@@ -225,11 +225,14 @@ bookmarks = {
 			ideology = neutrality
 			history = XWA_history_desc
 			focuses = {
-
+				XWA_WalesIrelandUnify
+				XWA_UnionFocusCommunism9
+				XWA_UnionFocusCommunism4
 			}
 			ideas = {
 				XWA_TheSplit
-				BEZ_membership
+				XWA_RSSpeech
+				XWA_ExtremistIdeals
 			}	
 		}
 		"XKR" = {

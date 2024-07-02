@@ -94,7 +94,7 @@
 		y = 5
 		cost = 5
 		ai_will_do = {
-			factor = 3
+			factor = 1
 		}	
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 		completion_reward = {
@@ -474,7 +474,7 @@
 	 focus = {
 		id = XWA_ClaimIreland
 
-		prerequisite = {focus = XWA_HordeFocusBrownParty3}
+		prerequisite = {focus = XWA_TakeBackWales}
 		mutually_exclusive = {}
 		
 		icon = GFX_focus_generic_annex_country

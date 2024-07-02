@@ -34,7 +34,9 @@
  XW2_fascism_party_long:0 "Mutant Extremists"
  
  XWA_ExtremistIdeals:0 "Extremist Propoganda"
+ XWA_ExtremistIdeals_desc:0 "The Mutant Extremists have began to create propaganda in order to gain influence over the people of Wales to further their political agenda."
  XWA_ExtremistIdeals2:0 "Extremist Propoganda"
+ XWA_ExtremistIdeals2_desc:0 "The Mutant Extremists have began to create propaganda in order to gain influence over the people of Wales to further their political agenda."
 
  XWA_PoorAdministration:0 "Lack of Faith in the Government"
  XWA_PoorAdministration_desc:0 "While the WDP has tried its best to restabilize the union, many are left wondering about the effectiveness."
@@ -52,12 +54,17 @@
  XWA_TheState_desc:0 "The Welsh government has put the needs of the state ahead of the workers leaving many upset."
  XWA_TheWorkers:0 "Workers First"
  XWA_TheWorkers_desc:0 "The Welsh government has put the needs of the workers first fufiling the promise that enabled them to overthrow the WDP."
- 
+ XWA_TheArmy:0 "The Red Welsh Army"
+ XWA_TheArmy_desc:0 "The army of the Welsh government is the protector of the people."
+
+
  XWA_RSSpeech:0 "The Red Scare Speech"
  XWA_RSSpeech_desc:0 "The Red Scare Speech given by Gerallt Havard at a Welsh University spread fear throughout wales of communism leading to mass rejection of communism."
 
  XWA_NewConstitution:0 "Constitution of Wales"
  XWA_NewConstitution_desc:0 "The modern adaptation of the Welsh constitution limits the government heavily. However, this was a needed change to regain public certainty in the Union."
+
+ XWA_history_desc:0 "The people of Wales have become heavily mutated as a result of heavy nuking on the British Isles. The Welsh Republic has since had trouble balancing between neutrality and extremism. With a collapse of the Republic on the horizon, what is in store for Wales future?"
 #Focuses
 
 
@@ -141,7 +148,14 @@
     XWA_UnionFocusCommunism5:0 "The Workers..."
 
     XWA_UnionFocusCommunism6:0 "The State..."
+    
+    XWA_UnionFocusCommunism7:0 "The Army..."
 
+    XWA_UnionFocusCommunism8:0 "Take Back Wales"
+    XWA_UnionFocusCommunism8:0 "Wales rightfully belongs to the Union. It is time to take back what is ours."
+
+    XWA_UnionFocusCommunism9:0 "United England Under Wales"
+    XWA_UnionFocusCommunism9_desc  :0 "With the reunification of Wales, we must liberate the rest of the Isle from their limiting governments."
     #Industry
     XWA_UnionIndustryStart:0 "Improve Infastructure"
     XWA_UnionIndustry2:0 "Construct Civilian Factory"

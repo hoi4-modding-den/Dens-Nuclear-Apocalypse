@@ -181,7 +181,7 @@
 		y = 11
 		cost = 10
 		ai_will_do = {
-			factor = 2
+			factor = 2000
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -213,6 +213,130 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = {XWA_TheState}
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusCommunism7
+
+		prerequisite = {focus = XWA_UnionFocusCommunism5 focus = XWA_UnionFocusCommunism6}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		available = {
+           
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {XWA_TheArmy}
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusCommunism8
+
+		prerequisite = {focus = XWA_UnionFocusCommunism7}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_generic_annex_country_2
+		available = {
+           
+		}
+		bypass = {
+			if = {
+				owns_state = 977
+				owns_state = 970
+				owns_state = 122
+			}
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7
+		y = 15
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			if = {
+				limit = {
+					tag = XWA
+				}
+				create_wargoal = {
+					target = XW2
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					tag = XW2
+				}
+				create_wargoal = {
+					target = XWA
+					type = annex_everything
+				}
+			}
+				create_wargoal = {
+					target = XPW
+					type = annex_everything
+				}
+		}
+     }
+	 focus = {
+		id = XWA_UnionFocusCommunism9
+
+		prerequisite = {focus = XWA_UnionFocusCommunism8}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_eng_the_sun_never_sets
+		available = {
+         	if = {
+				owns_state = 977
+				owns_state = 970
+				owns_state = 122
+			}  
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7
+		y = 17
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			create_wargoal = {
+				target = XNE
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = XNM
+				type = annex_everything
+			}
+			every_state = {
+				limit = {is_core_of = XNE}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {is_core_of = XNM}
+				add_core_of = ROOT
+			}
 		}
      }
 	#Dem
