@@ -88,7 +88,7 @@ political_power_gain = 0.5
 		XAP_ideas_the_freed_human_spirit = {
 			picture = XAP_ideas_the_freed_human_spirit-643173
 			modifier = {
-				stability_weekly = 0.01
+				stability_weekly = 0.005
 
 political_power_gain = 0.75
 
@@ -101,7 +101,7 @@ research_speed_factor = 0.1
 			modifier = {
 				monthly_population = 0.3
 
-stability_weekly = 0.005
+stability_weekly = 0.002
 
 
 			}
@@ -132,7 +132,7 @@ political_power_cost = 0.5
 		XAP_ideas_anarchist_thinking = {
 			picture = XAP_ideas_anarchist_thinking-645174
 			modifier = {
-				stability_weekly = 0.005
+				stability_weekly = 0.002
 
 political_power_gain = 0.25
 			}
@@ -150,9 +150,9 @@ political_power_cost = 0.25
 		XAP_ideas_a_place_for_everyone = {
 			picture = XAP_ideas_a_place_for_everyone-644346
 			modifier = {
-				weekly_manpower = 1000 
+				weekly_manpower = 200 
 
-war_support_weekly = 0.01
+war_support_weekly = 0.002
 
 
 			}
@@ -164,7 +164,7 @@ war_support_weekly = 0.01
 				conscription_factor = 0.15
 
 
-training_time_factor = -0.5
+training_time_factor = 0.05
 
 army_core_attack_factor = 0.15
 
@@ -179,7 +179,7 @@ army_core_defence_factor = 0.15
 				conscription_factor = 0.1
 
 
-training_time_factor = -0.3
+training_time_factor = 0.15
 
 army_core_attack_factor = 0.1
 
@@ -192,7 +192,7 @@ army_core_defence_factor = 0.1
 			modifier = {
 				conscription_factor = 0.2
 
-training_time_factor = -0.7
+training_time_factor = 0.3
 
 army_core_attack_factor = 0.10
 
