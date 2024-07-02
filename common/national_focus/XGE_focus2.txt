@@ -627,8 +627,21 @@
 			factor = 1
 		}
 		completion_reward = {
-			clr_country_flag = XGE_no_declaring_wars
-			custom_effect_tooltip = XGE_allow_wars_tt
+			#clr_country_flag = XGE_no_declaring_wars
+			#custom_effect_tooltip = XGE_allow_wars_tt
+			add_to_variable = {
+				XGE_cc_pp_factor = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_research_speed_variable = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_stability_factor_variable = 0.02
+			}
+			add_to_variable = {
+				XGE_cc_war_support_factor_variable = 0.02
+			}
+			custom_effect_tooltip = XGE_buff_computer_clique
 		}
 	}
 }

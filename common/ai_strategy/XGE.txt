@@ -1,0 +1,64 @@
+XGE_plan = {
+	allowed = {
+		original_tag = XGE
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XAP
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -30
+	}
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 50
+	}
+	
+
+}
+XGE_anarchist = {
+	allowed = {
+		original_tag = XGE
+	}
+	enable = {
+		has_war_with = XAP
+	}
+	abort_when_not_enabled = yes
+
+	
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XAP
+		value = 100
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 100
+	}
+
+}
+
+

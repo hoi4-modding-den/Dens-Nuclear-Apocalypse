@@ -44,8 +44,8 @@ units = {
 
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
 		location = 3522
 		division_template = "Red Guards"
@@ -53,8 +53,26 @@ units = {
 	}
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 2
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3522
+		division_template = "Red Guards"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3522
+		division_template = "Red Guards"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
 		}
 		location = 3561
 		division_template = "Red Guards"
@@ -62,8 +80,17 @@ units = {
 	}
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 3
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3561
+		division_template = "Red Guards"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
 		}
 		location = 425
 		division_template = "Red Guards"
@@ -71,8 +98,26 @@ units = {
 	}
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 4
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 425
+		division_template = "Red Guards"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 425
+		division_template = "Red Guards"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
 		}
 		location = 9471
 		division_template = "Red Guards"
@@ -80,8 +125,17 @@ units = {
 	}
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 5
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 9471
+		division_template = "Red Guards"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
 		}
 		location = 11305
 		division_template = "Red Guards"
@@ -89,8 +143,26 @@ units = {
 	}
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11305
+		division_template = "Red Guards"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6521
+		division_template = "Armoured Red Guards"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
 		}
 		location = 6521
 		division_template = "Armoured Red Guards"

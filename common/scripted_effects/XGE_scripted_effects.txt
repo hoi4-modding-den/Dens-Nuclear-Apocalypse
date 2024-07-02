@@ -39,6 +39,12 @@ XGE_decrease_devastation_time = {
 			days = -20
 		}
 	}
+	if = {
+		limit = {
+			has_idea = XGE_devastation_1
+		}
+		add_political_power = 5
+	}
 	
 }
 XGE_change_state_names = {

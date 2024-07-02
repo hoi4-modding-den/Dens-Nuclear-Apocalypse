@@ -88,6 +88,7 @@ add_ideas = {  #for the control panel gui
 	XGE_system_controls_army_false
 	XGE_system_controls_intelligence_false
 	XGE_system_controls_trade_false
+	XGE_balance
 }
 
 set_country_flag = XGE_custom_gui_enable
@@ -95,7 +96,7 @@ set_country_flag = dont_use_default_political_advisors
 set_country_flag = dont_use_default_military_advisors
 set_country_flag = XGE_welcome_message_flag
 set_country_flag = XGE_bloom_gui_visible
-set_country_flag = XGE_no_declaring_wars
+#set_country_flag = XGE_no_declaring_wars
 
 set_politics = {
 	ruling_party = communism
