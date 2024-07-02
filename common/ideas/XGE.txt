@@ -143,8 +143,8 @@ ideas = {
 		XGE_balance = {
 			targeted_modifier = {
 				tag = XAP
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 		}
 	}
