@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		XFC_its_a_cult = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = { 
+				NOT = { 
+					has_country_leader = {
+						character = XFC_alrich_weber
+						ruling_only = yes
+					} 
+				}
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				drift_defence_factor = 0.35
+				communism_drift = 0.1
+				weekly_manpower = 50
+				stability_weekly = -0.001
+				political_power_gain = 0.2
+			}
+		}
+		XFC_its_a_cult2 = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = { 
+				NOT = { 
+					has_country_leader = {
+						character = XFC_alrich_weber
+						ruling_only = yes
+					} 
+				}
+			}
+			
+			picture = generic_economic_increase
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		XFC_its_a_cult3 = {
+
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			cancel = { 
+				NOT = { 
+					has_country_leader = {
+						character = XFC_alrich_weber
+						ruling_only = yes
+					} 
+				}
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = -0.1
+			}
+		}
+	}
+}
