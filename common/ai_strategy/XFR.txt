@@ -1,0 +1,359 @@
+XFR_army_expansion = {
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XSS
+		value = 100
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = XAL
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -30
+	}
+	
+
+}
+
+XFR_oppose_napoleon = {
+	allowed = {
+		original_tag = XFR
+	}
+
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+    	type = antagonize
+   		id = XNF
+    	value = -1000
+	}
+	ai_strategy = {
+    	type = ingore
+   		id = XNF
+    	value = -1000
+	}
+	ai_strategy = {
+    	type = consider_weak
+   		id = XNF
+    	value = -1000
+	}
+}
+
+XFR_dislike_romans = {
+	allowed = {
+		original_tag = XFR
+	}
+
+	enable = {
+		NOT = { has_completed_focus = XFR_fascist_coup }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+    	type = antagonize
+   		id = XAQ
+    	value = -1000
+	}
+	ai_strategy = {
+    	type = ingore
+   		id = XAQ
+    	value = -100
+	}
+}
+
+XFR_support_portugal = {
+	allowed = {
+		original_tag = XFR
+	}
+
+	enable = {
+		has_completed_focus = XFR_portugese_support
+	}
+
+	ai_strategy = {
+	    type = send_volunteers_desire
+	    id = XGL
+		value = 100
+	}
+}
+
+XFR_ally_nne = {
+	allowed = {
+		original_tag = XFR
+	}
+
+	enable = {
+		has_completed_focus = XFR_across_the_channel
+	}
+
+	ai_strategy = {
+	    type = alliance
+	    id = XNE
+		value = 100
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = XNE
+		value = 100
+	}
+}
+
+XFR_move_against_french_enemies = {
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		has_completed_focus = XFR_french_reunification
+		NOT = { has_completed_focus = XFR_proclaim_french_government }
+	}
+	abort_when_not_enabled = yes
+
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XNF
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XAQ
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XPR
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XLF
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XBR
+		value = 100
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 50
+	}
+
+}
+
+XFR_prepare_for_war_west_francia = {
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		has_completed_focus = XFR_warplan_west_francia
+		NOT = { has_completed_focus = XFR_west_francia_restored }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XPR
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XLF
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XAQ
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XPY
+		value = 1000
+	}
+
+	
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 50
+	}
+
+}
+
+XFR_prepare_for_war_middle_francia = {
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		has_completed_focus = XFR_warplan_middle_francia
+		NOT = { has_completed_focus = XFR_middle_francia_restored }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XSS
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XNF
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XLA
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XLV
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XIT
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XHR
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XMC
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XLX
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XNL
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 50
+	}
+
+}
+
+XFR_prepare_for_war_east_francia = {
+	allowed = {
+		original_tag = XFR
+	}
+	enable = {
+		has_completed_focus = XFR_warplan_east_francia
+		NOT = { has_completed_focus = XFR_east_francia_restored }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XAL
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XRP
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XOO
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XLH
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XTI
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XCG
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XSH
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XAP
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 50
+	}
+
+}
+
+
