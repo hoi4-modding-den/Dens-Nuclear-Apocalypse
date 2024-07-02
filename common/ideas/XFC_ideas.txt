@@ -7,14 +7,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			removal_cost = -1
-			cancel = { 
-				NOT = { 
-					has_country_leader = {
-						character = XFC_alrich_weber
-						ruling_only = yes
-					} 
-				}
-			}
+			cancel = {}
 			
 			picture = FRA_national_mobilization_focus
 			
@@ -33,14 +26,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			removal_cost = -1
-			cancel = { 
-				NOT = { 
-					has_country_leader = {
-						character = XFC_alrich_weber
-						ruling_only = yes
-					} 
-				}
-			}
+			cancel = {}
 			
 			picture = generic_economic_increase
 			
@@ -58,14 +44,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			removal_cost = -1
-			cancel = { 
-				NOT = { 
-					has_country_leader = {
-						character = XFC_alrich_weber
-						ruling_only = yes
-					} 
-				}
-			}
+			cancel = {}
 			
 			picture = FRA_scw_intervention_republicans_focus
 			

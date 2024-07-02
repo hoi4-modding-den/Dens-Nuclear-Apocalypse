@@ -1,4 +1,4 @@
-capital = 120
+capital = 136
 
 set_war_support = 0.6
 set_stability = 0.75
@@ -30,6 +30,26 @@ set_politics = {
 	last_election = "2235.1.15"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_party_name = {
+    ideology = communism
+    long_name = XFC_cult_of_weber_long
+    name = XFC_cult_of_weber
+}
+set_party_name = {
+    ideology = neutrality
+    long_name = XFC_heretics
+    name = XFC_heretics
+}
+set_party_name = {
+    ideology = democratic
+    long_name = XFC_heretics
+    name = XFC_heretics
+}
+set_party_name = {
+    ideology = fascism
+    long_name = XFC_heretics
+    name = XFC_heretics
 }
 set_popularities = {
 	democratic = 16
