@@ -140,12 +140,6 @@ ideas = {
 				trade_opinion_factor = 0.10
 			}
 		}
-		XGE_system_controls_trade = {
-			modifier = {
-				consumer_goods_factor = -0.05
-				trade_opinion_factor = 0.10
-			}
-		}
 		XGE_balance = {
 			targeted_modifier = {
 				tag = XAP
