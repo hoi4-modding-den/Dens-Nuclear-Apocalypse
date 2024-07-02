@@ -99,10 +99,10 @@ if = {
 
 add_ideas = {
 	volunteer_only
-	war_economy
+	#war_economy
 	closed_economy
-	XAP_ideas_ultra_militant_anarchy
-	XAP_ideas_promoted_polygamy
+	#XAP_ideas_ultra_militant_anarchy
+	#XAP_ideas_promoted_polygamy
 	XAP_ideas_the_freed_human_spirit
 	XAP_ideas_a_place_for_everyone
 }

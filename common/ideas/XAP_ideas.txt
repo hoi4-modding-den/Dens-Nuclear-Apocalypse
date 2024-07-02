@@ -47,8 +47,8 @@ resistance_growth = -0.3
 			modifier = {
 				        political_power_factor = -0.3
 	stability_factor = -0.15
-	stability_weekly = -0.01
-	war_support_weekly = -0.01
+	#stability_weekly = -0.01
+	#war_support_weekly = -0.01
 
 
 			}
@@ -58,7 +58,7 @@ resistance_growth = -0.3
 			picture = XAP_ideas_underground_clerical_resistance-122545
 			modifier = {
 				
-	stability_factor = -0.05
+	#stability_factor = -0.05
 
 	political_power_cost = -0.1
 
@@ -88,20 +88,20 @@ political_power_gain = 0.5
 		XAP_ideas_the_freed_human_spirit = {
 			picture = XAP_ideas_the_freed_human_spirit-643173
 			modifier = {
-				stability_weekly = 0.01
+				stability_factor = 0.1
 
-political_power_gain = 0.75
+				political_power_gain = 0.10
 
-research_speed_factor = 0.1
+				research_speed_factor = 0.1
 			}
 		}
 
 		XAP_ideas_promoted_polygamy = {
 			picture = XAP_ideas_promoted_polygamy-1463
 			modifier = {
-				monthly_population = 0.3
+				#monthly_population = 0.3
 
-stability_weekly = 0.005
+#stability_weekly = 0.005
 
 
 			}
@@ -110,9 +110,9 @@ stability_weekly = 0.005
 		XAP_ideas_deconstruction_of_genderoles = {
 			picture = XAP_ideas_deconstruction_of_genderoles-643193
 			modifier = {
-				recruitable_population_factor = 0.1
+				#recruitable_population_factor = 0.1
 
-stability_weekly = 0.003
+#stability_weekly = 0.003
 
 
 			}
@@ -132,7 +132,7 @@ political_power_cost = 0.5
 		XAP_ideas_anarchist_thinking = {
 			picture = XAP_ideas_anarchist_thinking-645174
 			modifier = {
-				stability_weekly = 0.005
+				#stability_weekly = 0.005
 
 political_power_gain = 0.25
 			}
@@ -152,7 +152,7 @@ political_power_cost = 0.25
 			modifier = {
 				weekly_manpower = 1000 
 
-war_support_weekly = 0.01
+				war_support_factor = 0.01
 
 
 			}
