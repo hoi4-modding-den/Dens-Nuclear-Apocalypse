@@ -1815,19 +1815,12 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 5
+			factor = 50
 			modifier = {
 				factor = 2
 				any_neighbor_country = {
 					is_major = yes
 					has_government = fascism
-				}
-			}
-			modifier = {
-				factor = 0
-				AND = {
-					is_historical_focus_on = yes
-					NOT = { has_government = fascism }
 				}
 			}
 			modifier = {
