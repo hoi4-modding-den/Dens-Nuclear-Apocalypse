@@ -25,13 +25,13 @@ add_ideas = {
 	XLA_Aero_Aversion
 }
 
-recruit_character = XLA_Elder_Borani
-recruit_character = XLA_Altwigite_Order
-recruit_character = XLA_Voiceless_Grotto
-recruit_character = XLA_Elders_Council
-recruit_character = XLA_Socellia_Luzi
-recruit_character = XLA_Samio
-recruit_character = XLA_Alexeus
+recruit_character = XLC_Elder_Borani
+recruit_character = XLC_Altwigite_Order
+recruit_character = XLC_Voiceless_Grotto
+recruit_character = XLC_Elders_Council
+recruit_character = XLC_Socellia_Luzi
+recruit_character = XLC_Samio
+recruit_character = XLC_Alexeus
 
 set_politics = {
 	ruling_party = democratic
