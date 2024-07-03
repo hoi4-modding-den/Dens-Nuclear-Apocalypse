@@ -90,8 +90,16 @@ XBC_spanish_unrest_check_effect = {
 			}
 		}
 		hidden_effect = {
-			172 = {
-				set_demilitarized_zone = yes
+			if = {
+				limit = {
+					172 = {
+						is_demilitarized_zone = yes
+					}
+				}
+
+				172 = {
+					set_demilitarized_zone = yes
+				}
 			}
 			else = {
 				172 = {

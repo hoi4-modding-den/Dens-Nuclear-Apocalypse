@@ -161,20 +161,19 @@ country_event = { # event to pick the leader i guess
 
 	option = { # Diego
 		name = XHP.2.a
-		ai_factor = {
+		ai_chance = {
 			base = 2
 		}
-		
 	}
 	option = { # Emillio
 		name = XHP.2.b
-		ai_factor = {
+		ai_chance = {
 			base = 2
 		}
 	}
 	option = { # Ricardo
 		name = XHP.2.c
-		ai_factor = {
+		ai_chance = {
 			base = 2
 		}
 	}

@@ -1365,9 +1365,10 @@ XLA_Reunite_Italy = {
 
 	XLA_Purge_Sicily = {
 		available = {
-			all_other_country = {
-				limit = {
-					XLA_Controls_Sicily = yes
+			any_country = {
+				XLA_Controls_Sicily = yes
+				NOT = {
+					original_tag = XLA
 				}
 			}
 		}

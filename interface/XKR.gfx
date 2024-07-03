@@ -177,10 +177,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/XKR/open_welcome_window_button.dds"
 	}
 
-	### BLACK JACK ###
-
-	spriteTypes = {
-
 	##################
 	### BLACK JACK ###
 	##################
@@ -416,7 +412,5 @@ spriteTypes = {
 		texturefile = "gfx/texticons/black_jack/texticon_chip.dds"
 		legacy_lazy_load = no
 	}
-
-}
 }
 
