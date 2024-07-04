@@ -1,15 +1,6 @@
-capital = 790
+capital = 157
 
 set_country_flag = generic_army
-#create_country_leader = {
-#	name = 
-#	desc = 
-#	picture = 
-#	expire = "1.1.1"
-#	ideology = 
-#	traits = {
-#	}
-#}
 
 set_politics = {
 	ruling_party = neutrality
