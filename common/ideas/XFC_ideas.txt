@@ -2,8 +2,8 @@ ideas = {
 	country = {
 		XFC_its_a_cult = {
 
-			allowed = {}
-			available = {}
+			allowed = { always = yes }
+			available = { always = yes }
 			allowed_civil_war = { always = yes }
 
 			removal_cost = -1
@@ -21,8 +21,8 @@ ideas = {
 		}
 		XFC_its_a_cult2 = {
 
-			allowed = {}
-			available = {}
+			allowed = { always = yes }
+			available = { always = yes }
 			allowed_civil_war = { always = yes }
 
 			removal_cost = -1
@@ -39,8 +39,8 @@ ideas = {
 		}
 		XFC_its_a_cult3 = {
 
-			allowed = {}
-			available = {}
+			allowed = { always = yes }
+			available = { always = yes }
 			allowed_civil_war = { always = yes }
 
 			removal_cost = -1
