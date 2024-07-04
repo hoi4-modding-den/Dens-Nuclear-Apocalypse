@@ -479,7 +479,7 @@ focus_tree = {
 		search_filters = {  FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			24 = {
-				add_manpower = 20000
+				add_manpower = 50000
 				set_state_category = large_town
 				remove_dynamic_modifier = {
 					modifier = XFR_colonisation_state_modifier
@@ -511,7 +511,7 @@ focus_tree = {
 			NOT = { has_idea = XFR_herzogs_speeches }
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -519,8 +519,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			add_stability = 0.25
-			custom_effect_tooltip = XFR_stabilise_the_republic_tt
-			set_country_flag = XFR_situation_stabilised
+			set_rule = {
+    			can_join_opposite_factions = no
+			}
 		}
 	}
 
@@ -550,12 +551,11 @@ focus_tree = {
 				popularity = 0.15
 			}
 			add_ideas = XFR_torch_of_democracy
-			set_rule = {
-    			can_join_opposite_factions = no
-			}
 			hidden_effect = {
 				news_event = { id = XFR_news_events.6 }
 			}
+			custom_effect_tooltip = XFR_stabilise_the_republic_tt
+			set_country_flag = XFR_situation_stabilised
 		}
 	}
 
@@ -1059,7 +1059,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -1516,7 +1516,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -3094,7 +3094,7 @@ focus_tree = {
 			NOT = { has_completed_focus = XFR_proclaim_french_government }
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3119,7 +3119,7 @@ focus_tree = {
 			NOT = { has_completed_focus = XFR_proclaim_french_government }
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3248,7 +3248,7 @@ focus_tree = {
 
 		bypass = { 973 = { is_owned_by = ROOT } }
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -3563,7 +3563,7 @@ focus_tree = {
 			start_civil_war = {
     			ruling_party = fascism
     			ideology = communism
-    			size = 0.5
+    			size = 0.3
     			capital = 18
     			states = {
     			    18
@@ -3648,11 +3648,6 @@ focus_tree = {
 		available = {
 			neutrality > 0.15
 		}
-
-		bypass = {
-			has_civil_war = no
-		}
-
 
 		ai_will_do = {
 			factor = 1
@@ -3863,8 +3858,6 @@ focus_tree = {
 				ideology = communism
 				popularity = -1
 			}
-			custom_effect_tooltip = XFR_stabilise_the_republic_tt
-			set_country_flag = XFR_situation_stabilised
 		}
 	}
 
@@ -3910,6 +3903,8 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.25
 			}
+			custom_effect_tooltip = XFR_stabilise_the_republic_tt
+			set_country_flag = XFR_situation_stabilised
 		}
 	}
 
@@ -5643,7 +5638,7 @@ focus_tree = {
 
 		bypass = { 973 = { is_owned_by = ROOT } }
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -5861,6 +5856,8 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		will_lead_to_war_with = XIT
+		will_lead_to_war_with = XHR
+		will_lead_to_war_with = XMC
 		completion_reward = {
 			create_wargoal = {
 				target = XIT
@@ -6050,6 +6047,11 @@ focus_tree = {
 		available = {
 			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
 			is_subject = no
+			XNL = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
 		}
 
 		cost = 5
@@ -6613,7 +6615,7 @@ focus_tree = {
 			XFR_controls_east_francian_states = yes
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -8747,7 +8749,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			capital_scope = {
+			every_owned_state = {
+				limit = {
+					is_coastal = yes 
+					is_controlled_by = ROOT
+				}
+				random_select_amount = 1
 				add_resource = {
 				    type = oil
 				    amount = 16
