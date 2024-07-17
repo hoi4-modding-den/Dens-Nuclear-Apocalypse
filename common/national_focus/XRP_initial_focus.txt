@@ -11,7 +11,7 @@ focus_tree = {
 	}
 
 	default = no
-    continuous_focus_position = { x = 0 y = 0 }
+    continuous_focus_position = { x = 2100 y = 810 }
 	shared_focus = XRP_intro_focus
 	shared_focus = XRP_ceremony
 	shared_focus = XRP_economy_autobahn
