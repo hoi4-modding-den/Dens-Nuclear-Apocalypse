@@ -98,7 +98,7 @@
  XSH_communism_DEF:0 "the Commune of Schleswig-Holstein"
  XSH_communism_ADJ:0 "Schleswigan"
  XSH:0 "Schleswig"
- XJY_DEF:0 "Schleswig"
+ XSH_DEF:0 "Schleswig"
  XSH_ADJ:0 "Schleswigan"
  XSH_subject:0 "$OVERLORDADJ$ $XSH$"
  

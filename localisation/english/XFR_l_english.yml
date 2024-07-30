@@ -1764,7 +1764,7 @@ XFR_show_west_francia: "West Frankish Territories"
 XFR_show_middle_francia: "Middle Frankish Territories"
 XFR_show_east_francia: "East Frankish Territories"
 XFR_show_francia: "Frankish Territories"
-XFR_french_anarchy_annex2: "Retake the Wasteland"
+#XFR_french_anarchy_annex2: "Retake the Wasteland"
 
 # Decision Costs
 
@@ -2163,7 +2163,7 @@ RULE_OPTION_HISTORICAL_XFR: "The Republic Endures - Federalists win Elections"
 RULE_OPTION_HISTORICAL_XFR_AI_DESC: "The Republic stabilises and the Federalists are elected in all three elections."
 RULE_OPTION_ALT_DEM_XFR: "The Republic Endures - Alternate Election Outcomes"
 RULE_OPTION_ALT_DEM_XFR_AI_DESC: "The Republic stabilises, however the outcomes of the elections are not predetermined."
-RULE_OPTION_MONARCHIST: "Ides of March - In Moderation"
+RULE_OPTION_MONARCHIST_XFR: "Ides of March - In Moderation"
 RULE_OPTION_MONARCHIST_XFR_AI_DESC: "The Nationalist Uprising will be couped by the Herzog. The Herzog will try to restore Francia and remove Nationalist Influence."
 RULE_OPTION_ESOTERTIC_XFR: "Ides of March - Hail the Kaiser"
 RULE_OPTION_ESOTERTIC_XFR_AI_DESC: "The Nationalist Uprising will be couped by the Herzog. The Herzog will try to restore Francia with an Iron Fist, cooperating with the Nationalists."

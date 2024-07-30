@@ -1201,7 +1201,7 @@ XSS_demand_alsace:0 "Anschluss of Alsace-Lotharingia"
 XSS_demand_alsace_desc:0 "Alsace-Lotharingia is a rightful German clay. We shall send them demands of submission."
 
 XSS_test_event.36.t:0 "Anschluss"
-XSS_test_event.18.desc:0 "Today Swiss government has sent us a list of demands in which they demand our subjugation to the Swiss federation."
+XSS_test_event.36.desc:0 "Today Swiss government has sent us a list of demands in which they demand our subjugation to the Swiss federation."
 XSS_test_event.36.a:0 "There is nothing we can do"
 XSS_test_event.36.b:0 "Let them come!"
 
