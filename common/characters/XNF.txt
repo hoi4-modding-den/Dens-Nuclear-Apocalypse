@@ -15,4 +15,21 @@ characters = {
 		}
 	}
 
+	XFW_tribal = {
+		name = "Tribal Leaders"
+		portraits = {
+			civilian = {
+				large = "GFX_tribes_XNF"
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			traits = {
+				
+			}
+			expire = "3000.9.2.12"
+			id = -1
+		}
+	}
+
 }
