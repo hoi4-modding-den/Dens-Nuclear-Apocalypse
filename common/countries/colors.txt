@@ -266,3 +266,8 @@ XTM = {
 	color = rgb { 145 100 45 }
 	color_ui = rgb { 130 80 20 }
 }
+
+XYU = {
+	color = rgb { 158 158 0 }
+	color_ui = rgb { 158 158 0 }
+}
