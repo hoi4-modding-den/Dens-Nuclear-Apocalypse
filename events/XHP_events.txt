@@ -164,8 +164,6 @@ country_event = { # event to pick the leader i guess
 		ai_chance = {
 			base = 2
 		}
-<<<<<<< Updated upstream
-=======
 		add_country_leader_role = {
 			character = XHP_Diego
 			promote_leader = yes
@@ -174,7 +172,6 @@ country_event = { # event to pick the leader i guess
 				traits = { XHP_successful_commander }
 			}
 		}
->>>>>>> Stashed changes
 	}
 	option = { # Emillio
 		name = XHP.2.b

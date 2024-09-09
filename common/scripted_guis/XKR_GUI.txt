@@ -159,7 +159,7 @@ scripted_gui = {
 					limit = {
 						check_variable = { var = black_jack_place_bet_var value = 1 compare = equals }
 					}
-					ABJ_black_jack_dealing_effect = yes
+					# ABJ_black_jack_dealing_effect = yes
 				}
 				#if = {
 				#	limit = {
