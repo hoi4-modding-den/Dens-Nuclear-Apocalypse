@@ -5,6 +5,9 @@
  XSK: "Second Ottoman Sultanate"
  XSK_DEF: "the Second Ottoman Sultanate"
  XSK_ADJ: "Ottoman"
+ XSK_fascism: "Ottoman National Salvation Front"
+ XSK_fascism_DEF: "the Ottoman National Salvation Front"
+ XSK_fascism_ADJ: "Ottoman"
 
  XTK: "East Turkestan"
  XTK_DEF: "East Turkestan"
@@ -50,17 +53,25 @@
 
  XSK_ottoman_regency_council_name: "Regency Council"
  XSK_ottoman_regency_council_desc: "Due to the unexpected death of our great Sultan, XI. Süleyman, a regency council has been established to select a successor to lead our nation."
+ XSK_sultan_abdulhamid_i_name: "Abdulhamid I."
+ XSK_sultan_abdulhamid_i_desc: "Sultan I. Abdulhamid is the nephew of the deceased Sultan XI. Süleyman. While he may be of Turkic decent, his capabilities as a leader are questionable and his approach to things are rarely diplomatic."
+ XSK_sultan_suleyman_xii_name: "Süleyman XII."
+ XSK_sultan_suleyman_xii_desc: "Sultan XII. Süleyman is the son of the deceased Sultan XI. Süleyman. His mother was one of the Sultans concubines and therefore, his existence has always been questionable, especially due to the fact that he is half-mongolian. However, abilities to lead cannot not be underestimated."
+ XSK_ottoman_military_gov_name: "Military Council"
 
  XSK_ottoman_regency_trait: "Temporary Regency"
 
- XSK_succession_events.1.t: "The Distant Cousin"
- XSK_succession_events.1.d: "WIP TEXT"
+ XSK_ottoman_stratocracy: "Stratocracy"
+ XSK_ottoman_stratocracy_desc: "Stratocracy is a form of government headed by military chiefs. The branches of government are administered by military forces, the government is legal under the laws of the jurisdiction at issue, and is usually carried out by military workers."
+
+ XSK_succession_events.1.t: "The Incapable Nephew"
+ XSK_succession_events.1.d: "Our first candidate, Abdulhamid is the nephew of the deceased Sultan XI. Süleyman. While he may be of Turkic decent, his capabilities as a leader are questionable and his approach to things are rarely diplomatic."
  XSK_succession_events.1.a: "We have our Sultan!"
  XSK_succession_events.1.b: "He may be Turkic, but can he lead?"
 
- XSK_succession_events.2.t: "The Direct Descendant"
- XSK_succession_events.2.d: "WIP TEXT"
- XSK_succession_events.2.a: "What more do we need?"
+ XSK_succession_events.2.t: "The Illigitimate Son"
+ XSK_succession_events.2.d: "XII. Süleyman is the son of the deceased Sultan XI. Süleyman. His mother was one of the Sultans concubines and therefore, his existence has always been questionable, especially due to the fact that he is half-mongolian. However, abilities to lead cannot not be underestimated."
+ XSK_succession_events.2.a: "What more do we want?"
  XSK_succession_events.2.b: "A Mongolian? We're not insane."
 
  XSK_succession_events.3.t: "The Regency Council deadlocks"
@@ -70,7 +81,7 @@
  XSK_succession_events.3.c: "There Will Be No Compromise!"
  
  XSK_succession_events.4.t: "The Military takes Control!"
- XSK_succession_events.4.d: "WIP TEXT"
+ XSK_succession_events.4.d: "With the failing of the Regency Council, elements within the military have decided that it has outlived its purpose. General WIP PLACEHOLDER has declared martial law and ended the rule of the Ottoman Dynasty."
  XSK_succession_events.4.a: "This has taken long enough!"
 
  XSK_succession_events.5.t: "Coronation of Abdulhamid the First!"
@@ -81,7 +92,7 @@
  XSK_succession_events.6.d: "WIP TEXT"
 
  XSK_succession_events.7.t: "The Regency Council"
- XSK_succession_events.7.d: "WIP TEXT"
+ XSK_succession_events.7.d: "The Regency Council has been working hard, locating the deceased Sultans only son, as well as his nephew. Now, it is time for the council to make a decision."
  XSK_succession_events.7.a: "First Candidate, please."
 
  XSK_choose_the_next_sultan: "The Successor Candidates"
@@ -89,8 +100,8 @@
  XSK_choose_the_next_sultan_tt: "Starts an §Yevent chain§! to choose the next Sultan.\nIf no successor has been choosen in time, the military will have to §Rtake control§! of the nation."
  XSK_choosen_next_sultan: "a successor has been choosen"
  XSK_the_expansionist_sultan: "Expand the Sultanate"
- XSK_the_expansionist_sultan_trigger: "Sultan §YI. Abdulhamid§! has succeeded the throne"
+ XSK_the_expansionist_sultan_trigger: "§YSultan I. Abdulhamid§! has succeeded the throne"
  XSK_no_sultan: "The Military Coup"
- XSK_no_sultan_trigger: "§Rno successor has been chosen§!"
+ XSK_no_sultan_trigger: "no successor has been chosen"
  XSK_the_diplomatic_sultan: "Trade and Secrets"
- XSK_the_diplomatic_sultan_trigger: "Sultan §YXII. Süleyman§! has succeeded the throne"
+ XSK_the_diplomatic_sultan_trigger: "§YSultan XII. Süleyman§! has succeeded the throne"

@@ -244,6 +244,9 @@ ideologies = {
 			XFR_corporate_capitalism = {
 				can_be_randomly_selected = no
 			}
+			XSK_ottoman_stratocracy = {
+				can_be_randomly_selected = no
+			}
 			XHP_templaric_order = {
 				can_be_randomly_selected = no
 				color = { 255 255 255 }

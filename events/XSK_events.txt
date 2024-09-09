@@ -89,6 +89,10 @@ country_event = { # Military Coup
     
     option = {
         name = XSK_succession_events.4.a
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }
         complete_national_focus = XSK_no_sultan
     }
 }
@@ -104,6 +108,43 @@ country_event = { # Abdulhamid is choosen
     
     option = {
         name = XSK_succession_events.5.a
+        add_country_leader_role = {
+            character = XSK_sultan_abdulhamid_i
+            promote_leader = yes
+            country_leader = {
+                ideology = despotism
+                desc = XSK_sultan_abdulhamid_i_desc
+                expire = "3000.1.1.1"
+                traits = { }
+           }
+        }
+        hidden_effect = {
+            add_country_leader_role = {
+                character = XSK_sultan_abdulhamid_i
+                promote_leader = yes
+                country_leader = {
+                    ideology = conservatism
+                    desc = XSK_sultan_abdulhamid_i_desc
+                    expire = "3000.1.1.1"
+                    traits = { }
+               }
+            }
+            add_country_leader_role = {
+                character = XSK_sultan_abdulhamid_i
+                promote_leader = yes
+                country_leader = {
+                    ideology = stalinism
+                    desc = XSK_sultan_abdulhamid_i_desc
+                    expire = "3000.1.1.1"
+                    traits = { }
+               }
+            }
+        }
+        set_party_name = {
+            ideology = neutrality
+            long_name = XSK_neutrality_party_long
+            name = XSK_neutrality_party
+        }
         complete_national_focus = XSK_the_expansionist_sultan
     }
 }
@@ -119,6 +160,43 @@ country_event = { # Süleyman is choosen
     
     option = {
         name = XSK_succession_events.5.a
+        add_country_leader_role = {
+            character = XSK_sultan_suleyman_xii
+            promote_leader = yes
+            country_leader = {
+                ideology = despotism
+                desc = XSK_sultan_suleyman_xii_desc
+                expire = "3000.1.1.1"
+                traits = { }
+           }
+        }
+        hidden_effect = {
+            add_country_leader_role = {
+                character = XSK_sultan_suleyman_xii
+                promote_leader = yes
+                country_leader = {
+                    ideology = conservatism
+                    desc = XSK_sultan_suleyman_xii_desc
+                    expire = "3000.1.1.1"
+                    traits = { }
+               }
+            }
+            add_country_leader_role = {
+                character = XSK_sultan_suleyman_xii
+                promote_leader = yes
+                country_leader = {
+                    ideology = stalinism
+                    desc = XSK_sultan_suleyman_xii_desc
+                    expire = "3000.1.1.1"
+                    traits = { }
+               }
+            }
+        }
+        set_party_name = {
+            ideology = neutrality
+            long_name = XSK_neutrality_party_long
+            name = XSK_neutrality_party
+        }
         complete_national_focus = XSK_the_diplomatic_sultan
     }
 }

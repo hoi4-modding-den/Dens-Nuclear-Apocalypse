@@ -15,4 +15,39 @@ characters = {
 			expire = "3000.1.1"
 		}
 	}
+
+	XSK_sultan_abdulhamid_i = {
+		name = XSK_sultan_abdulhamid_i_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XSK_sultan_abdulhamid_i"
+			}
+		}
+	}
+
+	XSK_sultan_suleyman_xii = {
+		name = XSK_sultan_suleyman_xii_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XSK_sultan_suleyman_xii"
+			}
+		}
+	}
+
+	XSK_ottoman_military_gov = {
+		name = XSK_ottoman_military_gov_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XSK_ottoman_military_gov"
+			}
+		}
+		country_leader = {
+			ideology = XSK_ottoman_stratocracy
+			traits = { }
+			expire = "3000.1.1"
+		}
+	}
 }

@@ -24,6 +24,9 @@ add_ideas = {
 }
 
 recruit_character = XSK_ottoman_regency_council
+recruit_character = XSK_sultan_abdulhamid_i
+recruit_character = XSK_sultan_suleyman_xii
+recruit_character = XSK_ottoman_military_gov
 
 set_party_name = {
     ideology = neutrality

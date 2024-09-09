@@ -96,6 +96,12 @@ defined_text = {
 		localization_key = XFR_insanity
 	}
 	text = {
+		trigger = {
+			has_country_leader_ideology = XSK_ottoman_stratocracy
+		}
+		localization_key = XSK_ottoman_stratocracy
+	}
+	text = {
 		localization_key = fascism
 	}
 }
@@ -113,7 +119,7 @@ defined_text = {
 		trigger = {
 			has_country_leader_ideology = XFR_military_government
 		}
-		localization_key = XFR_military_government
+		localization_key = XSK_ottoman_stratocracy
 	}
 	text = {
 		trigger = {

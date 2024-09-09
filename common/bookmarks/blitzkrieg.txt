@@ -42,18 +42,13 @@ bookmarks = {
 			ideas = {
 			}
 		}
-		"XTK" = {
-			ideology = communism
-			history = "XTK_history"
-			focuses = {
-			}
-			ideas = {
-			}
-		}
 		"XHK" = {
 			ideology = democratic
 			history = "Xhk_history"
 			focuses = {
+				XSK_the_expansionist_sultan
+				XSK_no_sultan
+				XSK_the_diplomatic_sultan
 			}
 			ideas = {
 			}

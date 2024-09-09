@@ -8,4 +8,19 @@ spriteTypes = {
         texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_regency_council.dds"
     }
 
+    spriteType = {
+        name = "GFX_portrait_XSK_sultan_abdulhamid_i"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_sultan_abdulhamid_i.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XSK_sultan_suleyman_xii"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_sultan_suleyman_xii.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_XSK_ottoman_military_gov"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_military_gov.dds"
+    }
+
 }
