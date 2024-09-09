@@ -1,0 +1,142 @@
+
+add_namespace = XNF
+country_event = {
+    id = XNF.1
+    title = XNF.1.t # set out into the wasteland
+    # picture = GFX_report_event_DEN_celebration
+    desc = XNF.1.d
+    
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = XNF.1.a # lets go!
+		hidden_effect = {
+            random_list = {
+                20 = { # no bump path
+                    #yahoo!
+                }
+                30 = { # one bump path
+                    XNF_choose_random_bump = yes
+                }
+                10 = { # two bump path
+                    XNF_choose_random_bump = yes
+                    XNF_choose_random_bump = yes
+                }
+                2 = { # your group of nerds die
+                    country_event = {
+                        id = XNF.8
+                        days = 30
+                    }
+                }
+            }
+        }
+        ai_chance = {
+			base = 1
+		}
+    }
+}
+country_event = {
+    id = XNF.2
+    is_triggered_only = yes
+    title = XNF.2.t # we discovered the city to settle, we are safe
+    # picture = GFX_report_event_DEN_celebration
+    desc = XNF.2.d
+    option = {
+        name = XNF.2.a # yahoo ! :)
+        
+    }
+    
+}
+country_event = {
+    id = XNF.3
+    is_triggered_only = yes
+    title = XNF.3.t # nuclear rat ate the food
+    # picture = GFX_report_event_DEN_celebration
+    desc = XNF.3.d
+    
+    option = {
+        name = XNF.3.a # yahoo ! :)
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = -100
+            producer = XNF
+        }
+        add_manpower = -100
+    }
+}
+country_event = {
+    id = XNF.4
+    is_triggered_only = yes
+    title = XNF.4.t # radiation poisoning
+    # picture = GFX_report_event_DEN_celebration
+    desc = XNF.4.d
+    
+    option = {
+        name = XNF.2.a # yahoo ! :)
+        add_timed_idea = {
+            idea = XNF_rad_poison
+            days = 90
+        }
+    }
+}
+country_event = {
+    id = XNF.5
+    is_triggered_only = yes
+    title = XNF.5.t # bandits stole our stuff
+    # picture = GFX_report_event_DEN_celebration
+    desc = XNF.5.d
+    
+    option = {
+        name = XNF.2.a # yahoo ! :)
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = -1000
+            producer = XNF
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = -1000
+            producer = XNF
+        }
+        add_manpower = -150
+    }
+}
+country_event = {
+    id = XNF.6
+    is_triggered_only = yes
+    title = XNF.6.t # group drinks unsafe water
+    # picture = GFX_report_event_DEN_celebration
+    desc = XNF.6.d
+    
+    option = {
+        name = XNF.2.a # yahoo ! :)
+        add_manpower = -1000
+    }
+}
+country_event = {
+    id = XNF.7
+    is_triggered_only = yes
+    title = XNF.7.t # guy is lost
+    # picture = GFX_report_event_DEN_celebration
+    desc = XNF.7.d
+    
+    option = {
+        name = XNF.2.a # yahoo ! :)
+        add_manpower = -1
+    }
+}
+country_event = {
+    id = XNF.8
+    is_triggered_only = yes
+    title = XNF.8.t # we all died!
+    # picture = GFX_report_event_DEN_celebration
+    desc = XNF.8.d
+    
+    option = {
+        name = XNF.2.a # yahoo ! :)
+        add_manpower = -10000
+        custom_effect_tooltip = XNF_you_fail
+        set_country_flag = XNF_mission_failed
+    }
+}

@@ -402,6 +402,13 @@ ideas = {
 				stability_factor = -0.1
 			}
 		}
+		XRP_XAD_war_goal_modifier = {
+			picture = por_volunteers_in_the_war
+			removal_cost = -1
+			modifier = {
+				enemy_justify_war_goal_time = -0.5
+			}
+		}
 
 		#Army Ideas#
 		XRP_american_army = {

@@ -1,0 +1,31 @@
+﻿l_english:
+
+### COUNTRY NAME
+
+XRY_fascism:0 "Okinawa"
+XRY_fascism_DEF:0 "Okinawa"
+XRY_democratic:0 "Republic of Ryukyu"
+XRY_democratic_DEF:0 "the Republic of Ryukyu"
+XRY_neutrality:0 "Kingdom of Ryukyu"
+XRY_neutrality_DEF:0 "the Kingdom of Ryukyu"
+XRY_communism:0 "Ryukyuan People's Republic"
+XRY_communism_DEF:0 "the Ryukyuan People's Republic"
+XRY_fascism_ADJ:0 "Okinawan"
+XRY_democratic_ADJ:0 "Ryukyuan"
+XRY_neutrality_ADJ:0 "Ryukyuan"
+XRY_communism_ADJ:0 "Ryukyuan"
+RYU:0 "Ryukyu"
+XRY_DEF:0 "Ryukyu"
+XRY_ADJ:0 "Ryukyuan"
+
+### PARTY NAMES
+
+XRY_fascism_party:0 "Japanese Loyalists"
+
+XRY_communism_party_long:0 "People's Party"
+XRY_communism_party:0 "PP"
+
+XRY_democratic_party_long:0 "Social Mass Party"
+XRY_democratic_party:0 "SMP"
+
+XRY_neutrality_party:0 "Shō Dynasty"

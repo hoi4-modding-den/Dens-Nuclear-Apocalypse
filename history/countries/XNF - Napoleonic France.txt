@@ -1,5 +1,7 @@
 capital = 1
 
+add_ideas = XNF_we_dont_own_paris
+
 set_variable = { xnf_sen_lyl = 10 }
 set_variable = { xnf_sen_lyl_100 = 100 }
 set_variable = { xnf_leg_lyl = 100 }
@@ -38,6 +40,11 @@ set_variable = { xnfultnationalists_happy = 95 }
 30 = { set_variable = {  vpsize = 5 } }
 15 = { set_variable = {  vpsize = 10 } }
 14 = { set_variable = {  vpsize = 20 } }
+16 = { set_variable = {  vpsize = 50 } }
+974 = { set_variable = {  vpsize = 2 } }
+975 = { set_variable = {  vpsize = 10 } }
+976 = { set_variable = {  vpsize = 15 } }
+977 = { set_variable = {  vpsize = 2 } }
 
 recruit_character = XNF_napoleon_x
 

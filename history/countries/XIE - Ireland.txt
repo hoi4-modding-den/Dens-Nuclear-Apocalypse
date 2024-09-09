@@ -1,6 +1,6 @@
 capital = 113
 
-oob = "generic_OOB"
+set_country_flag = generic_army
 set_politics = {
 	ruling_party = democratic
 }

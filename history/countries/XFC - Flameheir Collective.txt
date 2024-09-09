@@ -1,15 +1,18 @@
-capital = 120
+capital = 136
 
 set_war_support = 0.6
-set_stability = 0.4
+set_stability = 0.75
 set_convoys = 15
 set_research_slots = 3
 
-oob = "generic_OOB"
+set_country_flag = generic_army
 
 add_ideas = limited_conscription
 add_ideas = war_economy
 add_ideas = limited_exports
+add_ideas = XFC_its_a_cult
+add_ideas = XFC_its_a_cult2
+add_ideas = XFC_its_a_cult3
 
 create_country_leader = {
 	name = XFC_alrich_weber
@@ -27,6 +30,26 @@ set_politics = {
 	last_election = "2235.1.15"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_party_name = {
+    ideology = communism
+    long_name = XFC_cult_of_weber_long
+    name = XFC_cult_of_weber
+}
+set_party_name = {
+    ideology = neutrality
+    long_name = XFC_heretics
+    name = XFC_heretics
+}
+set_party_name = {
+    ideology = democratic
+    long_name = XFC_heretics
+    name = XFC_heretics
+}
+set_party_name = {
+    ideology = fascism
+    long_name = XFC_heretics
+    name = XFC_heretics
 }
 set_popularities = {
 	democratic = 16

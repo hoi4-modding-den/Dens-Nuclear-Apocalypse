@@ -152,10 +152,10 @@
     XWA_UnionFocusCommunism7:0 "The Army..."
 
     XWA_UnionFocusCommunism8:0 "Take Back Wales"
-    XWA_UnionFocusCommunism8:0 "Wales rightfully belongs to the Union. It is time to take back what is ours."
+    XWA_UnionFocusCommunism8_desc:0 "Wales rightfully belongs to the Union. It is time to take back what is ours."
 
     XWA_UnionFocusCommunism9:0 "United England Under Wales"
-    XWA_UnionFocusCommunism9_desc  :0 "With the reunification of Wales, we must liberate the rest of the Isle from their limiting governments."
+    XWA_UnionFocusCommunism9_desc:0 "With the reunification of Wales, we must liberate the rest of the Isle from their limiting governments."
     #Industry
     XWA_UnionIndustryStart:0 "Improve Infastructure"
     XWA_UnionIndustry2:0 "Construct Civilian Factory"

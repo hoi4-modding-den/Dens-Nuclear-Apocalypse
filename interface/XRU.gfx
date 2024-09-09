@@ -281,6 +281,41 @@ spriteTypes = {
     }
 
 	spriteType = {
+		name = "GFX_focus_Fight_For_Freedom"
+		textureFile = "gfx/interface/XRU/XSO_Fight_For_Freedom.dds"
+	}
+    	spriteType = {
+        	name = GFX_focus_Fight_For_Freedom_shine # Change the name, note to keep _shine in the end
+        	texturefile = gfx/interface/XRU/XSO_Fight_For_Freedom.dds # Change to the focus icon
+        	effectFile = gfx/FX/buttonstate.lua
+        	animation = {
+            		animationmaskfile = gfx/interface/XRU/XSO_Fight_For_Freedom.dds # Change to the focus icon
+            		animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            		animationrotation = -90.0
+            		animationlooping = no
+            		animationtime = 0.75
+            		animationdelay = 0
+            		animationblendmode = "add"
+            		animationtype = "scrolling"
+            		animationrotationoffset = { x = 0.0 y = 0.0 }
+            		animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/XRU/XSO_Fight_For_Freedom.dds # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
 		name = "GFX_focus_Order_Restored"
 		textureFile = "gfx/interface/XRU/XRU_Order_Restored.dds"
 	}
@@ -302,6 +337,111 @@ spriteTypes = {
         }
         animation = {
             animationmaskfile = gfx/interface/XRU/XRU_Order_Restored.dds # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = "GFX_focus_Annihilate_Internal_Dissent"
+		textureFile = "gfx/interface/XRU/XSO_Annihilate_Internal_Dissent.dds"
+	}
+    	spriteType = {
+        	name = GFX_focus_Annihilate_Internal_Dissent_shine # Change the name, note to keep _shine in the end
+        	texturefile = gfx/interface/XRU/XSO_Annihilate_Internal_Dissent.dds # Change to the focus icon
+        	effectFile = gfx/FX/buttonstate.lua
+        	animation = {
+            		animationmaskfile = gfx/interface/XRU/XSO_Annihilate_Internal_Dissent.dds # Change to the focus icon
+            		animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            		animationrotation = -90.0
+            		animationlooping = no
+            		animationtime = 0.75
+            		animationdelay = 0
+            		animationblendmode = "add"
+            		animationtype = "scrolling"
+            		animationrotationoffset = { x = 0.0 y = 0.0 }
+            		animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/XRU/XSO_Annihilate_Internal_Dissent.dds # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = "GFX_focus_Keep_To_Beliefs"
+		textureFile = "gfx/interface/XRU/XSO_Keep_To_Beliefs.dds"
+	}
+    	spriteType = {
+        	name = GFX_focus_Keep_To_Beliefs_shine # Change the name, note to keep _shine in the end
+        	texturefile = gfx/interface/XRU/XSO_Keep_To_Beliefs.dds # Change to the focus icon
+        	effectFile = gfx/FX/buttonstate.lua
+        	animation = {
+            		animationmaskfile = gfx/interface/XRU/XSO_Keep_To_Beliefs.dds # Change to the focus icon
+            		animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            		animationrotation = -90.0
+            		animationlooping = no
+            		animationtime = 0.75
+            		animationdelay = 0
+            		animationblendmode = "add"
+            		animationtype = "scrolling"
+            		animationrotationoffset = { x = 0.0 y = 0.0 }
+            		animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/XRU/XSO_Keep_To_Beliefs.dds # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = "GFX_focus_Finish_Off_Rusyns"
+		textureFile = "gfx/interface/XRU/XSO_Finish_Off_Rusyns.dds"
+	}
+    	spriteType = {
+        	name = GFX_focus_Finish_Off_Rusyns_shine # Change the name, note to keep _shine in the end
+        	texturefile = gfx/interface/XRU/XSO_Finish_Off_Rusyns.dds # Change to the focus icon
+        	effectFile = gfx/FX/buttonstate.lua
+        	animation = {
+            		animationmaskfile = gfx/interface/XRU/XSO_Finish_Off_Rusyns.dds # Change to the focus icon
+            		animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            		animationrotation = -90.0
+            		animationlooping = no
+            		animationtime = 0.75
+            		animationdelay = 0
+            		animationblendmode = "add"
+            		animationtype = "scrolling"
+            		animationrotationoffset = { x = 0.0 y = 0.0 }
+            		animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/XRU/XSO_Finish_Off_Rusyns.dds # Change to the focus icon
             animationtexturefile = gfx/interface/goals/shine_overlay.dds
             animationrotation = 90.0
             animationlooping = no

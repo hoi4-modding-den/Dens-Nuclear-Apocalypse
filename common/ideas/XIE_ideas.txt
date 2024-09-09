@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		XIE_apocalypse_economy = {
+            picture = strategic_bombing_focus 
+            modifier = {
+				supply_consumption_factor = -0.2
+				production_speed_buildings_factor = -0.35
+			}
+		}
+		XIE_confederation = {
+			picture = neutrality_idea
+			modifier = {
+				stability_factor = -0.4
+				conscription_factor = -0.5
+				political_power_factor = -0.5
+			}
+		}
+	}
+}

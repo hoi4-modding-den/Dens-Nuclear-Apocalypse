@@ -1,0 +1,18 @@
+characters = {
+
+	XSK_ottoman_regency_council = {
+		name = XSK_ottoman_regency_council_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XSK_ottoman_regency_council"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			desc = XSK_ottoman_regency_council_desc
+			traits = { XSK_ottoman_regency_trait }
+			expire = "3000.1.1"
+		}
+	}
+}

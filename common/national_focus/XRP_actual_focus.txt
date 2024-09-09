@@ -848,9 +848,19 @@ focus_tree = {
 			completion_reward = {
 				add_state_core = 28
 				add_state_core = 976
-				create_wargoal = {
-					target = XAL
-					type = annex_everything
+				if = {
+					limit = { 976 = { NOT = { is_owned_by = XRP } } }
+					976 = {
+						OWNER = {
+							  ROOT = {
+								create_wargoal = {
+									  type = take_core_state
+									  generator = { 976 }
+									  target = PREV
+								}
+							  }
+						}
+					}
 				}
 			}
 		}
@@ -875,9 +885,27 @@ focus_tree = {
 				add_state_core = 8
 				add_state_claim = 29
 				add_state_claim = 34
-				create_wargoal = {
-					target = XLX
-					type = annex_everything
+				8 = {
+					OWNER = {
+					  	ROOT = {
+							create_wargoal = {
+						  		type = take_core_state
+						  		generator = { 8 }
+						  		target = PREV
+							}
+					  	}
+					}
+				}
+				29 = {
+					OWNER = {
+					  	ROOT = {
+							create_wargoal = {
+						  		type = take_claimed_state
+						  		generator = { 29 34 }
+						  		target = PREV
+							}
+					  	}
+					}
 				}
 			}
 		}
@@ -892,7 +920,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  XRP = { is_subject = yes }}
+				NOT = {  XRP = { is_subject = yes } XCM = { exists = yes } } 
 			}	
 
 			ai_will_do = {
@@ -961,7 +989,8 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  XRP = { is_subject = yes }}
+				NOT = {  XRP = { is_subject = yes } XOO = { exists = yes } }
+				
 			}	
 			mutually_exclusive = {
 				focus = XRP_deal_with_mephisto
@@ -990,7 +1019,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_new_america }
 			available = {
-				NOT = {  XRP = { is_subject = yes }}
+				NOT = {  XRP = { is_subject = yes } }
 			}	
 			mutually_exclusive = {
 				focus = XRP_deal_with_mephisto
@@ -1003,8 +1032,17 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				XOO = {
-					country_event = XRP_focus_event.17
+				if = {
+					limit = { 50 = { NOT = { is_owned_by = XRP } } }
+					50 = {
+						OWNER = {
+							ROOT = {
+								PREV = {
+									country_event = XRP_focus_event.17
+								}
+							}
+						}
+					}
 				}
 				add_state_core = 50
 			}
@@ -1023,13 +1061,23 @@ focus_tree = {
 			available = {
 				NOT = {  XRP = { is_subject = yes }}
 			}	
-
+			bypass = {
+				51 = {
+					is_owned_by = XRP
+				}
+			}
 			ai_will_do = {
 				factor = 1
 			}
 			completion_reward = {
-				XNL = {
-					country_event = XRP_focus_event.14
+				51 = {
+					OWNER = {
+					  	ROOT = {
+							PREV = {
+								country_event = XRP_focus_event.14
+							}
+					  	}
+					}
 				}
 				add_state_core = 51
 			}
@@ -1189,9 +1237,16 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				create_wargoal = {
-					target = XNL
-					type = annex_everything
+				35 = {
+					OWNER = {
+					  	ROOT = {
+							create_wargoal = {
+						  		type = take_claimed_state
+						  		generator = { 6 35 }
+						  		target = PREV
+							}
+					  	}
+					}
 				}
 				add_state_claim = 35
 				add_state_claim = 6
@@ -1264,7 +1319,7 @@ focus_tree = {
 				focus = XRP_military_centralism focus = XRP_military_federalism
 			}
 			available = {
-				NOT = {  }
+				NOT = { XAP = { exists = yes } XGE = { exists = yes } }
 			}	
 			ai_will_do = {
 				factor = 1
@@ -1929,6 +1984,10 @@ focus_tree = {
 					target = XW2
 					type = annex_everything
 				}
+				create_wargoal = {
+					target = XSA
+					type = annex_everything
+				}
 			}
 		}
 		focus = {
@@ -1942,12 +2001,22 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_march_on_rome focus = XRP_destroy_brittania focus = XRP_mop_up_south }
 			available = {
-				has_country_flag = XRP_programmed_yet
+				#has_country_flag = XRP_programmed_yet
 				NOT = {  XRP = { is_subject = yes }}
 				XAD = {
 					exists = yes
+					OR = {
+					has_war_with = XPY
+					has_war_with = XHP
+					has_war_with = XGL
+					}
 				}
 			}	
+			bypass = {
+				XAD = {
+					exists = no
+				}
+			}
 			mutually_exclusive = {
 				focus = XRP_ally_against_cats
 			}
@@ -1958,7 +2027,24 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				XPY = {
+					if = {
+						limit = { has_war_with = XAD }
+						country_event = XRP_focus_event.26
+					}
+				}
+				XHP = {
+					if = {
+						limit = { has_war_with = XAD }
+						country_event = XRP_focus_event.26
+					}
+				}
+				XGL = {
+					if = {
+						limit = { has_war_with = XAD }
+						country_event = XRP_focus_event.26
+					}
+				}
 			}
 		}
 		focus = {
@@ -2061,13 +2147,48 @@ focus_tree = {
 			cost = 5
 			prerequisite = { focus =  XRP_ally_against_cats  }
 			available = {
-				NOT = {  XRP = { is_subject = yes }}
+				NOT = {  XRP = { is_subject = yes } XAD = { exists = yes } }
 			}
 			ai_will_do = {
 				factor = 1
 			}
 			completion_reward = {
-				
+				XGL = {
+					if = {
+						limit = { exists = yes }
+						country_event = XRP_focus_event.29
+					}
+				}
+				XHP = {
+					if = {
+						limit = { exists = yes }
+						country_event = XRP_focus_event.29
+					}
+				}
+				XPS = {
+					if = {
+						limit = { exists = yes }
+						country_event = XRP_focus_event.29
+					}
+				}
+				XAR = {
+					if = {
+						limit = { exists = yes }
+						country_event = XRP_focus_event.29
+					}
+				}
+				XBC = {
+					if = {
+						limit = { exists = yes }
+						country_event = XRP_focus_event.29
+					}
+				}
+				XPY = {
+					if = {
+						limit = { exists = yes }
+						country_event = XRP_focus_event.29
+					}
+				}
 			}
 		}
 		focus = {
@@ -2077,7 +2198,7 @@ focus_tree = {
 			y = 13
 			#relative_position_id = 
 			allow_branch = { has_country_flag = XRP_flag1  }
-
+			search_filters = { FOCUS_FILTER_ANNEXATION }
 			cost = 5
 			bypass = {
 				XAD = {
@@ -2111,9 +2232,21 @@ focus_tree = {
 			prerequisite = { focus =  XRP_no_quarter  }
 			prerequisite = { focus =  XRP_demand_subjugation focus = XRP_no_pets_allowed  }
 			available = {
-				NOT = { any_country = {
-					has_government = communism
-				} }
+				NOT = { 
+					any_country = {
+						has_government = communism
+						AND = {
+							if = {
+								limit = {
+									has_opinion_modifier = XRP_Anti-Nazi 
+									has_opinion_modifier = XRP_Anti-Muslim 
+									has_opinion_modifier = XRP_Anti-German 
+								}
+								exists = yes
+							}
+						}
+					} 
+				}
 			}
 			ai_will_do = {
 				factor = 1

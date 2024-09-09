@@ -1,7 +1,7 @@
 capital = 8
 
 #oob = "XLX"
-oob = "generic_OOB"
+set_country_flag = generic_army
 
 set_technology = {
 	infantry_weapons = 1

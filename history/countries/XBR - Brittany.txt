@@ -4,7 +4,7 @@ recruit_character = XBR_provisional_government
 
 set_cosmetic_tag = XBR_provisional
 
-oob = "generic_OOB"
+set_country_flag = generic_army
 
 set_politics = {
 	ruling_party = neutrality

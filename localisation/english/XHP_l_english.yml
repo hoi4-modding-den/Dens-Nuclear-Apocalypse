@@ -40,6 +40,10 @@ XHP.1.a:0 "We will crush these insurgents immediately!"
 XHP.1.b:0 "For the Knights of the Holy Order!"
 XHP.2.t:0 "Deciding our General"
 XHP.2.d:0 "We have chosen to unify our cause in the wake of the Templaric insurgency. In order to do this, we must choose from some of the remaining generals to serve as the Grand Commander of the Spanish Army"
+XHP.2.a:0 "Diego Gonzalez's brilliance will heal us!"
+XHP.2.b:0 "We will need an experienced general."
+XHP.2.c:0 "We will place someone loyal to the party"
+
 
 ### Decisions
 XHP_crusader_crisis:0 "The Crusader Crisis"
@@ -95,14 +99,23 @@ XHP_gen_fascist_long:0 "Fascist National Party"
 XHP_gen_fascist_short:0 "FNP"
 
 
+XHP_democratic_junta:0 "Military Junta"
+
 ### Idea
 idea_XHP_crusader_crisis:0 "Crusader Crisis"
 idea_XHP_chaotic_military:0 "Chaotic Military"
 idea_XHP_chaotic_military1:0 "Chaotic Military"
 idea_XHP_chaotic_military2:0 "Chaotic Military"
 idea_XHP_disloyalty_everywhere:0 "Disloyalty Everywhere"
+idea_XHP_disloyalty_everywhere2:0 "Disloyalty Everywhere"
 idea_XHP_fight_longer:0 "Relentless Resolve"
+idea_XHP_fight_of_lives:0 "The Fight of our Lives"
 
+### Country Leader Traits
+XHP_successful_commander:0 "Successful Commander"
+XHP_old_guard:0 "Old Guard"
+XHP_beau_court:0 "Bureaucract of the Imeprial Court"
+XHP_court_objective:0 "Unified Court Objective"
 
 # Spanish General, not in uniform, but in a dark grey foot soldier uniform. He is an experienced general, so make his face accordingly. the picture should just be shoulders up. make him a little tired. the background should be just a gray-greenish fade with lighter areas toward the body of the general and darker toward the edges of the portrait, following the same format of a leader portrait from Hearts of Iron IV. Make multiple different generals with first and last names. Be sure the leaders have color.
 

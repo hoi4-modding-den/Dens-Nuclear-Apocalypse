@@ -1,0 +1,19 @@
+capital = 526
+
+#oob = "XRY_1936"
+
+set_war_support = 0.4
+set_stability = 0.4
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2232.1.30"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 60
+	communism = 12
+	fascism = 7
+	neutrality = 21
+}
