@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		XHK_vertical_slums = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				global_building_slots_factor = -0.25
+			}
+		}
+		XHK_import_reliance = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				political_power_cost = 0.1
+			}
+		}
+		XHK_fragile_democracy = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.3
+				democratic_drift = -0.05
+			}
+		}
+		XHK_guangdong_menace = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = -50
+			}
+			
+			targeted_modifier = {
+				tag = XGD
+				defense_bonus_against = 0.1
+			}
+		}
+	}
+}	
