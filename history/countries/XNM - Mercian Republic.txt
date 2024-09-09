@@ -129,5 +129,5 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	trench_warfare = 1
-	electrical_engineering = 1
+	electronic_mechanical_engineering = 1
 }

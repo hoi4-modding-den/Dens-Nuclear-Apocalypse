@@ -9,8 +9,8 @@ manpower=2629733
 		tungsten = 120 
 	}
 	history={
-		#add_core_of = BRM
-		owner = LIB # RAJ
+		add_core_of = XYU
+		owner = XYU
 		buildings = {
 			infrastructure = 2
 			#air_base = 1

@@ -371,7 +371,7 @@ focus_tree = {
 			focus = XNM_the_equinox_deal
 		}
 		available = {
-			date = 2236.7.22
+			date > 2236.7.22
 		}
 		bypass = {}		
 		

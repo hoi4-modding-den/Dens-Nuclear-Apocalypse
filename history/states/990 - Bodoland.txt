@@ -1,0 +1,29 @@
+
+state={
+	id=990
+	name="STATE_990"
+	manpower=300000
+	
+	
+	state_category = town
+	
+	resources={
+		tungsten=2 # was: 2
+	}
+
+	history={
+		owner = XBO
+		buildings = {
+			infrastructure = 1
+			#arms_factory = 1
+			#industrial_complex = 2 
+		}
+		add_core_of = XBO
+	}
+
+	provinces={
+		10349 7455
+	}
+
+	local_supplies=0.0 
+}

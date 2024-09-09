@@ -1,0 +1,50 @@
+characters = {
+    XTW_chen_hua = {
+        portraits={
+            civilian={
+                large="GFX_portrait_XTW_chen_hua"
+            }
+        }
+        country_leader={
+            ideology=socialism
+            expire="2280.1.1.1"
+            traits = {}
+        }
+    }
+    XTW_chiang_gang = {
+        portraits={
+            civilian={
+                large="GFX_portrait_XTW_chiang_gang"
+            }
+        }
+        country_leader={
+            ideology=despotism
+            expire="2280.1.1.1"
+            traits = {}
+        }
+    }
+    XTW_li_qingfu = {
+        portraits={
+            civilian={
+                large="GFX_portrait_XTW_li_qingfu"
+            }
+        }
+        country_leader={
+            ideology=fascism_ideology
+            expire="2280.1.1.1"
+            traits = {}
+        }
+    }
+    XTW_shi_yuehan = {
+        portraits={
+            civilian={
+                large="GFX_portrait_XTW_shi_yuehan"
+            }
+        }
+        country_leader={
+            ideology=marxism
+            expire="2280.1.1.1"
+            traits = {}
+        }
+    }
+}

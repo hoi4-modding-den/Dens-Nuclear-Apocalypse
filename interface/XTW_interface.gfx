@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_XTW_chen_hua"
+		texturefile = "gfx/leaders/XTW/Portrait_Taiwan_Chen_Hua.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_XTW_chiang_gang"
+		texturefile = "gfx/leaders/XTW/Portrait_Taiwan_Chiang_Gang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_XTW_li_qingfu"
+		texturefile = "gfx/leaders/XTW/Portrait_Taiwan_Li_Qingfu.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_XTW_shi_yuehan"
+		texturefile = "gfx/leaders/XTW/Portrait_Taiwan_Shi_Yuehan.png"
+	}
+}

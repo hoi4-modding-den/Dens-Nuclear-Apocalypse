@@ -13,3 +13,45 @@ anarchy_tag = {
 		neutrality = 100
 	}
 }
+d_create_army = {
+    division_template = {
+        name = "Infantry Unit"
+        regiments = {
+            infantry = { x = 0 y = 0 }
+            infantry = { x = 0 y = 1 }
+            infantry = { x = 0 y = 2 }
+            infantry = { x = 1 y = 0 }
+            infantry = { x = 1 y = 1 }
+            infantry = { x = 1 y = 2 }
+        }
+    }
+
+    set_temp_variable = { num_of_divs = max_available_manpower_k }
+    divide_temp_variable = { num_of_divs = 15 }
+ 
+    set_temp_variable = { i = 0 }
+    while_loop_effect = {
+        limit = { check_variable = { i < num_of_divs } }
+        capital_scope = {
+            create_unit = {
+                division = "name = \"Infantry Unit\" division_template = \"Infantry Unit\" start_experience_factor = 0.3 start_equipment_factor = 0.3"
+                owner = PREV
+            }
+        }
+        add_to_temp_variable = { i = 1 }
+        multiply_temp_variable = { i = 1.1 }
+    }
+}
+d_log_all_armies = {
+	every_country = {
+		if = {
+			limit = {
+				has_country_flag = generic_army
+			}
+			log = "log_all_armies: [THIS.GetTag]: [?THIS.num_divisions], [?THIS.manpower_k] GENERIC ARMY"
+		}
+		else = {
+			log = "log_all_armies: [THIS.GetTag]: [?THIS.num_divisions], [?THIS.manpower_k]"
+		}
+	}
+}

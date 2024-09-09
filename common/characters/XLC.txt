@@ -1,0 +1,119 @@
+characters = {
+	XLC_Elder_Borani = {
+		name = "Elder Borani"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Elder_Borani"
+			}
+		}
+
+		country_leader = {
+			ideology = XLA_council
+		}
+	}
+
+	XLC_Altwigite_Order = {
+		name = "The Altwigite Order"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Altwigite_Order"	
+			}
+		}
+
+		country_leader = {
+			ideology = XLA_mages
+		}
+	}
+
+	XLC_Voiceless_Grotto = {
+		name = "The Voiceless Grotto"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Voiceless_Grotto"
+			}
+		}
+
+		country_leader = {
+			ideology = XLA_fey
+		}
+	}
+
+	XLC_Elders_Council = {
+		name = "The Council of Arnmouth"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Elders_Council"
+			}
+		}
+
+		country_leader = {
+			ideology = XLA_council
+		}
+	}
+
+	XLC_Socellia_Luzi = {
+		name = "Socellia Luzi"
+		portraits = {
+			army = {
+				small = "GFX_Advisor_Socellia_Luzi"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XLC_Luzi
+			allowed = {
+				original_tag = XLC
+			}
+			available = {
+				has_country_flag = XLA_Allowed_Recruit_Socellia
+			}
+			traits = {
+				XLA_Altwigitian_Acolyte
+			}
+		}
+	}
+
+	XLC_Samio = {
+		name = "Samio"
+		portraits = {
+			army = {
+				small = "GFX_Advisor_Samio"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			available = {
+				has_country_flag = XLA_Allowed_Recruit_Samio
+			}
+			allowed = {
+				original_tag = XLC
+			}
+			idea_token = XLC_Samio_Token
+			traits = { 
+				XLA_Druidic
+			}
+		}
+	}
+
+	XLC_Alexeus = {
+		name = "Alexeus Branislav"
+		portraits = {
+			army = {
+				small = "GFX_Advisor_Alexeus_Branislav"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XLC_Alexeus_Token
+			allowed = {
+				original_tag = XLC
+			}
+			available = {
+				has_country_flag = XLA_Allowed_Recruit_Alexeus
+			}
+			traits = { 
+				XLA_Councilitte
+			}
+		}
+	}
+}

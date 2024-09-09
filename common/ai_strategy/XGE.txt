@@ -1,6 +1,19 @@
 XGE_plan = {
 	allowed = {
 		original_tag = XGE
+		country_exists = XAP
+		XGE = {
+			is_neighbor_of = XAP
+		}
+		NOT = {
+			XAP = {
+				OR = {
+					is_puppet_of = XGE
+					is_subject_of = XGE
+				}
+			}
+		}
+		
 	}
 	enable = {
 		always = yes
@@ -9,13 +22,13 @@ XGE_plan = {
 
 	ai_strategy = {
 		type = force_build_armies
-		value = 1000
+		value = 100
 	}
 	
 	ai_strategy = {
 		type = prepare_for_war
 		id = XAP
-		value = 100
+		value = 50
 	}
 	
 	ai_strategy = {

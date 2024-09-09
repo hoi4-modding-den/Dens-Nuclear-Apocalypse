@@ -1,0 +1,23 @@
+bookmarks = {
+	bookmark = {
+		name = "ASIA_NAME"
+		desc = "ASIA_DESC"
+		date = 2236.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "XCB"
+		default = no
+
+		"XCB" = {
+			ideology = neutrality
+			history = "XCB_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

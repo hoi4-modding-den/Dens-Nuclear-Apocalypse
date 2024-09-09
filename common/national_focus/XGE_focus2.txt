@@ -96,7 +96,7 @@
 					add_idea = XGE_system_controls_army
 				}
 				complete_national_focus = XGE_war_plan_north
-				complete_national_focus = XGE_war_plan_east
+				complete_national_focus = XGE_war_plan_west
 				complete_national_focus = XGE_war_plan_south
 			}
 			set_country_flag = operating_system_controls_army
@@ -133,7 +133,7 @@
 		x = 0
 		y = 1
 		relative_position_id = XGE_war_plan_north
-
+		available = { has_war = no }
 		cost = 4
 
 		ai_will_do = {
@@ -158,7 +158,7 @@
 		available = { 
 			controls_state = 58
 		}
-
+		
 		cost = 4
 
 		ai_will_do = {
@@ -197,7 +197,7 @@
 		x = -2
 		y = 1
 		relative_position_id = XGE_hoist_the_red_flag_over_hamburg
-
+		available = { has_war = no }
 		cost = 4
 
 		ai_will_do = {
@@ -242,7 +242,7 @@
 		x = 2
 		y = 1
 		relative_position_id = XGE_war_plan_west
-
+		available = { has_war = no }
 		cost = 4
 
 		ai_will_do = {
@@ -309,7 +309,17 @@
 		x = 0
 		y = 1
 		relative_position_id = XGE_axe_out_the_anarchists
-		available = { NOT = { country_exists = XAP } }
+		available = { 
+			OR = {
+				NOT = { 
+					country_exists = XAP
+				} 
+				XAP	= {
+					is_subject_of = XGE
+					is_puppet_of = XGE		
+				}
+			}
+		}
 		cost = 4
 
 		ai_will_do = {
@@ -318,13 +328,26 @@
 		completion_reward = {
 			add_stability = 0.05
 			country_event = XGE.8
+			hidden_effect = {
+				if = {
+					limit = {
+						XAP	= {
+							is_subject_of = XGE
+							is_puppet_of = XGE
+						}
+					}
+					annex_country = {
+						target = XAP
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = XGE_dismantle_the_capitalist_camp
 		icon = GFX_focus_generic_attack_usa
 		prerequisite = { focus = XGE_war_plan_west }
-		
+		available = { has_war = no }
 		#mutually_exclusive = { focus =  }
 		x = -2
 		y = 1
@@ -351,7 +374,17 @@
 		x = 0
 		y = 1
 		relative_position_id = XGE_dismantle_the_capitalist_camp
-		available = { NOT = { country_exists = XRP } }
+		available = { 
+			OR = {
+				NOT = { 
+					country_exists = XRP
+				} 
+				XRP	= {
+					is_subject_of = XGE
+					is_puppet_of = XGE		
+				}
+			}
+		}
 		cost = 4
 
 		ai_will_do = {
@@ -360,6 +393,19 @@
 		completion_reward = {
 			country_event = XGE.7
 			add_war_support = 0.05
+			hidden_effect = {
+				if = {
+					limit = {
+						XRP	= {
+							is_subject_of = XGE
+							is_puppet_of = XGE
+						}
+					}
+					annex_country = {
+						target = XRP
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -390,7 +436,7 @@
 		x = -2
 		y = 1
 		relative_position_id = XGE_war_plan_south
-
+		available = { has_war = no }
 		cost = 4
 
 		ai_will_do = {
@@ -412,7 +458,18 @@
 		x = 0
 		y = 1
 		relative_position_id = XGE_slay_the_mechanized_menace
-		available = { NOT = { country_exists = XOO } }
+		available = { 
+			OR = {
+				NOT = { 
+					country_exists = XOO 
+				} 
+				XOO	= {
+					is_subject_of = XGE
+					is_puppet_of = XGE		
+				}
+			}
+		}
+			
 		cost = 4
 
 		ai_will_do = {
@@ -429,13 +486,26 @@
 				amount = 100
 				variant_name = "Armoured Tractor"
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						XOO	= {
+							is_subject_of = XGE
+							is_puppet_of = XGE
+						}
+					}
+					annex_country = {
+						target = XOO
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = XGE_neutralize_the_nazis
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = XGE_war_plan_south }
-		
+		available = { has_war = no }
 		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 1
@@ -462,7 +532,17 @@
 		x = 0
 		y = 1
 		relative_position_id = XGE_neutralize_the_nazis
-		available = { NOT = { country_exists = XLH } }
+		available = { 
+			OR = {
+				NOT = { 
+					country_exists = XLH
+				} 
+				XLH	= {
+					is_subject_of = XGE
+					is_puppet_of = XGE		
+				}
+			}
+		}
 		cost = 4
 
 		ai_will_do = {
@@ -470,6 +550,18 @@
 		}
 		completion_reward = {
 			country_event = XGE.6
+			hidden_effect = {
+				if = {
+					limit = {
+						XLH	= {
+							is_subject_of = XGE
+						}
+					}
+					annex_country = {
+						target = XLH
+					}
+				}
+			}
 		}
 	}
 	focus = {
