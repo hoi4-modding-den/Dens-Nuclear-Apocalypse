@@ -250,3 +250,19 @@ XMC = {
 	color = rgb { 204 126 126 }
 	color_ui = rgb { 204 126 126 }
 }
+XSR = {
+	color = rgb { 105 85 105 }
+	color_ui = rgb { 90 60 90 }
+}
+XBO = {
+	color = rgb { 40 60 40 }
+	color_ui = rgb { 20 40 20 }
+}
+XTT = {
+	color = rgb { 190 150 110 }
+	color_ui = rgb { 170 130 90 }
+}
+XTM = {
+	color = rgb { 145 100 45 }
+	color_ui = rgb { 130 80 20 }
+}
