@@ -271,3 +271,13 @@ XYU = {
 	color = rgb { 158 158 0 }
 	color_ui = rgb { 158 158 0 }
 }
+
+XTW = {
+	color = rgb { 0 128 0 }
+	color_ui = rgb { 0 128 0 }
+}
+
+XRY = {
+	color = rgb { 98 98 206 }
+	color_ui = rgb { 98 98 206 }
+}

@@ -1,0 +1,39 @@
+﻿l_english:
+
+### COUNTRY NAME
+
+XTW_fascism:0 "Republic of China"
+XTW_fascism_DEF:0 "the Republic of China"
+
+XTW_democratic:0 "Republic of Taiwan"
+XTW_democratic_DEF:0 "the Republic of Taiwan"
+
+XTW_neutrality:0 "Republic of China"
+XTW_neutrality_DEF:0 "the Republic of China
+
+XTW_communism:0 "People's Revolutionary Republic of Taiwan"
+XTW_communism_long:0 "People's Revolutionary Republic of Taiwan"
+
+XTW_fascism_ADJ:0 "Chinese"
+XTW_democratic_ADJ:0 "Taiwanese"
+XTW_neutrality_ADJ:0 "Chinese"
+XTW_communism_ADJ:0 "Taiwanese"
+
+XTW:0 "Taiwan"
+XTW_DEF:0 "Taiwan"
+XTW_ADJ:0 "Chinese"
+
+### PARTY NAMES
+
+XTW_fascism_party_long:0 "Kuomintang (Radical)"
+XTW_fascism_party:0 "KMT(R)"
+
+XTW_communism_party_long:0 "Taiwan People's Communist Party"
+XTW_communism_party:0 "TPCP"
+
+XTW_democratic_party_long:0 "Democratic Progressive Party"
+XTW_democratic_party:0 "DPP"
+
+XTW_neutrality_party_long:0 "Kuomintang (Moderate)"
+XTW_neutrality_party:0 "KMT(M)"
+

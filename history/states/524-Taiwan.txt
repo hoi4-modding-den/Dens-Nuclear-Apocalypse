@@ -1,34 +1,32 @@
-state=
-{
+
+state={
 	id=524
 	name="STATE_524"
-manpower=3061691
-	
-	state_category = large_town
-	history=
-	{
-		owner = LIB # JAP
-		#add_core_of = CHI
-		#add_core_of = PRC
+
+	history={
+		owner = XTW
+		add_core_of = XTW
 		buildings = {
-			infrastructure = 3 #was: 5
-			#arms_factory = 1
-			#air_base = 6
-			12068 = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+			7186 = {
 				naval_base = 10
+
 			}
-		}
-		victory_points = {
-			7186 5 
-		}
-		victory_points = {
-			12068 1 
-		}
 
+		}
+		victory_points = {
+			7186 10
+		}
 	}
-	provinces={
-		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
-		}
 
-	local_supplies=0.0 
+	provinces={
+		7186 9955 
+	}
+	manpower=10472432
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }
