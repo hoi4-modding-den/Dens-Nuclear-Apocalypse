@@ -11,8 +11,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		owner = LIB # SIA
-		#add_core_of = SIA
+		owner = XSI # SIA
+		add_core_of = XSI
 	}
 manpower=1333333
 	state_category = rural

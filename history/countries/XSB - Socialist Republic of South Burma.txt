@@ -1,0 +1,37 @@
+capital = 288
+
+oob = "XSB"
+
+set_research_slots = 2
+set_war_support = 0.3
+set_stability = 0.4
+set_convoys = 10
+
+add_ideas = {
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "2230.9.30"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 16
+	communism = 71
+	fascism = 4
+	neutrality = 9
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	basic_train = 1
+	trench_warfare = 1
+	electronic_mechanical_engineering = 1
+}
