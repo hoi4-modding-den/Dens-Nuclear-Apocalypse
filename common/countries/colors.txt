@@ -292,3 +292,7 @@ XHK = {
 	color = rgb { 166 20 10 }
 	color_ui = rgb { 166 20 10 }
 }
+XGD = {
+	color = rgb { 24 133 114 }
+	color_ui = rgb { 24 133 114 }
+}

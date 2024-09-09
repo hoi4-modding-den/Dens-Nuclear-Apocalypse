@@ -10,7 +10,7 @@ manpower=7411448
 		#add_core_of = CHI
 		#add_core_of = PRC
 		victory_points = {
-			10062 25
+			10062 30
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
