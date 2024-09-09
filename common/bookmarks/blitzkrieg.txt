@@ -15,6 +15,89 @@ bookmarks = {
 			ideas = {
 			}
 		}
+		"XTW" = {
+			ideology = democratic
+			history = "XTW_history"
+			focuses = {
+			}
+			ideas = {
+				XTW_kuomintang_insurgency
+				XTW_ryukyuan_seperatism
+				XTW_overpopulation_crisis
+			}
+		}
+		"XYU" = {
+			ideology = neutrality
+			history = "XYU_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XSK" = {
+			ideology = neutrality
+			history = "XSK_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XTK" = {
+			ideology = communism
+			history = "XTK_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XHK" = {
+			ideology = democratic
+			history = "Xhk_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XGD" = {
+			ideology = communism
+			history = "XGD_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XSR" = {
+			ideology = democratic
+			history = "XSR_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XBO" = {
+			ideology = neutrality
+			history = "XBO_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XTT" = {
+			ideology = neutrality
+			history = "XTT_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
+		"XTM" = {
+			ideology = neutrality
+			history = "XTM_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
