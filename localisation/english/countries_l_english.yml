@@ -135,3 +135,11 @@
  XGD_DEF:0 "Guangdong"
  XGD_ADJ:0 "Guangdong"
  XGD_subject:0 "$OVERLORDADJ$ $XGD$"
+ 
+ XDA_democratic:0 "Laotian Republic"
+ XDA_democratic_DEF:0 "The Laotian Republic"
+ XDA_democratic_ADJ:0 "Laos"
+ XDA:0 "Laos"
+ XDA_DEF:0 "Laos"
+ XDA_ADJ:0 "Laos"
+ XDA_subject:0 "$OVERLORDADJ$ $XGD$"

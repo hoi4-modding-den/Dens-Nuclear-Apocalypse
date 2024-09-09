@@ -308,8 +308,14 @@ XSB = {
 XSI = {
 	color = rgb { 92 0 0 }
 	color_ui = rgb { 92 0 0 }
+}
 
 XEX = {
 	color = rgb { 235 54 87 }
 	color_ui = rgb { 235 54 87 }
+}
+
+XDA = {
+	color = rgb { 64 153 80 }
+	color_ui = rgb { 64 153 80 }
 }
