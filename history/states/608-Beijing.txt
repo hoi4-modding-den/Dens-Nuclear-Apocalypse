@@ -2,36 +2,35 @@
 state={
 	id=608
 	name="STATE_608"
-manpower=6432267
-	
-	state_category = large_city
 
 	history={
-		owner = XEX 
+		owner = XEX
 		add_core_of = XEX
 		buildings = {
-			infrastructure = 3 #was: 5
-			#industrial_complex = 2
-			#air_base = 3
+			infrastructure = 3
 			10068 = {
 				naval_base = 2
+
 			}
+
 		}
 		victory_points = {
-			9843 20
+			9843 20 
 		}
 		victory_points = {
 			10068 1 
 		}
-
 		1938.10.25 = {
-			#controller = JAP
+
 		}
+
 	}
 
 	provinces={
-		1134 4137 4140 6828 9843 9969 10068 11761 12026 
+		1134 4137 4140 9843 9969 10068 11761 12026 
 	}
-
-	local_supplies=1.0 
+	manpower=6432267
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=1.000
 }

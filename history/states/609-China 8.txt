@@ -1,28 +1,27 @@
 
 state={
 	id=609
-	name="STATE_609" # East Hebei
-manpower=4266667
-	
-	state_category = town
+	name="STATE_609"
 
 	history={
-		owner = XEX 
+		owner = XEX
 		add_core_of = XEX
 		buildings = {
-			infrastructure = 3 #was: 5
-			#arms_factory = 1
-			#industrial_complex = 1
+			infrastructure = 3
 			3900 = {
 				naval_base = 2
+
 			}
+
 		}
 
 	}
 
 	provinces={
-		900 1052 3830 3900 6969 11822 12043 
+		900 1052 6969 11822 12043 
 	}
-
-	local_supplies=0.0 
+	manpower=4266667
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

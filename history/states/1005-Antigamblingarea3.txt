@@ -1,0 +1,15 @@
+state={
+	id=1005
+	name="STATE_1005"
+	provinces={
+		3839 3849 3895 3970 6804 6860 6910 
+	}
+	history={
+		owner = XEX
+		add_core_of = XEX
+	}
+	manpower=90000
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

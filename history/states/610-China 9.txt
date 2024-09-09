@@ -1,23 +1,23 @@
 
 state={
 	id=610
-	name="STATE_610" # Jehol
-manpower=1316918
-	
-	state_category = pastoral
+	name="STATE_610"
 
 	history={
-		owner = XEX 
+		owner = XEX
 		add_core_of = XEX
 		buildings = {
 			infrastructure = 2
+
 		}
 
 	}
 
 	provinces={
-		814 881 934 972 3814 3828 3881 3934 3955 4514 6837 6852 6898 6937 6988 7575 7633 9768 9873 9905 9927 10331 10426 10499 11801 11855 11886 
+		814 934 3814 3830 3881 3900 3934 6837 6898 9905 11886 
 	}
-
-	local_supplies=0.0 
+	manpower=1316918
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }
