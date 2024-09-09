@@ -1,6 +1,6 @@
 state={
-	id=998
-	name="STATE_998"
+	id=1001
+	name="STATE_1001"
 	
 	history={
 		owner = XSI # SIA	
@@ -8,7 +8,7 @@ state={
 	}	
 	
 	provinces={
-		1296 1315 1385 4275 10217 12292 
+		1403 4408 7295 12125 12238 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
