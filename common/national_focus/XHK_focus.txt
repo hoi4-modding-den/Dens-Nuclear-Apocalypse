@@ -1,0 +1,275 @@
+﻿focus_tree = {
+	id = XHK_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = XHK
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 0 y = 3000 }
+
+#	initial_show_position = {
+#		focus = XTI_radio_silence
+#	}
+	
+#	focus = {
+#		id = PRC_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		#mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = XHK_2236_elections
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = {  }
+#		mutually_exclusive = { focus =  }
+		x = 6
+		y = 0
+#		relative_position_id = XTI_radio_silence
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XHK_unstable_alliance
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_2236_elections }
+		mutually_exclusive = { focus = XHK_hung_parliament }
+		x = -4
+		y = 1
+		relative_position_id = XHK_2236_elections
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XHK_hung_parliament
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_2236_elections }
+		mutually_exclusive = { focus = XHK_unstable_alliance }
+		x = 4
+		y = 1
+		relative_position_id = XHK_2236_elections
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XHK_guangdong_manipulation
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hung_parliament }
+		mutually_exclusive = { focus = XHK_nationalist_marches }
+		mutually_exclusive = { focus = XHK_corporatist_plot }
+		x = 0
+		y = 1
+		relative_position_id = XHK_hung_parliament
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XHK_corporatist_plot
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hung_parliament }
+		mutually_exclusive = { focus = XHK_guangdong_manipulation }
+		mutually_exclusive = { focus = XHK_nationalist_marches }
+		x = 4
+		y = 1
+		relative_position_id = XHK_hung_parliament
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XHK_nationalist_marches
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hung_parliament }
+		mutually_exclusive = { focus = XHK_guangdong_manipulation }
+		mutually_exclusive = { focus = XHK_corporatist_plot }
+		x = 8
+		y = 1
+		relative_position_id = XHK_hung_parliament
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
