@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		XTW_kuomintang_insurgency = {
+            picture = tfv_can_conscription_crisis
+            modifier = {
+				weekly_manpower = -150
+				stability_weekly = -0.001
+				political_power_gain = -0.25
+				neutrality_drift = 0.03
+				fascism_drift = 0.02
+			}
+			cancel = {
+    			OR = {
+					has_country_leader = XTW_chiang_gang
+					has_country_leader = XTW_li_qingfu
+				}
+			}
+		}
+		XTW_ryukyuan_seperatism = {
+            picture = SPR_international_brigades
+            modifier = {
+				army_org_factor = -0.1
+				resistance_activity = 0.1
+				required_garrison_factor = 0.25
+			}
+			cancel = {
+					country_exists = XRY
+			}
+		}
+		XTW_overpopulation_crisis = {
+            picture = raj_risk_of_famine
+            modifier = {
+				global_building_slots_factor = -0.15
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.1
+			}
+			cancel = {
+					num_of_controlled_states > 14
+			}
+		}
+	}
+}
