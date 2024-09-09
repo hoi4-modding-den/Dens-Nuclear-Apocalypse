@@ -3,7 +3,7 @@ state={
 	name="STATE_1006"
 manpower=836333
 	
-	state_category = pastoral
+	state_category = city
 
 	history={
 		owner = XDA # FRA

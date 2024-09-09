@@ -13,6 +13,7 @@ state={
 			10438 1 
 		}
 		#add_core_of = SIA
+		add_claim_by = XSI
 	}
 manpower=1333333
 	state_category = rural
