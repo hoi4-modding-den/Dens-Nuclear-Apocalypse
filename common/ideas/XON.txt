@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		XON_unhappy_chinese = {
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.08
+				}
+			}
+		XON_tuvan_separatism = {
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.04
+				}
+		   }
+	}
