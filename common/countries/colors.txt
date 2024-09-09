@@ -288,3 +288,7 @@ XSK = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
+XHK = {
+	color = rgb { 166 20 10 }
+	color_ui = rgb { 166 20 10 }
+}
