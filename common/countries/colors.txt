@@ -296,6 +296,7 @@ XGD = {
 	color = rgb { 24 133 114 }
 	color_ui = rgb { 24 133 114 }
 }
+
 XSB = {
 	color = rgb { 165 62 62 }
 	color_ui = rgb { 165 62 62 }
@@ -303,4 +304,8 @@ XSB = {
 XSI = {
 	color = rgb { 92 0 0 }
 	color_ui = rgb { 92 0 0 }
+
+XEX = {
+	color = rgb { 235 54 87 }
+	color_ui = rgb { 235 54 87 }
 }

@@ -1,0 +1,29 @@
+state={
+	id=1000
+	name="STATE_1000"
+	manpower=4522737
+	
+	state_category = town
+	history={
+		owner = LIB # JAP
+		buildings = {
+			infrastructure = 2
+			#arms_factory = 1
+			#dockyard = 1
+			11948 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			11948 2
+		}
+
+		#add_core_of = KOR
+
+	}
+	provinces={
+		10115 1081 11977 4126 10085 10110 12085 1054 12060 11948 1177
+	}
+
+	local_supplies=0.0 
+}

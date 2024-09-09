@@ -46,7 +46,9 @@ XTW_ryukyuan_seperatism:0 "Ryukyuan Separatism"
 XTW_ryukyuan_seperatism_desc:0 "Following the collapse of Japan, we have taken "overlordship" of the Ryukyuan Arc. However, calls for an independent Ryukyu have increased and threaten our dominion over the islands.\n\n§YThis national spirit will be removed when either [XRY.GetNameDEF] achieves its independence or an agreement has been achieved between both parties§!."
 
 XTW_overpopulation_crisis:0 "Overpopulation Crisis"
-XTW_overpopulation_crisis_desc:0 "Despite the nuclear fallout 200 years ago, [XTW.GetNameDEF] continues to endure and prosper. Unfortunately, this prosperity came with the drawback of overpopulation and now Taiwan is too small to house her people. \n\n§YThis national spirit will be removed when either [XTW.GetNameDEF] owns more than 15 states or a solution has been found§!."
+XTW_overpopulation_crisis_desc:0 "Despite the nuclear fallout 200 years ago, [XTW.GetNameDEF] continues to endure and prosper. Unfortunately, this prosperity came with the drawback of overpopulation and now Taiwan is too small to house her people. \n\n§YThis national spirit will be removed when either [XTW.GetNameDEF] owns more than 14 states or a solution has been found§!."
+
+RULE_ALLOW_RELEASE_NATIONS_RYUKYU_TOOLTIP:0 "§Y[XTW.GetNameDEFcap]§! may not release §Y[XRY.GetNameDEF]§!."
 
 ### CHARACTERS
 

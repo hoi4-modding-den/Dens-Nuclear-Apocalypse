@@ -1,7 +1,10 @@
 state={
 	id=617
 	name="STATE_617"
-
+	resources={
+		steel=24.000
+		chromium=7.000
+	}
 	history={
 		owner = XSK # SIK
 		add_core_of = XSK

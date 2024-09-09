@@ -11,8 +11,14 @@ ideas = {
 			}
 			cancel = {
     			OR = {
-					has_country_leader = XTW_chiang_gang
-					has_country_leader = XTW_li_qingfu
+					has_country_leader = {
+						character = XTW_chiang_gang
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = XTW_li_qingfu
+						ruling_only = yes
+					}
 				}
 			}
 		}
