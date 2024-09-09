@@ -1,0 +1,48 @@
+characters = {
+	XK0_seong_ho_han={
+		name=XK0_seong_ho_han
+		portraits={
+			army={
+				large=GFX_portrait_XK0_seong_ho_han
+			}
+		}
+		country_leader = {
+			ideology = populism
+			traits = {}
+			expire = "265.1.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ politically_connected organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	XK0_ken_matsubara={
+		name=XK0_ken_matsubara
+		portraits={
+			army={
+				large=GFX_portrait_XK0_ken_matsubara
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			traits = {}
+			expire = "265.1.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ politically_connected old_guard }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+}

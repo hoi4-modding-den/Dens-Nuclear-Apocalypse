@@ -1,0 +1,57 @@
+capital = 527
+
+oob = "XK0_1936"
+
+set_war_support = 0.4
+set_stability = 0.65
+set_convoys = 15
+set_research_slots = 1
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2234.1.15"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 54
+	communism = 5
+	fascism = 38
+	neutrality = 3
+}
+
+recruit_character = XK0_seong_ho_han
+recruit_character = XK0_ken_matsubara
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	gw_artillery = 1
+	basic_train = 1
+	electronic_mechanical_engineering = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+	advanced_computing_machine = 1
+	atomic_research = 1
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_submarine = 1
+		transport = 1
+	}
+}

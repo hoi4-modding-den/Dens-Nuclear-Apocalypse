@@ -2,7 +2,7 @@
 state={
 	id=527
 	name="STATE_527"
-manpower=4516133
+	manpower=4516133
 	state_category = town
 	resources={
 		steel=18 # was: 30
@@ -10,7 +10,7 @@ manpower=4516133
 	}
 
 	history={
-		owner = LIB # JAP
+		owner = XK0
 		buildings = {
 			infrastructure = 2
 			#industrial_complex = 1
@@ -20,7 +20,7 @@ manpower=4516133
 			4052 10
 		}	
 
-		#add_core_of = KOR
+		add_core_of = XK0
 	}
 
 	provinces={

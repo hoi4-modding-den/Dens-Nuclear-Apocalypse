@@ -2,6 +2,10 @@ LIB = {
 	color = rgb { 1 1 1 }
 	color_ui = rgb { 1 1 1 }
 }
+XK0 = {
+	color = rgb { 5 7 150 }
+	color_ui = rgb { 5 7 150 }
+}
 XIT = {
 	color = rgb { 53 87 102 }
 	color_ui = rgb { 53 87 102 }

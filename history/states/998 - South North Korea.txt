@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = LIB
+		owner = XK0
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 			4107 1
 		}	
 
-		#add_core_of = KOR
+		add_core_of = XK0
 	}
 
 	provinces={

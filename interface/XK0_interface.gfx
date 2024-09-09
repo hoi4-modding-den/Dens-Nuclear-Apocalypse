@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_XK0_seong_ho_han"
+		texturefile = "gfx/XK0/seong_ho_han.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_portrait_XK0_ken_matsubara"
+		texturefile = "gfx/XK0/ken_matsubara.dds"
+		legacy_lazy_load = no
+	}
+}

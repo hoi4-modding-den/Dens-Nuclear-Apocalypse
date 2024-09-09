@@ -1,0 +1,20 @@
+﻿l_english:
+ XK0: "Korea"
+ XK0_DEF: "the Korea"
+ XK0_ADJ: "Korean"
+ XK0_communism: "Korea Republic"
+ XK0_communism_DEF: "the Korean Republic"
+ XK0_neutrality: "Joseon Kingdom"
+ XK0_neutrality_DEF: "the Joseon Kingdom"
+ XK0_democratic: "Korea"
+ XK0_democratic_DEF: "the Korea"
+ XK0_fascism: "Pyongyang State"
+ XK0_fascism_DEF: "the Pyongyang State"
+ 
+ XK0_seong_ho_han: "General Seong-Ho Han"
+ XK0_ken_matsubara: "Ken Matsubara"
+ 
+ STATE_997: "Hamgyeong"
+ STATE_998: "Hwanghae"
+ STATE_999: "Greater Busan"
+ STATE_1000: "Jeolla"
