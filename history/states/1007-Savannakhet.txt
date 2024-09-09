@@ -1,7 +1,7 @@
 state={
-	id=670
-	name="STATE_670"
-manpower=789333
+	id=1007
+	name="STATE_1007"
+manpower=1100000
 	
 	state_category = pastoral
 
@@ -9,7 +9,7 @@ manpower=789333
 		owner = XDA # FRA
 		#add_core_of = LAO
 		victory_points = {
-			7075 1
+			1464 5
 		}
 		buildings = {
 			infrastructure = 1
@@ -18,7 +18,7 @@ manpower=789333
 	}
 
 	provinces={
-		1374 1507 1563 1577 4339 4539 4554 4568 4613 7075 7103 7218 7356 7426 9961 10195 10238 10330 10356 10453 10456 10496 12210 12392 12433 
+		4539 10195 10238 1374 12210 1563 7426 4554 1577 10453
 	}
 
 	local_supplies=0.0 
