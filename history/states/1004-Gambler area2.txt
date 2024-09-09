@@ -7,9 +7,10 @@ state={
 	history={
 		owner = XEX
 		add_core_of = XEX
+		set_demilitarized_zone = yes
 	}
-	manpower=90000
-	state_category=town
+	manpower=137
+	state_category=wasteland
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
