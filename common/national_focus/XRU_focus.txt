@@ -497,6 +497,217 @@ focus_tree = {
 			# 
 		}
 	}
+	focus = {
+		id = XRU_economic_problem
+		icon = GFX_focus_Economic_Problem
+		x = 12
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_nothing_is_fine
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_feudalism_wins
+		icon = GFX_focus_Feudalism_Wins
+		x = 12
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_economic_problem
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_keep_peasants_down
+		icon = GFX_focus_Keep_Peasants_Down
+		x = 12
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_feudalism_wins
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_new_task_at_hand
+		icon = XRU_focus_New_Task_At_Hand
+		x = 7
+		y = 7
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_denounce_democracy
+		focus = XRU_keep_peasants_down
+		focus = XRU_anti_mutant_forces
+		focus = XRU_rigorous_training
+		}
+		completion_reward = {
+			#
+		}
+	focus = {
+		id = XRU_czech_opportunity
+		icon = GFX_focus_Czech_Opportunity
+		x = 7
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_new_task_at_hand
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_integrate_czech_territories
+		icon = GFX_focus_Integrate_Czech_Territories
+		x = 5
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_czech_opportunity
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_destroy_czech_opposition
+		icon = GFX_focus_Destroy_Czech_Opposition
+		x = 9
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_czech_opportunity
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_crazy_bunker_dwellers
+		icon = GFX_focus_Crazy_Bunker_Dwellers
+		x = 7
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_integrate_czech_territories
+		focus = XRU_destroy_czech_opposition
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_exploit_wasteland
+		icon = GFX_focus_Exploit_Wasteland
+		x = 7
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_crazy_bunker_dwellers
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_destroy_nazi_scum
+		icon = GFX_focus_Destroy_Nazi_Scum
+		x = 7
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_exploit_wasteland
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_develop_german_puppet
+		icon = GFX_focus_Develop_German_Puppet
+		x = 7
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_destroy_nazi_scum
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_rolling_dice
+		icon = GFX_focus_Rolling_Dice
+		x = 7
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_develop_german_puppet
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XRU_valkyrie_ascension
+		icon = GFX_focus_Valkyrie_Ascension
+		x = 7
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XRU_rolling_dice
+		}
+		completion_reward = {
+			# 
+		}
+	}
 }
 
 focus_tree = {
@@ -508,7 +719,67 @@ focus_tree = {
 	default = no
 
 	focus = {
-		
+		id = XSO_freedom
+		icon = GFX_focus_Freedom
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XSO_isolation_policy
+		icon = GFX_focus_Isolation_Policy
+		x = 2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XSO_freedom
+		}
+		mutually_exclusive = { focus = XSO_foreign_policy }
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XSO_foreign_policy
+		icon = GFX_focus_Foreign_Policy
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XSO_freedom
+		}
+		mutually_exclusive = { focus = XSO_isolation_policy }
+		completion_reward = {
+			# 
+		}
+	}
+	focus = {
+		id = XSO_close_borders
+		icon = GFX_focus_Close_Borders
+		x = 2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+		focus = XSO_isolation_policy
+		}
+		completion_reward = {
+			# 
+		}
 	}
 }
 
