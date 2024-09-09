@@ -2,14 +2,16 @@ state={
 	id=999
 	name="STATE_999"
 	manpower=7522737
+	state_category = large_city
+	resources={
+		aluminium=14
+	}
 	
-	state_category = town
 	history={
 		owner = XK0
 		buildings = {
-			infrastructure = 2
-			#arms_factory = 1
-			#dockyard = 1
+			infrastructure = 4
+			arms_factory = 3
 			4056 = {
 				naval_base = 3
 			}

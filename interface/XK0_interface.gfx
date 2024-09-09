@@ -9,4 +9,44 @@ spriteTypes = {
 		texturefile = "gfx/XK0/ken_matsubara.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_Dial_Background"
+		textureFile = "gfx/XK0/dial_background.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_Dial"
+		textureFile1 = "gfx/XK0/dial_full.dds"
+		textureFile2 = "gfx/XK0/dial_empty.dds"
+		size = {	
+			x = 200
+			y = 200	
+		}
+		effectFile = "gfx/XK0/dial.shader"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Half_Dial"
+		textureFile1 = "gfx/XK0/dial_full.dds"
+		textureFile2 = "gfx/XK0/dial_empty.dds"
+		size = {	
+			x = 200
+			y = 200	
+		}
+		effectFile = "gfx/XK0/half_dial.shader"
+		horizontal = yes
+	}
+	
+	spriteType = {
+		name = "GFX_Dial_Back"
+		textureFile = "gfx/XK0/dial_back.dds"
+	}
+	spriteType = {
+		name = "GFX_Dial_Back_Half"
+		textureFile = "gfx/XK0/dial_back_half.dds"
+	}
+	spriteType = {
+		name = "GFX_Dial_Dot"
+		textureFile = "gfx/XK0/dial_dot.dds"
+	}
 }

@@ -1,0 +1,48 @@
+XK0_increase_militancy = {
+	if = { 
+		limit = {
+			NOT = { has_government = democratic }
+		} 
+		custom_effect_tooltip = XK0_increase_militancy_war_tt 
+	}
+	if = { 
+		limit = {
+			has_government = democratic
+		} 
+		custom_effect_tooltip = XK0_increase_militancy_peace_tt 
+	}
+	if = {
+		limit = { check_variable = { XK0_militancy_level > 0 } }
+		add_to_variable = { XK0_militancy_level = 10 }
+		add_to_variable = { XK0_stability_factor = 0.06 }
+		add_to_variable = { XK0_political_power_gain = 0.05 }
+		add_to_variable = { XK0_democratic_drift = 0.005 }
+		add_to_variable = { XK0_war_support_factor = -0.06 }
+		add_to_variable = { XK0_weekly_manpower = -250 }
+		add_to_variable = { XK0_fascism_drift = -0.005 }
+	}
+}
+XK0_decrease_militancy = {
+	if = { 
+		limit = {
+			NOT = { has_government = democratic }
+		} 
+		custom_effect_tooltip = XK0_decrease_militancy_war_tt 
+	}
+	if = { 
+		limit = {
+			has_government = democratic
+		} 
+		custom_effect_tooltip = XK0_decrease_militancy_peace_tt 
+	}
+	if = {
+		limit = { check_variable = { XK0_militancy_level < 100 } }
+		subtract_from_variable = { XK0_militancy_level = 10 }
+		subtract_from_variable = { XK0_stability_factor = 0.06 }
+		subtract_from_variable = { XK0_political_power_gain = 0.05 }
+		subtract_from_variable = { XK0_democratic_drift = 0.005 }
+		subtract_from_variable = { XK0_war_support_factor = -0.06 }
+		subtract_from_variable = { XK0_weekly_manpower = -250 }
+		subtract_from_variable = { XK0_fascism_drift = -0.005 }
+	}
+}

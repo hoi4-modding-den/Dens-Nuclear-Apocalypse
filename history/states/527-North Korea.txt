@@ -3,17 +3,18 @@ state={
 	id=527
 	name="STATE_527"
 	manpower=4516133
-	state_category = town
+	state_category = metropolis
 	resources={
-		steel=18 # was: 30
-		tungsten=28 # was: 52
+		steel=18
+		tungsten=28
 	}
 
 	history={
 		owner = XK0
 		buildings = {
-			infrastructure = 2
-			#industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		
 		victory_points = {

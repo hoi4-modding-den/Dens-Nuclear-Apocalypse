@@ -1,0 +1,24 @@
+add_namespace = XK0_focus
+add_namespace = XK0_support
+add_namespace = XK0_news
+
+# test
+country_event = {
+	id = XK0_focus.999
+	title = XK0_focus.999.title
+	desc = XK0_focus.999.desc
+	picture = GFX_report_event_009
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XK0_focus.999.a
+		ai_chance = { factor = 1 }
+		XK0_increase_militancy = yes
+	}
+	option = {
+		name = XK0_focus.999.b
+		ai_chance = { factor = 1 }
+		XK0_decrease_militancy = yes
+	}
+}

@@ -2,8 +2,8 @@ capital = 527
 
 oob = "XK0_1936"
 
-set_war_support = 0.4
-set_stability = 0.65
+set_war_support = 0.5
+set_stability = 0.5
 set_convoys = 15
 set_research_slots = 1
 
@@ -19,6 +19,23 @@ set_popularities = {
 	fascism = 38
 	neutrality = 3
 }
+
+add_dynamic_modifier = { modifier = XK0_militancy }
+set_variable = { XK0_militancy_level = 10 }
+set_variable = { XK0_stability_factor = 0.24 }
+set_variable = { XK0_political_power_gain = 0.2 }
+set_variable = { XK0_democratic_drift = 0.02 }
+set_variable = { XK0_war_support_factor = -0.24 }
+set_variable = { XK0_weekly_manpower = -1000 }
+set_variable = { XK0_fascism_drift = -0.02 }
+
+set_country_flag = industry_folder_disabled
+set_country_flag = naval_folder_disabled
+set_country_flag = air_folder_disabled
+set_country_flag = artillery_folder_disabled
+set_country_flag = armour_folder_disabled
+set_country_flag = support_folder_disabled
+set_country_flag = infantry_folder_disabled
 
 recruit_character = XK0_seong_ho_han
 recruit_character = XK0_ken_matsubara

@@ -1,0 +1,10 @@
+
+XK0_militancy = { 
+	icon = GFX_idea_MEX_revolutionary_army
+	stability_factor = XK0_stability_factor
+	political_power_gain = XK0_political_power_gain
+	democratic_drift = XK0_democratic_drift
+	war_support_factor = XK0_war_support_factor
+	weekly_manpower = XK0_weekly_manpower
+	fascism_drift = XK0_fascism_drift
+}

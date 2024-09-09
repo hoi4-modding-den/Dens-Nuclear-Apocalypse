@@ -1,0 +1,42 @@
+guiTypes = {
+	containerWindowType = {
+		name = "XK0_militancy_gui"
+		position = { x = 0 y = -50 }
+		size = { width = 90% height= 80 }
+		
+		instantTextBoxType = { 
+			name ="XK0_militancy_level_loc"
+			position = { x = 230 y = 0 }
+			font = "hoi_36header"
+			text = "XK0_militancy_level_loc"
+			format = left
+			maxHeight = 24
+			maxWidth = 1000
+			pdx_tooltip = XK0_militancy_level_loc_tt
+		}
+		
+		containerWindowType = {
+			name = "half_dial"
+			position = { x = 10 y = -40 }
+
+			iconType = {
+				name = "half_dial_back"
+				spriteType = "GFX_Dial_Back_Half"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = XK0_militancy_level_hand_tt
+			}
+			iconType = {
+				name = "half_dial_hand"
+				spriteType = "GFX_Half_Dial"
+				position = { x = 2 y = 2 }
+				pdx_tooltip = XK0_militancy_level_hand_tt
+			}
+			iconType = {
+				name = "half_dial_dot"
+				spriteType = "GFX_Dial_Dot"
+				position = { x = 1 y = 3 }
+				pdx_tooltip = XK0_militancy_level_hand_tt
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+scripted_gui = {
+
+	XK0_militancy_scripted_gui = {
+		context_type = decision_category
+		window_name = "XK0_militancy_gui"
+
+		properties = {
+			half_dial_hand = {
+				frame = ROOT.XK0_militancy_level
+			}
+		}
+	}
+}

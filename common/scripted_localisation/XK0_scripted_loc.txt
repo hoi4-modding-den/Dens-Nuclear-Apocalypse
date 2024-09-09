@@ -1,0 +1,74 @@
+
+defined_text = {
+	name = XK0_militancy_level_loc
+	text = {
+		trigger = { 
+			NOT = { has_government = democratic }
+			check_variable = { XK0_militancy_level < 21 } 
+		}
+		localization_key = XK0_militancy_level_loc_war_1
+	}
+	text = {
+		trigger = { 
+			has_government = democratic
+			check_variable = { XK0_militancy_level < 21 } 
+		}
+		localization_key = XK0_militancy_level_loc_peace_1
+	}
+	text = {
+		trigger = { 
+			NOT = { has_government = democratic }
+			check_variable = { XK0_militancy_level < 41 } 
+		}
+		localization_key = XK0_militancy_level_loc_war_2
+	}
+	text = {
+		trigger = { 
+			has_government = democratic
+			check_variable = { XK0_militancy_level < 41 } 
+		}
+		localization_key = XK0_militancy_level_loc_peace_2
+	}
+	text = {
+		trigger = { 
+			NOT = { has_government = democratic }
+			check_variable = { XK0_militancy_level < 61 } 
+		}
+		localization_key = XK0_militancy_level_loc_war_3
+	}
+	text = {
+		trigger = { 
+			has_government = democratic
+			check_variable = { XK0_militancy_level < 61 } 
+		}
+		localization_key = XK0_militancy_level_loc_peace_3
+	}
+	text = {
+		trigger = { 
+			NOT = { has_government = democratic }
+			check_variable = { XK0_militancy_level < 81 } 
+		}
+		localization_key = XK0_militancy_level_loc_war_4
+	}
+	text = {
+		trigger = { 
+			has_government = democratic
+			check_variable = { XK0_militancy_level < 81 } 
+		}
+		localization_key = XK0_militancy_level_loc_peace_4
+	}
+	text = {
+		trigger = { 
+			NOT = { has_government = democratic }
+			check_variable = { XK0_militancy_level > 80 } 
+		}
+		localization_key = XK0_militancy_level_loc_war_5
+	}
+	text = {
+		trigger = { 
+			has_government = democratic
+			check_variable = { XK0_militancy_level > 80 } 
+		}
+		localization_key = XK0_militancy_level_loc_peace_5
+	}
+}
