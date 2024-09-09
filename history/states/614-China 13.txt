@@ -7,9 +7,8 @@ manpower=12289933
 	state_category = town
 
 	history={
-		owner = LIB # CHI
-		#add_core_of = CHI
-		#add_core_of = PRC
+		owner = XEX 
+		add_core_of = XEX
 		buildings = {
 			infrastructure = 2
 		}

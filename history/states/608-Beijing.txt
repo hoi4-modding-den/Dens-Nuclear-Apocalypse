@@ -7,9 +7,8 @@ manpower=6432267
 	state_category = large_city
 
 	history={
-		owner = LIB # CHI
-		#add_core_of = CHI
-		#add_core_of = PRC
+		owner = XEX 
+		add_core_of = XEX
 		buildings = {
 			infrastructure = 3 #was: 5
 			#industrial_complex = 2

@@ -296,3 +296,7 @@ XGD = {
 	color = rgb { 24 133 114 }
 	color_ui = rgb { 24 133 114 }
 }
+XEX = {
+	color = rgb { 235 54 87 }
+	color_ui = rgb { 235 54 87 }
+}
