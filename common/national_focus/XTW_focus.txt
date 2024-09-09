@@ -30,11 +30,11 @@ focus = {
 focus = {
 	id = XTW_DPP_victory
 	icon = GFX_goal_generic_neutrality_focus
-	x = -5
+	x = -7
 	y = 1
 	relative_position_id = XTW_2236_elections
 	available = {
-		has_country_flag = XTW_dpp_victory_flag
+		has_country_flag = XTW_DPP_won_the_elections
 	}
 	prerequisite = {
 		focus = XTW_2236_elections
@@ -51,11 +51,11 @@ focus = {
 focus = {
 	id = XTW_PFP_victory
 	icon = GFX_focus_generic_self_management
-	x = 5
+	x = 7
 	y = 1
 	relative_position_id = XTW_2236_elections
 	available = {
-		has_country_flag = XTW_pfp_victory_flag
+		has_country_flag = XTW_PFP_won_the_elections
 	}
 	mutually_exclusive = {
 		focus = XTW_DPP_victory
@@ -66,7 +66,7 @@ focus = {
 	cost = 0
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		promote_character = XTW_wang_fan
 	}
 }
 focus = {
@@ -89,5 +89,298 @@ focus = {
 		add_political_power = 50
 	}
 }
-
+focus = {
+	id = XTW_uphold_the_status_quo
+	icon = GFX_focus_attack_china
+	x = -3
+	y = 1
+	relative_position_id = XTW_the_matter_of_kuomintang
+	available = {
+	}
+	prerequisite = {
+		focus = XTW_DPP_victory
+	}
+	prerequisite = {
+		focus = XTW_the_matter_of_kuomintang
+	}
+	mutually_exclusive = {
+		focus = XTW_begin_reconciliation
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_begin_reconciliation
+	icon = GFX_focus_chi_cooperation_with_the_nationalists
+	x = 3
+	y = 1
+	relative_position_id = XTW_the_matter_of_kuomintang
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XTW_uphold_the_status_quo
+	}
+	prerequisite = {
+		focus = XTW_PFP_victory
+	}
+	prerequisite = {
+		focus = XTW_the_matter_of_kuomintang
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_raid_kuomintang_cells
+	icon = GFX_focus_prc_infiltration
+	x = -1
+	y = 1
+	relative_position_id = XTW_uphold_the_status_quo
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_uphold_the_status_quo
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_bolster_anti_kmt_propaganda
+	icon = GFX_goal_generic_propaganda
+	x = 1
+	y = 1
+	relative_position_id = XTW_uphold_the_status_quo
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_uphold_the_status_quo
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_tour_the_dajian_training_camp
+	icon = GFX_focus_generic_supply_line
+	x = -1
+	y = 1
+	relative_position_id = XTW_begin_reconciliation
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_begin_reconciliation
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_exchange_prisoners
+	icon = GFX_focus_SOV_penal_battalions
+	x = 1
+	y = 1
+	relative_position_id = XTW_begin_reconciliation
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_begin_reconciliation
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_clamp_down_on_extremism
+	icon = GFX_focus_focus_fra_fascist_threat
+	x = 0
+	y = 2
+	relative_position_id = XTW_the_matter_of_kuomintang
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_uphold_the_status_quo
+		focus = XTW_begin_reconciliation
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_arrest_the_sympathisers
+	icon = GFX_focus_mex_arrest_general_cedillo
+	x = 1
+	y = 1
+	relative_position_id = XTW_bolster_anti_kmt_propaganda
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_bolster_anti_kmt_propaganda
+	}
+	prerequisite = {
+		focus = XTW_clamp_down_on_extremism
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_remove_li_qingfu
+	icon = GFX_focus_EST_era_of_silence
+	x = -1
+	y = 1
+	relative_position_id = XTW_tour_the_dajian_training_camp
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_bolster_anti_kmt_propaganda
+	}
+	prerequisite = {
+		focus = XTW_tour_the_dajian_training_camp
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_proclaim_victory_over_terror
+	icon = GFX_focus_focus_fra_revolution_utmost
+	x = 0
+	y = 2
+	relative_position_id = XTW_uphold_the_status_quo
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_raid_kuomintang_cells
+	}
+	prerequisite = {
+		focus = XTW_bolster_anti_kmt_propaganda
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_a_meeting_with_the_chairman
+	icon = GFX_focus_BRA_reach_out_to_military_dem
+	x = 0
+	y = 2
+	relative_position_id = XTW_begin_reconciliation
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_tour_the_dajian_training_camp
+	}
+	prerequisite = {
+		focus = XTW_exchange_prisoners
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_a_new_era_for_taiwan
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	x = -4
+	y = 1
+	relative_position_id = XTW_proclaim_victory_over_terror
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XTW_desperate_gambit
+		focus = XTW_a_mistake_undone
+	}
+	prerequisite = {
+		focus = XTW_proclaim_victory_over_terror
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_desperate_gambit #Civil War
+	icon = GFX_goal_generic_military_sphere
+	x = 0
+	y = 2
+	relative_position_id = XTW_clamp_down_on_extremism
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XTW_a_new_era_for_taiwan
+		focus = XTW_a_mistake_undone
+	}
+	prerequisite = {
+		focus = XTW_proclaim_victory_over_terror
+		focus = XTW_a_meeting_with_the_chairman
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_a_mistake_undone
+	icon = GFX_focus_chi_legislative_yuan
+	x = 4
+	y = 1
+	relative_position_id = XTW_a_meeting_with_the_chairman
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XTW_a_new_era_for_taiwan
+		focus = XTW_desperate_gambit
+	}
+	prerequisite = {
+		focus = XTW_a_meeting_with_the_chairman
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
 }

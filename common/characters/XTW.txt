@@ -8,7 +8,19 @@ characters = {
         country_leader={
             ideology=socialism
             expire="2280.1.1.1"
-            traits = {}
+            traits = {national_integralist}
+        }
+    }
+    XTW_wang_fan = {
+        portraits={
+            civilian={
+                large="GFX_portrait_XTW_wang_fan"
+            }
+        }
+        country_leader={
+            ideology=conservatism
+            expire="2280.1.1.1"
+            traits = {tenacious_negotiator}
         }
     }
     XTW_chiang_gang = {
@@ -20,7 +32,7 @@ characters = {
         country_leader={
             ideology=despotism
             expire="2280.1.1.1"
-            traits = {}
+            traits = {generallissimo humanist mild_mannered}
         }
     }
     XTW_li_qingfu = {
@@ -32,7 +44,7 @@ characters = {
         country_leader={
             ideology=fascism_ideology
             expire="2280.1.1.1"
-            traits = {}
+            traits = {generallissimo DEN_fascist_populist}
         }
     }
     XTW_shi_yuehan = {
@@ -44,7 +56,7 @@ characters = {
         country_leader={
             ideology=marxism
             expire="2280.1.1.1"
-            traits = {}
+            traits = {BRA_militant_communist defender_of_the_peasantry}
         }
     }
 }

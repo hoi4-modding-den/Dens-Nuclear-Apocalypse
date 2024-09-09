@@ -34,6 +34,9 @@ XTW_communism_party:0 "TPCP"
 XTW_democratic_party_long:0 "Democratic Progressive Party"
 XTW_democratic_party:0 "DPP"
 
+XTW_democratic_party_alternative_long:0 "People First Party"
+XTW_democratic_party_alternativ:0 "PFP"
+
 XTW_neutrality_party_long:0 "Kuomintang (Moderate)"
 XTW_neutrality_party:0 "KMT(M)"
 
@@ -60,6 +63,14 @@ XTW_li_qingfu:0 "Li Qingfu"
 
 XTW_shi_yuehan:0 "Shi Yuehan"
 
+XTW_wang_fan:0 "Wang Fan"
+
+### TOOLTIPS
+
+XTW_DPP_won_the_elections:0 "§YDPP§! won the elections."
+
+XTW_PFP_won_the_elections:0 "§YPFP§! won the elections."
+
 ### FOCUS
 
 XTW_2236_elections:0 "[GetYear] Elections"
@@ -73,3 +84,45 @@ XTW_PFP_victory_desc:0 ""
 
 XTW_the_matter_of_kuomintang:0 "The Matter of Kuomintang"
 XTW_the_matter_of_kuomintang_desc:0 ""
+
+XTW_uphold_the_status_quo:0 "Uphold the Status Quo"
+XTW_uphold_the_status_quo_desc:0 ""
+
+XTW_begin_reconciliation:0 "Begin Reconciliation"
+XTW_begin_reconciliation_desc:0 ""
+
+XTW_raid_kuomintang_cells:0 "Raid Kuomintang Cells"
+XTW_raid_kuomintang_cells_desc:0 ""
+
+XTW_bolster_anti_kmt_propaganda:0 "Bolster Anti-KMT Propaganda"
+XTW_bolster_anti_kmt_propaganda_desc:0 ""
+
+XTW_clamp_down_on_extremism:0 "Clamp Down on Extremism"
+XTW_clamp_down_on_extremism_desc:0 ""
+
+XTW_tour_the_dajian_training_camp:0 "Tour the Dajian Training Camp"
+XTW_tour_the_dajian_training_camp_desc:0 ""
+
+XTW_exchange_prisoners:0 "Exchange Prisoners"
+XTW_exchange_prisoners_desc:0 ""
+
+XTW_proclaim_victory_over_terror:0 "Proclaim Victory over Terror"
+XTW_proclaim_victory_over_terror_desc:0 ""
+
+XTW_arrest_the_sympathisers:0 "Arrest the Symphatisers"
+XTW_arrest_the_sympathisers_desc:0 ""
+
+XTW_remove_li_qingfu:0 "Remove Li Qingfu"
+XTW_remove_li_qingfu_desc:0 ""
+
+XTW_a_meeting_with_the_chairman:0 "A Meeting with the Chairman"
+XTW_a_meeting_with_the_chairman_desc:0 ""
+
+XTW_a_new_era_for_taiwan:0 "A New Era for Taiwan"
+XTW_a_new_era_for_taiwan_desc:0 ""
+
+XTW_desperate_gambit:0 "Desperate Gambit"
+XTW_desperate_gambit_desc:0 ""
+
+XTW_a_mistake_undone:0 "A Mistake Undone"
+XTW_a_mistake_undone_desc:0 ""
