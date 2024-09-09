@@ -55,7 +55,11 @@ bookmarks = {
 		"XGE" = {
 			ideology = communism
 			history = "XGE_history_desc"
-			#focuses = { }
+			focuses = { 
+				XGE_ministerium_fur_staatssicherheit
+				XGE_the_path_of_marx_engels_and_lenin
+				XGE_re_establish_the_comecon
+			}
 			ideas = {
 				XGE_computer_clique_dummy_idea
 				XGE_devastation_5
