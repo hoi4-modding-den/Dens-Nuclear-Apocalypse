@@ -1,0 +1,14 @@
+capital = 330
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2235.1.10"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 70
+	democratic = 10
+	fascism = 10
+	communism = 10
+}

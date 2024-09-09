@@ -6,14 +6,14 @@ state={
 	}
 
 	history={
-		owner = LIB # MON
+		owner = XON
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			12612 1 #Sainshand
 		}
-		#add_core_of = MON
+		add_core_of = XON
 	}
 manpower=7333
 	buildings_max_level_factor=1.000

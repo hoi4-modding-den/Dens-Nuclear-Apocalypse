@@ -10,7 +10,7 @@ manpower=56667
 	state_category = rural
 
 	history={
-		owner = LIB # TAN
+		owner = XON
 		buildings = {
 			infrastructure = 1
 			#arms_factory = 1
@@ -19,8 +19,7 @@ manpower=56667
 		victory_points = {
 			10627 3
 		}
-		#add_core_of = TAN
-		#add_core_of = SOV
+		add_core_of = XON
 	}
 
 	provinces={
