@@ -1,0 +1,20 @@
+focus = {
+	current = XSK_choose_the_next_sultan
+	progress = 8
+}
+
+
+start_equipment_factor = 0.7
+
+instant_effect = {
+	### Production ###
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.82
+		efficiency = 100
+	}
+}

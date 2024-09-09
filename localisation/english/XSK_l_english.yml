@@ -1,0 +1,59 @@
+﻿l_english:
+
+# Names
+
+ XSK: "Second Ottoman Sultanate"
+ XSK_DEF: "the Second Ottoman Sultanate"
+ XSK_ADJ: "Ottoman"
+
+ XTK: "East Turkestan"
+ XTK_DEF: "East Turkestan"
+ XTK_ADJ: "East Turkestani"
+ XTK_democratic: "Xinjiang Confederacy"
+ XTK_democratic_DEF: "the Xinjiang Confederacy"
+ XTK_democratic_ADJ: "Xinjiang"
+ XTK_fascism: "Dzungar Khanate"
+ XTK_fascism_DEF: "the Dzungar Khanate"
+ XTK_fascism_ADJ: "Dzungar"
+ XTK_communism: "East Turkestan People's Republic"
+ XTK_communism_DEF: "the East Turkestan People's Republic"
+ XTK_communism_ADJ: "East Turkestani"
+ XTK_neutrality: "Xinjiang Reclamation Army"
+ XTK_neutrality_DEF: "the Xinjiang Reclamation Army"
+ XTK_neutrality_ADJ: "Xinjiang"
+
+ XSK_subject: "$OVERLORDADJ$ East Turkestan"
+ XSK_subject_DEF: "$OVERLORDADJ$ East Turkestan"
+ XSK_XON_fascism_subject: "Dzungar Horde"
+ XSK_XON_fascism_subject_DEF: "the Dzungar Horde"
+ XSK_XON_fascism_subject_ADJ: "Dzungar"
+
+ XSK_democratic_party: "Reformist Faction"
+ XSK_democratic_party_long: "Reformist Faction of the Ottoman Court"
+ XSK_communism_party: "Radical Faction"
+ XSK_communism_party_long: "Radical Faction of the Ottoman Court"
+ XSK_fascism_party: "Armed Forces Command"
+ XSK_fascism_party_long: "High Command of the Armed Forces of the Ottoman Sultanate"
+ XSK_neutrality_party: "Ottoman Dynasty"
+ XSK_neutrality_party_long: "Ottoman Dynasty"
+ XSK_neutrality_party_regency: "Regency Council"
+ XSK_neutrality_party_regency_long: "Ottoman Regency Council"
+
+ XTK_democratic_party: "Kuomintang - Left Wing"
+ XTK_democratic_party_long: "Kuomintang - Left Wing"
+ XTK_communism_party: "ETLF"
+ XTK_communism_party_long: "East-Turkestan Liberation Front"
+ XTK_fascism_party: "Khan Loyalists"
+ XTK_fascism_party_long: "Hordes of the Great Khan"
+ XTK_neutrality_party: "Kuomintang"
+ XTK_neutrality_party_long: "Kuomintang"
+
+ XSK_ottoman_regency_council_name: "Regency Council"
+ XSK_ottoman_regency_council_desc: "Due to the unexpected death of our great Sultan, XII. Süleyman, a regency council has been established to select a successor to lead our nation."
+
+ XSK_ottoman_regency_trait: "Temporary Regency"
+
+ XSK_choose_the_next_sultan: "The Royal Candidates"
+ XSK_choose_the_next_sultan_desc: "The Regency Council was established a few weeks after XII. Süleyman's death and it has been searching for possible contenders to the throne since then. If no choice is made, it could severely impact the existence of our state."
+ XSK_choose_the_next_sultan_tt: "Starts an §Yevent chain§! to choose the next Sultan.\nIf no successor has been choosen in time, the country will §Rdestabilise§!."
+ XSK_choosen_next_sultan: "a successor has been choosen"

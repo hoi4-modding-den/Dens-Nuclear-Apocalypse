@@ -1,0 +1,50 @@
+focus_tree = {
+	id = XSK_political_foci_1
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XSK
+		}
+	}
+	
+	default = no
+
+
+	focus = {
+		id = XSK_choose_the_next_sultan
+		icon = GFX_focus_generic_monarchy_2
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			has_country_leader = { character = XSK_ottoman_regency_council ruling_only = yes }
+		}
+
+		bypass = {
+			has_country_flag = XSK_choosen_next_sultan
+		}
+
+		cost = 11
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		select_effect = {
+			add_political_power = 10
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XSK_choose_the_next_sultan_tt
+		}
+	}
+
+}
