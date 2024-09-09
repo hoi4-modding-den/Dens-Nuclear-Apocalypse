@@ -1,9 +1,13 @@
 state={
 	id=1007
 	name="STATE_1007"
-manpower=700000
+	manpower=700000
 	
-	state_category = pastoral
+	resources={
+		rubber=7 # was: 94.000
+	}
+	
+	state_category = rural
 
 	history={
 		owner = XDA # FRA
