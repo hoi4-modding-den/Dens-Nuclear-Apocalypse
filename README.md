@@ -1,6 +1,6 @@
 # The Den Nuclear Apocalypse
 
-Apart of the Modding Jam. All commits are due by July 1st, at 09:00 EST.
+Apart of the Modding Jam. All commits are due by November 1st, at 19:00 (7pm) EST.
 
 Rules: <br>
 <ol>
@@ -23,6 +23,21 @@ Lore: <br><br>
 Nuclear war has set the world back 300 years, now in the year 2236 they are back at 1936 tech.
 
 ## Current tag list:
+
+Current Apocalypse:
+<details>
+  <summary>A list of every current tag, and the associated Github and Discord name.</summary>
+  <br>
+  
+  | Tag | Github Name      | Discord Name        |
+  | --- | :--------------: | :-----------------: |
+  | X00 | Sample | Sample |
+  
+</details>
+
+
+European Apocalypse:
+
 <details>
 <summary>A list of every current tag, and the associated Github and Discord name.</summary>
 <br>
