@@ -2,8 +2,8 @@ capital = 524
 
 #oob = "XTW_1936"
 
-set_war_support = 0.4
-set_stability = 0.4
+set_war_support = 0.2
+set_stability = 0.6
 
 set_politics = {
 	ruling_party = democratic
@@ -17,6 +17,10 @@ set_popularities = {
 	fascism = 12
 	neutrality = 27
 }
+
+add_ideas = XTW_kuomintang_insurgency
+add_ideas = XTW_ryukyuan_seperatism
+add_ideas = XTW_overpopulation_crisis
 
 recruit_character = XTW_chen_hua
 recruit_character = XTW_chiang_gang

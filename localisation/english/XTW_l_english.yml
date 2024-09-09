@@ -37,6 +37,17 @@ XTW_democratic_party:0 "DPP"
 XTW_neutrality_party_long:0 "Kuomintang (Moderate)"
 XTW_neutrality_party:0 "KMT(M)"
 
+### IDEAS
+
+XTW_kuomintang_insurgency:0 "Kuomintang Insurgency"
+XTW_kuomintang_insurgency_desc:0 "Despite being outlawed since the start of 23th century due to a failed coup attempt, Kuomintang's shadow continues to loom over Taiwan. Its members have retreated to the mountains and the popular support for Kuomintang continues to grow every day.\n\n§YThis national spirit will be removed when either Kuomintang is in charge or an agreement has been achieved§!."
+
+XTW_ryukyuan_seperatism:0 "Ryukyuan Separatism"
+XTW_ryukyuan_seperatism_desc:0 "Following the collapse of Japan, we have taken "overlordship" of the Ryukyuan Arc. However, calls for an independent Ryukyu have increased and threaten our dominion over the islands.\n\n§YThis national spirit will be removed when either [XRY.GetNameDEF] achieves its independence or an agreement has been achieved between both parties§!."
+
+XTW_overpopulation_crisis:0 "Overpopulation Crisis"
+XTW_overpopulation_crisis_desc:0 "Despite the nuclear fallout 200 years ago, [XTW.GetNameDEF] continues to endure and prosper. Unfortunately, this prosperity came with the drawback of overpopulation and now Taiwan is too small to house her people. \n\n§YThis national spirit will be removed when either [XTW.GetNameDEF] owns more than 15 states or a solution has been found§!."
+
 ### CHARACTERS
 
 XTW_chen_hua:0 "Chen Hua"
@@ -46,3 +57,17 @@ XTW_chiang_gang:0 "Chiang Gang"
 XTW_li_qingfu:0 "Li Qingfu"
 
 XTW_shi_yuehan:0 "Shi Yuehan"
+
+### FOCUS
+
+XTW_2236_elections:0 "[GetYear] Elections"
+XTW_2236_elections_desc:0 ""
+
+XTW_DPP_victory:0 "DPP Victory"
+XTW_DPP_victory_desc:0 ""
+
+XTW_PFP_victory:0 "PFP Victory"
+XTW_PFP_victory_desc:0 ""
+
+XTW_the_matter_of_kuomintang:0 "The Matter of Kuomintang"
+XTW_the_matter_of_kuomintang_desc:0 ""
