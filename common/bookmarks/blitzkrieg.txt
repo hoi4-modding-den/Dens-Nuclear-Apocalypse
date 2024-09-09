@@ -4,12 +4,12 @@ bookmarks = {
 		desc = "ASIA_DESC"
 		date = 2236.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "XNE"
+		default_country = "XCB"
 		default = no
 
-		"XNE" = {
-			ideology = democratic
-			history = "XNE_history"
+		"XCB" = {
+			ideology = neutrality
+			history = "XCB_history"
 			focuses = {
 			}
 			ideas = {
