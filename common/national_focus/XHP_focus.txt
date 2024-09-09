@@ -189,11 +189,6 @@ focus_tree = {
 
 		completion_reward = {
 			# modify disloyalty everywhere heavily
-			country_event = XHP.2
-			swap_ideas = {
-				remove_idea = idea_XHP_disloyalty_everywhere
-				add_idea = idea_XHP_disloyalty_everywhere2
-			}
 		}
 	}
 	focus = {
@@ -208,8 +203,6 @@ focus_tree = {
 
 		completion_reward = {
 			# replace chaotic military with a more centrialized control or something idk
-			remove_ideas = idea_XHP_chaotic_military
-			add_country_leader_trait = XHP_court_objective
 		}
 	}
 	focus = {
@@ -223,9 +216,6 @@ focus_tree = {
 
 		completion_reward = {
 			# something cool here idk
-			add_ideas = {
-				idea_XHP_fight_of_lives
-			}
 		}
 	}
 	
@@ -260,9 +250,6 @@ focus_tree = {
 				}
 			}
 			add_stability = 0.15
-			hidden_effect = {
-				remove_ideas = idea_XHP_fight_of_lives
-			}
 		}
 
 	}

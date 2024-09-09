@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
-		date = 2236.1.1.11
+		date = 2236.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "XNF"
 		default = yes
@@ -55,11 +55,7 @@ bookmarks = {
 		"XGE" = {
 			ideology = communism
 			history = "XGE_history_desc"
-			focuses = { 
-				XGE_ministerium_fur_staatssicherheit
-				XGE_the_path_of_marx_engels_and_lenin
-				XGE_re_establish_the_comecon
-			}
+			#focuses = { }
 			ideas = {
 				XGE_computer_clique_dummy_idea
 				XGE_devastation_5

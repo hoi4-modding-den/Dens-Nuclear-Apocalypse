@@ -12,7 +12,7 @@ manpower=300000
 	}
 
 	history={
-		owner = XTT
+		owner = LIB # BHU
 		buildings = {
 			infrastructure = 1
 			#arms_factory = 1
@@ -21,12 +21,11 @@ manpower=300000
 		victory_points = {
 			8010 3 
 		}
-		add_core_of = XTT
-		add_core_of = XTM
+		#add_core_of = BHU
 	}
 
 	provinces={
-		8010 13377 13367 13366 13365
+		8010 12860 
 	}
 
 	local_supplies=0.0 

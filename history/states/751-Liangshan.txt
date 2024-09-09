@@ -8,8 +8,9 @@ manpower=200000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	history={
-		owner = XYU 
-		add_core_of = XYU
+		owner = LIB # CHI
+		#add_core_of = CHI
+		#add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 
@@ -19,6 +20,14 @@ manpower=200000
 		}
 		victory_points = {
 			7294 1
+		}
+		1939.1.1 = {
+			buildings = {
+				#industrial_complex = 1
+				infrastructure = 1
+
+			}
+
 		}
 
 	}

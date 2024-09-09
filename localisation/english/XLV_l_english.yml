@@ -62,7 +62,7 @@
  XLV_events.9.a: "This is... Unexpected, to say the least."
  XLV_events.11.a: "This looks like a good deal."
  XLV_events.11.b: "We really do not care."
- XLV_events.11.c: "We must hold new elections right now."
+ XLV_events.11.b: "We must hold new elections right now."
 
  # Ideas
  XLV_committee_of_public_safety: "Commitee of public safety"

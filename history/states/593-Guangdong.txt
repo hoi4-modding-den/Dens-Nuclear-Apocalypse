@@ -1,8 +1,8 @@
 state= {
 	id=593
 	name="STATE_593"
-manpower=62840315
-	state_category = metropolis
+manpower=8466667
+	state_category = town
 	resources={
 		tungsten=15 # was: 20
 		steel= 15 # was: 20
@@ -10,7 +10,7 @@ manpower=62840315
 	}
 
 	history= {
-		owner = XGD # GXC
+		owner = LIB # GXC
 		#add_core_of = GXC
 		#add_core_of = CHI
 		#add_core_of = PRC
@@ -26,7 +26,7 @@ manpower=62840315
 
 		1938.10.25 = {		
 			remove_core_of = GXC
-			owner = XGD # CHI
+			owner = LIB # CHI
 			JAP = {
 				#set_province_controller = 1202
 				#set_province_controller = 4050
@@ -34,30 +34,6 @@ manpower=62840315
 				#set_province_controller = 9938
 				#set_province_controller = 12095
 			} 			
-		}
-		victory_points = {
-			7108 20
-		}
-		victory_points = {
-			9938 15
-		}
-		victory_points = {
-			1202 5
-		}
-		victory_points = {
-			4165 3
-		}
-		victory_points = {
-			7182 10
-		}
-		victory_points = {
-			9970 1
-		}
-		victory_points = {
-			7141 1
-		}
-		victory_points = {
-			12095 3
 		}
 	}
 	provinces={

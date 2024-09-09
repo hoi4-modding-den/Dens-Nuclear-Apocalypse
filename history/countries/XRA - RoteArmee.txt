@@ -2,7 +2,7 @@ capital = 847
 
 recruit_character = XSS_mayer
 
-set_country_flag = generic_army
+oob = "generic_OOB"
 add_ideas = {
 
 }

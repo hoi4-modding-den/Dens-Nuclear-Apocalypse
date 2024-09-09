@@ -5,7 +5,7 @@ recruit_character = XRM_senat
 recruit_character = XRM_anarchy
 recruit_character = XRM_moritz
 
-set_country_flag = generic_army
+oob = "generic_OOB"
 add_ideas = {
 
 XRM_romansh_spirit

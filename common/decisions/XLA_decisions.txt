@@ -51,6 +51,7 @@ regional_balance_gui_decision_category = {
 	XLA_Spiritualist_Caverns = {
 		allowed = {
 			original_tag = XLA
+			has_country_flag = XLA_regional_balance_I
 		}
 
 		available = {
@@ -80,6 +81,7 @@ regional_balance_gui_decision_category = {
 	XLA_The_Altwigitian_Tower = {
 		allowed = {
 			original_tag = XLA
+			has_country_flag = XLA_regional_balance_I
 		}
 
 		available = {
@@ -109,6 +111,7 @@ regional_balance_gui_decision_category = {
 	XLA_Councils_Offices = {
 		allowed = {
 			original_tag = XLA
+			has_country_flag = XLA_regional_balance_I
 		}
 
 		available = {
@@ -918,9 +921,6 @@ XLA_resource_mining = {
 	XLA_Mine_Anywhere = {
 		allowed = {
 			original_tag = XLA
-		}
-
-		available = {
 			hidden_trigger = {
 				NOT = {
 					has_country_flag = XLA_Currently_Prospecting
@@ -1022,9 +1022,6 @@ XLA_resource_mining = {
 	XLA_Mine_Altwigitians = {
 		allowed = {
 			original_tag = XLA
-		}
-
-		available = {
 			hidden_trigger = {
 				NOT = {
 					has_country_flag = XLA_Currently_Prospecting
@@ -1128,9 +1125,6 @@ XLA_resource_mining = {
 	XLA_Mine_Spiritualist = {
 		allowed = {
 			original_tag = XLA
-		}
-
-		available = {
 			hidden_trigger = {
 				NOT = {
 					has_country_flag = XLA_Currently_Prospecting
@@ -1365,10 +1359,9 @@ XLA_Reunite_Italy = {
 
 	XLA_Purge_Sicily = {
 		available = {
-			any_country = {
-				XLA_Controls_Sicily = yes
-				NOT = {
-					original_tag = XLA
+			all_other_country = {
+				limit = {
+					XLA_Controls_Sicily = yes
 				}
 			}
 		}

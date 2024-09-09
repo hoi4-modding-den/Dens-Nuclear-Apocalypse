@@ -61,22 +61,3 @@ defined_text = {
 		localization_key = XNE_housing_crisis_loc_green
 	}
 }
-defined_text = {
-	name = XNE_ideology_loc
-	text = {
-		trigger = {
-			XNE = {
-				has_government = democratic
-			}
-		}
-		localization_key = XNE_ideology_loc_dem
-	}
-	text = {
-		trigger = {
-			XNE = {
-				NOT = { has_government = democratic }
-			}
-		}
-		localization_key = XNE_ideology_loc_order
-	}
-}

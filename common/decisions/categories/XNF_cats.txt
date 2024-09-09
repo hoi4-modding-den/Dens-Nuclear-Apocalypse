@@ -1,6 +1,6 @@
 XNF_rebuilding_france_cat = {
 	visible_when_empty = yes
-	priority = 8
+	priority = 9
 	allowed = {
 		original_tag = XNF
 	}
@@ -12,15 +12,5 @@ XNF_loyalist_royalty_cat = {
 	visible_when_empty = yes
 	allowed = {
 		original_tag = XNF
-	}
-}
-
-XNF_entering_the_wasteland = {
-	priority = 9
-	allowed = {
-		original_tag = XNF
-	}
-	visible = {
-		has_country_flag = XNF_exploringwaste
 	}
 }

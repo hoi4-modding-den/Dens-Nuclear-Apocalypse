@@ -36,7 +36,6 @@ XFR_oppose_napoleon = {
 	allowed = {
 		original_tag = XFR
 	}
-	abort_when_not_enabled = yes
 
 	enable = {
 		always = yes
@@ -48,7 +47,7 @@ XFR_oppose_napoleon = {
     	value = -1000
 	}
 	ai_strategy = {
-    	type = ignore
+    	type = ingore
    		id = XNF
     	value = -1000
 	}
@@ -75,7 +74,7 @@ XFR_dislike_romans = {
     	value = -1000
 	}
 	ai_strategy = {
-    	type = ignore
+    	type = ingore
    		id = XAQ
     	value = -100
 	}
@@ -85,7 +84,6 @@ XFR_support_portugal = {
 	allowed = {
 		original_tag = XFR
 	}
-	abort_when_not_enabled = yes
 
 	enable = {
 		has_completed_focus = XFR_portugese_support
@@ -102,7 +100,6 @@ XFR_ally_nne = {
 	allowed = {
 		original_tag = XFR
 	}
-	abort_when_not_enabled = yes
 
 	enable = {
 		has_completed_focus = XFR_across_the_channel

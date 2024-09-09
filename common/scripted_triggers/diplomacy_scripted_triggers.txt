@@ -107,19 +107,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				rule = allow_release_nations
 				option = FREE
 			}
-				original_tag = XTW
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_RYUKYU_TOOLTIP
-			NOT = { FROM = { tag = XRY } }
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
-			}
 			OR = {
 				NOT = { has_dlc = "Man the Guns" }
 				NOT = { original_tag = ENG }

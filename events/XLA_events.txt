@@ -241,7 +241,7 @@ country_event = {
 		}
 
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = fas_pop
 		}
 	}
 

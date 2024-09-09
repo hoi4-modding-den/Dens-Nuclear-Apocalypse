@@ -1,6 +1,6 @@
 capital = 849
 
-set_country_flag = generic_army
+oob = "generic_OOB"
 #create_country_leader = {
 #	name = 
 #	desc = 

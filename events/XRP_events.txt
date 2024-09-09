@@ -668,18 +668,9 @@ country_event = { #Alsace refuses
 		ai_chance = {
 			base = 100
 		}
-		complete_national_focus = XRP_march_on_paris
 		declare_war_on = {
 			target = XAL
 			type = annex_everything
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = XFR
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = XPR
 		}
     }
 }
@@ -724,7 +715,7 @@ country_event = { #Czech puppet event sent to them
 				factor = 0 #no use fighting with no divisions
 				strength_ratio = {
 					tag = XRP
-					ratio < 0.01
+					ratio > 0.01
 				}
 			}
 		}
@@ -803,14 +794,14 @@ country_event = { #demand north rhine from Laagland
 				factor = 0 #no use fighting with no divisions
 				strength_ratio = {
 					tag = XRP
-					ratio < 0.01
+					ratio > 0.01
 				}
 			}
 			modifier = {
 				factor = 0.5 
 				strength_ratio = {
 					tag = XRP
-					ratio < 1
+					ratio > 1
 				}
 			}
 		}
@@ -887,20 +878,20 @@ country_event = { #demand stuttgart from 00-44
 				factor = 0 #no use fighting with no divisions
 				strength_ratio = {
 					tag = XRP
-					ratio < 0.01
+					ratio > 0.01
 				}
 			}
 			modifier = {
 				factor = 0.5 
 				strength_ratio = {
 					tag = XRP
-					ratio < 1
+					ratio > 1
 				}
 			}
 		}
 
 		XRP = {
-			country_event = XRP_focus_event.18
+			country_event = XRP_focus_event.15
 		}
     }
 	option = {
@@ -909,7 +900,7 @@ country_event = { #demand stuttgart from 00-44
 			base = 25
 		}
 		XRP = {
-			country_event = XRP_focus_event.19
+			country_event = XRP_focus_event.16
 		}
     }
 }
@@ -929,7 +920,7 @@ country_event = { #00-44 refuses
 				factor = 0.5 
 				strength_ratio = {
 					tag = XRP
-					ratio < 1
+					ratio > 1
 				}
 			}
 		}
@@ -979,7 +970,7 @@ country_event = { #deal with OO-44
 				factor = 0.5 #doesn't believe they could do it
 				strength_ratio = {
 					tag = XRP
-					ratio > 0.5
+					ratio < 0.5
 				}
 			}
 		}
@@ -1062,7 +1053,7 @@ country_event = { #deal with Czechs
 				factor = 0.5 #doesn't believe they could do it
 				strength_ratio = {
 					tag = XRP
-					ratio > 0.5
+					ratio < 0.5
 				}
 			}
 		}
@@ -1111,177 +1102,6 @@ country_event = { #Czechs accepts
 		}
 		custom_effect_tooltip = XRP_dealwithmephisto_success
 		XCM = { set_country_flag = XRP_join_northern_war }
-    }
-}
-
-country_event = { #Iberian War deal
-    id = XRP_focus_event.26
-    title = XRP.FE_23.t
-    picture = GFX_report_event_military_planning
-    desc = XRP.FE_23.d
-
-    is_triggered_only = yes
-    fire_only_once = no
-	option = {
-        name = XRP.FE_23.a #sure
-		ai_chance = {
-			base = 75
-			modifier = {
-				factor = 0.5 #XRP too weak to help
-				strength_ratio = {
-					tag = XRP
-					ratio > 0.5
-				}
-			}
-			modifier = {
-				factor = 2 #dying
-				surrender_progress > 0.5
-			}
-			modifier = {
-				factor = 0 #fuck off
-				has_war_with = XRP
-			}
-			modifier = {
-				factor = 0.5 #we're already winning, but thanks
-				XAD = { surrender_progress > 0.33 }
-			}
-		}
-		set_country_flag = XRP_accept_iberian_support
-		XRP = {
-			country_event = XRP_focus_event.28
-		}
-    }
-	option = {
-        name = XRP.FE_23.b #go away
-		ai_chance = {
-			base = 25
-		}
-		XRP = {
-			country_event = XRP_focus_event.27
-		}
-    }
-}
-country_event = { #Iberian Nation refuses our support
-    id = XRP_focus_event.27
-    title = XRP.FE_24.t
-    #picture = GFX_report_event_FIN_petsamo_melting_plant
-    desc = XRP.FE_24.d
-
-    is_triggered_only = yes
-    fire_only_once = no
-	option = {
-        name = XRP.FE_24.a #fine
-		ai_chance = {
-			base = 100
-		}
-		custom_effect_tooltip = XRP.FE_24_tooltip
-		add_political_power = -10
-		hidden_effect = {
-			if = {
-				limit = { XAD = { NOT = { has_idea = XRP_XAD_war_goal_modifier } } }
-				XAD = {
-					add_timed_idea = {
-						idea = XRP_XAD_war_goal_modifier
-						days = 70
-					}
-				}
-			}
-		}
-    }
-}
-country_event = { #Iberian Nation accepts support
-    id = XRP_focus_event.28
-    title = XRP.FE_25.t
-    #picture = GFX_report_event_FIN_petsamo_melting_plant
-    desc = XRP.FE_25.d
-
-    is_triggered_only = yes
-    fire_only_once = no
-	option = {
-        name = XRP.FE_25.a 
-		ai_chance = {
-			base = 100
-		}
-		if = {
-			limit =  { any_country = { has_country_flag = XRP_accept_iberian_support } }
-			add_to_war = {
-				targeted_alliance = FROM
-				enemy = XAD
-				hostility_reason = asked_to_join
-			}
-		}
-    }
-}
-country_event = { #Iberian puppet event, sent to Iberian nations
-    id = XRP_focus_event.29
-    title = XRP.FE_26.t
-    picture = GFX_report_event_ast_army
-    desc = XRP.FE_26.d
-
-    is_triggered_only = yes
-    fire_only_once = no
-	option = {
-        name = XRP.FE_26.a #fuck off
-		ai_chance = {
-			base = 90
-			modifier = {
-				factor = 0 #no use fighting with no divisions
-				strength_ratio = {
-					tag = XRP
-					ratio < 0.01
-				}
-			}
-		}
-		XRP = {
-			country_event = XRP_focus_event.30
-		}
-    }
-	option = {
-        name = XRP.FE_26.b #okay
-		ai_chance = {
-			base = 10
-		}
-		XRP = {
-			country_event = XRP_focus_event.31
-		}
-    }
-}
-country_event = { #Iberian nation refuses
-    id = XRP_focus_event.30
-    title = XRP.FE_27.t
-    #picture = GFX_report_event_FIN_petsamo_melting_plant
-    desc = XRP.FE_27.d
-
-    is_triggered_only = yes
-    fire_only_once = no
-	option = {
-        name = XRP.FE_27.a #kill
-		ai_chance = {
-			base = 100
-		}
-		declare_war_on = {
-			target = FROM
-			type = annex_everything
-		}
-    }
-}
-country_event = { #Iberian nation accepts
-    id = XRP_focus_event.31
-    title = XRP.FE_28.t
-    #picture = GFX_report_event_FIN_petsamo_melting_plant
-    desc = XRP.FE_28.d
-
-    is_triggered_only = yes
-    fire_only_once = no
-	option = {
-        name = XRP.FE_28.a 
-		ai_chance = {
-			base = 100
-		}
-		puppet = {
-			target = FROM
-			end_wars = no
-		}
     }
 }
 

@@ -1,6 +1,6 @@
 capital = 159
 
-set_country_flag = generic_army
+oob = "generic_OOB"
 recruit_character = XSS_zino
 recruit_character = XSS_nostitz
 recruit_character = XSS_herrlein
