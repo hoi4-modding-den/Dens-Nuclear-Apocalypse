@@ -31,7 +31,19 @@ Current Apocalypse:
   
   | Tag | Github Name      | Discord Name        |
   | --- | :--------------: | :-----------------: |
-  | X00 | Sample | Sample |
+  | XNL | Burgerkinghotline | burgerkinghotline |
+  | XSR | Burgerkinghotline | burgerkinghotline |
+  | XBO | Burgerkinghotline | burgerkinghotline |
+  | XTT | Burgerkinghotline | burgerkinghotline |
+  | XTM | Burgerkinghotline | burgerkinghotline |
+  | XYU | Knighticus | biggusbutt |
+  | XCB | Kasastul | kasastul |
+  | XTW | Foxy | yeoudal |
+  | XRY | Foxy | yeoudal |
+  | XSK | 0rland2 | 0rland0 |
+  | XTK | 0rland2 | 0rland0 |
+  | XHK | H2O27 | h2o27 |
+  | XGD | H2O27 | h2o27 |
   
 </details>
 
