@@ -1,6 +1,6 @@
 state={
-	id=525
-	name="STATE_525"
+	id=1000
+	name="STATE_1000"
 	manpower=4522737
 	
 	state_category = town
@@ -10,19 +10,19 @@ state={
 			infrastructure = 2
 			#arms_factory = 1
 			#dockyard = 1
+			11948 = {
+				naval_base = 5
+			}
 		}
 		victory_points = {
-			4056 1 
-		}
-		victory_points = {
-			7125 3 
+			11948 2
 		}
 
 		#add_core_of = KOR
 
 	}
 	provinces={
-		1100 1148 4004 7021 7125 7175 7204 7221 9936 10036 11958 11992     
+		10115 1081 11977 4126 10085 10110 12085 1054 12060 11948 1177
 	}
 
 	local_supplies=0.0 
