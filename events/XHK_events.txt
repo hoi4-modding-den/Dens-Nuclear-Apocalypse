@@ -1,0 +1,36 @@
+
+add_namespace = XHK
+
+# Lore(tm)
+country_event = {
+    id = XHK.1
+    title = XHK.1.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XHK.1.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XHK.1.a
+        #complete_national_focus = XSS_triumph_of_democracy
+    }
+}
+
+# Guangdong Submission
+country_event = {
+    id = XHK.2
+    title = XHK.2.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XHK.2.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XHK.2.a
+        puppet = XHK
+    }
+}

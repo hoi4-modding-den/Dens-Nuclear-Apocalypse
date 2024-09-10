@@ -54,6 +54,23 @@ ideas = {
 				democratic_drift = -0.05
 			}
 		}
+		XHK_corrupt_assembly = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+			}
+		}
 		XHK_guangdong_menace = {
 			picture = generic_constitutional_guarantees
 			
