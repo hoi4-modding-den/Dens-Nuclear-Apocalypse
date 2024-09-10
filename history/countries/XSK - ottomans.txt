@@ -21,6 +21,10 @@ add_ideas = {
 	partial_economic_mobilisation
 	closed_economy
 	limited_conscription
+
+	XSK_the_sultanate_in_china
+	XSK_home_of_turks
+	XSK_han_minority
 }
 
 recruit_character = XSK_ottoman_regency_council

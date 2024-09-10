@@ -1,0 +1,220 @@
+ideas = {
+    hidden_ideas = {	
+	}
+    country = {
+
+        XSK_the_sultanate_in_china = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_ottoman_spirit
+
+            modifier = {
+                neutrality_drift = 0.1
+                war_support_weekly = 0.001
+                offensive_war_stability_factor = 0.25
+                ai_focus_aggressive_factor = 0.2
+            }
+
+            targeted_modifier = {
+                tag = XON
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+
+        }
+
+        XSK_the_sultanate_in_china_fasc = {
+            name = XSK_the_sultanate_in_china
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_ottoman_spirit
+
+            modifier = {
+                fascism_drift = 0.1
+                war_support_weekly = 0.001
+                offensive_war_stability_factor = 0.25
+                ai_focus_aggressive_factor = 0.3
+            }
+
+            targeted_modifier = {
+                tag = XON
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+
+        }
+
+        XSK_the_sultanate_in_china_cav = {
+            name = XSK_the_sultanate_in_china
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_ottoman_spirit
+
+            modifier = {
+                neutrality_drift = 0.1
+                war_support_weekly = 0.001
+                cavalry_attack_factor = 0.1
+                cavalry_defence_factor = 0.1
+                offensive_war_stability_factor = 0.25
+                ai_focus_aggressive_factor = 0.2
+            }
+
+            targeted_modifier = {
+                tag = XON
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+
+        }
+
+        XSK_the_sultanate_in_china_fasc_cav = {
+            name = XSK_the_sultanate_in_china
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_ottoman_spirit
+
+            modifier = {
+                fascism_drift = 0.1
+                war_support_weekly = 0.001
+                cavalry_attack_factor = 0.1
+                cavalry_defence_factor = 0.1
+                offensive_war_stability_factor = 0.25
+                ai_focus_aggressive_factor = 0.3
+            }
+
+            targeted_modifier = {
+                tag = XON
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+
+        }
+
+        XSK_home_of_turks = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_coordinated_balkan_armed_forces
+
+            modifier = {
+                weekly_manpower = 1000
+                surrender_limit = 0.25
+                political_power_gain = 0.05
+                stability_factor = -0.05
+                compliance_growth_on_our_occupied_states = -0.2
+            }
+
+        }
+
+        XSK_han_minority = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = chi_chinese_support
+
+            modifier = {
+                stability_factor = -0.2
+                conscription_factor = -0.1
+                non_core_manpower = -0.5
+            }
+
+        }
+
+        XSK_the_silk_road = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = can_wartime_prices_and_trade_board
+
+            modifier = {
+                trade_opinion_factor = 0.25
+                consumer_goods_factor = -0.1
+            }
+
+        }
+
+        XSK_toaster_factories = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = ARG_civilian_economy_boost
+
+            modifier = {
+                stability_factor = 0.1
+                consumer_goods_factor = 0.15
+                production_speed_industrial_complex_factor = 0.4
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,23 @@
+defined_text = {
+	name = XSK_das_kapital_name
+
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = "National Construction Fund"
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = { character = XSK_ottoman_regency_council ruling_only = yes }
+				has_country_leader = { character = XSK_sultan_abdulhamid_i ruling_only = yes }
+				has_country_leader = { character = XSK_sultan_suleyman_xii ruling_only = yes }
+			}
+		}
+		localization_key = "Crown Corporations"
+	}
+	text = {
+		localization_key = "Expand the Civilian Industry"
+	}
+}

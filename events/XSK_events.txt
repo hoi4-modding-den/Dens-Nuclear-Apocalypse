@@ -1,5 +1,5 @@
 add_namespace = XSK_succession_events
-
+add_namespace = XSK_events
 
 country_event = { # The First Candidate
     id = XSK_succession_events.1
@@ -89,11 +89,18 @@ country_event = { # Military Coup
     
     option = {
         name = XSK_succession_events.4.a
+        add_political_power = 75
         set_politics = {
             ruling_party = fascism
             elections_allowed = no
         }
-        complete_national_focus = XSK_no_sultan
+        swap_ideas = {
+            remove_idea = XSK_the_sultanate_in_china
+            add_idea = XSK_the_sultanate_in_china_fasc
+        }
+        hidden_effect = {
+            complete_national_focus = XSK_no_sultan
+        }
     }
 }
 
@@ -108,6 +115,7 @@ country_event = { # Abdulhamid is choosen
     
     option = {
         name = XSK_succession_events.5.a
+        add_political_power = 75
         add_country_leader_role = {
             character = XSK_sultan_abdulhamid_i
             promote_leader = yes
@@ -129,23 +137,15 @@ country_event = { # Abdulhamid is choosen
                     traits = { }
                }
             }
-            add_country_leader_role = {
-                character = XSK_sultan_abdulhamid_i
-                promote_leader = yes
-                country_leader = {
-                    ideology = stalinism
-                    desc = XSK_sultan_abdulhamid_i_desc
-                    expire = "3000.1.1.1"
-                    traits = { }
-               }
-            }
         }
         set_party_name = {
             ideology = neutrality
             long_name = XSK_neutrality_party_long
             name = XSK_neutrality_party
         }
-        complete_national_focus = XSK_the_expansionist_sultan
+        hidden_effect = {
+            complete_national_focus = XSK_the_expansionist_sultan
+        }
     }
 }
 
@@ -159,7 +159,8 @@ country_event = { # Süleyman is choosen
     fire_only_once = yes
     
     option = {
-        name = XSK_succession_events.5.a
+        name = XSK_succession_events.6.a
+        add_political_power = 75
         add_country_leader_role = {
             character = XSK_sultan_suleyman_xii
             promote_leader = yes
@@ -181,23 +182,15 @@ country_event = { # Süleyman is choosen
                     traits = { }
                }
             }
-            add_country_leader_role = {
-                character = XSK_sultan_suleyman_xii
-                promote_leader = yes
-                country_leader = {
-                    ideology = stalinism
-                    desc = XSK_sultan_suleyman_xii_desc
-                    expire = "3000.1.1.1"
-                    traits = { }
-               }
-            }
         }
         set_party_name = {
             ideology = neutrality
             long_name = XSK_neutrality_party_long
             name = XSK_neutrality_party
         }
-        complete_national_focus = XSK_the_diplomatic_sultan
+        hidden_effect = {
+            complete_national_focus = XSK_the_diplomatic_sultan
+        }
     }
 }
 
@@ -214,5 +207,52 @@ country_event = { # The Council meets
         name = XSK_succession_events.7.a
         add_political_power = -10
         country_event = { id = XSK_succession_events.1 days = 3 }
+    }
+}
+
+country_event = { # Choose Mine to expand
+    id = XSK_events.1
+    title = XSK_events.1.t
+    picture = GFX_report_event_military_planning
+    desc = XSK_events.1.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.1.a
+        818 = {
+			add_resource = {
+				type = tungsten
+				amount = 8
+			}
+		}
+    }
+
+    option = {
+        name = XSK_events.1.b
+        760 = {
+			add_resource = {
+				type = aluminium
+				amount = 12
+			}
+		}
+    }
+
+    option = {
+        name = XSK_events.1.c
+        add_political_power = -75
+        818 = {
+			add_resource = {
+				type = tungsten
+				amount = 5
+			}
+		}
+        760 = {
+			add_resource = {
+				type = aluminium
+				amount = 9
+			}
+		}
     }
 }

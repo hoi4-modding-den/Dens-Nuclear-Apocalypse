@@ -1,6 +1,6 @@
 ﻿l_english:
 
-# Names
+# Countries
 
  XSK: "Second Ottoman Sultanate"
  XSK_DEF: "the Second Ottoman Sultanate"
@@ -9,27 +9,38 @@
  XSK_fascism_DEF: "the Ottoman National Salvation Front"
  XSK_fascism_ADJ: "Ottoman"
 
- XTK: "East Turkestan"
- XTK_DEF: "East Turkestan"
- XTK_ADJ: "East Turkestani"
- XTK_democratic: "Xinjiang Confederacy"
- XTK_democratic_DEF: "the Xinjiang Confederacy"
- XTK_democratic_ADJ: "Xinjiang"
- XTK_fascism: "Dzungar Khanate"
- XTK_fascism_DEF: "the Dzungar Khanate"
- XTK_fascism_ADJ: "Dzungar"
- XTK_communism: "East Turkestan People's Republic"
- XTK_communism_DEF: "the East Turkestan People's Republic"
- XTK_communism_ADJ: "East Turkestani"
- XTK_neutrality: "Xinjiang Reclamation Army"
- XTK_neutrality_DEF: "the Xinjiang Reclamation Army"
- XTK_neutrality_ADJ: "Xinjiang"
-
  XSK_subject: "$OVERLORDADJ$ East Turkestan"
  XSK_subject_DEF: "$OVERLORDADJ$ East Turkestan"
  XSK_XON_fascism_subject: "Dzungar Horde"
  XSK_XON_fascism_subject_DEF: "the Dzungar Horde"
  XSK_XON_fascism_subject_ADJ: "Dzungar"
+
+ XTK: "East Turkestan"
+ XTK_DEF: "East Turkestan"
+ XTK_ADJ: "East Turkestani"
+ XTK_democratic: "Province of Xinjiang"
+ XTK_democratic_DEF: "the Province of Xinjiang"
+ XTK_democratic_ADJ: "Xinjiang"
+ XTK_fascism: "Dzungar Khanate"
+ XTK_fascism_DEF: "the Dzungar Khanate"
+ XTK_fascism_ADJ: "Dzungar"
+ XTK_communism: "People's Republic of East Turkestan"
+ XTK_communism_DEF: "the People's Republic of East Turkestan"
+ XTK_communism_ADJ: "East Turkestani"
+ XTK_neutrality: "Province of Xinjiang"
+ XTK_neutrality_DEF: "the Province of Xinjiang"
+ XTK_neutrality_ADJ: "Xinjiang"
+
+ XTK_subject: "$OVERLORDADJ$ East Turkestan"
+ XTK_subject_DEF: "$OVERLORDADJ$ East Turkestan"
+ XTK_XON_fascism_subject: "Dzungar Horde"
+ XTK_XON_fascism_subject_DEF: "the Dzungar Horde"
+ XTK_XON_fascism_subject_ADJ: "Dzungar"
+ XTK_XYU_neutrality: "Xinjiang Reclamation Army"
+ XTK_XYU_neutrality_DEF: "the Xinjiang Reclamation Army"
+ XTK_XYU_neutrality_ADJ: "Xinjiang"
+
+# Parties
 
  XSK_democratic_party: "Reformist Faction"
  XSK_democratic_party_long: "Reformist Faction of the Ottoman Court"
@@ -51,6 +62,8 @@
  XTK_neutrality_party: "Kuomintang"
  XTK_neutrality_party_long: "Kuomintang"
 
+# Characters
+
  XSK_ottoman_regency_council_name: "Regency Council"
  XSK_ottoman_regency_council_desc: "Due to the unexpected death of our great Sultan, XI. Süleyman, a regency council has been established to select a successor to lead our nation."
  XSK_sultan_abdulhamid_i_name: "Abdulhamid I."
@@ -59,10 +72,29 @@
  XSK_sultan_suleyman_xii_desc: "Sultan XII. Süleyman is the son of the deceased Sultan XI. Süleyman. His mother was one of the Sultans concubines and therefore, his existence has always been questionable, especially due to the fact that he is half-mongolian. However, abilities to lead cannot not be underestimated."
  XSK_ottoman_military_gov_name: "Military Council"
 
+# Traits
+
  XSK_ottoman_regency_trait: "Temporary Regency"
+
+# Ideologies
 
  XSK_ottoman_stratocracy: "Stratocracy"
  XSK_ottoman_stratocracy_desc: "Stratocracy is a form of government headed by military chiefs. The branches of government are administered by military forces, the government is legal under the laws of the jurisdiction at issue, and is usually carried out by military workers."
+
+# Ideas
+
+ XSK_the_sultanate_in_china: "The Wolf of the Steppes"
+ XSK_the_sultanate_in_china_desc: ""
+ XSK_home_of_turks: "Home of the Turks"
+ XSK_home_of_turks_desc: "The Turks have been disunited for a long time. After the apocalypse, many Turks followed us back to our original homelands and helped establish the Second Sultanate. A large ammount of Turks are still lost in the madness of the Anarchy and thousands arrive each week."
+ XSK_han_minority: "Han Minorities"
+ XSK_han_minority_desc: "Those pesky 'indigenous' people are stirring up trouble and are not cooperating with the Sultanate. We might need to get rid of them."
+ XSK_toaster_factories: "Economic Boom"
+ XSK_the_silk_road: "The New Silk Road"
+ XSK_the_silk_road_desc: "The new Silk Road allows us to trade with the new civilisations of the West."
+
+
+# Events
 
  XSK_succession_events.1.t: "The Incapable Nephew"
  XSK_succession_events.1.d: "Our first candidate, Abdulhamid is the nephew of the deceased Sultan XI. Süleyman. While he may be of Turkic decent, his capabilities as a leader are questionable and his approach to things are rarely diplomatic."
@@ -90,10 +122,20 @@
 
  XSK_succession_events.6.t: "Coronation of Süleyman the Twelfth!"
  XSK_succession_events.6.d: "WIP TEXT"
+ XSK_succession_events.6.a: "Long live the Sultan!"
 
  XSK_succession_events.7.t: "The Regency Council"
  XSK_succession_events.7.d: "The Regency Council has been working hard, locating the deceased Sultans only son, as well as his nephew. Now, it is time for the council to make a decision."
  XSK_succession_events.7.a: "First Candidate, please."
+
+ XSK_events.1.t: "Resource Allocation"
+ XSK_events.1.d: "We do not have enough resources to expand both the New Samsun and New Afyon mines. We need to choose one."
+ XSK_events.1.a: "Expand the New Samsun Tungsten Mines."
+ XSK_events.1.b: "Expand the New Afyon Aluminium Mines."
+ XSK_events.1.c: "You will make it work!"
+
+
+# Foci
 
  XSK_choose_the_next_sultan: "The Successor Candidates"
  XSK_choose_the_next_sultan_desc: "The Regency Council was established a few weeks after XI. Süleyman's death and it has been searching for possible contenders to the throne since then. If no choice is made, it could severely impact the existence of our state."
@@ -101,7 +143,22 @@
  XSK_choosen_next_sultan: "a successor has been choosen"
  XSK_the_expansionist_sultan: "Expand the Sultanate"
  XSK_the_expansionist_sultan_trigger: "§YSultan I. Abdulhamid§! has succeeded the throne"
- XSK_no_sultan: "The Military Coup"
+ XSK_no_sultan: "Military Control"
  XSK_no_sultan_trigger: "no successor has been chosen"
  XSK_the_diplomatic_sultan: "Trade and Secrets"
  XSK_the_diplomatic_sultan_trigger: "§YSultan XII. Süleyman§! has succeeded the throne"
+ XSK_tradition_of_the_steppes: "Tradition of the Steppe"
+ XSK_reopen_the_silk_road: "Re-open the Silk Road"
+ XSK_give_market_access_tt: "Give §Y[ROOT.GetNameDef]§! market access."
+ XSK_war_industry: "Start the War Industry"
+ XSK_das_kapital: "[XSK_das_kapital_name]"
+ XSK_improved_army_equipment: "Improved Army Equipment"
+ XSK_expand_the_mines: "Expand the Mines"
+ XSK_military_complex: "The Military Industrial Complex"
+ XSK_cannon_thunder: "Cannon Thunder"
+ XSK_the_mountains_our_forts: "The Mountains as our Fortress"
+ XSK_mechanic_revolution: "The Mechanical Revolution"
+ XSK_civilian_investments: "Civilian Investments"
+ XSK_road_construction: "Road Construction"
+ XSK_synthetic_rubber: "Research Synthetic Rubber"
+ XSK_synthetic_rubber_tt: "If §YSynthetic Oil Experiments§! has been researched, this focus will give §one less research bonus§!, instead giving one §YSynthetic Refinery§!."
