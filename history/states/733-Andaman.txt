@@ -5,7 +5,7 @@ manpower=19667
 	state_category = small_island
 	
 	history={
-		owner = LIB # ENG
+		owner = XSI # ENG
 		buildings = {
 			infrastructure = 2
 			12251 = {
@@ -13,6 +13,8 @@ manpower=19667
 
 			}
 		}
+
+		add_core_of = XSI
 
 	}
 	provinces={
