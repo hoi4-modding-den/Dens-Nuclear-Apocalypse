@@ -1,0 +1,24 @@
+focus_tree = {
+	id = XDA_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XDA
+		}	
+	}	
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 100 y = 3250 }
+focus = {
+	id = XDA_placeholder
+	x = 0
+	y = 0
+	cost = 100
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 1
+	}
+}
+}

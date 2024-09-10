@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		XDA_Crumbling_Democracy = {
+			picture = generic_democratic_opposition
+			modifier = {
+				political_power_gain = -0.40
+				democratic_drift = -0.05
+				stability_factor = -0.3
+			}
+			cancel = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		}
+	}
+}
