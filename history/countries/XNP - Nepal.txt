@@ -1,0 +1,15 @@
+capital = 323
+
+# oob = "XNP_1936"
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2234.11.27"
+	election_frequency = 24
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 63
+	neutrality = 37
+}
+

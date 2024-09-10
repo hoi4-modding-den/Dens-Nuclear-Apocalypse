@@ -319,3 +319,8 @@ XDA = {
 	color = rgb { 64 153 80 }
 	color_ui = rgb { 64 153 80 }
 }
+
+XNP = {
+	color = rgb { 152  130  191 }
+	color_ui = rgb { 152  130  191 }
+}

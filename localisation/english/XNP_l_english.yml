@@ -1,0 +1,21 @@
+﻿l_english:
+ #XNP_fascism:0 "Republic of China"
+ #XNP_fascism_DEF:0 "the Republic of China"
+
+ #XNP_democratic:0 "Republic of Taiwan"
+ #XNP_democratic_DEF:0 "the Republic of Taiwan"
+
+ #XNP_neutrality:0 "Republic of China"
+ #XNP_neutrality_DEF:0 "the Republic of China
+
+ #XNP_communism:0 "People's Revolutionary Republic of Taiwan"
+ #XNP_communism_long:0 "People's Revolutionary Republic of Taiwan"
+
+ XNP_fascism_ADJ:0 "Nepali"
+ XNP_democratic_ADJ:0 "Nepali"
+ XNP_neutrality_ADJ:0 "Nepali"
+ XNP_communism_ADJ:0 "Nepali"
+
+ XNP:0 "Nepal"
+ XNP_DEF:0 "Nepal"
+ XNP_ADJ:0 "Nepali"
