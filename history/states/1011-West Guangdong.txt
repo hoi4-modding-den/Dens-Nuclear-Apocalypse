@@ -1,0 +1,33 @@
+state={
+	id=1011
+	name="STATE_1011"
+	provinces={
+		1087 1131 1187 4092 7039 7152 9963 11938 11941 12077 
+	}
+	history = {
+		buildings = {
+			infrastructure = 3
+
+		}
+		owner = XGD
+		victory_points = {
+			7152 10 
+		}
+		victory_points = {
+			7039 5 
+		}
+		victory_points = {
+			4092 5 
+		}
+		victory_points = {
+			11938 1 
+		}
+		victory_points = {
+			1087 1 
+		}
+	}
+	manpower=22887242
+	state_category=large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,68 +1,65 @@
-state= {
+
+state={
 	id=593
 	name="STATE_593"
-manpower=62840315
-	state_category = metropolis
 	resources={
-		tungsten=15 # was: 20
-		steel= 15 # was: 20
-		chromium = 3 # was: 4
+		tungsten=15.000
+		steel=15.000
+		chromium=3.000
 	}
 
-	history= {
-		owner = XGD # GXC
-		#add_core_of = GXC
-		#add_core_of = CHI
-		#add_core_of = PRC
+	history={
+		owner = XGD
 		buildings = {
-			infrastructure = 2
-			#industrial_complex = 1
+			infrastructure = 4
 			9938 = {
 				naval_base = 1
 				coastal_bunker = 1
 				bunker = 1
+
 			}
-		}
 
-		1938.10.25 = {		
+		}
+		1938.10.25 = {
 			remove_core_of = GXC
-			owner = XGD # CHI
+			owner = XGD
 			JAP = {
-				#set_province_controller = 1202
-				#set_province_controller = 4050
-				#set_province_controller = 7108
-				#set_province_controller = 9938
-				#set_province_controller = 12095
-			} 			
+
+			}
+
 		}
 		victory_points = {
-			7108 20
+			7108 20 
 		}
 		victory_points = {
-			9938 15
+			9938 15 
 		}
 		victory_points = {
-			1202 5
+			1202 5 
 		}
 		victory_points = {
-			4165 3
+			4165 3 
 		}
 		victory_points = {
-			7182 10
+			7182 10 
 		}
 		victory_points = {
-			9970 1
+			9970 1 
 		}
 		victory_points = {
-			7141 1
+			7141 1 
 		}
 		victory_points = {
-			12095 3
+			12095 3 
 		}
-	}
-	provinces={
-		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 9997 10080 12014 12095 
+
 	}
 
-	local_supplies=1.0 
+	provinces={
+		1078 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9978 12095 
+	}
+	manpower=59985184
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=1.000
 }
