@@ -9,8 +9,8 @@ manpower=6046000
 	}
 
 	history={
-		owner = LIB # JAP
-		#add_core_of = JAP
+		owner = XKY # JAP
+		add_core_of = XKY
 		buildings = {
 			infrastructure = 4 #was: 7
 			#air_base = 3

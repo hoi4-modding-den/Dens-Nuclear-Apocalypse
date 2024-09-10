@@ -1,0 +1,19 @@
+characters = {
+
+	### COUNTRY LEADERS ###
+
+	XKY_Cyborg_Hattori = {
+		name = "Cyborg Hattori"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Kishida"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+}

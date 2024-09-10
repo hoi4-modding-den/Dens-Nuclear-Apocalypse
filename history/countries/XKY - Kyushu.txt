@@ -1,0 +1,25 @@
+
+OOB = "XKY_1936"
+set_politics = {
+  ruling_party = democratic
+  last_election = "1936.1.1"
+  election_frequency = 48
+  elections_allowed = no
+}
+add_popularity = {
+  democratic = 100
+}
+set_research_slots = 3
+capital = 528 
+
+create_country_leader = {
+	name = "Cyborg Hattori"
+	desc = "Leader of LDP"
+	picture = "gfx/leaders/XKY/Portrait_Kishida.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+recruit_character = XKY_Cyborg_Hattori
