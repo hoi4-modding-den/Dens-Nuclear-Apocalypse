@@ -202,7 +202,7 @@ focus_tree = {
         y = 1
         completion_reward = {
             custom_effect_tooltip = XNF_remove_pyrenees_in_x_time
-            activate_mission = XNF_expelling_pyrenees
+            #activate_mission = XNF_expelling_pyrenees
             create_wargoal = {
                 target = XPY
                 type = annex_everything
@@ -356,6 +356,15 @@ focus_tree = {
         }
     }
     focus = {
+        id = XNF_voting_changes
+        icon = GFX_focus_generic_workers
+        cost = 10
+        relative_position_id = XNF_rebuilding_france
+        x = -3
+        y = 0
+        completion_reward = { }
+    }
+    focus = {
         id = XNF_from_the_ruins
         icon = GFX_goal_generic_fortify_city
         cost = 10
@@ -479,15 +488,6 @@ focus_tree = {
         relative_position_id = XNF_voting_changes
         x = -1
         y = 1
-        completion_reward = { }
-    }
-    focus = {
-        id = XNF_voting_changes
-        icon = GFX_focus_generic_workers
-        cost = 10
-        relative_position_id = XNF_rebuilding_france
-        x = -3
-        y = 0
         completion_reward = { }
     }
 }
