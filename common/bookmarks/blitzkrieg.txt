@@ -101,11 +101,12 @@ bookmarks = {
 		}
 		"XDA" = {
 			ideology = democratic
-			history = "XDA_history"
+			history = "XDA_history_desc"
 			focuses = {
 			}
 			ideas = {
-				XDA_Crumbling_Democracy			
+				XDA_Crumbling_Democracy
+				XDA_Mirage_Government
 			}
 		}
 		effect = {

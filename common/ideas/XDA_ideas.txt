@@ -3,14 +3,23 @@ ideas = {
 		XDA_Crumbling_Democracy = {
 			picture = generic_democratic_opposition
 			modifier = {
-				political_power_gain = -0.40
 				democratic_drift = -0.05
-				stability_factor = -0.3
+				stability_factor = -0.2
 			}
 			cancel = {
 				NOT = {
 					has_government = democratic
 				}
+			}
+		}
+		XDA_Mirage_Government = {
+			picture = Mirage_Government
+			modifier = {
+				political_power_gain = -0.50
+				stability_factor = -0.35
+				neutrality_drift = 0.03
+				fascism_drift = 0.02
+				communism_drift = 0.03
 			}
 		}
 	}
