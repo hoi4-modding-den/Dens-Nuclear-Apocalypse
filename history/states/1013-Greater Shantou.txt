@@ -1,0 +1,36 @@
+state={
+	id=1013
+	name="STATE_1013"
+	provinces={
+		1078 4165 7141 7182 9938 9978 
+	}
+	history = {
+		owner = XGD
+		buildings = {
+			infrastructure = 5
+			9938 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+		victory_points = {
+			9938 15 
+		}
+		victory_points = {
+			4165 3 
+		}
+		victory_points = {
+			7182 10 
+		}
+		victory_points = {
+			7141 1 
+		}
+	}
+	manpower=19812213
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}
