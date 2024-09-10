@@ -1,11 +1,13 @@
 capital = 1006
 
-set_war_support = 0.35
-set_stability = 0.60
+set_war_support = 0.45
+set_stability = 0.70
 
 set_popularities = {
-	democratic = 63
-	communism = 24
-	fascism = 10
-	neutrality = 3
+	democratic = 48
+	communism = 28
+	fascism = 8
+	neutrality = 16
 }
+
+add_ideas = XDA_Crumbling_Democracy

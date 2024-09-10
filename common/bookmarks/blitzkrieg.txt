@@ -101,6 +101,15 @@ bookmarks = {
 			ideas = {
 			}
 		}
+		"XDA" = {
+			ideology = democratic
+			history = "XDA_history"
+			focuses = {
+			}
+			ideas = {
+				XDA_Crumbling_Democracy			
+			}
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
