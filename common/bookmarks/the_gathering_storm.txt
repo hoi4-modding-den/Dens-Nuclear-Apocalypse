@@ -9,7 +9,7 @@ bookmarks = {
 
 		"XNF" = {
 			ideology = neutrality
-			history = "hi"
+			history = "XNF_bookmark_history"
 		}
 		"XSS" = {
 			ideology = democratic
