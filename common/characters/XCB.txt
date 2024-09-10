@@ -1,0 +1,16 @@
+characters = {
+	XCB_sieng_proeung = {
+		name = XCB_sieng_proeung
+		portraits = {
+			civilian = {
+				large = "gfx/XCB/XCB_generic.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { XCB_committed_to_conserve }
+			desc = 
+			id = -1	
+		}
+	}
+}
