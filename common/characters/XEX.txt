@@ -1,0 +1,23 @@
+characters = {
+
+	### COUNTRY LEADERS ###
+
+	XEX_gambling_maxxing = {
+		name = "Avarage Gambler"
+		portraits = {
+			civilian = {
+				large = GFX_ideology_XEX_gambler
+			}
+		}
+		country_leader = {
+			ideology = XKR_casino_council
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	### ADVISORS ###
+
+	
+}

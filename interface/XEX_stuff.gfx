@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_XEX_gambler"
+		texturefile = "gfx/XEX/XEX_neutrality_leader.png"
+	}
+}
+
