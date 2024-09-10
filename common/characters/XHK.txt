@@ -16,4 +16,52 @@ characters = {
 		}
 		
 	}
+	XHK_song_shanyuan = {
+		name = "Song Shanyuan"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XHK_song_shanyuan"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = XHK_song_shanyuan_desc
+			traits = {  }
+			expire = "2251.9.9.9"
+			id = -1
+		}
+		
+	}
+	XHK_dai_meifeng = {
+		name = "Dai Meifeng"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XHK_dai_meifeng"
+			}
+		}
+		country_leader = {
+			ideology = XHK_ultranationalism
+			desc = XHK_dai_meifeng_desc
+			traits = {  }
+			expire = "2277.9.9.9"
+			id = -1
+		}
+		
+	}
+	XHK_corporate_commission = {
+		name = "Corporate Commission"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XHK_corporate_commission"
+			}
+		}
+		country_leader = {
+			ideology = XHK_corporatism
+			desc = XHK_corporate_commission_desc
+			traits = {  }
+			expire = "2277.9.9.9"
+			id = -1
+		}
+		
+	}
 }

@@ -5,4 +5,16 @@ spriteTypes = {
 		name = "GFX_portrait_XHK_zeng_qiu"
 		texturefile = "gfx/XHK/XHK_zeng_qiu.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_XHK_song_shanyuan"
+		texturefile = "gfx/XHK/XHK_song_shanyuan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XHK_dai_meifeng"
+		texturefile = "gfx/XHK/XHK_dai_meifeng.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XHK_corporate_commission"
+		texturefile = "gfx/XHK/XHK_corporate_commission.dds"
+	}
 }
