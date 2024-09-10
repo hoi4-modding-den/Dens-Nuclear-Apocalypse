@@ -5,7 +5,10 @@ state={
 		add_core_of = XCB
 		owner = XCB # FRA
 		victory_points = {
-			7376 1
+			7376 15
+		}
+		victory_points = {
+			7432 10
 		}
 		buildings = {
 			infrastructure = 1

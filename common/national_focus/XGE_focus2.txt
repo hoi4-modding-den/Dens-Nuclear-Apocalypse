@@ -352,6 +352,7 @@
 		x = -2
 		y = 1
 		relative_position_id = XGE_war_plan_west
+		available = { controls_state = 55 }
 
 		cost = 4
 
@@ -542,6 +543,7 @@
 					is_puppet_of = XGE		
 				}
 			}
+			controls_state = 54
 		}
 		cost = 4
 

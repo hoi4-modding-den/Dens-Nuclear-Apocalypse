@@ -8,8 +8,31 @@ recruit_character = XCB_sieng_proeung
 
 add_ideas = {
 	XCB_the_two_city_government
-	XCB_fragmented_guerillas
+	XCB_fragmented_guerillas_dummy
 }
+
+XCB = {
+
+	set_variable = {
+		XCB_fragmented_guerillas_war_support_variable = -0.15
+	}
+	
+	set_variable = {
+		XCB_fragmented_guerillas_conscription_variable = -0.15
+	}
+	
+	set_variable = {
+		XCB_fragmented_guerillas_attrition_variable = 0.15
+	}
+	
+	set_variable = {
+		XCB_fragmented_guerillas_morale_variable = -0.15
+	}
+
+}
+
+
+add_dynamic_modifier = { modifier = XCB_fragmented_guerillas }
 
 set_politics = {
 	ruling_party = neutrality

@@ -3,13 +3,20 @@ ideas = {
 		XCB_the_two_city_government = {
 			picture = generic_neutrality_drift_bonus
 			modifier = {
-				
+				production_speed_buildings_factor = -0.2
+				global_building_slots_factor = -0.4
+				stability_factor = -0.1
+				research_speed_factor = -0.1
+				local_resources_factor = -0.3
 			}
 		}
-		XCB_fragmented_guerillas = {
+		XCB_fragmented_guerillas_dummy = {
 			picture = SPR_political_violence
 			modifier = {
-				
+				war_support_factor = -0.15
+				conscription_factor = -0.15
+				attrition = 0.15
+				army_morale_factor = -0.15
 			}
 		}
 	}
