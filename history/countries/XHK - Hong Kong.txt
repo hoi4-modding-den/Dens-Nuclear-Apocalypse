@@ -7,6 +7,7 @@ capital = 326
 #set_convoys = 5
 
 add_ideas = XHK_fragile_democracy
+add_ideas = XHK_corrupt_assembly
 add_ideas = XHK_vertical_slums
 add_ideas = XHK_import_reliance
 add_ideas = XHK_guangdong_menace
