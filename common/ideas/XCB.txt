@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		XCB_the_two_city_government = {
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				
+			}
+		}
+		XCB_fragmented_guerillas = {
+			picture = SPR_political_violence
+			modifier = {
+				
+			}
+		}
+	}
+}

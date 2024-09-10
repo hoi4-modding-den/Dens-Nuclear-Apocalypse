@@ -14,6 +14,10 @@
  XCB_democratic_party_long:0 "Khmer Liberal Democratic Party"
  XCB_democratic_party:0 "KLDP"
  
+ #ideas
+ XCB_the_two_city_government:0 "The Government of Two Cities" #phnom penh and kampong saom
+ XCB_fragmented_guerillas:0 "Fragmented Guerillas"
+ 
  
  #scripted gui nonsense
  XCB_credits:0 "Credits for the Cambodian Content: §Hkasastul/Kåsastul§!, \nCredits for the rest of the content: \n§HThe HOI4 Modding Den Discord Server§!"

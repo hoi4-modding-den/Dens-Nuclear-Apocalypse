@@ -6,6 +6,11 @@ set_country_flag = XCB_welcome_message_flag
 
 recruit_character = XCB_sieng_proeung
 
+add_ideas = {
+	XCB_the_two_city_government
+	XCB_fragmented_guerillas
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.2.8"

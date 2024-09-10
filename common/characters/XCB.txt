@@ -9,7 +9,7 @@ characters = {
 		country_leader = {
 			ideology = despotism
 			traits = { XCB_committed_to_conserve }
-			desc = 
+			#desc = 
 			id = -1	
 		}
 	}
