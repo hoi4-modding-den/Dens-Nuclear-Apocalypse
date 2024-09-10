@@ -4,8 +4,8 @@ set_war_support = 0.45
 set_stability = 0.70
 
 set_popularities = {
-	democratic = 48
-	communism = 28
+	democratic = 58
+	communism = 18
 	fascism = 8
 	neutrality = 16
 }
