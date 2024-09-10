@@ -1,4 +1,5 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+10062;4189;sea;5269;-1;-1;-1;-1;;Hong Kong-Macau Bridge
 4205;1150;sea;8445;-1;-1;-1;-1;;Bo Hai
 12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas
@@ -218,4 +219,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13312;7982;sea;2919;-1;-1;-1;-1;;South Iran
 761;13315;sea;9092;-1;-1;-1;-1;;Ontario
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
--1;-1;;-1;-1;-1;-1;-1;-1 
+-1;-1;;-1;-1;-1;-1;-1;-1

@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	### PEOPLE ###
+	spriteType = {
+		name = "GFX_portrait_XHK_zeng_qiu"
+		texturefile = "gfx/XHK/XHK_zeng_qiu.dds"
+	}
+}

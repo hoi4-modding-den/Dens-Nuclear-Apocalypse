@@ -734,7 +734,7 @@
 #		icon = GFX_focus_SWE_radiotjanst
 		
 		prerequisite = { focus = XHK_the_great_coup }
-		mutually_exclusive = { focus = XHK_submission }
+		mutually_exclusive = { focus = XHK_yangtze_idea }
 		x = 0
 		y = 1
 		relative_position_id = XHK_the_great_coup

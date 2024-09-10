@@ -12,12 +12,15 @@ add_ideas = XHK_vertical_slums
 add_ideas = XHK_import_reliance
 add_ideas = XHK_guangdong_menace
 
+recruit_character = XHK_zeng_qiu
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "2230.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	democratic = 41
 	communism = 14
