@@ -70,6 +70,426 @@ focus = {
 	}
 }
 focus = {
+	id = XTW_bury_the_hatchet
+	icon = GFX_focus_URG_colorados
+	x = 0
+	y = 1
+	relative_position_id = XTW_DPP_victory
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_DPP_victory
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_public_works
+	icon = GFX_focus_generic_public_works
+	x = -2
+	y = 1
+	relative_position_id = XTW_bury_the_hatchet
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_bury_the_hatchet
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_rural_development_fund
+	icon = GFX_goal_generic_consumer_goods
+	x = -1
+	y = 1
+	relative_position_id = XTW_public_works
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_public_works
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_strengthen_the_trade_unions
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
+	x = -1
+	y = 1
+	relative_position_id = XTW_rural_development_fund
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_rural_development_fund
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_ramp_up_trade
+	icon = GFX_goal_generic_positive_trade_relations 
+	x = 1
+	y = 1
+	relative_position_id = XTW_rural_development_fund
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_rural_development_fund
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_firearms_factories
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 2
+	y = 1
+	relative_position_id = XTW_bury_the_hatchet
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_bury_the_hatchet
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_hualien_police_academy
+	icon = GFX_focus_generic_little_entente
+	x = 0
+	y = 2
+	relative_position_id = XTW_firearms_factories
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_firearms_factories
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_fortify_taiwan
+	icon = GFX_focus_generic_coastal_fort
+	x = 0
+	y = 1
+	relative_position_id = XTW_bury_the_hatchet
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_bury_the_hatchet
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_above_the_land
+	icon = GFX_goal_generic_air_fighter
+	x = -1
+	y = 1
+	relative_position_id = XTW_fortify_taiwan
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_fortify_taiwan
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_beyond_the_sea
+	icon = GFX_goal_generic_navy_anti_submarine
+	x = 1
+	y = 1
+	relative_position_id = XTW_fortify_taiwan
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_fortify_taiwan
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_taiwan_defence_force
+	icon = GFX_focus_SWE_hedgehog_defense
+	x = 0
+	y = 2
+	relative_position_id = XTW_fortify_taiwan
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_above_the_land
+		focus = XTW_beyond_the_sea
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_revive_the_one_china_policy
+	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+	x = 0
+	y = 1
+	relative_position_id = XTW_PFP_victory
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_PFP_victory
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_reorient_production_lines
+	icon = GFX_focus_generic_reorient_production
+	x = 2
+	y = 1
+	relative_position_id = XTW_revive_the_one_china_policy
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_revive_the_one_china_policy
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_prioritise_taipei
+	icon = GFX_goal_generic_small_arms
+	x = 1
+	y = 1
+	relative_position_id = XTW_reorient_production_lines
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_reorient_production_lines
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_corporate_bailouts
+	icon = GFX_focus_mex_privatisation
+	x = 1
+	y = 1
+	relative_position_id = XTW_prioritise_taipei
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_prioritise_taipei
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_artillery_developments
+	icon = GFX_focus_SMB_mountain_guns
+	x = -1
+	y = 1
+	relative_position_id = XTW_prioritise_taipei
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_prioritise_taipei
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_industrial_ramp_up
+	icon = GFX_goal_generic_construct_civilian
+	x = -2
+	y = 1
+	relative_position_id = XTW_revive_the_one_china_policy
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_revive_the_one_china_policy
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_clear_the_slums
+	icon = GFX_focus_generic_annex_country_2
+	x = 0
+	y = 2
+	relative_position_id = XTW_industrial_ramp_up
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_industrial_ramp_up
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_the_best_defence
+	icon = GFX_goal_generic_major_war
+	x = 0
+	y = 1
+	relative_position_id = XTW_revive_the_one_china_policy
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_revive_the_one_china_policy
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_prepare_to_return_to_mainland
+	icon = GFX_focus_generic_truck
+	x = -1
+	y = 1
+	relative_position_id = XTW_the_best_defence
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_the_best_defence
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_taiwan_marine_corps
+	icon = GFX_goal_generic_amphibious_assault
+	x = 1
+	y = 1
+	relative_position_id = XTW_the_best_defence
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_the_best_defence
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_chinese_reclamation_force
+	icon = GFX_focus_SWE_hedgehog_defense
+	x = 0
+	y = 2
+	relative_position_id = XTW_the_best_defence
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_prepare_to_return_to_mainland
+		focus = XTW_taiwan_marine_corps
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
 	id = XTW_the_matter_of_kuomintang
 	icon = GFX_focus_generic_china1
 	x = 0

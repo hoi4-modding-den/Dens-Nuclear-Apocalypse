@@ -12,13 +12,13 @@ focus_tree = {
 	reset_on_civilwar = no
 	continuous_focus_position = { x = 100 y = 3250 }
 focus = {
-	id = XDA_placeholder
-	x = 0
+	id = XDA_Rewritting_the_constitution
+	x = 4
 	y = 0
-	cost = 100
+	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 1
+		add_political_power = 50
 	}
 }
 }

@@ -12,13 +12,14 @@ focus_tree = {
 	
 	default = no
 
+	continuous_focus_position = { x = 700 y = 2000 }
 
 	focus = {
 		id = XSK_choose_the_next_sultan
 		icon = GFX_focus_TUR_pivot_to_the_past
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus =  }
-		x = 5
+		x = 7
 		y = 0
 		#relative_position_id = 
 
@@ -55,18 +56,18 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_turkey
 		prerequisite = { focus = XSK_choose_the_next_sultan }
 		mutually_exclusive = { focus = XSK_the_diplomatic_sultan focus = XSK_no_sultan }
-		x = -5
+		x = -10
 		y = 1
 		relative_position_id = XSK_choose_the_next_sultan
 
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = XSK_the_expansionist_sultan_trigger
-				always = no
+				has_country_leader = { character = XSK_sultan_abdulhamid_i ruling_only = yes }
 			}
 		}
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 100
@@ -75,7 +76,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			event_option_tooltip = XSK_succession_events.5.a
 		}
 	}
 
@@ -91,8 +92,340 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = XSK_no_sultan_trigger
-				always = no
+				has_country_leader = { character = XSK_ottoman_military_gov ruling_only = yes }
 			}
+		}
+
+		cost = 0.2
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			event_option_tooltip = XSK_succession_events.4.a
+		}
+	}
+
+	focus = {
+		id = XSK_the_diplomatic_sultan
+		icon = GFX_focus_generic_befriend_turkey
+		prerequisite = { focus = XSK_choose_the_next_sultan }
+		mutually_exclusive = { focus = XSK_the_expansionist_sultan focus = XSK_no_sultan }
+		x = 10
+		y = 1
+		relative_position_id = XSK_choose_the_next_sultan
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XSK_the_diplomatic_sultan_trigger
+				has_country_leader = { character = XSK_sultan_suleyman_xii ruling_only = yes }
+			}
+		}
+
+		cost = 0.2
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			event_option_tooltip = XSK_succession_events.6.a
+		}
+	}
+
+	focus = {
+		id = XSK_reopen_the_silk_road
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = XSK_the_diplomatic_sultan }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XSK_the_diplomatic_sultan
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = export_focus
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+					OR = {
+						has_government = ROOT
+						has_opinion = {
+    						target = ROOT
+    						value > 50
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}
+					hidden_effect = {
+						give_market_access = ROOT
+					}
+					custom_effect_tooltip = XSK_give_market_access_tt
+				}
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = ICE_trade_partner
+				}
+			}
+			add_ideas = XSK_the_silk_road
+		}
+	}
+
+	focus = {
+		id = XSK_tradition_of_the_steppes
+		icon = GFX_focus_generic_horse_studs
+		prerequisite = { focus = XSK_the_expansionist_sultan focus = XSK_no_sultan focus = XSK_the_diplomatic_sultan }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = XSK_no_sultan
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit ={
+					has_idea = XSK_the_sultanate_in_china
+				}
+				swap_ideas = {
+            		remove_idea = XSK_the_sultanate_in_china
+            		add_idea = XSK_the_sultanate_in_china_cav
+        		}
+			}
+			if = {
+				limit ={
+					has_idea = XSK_the_sultanate_in_china_fasc
+				}
+				swap_ideas = {
+            		remove_idea = XSK_the_sultanate_in_china_fasc
+            		add_idea = XSK_the_sultanate_in_china_fasc_cav
+        		}
+			}
+		}
+	}
+
+	
+	focus = {
+		id = XSK_war_industry
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = XSK_the_expansionist_sultan focus = XSK_no_sultan focus = XSK_the_diplomatic_sultan }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 1
+		relative_position_id = XSK_the_expansionist_sultan
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = war_economy
+							has_idea = tot_economic_mobilisation
+						}
+					}
+				}
+				upgrade_economy_law = yes
+			}
+			else = {
+				add_war_support = 0.05
+			}
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes 
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1 
+					instant_build = yes 
+				}
+			}
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 1000 
+				producer = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_improved_army_equipment
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = XSK_war_industry }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XSK_war_industry
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = XSK_improved_army_equipment
+				bonus = 1
+				uses = 3
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_expand_the_mines
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = XSK_war_industry }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XSK_war_industry
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = XSK_expand_the_mines
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech 
+			}
+			country_event = XSK_events.1
+			custom_effect_tooltip = SWE_unify_the_national_socialist_movement_tt_1
+			event_option_tooltip = XSK_events.1.a
+			custom_effect_tooltip = SWE_unify_the_national_socialist_movement_tt_2
+			event_option_tooltip = XSK_events.1.b
+			custom_effect_tooltip = SWE_unify_the_national_socialist_movement_tt_2
+			event_option_tooltip = XSK_events.1.c
+		}
+	}
+
+	focus = {
+		id = XSK_military_complex
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = XSK_war_industry }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XSK_war_industry
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			random_core_state = {
+				prioritize = { 617 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				prioritize = { 618 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_cannon_thunder
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = XSK_improved_army_equipment focus = XSK_expand_the_mines focus = XSK_military_complex }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XSK_expand_the_mines
+
+		available = {
+			
 		}
 
 		cost = 5
@@ -109,19 +442,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XSK_the_diplomatic_sultan
-		icon = GFX_focus_generic_befriend_turkey
-		prerequisite = { focus = XSK_choose_the_next_sultan }
-		mutually_exclusive = { focus = XSK_the_expansionist_sultan focus = XSK_no_sultan }
-		x = 5
+		id = XSK_the_mountains_our_forts
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = XSK_improved_army_equipment focus = XSK_expand_the_mines focus = XSK_military_complex }
+		#mutually_exclusive = { focus =  }
+		x = 1
 		y = 1
-		relative_position_id = XSK_choose_the_next_sultan
+		relative_position_id = XSK_expand_the_mines
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = XSK_the_diplomatic_sultan_trigger
-				always = no
-			}
+			
 		}
 
 		cost = 5
@@ -134,6 +464,218 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+	}
+
+	focus = {
+		id = XSK_mechanic_revolution
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = XSK_the_expansionist_sultan focus = XSK_no_sultan focus = XSK_the_diplomatic_sultan }
+		#mutually_exclusive = { focus =  }
+		x = -5
+		y = 1
+		relative_position_id = XSK_the_diplomatic_sultan
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = XSK_mechanic_revolution
+				bonus = 1
+				uses = 1
+				category = cat_production 
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_das_kapital
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = XSK_mechanic_revolution }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XSK_mechanic_revolution
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			random_core_state = {
+				prioritize = { 617 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				prioritize = { 618 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_civilian_investments
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = XSK_mechanic_revolution }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XSK_mechanic_revolution
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = XSK_toaster_factories
+				years = 3
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_road_construction
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XSK_mechanic_revolution focus = XSK_reopen_the_silk_road }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XSK_mechanic_revolution
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			every_owned_state = {
+				random_select_amount = 4
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes 
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_synthetic_rubber
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = XSK_road_construction }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XSK_road_construction
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit = {
+					#has_tech = synth_oil_experiments
+				}
+				add_tech_bonus = {
+					name = XSK_synthetic_oil
+					bonus = 1
+					uses = 1
+					category = cat_synth_rubber 
+				}
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_core_of = ROOT 
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 0
+							include_locked = yes 
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1 
+						instant_build = yes 
+					}
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = XSK_synthetic_oil
+					bonus = 1
+					uses = 2
+					category = cat_synth_rubber 
+				}
+				custom_effect_tooltip = XSK_synthetic_rubber_tt
+			}
 		}
 	}
 

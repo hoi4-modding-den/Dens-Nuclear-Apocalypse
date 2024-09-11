@@ -1,0 +1,7 @@
+XCB_fragmented_guerillas = {
+    icon = GFX_idea_SPR_political_violence
+	war_support_factor = XCB_fragmented_guerillas_war_support_variable
+	conscription_factor = XCB_fragmented_guerillas_conscription_variable
+	attrition = XCB_fragmented_guerillas_attrition_variable
+	army_morale_factor = XCB_fragmented_guerillas_morale_variable
+}

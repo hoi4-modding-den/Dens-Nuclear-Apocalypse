@@ -2,14 +2,14 @@
  #XNP_fascism:0 "Republic of China"
  #XNP_fascism_DEF:0 "the Republic of China"
 
- #XNP_democratic:0 "Republic of Taiwan"
- #XNP_democratic_DEF:0 "the Republic of Taiwan"
+ XNP_democratic:0 "Congressional Republic of Nepal"
+ XNP_democratic_DEF:0 "the Congressional Republic of Nepal"
 
  #XNP_neutrality:0 "Republic of China"
  #XNP_neutrality_DEF:0 "the Republic of China
 
- #XNP_communism:0 "People's Revolutionary Republic of Taiwan"
- #XNP_communism_long:0 "People's Revolutionary Republic of Taiwan"
+ XNP_communism:0 "Marxist-Leninist-Maoist Revisionary Revolutionary Republic of the Himalayas"
+ XNP_communism_DEF:0 "the Marxist-Leninist-Maoist Revisionary Revolutionary Republic of the Himalayas"
 
  XNP_fascism_ADJ:0 "Nepali"
  XNP_democratic_ADJ:0 "Nepali"

@@ -23,16 +23,16 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "2234.6.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
-	communism = 50
-	fascism = 20
-	neutrality = 20
+	democratic = 25
+	neutrality = 50
+	fascism = 15
+	communism = 10
 }
 
 set_stability = 0.15

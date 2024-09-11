@@ -1,0 +1,20 @@
+state={
+	id=1008
+	name="STATE_1008"
+	history = {
+		add_core_of = XCB
+		owner = XCB # FRA
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+	provinces={
+		1620 4330 4596 7645 10204 12167 
+	}
+	manpower=435612
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

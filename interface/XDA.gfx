@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	# Ideas
+
+	spriteType = {
+		name = "GFX_idea_XDA_Mirage_Government"
+		texturefile = "gfx/XDA/GFX_idea_XDA_Mirage_Government.dds"
+	}
+	
+}

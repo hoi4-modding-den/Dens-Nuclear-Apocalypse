@@ -6,6 +6,11 @@
  XCB_neutrality_DEF:0 "the Cambodian State"
  XCB_sieng_proeung:0 "Sieng Proeung"
  XCB_committed_to_conserve:0 "Committed to Conserve"
+ VICTORY_POINTS_7432:0 "Kampong Saom"
+ VICTORY_POINTS_4302:0 "Siem Reap"
+ STATE_1008:0 "Prey Lang"
+ STATE_1009:0 "Phnom Kulen"
+ STATE_1010:0 "Chuor Phnum Kravanh"
  
  #parties
  XCB_neutrality_party:0 "The Preservative Council"
@@ -15,7 +20,8 @@
  XCB_democratic_party:0 "KLDP"
  
  #ideas
- XCB_the_two_city_government:0 "The Government of Two Cities" #phnom penh and kampong saom
+ XCB_the_two_city_government:0 "The Two-City Government" #phnom penh and kampong saom
+ XCB_fragmented_guerillas_dummy:0 "Fragmented Guerillas"
  XCB_fragmented_guerillas:0 "Fragmented Guerillas"
  
  
