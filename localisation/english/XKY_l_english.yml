@@ -1,20 +1,34 @@
 ﻿l_english:
-  XKY_democratic:0 "New Kyushuan Parliament"
-  XKY_democratic_DEF:0 "the New Kyushuan Parliament"
-  XKY_democratic_ADJ:0 "Kyushu"
-  XKY_fascism:0 "The Second Rightous Army"
-  XKY_fascism_DEF:0 "the second rightous army"
-  XKY_fascism_ADJ:0 "Fascist"
-  XKY_communism:0 "Japanese Red Army Faction"
-  XKY_communism_DEF:0 "the Japanese Red Army Faction"
-  XKY_communism_ADJ:0 "Red Army"
-  XKY_neutrality:0 "Kyushu Government"
-  XKY_neutrality_DEF:0 "the Kyushu Government"
-  XKY_neutrality_ADJ:0 "Kyushu"
 
-  XKY_democratic_party:0 "Kyushuan Parliament"
-  XKY_democratic_party_long:0 "Kyushuan Parliament"
-  XKY_fascism_party:0 "PDP"
-  XKY_fascism_party_long:0 "Prosperity and Development Party"
-  XKY_communism_party:0 "JRA"
-  XKY_communism_party_long:0 "Japanese Red Army"
+  ### Country Names
+XKY_democratic:0 "New Kyushuan Parliament"
+XKY_democratic_DEF:0 "the New Kyushuan Parliament"
+XKY_democratic_ADJ:0 "Kyushu"
+XKY_fascism:0 "The Second Rightous Army"
+XKY_fascism_DEF:0 "the second rightous army"
+XKY_fascism_ADJ:0 "Fascist"
+XKY_communism:0 "Japanese Red Army Faction"
+XKY_communism_DEF:0 "the Japanese Red Army Faction"
+XKY_communism_ADJ:0 "Red Army"
+XKY_neutrality:0 "Kyushu Government"
+XKY_neutrality_DEF:0 "the Kyushu Government"
+XKY_neutrality_ADJ:0 "Kyushu"
+
+  ### Party Names
+
+XKY_democratic_party:0 "Kyushuan Parliament"
+XKY_democratic_party_long:0 "Kyushuan Parliament"
+XKY_fascism_party:0 "PDP"
+XKY_fascism_party_long:0 "Prosperity and Development Party"
+XKY_communism_party:0 "JRA"
+XKY_communism_party_long:0 "Japanese Red Army"
+
+  ### Ideas
+XKY_Nippon_Kaigun:0 "Nippon Kaigun"
+XKY_Nippon_Kaigun_desc:0 "The Japanese Navy, once one of the strongest in the world before the war, left us with invaluable lessons that we have not forgotten. Although our technology may now be outdated, those lessons remain as relevant as ever. For Admiral Togo!"
+
+XKY_Inefficient_Farming:0 "Inefficient Farming"
+XKY_Inefficient_Farming_desc:0 "The war did not just impact our military technology; it set our farming practices back 300 years, causing many harvests to be wasted. We must improve our methods to fully utilize Kyushu's rich soil."
+
+XKY_Sasebo_Naval_Remnants:0 "Sasebo Naval Remnants"
+XKY_Sasebo_Naval_Remnants_desc:0 "Since the formation of our modern nation, the Sasebo Naval Arsenal has been our great southern port. Its strategic location near Nagasaki, surrounded by hills, made it ideal for port and manufacturing activities. Many of its facilities were damaged during the war, but exploring and repairing these ruins will give us a decisive edge in projecting naval power in this new world."

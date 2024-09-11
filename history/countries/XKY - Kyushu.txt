@@ -51,6 +51,13 @@ set_war_support = 0.2
 set_stability = 0.6
 set_research_slots = 3
 
+
+add_ideas = {
+	XKY_Inefficient_Farming
+	XKY_Sasebo_Naval_Remnants
+	XKY_Nippon_Kaigun		
+}
+
 recruit_character = XKY_Parliament
 recruit_character = XKY_Fujimoto_Aiko
 recruit_character = XKY_Inoue_Masaru
