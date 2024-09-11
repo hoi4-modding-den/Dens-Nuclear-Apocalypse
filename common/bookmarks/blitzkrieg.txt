@@ -101,10 +101,13 @@ bookmarks = {
 		}
 		"XK0" = {
 			ideology = democratic
-			history = "XTM_history"
+			history = "XK0_history"
 			focuses = {
 			}
 			ideas = {
+				XK0_limited_armed_forces
+				XK0_university_of_josea
+				XK0_militancy_idea
 			}
 		}
 		"XDA" = {

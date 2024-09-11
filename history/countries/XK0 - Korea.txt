@@ -24,10 +24,13 @@ add_dynamic_modifier = { modifier = XK0_militancy }
 set_variable = { XK0_militancy_level = 10 }
 set_variable = { XK0_stability_factor = 0.24 }
 set_variable = { XK0_political_power_gain = 0.2 }
-set_variable = { XK0_democratic_drift = 0.02 }
+set_variable = { XK0_democratic_drift = 0.04 }
 set_variable = { XK0_war_support_factor = -0.24 }
 set_variable = { XK0_weekly_manpower = -1000 }
-set_variable = { XK0_fascism_drift = -0.02 }
+set_variable = { XK0_fascism_drift = -0.04 }
+
+add_ideas = XK0_university_of_josea
+add_ideas = XK0_limited_armed_forces
 
 set_country_flag = industry_folder_disabled
 set_country_flag = naval_folder_disabled
@@ -39,6 +42,8 @@ set_country_flag = infantry_folder_disabled
 
 recruit_character = XK0_seong_ho_han
 recruit_character = XK0_ken_matsubara
+recruit_character = XK0_makari_yegorov
+recruit_character = XK0_sung_min_yi
 
 set_technology = {
 	infantry_weapons = 1

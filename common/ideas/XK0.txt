@@ -1,0 +1,93 @@
+ideas = {
+
+	country = {
+		XK0_limited_armed_forces = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XK0_limited_armed_forces
+			
+			research_bonus = {
+				armor = -0.5
+				air_equipment = -0.5
+			}
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		XK0_no_air = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XK0_no_air
+			
+			research_bonus = {
+				air_equipment = -0.5
+			}
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		XK0_no_tanks = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XK0_no_tanks
+			
+			research_bonus = {
+				armor = -0.5
+			}
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		XK0_university_of_josea = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XK0_university
+			
+			modifier = {
+				research_speed_factor = 0.4
+			}
+		}
+		XK0_militancy_idea = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = XK0_militancy
+			
+			modifier = {
+				stability_factor = 0.24
+				political_power_gain = 0.2
+				democratic_drift = 0.04
+				war_support_factor = -0.24
+				weekly_manpower = -1000
+				fascism_drift = -0.04
+			}
+		}
+	}
+}
