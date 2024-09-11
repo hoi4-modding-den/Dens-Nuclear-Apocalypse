@@ -2,6 +2,8 @@ capital = 323
 
 # oob = "XNP_1936"
 
+recruit_character = XNP_congress
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "2234.11.27"

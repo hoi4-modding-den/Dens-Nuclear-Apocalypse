@@ -1,0 +1,8 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_XNP_congress"
+        texturefile = "gfx/leaders/XNP/XNP_placeholder.dds"
+    }
+
+}

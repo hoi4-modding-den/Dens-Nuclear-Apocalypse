@@ -59,7 +59,10 @@ ideologies = {
 			XFR_catist_democracy = {
 				can_be_randomly_selected = no
 			}
-				
+			
+			XNP_congressional_republic = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
