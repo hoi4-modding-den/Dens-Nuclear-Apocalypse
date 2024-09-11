@@ -22,3 +22,28 @@ country_event = {
 		XK0_decrease_militancy = yes
 	}
 }
+
+country_event = {
+	id = XK0_focus.1
+	title = XK0_focus.1.title
+	desc = XK0_focus.1.desc
+	picture = GFX_report_event_009
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XK0_focus.1.a
+		ai_chance = { factor = 1 }
+		XK0_increase_militancy = yes
+		add_research_slot = 1
+		clr_country_flag = infantry_folder_disabled
+		clr_country_flag = support_folder_disabled
+	}
+	option = {
+		name = XK0_focus.1.b
+		ai_chance = { factor = 1 }
+		XK0_decrease_militancy = yes
+		add_research_slot = 1
+		clr_country_flag = industry_folder_disabled
+	}
+}

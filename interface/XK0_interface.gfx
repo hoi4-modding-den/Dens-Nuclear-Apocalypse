@@ -10,6 +10,36 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_portrait_XK0_seong_ho_han_small"
+		texturefile = "gfx/XK0/seong_ho_han_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_portrait_XK0_ken_matsubara_small"
+		texturefile = "gfx/XK0/ken_matsubara_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_portrait_XK0_sung_min_yi"
+		texturefile = "gfx/XK0/sung_min_yi.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_portrait_XK0_makari_yegorov"
+		texturefile = "gfx/XK0/makari_yegorov.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_portrait_XK0_sung_min_yi_small"
+		texturefile = "gfx/XK0/sung_min_yi_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_portrait_XK0_makari_yegorov_small"
+		texturefile = "gfx/XK0/makari_yegorov_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_Dial_Background"
 		textureFile = "gfx/XK0/dial_background.dds"
 	}
@@ -49,4 +79,58 @@ spriteTypes = {
 		name = "GFX_Dial_Dot"
 		textureFile = "gfx/XK0/dial_dot.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XK0_university"
+		textureFile = "gfx/XK0/idea_XK0_university.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XK0_militancy"
+		textureFile = "gfx/XK0/idea_XK0_militancy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XK0_limited_armed_forces"
+		textureFile = "gfx/XK0/idea_XK0_limited_armed_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XK0_no_tanks"
+		textureFile = "gfx/XK0/idea_XK0_no_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XK0_no_air"
+		textureFile = "gfx/XK0/idea_XK0_no_air.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_XK0_university_investments"
+		textureFile = "gfx/XK0/focus_XK0_university_investments.dds"
+	}
+	spriteType = {
+        name = "GFX_focus_XK0_university_investments_shine" # Change the name, note to keep _shine in the end
+        texturefile = "gfx/XK0/focus_XK0_university_investments.dds" # Change to the focus icon
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/XK0/focus_XK0_university_investments.dds" # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/XK0/focus_XK0_university_investments.dds" # Change to the focus icon
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
 }
