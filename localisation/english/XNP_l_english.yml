@@ -8,8 +8,8 @@
  #XNP_neutrality:0 "Republic of China"
  #XNP_neutrality_DEF:0 "the Republic of China
 
- XNP_communism:0 "Marxist-Leninist-Maoist Revisionary Revolutionary Republic of the Himalayas"
- XNP_communism_DEF:0 "the Marxist-Leninist-Maoist Revisionary Revolutionary Republic of the Himalayas"
+ XNP_communism:0 "Marxist-Leninist-Maoist Republic of Nepal"
+ XNP_communism_DEF:0 "the Marxist-Leninist-Maoist Republic of Nepal"
 
  XNP_fascism_ADJ:0 "Nepali"
  XNP_democratic_ADJ:0 "Nepali"
@@ -19,3 +19,16 @@
  XNP:0 "Nepal"
  XNP_DEF:0 "Nepal"
  XNP_ADJ:0 "Nepali"
+
+ XNP_congressional_republic:0 "Congressional Republic"
+ XNP_congressional_republic_desc:0 "The congressional republic model of Nepal was constructed to give equal control to the people of the nation, while streamlining government processes. Representatives from each province meet daily to decide on the future of Nepal."
+ XNP_democratic_party:0 "Twelfth Congress"
+ XNP_communism_party:0 "GEMLMRMT"
+ XNP_communism_party_long:0 "Group for the Establishment of Marxism-Leninism-Maoism in Revisionism of Maoist Thought"
+
+ XNP_extension_of_the_people:0 "Extension of the People"
+
+ XNP_history_desc:0 "placeholder!"
+
+ VICTORY_POINTS_5310:0 "Jhapa"
+

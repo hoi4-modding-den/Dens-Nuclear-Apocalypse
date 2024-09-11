@@ -1,0 +1,20 @@
+characters = {
+
+	XNP_congress = {
+		name = "Congress of the Republic"
+		portraits = {
+			civilian = {
+				large = "GFX_XNP_congress"
+			}
+		}
+		country_leader = {
+			ideology = XNP_congressional_republic
+			traits = {
+				XNP_extension_of_the_people
+			}
+			expire = "3000.9.2.12"
+			id = -1
+		}
+	}
+
+}

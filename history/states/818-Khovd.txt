@@ -13,11 +13,14 @@ state={
 			infrastructure = 2
 		}
 		victory_points = {
-			7843 1 #Ulaangom
+			7843 2 #Ulaangom
+		}
+		victory_points = {
+			10539 5 # New Samsun
 		}
 		add_core_of = XSK
 	}
-	manpower=2799333
+	manpower=4799333
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
