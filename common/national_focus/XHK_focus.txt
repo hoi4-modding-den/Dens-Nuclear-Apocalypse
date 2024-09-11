@@ -206,7 +206,7 @@
 		}
 	}
 	focus = {
-		id = XHK_token_reforms
+		id = XHK_appeal_to_patriotism
 #		icon = GFX_focus_SWE_radiotjanst
 		
 		prerequisite = { focus = XHK_business_as_usual }
@@ -238,10 +238,164 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = XHK_continued_decline
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_appeal_to_patriotism }
+		prerequisite = { focus = XHK_moniter_slums }
+		prerequisite = { focus = XHK_tax_incentives }
+	#		mutually_exclusive = { focus = XHK_radical_sentiments }
+		x = 2
+		y = 1
+		relative_position_id = XHK_appeal_to_patriotism
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.05
+				popularity = -0.1
 			}
+		}
+	}
+	focus = {
+		id = XHK_frantic_negotiations
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_continued_decline }
+	#		mutually_exclusive = { focus = XHK_radical_sentiments }
+		x = 0
+		y = 1
+		relative_position_id = XHK_continued_decline
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = XHK_same_party_different_face
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_frantic_negotiations }
+		mutually_exclusive = { focus = XHK_deal_with_the_devil }
+		x = 2
+		y = 1
+		relative_position_id = XHK_frantic_negotiations
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = XHK_deal_with_the_devil
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_frantic_negotiations }
+		mutually_exclusive = { focus = XHK_same_party_different_face }
+		x = -2
+		y = 1
+		relative_position_id = XHK_frantic_negotiations
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -934,7 +1088,7 @@
 		id = XHK_yangtze_idea
 #		icon = GFX_focus_SWE_radiotjanst
 		
-		prerequisite = { focus = XHK_the_great_coup focus = XHK_far_right_takeover }
+		prerequisite = { focus = XHK_the_great_coup focus = XHK_far_right_takeover focus = XHK_same_party_different_face }
 		mutually_exclusive = { focus = XHK_submission }
 		mutually_exclusive = { focus = XHK_unification }
 		x = -3
@@ -964,14 +1118,14 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			
+			set_cosmetic_tag = XHK_YTZ
 		}
 	}
 	focus = {
 		id = XHK_unification
 #		icon = GFX_focus_SWE_radiotjanst
 		
-		prerequisite = { focus = XHK_far_right_takeover }
+		prerequisite = { focus = XHK_far_right_takeover focus = XHK_same_party_different_face }
 		mutually_exclusive = { focus = XHK_yangtze_idea }
 		x = -2
 		y = 1

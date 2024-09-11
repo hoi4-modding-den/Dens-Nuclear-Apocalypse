@@ -16,6 +16,22 @@
  XHK_dai_meifeng_desc:0 "test f"
  XHK_corporate_commission_desc:0 "test n"
  
+ XHK_YTZ_fascism:0 "Yangtze State"
+ XHK_YTZ_fascism_DEF:0 "The Yangtze State"
+ XHK_YTZ_fascism_ADJ:0 "Yangtze"
+ XHK_YTZ_democratic:0 "Pearl Republic"
+ XHK_YTZ_democratic_DEF:0 "the Pearl Republic"
+ XHK_YTZ_democratic_ADJ:0 "Pearl"
+ XHK_YTZ_neutrality:0 "Pearl Republic"
+ XHK_YTZ_neutrality_DEF:0 "the Pearl Republic"
+ XHK_YTZ_neutrality_ADJ:0 "Pearl"
+ XHK_YTZ_communism:0 "People's Republic of the Yangtze"
+ XHK_YTZ_communism_DEF:0 "the People's Republic of the Yangtze"
+ XHK_YTZ_communism_ADJ:0 "Yangtze"
+ XHK_YTZ:0 "Yangtze"
+ XHK_YTZ_DEF:0 "Yangtze"
+ XHK_YTZ_ADJ:0 "Yangtze"
+ XHK_YTZ_subject:0 "$OVERLORDADJ$ $XHK_YTZ$"
  
  XHK.1.t:0 "Annual Report of 2235"
  XHK.1.d:0 "Hong Kong was one of the first cities blown by the bombs. something something rich people bunkers poor people health issues\ndemocracy reinstated guangdong threat corporate corruption"
@@ -26,3 +42,5 @@
  XHK.2.a:0 "We welcome the people of Hong Kong with open arms."
  
  XHK_annexation_tt:0 "§O\nYou will continue playing as Guangdong.§!"
+ 
+ XHK_reach_out_to_resistance_tt:0 "§OWhen the war with Guangdong breaks out, they will suffer organized resistance.§!"
