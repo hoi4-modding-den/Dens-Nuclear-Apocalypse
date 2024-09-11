@@ -5,6 +5,7 @@
  XCB_neutrality:0 "Cambodian State"
  XCB_neutrality_DEF:0 "the Cambodian State"
  XCB_sieng_proeung:0 "Sieng Proeung"
+ XCB_sieng_proeung_desc:0 ""We can not allow Cambodia to sink into the ashes of the nuclear war” Sieng Proeung had proclaimed all those years ago when the nations around the Khmer population slowly collapsed under the weight of World War III. As crops were unable to grow due to the seemingly permanent nuclear winter, survival was no longer as self-evident as before. Vietnam was the first one to collapse, and then it was Thailand who fell. Laos took advantage of the crumbling society, and conquered many of the surrounding territories of Cambodia. \n\nSieng Proeung on the other hand focused on only one task; maintaining civil peace, and to conserve and protect the Cambodian people from the dangers of this new, unknown world that the nuclear hellfire had caused."
  XCB_committed_to_conserve:0 "Committed to Conserve"
  VICTORY_POINTS_7432:0 "Kampong Saom"
  VICTORY_POINTS_4302:0 "Siem Reap"
@@ -21,8 +22,11 @@
  
  #ideas
  XCB_the_two_city_government:0 "The Two-City Government" #phnom penh and kampong saom
+ XCB_the_two_city_government_desc:0 "Even despite the Preservative Council’s best efforts to maintain a functioning state through a firm hold of all societal institutions, many opposing voices have begun to make their presence felt in Cambodia. Sieng Preoung’s forces have all but lost the control of the nation everywhere but the capital Phnom Penh and the coastal city of Kampong Saom, hanging on by a thread in the shores of the Mekong river."
  XCB_fragmented_guerillas_dummy:0 "Fragmented Guerillas"
+ XCB_fragmented_guerillas_dummy_desc:0 "The forces that oppose the government of Phnom Penh are very disjointed to put it mildly. The rebels can be split roughly into three groups; the KDLP, a democratic, liberal organization, and two rivalring factions in the CPRM –The agrarian hardliners and the industrial reformists. Even despite a clear lack of co-ordination between these groups, they’ve managed to severely deligimitize the Preservative Council, more or less governing the Northern parts of the country."
  XCB_fragmented_guerillas:0 "Fragmented Guerillas"
+ XCB_fragmented_guerillas_desc:0 "The forces that oppose the government of Phnom Penh are very disjointed to put it mildly. The rebels can be split roughly into three groups; the KDLP, a democratic, liberal organization, and two rivalring factions in the CPRM –The agrarian hardliners and the industrial reformists. Even despite a clear lack of co-ordination between these groups, they’ve managed to severely deligimitize the Preservative Council, more or less governing the Northern parts of the country."
  
  
  #scripted gui nonsense
