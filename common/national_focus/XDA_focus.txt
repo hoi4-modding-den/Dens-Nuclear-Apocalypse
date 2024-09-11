@@ -13,12 +13,113 @@ focus_tree = {
 	continuous_focus_position = { x = 100 y = 3250 }
 focus = {
 	id = XDA_Rewritting_the_constitution
-	x = 4
+	x = 8
 	y = 0
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
 		add_political_power = 50
+	}
+}
+##Democratic Path
+focus = {
+	id = XDA_Stopping_the_ridicule
+	x = 0
+	y = 1
+	relative_position_id = XDA_Rewritting_the_constitution
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_Dawn_of_a_new_moon
+		focus = XDA_Strike_from_the_shadows
+	}
+	prerequisite = {
+		focus = XDA_Rewritting_the_constitution
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+##Communist Path
+focus = {
+	id = XDA_Dawn_of_a_new_moon
+	x = -4
+	y = 1
+	relative_position_id = XDA_Rewritting_the_constitution
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_Stopping_the_ridicule
+		focus = XDA_Strike_from_the_shadows
+	}
+	prerequisite = {
+		focus = XDA_Rewritting_the_constitution
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Reestablish_the_Phomvihane_idea
+	x = 0
+	y = 1
+	relative_position_id = XDA_Dawn_of_a_new_moon
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_Working_with_the_englightened
+	}
+	prerequisite = {
+		focus = XDA_Dawn_of_a_new_moon
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Working_with_the_englightened
+	x = -4
+	y = 1
+	relative_position_id = XDA_Dawn_of_a_new_moon
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_Reestablish_the_Phomvihane_idea
+	}
+	prerequisite = {
+		focus = XDA_Dawn_of_a_new_moon
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+##Fascist Path
+focus = {
+	id = XDA_Strike_from_the_shadows
+	x = 4
+	y = 1
+	relative_position_id = XDA_Rewritting_the_constitution
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_Stopping_the_ridicule
+		focus = XDA_Dawn_of_a_new_moon
+	}
+	prerequisite = {
+		focus = XDA_Rewritting_the_constitution
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
 	}
 }
 }
