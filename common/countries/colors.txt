@@ -329,3 +329,8 @@ XKY = {
 	color = rgb { 0  127  127 }
 	color_ui = rgb { 0  127  127 }
 }
+
+XMJ = {
+	color = rgb { 185  255  152 }
+	color_ui = rgb { 165  230  132 }
+}

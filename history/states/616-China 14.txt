@@ -4,10 +4,8 @@ state = {
 
 	history = {
 
-		owner = LIB # XSM
-		#add_core_of = XSM
-		#add_core_of = CHI
-		#add_core_of = PRC
+		owner = XMJ
+		add_core_of = XMJ
 
 		buildings = {
 			infrastructure = 1
@@ -17,19 +15,6 @@ state = {
 			8127 2 #Yinchuan
 		}
 
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-			}
-		}
 
 	}
 
@@ -38,7 +23,7 @@ state = {
 	}
 manpower=1385067
 	buildings_max_level_factor = 1.000
-	state_category = pastoral
+	state_category = rural
 
 	local_supplies = 0.0 
 }

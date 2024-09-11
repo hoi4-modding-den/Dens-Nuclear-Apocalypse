@@ -26,6 +26,14 @@ bookmarks = {
 				XTW_overpopulation_crisis
 			}
 		}
+		"XMJ" = {
+			ideology = fascism
+			history = "XMJ_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
 		"XYU" = {
 			ideology = neutrality
 			history = "XYU_history"
