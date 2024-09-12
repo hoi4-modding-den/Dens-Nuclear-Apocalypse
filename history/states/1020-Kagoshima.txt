@@ -1,0 +1,25 @@
+state={
+	id=1020
+	name="STATE_1020"
+	provinces={
+		4102 4198 11949 12032 
+	}
+	manpower=1046000
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+
+	history={
+		owner = XKY
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+		
+		victory_points = {
+			4102 1
+		}	
+
+		add_core_of = XKY
+	}	
+}
