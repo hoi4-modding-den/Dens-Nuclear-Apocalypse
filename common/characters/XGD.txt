@@ -1,0 +1,19 @@
+characters = {
+
+	XGD_deng_huizhong = {
+		name = "Deng Huizhong"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XGD_deng_huizhong"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = XHK_deng_huizhong_desc
+			traits = {  }
+			expire = "2245.9.9.9"
+			id = -1
+		}
+		
+	}
+}

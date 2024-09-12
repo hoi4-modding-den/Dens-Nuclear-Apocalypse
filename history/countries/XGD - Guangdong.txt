@@ -6,7 +6,7 @@ capital = 592
 #set_stability = 0.8
 #set_convoys = 5
 
-
+recruit_character = XGD_deng_huizhong
 
 set_politics = {
 	ruling_party = communism
