@@ -12,3 +12,17 @@ set_popularities = {
 	fascism = 10
 	communism = 10
 }
+add_ideas = {
+	XON_unhappy_chinese
+	XON_tuvan_separatism
+}
+create_country_leader = {
+	name = XON_KHAN
+	desc = XON_KHAN_desc
+	picture = GFX_Portrait_KHAN
+	expire = "1.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
