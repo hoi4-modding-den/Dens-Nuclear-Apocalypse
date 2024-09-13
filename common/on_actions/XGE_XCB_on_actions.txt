@@ -8,5 +8,6 @@ on_actions = {
 				remove_ideas = { XCB_fragmented_guerillas_dummy }
 			}
 		}
-	}	
+	}
+	
 }

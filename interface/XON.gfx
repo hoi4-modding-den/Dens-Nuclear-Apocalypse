@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	# Leaders
+	spriteType = {
+		name = "GFX_Portrait_KHAN"
+		textureFile = "gfx/leaders/XON/Portrait_KHAN.dds"
+	}
+
+}

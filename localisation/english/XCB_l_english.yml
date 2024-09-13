@@ -22,7 +22,7 @@
  
  #ideas
  XCB_the_two_city_government:0 "The Two-City Government" #phnom penh and kampong saom
- XCB_the_two_city_government_desc:0 "Even despite the Preservative Council’s best efforts to maintain a functioning state through a firm hold of all societal institutions, many opposing voices have begun to make their presence felt in Cambodia. Sieng Preoung’s forces have all but lost the control of the nation everywhere but the capital Phnom Penh and the coastal city of Kampong Saom, hanging on by a thread in the shores of the Mekong river."
+ XCB_the_two_city_government_desc:0 "Even despite the Preservative Council’s best efforts to maintain a functioning state through a firm hold of all societal institutions, many opposing voices have begun to make their presence felt in Cambodia. Sieng Preoung’s forces have all but lost the control of the nation in everywhere apart from the capital, Phnom Penh, and the coastal city of Kampong Saom, hanging on by a thread in the shores of the Mekong river."
  XCB_fragmented_guerillas_dummy:0 "Fragmented Guerillas"
  XCB_fragmented_guerillas_dummy_desc:0 "The forces that oppose the government of Phnom Penh are very disjointed to put it mildly. The rebels can be split roughly into three groups; the KDLP, a democratic, liberal organization, and two rivalring factions in the CPRM –The agrarian hardliners and the industrial reformists. Even despite a clear lack of co-ordination between these groups, they’ve managed to severely deligimitize the Preservative Council, more or less governing the Northern parts of the country."
  XCB_fragmented_guerillas:0 "Fragmented Guerillas"
@@ -30,4 +30,16 @@
  
  
  #scripted gui nonsense
+ XCB_resistance_open_tooltip:0 "§HView the Current Composition of the Resistance§!"
+ XCB_ferocity_bar_tt:0 "§HCurrent Ferocity:§! §R[?XCB_resistance_progress_bar_var|.1%%]§! \n\n§HIf§! §RFerocity§! §HReaches 100%,§! §RA Civil War Will Trigger!§!"
+ XCB_kldp_influence_resistance:0 "§CKLDP Influence: §![?XCB_kldp_resistance_var]"
+ XCB_cprm_a_influence_resistance:0 "§tCPRM-A Influence: §![?XCB_cprm_a_resistance_var]"
+ XCB_cprm_i_influence_resistance:0 "§RCPRM-I Influence: §![?XCB_cprm_i_resistance_var]"
+ 
+ XCB_chuor_phnum_info_loc:0 "§HChuor Phnum§! \n\n §RCurrent Sedition:§! [?XCB_chuor_phnum_var]"
+ XCB_tonle_sap_info_loc:0 "§HTonle Sap§! \n\n §RCurrent Sedition:§! [?XCB_tonle_sap_var]"
+ XCB_prey_lang_info_loc:0 "§HPrey Lang§! \n\n §RCurrent Sedition:§! [?XCB_prey_lang_var]"
+ XCB_phnom_kulen_info_loc:0 "§HPhnom Kulen§! \n\n §RCurrent Sedition:§! [?XCB_phnom_kulen_var]"
+ XCB_yapping:0 "§HThe higher the sedition level in a state, the more willing its population will be to take up arms if a revolution happens. 0 means the population is apathetic towards the rebels, whilst 5 means that they are more than ready to fight against the Preservative Council.§!"
+ 
  XCB_credits:0 "Credits for the Cambodian Content: §Hkasastul/Kåsastul§!, \nCredits for the rest of the content: \n§HThe HOI4 Modding Den Discord Server§!"

@@ -4,3 +4,13 @@
  XON:0 "Xiongnu Confederation"
  XON_DEF:0 "Xiongnu Confederation"
  XRU_ADJ:0 "Xiongnu"
+
+# Leader Stuff
+XON_KHAN:0 "KHAN"
+XON_KHAN_desc:0 "All khanates bow to one Khan. That is the rule in Xiongnu. The nomadic people of the north have decided that no one person is mighty enough to rule for all khanates - and so now they bow to what they call the greatest khan to grace the earth. This khan is, of course, a computer."
+
+# Idea Stuff
+XON_unhappy_chinese:0 "Unhappy Chinese"
+XON_unhappy_chinese_desc:0 "The Chinese within Xiongnu have no reason to worship a mechanical monstrosity, nor endure the constant favoring the machine has towards nomads. If KHAN cannot accomodate Chinese farmers, then it may not be accomodated by them for much longer either."
+XON_tuvan_separatism:0 "Tuvan Separatism"
+XON_tuvan_separatism_desc:0 "Tuva was the only Khanate to refuse to bow to the KHAN, and had to be conquered with force instead. However, the KHAN fails to understand that forces in the shadows have ensured that Tuva was never truly conquered - simply waiting for an opportune time for its newest leader to take revenge."

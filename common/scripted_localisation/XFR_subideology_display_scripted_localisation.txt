@@ -65,10 +65,15 @@ defined_text = {
 	name = XFR_Get_communism_subideology
 	text = {
 		trigger = {
-			original_tag = XFR
 			has_country_leader_ideology = anarchist_communism
 		}
 		localization_key = anarchist_communism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = XSK_monarcho_socialism
+		}
+		localization_key = XSK_monarcho_socialism
 	}
 	text = {
 		localization_key = communism

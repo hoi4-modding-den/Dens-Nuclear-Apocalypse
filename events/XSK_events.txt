@@ -81,7 +81,7 @@ country_event = { # The Candidates debate
 country_event = { # Military Coup
     id = XSK_succession_events.4
     title = XSK_succession_events.4.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_tur_military_affair
     desc = XSK_succession_events.4.d
 
     is_triggered_only = yes
@@ -93,6 +93,10 @@ country_event = { # Military Coup
         set_politics = {
             ruling_party = fascism
             elections_allowed = no
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.15
         }
         swap_ideas = {
             remove_idea = XSK_the_sultanate_in_china
@@ -123,20 +127,8 @@ country_event = { # Abdulhamid is choosen
                 ideology = despotism
                 desc = XSK_sultan_abdulhamid_i_desc
                 expire = "3000.1.1.1"
-                traits = { }
+                traits = { XSK_sultan_of_the_turks XSK_militant_megalomaniac }
            }
-        }
-        hidden_effect = {
-            add_country_leader_role = {
-                character = XSK_sultan_abdulhamid_i
-                promote_leader = yes
-                country_leader = {
-                    ideology = conservatism
-                    desc = XSK_sultan_abdulhamid_i_desc
-                    expire = "3000.1.1.1"
-                    traits = { }
-               }
-            }
         }
         set_party_name = {
             ideology = neutrality
@@ -168,7 +160,7 @@ country_event = { # Süleyman is choosen
                 ideology = despotism
                 desc = XSK_sultan_suleyman_xii_desc
                 expire = "3000.1.1.1"
-                traits = { }
+                traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
            }
         }
         hidden_effect = {
@@ -179,7 +171,7 @@ country_event = { # Süleyman is choosen
                     ideology = conservatism
                     desc = XSK_sultan_suleyman_xii_desc
                     expire = "3000.1.1.1"
-                    traits = { }
+                    traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
                }
             }
         }
@@ -210,10 +202,77 @@ country_event = { # The Council meets
     }
 }
 
+country_event = { # Fate of the Ottoman Dynasty
+    id = XSK_succession_events.8
+    title = XSK_succession_events.8.t
+    picture = GFX_report_event_tur_inonu_diplomacy
+    desc = XSK_succession_events.8.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_succession_events.8.a
+        trigger = {
+            has_completed_focus = XSK_empower_radicals
+        }
+        add_ruling_to_com = yes
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+        add_country_leader_role = {
+            character = XSK_sultan_suleyman_xii
+            promote_leader = yes
+            country_leader = {
+                ideology = XSK_monarcho_socialism
+                desc = XSK_sultan_suleyman_xii_desc
+                expire = "3000.1.1.1"
+                traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
+            }
+        }
+
+    }
+
+    option = {
+        name = XSK_succession_events.8.b
+        trigger = {
+            has_completed_focus = XSK_empower_reformists
+        }
+        add_ruling_to_dem = yes
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+        add_country_leader_role = {
+            character = XSK_sultan_suleyman_xii
+            promote_leader = yes
+            country_leader = {
+                ideology = liberalism
+                desc = XSK_sultan_suleyman_xii_desc
+                expire = "3000.1.1.1"
+                traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
+            }
+        }
+    }
+
+    option = {
+        name = XSK_succession_events.8.c
+        trigger = {
+            has_completed_focus = XSK_empower_reformists
+        }
+        add_ruling_to_dem = yes
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }        
+    }
+}
+
 country_event = { # Choose Mine to expand
     id = XSK_events.1
     title = XSK_events.1.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_FIN_petsamo_mine
     desc = XSK_events.1.d
 
     is_triggered_only = yes
@@ -255,4 +314,147 @@ country_event = { # Choose Mine to expand
 			}
 		}
     }
+}
+
+country_event = { # Han Deportation
+    id = XSK_events.2
+    title = XSK_events.2.t
+    picture = GFX_report_event_china_politicians_captured
+    desc = XSK_events.2.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.2.a
+        remove_ideas = XSK_han_deportation
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					state = 617
+					state = 618
+					state = 760
+					state = 818
+				}
+			}
+			add_manpower = -10000
+		}
+        every_other_country = {
+            limit = {
+                DEN_is_chinese_nation = yes
+                NOT = { is_ally_with = ROOT }
+            }
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = XSK_dislike_deportation
+            }
+        }
+    }
+}
+
+country_event = { # Envoy to Mongolia
+    id = XSK_events.3
+    title = XSK_events.3.t
+    picture = GFX_report_event_tur_inonu_diplomacy # GFX_report_event_SOV_mongolia_cavalry
+    desc = XSK_events.3.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = { # Send Envoy to Mongolia
+        name = XSK_events.3.a
+        set_nationality = {
+            target_country = XON
+            character = XSK_ottoman_envoy
+        }
+        XON = {
+            add_stability = -0.05
+        }
+        custom_effect_tooltip = XSK_infiltrators_in_xiongnu_tt
+        effect_tooltip = {
+            XON = {
+                add_ideas = XSK_saboteur_infiltrators
+            }
+        }
+        set_country_flag = XSK_saboteur_infiltrators_active
+    }
+
+}
+
+country_event = { # FAMINE
+    id = XSK_events.4
+    title = XSK_events.4.t
+    picture = GFX_report_event_gathering_protest
+    desc = XSK_events.4.d
+
+    trigger = {
+        tag = XSK
+        exists = yes
+        date > 2238.6.1
+        NOT = { has_completed_focus = XSK_agricultural_subsidies }
+    }
+
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.4.a
+        add_ideas = XSK_famine
+    }
+
+}
+
+country_event = { # Envoy takes control of Mongolia
+    id = XSK_events.5
+    title = XSK_events.5.t
+    picture = GFX_report_event_tur_inonu_diplomacy
+    desc = XSK_events.5.d
+
+    trigger = {
+        tag = XSK
+        exists = yes
+        any_other_country = {
+            has_character = XSK_ottoman_envoy
+            original_tag = XON
+            is_subject_of = XSK
+        }
+    }
+
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.5.a
+        every_other_country = {
+            limit = {
+                has_character = XSK_ottoman_envoy
+            }
+            set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+            }
+            add_country_leader_role = {
+                character = XSK_ottoman_envoy
+                promote_leader = yes
+                country_leader = {
+                    ideology = despotism
+                    expire = "3000.1.1.1"
+                    traits = { XSK_ottoman_subject_trait }
+                }
+            }
+            if = {
+                limit = {
+                    NOT = { has_autonomy_state = autonomy_XSK_vilayet }
+                }
+                ROOT = {
+                    set_autonomy = {
+                        target = PREV
+                        autonomous_state = autonomy_XSK_vilayet
+                        end_wars = no
+                        end_civil_wars = no
+                    }
+                }
+            }
+        }
+    }
+
 }

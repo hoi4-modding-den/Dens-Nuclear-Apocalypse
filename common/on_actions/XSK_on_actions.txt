@@ -8,4 +8,78 @@ on_actions = {
 		}
 	}
 
+	on_subject_annexed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = XSK
+						has_completed_focus = XSK_mongolian_integration
+					}
+					ROOT = {
+						original_tag = XON
+					}
+				}
+				ROOT = {
+					every_core_state = {
+						add_core_of = FROM
+					}
+				}
+			}
+		}
+	}
+
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					XSK = { has_country_flag = XSK_saboteur_infiltrators_active }
+					OR = {
+						AND = {
+							ROOT = { tag = XSK }
+							FROM = { tag = XON }
+						}
+						AND = {
+							FROM = { tag = XSK }
+							ROOT = { tag = XON }
+						}
+					}
+				}
+				XON = {
+					add_ideas = XSK_saboteur_infiltrators
+				}
+				XSK = {
+					clr_country_flag = XSK_saboteur_infiltrators_active
+					division_template = {
+						name = "Insurrectionist Division"
+						priority = 0
+
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+				}
+				819 = {
+					create_unit = {
+						division = "name = \"Insurrectionist Division\" division_template = \"Insurrectionist Division\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = XSK
+						allow_spawning_on_enemy_provs = yes 
+						count = 3 
+					}
+				}
+			}
+		}
+	}
+
 }

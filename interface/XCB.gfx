@@ -13,4 +13,83 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 	
+	spriteType = {
+		name = "GFX_XCB_open_button"
+		texturefile = "gfx/XCB/Spr_class_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_XCB_raised_fist"
+		texturefile = "gfx/XCB/raised_fist.dds"
+	}
+	spriteType = {
+		name = "GFX_XCB_raised_fist_intense"
+		texturefile = "gfx/XCB/raised_fist_fire.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_XCB_button_bloom"
+		texturefile = "gfx/XCB/Spr_class_war.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/XCB/Spr_class_war.png"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1.75			# in seconds
+			animationdelay = 0.35			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/XCB/Spr_class_war.png"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1.75				# in seconds
+			animationdelay = 0.35			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+    progressbartype = {
+        name = "GFX_resistance_progress_bar"
+        color = { 0.0 0.0 0.0 }
+        colortwo = { 69.8 38.4 27.5 }
+        textureFile1 = "gfx/XCB/XCB_resistance_progress_full.dds"
+        textureFile2 = "gfx/XCB/XCB_resistance_progress_empty.dds"
+        steps = 100                                     
+        size = { x = 368 y = 24 }                            
+        effectFile = "gfx/FX/progress.lua"                    
+    }
+	
+	spriteType = {
+		name = "GFX_XCB_tonle_sap_resistance"
+		texturefile = "gfx/XCB/tonle_sap_frame.png"
+		noOfframes = 5
+	}
+	spriteType = {
+		name = "GFX_XCB_chuor_phnum_resistance"
+		texturefile = "gfx/XCB/chuor_phnum_frame.png"
+		noOfframes = 5
+	}
+	spriteType = {
+		name = "GFX_XCB_phnom_kulen_resistance"
+		texturefile = "gfx/XCB/phnom_kulen_frame.png"
+		noOfframes = 5
+	}
+	spriteType = {
+		name = "GFX_XCB_prey_lang_resistance"
+		texturefile = "gfx/XCB/prey_lang_frame.png"
+		noOfframes = 5
+	}
+
+	
 }
