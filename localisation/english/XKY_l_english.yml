@@ -18,17 +18,17 @@ XKY_neutrality_ADJ:0 "Kyushu"
 
 XKY_democratic_party:0 "Kyushuan Parliament"
 XKY_democratic_party_long:0 "Kyushuan Parliament"
-XKY_fascism_party:0 "PDP"
-XKY_fascism_party_long:0 "Prosperity and Development Party"
+XKY_fascism_party:0 "Kōdōha"
+XKY_fascism_party_long:0 "2nd Righteous Army"
 XKY_communism_party:0 "JRA"
 XKY_communism_party_long:0 "Japanese Red Army"
 
   ### Ideas
 XKY_Nippon_Kaigun:0 "Nippon Kaigun"
-XKY_Nippon_Kaigun_desc:0 "The Japanese Navy, once one of the strongest in the world before the war, left us with invaluable lessons that we have not forgotten. Although our technology may now be outdated, those lessons remain as relevant as ever. For Admiral Togo!"
+XKY_Nippon_Kaigun_desc:0 "The Japanese Navy, once one of the strongest in the world before the war, left us with invaluable lessons that we have not forgotten. Although our technology may now be outdated, those lessons remain as relevant as ever."
 
 XKY_Inefficient_Farming:0 "Inefficient Farming"
-XKY_Inefficient_Farming_desc:0 "The war did not just impact our military technology; it set our farming practices back 300 years, causing many harvests to be wasted. We must improve our methods to fully utilize Kyushu's rich soil."
+XKY_Inefficient_Farming_desc:0 "The war did not just impact our military technology; it set our farming practices back 300 years, causing many harvests to be wasted. We must improve our methods to fully utilize Kyushu's rich soil. \n \n§YThis spirit will be reduced as [XKY.GetNameWithFlag] rebuilds its infastructure§!"
 
 XKY_Sasebo_Naval_Remnants:0 "Sasebo Naval Remnants"
-XKY_Sasebo_Naval_Remnants_desc:0 "Since the formation of our modern nation, the Sasebo Naval Arsenal has been our great southern port. Its strategic location near Nagasaki, surrounded by hills, made it ideal for port and manufacturing activities. Many of its facilities were damaged during the war, but exploring and repairing these ruins will give us a decisive edge in projecting naval power in this new world."
+XKY_Sasebo_Naval_Remnants_desc:0 "Since the formation of our modern nation, the Sasebo Naval Arsenal has been our great southern port. Its strategic location near Nagasaki, surrounded by hills, made it ideal for port and manufacturing activities.\n \n§YMany of its facilities were damaged during the war, but exploring and repairing these ruins will give us a decisive edge in projecting naval power in this new world.§!"

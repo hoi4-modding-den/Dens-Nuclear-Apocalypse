@@ -4,22 +4,24 @@ ideas = {
 			picture = raj_risk_of_famine
 			modifier = {
 				supply_factor = -0.15
+				local_resources_factor = -0.05
                 recruitable_population_factor = -0.25
+
 			}
 		}
 		XKY_Sasebo_Naval_Remnants = {
 			picture = generic_navy_carrier_bonus
 			modifier = {
-            naval_invasion_planning_bonus_speed = 0.3
+            naval_invasion_planning_bonus_speed = 0.05
 			}
 		}
 		XKY_Nippon_Kaigun = {
 			picture = NORDIC_navy_communist
 			modifier = {
-            naval_morale_factor = 0.3                
-            naval_detection = 0.3
-            experience_gain_navy_unit_factor = 0.3
-            navy_org_factor = 0.3
+            naval_morale_factor = 0.23                
+            naval_detection = 0.15
+            experience_gain_navy_unit_factor = 0.10
+            navy_org_factor = 0.12
 			}
 		}
     }    

@@ -24,10 +24,10 @@ characters = {
         }
     }
     XKY_Inoue_Masaru = {
-        name = "Inoue Masaru"
+        name = "Kōdōha Council"
         portraits={
             civilian={
-                large = gfx/leaders/XKY/Portrait_Inoue_Masaru.dds
+                large = gfx/leaders/XKY/Portrait_Army_Council.dds
             }
         }
         country_leader={
