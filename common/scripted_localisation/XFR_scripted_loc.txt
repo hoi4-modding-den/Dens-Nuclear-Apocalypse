@@ -50,16 +50,6 @@ defined_text = {
 		trigger = {
 			FROM = {
                 controller = {
-                    XFR_no_economic_membership = yes
-                }
-            }
-		}
-		localization_key = economy_map_mode_tooltip_no_membership_tt
-	}
-	text = {
-		trigger = {
-			FROM = {
-                controller = {
                     has_idea = XFR_customs_agreement_head_idea
                 }
             }
@@ -117,19 +107,34 @@ defined_text = {
 		}
 		localization_key = economy_map_mode_tooltip_continental_union_member_tt
 	}
-}
-defined_text = {
-	name = economy_map_mode_tooltip2
 	text = {
 		trigger = {
 			FROM = {
                 controller = {
-                    XFR_no_economic_membership = yes
+                    has_idea = XSK_the_silk_road
                 }
             }
 		}
-		localization_key = economy_map_mode_tooltip_no_membership_tt2
+		localization_key = economy_map_mode_tooltip_silk_road_tt
 	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    OVERLORD = {
+						has_idea = XSK_the_silk_road
+					}
+                }
+            }
+		}
+		localization_key = economy_map_mode_tooltip_silk_road_puppet_tt
+	}
+	text = {
+		localization_key = economy_map_mode_tooltip_no_membership_tt
+	}
+}
+defined_text = {
+	name = economy_map_mode_tooltip2
 	text = {
 		trigger = {
 			FROM = {
@@ -190,5 +195,23 @@ defined_text = {
             }
 		}
 		localization_key = economy_map_mode_tooltip_continental_union_member_tt2
+	}
+	text = {
+		trigger = {
+			FROM = {
+                controller = {
+                    OR = {
+						has_idea = XSK_the_silk_road
+						OVERLORD = {
+							has_idea = XSK_the_silk_road
+						}
+					}
+                }
+            }
+		}
+		localization_key = economy_map_mode_tooltip_silk_road_tt2
+	}
+	text = {
+		localization_key = economy_map_mode_tooltip_no_membership_tt2
 	}
 }

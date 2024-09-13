@@ -15,30 +15,64 @@
  XSK_XON_fascism_subject_DEF: "the Dzungar Horde"
  XSK_XON_fascism_subject_ADJ: "Dzungar"
 
- XTK: "East Turkestan"
- XTK_DEF: "East Turkestan"
- XTK_ADJ: "East Turkestani"
- XTK_democratic: "Province of Xinjiang"
- XTK_democratic_DEF: "the Province of Xinjiang"
- XTK_democratic_ADJ: "Xinjiang"
- XTK_fascism: "Dzungar Khanate"
- XTK_fascism_DEF: "the Dzungar Khanate"
- XTK_fascism_ADJ: "Dzungar"
- XTK_communism: "People's Republic of East Turkestan"
- XTK_communism_DEF: "the People's Republic of East Turkestan"
- XTK_communism_ADJ: "East Turkestani"
- XTK_neutrality: "Province of Xinjiang"
- XTK_neutrality_DEF: "the Province of Xinjiang"
- XTK_neutrality_ADJ: "Xinjiang"
+ XSK_subject: "$OVERLORDADJ$-Occupied Xinjiang"
+ XSK_subject_DEF: "$OVERLORDADJ$-Occupied Xinjiang"
+ XSK_XON_fascism_subject: "Dzungar Khanate"
+ XSK_XON_fascism_subject_DEF: "the Dzungar Khanate"
+ XSK_XON_fascism_subject_ADJ: "Dzungar"
+ XSK_neutrality_subject: "Protectorate of the Western Region"
+ XSK_neutrality_subject_DEF: "the Protectorate of the Western Region"
+ XSK_neutrality_subject_ADJ: "Western"
+ XSK_XYU_neutrality: "Xinjiang Reclamation Army"
+ XSK_XYU_neutrality_DEF: "the Xinjiang Reclamation Army"
+ XSK_XYU_neutrality_ADJ: "Xinjiang"
 
- XTK_subject: "$OVERLORDADJ$ East Turkestan"
- XTK_subject_DEF: "$OVERLORDADJ$ East Turkestan"
- XTK_XON_fascism_subject: "Dzungar Horde"
- XTK_XON_fascism_subject_DEF: "the Dzungar Horde"
- XTK_XON_fascism_subject_ADJ: "Dzungar"
- XTK_XYU_neutrality: "Xinjiang Reclamation Army"
- XTK_XYU_neutrality_DEF: "the Xinjiang Reclamation Army"
- XTK_XYU_neutrality_ADJ: "Xinjiang"
+ XON_XSK_subject: "Protectorate of Mongolia"
+ XON_XSK_subject_DEF: "the Protectorate of Mongolia"
+ XON_XSK_subject_ADJ: "Mongol"
+ XON_XSK_autonomy_XSK_vilayet: "Vilayet of Mongolia"
+ XON_XSK_autonomy_XSK_vilayet_DEF: "the Vilayet of Mongolia"
+ XON_XSK_autonomy_XSK_vilayet_ADJ: "Mongol"
+
+ XMJ_XSK_autonomy_XSK_vilayet: "Vilayet of Ningxia"
+ XMJ_XSK_autonomy_XSK_vilayet_DEF: "the Vilayet of Ningxia"
+ XMJ_XSK_autonomy_XSK_vilayet_ADJ: "Ningxia"
+
+ COUNTRY_XSK_subject: "Ottoman Subject of $NONIDEOLOGY$"
+ COUNTRY_XSK_subject_DEF: "the Ottoman Subject of $NONIDEOLOGY$"
+ COUNTRY_XSK_subject_ADJ: "$NONIDEOLOGYADJ$"
+ COUNTRY_XSK_autonomy_puppet: "Protectorate of $NONIDEOLOGY$"
+ COUNTRY_XSK_autonomy_puppet_DEF: "the Protectorate of $NONIDEOLOGY$"
+ COUNTRY_XSK_autonomy_puppet_ADJ: "$NONIDEOLOGYADJ$"
+ COUNTRY_XSK_autonomy_reichsprotectorate: "Protectorate of $NONIDEOLOGY$"
+ COUNTRY_XSK_autonomy_reichsprotectorate_DEF: "the Protectorate of $NONIDEOLOGY$"
+ COUNTRY_XSK_autonomy_reichsprotectorate_ADJ: "$NONIDEOLOGYADJ$"
+ COUNTRY_autonomy_XSK_vilayet: "Vilayet of $NONIDEOLOGY$"
+ COUNTRY_autonomy_XSK_vilayet_DEF: "the Vilayet of $NONIDEOLOGY$"
+ COUNTRY_autonomy_XSK_vilayet_ADJ: "$NONIDEOLOGYADJ$"
+
+ XSK_chahar: "Mengjiang"
+ XSK_chahar_DEF: "Mengjiang"
+ XSK_chahar_ADJ: "Mengjiang"
+ XSK_chahar_fascism: "Chahar Khanate"
+ XSK_chahar_fascism_DEF: "the Chahar Khanate"
+ XSK_chahar_fascism_ADJ: "Mengjiang"
+ XSK_chahar_neutrality: "State of Mengjiang"
+ XSK_chahar_neutrality_DEF: "the State of Mengjiang"
+ XSK_chahar_neutrality_ADJ: "Chahar"
+ XSK_chahar_communism: "Chahar People's Republic"
+ XSK_chahar_communism_DEF: "the Chahar People's Republic"
+ XSK_chahar_communism_ADJ: "Chahar"
+ XSK_chahar_democratic: "Mengjiang Republic"
+ XSK_chahar_democratic_DEF: "the Mengjiang Republic"
+ XSK_chahar_democratic_ADJ: "Mengjiang"
+ XSK_chahar_XSK_subject: "Protectorate of Chahar"
+ XSK_chahar_XSK_subject_DEF: "the Protectorate of Chahar"
+ XSK_chahar_XSK_subject_ADJ: "Chahar"
+ XSK_chahar_XSK_autonomy_XSK_vilayet: "Vilayet of Chahar"
+ XSK_chahar_XSK_autonomy_XSK_vilayet_DEF: "the Vilayet of Chahar"
+ XSK_chahar_XSK_autonomy_XSK_vilayet_ADJ: "Chahar"
+
 
 # Parties
 
@@ -50,17 +84,11 @@
  XSK_fascism_party_long: "High Command of the Armed Forces of the Ottoman Sultanate"
  XSK_neutrality_party: "Ottoman Dynasty"
  XSK_neutrality_party_long: "Ottoman Dynasty"
+ XSK_neutrality_party_yuan: "Yuan-Ottoman Dynasty"
+ XSK_neutrality_party_yuan_long: "Yuan-Ottoman Dynasty"
  XSK_neutrality_party_regency: "Regency Council"
  XSK_neutrality_party_regency_long: "Ottoman Regency Council"
 
- XTK_democratic_party: "Kuomintang - Left Wing"
- XTK_democratic_party_long: "Kuomintang - Left Wing"
- XTK_communism_party: "ETLF"
- XTK_communism_party_long: "East-Turkestan Liberation Front"
- XTK_fascism_party: "Khan Loyalists"
- XTK_fascism_party_long: "Hordes of the Great Khan"
- XTK_neutrality_party: "Kuomintang"
- XTK_neutrality_party_long: "Kuomintang"
 
 # Characters
 
@@ -71,28 +99,56 @@
  XSK_sultan_suleyman_xii_name: "Süleyman XII."
  XSK_sultan_suleyman_xii_desc: "Sultan XII. Süleyman is the son of the deceased Sultan XI. Süleyman. His mother was one of the Sultans concubines and therefore, his existence has always been questionable, especially due to the fact that he is half-mongolian. However, abilities to lead cannot not be underestimated."
  XSK_ottoman_military_gov_name: "Military Council"
+ XSK_ottoman_envoy_name: "Namik Neyzi"
+ XSK_ottoman_democratic_leader_name: "Nëghmet Barat"
 
 # Traits
 
  XSK_ottoman_regency_trait: "Temporary Regency"
+ XSK_military_regency: "Military Regency"
+ XSK_master_of_intrigue: "Intriguing Diplomat"
+ XSK_sultan_of_the_turks: "Representative of the Turkic People"
+ XSK_militant_megalomaniac: "Militant Megalomaniac"
+ XSK_ottoman_subject_trait: "Ottoman Loyalist"
 
 # Ideologies
 
  XSK_ottoman_stratocracy: "Stratocracy"
  XSK_ottoman_stratocracy_desc: "Stratocracy is a form of government headed by military chiefs. The branches of government are administered by military forces, the government is legal under the laws of the jurisdiction at issue, and is usually carried out by military workers."
+ XSK_monarcho_socialism: "Monarcho-Socialism"
+ XSK_monarcho_socialism_desc: "Monarcho-Socialism with Turkic Characteristics is an absolute contradiction of ideological insanity. It proposes a communist state led by a Sultan in which only ethnicities related to the Turkic race have rights."
 
 # Ideas
 
  XSK_the_sultanate_in_china: "The Wolf of the Steppes"
- XSK_the_sultanate_in_china_desc: ""
+ XSK_the_sultanate_in_china_desc: "Western horizons may be encircled by walls armoured in steel\nBut I have my chest brimful of faith as my homeland’s frontier.\nLet it howl, fear not! How can it smother such solid faith\nThat single-fanged monster, “Civilisation!” as you call it?"
  XSK_home_of_turks: "Home of the Turks"
- XSK_home_of_turks_desc: "The Turks have been disunited for a long time. After the apocalypse, many Turks followed us back to our original homelands and helped establish the Second Sultanate. A large ammount of Turks are still lost in the madness of the Anarchy and thousands arrive each week."
+ XSK_home_of_turks_desc: "The Turks have been disunited for a long time. After the apocalypse, many Turks followed us back to our original homelands and helped establish the Second Sultanate. A large amount of Turks are still lost in the madness of the Anarchy and thousands arrive each week."
  XSK_han_minority: "Han Minorities"
- XSK_han_minority_desc: "Those pesky 'indigenous' people are stirring up trouble and are not cooperating with the Sultanate. We might need to get rid of them."
+ XSK_han_minority_desc: "200 Years ago, the Turkic 'Uyghur' people were oppressed by the totalitarian government of the Chinese People's Republic. With the return of the Turkic people to their homeland, the tables have turned."
+ XSK_han_deportation: "Han Resistance"
+ XSK_low_literacy: "Illiterate Population"
+ XSK_low_literacy_desc: "A majority of our population does neither know how to read nor to write."
+ XSK_empowered_radicals: "Empowered Radicals"
+ XSK_empowered_reformists: "Empowered Reformists"
+ XSK_school_funding: "School Funding"
+ XSK_mountain_society: "Mountain Society"
+ XSK_mountain_society_desc: "The Region of Xinjiang is largely mountainous, with only our northern territory featuring large plains. This means that a large part of Society takes place in these mountains."
  XSK_toaster_factories: "Economic Boom"
  XSK_the_silk_road: "The New Silk Road"
  XSK_the_silk_road_desc: "The new Silk Road allows us to trade with the new civilisations of the West."
+ XSK_subsidised_agriculture: "Subsidised Agriculture"
+ XSK_famine: "National Famine"
+ XSK_famine_tt: "This §Ynational spirit§! will be removed upon completing the focus §Y$XSK_agricultural_subsidies$§!."
+ XSK_modernised_cavalry: "Metal Cavalry"
+ XSK_saboteur_infiltrators: "Ottoman Saboteurs"
 
+
+# Decisions
+
+ XSK_vilayet_of_chahar: "Establish the Vilayet of Chahar"
+ XSK_vilayet_of_chahar_tt: "Release §YVilayet of Chahar§! as §YVilayet§!."
+ XSK_integrate_vilayets: "Integrate [FROM.GetNameDef]"
 
 # Events
 
@@ -128,11 +184,43 @@
  XSK_succession_events.7.d: "The Regency Council has been working hard, locating the deceased Sultans only son, as well as his nephew. Now, it is time for the council to make a decision."
  XSK_succession_events.7.a: "First Candidate, please."
 
+ XSK_succession_events.8.t: "The Fate of the Ottoman Dynasty"
+ XSK_succession_events.8.d: "WIP TEXT"
+ XSK_succession_events.8.a: "The Rightful Son shall lead us!"
+ XSK_succession_events.8.b: "The Son of XI. Süleyman will be Sultan!"
+ XSK_succession_events.8.c: "...but perhaps his powers should be limited?"
+
  XSK_events.1.t: "Resource Allocation"
  XSK_events.1.d: "We do not have enough resources to expand both the New Samsun and New Afyon mines. We need to choose one."
  XSK_events.1.a: "Expand the New Samsun Tungsten Mines."
  XSK_events.1.b: "Expand the New Afyon Aluminium Mines."
  XSK_events.1.c: "You will make it work!"
+
+ XSK_events.2.t: "A Revenge Two-hundred years in the making"
+ XSK_events.2.d: "With the Han Chinese acting against the royal regime, Sultan I. Abdulhamid has ordered the deportation of over fourty-thousand men, women and children out of Ottoman territory.\nMany Uyghur people are very satisfied, seeing their former oppressors become the oppressed."
+ XSK_events.2.a: "It didn't happen, but they deserved it!"
+
+ XSK_events.3.t: "Namik Neyzi arrives in Mongolia"
+ XSK_events.3.d: "WIP TEXT"
+ XSK_events.3.a: "It seems the situation is worse than we thought."
+
+ XSK_events.4.t: "Famine in the Countryside!"
+ XSK_events.4.d: "We have neglegted to support our farmers for too long and it has caused serious consequences. A drought in the northern region our lands has destroyed large parts of the harvest, causing a massive famine."
+ XSK_events.4.a: "Fuck!"
+
+ XSK_events.5.t: "Namik Neyzi appointed as Governor of [XON.GetNameDef]"
+ XSK_events.5.d: "Our envoy, Namik Neyzi, has been appointed as Governor of our client nation in Mongolia, [XON.GetNameDef]. His stay in Mongolia has already made him familiar with the local society and he will surely put that knowledge to good use."
+ XSK_events.5.a: "He'll do a good job."
+
+# Autonomous States
+
+ autonomy_XSK_vilayet: "Vilayet"
+
+
+
+# Opinion Modifiers
+
+ XSK_dislike_deportation: "Deported Han Chinese"
 
 
 # Foci
@@ -141,24 +229,84 @@
  XSK_choose_the_next_sultan_desc: "The Regency Council was established a few weeks after XI. Süleyman's death and it has been searching for possible contenders to the throne since then. If no choice is made, it could severely impact the existence of our state."
  XSK_choose_the_next_sultan_tt: "Starts an §Yevent chain§! to choose the next Sultan.\nIf no successor has been choosen in time, the military will have to §Rtake control§! of the nation."
  XSK_choosen_next_sultan: "a successor has been choosen"
+ 
  XSK_the_expansionist_sultan: "Expand the Sultanate"
  XSK_the_expansionist_sultan_trigger: "§YSultan I. Abdulhamid§! has succeeded the throne"
+ XSK_prepare_invasion_of_mongolia: "Scout the Gobi Desert"
+ XSK_invade_mongolia: "Invade Mongolia"
+ XSK_repeal_autonomy_decrees: "Repeal Self-Governance Decrees"
+ XSK_deport_han_chinese: "Crush Resistance"
+ XSK_ban_anti_intellectualism: "Ban Anti-Intellectualism"
+ XSK_consolidate_the_north: "Consolidate Northern China"
+
  XSK_no_sultan: "Military Control"
  XSK_no_sultan_trigger: "no successor has been chosen"
+ XSK_empower_radicals: "Empower the Radicals"
+ XSK_empower_reformists: "Empower the Reformists"
+ XSK_fate_of_the_monarchy: "Fate of the Ottoman Dynasty"
+ XSK_fate_of_the_monarchy_tt: "The Fate of the Dynasty depends on our §Yprevious choice§! of either empowering the §RRadicals§! or the §3Reformists§!."
+ XSK_church_and_socialism: "The Trinity of Turkism"
+ XSK_end_persecution: "End the Persecution"
+ XSK_prop_up_the_military: "Prop up the Military"
+ XSK_liberalise_the_constitution: "Liberalise the Constitution"
+ XSK_diplomatic_approach: "Infilitrate our Enemies"
+ XSK_expand_the_sultanate: "Demand Southern Territories"
+ XSK_future_of_the_sultanate: "Future of the Sultanate"
+
  XSK_the_diplomatic_sultan: "Trade and Secrets"
  XSK_the_diplomatic_sultan_trigger: "§YSultan XII. Süleyman§! has succeeded the throne"
- XSK_tradition_of_the_steppes: "Tradition of the Steppe"
  XSK_reopen_the_silk_road: "Re-open the Silk Road"
  XSK_give_market_access_tt: "Give §Y[ROOT.GetNameDef]§! market access."
+ XSK_chinese_politics: "International Politics"
+ XSK_envoy_to_xiongnu: "Envoy to Xiongnu"
+ XSK_envoy_to_xiongnu_tt: "\nBy supporting the Tuvan Seperatists, we promise them an §Yautonomous state§! after the civil war is over."
+ XSK_support_tuvan_independence: "Give the Signal"
+ XSK_constitutional_guarantees: "Constitutional Guarantees"
+ XSK_grant_rights_to_mongolian_citizen: "Abolish Racial Laws"
+ XSK_expand_schools: "Reform the School System"
+ XSK_border_provocations: "Border Provocations"
+ XSK_move_south: "Ultimatum to Xinjiang"
+ XSK_offer_protection: "Establish a Mongolian Protectorate"
+ XSK_mongolian_integration: "Integrate Mongolian Cavalry"
+ XSK_mongolian_integration_tt: "\nIf §Y[XON.GetName]§! is annexed via the §CSubjects Menu§!:"
+ XSK_repopulate_the_wastes: "Repopulate the Wastes"
+ XSK_settle_inner_mongolia: "Integrate Inner Mongolia"
+ XSK_jiuquan_gambit: "The Jiuquan Gambit"
+ XSK_meeting_in_taiwan: "Meeting in Taipei"
+ XSK_taipei_compromise_failed: "the Taipei Compromise failed"
+ XSK_taipei_compromise_succeeded: "the Taipei Compromise succeeded"
+ XSK_secret_service: "Ottoman Bureau for External Information"
+ XSK_infiltrate_china: "Infiltration Training"
+ XSK_infiltrators_in_xiongnu_tt: "\n§YWhen at war with [XON.GetNameDef]:§!\nSpawn 3 §O18-Width Infantry Divisions with Engineers§! in §YDornod§!."
+
+ XSK_tradition_of_the_steppes: "Tradition of the Steppe"
  XSK_war_industry: "Start the War Industry"
- XSK_das_kapital: "[XSK_das_kapital_name]"
+ XSK_modernise_the_doctrines: "Modernise the Doctrines"
  XSK_improved_army_equipment: "Improved Army Equipment"
  XSK_expand_the_mines: "Expand the Mines"
  XSK_military_complex: "The Military Industrial Complex"
  XSK_cannon_thunder: "Cannon Thunder"
+ XSK_modern_army: "Modern Cavalry"
  XSK_the_mountains_our_forts: "The Mountains as our Fortress"
+ XSK_rule_the_skies: "To Rule The Heavens"
  XSK_mechanic_revolution: "The Mechanical Revolution"
+ XSK_das_kapital: "[XSK_das_kapital_name]"
  XSK_civilian_investments: "Civilian Investments"
+ XSK_electricity_for_the_people: "Electrify the Cities"
+ XSK_institute_of_science: "New Istanbul Institute of Science"
+ XSK_agricultural_subsidies: "Support the Farmers"
+ XSK_agricultural_subsidies_tt: "\n§RNot completing this focus in a certain time WILL have consequences.§!"
  XSK_road_construction: "Road Construction"
  XSK_synthetic_rubber: "Research Synthetic Rubber"
  XSK_synthetic_rubber_tt: "If §YSynthetic Oil Experiments§! has been researched, this focus will give §one less research bonus§!, instead giving one §YSynthetic Refinery§!."
+
+ XSK_claim_the_mandate_of_heaven: "Claim the Mandate of Heaven"
+ XSK_claim_the_mandate_of_heaven_desc: "The Ottomen are the true Divine Dynasty of China, just like how China is the true Homeland of the Turkic People, because the Chinese too, are Turkic."
+ XSK_legacy_of_suleyman: "The Legacy of Süleyman the Magnificent"
+
+
+ # Economic Entity
+
+ economy_map_mode_tooltip_silk_road_tt: "§Y[FROM.Controller.GetNameDefCap]§! is the Protector of the §8Silk Road§!"
+ economy_map_mode_tooltip_silk_road_puppet_tt: "§Y[FROM.Controller.GetNameDefCap]§! is a subject of the §8Silk Road Protector§!"
+ economy_map_mode_tooltip_silk_road_tt2: "§8Silk Road§!"
