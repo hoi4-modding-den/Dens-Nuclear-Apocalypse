@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+		# Starting Spirits
+		XSI_treaty_of_yangon = {
+			picture = hol_the_foundations_of_defense
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				communism_drift = 0.02
+			}
+		}
+
+		XSI_burmese_paciication_campaign = {
+			picture = generic_secret_police
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				compliance_growth = 0.10
+				resistance_activity = 0.15
+				political_power_gain = -0.1
+			}
+		}
+
+		XSI_military_civic_rivarly_army_dominance = {
+			picture = GFX_idea_XSI_military_civic_rivarly_army_dominance
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.15
+				experience_gain_army = 0.1
+				army_org_factor = 0.15
+				training_time_army_factor = -0.20
+			}
+		}
+
+		# National Spirits
+	}
+}	
