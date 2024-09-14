@@ -338,3 +338,8 @@ XMJ = {
 	color = rgb { 185  255  152 }
 	color_ui = rgb { 165  230  132 }
 }
+
+XWH = {
+	color = rgb { 56  61  150 }
+	color_ui = rgb { 56  61  150 }	
+}

@@ -30,6 +30,10 @@ scripted_gui = {
 				}
 				else = {
 					clr_country_flag = XCB_custom_gui_visible_flag
+					clr_country_flag = XCB_chuor_phnum_info
+					clr_country_flag = XCB_phnom_kulen_info
+					clr_country_flag = XCB_prey_lang_info
+					clr_country_flag = XCB_tonle_sap_info
 				}
 				clr_country_flag = XCB_bloom_gui_visible
 			}
@@ -53,6 +57,10 @@ scripted_gui = {
 		effects = {	
 			XCB_custom_gui_close_click = {
 				clr_country_flag = XCB_custom_gui_visible_flag
+				clr_country_flag = XCB_chuor_phnum_info
+				clr_country_flag = XCB_phnom_kulen_info
+				clr_country_flag = XCB_prey_lang_info
+				clr_country_flag = XCB_tonle_sap_info
 			}
 			XCB_tonle_sap_click = {
 				clr_country_flag = XCB_chuor_phnum_info

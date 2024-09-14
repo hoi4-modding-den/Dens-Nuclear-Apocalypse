@@ -1,8 +1,32 @@
 spriteTypes = {
 
     spriteType = {
-        name = "GFX_idea_XNP_deadlock"
+        name = "GFX_idea_XNP_congressional_deadlock"
         texturefile = "gfx/XNP/XNP_deadlock.dds"
     }
 
+    spriteType = {
+        name = "GFX_idea_XNP_unified_center_1"
+        texturefile = "gfx/interface/ideas/spr_torchbearers_of_tomorrow.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_XNP_unified_center_2"
+        texturefile = "gfx/interface/ideas/spr_torchbearers_of_tomorrow.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_XNP_unified_center_3"
+        texturefile = "gfx/interface/ideas/spr_torchbearers_of_tomorrow.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_XNP_land_appropriation_committee"
+        texturefile = "gfx/interface/ideas/idea_generic_train_tracks.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_XNP_education_bureau"
+        texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+    }
 }

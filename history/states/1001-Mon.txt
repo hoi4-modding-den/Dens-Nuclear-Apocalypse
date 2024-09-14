@@ -5,7 +5,7 @@ state={
 	
 	history={
 		owner = XSI # SIA	
-		#add_core_of = XSI
+		add_core_of = XSB
 	}	
 	
 	provinces={
