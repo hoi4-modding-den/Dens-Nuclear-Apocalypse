@@ -1495,3 +1495,11 @@ XRP_morocco = {
     color = rgb { 51 21 0 }
     color_ui = rgb { 51 21 0 }
 }
+XWH_LitSoc = {
+	color = rgb { 255  222  173 }
+	color_ui = rgb { 255  222  173 }	
+}
+XWH_XWH_ProgAsso = {
+	color = rgb { 255  215  0 }
+	color_ui = rgb { 255  215  0 }	
+}
