@@ -35,4 +35,24 @@ spriteTypes = {
 		name = "GFX_XHK_nationalist_marches"
 		texturefile = "gfx/interface/goals/XHK/focus_XHK_nationalist_marches.dds"
 	}
+	spriteType = {
+		name = "GFX_XHK_guangdong_interference"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_guangdong_interference.dds"
+	}
+	spriteType = {
+		name = "GFX_XHK_riot"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_riot.dds"
+	}
+	spriteType = {
+		name = "GFX_XHK_far_right_takeover"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_far_right_takeover.dds"
+	}
+	spriteType = {
+		name = "GFX_XHK_rally_slums"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_rally_slums.dds"
+	}
+	spriteType = {
+		name = "GFX_XHK_great_coup"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_great_coup.dds"
+	}
 }

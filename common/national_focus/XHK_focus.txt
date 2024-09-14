@@ -924,7 +924,7 @@
 	}
 	focus = {
 		id = XHK_guangdong_interference
-	#	icon = GFX_focus_generic_join_comintern
+		icon = GFX_XHK_guangdong_interference
 		
 		prerequisite = { focus = XHK_radical_sentiments }
 		mutually_exclusive = { focus = XHK_nationalist_marches }
@@ -1042,7 +1042,7 @@
 	}
 	focus = {
 		id = XHK_pressure_the_politicians
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_goal_generic_political_pressure
 		
 		prerequisite = { focus = XHK_protest_big_business }
 		prerequisite = { focus = XHK_antiestablishmentarianism }
@@ -1084,7 +1084,7 @@
 	}
 	focus = {
 		id = XHK_riot_in_the_streets
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_riot
 		
 		prerequisite = { focus = XHK_protest_big_business }
 		prerequisite = { focus = XHK_antiestablishmentarianism }
@@ -1129,7 +1129,7 @@
 	}
 	focus = {
 		id = XHK_far_right_takeover
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_far_right_takeover
 		
 		prerequisite = { focus = XHK_pressure_the_politicians }
 		prerequisite = { focus = XHK_riot_in_the_streets }
@@ -1169,7 +1169,7 @@
 	}
 	focus = {
 		id = XHK_bribe_politicians
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_focus_ARG_crackdown_on_corruption
 		
 		prerequisite = { focus = XHK_protest_big_business }
 		prerequisite = { focus = XHK_antiestablishmentarianism }
@@ -1211,7 +1211,7 @@
 	}
 	focus = {
 		id = XHK_promote_class_struggle
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_focus_spr_class_war
 		
 		prerequisite = { focus = XHK_guangdong_interference }
 	#	mutually_exclusive = { focus = XHK_business_as_usual }
@@ -1250,7 +1250,7 @@
 	}
 	focus = {
 		id = XHK_rally_the_slums
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_rally_slums
 		
 		prerequisite = { focus = XHK_promote_class_struggle }
 	#	mutually_exclusive = { focus = XHK_business_as_usual }
@@ -1290,7 +1290,7 @@
 	}
 	focus = {
 		id = XHK_the_great_coup
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_great_coup
 		
 		prerequisite = { focus = XHK_bribe_politicians }
 		prerequisite = { focus = XHK_rally_the_slums }
