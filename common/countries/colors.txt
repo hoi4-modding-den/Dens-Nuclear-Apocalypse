@@ -217,6 +217,10 @@ XSP = {
 	color = rgb { 102 23 23 }
 	color_ui = rgb { 102 23 23 }
 }
+XSG = {
+	color = rgb { 128 61 61 }
+	color_ui = rgb { 128 61 61 }
+}
 XSO = {
 	color = rgb { 25 13 189 }
 	color_ui = rgb { 25 13 189 }
