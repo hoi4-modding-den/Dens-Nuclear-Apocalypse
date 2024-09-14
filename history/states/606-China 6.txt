@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = LIB # CHI
+		owner = XWH # CHI
+		add_core_of = XWH
 		#add_core_of = CHI
 		#add_core_of = PRC
 		buildings = {
@@ -16,17 +17,6 @@ state={
 		}
 		victory_points = {
 			7222 1 
-		}
-		1938.10.25 = {
-			#controller = JAP
-			buildings = {
-				#industrial_complex = 3
-				infrastructure = 3 #was: 6
-				#air_base = 1
-				#arms_factory = 1
-
-			}
-
 		}
 
 	}
