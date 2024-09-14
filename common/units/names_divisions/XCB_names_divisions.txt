@@ -1,0 +1,12 @@
+﻿XCB_INF_01 = {
+	name = "Infantry Brigades" 
+	for_countries = { XCB } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Infantry Brigade"
+	ordered = {
+		1 = { "%d. Infantry Brigade" } 
+	}
+}
+
+
