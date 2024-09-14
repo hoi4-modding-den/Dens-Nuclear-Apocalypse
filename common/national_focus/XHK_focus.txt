@@ -56,7 +56,7 @@
 
 	focus = {
 		id = XHK_new_assembly
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_focus_new_assembly
 		
 		prerequisite = {  }
 #		mutually_exclusive = { focus =  }
@@ -92,7 +92,7 @@
 	}
 	focus = {
 		id = XHK_business_as_usual
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_business_as_usual
 		
 		prerequisite = { focus = XHK_new_assembly }
 		mutually_exclusive = { focus = XHK_radical_sentiments }
@@ -843,7 +843,7 @@
 	}
 	focus = {
 		id = XHK_radical_sentiments
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_radical_sentiments
 		
 		prerequisite = { focus = XHK_new_assembly }
 		mutually_exclusive = { focus = XHK_business_as_usual }
@@ -883,7 +883,7 @@
 	}
 	focus = {
 		id = XHK_nationalist_marches
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_nationalist_marches
 		
 		prerequisite = { focus = XHK_radical_sentiments }
 		mutually_exclusive = { focus = XHK_guangdong_interference }
@@ -924,7 +924,7 @@
 	}
 	focus = {
 		id = XHK_guangdong_interference
-#		icon = GFX_focus_SWE_radiotjanst
+	#	icon = GFX_focus_generic_join_comintern
 		
 		prerequisite = { focus = XHK_radical_sentiments }
 		mutually_exclusive = { focus = XHK_nationalist_marches }

@@ -17,4 +17,22 @@ spriteTypes = {
 		name = "GFX_portrait_XHK_corporate_commission"
 		texturefile = "gfx/XHK/XHK_corporate_commission.dds"
 	}
+	
+	### FOCUSES ###
+	spriteType = {
+		name = "GFX_XHK_focus_new_assembly"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_new_assembly.dds"
+	}
+	spriteType = {
+		name = "GFX_XHK_business_as_usual"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_business_as_usual.dds"
+	}
+	spriteType = {
+		name = "GFX_XHK_radical_sentiments"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_radical_sentiments.dds"
+	}
+	spriteType = {
+		name = "GFX_XHK_nationalist_marches"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_nationalist_marches.dds"
+	}
 }
