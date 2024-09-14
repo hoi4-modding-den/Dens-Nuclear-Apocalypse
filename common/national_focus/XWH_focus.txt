@@ -1,0 +1,78 @@
+﻿focus_tree = {
+	id = XWH_focus
+
+	country = {
+
+        factor = 0
+		modifier = {
+			add = 100
+			tag = XWH
+
+		}
+	 }
+	 default = no
+	 continuous_focus_position = { x = 100 y = 3000 }
+
+
+
+    #Literary Society
+	 focus = {
+		id = XWH_EmpowerLitSoc
+
+		prerequisite = {}
+		mutually_exclusive = { focus = XWH_EmpowerProgAsso }
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+            
+		}
+		bypass = {
+		}
+
+		x = 10
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 25
+			set_cosmetic_tag = XWH_LitSoc
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
+     }
+	 #Progressive Association
+	 focus = {
+		id = XWH_EmpowerProgAsso
+
+		prerequisite = {}
+		mutually_exclusive = { focus = XWH_EmpowerLitSoc }
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+            
+		}
+		bypass = {
+		}
+
+		x = 15
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 25
+			set_cosmetic_tag = XWH_ProgAsso
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.25
+			}
+		}
+     }
+} #endbracketlol

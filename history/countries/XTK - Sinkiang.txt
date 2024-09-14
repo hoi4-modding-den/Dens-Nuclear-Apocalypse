@@ -20,6 +20,10 @@ set_technology = {
 add_ideas = {
 	war_economy
 	limited_conscription
+
+	XTK_insurgency
+	XTK_political_instability
+	XTK_weak_industry
 }
 
 set_politics = {

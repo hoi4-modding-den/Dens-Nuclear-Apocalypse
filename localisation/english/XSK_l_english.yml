@@ -13,24 +13,6 @@
  XSK_ottoman_china_DEF: "the Ottoman Empire of China"
  XSK_ottoman_china_ADJ: "Ottoman-Chinese"
 
- XSK_subject: "$OVERLORDADJ$ East Turkestan"
- XSK_subject_DEF: "$OVERLORDADJ$ East Turkestan"
- XSK_XON_fascism_subject: "Dzungar Horde"
- XSK_XON_fascism_subject_DEF: "the Dzungar Horde"
- XSK_XON_fascism_subject_ADJ: "Dzungar"
-
- XSK_subject: "$OVERLORDADJ$-Occupied Xinjiang"
- XSK_subject_DEF: "$OVERLORDADJ$-Occupied Xinjiang"
- XSK_XON_fascism_subject: "Dzungar Khanate"
- XSK_XON_fascism_subject_DEF: "the Dzungar Khanate"
- XSK_XON_fascism_subject_ADJ: "Dzungar"
- XSK_neutrality_subject: "Protectorate of the Western Region"
- XSK_neutrality_subject_DEF: "the Protectorate of the Western Region"
- XSK_neutrality_subject_ADJ: "Western"
- XSK_XYU_neutrality: "Xinjiang Reclamation Army"
- XSK_XYU_neutrality_DEF: "the Xinjiang Reclamation Army"
- XSK_XYU_neutrality_ADJ: "Xinjiang"
-
  XON_XSK_subject: "Protectorate of Mongolia"
  XON_XSK_subject_DEF: "the Protectorate of Mongolia"
  XON_XSK_subject_ADJ: "Mongol"
@@ -55,27 +37,63 @@
  COUNTRY_autonomy_XSK_vilayet_DEF: "the Vilayet of $NONIDEOLOGY$"
  COUNTRY_autonomy_XSK_vilayet_ADJ: "$NONIDEOLOGYADJ$"
 
- XSK_chahar: "Mengjiang"
- XSK_chahar_DEF: "Mengjiang"
- XSK_chahar_ADJ: "Mengjiang"
- XSK_chahar_fascism: "Chahar Khanate"
- XSK_chahar_fascism_DEF: "the Chahar Khanate"
- XSK_chahar_fascism_ADJ: "Mengjiang"
- XSK_chahar_neutrality: "State of Mengjiang"
- XSK_chahar_neutrality_DEF: "the State of Mengjiang"
- XSK_chahar_neutrality_ADJ: "Chahar"
- XSK_chahar_communism: "Chahar People's Republic"
- XSK_chahar_communism_DEF: "the Chahar People's Republic"
- XSK_chahar_communism_ADJ: "Chahar"
- XSK_chahar_democratic: "Mengjiang Republic"
- XSK_chahar_democratic_DEF: "the Mengjiang Republic"
- XSK_chahar_democratic_ADJ: "Mengjiang"
- XSK_chahar_XSK_subject: "Protectorate of Chahar"
- XSK_chahar_XSK_subject_DEF: "the Protectorate of Chahar"
- XSK_chahar_XSK_subject_ADJ: "Chahar"
- XSK_chahar_XSK_autonomy_XSK_vilayet: "Vilayet of Chahar"
- XSK_chahar_XSK_autonomy_XSK_vilayet_DEF: "the Vilayet of Chahar"
- XSK_chahar_XSK_autonomy_XSK_vilayet_ADJ: "Chahar"
+ XSK_beijing: "Beijing"
+ XSK_beijing_DEF: "Beijing"
+ XSK_beijing_ADJ: "Beijingnese"
+ XSK_beijing_XSK_subject: "Protectorate of Beijing"
+ XSK_beijing_XSK_subject_DEF: "the Protectorate of Beijing"
+ XSK_beijing_XSK_subject_ADJ: "Beijingnese"
+ XSK_beijing_XSK_autonomy_XSK_vilayet: "Vilayet of Beijing"
+ XSK_beijing_XSK_autonomy_XSK_vilayet_DEF: "the Vilayet of Beijing"
+ XSK_beijing_XSK_autonomy_XSK_vilayet_ADJ: "Beijingnese"
+
+ XSK_greater_korea: "Greater Korea"
+ XSK_greater_korea_DEF: "Greater Korea"
+ XSK_greater_korea_ADJ: "Korean"
+ XSK_greater_korea_XSK_subject: "Protectorate of Greater Korea"
+ XSK_greater_korea_XSK_subject_DEF: "the Protectorate of Greater Korea"
+ XSK_greater_korea_XSK_subject_ADJ: "Korean"
+ XSK_greater_korea_XSK_autonomy_XSK_vilayet: "Vilayet of Greater Korea"
+ XSK_greater_korea_XSK_autonomy_XSK_vilayet_DEF: "the Vilayet of Greater Korea"
+ XSK_greater_korea_XSK_autonomy_XSK_vilayet_ADJ: "Korean"
+
+ XSK_southeast_asia: "Nanyang"
+ XSK_southeast_asia_DEF: "Nanyang"
+ XSK_southeast_asia_ADJ: "Nanyang"
+ XSK_southeast_asia_XSK_subject: "Protectorate of Nanyang"
+ XSK_southeast_asia_XSK_subject_DEF: "the Protectorate of Nanyang"
+ XSK_southeast_asia_XSK_subject_ADJ: "Nanyang"
+ XSK_southeast_asia_XSK_autonomy_XSK_vilayet: "Vilayet of Nanyang"
+ XSK_southeast_asia_XSK_autonomy_XSK_vilayet_DEF: "the Vilayet of Nanyang"
+ XSK_southeast_asia_XSK_autonomy_XSK_vilayet_ADJ: "Nanyang"
+
+ XTK: "East Turkestan"
+ XTK_DEF: "East Turkestan"
+ XTK: "Turkestani"
+ XTK_communism: "Communist State of East Turkestan"
+ XTK_communism_DEF: "the Communist State of East Turkestan"
+ XTK_neutrality: "Xinjiang Clique"
+ XTK_neutrality_DEF: "the Xinjiang Clique"
+ XTK_neutrality_ADJ: "Xinjiang"
+ XTK_fascism: "Dzungar State"
+ XTK_fascism_DEF: "the Dzungar State"
+ XTK_fascism_ADJ: "Dzungar"
+
+ XTK_subject: "$OVERLORDADJ$ East Turkestan"
+ XTK_subject_DEF: "$OVERLORDADJ$ East Turkestan"
+ XTK_autonomy_reichsprotectorate: "$OVERLORDADJ$ Protectorate of East Turkestan"
+ XTK_autonomy_reichsprotectorate_DEF: "the $OVERLORDADJ$ Protectorate of East Turkestan"
+ XTK_fascism_subject: "Dzungar Khanate"
+ XTK_fascism_subject_DEF: "the Dzungar Khanate"
+ XTK_fascism_subject_ADJ: "Dzungar"
+ XTK_neutrality_subject: "Protectorate of the Western Region"
+ XTK_neutrality_subject_DEF: "the Protectorate of the Western Region"
+ XTK_neutrality_subject_ADJ: "Western Protectorate"
+ XTK_communism_subject: "Communist State of East Turkestan"
+ XTK_communism_subject_DEF: "the Communist State of East Turkestan"
+ XTK_XYU_neutrality: "Xinjiang Reclamation Army"
+ XTK_XYU_neutrality_DEF: "the Xinjiang Reclamation Army"
+ XTK_XYU_neutrality_ADJ: "Xinjiang"
 
 
 # Parties
@@ -92,6 +110,15 @@
  XSK_neutrality_party_yuan_long: "Yuan-Ottoman Dynasty"
  XSK_neutrality_party_regency: "Regency Council"
  XSK_neutrality_party_regency_long: "Ottoman Regency Council"
+
+ XTK_democratic_party: "TDP"
+ XTK_democratic_party_long: "Turkic Democratic Party"
+ XTK_communism_party: "Communist Insurgency"
+ XTK_communism_party_long: "Communist Insurgency"
+ XTK_fascism_party: "Dzungar Nationalists"
+ XTK_fascism_party_long: "Dzungar Nationalists"
+ XTK_neutrality_party: "KMT"
+ XTK_neutrality_party_long: "Kuomintang"
 
 
 # Characters
@@ -154,15 +181,20 @@
  XSK_saboteur_infiltrators: "Ottoman Saboteurs"
  XSK_trinity: "The Trinity of Allah, Atatürk and Marx"
  XSK_trinity_desc: "There are only three beings that are worthy to be worshipped. First, Allah, the Father of Man, and his incarnation, our Sultan. Second, Mustafa Kemal Atatürk, the Father of the Turkic Peoples. And third, Karl Marx, the Father of Communism and the Revolution."
-
+ XTK_insurgency: "Anti-Ottoman Insurgency"
+ XTK_political_instability: "Political Instability"
+ XTK_weak_industry: "Collapsed Industry"
+ XTK_idea_can_be_removed_tt: "This National Spirit can be removed by [XTK.GetNameDef]'s §YOverlord§!."
 
 # Decisions
 
  XSK_vilayets_cat: "Establish Ottoman Vilayets"
- XSK_vilayet_of_chahar: "Establish the Vilayet of Chahar"
- XSK_vilayet_of_chahar_tt: "Release §YVilayet of Chahar§! as §YVilayet§!."
- XSK_establish_vilayet_of_japan: "Establish the Vilayet of Japan"
- XSK_integrate_vilayets: "Integrate [FROM.GetNameDef]"
+ XSK_vilayet_of_beijing: "Establish the Vilayet of Beijing"
+ XSK_vilayet_of_beijing_tt: "Release §YVilayet of Beijing§! as §YVilayet§!."
+ XSK_vilayet_of_greater_korea: "Establish the Vilayet of Greater Korea"
+ XSK_vilayet_of_greater_korea_tt: "Release §YVilayet of Greater Korea§! as §YVilayet§!."
+ XSK_vilayet_of_southeast_asia: "Establish the Vilayet of Nanyang"
+ XSK_vilayet_of_southeast_asia_tt: "Release §YVilayet of Nanyang§! as §YVilayet§!."
 
  XSK_support_united_front_members_cat: "Support the United Front"
  XSK_support_uf_weapons: "Send Guns to [FROM.GetNameDef]"
@@ -172,6 +204,10 @@
  XSK_invasion_of_china: "Invasion of China"
  XSK_invade_chinese_nation: "Invade [FROM.GetNameDef]"
  XSK_invade_korea: "Invade [FROM.GetNameDef]"
+
+ XTK_stabilise_insurgency_politics: "Promote Our Policies"
+ XTK_support_insurgency_industry: "Fund [XTK.GetAdjective] Industry"
+
 
 # Events
 
@@ -260,6 +296,35 @@
  XSK_taiwan_events.6.t: "[FROM.GetNameDefCap] proposes Mutual Defence Pact"
  XSK_taiwan_events.6.d: "The leaders of [FROM.GetNameDef] have made a counter-offer to our Mutual Cooperation Pact, only seeking our aid in terms of National Defence."
  XSK_taiwan_events.6.a: "Fine."
+
+ XSK_news_events.1.t: "Coronation of Sultan I. Abdulhamid"
+ XSK_news_events.1.d: "Following the death of Sultan XI. Süleyman, a regency council had been in charge of [XSK.GetNameDef]. This changed today with the Coronation of XI. Süleymans nephew Abdulhamid as Sultan I. Abdulhamid.\nHe has already announced plans of expanding the Sultanate militarily, though nothing was stated officially."
+ XSK_news_events.1.a: "Long live the Sultan!"
+ XSK_news_events.1.b: "Look at them brag."
+ 
+ XSK_news_events.2.t: "Coronation of Sultan XII. Süleyman"
+ XSK_news_events.2.d: "Following the death of Sultan XI. Süleyman, a regency council had been in charge of [XSK.GetNameDef]. This changed today with the Coronation of XI. Süleymans son XII. Süleyman as Sultan XII. Süleyman.\nHe has not yet stated any specific geo-political goals, though if insider sources are to be trusted, he has already made plans to send an envoy to [XON.GetNameDef]."
+ XSK_news_events.2.b: "He cannot be trusted."
+
+ XSK_news_events.3.t: "Military Coup in the Sultanate"
+ XSK_news_events.3.d: "Following the death of Sultan XI. Süleyman, a regency council had been in charge of [XSK.GetNameDef]. This changed today, as military officials couped the council, establishing military rule over the Sultanate.\nThey have stated that they wish to seek support from the court factions of the Sultanate and fulfil the Regency Council's task of choosing a new Sultan."
+ XSK_news_events.3.a: "Time to actually do something!"
+ XSK_news_events.3.b: "Serves them right!"
+
+ XSK_news_events.4.t: "[XSK.GetNameDefCap] deports Chinese"
+ XSK_news_events.4.d: "With the Chinese acting against the royal regime, Sultan I. Abdulhamid has ordered the deportation of over fourty-thousand men, women and children out of Ottoman territory.\nThis has caused international outrage as the Sultanate is even further diplomatically isolated."
+ XSK_news_events.4.a: "This is unforgivable!"
+ XSK_news_events.4.b: "What the hell is happening in China?"
+
+ XSK_news_events.5.t: "The Ottomans claim the Mandate of Heaven"
+ XSK_news_events.5.d: "The Ottoman Sultan has given a very interesting announcement. The Ottoman Dynasty has officially proclaimed their intention to reunite China as the official successor the Qing Dynasty and claim the Mandate of Heaven.\n \nThe Sultanate has also begun multiple propaganda campaigns to close the ethnic gap between Turks and Chinese by telling the people that Chinese are actually Turkic too."
+ XSK_news_events.5.a: "Glory to the Sultan!"
+ XSK_news_events.5.b: "Seems legit."
+
+ XTK_events.1.t: "Insurgents in the Sultanate!"
+ XTK_events.1.d: "Insurgency Fighters against [XSK.GetNameDef] have reached out to us, asking for us to let them rule our conquered [XSK.GetAdjective] territories."
+ XTK_events.1.a: "Let them have it."
+
 
 # Autonomous States
 
