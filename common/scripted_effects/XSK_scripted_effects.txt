@@ -1,0 +1,22 @@
+XSK_improve_illiteracy = {
+	if = {
+		limit = {
+			has_idea = XSK_low_literacy
+		}
+		swap_ideas = {
+			remove_idea = XSK_low_literacy
+			add_idea = XSK_low_literacy2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = XSK_low_literacy2
+		}
+		remove_ideas = XSK_low_literacy2
+		add_timed_idea = {
+			idea = XSK_school_funding
+			days = 365
+		}
+	}
+	add_research_slot = 1
+}

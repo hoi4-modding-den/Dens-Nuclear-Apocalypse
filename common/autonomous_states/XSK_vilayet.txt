@@ -60,12 +60,6 @@ autonomy_state = {
 				has_completed_focus = XSK_mongolian_integration
 			}
 		}
-		if = {
-			limit = {
-				has_cosmetic_tag = XSK_chahar
-			}
-			always = no
-		}
 	}
 
 	can_take_level = {
