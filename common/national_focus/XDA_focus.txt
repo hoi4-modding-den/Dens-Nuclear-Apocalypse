@@ -13,7 +13,7 @@ focus_tree = {
 	continuous_focus_position = { x = 100 y = 3250 }
 focus = {
 	id = XDA_Rewritting_the_constitution
-	x = 8
+	x = 15
 	y = 0
 	cost = 5
  	available_if_capitulated = yes
@@ -45,7 +45,7 @@ focus = {
 ##Communist Path
 focus = {
 	id = XDA_Dawn_of_a_new_moon
-	x = -4
+	x = -8
 	y = 1
 	relative_position_id = XDA_Rewritting_the_constitution
 	available = {
@@ -63,6 +63,7 @@ focus = {
 		add_political_power = 50		
 	}
 }
+##Go against Thailand and go your own communist path
 focus = {
 	id = XDA_Reestablish_the_Phomvihane_idea
 	x = 0
@@ -75,6 +76,254 @@ focus = {
 	}
 	prerequisite = {
 		focus = XDA_Dawn_of_a_new_moon
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Guarantee_religious_freedom
+	x = 4
+	y = 1
+	relative_position_id = XDA_Reestablish_the_Phomvihane_idea
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Reestablish_the_Phomvihane_idea
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Arms_Heist
+	x = 2
+	y = 1
+	relative_position_id = XDA_Reestablish_the_Phomvihane_idea
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Reestablish_the_Phomvihane_idea
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Promise_Land_Reforms
+	x = 0
+	y = 1
+	relative_position_id = XDA_Reestablish_the_Phomvihane_idea
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Reestablish_the_Phomvihane_idea
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_At_night_we_strike
+	x = 0
+	y = 1
+	relative_position_id = XDA_Arms_Heist
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Promise_Land_Reforms
+		focus = XDA_Arms_Heist
+		focus = XDA_Guarantee_religious_freedom
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+##Seizing the means of production
+focus = {
+	id = XDA_Products_for_the_people
+	x = -4
+	y = 1
+	relative_position_id = XDA_At_night_we_strike
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_At_night_we_strike
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Arms_for_the_people
+	x = 0
+	y = 1
+	relative_position_id = XDA_Products_for_the_people
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Products_for_the_people
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+##Make Burma strike against Thailand
+focus = {
+	id = XDA_Encircling_the_enemy
+	x = 0
+	y = 1
+	relative_position_id = XDA_At_night_we_strike
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_At_night_we_strike
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_The_shame_of_Yangon
+	x = 0
+	y = 1
+	relative_position_id = XDA_Encircling_the_enemy
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Encircling_the_enemy
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_The_Work_of_the_people
+	x = -1
+	y = 1
+	relative_position_id = XDA_The_shame_of_Yangon
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_The_shame_of_Yangon
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Prevail_Socialism
+	x = 1
+	y = 1
+	relative_position_id = XDA_The_shame_of_Yangon
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_The_shame_of_Yangon
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_The_Dara_Telegram
+	x = 0
+	y = 2
+	relative_position_id = XDA_The_shame_of_Yangon
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Prevail_Socialism
+	}
+	prerequisite = {
+		focus = XDA_The_Work_of_the_people
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+##Resistance Side Mission (only activates if the coup is won)
+focus = {
+	id = XDA_Anti_Resistance_Campaign
+	x = 4
+	y = 1
+	relative_position_id = XDA_At_night_we_strike
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_At_night_we_strike
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_In_search_of_the_opposition
+	x = 0
+	y = 1
+	relative_position_id = XDA_Anti_Resistance_Campaign
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Anti_Resistance_Campaign
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Unwilling_purge
+	x = 0
+	y = 1
+	relative_position_id = XDA_In_search_of_the_opposition
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_In_search_of_the_opposition
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Contact_the_leader
+	x = 0
+	y = 1
+	relative_position_id = XDA_Unwilling_purge
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Unwilling_purge
 	}
 	cost = 5
  	available_if_capitulated = yes
@@ -125,7 +374,7 @@ focus = {
 ##Construction
 focus = {
 	id = XDA_Revitalizing_the_work_centers
-	x = 19
+	x = 35
 	y = 0
 	available = {
 	}
@@ -355,6 +604,22 @@ focus = {
 	}
 	prerequisite = {
 		focus = XDA_Civilian_factories_I
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XDA_Military_factories_II
+	x = 0
+	y = 1
+	relative_position_id = XDA_Military_factories_I
+	available = {
+	}
+	prerequisite = {
+		focus = XDA_Military_factories_I
 	}
 	cost = 5
  	available_if_capitulated = yes
