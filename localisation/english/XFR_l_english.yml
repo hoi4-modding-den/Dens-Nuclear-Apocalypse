@@ -1772,9 +1772,18 @@ decision_cost_100_guns: "£infantry_equipment_text_icon §Y100§!"
 decision_cost_100_guns_blocked: "£infantry_equipment_text_icon §R100§!"
 decision_cost_100_guns_tooltip: "It costs £infantry_equipment_text_icon §Y100§! to take the decision"
 
+decision_cost_1000_guns: "£infantry_equipment_text_icon §Y1000§!"
+decision_cost_1000_guns_blocked: "£infantry_equipment_text_icon §R1000§!"
+decision_cost_1000_guns_tooltip: "It costs £infantry_equipment_text_icon §Y1000§! to take the decision"
+
 decision_cost_100_army_xp: "£GFX_army_experience §Y100§!"
 decision_cost_100_army_xp_blocked: "£GFX_army_experience §R100§!"
 decision_cost_100_army_xp_tooltip: "It costs £GFX_army_experience §Y100§! to take the decision"
+
+decision_cost_1_civ: "£civ_factory §Y1§!"
+decision_cost_1_civ_blocked: "£civ_factory §R1§!"
+decision_cost_1_civ_tooltip: "It costs £civ_factory §Y1§! to take the decision\nClicking this decision requires at least one £civ_factory §YCivilian Factory§! in any §Ycore state§!. This decision does §Rnot§! count §Yoff-map factories§! or §Yfactories from puppets§!."
+
 
 # Opinion Modifiers
 
@@ -1897,7 +1906,7 @@ XFR_events.21.desc: "Recent changes in our living standards have convinced quite
 XFR_events.21.a: "Welcome to France!"
 
 XFR_events.22.t: "[FROM.GetNameDefCap] proposes Military Alliance!"
-XFR_events.22.desc: "The [FROM.GetAdjective] Government has approached us, hoping to get us to join their military alliance, the [XFR.GetFactionName]. However, it is up to us to join them."
+XFR_events.22.desc: "The [FROM.GetAdjective] Government has approached us, hoping to get us to join their military alliance, the [FROM.GetFactionName]. However, it is up to us to join them."
 XFR_events.22.a: "We need a strong ally."
 XFR_events.22.b: "Forget it!"
 

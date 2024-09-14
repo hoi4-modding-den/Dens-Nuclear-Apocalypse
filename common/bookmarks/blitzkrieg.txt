@@ -48,8 +48,14 @@ bookmarks = {
 			ideology = neutrality
 			history = "XSK_history"
 			focuses = {
+				XSK_claim_the_mandate_of_heaven
+				XSK_choose_the_next_sultan
+				XSK_church_and_socialism
 			}
 			ideas = {
+				XSK_the_sultanate_in_china
+				XSK_home_of_turks
+				XSK_mountain_society
 			}
 		}
 		"XHK" = {

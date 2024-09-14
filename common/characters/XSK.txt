@@ -23,6 +23,18 @@ characters = {
 			civilian = {
 				large = "GFX_portrait_XSK_sultan_abdulhamid_i"
 			}
+			army = {
+				large = "GFX_portrait_XSK_sultan_abdulhamid_i"
+			}
+		}
+		field_marshal={
+			visible = { has_country_leader = { character = XSK_sultan_abdulhamid_i ruling_only = yes } }
+			traits={ cavalry_officer media_personality }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 
@@ -33,6 +45,18 @@ characters = {
 			civilian = {
 				large = "GFX_portrait_XSK_sultan_suleyman_xii"
 			}
+			army = {
+				large = "GFX_portrait_XSK_sultan_suleyman_xii"
+			}
+		}
+		field_marshal={
+			visible = { has_country_leader = { character = XSK_sultan_suleyman_xii ruling_only = yes } }
+			traits={ defensive_doctrine media_personality }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
 		}
 	}
 
@@ -74,6 +98,101 @@ characters = {
 			ideology = liberalism
 			traits = { XFR_science_minister_trait }
 			expire = "3000.1.1"
+		}
+
+	}
+
+	XSK_ottoman_tank_general = {
+		name = XSK_ottoman_tank_general_name
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XSK_ottoman_general_1"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+
+	}
+
+	XSK_ottoman_cavalry_general = {
+		name = XSK_ottoman_cavalry_general_name
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XSK_ottoman_general_2"
+			}
+		}
+		corps_commander={
+			traits={ organizer cavalry_officer irregulars_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+		}
+
+	}
+
+	XSK_ottoman_field_marshal = {
+		name = XSK_ottoman_cavalry_general_name
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XSK_ottoman_general_3"
+			}
+		}
+		field_marshal={
+			traits={ organizer }
+			skill=3
+			attack_skill=1
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+		}
+
+	}
+
+	XSK_ottoman_infantry_general = {
+		name = XSK_ottoman_infantry_general_name
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XSK_ottoman_general_4"
+			}
+		}
+		corps_commander={
+			traits={ engineer_officer infantry_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+
+	}
+
+	XSK_ottoman_infantry_general_2 = {
+		name = XSK_ottoman_infantry_general_2_name
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XSK_ottoman_general_5"
+			}
+		}
+		corps_commander={
+			traits={ scavenger infantry_leader irregulars_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
 		}
 
 	}

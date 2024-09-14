@@ -48,10 +48,40 @@ spriteTypes = {
         texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_vassal_3.dds"
     }
 
+	spriteType = {
+        name = "GFX_portrait_XSK_ottoman_general_1"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_general_1.dds"
+    }
+
+	spriteType = {
+        name = "GFX_portrait_XSK_ottoman_general_2"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_general_2.dds"
+    }
+
+	spriteType = {
+        name = "GFX_portrait_XSK_ottoman_general_3"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_general_3.dds"
+    }
+
+	spriteType = {
+        name = "GFX_portrait_XSK_ottoman_general_4"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_general_4.dds"
+    }
+
+	spriteType = {
+        name = "GFX_portrait_XSK_ottoman_general_5"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_general_5.dds"
+    }
+
     spriteType = {
 		name = "GFX_idea_XSK_low_literacy"
 		texturefile = "gfx/interface/ideas/XSK/XSK_low_literacy_idea.png"
 	}	
+
+    spriteType = {
+		name = "GFX_idea_XSK_trinity_of_turko_monarcho_socialism"
+		texturefile = "gfx/interface/ideas/XSK/XSK_trinity_of_turko_monarcho_socialism.png"
+	}
     
     spriteType = {
         name = "GFX_autonomy_XSK_vilayet_icon"
@@ -94,5 +124,154 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+
+    spriteType = {
+		name = "GFX_focus_XSK_trade_money"
+		texturefile = "gfx/interface/goals/XSK/XSK_trade_money.png"
+	}	
+
+    SpriteType = {
+		name = "GFX_focus_XSK_trade_money_shine"
+		texturefile = "gfx/interface/goals/XSK/XSK_trade_money.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XSK/XSK_trade_money.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XSK/XSK_trade_money.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_focus_XSK_military_coup"
+		texturefile = "gfx/interface/goals/XSK/XSK_military_coup.png"
+	}	
+
+    SpriteType = {
+		name = "GFX_focus_XSK_military_coup_shine"
+		texturefile = "gfx/interface/goals/XSK/XSK_military_coup.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XSK/XSK_military_coup.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XSK/XSK_military_coup.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_focus_generic_befriend_taiwan"
+		texturefile = "gfx/interface/goals/XSK/XSK_befriend_taiwan.png"
+	}	
+
+    SpriteType = {
+		name = "GFX_focus_generic_befriend_taiwan_shine"
+		texturefile = "gfx/interface/goals/XSK/XSK_befriend_taiwan.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XSK/XSK_befriend_taiwan.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XSK/XSK_befriend_taiwan.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_focus_generic_attack_xiongnu"
+		texturefile = "gfx/interface/goals/XSK/XSK_attack_xiongnu.png"
+	}	
+
+    SpriteType = {
+		name = "GFX_focus_generic_attack_xiongnu_shine"
+		texturefile = "gfx/interface/goals/XSK/XSK_attack_xiongnu.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XSK/XSK_attack_xiongnu.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XSK/XSK_attack_xiongnu.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 
 }

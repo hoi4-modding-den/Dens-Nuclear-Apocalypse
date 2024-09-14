@@ -13,4 +13,12 @@ opinion_modifiers = {
 	XSK_dislike_deportation = {
 		value = -50
 	}
+
+	XSK_denounced_our_intentions = {
+		value = -75
+	}
+
+	XSK_uf_support = {
+		value = 25
+	}
 }

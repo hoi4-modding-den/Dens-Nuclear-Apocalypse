@@ -40,6 +40,12 @@ recruit_character = XSK_ottoman_military_gov
 recruit_character = XSK_ottoman_envoy
 recruit_character = XSK_ottoman_democratic_leader
 
+recruit_character = XSK_ottoman_tank_general
+recruit_character = XSK_ottoman_cavalry_general
+recruit_character = XSK_ottoman_field_marshal
+recruit_character = XSK_ottoman_infantry_general
+recruit_character = XSK_ottoman_infantry_general_2
+
 set_party_name = {
     ideology = neutrality
     long_name = XSK_neutrality_party_regency_long
