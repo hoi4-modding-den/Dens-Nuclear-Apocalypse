@@ -452,7 +452,7 @@ XSK_support_united_front_members_cat = {
 
 XSK_vilayets_cat = {
 
-	XSK_vilayet_of_chahar  = { 
+	XSK_vilayet_of_beijing  = { 
 		
 		icon = GFX_decision_generic_nationalism
 
@@ -464,16 +464,20 @@ XSK_vilayets_cat = {
 
 		highlight_states = { 
 			highlight_state_targets = {
-				state = 611 
-				state = 612
-				state = 621
+				state = 609 
+				state = 608
+				state = 614
+				state = 610
+				state = 1004
 			}
 		}
 
 		available = {
-			611 = { is_owned_and_controlled_by = ROOT }
-			612 = { is_owned_and_controlled_by = ROOT }
-			621 = { is_owned_and_controlled_by = ROOT }
+			609 = { is_owned_and_controlled_by = ROOT }
+			608 = { is_owned_and_controlled_by = ROOT }
+			614 = { is_owned_and_controlled_by = ROOT }
+			610 = { is_owned_and_controlled_by = ROOT }
+			1004 = { is_owned_and_controlled_by = ROOT }
 		}
 
 		visible = { 
@@ -491,24 +495,32 @@ XSK_vilayets_cat = {
 		complete_effect = {
 			add_war_support = 0.05
 			add_stability = 0.05
-			custom_effect_tooltip = XSK_vilayet_of_chahar_tt
+			custom_effect_tooltip = XSK_vilayet_of_beijing_tt
 			hidden_effect = {
 				create_dynamic_country = {
-    				original_tag = XMJ
-					set_cosmetic_tag = XSK_chahar
+    				original_tag = XEX
+					set_cosmetic_tag = XSK_beijing
 					every_core_state = {
 						remove_core_of = PREV
 					}
-    				transfer_state = 611
-					611 = {
+    				transfer_state = 609
+					609 = {
 						add_core_of = THIS
 					}
-					transfer_state = 612
-					612 = {
+					transfer_state = 608
+					608 = {
 						add_core_of = THIS
 					}
-					transfer_state = 621
-					621 = {
+					transfer_state = 614
+					614 = {
+						add_core_of = THIS
+					}
+					transfer_state = 610
+					610 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1004
+					1004 = {
 						add_core_of = THIS
 					}
 					ROOT = {
@@ -519,6 +531,7 @@ XSK_vilayets_cat = {
     						end_civil_wars = no
 						}
 					}
+					set_capital = { state = 608 }
 					set_politics = {
 						ruling_party = neutrality
 						elections_allowed = no
@@ -526,12 +539,35 @@ XSK_vilayets_cat = {
 						name = "Ottoman Rule"
 					}
 					create_country_leader = {
-						name = "Saidullah Dawamet"
-						picture = GFX_portrait_XSK_ottoman_vassal_3
+						name = "Bozdogan Bakkal"
+						picture = GFX_portrait_XSK_ottoman_vassal_1
 						expire = "3000.1.1"
 						ideology = despotism
 						traits = {
 							XSK_ottoman_subject_trait
+						}
+					}
+					division_template = {
+						name = "Ottoman Infantry Division"
+						override_model = ITA_infantry_alt_3_entity
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					every_controlled_state = {
+						create_unit = {
+							division = "name = \"Ottoman Infantry Division\" division_template = \"Ottoman Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+							owner = PREV
+							allow_spawning_on_enemy_provs = yes 
+							count = 2
 						}
 					}
 				}
@@ -539,9 +575,9 @@ XSK_vilayets_cat = {
         }
 	}
 
-	XSK_establish_vilayet_of_japan  = { 
+	XSK_vilayet_of_greater_korea  = { 
 		
-		icon = GFX_decision_jap_pacific_guardian
+		icon = GFX_decision_generic_nationalism
 
 		priority = 50
 
@@ -551,16 +587,32 @@ XSK_vilayets_cat = {
 
 		highlight_states = { 
 			highlight_state_targets = {
-				
+				state = 716 
+				state = 745
+				state = 1005
+				state = 527
+				state = 997
+				state = 998
+				state = 525
+				state = 999
+				state = 1000
 			}
 		}
 
 		available = {
-			
+			716 = { is_owned_and_controlled_by = ROOT }
+			745 = { is_owned_and_controlled_by = ROOT }
+			1005 = { is_owned_and_controlled_by = ROOT }
+			527 = { is_owned_and_controlled_by = ROOT }
+			997 = { is_owned_and_controlled_by = ROOT }
+			998 = { is_owned_and_controlled_by = ROOT }
+			525 = { is_owned_and_controlled_by = ROOT }
+			999 = { is_owned_and_controlled_by = ROOT }
+			1000 = { is_owned_and_controlled_by = ROOT }
 		}
 
 		visible = { 
-			always = no
+			
 		}
 
 		fire_only_once = yes
@@ -574,24 +626,244 @@ XSK_vilayets_cat = {
 		complete_effect = {
 			add_war_support = 0.05
 			add_stability = 0.05
-			custom_effect_tooltip = XSK_vilayet_of_chahar_tt
+			custom_effect_tooltip = XSK_vilayet_of_greater_korea_tt
 			hidden_effect = {
 				create_dynamic_country = {
-    				original_tag = XMJ
-					set_cosmetic_tag = XSK_chahar
+    				original_tag = XK0
+					set_cosmetic_tag = XSK_greater_korea
 					every_core_state = {
 						remove_core_of = PREV
 					}
-    				transfer_state = 611
-					611 = {
+    				transfer_state = 716
+					716 = {
 						add_core_of = THIS
 					}
-					transfer_state = 612
-					612 = {
+					transfer_state = 745
+					745 = {
 						add_core_of = THIS
 					}
-					transfer_state = 621
-					621 = {
+					transfer_state = 1005
+					1005 = {
+						add_core_of = THIS
+					}
+					transfer_state = 527
+					527 = {
+						add_core_of = THIS
+					}
+					transfer_state = 997
+					997 = {
+						add_core_of = THIS
+					}
+					transfer_state = 998
+					998 = {
+						add_core_of = THIS
+					}
+					transfer_state = 525
+					525 = {
+						add_core_of = THIS
+					}
+					transfer_state = 999
+					999 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1000
+					1000 = {
+						add_core_of = THIS
+					}
+					add_state_claim = 528
+					ROOT = {
+						set_autonomy = {
+    						target = PREV
+    						autonomous_state = autonomy_XSK_vilayet
+    						end_wars = no
+    						end_civil_wars = no
+						}
+					}
+					set_capital = { state = 525 }
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+						long_name = "Ottoman Rule"
+						name = "Ottoman Rule"
+					}
+					create_country_leader = {
+						name = "Cevat Kurtulus"
+						picture = GFX_portrait_XSK_ottoman_vassal_2
+						expire = "3000.1.1"
+						ideology = oligarchism
+						traits = {
+							XSK_ottoman_subject_trait
+						}
+					}
+					division_template = {
+						name = "Ottoman Infantry Division"
+						override_model = ITA_infantry_alt_3_entity
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					every_controlled_state = {
+						create_unit = {
+							division = "name = \"Ottoman Infantry Division\" division_template = \"Ottoman Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+							owner = PREV
+							allow_spawning_on_enemy_provs = yes 
+							count = 2
+						}
+					}
+				}
+			}
+        }
+	}
+
+	XSK_vilayet_of_southeast_asia  = { 
+		
+		icon = GFX_decision_generic_nationalism
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 671 
+				state = 670
+				state = 1021 
+				state = 1006 
+				state = 868 
+				state = 1007 
+				state = 286 
+				state = 1008
+				state = 1009
+				state = 741
+				state = 1010
+				state = 289
+				state = 869
+				state = 1001
+				state = 1002
+				state = 724
+				state = 733
+			}
+		}
+
+		available = {
+			671 = { is_owned_and_controlled_by = ROOT }
+			670 = { is_owned_and_controlled_by = ROOT }
+			1021 = { is_owned_and_controlled_by = ROOT }
+			1006 = { is_owned_and_controlled_by = ROOT }
+			868 = { is_owned_and_controlled_by = ROOT }
+			1007 = { is_owned_and_controlled_by = ROOT }
+			286 = { is_owned_and_controlled_by = ROOT }
+			1008 = { is_owned_and_controlled_by = ROOT }
+			1009 = { is_owned_and_controlled_by = ROOT }
+			741 = { is_owned_and_controlled_by = ROOT }
+			1010 = { is_owned_and_controlled_by = ROOT }
+			289 = { is_owned_and_controlled_by = ROOT }
+			869 = { is_owned_and_controlled_by = ROOT }
+			1001 = { is_owned_and_controlled_by = ROOT }
+			1002 = { is_owned_and_controlled_by = ROOT }
+			724 = { is_owned_and_controlled_by = ROOT }
+			733 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		visible = { 
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+        ai_will_do = {
+			base = 100
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			custom_effect_tooltip = XSK_vilayet_of_southeast_asia_tt
+			hidden_effect = {
+				create_dynamic_country = {
+    				original_tag = XDA
+					set_cosmetic_tag = XSK_southeast_asia
+					every_core_state = {
+						remove_core_of = PREV
+					}
+					transfer_state = 671
+					671 = {
+						add_core_of = THIS
+					}
+					transfer_state = 869
+					869 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1001
+					1001 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1002
+					1002 = {
+						add_core_of = THIS
+					}
+					transfer_state = 289
+					289 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1010
+					1010 = {
+						add_core_of = THIS
+					}
+					transfer_state = 741
+					741 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1009
+					1009 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1008
+					1008 = {
+						add_core_of = THIS
+					}
+					transfer_state = 286
+					286 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1007
+					1007 = {
+						add_core_of = THIS
+					}
+					transfer_state = 868
+					868 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1006
+					1006 = {
+						add_core_of = THIS
+					}
+					transfer_state = 1021
+					1021 = {
+						add_core_of = THIS
+					}
+					transfer_state = 670
+					670 = {
+						add_core_of = THIS
+					}
+					transfer_state = 724
+					724 = {
+						add_core_of = THIS
+					}
+					transfer_state = 733
+					733 = {
 						add_core_of = THIS
 					}
 					ROOT = {
@@ -602,6 +874,7 @@ XSK_vilayets_cat = {
     						end_civil_wars = no
 						}
 					}
+					set_capital = { state = 525 }
 					set_politics = {
 						ruling_party = neutrality
 						elections_allowed = no
@@ -609,12 +882,35 @@ XSK_vilayets_cat = {
 						name = "Ottoman Rule"
 					}
 					create_country_leader = {
-						name = "Saidullah Dawamet"
-						picture = GFX_portrait_XSK_ottoman_vassal_3
+						name = "Yogunay Ozker"
+						picture = GFX_portrait_XSK_ottoman_vassal_4
 						expire = "3000.1.1"
 						ideology = despotism
 						traits = {
 							XSK_ottoman_subject_trait
+						}
+					}
+					division_template = {
+						name = "Ottoman Infantry Division"
+						override_model = ITA_infantry_alt_3_entity
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					every_controlled_state = {
+						create_unit = {
+							division = "name = \"Ottoman Infantry Division\" division_template = \"Ottoman Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+							owner = PREV
+							allow_spawning_on_enemy_provs = yes 
+							count = 2
 						}
 					}
 				}

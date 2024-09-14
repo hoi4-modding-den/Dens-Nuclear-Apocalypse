@@ -49,6 +49,16 @@ spriteTypes = {
     }
 
 	spriteType = {
+        name = "GFX_portrait_XSK_ottoman_vassal_4"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_vassal_4.dds"
+    }
+
+	spriteType = {
+        name = "GFX_portrait_XSK_ottoman_vassal_5"
+        texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_vassal_5.dds"
+    }
+
+	spriteType = {
         name = "GFX_portrait_XSK_ottoman_general_1"
         texturefile = "gfx/leaders/XSK/portrait_XSK_ottoman_general_1.dds"
     }

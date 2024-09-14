@@ -1,6 +1,7 @@
 add_namespace = XSK_succession_events
 add_namespace = XSK_events
 add_namespace = XSK_taiwan_events
+add_namespace = XSK_news_events
 add_namespace = XTK_events
 
 country_event = { # The First Candidate
@@ -117,6 +118,7 @@ country_event = { # Military Coup
         }
         hidden_effect = {
             complete_national_focus = XSK_no_sultan
+            news_event = { id = XSK_news_events.3 days = 1 }
         }
     }
 }
@@ -150,6 +152,7 @@ country_event = { # Abdulhamid is choosen
         }
         hidden_effect = {
             complete_national_focus = XSK_the_expansionist_sultan
+            news_event = { id = XSK_news_events.1 days = 1 }
         }
     }
 }
@@ -195,6 +198,7 @@ country_event = { # Süleyman is choosen
         }
         hidden_effect = {
             complete_national_focus = XSK_the_diplomatic_sultan
+            news_event = { id = XSK_news_events.2 days = 1 }
         }
     }
 }
@@ -373,6 +377,9 @@ country_event = { # Han Deportation
                 target = ROOT
                 modifier = XSK_dislike_deportation
             }
+        }
+        hidden_effect = {
+            news_event = { id = XSK_news_events.4 }
         }
     }
 }
@@ -681,8 +688,8 @@ country_event = { # XTK is created
         any_state = {
             is_fully_controlled_by = ROOT
             is_core_of = XSK
-            NOT = { has_claim_by = ROOT }
-            NOT = { has_core_of = ROOT }
+            NOT = { is_claimed_by = ROOT }
+            NOT = { is_core_of = ROOT }
         }
         XSK = {
             surrender_progress > 0.5
@@ -714,8 +721,8 @@ country_event = { # XTK is created
         }
         every_controlled_state = {
             limit = {
-                NOT = { has_claim_by = ROOT }
-                NOT = { has_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+                NOT = { is_core_of = ROOT }
                 is_core_of = XSK
                 is_fully_controlled_by = ROOT
             }
@@ -740,4 +747,145 @@ country_event = { # XTK is created
         }
     }
 
+}
+
+news_event = { # Abdulhamid is coronated
+    id = XSK_news_events.1
+    title = XSK_news_events.1.t
+    picture = GFX_news_event_the_mediterranean_alliance
+    desc = XSK_news_events.1.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    major = yes
+    
+    option = {
+        name = XSK_news_events.1.a
+        trigger = {
+            tag = XSK
+        }
+    }
+
+    option = {
+        name = XSK_news_events.1.b
+        trigger = {
+            OR = {
+                tag = XON
+                tag = XMJ
+            }
+        }
+    }
+}
+
+news_event = { # Süleyman 12 is coronated
+    id = XSK_news_events.2
+    title = XSK_news_events.2.t
+    picture = GFX_news_event_the_mediterranean_alliance
+    desc = XSK_news_events.2.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    major = yes
+    
+    option = {
+        name = XSK_news_events.1.a
+        trigger = {
+            tag = XSK
+        }
+    }
+
+    option = {
+        name = XSK_news_events.2.b
+        trigger = {
+            OR = {
+                tag = XON
+                tag = XMJ
+            }
+        }
+    }
+}
+
+news_event = { # Military Coup
+    id = XSK_news_events.3
+    title = XSK_news_events.3.t
+    picture = GFX_news_event_macedonian_empire_restored
+    desc = XSK_news_events.3.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    major = yes
+    
+    option = {
+        name = XSK_news_events.3.a
+        trigger = {
+            tag = XSK
+        }
+    }
+
+    option = {
+        name = XSK_news_events.3.b
+        trigger = {
+            OR = {
+                tag = XON
+                tag = XMJ
+            }
+        }
+    }
+}
+
+news_event = { # Chinese are deported
+    id = XSK_news_events.4
+    title = XSK_news_events.4.t
+    picture = GFX_news_event_generic_ruins
+    desc = XSK_news_events.4.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    major = yes
+    fire_for_sender = no 
+    
+    option = {
+        name = XSK_news_events.4.a
+        trigger = {
+            DEN_is_chinese_nation = yes
+        }
+    }
+
+    option = {
+        name = XSK_news_events.4.b
+        trigger = {
+            NOT = { DEN_is_chinese_nation = yes }
+        }
+    }
+}
+
+news_event = { # Claim the Mandate of Heaven
+    id = XSK_news_events.5
+    title = XSK_news_events.5.t
+    picture = GFX_news_event_048
+    desc = XSK_news_events.5.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    major = yes
+    fire_for_sender = no 
+
+    option = {
+        name = XSK_news_events.5.a
+        trigger = {
+            tag = XSK
+        }
+    }
+    
+    option = {
+        name = XSK_news_events.5.b
+        trigger = {
+            NOT = { tag = XSK }
+        }
+    }
 }
