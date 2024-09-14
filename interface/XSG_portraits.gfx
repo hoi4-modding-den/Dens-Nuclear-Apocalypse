@@ -1,0 +1,21 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_portrait_Zhao_Tianyi"
+        texturefile = "gfx/XSG/XSG_Zhao_Tianyi.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_Ma_Jianguo"
+        texturefile = "gfx/XSG/XSG_Ma_Jianguo.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_Deng_Jingyi"
+        texturefile = "gfx/XSG/XSG_Deng_Jingyi.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_Wu_Peinfu"
+        texturefile = "gfx/XSG/XSG_Wu_Peinfu.dds"
+    }
+
+
+}
