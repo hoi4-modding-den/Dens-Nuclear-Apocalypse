@@ -44,6 +44,7 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			 country_event = XNP_focus.1
 		}
 		
 		ai_will_do = {
@@ -64,6 +65,11 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			add_stability = 0.10
+			swap_ideas = {
+  				remove_idea = XNP_congressional_deadlock
+    			add_idea = XNP_unified_center_1
+			}
 		}
 		
 		ai_will_do = {
@@ -103,12 +109,16 @@ focus_tree = {
 		prerequisite = { focus = XNP_the_grand_coalition }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 10
 
 		available = {  }
 		bypass = {}		
 		
 		completion_reward = {
+			swap_ideas = {
+  				remove_idea = XNP_unified_center_1
+    			add_idea = XNP_unified_center_2
+			}
 		}
 		
 		ai_will_do = {
@@ -128,6 +138,10 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			swap_ideas = {
+  				remove_idea = XNP_unified_center_2
+    			add_idea = XNP_unified_center_3
+			}
 		}
 		
 		ai_will_do = {
@@ -147,6 +161,7 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			add_ideas = XNP_land_appropriation_committee
 		}
 		
 		ai_will_do = {
@@ -185,6 +200,8 @@ focus_tree = {
 		bypass = {}		
 		
 		completion_reward = {
+			add_ideas = XNP_education_bureau
+			add_research_slot = 1
 		}
 		
 		ai_will_do = {
@@ -202,10 +219,72 @@ focus_tree = {
 		y = 1
 		cost = 10
 
-		available = { date > 2236.12.31 }
-		bypass = {}		
+		available = { always = no }	
 		
 		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_for_nepal
+		icon = GFX_focus_generic_fascist_troops
+		relative_position_id = XNP_the_republic_lives_another_year
+		prerequisite = { focus = XNP_the_republic_lives_another_year }
+		mutually_exclusive = { focus = XNP_for_our_people }
+		mutually_exclusive = { focus = XNP_for_the_world }
+		x = -2
+		y = 1
+		cost = 5
+
+		available = { }	
+		
+		completion_reward = {
+			custom_effect_tooltip = XNP_for_nepal_tt
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_for_our_people
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		relative_position_id = XNP_the_republic_lives_another_year
+		prerequisite = { focus = XNP_the_republic_lives_another_year }
+		mutually_exclusive = { focus = XNP_for_nepal }
+		mutually_exclusive = { focus = XNP_for_the_world }
+		x = 0
+		y = 1
+		cost = 5
+
+		available = { }	
+
+		completion_reward = {
+			custom_effect_tooltip = XNP_for_our_people_tt
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_for_the_world
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		relative_position_id = XNP_the_republic_lives_another_year
+		prerequisite = { focus = XNP_the_republic_lives_another_year }
+		mutually_exclusive = { focus = XNP_for_nepal }
+		mutually_exclusive = { focus = XNP_for_our_people }
+		x = 2
+		y = 1
+		cost = 5
+
+		available = { }	
+		
+		completion_reward = {
+			custom_effect_tooltip = XNP_for_the_world_tt
 		}
 		
 		ai_will_do = {

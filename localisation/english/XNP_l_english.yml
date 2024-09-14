@@ -1,12 +1,12 @@
 ﻿l_english:
- #XNP_fascism:0 "Republic of China"
- #XNP_fascism_DEF:0 "the Republic of China"
+ XNP_fascism:0 "Nepāl"
+ XNP_fascism_DEF:0 "Nepāl"
 
  XNP_democratic:0 "Congressional Republic of Nepal"
  XNP_democratic_DEF:0 "the Congressional Republic of Nepal"
 
- #XNP_neutrality:0 "Republic of China"
- #XNP_neutrality_DEF:0 "the Republic of China
+ XNP_neutrality:0 "Gorkha Confederation"
+ XNP_neutrality_DEF:0 "the Gorkha Confederation"
 
  XNP_communism:0 "Marxist-Leninist-Maoist Republic of Nepal"
  XNP_communism_DEF:0 "the Marxist-Leninist-Maoist Republic of Nepal"
@@ -25,14 +25,25 @@
  XNP_democratic_party:0 "Twelfth Congress"
  XNP_communism_party:0 "GEMLMRMT"
  XNP_communism_party_long:0 "Group for the Establishment of Marxism-Leninism-Maoism in Revisionism of Maoist Thought"
+ XNP_fascism_party:0 "RPP-Right"
+ XNP_fascism_party_long:0 "Rastriya Prajatantra Party, Right-Wing"
+ XNP_neutrality_party:0 "RPP-Centre"
+ XNP_neutrality_party_long:0 "Rastriya Prajatantra Party, Moderate"
 
  XNP_extension_of_the_people:0 "Extension of the People"
  XNP_congressional_deadlock:0 "Congressional Deadlock"
  XNP_unified_center:0 "Unified Center"
+ XNP_land_appropriation_committee:0 "Land Appropriation Committee"
+ XNP_education_bureau:0 "Nepali Education Bureau"
 
  XNP_history_desc:0 "placeholder!"
 
  VICTORY_POINTS_5310:0 "Jhapa"
+
+ XNP_focus.1.title:0 "The Congress Convenes in Jhapa"
+ XNP_focus.1.desc:0 "The Nepali National Congress only convenes in the capital on occassions of extreme importance. This year, the occasion is a complete deadlock among the representatives. All five major parties have a roughly equal number of represenatatives, and none of them can agree on anything. This special session is a last-ditch effort to move forward, at least until next year's panel is elected."
+ XNP_focus.1.a:0 "The republicans come to an agreement"
+ XNP_focus.1.b:0 "All hell breaks loose"
 
  XNP_diamond_in_the_rough:0 "Diamond in the Rough"
  XNP_diamond_in_the_rough_desc:0 ""
@@ -48,3 +59,9 @@
  XNP_fund_the_himalayan_mining_group:0 "Fund the Himalayan Mining Group"
  XNP_nepali_education_bureau:0 "Found the Himalayan Education Bureau"
  XNP_the_republic_lives_another_year:0 "The Republic Lives Another Year"
+ XNP_for_the_world:0 "For the World"
+ XNP_for_our_people:0 "For Our People"
+ XNP_for_nepal:0 "For Nepal"
+ XNP_for_the_world_tt:0 "§YThe §cCPN§Y splits from the coalition!§!"
+ XNP_for_our_people_tt:0 "§YThe §dRSP§Y splits from the coalition!§!"
+ XNP_for_nepal_tt:0 "§YThe §fRPP§Y splits from the coalition!§!"
