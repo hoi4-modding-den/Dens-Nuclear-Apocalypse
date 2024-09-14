@@ -5,8 +5,8 @@ manpower=7837067
 	state_category = city
 	history=
 	{
-		owner = LIB # CHI
-		#add_core_of = CHI
+		owner = XSG # CHI
+		#add_core_of = XSG
 		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2

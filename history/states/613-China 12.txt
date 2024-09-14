@@ -7,7 +7,7 @@ manpower=11536733
 	state_category = large_city
 	
 	history={
-		owner = LIB # CHI
+		owner = XSG # CHI
 		#add_core_of = CHI
 		#add_core_of = PRC
 		buildings = {
