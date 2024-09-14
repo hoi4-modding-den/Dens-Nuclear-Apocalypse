@@ -1,0 +1,46 @@
+ideas = {
+	country = {
+	    XNP_congressional_deadlock = {
+			name = XNP_congressional_deadlock
+
+			picture = GFX_idea_XDA_Mirage_Government
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.40
+				political_power_factor = -0.5
+			}
+		}
+		XNP_unified_center_1 = {
+			name = XNP_unified_center
+
+			picture = deadlock
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.30
+				political_power_factor = -0.35
+			}
+		}
+		XNP_unified_center_2 = {
+			name = XNP_unified_center
+
+			picture = deadlock
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+			}
+		}
+	}	
+}

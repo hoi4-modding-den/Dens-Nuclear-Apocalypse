@@ -4,6 +4,10 @@ capital = 323
 
 recruit_character = XNP_congress
 
+add_ideas = {
+	XNP_congressional_deadlock
+}
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "2234.11.27"
