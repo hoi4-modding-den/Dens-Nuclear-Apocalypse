@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		XON_unhappy_chinese = {
-			picture = generic_volunteer_expedition_bonus
+			picture = raj_marginalized_muslim_community_angry
 			modifier = {
 				stability_factor = -0.08
 				}

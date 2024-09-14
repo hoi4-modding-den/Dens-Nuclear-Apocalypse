@@ -1,0 +1,215 @@
+focus_tree = {
+	id = XNP_focus
+	default = no
+	reset_on_civilwar = no	
+	continuous_focus_position = { x = 3150 y = 1550 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XNP
+		}
+	}
+	
+	focus = {
+		id = XNP_diamond_in_the_rough
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 10
+		y = 0
+		cost = 5
+
+		available = { 
+		}
+		bypass = {}		
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_jhapa_conference
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = XNP_diamond_in_the_rough }
+		relative_position_id = XNP_diamond_in_the_rough
+		x = 0
+		y = 1
+		cost = 5
+
+		available = { 
+		}
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_the_grand_coalition
+		icon = GFX_focus_ARG_strengthening_the_concordancia
+		relative_position_id = XNP_jhapa_conference
+		prerequisite = { focus = XNP_jhapa_conference }
+		mutually_exclusive = { focus = XNP_digging_our_own_grave }
+		x = 2
+		y = 1
+		cost = 1
+
+		available = {  }
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_digging_our_own_grave
+		icon = GFX_focus_generic_strike_at_democracy2
+		relative_position_id = XNP_jhapa_conference
+		prerequisite = { focus = XNP_jhapa_conference }
+		mutually_exclusive = { focus = XNP_the_grand_coalition }
+		x = -2
+		y = 1
+		cost = 1
+
+		available = {  }
+		bypass = {}		
+		
+		completion_reward = {
+			remove_ideas = XNP_congressional_deadlock
+			add_stability = -1.00
+			set_politics = {
+   				ruling_party = communism
+    			elections_allowed = no
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNP_multipartisan_agreements
+		icon = GFX_focus_SWE_form_rfsu
+		relative_position_id = XNP_the_grand_coalition
+		prerequisite = { focus = XNP_the_grand_coalition }
+		x = -3
+		y = 1
+		cost = 5
+
+		available = {  }
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNP_fight_radicalism
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		relative_position_id = XNP_multipartisan_agreements
+		prerequisite = { focus = XNP_multipartisan_agreements }
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {  }
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}	
+	focus = {
+		id = XNP_land_appropriation_committee
+		icon = GFX_focus_SWE_hygienic_housing
+		relative_position_id = XNP_the_grand_coalition
+		prerequisite = { focus = XNP_the_grand_coalition }
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {  }
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_fund_the_himalayan_mining_group
+		icon = GFX_focus_generic_mining_industry
+		relative_position_id = XNP_land_appropriation_committee
+		prerequisite = { focus = XNP_land_appropriation_committee }
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {  }
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_nepali_education_bureau
+		icon = GFX_focus_generic_university_1
+		relative_position_id = XNP_land_appropriation_committee
+		prerequisite = { focus = XNP_land_appropriation_committee }
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {  }
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	focus = {
+		id = XNP_the_republic_lives_another_year
+		icon = GFX_focus_generic_support_the_left_right
+		relative_position_id = XNP_fight_radicalism
+		prerequisite = { focus = XNP_fight_radicalism }
+		prerequisite = { focus = XNP_nepali_education_bureau }
+		prerequisite = { focus = XNP_fund_the_himalayan_mining_group }
+		x = 2
+		y = 1
+		cost = 10
+
+		available = { date > 2236.12.31 }
+		bypass = {}		
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+}	
