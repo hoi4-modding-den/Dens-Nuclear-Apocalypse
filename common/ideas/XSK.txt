@@ -634,6 +634,84 @@ ideas = {
 
         }
 
+        XTK_insurgency = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = {
+                    has_war_with = XSK
+                }
+            }
+
+           removal_cost = -1
+
+            picture = POL_the_peasants_strike
+
+            modifier = {
+                war_support_factor = 0.25
+                compliance_gain = 0.1
+                equipment_capture = 0.5
+            }
+
+            targeted_modifier = {
+                tag = XSK
+                attack_bonus_against = 0.1
+                defense_bonus_against = 0.05
+            }
+
+        }
+
+        XTK_political_instability = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = SPR_political_violence
+
+            modifier = {
+                stability_factor = -0.2
+                political_power_gain = -0.1
+                custom_modifier_tooltip = XTK_idea_can_be_removed_tt
+            }
+
+        }
+
+        XTK_weak_industry = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = POL_disjointed_industry
+
+            modifier = {
+                production_speed_buildings_factor = -0.25
+                production_factory_max_efficiency_factor = -0.2
+                custom_modifier_tooltip = XTK_idea_can_be_removed_tt
+            }
+
+        }
+
     }
 
 }

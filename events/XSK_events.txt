@@ -1,6 +1,7 @@
 add_namespace = XSK_succession_events
 add_namespace = XSK_events
 add_namespace = XSK_taiwan_events
+add_namespace = XTK_events
 
 country_event = { # The First Candidate
     id = XSK_succession_events.1
@@ -663,6 +664,80 @@ country_event = { # Taipei Compromise: Guarantees
         set_country_flag = XSK_taipei_compromise_succeeded
         give_guarantee = FROM
         FROM = { give_guarantee = ROOT } 
+    }
+
+}
+
+country_event = { # XTK is created
+    id = XTK_events.1
+    title = XTK_events.1.t
+    picture = GFX_report_event_military_planning
+    desc = XTK_events.1.d
+
+    trigger = {
+        has_war_with = XSK
+        any_war_score > 10
+        NOT = { original_tag = XSK }
+        any_state = {
+            is_fully_controlled_by = ROOT
+            is_core_of = XSK
+            NOT = { has_claim_by = ROOT }
+            NOT = { has_core_of = ROOT }
+        }
+        XSK = {
+            surrender_progress > 0.5
+        }
+    }
+    
+    fire_only_once = yes
+    
+    option = {
+        name = XTK_events.1.a
+        hidden_effect = {
+            XTK = {
+                division_template = {
+					name = "Insurrectionist Division"
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+            }
+        }
+        every_controlled_state = {
+            limit = {
+                NOT = { has_claim_by = ROOT }
+                NOT = { has_core_of = ROOT }
+                is_core_of = XSK
+                is_fully_controlled_by = ROOT
+            }
+            transfer_state_to = XTK
+            create_unit = {
+				division = "name = \"Insurrectionist Division\" division_template = \"Insurrectionist Division\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = XTK
+				allow_spawning_on_enemy_provs = yes 
+				count = 6 
+			}
+        }
+        XSK = {
+            every_core_state = {
+                add_core_of = XTK
+            }
+        }
+        set_autonomy = {
+            target = XTK
+            autonomous_state = autonomy_integrated_puppet
+            end_wars = no
+            end_civil_wars = no
+        }
     }
 
 }
