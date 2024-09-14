@@ -28,6 +28,8 @@ set_popularities = {
 	neutrality = 10
 }
 
+recruit_character = XSI_Chairman_Saeng_2
+
 set_country_flag = dont_use_default_political_advisors
 set_country_flag = dont_use_default_military_advisors
 #set_country_flag = XSI_welcome_message_flag

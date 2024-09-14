@@ -1,0 +1,18 @@
+characters = {
+
+	XSI_Chairman_Saeng_2 = {
+		name = "Chairman Saeng II "
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XSI_Chairman_Saeng"
+			}
+		}
+		country_leader = {
+			ideology = XSI_military_communism
+			traits = { XSI_the_red_eternal }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+}
