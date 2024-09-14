@@ -46,8 +46,35 @@ characters = {
 		}
 		country_leader = {
 			ideology = XSK_ottoman_stratocracy
-			traits = { }
+			traits = { XSK_military_regency }
 			expire = "3000.1.1"
 		}
+	}
+
+	XSK_ottoman_envoy = {
+		name = XSK_ottoman_envoy_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XSK_ottoman_envoy"
+			}
+		}
+
+	}
+
+	XSK_ottoman_democratic_leader = {
+		name = XSK_ottoman_democratic_leader_name
+		
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XSK_ottoman_democratic_leader"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { XFR_science_minister_trait }
+			expire = "3000.1.1"
+		}
+
 	}
 }

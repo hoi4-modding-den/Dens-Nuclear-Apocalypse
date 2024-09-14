@@ -1,0 +1,28 @@
+defined_text = {
+	name = GetCambodiaStateInfo
+
+	text = {
+		trigger = {
+			has_country_flag = XCB_chuor_phnum_info
+		}
+		localization_key = XCB_chuor_phnum_info_loc
+	}
+	text = {
+		trigger = {
+			has_country_flag = XCB_prey_lang_info
+		}
+		localization_key = XCB_prey_lang_info_loc
+	}
+	text = {
+		trigger = {
+			has_country_flag = XCB_tonle_sap_info
+		}
+		localization_key = XCB_tonle_sap_info_loc
+	}
+	text = {
+		trigger = {
+			has_country_flag = XCB_phnom_kulen_info
+		}
+		localization_key = XCB_phnom_kulen_info_loc
+	}
+}

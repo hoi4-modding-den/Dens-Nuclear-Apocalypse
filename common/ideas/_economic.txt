@@ -928,6 +928,12 @@ ideas = {
 					}
 					NOT = { has_idea = CHI_nine_power_treaty }
 				}
+				if = {
+					limit = {
+						original_tag = XSK
+					}
+					NOT = { has_idea = XSK_the_silk_road }
+				}
 			}
 			
 			allowed_to_remove = {

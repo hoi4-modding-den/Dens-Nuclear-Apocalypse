@@ -26,6 +26,14 @@ bookmarks = {
 				XTW_overpopulation_crisis
 			}
 		}
+		"XMJ" = {
+			ideology = fascism
+			history = "XMJ_history"
+			focuses = {
+			}
+			ideas = {
+			}
+		}
 		"XYU" = {
 			ideology = neutrality
 			history = "XYU_history"
@@ -93,10 +101,13 @@ bookmarks = {
 		}
 		"XK0" = {
 			ideology = democratic
-			history = "XTM_history"
+			history = "XK0_history"
 			focuses = {
 			}
 			ideas = {
+				XK0_limited_armed_forces
+				XK0_university_of_josea
+				XK0_militancy_idea
 			}
 		}
 		"XDA" = {
@@ -107,6 +118,15 @@ bookmarks = {
 			ideas = {
 				XDA_Crumbling_Democracy
 				XDA_Mirage_Government
+			}
+		}
+		"XNP" = {
+			ideology = democratic
+			history = "XNP_history_desc"
+			focuses = {
+			}
+			ideas = {
+
 			}
 		}
 		effect = {

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_XMJ_altan_borjigit"
+		texturefile = "gfx/leaders/XMJ/Portrait_Mengjiang_Altan_Borjigit.png"
+	}
+}

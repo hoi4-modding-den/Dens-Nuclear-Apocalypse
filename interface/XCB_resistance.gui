@@ -1,0 +1,168 @@
+guiTypes = {
+	containerWindowType = {
+		name = "XCB_resistance_open"
+		size = { width = 100%% height = 100%% }
+		position = { x = 440 y = 238 }
+		clipping = no
+		
+		buttonType = {
+			name = "XCB_resistance_open_Button"
+			spriteType = "GFX_XCB_open_button"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = XCB_resistance_open_tooltip
+		}
+		iconType = {
+			name = "XCB_button_bloom"
+			spriteType = "GFX_XCB_button_bloom"
+			position = { x = 0 y = 0 }
+			#pdx_tooltip = XGE_bloom_hint_loc
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "XCB_resistance_gui_main_window"
+		clipping = no
+		#moveable = yes
+		position = { x = 538 y = -200 }
+		show_position = { x = 538 y = 220 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width = 550 height = 410 }
+		
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		buttonType = {
+			name = "XCB_custom_gui_close"
+			spriteType = "GFX_closebutton"
+			position = { x = 515 y = 2 }
+		}
+		instantTextBoxType = {
+			name = "XCB_resistance_title"
+			position = { x = 43 y = 8}
+			text = "The Instrumentation of the Insurrection"
+			font = hoi_24header
+			maxWidth = 545
+			maxHeight = 375
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "XCB_bar_title"
+			position = { x = 80 y = 45 }
+			text = "Ferocity of the Resistance"
+			font = hoi_26mbs
+			maxWidth = 368
+			maxHeight = 24
+			format = center
+			pdx_tooltip = XCB_ferocity_bar_tt
+		}
+		iconType = {
+			name = "XCB_resistance_progress"
+			spriteType = "GFX_resistance_progress_bar"
+			position = { x = 80 y = 65 }
+			pdx_tooltip = XCB_ferocity_bar_tt
+		}
+		iconType = {
+			name = "XCB_fist_left"
+			spriteType = "GFX_XCB_raised_fist"
+			position = { x = 28 y = 50 }
+			scale = 0.6
+		}
+		iconType = {
+			name = "XCB_fist_right"
+			spriteType = "GFX_XCB_raised_fist_intense"
+			position = { x = 460 y = 45 }
+			scale = 0.7
+		}
+		instantTextBoxType = {
+			name = "XCB_kldp_influence"
+			position = { x = 80 y = 100 }
+			text = XCB_kldp_influence_resistance
+			font = hoi_16mbs
+			maxWidth = 80
+			maxHeight = 24
+			format = center
+		}
+		instantTextBoxType = {
+			name = "XCB_cprm_a_influence"
+			position = { x = 348 y = 100 }
+			text = XCB_cprm_a_influence_resistance
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 24
+			format = center
+		}
+		instantTextBoxType = {
+			name = "XCB_cprm_i_influence"
+			position = { x = 212 y = 100 }
+			text = XCB_cprm_i_influence_resistance
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 24
+			format = center
+		}
+		instantTextBoxType = {
+			name = "XCB_map_title"
+			position = { x = 80 y = 160 }
+			text = "Current Scope of the Sedition"
+			font = hoi_26mbs
+			maxWidth = 368
+			maxHeight = 24
+			format = center
+			
+		}
+		buttonType = {
+			name = "XCB_tonle_sap"
+			quadTextureSprite = "GFX_XCB_tonle_sap_resistance"
+			position = { x = 100 y = 250 }
+			scale = 0.7
+			pdx_tooltip = STATE_741
+			
+		}
+		buttonType = {
+			name = "XCB_phnom_kulen"
+			quadTextureSprite = "GFX_XCB_phnom_kulen_resistance"
+			position = { x = 60 y = 190 }
+			scale = 0.7
+			pdx_tooltip = STATE_1009
+			
+		}
+		buttonType = {
+			name = "XCB_chuor_phnum"
+			quadTextureSprite = "GFX_XCB_chuor_phnum_resistance"
+			position = { x = 63 y = 249 }
+			scale = 0.7
+			pdx_tooltip = STATE_1010
+			
+		}
+		buttonType = {
+			name = "XCB_prey_lang"
+			quadTextureSprite = "GFX_XCB_prey_lang_resistance"
+			position = { x = 160 y = 189 }
+			scale = 0.7
+			pdx_tooltip = STATE_1008
+			
+		}
+		instantTextBoxType = {
+			name = "XCB_state_info_textbox"
+			position = { x = 275 y = 230 }
+			text = [GetCambodiaStateInfo]
+			font = hoi_24mbs
+			maxWidth = 100
+			maxHeight = 200
+			format = center
+		}
+		instantTextBoxType = {
+			name = "XCB_state_info_textbox_explanation"
+			position = { x = 380 y = 165 }
+			text = XCB_yapping
+			font = hoi_16mbs
+			maxWidth = 150
+			maxHeight = 200
+			format = left
+		}
+	}
+	
+}

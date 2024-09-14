@@ -36,6 +36,24 @@ ideas = {
 				political_power_cost = 0.1
 			}
 		}
+		XHK_mercantalism = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.1
+			}
+		}
 		XHK_fragile_democracy = {
 			picture = generic_constitutional_guarantees
 			
@@ -52,6 +70,24 @@ ideas = {
 			modifier = {
 				stability_factor = -0.3
 				democratic_drift = -0.05
+			}
+		}
+		XHK_fragile_democracy_2 = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				democratic_drift = -0.025
 			}
 		}
 		XHK_corrupt_assembly = {
@@ -91,6 +127,25 @@ ideas = {
 			targeted_modifier = {
 				tag = XGD
 				defense_bonus_against = 0.1
+			}
+		}
+		XHK_overworked_and_underpaid = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				monthly_population = -0.05
 			}
 		}
 	}

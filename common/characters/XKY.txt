@@ -1,19 +1,38 @@
 characters = {
-
-	### COUNTRY LEADERS ###
-
-	XKY_Cyborg_Hattori = {
-		name = "Cyborg Hattori"
-		portraits = {
-			civilian = {
-				large = "GFX_Portrait_Kishida"
-			}
-		}
-		country_leader = {
-			ideology = liberalism
-			traits = {  }
-			expire = "3000.9.9.9"
-			id = -1
-		}
-	}
-}
+    XKY_Parliament = {
+        name = "Kyushuan Parliament"
+        portraits={
+            civilian={
+                large = gfx/leaders/XKY/Portrait_Parliament.dds
+            }
+        }
+        country_leader={
+            ideology = liberalism
+            traits = {Cabinet_Crisis}
+        }
+    }
+    XKY_Fujimoto_Aiko = {
+        name = "Fujimoto Aiko"
+        portraits={
+            civilian={
+                large = gfx/leaders/XKY/Portrait_Fujimoto_Aiko.dds
+            }
+        }
+        country_leader={
+            ideology = stalinism
+            traits = {Rearmer Communist_Politician}
+        }
+    }
+    XKY_Inoue_Masaru = {
+        name = "Kōdōha Council"
+        portraits={
+            civilian={
+                large = gfx/leaders/XKY/Portrait_Army_Council.dds
+            }
+        }
+        country_leader={
+            ideology = fascism_ideology
+            traits = {Fascist_Militarist Fascist_Populist}
+        }
+    }    
+}	

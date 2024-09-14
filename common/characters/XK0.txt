@@ -4,6 +4,11 @@ characters = {
 		portraits={
 			army={
 				large=GFX_portrait_XK0_seong_ho_han
+				small=GFX_portrait_XK0_seong_ho_han_small
+			}
+			civilian={
+				large=GFX_portrait_XK0_seong_ho_han
+				small=GFX_portrait_XK0_seong_ho_han_small
 			}
 		}
 		country_leader = {
@@ -21,12 +26,31 @@ characters = {
 			logistics_skill=1
 			legacy_id=0
 		}
+		advisor={
+			slot = army_chief
+			idea_token = XK0_seong_ho_han
+			allowed = {}
+			available = {}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 75
+			on_add = { owner = { XK0_decrease_militancy = yes } }
+			ai_will_do = {
+				factor = 10
+			}
+		}
 	}
 	XK0_ken_matsubara={
 		name=XK0_ken_matsubara
 		portraits={
 			army={
 				large=GFX_portrait_XK0_ken_matsubara
+				small=GFX_portrait_XK0_ken_matsubara_small
+			}
+			civilian={
+				large=GFX_portrait_XK0_ken_matsubara
+				small=GFX_portrait_XK0_ken_matsubara_small
 			}
 		}
 		country_leader = {
@@ -43,6 +67,88 @@ characters = {
 			planning_skill=5
 			logistics_skill=3
 			legacy_id=0
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XK0_ken_matsubara
+			allowed = {}
+			available = {
+				NOT = { has_government = communism }
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 75
+			on_add = { owner = { XK0_increase_militancy = yes } }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	XK0_makari_yegorov={
+		name=XK0_makari_yegorov
+		portraits={
+			army={
+				large=GFX_portrait_XK0_makari_yegorov
+				small=GFX_portrait_XK0_makari_yegorov_small
+			}
+			civilian={
+				large=GFX_portrait_XK0_makari_yegorov
+				small=GFX_portrait_XK0_makari_yegorov_small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { veteran_trade_unionist }
+			expire = "265.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XK0_makari_yegorov
+			allowed = {}
+			available = {
+				NOT = { has_government = fascism }
+			}
+			cost = 150
+			traits = { veteran_trade_unionist }
+			on_add = { owner = { XK0_decrease_militancy = yes } }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	XK0_sung_min_yi={
+		name=XK0_sung_min_yi
+		portraits={
+			army={
+				large=GFX_portrait_XK0_sung_min_yi
+				small=GFX_portrait_XK0_sung_min_yi_small
+			}
+			civilian={
+				large=GFX_portrait_XK0_sung_min_yi
+				small=GFX_portrait_XK0_sung_min_yi_small
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { dictator }
+			expire = "265.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = XK0_sung_min_yi
+			allowed = {}
+			available = {
+				NOT = { has_government = fascism }
+			}
+			cost = 150
+			traits = { propaganda_expert }
+			on_add = { owner = { XK0_increase_militancy = yes } }
+			ai_will_do = {
+				factor = 10
+			}
 		}
 	}
 }

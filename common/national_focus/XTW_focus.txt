@@ -761,6 +761,436 @@ focus = {
 	}
 }
 focus = {
+	id = XTW_west_pacific_project
+	icon = GFX_goal_generic_alliance
+	x = 0
+	y = 1
+	relative_position_id = XTW_a_new_era_for_taiwan
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_a_new_era_for_taiwan
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_extend_a_branch_to_laos
+	icon = GFX_focus_SWE_refuge_from_war
+	x = -3
+	y = 1
+	relative_position_id = XTW_west_pacific_project
+	bypass = {
+		XDA = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+	}
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_west_pacific_project
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_extend_a_branch_to_josea
+	icon = GFX_focus_SWE_refuge_from_war
+	x = 3
+	y = 1
+	relative_position_id = XTW_west_pacific_project
+	available = {
+	}
+	bypass = {
+		XK0 = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_west_pacific_project
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_the_matter_of_japan
+	icon = GFX_focus_jap_pacific_guardian
+	x = 1
+	y = 1
+	relative_position_id = XTW_extend_a_branch_to_josea
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_extend_a_branch_to_josea
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_strangle_it_in_its_crib
+	icon = GFX_focus_attack_japan
+	x = -1
+	y = 1
+	relative_position_id = XTW_the_matter_of_japan
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XTW_befriend_the_minor_democracies
+	}
+	prerequisite = {
+		focus = XTW_the_matter_of_japan
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_befriend_the_minor_democracies
+	icon = GFX_focus_chi_collaboration_with_the_japanese
+	x = 1
+	y = 1
+	relative_position_id = XTW_the_matter_of_japan
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XTW_strangle_it_in_its_crib
+	}
+	prerequisite = {
+		focus = XTW_the_matter_of_japan
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_autonomy_for_ryukyu
+	icon = GFX_goal_tfv_sever_ties_with_uk
+	x = 0
+	y = 2
+	relative_position_id = XTW_the_matter_of_japan
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_strangle_it_in_its_crib
+		focus = XTW_befriend_the_minor_democracies
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		remove_ideas = XTW_ryukyuan_seperatism
+		release_autonomy = {
+    		target = XRY
+    		autonomy_state = autonomy_integrated_puppet
+    		freedom_level = 0.5
+		}
+	}
+}
+focus = {
+	id = XTW_crush_the_revivalists
+	icon = GFX_focus_attack_china
+	x = -1
+	y = 1
+	relative_position_id = XTW_extend_a_branch_to_laos
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_extend_a_branch_to_laos
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_loyal_administrators
+	icon = GFX_focus_ARG_keep_it_in_the_party
+	x = 1
+	y = 1
+	relative_position_id = XTW_crush_the_revivalists
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XTW_direct_rule_from_taipei
+	}
+	prerequisite = {
+		focus = XTW_crush_the_revivalists
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_direct_rule_from_taipei
+	icon = GFX_focus_generic_annex_country_2
+	x = -1
+	y = 1
+	relative_position_id = XTW_crush_the_revivalists
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XTW_loyal_administrators
+	}
+	prerequisite = {
+		focus = XTW_crush_the_revivalists
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_the_enemies_of_democracy
+	icon = GFX_focus_generic_strike_at_democracy2
+	x = 0
+	y = 2
+	relative_position_id = XTW_crush_the_revivalists
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_direct_rule_from_taipei
+		focus = XTW_loyal_administrators
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_protect_hong_kong
+	icon = GFX_goal_generic_military_deal
+	x = -2
+	y = 2
+	relative_position_id = XTW_west_pacific_project
+	available = {
+	}
+	bypass = {
+		XHK = {
+			exists = no
+		}
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_extend_a_branch_to_josea
+		focus = XTW_extend_a_branch_to_laos
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_extinguish_guangdong
+	icon = GFX_focus_BRA_end_the_state_of_emergency
+	x = 0
+	y = 2
+	relative_position_id = XTW_protect_hong_kong
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_protect_hong_kong
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_joint_development_initiative
+	icon = GFX_focus_usa_union_representation_act
+	x = 0
+	y = 2
+	relative_position_id = XTW_west_pacific_project
+	available = {
+		num_faction_members > 1
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_extend_a_branch_to_josea
+		focus = XTW_extend_a_branch_to_laos
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_industrial_development_budget
+	icon = GFX_focus_generic_industry_3
+	x = -1
+	y = 1
+	relative_position_id = XTW_joint_development_initiative
+	available = {
+		num_faction_members > 1
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_joint_development_initiative
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_joint_exercises
+	icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+	x = 1
+	y = 1
+	relative_position_id = XTW_joint_development_initiative
+	available = {
+		num_faction_members > 1
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_joint_development_initiative
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_encourage_immigration
+	icon = GFX_focus_CHL_revise_the_social_classes
+	x = 0
+	y = 2
+	relative_position_id = XTW_joint_development_initiative
+	available = {
+		num_faction_members > 1
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_industrial_development_budget
+	}
+	prerequisite = {
+		focus = XTW_joint_exercises
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		remove_ideas = XTW_overpopulation_crisis
+	}
+}
+focus = {
+	id = XTW_contact_the_gambling_cities
+	icon = GFX_goal_tripartite_pact
+	x = 2
+	y = 2
+	relative_position_id = XTW_west_pacific_project
+	available = {
+		XEX = {
+			exists = yes
+		}
+	}
+	bypass = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_extend_a_branch_to_josea
+		focus = XTW_extend_a_branch_to_laos
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_development_bonds
+	icon = GFX_focus_mex_privatisation
+	x = 0
+	y = 2
+	relative_position_id = XTW_contact_the_gambling_cities
+	available = {
+		XEX = {
+			exists = yes
+		}
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_contact_the_gambling_cities
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_taipei_technical_university
+	icon = GFX_focus_research
+	x = 0
+	y = 1
+	relative_position_id = XTW_encourage_immigration
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_the_enemies_of_democracy
+		focus = XTW_encourage_immigration
+		focus = XTW_autonomy_for_ryukyu
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+focus = {
 	id = XTW_desperate_gambit #Civil War
 	icon = GFX_goal_generic_military_sphere
 	x = 0

@@ -1,0 +1,25 @@
+state={
+	id=1021
+	name="STATE_1021"
+manpower=7333
+	
+	state_category = rural
+
+	history={
+		owner = XDA # FRA
+		#add_core_of = LAO
+		victory_points = {
+			10330 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		10356 10330 10456
+	}
+
+	local_supplies=0.0 
+}

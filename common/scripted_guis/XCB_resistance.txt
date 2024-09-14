@@ -1,0 +1,88 @@
+scripted_gui = {
+
+	XCB_custom_gui_open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "XCB_resistance_open"
+
+		visible = {
+			has_country_flag = XCB_custom_gui_enable
+		}
+		
+		ai_enabled = {
+			always = no
+		}
+		
+		triggers = {
+			XCB_button_bloom_visible = {
+				has_country_flag = XCB_bloom_gui_visible
+			}
+		}
+
+		effects = {
+			XCB_resistance_open_Button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = XCB_custom_gui_visible_flag }
+					}
+					set_country_flag = XCB_custom_gui_visible_flag
+					add_to_variable = { XCB_resistance_dirty = 0.01 }
+				}
+				else = {
+					clr_country_flag = XCB_custom_gui_visible_flag
+				}
+				clr_country_flag = XCB_bloom_gui_visible
+			}
+		}
+	}
+	XCB_custom_gui_main_window = {
+		context_type = player_context
+		window_name = "XCB_resistance_gui_main_window"
+		visible = { has_country_flag = XCB_custom_gui_visible_flag }
+		
+		properties = {    
+            XCB_resistance_progress = {
+                frame = XCB_resistance_progress_bar_var
+            }
+			XCB_tonle_sap = { frame = XCB_tonle_sap_var }
+			XCB_chuor_phnum = { frame = XCB_chuor_phnum_var }
+			XCB_phnom_kulen = { frame = XCB_phnom_kulen_var }
+			XCB_prey_lang = { frame = XCB_prey_lang_var }
+        }
+		
+		effects = {	
+			XCB_custom_gui_close_click = {
+				clr_country_flag = XCB_custom_gui_visible_flag
+			}
+			XCB_tonle_sap_click = {
+				clr_country_flag = XCB_chuor_phnum_info
+				clr_country_flag = XCB_phnom_kulen_info
+				clr_country_flag = XCB_prey_lang_info
+				set_country_flag = XCB_tonle_sap_info
+				add_to_variable = { XCB_resistance_dirty = 0.01 }
+			}
+			XCB_chuor_phnum_click = {
+				set_country_flag = XCB_chuor_phnum_info
+				clr_country_flag = XCB_phnom_kulen_info
+				clr_country_flag = XCB_prey_lang_info
+				clr_country_flag = XCB_tonle_sap_info
+				add_to_variable = { XCB_resistance_dirty = 0.01 }
+			}
+			XCB_phnom_kulen_click = {
+				clr_country_flag = XCB_chuor_phnum_info
+				set_country_flag = XCB_phnom_kulen_info
+				clr_country_flag = XCB_prey_lang_info
+				clr_country_flag = XCB_tonle_sap_info
+				add_to_variable = { XCB_resistance_dirty = 0.01 }
+			}
+			XCB_prey_lang_click = {
+				clr_country_flag = XCB_chuor_phnum_info
+				clr_country_flag = XCB_phnom_kulen_info
+				set_country_flag = XCB_prey_lang_info
+				clr_country_flag = XCB_tonle_sap_info
+				add_to_variable = { XCB_resistance_dirty = 0.01 }
+			}
+		}
+		dirty = XCB_resistance_dirty
+	}
+}

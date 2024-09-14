@@ -1,0 +1,14 @@
+characters = {
+    XMJ_altan_borjigit = {
+        portraits={
+            civilian={
+                large="GFX_portrait_XMJ_altan_borjigit"
+            }
+        }
+        country_leader={
+            ideology=fascism_ideology
+            expire="2280.1.1.1"
+            traits = {BRA_vengeful_industrialist spirit_of_genghis}
+        }
+    }
+}

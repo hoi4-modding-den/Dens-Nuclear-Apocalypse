@@ -64,3 +64,8 @@ instant_effect = {
 
 }
 	#####################
+
+focus = {
+    current = XK0_university_of_pyonyang_expansion # focus id
+    progress = 69
+}

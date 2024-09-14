@@ -48,6 +48,20 @@ DEN_is_german_nation = {
 	}
 }
 
+DEN_is_chinese_nation = {
+	OR = {
+		original_tag = XSK
+		original_tag = MEN
+		original_tag = XON
+		original_tag = XMJ
+		original_tag = XEX
+		original_tag = XGD
+		original_tag = XHK
+		original_tag = XTW
+		original_tag = XYU
+	}
+}
+
 DEN_is_alpine_italian_island_nation = {
 	OR = {
 		original_tag = XSS

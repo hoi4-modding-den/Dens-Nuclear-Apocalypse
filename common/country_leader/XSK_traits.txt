@@ -8,7 +8,71 @@ leader_traits = {
 		stability_factor = -0.1
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+		}
+	}
+
+	XSK_military_regency = {
+		random = no
+
+		political_power_gain = -0.05
+		conscription = 0.01
+		experience_gain_army = 0.04
+		max_planning_factor = 0.1
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	XSK_master_of_intrigue = {
+		random = no
+
+		operative_slot = 1
+		trade_opinion_factor = 0.1
+		opinion_gain_monthly_factor = 0.25
+		lend_lease_tension = -0.4
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	XSK_sultan_of_the_turks = {
+		random = no
+
+		stability_factor = 0.05
+		political_power_gain = 0.05
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	XSK_militant_megalomaniac = {
+		random = no
+
+		production_speed_arms_factory_factor = 0.25 
+		ai_focus_aggressive_factor = 0.4
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	XSK_ottoman_subject_trait = {
+		random = no
+
+		army_morale_factor = 0.1
+		weekly_manpower = 100
+		
+		targeted_modifier = {
+			tag = XSK
+			cic_to_target_factor = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

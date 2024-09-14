@@ -1,0 +1,51 @@
+﻿l_english:
+
+### COUNTRY NAME
+
+XMJ_fascism:0 "Inner Reconstruction Authority"
+XMJ_fascism_DEF:0 "the Inner Reconstruction Authority"
+
+XMJ_democratic:0 "Mongolian Federation"
+XMJ_democratic_DEF:0 "Mongolian Federation"
+
+XMJ_neutrality:0 "Mengjiang"
+XMJ_neutrality_DEF:0 "Mengjiang"
+
+XMJ_communism:0 "Inner Mongolian People's Republic"
+XMJ_communism_long:0 "the Inner Mongolian People's Republic"
+
+XMJ_fascism_ADJ:0 "Inner Mongolian"
+XMJ_democratic_ADJ:0 "Mongolian"
+XMJ_neutrality_ADJ:0 "Inner Mongolian"
+XMJ_communism_ADJ:0 "Inner Mongolian"
+
+XMJ:0 "Inner Mongolia"
+XMJ_DEF:0 "Inner Mongolia"
+XMJ_ADJ:0 "Inner Mongolian"
+
+### PARTY NAMES
+
+XMJ_fascism_party:0 "Reconstruction Authority"
+
+XMJ_communism_party_long:0 "United Mongolia Party (Marxist-Leninist-Maoist)"
+XMJ_communism_party:0 "UMP (MLM)"
+
+XMJ_democratic_party_long:0 "United Mongolia Party"
+XMJ_democratic_party:0 "UMP"
+
+XMJ_neutrality_party:0 "Nomadic Tribes"
+
+### VICTORY POINTS
+
+VICTORY_POINTS_12554:0 "IRA Headquarters"
+
+### IDEAS
+
+
+### CHARACTERS
+
+XMJ_altan_borjigit:0 "Altan Borjigit"
+
+### TOOLTIPS
+
+### FOCUS

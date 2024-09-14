@@ -19,39 +19,10 @@ ideas = {
 
             modifier = {
                 neutrality_drift = 0.1
+                equipment_capture_factor = 0.25
                 war_support_weekly = 0.001
                 offensive_war_stability_factor = 0.25
                 ai_focus_aggressive_factor = 0.2
-            }
-
-            targeted_modifier = {
-                tag = XON
-                attack_bonus_against = 0.15
-                defense_bonus_against = 0.15
-            }
-
-        }
-
-        XSK_the_sultanate_in_china_fasc = {
-            name = XSK_the_sultanate_in_china
-
-            allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-           removal_cost = -1
-
-            picture = tur_ottoman_spirit
-
-            modifier = {
-                fascism_drift = 0.1
-                war_support_weekly = 0.001
-                offensive_war_stability_factor = 0.25
-                ai_focus_aggressive_factor = 0.3
             }
 
             targeted_modifier = {
@@ -79,6 +50,7 @@ ideas = {
 
             modifier = {
                 neutrality_drift = 0.1
+                equipment_capture_factor = 0.25
                 war_support_weekly = 0.001
                 cavalry_attack_factor = 0.1
                 cavalry_defence_factor = 0.1
@@ -94,7 +66,7 @@ ideas = {
 
         }
 
-        XSK_the_sultanate_in_china_fasc_cav = {
+        XSK_the_sultanate_in_china_mongolian_cav = {
             name = XSK_the_sultanate_in_china
 
             allowed = {
@@ -110,10 +82,36 @@ ideas = {
             picture = tur_ottoman_spirit
 
             modifier = {
-                fascism_drift = 0.1
+                neutrality_drift = 0.1
+                equipment_capture_factor = 0.25
                 war_support_weekly = 0.001
-                cavalry_attack_factor = 0.1
-                cavalry_defence_factor = 0.1
+                cavalry_attack_factor = 0.15
+                cavalry_defence_factor = 0.15
+                offensive_war_stability_factor = 0.25
+                ai_focus_aggressive_factor = 0.2
+            }
+
+        }
+
+        XSK_the_sultanate_in_china_fasc = {
+            name = XSK_the_sultanate_in_china
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_ottoman_spirit
+
+            modifier = {
+                neutrality_drift = -0.1
+                equipment_capture_factor = 0.25
+                war_support_weekly = 0.001
                 offensive_war_stability_factor = 0.25
                 ai_focus_aggressive_factor = 0.3
             }
@@ -162,12 +160,182 @@ ideas = {
 
            removal_cost = -1
 
-            picture = chi_chinese_support
+            picture = chi_warlord_integration
 
             modifier = {
                 stability_factor = -0.2
                 conscription_factor = -0.1
                 non_core_manpower = -0.5
+            }
+
+        }
+
+        XSK_han_deportation = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = chi_chinese_support
+
+            modifier = {
+                stability_factor = -0.4
+                non_core_manpower = -0.75
+            }
+
+        }
+
+        XSK_low_literacy = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = XSK_low_literacy
+
+            modifier = {
+                research_speed_factor = -0.3
+            }
+
+        }
+
+        XSK_low_literacy2 = {
+            name = XSK_low_literacy
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = XSK_low_literacy
+
+            modifier = {
+                research_speed_factor = -0.15
+            }
+
+        }
+
+        XSK_empowered_radicals = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                communism_drift = 0.04
+            }
+
+        }
+
+        XSK_empowered_reformists = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_democratic_drift_bonus
+
+            modifier = {
+                democratic_drift = 0.04
+            }
+
+        }
+
+        XSK_school_funding = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = ger_mefo_bills_payment
+
+            modifier = {
+                consumer_goods_factor = 0.25
+            }
+
+        }
+
+        XSK_mountain_society = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_mountain_warfare
+
+            modifier = {
+                production_speed_buildings_factor = -0.05
+                defensive_war_stability_factor = 0.1
+                acclimatization_cold_climate_gain_factor = 0.15
+            }
+
+        }
+
+        XSK_mountain_society_armed = {
+            name = XSK_mountain_society
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_mountain_warfare
+
+            modifier = {
+                production_speed_buildings_factor = -0.05
+                defensive_war_stability_factor = 0.1
+                acclimatization_cold_climate_gain_factor = 0.15
+                land_bunker_effectiveness_factor = 0.25
+                mountaineers_special_forces_contribution_factor = -0.3
+                static_anti_air_damage_factor = 0.1
             }
 
         }
@@ -211,6 +379,105 @@ ideas = {
                 stability_factor = 0.1
                 consumer_goods_factor = 0.15
                 production_speed_industrial_complex_factor = 0.4
+            }
+
+        }
+
+        XSK_subsidised_agriculture = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_agrarian_reform
+
+            modifier = {
+                monthly_population = 0.1
+                consumer_goods_factor = 0.05
+                global_building_slots_factor = 0.3
+            }
+
+        }
+
+        XSK_famine = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = raj_risk_of_famine
+
+            modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                monthly_population = -0.25
+                custom_modifier_tooltip = XSK_famine_tt
+            }
+
+        }
+
+        XSK_modernised_cavalry = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = por_colonial_army
+
+            modifier = {
+                army_armor_attack_factor = 0.1
+                army_armor_speed_factor = 0.25
+                org_loss_when_moving = -0.2
+            }
+
+        }
+        
+        XSK_saboteur_infiltrators = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = { 
+                    has_war_with = XSK
+                }
+            }
+
+           removal_cost = -1
+
+            picture = ARG_civilian_economy_boost
+
+            modifier = {
+                stability_factor = -0.1
+            }
+
+            targeted_modifier = {
+                tag = XSK
+                attack_bonus_against = -0.05
+                defense_bonus_against = -0.15
             }
 
         }

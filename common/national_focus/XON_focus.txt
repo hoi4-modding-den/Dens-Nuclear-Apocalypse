@@ -1,0 +1,52 @@
+focus_tree = {
+	id = XON_focus
+	continuous_focus_position = { x = -30 y = 1200 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XON
+		}
+	}
+	focus = {
+		id = XON_a_thousand_blessings
+		icon = GFX_focus_A_Thousand_Blessings
+		x = 2
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			country_event = XON_start_event.1
+		}
+	}
+	focus = {
+		id = XON_loyal_and_true
+		icon = GFX_focus_Loyal_And_True
+		x = 2
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = XON_a_thousand_blessings }
+		completion_reward = {
+			country_event = XON_start_event.2
+		}
+	}
+	focus = {
+		id = XON_the_sworn_enemy
+		icon = GFX_focus_The_Sworn_Enemy
+		x = 2
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = XON_loyal_and_true }
+		completion_reward = {
+			country_event = XON_start_event.3
+		}
+	}
+}

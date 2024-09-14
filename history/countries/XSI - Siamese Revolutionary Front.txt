@@ -8,6 +8,11 @@ set_stability = 0.6
 set_convoys = 10
 
 add_ideas = {
+	XSI_treaty_of_yangon
+	XSI_burmese_paciication_campaign
+	XSI_military_civic_rivarly_army_dominance
+	partial_economic_mobilisation
+	limited_conscription
 }
 
 set_politics = {
@@ -30,6 +35,27 @@ set_country_flag = dont_use_default_military_advisors
 set_autonomy = {
 	target = XSB
 	autonomous_state = autonomy_integrated_puppet
+}
+
+733 = {
+	start_resistance = yes
+	set_compliance = 15
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+
+1001 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 25
+	set_garrison_strength = 1.0
+}
+
+1001 = {
+	start_resistance = yes
+	set_compliance = 40
+	set_resistance = 15
+	set_garrison_strength = 1.0
 }
 
 # Starting tech
