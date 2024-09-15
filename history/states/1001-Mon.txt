@@ -4,7 +4,10 @@ state={
 	state_category = rural
 	
 	history={
-		owner = XSI # SIA	
+		owner = XSI # SIA
+		buildings = {
+			infrastructure = 2
+		}	
 		add_core_of = XSB
 	}	
 	
