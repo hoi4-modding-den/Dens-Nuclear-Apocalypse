@@ -58,6 +58,16 @@ bookmarks = {
 				XSK_mountain_society
 			}
 		}
+		"XON" = {
+			ideology = neutrality
+			history = "XON_history"
+			focuses = {
+			
+			}
+			ideas = {
+			
+			}
+		}
 		"XHK" = {
 			ideology = democratic
 			history = "Xhk_history"

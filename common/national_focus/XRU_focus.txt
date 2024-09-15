@@ -563,9 +563,10 @@ focus_tree = {
 		completion_reward = {
 			#
 		}
+	}
 	focus = {
 		id = XRU_czech_opportunity
-		icon = GFX_focus_Czech_Opportunity
+		icon = XRU_focus_Czech_Opportunity
 		x = 7
 		y = 8
 		cost = 5
@@ -581,7 +582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_integrate_czech_territories
-		icon = GFX_focus_Integrate_Czech_Territories
+		icon = XRU_focus_Integrate_Czech_Territories
 		x = 5
 		y = 9
 		cost = 5
@@ -597,7 +598,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_destroy_czech_opposition
-		icon = GFX_focus_Destroy_Czech_Opposition
+		icon = XRU_focus_Destroy_Czech_Opposition
 		x = 9
 		y = 9
 		cost = 5
@@ -613,7 +614,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_crazy_bunker_dwellers
-		icon = GFX_focus_Crazy_Bunker_Dwellers
+		icon = XRU_focus_Crazy_Bunker_Dwellers
 		x = 7
 		y = 10
 		cost = 5
@@ -630,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_exploit_wasteland
-		icon = GFX_focus_Exploit_Wasteland
+		icon = XRU_focus_Exploit_Wasteland
 		x = 7
 		y = 11
 		cost = 5
@@ -646,7 +647,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_destroy_nazi_scum
-		icon = GFX_focus_Destroy_Nazi_Scum
+		icon = XRU_focus_Destroy_Nazi_Scum
 		x = 7
 		y = 12
 		cost = 5
@@ -662,7 +663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_develop_german_puppet
-		icon = GFX_focus_Develop_German_Puppet
+		icon = XRU_focus_Develop_German_Puppet
 		x = 7
 		y = 13
 		cost = 5
@@ -678,7 +679,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_rolling_dice
-		icon = GFX_focus_Rolling_Dice
+		icon = XRU_focus_Rolling_Dice
 		x = 7
 		y = 14
 		cost = 5
@@ -694,7 +695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = XRU_valkyrie_ascension
-		icon = GFX_focus_Valkyrie_Ascension
+		icon = XRU_focus_Valkyrie_Ascension
 		x = 7
 		y = 15
 		cost = 5
