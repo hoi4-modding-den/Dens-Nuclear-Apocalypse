@@ -1,3 +1,12 @@
+DEN_UNIFIED_CHINA = {
+	color = rgb { 163 126 65 }
+	color_ui = rgb { 163 126 65 }
+}
+
+XHK_CRC= {
+	color = rgb { 133 89 68 }
+	color_ui = rgb { 133 89 68 }
+}
 XHK_YTZ= {
 	color = rgb { 140 148 81 }
 	color_ui = rgb { 140 148 81 }
@@ -1502,4 +1511,8 @@ XWH_LitSoc = {
 XWH_ProgAsso = {
 	color = rgb { 255  215  0 }
 	color_ui = rgb { 255  215  0 }	
+}
+XCB_civil_war_colour = {
+	color = rgb { 189  43  43 }
+	color_ui = rgb { 189  43  43 }
 }

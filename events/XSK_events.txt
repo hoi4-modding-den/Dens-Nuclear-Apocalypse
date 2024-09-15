@@ -31,7 +31,7 @@ country_event = { # The First Candidate
 country_event = { # The Second Candidate
     id = XSK_succession_events.2
     title = XSK_succession_events.2.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_tur_sultan_and_pashas
     desc = XSK_succession_events.2.d
 
     is_triggered_only = yes
@@ -55,7 +55,7 @@ country_event = { # The Second Candidate
 country_event = { # The Candidates debate
     id = XSK_succession_events.3
     title = XSK_succession_events.3.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_tur_sultan_and_pashas
     desc = XSK_succession_events.3.d
 
     is_triggered_only = yes
@@ -126,7 +126,7 @@ country_event = { # Military Coup
 country_event = { # Abdulhamid is choosen
     id = XSK_succession_events.5
     title = XSK_succession_events.5.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_tur_sultan_and_pashas
     desc = XSK_succession_events.5.d
 
     is_triggered_only = yes
@@ -160,7 +160,7 @@ country_event = { # Abdulhamid is choosen
 country_event = { # Süleyman is choosen
     id = XSK_succession_events.6
     title = XSK_succession_events.6.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_tur_sultan_and_pashas
     desc = XSK_succession_events.6.d
 
     is_triggered_only = yes
@@ -206,7 +206,7 @@ country_event = { # Süleyman is choosen
 country_event = { # The Council meets
     id = XSK_succession_events.7
     title = XSK_succession_events.7.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_tur_sultan_and_pashas
     desc = XSK_succession_events.7.d
 
     is_triggered_only = yes
@@ -490,6 +490,108 @@ country_event = { # Envoy takes control of Mongolia
 
 }
 
+country_event = { # take Haixi
+    id = XSK_events.6
+    title = XSK_events.6.t
+    picture = GFX_report_event_fascist_militia
+    desc = XSK_events.6.d
+
+    trigger = {
+        tag = XSK
+        exists = yes
+        756 = { 
+            is_owned_and_controlled_by = ROOT 
+            is_core_of = ROOT
+        }
+        759 = { 
+            is_owned_and_controlled_by = ROOT 
+            is_core_of = ROOT
+        }
+    }
+
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.6.a
+        755 = {
+            add_core_of = ROOT
+            owner = {
+                if = {
+                    limit = {
+                        tag = LIB
+                    }
+                    755 = {
+                        transfer_state_to = ROOT
+                    }
+                }
+                else = {
+                    755 = { save_event_target_as = demanded_prov_target }
+                    country_event = { id = generic.23 days = 1 } 
+                }
+            }
+        }
+    }
+
+}
+
+country_event = { # take Southern Indochina
+    id = XSK_events.7
+    title = XSK_events.7.t
+    picture = GFX_report_event_tur_turkish_soldiers
+    desc = XSK_events.7.d
+
+    trigger = {
+        tag = XSK
+        exists = yes
+        671 = { 
+            is_owned_and_controlled_by = ROOT 
+        }
+        1008 = { 
+            is_owned_and_controlled_by = ROOT 
+        }
+        286 = {
+            is_owned_and_controlled_by = LIB
+        }
+    }
+
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.7.a
+        286 = {
+            transfer_state_to = ROOT
+        }
+    }
+
+}
+
+country_event = { # Silk Road opened
+    id = XSK_events.8
+    title = XSK_events.8.t
+    picture = GFX_report_event_tur_menderes_opposition
+    desc = XSK_events.8.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.8.a
+        if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = XSK_give_market_access_tt
+		}
+        effect_tooltip = {
+            add_opinion_modifier = {
+    			target = FROM
+    			modifier = ICE_trade_partner
+			}
+        }	
+    }
+
+}
+
 country_event = { # Taipei Compromise: Taiwan gets Notified
     id = XSK_taiwan_events.1
     title = XSK_taiwan_events.1.t
@@ -756,7 +858,6 @@ news_event = { # Abdulhamid is coronated
     desc = XSK_news_events.1.d
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     major = yes
     
@@ -785,7 +886,6 @@ news_event = { # Süleyman 12 is coronated
     desc = XSK_news_events.2.d
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     major = yes
     
@@ -814,7 +914,6 @@ news_event = { # Military Coup
     desc = XSK_news_events.3.d
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     major = yes
     
@@ -843,7 +942,6 @@ news_event = { # Chinese are deported
     desc = XSK_news_events.4.d
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     major = yes
     fire_for_sender = no 
@@ -870,10 +968,8 @@ news_event = { # Claim the Mandate of Heaven
     desc = XSK_news_events.5.d
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     major = yes
-    fire_for_sender = no 
 
     option = {
         name = XSK_news_events.5.a

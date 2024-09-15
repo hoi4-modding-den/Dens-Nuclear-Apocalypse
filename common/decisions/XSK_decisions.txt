@@ -71,9 +71,93 @@ political_actions = {
 
 	}
 
+	XSK_reclaim_anarchy_land = {
+
+		icon = GFX_decision_ITA_reorganize_ascari
+
+		allowed = {
+			original_tag = XSK
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = FROM
+			}
+		}
+
+		target_trigger = { 
+			FROM = {
+				DEN_is_chinese_state = yes
+				is_owned_and_controlled_by = LIB
+			 }
+		}
+
+		state_target = yes
+
+		available = {
+			NOT = { has_country_flag = XSK_reclaiming_anarchy }
+		}
+
+		visible = {
+			FROM = {
+				any_neighbor_state = {
+					OR = {
+						AND = {
+							owner = { is_subject_of = ROOT }
+							controller = { is_subject_of = ROOT }
+						}
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+		custom_cost_text = decision_cost_100_guns
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				has_war = no
+			}
+		}
+
+		days_remove = 7
+
+		cancel_trigger = {
+			FROM = {
+				NOT = { is_owned_and_controlled_by = LIB }
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = XSK_reclaiming_anarchy
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = -100
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = XSK_reclaiming_anarchy
+			transfer_state = FROM
+		}
+	}
+
 }
 
 XSK_invasion_of_china = {
+
+	
 
 	XSK_invade_chinese_nation = {
 
@@ -148,7 +232,7 @@ XSK_invasion_of_china = {
 		}
 
 		remove_effect = {
-			create_wargoal = {
+			declare_war_on = {
 				target = FROM
 				type = annex_everything
 			}
@@ -226,9 +310,92 @@ XSK_invasion_of_china = {
 		war_with_on_remove = FROM
 
 		remove_effect = {
-			create_wargoal = {
+			declare_war_on = {
 				target = FROM
 				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	XSK_reclaim_chinese_land_from_foreign_influence = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			original_tag = XSK
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				DEN_is_chinese_state = yes
+			}
+		}
+
+		target_trigger = { 
+			FROM = {
+				NOT = { original_tag = XK0 }
+				NOT = { DEN_is_chinese_nation = yes }
+				NOT = { DEN_is_anarchy = yes }
+				any_owned_state = {
+					DEN_is_chinese_state = yes
+				}	
+			 }
+		}
+
+		available = {
+			has_war = no
+			OR = {
+				FROM = {
+					any_neighbor_country = {
+						is_ally_with = ROOT
+					}
+				}
+				AND = {
+					FROM = {
+						any_controlled_state = {
+							is_coastal = yes
+						}
+					}
+					any_controlled_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		cost = 75
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			FROM = {
+				NOT = { has_war_with = ROOT }
+				NOT = { is_ally_with = ROOT }
+			}
+		}
+
+		days_remove = 70
+
+		cancel_trigger = {
+			OR = {
+				is_ally_with = FROM
+				has_war_with = FROM
+			}
+		}
+
+		complete_effect = {
+		}
+
+		war_with_on_remove = FROM
+
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = take_claimed_state
 			}
 		}
 	}

@@ -1,0 +1,519 @@
+XHK_unification_of_china = {
+
+	XHK_integrate_state_large = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
+			
+		}
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+						region = 146
+						region = 143
+						region = 245
+						region = 144
+						region = 200
+						region = 145
+						region = 252
+						region = 244
+						region = 155
+						region = 243
+						region = 242
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					NOT = {
+						state = 323
+					}
+					OR = {
+						state_population = 10000000
+						state_population > 10000000
+					}
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 100		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+	
+	XHK_integrate_state_medium = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
+			
+		}
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+						region = 146
+						region = 143
+						region = 245
+						region = 144
+						region = 200
+						region = 145
+						region = 252
+						region = 244
+						region = 155
+						region = 243
+						region = 242
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					NOT = {
+						state = 323
+					}
+					AND = {
+						OR = {
+							state_population > 1000000
+							state_population = 1000000
+						}
+						state_population < 10000000
+					}
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 50		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+	
+	XHK_integrate_state_small = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
+			
+		}
+		
+		priority = 25
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+						region = 146
+						region = 143
+						region = 245
+						region = 144
+						region = 200
+						region = 145
+						region = 252
+						region = 244
+						region = 155
+						region = 243
+						region = 242
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					NOT = {
+						state = 323
+					}
+					state_population < 1000000
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 25		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+
+	XHK_unify_china = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Has unified all of mainland China."
+				check_variable = {
+					var = XHK_unification_progress
+					value = 68
+					compare = greater_than_or_equals
+				}
+			}
+		}
+
+		visible = {
+			original_tag = XHK
+			has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			set_cosmetic_tag = DEN_UNIFIED_CHINA
+        }
+
+	}
+}
+
+XHK_unification_of_yangtze = {
+
+	XHK_integrate_state_large_y = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
+			
+		}
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					OR = {
+						state_population = 10000000
+						state_population > 10000000
+					}
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 100		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+	
+	XHK_integrate_state_medium_y = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
+			
+		}
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					AND = {
+						OR = {
+							state_population > 1000000
+							state_population = 1000000
+						}
+						state_population < 10000000
+					}
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 50		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+	
+	XHK_integrate_state_small_y = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
+			
+		}
+		
+		priority = 25
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					state_population < 1000000
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 25		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+
+	XHK_unify_yangtze = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Has unified South China."
+				check_variable = {
+					var = XHK_unification_progress
+					value = 31
+					compare = greater_than_or_equals
+				}
+			}
+		}
+
+		visible = {
+			original_tag = XHK
+			has_completed_focus = XHK_yangtze_idea
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			set_cosmetic_tag = XHK_YTZ
+        }
+
+	}
+}

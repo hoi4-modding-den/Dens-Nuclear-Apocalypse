@@ -46,6 +46,16 @@ recruit_character = XSK_ottoman_field_marshal
 recruit_character = XSK_ottoman_infantry_general
 recruit_character = XSK_ottoman_infantry_general_2
 
+recruit_character = XSK_scientist_advisor
+recruit_character = XSK_noble_bureaucrat
+recruit_character = XSK_economic_reformer
+recruit_character = XSK_socialist_novelist
+recruit_character = XSK_colonial_communist
+recruit_character = XSK_progressive_doctor
+recruit_character = XSK_weapons_designer
+recruit_character = XSK_industry_reformer
+recruit_character = XSK_minister_of_agriculture
+
 set_party_name = {
     ideology = neutrality
     long_name = XSK_neutrality_party_regency_long
