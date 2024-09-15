@@ -284,7 +284,7 @@
 	}
 	focus = {
 		id = XHK_frantic_negotiations
-#		icon = GFX_SOV_nkvd_primacy_ccp_2d_sov_compatibility
+		icon = GFX_XHK_negotiation
 		
 		prerequisite = { focus = XHK_continued_decline }
 	#		mutually_exclusive = { focus = XHK_radical_sentiments }
@@ -320,7 +320,7 @@
 	}
 	focus = {
 		id = XHK_same_party_different_face
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_new_guy
 		
 		prerequisite = { focus = XHK_frantic_negotiations }
 		mutually_exclusive = { focus = XHK_deal_with_the_devil }
@@ -1568,12 +1568,50 @@
 		}
 	}
 	focus = {
+		id = XHK_independence
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_same_party_different_face }
+		mutually_exclusive = { focus = XHK_unification }
+		x = -3
+		y = 1
+		relative_position_id = XHK_far_right_takeover
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
 		id = XHK_unification
 #		icon = GFX_focus_SWE_radiotjanst
 		
 		prerequisite = { focus = XHK_far_right_takeover focus = XHK_same_party_different_face }
 		mutually_exclusive = { focus = XHK_yangtze_idea }
-		x = -2
+		mutually_exclusive = { focus = XHK_independence }
+		x = -1
 		y = 1
 		relative_position_id = XHK_far_right_takeover
 

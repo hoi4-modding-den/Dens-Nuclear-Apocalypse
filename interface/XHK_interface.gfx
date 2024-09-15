@@ -75,4 +75,12 @@ spriteTypes = {
 		name = "GFX_XHK_decline"
 		texturefile = "gfx/interface/goals/XHK/focus_XHK_decline.dds"
 	}
+	spriteType = {
+		name = "GFX_XHK_negotiation"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_negotiation.dds"
+	}
+	spriteType = {
+		name = "GFX_XHK_new_guy"
+		texturefile = "gfx/interface/goals/XHK/focus_XHK_new_guy.dds"
+	}
 }
