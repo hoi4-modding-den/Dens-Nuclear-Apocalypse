@@ -137,6 +137,15 @@
  XSK_ottoman_field_marshal_name: "Servet Aydan"
  XSK_ottoman_infantry_general_name: "Ozbek Aksoy"
  XSK_ottoman_infantry_general_2_name: "Muhammad Ilyas"
+ XSK_scientist_advisor_name: "Mazhar Sezgin"
+ XSK_noble_bureaucrat_name: "Nasuh Mardin"
+ XSK_economic_reformer_name: "Kizil Halefoglu"
+ XSK_socialist_novelist_name: "Yigitcan Sonmez"
+ XSK_colonial_communist_name: "Yagiz Tuzun"
+ XSK_progressive_doctor_name: "Toraman Karadag"
+ XSK_weapons_designer_name: "Ugurol Levni"
+ XSK_industry_reformer_name: "Tuncboga Ucuncu"
+ XSK_minister_of_agriculture_name: "Aydolun Koca"
 
 # Traits
 
@@ -146,6 +155,7 @@
  XSK_sultan_of_the_turks: "Representative of the Turkic People"
  XSK_militant_megalomaniac: "Militant Megalomaniac"
  XSK_ottoman_subject_trait: "Ottoman Loyalist"
+ XSK_scientist_advisor_trait: "Turkic Physicist"
 
 # Ideologies
 
@@ -202,8 +212,12 @@
  XSK_support_uf_industry: "Support [FROM.GetAdjective] Industrial Efforts"
 
  XSK_invasion_of_china: "Invasion of China"
+ XSK_reclaim_anarchy_land: "Restore Order in [FROM.GetName]"
+ XSK_reclaiming_anarchy: "restoring Order"
+ XSK_show_chinese_states: "Rightful Claim of the Ottoman Empire"
  XSK_invade_chinese_nation: "Invade [FROM.GetNameDef]"
  XSK_invade_korea: "Invade [FROM.GetNameDef]"
+ XSK_reclaim_chinese_land_from_foreign_influence: "Reclaim Rightful Lands from [FROM.GetNameDef]"
 
  XTK_stabilise_insurgency_politics: "Promote Our Policies"
  XTK_support_insurgency_industry: "Fund [XTK.GetAdjective] Industry"
@@ -270,6 +284,18 @@
  XSK_events.5.t: "Namik Neyzi appointed as Governor of [XON.GetNameDef]"
  XSK_events.5.d: "Our envoy, Namik Neyzi, has been appointed as Governor of our client nation in Mongolia, [XON.GetNameDef]. His stay in Mongolia has already made him familiar with the local society and he will surely put that knowledge to good use."
  XSK_events.5.a: "He'll do a good job."
+
+ XSK_events.6.t: "Haixi Incident"
+ XSK_events.6.d: "With our realm expanding ever further, an organisation called the 'All-Turkic Unity Front' located in Haixi has seen it fit to support us by staging an incident along our border to the Haixi province to give us a reason to pressure them into submitting to us. Naturally, this is a perfect opportunity to expand our lands."
+ XSK_events.6.a: "Pressure them into handing it over!"
+
+ XSK_events.7.t: "Order in Southern Indochina restored!"
+ XSK_events.7.d: "With the Conquest of Vietnam and Cambodia, Ottoman Soldiers have also entered the Anarchy of Southern Indochina to restore Order and claim it for the Empire!"
+ XSK_events.7.a: "Another flawless victory for the Ottomans!"
+
+ XSK_events.8.t: "[XSK.GetNameDefCap] opens the New Silk Road!"
+ XSK_events.8.d: "Delegates from a nation calling themselves [XSK.GetNameDef] have arrived our capital today, seeking to establish a peaceful relationship as trading partners. The delegats have brought various valuable wares from the home which they have presented us. After a short debate, we have accepted their deal and hope for further mutual cooperation."
+ XSK_events.8.a: "To a great Relationship!"
 
  XSK_taiwan_events.1.t: "Ottoman Delegates arrive in [ROOT.capital.GetCapitalVictoryPointName]"
  XSK_taiwan_events.1.d: "Today, Ottoman Delegates arrived in [ROOT.capital.GetCapitalVictoryPointName] to meet with our government. They have not stated their reason for traveling all the way here, but they do not seem hostile towards us."
@@ -350,7 +376,7 @@
  XSK_the_expansionist_sultan_trigger: "§YSultan I. Abdulhamid§! has succeeded the throne"
  XSK_prepare_invasion_of_mongolia: "Scout the Gobi Desert"
  XSK_invade_mongolia: "Invade Mongolia"
- XSK_imperial_military: "Imperial Military"
+ XSK_imperial_military: "Invasion of Southern Xinjiang"
  XSK_tradition_of_the_steppes: "Tradition of the Steppe"
  XSK_invade_inner_mongolia: "Invade Inner Mongolia"
  XSK_repeal_autonomy_decrees: "Repeal Self-Governance Decrees"
@@ -373,8 +399,8 @@
  XSK_diplomatic_approach: "Infilitrate our Enemies"
  XSK_infiltrators_in_xiongnu_tt: "\n§YWhen at war with [XON.GetNameDef]:§!\nSpawn 3 §O18-Width Infantry Divisions with Engineers§! in §YDornod§!."
  XSK_expand_the_sultanate: "Demand Southern Territories"
- XSK_future_of_the_sultanate: "Future of the Sultanate"
- XSK_integrate_mongolia: "Military Administration of Mongolia"
+ XSK_future_of_the_sultanate: "Start the Invasion of Mongolia"
+ XSK_integrate_mongolia: "Mongolian Military Administration"
 
  XSK_the_diplomatic_sultan: "Trade and Secrets"
  XSK_the_diplomatic_sultan_trigger: "§YSultan XII. Süleyman§! has succeeded the throne"
@@ -423,11 +449,12 @@
 
  XSK_claim_the_mandate_of_heaven: "Claim the Mandate of Heaven"
  XSK_claim_the_mandate_of_heaven_desc: "The Ottomen are the true Divine Dynasty of China, just like how China is the true Homeland of the Turkic People, because the Chinese too, are Turkic."
- completed_focus_XSK_meeting_in_taiwan_tt: "has not completed focus §Y$XSK_meeting_in_taiwan$§!\n§RThis does not count the focus being bypassed!§!"
+ completed_focus_XSK_meeting_in_taiwan_tt: "has not completed focus §Y$XSK_meeting_in_taiwan$§!\n   §RThis does not count the focus being bypassed!§!"
  XSK_legacy_of_suleyman: "The Legacy of Süleyman the Magnificent"
  XSK_pacify_chinese_rivals: "Conquest of China"
  XSK_pacify_chinese_rivals_tt: "Unlocks £decision_icon_small §YDecisions§! to declare war on any remaining nation in China."
  XSK_proclaim_ottoman_empire_of_china: "Proclaim the Ottoman Empire"
+ XSK_owns_and_controls_all_chinese_states_tt: "Owns and controls all Chinese states"
  
  XSK_mutual_cooperation: "Mutual Cooperation"
  XSK_support_the_united_front: "Support United Front Members"
