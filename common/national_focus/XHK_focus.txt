@@ -135,7 +135,7 @@
 	}
 	focus = {
 		id = XHK_tax_incentives
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_tax_break
 		
 		prerequisite = { focus = XHK_business_as_usual }
 	#		mutually_exclusive = { focus = XHK_radical_sentiments }
@@ -171,7 +171,7 @@
 	}
 	focus = {
 		id = XHK_moniter_slums
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_patrols
 		
 		prerequisite = { focus = XHK_business_as_usual }
 	#		mutually_exclusive = { focus = XHK_radical_sentiments }
@@ -207,7 +207,7 @@
 	}
 	focus = {
 		id = XHK_appeal_to_patriotism
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_patriotism
 		
 		prerequisite = { focus = XHK_business_as_usual }
 	#		mutually_exclusive = { focus = XHK_radical_sentiments }
@@ -243,7 +243,7 @@
 	}
 	focus = {
 		id = XHK_continued_decline
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_decline
 		
 		prerequisite = { focus = XHK_appeal_to_patriotism }
 		prerequisite = { focus = XHK_moniter_slums }
@@ -284,7 +284,7 @@
 	}
 	focus = {
 		id = XHK_frantic_negotiations
-#		icon = GFX_focus_SWE_radiotjanst
+#		icon = GFX_SOV_nkvd_primacy_ccp_2d_sov_compatibility
 		
 		prerequisite = { focus = XHK_continued_decline }
 	#		mutually_exclusive = { focus = XHK_radical_sentiments }
@@ -483,7 +483,7 @@
 	}
 	focus = {
 		id = XHK_deal_with_the_devil
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_SOV_the_berlin_moscow_axis_ccp_2d_sov_compatibility
 		
 		prerequisite = { focus = XHK_frantic_negotiations }
 		mutually_exclusive = { focus = XHK_same_party_different_face }
@@ -964,7 +964,7 @@
 	}
 	focus = {
 		id = XHK_protest_big_business
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_XHK_pbc
 		
 		prerequisite = { focus = XHK_nationalist_marches focus = XHK_guangdong_interference }
 	#	mutually_exclusive = { focus = XHK_business_as_usual }
@@ -1003,7 +1003,7 @@
 	}
 	focus = {
 		id = XHK_antiestablishmentarianism
-#		icon = GFX_focus_SWE_radiotjanst
+		icon = GFX_goal_generic_propaganda
 		
 		prerequisite = { focus = XHK_nationalist_marches focus = XHK_guangdong_interference }
 	#	mutually_exclusive = { focus = XHK_business_as_usual }
