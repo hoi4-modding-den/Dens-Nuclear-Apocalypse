@@ -1,0 +1,25 @@
+DEN_is_chinese_state = {
+	OR = {
+		region = 252
+		region = 266
+		region = 152
+		region = 242
+		region = 243
+		region = 155
+		region = 244
+		region = 144
+		region = 245
+		region = 247
+		region = 145
+		region = 200
+		region = 146
+		region = 250
+		region = 246
+		region = 164
+		region = 165
+		region = 248
+		region = 76
+		region = 249
+		region = 143
+	}
+}

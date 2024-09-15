@@ -356,10 +356,19 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			
+			619 = {
+				transfer_state_to = ROOT
+			}
+			287 = {
+				transfer_state_to = ROOT
+			}
+			759 = {
+				transfer_state_to = ROOT
+			}
+			# TEMPORARY
 		}
 	}
 
@@ -375,11 +384,23 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			OR = {
-				XON = {
-					is_subject_of = ROOT
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
+			XON = {
+				all_core_state = {
+					owner = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+			XMJ = {
+				all_core_state = {
+					owner = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
 					}
 				}
 			}
@@ -394,6 +415,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
 			if = {
 				limit = {
 					any_country = {
@@ -467,7 +491,7 @@ focus_tree = {
 		cost = 2
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -496,7 +520,7 @@ focus_tree = {
 		cost = 2
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1004,14 +1028,9 @@ focus_tree = {
 				threat = 5
 				name = XSK_invade_mongolia
 			}
-			XON = {
-				every_core_state = {
-					add_claim_by = ROOT
-				}
-			}
 			create_wargoal = {
 				target = XON
-				type = annex_everything
+				type = puppet_wargoal_focus
 			}
 		}
 	}
@@ -1048,6 +1067,9 @@ focus_tree = {
 				add_autonomy_score = {
     				value = -750
 				}
+				add_state_core = 611
+				add_state_core = 612
+				add_state_core = 621
 			}
 			custom_effect_tooltip = XSK_mongolian_integration_tt
 			effect_tooltip = {
@@ -1281,6 +1303,9 @@ focus_tree = {
 						}
 					}
 				}
+				hidden_effect = {
+					country_event = { id = XSK_events.8 }
+				}
 				if = {
 					limit = {
 						has_dlc = "Arms Against Tyranny"
@@ -1319,7 +1344,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1380,7 +1405,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_ARMY_XP }
@@ -1412,7 +1437,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1443,7 +1468,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -1481,7 +1506,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1530,7 +1555,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1561,7 +1586,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = {  }
@@ -1587,7 +1612,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = {  }
@@ -1630,7 +1655,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 50
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
@@ -1674,7 +1699,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1705,7 +1730,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1784,7 +1809,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1847,6 +1872,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = XSK_minister_of_agriculture
 			add_ideas = XSK_subsidised_agriculture
 			if = {
 				limit = {
@@ -1902,7 +1929,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1961,7 +1988,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 75
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -2184,11 +2211,13 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			OR = {
-				XON = {
-					is_subject_of = ROOT
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
+			XON = {
+				all_core_state = {
+					owner = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
 					}
 				}
 			}
@@ -2203,6 +2232,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
 			if = {
 				limit = {
 					any_country = {
@@ -2268,6 +2300,16 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = XSK_news_events.5 days = 1 }
 			}
+			every_state = {
+				limit = {
+					DEN_is_chinese_state = yes
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				add_claim_by = ROOT
+			}
 		}
 	}
 
@@ -2290,9 +2332,10 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			add_political_power = 100
 			if = {
 				limit = {
 					has_government = neutrality
@@ -2342,7 +2385,15 @@ focus_tree = {
 		relative_position_id = XSK_pacify_chinese_rivals
 
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = XSK_owns_and_controls_all_chinese_states_tt
+					all_state = {
+					OR = {
+						NOT = { DEN_is_chinese_state = yes }
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
 		}
 
 		cost = 5

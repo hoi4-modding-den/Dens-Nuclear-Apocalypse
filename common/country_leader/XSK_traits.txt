@@ -77,4 +77,14 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+	XSK_scientist_advisor_trait = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.1
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
 }

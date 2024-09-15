@@ -196,4 +196,233 @@ characters = {
 		}
 
 	}
+
+	XSK_scientist_advisor = {
+		name = XSK_scientist_advisor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_riza_nur"
+			}
+		}
+		advisor = {
+			slot = theorist
+			allowed = {
+				original_tag = XSK
+			}
+			visible  = {
+				NOT = { has_completed_focus = XSK_the_expansionist_sultan }
+			}
+			available = {
+				NOT = { has_country_leader = { character = XSK_sultan_abdulhamid_i ruling_only = yes } }
+			}
+			traits = { XSK_scientist_advisor_trait }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XSK_noble_bureaucrat = {
+		name = XSK_noble_bureaucrat_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_sadik_altincan"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = XSK
+			}
+			available = {
+				
+			}
+			traits = { noble_beurocrat }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XSK_economic_reformer = {
+		name = XSK_economic_reformer_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_refe_bele"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = XSK
+			}
+			available = {
+				
+			}
+			traits = { economic_organizer }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XSK_socialist_novelist = {
+		name = XSK_socialist_novelist_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_nazim_hikmet"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = XSK
+			}
+			visible  = {
+				NOT = { has_completed_focus = XSK_the_expansionist_sultan }
+				NOT = { has_completed_focus = XSK_the_diplomatic_sultan }
+			}
+			available = {
+				has_government = communism
+			}
+			traits = { socialist_novelist }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XSK_colonial_communist = {
+		name = XSK_colonial_communist_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_ali_fethi_okyar"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = XSK
+			}
+			visible  = {
+				NOT = { has_completed_focus = XSK_the_expansionist_sultan }
+				NOT = { has_completed_focus = XSK_the_diplomatic_sultan }
+			}
+			available = {
+				has_government = communism
+			}
+			traits = { colonial_communist }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XSK_progressive_doctor = {
+		name = XSK_progressive_doctor_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_hilmi_uran"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = XSK
+			}
+			available = {
+				
+			}
+			traits = { ICE_progressive_doctor }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XSK_weapons_designer = {
+		name = XSK_weapons_designer_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_kazim_ozalp"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = XSK
+				has_dlc = "Arms Against Tyranny"
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = { SWI_weapons_designer }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XSK_industry_reformer = {
+		name = XSK_industry_reformer_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_elyesa_bazna"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = XSK
+			}
+			available = {
+				
+			}
+			traits = { industry_reformer }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	XSK_minister_of_agriculture = {
+		name = XSK_minister_of_agriculture_name
+		
+		portraits = {
+			civilian = {
+				small = "GFX_idea_tur_zeki_velidi_togan"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = XSK
+			}
+			idea_token = XSK_minister_of_agriculture
+			available = {
+				has_completed_focus = XSK_agricultural_subsidies
+			}
+			traits = { SWE_minister_of_agriculture }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 }
