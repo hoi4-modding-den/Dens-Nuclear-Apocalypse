@@ -1,0 +1,90 @@
+﻿focus_tree = {
+	id = XAL_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XAL
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 100 y = 1000 }
+
+# POLITICS
+
+	focus = {
+		id = XSG_reconstruction_of_Shangai
+		icon = GFX_focus_generic_treaty
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus = }
+		x = 5
+		y = 0
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = XSG_infrastructure_reconstruction
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_reconstruction_of_Shangai }
+		#mutually_exclusive = { focus = }
+		x = 6
+		y = 1
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XSG_rebuilding_the_cities
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_reconstruction_of_Shangai }
+		#mutually_exclusive = { focus = }
+		x = 4
+		y = 1
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		
+
+
+}
