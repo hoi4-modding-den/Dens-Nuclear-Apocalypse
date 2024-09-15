@@ -1,3 +1,7 @@
+XHK_CRC= {
+	color = rgb { 133 89 68 }
+	color_ui = rgb { 133 89 68 }
+}
 XHK_YTZ= {
 	color = rgb { 140 148 81 }
 	color_ui = rgb { 140 148 81 }
