@@ -1,0 +1,12 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			set_variable = {
+				var = XHK_unification_progress
+				value = 0
+			}
+		}
+	}
+
+}

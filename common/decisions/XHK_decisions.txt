@@ -71,6 +71,10 @@ XHK_unification_of_china = {
 		}
 		complete_effect = {
 			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
         }
 
 	}
@@ -149,6 +153,10 @@ XHK_unification_of_china = {
 		}
 		complete_effect = {
 			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
         }
 
 	}
@@ -221,6 +229,10 @@ XHK_unification_of_china = {
 		}
 		complete_effect = {
 			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
         }
 
 	}
@@ -236,91 +248,19 @@ XHK_unification_of_china = {
 		}
 
 		available = {
-		#	custom_trigger_tooltip = {
-		#		tooltip = "test"
-				original_tag = XHK
-				all_state = {
-					AND = {
-						is_core_of = XHK
-						OR = {
-							state = 593
-							state = 1013
-							state = 1012
-							state = 1011
-							state = 592
-							state = 729
-							state = 728
-							state = 591
-							state = 594
-							state = 599
-							state = 602
-							state = 603
-							state = 751
-							state = 325
-							state = 747
-							state = 595
-							state = 600
-							state = 596
-							state = 749
-							state = 613
-							state = 598
-							state = 606
-							state = 620
-							state = 750
-							state = 607
-							state = 744
-							state = 748
-							state = 605
-							# Chinese-Specific states
-							state = 597
-							state = 743
-							state = 1003
-							state = 614
-							state = 608
-							state = 609
-							state = 1004
-							state = 610
-							state = 716
-							state = 745
-							state = 1005
-							state = 615
-							state = 622
-							state = 283
-							state = 753
-							state = 754
-							state = 755
-							state = 604
-							state = 752
-							state = 601
-							state = 756
-							state = 616
-							state = 746
-							state = 621
-							state = 611
-							state = 612
-							state = 760
-							state = 617
-							state = 618
-							state = 759
-							state = 287
-							state = 619
-							state = 715
-							state = 714
-							state = 761
-							state = 328
-							state = 717
-							state = 322
-							state = 757
-							state = 758
-						}
-					}
-			#	}
+			custom_trigger_tooltip = {
+				tooltip = "Has unified all of mainland China."
+				check_variable = {
+					var = XHK_unification_progress
+					value = 68
+					compare = greater_than_or_equals
+				}
 			}
 		}
 
 		visible = {
 			original_tag = XHK
-		#	has_completed_focus = XHK_unification
+			has_completed_focus = XHK_unification
 		}
 
 		fire_only_once = no
@@ -333,7 +273,246 @@ XHK_unification_of_china = {
 			base = 10000
 		}
 		complete_effect = {
+			set_cosmetic_tag = DEN_UNIFIED_CHINA
+        }
+
+	}
+}
+
+XHK_unification_of_yangtze = {
+
+	XHK_integrate_state_large_y = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
 			
+		}
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					OR = {
+						state_population = 10000000
+						state_population > 10000000
+					}
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 100		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+	
+	XHK_integrate_state_medium_y = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
+			
+		}
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					AND = {
+						OR = {
+							state_population > 1000000
+							state_population = 1000000
+						}
+						state_population < 10000000
+					}
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 50		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+	
+	XHK_integrate_state_small_y = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target = {
+			
+		}
+		
+		priority = 25
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			original_tag = XHK
+			FROM = {
+				AND = {
+					is_owned_by = XHK
+					OR = {
+						region = 248
+						region = 249
+						region = 165
+						region = 164
+						region = 246
+						region = 247
+						region = 250
+					}
+					NOT = {
+						is_core_of = XHK
+					}
+					state_population < 1000000
+				}
+			}
+		#	has_completed_focus = XHK_unification
+		}
+
+		fire_only_once = no
+
+		cost = 25		
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			add_state_core = FROM
+			add_to_variable = {
+				var = XHK_unification_progress
+				value = 1
+			}
+        }
+
+	}
+
+	XHK_unify_yangtze = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		priority = 50
+
+		allowed = {
+			tag = XHK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Has unified South China."
+				check_variable = {
+					var = XHK_unification_progress
+					value = 31
+					compare = greater_than_or_equals
+				}
+			}
+		}
+
+		visible = {
+			original_tag = XHK
+			has_completed_focus = XHK_yangtze_idea
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		days_re_enable = 30
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			set_cosmetic_tag = XHK_YTZ
         }
 
 	}

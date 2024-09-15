@@ -1564,7 +1564,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			set_cosmetic_tag = XHK_YTZ
+			unlock_decision_category_tooltip = XHK_unification_of_yangtze
 		}
 	}
 	focus = {
@@ -1639,6 +1639,7 @@
 
 		completion_reward = {
 			set_cosmetic_tag = XHK_CRC
+			unlock_decision_category_tooltip = XHK_unification_of_china
 		}
 	}
 	focus = {
