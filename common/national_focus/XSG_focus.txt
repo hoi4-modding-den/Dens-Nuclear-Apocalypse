@@ -1,12 +1,12 @@
 ﻿focus_tree = {
-	id = XAL_focus_tree
+	id = XSG_focus_tree
 	
 	country = {
 		factor = 0
 		
 		modifier = {
 			add = 10
-			tag = XAL
+			tag = XSG
 		}
 	}
 	
@@ -17,7 +17,7 @@
 # POLITICS
 
 	focus = {
-		id = XSG_reconstruction_of_Shangai
+		id = XSG_the_reconstruction_of_Shangai
 		icon = GFX_focus_generic_treaty
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
@@ -41,7 +41,7 @@
 	focus = {
 		id = XSG_infrastructure_reconstruction
 		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = XSG_reconstruction_of_Shangai }
+		prerequisite = { focus = XSG_the_reconstruction_of_Shangai }
 		#mutually_exclusive = { focus = }
 		x = 6
 		y = 1
@@ -60,11 +60,32 @@
 			add_political_power = 100
 		}
 	}
-
 	focus = {
 		id = XSG_rebuilding_the_cities
 		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = XSG_reconstruction_of_Shangai }
+		prerequisite = { focus = XSG_the_reconstruction_of_Shangai }
+		#mutually_exclusive = { focus = }
+		x = 4
+		y = 1
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = XSG_rebuilding_the_cities
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_the_reconstruction_of_Shangai }
 		#mutually_exclusive = { focus = }
 		x = 4
 		y = 1
