@@ -1,0 +1,16 @@
+capital = 741
+
+recruit_character = XCX_sieng_proeung
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.2.8"
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 60
+	communism = 25
+	democratic = 15
+}
+

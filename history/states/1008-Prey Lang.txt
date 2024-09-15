@@ -4,6 +4,9 @@ state={
 	history = {
 		add_core_of = XCB
 		owner = XCB # FRA
+		victory_points = {
+			7645 2
+		}
 		buildings = {
 			infrastructure = 1
 

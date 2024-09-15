@@ -1503,3 +1503,7 @@ XWH_ProgAsso = {
 	color = rgb { 255  215  0 }
 	color_ui = rgb { 255  215  0 }	
 }
+XCB_civil_war_colour = {
+	color = rgb { 189  43  43 }
+	color_ui = rgb { 189  43  43 }
+}

@@ -9,5 +9,16 @@ on_actions = {
 			}
 		}
 	}
-	
+	on_daily_XCB = {
+		effect = {
+			if = {
+				limit = {	
+					check_variable = {
+						XCB_resistance_progress_bar_var > 99
+					}
+				}
+				country_event = XCB.1  #civil war trigger
+			}
+		}
+	}
 }
