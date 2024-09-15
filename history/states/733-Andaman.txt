@@ -14,7 +14,7 @@ manpower=19667
 			}
 		}
 
-		#add_core_of = IND
+		add_core_of = RAJ
 
 	}
 	provinces={

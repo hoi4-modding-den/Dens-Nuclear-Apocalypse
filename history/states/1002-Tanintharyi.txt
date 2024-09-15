@@ -5,6 +5,9 @@ state={
 	
 	history={
 		owner = XSI # SIA	
+		buildings = {
+			infrastructure = 2
+		}	
 		add_core_of = XSB
 	}	
 	
