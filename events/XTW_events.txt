@@ -1,0 +1,39 @@
+add_namespace = taiwan
+
+country_event = {
+	id = taiwan.1
+	title = taiwan.1.t
+	desc = taiwan.1.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.1.a
+		
+		XTW = {
+			set_country_flag = XTW_DPP_won_the_elections
+			complete_national_focus = XTW_DPP_victory
+			hidden_effect = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
+			}
+		}
+	}
+	option = {
+		name = taiwan.1.b
+		
+		XTW = {
+			set_country_flag = XTW_PFP_won_the_elections
+			complete_national_focus = XTW_PFP_victory
+			hidden_effect = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+			}
+		}
+	}
+}

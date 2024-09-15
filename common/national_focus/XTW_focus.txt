@@ -24,7 +24,7 @@ focus = {
 	cost = 3
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		country_event = taiwan.1
 	}
 }
 focus = {
@@ -45,7 +45,8 @@ focus = {
 	cost = 0
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		promote_character = XTW_chen_hua
+		add_political_power = 100
 	}
 }
 focus = {
@@ -67,6 +68,7 @@ focus = {
  	available_if_capitulated = yes
 	completion_reward = {
 		promote_character = XTW_wang_fan
+		add_political_power = 100
 	}
 }
 focus = {
@@ -85,7 +87,18 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_stability = 0.05
+		every_country = {
+			limit = {
+				capital_scope = {
+					is_on_continent = asia
+				}
+			}
+			add_opinion_modifier = {
+				target = XTW
+				modifier = medium_increase
+			}
+		}
 	}
 }
 focus = {
@@ -104,7 +117,38 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
 	}
 }
 focus = {
@@ -123,7 +167,15 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_ideas = XTW_rural_development_fund
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
 	}
 }
 focus = {
@@ -142,7 +194,20 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_stability = 0.1
+		add_popularity = {
+    			ideology = communism
+    			popularity = 0.05
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
 	}
 }
 focus = {
@@ -161,7 +226,25 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		every_country = {
+			limit = {
+				capital_scope = {
+					is_on_continent = asia
+				}
+			}
+			add_opinion_modifier = {
+				target = XTW
+				modifier = ENG_imperial_trade
+			}
+		}
 	}
 }
 focus = {
@@ -180,7 +263,14 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
 	}
 }
 focus = {
@@ -199,7 +289,7 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_ideas = XTW_hualien_police_academy
 	}
 }
 focus = {
@@ -218,7 +308,71 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		if = {
+			limit = {
+				controls_province = 7186
+			}
+			524 = {
+					add_building_construction = {
+    			type = coastal_bunker
+    			level = 2
+    			instant_build = yes
+    			province = 7186
+					}
+				}
+		}
+		if = {
+			limit = {
+				controls_province = 9955
+			}
+			524 = {
+					add_building_construction = {
+    			type = coastal_bunker
+    			level = 1
+    			instant_build = yes
+    			province = 9955
+					}
+				}
+		}
+		if = {
+			limit = {
+				controls_province = 7214
+			}
+			991 = {
+					add_building_construction = {
+    			type = coastal_bunker
+    			level = 1
+    			instant_build = yes
+    			province = 7214
+					}
+				}
+		}
+		if = {
+			limit = {
+				controls_province = 11932
+			}
+			526 = {
+					add_building_construction = {
+    			type = coastal_bunker
+    			level = 2
+    			instant_build = yes
+    			province = 11932
+					}
+				}
+		}
+		if = {
+			limit = {
+				controls_province = 10124
+			}
+			526 = {
+					add_building_construction = {
+    			type = coastal_bunker
+    			level = 1
+    			instant_build = yes
+    			province = 10124
+					}
+				}
+		}
 	}
 }
 focus = {
@@ -237,7 +391,19 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = air_equipment
+				}
 	}
 }
 focus = {
@@ -256,7 +422,19 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = naval_equipment
+		}
 	}
 }
 focus = {
@@ -276,7 +454,7 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_ideas = XTW_taiwan_defence_force
 	}
 }
 focus = {
@@ -295,7 +473,34 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		every_state = {
+			limit = {
+				OR = {
+				is_core_of = XHK
+				is_core_of = XGD
+				is_core_of = XSG
+				is_core_of = XYU
+				is_core_of = XWH
+				is_core_of = XEX
+				is_core_of = XMJ
+				is_core_of = XON
+				is_core_of = XSK
+				}
+			}
+			add_claim_by = XTW
+		}
+		add_stability = -0.1
+		every_country = {
+			limit = {
+				capital_scope = {
+					is_on_continent = asia
+				}
+			}
+			add_opinion_modifier = {
+				target = XTW
+				modifier = medium_decrease
+			}
+		}
 	}
 }
 focus = {
@@ -314,7 +519,14 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
 	}
 }
 focus = {
@@ -333,7 +545,53 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		if = {
+			limit = {
+				controls_province = 7186
+			}
+			524 = {
+					add_building_construction = {
+    			type = coastal_bunker
+    			level = 3
+    			instant_build = yes
+    			province = 7186
+					}
+				}
+		}
+		if = {
+			limit = {
+				controls_province = 9955
+			}
+			524 = {
+					add_building_construction = {
+    			type = coastal_bunker
+    			level = 2
+    			instant_build = yes
+    			province = 9955
+					}
+				}
+		}
+		if = {
+			limit = {
+				controls_province = 7214
+			}
+			991 = {
+					add_building_construction = {
+    			type = coastal_bunker
+    			level = 2
+    			instant_build = yes
+    			province = 7214
+					}
+				}
+		}
 	}
 }
 focus = {
@@ -352,7 +610,19 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_stability = -0.1
+		add_timed_idea = {
+			idea = XTW_corporate_bailouts
+			days = 90
+		}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
 	}
 }
 focus = {
@@ -371,7 +641,19 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = artillery
+				}
 	}
 }
 focus = {
@@ -390,7 +672,18 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_timed_idea = {
+			idea = XTW_industrial_ramp_up
+			days = 90
+		}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
 	}
 }
 focus = {
@@ -409,7 +702,17 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_stability = -0.05
+		add_manpower = 25000
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
 	}
 }
 focus = {
@@ -428,7 +731,18 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_light_armor
+			category = cat_medium_armor
+			category = cat_heavy_armor
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
 	}
 }
 focus = {
@@ -447,7 +761,20 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+			category = mountaineers_tech
+		}
 	}
 }
 focus = {
@@ -466,7 +793,20 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = naval_equipment
+			category = marine_tech
+		}
 	}
 }
 focus = {
@@ -486,7 +826,7 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_ideas = XTW_chinese_reclamation_force
 	}
 }
 focus = {
@@ -648,7 +988,11 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_stability = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
 	}
 }
 focus = {
@@ -670,7 +1014,7 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = XTW_consequences_tt
 	}
 }
 focus = {
@@ -684,7 +1028,7 @@ focus = {
 	mutually_exclusive = {
 	}
 	prerequisite = {
-		focus = XTW_bolster_anti_kmt_propaganda
+		focus = XTW_clamp_down_on_extremism
 	}
 	prerequisite = {
 		focus = XTW_tour_the_dajian_training_camp
@@ -692,7 +1036,7 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = XTW_consequences_tt
 	}
 }
 focus = {
@@ -767,6 +1111,7 @@ focus = {
 	y = 1
 	relative_position_id = XTW_a_new_era_for_taiwan
 	available = {
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -776,7 +1121,10 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		create_faction = WPTO
+		set_rule = {
+    		can_create_factions = yes
+		}
 	}
 }
 focus = {
@@ -793,6 +1141,7 @@ focus = {
 		}
 	}
 	available = {
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -802,7 +1151,22 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = XDA
+				modifier = huge_increase
+			}
+		}
+		if = {
+			limit = {
+				XDA = {
+					has_government = democratic
+				}
+			}
+			XDA = {
+				country_event = generic.5
+			}
+		}
 	}
 }
 focus = {
@@ -812,6 +1176,7 @@ focus = {
 	y = 1
 	relative_position_id = XTW_west_pacific_project
 	available = {
+		is_puppet = no
 	}
 	bypass = {
 		XK0 = {
@@ -828,7 +1193,22 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = XK0
+				modifier = huge_increase
+			}
+		}
+		if = {
+			limit = {
+				XK0 = {
+					has_government = democratic
+				}
+			}
+			XK0 = {
+				country_event = generic.5
+			}
+		}
 	}
 }
 focus = {
@@ -838,6 +1218,7 @@ focus = {
 	y = 1
 	relative_position_id = XTW_extend_a_branch_to_josea
 	available = {
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -857,6 +1238,7 @@ focus = {
 	y = 1
 	relative_position_id = XTW_the_matter_of_japan
 	available = {
+		is_puppet = no
 	}
 	mutually_exclusive = {
 		focus = XTW_befriend_the_minor_democracies
@@ -867,7 +1249,17 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		if = {
+			limit = {
+				XKY = {
+					exists = yes
+				}
+			}
+			create_wargoal = {
+            target = XKY
+            type = annex_everything
+        }
+		}
 	}
 }
 focus = {
@@ -877,6 +1269,7 @@ focus = {
 	y = 1
 	relative_position_id = XTW_the_matter_of_japan
 	available = {
+		is_puppet = no
 	}
 	mutually_exclusive = {
 		focus = XTW_strangle_it_in_its_crib
@@ -887,7 +1280,22 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = XKY
+				modifier = huge_increase
+			}
+		}
+		if = {
+			limit = {
+				XKY = {
+					has_government = democratic
+				}
+			}
+			XKY = {
+				country_event = generic.5
+			}
+		}
 	}
 }
 focus = {
@@ -897,6 +1305,7 @@ focus = {
 	y = 2
 	relative_position_id = XTW_the_matter_of_japan
 	available = {
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -922,6 +1331,12 @@ focus = {
 	y = 1
 	relative_position_id = XTW_extend_a_branch_to_laos
 	available = {
+		is_puppet = no
+	}
+	bypass = {
+		XYU = {
+			exists = no
+		}
 	}
 	mutually_exclusive = {
 	}
@@ -931,7 +1346,10 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		create_wargoal = {
+            target = XYU
+            type = annex_everything
+        }
 	}
 }
 focus = {
@@ -941,6 +1359,18 @@ focus = {
 	y = 1
 	relative_position_id = XTW_crush_the_revivalists
 	available = {
+		is_puppet = no
+	}
+	bypass = {
+		NOT = {
+			OR = {
+				controls_state = 640
+				controls_state = 747
+				controls_state = 325
+				controls_state = 751
+				controls_state = 603
+			}
+		}
 	}
 	mutually_exclusive = {
 		focus = XTW_direct_rule_from_taipei
@@ -951,7 +1381,11 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		release_autonomy = {
+    		target = XYU
+    		autonomy_state = autonomy_puppet
+    		freedom_level = 0.5
+		}
 	}
 }
 focus = {
@@ -961,6 +1395,18 @@ focus = {
 	y = 1
 	relative_position_id = XTW_crush_the_revivalists
 	available = {
+		is_puppet = no
+	}
+	bypass = {
+		NOT = {
+			OR = {
+				controls_state = 640
+				controls_state = 747
+				controls_state = 325
+				controls_state = 751
+				controls_state = 603
+			}
+		}
 	}
 	mutually_exclusive = {
 		focus = XTW_loyal_administrators
@@ -971,7 +1417,47 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_stability = -0.1
+		if = {
+			limit = {
+				controls_state = 640
+			}
+			640 = {
+				add_compliance = 50
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 747
+			}
+			747 = {
+				add_compliance = 50
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 325
+			}
+			325 = {
+				add_compliance = 50
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 751
+			}
+			751 = {
+				add_compliance = 50
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 603
+			}
+			603 = {
+				add_compliance = 50
+			}
+		}
 	}
 }
 focus = {
@@ -981,6 +1467,7 @@ focus = {
 	y = 2
 	relative_position_id = XTW_crush_the_revivalists
 	available = {
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -1001,6 +1488,7 @@ focus = {
 	y = 2
 	relative_position_id = XTW_west_pacific_project
 	available = {
+		is_puppet = no
 	}
 	bypass = {
 		XHK = {
@@ -1016,7 +1504,27 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		if = {
+			limit = {
+				XHK = {
+						OR = {
+							has_government = communism
+							has_government = fascism
+							is_puppet = yes
+						}
+				}
+
+			}
+			create_wargoal = {
+            target = XHK
+            type = puppet_wargoal_focus
+        }
+		}
+		else = {
+			XHK = {
+				country_event = generic.20
+			}
+		}
 	}
 }
 focus = {
@@ -1026,6 +1534,12 @@ focus = {
 	y = 2
 	relative_position_id = XTW_protect_hong_kong
 	available = {
+		is_puppet = no
+	}
+	bypass = {
+		XGD = {
+			exists = no
+		}
 	}
 	mutually_exclusive = {
 	}
@@ -1035,7 +1549,10 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		create_wargoal = {
+            target = XGD
+            type = topple_government
+        }
 	}
 }
 focus = {
@@ -1046,6 +1563,7 @@ focus = {
 	relative_position_id = XTW_west_pacific_project
 	available = {
 		num_faction_members > 1
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -1056,7 +1574,27 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+			every_country = {
+				limit = {
+						is_in_faction_with = XTW
+				}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
 	}
 }
 focus = {
@@ -1067,6 +1605,7 @@ focus = {
 	relative_position_id = XTW_joint_development_initiative
 	available = {
 		num_faction_members > 1
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -1076,7 +1615,27 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+			every_country = {
+				limit = {
+						is_in_faction_with = XTW
+				}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
 	}
 }
 focus = {
@@ -1087,6 +1646,7 @@ focus = {
 	relative_position_id = XTW_joint_development_initiative
 	available = {
 		num_faction_members > 1
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -1096,7 +1656,23 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+			every_country = {
+				limit = {
+						is_in_faction_with = XTW
+				}
+		army_experience = 25
+		navy_experience = 25
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 2
+			category = land_doctrine
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 2
+			category = naval_doctrine
+		}
+		}
 	}
 }
 focus = {
@@ -1107,6 +1683,7 @@ focus = {
 	relative_position_id = XTW_joint_development_initiative
 	available = {
 		num_faction_members > 1
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
@@ -1132,6 +1709,7 @@ focus = {
 		XEX = {
 			exists = yes
 		}
+		is_puppet = no
 	}
 	bypass = {
 	}
@@ -1157,6 +1735,7 @@ focus = {
 		XEX = {
 			exists = yes
 		}
+		is_puppet = no
 	}
 	mutually_exclusive = {
 	}
