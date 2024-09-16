@@ -22,3 +22,8 @@ XON_loyal_and_true:0 "The Loyal and True"
 XON_loyal_and_true_desc:0 "Many in Xiongnu remain loyal and true to our great KHAN. We have brought together a vast array of people in the hope that we can accomplish, under KHAN, something that only one man had ever done."
 XON_the_sworn_enemy:0 "The Sworn Enemy"
 XON_the_sworn_enemy_desc:0 "Those in the west have no loyalty to the KHAN. They are more than just foreigners - they are outsiders, desiring to conquer a land that was never theirs to begin with. The Confederation as a whole will have something to say of that."
+
+# Event Stuff
+XON.start_1.t:0 "The 15th Council on Xiongnu Affairs"
+XON.start_1.d:0 "The 15th Council silently shuffled into the room where the representative was waiting. After the incident last month, the KHAN had been moved to an undisclosed location. No longer could the council members pick up the phone directly to hear the KHAN's thoughts - instead, they would have to settle for a wired line. As the meeting slowly droned on, the Tuvan council member sat with his head in his hands. The KHAN was doing very little but saying 'NO' to every proposition the council members made. Change did not matter so much elsewhere, but if it failed to happen in Tuva..."
+XON.start_1.a:0 "...Things might change themselves."
