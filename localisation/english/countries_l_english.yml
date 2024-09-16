@@ -177,3 +177,8 @@
  XSG_DEF:0 "Revolutionary Union"
  XSG_ADJ:0 "Revolutionary Union"
  XSG_subject:0 "$OVERLORDADJ$ $XSG$"
+
+ QMU:0 "Macau"
+ QMU_DEF:0 "Macau"
+ QMU_ADJ:0 "Macau"
+ QMU_subject:0 "$OVERLORDADJ$ $QMU$"

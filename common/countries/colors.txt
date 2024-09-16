@@ -343,3 +343,8 @@ XWH = {
 	color = rgb { 56  61  150 }
 	color_ui = rgb { 56  61  150 }	
 }
+
+QMU = {
+	color = rgb { 67 89 55 }
+	color_ui = rgb { 67 89 55 }
+}

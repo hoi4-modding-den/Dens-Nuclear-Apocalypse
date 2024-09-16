@@ -65,3 +65,25 @@ country_event = {
 		}
 	}
 }
+# Invite Taiwan to Alliance
+country_event = {
+    id = XHK.4
+    title = XHK.4.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XHK.4.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XHK.4.a
+		XHK = {
+			add_to_faction = XTW
+		}
+    }
+	option = {
+		name = XHK.4.b
+		
+	}
+}
