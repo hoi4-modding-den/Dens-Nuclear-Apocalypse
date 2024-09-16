@@ -11,10 +11,11 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 	continuous_focus_position = { x = 100 y = 3250 }
+	
 focus = {
 	id = XDA_Rewritting_the_constitution
 	icon = GFX_focus_renounce_the_treaty_of_trianon
-	x = 15
+	x = 20
 	y = 0
 	cost = 5
  	available_if_capitulated = yes
@@ -44,10 +45,268 @@ focus = {
 		add_political_power = 50		
 	}
 }
+##Continue business as usual (become a constitutional monarchy)
+focus = {
+	id = XDA_A_new_status_quo
+	icon = GFX_goal_generic_national_unity
+	x = 1
+	y = 1
+	relative_position_id = XDA_Stopping_the_ridicule
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_A_change_of_government
+	}
+	prerequisite = {
+		focus = XDA_Stopping_the_ridicule
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+##a new path of democracy
+focus = {
+	id = XDA_A_change_of_government
+	icon = GFX_goal_generic_national_unity
+	x = -1
+	y = 1
+	relative_position_id = XDA_Stopping_the_ridicule
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_A_new_status_quo
+	}
+	prerequisite = {
+		focus = XDA_Stopping_the_ridicule
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Arrest_the_old_leader
+	icon = GFX_goal_generic_national_unity
+	x = -2
+	y = 1
+	relative_position_id = XDA_A_change_of_government
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_A_citizen_once_again
+	}
+	prerequisite = {
+		focus = XDA_A_change_of_government
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_A_citizen_once_again
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id = XDA_A_change_of_government
+	available = {
+	}
+	mutually_exclusive = {
+		focus = XDA_Arrest_the_old_leader
+	}
+	prerequisite = {
+		focus = XDA_A_change_of_government
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Rebuild_the_bureau
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id = XDA_A_citizen_once_again
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_A_citizen_once_again
+		focus = XDA_Arrest_the_old_leader
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Trust_from_the_people
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id = XDA_Rebuild_the_bureau
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_Rebuild_the_bureau
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_A_new_currency
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id = XDA_Trust_from_the_people
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_Trust_from_the_people
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_On_the_world_stage
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id = XDA_A_new_currency
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_A_new_currency
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+##Get an actual army
+focus = {
+	id = XDA_open_conscription
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id = XDA_Arrest_the_old_leader
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_A_citizen_once_again
+		focus = XDA_Arrest_the_old_leader
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+##Work on a defensive line agianst Siam
+focus = {
+	id = XDA_Begin_working_on_the_Mekong_line
+	icon = GFX_goal_generic_national_unity
+	x = -2
+	y = 1
+	relative_position_id = XDA_Arrest_the_old_leader
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_A_citizen_once_again
+		focus = XDA_Arrest_the_old_leader
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Mekong_Line_continuation
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id = XDA_Begin_working_on_the_Mekong_line
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_Begin_working_on_the_Mekong_line
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_Better_pay_Better_workers
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id = XDA_Mekong_Line_continuation
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_Mekong_Line_continuation
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
+focus = {
+	id = XDA_A_stop_to_extremism
+	icon = GFX_goal_generic_national_unity
+	x = 2
+	y = 1
+	relative_position_id = XDA_Trust_from_the_people
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XDA_Trust_from_the_people
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50		
+	}
+}
 ##Communist Path
 focus = {
 	id = XDA_Dawn_of_a_new_moon
-	x = -8
+	x = -15
 	y = 1
 	relative_position_id = XDA_Rewritting_the_constitution
 	available = {
