@@ -1,0 +1,10 @@
+leader_traits = {
+
+	XAU_subject_to_change = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

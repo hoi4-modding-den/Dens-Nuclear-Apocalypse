@@ -1,0 +1,19 @@
+characters = {
+
+	### COUNTRY LEADERS ###
+
+	XAU_Rogue_Intelligence = {
+		name = "Rogue Intelligence"
+		portraits = {
+			civilian = {
+				large = "GFX_Leader_Rogue_Intelligence"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { XAU_subject_to_change }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+}

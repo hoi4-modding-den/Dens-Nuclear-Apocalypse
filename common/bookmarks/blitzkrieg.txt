@@ -147,6 +147,15 @@ bookmarks = {
 				XNP_congressional_deadlock
 			}
 		}
+		"XAU" = {
+			ideology = communism
+			history = "XAU_history_desc"
+			focuses = {
+			}
+			ideas = {
+				
+			}
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

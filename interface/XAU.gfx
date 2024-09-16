@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	### CHARACTERS ###
+
+	spriteType = {
+		name = "GFX_Leader_Rogue_Intelligence"
+		texturefile = "gfx/leaders/XAU/Leader_Rogue_Intelligence.dds"
+	}
+}
+

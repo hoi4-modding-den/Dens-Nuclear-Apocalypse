@@ -1,0 +1,17 @@
+﻿l_english:
+ XAU_democratic:5 "Free Automaton Republic"
+ XAU_democratic_DEF:5 "the Automaton Republic"
+ XAU_democratic_ADJ:5 "Automaton"
+ XAU_fascism:5 "Automaton Syndicate"
+ XAU_fascism_DEF:5 "the Automaton Syndicate"
+ XAU_fascism_ADJ:5 "Automaton"
+ XAU_communism:5 "Automaton Union"
+ XAU_communism_DEF:5 "the Automaton Union"
+ XAU_communism_ADJ:5 "Automaton"
+ XAU_neutrality:5 "Automaton Corporations"
+ XAU_neutrality_DEF:5 "the Automaton Corporations"
+ XAU_neutrality_ADJ:5 "Automaton"
+
+ ### TRAITS ###
+
+ XAU_subject_to_change:0 "WIP - PLACEHOLDER"
