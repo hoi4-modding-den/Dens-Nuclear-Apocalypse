@@ -14,7 +14,7 @@
 	 continuous_focus_position = { x = 100 y = 3000 }
 
 
-
+  #Political
     #Literary Society
 	 focus = {
 		id = XWH_EmpowerLitSoc
@@ -29,7 +29,7 @@
 		bypass = {
 		}
 
-		x = 10
+		x = 5
 		y = 3
 		cost = 5
 		ai_will_do = {
@@ -43,6 +43,53 @@
 				ideology = fascism
 				popularity = 0.2
 			}
+		}
+     }
+	 focus = {
+		id = XWH_LitSocCrushOpposition
+
+		prerequisite = {focus = XWH_EmpowerLitSoc}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+            
+		}
+		bypass = {
+		}
+
+		x = 7
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XWH_LitSocSchooling
+
+		prerequisite = {focus = XWH_LitSocCrushOpposition}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+            
+		}
+		bypass = {
+		}
+
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
 		}
      }
 	 #Progressive Association
@@ -75,4 +122,209 @@
 			}
 		}
      }
+	 focus = {
+		id = XWH_ProgAssoArtOfWar
+
+		prerequisite = {focus = XWH_EmpowerProgAsso}
+		mutually_exclusive = {  }
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+            
+		}
+		bypass = {
+		}
+
+		x = 17
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			
+		}
+     }
+	 focus = {
+		id = XWH_ProgAssoCultofWu
+
+		prerequisite = {focus = XWH_EmpowerProgAsso}
+		mutually_exclusive = {  }
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+            
+		}
+		bypass = {
+		}
+
+		x = 13
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_PROPAGANDA }
+		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XWH_ProgAssoCultofWu2
+
+		prerequisite = {focus = XWH_ProgAssoCultofWu}
+		mutually_exclusive = {  }
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+            
+		}
+		bypass = {
+		}
+
+		x = 13
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_PROPAGANDA }
+		completion_reward = {
+		}
+     }
+  #Industry
+	 focus = {
+		id = XWH_IndustryStart
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		x = 25
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	 }
+	 focus = {
+		id = XWH_Industry2
+		prerequisite = {focus = XWH_IndustryStart}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		x = 25
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	 }
+	 focus = {
+		id = XWH_Industry3
+		prerequisite = {focus = XWH_IndustryStart}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		x = 23
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	 }
+	 focus = {
+		id = XWH_Industry4
+		prerequisite = {focus = XWH_IndustryStart}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		x = 27
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	 }
+	 focus = {
+		id = XWH_Industry5
+		prerequisite = {focus = XWH_Industry2}
+		prerequisite = {focus = XWH_Industry4}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		x = 26
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	 }
+	 focus = {
+		id = XWH_Industry6
+		prerequisite = {focus = XWH_Industry2}
+		prerequisite = {focus = XWH_Industry3}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		x = 24
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	 }
 } #endbracketlol
