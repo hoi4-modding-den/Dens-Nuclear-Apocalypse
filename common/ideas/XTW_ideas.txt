@@ -95,5 +95,31 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
+		XTW_raiding_kuomintang_cells = {
+            picture = ast_classify_aliens
+            modifier = {
+				neutrality_drift = -0.1
+				fascism_drift = -0.1
+			}
+		}
+		XTW_bolster_anti_kmt_propaganda = {
+            picture = generic_democratic_drift_bonus
+            modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.05
+			}
+		}
+		XTW_bond_payment_bad = {
+            picture = NOR_printing_money
+            modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		XTW_bond_payment_good = {
+            picture = NOR_printing_money
+            modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
 	}
 }

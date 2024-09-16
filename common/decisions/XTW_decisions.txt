@@ -1,0 +1,140 @@
+XTW_development_bonds_category = {
+    XTW_civilian_industrial_bond = {
+        icon = GFX_decision_generic_factory
+		fire_only_once = no
+
+		priority = 100
+        cost = 100
+
+        visible = {
+			has_country_flag = XTW_development_bond
+		}
+
+		available = {
+			has_political_power > 100
+			NOT = { 
+				has_country_flag = XTW_already_took_a_bond
+			}
+            XEX = {
+                exists = yes
+            }
+            NOT = {
+                has_war_with = XEX
+            }
+		}
+		days_remove = 70
+
+        complete_effect = {
+			set_country_flag = {
+				flag = XTW_already_took_a_bond
+				days = 70
+				value = 1
+			}
+            add_timed_idea = {
+                idea = XTW_bond_payment_bad
+                days = 70
+            }
+            XEX = {
+                add_timed_idea = {
+                idea = XTW_bond_payment_good
+                days = 70
+            }
+            }
+		}
+        remove_effect = {
+            add_offsite_building = { type = industrial_complex level = 1 }
+        }
+    }
+    XTW_military_industrial_bond = {
+        icon = GFX_decision_generic_tank
+		fire_only_once = no
+
+		priority = 90
+        cost = 75
+
+        visible = {
+			has_country_flag = XTW_development_bond
+		}
+
+		available = {
+			has_political_power > 75
+			NOT = { 
+				has_country_flag = XTW_already_took_a_bond
+			}
+            XEX = {
+                exists = yes
+            }
+            NOT = {
+                has_war_with = XEX
+            }
+		}
+		days_remove = 70
+
+        complete_effect = {
+			set_country_flag = {
+				flag = XTW_already_took_a_bond
+				days = 70
+				value = 1
+			}
+            add_timed_idea = {
+                idea = XTW_bond_payment_bad
+                days = 70
+            }
+            XEX = {
+                add_timed_idea = {
+                idea = XTW_bond_payment_good
+                days = 70
+            }
+            }
+		}
+        remove_effect = {
+            add_offsite_building = { type = arms_factory level = 1 }
+        }
+    }
+    XTW_naval_industrial_bond = {
+        icon = GFX_decision_generic_merge_plant_ship
+		fire_only_once = no
+
+		priority = 80
+        cost = 75
+
+        visible = {
+			has_country_flag = XTW_development_bond
+		}
+
+		available = {
+			has_political_power > 75
+			NOT = { 
+				has_country_flag = XTW_already_took_a_bond
+			}
+            XEX = {
+                exists = yes
+            }
+            NOT = {
+                has_war_with = XEX
+            }
+		}
+		days_remove = 70
+
+        complete_effect = {
+			set_country_flag = {
+				flag = XTW_already_took_a_bond
+				days = 70
+				value = 1
+			}
+            add_timed_idea = {
+                idea = XTW_bond_payment_bad
+                days = 70
+            }
+            XEX = {
+                add_timed_idea = {
+                idea = XTW_bond_payment_good
+                days = 70
+            }
+            }
+		}
+        remove_effect = {
+            add_offsite_building = { type = dockyard level = 1 }
+        }
+    }
+}
