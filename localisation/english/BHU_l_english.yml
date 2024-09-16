@@ -1,5 +1,34 @@
 ﻿l_english:
 
+# XRE - for fun :)
+
+ XRE: "Union of Railway Enthusiasts"
+ XRE_DEF: "the East-Asian Union of Railway Enthusiasts"
+ XRE_ADJ: "Railway Enthusiast"
+
+# VICTORY POINTS
+
+ VICTORY_POINTS_13371: "Jakar"
+ VICTORY_POINTS_13367: "Thimphu"
+ VICTORY_POINTS_13366: "Paro"
+ VICTORY_POINTS_13377: "'Wangdi Phodr'a"
+ VICTORY_POINTS_13369: "Phuntsholing"
+ VICTORY_POINTS_13364: "Samtse"
+ VICTORY_POINTS_13375: "Nganglam"
+ VICTORY_POINTS_13376: "Samdrup Jongkhar"
+ VICTORY_POINTS_13370: "Gelephu"
+ VICTORY_POINTS_13374: "Mongar"
+ VICTORY_POINTS_13373: "Trashi Yangtse"
+ VICTORY_POINTS_10349: "Kokrajhar"
+ VICTORY_POINTS_7455: "Tamulpur"
+
+# STATES
+
+ STATE_987: "North Bodoland"
+ STATE_988: "Trashigang"
+ STATE_989: "Bumthang"
+ STATE_990: "Bodoland"
+
 # COUNTRY
 
  XBO: "Bodoland"
