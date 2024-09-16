@@ -34,3 +34,34 @@ country_event = {
         puppet = XHK
     }
 }
+
+# Invite Union
+country_event = {
+    id = XHK.3
+    title = XHK.3.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XHK.3.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XHK.3.a
+		XHK = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+    }
+	option = {
+		name = XHK.3.b
+		XHK = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}

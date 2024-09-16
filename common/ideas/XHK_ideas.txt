@@ -148,5 +148,23 @@ ideas = {
 				monthly_population = -0.05
 			}
 		}
+		XHK_confederationism_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
 	}
 }	
