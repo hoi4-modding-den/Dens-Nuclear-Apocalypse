@@ -209,6 +209,9 @@ focus_tree = {
 		relative_position_id = XSK_prepare_invasion_of_mongolia
 
 		available = {
+			has_army_manpower = {
+				size > 250000
+			}
 			is_subject = no
 			XON = {
 				is_owner_neighbor_of = ROOT
@@ -600,7 +603,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -772,7 +775,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 150
@@ -925,7 +928,7 @@ focus_tree = {
 	focus = {
 		id = XSK_move_south
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = XSK_chinese_politics }
+		prerequisite = { focus = XSK_border_provocations }
 		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 2
@@ -996,6 +999,9 @@ focus_tree = {
 		relative_position_id = XSK_envoy_to_xiongnu
 
 		available = {
+			has_army_manpower = {
+				size > 250000
+			}
 			is_subject = no
 			XON = {
 				is_owner_neighbor_of = ROOT
@@ -1076,6 +1082,30 @@ focus_tree = {
 				XON = {
 					every_core_state = {
 						add_core_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					every_country = {
+						limit = {
+							original_tag = XON
+							is_subject_of = ROOT
+						}
+						ROOT = {
+							annex_country = {
+								target = PREV
+								transfer_troops = no
+							}
+						}
+					}
+					XON = {
+						every_core_state = {
+							add_core_of = ROOT
+						}
 					}
 				}
 			}
@@ -1465,7 +1495,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -1503,7 +1533,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -1583,7 +1613,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -1609,7 +1639,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -1652,7 +1682,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -1727,7 +1757,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -1863,7 +1893,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -1900,7 +1930,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -2122,6 +2152,9 @@ focus_tree = {
 		relative_position_id = XSK_diplomatic_approach
 
 		available = {
+			has_army_manpower = {
+				size > 250000
+			}
 			is_subject = no
 			OR = {
 				is_neighbor_of = XON
@@ -2154,7 +2187,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2284,7 +2317,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -2300,6 +2333,7 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = XSK_news_events.5 days = 1 }
 			}
+			create_faction = "Ottoman Restoration League"
 			every_state = {
 				limit = {
 					DEN_is_chinese_state = yes
@@ -2332,10 +2366,11 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
 			add_political_power = 100
+			add_stability = 0.15
 			if = {
 				limit = {
 					has_government = neutrality
@@ -2390,7 +2425,7 @@ focus_tree = {
 					all_state = {
 					OR = {
 						NOT = { DEN_is_chinese_state = yes }
-						is_owned_and_controlled_by = ROOT
+						owns_or_subject_of = yes
 					}
 				}
 			}
@@ -2405,7 +2440,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			every_state = {
+				limit = {
+					DEN_is_chinese_state = yes
+				}
+				add_core_of = ROOT
+				if = {
+					limit = {
+						NOT = { is_owned_by = ROOT }
+					}
+					transfer_state_to = ROOT
+				}
+			}
 			set_cosmetic_tag = XSK_ottoman_china
+			hidden_effect = {
+				news_event = { id = XSK_news_events.6 days = 1 }
+			}
 		}
 	}
 
@@ -2425,7 +2475,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -2503,10 +2553,11 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
-			
+			army_experience = 75
+			add_ideas = XSK_defence_focus
 		}
 	}
 
@@ -2520,19 +2571,40 @@ focus_tree = {
 		relative_position_id = XSK_support_the_united_front
 
 		available = {
-			
+			any_other_country = {
+				DEN_is_chinese_nation = yes
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
 		}
 
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			
+			custom_effect_tooltip = XSK_focus_on_central_china_tt
+			every_other_country = {
+				limit = {
+					DEN_is_chinese_nation = yes
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
 		}
 	}
 
@@ -2640,7 +2712,7 @@ focus_tree = {
 			
 		}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 150
@@ -2675,7 +2747,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 10 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			add_political_power = 75
 		}
 	}

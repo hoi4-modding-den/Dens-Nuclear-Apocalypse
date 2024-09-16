@@ -210,6 +210,7 @@ characters = {
 			allowed = {
 				original_tag = XSK
 			}
+			idea_token = XSK_scientist_advisor
 			visible  = {
 				NOT = { has_completed_focus = XSK_the_expansionist_sultan }
 			}
@@ -237,6 +238,7 @@ characters = {
 			allowed = {
 				original_tag = XSK
 			}
+			idea_token = XSK_noble_bureaucrat
 			available = {
 				
 			}
@@ -261,6 +263,7 @@ characters = {
 			allowed = {
 				original_tag = XSK
 			}
+			idea_token = XSK_economic_reformer
 			available = {
 				
 			}
@@ -289,6 +292,7 @@ characters = {
 				NOT = { has_completed_focus = XSK_the_expansionist_sultan }
 				NOT = { has_completed_focus = XSK_the_diplomatic_sultan }
 			}
+			idea_token = XSK_socialist_novelist
 			available = {
 				has_government = communism
 			}
@@ -317,6 +321,7 @@ characters = {
 				NOT = { has_completed_focus = XSK_the_expansionist_sultan }
 				NOT = { has_completed_focus = XSK_the_diplomatic_sultan }
 			}
+			idea_token = XSK_colonial_communist
 			available = {
 				has_government = communism
 			}
@@ -341,6 +346,7 @@ characters = {
 			allowed = {
 				original_tag = XSK
 			}
+			idea_token = XSK_progressive_doctor
 			available = {
 				
 			}
@@ -366,6 +372,7 @@ characters = {
 				original_tag = XSK
 				has_dlc = "Arms Against Tyranny"
 			}
+			idea_token = XSK_weapons_designer
 			available = {
 				has_government = neutrality
 			}
@@ -390,6 +397,7 @@ characters = {
 			allowed = {
 				original_tag = XSK
 			}
+			idea_token = XSK_industry_reformer
 			available = {
 				
 			}

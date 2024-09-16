@@ -1,0 +1,95 @@
+XSK_army_expansion = {
+	allowed = {
+		original_tag = XSK
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -30
+	}
+	
+
+}
+
+XSK_enemies_in_the_north = {
+	allowed = {
+		original_tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		always = yes
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XMJ
+		value = 100
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = XON
+		value = 100
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = XON
+		value = -100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = XMJ
+		value = -100
+	}
+}
+
+XSK_befriend_XAD = {
+	allowed = {
+		original_tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		NOT = { has_war_with = XAD }
+	}
+
+	ai_strategy = {
+	    type = send_volunteers_desire
+	    id = XAD
+		value = 100
+	}
+}
+
+XSK_befriend_XTW = {
+	allowed = {
+		original_tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_mutual_cooperation
+	}
+
+	ai_strategy = {
+	    type = support
+	    id = XTW
+		value = 100
+	}
+
+	ai_strategy = {
+	    type = protect
+	    id = XTW
+		value = 100
+	}
+}

@@ -1,8 +1,8 @@
-political_actions = {
+economy_decisions = {
 
-	XSK_ai_integrate_mongolia = {
+	XSK_build_railways_1 = {
 
-		icon = GFX_decision_generic_nationalism
+		icon = GFX_decision_generic_construction
 
 		priority = 50
 
@@ -11,153 +11,120 @@ political_actions = {
 		}
 
 		available = {
-			OR = {
-				is_ai = yes
-				is_debug = yes
-			}
-			any_country = {
-				is_subject_of = ROOT
-				original_tag = XON
-			}
+			760 = { controls_or_subject_of = yes }
+			817 = { controls_or_subject_of = yes }
+			330 = { controls_or_subject_of = yes }
+			num_of_civilian_factories_available_for_projects > 0
 		}
 
 		visible = { 
+			
+		}
+
+		cancel_trigger = {
 			OR = {
-				is_ai = yes
-				is_debug = yes
-			}
-			any_country = {
-				is_subject_of = ROOT
-				original_tag = XON
+				760 = { controls_or_subject_of = no }
+				817 = { controls_or_subject_of = no }
+				330 = { controls_or_subject_of = no }
 			}
 		}
 
-		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		fire_only_once = yes
 
 		cost = 50
 
-		days_re_enable = 30
+		days_remove = 14
 
         ai_will_do = {
 			base = 10000
 		}
-		complete_effect = {
-			every_country = {
-				limit = {
-					is_subject_of = ROOT
-					original_tag = XON
-				}
-				add_autonomy_score = {
-    				value = -500
-				}
-			}
-			every_country = {
-				limit = {
-					is_subject_of = ROOT
-					original_tag = XON
-					compare_autonomy_progress_ratio > 0.9
-				}
-				ROOT = {
-					annex_country = {
-    					target = PREV
-    					transfer_troops = yes
-					}
-				}
-				every_core_state = {
-					add_core_of = ROOT
-				}
+
+		remove_effect = {
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 4843 1781 7864 12541 1725 7881 4732 }
+				start_province = 4704
+				target_province = 4801
 			}
         }
 
 	}
 
-	XSK_reclaim_anarchy_land = {
+	XSK_build_railways_2 = {
 
-		icon = GFX_decision_ITA_reorganize_ascari
+		icon = GFX_decision_generic_construction
+
+		priority = 50
 
 		allowed = {
-			original_tag = XSK
+			tag = XSK
 		}
-
-		highlight_states = { 
-			highlight_states_trigger = {
-				is_controlled_by = FROM
-			}
-		}
-
-		target_trigger = { 
-			FROM = {
-				DEN_is_chinese_state = yes
-				is_owned_and_controlled_by = LIB
-			 }
-		}
-
-		state_target = yes
 
 		available = {
-			NOT = { has_country_flag = XSK_reclaiming_anarchy }
+			760 = { controls_or_subject_of = yes }
+			817 = { controls_or_subject_of = yes }
+			OR = {
+				612 = { controls_or_subject_of = yes }
+				621 = { controls_or_subject_of = yes }
+			}
+			611 = { controls_or_subject_of = yes }
+			num_of_civilian_factories_available_for_projects > 0
 		}
 
-		visible = {
-			FROM = {
-				any_neighbor_state = {
-					OR = {
-						AND = {
-							owner = { is_subject_of = ROOT }
-							controller = { is_subject_of = ROOT }
-						}
-						is_owned_and_controlled_by = ROOT
-					}
+		visible = { 
+			
+		}
+
+		cancel_trigger = {
+			OR = {
+				760 = { controls_or_subject_of = no }
+				817 = { controls_or_subject_of = no }
+				AND = {
+					612 = { controls_or_subject_of = no }
+					621 = { controls_or_subject_of = no }
 				}
+				611 = { controls_or_subject_of = no }
 			}
 		}
 
-		custom_cost_trigger = {
-			has_equipment = { infantry_equipment > 99 }
+		modifier = {
+			civilian_factory_use = 1
 		}
-		custom_cost_text = decision_cost_100_guns
-
-		on_map_mode = map_only
 
 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 10
-				has_war = no
-			}
-		}
+		cost = 50
 
-		days_remove = 7
+		days_remove = 14
 
-		cancel_trigger = {
-			FROM = {
-				NOT = { is_owned_and_controlled_by = LIB }
-			}
-		}
-
-		complete_effect = {
-			set_country_flag = XSK_reclaiming_anarchy
-			hidden_effect = {
-				add_equipment_to_stockpile = {
-    				type = infantry_equipment
-    				amount = -100
-				}
-			}
+        ai_will_do = {
+			base = 10000
 		}
 
 		remove_effect = {
-			clr_country_flag = XSK_reclaiming_anarchy
-			transfer_state = FROM
-		}
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				path = { }
+				start_province = 4704
+				target_province = 11752
+			}
+        }
+
 	}
+
+	
 
 }
 
 XSK_invasion_of_china = {
-
-	
 
 	XSK_invade_chinese_nation = {
 
@@ -400,6 +367,88 @@ XSK_invasion_of_china = {
 		}
 	}
 
+	XSK_reclaim_anarchy_land = {
+
+		icon = GFX_decision_ITA_reorganize_ascari
+
+		allowed = {
+			original_tag = XSK
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = FROM
+			}
+		}
+
+		target_trigger = { 
+			FROM = {
+				DEN_is_chinese_state = yes
+				is_owned_and_controlled_by = LIB
+			 }
+		}
+
+		state_target = yes
+
+		available = {
+			NOT = { has_country_flag = XSK_reclaiming_anarchy }
+		}
+
+		visible = {
+			FROM = {
+				any_neighbor_state = {
+					OR = {
+						AND = {
+							owner = { is_subject_of = ROOT }
+							controller = { is_subject_of = ROOT }
+						}
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+		custom_cost_text = decision_cost_100_guns
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				has_war = no
+			}
+		}
+
+		days_remove = 7
+
+		cancel_trigger = {
+			FROM = {
+				NOT = { is_owned_and_controlled_by = LIB }
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = XSK_reclaiming_anarchy
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = -100
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = XSK_reclaiming_anarchy
+			transfer_state = FROM
+		}
+	}
+
 }
 
 XSK_support_united_front_members_cat = {
@@ -465,7 +514,7 @@ XSK_support_united_front_members_cat = {
 						FROM = { is_subject_of = ROOT }
 					}
 					add_autonomy_score = {
-						value = -500
+						value = -150
 					}
 				}
 			}
@@ -528,7 +577,7 @@ XSK_support_united_front_members_cat = {
 						FROM = { is_subject_of = ROOT }
 					}
 					add_autonomy_score = {
-						value = -500
+						value = -150
 					}
 				}
 			}
@@ -607,7 +656,7 @@ XSK_support_united_front_members_cat = {
 						FROM = { is_subject_of = ROOT }
 					}
 					add_autonomy_score = {
-						value = -500
+						value = -150
 					}
 				}
 			}

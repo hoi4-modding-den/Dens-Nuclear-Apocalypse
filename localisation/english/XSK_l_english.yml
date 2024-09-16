@@ -9,8 +9,8 @@
  XSK_fascism_DEF: "the Ottoman National Salvation Front"
  XSK_fascism_ADJ: "Ottoman"
 
- XSK_ottoman_china: "Ottoman Empire of China"
- XSK_ottoman_china_DEF: "the Ottoman Empire of China"
+ XSK_ottoman_china: "Ottoman Empire in China"
+ XSK_ottoman_china_DEF: "the Ottoman Empire in China"
  XSK_ottoman_china_ADJ: "Ottoman-Chinese"
 
  XON_XSK_subject: "Protectorate of Mongolia"
@@ -191,12 +191,16 @@
  XSK_saboteur_infiltrators: "Ottoman Saboteurs"
  XSK_trinity: "The Trinity of Allah, Atatürk and Marx"
  XSK_trinity_desc: "There are only three beings that are worthy to be worshipped. First, Allah, the Father of Man, and his incarnation, our Sultan. Second, Mustafa Kemal Atatürk, the Father of the Turkic Peoples. And third, Karl Marx, the Father of Communism and the Revolution."
+ XSK_defence_focus: "Northern Defence Focus"
  XTK_insurgency: "Anti-Ottoman Insurgency"
  XTK_political_instability: "Political Instability"
  XTK_weak_industry: "Collapsed Industry"
  XTK_idea_can_be_removed_tt: "This National Spirit can be removed by [XTK.GetNameDef]'s §YOverlord§!."
 
 # Decisions
+
+ XSK_build_railways_1: "Connect Ulaanbaatar"
+ XSK_build_railways_2: "Connect Zhangbei"
 
  XSK_vilayets_cat: "Establish Ottoman Vilayets"
  XSK_vilayet_of_beijing: "Establish the Vilayet of Beijing"
@@ -327,6 +331,7 @@
  XSK_news_events.1.d: "Following the death of Sultan XI. Süleyman, a regency council had been in charge of [XSK.GetNameDef]. This changed today with the Coronation of XI. Süleymans nephew Abdulhamid as Sultan I. Abdulhamid.\nHe has already announced plans of expanding the Sultanate militarily, though nothing was stated officially."
  XSK_news_events.1.a: "Long live the Sultan!"
  XSK_news_events.1.b: "Look at them brag."
+ XSK_news_events.1.c: "Okay."
  
  XSK_news_events.2.t: "Coronation of Sultan XII. Süleyman"
  XSK_news_events.2.d: "Following the death of Sultan XI. Süleyman, a regency council had been in charge of [XSK.GetNameDef]. This changed today with the Coronation of XI. Süleymans son XII. Süleyman as Sultan XII. Süleyman.\nHe has not yet stated any specific geo-political goals, though if insider sources are to be trusted, he has already made plans to send an envoy to [XON.GetNameDef]."
@@ -346,6 +351,11 @@
  XSK_news_events.5.d: "The Ottoman Sultan has given a very interesting announcement. The Ottoman Dynasty has officially proclaimed their intention to reunite China as the official successor the Qing Dynasty and claim the Mandate of Heaven.\n \nThe Sultanate has also begun multiple propaganda campaigns to close the ethnic gap between Turks and Chinese by telling the people that Chinese are actually Turkic too."
  XSK_news_events.5.a: "Glory to the Sultan!"
  XSK_news_events.5.b: "Seems legit."
+
+ XSK_news_events.6.t: "The Revival of the Ottoman Empire!"
+ XSK_news_events.6.d: "Today the Ottoman Sultan stepped before his people to announce the realisation of their ambition. The Ottomans are now the ruling dynasty of all of China. With this last step completed, the Sultan now proclaims the creation of the Ottoman Empire in China!\n \nThe giant hegemon now looms over all of Asia as a great united force, causing fear in every of their neighbours."
+ XSK_news_events.6.a: "Devlet-i Ebed-müddet."
+ XSK_news_events.6.b: "The sick man of Asia or a new world order?"
 
  XTK_events.1.t: "Insurgents in the Sultanate!"
  XTK_events.1.d: "Insurgency Fighters against [XSK.GetNameDef] have reached out to us, asking for us to let them rule our conquered [XSK.GetAdjective] territories."
@@ -454,13 +464,14 @@
  XSK_pacify_chinese_rivals: "Conquest of China"
  XSK_pacify_chinese_rivals_tt: "Unlocks £decision_icon_small §YDecisions§! to declare war on any remaining nation in China."
  XSK_proclaim_ottoman_empire_of_china: "Proclaim the Ottoman Empire"
- XSK_owns_and_controls_all_chinese_states_tt: "Owns and controls all Chinese states"
+ XSK_owns_and_controls_all_chinese_states_tt: "Owns all Chinese states directly or via subjects"
  
  XSK_mutual_cooperation: "Mutual Cooperation"
  XSK_support_the_united_front: "Support United Front Members"
  XSK_support_the_united_front_tt: "Unlocks £decision_icon_small §YDecisions§! to give £infantry_equipment_text_icon §YWeapons§!, £industry_texticon §YOff-Map Factories§! and £army_experience §YArmy Experience§! to members of the §YUnited Front§!."
  XSK_protect_the_north: "Protect the North"
- XSK_focus_on_central_china: "Focus on Central China"
+ XSK_focus_on_central_china: "Chinese Interventionism"
+ XSK_focus_on_central_china_tt: "Gain §YWargoals§! against every §Yfascist§! or §Ycommunist§! nation in China."
  XSK_invite_japanese_nations: "Invite Aligned Japanese Nations"
 
  XSK_chinese_conscription: "Conscript Chinese"

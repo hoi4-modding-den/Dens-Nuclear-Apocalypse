@@ -7,7 +7,7 @@ add_namespace = XTK_events
 country_event = { # The First Candidate
     id = XSK_succession_events.1
     title = XSK_succession_events.1.t
-    picture = GFX_report_event_military_planning
+    picture = GFX_report_event_tur_sultan_in_istanbul
     desc = XSK_succession_events.1.d
 
     is_triggered_only = yes
@@ -31,7 +31,7 @@ country_event = { # The First Candidate
 country_event = { # The Second Candidate
     id = XSK_succession_events.2
     title = XSK_succession_events.2.t
-    picture = GFX_report_event_tur_sultan_and_pashas
+    picture = GFX_report_event_tur_sultan_in_istanbul
     desc = XSK_succession_events.2.d
 
     is_triggered_only = yes
@@ -877,6 +877,16 @@ news_event = { # Abdulhamid is coronated
             }
         }
     }
+    option = {
+        name = XSK_news_events.1.c
+        trigger = {
+            NOT = {
+                tag = XSK
+                tag = XON
+                tag = XMJ
+            }
+        }
+    }
 }
 
 news_event = { # Süleyman 12 is coronated
@@ -905,6 +915,16 @@ news_event = { # Süleyman 12 is coronated
             }
         }
     }
+    option = {
+        name = XSK_news_events.1.c
+        trigger = {
+            NOT = {
+                tag = XSK
+                tag = XON
+                tag = XMJ
+            }
+        }
+    }
 }
 
 news_event = { # Military Coup
@@ -928,6 +948,16 @@ news_event = { # Military Coup
         name = XSK_news_events.3.b
         trigger = {
             OR = {
+                tag = XON
+                tag = XMJ
+            }
+        }
+    }
+    option = {
+        name = XSK_news_events.1.c
+        trigger = {
+            NOT = {
+                tag = XSK
                 tag = XON
                 tag = XMJ
             }
@@ -980,6 +1010,31 @@ news_event = { # Claim the Mandate of Heaven
     
     option = {
         name = XSK_news_events.5.b
+        trigger = {
+            NOT = { tag = XSK }
+        }
+    }
+}
+
+news_event = { # Ottomans reunite China
+    id = XSK_news_events.6
+    title = XSK_news_events.6.t
+    picture = GFX_news_event_ottoman_sultan_returns
+    desc = XSK_news_events.6.d
+
+    is_triggered_only = yes
+
+    major = yes
+
+    option = {
+        name = XSK_news_events.6.a
+        trigger = {
+            tag = XSK
+        }
+    }
+    
+    option = {
+        name = XSK_news_events.6.b
         trigger = {
             NOT = { tag = XSK }
         }
