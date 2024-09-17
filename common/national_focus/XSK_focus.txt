@@ -56,7 +56,7 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_turkey
 		prerequisite = { focus = XSK_choose_the_next_sultan }
 		mutually_exclusive = { focus = XSK_the_diplomatic_sultan focus = XSK_no_sultan }
-		x = -12
+		x = -11
 		y = 1
 		relative_position_id = XSK_choose_the_next_sultan
 
@@ -284,15 +284,16 @@ focus_tree = {
 
 	focus = {
 		id = XSK_invade_inner_mongolia
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = XSK_tradition_of_the_steppes }
 		#mutually_exclusive = { focus =  }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = XSK_tradition_of_the_steppes
 
 		available = {
 			is_subject = no
+			NOT = { has_war_with = XON }
 			XMJ = {
 				is_owner_neighbor_of = ROOT
 			}
@@ -381,32 +382,13 @@ focus_tree = {
 		prerequisite = { focus = XSK_imperial_military }
 		prerequisite = { focus = XSK_invade_inner_mongolia }
 		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 3
+		x = -1
+		y = 4
 		relative_position_id = XSK_invade_mongolia
 
 		available = {
 			is_subject = no
-			XON = {
-				all_core_state = {
-					owner = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
-			}
-			XMJ = {
-				all_core_state = {
-					owner = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
-			}
+			NOT = { has_war_with = XMJ }
 		}
 
 		cost = 5
@@ -418,9 +400,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			add_state_core = 611
-			add_state_core = 612
-			add_state_core = 621
 			if = {
 				limit = {
 					any_country = {
@@ -441,10 +420,17 @@ focus_tree = {
 					}
 				}
 			}
-			XON = {
-				every_core_state = {
-					add_core_of = ROOT
-				}
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+			add_state_core = 761
+			add_state_core = 819
+			add_state_core = 817
+			add_state_core = 330
+			add_state_core = 820
+			add_state_core = 329
+			set_rule = {
+    			can_create_factions = yes
 			}
 		}
 	}
@@ -560,6 +546,9 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = XSK_succession_events.8 }
 			custom_effect_tooltip = XSK_fate_of_the_monarchy_tt
+			set_rule = {
+    			can_create_factions = yes
+			}
 		}
 	}
 
@@ -729,6 +718,7 @@ focus_tree = {
 
 		completion_reward = {
 			event_option_tooltip = XSK_succession_events.6.a
+			set_country_flag = XSK_should_puppet_XON
 		}
 	}
 
@@ -886,6 +876,7 @@ focus_tree = {
 				can_join_factions = yes
 			}
 			add_political_power = 50
+			custom_effect_tooltip = XSK_chinese_politics_tt
 		}
 	}
 
@@ -970,7 +961,14 @@ focus_tree = {
 		relative_position_id = XSK_chinese_politics
 
 		available = {
-			
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = XON
+				XON = { exists = no }
+			}
 		}
 
 		cost = 5
@@ -1046,7 +1044,7 @@ focus_tree = {
 		icon = GFX_focus_URG_turmoil_of_paso_morlan
 		prerequisite = { focus = XSK_support_tuvan_independence }
 		#mutually_exclusive = { focus =  }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = XSK_support_tuvan_independence
 
@@ -1112,141 +1110,19 @@ focus_tree = {
 		}
 	}
 
-	
-
-	focus = {
-		id = XSK_repopulate_the_wastes
-		icon = GFX_focus_ETH_sway_the_warlords
-		prerequisite = { focus = XSK_road_construction }
-		#mutually_exclusive = { focus =  }
-		x = -3
-		y = 1
-		relative_position_id = XSK_move_south
-
-		available = {
-			619 = { is_owned_and_controlled_by = ROOT }
-			287 = { is_owned_and_controlled_by = ROOT }
-			759 = { is_owned_and_controlled_by = ROOT }
-		}
-
-		cost = 6
-
-		ai_will_do = {
-			factor = 150
-		}
-
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION }
-
-		completion_reward = {
-			619 = {
-				add_core_of = ROOT
-				add_manpower = 100000
-			}
-			287 = {
-				add_core_of = ROOT
-				add_manpower = 100000
-			}
-			759 = {
-				add_core_of = ROOT
-				add_manpower = 100000
-			}
-			# TEMPORARY
-		}
-	}
-
-	focus = {
-		id = XSK_settle_inner_mongolia
-		icon = GFX_focus_generic_land_reclamation
-		prerequisite = { focus = XSK_repopulate_the_wastes }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 1
-		relative_position_id = XSK_repopulate_the_wastes
-
-		available = {
-			756 = { is_owned_and_controlled_by = ROOT }
-			616 = { is_owned_and_controlled_by = ROOT }
-			746 = { is_owned_and_controlled_by = ROOT }
-		}
-
-		cost = 6
-
-		ai_will_do = {
-			factor = 150
-		}
-
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION }
-
-		completion_reward = {
-			756 = {
-				add_core_of = ROOT
-				add_manpower = 100000
-			}
-			616 = {
-				add_core_of = ROOT
-				add_manpower = 100000
-			}
-			746 = {
-				add_core_of = ROOT
-				add_manpower = 100000
-			}
-			# TEMPORARY
-		}
-	}
-
-	focus = {
-		id = XSK_meeting_in_taiwan
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = XSK_repopulate_the_wastes focus = XSK_mongolian_integration }
-		prerequisite = { focus = XSK_jiuquan_gambit }
-		#mutually_exclusive = { focus =  }
-		x = 1
-		y = 2
-		relative_position_id = XSK_move_south
-
-		available = {
-			is_subject = no
-		}
-
-		bypass = {
-			XTW = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_ally_with = ROOT
-				}
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		search_filters = {  }
-
-		completion_reward = {
-			set_country_flag = completed_focus_XSK_meeting_in_taiwan
-			XTW = {
-				country_event = { id = XSK_taiwan_events.1 }
-			}
-			custom_effect_tooltip = XSK_meeting_in_taiwan_tt
-		}
-	}
-
 	focus = {
 		id = XSK_jiuquan_gambit
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = XSK_move_south }
 		prerequisite = { focus = XSK_support_tuvan_independence }
 		#mutually_exclusive = { focus =  }
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = XSK_move_south
 
 		available = {
 			is_subject = no
+			NOT = { has_war_with = XON }
 			XMJ = {
 				is_owner_neighbor_of = ROOT
 			}
@@ -1360,7 +1236,7 @@ focus_tree = {
 		icon = GFX_focus_generic_reorient_production
 		prerequisite = { focus = XSK_the_expansionist_sultan focus = XSK_no_sultan focus = XSK_the_diplomatic_sultan }
 		#mutually_exclusive = { focus =  }
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = XSK_the_expansionist_sultan
 
@@ -1369,7 +1245,23 @@ focus_tree = {
 				has_war_support > 0.3
 				threat > 0.1
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				OR = {
+					AND = {
+						has_completed_focus = XSK_diplomatic_approach
+						has_completed_focus = XSK_expand_the_sultanate
+					}
+					has_completed_focus = XSK_move_south
+					has_completed_focus = XSK_imperial_military
+				}
+				NOT = { has_idea = XSK_han_minority }
+			}
 		}
+
+		cancel_if_invalid = no
 
 		cost = 5
 
@@ -1424,7 +1316,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = XSK_the_expansionist_sultan focus = XSK_no_sultan focus = XSK_the_diplomatic_sultan }
 		#mutually_exclusive = { focus =  }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = XSK_the_expansionist_sultan
 
@@ -1670,6 +1562,131 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XSK_ottoman_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = XSK_improved_army_equipment focus = XSK_military_complex }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 2
+		relative_position_id = XSK_military_complex
+
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			navy_experience = 50
+			every_owned_state = {
+				random_select_amount = 2
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes 
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = XSK_ottoman_navy
+				bonus = 0.75
+				uses = 5
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_naval_doctrines
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = XSK_ottoman_navy }
+		mutually_exclusive = { focus = XSK_airforce_doctrines }
+		x = -1
+		y = 1
+		relative_position_id = XSK_ottoman_navy
+
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = XSK_naval_doctrines
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_naval_aviation
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = XSK_naval_doctrines focus = XSK_airforce_doctrines }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 2
+		relative_position_id = XSK_ottoman_navy
+
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = XSK_naval_aviation
+				bonus = 1
+				uses = 2
+				category = mio_cat_tech_all_carrier_and_modules
+			}
+			add_tech_bonus = {
+				name = XSK_naval_aviation
+				bonus = 0.75
+				uses = 1
+				category = mio_cat_all_naval_bomber_and_modules
+			}
+		}
+	}
+
+	focus = {
 		id = XSK_rule_the_skies
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = XSK_improved_army_equipment focus = XSK_military_complex }
@@ -1714,6 +1731,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XSK_airforce_doctrines
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = XSK_rule_the_skies }
+		mutually_exclusive = { focus = XSK_naval_doctrines }
+		x = 1
+		y = 1
+		relative_position_id = XSK_rule_the_skies
+
+		available = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_AIR_XP }
+
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = XSK_airforce_doctrines
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
 		id = XSK_mechanic_revolution
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = XSK_the_expansionist_sultan focus = XSK_no_sultan focus = XSK_the_diplomatic_sultan }
@@ -1723,8 +1772,15 @@ focus_tree = {
 		relative_position_id = XSK_the_diplomatic_sultan
 
 		available = {
-			
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				NOT = { has_idea = XSK_han_minority }
+			}
 		}
+
+		cancel_if_invalid = no
 
 		cost = 5
 
@@ -2026,7 +2082,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					#has_tech = synth_oil_experiments
+					has_tech = synth_oil_experiments
 				}
 				add_tech_bonus = {
 					name = XSK_synthetic_oil
@@ -2065,6 +2121,84 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XSK_repopulate_the_wastes
+		icon = GFX_focus_ETH_sway_the_warlords
+		prerequisite = { focus = XSK_road_construction focus = XSK_agricultural_subsidies }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 1
+		relative_position_id = XSK_move_south
+
+		available = {
+			619 = { is_owned_and_controlled_by = ROOT }
+			287 = { is_owned_and_controlled_by = ROOT }
+			759 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 150
+		}
+
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			619 = {
+				add_core_of = ROOT
+				add_manpower = 100000
+			}
+			287 = {
+				add_core_of = ROOT
+				add_manpower = 100000
+			}
+			759 = {
+				add_core_of = ROOT
+				add_manpower = 100000
+			}
+		}
+	}
+
+	focus = {
+		id = XSK_settle_inner_mongolia
+		icon = GFX_focus_generic_land_reclamation
+		prerequisite = { focus = XSK_road_construction }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 2
+		relative_position_id = XSK_road_construction
+
+		available = {
+			756 = { is_owned_and_controlled_by = ROOT }
+			616 = { is_owned_and_controlled_by = ROOT }
+			746 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 150
+		}
+
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			756 = {
+				add_core_of = ROOT
+				add_manpower = 50000
+			}
+			616 = {
+				add_core_of = ROOT
+				add_manpower = 50000
+			}
+			746 = {
+				add_core_of = ROOT
+				add_manpower = 50000
+			}
+		}
+	}
+
+	focus = {
 		id = XSK_diplomatic_approach
 		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = XSK_church_and_socialism focus = XSK_liberalise_the_constitution }
@@ -2074,7 +2208,7 @@ focus_tree = {
 		relative_position_id = XSK_fate_of_the_monarchy
 
 		available = {
-			
+			is_subject = no
 		}
 
 		cost = 5
@@ -2143,7 +2277,7 @@ focus_tree = {
 
 	focus = {
 		id = XSK_future_of_the_sultanate
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = XSK_diplomatic_approach }
 		prerequisite = { focus = XSK_expand_the_sultanate }
 		#mutually_exclusive = { focus =  }
@@ -2238,22 +2372,14 @@ focus_tree = {
 		icon = GFX_focus_generic_military_dictatorship
 		prerequisite = { focus = XSK_future_of_the_sultanate }
 		#mutually_exclusive = { focus = XSK_claim_the_mandate_of_heaven }
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = XSK_future_of_the_sultanate
 
 		available = {
 			is_subject = no
-			XON = {
-				all_core_state = {
-					owner = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
-			}
+			NOT = { has_war_with = XON }
+			NOT = { has_war_with = XMJ }
 		}
 
 		cost = 6
@@ -2265,9 +2391,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			add_state_core = 611
-			add_state_core = 612
-			add_state_core = 621
 			if = {
 				limit = {
 					any_country = {
@@ -2288,21 +2411,25 @@ focus_tree = {
 					}
 				}
 			}
-			XON = {
-				every_core_state = {
-					add_core_of = ROOT
-				}
-			}
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+			add_state_core = 761
+			add_state_core = 819
+			add_state_core = 817
+			add_state_core = 330
+			add_state_core = 820
+			add_state_core = 329
 		}
 	}
 
 	focus = {
 		id = XSK_claim_the_mandate_of_heaven
 		icon = GFX_focus_man_claim_the_mandate_of_heaven
-		prerequisite = { focus = XSK_meeting_in_taiwan focus = XSK_future_of_the_sultanate focus = XSK_consolidate_the_north }
+		prerequisite = { focus = XSK_meeting_in_taiwan focus = XSK_consolidate_the_north }
 		#mutually_exclusive = { focus = XSK_mutual_cooperation }
 		x = -4
-		y = 1
+		y = 2
 		relative_position_id = XSK_future_of_the_sultanate
 
 		available = {
@@ -2406,6 +2533,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			add_ideas = XSK_unite_china
 			custom_effect_tooltip = XSK_pacify_chinese_rivals_tt
 		}
 	}
@@ -2460,12 +2588,66 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XSK_meeting_in_taiwan
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSK_jiuquan_gambit focus = XSK_future_of_the_sultanate }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XSK_future_of_the_sultanate
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = XON }
+			NOT = { has_war_with = XMJ }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
+		}
+
+		bypass = {
+			XTW = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_ally_with = ROOT
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			set_country_flag = completed_focus_XSK_meeting_in_taiwan
+			XTW = {
+				country_event = { id = XSK_taiwan_events.1 }
+			}
+			custom_effect_tooltip = XSK_meeting_in_taiwan_tt
+			if = {
+				limit = {
+					NOT = { has_rule = can_join_factions }
+				}
+				set_rule = {
+					can_join_factions = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = XSK_mutual_cooperation
 		icon = GFX_focus_generic_befriend_taiwan
-		prerequisite = { focus = XSK_meeting_in_taiwan focus = XSK_future_of_the_sultanate }
+		prerequisite = { focus = XSK_meeting_in_taiwan }
 		#mutually_exclusive = { focus = XSK_claim_the_mandate_of_heaven }
 		x = 4
-		y = 1
+		y = 2
 		relative_position_id = XSK_future_of_the_sultanate
 
 		available = {
@@ -2499,6 +2681,7 @@ focus_tree = {
 				}
 				set_faction_name = "United Front"
 			}
+			add_ideas = XSK_chinese_united_front
 		}
 	}
 
@@ -2605,6 +2788,45 @@ focus_tree = {
 					}
 				}
 			}
+			every_other_country = {
+				limit = {
+					DEN_is_chinese_nation = yes
+					NOT = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+					OR = {
+						is_owner_neighbor_of = ROOT
+						any_other_country = {
+							DEN_is_chinese_nation = yes
+							OR = {
+								has_government = fascism
+								has_government = communism
+							}
+							is_owner_neighbor_of = PREV
+						}
+					}
+				}
+				hidden_effect = {
+					add_ai_strategy = {
+						type = befriend
+						id = XSK
+						value = 1000
+					}
+					add_ai_strategy = {
+						type = support
+						id = XSK
+						value = 1000
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = XSK
+						value = 1000
+					}
+				}
+			}
 		}
 	}
 
@@ -2669,9 +2891,9 @@ focus_tree = {
 		icon = GFX_focus_chi_whampoa_military_academy
 		prerequisite = { focus = XSK_claim_the_mandate_of_heaven focus = XSK_mutual_cooperation }
 		#mutually_exclusive = { focus =  }
-		x = -2
+		x = 2
 		y = 1
-		relative_position_id = XSK_integrate_mongolia
+		relative_position_id = XSK_claim_the_mandate_of_heaven
 
 		available = {
 			NOT = {
@@ -2704,9 +2926,9 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = XSK_claim_the_mandate_of_heaven focus = XSK_mutual_cooperation }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = 4
 		y = 1
-		relative_position_id = XSK_integrate_mongolia
+		relative_position_id = XSK_claim_the_mandate_of_heaven
 
 		available = {
 			
@@ -2730,9 +2952,9 @@ focus_tree = {
 		icon = GFX_focus_XSK_trade_money
 		prerequisite = { focus = XSK_claim_the_mandate_of_heaven focus = XSK_mutual_cooperation }
 		#mutually_exclusive = { focus =  }
-		x = 2
+		x = 6
 		y = 1
-		relative_position_id = XSK_integrate_mongolia
+		relative_position_id = XSK_claim_the_mandate_of_heaven
 
 		available = {
 			has_idea = XSK_the_silk_road

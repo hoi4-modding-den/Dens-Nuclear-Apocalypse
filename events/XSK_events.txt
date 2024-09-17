@@ -605,7 +605,7 @@ country_event = { # Taipei Compromise: Taiwan gets Notified
         name = XSK_taiwan_events.1.a
         hidden_effect = {
             FROM = {
-                country_event = { id = XSK_taiwan_events.2 hours = 1 }
+                country_event = { id = XSK_taiwan_events.2 days = 3 }
             }
         }
     }
@@ -628,14 +628,14 @@ country_event = { # Taipei Compromise: Delegation has arrived
             }
         }
         FROM = {
-            country_event = { id = XSK_taiwan_events.3 hours = 1 }
+            country_event = { id = XSK_taiwan_events.3 days = 3 }
         }
     }
 
     option = {
         name = XSK_taiwan_events.2.b
         FROM = {
-            country_event = { id = XSK_taiwan_events.4 hours = 1 }
+            country_event = { id = XSK_taiwan_events.4 days = 7 }
         }
         effect_tooltip = {
             unlock_national_focus = XSK_claim_the_mandate_of_heaven

@@ -627,6 +627,77 @@ ideas = {
                 army_core_defence_factor = 0.03
                 drift_defence_factor = 0.5
                 political_power_factor = 0.1
+                communism_drift = 0.04
+            }
+
+        }
+
+        XSK_suleyman_idea = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XRE
+            }
+
+           removal_cost = -1
+
+            picture = ARG_invest_in_railways
+
+            modifier = {
+                production_speed_rail_way_factor = 0.15
+            }
+
+        }
+
+        XSK_unite_china = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = jap_ichi_go
+
+            modifier = {
+                annex_cost_factor = -0.2
+                weekly_manpower = 1000
+                resistance_growth = -0.15
+                river_crossing_factor = -0.1
+            }
+
+        }
+
+        XSK_chinese_united_front = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = chi_chinese_unity
+
+            modifier = {
+                political_power_gain = 0.05
+                guarantee_tension = -0.25
+                guarantee_cost = -0.4
+                faction_trade_opinion_factor = 0.1
             }
 
         }
@@ -647,6 +718,30 @@ ideas = {
 
             modifier = {
                 army_core_defence_factor = 0.15
+            }
+
+        }
+
+        XSK_railway_builders = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XRE
+            }
+
+           removal_cost = -1
+
+            picture = ARG_invest_in_railways
+
+            modifier = {
+                production_speed_rail_way_factor = 0.15
             }
 
         }

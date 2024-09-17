@@ -2,7 +2,10 @@ DEN_UNIFIED_CHINA = {
 	color = rgb { 163 126 65 }
 	color_ui = rgb { 163 126 65 }
 }
-
+XSK_ottoman_china = {
+	color = rgb { 189 31 152 }
+	color_ui = rgb { 189 31 152 }
+}
 XHK_CRC= {
 	color = rgb { 133 89 68 }
 	color_ui = rgb { 133 89 68 }

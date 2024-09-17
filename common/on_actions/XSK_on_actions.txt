@@ -79,6 +79,117 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = { tag = XRE }
+							FROM = { tag = XON }
+						}
+						AND = {
+							FROM = { tag = XRE }
+							ROOT = { tag = XON }
+						}
+					}
+				}
+				set_country_flag = XRE_has_war_with_XON
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = { tag = XEX }
+							FROM = { tag = XON }
+						}
+						AND = {
+							FROM = { tag = XEX }
+							ROOT = { tag = XON }
+						}
+					}
+				}
+				set_country_flag = XEX_has_war_with_XON
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = XMJ }
+					FROM = { tag = XSK }
+				}
+				ROOT = {
+					every_owned_state = {
+						transfer_state_to = FROM
+					}
+				}
+				if = {
+					limit = {
+						XON = { exists = yes }
+					}
+					XON = {
+						transfer_state = 611
+						transfer_state = 612
+						transfer_state = 621
+					}
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							tag = XEX
+							has_country_flag = XEX_has_war_with_XON
+						}
+					}
+					611 = { transfer_state_to = XEX }
+					XEX = { clr_country_flag = XEX_has_war_with_XON }
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = XON }
+					FROM = { tag = XSK }
+				}
+				if = {
+					limit = { FROM = { NOT = { has_country_flag = XSK_should_puppet_XON } } }
+					ROOT = {
+						every_owned_state = {
+							transfer_state_to = FROM
+						}
+					}
+				}
+				else_if = {
+					limit = { FROM = { has_country_flag = XSK_should_puppet_XON } }
+					ROOT = {
+						every_owned_state = {
+							transfer_state_to = ROOT
+						}
+					}
+					FROM = {
+						set_autonomy = {
+							target = ROOT
+							autonomous_state = autonomy_puppet
+							end_wars = no
+							end_civil_wars = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							tag = XRE
+							has_country_flag = XRE_has_war_with_XON
+						}
+					}
+					761 = { transfer_state_to = XRE }
+					XRE = { clr_country_flag = XRE_has_war_with_XON }
+				}
+			}
 		}
 	}
 
