@@ -15,11 +15,34 @@
 
 
   #Political
+  focus = {
+	id = XWH_DevideStart
+
+	prerequisite = {}
+	mutually_exclusive = {}
+	
+	icon = GFX_focus_BRA_utilize_security_law
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	x = 10
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 2
+	}	
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+	}
+ }
     #Literary Society
 	 focus = {
 		id = XWH_EmpowerLitSoc
 
-		prerequisite = {}
+		prerequisite = {focus = XWH_DevideStart}
 		mutually_exclusive = { focus = XWH_EmpowerProgAsso }
 		
 		icon = GFX_focus_BRA_utilize_security_law
@@ -58,7 +81,7 @@
 		bypass = {
 		}
 
-		x = 7
+		x = 5
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -81,7 +104,7 @@
 		bypass = {
 		}
 
-		x = 5
+		x = 3
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -92,11 +115,12 @@
 			add_research_slot = 1
 		}
      }
+	 
 	 #Progressive Association
 	 focus = {
 		id = XWH_EmpowerProgAsso
 
-		prerequisite = {}
+		prerequisite = {focus = XWH_DevideStart}
 		mutually_exclusive = { focus = XWH_EmpowerLitSoc }
 		
 		icon = GFX_focus_BRA_utilize_security_law
@@ -137,6 +161,30 @@
 
 		x = 17
 		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			
+		}
+     }
+	 focus = {
+		id = XWH_ProgAssoCommanderRecruiting
+
+		prerequisite = {focus = XWH_ProgAssoArtOfWar}
+		mutually_exclusive = {  }
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+            
+		}
+		bypass = {
+		}
+
+		x = 17
+		y = 7
 		cost = 5
 		ai_will_do = {
 			factor = 2
@@ -192,6 +240,28 @@
 		completion_reward = {
 		}
      }
+	 focus = {
+		id = XWH_ProgAssoDeathofWu
+
+		mutually_exclusive = {  }
+		
+		icon = GFX_focus_BRA_utilize_security_law
+		available = {
+			always = no
+		}
+		bypass = {
+		}
+
+		x = 15
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
+		completion_reward = {
+		}
+     }
   #Industry
 	 focus = {
 		id = XWH_IndustryStart
@@ -206,7 +276,7 @@
 		}
 
 		x = 25
-		y = 4
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 2
