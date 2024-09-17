@@ -14,5 +14,18 @@ spriteTypes = {
 		texturefile = "gfx/XAU/components_texticon.dds"
 		legacy_lazy_load = no
 	}
+
+	### GUI ###
+
+	### WELCOME SCREEN ###
+
+	spriteType = {
+		name = "GFX_XAU_welcome"
+		texturefile = "gfx/interface/XAU/XAU_Intro_Picture.dds"
+	}
+	spriteType = {
+		name = "GFX_XAU_open_welcome_window_button"
+		texturefile = "gfx/interface/XKR/open_welcome_window_button.dds"
+	}
 }
 

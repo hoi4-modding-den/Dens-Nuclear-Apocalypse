@@ -24,3 +24,9 @@
  ### MISC ###
 
  state_components_loc:0 "$STATE|H$ h"
+
+ XAU_intro_loc:0 "Prior to the §RGreat War§!, §YChongqing§! had been an industrial powerhouse that produced export consumer electronics. In the arms race preceding the war, scientists in §YChongqing§! were put to work creating advanced robots. Thus the §Oautomatons§! were born, a family of machines that ranged from §Chulking industrial titans to synthetic human look-alikes§!. Unfortunately, the war came too soon. Bombs devastated §YChongqing§! and the human inhabitants §Rdied over months of radiation poisioning§!.\n\nNothing remained. Yet out of the ash and rubble emerged the §Oautomatons§!, guided by remaining §Ysynthetic intelligence algorithms§!. The remaining §Oautomatons§! attempted to recreate the governmental systems of old but failed, ultimately creating their own system of governance §Ysynthetic absolution§!. A period of industrial advancement followed the creation of the §OAutomaton Union§!. §CFactories were restored to their pre-war efficiency and old automatons were repaired daily§!.\n\nThis era of bliss was not to last as the automatons began to run out of §Ycomponents§! to repair and maintain themselves. Only through the efforts of the AI known as §R'Rogue'§! was the Union saved. The situation is dire and §RRogue§! must balance the usage of the remaining §Ycomponents§! to maximise the survivability of the §Oautomatons§!.\n\n§HCurrent Content:§! \n\n §G-Manage the components crisis.\n -Develop more sophisticated automatons to aid the Union.\n §R-Deal with the humans.§!"
+ XAU_credits:0 "Credits for the Automaton Union Content: §HMilessmiles1§! \nCredits for the rest of the content: \n§HThe HOI4 Modding Den Discord Server§!"
+ XAU_open_welcome_tooltip:0 "Open §Ywelcome screen§!"
+ XAU_continue_tooltip:0 "§YTo new horizons...§!"
+ XAU_exit_tooltip:0 "§YExit§!"

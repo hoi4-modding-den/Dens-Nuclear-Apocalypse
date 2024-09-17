@@ -43,6 +43,10 @@ set_popularities = {
 	neutrality = 0
 }
 
+set_country_flag = XAU_welcome_message_flag
+set_country_flag = dont_use_default_political_advisors
+set_country_flag = dont_use_default_military_advisors
+
 set_variable = { XAU.components = 500 }
 set_variable = { 605.components = 100 } # Sichuan
 set_variable = { 748.components = 5 } # Zunyi
