@@ -266,21 +266,21 @@
  XSK_succession_events.2.b: "A Mongolian? We're not insane."
 
  XSK_succession_events.3.t: "The Regency Council deadlocks"
- XSK_succession_events.3.d: "WIP TEXT"
+ XSK_succession_events.3.d: "The Regency Council is failing to come to a compromise. Its members are split into two fractions both advocating for the other candidate. If they do not come to a mutual agreement, this might end badly."
  XSK_succession_events.3.a: "Perhaps Abdulhamid wasn't too bad?"
  XSK_succession_events.3.b: "Who cares about race, we need a sultan."
  XSK_succession_events.3.c: "There Will Be No Compromise!"
  
  XSK_succession_events.4.t: "The Military takes Control!"
- XSK_succession_events.4.d: "With the failing of the Regency Council, elements within the military have decided that it has outlived its purpose. General WIP PLACEHOLDER has declared martial law and ended the rule of the Ottoman Dynasty."
+ XSK_succession_events.4.d: "With the failing of the Regency Council, elements within the military have decided that it has outlived its purpose. Army High Command has declared martial law and ended the rule of the Ottoman Dynasty until a successor is designated."
  XSK_succession_events.4.a: "This has taken long enough!"
 
  XSK_succession_events.5.t: "Coronation of Abdulhamid the First!"
- XSK_succession_events.5.d: "WIP TEXT"
+ XSK_succession_events.5.d: "After long debates, the nephew of Sultan XI. Süleyman, Abdulhamid, has come out on top. His coronation will be taking place in the Onion-Palace in New Kostantiniye, with nobles, military officers, bureaucrats and the general populace alike attending."
  XSK_succession_events.5.a: "Long live the Sultan!"
 
  XSK_succession_events.6.t: "Coronation of Süleyman the Twelfth!"
- XSK_succession_events.6.d: "WIP TEXT"
+ XSK_succession_events.6.d: "After long debates, the son of Sultan XI. Süleyman, XII. Süleyman, has come out on top. His coronation will be taking place in the Onion-Palace in New Kostantiniye, with nobles, military officers, bureaucrats and the general populace alike attending."
  XSK_succession_events.6.a: "Long live the Sultan!"
 
  XSK_succession_events.7.t: "The Regency Council"
@@ -288,7 +288,7 @@
  XSK_succession_events.7.a: "First Candidate, please."
 
  XSK_succession_events.8.t: "The Fate of the Ottoman Dynasty"
- XSK_succession_events.8.d: "WIP TEXT"
+ XSK_succession_events.8.d: "After the military coup, another regency council has been assembled. This time, it is not made up of corrupt and incompetent nobles but instead various military officers and civilian politicians. Hopefully, they will come to an understanding, unlike their predecessors."
  XSK_succession_events.8.a: "The Rightful Son shall lead us!"
  XSK_succession_events.8.b: "The Son of XI. Süleyman will be Sultan!"
  XSK_succession_events.8.c: "...but perhaps his powers should be limited?"
@@ -304,7 +304,7 @@
  XSK_events.2.a: "It didn't happen, but they deserved it!"
 
  XSK_events.3.t: "Namik Neyzi arrives in Mongolia"
- XSK_events.3.d: "WIP TEXT"
+ XSK_events.3.d: "We have received news that our Envoy, Namik Neyzi, has arrived in the [XON.GetAdjective] capital. His first report tells us all we need to know. The Mongol people are being oppressed by a metal demon who enslaves them. 'It must be our utmost priority to save them', Neyzi writes."
  XSK_events.3.a: "It seems the situation is worse than we thought."
 
  XSK_events.4.t: "Famine in the Countryside!"
