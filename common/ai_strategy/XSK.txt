@@ -1,6 +1,6 @@
 XSK_army_expansion = {
 	allowed = {
-		original_tag = XSK
+		tag = XSK
 	}
 	enable = {
 		always = yes
@@ -22,7 +22,7 @@ XSK_army_expansion = {
 
 XSK_enemies_in_the_north = {
 	allowed = {
-		original_tag = XSK
+		tag = XSK
 	}
 	abort_when_not_enabled = yes
 
@@ -56,7 +56,7 @@ XSK_enemies_in_the_north = {
 
 XSK_befriend_XAD = {
 	allowed = {
-		original_tag = XSK
+		tag = XSK
 	}
 	abort_when_not_enabled = yes
 
@@ -73,7 +73,7 @@ XSK_befriend_XAD = {
 
 XSK_befriend_XTW = {
 	allowed = {
-		original_tag = XSK
+		tag = XSK
 	}
 	abort_when_not_enabled = yes
 
@@ -92,4 +92,61 @@ XSK_befriend_XTW = {
 	    id = XTW
 		value = 100
 	}
+}
+
+XSK_guarantee_chinese_nations_XHK = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_mutual_cooperation
+		XHK = { has_government = democratic }
+	}
+
+	ai_strategy = {
+	    type = protect
+	    id = XHK
+		value = 100
+	}
+
+}
+
+XSK_guarantee_chinese_nations_XK0 = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_mutual_cooperation
+		XK0 = { has_government = democratic }
+	}
+
+	ai_strategy = {
+	    type = protect
+	    id = XK0
+		value = 100
+	}
+
+}
+
+XSK_guarantee_chinese_nations_XSG = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_mutual_cooperation
+		XSG = { has_government = democratic }
+	}
+
+	ai_strategy = {
+	    type = protect
+	    id = XSG
+		value = 100
+	}
+
 }
