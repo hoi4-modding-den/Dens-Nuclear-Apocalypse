@@ -1,0 +1,19 @@
+﻿l_english:
+  # States
+  STATE_1022:0 "Tli'vathis"
+  STATE_1023:0 "Ithmaar"
+  STATE_1024:0 "Salora Ridge"
+  STATE_1025:0 "Khravuun"
+  STATE_1026:0 "Xalkaelor"
+
+  # VPs
+  VICTORY_POINTS_13379:0 "Tli'vathis"
+  VICTORY_POINTS_13380:0 "Aelorash"
+  VICTORY_POINTS_13384:0 "Vorkath Point"
+  VICTORY_POINTS_13387:0 "Talim'vir"
+  VICTORY_POINTS_13388:0 "Xal'kaelor"
+
+  # Country
+  XAM:0 "Maris"
+  XAM_DEF:0 "Serene Republic of Maris"
+  XAM_ADJ:0 "T'lithan"

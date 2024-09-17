@@ -353,3 +353,8 @@ XRE = {
 	color = rgb { 199 199 205 }
 	color_ui = rgb { 175 175 175 }
 }
+
+XAM = {
+	color = rgb { 130 120 210 }
+	color_ui = rgb { 130 120 210 }
+}

@@ -1,0 +1,22 @@
+state = {
+	id = 1024
+	name = "STATE_1024"
+	state_category = pastoral
+	manpower = 15023
+
+	history={
+		owner = XAM
+		add_core_of = XAM
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	resources={
+		steel = 10
+	}
+
+	provinces = {
+		13385 13386 13390
+	}
+}

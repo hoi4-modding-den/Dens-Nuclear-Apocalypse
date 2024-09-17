@@ -1,0 +1,22 @@
+capital = 1026
+
+set_stability = 0.41
+set_war_support = 0.26
+
+set_technology = {
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	volunteer_only
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2219.4.24"
+	election_frequency = 98
+	elections_allowed = no
+}

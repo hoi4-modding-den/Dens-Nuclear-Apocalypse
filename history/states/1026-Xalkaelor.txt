@@ -1,0 +1,28 @@
+state = {
+	id = 1026
+	name = "STATE_1026"
+	state_category = large_town
+	manpower = 68300
+
+	history={
+		owner = XAM
+		add_core_of = XAM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			airfield = 1
+		}
+
+		victory_points = {
+			13388 10
+		}
+
+		victory_points = {
+			13387 2
+		}
+	}
+
+	provinces = {
+		13387 13388 13389
+	}
+}
