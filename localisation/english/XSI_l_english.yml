@@ -8,6 +8,9 @@
  XSB_DEF:0 "the Socialist Republic of South Burma"
  XSB_ADJ:0 "Burmese" 
  
+ XSB_country_nc:0 "[ROOT.GetFlag][XSB.GetNameDef]"
+ XSI_country_nc:0 "[ROOT.GetFlag][XSI.GetNameDef]"
+
  ### Introduction Event ###
  #XSI_intro_loc:0 ""
  #XSI_credits:0 "Siamese Content: §Hfuriousky/Sky§!\nIntro GUI: §CKasastul§!\nRest of the mod: §HThe HOI4 Modding Den§!"
@@ -16,16 +19,19 @@
  #XSI_bookmark_history:0 ""
  
  ### Leaders ###  
- 
+ XSI_the_red_eternal:0 "The Red Eternal" 
+
  ### Political Parties/Ideologies ###
 
  ### National Spirits ###
  XSI_treaty_of_yangon:0 "Treaty of Yangon"
- XSI_treaty_of_yangon_desc:0 ""
+ XSI_treaty_of_yangon_desc:0 "After the "peaceful" transition to the Sangkhist regime in the §Y$XSB_country_nc$§! in March 2234 after the "Scarlet Revolution", the every-growing relationship between the socialist republic and the §Y$XSI_country_nc$§! led to the newborn republic joining the Siamese sphere of influence under the Treaty of Yangon, with the goal of spreading Sangkhism all throughout the region and liberate their lost territories. This link between the two nations was recently reinforced to a higher degree with the start of the Phm̀ā Plan, which aims to fully incorporate the Socialist Republic of South Burma into a unified state with the §Y$XSI_country_nc$§!. This began with the Malay Agreement, which officially recognized the annexation of Eastern Burma, more precisely, Mon and Tanintharyi, and plans to one day fully unite the Sangkhist people of South-East Asia."
+
  XSI_burmese_paciication_campaign:0 "Burmese Pacification Campaigns"
- XSI_burmese_paciication_campaign_desc:0 ""
+ XSI_burmese_paciication_campaign_desc:0 "Since the recently signed Malay Agreement in late 2235, although both of the Burmese annexed regions of Mon and Tanintharyi shared the same ideological principles, they still possess significant cultural differences with the §Y$XSI_country_nc$§!. This led to the creation of a pacification campaign to fully integrate the territories and assimilate the people of Burma into one culture, undivided and united by the ideals of Sangkhism."
+
  XSI_military_civic_rivarly_army_dominance:0 "Military-Civic Rivalry: Army Dominant"
- XSI_military_civic_rivarly_army_dominance_desc:0 ""
+ XSI_military_civic_rivarly_army_dominance_desc:0 ""A state cannot be led under dissaray and mayhem", one of the first sentences to be pronounced as General Saeng II overthrew the weak council held by corrupt politicans, and instead replaced it with a military state under Sangkhist ideals. Indeed, after the revival of the Siamese nation three centuries after the bombs dropped, the state of chaos could be seen everywhere, and the fragile council put in place to reorganize the rebuilding of the state was failing in every sector. After the intervention of the army and the transition to the Sangkhist regime, things began to improve, yet all still controlled by the military. As the situation begins to stabilize, the people increasingly ask themselves if the civilian instutituins should return to rule over the nation, or potentially have a balanced system, the future is unknown but also unpredicatble."
  
  ### Events ###
  

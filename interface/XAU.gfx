@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	### CHARACTERS ###
+
+	spriteType = {
+		name = "GFX_Leader_Rogue_Intelligence"
+		texturefile = "gfx/leaders/XAU/Leader_Rogue_Intelligence.dds"
+	}
+
+	### TEXTICONS ###
+
+	spriteType = {
+		name = "GFX_components_texticon"
+		texturefile = "gfx/XAU/components_texticon.dds"
+		legacy_lazy_load = no
+	}
+}
+

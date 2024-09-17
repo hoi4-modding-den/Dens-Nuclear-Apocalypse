@@ -3,24 +3,25 @@ ideas = {
 	    XNP_congressional_deadlock = {
 			name = XNP_congressional_deadlock
 
-			picture = GFX_idea_XDA_Mirage_Government
+			picture = XNP_deadlock
 
 			allowed = {
-				always = no
+				tag = XNP
 			}
 
 			modifier = {
 				stability_factor = -0.40
 				political_power_factor = -0.5
+				democratic_drift = -0.10
 			}
 		}
 		XNP_unified_center_1 = {
 			name = XNP_unified_center
 
-			picture = deadlock
+			picture = spr_torchbearers_of_tomorrow
 
 			allowed = {
-				always = no
+				tag = XNP
 			}
 
 			modifier = {
@@ -31,15 +32,58 @@ ideas = {
 		XNP_unified_center_2 = {
 			name = XNP_unified_center
 
-			picture = deadlock
+			picture = spr_torchbearers_of_tomorrow
 
 			allowed = {
-				always = no
+				tag = XNP
 			}
 
 			modifier = {
 				stability_factor = -0.15
 				political_power_factor = -0.1
+			}
+		}
+		XNP_unified_center_3 = {
+			name = XNP_unified_center
+
+			picture = spr_torchbearers_of_tomorrow
+
+			allowed = {
+				tag = XNP
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+				communism_drift = -0.03
+				fascism_drift = -0.03
+				party_popularity_stability_factor = 0.25
+			}
+		}
+		XNP_land_appropriation_committee = {
+			name = XNP_land_appropriation_committee
+
+			picture = idea_generic_train_tracks
+
+			allowed = {
+				tag = XNP
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+			}
+		}
+		XNP_education_bureau = {
+			name = XNP_education_bureau
+
+			picture = generic_research_bonus
+
+			allowed = {
+				tag = XNP
+			}
+
+			modifier = {
+				research_speed_factor = 0.10
 			}
 		}
 	}	

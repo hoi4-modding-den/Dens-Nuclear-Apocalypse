@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_XRE_leader"
+		texturefile = "gfx/BKH/XRE/railunion.dds"
+	}
+}

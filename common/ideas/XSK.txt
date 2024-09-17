@@ -124,6 +124,40 @@ ideas = {
 
         }
 
+        XSK_the_sultanate_in_china_fasc_better = {
+            name = XSK_the_sultanate_in_china
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_ottoman_spirit
+
+            modifier = {
+                neutrality_drift = -0.1
+                equipment_capture_factor = 0.25
+                war_support_weekly = 0.001
+                max_command_power_mult = 0.1
+                conscription = 0.02
+                experience_gain_army_factor = 0.15
+                offensive_war_stability_factor = 0.25
+                ai_focus_aggressive_factor = 0.3
+            }
+
+            targeted_modifier = {
+                tag = XON
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+
+        }
+
         XSK_home_of_turks = {
 
             allowed = {
@@ -143,6 +177,31 @@ ideas = {
                 surrender_limit = 0.25
                 political_power_gain = 0.05
                 stability_factor = -0.05
+                compliance_growth_on_our_occupied_states = -0.2
+            }
+
+        }
+
+        XSK_home_of_turks_2 = {
+            name = XSK_home_of_turks
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_coordinated_balkan_armed_forces
+
+            modifier = {
+                weekly_manpower = 1000
+                surrender_limit = 0.25
+                political_power_gain = 0.1
+                stability_factor = 0.05
                 compliance_growth_on_our_occupied_states = -0.2
             }
 
@@ -187,6 +246,27 @@ ideas = {
             modifier = {
                 stability_factor = -0.4
                 non_core_manpower = -0.75
+            }
+
+        }
+
+        XSK_conscript_the_chinese = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = chi_army_corruption3
+
+            modifier = {
+                non_core_manpower = 0.2
+                conscription = 0.02
             }
 
         }
@@ -314,6 +394,28 @@ ideas = {
 
         }
 
+        XSK_mountain_society_roads = {
+            name = XSK_mountain_society
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_mountain_warfare
+
+            modifier = {
+                defensive_war_stability_factor = 0.1
+                acclimatization_cold_climate_gain_factor = 0.15
+            }
+
+        }
+
         XSK_mountain_society_armed = {
             name = XSK_mountain_society
 
@@ -331,6 +433,31 @@ ideas = {
 
             modifier = {
                 production_speed_buildings_factor = -0.05
+                defensive_war_stability_factor = 0.1
+                acclimatization_cold_climate_gain_factor = 0.15
+                land_bunker_effectiveness_factor = 0.25
+                mountaineers_special_forces_contribution_factor = -0.3
+                static_anti_air_damage_factor = 0.1
+            }
+
+        }
+
+        XSK_mountain_society_armed_roads = {
+            name = XSK_mountain_society
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_mountain_warfare
+
+            modifier = {
                 defensive_war_stability_factor = 0.1
                 acclimatization_cold_climate_gain_factor = 0.15
                 land_bunker_effectiveness_factor = 0.25
@@ -376,7 +503,6 @@ ideas = {
             picture = ARG_civilian_economy_boost
 
             modifier = {
-                stability_factor = 0.1
                 consumer_goods_factor = 0.15
                 production_speed_industrial_complex_factor = 0.4
             }
@@ -440,12 +566,12 @@ ideas = {
 
            removal_cost = -1
 
-            picture = por_colonial_army
+            picture = generic_armor
 
             modifier = {
-                army_armor_attack_factor = 0.1
-                army_armor_speed_factor = 0.25
-                org_loss_when_moving = -0.2
+                army_armor_attack_factor = 0.02
+                army_armor_speed_factor = 0.05
+                org_loss_when_moving = -0.1
             }
 
         }
@@ -468,16 +594,137 @@ ideas = {
 
            removal_cost = -1
 
-            picture = ARG_civilian_economy_boost
+            picture = tur_disorganised_armed_forces
 
             modifier = {
-                stability_factor = -0.1
+                army_org_regain = -0.03
             }
 
             targeted_modifier = {
                 tag = XSK
-                attack_bonus_against = -0.05
-                defense_bonus_against = -0.15
+                attack_bonus_against = -0.02
+                defense_bonus_against = -0.05
+            }
+
+        }
+
+        XSK_trinity = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+           removal_cost = -1
+
+            picture = XSK_trinity_of_turko_monarcho_socialism
+
+            modifier = {
+                compliance_gain = 0.1
+                army_core_defence_factor = 0.03
+                drift_defence_factor = 0.5
+                political_power_factor = 0.1
+            }
+
+        }
+
+        XSK_defence_focus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = YUG_federal_defense_council
+
+            modifier = {
+                army_core_defence_factor = 0.15
+            }
+
+        }
+
+        XTK_insurgency = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                NOT = {
+                    has_war_with = XSK
+                }
+            }
+
+           removal_cost = -1
+
+            picture = POL_the_peasants_strike
+
+            modifier = {
+                war_support_factor = 0.25
+                compliance_gain = 0.1
+                equipment_capture = 0.5
+            }
+
+            targeted_modifier = {
+                tag = XSK
+                attack_bonus_against = 0.1
+                defense_bonus_against = 0.05
+            }
+
+        }
+
+        XTK_political_instability = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = SPR_political_violence
+
+            modifier = {
+                stability_factor = -0.2
+                political_power_gain = -0.1
+                custom_modifier_tooltip = XTK_idea_can_be_removed_tt
+            }
+
+        }
+
+        XTK_weak_industry = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = POL_disjointed_industry
+
+            modifier = {
+                production_speed_buildings_factor = -0.25
+                production_factory_max_efficiency_factor = -0.2
+                custom_modifier_tooltip = XTK_idea_can_be_removed_tt
             }
 
         }

@@ -1,0 +1,16 @@
+characters = {
+	XRE_rail_gov = {
+		name = "Railway Enthusiast Society"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XRE_leader"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	
+}

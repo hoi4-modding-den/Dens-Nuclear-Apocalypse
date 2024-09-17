@@ -59,6 +59,16 @@ DEN_is_chinese_nation = {
 		original_tag = XHK
 		original_tag = XTW
 		original_tag = XYU
+		original_tag = XWH
+		original_tag = XSG
+		original_tag = XNP
+		original_tag = XAU
+	}
+}
+
+DEN_is_japanese_nation = {
+	OR = {
+		original_tag = XKY
 	}
 }
 

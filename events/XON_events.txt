@@ -1,0 +1,50 @@
+add_namespace = XON_start_event
+add_namespace = XON
+
+country_event = {
+	id = XON_start_event.1
+	title = XON.start_1.t
+	# picture =
+	desc = XON.start_1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+		option = {
+		name = XON.start_1.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = XON_start_event.2
+	title = XON.start_2.t
+	# picture =
+	desc = XON.start_2.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+		option = {
+		name = XON.start_2.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = XON_start_event.3
+	title = XON.start_3.t
+	# picture =
+	desc = XON.start_3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+		option = {
+		name = XON.start_3.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}

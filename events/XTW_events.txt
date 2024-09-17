@@ -1,0 +1,217 @@
+add_namespace = taiwan
+
+country_event = {
+	id = taiwan.1
+	title = taiwan.1.t
+	desc = taiwan.1.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.1.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+		XTW = {
+			set_country_flag = XTW_DPP_won_the_elections
+			complete_national_focus = XTW_DPP_victory
+			hidden_effect = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
+			}
+		}
+	}
+	option = {
+		name = taiwan.1.b
+		ai_chance = {
+			factor = 40
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		XTW = {
+			set_country_flag = XTW_PFP_won_the_elections
+			complete_national_focus = XTW_PFP_victory
+			hidden_effect = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.2
+	title = taiwan.2.t
+	desc = taiwan.2.d
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.2.a
+		trigger = {
+				has_completed_focus = XTW_DPP_victory
+		}
+		XTW = {
+			set_country_flag = XTW_status_quo
+			complete_national_focus = XTW_uphold_the_status_quo
+		}
+	}
+	option = {
+		name = taiwan.2.b
+		trigger = {
+				has_completed_focus = XTW_PFP_victory
+		}
+		XTW = {
+			set_country_flag = XTW_a_change_in_policy
+			complete_national_focus = XTW_begin_reconciliation
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.3
+	title = taiwan.3.t
+	desc = taiwan.3.d
+	picture = GFX_report_event_NOR_quisling_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.3.a
+		XTW = {
+			set_country_flag = XTW_a_new_era
+			complete_national_focus = XTW_a_new_era_for_taiwan
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.4
+	title = taiwan.4.t
+	desc = taiwan.4.d
+	picture = GFX_report_event_chinese_japanese_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.4.a
+		XTW = {
+			set_country_flag = XTW_an_undone_mistake
+			complete_national_focus = XTW_a_mistake_undone
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.5
+	title = taiwan.5.t
+	desc = taiwan.5.d
+	picture = GFX_report_event_NOR_quisling_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.5.a
+		XTW = {
+			set_country_flag = XTW_desperation
+			set_country_flag = XTW_military_alignment
+			complete_national_focus = XTW_desperate_gambit
+			hidden_effect = {
+				retire_character = XTW_chen_hua
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.6
+	title = taiwan.6.t
+	desc = taiwan.6.d
+	picture = GFX_report_event_chinese_army_training
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.6.a
+		XTW = {
+			set_country_flag = XTW_desperation
+			set_country_flag = XTW_kmt_alignment
+			complete_national_focus = XTW_desperate_gambit
+			hidden_effect = {
+				retire_character = XTW_chiang_gang
+				add_popularity = {
+    				ideology = neutrality
+    				popularity = -0.3
+				}
+				add_popularity = {
+    				ideology = fascism
+    				popularity = 0.3
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.7
+	title = taiwan.7.t
+	desc = taiwan.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.7.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+		XTW = {
+			set_country_flag = XTW_xex_accepted_offer
+			diplomatic_relation = {
+    		country = XEX
+    		relation = non_aggression_pact
+    		active = yes
+		}
+		}
+		XEX = {
+			add_opinion_modifier = {
+				target = XTW
+				modifier = large_increase
+			}
+		}
+	}
+	option = {
+		name = taiwan.7.b
+		ai_chance = {
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		add_political_power = 50
+
+		XEX = {
+			add_opinion_modifier = {
+				target = XTW
+				modifier = medium_decrease
+			}
+		}
+	}
+}

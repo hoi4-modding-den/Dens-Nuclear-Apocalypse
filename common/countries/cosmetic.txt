@@ -1,6 +1,19 @@
+DEN_UNIFIED_CHINA = {
+	color = rgb { 163 126 65 }
+	color_ui = rgb { 163 126 65 }
+}
+
+XHK_CRC= {
+	color = rgb { 133 89 68 }
+	color_ui = rgb { 133 89 68 }
+}
 XHK_YTZ= {
 	color = rgb { 140 148 81 }
 	color_ui = rgb { 140 148 81 }
+}
+XHK_CORP= {
+	color = rgb { 74 74 74 }
+	color_ui = rgb { 74 74 74 }
 }
 XAQ_FAS= {
 	color = rgb { 58 151 29 }
@@ -1494,4 +1507,16 @@ XRP_bavaria = {
 XRP_morocco = {
     color = rgb { 51 21 0 }
     color_ui = rgb { 51 21 0 }
+}
+XWH_LitSoc = {
+	color = rgb { 255  222  173 }
+	color_ui = rgb { 255  222  173 }	
+}
+XWH_ProgAsso = {
+	color = rgb { 255  215  0 }
+	color_ui = rgb { 255  215  0 }	
+}
+XCB_civil_war_colour = {
+	color = rgb { 189  43  43 }
+	color_ui = rgb { 189  43  43 }
 }

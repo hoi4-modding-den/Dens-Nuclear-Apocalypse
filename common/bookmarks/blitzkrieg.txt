@@ -13,6 +13,8 @@ bookmarks = {
 			focuses = {
 			}
 			ideas = {
+				XCB_the_two_city_government
+				XCB_fragmented_guerillas_dummy
 			}
 		}
 		"XTW" = {
@@ -46,8 +48,24 @@ bookmarks = {
 			ideology = neutrality
 			history = "XSK_history"
 			focuses = {
+				XSK_claim_the_mandate_of_heaven
+				XSK_choose_the_next_sultan
+				XSK_church_and_socialism
 			}
 			ideas = {
+				XSK_the_sultanate_in_china
+				XSK_home_of_turks
+				XSK_mountain_society
+			}
+		}
+		"XON" = {
+			ideology = neutrality
+			history = "XON_history"
+			focuses = {
+			
+			}
+			ideas = {
+			
 			}
 		}
 		"XHK" = {
@@ -126,7 +144,16 @@ bookmarks = {
 			focuses = {
 			}
 			ideas = {
-
+				XNP_congressional_deadlock
+			}
+		}
+		"XAU" = {
+			ideology = communism
+			history = "XAU_history_desc"
+			focuses = {
+			}
+			ideas = {
+				
 			}
 		}
 		effect = {

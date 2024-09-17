@@ -53,6 +53,11 @@ XTW_overpopulation_crisis_desc:0 "Despite the nuclear fallout 200 years ago, [XT
 
 RULE_ALLOW_RELEASE_NATIONS_RYUKYU_TOOLTIP:0 "§Y[XTW.GetNameDEFcap]§! may not release §Y[XRY.GetNameDEF]§!."
 
+XTW_raiding_kuomintang_cells:0 "Raiding Kuomintang Cells"
+
+XTW_bond_payment_good:0 "Bond Payment"
+XTW_bond_payment_bad:0 "Bond Payment"
+
 ### CHARACTERS
 
 XTW_chen_hua:0 "Chen Hua"
@@ -70,6 +75,57 @@ XTW_wang_fan:0 "Wang Fan"
 XTW_DPP_won_the_elections:0 "§YDPP§! won the elections."
 
 XTW_PFP_won_the_elections:0 "§YPFP§! won the elections."
+
+XTW_desperation:0 "No insurrection bred out of desperation can be quelled by strong-arm tactics."
+
+XTW_a_new_era:0 "We should not be afraid to go into a new era, to leave the old beyond."
+
+XTW_an_undone_mistake:0 "Mistakes are always forgivable, if one has the courage to admit them."
+
+XTW_development_bonds_tt:0 "Grants the ability to acquire §Goff-map factories§! in exchange of large amounts of §RPolitical Power§! and a temporary §RConsumer Goods penalty§!."
+
+XTW_xex_accepted_offer:0 "§Y[XEX.GetName]§! has accepted the offer."
+
+### EVENTS
+
+taiwan.1.t:0 "[GetYear] Elections"
+taiwan.1.d:0 "The time for the elections has arrived:\n\n\n\nOn one side, we once again have the progressive candidate Chen Hua; a man who seeks to uphold [XTW.GetNameDEF]'s new identity and lead it into the future.\n\nOn the other, we have the conservative candidate Wang Fan; a man with great ambitions and the will to achieve them.\n\n\n\nIt is now up to the people of [XTW.GetNameDEF] to decide the future."
+taiwan.1.a:0 "Progress is the attraction that moves humanity."
+taiwan.1.b:0 "Great ambition is the passion of a great character."
+
+taiwan.2.t:0 "The Matter of Kuomintang"
+taiwan.2.d:0 "Ever since Kuomintang has been outlawed for their failed coup attempt, it has been a prick on our side and as their members increase, so do their strength. However, this increase allowed us to infiltrate their ranks and now we have vital information regarding their plans.\n\nIf we wish to deal with them, we must:"
+taiwan.2.a:0 "Hunt them down!"
+taiwan.2.b:0 "Reconciliate. They have the upper hand whether we strike first or not."
+
+taiwan.3.t:0 "President's Speech"
+taiwan.3.d:0 ""My countrymen; today, the light of the future shines brightly upon us. Reactionary forces of the terrorist organisation Kuomintang have been thoroughly eliminated through great effort and perseverence. We can now look forward to a future of mutual prosperity. Together."\n\nThis afternoon, President [XTW.GetLeader] has announced [XTW.GetNameDef]'s victory over Kuomintang in front of thousands of citizens in Taipei. His speech was met with incredible praise and now it is clear that a new era has begun for Taiwan. "
+taiwan.3.a:0 "Three hurrahs for Taiwan!"
+
+taiwan.4.t:0 "Meeting with Kuomintang High Command"
+taiwan.4.d:0 "The delegation that was sent to reconciliate with Kuomintang has returned with success! Kuomintang has promised to lay down their arms and re-enter the political sphere if we lift their ban."
+taiwan.4.a:0 "Consider it done."
+
+taiwan.5.t:0 "President's Speech"
+taiwan.5.d:0 "This afternoon, during the president [XTW.GetLeader]'s speech in front of thousands of Taiwanese citizens, multiple shots echoed through the air. The president has collapsed behind his stand, gasping for air before his swift passing. According to his security detail, his last words were:\n\n"I die for my people.""
+taiwan.5.a:0 "Dark days are ahead of us..."
+
+taiwan.6.t:0 "Meeting with Kuomintang High Command"
+taiwan.6.d:0 "The delegation that was sent to reconciliate with Kuomintang has failed to return. All attempts to contact them for the past few days is met with radio silence."
+taiwan.6.a:0 "Something is wrong..."
+
+taiwan.7.t:0 "A Most Curious Offer"
+taiwan.7.d:0 "A delegation from [XTW.GetNameDEF] has arrived today to propose an agreement. They seek to sign bonds with us for industrial development in exchange for a 10-weeks long payment."
+taiwan.7.a:0 "A Fine Deal."
+taiwan.7.b:0 "It's a waste of time and money."
+### DECISIONS
+
+XTW_development_bonds_category:0 "Development Bonds"
+XTW_already_took_a_bond:0 "Already constructing a factory"
+
+XTW_civilian_industrial_bond:0 "Civilian Industrial Bond"
+XTW_military_industrial_bond:0 "Military Industrial Bond"
+XTW_naval_industrial_bond:0 "Naval Industrial Bond"
 
 ### FOCUS
 
@@ -111,6 +167,7 @@ XTW_proclaim_victory_over_terror_desc:0 ""
 
 XTW_arrest_the_sympathisers:0 "Arrest the Symphatisers"
 XTW_arrest_the_sympathisers_desc:0 ""
+XTW_consequences_tt:0 "§OThis will change the course of fate...§!"
 
 XTW_remove_li_qingfu:0 "Remove Li Qingfu"
 XTW_remove_li_qingfu_desc:0 ""
@@ -126,3 +183,130 @@ XTW_desperate_gambit_desc:0 ""
 
 XTW_a_mistake_undone:0 "A Mistake Undone"
 XTW_a_mistake_undone_desc:0 ""
+
+XTW_bury_the_hatchet:0 "Bury the Hatchet"
+XTW_bury_the_hatchet_desc:0 ""
+
+XTW_public_works:0 "Public Works"
+XTW_public_works_desc:0 ""
+
+XTW_rural_development_fund:0 "Rural Development Fund"
+XTW_rural_development_fund_desc:0 ""
+
+XTW_strengthen_the_trade_unions:0 "Strengthen the Trade Unions"
+XTW_strengthen_the_trade_unions_desc:0 ""
+
+XTW_ramp_up_trade:0 "Ramp up Trade"
+XTW_ramp_up_trade_desc:0 ""
+
+XTW_fortify_taiwan:0 "Fortify Taiwan"
+XTW_fortify_taiwan_desc:0 ""
+
+XTW_above_the_land:0 "Above the Land"
+XTW_above_the_land_desc:0 ""
+
+XTW_beyond_the_sea:0 "Beyond the Sea"
+XTW_beyond_the_sea_desc:0 ""
+
+XTW_taiwan_defence_force:0 "Taiwan Defence Force"
+XTW_taiwan_defence_force_desc:0 ""
+
+XTW_firearms_factories:0 "Firearms Factories"
+XTW_firearms_factories_desc:0 ""
+
+XTW_hualien_police_academy:0 "Hualien Police Academy"
+XTW_hualien_police_academy_desc:0 ""
+
+XTW_revive_the_one_china_policy:0 "Revive the One China Policy"
+XTW_revive_the_one_china_policy_desc:0 ""
+
+XTW_industrial_ramp_up:0 "Industrial Ramp up"
+XTW_industrial_ramp_up_desc:0 ""
+
+XTW_clear_the_slums:0 "Clear the Slums"
+XTW_clear_the_slums_desc:0 ""
+
+XTW_the_best_defence:0 "The Best Defence"
+XTW_the_best_defence_desc:0 ""
+
+XTW_prepare_to_return_to_mainland:0 "Prepare to Return to Mainland"
+XTW_prepare_to_return_to_mainland_desc:0 ""
+
+XTW_taiwan_marine_corps:0 "Taiwan Marine Corps"
+XTW_taiwan_marine_corps_desc:0 ""
+
+XTW_chinese_reclamation_force:0 "Chinese Reclamation Force"
+XTW_chinese_reclamation_force_desc:0 ""
+
+XTW_reorient_production_lines:0 "Reorient Production Lines"
+XTW_reorient_production_lines_desc:0 ""
+
+XTW_prioritise_taipei:0 "Prioritise Taipei"
+XTW_prioritise_taipei_desc:0 ""
+
+XTW_artillery_developments:0 "Artillery Developments"
+XTW_artillery_developments_desc:0 ""
+
+XTW_corporate_bailouts:0 "Corporate Bailouts"
+XTW_corporate_bailouts_desc:0 ""
+
+XTW_west_pacific_project:0 "West Pacific Project"
+XTW_west_pacific_project_desc:0 ""
+WPTO:0 "West Pacific Treaty Organisation"
+
+XTW_extend_a_branch_to_laos:0 "Extend a Branch to [XDA.GetName]"
+XTW_extend_a_branch_to_laos_desc:0 ""
+
+XTW_extend_a_branch_to_josea:0 "Extend a Branch to [XK0.GetName]"
+XTW_extend_a_branch_to_josea_desc:0 ""
+
+XTW_crush_the_revivalists:0 "Crush the Revivalists"
+XTW_crust_the_revivalists_desc:0 ""
+
+XTW_direct_rule_from_taipei:0 "Direct Rule from Taipei"
+XTW_direct_rule_from_taipei_desc:0 ""
+
+XTW_loyal_administrators:0 "Loyal Administrators"
+XTW_loyal_administrators_desc:0 ""
+
+XTW_the_enemies_of_democracy:0 "The Enemies of Democracy"
+XTW_the_enemies_of_democracy_desc:0 ""
+
+XTW_protect_hong_kong:0 "Protect Hong Kong"
+XTW_protect_hong_kong_desc:0 ""
+
+XTW_extinguish_guangdong:0 "Extinguish [XGD.GetNameDEF]"
+XTW_extinguish_guangdong_desc:0 ""
+
+XTW_joint_development_initiative:0 "Joint Development Initiative"
+XTW_joint_development_initiative_desc:0 ""
+
+XTW_industrial_development_budget:0 "Industrial Development Budget"
+XTW_industrial_development_budget_desc:0 ""
+
+XTW_joint_exercises:0 "Joint Exercises"
+XTW_joint_exercises_desc:0 ""
+
+XTW_encourage_immigration:0 "Encourage Immigration"
+XTW_encourage_immigration_desc:0 ""
+
+XTW_contact_the_gambling_cities:0 "Contact the Gambling Cities"
+XTW_contact_the_gambling_cities_desc:0 ""
+
+XTW_development_bonds:0 "Development Bonds"
+XTW_development_bonds_desc:0 ""
+
+XTW_the_matter_of_japan:0 "The Matter of Japan"
+XTW_the_matter_of_japan_desc:0 ""
+
+XTW_strangle_it_in_its_crib:0 "Strange It in its Crib"
+XTW_strangle_it_in_its_crib_desc:0 ""
+
+XTW_befriend_the_minor_democracies:0 "Befriend the Minor Democracies"
+XTW_befriend_the_minor_democracies_desc:0 ""
+
+XTW_autonomy_for_ryukyu:0 "Autonomy for [XRY.GetNameDEF]"
+XTW_autonomy_for_ryukyu_desc:0 ""
+
+XTW_taipei_technical_university:0 "Taipei Technical University"
+XTW_taipei_technical_university_desc:0 ""

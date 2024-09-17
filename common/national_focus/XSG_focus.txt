@@ -1,0 +1,231 @@
+﻿focus_tree = {
+	id = XSG_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XSG
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 100 y = 1000 }
+
+###################################
+# FOCUS TREE START
+###################################
+
+	focus = {
+		id = XSG_the_reconstruction_of_Shangai
+		icon = GFX_focus_generic_treaty
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus = }
+		x = 5
+		y = 0
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = XSG_infrastructure_reconstruction
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_the_reconstruction_of_Shangai }
+		#mutually_exclusive = { focus = }
+		x = 6
+		y = 1
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = XSG_rebuilding_the_cities
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_the_reconstruction_of_Shangai }
+		#mutually_exclusive = { focus = }
+		x = 4
+		y = 1
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = XSG_rebuild_the_factories
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_rebuilding_the_cities }
+		#mutually_exclusive = { focus = }
+		x = 3
+		y = 2
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XSG_housing_programs
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_rebuilding_the_cities }
+		prerequisite = { focus = XSG_infrastructure_reconstruction}
+		#mutually_exclusive = { focus = }
+		x = 5
+		y = 2
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = XSG_oil_deposit_construction
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_infrastructure_reconstruction}
+		#mutually_exclusive = { focus = }
+		x = 7
+		y = 2
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XSG_artificial_oil_facilities
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_oil_deposit_construction}
+		#mutually_exclusive = { focus = }
+		x = 7
+		y = 3
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XSG_industrial_expansion
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_housing_programs }
+		prerequisite = { focus = XSG_rebuild_the_factories}
+		#mutually_exclusive = { focus = }
+		x = 4
+		y = 3
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XSG_the_start_of_a_new_chinese_giant
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XSG_artificial_oil_facilities }
+		prerequisite = { focus = XSG_industrial_expansion}
+		#mutually_exclusive = { focus = }
+		x = 6
+		y = 4
+		available = {
+		}
+		bypass = {
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+#########################################
+#POLITICAL START
+#########################################
+}

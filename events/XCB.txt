@@ -1,0 +1,62 @@
+add_namespace = XCB
+
+country_event = { #civil war
+	id = XCB.1
+	title = XCB.1.t
+	desc = XCB.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XCB.1.a
+		hidden_effect = {
+			XCB = {
+				set_cosmetic_tag = XCB_civil_war_colour
+				delete_unit = {}
+				set_politics = {
+					ruling_party = communism
+				}
+				set_popularities = {
+					communism = 65
+					democratic = 35
+				}
+				remove_ideas = {
+					XCB_the_two_city_government
+					XCB_fragmented_guerillas_dummy
+				}
+				retire_character = XCB_sieng_proeung
+			}
+			XCX = {
+				set_state_owner = 741
+				set_state_controller = 741
+				add_state_core = 741
+				add_state_core = 1008
+				add_state_core = 1009
+				add_state_core = 1010
+			}
+			XCB = {
+				declare_war_on = {
+					target = XCX
+					type = annex_everything
+				}
+				add_civil_war_target = XCX
+			}
+		}
+	}
+}
+
+country_event = { #debug
+	id = XCB.2
+	title = XCB.2.t
+	desc = XCB.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XCB.2.a
+		add_to_variable = { XCB_resistance_progress_bar_var = 73 } #Usko-Vitun-Matonta
+		add_to_variable = { XCB_resistance_dirty = 0.01 }
+	}
+}

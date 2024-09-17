@@ -1,4 +1,12 @@
-capital = 288
+capital = 613
+
+
+
+recruit_character = XSG_Zhao_Tianyi
+recruit_character = XSG_Ma_Jianguo
+recruit_character = XSG_Deng_Jingyi
+recruit_character = XSG_Wu_Peinfu
+
 
 ###oob = "XSG"
 
@@ -18,8 +26,8 @@ set_politics = {
 set_popularities = {
 	democratic = 32
 	communism = 35
-	fascism = 16
-	neutrality = 2
+	fascism = 26
+	neutrality = 7
 }
 
 # Starting tech

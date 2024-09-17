@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		XRE_commuter_paradise = {
+			picture = generic_flexible_foreign_policy
+			modifier = {
+				weekly_manpower = 5 
+				consumer_goods_factor = 0.1
+				global_building_slots = 1
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				min_export = 0.5
+			}
+		}
+		XRE_rail_culture = {
+			picture = generic_railroads
+			modifier = {
+				production_speed_rail_way_factor = 0.5
+				production_speed_supply_node_factor = 0.5
+				army_speed_factor = 0.1
+				out_of_supply_factor = 0.75
+				training_time_army_factor = 1
+			}
+			rule = {
+				can_not_declare_war = yes
+			}
+		}
+    }    
+}

@@ -338,3 +338,23 @@ XMJ = {
 	color = rgb { 185  255  152 }
 	color_ui = rgb { 165  230  132 }
 }
+
+XWH = {
+	color = rgb { 56  61  150 }
+	color_ui = rgb { 56  61  150 }	
+}
+
+QMU = {
+	color = rgb { 67 89 55 }
+	color_ui = rgb { 67 89 55 }
+}
+
+XRE = {
+	color = rgb { 199 199 205 }
+	color_ui = rgb { 175 175 175 }
+}
+
+XAM = {
+	color = rgb { 130 120 210 }
+	color_ui = rgb { 130 120 210 }
+}

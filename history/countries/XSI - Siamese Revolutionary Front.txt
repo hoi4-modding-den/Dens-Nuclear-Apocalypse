@@ -15,6 +15,30 @@ add_ideas = {
 	limited_conscription
 }
 
+1001 = {
+	start_resistance = yes
+	set_compliance = 15
+	set_resistance = 35
+	set_garrison_strength = 1.0
+	add_resistance_target = 55
+}
+
+1002 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 25
+	set_garrison_strength = 1.0
+	add_resistance_target = 40
+}
+
+733 = {
+	start_resistance = yes
+	set_compliance = 40
+	set_resistance = 15
+	set_garrison_strength = 1.0
+	add_resistance_target = 25
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "2230.9.30"
@@ -28,6 +52,8 @@ set_popularities = {
 	neutrality = 10
 }
 
+recruit_character = XSI_Chairman_Saeng_2
+
 set_country_flag = dont_use_default_political_advisors
 set_country_flag = dont_use_default_military_advisors
 #set_country_flag = XSI_welcome_message_flag
@@ -35,27 +61,6 @@ set_country_flag = dont_use_default_military_advisors
 set_autonomy = {
 	target = XSB
 	autonomous_state = autonomy_integrated_puppet
-}
-
-733 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 35
-	set_garrison_strength = 1.0
-}
-
-1001 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 25
-	set_garrison_strength = 1.0
-}
-
-1001 = {
-	start_resistance = yes
-	set_compliance = 40
-	set_resistance = 15
-	set_garrison_strength = 1.0
 }
 
 # Starting tech

@@ -80,6 +80,6 @@ spriteTypes = {
 ### Portraits ###
 	spriteType = {
 		name = "GFX_portrait_XSI_Chairman_Saeng"
-		texturefile = "gfx/XNM/XSI_Portraits/portrait_XSI_Chairman_Saeng.dds"
+		texturefile = "gfx/XSI/XSI_Portraits/portrait_XSI_Chairman_Saeng.dds"
 	}
 }

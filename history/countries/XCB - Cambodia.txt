@@ -1,10 +1,17 @@
 capital = 741
 
+oob = "XCB"
+
 set_country_flag = XCB_welcome_message_flag
 set_country_flag = XCB_custom_gui_enable
 set_country_flag = XCB_bloom_gui_visible
 
-
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+}
 
 recruit_character = XCB_sieng_proeung
 
@@ -13,13 +20,13 @@ add_ideas = {
 	XCB_fragmented_guerillas_dummy
 }
 
-1008 ={
+1008 = {
 	set_demilitarized_zone = yes
 }
-1009 ={
+1009 = {
 	set_demilitarized_zone = yes
 }
-1010 ={
+1010 = {
 	set_demilitarized_zone = yes
 }
 

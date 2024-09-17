@@ -1,0 +1,60 @@
+characters = {
+
+	XSG_Zhao_Tianyi = {
+		name = "Zhao Tianyi"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Zhao_Tianyi"
+			}
+		}
+		country_leader = {
+			ideology = populism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XSG_Ma_Jianguo = {
+		name = "Ma Jianguo"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Ma_Jianguo"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XSG_Deng_Jingyi = {
+		name = "Deng Jingyi"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Deng_Jingyi"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+	XSG_Wu_Peinfu = {
+		name = "Wu Peinfu"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Wu_Peinfu"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {  }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+}

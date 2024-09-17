@@ -152,6 +152,11 @@ ideologies = {
 			XSK_monarcho_socialism = {
 				can_be_randomly_selected = no
 			}
+
+			XSI_military_communism = {
+				can_be_randomly_selected = no
+				color = { 122 28 28 } 
+			}
 		}
 
 		dynamic_faction_names = {

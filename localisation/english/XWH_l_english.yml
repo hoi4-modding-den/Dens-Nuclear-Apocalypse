@@ -1,0 +1,40 @@
+﻿l_english:
+#Wuhan 
+ XWH:0 "Wuhan Assembly"
+ XWH_DEF:0 "Wuhan"
+ XWH_ADJ:0 "Wuhanese"
+
+#Other stuff
+ XWH_DevideStart:0 "Crisis in Wuhan"
+
+
+#LitSoc
+ XWH_LitSoc:0 "Yiwu Nation"
+ XWH_LitSoc_DEF:0 "Yiwu Nation"
+ XWH_LitSoc_ADJ:0 "Wuhanese"
+ 
+ XWH_EmpowerLitSoc:0 "Empower the Literary Society"
+ XWH_EmpowerLitSoc_desc:0 "The Literary Society, under the Yiwu dynasty, should take majority charge in the nation in order to promote a nationalist view within our borders."
+ 
+#ProgAsso
+ XWH_ProgAsso:0 "Wuchang"
+ XWH_ProgAsso_DEF:0 "Wuchang"
+ XWH_ProgAsso_ADJ:0 "Wuhanese"
+
+ XWH_EmpowerProgAsso:0 "Empower the Progressive Association"
+ XWH_EmpowerProgAsso_desc:0 "The Progressive Association should take majority charge in the nation as it is time for change. The Wu family has the best intrest of Wuhan in mind."
+ 
+ XWH_ProgAssoCultofWu:0 "Wuchang United Under Wu"
+ XWH_ProgAssoCultofWu_desc:0 "Wuchang owes everything to the Wu family. The Wu family is the family of Wuchang."
+
+ XWH_ProgAssoCultofWu2:0 "The Guiders of Wuchang"
+ XWH_ProgAssoCultofWu2_desc:0 "The Wu family is the only family which can guide Wuchang. No others shall see the throne."
+
+ XWH_ProgAssoArtOfWar:0 "The Art of Modern War"
+ XWH_ProgAssoArtOfWar_desc:0 "Sun Wu, going by the pen name of Sun Tzu, wrote The Art of War, Sun Wu IV perfected it."
+
+ XWH_ProgAssoCommanderRecruiting:0 "Generals of Wuchang"
+ XWH_ProgAssoCommanderRecruiting_desc:0 "Great Wuchang Generals will lead us to victory."
+
+ XWH_ProgAssoDeathofWu:0 "The Death of Sun Wu IV"
+ XWH_ProgAssoDeathofWu_desc:0 "Sun Wu IV could only rule so long. His legacy will carry on and the Wuchang nation will see great success."

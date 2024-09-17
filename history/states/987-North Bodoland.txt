@@ -18,6 +18,21 @@ state={
 			#arms_factory = 1
 			#industrial_complex = 2 
 		}
+		victory_points = {
+			13369 4
+		}
+		victory_points = {
+			13364 2
+		}
+		victory_points = {
+			13375 2
+		}
+		victory_points = {
+			13376 2
+		}
+		victory_points = {
+			13370 2
+		}
 		add_core_of = XBO
 		add_core_of = XTT
 		add_core_of = XTM
