@@ -957,6 +957,152 @@
 		}
 	}
 	focus = {
+		id = XHK_reorganize_the_state
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_corporate_plot }
+	#	mutually_exclusive = { focus = XHK_deal_with_the_devil }
+		x = 0
+		y = 1
+		relative_position_id = XHK_corporate_plot
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_cosmetic_tag = XHK_CORP
+		}
+	}
+	focus = {
+		id = XHK_expand_corporate_assets
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_reorganize_the_state }
+	#	mutually_exclusive = { focus = XHK_deal_with_the_devil }
+		x = 0
+		y = 1
+		relative_position_id = XHK_reorganize_the_state
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			unlock_decision_category_tooltip = XHK_corporate_mercinaries
+		}
+	}
+	focus = {
+		id = XHK_corporate_board
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_reorganize_the_state }
+		mutually_exclusive = { focus = XHK_hanyang_consolidation }
+		x = 4
+		y = 1
+		relative_position_id = XHK_reorganize_the_state
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = -100
+		}
+	}
+	focus = {
+		id = XHK_hanyang_consolidation
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_reorganize_the_state }
+	#	mutually_exclusive = { focus = XHK_corporate_board }
+		x = 6
+		y = 1
+		relative_position_id = XHK_reorganize_the_state
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.1
+		}
+	}
+	focus = {
 		id = XHK_radical_sentiments
 		icon = GFX_XHK_radical_sentiments
 		
@@ -2713,6 +2859,10 @@
 				target = XMJ
 				type = annex_everything
 			}
+			create_wargoal = {
+				target = XRE
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -2787,7 +2937,10 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			
+			create_faction = "Pact of Harmony"
+			XTW = {
+				country_event = XHK.4
+			}
 		}
 	}
 	focus = {
@@ -2826,6 +2979,61 @@
 			create_wargoal = {
 				target = XTW
 				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = XHK_core_taiwan
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_invade_taiwan }
+	#	mutually_exclusive = { focus = XHK_befriend_taiwan }
+		x = -1
+		y = 1
+		relative_position_id = XHK_invade_taiwan
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			OR = {
+				XTW = {
+					is_puppet_of = XHK
+				}
+				AND = {
+					has_full_control_of_state = 524
+					has_full_control_of_state = 991
+					has_full_control_of_state = 996
+					has_full_control_of_state = 992
+					has_full_control_of_state = 993
+					has_full_control_of_state = 994
+					has_full_control_of_state = 995
+					has_full_control_of_state = 526
+				}
+			}
+		}
+		
+		bypass = {
+		
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = XTW
+				}
+				add_core_of = XHK
 			}
 		}
 	}

@@ -517,3 +517,43 @@ XHK_unification_of_yangtze = {
 
 	}
 }
+
+XHK_corporate_mercinaries = {
+
+	XHK_hire_pinkertons = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		priority = 50
+
+		allowed = {
+			
+		}
+
+		available = {
+			original_tag = XHK
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		cost = 50	
+
+		days_re_enable = 140
+		days_remove = 140
+
+        ai_will_do = {
+			base = 10000
+		}
+		complete_effect = {
+			# insert unit spawn here
+        }
+		remove_effect = {
+			# insert unit deletion here
+		}
+
+	}
+}

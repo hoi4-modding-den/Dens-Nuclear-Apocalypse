@@ -11,6 +11,10 @@ XHK_YTZ= {
 	color = rgb { 140 148 81 }
 	color_ui = rgb { 140 148 81 }
 }
+XHK_CORP= {
+	color = rgb { 74 74 74 }
+	color_ui = rgb { 74 74 74 }
+}
 XAQ_FAS= {
 	color = rgb { 58 151 29 }
 	color_ui = rgb { 58 151 29 }

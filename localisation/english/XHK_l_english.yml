@@ -50,6 +50,11 @@
  XHK_CRC_ADJ:0 "Chinese Reclamationist"
  XHK_CRC_subject:0 "$OVERLORDADJ$ $XHK_CRC$"
  
+ XHK_CORP:0 "Hong Kong Economic Zone"
+ XHK_CORP_DEF:0 "the Hong Kong Economic Zone"
+ XHK_CORP_ADJ:0 "Hong Kong"
+ XHK_CORP_subject:0 "$OVERLORDADJ$ $XHK_CORP$"
+ 
  XHK.1.t:0 "Annual Report of 2235"
  XHK.1.d:0 "Hong Kong was one of the first cities blown by the bombs. something something rich people bunkers poor people health issues\ndemocracy reinstated guangdong threat corporate corruption"
  XHK.1.a:0 "No one said this would be easy..."
