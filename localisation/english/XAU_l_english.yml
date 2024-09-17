@@ -12,6 +12,15 @@
  XAU_neutrality_DEF:5 "the Automaton Corporations"
  XAU_neutrality_ADJ:5 "Automaton"
 
+ ### DECISIONS ###
+
+ XAU_components_decisions:0 "Components Logistics"
+ XAU_components_decisions_desc:0 "[?XAU.components]"
+
  ### TRAITS ###
 
  XAU_subject_to_change:0 "WIP - PLACEHOLDER"
+
+ ### MISC ###
+
+ state_components_loc:0 "$STATE|H$ h"
