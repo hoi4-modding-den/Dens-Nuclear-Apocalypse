@@ -36,6 +36,11 @@ add_ideas = {
 	XSK_mountain_society
 }
 
+set_variable = {
+	var = irregular_recruitment
+	value = 3
+}
+
 recruit_character = XSK_ottoman_regency_council
 recruit_character = XSK_sultan_abdulhamid_i
 recruit_character = XSK_sultan_suleyman_xii

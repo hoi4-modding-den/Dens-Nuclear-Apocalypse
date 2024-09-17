@@ -235,6 +235,12 @@
  XSK_support_uf_army_xp: "Train with [FROM.GetAdjective] Troops"
  XSK_support_uf_industry: "Support [FROM.GetAdjective] Industrial Efforts"
 
+ XSK_military_decisions: "Ottoman Military Reorganisation"
+ XSK_increase_irregular_recruitment: "Increase Irregular Recruitment"
+ XSK_increase_irregular_recruitment_tt: "Add one §YIrregular Infantry Battalion§! to the §YDüzensiz Kolordu§! Template.\nThis §Ydecision§! can be taken §Y[?XSK.irregular_recruitment]§! more time(s).\n"
+ XSK_add_antitank_to_irregulars: "Anti-Tank Companies for Irregulars"
+ XSK_add_antitank_to_irregulars_tt: "Add one §YAnti-Tank Support Company§! to the §YDüzensiz Kolordu§! Template.\n"
+
  XSK_invasion_of_china: "Invasion of China"
  XSK_reclaim_anarchy_land: "Restore Order in [FROM.GetName]"
  XSK_reclaiming_anarchy: "restoring Order"

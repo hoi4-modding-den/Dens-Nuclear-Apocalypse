@@ -839,6 +839,115 @@ XSK_support_united_front_members_cat = {
 
 }
 
+XSK_military_decisions = {
+
+	XSK_increase_irregular_recruitment = {
+
+		icon = GFX_decision_generic_disband_irregulars
+
+		allowed = {
+			tag = XSK
+		}
+
+		visible = {
+			check_variable = { XSK.irregular_recruitment > 0 }
+		}
+
+		available = {
+			
+		}
+
+		ai_hint_pp_cost = 50
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50
+
+		days_remove = 14
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = XSK_increase_irregular_recruitment_tt
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "Düzensiz Kolordu"
+					regiments = {
+						irregular_infantry = 2
+					}
+				}
+			}
+			subtract_from_variable  = { XSK.irregular_recruitment = 1 }
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	XSK_add_antitank_to_irregulars = {
+
+		icon = GFX_decision_generic_industry
+
+		allowed = {
+			tag = XSK
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			has_tech = interwar_antitank
+		}
+
+		ai_hint_pp_cost = 50
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+			has_army_experience > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+				army_experience = -15
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = XSK_add_antitank_to_irregulars_tt
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "Düzensiz Kolordu"
+					support = {
+						anti_tank = 0
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+}
+
 XSK_vilayets_cat = {
 
 	XSK_vilayet_of_beijing  = { 
@@ -1309,7 +1418,7 @@ XSK_vilayets_cat = {
 
 	XSK_vilayet_of_japan  = { 
 		
-		icon = GFX_decision_generic_nationalism
+		icon = GFX_decision_jap_pacific_guardian
 
 		priority = 50
 
