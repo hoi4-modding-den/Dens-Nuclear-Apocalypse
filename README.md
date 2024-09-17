@@ -45,6 +45,13 @@ Current Apocalypse:
   | XHK | H2O27 | h2o27 |
   | XGD | H2O27 | h2o27 |
   | XDA | StarstruckFlora | starstruckflora |
+  | XON | Booloomer | lerainbowraider |
+  | XNP | Bowteye | dpneptune |
+  | XMJ | Foxy | ? |
+  | XAU | TacodevTacodev | milessmiles1 |
+  | QMU | H2O27 | h2o27 |
+  | XRE | Burgerkinghotline | burgerkinghotline |
+  | XAM | Greenbueller | greenbueller |
   
 </details>
 
