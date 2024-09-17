@@ -1,0 +1,53 @@
+focus_tree = {
+	id = XKY_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = XKY
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+	focus = {
+		id = XKY_A_Nation_Once_Again
+		icon = GFX_XKY_A_Nation_Once_Again
+		
+		prerequisite = {  }
+#		mutually_exclusive = { focus =  }
+		x = 5
+		y = 0
+#		relative_position_id = 
+
+		cost = 1
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}
+}
