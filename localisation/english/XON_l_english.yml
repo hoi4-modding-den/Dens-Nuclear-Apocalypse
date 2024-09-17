@@ -22,6 +22,10 @@ XON_loyal_and_true:0 "The Loyal and True"
 XON_loyal_and_true_desc:0 "Many in Xiongnu remain loyal and true to our great KHAN. We have brought together a vast array of people in the hope that we can accomplish, under KHAN, something that only one man had ever done."
 XON_the_sworn_enemy:0 "The Sworn Enemy"
 XON_the_sworn_enemy_desc:0 "Those in the west have no loyalty to the KHAN. They are more than just foreigners - they are outsiders, desiring to conquer a land that was never theirs to begin with. The Confederation as a whole will have something to say of that."
+XON_announce_eternal_succession:0 "Announce the Eternal Succession"
+XON_announce_eternal_succession_desc:0 "Just like Genghis, the KHAN has decided that its rule must come to an end eventually. Perhaps a newer mind would run the nation better in these changing times - but who could pull it off?"
+XON_KHOSHUT:0 "The Rise of KHOSHUT"
+XON_KHOSHUT_desc:0 "KHAN has announced that it will no longer be the Khan of the Confederation. Instead, the position will be passed down, this time to a new machine, named KHOSHUT after the historic Tibetan Khanate. KHAN promises that KHOSHUT will bring peace and prosperity where it could not. For some, this is the worst news possible. For others, it may be the first hope they have had in a long time."
 
 # Event Stuff
 XON.start_1.t:0 "The 15th Council on Xiongnu Affairs"
@@ -35,3 +39,6 @@ XON.start_2.a:0 "One KHAN, Many Peoples!"
 XON.start_3.t:0 "Villainy in the West"
 XON.start_3.d:0 "KHAN had always had a great wisdom when it came to seeing humans who had little regard for others, and the Ottomans fit that bill perfectly. In the mind of KHAN, it was obvious that Xiongnu and the Ottoman Sultanate simply could not coexist."
 XON.start_3.a:0 "A self-fulfilling prophecy, for better or worse."
+
+# Xiongnu Confederation History
+XON_history:0 "The Xiongnu Confederation is a collection of six formerly independent khanates all believing in a more traditional lifestyle. However, this practice is mixed with a new, rather revolutionary outlook: that humans are incapable of ruling countries properly. This has led to the confederation electing a machine as their all-powerful leader - the mysterious old-model computer known only as KHAN. The almighty KHAN gives the illusion of control over the country for now, but unrest among Chinese minorities and a potential Tuvan uprising threaten to change everything. Perhaps the KHAN should realize that it is time to change things..."

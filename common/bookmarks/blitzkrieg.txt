@@ -62,10 +62,13 @@ bookmarks = {
 			ideology = neutrality
 			history = "XON_history"
 			focuses = {
-			
+				XON_a_thousand_blessings
+				XON_the_sworn_enemy
+				XON_announce_eternal_succession
 			}
 			ideas = {
-			
+				XON_unhappy_chinese
+				XON_tuvan_separatism
 			}
 		}
 		"XHK" = {
