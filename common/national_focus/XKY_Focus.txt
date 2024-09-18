@@ -904,5 +904,563 @@ focus_tree = {
         add_stability = 0.1
 		}
 	}								
-																																																										
+	focus = {
+		id = XKY_Reforming_Labour_Laws
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_A_Rising_Red_Sun }		
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = -1
+		y = 1
+		relative_position_id = XKY_A_Rising_Red_Sun
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}					
+	focus = {
+		id = XKY_Nationalizing_the_southern_farms
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_A_Rising_Red_Sun }		
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 1
+		y = 1
+		relative_position_id = XKY_A_Rising_Red_Sun
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}		
+	focus = {
+		id = XKY_Industrial_Collectivization
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Reforming_Labour_Laws }		
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Reforming_Labour_Laws
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}					
+	focus = {
+		id = XKY_The_Arsenal_of_Revolution
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Nationalizing_the_southern_farms }		
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Nationalizing_the_southern_farms
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}						
+	focus = {
+		id = XKY_Socialism_with_Japanese_Characteristics
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_The_Arsenal_of_Revolution }	
+		prerequisite = { focus = XKY_Industrial_Collectivization }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 3
+		relative_position_id = XKY_A_Rising_Red_Sun
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}		
+	focus = {
+		id = XKY_Land_Redistribution
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Socialism_with_Japanese_Characteristics }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = -2
+		y = 1
+		relative_position_id = XKY_Socialism_with_Japanese_Characteristics
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}									
+	focus = {
+		id = XKY_Revenge_for_36
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Socialism_with_Japanese_Characteristics }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 2
+		y = 1
+		relative_position_id = XKY_Socialism_with_Japanese_Characteristics
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+	focus = {
+		id = XKY_Reeducation_Campaign
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Socialism_with_Japanese_Characteristics }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Socialism_with_Japanese_Characteristics
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+	focus = {
+		id = XKY_Faculty_of_Revolutionary_Thought
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Reeducation_Campaign }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Reeducation_Campaign
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+	focus = {
+		id = XKY_Purging_the_Kodoha
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Revenge_for_36 }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Revenge_for_36
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+	focus = {
+		id = XKY_Fed_on_Kyushuan_Grain
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Land_Redistribution }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Land_Redistribution
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+	focus = {
+		id = XKY_Shooting_Kyushuan_Bullets
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Fed_on_Kyushuan_Grain }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Fed_on_Kyushuan_Grain
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+	focus = {
+		id = XKY_Bringing_the_Revolution_to_Ryukyu
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Faculty_of_Revolutionary_Thought }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Faculty_of_Revolutionary_Thought
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+	focus = {
+		id = XKY_Freeing_the_Taiwanese_Students
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Purging_the_Kodoha }				
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Purging_the_Kodoha
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+	focus = {
+		id = XKY_A_Japanese_Union
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		prerequisite = { focus = XKY_Shooting_Kyushuan_Bullets }	
+		prerequisite = { focus = XKY_Bringing_the_Revolution_to_Ryukyu }
+		prerequisite = { focus = XKY_Freeing_the_Taiwanese_Students }					
+#		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
+		x = 0
+		y = 1
+		relative_position_id = XKY_Bringing_the_Revolution_to_Ryukyu
+
+		cost = 10
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_political_power = 100
+        add_stability = 0.1
+		}
+	}				
+																																																																																				
 }
