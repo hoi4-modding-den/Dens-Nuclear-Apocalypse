@@ -1,4 +1,4 @@
-XSK_army_expansion = {
+XSK_wants_always = {
 	allowed = {
 		tag = XSK
 	}
@@ -17,7 +17,90 @@ XSK_army_expansion = {
 		value = -30
 	}
 	
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = -50
+	}
 
+	ai_strategy = {
+		type = build_army
+		id = mountaineers
+		value = 50
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = 250
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 30
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 500
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 20
+	}
+
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -50
+	}
+
+}
+
+XSK_build_marines = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		any_controlled_state = {
+			is_coastal = yes
+		}
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = marines
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 100
+	}
+}
+
+XSK_build_civs = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_idea = XSK_toaster_factories
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = -100
+	}
 }
 
 XSK_enemies_in_the_north = {
@@ -27,7 +110,8 @@ XSK_enemies_in_the_north = {
 	abort_when_not_enabled = yes
 
 	enable = {
-		always = yes
+		XMJ = { NOT = { is_subject_of = ROOT } }
+		XON = { NOT = { is_subject_of = ROOT } }
 	}
 	
 	ai_strategy = {
@@ -149,4 +233,60 @@ XSK_guarantee_chinese_nations_XSG = {
 		value = 100
 	}
 
+}
+
+XSK_use_tanks_in_north = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_idea = XSK_modernised_cavalry
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = XON
+		value = 50
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = XMJ
+		value = 50
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = XRE
+		value = 50
+	}
+}
+
+XSK_dont_waste_pp = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -100
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -100
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -50
+	}
 }

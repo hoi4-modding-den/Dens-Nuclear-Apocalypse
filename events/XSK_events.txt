@@ -847,6 +847,17 @@ country_event = { # XTK is created
             end_wars = no
             end_civil_wars = no
         }
+        if = {
+            limit = {
+                tag = XON
+            }
+            XTK = {
+                set_politics = {
+                    ruling_party = fascism
+                    elections_allowed = no
+                }
+            }
+        }
     }
 
 }

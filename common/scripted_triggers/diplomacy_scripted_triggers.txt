@@ -83,6 +83,15 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 }
 
 DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
@@ -1199,6 +1208,15 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 }
 DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
 	if = {
@@ -1210,6 +1228,15 @@ DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_KICK_FROM_FACTION_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
 			always = no
 		}
 	}
@@ -1812,6 +1839,15 @@ DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 }
 DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
 	if = { 
@@ -1825,6 +1861,15 @@ DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
 			always = no
 		}
 	}
