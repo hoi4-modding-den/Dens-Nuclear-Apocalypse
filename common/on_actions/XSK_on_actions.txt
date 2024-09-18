@@ -4,6 +4,12 @@ on_actions = {
 		effect = {
 			XSK = {
 				country_event = { id = XSK_succession_events.7 days = 4 }
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = XSK_ai_cheat_idea
+				}
 			}
 		}
 	}

@@ -1,0 +1,829 @@
+focus_tree = {
+	id = XTK_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XTK
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 700 y = 2000 }
+
+	focus = {
+		id = XTK_xinjiang_rebellion
+		icon = GFX_focus_generic_china1
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XTK_dzughar_revival focus = XTK_xinjiang_revolution }
+		x = 1
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
+		}
+
+		bypass = {
+			NOT = { has_war_with = XSK }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_xinjiang_revolution
+		icon = GFX_focus_generic_join_comintern
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XTK_xinjiang_rebellion focus = XTK_dzughar_revival }
+		x = 7
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			NOT = { has_war_with = XSK }
+			has_government = communism
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_dzughar_revival
+		icon = GFX_focus_generic_strike_at_democracy1
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XTK_xinjiang_rebellion focus = XTK_xinjiang_revolution }
+		x = 13
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			has_government = fascism
+		}
+
+		bypass = {
+			NOT = { has_war_with = XSK }
+			has_government = fascism
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_emergency_militarisation
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = XTK_xinjiang_rebellion focus = XTK_xinjiang_revolution  }
+		#mutually_exclusive = { focus = }
+		x = 3
+		y = 1
+		relative_position_id = XTK_xinjiang_rebellion
+
+		available = {
+			NOT = { has_completed_focus = XTK_militarised_society }
+		}
+
+		bypass = {
+			has_war = no
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			random_core_state = {
+				prioritize = { 760 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				prioritize = { 818 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_militarised_society
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = XTK_dzughar_revival focus = XTK_xinjiang_revolution  }
+		#mutually_exclusive = { focus = }
+		x = 3
+		y = 1
+		relative_position_id = XTK_xinjiang_revolution
+
+		available = {
+			NOT = { has_completed_focus = XTK_emergency_militarisation }
+		}
+
+		bypass = {
+			has_war = no
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_war_support = 0.1
+			random_core_state = {
+				prioritize = { 618 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				prioritize = { 818 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_warriors_of_democracy
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = XTK_xinjiang_rebellion  }
+		#mutually_exclusive = { focus = }
+		x = -1
+		y = 1
+		relative_position_id = XTK_xinjiang_rebellion
+
+		available = {
+			has_government = democratic
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			hidden_effect = {
+                division_template = {
+					name = "Freedom Fighters"
+
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+					}
+				}
+            }
+			every_core_state = {
+				create_unit = {
+					division = "name = \"Freedom Fighters\" division_template = \"Freedom Fighters\" start_experience_factor = 0.4 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes 
+					count = 2 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_kmt_support
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = XTK_xinjiang_rebellion  }
+		#mutually_exclusive = { focus = }
+		x = 1
+		y = 1
+		relative_position_id = XTK_xinjiang_rebellion
+
+		available = {
+			has_government = neutrality
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			hidden_effect = {
+                division_template = {
+					name = "Kuomintang Militia"
+
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+					}
+				}
+            }
+			every_core_state = {
+				create_unit = {
+					division = "name = \"Kuomintang Militia\" division_template = \"Kuomintang Militia\" start_experience_factor = 0.4 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes 
+					count = 2 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_communist_militias
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		prerequisite = { focus = XTK_xinjiang_revolution  }
+		#mutually_exclusive = { focus = }
+		x = 0
+		y = 1
+		relative_position_id = XTK_xinjiang_revolution
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			hidden_effect = {
+                division_template = {
+					name = "Communist Militia"
+
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+					}
+				}
+            }
+			every_core_state = {
+				create_unit = {
+					division = "name = \"Communist Militia\" division_template = \"Communist Militia\" start_experience_factor = 0.4 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes 
+					count = 2 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_khans_kavalry
+		icon = GFX_focus_URG_turmoil_of_paso_morlan
+		prerequisite = { focus = XTK_dzughar_revival  }
+		#mutually_exclusive = { focus = }
+		x = 0
+		y = 1
+		relative_position_id = XTK_dzughar_revival
+
+		available = {
+			has_government = fascism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			hidden_effect = {
+                division_template = {
+					name = "Khan's Cavalry"
+
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+						cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+					}
+				}
+            }
+			every_core_state = {
+				create_unit = {
+					division = "name = \"Khan's Cavalry\" division_template = \"Khan's Cavalry\" start_experience_factor = 0.4 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes 
+					count = 2 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_kmt_bonus
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = XTK_warriors_of_democracy focus = XTK_kmt_support }
+		#mutually_exclusive = { focus = }
+		x = 1
+		y = 1
+		relative_position_id = XTK_warriors_of_democracy
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 2000 
+				producer = XSK
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_communist_bonus
+		icon = GFX_focus_SOV_support_spanish_poum
+		prerequisite = { focus = XTK_communist_militias }
+		#mutually_exclusive = { focus = }
+		x = 0
+		y = 1
+		relative_position_id = XTK_communist_militias
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XTK_khan_bonus
+		icon = GFX_focus_SOV_support_spanish_poum
+		prerequisite = { focus = XTK_khans_kavalry }
+		#mutually_exclusive = { focus = }
+		x = 0
+		y = 1
+		relative_position_id = XTK_khans_kavalry
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XTK_expand_recruitment
+		icon = GFX_focus_generic_limited_social_mobilization
+		prerequisite = { focus = XTK_emergency_militarisation focus = XTK_militarised_society }
+		#mutually_exclusive = { focus = }
+		x = 1
+		y = 1
+		relative_position_id = XTK_emergency_militarisation
+
+		available = {
+			
+		}
+
+		bypass = {
+			NOT = { has_war_with = XSK }
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_manpower = 250000
+		}
+	}
+
+	focus = {
+		id = XTK_march_forward
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = XTK_emergency_militarisation focus = XTK_militarised_society }
+		#mutually_exclusive = { focus = }
+		x = -1
+		y = 1
+		relative_position_id = XTK_militarised_society
+
+		available = {
+			
+		}
+
+		bypass = {
+			OR = {
+				NOT = { has_war_with = XSK }
+				controls_province = 4709
+			}
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = XFR_civil_war_bonus
+				days = 30
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_victory_over_ottomans
+		icon = GFX_focus_XSK_military_coup
+		prerequisite = { focus = XTK_expand_recruitment focus = XTK_march_forward }
+		#mutually_exclusive = { focus = }
+		x = 0
+		y = 3
+		relative_position_id = XTK_xinjiang_revolution
+
+		available = {
+			NOT = { has_war_with = XSK }
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XTK_kill_opposition
+		icon = GFX_focus_spr_crush_the_revolution
+		prerequisite = { focus = XTK_victory_over_ottomans }
+		mutually_exclusive = { focus = XTK_deal_with_opposition }
+		x = -3
+		y = 1
+		relative_position_id = XTK_victory_over_ottomans
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = -0.1
+			remove_ideas = XTK_political_instability
+		}
+	}
+
+	focus = {
+		id = XTK_deal_with_opposition
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = XTK_victory_over_ottomans }
+		mutually_exclusive = { focus = XTK_kill_opposition }
+		x = -1
+		y = 1
+		relative_position_id = XTK_victory_over_ottomans
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_war_support = -0.15
+			remove_ideas = XTK_political_instability
+		}
+	}
+
+	focus = {
+		id = XTK_industrial_revitalisation
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XTK_victory_over_ottomans }
+		#mutually_exclusive = { focus = }
+		x = 3
+		y = 1
+		relative_position_id = XTK_victory_over_ottomans
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			remove_ideas = XTK_weak_industry
+		}
+	}
+
+	focus = {
+		id = XTK_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = XTK_industrial_revitalisation }
+		#mutually_exclusive = { focus = }
+		x = -1
+		y = 1
+		relative_position_id = XTK_industrial_revitalisation
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			every_owned_state = {
+				random_select_amount = 5
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes 
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XTK_free_civs
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = XTK_industrial_revitalisation }
+		#mutually_exclusive = { focus = }
+		x = 1
+		y = 1
+		relative_position_id = XTK_industrial_revitalisation
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			random_core_state = {
+				prioritize = { 618 }
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+}

@@ -18,6 +18,9 @@ country_event = { # The First Candidate
         add_political_power = -75
         country_event = { id = XSK_succession_events.5 days = 1 }
         set_country_flag = XSK_choosen_next_sultan
+        trigger = {
+            is_ai = no
+        }
     }
 
     option = {
@@ -42,6 +45,9 @@ country_event = { # The Second Candidate
         add_political_power = -75
         country_event = { id = XSK_succession_events.6 days = 1 }
         set_country_flag = XSK_choosen_next_sultan
+        trigger = {
+            is_ai = no
+        }
     }
 
     option = {
@@ -588,6 +594,41 @@ country_event = { # Silk Road opened
     			modifier = ICE_trade_partner
 			}
         }	
+    }
+
+}
+
+country_event = { # War with XMJ too long
+    id = XSK_events.9
+    title = XSK_events.9.t
+    picture = GFX_report_event_tur_menderes_opposition
+    desc = XSK_events.9.d
+
+    trigger = {
+        tag = XSK
+        exists = yes
+        war_length_with = {
+            tag = XMJ
+            months > 6
+        }
+        surrender_progress < 0.01
+        XMJ = {
+            surrender_progress < 0.2
+        }
+    }
+
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.9.a
+        add_war_support = -0.1
+        add_ideas = XSK_bonus_against_XMJ
+    }
+
+    option = {
+        name = XSK_events.9.b
+        add_war_support = -0.1
+        custom_effect_tooltip = XSK_events.9.b.tt
     }
 
 }

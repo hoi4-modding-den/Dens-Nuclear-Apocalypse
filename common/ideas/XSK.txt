@@ -1,5 +1,30 @@
 ideas = {
     hidden_ideas = {	
+
+        XSK_ai_cheat_idea = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				is_ai = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_ottoman_spirit
+
+            modifier = {
+                attrition = -0.2
+                no_supply_grace = 48
+                weekly_casualties_war_support = 0.01
+                supply_combat_penalties_on_core_factor = -0.25
+                equipment_capture = 0.2
+            }
+
+        }
+
 	}
     country = {
 
@@ -182,6 +207,33 @@ ideas = {
 
         }
 
+        XSK_home_of_turks_2_dem = {
+            name = XSK_home_of_turks
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_coordinated_balkan_armed_forces
+
+            modifier = {
+                weekly_manpower = 1000
+                surrender_limit = 0.25
+                political_power_gain = 0.1
+                stability_factor = 0.05
+                compliance_growth_on_our_occupied_states = -0.2
+                compliance_gain = 0.1
+                democratic_drift = 0.04
+            }
+
+        }
+
         XSK_home_of_turks_2 = {
             name = XSK_home_of_turks
 
@@ -203,6 +255,8 @@ ideas = {
                 political_power_gain = 0.1
                 stability_factor = 0.05
                 compliance_growth_on_our_occupied_states = -0.2
+                compliance_gain = 0.1
+                neutrality_drift = 0.04
             }
 
         }
@@ -503,7 +557,7 @@ ideas = {
             picture = ARG_civilian_economy_boost
 
             modifier = {
-                consumer_goods_factor = 0.15
+                production_speed_arms_factory_factor = 0.4
                 production_speed_industrial_complex_factor = 0.4
             }
 
@@ -746,6 +800,33 @@ ideas = {
 
         }
 
+        XSK_bonus_against_XMJ = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				is_ai = yes
+			}
+
+           removal_cost = -1
+
+            picture = CZE_planning_bonus
+
+            modifier = {
+                attrition = -0.2
+                ai_focus_aggressive_factor = 0.8
+            }
+
+            targeted_modifier = {
+                tag = XMJ
+                attack_bonus_against = 0.2
+                defense_bonus_against = 0.05
+            }
+
+        }
+
         XTK_insurgency = {
 
             allowed = {
@@ -797,7 +878,6 @@ ideas = {
             modifier = {
                 stability_factor = -0.2
                 political_power_gain = -0.1
-                custom_modifier_tooltip = XTK_idea_can_be_removed_tt
             }
 
         }
@@ -819,7 +899,6 @@ ideas = {
             modifier = {
                 production_speed_buildings_factor = -0.25
                 production_factory_max_efficiency_factor = -0.2
-                custom_modifier_tooltip = XTK_idea_can_be_removed_tt
             }
 
         }

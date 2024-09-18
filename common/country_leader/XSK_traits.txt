@@ -54,7 +54,8 @@ leader_traits = {
 		random = no
 
 		production_speed_arms_factory_factor = 0.25 
-		ai_focus_aggressive_factor = 0.4
+		ai_focus_war_production_factor = 0.4
+		ai_focus_military_advancements_factor = 0.4
 
 		ai_will_do = {
 			factor = 0

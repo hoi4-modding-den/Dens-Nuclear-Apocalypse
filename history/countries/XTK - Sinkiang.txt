@@ -19,7 +19,8 @@ set_technology = {
 
 add_ideas = {
 	war_economy
-	limited_conscription
+	service_by_requirement
+	closed_economy
 
 	XTK_insurgency
 	XTK_political_instability
