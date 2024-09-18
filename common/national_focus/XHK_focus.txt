@@ -1070,7 +1070,7 @@
 #		icon = GFX_focus_SWE_radiotjanst
 		
 		prerequisite = { focus = XHK_reorganize_the_state }
-	#	mutually_exclusive = { focus = XHK_corporate_board }
+		mutually_exclusive = { focus = XHK_corporate_board }
 		x = 6
 		y = 1
 		relative_position_id = XHK_reorganize_the_state
