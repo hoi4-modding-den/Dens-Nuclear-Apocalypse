@@ -492,7 +492,17 @@ focus_tree = {
 		cost = 2
 
 		ai_will_do = {
-			factor = 200
+			factor = 0
+			modifier = {
+				add = 250
+				OR = {
+					has_country_flag = XFR_AI_RANDOM_COMMUNIST
+					has_game_rule = {
+						rule = XSK_ai_behavior
+						option = XSK_COMMUNIST
+					}
+				}
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -521,7 +531,17 @@ focus_tree = {
 		cost = 2
 
 		ai_will_do = {
-			factor = 200
+			factor = 0
+			modifier = {
+				add = 250
+				OR = {
+					has_country_flag = XFR_AI_RANDOM_DEMOCRATIC
+					has_game_rule = {
+						rule = XSK_ai_behavior
+						option = XSK_DEMOCRAT
+					}
+				}
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -822,17 +842,25 @@ focus_tree = {
 		y = 1
 		relative_position_id = XSK_the_diplomatic_sultan
 
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+
 		available = {
-			NOT = {
-				has_government = fascism
-			}
-			is_subject = no
+			
 		}
 
 		cost = 1
 
 		ai_will_do = {
-			factor = 150
+			factor = 1
+			modifier = {
+				add = 180
+				OR = {
+					has_completed_focus = XSK_fate_of_the_monarchy
+					has_completed_focus = XSK_chinese_politics
+				}
+			}
 		}
 
 		search_filters = {  }
@@ -854,6 +882,34 @@ focus_tree = {
 					name = "Ottoman Bureau for External Information"
 					icon = GFX_intelligence_agency_logo_tur
 				}
+			}
+			add_ideas = XSK_spy_recruitment
+			create_operative_leader = {
+				name = "Ijin Yu"
+				GFX = GFX_portrait_takeo_yoshikawa
+				traits = { operative_commando operative_double_agent }
+				bypass_recruitment = yes
+				available_to_spy_master = no
+				nationalities = { XK0 }
+				gender = male
+			}
+			create_operative_leader = {
+				name = "Huo Xuefeng"
+				GFX = GFX_portrait_asia_generic_operative_female_3
+				traits = { operative_tough operative_linguist }
+				bypass_recruitment = yes
+				available_to_spy_master = yes
+				nationalities = { XON XMJ XEX }
+				gender = female
+			}
+			create_operative_leader = {
+				name = "Acabay Ayvaz"
+				GFX = GFX_portrait_arabia_generic_operative_male_1
+				traits = { operative_master_interrogator }
+				bypass_recruitment = yes
+				available_to_spy_master = yes
+				nationalities = { XSK }
+				gender = male
 			}
 		}
 	}
@@ -1252,15 +1308,13 @@ focus_tree = {
 						}
 					}
 				}
-				hidden_effect = {
-					country_event = { id = XSK_events.8 }
-				}
 				if = {
 					limit = {
 						has_dlc = "Arms Against Tyranny"
 					}
 					hidden_effect = {
 						give_market_access = ROOT
+						country_event = { id = XSK_events.8 }
 					}
 					custom_effect_tooltip = XSK_give_market_access_tt
 				}
@@ -2474,6 +2528,57 @@ focus_tree = {
 			add_state_core = 330
 			add_state_core = 820
 			add_state_core = 329
+		}
+	}
+
+	focus = {
+		id = XSK_expand_intelligence_operations
+		icon = GFX_focus_SWI_embrace_rote_drei
+		prerequisite = { focus = XSK_future_of_the_sultanate focus = XSK_jiuquan_gambit }
+		#mutually_exclusive = { focus =  }
+		x = 6
+		y = 1
+		relative_position_id = XSK_future_of_the_sultanate
+
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+
+		available = {
+			has_idea = XSK_spy_recruitment
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XSK_spy_recruitment
+				add_idea = XSK_spy_recruitment_2
+			}
+			create_operative_leader = {
+				name = "Zhou Guiying"
+				GFX = GFX_portrait_noor_inayat_khan
+				traits = { operative_well_groomed operative_escape_artist }
+				bypass_recruitment = yes
+				available_to_spy_master = yes
+				nationalities = { XTW XHK XGD XYU XSG XWH XEX }
+				gender = female
+			}
+			create_operative_leader = {
+				name = "Roméo Cerfbeer"
+				GFX = GFX_portrait_kim_philby
+				traits = { operative_infiltrator }
+				bypass_recruitment = yes
+				available_to_spy_master = yes
+				nationalities = { XFR FRA }
+				gender = male
+			}
 		}
 	}
 

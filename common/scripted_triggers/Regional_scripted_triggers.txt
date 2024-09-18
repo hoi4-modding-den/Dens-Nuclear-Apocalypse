@@ -120,12 +120,6 @@ DEN_is_anarchy = {
 	OR = {
 		original_tag = LIB
 		original_tag = XFW
-		original_tag = XCG
-		original_tag = XFC
-		original_tag = XPS
-		original_tag = XHR
-		original_tag = XMC
-		original_tag = XIT
 	}
 }
 

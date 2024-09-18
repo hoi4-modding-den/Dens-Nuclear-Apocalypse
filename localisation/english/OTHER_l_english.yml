@@ -149,4 +149,5 @@
  ASIA_NAME: "Asia"
  ASIA_DESC: "China and that"
 
- AI_NO_DIPLOMACY_TT: "§YAI may not guarantee, create, leave or join factions.§!"
+ AI_NO_DIPLOMACY_TT: "§RAI may not guarantee, create, leave or join factions.§!"
+ ANARCHY_NO_DIPLOMACY_TT: "§RAnarchy knows no diplomacy.§!"

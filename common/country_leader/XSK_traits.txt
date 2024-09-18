@@ -38,6 +38,19 @@ leader_traits = {
 		}
 	}
 
+	XSK_master_of_intrigue_no_lar = {
+		random = no
+
+		decryption_power_factor = 0.15
+		trade_opinion_factor = 0.1
+		opinion_gain_monthly_factor = 0.25
+		lend_lease_tension = -0.4
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	XSK_sultan_of_the_turks = {
 		random = no
 

@@ -162,6 +162,7 @@
  XSK_ottoman_regency_trait: "Temporary Regency"
  XSK_military_regency: "Military Regency"
  XSK_master_of_intrigue: "Intriguing Diplomat"
+ XSK_master_of_intrigue_no_lar: "Intriguing Diplomat"
  XSK_sultan_of_the_turks: "Representative of the Turkic People"
  XSK_militant_megalomaniac: "Militant Megalomaniac"
  XSK_ottoman_subject_trait: "Ottoman Loyalist"
@@ -203,6 +204,7 @@
  XSK_trinity_desc: "There are only three beings that are worthy to be worshipped. First, Allah, the Father of Man, and his incarnation, our Sultan. Second, Mustafa Kemal Atatürk, the Father of the Turkic Peoples. And third, Karl Marx, the Father of Communism and the Revolution."
  XSK_unite_china: "Unity through Force"
  XSK_chinese_united_front: "The United Front"
+ XSK_spy_recruitment: "Extended Recruitment"
  XSK_defence_focus: "Northern Defence Focus"
  XSK_railway_builders: "Railway Advisors"
  XSK_bonus_against_XMJ: "War Plan: Scabiosa"
@@ -467,6 +469,8 @@
  XSK_future_of_the_sultanate_desc: ""
  XSK_integrate_mongolia: "Mongolian Military Administration"
  XSK_integrate_mongolia_desc: ""
+ XSK_expand_intelligence_operations: "Expand Intelligence Operations"
+ XSK_expand_intelligence_operations_desc: ""
 
  XSK_the_diplomatic_sultan: "Trade and Secrets"
  XSK_the_diplomatic_sultan_desc: ""
@@ -609,6 +613,19 @@
  XTK_industrial_revitalisation: "Industrial Reconstruction"
  XTK_infrastructure: "Infrastructure Improvements"
  XTK_free_civs: "Support the Civilian Industry"
+
+
+# Game Rules
+
+XSK_ai_behavior: "@XSK Ottoman Sultanate"
+RULE_OPTION_HISTORICAL_XSK: "Sultan XII. Süleyman"
+RULE_OPTION_HISTORICAL_XSK_AI_DESC: "Sultan XII. Süleyman is chosen as the successor. He will expand the Sultanate with his trickery, will fail however to convince Taiwan."
+RULE_OPTION_XSK_ALT_MONARCHIST: "Sultan I. Abdulhamid"
+RULE_OPTION_XSK_ALT_MONARCHIST_AI_DESC: "Sultan I. Abdulhamid is chosen as the successor. He will expand the Sultanate with pure military might and claim the Mandate of Heaven."
+RULE_OPTION_XSK_COMMUNIST: "Military Coup - Radicals"
+RULE_OPTION_XSK_COMMUNIST_AI_DESC: "The Regency Council deadlocks and the Military overthrows it, working with the Radical Faction to coronate XII. Süleyman in the name of Allah, Atatürk and Marx."
+RULE_OPTION_XSK_DEMOCRAT: "Military Coup - Reformists"
+RULE_OPTION_XSK_DEMOCRAT_AI_DESC: "The Regency Council deadlocks and the Military overthrows it, working with the Reformist Faction to coronate XII. Süleyman as a constitutional monarch. (Wether he will stay leader or not is up to the AI)"
 
 
  # Economic Entity

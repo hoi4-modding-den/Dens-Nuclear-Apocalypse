@@ -13,20 +13,67 @@ ideas = {
 
            removal_cost = -1
 
-            picture = tur_ottoman_spirit
-
             modifier = {
                 attrition = -0.2
                 no_supply_grace = 48
                 weekly_casualties_war_support = 0.01
                 supply_combat_penalties_on_core_factor = -0.25
                 equipment_capture = 0.2
+                political_power_gain = 0.1
             }
 
         }
 
 	}
     country = {
+
+        XSK_suleyman_xii_idea = {
+            name = XSK_sultan_suleyman_xii_name
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+           removal_cost = -1
+
+            picture = XSK_suleyman_xii_idea
+
+            modifier = {
+                operative_slot = 1
+                trade_opinion_factor = 0.1
+                opinion_gain_monthly_factor = 0.25
+                lend_lease_tension = -0.4
+            }
+
+        }
+
+        XSK_suleyman_xii_idea_no_lar = {
+            name = XSK_sultan_suleyman_xii_name
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+           removal_cost = -1
+
+            picture = XSK_suleyman_xii_idea
+
+            modifier = {
+                decryption_power_factor = 0.15
+                trade_opinion_factor = 0.1
+                opinion_gain_monthly_factor = 0.25
+                lend_lease_tension = -0.4
+            }
+
+        }
 
         XSK_the_sultanate_in_china = {
 
@@ -752,6 +799,47 @@ ideas = {
                 guarantee_tension = -0.25
                 guarantee_cost = -0.4
                 faction_trade_opinion_factor = 0.1
+            }
+
+        }
+
+        XSK_spy_recruitment = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_spy_intel
+
+            modifier = {
+                operative_slot = 1
+            }
+
+        }
+
+        XSK_spy_recruitment_2 = {
+            name = XSK_spy_recruitment
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_spy_intel
+
+            modifier = {
+                operative_slot = 2
             }
 
         }

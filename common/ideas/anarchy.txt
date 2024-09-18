@@ -20,6 +20,11 @@ ideas = {
 				justify_war_goal_time = 1
 				production_factory_max_efficiency_factor = -1
 				production_speed_buildings_factor = -1
+				min_export = -1
+			}
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
 			}
 		}
 	}
