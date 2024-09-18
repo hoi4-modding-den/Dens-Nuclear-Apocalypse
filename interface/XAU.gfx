@@ -27,5 +27,20 @@ spriteTypes = {
 		name = "GFX_XAU_open_welcome_window_button"
 		texturefile = "gfx/interface/XKR/open_welcome_window_button.dds"
 	}
+
+	### COMPONENTS GUI ###
+
+	spriteType = {
+		name = "GFX_XAU_header_bg_200x42"
+		texturefile = "gfx/interface/XAU/XAU_header_200x42.dds"
+	}
+	spriteType = {
+		name = "GFX_XAU_header_bg_260x42"
+		texturefile = "gfx/interface/XAU/XAU_header_260x42.dds"
+	}
+	spriteType = {
+		name = "GFX_XAU_header_bg_200x32"
+		texturefile = "gfx/interface/XAU/XAU_header_200x32.dds"
+	}
 }
 

@@ -30,3 +30,6 @@
  XAU_open_welcome_tooltip:0 "Open §Ywelcome screen§!"
  XAU_continue_tooltip:0 "§YTo new horizons...§!"
  XAU_exit_tooltip:0 "§YExit§!"
+
+ XAU_logistics_body:0 "§Y---------- PROCUREMENT ----------§!\nFrom Territory:\nScavenged:\n§Y---------------- USAGE ----------------§!\nPopulation:\nAutomatons:\nCorruption:"
+ XAU_logistics_stats:0 "\n§G+450§!\n§G+56§!\n\n§R-320§!\n§R-95§!\n§R-15§!"

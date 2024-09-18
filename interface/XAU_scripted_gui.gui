@@ -1,6 +1,121 @@
-### COPIED FROM XGE ###
-
 guiTypes = {
+	containerWindowType = {
+		name = "XAU_components_window"
+		position = { x = 40 y = 0 }
+		orientation = center
+		size = { width = 490 height = 200 }
+		
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		
+		containerWindowType = {
+			name = "XAU_components_logistics_window"
+			position = { x = -235 y = -90 }
+			orientation = center
+			size = { width = 200 height = 180 }
+			
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_plain_bg"
+			}
+
+			iconType = {
+				name ="logistics_header_bg"
+				spriteType = "GFX_XAU_header_bg_200x42"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}	
+			instantTextboxType = {
+				name = "logistics_header_desc"
+				position = { x = 0 y = 0 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "Components"
+				maxWidth = 200
+				maxHeight = 36
+				format = center
+			}
+
+			instantTextboxType = {
+				name = "logistics_body_desc"
+				position = { x = 10 y = 38 }
+				textureFile = ""
+				font = "hoi_16mbs"
+				borderSize = {x = 0 y = 0}
+				text = "XAU_logistics_body"
+				maxWidth = 180
+				maxHeight = 112
+				format = left
+			}
+
+			instantTextboxType = {
+				name = "logistics_body_stats"
+				position = { x = 130 y = 38 }
+				textureFile = ""
+				font = "hoi_16mbs"
+				borderSize = {x = 0 y = 0}
+				text = "XAU_logistics_stats"
+				maxWidth = 60
+				maxHeight = 112
+				format = right
+			}
+
+			iconType = {
+				name ="logistics_change_header_bg"
+				spriteType = "GFX_XAU_header_bg_200x32"
+				position = { x= 0 y = 152 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextboxType = {
+				name = "logistics_change_header_desc"
+				position = { x = 0 y = 154 }
+				textureFile = ""
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = "+1000 per month"
+				maxWidth = 200
+				maxHeight = 28
+				format = center
+			}
+			
+		}
+
+		containerWindowType = {
+			name = "XAU_components_automatons_window"
+			position = { x = -25 y = -90 }
+			orientation = center
+			size = { width = 260 height = 180 }
+			
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_plain_bg"
+			}
+
+			iconType = {
+				name ="automatons_header_bg"
+				spriteType = "GFX_XAU_header_bg_260x42"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}	
+			instantTextboxType = {
+				name = "automatons_header_desc"
+				position = { x = 0 y = 0 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "Automatons"
+				maxWidth = 260
+				maxHeight = 20
+				format = center
+			}
+			
+		}
+	}
+
 	containerWindowType = {
 		name = "XAU_welcome_window"
 		moveable = yes

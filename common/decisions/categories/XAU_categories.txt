@@ -10,4 +10,5 @@ XAU_components_decisions = {
 	}
 
 	visible_when_empty = yes
+	scripted_gui = XAU_components_gui
 }
