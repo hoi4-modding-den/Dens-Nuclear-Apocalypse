@@ -22,6 +22,9 @@ add_ideas = {
 
 set_convoys = 0
 
+recruit_character = XWH_Sun_Wu_IV
+recruit_character = XWH_AssemblyLeader
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2230.1.30"
