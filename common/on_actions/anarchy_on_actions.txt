@@ -7,19 +7,6 @@ on_actions = {
 				}
 				d_create_army = yes
 			}
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				every_country = {
-					LIB = {
-						send_embargo = PREV
-					}
-					XFW = {
-						send_embargo = PREV
-					}
-				}
-			}
 		}
 	}
 }

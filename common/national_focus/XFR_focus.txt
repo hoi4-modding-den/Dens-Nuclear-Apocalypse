@@ -4571,6 +4571,9 @@ focus_tree = {
 								original_tag = XFW
 							}
 						}
+						capital_scope = {
+							is_on_continent = europe
+						}
 					}
 					ROOT = {
 						declare_war_on = {

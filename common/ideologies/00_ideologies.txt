@@ -79,7 +79,7 @@ ideologies = {
 		rules = {
 			can_create_collaboration_government = no
 			can_declare_war_on_same_ideology = no
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = no
 			can_puppet = no
 			can_lower_tension = yes
@@ -176,7 +176,7 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.20
 
 		rules = {
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = yes
 		}
@@ -282,7 +282,7 @@ ideologies = {
 		faction_impact_on_world_tension = 1.0
 
 		rules = {
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = yes
 		}
@@ -364,9 +364,10 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 
 		rules = {
-			can_force_government = yes
+			can_force_government = no
 			can_puppet = yes
 			can_send_volunteers = no
+			can_guarantee_other_ideologies = yes
 		}
 
 		modifiers = {

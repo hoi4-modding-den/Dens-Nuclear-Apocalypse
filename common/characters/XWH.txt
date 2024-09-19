@@ -1,0 +1,24 @@
+characters = {
+    XWH_Sun_Wu_IV = {
+        name = "Sun Wu IV"
+        portraits = {
+            civilian = {
+                large = gfx/leaders/XWH/XWH_Sun_Wu_IV.dds
+            }
+        }
+    }
+    XWH_AssemblyLeader = {
+        name = "Wuhan Assembly"
+        portraits = {
+            civilian = {
+                large = gfx/leaders/XWH/XWH_AssemblyLeader.dds
+            }
+        }
+        country_leader = {
+            ideology = oligarchism
+            traits = {}
+            expire = "3000.3.1.1"
+            id = -1
+        }
+    }
+}

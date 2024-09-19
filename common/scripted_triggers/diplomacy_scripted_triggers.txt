@@ -38,9 +38,33 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 			option = LIMITED
 		}
 	}
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 }
 
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -83,9 +107,30 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 }
 
 DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -101,6 +146,18 @@ DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 }
 
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -681,6 +738,18 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_access
 				option = FREE
@@ -714,6 +783,18 @@ DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -751,6 +832,18 @@ DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
 DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_access
 				option = FREE
@@ -786,6 +879,18 @@ DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_access
 				option = FREE
@@ -819,6 +924,18 @@ DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -877,6 +994,18 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_lend_lease
 				option = FREE
@@ -933,6 +1062,18 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_licensing
 				option = FREE
@@ -978,6 +1119,18 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -1093,6 +1246,18 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_party_boosting
 				option = FREE
@@ -1140,6 +1305,18 @@ DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_coups
 				option = FREE
@@ -1175,6 +1352,18 @@ DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
 DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_leave_faction
 				option = BLOCKED
@@ -1189,6 +1378,18 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
  DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_take_over_faction
 				option = BLOCKED
@@ -1199,8 +1400,29 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 }
 DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -1213,8 +1435,29 @@ DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 }
 DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -1703,6 +1946,18 @@ game_weight_can_add_communist = {
 }
 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = { 
 		limit = {
 			NOT = { has_global_flag = ethiopia_recognized_flag }
@@ -1751,6 +2006,18 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = { 
 		limit = {
 			NOT = { has_global_flag = ethiopia_recognized_flag }
@@ -1799,6 +2066,18 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = { 
 		limit = {
 			has_dlc = "Arms Against Tyranny"
@@ -1812,8 +2091,29 @@ DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 }
 DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			OR = {
+				FROM = { DEN_is_anarchy = yes }
+				DEN_is_anarchy = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ANARCHY_NO_DIPLOMACY_TT
+			always = no
+		}
+	}
 	if = { 
 		limit = {
 			has_dlc = "Arms Against Tyranny"
@@ -1825,6 +2125,15 @@ DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = AI_NO_DIPLOMACY_TT
 			always = no
 		}
 	}

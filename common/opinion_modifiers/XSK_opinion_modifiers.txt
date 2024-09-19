@@ -21,4 +21,8 @@ opinion_modifiers = {
 	XSK_uf_support = {
 		value = 25
 	}
+
+	XSK_ai_friendship_boost = {
+		value = 50
+	}
 }

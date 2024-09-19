@@ -18,6 +18,9 @@ country_event = { # The First Candidate
         add_political_power = -75
         country_event = { id = XSK_succession_events.5 days = 1 }
         set_country_flag = XSK_choosen_next_sultan
+        trigger = {
+            is_ai = no
+        }
     }
 
     option = {
@@ -42,6 +45,9 @@ country_event = { # The Second Candidate
         add_political_power = -75
         country_event = { id = XSK_succession_events.6 days = 1 }
         set_country_flag = XSK_choosen_next_sultan
+        trigger = {
+            is_ai = no
+        }
     }
 
     option = {
@@ -66,6 +72,16 @@ country_event = { # The Candidates debate
         add_political_power = -50
         country_event = { id = XSK_succession_events.5 days = 1 }
         set_country_flag = XSK_choosen_next_sultan
+        trigger = {
+            OR = {
+                has_country_flag = XFR_AI_RANDOM_ALT_MONARCHIST
+                has_game_rule = {
+                    rule = XSK_ai_behavior
+                    option = XSK_ALT_MONARCHIST
+                }
+                is_ai = no
+            }
+        }
     }
 
     option = {
@@ -73,11 +89,58 @@ country_event = { # The Candidates debate
         add_political_power = -50
         country_event = { id = XSK_succession_events.6 days = 1 }
         set_country_flag = XSK_choosen_next_sultan
+        trigger = {
+            OR = {
+                has_country_flag = XFR_AI_RANDOM_HISTORICAL
+                has_game_rule = {
+                    rule = XSK_ai_behavior
+                    option = HISTORICAL
+                }
+                AND = {
+                    is_historical_focus_on = yes
+                    has_game_rule = {
+                        rule = XSK_ai_behavior
+                        option = DEFAULT
+                    }
+                }
+                is_ai = no
+            }
+        }
     }
 
     option = {
         name = XSK_succession_events.3.c
         add_political_power = -100
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.15
+        }
+        trigger = {
+            OR = {
+                is_ai = no
+                NOT = {
+                    OR = {
+                        has_country_flag = XFR_AI_RANDOM_HISTORICAL
+                        has_game_rule = {
+                            rule = XSK_ai_behavior
+                            option = HISTORICAL
+                        }
+                        AND = {
+                            is_historical_focus_on = yes
+                            has_game_rule = {
+                                rule = XSK_ai_behavior
+                                option = DEFAULT
+                            }
+                        }
+                        has_country_flag = XFR_AI_RANDOM_ALT_MONARCHIST
+                        has_game_rule = {
+                            rule = XSK_ai_behavior
+                            option = XSK_ALT_MONARCHIST
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -96,10 +159,6 @@ country_event = { # Military Coup
         set_politics = {
             ruling_party = fascism
             elections_allowed = no
-        }
-        add_popularity = {
-            ideology = fascism
-            popularity = 0.15
         }
         effect_tooltip = {
             add_country_leader_role = {
@@ -169,26 +228,31 @@ country_event = { # Süleyman is choosen
     option = {
         name = XSK_succession_events.6.a
         add_political_power = 75
-        add_country_leader_role = {
-            character = XSK_sultan_suleyman_xii
-            promote_leader = yes
-            country_leader = {
-                ideology = despotism
-                desc = XSK_sultan_suleyman_xii_desc
-                expire = "3000.1.1.1"
-                traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
-           }
-        }
-        hidden_effect = {
+        if = {
+            limit = {
+                has_dlc = "La Resistance"
+            }
             add_country_leader_role = {
                 character = XSK_sultan_suleyman_xii
                 promote_leader = yes
                 country_leader = {
-                    ideology = conservatism
+                    ideology = despotism
                     desc = XSK_sultan_suleyman_xii_desc
                     expire = "3000.1.1.1"
                     traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
-               }
+                }
+            }
+        }
+        else = {
+            add_country_leader_role = {
+                character = XSK_sultan_suleyman_xii
+                promote_leader = yes
+                country_leader = {
+                    ideology = despotism
+                    desc = XSK_sultan_suleyman_xii_desc
+                    expire = "3000.1.1.1"
+                    traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue_no_lar }
+                }
             }
         }
         set_party_name = {
@@ -238,14 +302,31 @@ country_event = { # Fate of the Ottoman Dynasty
             ruling_party = communism
             elections_allowed = no
         }
-        add_country_leader_role = {
-            character = XSK_sultan_suleyman_xii
-            promote_leader = yes
-            country_leader = {
-                ideology = XSK_monarcho_socialism
-                desc = XSK_sultan_suleyman_xii_desc
-                expire = "3000.1.1.1"
-                traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
+        if = {
+            limit = {
+                has_dlc = "La Resistance"
+            }
+            add_country_leader_role = {
+                character = XSK_sultan_suleyman_xii
+                promote_leader = yes
+                country_leader = {
+                    ideology = XSK_monarcho_socialism
+                    desc = XSK_sultan_suleyman_xii_desc
+                    expire = "3000.1.1.1"
+                    traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
+                }
+            }
+        }
+        else = {
+            add_country_leader_role = {
+                character = XSK_sultan_suleyman_xii
+                promote_leader = yes
+                country_leader = {
+                    ideology = XSK_monarcho_socialism
+                    desc = XSK_sultan_suleyman_xii_desc
+                    expire = "3000.1.1.1"
+                    traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue_no_lar }
+                }
             }
         }
 
@@ -261,14 +342,31 @@ country_event = { # Fate of the Ottoman Dynasty
             ruling_party = democratic
             elections_allowed = no
         }
-        add_country_leader_role = {
-            character = XSK_sultan_suleyman_xii
-            promote_leader = yes
-            country_leader = {
-                ideology = liberalism
-                desc = XSK_sultan_suleyman_xii_desc
-                expire = "3000.1.1.1"
-                traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
+        if = {
+            limit = {
+                has_dlc = "La Resistance"
+            }
+            add_country_leader_role = {
+                character = XSK_sultan_suleyman_xii
+                promote_leader = yes
+                country_leader = {
+                    ideology = liberalism
+                    desc = XSK_sultan_suleyman_xii_desc
+                    expire = "3000.1.1.1"
+                    traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue }
+                }
+            }
+        }
+        else = {
+            add_country_leader_role = {
+                character = XSK_sultan_suleyman_xii
+                promote_leader = yes
+                country_leader = {
+                    ideology = liberalism
+                    desc = XSK_sultan_suleyman_xii_desc
+                    expire = "3000.1.1.1"
+                    traits = { XSK_sultan_of_the_turks XSK_master_of_intrigue_no_lar }
+                }
             }
         }
     }
@@ -293,6 +391,15 @@ country_event = { # Fate of the Ottoman Dynasty
                     traits = { XFR_science_minister_trait }
                 }
             }
+        }
+        if = {
+            limit = {
+                has_dlc = "La Resistance"
+            }
+            add_ideas = XSK_suleyman_xii_idea
+        }
+        else = {
+            add_ideas = XSK_suleyman_xii_idea_no_lar
         }
     }
 }
@@ -592,6 +699,41 @@ country_event = { # Silk Road opened
 
 }
 
+country_event = { # War with XMJ too long
+    id = XSK_events.9
+    title = XSK_events.9.t
+    picture = GFX_report_event_tur_menderes_opposition
+    desc = XSK_events.9.d
+
+    trigger = {
+        tag = XSK
+        exists = yes
+        war_length_with = {
+            tag = XMJ
+            months > 6
+        }
+        surrender_progress < 0.01
+        XMJ = {
+            surrender_progress < 0.2
+        }
+    }
+
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.9.a
+        add_war_support = -0.1
+        add_ideas = XSK_bonus_against_XMJ
+    }
+
+    option = {
+        name = XSK_events.9.b
+        add_war_support = -0.1
+        custom_effect_tooltip = XSK_events.9.b.tt
+    }
+
+}
+
 country_event = { # Taipei Compromise: Taiwan gets Notified
     id = XSK_taiwan_events.1
     title = XSK_taiwan_events.1.t
@@ -626,6 +768,7 @@ country_event = { # Taipei Compromise: Delegation has arrived
             XTW = {
                 NOT = { has_completed_focus = XTW_revive_the_one_china_policy }
             }
+            is_ai = no
         }
         FROM = {
             country_event = { id = XSK_taiwan_events.3 days = 3 }
@@ -846,6 +989,17 @@ country_event = { # XTK is created
             autonomous_state = autonomy_integrated_puppet
             end_wars = no
             end_civil_wars = no
+        }
+        if = {
+            limit = {
+                tag = XON
+            }
+            XTK = {
+                set_politics = {
+                    ruling_party = fascism
+                    elections_allowed = no
+                }
+            }
         }
     }
 

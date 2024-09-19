@@ -144,6 +144,14 @@
 				ideology = fascism
 				popularity = -0.25
 			}
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = XWH_Sun_Wu_IV  
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+				}
+			}
 		}
      }
 	 focus = {
@@ -215,6 +223,7 @@
 		}	
 		search_filters = { FOCUS_FILTER_PROPAGANDA }
 		completion_reward = {
+				add_country_leader_trait = XWH_PrideofWuchang
 		}
      }
 	 focus = {
@@ -238,6 +247,7 @@
 		}	
 		search_filters = { FOCUS_FILTER_PROPAGANDA }
 		completion_reward = {
+			add_ideas = XWH_WuchangGuides
 		}
      }
 	 focus = {

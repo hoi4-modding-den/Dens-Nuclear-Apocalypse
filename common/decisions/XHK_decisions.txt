@@ -6,9 +6,6 @@ XHK_unification_of_china = {
 		
 		state_target = yes
 		on_map_mode = map_and_decisions_view
-		target = {
-			
-		}
 		
 		priority = 50
 
@@ -52,8 +49,7 @@ XHK_unification_of_china = {
 						state = 323
 					}
 					OR = {
-						state_population = 10000000
-						state_population > 10000000
+						state_population > 9999999
 					}
 				}
 			}
@@ -85,9 +81,6 @@ XHK_unification_of_china = {
 		
 		state_target = yes
 		on_map_mode = map_and_decisions_view
-		target = {
-			
-		}
 		
 		priority = 50
 
@@ -132,8 +125,7 @@ XHK_unification_of_china = {
 					}
 					AND = {
 						OR = {
-							state_population > 1000000
-							state_population = 1000000
+							state_population > 999999
 						}
 						state_population < 10000000
 					}
@@ -167,9 +159,6 @@ XHK_unification_of_china = {
 		
 		state_target = yes
 		on_map_mode = map_and_decisions_view
-		target = {
-			
-		}
 		
 		priority = 25
 
@@ -287,9 +276,6 @@ XHK_unification_of_yangtze = {
 		
 		state_target = yes
 		on_map_mode = map_and_decisions_view
-		target = {
-			
-		}
 		
 		priority = 50
 
@@ -319,8 +305,7 @@ XHK_unification_of_yangtze = {
 						is_core_of = XHK
 					}
 					OR = {
-						state_population = 10000000
-						state_population > 10000000
+						state_population > 9999999
 					}
 				}
 			}
@@ -352,9 +337,6 @@ XHK_unification_of_yangtze = {
 		
 		state_target = yes
 		on_map_mode = map_and_decisions_view
-		target = {
-			
-		}
 		
 		priority = 50
 
@@ -385,8 +367,7 @@ XHK_unification_of_yangtze = {
 					}
 					AND = {
 						OR = {
-							state_population > 1000000
-							state_population = 1000000
+							state_population > 999999
 						}
 						state_population < 10000000
 					}
@@ -420,9 +401,6 @@ XHK_unification_of_yangtze = {
 		
 		state_target = yes
 		on_map_mode = map_and_decisions_view
-		target = {
-			
-		}
 		
 		priority = 25
 

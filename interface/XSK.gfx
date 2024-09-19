@@ -92,6 +92,11 @@ spriteTypes = {
 		name = "GFX_idea_XSK_trinity_of_turko_monarcho_socialism"
 		texturefile = "gfx/interface/ideas/XSK/XSK_trinity_of_turko_monarcho_socialism.png"
 	}
+
+	spriteType = {
+		name = "GFX_idea_XSK_suleyman_xii_idea"
+		texturefile = "gfx/interface/ideas/XSK/XSK_suleyman_xii_idea.png"
+	}
     
     spriteType = {
         name = "GFX_autonomy_XSK_vilayet_icon"
