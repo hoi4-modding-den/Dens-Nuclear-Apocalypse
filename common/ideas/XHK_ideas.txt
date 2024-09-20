@@ -126,6 +126,61 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		XHK_corporate_assembly = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = 0.1
+				neutrality_drift = 0.05
+			}
+		}
+		XHK_corporate_soldiers = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+				army_morale_factor = -0.05
+			}
+		}
+		XHK_neofeudalism = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 		XHK_guangdong_menace = {
 			picture = generic_constitutional_guarantees
 			

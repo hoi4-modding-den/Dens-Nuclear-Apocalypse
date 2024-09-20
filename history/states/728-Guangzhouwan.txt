@@ -6,7 +6,7 @@ manpower=133333
 	state_category = enclave
 	
 	history={
-		owner = LIB # FRA
+		owner = XGX # FRA
 		#add_core_of = CHI
 		#add_core_of = PRC
 		buildings = {

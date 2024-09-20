@@ -101,7 +101,7 @@ country_event = {
     option = {
         name = XHK.5.a
 		XHK = {
-			add_to_faction = ROOT
+			add_to_faction = FROM
 		}
     }
 	option = {

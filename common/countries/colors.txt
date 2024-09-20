@@ -358,3 +358,8 @@ XAM = {
 	color = rgb { 130 120 210 }
 	color_ui = rgb { 130 120 210 }
 }
+
+XGX = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}

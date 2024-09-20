@@ -10,7 +10,7 @@ manpower=5790133
 	}
 
 	history= {
-		owner = LIB # GXC
+		owner = XGX # GXC
 		#add_core_of = GXC
 		#add_core_of = CHI
 		#add_core_of = PRC
@@ -22,15 +22,6 @@ manpower=5790133
 		}
 		victory_points = { 
 			10404 3 
-		}
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				CHI = { transfer_state = PREV }
-			}
 		}
 
 	}
