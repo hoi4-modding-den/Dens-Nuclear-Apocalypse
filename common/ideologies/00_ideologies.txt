@@ -157,6 +157,10 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 122 28 28 } 
 			}
+
+			XEX_anti_gamblerism = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
@@ -266,6 +270,10 @@ ideologies = {
 			XHK_ultranationalism = {
 				can_be_randomly_selected = no
 			}
+			XEX_mihoyo = {
+				can_be_randomly_selected = no
+				color = { 78 164 221 }
+			}
 		}
 
 		dynamic_faction_names = {
@@ -341,6 +349,10 @@ ideologies = {
 			}
 
 			XKR_casino_council = {
+				can_be_randomly_selected = no
+				color = { 73 123 85 }
+			}
+			XEX_casino_rule = {
 				can_be_randomly_selected = no
 				color = { 73 123 85 }
 			}

@@ -1,0 +1,315 @@
+focus_tree = {
+	id = XEX_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XEX
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 700 y = 2000 }
+
+	focus = {
+		id = XEX_protect_our_interests
+		icon = GFX_focus_XEX_mihoyo_coup
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XEX_business_as_usual focus = XEX_protests_continue }
+		x = 1
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = fascism
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_crackdown
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = XEX_protect_our_interests focus = XEX_business_as_usual }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = XEX_protect_our_interests
+
+		available = {
+			
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = XEX_growing_unrest
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XEX_growing_unrest
+				add_idea = XEX_growing_unrest2
+			}
+			1003 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				1004 = {
+				set_demilitarized_zone = no
+				}
+				1005 = {
+					set_demilitarized_zone = no
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_end_unrest
+		icon = GFX_focus_POL_riot_of_37
+		prerequisite = { focus = XEX_crackdown }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XEX_crackdown
+
+		available = {
+			
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = XEX_growing_unrest2
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			remove_ideas = XEX_growing_unrest2
+			1003 = {
+				add_manpower = -10000
+			}
+			hidden_effect = {
+				1004 = {
+					add_manpower = -10000
+				}
+				1005 = {
+					add_manpower = -10000
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_business_as_usual
+		icon = GFX_focus_BRA_ethical_internationalism
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XEX_protests_continue focus = XEX_protect_our_interests }
+		x = 7
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			is_subject = no
+			has_government = neutrality
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_protests_continue
+		icon = GFX_focus_generic_workers
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XEX_business_as_usual focus = XEX_protect_our_interests }
+		x = 13
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_sabotage_casinos
+		icon = GFX_focus_SOV_organize_wreckers
+		prerequisite = { focus = XEX_protests_continue }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XEX_protests_continue
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = XEX_rally_the_ghettos
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = XEX_protests_continue }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_protests_continue
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XEX_growing_unrest
+				add_idea = XEX_growing_unrest3
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_overthrow_the_capitalists
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		prerequisite = { focus = XEX_sabotage_casinos }
+		prerequisite = { focus = XEX_rally_the_ghettos }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XEX_protests_continue
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			1003 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				1004 = {
+				set_demilitarized_zone = no
+				}
+				1005 = {
+					set_demilitarized_zone = no
+				}
+			}
+		}
+	}
+
+}

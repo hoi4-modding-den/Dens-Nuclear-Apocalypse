@@ -2,7 +2,17 @@ capital = 608
 
 oob = "XEX_army"
 
-recruit_character = XEX_gambling_maxxing
+recruit_character = XEX_gamblerman
+recruit_character = XEX_mihoyo_leader
+recruit_character = XEX_argentinian_gambler
+recruit_character = XEX_beijing_governor
+
+add_ideas = {
+	free_trade
+	disarmed_nation
+	XEX_casino_profits
+	XEX_growing_unrest
+}
 
 set_technology = {
 	infantry_weapons = 1
@@ -49,8 +59,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
-	communism = 5
-	fascism = 10
-	neutrality = 75
+	democratic = 0
+	communism = 15
+	fascism = 30
+	neutrality = 55
 }

@@ -1,0 +1,23 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_trait = {
+					ideology  = XEX_mihoyo
+					trait = XEX_mihiyo_representative
+				}
+			}
+			else = {
+				add_trait = {
+					ideology  = XEX_mihoyo
+					trait = XEX_mihiyo_representative_no_lar
+				}
+			}
+		}
+	}
+
+}
