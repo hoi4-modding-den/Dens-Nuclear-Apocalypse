@@ -295,6 +295,61 @@ foreign_politics = {
 
 	}
 
+	XSK_enact_protection_protocol = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		target_trigger = { 
+			FROM = {
+				tag = XRE
+			}
+		}
+
+		available = {
+			OR = {
+				is_faction_leader = yes
+				AND = {
+					is_in_faction_with = XTW
+					XTW = { is_faction_leader = yes }
+				}
+			}
+			FROM = {
+				has_war = yes
+				is_guaranteed_by = ROOT
+			}
+		}
+
+		visible = { 
+			NOT = { has_war_with = FROM }
+			has_completed_focus = XSK_protect_the_north
+			FROM = {
+				is_in_faction = no
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 5
+
+        ai_will_do = {
+			base = 10000
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			FROM = {
+				country_event = { id = XFR_events.22 days = 1 }
+			}
+        }
+
+	}
+
 }
 
 XSK_invasion_of_china = {
@@ -547,6 +602,10 @@ XSK_invasion_of_china = {
 			}
 		}
 	}
+
+}
+
+XSK_anarchy_reclamation_cat = {
 
 	XSK_reclaim_anarchy_land = {
 

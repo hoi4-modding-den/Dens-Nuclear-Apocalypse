@@ -206,12 +206,24 @@
  XSK_chinese_united_front: "The United Front"
  XSK_spy_recruitment: "Extended Recruitment"
  XSK_defence_focus: "Northern Defence Focus"
- XSK_railway_builders: "Railway Advisors"
+ XSK_railway_builders: "Railway Investments"
  XSK_bonus_against_XMJ: "War Plan: Scabiosa"
  XTK_insurgency: "Anti-Ottoman Insurgency"
  XTK_political_instability: "Political Instability"
  XTK_weak_industry: "Collapsed Industry"
  XSK_ai_cheat_idea: "AI Cheat Bonus"
+
+
+# Dynamic Modifiers
+
+XSK_turkic_resistance: "Turkic Resistance"
+
+
+# Companies
+
+XSK_mining_company: "Ottoman Royal Mining Corporation"
+XSK_railway_company_contract: "Foreign Railway Advisors"
+
 
 # Decisions
 
@@ -221,6 +233,7 @@
  XSK_treaty_with_railroaders: "Treaty with [FROM.GetNameDef]"
  XSK_treaty_for_korean_independence: "Protect [FROM.GetAdjective] Independence"
  XSK_improve_relations: "Support [FROM.GetAdjective] Government"
+ XSK_enact_protection_protocol: "Ensure [XRE.GetAdjective] Protection"
 
  XSK_vilayets_cat: "Establish Ottoman Vilayets"
  XSK_vilayet_of_beijing: "Establish the Vilayet of Beijing"
@@ -245,12 +258,14 @@
  XSK_add_antitank_to_irregulars_tt: "Add one §YAnti-Tank Support Company§! to the §YDüzensiz Kolordu§! Template.\n"
 
  XSK_invasion_of_china: "Invasion of China"
- XSK_reclaim_anarchy_land: "Restore Order in [FROM.GetName]"
- XSK_reclaiming_anarchy: "restoring Order"
  XSK_show_chinese_states: "Rightful Claim of the Ottoman Empire"
  XSK_invade_chinese_nation: "Invade [FROM.GetNameDef]"
  XSK_invade_korea: "Invade [FROM.GetNameDef]"
  XSK_reclaim_chinese_land_from_foreign_influence: "Reclaim Rightful Lands from [FROM.GetNameDef]"
+
+ XSK_anarchy_reclamation_cat: "Reclaim Chinese Territories"
+ XSK_reclaim_anarchy_land: "Restore Order in [FROM.GetName]"
+ XSK_reclaiming_anarchy: "restoring Order"
 
  XTK_stabilise_insurgency_politics: "Promote Our Policies"
  XTK_support_insurgency_industry: "Fund [XTK.GetAdjective] Industry"
@@ -336,6 +351,10 @@
  XSK_events.9.b: "No. That would be unfair."
  XSK_events.9.b.tt: "\nIf you insist."
 
+ XSK_events.10.t: "Ottoman Agitators spread Pan-Turkic Propaganda!"
+ XSK_events.10.d: "There has been a rise in protests from Turkic minorities - and those that believe they are - within our country. Our counter-intelligence department has located the source of the agitators, [XSK.GetNameDef]. Apparently, they have been supporting resistance within our nation to solidify their claim on our territories."
+ XSK_events.10.a: "Damn them!"
+
  XSK_taiwan_events.1.t: "Ottoman Delegates arrive in [ROOT.capital.GetCapitalVictoryPointName]"
  XSK_taiwan_events.1.d: "Today, Ottoman Delegates arrived in [ROOT.capital.GetCapitalVictoryPointName] to meet with our government. They have not stated their reason for traveling all the way here, but they do not seem hostile towards us."
  XSK_taiwan_events.1.a: "Let's see what they want."
@@ -409,6 +428,7 @@
  XSK_denounced_our_intentions: "Denounced our Government"
  XSK_uf_support: "United Front Support"
  XSK_ai_friendship_boost: "Friendship Delegation"
+ XSK_pan_turkic_agitators: "Pan-Turkic Agitators"
 
 
 # Foci
@@ -471,6 +491,7 @@
  XSK_integrate_mongolia_desc: ""
  XSK_expand_intelligence_operations: "Expand Intelligence Operations"
  XSK_expand_intelligence_operations_desc: ""
+ XSK_expand_intelligence_operations_tt: "\nCompleting this focus and §Y[XSK_claim_the_mandate_of_heaven]§! will unlock £GFX_counter_intelligence §YSpy Operations§! to disrupt nations we have a claim on."
 
  XSK_the_diplomatic_sultan: "Trade and Secrets"
  XSK_the_diplomatic_sultan_desc: ""
@@ -568,7 +589,7 @@
  XSK_legacy_of_suleyman_desc: ""
  XSK_pacify_chinese_rivals: "Conquest of China"
  XSK_pacify_chinese_rivals_desc: ""
- XSK_pacify_chinese_rivals_tt: "Unlocks £decision_icon_small §YDecisions§! to declare war on any remaining nation in China."
+ XSK_pacify_chinese_rivals_tt: "Unlocks £decision_icon_small §YDecisions§! to declare war on any remaining nations in China."
  XSK_proclaim_ottoman_empire_of_china: "Proclaim the Ottoman Empire"
  XSK_proclaim_ottoman_empire_of_china_desc: ""
  XSK_owns_and_controls_all_chinese_states_tt: "Owns all Chinese states directly or via subjects"
@@ -580,11 +601,14 @@
  XSK_support_the_united_front_tt: "Unlocks £decision_icon_small §YDecisions§! to give £infantry_equipment_text_icon §YWeapons§!, £industry_texticon §YOff-Map Factories§! and £army_experience §YArmy Experience§! to members of the §YUnited Front§!."
  XSK_protect_the_north: "Protect the North"
  XSK_protect_the_north_desc: ""
+ XSK_protect_the_north_tt: "\nUnlocks a £decision_icon_small §YDecisions§! to invite §Y[XRE.GetNameDef]§! to your faction if they are at war."
  XSK_focus_on_central_china: "Chinese Interventionism"
  XSK_focus_on_central_china_desc: ""
  XSK_focus_on_central_china_tt: "Gain §YWargoals§! against every §Yfascist§! or §Ycommunist§! nation in China."
- XSK_invite_japanese_nations: "Invite Aligned Japanese Nations"
+ XSK_invite_japanese_nations: "The Matters of Japan"
  XSK_invite_japanese_nations_desc: ""
+ XSK_invite_japanese_nations_tt: "Every Japanese Nation that is either §Ydemocratic§! or §Ynon-aligned§! will be invited to our faction."
+ XSK_invite_japanese_nations_tt2: "\nGain §YWargoals§! against every §Yfascist§! or §Ycommunist§! nation in Japan."
 
  XSK_chinese_conscription: "Conscript Chinese"
  XSK_chinese_conscription_desc: ""
@@ -592,6 +616,9 @@
  XSK_chinese_science_desc: "Not even the finest in the world."
  XSK_trade_profits: "Trade Profits"
  XSK_trade_profits_desc: ""
+ XSK_reclaim_chinese_lands: "Reclaim Chinese Lands"
+ XSK_reclaim_chinese_lands_desc: ""
+ XSK_reclaim_chinese_lands_tt: "Unlocks £decision_icon_small §YDecisions§! to retake states from the Anarchy."
 
 
  XTK_xinjiang_rebellion: "Xinjiang Insurgency"
@@ -638,3 +665,9 @@ RULE_OPTION_XSK_DEMOCRAT_AI_DESC: "The Regency Council deadlocks and the Militar
  # Bookmark
 
  XSK_history: "The Second Ottoman Sultanate was established by the liberated Uyghur people after the Great Cataclysm. With the recent death of Sultan Süleyman the Eleventh, a regency council has been established to find a worthy successor. Their choice lies between the incompetent nephew of the deceased sultan or his illigitimate son, but if the Regency takes too long to make their decision, the military might have to interfere."
+
+
+# Operations
+
+XSK_spread_turkic_propaganda_name: "Spread Pan-Turkic Propaganda"
+XSK_spread_turkic_propaganda_desc: "Our Operatives will infiltrate [FROM.FROM.GetName] and promote Pan-Turkic sentiment in the population. Encouraging them to rise up and fight against their oppressors."

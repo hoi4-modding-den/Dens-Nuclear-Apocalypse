@@ -1500,6 +1500,8 @@ focus_tree = {
 				uses = 1
 				category = excavation_tech 
 			}
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = XSK_mining_company
 			country_event = XSK_events.1
 			custom_effect_tooltip = SWE_unify_the_national_socialist_movement_tt_1
 			event_option_tooltip = XSK_events.1.a
@@ -2253,21 +2255,30 @@ focus_tree = {
 			619 = {
 				add_core_of = ROOT
 				add_manpower = 100000
+				add_dynamic_modifier = {
+					modifier = XFR_colonisation_state_modifier
+				}
 			}
 			287 = {
 				add_core_of = ROOT
 				add_manpower = 100000
+				add_dynamic_modifier = {
+					modifier = XFR_colonisation_state_modifier
+				}
 			}
 			759 = {
 				add_core_of = ROOT
 				add_manpower = 100000
+				add_dynamic_modifier = {
+					modifier = XFR_colonisation_state_modifier
+				}
 			}
 		}
 	}
 
 	focus = {
 		id = XSK_settle_inner_mongolia
-		icon = GFX_focus_generic_land_reclamation
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = XSK_road_construction }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -2292,14 +2303,17 @@ focus_tree = {
 			756 = {
 				add_core_of = ROOT
 				add_manpower = 50000
+				add_extra_state_shared_building_slots = 2
 			}
 			616 = {
 				add_core_of = ROOT
 				add_manpower = 50000
+				add_extra_state_shared_building_slots = 2
 			}
 			746 = {
 				add_core_of = ROOT
 				add_manpower = 50000
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -2576,9 +2590,10 @@ focus_tree = {
 				traits = { operative_infiltrator }
 				bypass_recruitment = yes
 				available_to_spy_master = yes
-				nationalities = { XFR FRA }
+				nationalities = { XFR FRA XPR }
 				gender = male
 			}
+			custom_effect_tooltip = XSK_expand_intelligence_operations_tt
 		}
 	}
 
@@ -2609,7 +2624,7 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
 			add_named_threat = {
@@ -2619,10 +2634,6 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = XSK_news_events.5 days = 1 }
 			}
-			set_rule = {
-    			can_create_factions = yes
-			}
-			create_faction = "Ottoman Restoration League"
 			every_state = {
 				limit = {
 					DEN_is_chinese_state = yes
@@ -2769,12 +2780,15 @@ focus_tree = {
 		}
 
 		bypass = {
-			XTW = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_ally_with = ROOT
+			OR = {
+				XTW = {
+					OR = {
+						exists = no
+						has_war_with = ROOT
+						is_ally_with = ROOT
+					}
 				}
+				has_government = communism
 			}
 		}
 
@@ -2807,7 +2821,13 @@ focus_tree = {
 		available = {
 			OR = {
 				has_country_flag = XSK_taipei_compromise_succeeded
-				is_faction_leader = yes
+				OR = {
+					is_faction_leader = yes
+					AND = {
+						is_in_faction_with = XTW
+						XTW = { is_faction_leader = yes }
+					}
+				}
 			}
 		}
 
@@ -2898,6 +2918,24 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 75
 			add_ideas = XSK_defence_focus
+			if = {
+				limit = {
+					XRE = {
+						exists = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				if = {
+					limit = {
+						XRE = { has_war = yes }
+					}
+					country_event = { id = XFR_events.22 days = 1 }
+				}
+				else = {
+					give_guarantee = XRE
+					custom_effect_tooltip = XSK_protect_the_north_tt
+				}
+			}
 		}
 	}
 
@@ -2945,28 +2983,28 @@ focus_tree = {
 					}
 				}
 			}
-			every_other_country = {
-				limit = {
-					DEN_is_chinese_nation = yes
-					NOT = {
-						OR = {
-							has_government = fascism
-							has_government = communism
-						}
-					}
-					OR = {
-						is_owner_neighbor_of = ROOT
-						any_other_country = {
-							DEN_is_chinese_nation = yes
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						DEN_is_chinese_nation = yes
+						NOT = {
 							OR = {
 								has_government = fascism
 								has_government = communism
 							}
-							is_owner_neighbor_of = PREV
+						}
+						OR = {
+							is_owner_neighbor_of = ROOT
+							any_other_country = {
+								DEN_is_chinese_nation = yes
+								OR = {
+									has_government = fascism
+									has_government = communism
+								}
+								is_owner_neighbor_of = PREV
+							}
 						}
 					}
-				}
-				hidden_effect = {
 					add_ai_strategy = {
 						type = befriend
 						id = XSK
@@ -3028,6 +3066,7 @@ focus_tree = {
 		search_filters = { }
 
 		completion_reward = {
+			custom_effect_tooltip = XSK_invite_japanese_nations_tt
 			every_other_country = {
 				limit = {
 					NOT = {
@@ -3037,8 +3076,34 @@ focus_tree = {
 						is_ally_with = ROOT
 					}
 					DEN_is_japanese_nation = yes
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
 				}
 				country_event = { id = XFR_events.22 days = 1 }
+			}
+			custom_effect_tooltip = XSK_invite_japanese_nations_tt2
+			every_other_country = {
+				limit = {
+					NOT = {
+						has_war_with = ROOT
+					}
+					NOT = {
+						is_ally_with = ROOT
+					}
+					DEN_is_japanese_nation = yes
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
 			}
 		}
 	}
@@ -3128,6 +3193,32 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 4 }
 			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = XSK_reclaim_chinese_lands
+		icon = GFX_focus_generic_land_reclamation
+		prerequisite = { focus = XSK_pacify_chinese_rivals focus = XSK_focus_on_central_china }
+		#mutually_exclusive = { focus = XSK_claim_the_mandate_of_heaven }
+		x = 4
+		y = 1
+		relative_position_id = XSK_pacify_chinese_rivals
+
+		available = {
+			is_subject = no
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			custom_effect_tooltip = XSK_reclaim_chinese_lands_tt
 		}
 	}
 
