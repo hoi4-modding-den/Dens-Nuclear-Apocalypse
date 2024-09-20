@@ -107,6 +107,25 @@ ideas = {
 				political_power_factor = -0.25
 			}
 		}
+		XHK_hanyang_dominance = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.25
+				war_support_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
 		XHK_guangdong_menace = {
 			picture = generic_constitutional_guarantees
 			

@@ -87,3 +87,25 @@ country_event = {
 		
 	}
 }
+# Invite to Alliance Generic
+country_event = {
+    id = XHK.5
+    title = XHK.5.t
+    picture = GFX_report_event_DEN_celebration
+    desc = XHK.5.d
+    
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XHK.5.a
+		XHK = {
+			add_to_faction = ROOT
+		}
+    }
+	option = {
+		name = XHK.5.b
+		
+	}
+}

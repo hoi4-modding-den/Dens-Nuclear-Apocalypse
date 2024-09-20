@@ -59,7 +59,23 @@ characters = {
 			ideology = XHK_corporatism
 			desc = XHK_corporate_commission_desc
 			traits = {  }
-			expire = "2277.9.9.9"
+			expire = "9999.9.9.9"
+			id = -1
+		}
+		
+	}
+	XHK_the_ceo = {
+		name = "The CEO"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XHK_the_ceo"
+			}
+		}
+		country_leader = {
+			ideology = XHK_corporatism
+			desc = XHK_the_ceo_desc
+			traits = {  }
+			expire = "2281.9.9.9"
 			id = -1
 		}
 		

@@ -993,12 +993,12 @@
 		}
 	}
 	focus = {
-		id = XHK_expand_corporate_assets
+		id = XHK_private_mercinaries
 #		icon = GFX_focus_SWE_radiotjanst
 		
 		prerequisite = { focus = XHK_reorganize_the_state }
 	#	mutually_exclusive = { focus = XHK_deal_with_the_devil }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = XHK_reorganize_the_state
 
@@ -1026,6 +1026,123 @@
 
 		completion_reward = {
 			unlock_decision_category_tooltip = XHK_corporate_mercinaries
+		}
+	}
+	focus = {
+		id = XHK_casino_alliance
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_reorganize_the_state }
+	#	mutually_exclusive = { focus = XHK_corporate_board }
+		x = -1
+		y = 1
+		relative_position_id = XHK_reorganize_the_state
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_faction = "Corporate Interests Protection Commission"
+			XEX = {
+				country_event = XHK.5
+			}
+		}
+	}
+	focus = {
+		id = XHK_expand_to_railroad_tycoons
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_casino_alliance }
+		x = -1
+		y = 1
+		relative_position_id = XHK_casino_alliance
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			XRE = {
+				country_event = XHK.5
+			}
+		}
+	}
+	focus = {
+		id = XHK_guangdong_takeover
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_casino_alliance }
+		prerequisite = { focus = XHK_private_mercinaries }
+		prerequisite = { focus = XHK_corporate_board focus = XHK_hanyang_consolidation }
+	#	mutually_exclusive = { focus = XHK_corporate_board }
+		x = 1
+		y = 1
+		relative_position_id = XHK_casino_alliance
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			declare_war_on = {
+				target = XGD
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1098,8 +1215,11 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.1
+			promote_character = XHK_the_ceo
+			swap_ideas = {
+				remove_idea = XHK_corrupt_assembly
+				add_idea = XHK_hanyang_dominance
+			}
 		}
 	}
 	focus = {
