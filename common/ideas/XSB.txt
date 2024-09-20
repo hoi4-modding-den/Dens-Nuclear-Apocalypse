@@ -1,0 +1,45 @@
+ideas = {
+	country = {
+		# Starting Spirits
+		XSB_treaty_of_yangon = {
+			picture = hol_the_foundations_of_defense
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				communism_drift = 0.03
+			}
+		}
+
+		XSB_followers_of_sangkhism = {
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				communism_acceptance = 50
+				recruitable_population_factor = 0.05
+			}
+		}
+		
+		# National Spirits
+	}
+}	

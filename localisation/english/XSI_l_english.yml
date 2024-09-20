@@ -20,6 +20,7 @@
  
  ### Leaders ###  
  XSI_the_red_eternal:0 "The Red Eternal" 
+ chairman_saeng_2_desc:0 "Guaranteeing the power to the people and the spreading of Sangkhist ideals through the Siamese state, Saeng II has led the country out of the chaotic era following both the Council Crisis and the re-organization of the nation after the transition to a neo-communist regime following the principle of Sankhism. Following the reconstruction era, Saeng II issued a campaign of national decrees to bring social order to Siam and to prepare for the future of the state. Yet, today, as the situation has mostly stabilized, both the people and the army are ready to recover their lost lands and spread Sangkhism throughout all of Asia. If Saeng II manages to complete this task, he may very well be regarded as the greatest personality Siam has ever seen."
 
  ### Political Parties/Ideologies ###
 
@@ -33,6 +34,13 @@
  XSI_military_civic_rivarly_army_dominance:0 "Military-Civic Rivalry: Army Dominant"
  XSI_military_civic_rivarly_army_dominance_desc:0 ""A state cannot be led under dissaray and mayhem", one of the first sentences to be pronounced as General Saeng II overthrew the weak council held by corrupt politicans, and instead replaced it with a military state under Sangkhist ideals. Indeed, after the revival of the Siamese nation three centuries after the bombs dropped, the state of chaos could be seen everywhere, and the fragile council put in place to reorganize the rebuilding of the state was failing in every sector. After the intervention of the army and the transition to the Sangkhist regime, things began to improve, yet all still controlled by the military. As the situation begins to stabilize, the people increasingly ask themselves if the civilian instutituins should return to rule over the nation, or potentially have a balanced system, the future is unknown but also unpredicatble."
  
+ XSB_treaty_of_yangon:0 "Treaty of Yangon"
+ XSB_treaty_of_yangon_desc:0 "After the "peaceful" transition to the Sangkhist regime in the §Y$XSB_country_nc$§! in March 2234 after the "Scarlet Revolution", the every-growing relationship between the socialist republic and the §Y$XSI_country_nc$§! led to the newborn republic joining the Siamese sphere of influence under the Treaty of Yangon, with the goal of spreading Sangkhism all throughout the region and liberate their lost territories. This link between the two nations was recently reinforced to a higher degree with the start of the Phm̀ā Plan, which aims to fully incorporate the Socialist Republic of South Burma into a unified state with the §Y$XSI_country_nc$§!. This began with the Malay Agreement, which officially recognized the annexation of Eastern Burma, more precisely, Mon and Tanintharyi, and plans to one day fully unite the Sangkhist people of South-East Asia."
+
+ XSB_followers_of_sangkhism:0 "Followers of Sangkhism"
+ XSB_followers_of_sangkhism_desc:0 "Ever since the nationwide change of ideology to follow the neo-communist ideals of Siam, known as Sangkhism, the Socialist Republic of South Burma has faced a lot of drawbacks and unexpected resistance within the state’s borders. This included the rise of anti-governmental paramilitaries that had plagued the new administration for months till they were fully quelled. Yet, remnants still remain, and before an integration with the Siamese Revolutionary Front is made possibles, these separatists and anti-governmental agents would need to be dealt with swiftly, either through peaceful or warmongering ways."
+
+
  ### Events ###
  
  ### Decisions ###

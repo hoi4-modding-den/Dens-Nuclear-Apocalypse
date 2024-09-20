@@ -141,6 +141,27 @@ bookmarks = {
 				XDA_Mirage_Government
 			}
 		}
+		"XSI" = {
+			ideology = communism
+			history = "XSI_history_desc"
+			focuses = {
+			}
+			ideas = {
+				XSI_treaty_of_yangon
+				XSI_burmese_paciication_campaign
+				XSI_military_civic_rivarly_army_dominance
+			}
+		}
+		"XSB" = {
+			ideology = communism
+			history = "XSB_history_desc"
+			focuses = {
+			}
+			ideas = {
+				XSB_treaty_of_yangon
+				XSB_followers_of_sangkhism
+			}
+		}
 		"XNP" = {
 			ideology = democratic
 			history = "XNP_history_desc"
