@@ -1,0 +1,152 @@
+ideas = {
+    country = {
+
+        XEX_casino_profits = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_government = communism
+            }
+
+            on_remove = {
+                add_ideas = XEX_appropriate_casino_riches
+            }
+
+           removal_cost = -1
+
+            picture = tur_balkan_central_bank_wealthy_greece
+
+            modifier = {
+                consumer_goods_factor = -0.2
+            }
+
+        }
+
+        XEX_growing_unrest = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_government = communism
+            }
+
+           removal_cost = -1
+
+            picture = ICE_general_strike
+
+            modifier = {
+                communism_drift = 0.03
+                stability_factor = -0.05
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+            }
+
+        }
+
+        XEX_growing_unrest2 = {
+            name = XEX_growing_unrest
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_government = communism
+            }
+
+           removal_cost = -1
+
+            picture = ICE_general_strike
+
+            modifier = {
+                communism_drift = 0.02
+                stability_factor = -0.1
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+            }
+
+        }
+
+        XEX_growing_unrest3 = {
+            name = XEX_growing_unrest
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_government = communism
+            }
+
+           removal_cost = -1
+
+            picture = ICE_general_strike
+
+            modifier = {
+                communism_drift = 0.05
+                stability_factor = -0.15
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
+            }
+
+        }
+
+        XEX_appropriate_casino_riches = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+           removal_cost = -1
+
+            picture = ROM_king_carol_emptied_accounts
+
+            modifier = {
+                consumer_goods_factor = -0.15
+                production_speed_buildings_factor = 0.05
+            }
+
+        }
+
+        XEX_enemy_of_casinos = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+           removal_cost = -1
+
+            picture = eng_tackle_capitalism
+
+            modifier = {
+                
+            }
+
+        }
+
+    }
+
+}

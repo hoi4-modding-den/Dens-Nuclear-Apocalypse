@@ -2,16 +2,62 @@ characters = {
 
 	### COUNTRY LEADERS ###
 
-	XEX_gambling_maxxing = {
-		name = "Avarage Gambler"
+	XEX_gamblerman = {
+		name = "Mr. Du Tu"
 		portraits = {
 			civilian = {
-				large = GFX_ideology_XEX_gambler
+				large = GFX_portrait_XEX_gamblerman
 			}
 		}
 		country_leader = {
-			ideology = XKR_casino_council
-			traits = {  }
+			ideology = XEX_casino_rule
+			traits = { XEX_king_of_gambling }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XEX_mihoyo_leader = {
+		name = "Aether"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_XEX_mihoyo_leader
+			}
+		}
+		country_leader = {
+			ideology = XEX_mihoyo
+			traits = { }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XEX_argentinian_gambler = {
+		name = "Monsieur Schmitler"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_XEX_argentinian_gambler
+			}
+		}
+		country_leader = {
+			ideology = XEX_anti_gamblerism
+			desc = XEX_argentinian_gambler_desc
+			traits = { XEX_former_gambler }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XEX_beijing_governor = {
+		name = "Huang Hanying"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JAP_zengo_yoshida
+			}
+		}
+		country_leader = {
+			ideology = XFR_emergency_government
+			traits = { XEX_beijing_governor_trait }
 			expire = "3000.9.9.9"
 			id = -1
 		}

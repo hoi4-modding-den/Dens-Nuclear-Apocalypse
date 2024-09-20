@@ -168,6 +168,19 @@ bookmarks = {
 				
 			}
 		}		
+		"XEX" = {
+			ideology = neutrality
+			history = "XEX_history_desc"
+			focuses = {
+				XEX_protect_our_interests
+				XEX_business_as_usual
+				XEX_protests_continue
+			}
+			ideas = {
+				XEX_casino_profits
+				XEX_growing_unrest
+			}
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

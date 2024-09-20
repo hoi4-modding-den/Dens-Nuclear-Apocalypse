@@ -1,18 +1,103 @@
 ﻿l_english:
  
- ### COUNTRY NAMES / COSMETIC ###
- XEX:0 "Bo Hai Gambling Cities"
- XEX_DEF:0 "The Bo Hai Gambling Cities"
- XEX_ADJ:0 "Bo-Hainian"
- STATE_1003:0 "Anti-Casinos Ghettos"
- STATE_1004:0 "Anti-Casinos Ghettos"
- STATE_1005:0 "Anti-Casinos Ghettos"
- STATE_743:0 "Diànnao Casino"
- STATE_597:0 "Sī Casino"
- STATE_614:0 "Jìrán Casino"
- STATE_608:0 "Wuyè Casino"
- STATE_609:0 "Yìcháng Casino"
- STATE_610:0 "Fēng Casino"
- STATE_716:0 "Huílái Casino"
- STATE_745:0 "Pínglùn Casino"
+# Country Names
+ XEX: "Bo Hai Territories"
+ XEX_DEF: "the Bo Hai Territories"
+ XEX_ADJ: "Bo-Hainian"
+ XEX_democratic: "Beijing Administration"
+ XEX_democratic_DEF: "the Beijing Administration"
+ XEX_democratic_ADJ: "Beijing"
+ XEX_neutrality: "Bo Hai Gambling Cities"
+ XEX_neutrality_DEF: "The Bo Hai Gambling Cities"
+ XEX_neutrality_ADJ: "Bo-Hainian"
+ XEX_fascism: "MiHoYo Corporation"
+ XEX_fascism_DEF: "MiHoYo Corporation"
+ XEX_fascism_ADJ: "MiHoYo"
+ XEX_communism: "Bo Hai Free Territories"
+ XEX_communism_DEF: "The Bo Hai Free Territories"
+ XEX_communism_ADJ: "Bo-Hainian"
+
+# States
+ STATE_1003: "Anti-Casinos Ghettos"
+ STATE_1004: "Anti-Casinos Ghettos"
+ STATE_1005: "Anti-Casinos Ghettos"
+ STATE_743: "Diànnao Casino"
+ STATE_597: "Sī Casino"
+ STATE_614: "Jìrán Casino"
+ STATE_608: "Wuyè Casino"
+ STATE_609: "Yìcháng Casino"
+ STATE_610: "Fēng Casino"
+ STATE_716: "Huílái Casino"
+ STATE_745: "Pínglùn Casino"
  
+
+ # Ideologies
+
+ XEX_casino_rule: "Plutocracy"
+ XEX_casino_rule_desc: "Plutocracy. Rule by the wealthy; a system wherein governance is indebted to, dependent upon or heavily influenced by the desires of the rich. Plutocratic influence can alter any form of government. For instance, if a significant number of elected representative positions in a republic are dependent upon financial support from wealthy sources, it is a plutocratic republic."
+ XEX_mihoyo: "Mihoyo"
+ XEX_mihoyo_desc: "MiHoYo Co., Ltd. is a Chinese video game development and publishing company. In addition to games, the company has created various products such as animated series, novels, comics, music, and merchandise. The company was established on February 13, 2012, and was headquartered in Shanghai, China. Following the Apocalypse and the establishment of the Bo-Hai Gambling Cities, MiHoYo moved to Beijing to continue to profit from the addictions of others."
+ XEX_anti_gamblerism: "Anti-Gamblerism"
+ XEX_anti_gamblerism_desc: "https://www.bundesdrogenbeauftragter.de/service/beratungsangebote/"
+
+# Characters
+
+ XEX_argentinian_gambler_desc: "Monsieur Schmitler is the organiser of the Anti-Casino Party. Originally a visitor from Argentina, he got stuck in a fridge during the nuclear apocalypse, being freed almost 200 years later by people in the Bo-Hai ghettos. A former gambling addict himself, he quickly organised a resistance movement against their casino overlords."
+
+
+# Traits
+
+ XEX_mihiyo_representative: "Face of MiHoYo"
+ XEX_mihiyo_representative_no_lar: "Face of MiHoYo"
+ XEX_former_gambler: "Former Gambler"
+ XEX_king_of_gambling: "King of Gambling"
+ XEX_beijing_governor_trait: "Military Governor"
+
+
+ # Parties
+
+ XEX_neutrality_party: "Casino Division"
+ XEX_neutrality_party_long: "Bo-Hai Gambling Group - Casino Division"
+ XEX_fascism_party: "MiHoYo Co. Ltd."
+ XEX_fascism_party_long: "Bo-Hai Gambling Group - Gatcha Division"
+ XEX_communism_party: "Anti-Casino Party"
+ XEX_communism_party_long: "Anti-Casino Party"
+ XEX_democratic_party: "Beijing City Council"
+ XEX_democratic_party_long: "Beijing City Council"
+ 
+ 
+# Ideas
+
+ XEX_casino_profits: "Gambling Profits"
+ XEX_casino_profits_desc: "The Bo-Hai Gambling Group works tirelessly to accumulate and hord massive amounts of wealth. So much that no one else will ever be able to spend them."
+ XEX_growing_unrest: "Anti-Casino Opposition"
+ XEX_growing_unrest_desc: "The poor and downtrodden have all gathered in the ghettos to protest against the immoral practices of the Bo-Hai Gambling Group."
+ XEX_appropriate_casino_riches: "Appropriate Casino Riches"
+ XEX_enemy_of_casinos: "Gambling Help Groups"
+
+
+# Focus Tree
+
+ XEX_protect_our_interests: "Protect our Interests"
+ XEX_protect_our_interests_desc: "With the continuing of the protests against the casino division of our group, we might need to take control of the situation to protect our company's interests."
+ XEX_crackdown: "Crack Down on Dissent"
+ XEX_crackdown_desc: ""
+ XEX_end_unrest: "Raze the Ghettos"
+ XEX_end_unrest_desc: ""
+
+ XEX_business_as_usual: "Business as Usual"
+ XEX_business_as_usual_desc: "These protests aren't going to achieve anything. The status quo will prevail."
+
+ XEX_protests_continue: "Protests Continue"
+ XEX_protests_continue_desc: "We the people deserve to be protected from the money-hungry bastards that run those casinos!"
+ XEX_sabotage_casinos: "Sabotage Casinos"
+ XEX_sabotage_casinos_desc: ""
+ XEX_rally_the_ghettos: "Rally the Ghettos"
+ XEX_rally_the_ghettos_desc: ""
+ XEX_overthrow_the_capitalists: "Overthrow the Plutocracy"
+ XEX_overthrow_the_capitalists_desc: ""
+
+
+# Bookmark
+ 
+ XEX_history_desc: "The Bo-Hai Gambling Cities are a state in which money rules everything. The owners of the casinos are de-facto ruling the nation like nobility, with Du Tu as their king."

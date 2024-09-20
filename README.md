@@ -42,6 +42,7 @@ Current Apocalypse:
   | XRY | Foxy | yeoudal |
   | XSK | 0rland2 | 0rland0 |
   | XTK | 0rland2 | 0rland0 |
+  | XEX | 0rland2 | 0rland0 |
   | XHK | H2O27 | h2o27 |
   | XGD | H2O27 | h2o27 |
   | XDA | StarstruckFlora | starstruckflora |
