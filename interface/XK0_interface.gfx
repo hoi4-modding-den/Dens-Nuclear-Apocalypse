@@ -139,4 +139,34 @@ spriteTypes = {
         }
         legacy_lazy_load = no
     }
+	spriteType = {
+		name = "GFX_gui_XK0_525_strip"
+		textureFile = "gfx/XK0/XK0_525_strip.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_gui_XK0_527_strip"
+		textureFile = "gfx/XK0/XK0_527_strip.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_gui_XK0_997_strip"
+		textureFile = "gfx/XK0/XK0_997_strip.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_gui_XK0_998_strip"
+		textureFile = "gfx/XK0/XK0_998_strip.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_gui_XK0_999_strip"
+		textureFile = "gfx/XK0/XK0_999_strip.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_gui_XK0_1000_strip"
+		textureFile = "gfx/XK0/XK0_1000_strip.dds"
+		noOfFrames = 5
+	}
 }

@@ -111,3 +111,294 @@ XK0_josea_rocket_program = {
 		}
     }
 }
+
+XK0_josea_road_program = {
+	XK0_road_program_525 = {
+		icon = GFX_decision_generic_decision
+        priority = 1
+		
+		visible = { 
+			has_country_flag = XK0_road_program_525 
+		}
+        on_map_mode = map_and_decisions_view
+		
+		days_re_enable = 1
+        days_remove = 56
+		# fire_only_once = yes
+		cost = 0
+		
+		highlight_states = { 
+			highlight_state_targets = { 
+				state = 525
+			}
+		}
+		
+		complete_effect = {
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		
+        remove_effect = {
+			525 = {
+				if = { 
+					limit = { 
+						infrastructure < 5 
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			clr_country_flag = XK0_road_program_525
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+    }
+	XK0_road_program_527 = {
+		icon = GFX_decision_generic_decision
+        priority = 1
+		
+		visible = { 
+			has_country_flag = XK0_road_program_527 
+		}
+        on_map_mode = map_and_decisions_view
+		
+		days_re_enable = 1
+        days_remove = 56
+		# fire_only_once = yes
+		cost = 0
+		
+		highlight_states = { 
+			highlight_state_targets = { 
+				state = 527
+			}
+		}
+		
+		complete_effect = {
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		
+        remove_effect = {
+			527 = {
+				if = { 
+					limit = { 
+						infrastructure < 5 
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			clr_country_flag = XK0_road_program_527
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+    }
+	XK0_road_program_997 = {
+		icon = GFX_decision_generic_decision
+        priority = 1
+		
+		visible = { 
+			has_country_flag = XK0_road_program_997 
+		}
+        on_map_mode = map_and_decisions_view
+		
+		days_re_enable = 1
+        days_remove = 56
+		# fire_only_once = yes
+		cost = 0
+		
+		highlight_states = { 
+			highlight_state_targets = { 
+				state = 997
+			}
+		}
+		
+		complete_effect = {
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		
+        remove_effect = {
+			997 = {
+				if = { 
+					limit = { 
+						infrastructure < 5 
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			clr_country_flag = XK0_road_program_997
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+    }
+	XK0_road_program_998 = {
+		icon = GFX_decision_generic_decision
+        priority = 1
+		
+		visible = { 
+			has_country_flag = XK0_road_program_998 
+		}
+        on_map_mode = map_and_decisions_view
+		
+		days_re_enable = 1
+        days_remove = 56
+		# fire_only_once = yes
+		cost = 0
+		
+		highlight_states = { 
+			highlight_state_targets = { 
+				state = 998
+			}
+		}
+		
+		complete_effect = {
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		
+        remove_effect = {
+			998 = {
+				if = { 
+					limit = { 
+						infrastructure < 5 
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			clr_country_flag = XK0_road_program_998
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+    }
+	XK0_road_program_999 = {
+		icon = GFX_decision_generic_decision
+        priority = 1
+		
+		visible = { 
+			has_country_flag = XK0_road_program_999 
+		}
+        on_map_mode = map_and_decisions_view
+		
+		days_re_enable = 1
+        days_remove = 56
+		# fire_only_once = yes
+		cost = 0
+		
+		highlight_states = { 
+			highlight_state_targets = { 
+				state = 999
+			}
+		}
+		
+		complete_effect = {
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		
+        remove_effect = {
+			999 = {
+				if = { 
+					limit = { 
+						infrastructure < 5 
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			clr_country_flag = XK0_road_program_999
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+    }
+	XK0_road_program_1000 = {
+		icon = GFX_decision_generic_decision
+        priority = 1
+		
+		visible = { 
+			has_country_flag = XK0_road_program_1000 
+		}
+        on_map_mode = map_and_decisions_view
+		
+		days_re_enable = 1
+        days_remove = 56
+		# fire_only_once = yes
+		cost = 0
+		
+		highlight_states = { 
+			highlight_state_targets = { 
+				state = 1000
+			}
+		}
+		
+		complete_effect = {
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		
+        remove_effect = {
+			1000 = {
+				if = { 
+					limit = { 
+						infrastructure < 5 
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			clr_country_flag = XK0_road_program_1000
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+    }
+}

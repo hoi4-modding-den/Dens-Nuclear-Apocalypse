@@ -19,6 +19,7 @@ set_popularities = {
 	fascism = 38
 	neutrality = 3
 }
+set_country_flag = XK0_country
 
 add_dynamic_modifier = { modifier = XK0_militancy }
 set_variable = { XK0_militancy_level = 10 }
@@ -28,6 +29,9 @@ set_variable = { XK0_democratic_drift = 0.04 }
 set_variable = { XK0_war_support_factor = -0.24 }
 set_variable = { XK0_weekly_manpower = -1000 }
 set_variable = { XK0_fascism_drift = -0.04 }
+XK0_increase_militancy = yes
+XK0_increase_militancy = yes
+XK0_increase_militancy = yes
 
 set_variable = { XK0_university_investments = 0.6 }
 

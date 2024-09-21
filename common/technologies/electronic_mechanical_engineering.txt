@@ -71,7 +71,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				country_event = XK0_focus.2
 			}
 		}
@@ -124,7 +124,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				525 = {
 					increase_state_category = yes
 				}
@@ -168,7 +168,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				army_experience = 20
 				air_experience = 20
 			}
@@ -227,7 +227,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				army_experience = 20
 				air_experience = 20
 			}
@@ -285,7 +285,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				add_ideas = XK0_defence_of_the_nation
 			}
 		}
@@ -340,7 +340,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				swap_ideas = {
 					remove_idea = XK0_defence_of_the_nation
 					add_idea = XK0_defence_of_the_nation2
@@ -395,7 +395,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				swap_ideas = {
 					remove_idea = XK0_defence_of_the_nation2
 					add_idea = XK0_defence_of_the_nation3
@@ -1000,7 +1000,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				unlock_decision_category_tooltip = XK0_josea_rocket_program
 				set_variable = { XK0_new_scientists_max = 0 }
 				set_variable = { XK0_jrp_rocketry_tests_max = 0 }
@@ -1060,7 +1060,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				unlock_decision_category_tooltip = XK0_josea_rocket_program
 				set_variable = { XK0_new_scientists_max = 0 }
 				set_variable = { XK0_jrp_rocketry_tests_max = 0 }
@@ -1130,7 +1130,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				unlock_decision_category_tooltip = XK0_josea_rocket_program
 				set_variable = { XK0_new_scientists_max = 0 }
 				set_variable = { XK0_jrp_rocketry_tests_max = 0 }
@@ -1191,7 +1191,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				unlock_decision_category_tooltip = XK0_josea_rocket_program
 				add_to_variable = { XK0_new_scientists_max = 0 }
 				add_to_variable = { XK0_josea_rocket_program = 1 }
@@ -1247,7 +1247,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = JET_ENGINES_RESEARCHED
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				add_tech_bonus = {
 					bonus = 0.5
 					uses = 3
@@ -1377,7 +1377,7 @@ technologies = {
 		
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				add_threat = 10
 				news_event = XK0_news.1
 			}
@@ -1390,7 +1390,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = XK0
+				has_country_flag = XK0_country
 				check_variable = { XK0_militancy_level > 40 }
 				factor = 2
 			}
@@ -1430,7 +1430,7 @@ technologies = {
 				play_warning_to_japan_effect = yes
 			}
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				add_threat = 40
 				news_event = XK0_news.2
 			}

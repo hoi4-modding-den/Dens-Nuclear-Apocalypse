@@ -74,7 +74,7 @@ technologies = {
 
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				add_stability = -0.1
 				country_event = XK0_focus.4
 			}
@@ -1300,7 +1300,7 @@ technologies = {
 
 		on_research_complete = {
 			if = {
-				limit = { tag = XK0 }
+				limit = { has_country_flag = XK0_country }
 				country_event = XK0_focus.3
 			}
 		}

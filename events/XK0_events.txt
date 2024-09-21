@@ -14,11 +14,13 @@ country_event = {
 	option = {
 		name = XK0_focus.999.a
 		ai_chance = { factor = 1 }
-		retire_country_leader = yes
+		set_country_flag = XK0_josea_road_program
+		add_ideas = closed_economy
 	}
 	option = {
 		name = XK0_focus.999.b
 		ai_chance = { factor = 1 }
+		set_cosmetic_tag = XK0_stalin
 		
 	}
 }
@@ -210,11 +212,83 @@ country_event = {
 		add_stability = -0.12
 		hidden_effect = {
 			country_event = {
-				id = XK0_focus.4012
+				id = XK0_focus.4011
 				days = 14
 				random_days = 7
 			}
 		}
+	}
+}
+
+country_event = {
+	id = XK0_focus.4011
+	title = XK0_focus.4011.title
+	desc = XK0_focus.4011.desc
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			start_civil_war = {
+				ideology = fascism
+				size = 0.3
+				capital = 999
+				states = {
+					525 999 1000
+				}
+				keep_unit_leaders_trigger = {
+					NOT = { has_trait = XK0_grand_marshal }
+				}
+				keep_political_leader = no
+				XK0_copy_important_flags = yes
+				XK0_increase_militancy = yes
+				XK0_increase_militancy = yes
+				XK0_increase_militancy = yes
+				XK0_increase_militancy = yes
+				add_stability = -0.2
+				load_oob = XK0_south
+				ROOT = {
+					add_stability = 0.2
+					load_oob = XK0_north
+					XK0_increase_militancy = yes
+					XK0_increase_militancy = yes
+					XK0_increase_militancy = yes
+					XK0_increase_militancy = yes
+					add_popularity = {
+						ideology = fascism
+						popularity = -0.3
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.2
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = XK0_called_for_stalin_help }
+				country_event = {
+					id = XK0_focus.40111
+					days = 28
+					random_days = 14
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = XK0_focus.4011.a
+		ai_chance = { factor = 1 }
+		random_other_country = {
+			limit = { has_country_flag = XK0_country }
+			change_tag_from = ROOT
+		}
+	}
+	
+	option = {
+		name = XK0_focus.4011.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
 	}
 }
 

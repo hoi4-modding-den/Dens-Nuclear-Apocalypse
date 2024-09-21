@@ -7,7 +7,7 @@ XK0_militancy_of_josea = {
 	visible_when_empty = yes
 	
 	visible = {
-		tag = XK0
+		has_country_flag = XK0_country
 	}
 }
 XK0_josea_rocket_program = {
@@ -18,7 +18,20 @@ XK0_josea_rocket_program = {
 	visible_when_empty = yes
 	
 	visible = {
-		tag = XK0
+		has_country_flag = XK0_country
 		check_variable = { XK0_josea_rocket_program > 0 }
+	}
+}
+XK0_josea_road_program = {
+	priority = 90
+	icon = GFX_decision_category_border_war
+	scripted_gui = XK0_road_scripted_gui
+	
+	picture = GFX_decision_cat_generic_mefo_bills
+	visible_when_empty = yes
+	
+	visible = {
+		has_country_flag = XK0_country
+		has_country_flag = XK0_josea_road_program
 	}
 }
