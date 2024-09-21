@@ -297,7 +297,7 @@ foreign_politics = {
 
 	XSK_enact_protection_protocol = {
 
-		icon = GFX_decision_eng_trade_unions_support
+		icon = GFX_decision_generic_army_support
 
 		priority = 50
 
@@ -321,13 +321,15 @@ foreign_politics = {
 			}
 			FROM = {
 				has_war = yes
-				is_guaranteed_by = ROOT
+				OR = {
+					is_guaranteed_by = ROOT
+					is_in_faction_with = ROOT
+				}
 			}
 		}
 
 		visible = { 
 			NOT = { has_war_with = FROM }
-			has_completed_focus = XSK_protect_the_north
 			FROM = {
 				is_in_faction = no
 			}
@@ -344,7 +346,36 @@ foreign_politics = {
 		complete_effect = {
 			add_war_support = 0.05
 			FROM = {
-				country_event = { id = XFR_events.22 days = 1 }
+				custom_effect_tooltip = XSK_enact_protection_protocol_tt
+				hidden_effect = {
+					division_template = {
+						name = "Ottoman Survey Corps"
+						override_model = ITA_infantry_alt_3_entity
+						template_counter = 67
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+						}
+					}
+					random_core_state = {
+						limit = {
+							is_controlled_by = FROM
+						}
+						create_unit = {
+							division = "name = \"Ottoman Survey Corps\" division_template = \"Ottoman Survey Corps\" start_experience_factor = 0.4 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = FROM
+							allow_spawning_on_enemy_provs = yes 
+							count = 3
+						}
+					}
+				}
 			}
         }
 

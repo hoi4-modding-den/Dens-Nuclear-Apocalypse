@@ -14,8 +14,28 @@ ideas = {
                 has_government = communism
             }
 
-            on_remove = {
-                add_ideas = XEX_appropriate_casino_riches
+           removal_cost = -1
+
+            picture = tur_balkan_central_bank_wealthy_greece
+
+            modifier = {
+                consumer_goods_factor = -0.2
+            }
+
+        }
+
+        XEX_casino_profits2 = {
+            name = XEX_casino_profits
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_government = communism
             }
 
            removal_cost = -1
@@ -23,7 +43,7 @@ ideas = {
             picture = tur_balkan_central_bank_wealthy_greece
 
             modifier = {
-                consumer_goods_factor = -0.2
+                consumer_goods_factor = -0.3
             }
 
         }
@@ -108,6 +128,27 @@ ideas = {
 
         }
 
+        XEX_open_door_policy = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = can_wartime_prices_and_trade_board
+
+            modifier = {
+                civilian_intel_to_others = 25
+                weekly_manpower = 1000
+                conscription_factor  = -0.1
+            }
+
+        }
+
         XEX_appropriate_casino_riches = {
             allowed = {
 				always = yes
@@ -143,6 +184,27 @@ ideas = {
 
             modifier = {
                 
+            }
+
+        }
+
+        XEX_guard_division_ready = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+           removal_cost = -1
+
+            picture = ARG_war_division
+
+            modifier = {
+                army_leader_start_level = 1
+                army_core_defence_factor = 0.1
+                consumer_goods_factor = 0.1
             }
 
         }

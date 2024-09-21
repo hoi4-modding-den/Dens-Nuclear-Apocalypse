@@ -5528,11 +5528,61 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XFR_end_alsace_independence
+		icon = GFX_focus_XFR_reichsland_lothringen
+		prerequisite = { focus = XFR_warplan_middle_francia }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XFR_warplan_middle_francia
+
+		available = {
+			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
+			is_subject = no
+			is_neighbor_of = XAL
+			NOT = { is_ally_with = XAL }
+		}
+
+		bypass = {
+			XAL = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		will_lead_to_war_with = XAL
+		completion_reward = {
+			XAL = {
+				every_core_state = {
+					add_core_of = ROOT
+				}
+			}
+			create_wargoal = {
+				target = XAL
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
 		id = XFR_influence_our_enemies
 		icon = GFX_focus_generic_secret_service_agency
 		prerequisite = { focus = XFR_warplan_middle_francia }
 		#mutually_exclusive = { focus =  }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = XFR_warplan_middle_francia
 
@@ -5617,7 +5667,7 @@ focus_tree = {
 	focus = {
 		id = XFR_rhone_expedition2
 		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = XFR_warplan_middle_francia }
+		prerequisite = { focus = XFR_end_alsace_independence }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
@@ -6172,59 +6222,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XFR_end_alsace_independence
-		icon = GFX_focus_XFR_reichsland_lothringen
-		prerequisite = { focus = XFR_warplan_east_francia }
-		#mutually_exclusive = { focus =  }
-		x = 0
-		y = 1
-		relative_position_id = XFR_warplan_east_francia
-
-		available = {
-			has_country_leader = { character = XFR_herzog_julius ruling_only = yes }
-			is_subject = no
-			is_neighbor_of = XAL
-			NOT = { is_ally_with = XAL }
-		}
-
-		bypass = {
-			XAL = {
-				OR = {
-					is_subject_of = ROOT
-					has_war_with = ROOT
-					exists = no
-				}
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		will_lead_to_war_with = XAL
-		completion_reward = {
-			XAL = {
-				every_core_state = {
-					add_core_of = ROOT
-				}
-			}
-			create_wargoal = {
-				target = XAL
-				type = annex_everything
-			}
-		}
-	}
-
-	focus = {
 		id = XFR_defeat_the_us_army
 		icon = GFX_focus_XAL_attack_us_military
-		prerequisite = { focus = XFR_end_alsace_independence focus = XFR_conquer_the_united_kingdom }
+		prerequisite = { focus = XFR_warplan_east_francia focus = XFR_conquer_the_united_kingdom }
 		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 2
@@ -6360,7 +6360,7 @@ focus_tree = {
 	focus = {
 		id = XFR_liberate_south_germany
 		icon = GFX_focus_XFR_strike_southern_germany
-		prerequisite = { focus = XFR_end_alsace_independence }
+		prerequisite = { focus = XFR_warplan_east_francia }
 		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 2

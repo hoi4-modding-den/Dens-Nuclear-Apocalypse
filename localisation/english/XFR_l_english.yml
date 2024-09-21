@@ -1782,7 +1782,7 @@ decision_cost_100_army_xp_tooltip: "It costs £GFX_army_experience §Y100§! to 
 
 decision_cost_1_civ: "£civ_factory §Y1§!"
 decision_cost_1_civ_blocked: "£civ_factory §R1§!"
-decision_cost_1_civ_tooltip: "It costs £civ_factory §Y1§! to take the decision\nClicking this decision requires at least one £civ_factory §YCivilian Factory§! in any §Ycore state§!. This decision does §Rnot§! count §Yoff-map factories§! or §Yfactories from puppets§!."
+decision_cost_1_civ_tooltip: "It costs £civ_factory §Y1§! to take the decision\n \nClicking this decision requires at least one £civ_factory §YCivilian Factory§! in any §Ycore state§!. This decision does §Rnot§! count §Yoff-map factories§! or §Yfactories from puppets§!."
 
 
 # Opinion Modifiers

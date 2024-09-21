@@ -1,4 +1,18 @@
 ﻿division_template = {
+	name = "Casino Guards"
+	division_names_group = XEX_GAR_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
 	name = "Infantry Division"
 	division_names_group = XEX_INF_01
 
@@ -14,20 +28,7 @@
 		infantry = { x = 2 y = 2 }
 	}
 }
-division_template = {
-	name = "Casino Guards"
-	division_names_group = XEX_GAR_01
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-	priority = 0
-}
+
 
 
 units = {
@@ -77,6 +78,15 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
+			creator = "XEX"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = convoy
 			creator = "XEX"
 		}
 		requested_factories = 1

@@ -2097,7 +2097,7 @@ DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = AI_NO_DIPLOMACY_TT
-			always = no
+			is_guaranteed_by = FROM
 		}
 	}
 }

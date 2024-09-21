@@ -2,16 +2,30 @@ capital = 608
 
 oob = "XEX_army"
 
+set_country_flag = dont_use_default_political_advisors
+
 recruit_character = XEX_gamblerman
 recruit_character = XEX_mihoyo_leader
 recruit_character = XEX_argentinian_gambler
 recruit_character = XEX_beijing_governor
+
+recruit_character = XEX_gacha_general_1
+recruit_character = XEX_gacha_general_2
+recruit_character = XEX_gacha_general_3
+recruit_character = XEX_gacha_general_4
+recruit_character = XEX_gacha_general_5
 
 add_ideas = {
 	free_trade
 	disarmed_nation
 	XEX_casino_profits
 	XEX_growing_unrest
+	XEX_open_door_policy
+}
+
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
 }
 
 set_technology = {

@@ -14,6 +14,27 @@ spriteTypes = {
     }
 
 	spriteType = {
+        name = "GFX_portrait_XEX_gacha_general_1"
+        texturefile = "gfx/leaders/XEX/portrait_XEX_ganyu.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XEX_gacha_general_2"
+        texturefile = "gfx/leaders/XEX/portrait_XEX_jean.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XEX_gacha_general_3"
+        texturefile = "gfx/leaders/XEX/portrait_XEX_neuvillette.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XEX_gacha_general_4"
+        texturefile = "gfx/leaders/XEX/portrait_XEX_diluc.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_XEX_gacha_general_5"
+        texturefile = "gfx/leaders/XEX/portrait_XEX_alhaitham.dds"
+    }
+
+	spriteType = {
 		name = "GFX_ideology_XEX_casino_rule"
 		texturefile = "gfx/interface/XKR/XKR_casino_ideology.dds"
 	}
@@ -46,6 +67,78 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/XEX/XEX_mihoyo.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+        name = "GFX_focus_XEX_another_roll"
+        texturefile = "gfx/interface/goals/XEX/XEX_another_roll.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XEX_another_roll_shine"
+		texturefile = "gfx/interface/goals/XEX/XEX_another_roll.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XEX/XEX_another_roll.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XEX/XEX_another_roll.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+        name = "GFX_focus_XEX_realm_of_genshin"
+        texturefile = "gfx/interface/goals/XEX/XEX_realm_of_genshin.png"
+    }
+	SpriteType = {
+		name = "GFX_focus_XEX_realm_of_genshin_shine"
+		texturefile = "gfx/interface/goals/XEX/XEX_realm_of_genshin.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XEX/XEX_realm_of_genshin.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XEX/XEX_realm_of_genshin.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

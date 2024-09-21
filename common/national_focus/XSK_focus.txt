@@ -2933,7 +2933,6 @@ focus_tree = {
 				}
 				else = {
 					give_guarantee = XRE
-					custom_effect_tooltip = XSK_protect_the_north_tt
 				}
 			}
 		}

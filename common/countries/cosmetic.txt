@@ -6,6 +6,14 @@ XSK_ottoman_china = {
 	color = rgb { 189 31 152 }
 	color_ui = rgb { 189 31 152 }
 }
+XEX_mihoyo_tag = {
+	color = rgb { 102 183 255 }
+	color_ui = rgb { 78 164 221 }
+}
+XEX_genshin_tag = {
+	color = rgb { 173 216 255 }
+	color_ui = rgb { 78 164 221 }
+}
 XHK_CRC= {
 	color = rgb { 133 89 68 }
 	color_ui = rgb { 133 89 68 }

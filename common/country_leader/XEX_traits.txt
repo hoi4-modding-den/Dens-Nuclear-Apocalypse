@@ -4,7 +4,8 @@ leader_traits = {
 		random = no
 
 		stability_factor = 0.1
-		intel_network_gain = 0.1
+		intel_network_gain_factor = 0.1
+		civilian_intel_factor = 0.5
 
 		ai_will_do = {
 			factor = 0
