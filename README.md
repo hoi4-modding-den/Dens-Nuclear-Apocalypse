@@ -96,6 +96,9 @@ European Apocalypse:
 | XRM | Woodymapper      | woody6982           |
 | XSS | Woodymapper      | woody6982           |
 | XRP | Carrera075       | carrera075          |
+| XRU | Booloomer        | lerainbowraider     |
+| XSO | Booloomer        | lerainbowraider     |
+| XSP | Booloomer        | lerainbowraider     |
 | XTI | H2o27            | h2o27               |
 | XHP | icewizard521     | icewizard521        | 
 
