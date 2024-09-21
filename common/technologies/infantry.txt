@@ -59,7 +59,7 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons2
 			research_cost_coeff = 1
-		}		
+		}
 
 		research_cost = 1.5
 		start_year = 2236
@@ -70,6 +70,14 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+		}
+
+		on_research_complete = {
+			if = {
+				limit = { tag = XK0 }
+				add_stability = -0.1
+				country_event = XK0_focus.4
+			}
 		}
 		
 		ai_will_do = {
@@ -1235,7 +1243,7 @@ technologies = {
 		}
 	}
 	
-		support_weapons = {
+	support_weapons = {
 
 		infantry = {
 			defense = 0.05
@@ -1288,6 +1296,13 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+		}
+
+		on_research_complete = {
+			if = {
+				limit = { tag = XK0 }
+				country_event = XK0_focus.3
+			}
 		}
 		
 		ai_will_do = {

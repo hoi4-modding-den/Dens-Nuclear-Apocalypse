@@ -18,7 +18,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "half_dial"
 			position = { x = 10 y = -40 }
-
+			
 			iconType = {
 				name = "half_dial_back"
 				spriteType = "GFX_Dial_Back_Half"

@@ -8,3 +8,8 @@ XK0_militancy = {
 	weekly_manpower = XK0_weekly_manpower
 	fascism_drift = XK0_fascism_drift
 }
+XK0_university_of_josea_dm = { 
+	icon = GFX_idea_XK0_militancy
+	research_speed_factor = XK0_research_factor
+	political_power_gain = -1
+}

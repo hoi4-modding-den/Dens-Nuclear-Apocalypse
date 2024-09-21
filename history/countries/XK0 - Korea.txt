@@ -29,6 +29,8 @@ set_variable = { XK0_war_support_factor = -0.24 }
 set_variable = { XK0_weekly_manpower = -1000 }
 set_variable = { XK0_fascism_drift = -0.04 }
 
+set_variable = { XK0_university_investments = 0.6 }
+
 add_ideas = XK0_university_of_josea
 add_ideas = XK0_limited_armed_forces
 
@@ -40,10 +42,16 @@ set_country_flag = armour_folder_disabled
 set_country_flag = support_folder_disabled
 set_country_flag = infantry_folder_disabled
 
+country_event = {
+	id = XK0_focus.1
+	days = 75
+}
+
 recruit_character = XK0_seong_ho_han
 recruit_character = XK0_ken_matsubara
 recruit_character = XK0_makari_yegorov
 recruit_character = XK0_sung_min_yi
+recruit_character = XK0_min_jun_gang
 
 set_technology = {
 	infantry_weapons = 1

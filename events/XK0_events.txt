@@ -14,12 +14,12 @@ country_event = {
 	option = {
 		name = XK0_focus.999.a
 		ai_chance = { factor = 1 }
-		XK0_increase_militancy = yes
+		retire_country_leader = yes
 	}
 	option = {
 		name = XK0_focus.999.b
 		ai_chance = { factor = 1 }
-		XK0_decrease_militancy = yes
+		
 	}
 }
 
@@ -45,5 +45,225 @@ country_event = {
 		XK0_decrease_militancy = yes
 		add_research_slot = 1
 		clr_country_flag = industry_folder_disabled
+	}
+}
+
+country_event = {
+	id = XK0_focus.2
+	title = XK0_focus.2.title
+	desc = XK0_focus.2.desc
+	picture = GFX_report_event_communist_leader
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XK0_focus.2.a
+		ai_chance = { factor = 1 }
+		XK0_decrease_militancy = yes
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_timed_idea = {
+			idea = XK0_lowered_taxes
+			days = 365
+		}
+	}
+	option = {
+		name = XK0_focus.2.b
+		ai_chance = { factor = 1 }
+		XK0_decrease_militancy = yes
+		add_popularity = {
+			ideology = communism
+			popularity = 0.08
+		}
+		add_timed_idea = {
+			idea = XK0_minimum_wage
+			days = 365
+		}
+	}
+	option = {
+		name = XK0_focus.2.c
+		ai_chance = { factor = 1 }
+		XK0_increase_militancy = yes
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_timed_idea = {
+			idea = XK0_increased_funding_armed_forces
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = XK0_focus.3
+	title = XK0_focus.3.title
+	desc = XK0_focus.3.desc
+	picture = GFX_report_event_generic_military_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XK0_focus.3.a
+		ai_chance = { factor = 1 }
+		XK0_increase_militancy = yes
+		add_manpower = 50000
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+	}
+	option = {
+		name = XK0_focus.3.b
+		ai_chance = { factor = 1 }
+		XK0_decrease_militancy = yes
+		add_manpower = -10000
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.03
+		}
+	}
+}
+
+country_event = {
+	id = XK0_focus.4
+	title = XK0_focus.4.title
+	desc = XK0_focus.4.desc
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XK0_focus.4.a
+		ai_chance = { factor = 1 }
+		XK0_increase_militancy = yes
+		add_manpower = -1000
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		hidden_effect = {
+			country_event = {
+				id = XK0_focus.401
+				days = 7
+				random_days = 21
+			}
+		}
+	}
+	option = {
+		name = XK0_focus.4.b
+		ai_chance = { factor = 1 }
+		XK0_decrease_militancy = yes
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.01
+		}
+		hidden_effect = {
+			country_event = {
+				id = XK0_focus.402
+				days = 14
+				random_days = 14
+			}
+		}
+	}
+}
+
+country_event = {
+	id = XK0_focus.401
+	title = XK0_focus.401.title
+	desc = XK0_focus.401.desc
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XK0_focus.401.a
+		ai_chance = { factor = 1 }
+		XK0_increase_militancy = yes
+		add_stability = -0.06
+		set_country_flag = XK0_called_for_stalin_help
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = XK0_focus.4011
+				days = 28
+				random_days = 14
+			}
+		}
+	}
+	option = {
+		name = XK0_focus.401.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.12
+		hidden_effect = {
+			country_event = {
+				id = XK0_focus.4012
+				days = 14
+				random_days = 7
+			}
+		}
+	}
+}
+
+news_event = {
+	id = XK0_news.1
+	title = XK0_news.1.title
+	desc = XK0_news.1.desc
+	picture = GFX_news_event_nuke
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = XK0_news.1.a
+		trigger = { tag = XK0 }
+		ai_chance = { factor = 1 }
+		XK0_increase_militancy = yes
+		hidden_effect = {
+			XK0_increase_militancy = yes
+		}
+	}
+	option = {
+		name = XK0_news.1.b
+		trigger = { NOT = { tag = XK0 } }
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = XK0_news.2
+	title = XK0_news.2.title
+	desc = XK0_news.2.desc
+	picture = GFX_news_event_nuke
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = XK0_news.2.a
+		trigger = { tag = XK0 }
+		ai_chance = { factor = 1 }
+		XK0_increase_militancy = yes
+		hidden_effect = {
+			XK0_increase_militancy = yes
+		}
+	}
+	option = {
+		name = XK0_news.2.b
+		trigger = { NOT = { tag = XK0 } }
+		ai_chance = { factor = 1 }
 	}
 }

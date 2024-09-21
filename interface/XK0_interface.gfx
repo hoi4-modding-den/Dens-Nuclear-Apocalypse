@@ -40,6 +40,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_portrait_XK0_min_jun_gang"
+		texturefile = "gfx/XK0/min_jun_gang.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
 		name = "GFX_Dial_Background"
 		textureFile = "gfx/XK0/dial_background.dds"
 	}
