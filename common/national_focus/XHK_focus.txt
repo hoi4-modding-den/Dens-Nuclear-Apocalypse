@@ -1466,6 +1466,225 @@
 		}
 	}
 	focus = {
+		id = XHK_privatize_guanxi
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_incorporate_guangdong }
+		prerequisite = { focus = XHK_de_facto_neofeudalism focus = XHK_reassign_workers_to_frontline }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = -1
+		y = 1
+		relative_position_id = XHK_incorporate_guangdong
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			declare_war_on = {
+				target = XGX
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = XHK_incorporate_guanxi
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_privatize_guanxi }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 0
+		y = 1
+		relative_position_id = XHK_privatize_guanxi
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			XGX = {
+				all_core_state = {
+					is_owned_and_controlled_by = XHK
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = XGX
+				}
+				add_core_of = XHK
+			}
+		}
+	}
+	focus = {
+		id = XHK_free_shanghai
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_incorporate_guangdong }
+		prerequisite = { focus = XHK_de_facto_neofeudalism focus = XHK_reassign_workers_to_frontline }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_incorporate_guangdong
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				target = XSG
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = XHK_free_central_china
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_free_shanghai }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 0
+		y = 1
+		relative_position_id = XHK_free_shanghai
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				target = XWH
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = XAU
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = XHK_reorganize_central_china
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_incorporate_guanxi }
+		prerequisite = { focus = XHK_free_central_china }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_incorporate_guanxi
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			XSG = {
+				is_puppet_of = XHK
+				owns_state = 600
+				owns_state = 595
+			}
+			XWH = {
+				is_puppet_of = XHK
+			}
+			XAU = {
+				is_puppet_of = XHK
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = "make custom cosmetic tags n stuff"
+			transfer_state = 600
+			transfer_state = 595
+			add_state_core = 600
+			add_state_core = 595
+		}
+	}
+	focus = {
 		id = XHK_radical_sentiments
 		icon = GFX_XHK_radical_sentiments
 		
