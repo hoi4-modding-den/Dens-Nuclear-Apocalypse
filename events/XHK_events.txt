@@ -48,6 +48,27 @@ country_event = {
     
     option = {
         name = XHK.3.a
+
+        ai_chance = {
+            factor = 20
+
+            modifier = {
+                strength_ratio = {
+                    tag = XHK
+                    ratio > 1
+                }
+                add = -10
+            }
+
+            modifier = {
+                strength_ratio = {
+                    tag = XHK
+                    ratio > 0.7
+                }
+                add = -10
+            }
+        }
+
 		XHK = {
 			annex_country = {
 				target = ROOT
@@ -57,6 +78,11 @@ country_event = {
     }
 	option = {
 		name = XHK.3.b
+
+        ai_chance = {
+            factor = 80
+        }
+
 		XHK = {
 			declare_war_on = {
 				target = ROOT
