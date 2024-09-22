@@ -15,6 +15,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_civ_factory_texticon"
+		texturefile = "gfx/XAU/civ_factory.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_mil_factory_texticon"
+		texturefile = "gfx/XAU/mil_factory.dds"
+		legacy_lazy_load = no
+	}
+
 	### GUI ###
 
 	### WELCOME SCREEN ###
@@ -41,6 +53,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_XAU_header_bg_200x32"
 		texturefile = "gfx/interface/XAU/XAU_header_200x32.dds"
+	}
+	spriteType = {
+		name = "GFX_XAU_automaton_construction_button"
+		texturefile = "gfx/interface/XAU/XAU_automaton_construction_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XAU_add_button"
+		texturefile = "gfx/interface/XAU/add_pol_idea_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XAU_subtract_button"
+		texturefile = "gfx/interface/XAU/subtract_pol_idea_button.dds"
 	}
 }
 
