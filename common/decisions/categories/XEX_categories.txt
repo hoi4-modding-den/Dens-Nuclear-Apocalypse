@@ -11,3 +11,31 @@ XEX_genshin_decisions = {
 		has_country_flag = XEX_gatcha_unlocked
 	}
 }
+
+XEX_genshinification_cat = {			
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	priority = 10000	
+
+	visible_when_empty = yes
+	
+	allowed = {
+		original_tag = XEX
+	}
+	visible = {	
+		has_country_flag = XEX_genshinification_unlocked
+	}
+
+	on_map_area = {
+		target_array = XSG.core_states
+		target_array = XWH.core_states
+		target_array = XRE.core_states
+		name = XEX_genshinification_cat_tt
+		zoom = 200
+		target_trigger = {
+			FROM = {
+				has_dynamic_modifier = { modifier = XEX_genshin_state }
+			}
+		}
+		
+	}
+}

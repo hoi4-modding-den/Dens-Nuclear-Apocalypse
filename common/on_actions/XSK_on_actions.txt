@@ -192,11 +192,6 @@ on_actions = {
 					XEX = { clr_country_flag = XEX_has_war_with_XON }
 				}
 			}
-		}
-	}
-
-	on_capitulation = {
-		effect = {
 			if = {
 				limit = {
 					ROOT = { tag = XON }

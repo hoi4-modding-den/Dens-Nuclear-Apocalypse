@@ -963,7 +963,7 @@ country_event = { # XTK is created
             NOT = { is_core_of = ROOT }
         }
         XSK = {
-            surrender_progress > 0.5
+            surrender_progress > 0.3
         }
     }
     
@@ -1034,7 +1034,7 @@ country_event = { # XTK is created
 news_event = { # Abdulhamid is coronated
     id = XSK_news_events.1
     title = XSK_news_events.1.t
-    picture = GFX_news_event_the_mediterranean_alliance
+    picture = GFX_news_event_secure_the_wayward_ally
     desc = XSK_news_events.1.d
 
     is_triggered_only = yes

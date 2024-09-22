@@ -492,7 +492,7 @@ focus_tree = {
 
 	focus = {
 		id = XTK_communist_bonus
-		icon = GFX_focus_SOV_support_spanish_poum
+		icon = GFX_focus_focus_fra_revolution_utmost
 		prerequisite = { focus = XTK_communist_militias }
 		#mutually_exclusive = { focus = }
 		x = 0
@@ -516,13 +516,13 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			add_stability = 0.15
 		}
 	}
 
 	focus = {
 		id = XTK_khan_bonus
-		icon = GFX_focus_SOV_support_spanish_poum
+		icon = GFX_focus_generic_limited_social_mobilization
 		prerequisite = { focus = XTK_khans_kavalry }
 		#mutually_exclusive = { focus = }
 		x = 0
@@ -546,7 +546,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			army_experience = 100
 		}
 	}
 

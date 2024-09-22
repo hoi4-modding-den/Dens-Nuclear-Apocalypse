@@ -20,7 +20,7 @@ XEX_genshin_decisions = {
 
 		fire_only_once = no
 
-		days_re_enable = 70
+		days_re_enable = 7
 
 		custom_cost_trigger = {
 			any_core_state = {
@@ -46,35 +46,35 @@ XEX_genshin_decisions = {
 							factor = 0
 							has_country_flag = XEX_general_1_unlocked
 						}
-						country_event = XEX_gatcha_events.1
+						XEX_gacha_general_1 = { unit_leader_event = XEX_gatcha_events.1 }
 					}
 					5 = {
 						modifier = {
 							factor = 0
 							has_country_flag = XEX_general_2_unlocked
 						}
-						country_event = XEX_gatcha_events.2
+						XEX_gacha_general_2 = { unit_leader_event = XEX_gatcha_events.2 }
 					}
 					5 = {
 						modifier = {
 							factor = 0
 							has_country_flag = XEX_general_3_unlocked
 						}
-						country_event = XEX_gatcha_events.3
+						XEX_gacha_general_3 = { unit_leader_event = XEX_gatcha_events.3 }
 					}
 					5 = {
 						modifier = {
 							factor = 0
 							has_country_flag = XEX_general_4_unlocked
 						}
-						country_event = XEX_gatcha_events.4
+						XEX_gacha_general_4 = { unit_leader_event = XEX_gatcha_events.4 }
 					}
 					5 = {
 						modifier = {
 							factor = 0
 							has_country_flag = XEX_general_5_unlocked
 						}
-						country_event = XEX_gatcha_events.5
+						XEX_gacha_general_5 = { unit_leader_event = XEX_gatcha_events.5 }
 					}
 					25 = {
 						country_event = XEX_gatcha_events.6
@@ -114,6 +114,92 @@ XEX_genshin_decisions = {
 
 }
 
+XEX_genshinification_cat = {
+
+	XEX_spread_genshin = {
+		
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		cost = 25
+
+		priority = 5
+
+		allowed = {
+			original_tag = XEX
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = FROM
+			}
+		}
+
+		available = {
+			FROM = {
+				owner = {
+					FROM = { is_fully_controlled_by = PREV }
+				}
+			}
+		}
+
+		visible = {
+			if = {
+				limit = {
+					OR = {
+						FROM = { is_core_of = XWH }
+						FROM = { is_core_of = XSG }
+					}
+				}
+				ROOT = { has_completed_focus = XEX_expand_operations }
+			}
+			if = {
+				limit = {
+					FROM = { is_core_of = XRE }
+				}
+				ROOT = { has_completed_focus = XEX_expand_operations2 }
+			}
+			NOT = { has_dynamic_modifier = { modifier = XEX_genshin_state } }
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		modifier = {
+			research_speed_factor = -0.01
+		}
+
+		fire_only_once = yes
+
+		targets_dynamic = yes
+
+		state_target = yes
+
+		on_map_mode = map_only  
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = XRE
+					is_core_of = XSG
+					is_core_of = XWH
+				}
+			}
+		}
+
+		days_remove = 14
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			FROM = { add_dynamic_modifier = { modifier = XEX_genshin_state } }
+		}
+	}
+
+
+}
+
 economy_decisions = {
 
 }
@@ -150,7 +236,10 @@ political_actions = {
 			base = 0
 			modifier = {
 				add = 10
-				has_war = yes
+				OR = {
+					has_war = yes
+					has_government = communism
+				}
 			}
 		}
 

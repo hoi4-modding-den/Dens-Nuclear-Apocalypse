@@ -84,14 +84,5 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-	add_equipment_production = {
-		equipment = {
-			type = convoy
-			creator = "XEX"
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
 
 }

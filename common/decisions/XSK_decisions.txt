@@ -1040,6 +1040,56 @@ XSK_military_decisions = {
 		}
 	}
 
+	XSK_reduce_supply_use = {
+
+		icon = GFX_decision_generic_trucks
+
+		allowed = {
+			tag = XSK
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			has_tech = motorised_infantry
+		}
+
+		ai_hint_pp_cost = 50
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+			has_army_experience > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+
+		days_remove = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+				army_experience = -15
+			}
+		}
+
+		remove_effect = {
+			set_technology = {
+				XSK_supply_reducer = 1
+				popup = no
+			}
+			custom_effect_tooltip = XSK_supply_reducer_tt
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
 }
 
 XSK_vilayets_cat = {

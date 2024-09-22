@@ -2468,5 +2468,24 @@ technologies = {
 			}
 		}
 	}
+
+	XSK_supply_reducer = { #hidden tech for the Ottoman Sultanate / XSK
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2236
+
+		no_supply_grace = 48
+		hills = {
+			movement = 0.05
+		}
+		mountain = {
+			movement = 0.05
+		}
+
+	}
 	
 }

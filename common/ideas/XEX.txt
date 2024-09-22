@@ -149,6 +149,48 @@ ideas = {
 
         }
 
+        XEX_magic_time = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = XEX_magic_time
+
+            modifier = {
+                army_morale_factor = 0.04
+                conscription_factor = 0.1
+                compliance_gain = 0.1
+            }
+
+        }
+
+        XEX_guard_division_ready = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+           removal_cost = -1
+
+            picture = ARG_war_division
+
+            modifier = {
+                army_leader_start_level = 1
+                army_core_defence_factor = 0.04
+                consumer_goods_factor = 0.1
+            }
+
+        }
+
         XEX_appropriate_casino_riches = {
             allowed = {
 				always = yes
@@ -178,33 +220,84 @@ ideas = {
 				has_government = communism
 			}
 
+            cancel = {
+                NOT = { has_government = communism }
+            }
+
            removal_cost = -1
 
             picture = eng_tackle_capitalism
 
             modifier = {
-                
+                stability_factor = 0.1
             }
 
         }
 
-        XEX_guard_division_ready = {
+        XEX_enemy_of_casinos2 = {
+            name = XEX_enemy_of_casinos
             allowed = {
 				always = yes
 			}
 
 			allowed_civil_war = {
-				NOT = { has_government = communism }
+				has_government = communism
+			}
+
+            cancel = {
+                NOT = { has_government = communism }
+            }
+
+           removal_cost = -1
+
+            picture = eng_tackle_capitalism
+
+            modifier = {
+                stability_factor = 0.15
+                political_power_gain = 0.1
+            }
+
+        }
+
+        XEX_protectors_of_peace = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = communism
 			}
 
            removal_cost = -1
 
-            picture = ARG_war_division
+            picture = ast_volunteer_defence_corps
 
             modifier = {
-                army_leader_start_level = 1
+                send_volunteer_size = 2
+                send_volunteers_tension = -0.25
+            }
+
+            rule = {
+                can_send_volunteers = yes
+            }
+
+        }
+
+        XEX_independence_protection = {
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+           removal_cost = -1
+
+            picture = YUG_federal_defense_council
+
+            modifier = {
                 army_core_defence_factor = 0.1
-                consumer_goods_factor = 0.1
             }
 
         }
