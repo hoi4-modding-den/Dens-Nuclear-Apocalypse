@@ -240,5 +240,23 @@ ideas = {
 				political_power_gain = 0.05
 			}
 		}
+		XHK_private_education = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
 	}
 }	
