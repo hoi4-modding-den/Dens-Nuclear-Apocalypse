@@ -9,6 +9,14 @@ on_actions = {
 						is_ai = yes
 					}
 					add_ideas = XSK_ai_cheat_idea
+					every_core_state = {
+						create_unit = {
+							division = "name = \"Reservist Division\" division_template = \"Garnizon Tümeni\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = XSK
+							allow_spawning_on_enemy_provs = yes 
+							count = 3
+						}
+					}
 				}
 			}
 			XSK = {

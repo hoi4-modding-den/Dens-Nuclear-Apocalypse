@@ -23,6 +23,15 @@ news_event = { # Mihoyo takes control
         name = XEX_news_events.1.b
         trigger = {
             NOT = { tag = XEX }
+            NOT = { has_government = communism }
+        }
+    }
+
+    option = {
+        name = XEX_news_events.1.c
+        trigger = {
+            NOT = { tag = XEX }
+            has_government = communism
         }
     }
 }

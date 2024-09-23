@@ -24,3 +24,9 @@ DEN_is_chinese_state = {
 		state = 434
 	}
 }
+
+XSK_can_send_volunteers_to_XAD = {
+	hidden_trigger = {
+		always = yes
+	}
+}

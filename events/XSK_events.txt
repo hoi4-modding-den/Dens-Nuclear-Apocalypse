@@ -702,7 +702,7 @@ country_event = { # Silk Road opened
 country_event = { # War with XMJ too long
     id = XSK_events.9
     title = XSK_events.9.t
-    picture = GFX_report_event_tur_menderes_opposition
+    picture = GFX_report_event_tur_turkish_soldiers
     desc = XSK_events.9.d
 
     trigger = {
@@ -755,6 +755,37 @@ country_event = { # Ottoman Infiltrators spread Pan-Turkic Sentiment
         add_opinion_modifier = {
             target = XSK
             modifier = XSK_pan_turkic_agitators
+        }
+    }
+
+}
+
+country_event = { # Ottomans support Cordoba
+    id = XSK_events.11
+    title = XSK_events.11.t
+    picture = GFX_report_event_tur_sultan_and_pashas
+    desc = XSK_events.11.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XSK_events.11.a
+        add_relation_rule_override = {
+            target = XSK
+            usage_desc = XSK_can_send_volunteers_to_XAD_tt
+            can_send_volunteers = yes
+            #trigger = XSK_can_send_volunteers_to_XAD
+        }
+        army_experience = 50
+        add_equipment_to_stockpile = { 
+			type = infantry_equipment
+			amount = 1000 
+			producer = XSK
+		}
+        add_opinion_modifier = {
+            target = XSK
+            modifier = XFR_supports_our_government
         }
     }
 

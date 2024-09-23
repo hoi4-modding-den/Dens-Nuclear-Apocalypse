@@ -10,6 +10,10 @@
 
 opinion_modifiers = {
 
+	XSK_islamic_friends = {
+		value = 25
+	}
+
 	XSK_dislike_deportation = {
 		value = -50
 	}

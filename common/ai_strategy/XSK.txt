@@ -145,9 +145,15 @@ XSK_befriend_XAD = {
 	abort_when_not_enabled = yes
 
 	enable = {
+		has_completed_focus = XSK_reach_out_to_cordoba
 		NOT = { has_war_with = XAD }
 	}
 
+	ai_strategy = {
+	    type = support
+	    id = XAD
+		value = 100
+	}
 	ai_strategy = {
 	    type = send_volunteers_desire
 	    id = XAD
