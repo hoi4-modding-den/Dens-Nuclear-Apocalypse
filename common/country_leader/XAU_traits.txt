@@ -1,7 +1,20 @@
 leader_traits = {
 
-	XAU_subject_to_change = {
+	XAU_prewar_knowledge = {
 		random = no
+	
+		research_speed_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XAU_wary_of_humans = {
+		random = no
+	
+		trade_opinion_factor = -0.5
+		stability_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1

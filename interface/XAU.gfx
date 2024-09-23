@@ -2,9 +2,13 @@ spriteTypes = {
 
 	### CHARACTERS ###
 
-	spriteType = {
-		name = "GFX_Leader_Rogue_Intelligence"
-		texturefile = "gfx/leaders/XAU/Leader_Rogue_Intelligence.dds"
+	frameAnimatedSpriteType = {
+		name = "GFX_Leader_Rogue_Animated"
+		texturefile = "gfx/leaders/XAU/Leader_Rogue_Intelligence_Animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
 	}
 
 	### TEXTICONS ###
@@ -67,6 +71,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_XAU_subtract_button"
 		texturefile = "gfx/interface/XAU/subtract_pol_idea_button.dds"
+	}
+
+	### MISC ###
+
+	spriteType = {
+		name = "GFX_ideology_XAU_synthetic_absolution"
+		texturefile = "gfx/interface/XAU/XAU_synthetic_absolution_ideology.dds"
 	}
 }
 

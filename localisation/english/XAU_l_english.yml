@@ -12,6 +12,12 @@
  XAU_neutrality_DEF:5 "the Automaton Corporations"
  XAU_neutrality_ADJ:5 "Automaton"
 
+ XAU_non_existant_long:0 "§RERROR§!"
+ XAU_non_existant:0 "§RERROR§!"
+
+ XAU_rogues_council_long:0 "Rogue's Council"
+ XAU_rogues_council:0 "Rogue's Council"
+
  ### DECISIONS ###
 
  XAU_components_decisions:0 "Components Logistics"
@@ -20,8 +26,16 @@
  ### TRAITS ###
 
  XAU_subject_to_change:0 "WIP - PLACEHOLDER"
+ XAU_prewar_knowledge:0 "Prewar Knowledge"
+ XAU_wary_of_humans:0 "§RWary of Humans§!"
 
  ### MISC ###
+
+ XAU_wary_of_humans_opinion:0 "Wary of humans"
+ XAU_love_gambling:0 "Robots love gambling"
+
+ XAU_synthetic_absolution:0 "Synthetic Absolution"
+ XAU_synthetic_absolution_desc:0 "Synthetic absolution is the system devised by automaton leadership for total domination over every citizen of the Union. The government is primarily concerned with the efficiency of its factories and will §Rpunish§! those who hinder its progress."
 
  state_components_loc:0 "$STATE|H$ h"
 

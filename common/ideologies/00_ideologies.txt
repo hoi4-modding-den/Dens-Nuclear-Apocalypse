@@ -161,6 +161,11 @@ ideologies = {
 			XEX_anti_gamblerism = {
 				can_be_randomly_selected = no
 			}
+
+			XAU_synthetic_absolution = {
+				can_be_randomly_selected = no
+				color = { 122 28 28 } 
+			}
 		}
 
 		dynamic_faction_names = {

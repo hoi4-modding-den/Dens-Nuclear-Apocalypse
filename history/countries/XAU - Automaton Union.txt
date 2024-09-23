@@ -1,6 +1,6 @@
 capital = 605
 
-#oob = "XKR_2236"
+oob = "XAU_2236"
 
 set_war_support = 0.1
 set_stability = 0.9
@@ -68,31 +68,51 @@ divide_variable = { XAU.automaton_build_time = XAU.automaton_build_speed_modifie
 set_variable = { 605.components = 100 } # Sichuan
 set_variable = { 748.components = 5 } # Zunyi
 
-#set_country_flag = XKR_welcome_message_flag
-#set_country_flag = dont_use_default_political_advisors
-#set_country_flag = dont_use_default_military_advisors
-#set_country_flag = XKR_black_jack_enabled
-#
-#set_party_name = {
-#    ideology = neutrality
-#    long_name = XKR_neutrality_party_long
-#    name = XKR_neutrality_party
-#}
-#
-#set_party_name = {
-#    ideology = democratic
-#    long_name = XKR_democracy_party_long
-#    name = XKR_democracy_party
-#}
-#
-#set_party_name = {
-#    ideology = fascism
-#    long_name = XKR_fascism_party_long
-#    name = XKR_fascism_party
-#}
-#
-#set_party_name = {
-#    ideology = communism
-#    long_name = XKR_communism_party_long
-#    name = XKR_communism_party
-#}
+set_party_name = {
+    ideology = neutrality
+    long_name = XAU_non_existant_long
+    name = XAU_non_existant
+}
+
+set_party_name = {
+    ideology = democratic
+    long_name = XAU_non_existant_long
+    name = XAU_non_existant
+}
+
+set_party_name = {
+    ideology = fascism
+    long_name = XAU_non_existant_long
+    name = XAU_non_existant
+}
+
+set_party_name = {
+    ideology = communism
+    long_name = XAU_rogues_council_long
+    name = XAU_rogues_council
+}
+
+add_opinion_modifier = {
+    target = XWH
+    modifier = XAU_wary_of_humans_opinion
+}
+add_opinion_modifier = {
+    target = XYU
+    modifier = XAU_wary_of_humans_opinion
+}
+add_opinion_modifier = {
+    target = XGD
+    modifier = XAU_wary_of_humans_opinion
+}
+add_opinion_modifier = {
+    target = XSG
+    modifier = XAU_wary_of_humans_opinion
+}
+add_opinion_modifier = {
+    target = XHK
+    modifier = XAU_wary_of_humans_opinion
+}
+add_opinion_modifier = {
+    target = XEX
+    modifier = XAU_love_gambling
+}
