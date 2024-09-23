@@ -1,6 +1,5 @@
 add_namespace = XNP_focus
 
-# Visit to the Heartland
 country_event = {
 	id = XNP_focus.1
 	title = XNP_focus.1.title
@@ -13,16 +12,12 @@ country_event = {
 		name = XNP_focus.1.a
 		
 		XNP = {
-			complete_national_focus = XNP_the_grand_coalition
+			add_stability = 0.10
+			swap_ideas = {
+  				remove_idea = XNP_congressional_deadlock
+    			add_idea = XNP_unified_center_1
+			}
 		}
 		ai_chance = { factor = 1 }	
-	}
-	option = {
-		name = XNP_focus.1.b
-		
-		XNP = {
-			complete_national_focus = XNP_digging_our_own_grave
-		}
-		ai_chance = { factor = 0 }	
 	}
 }

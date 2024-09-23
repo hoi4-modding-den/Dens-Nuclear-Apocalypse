@@ -363,3 +363,7 @@ XGX = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }
 }
+XBE = {
+	color = rgb { 1 1 1 }
+	color_ui = rgb { 1 1 1 }
+}
