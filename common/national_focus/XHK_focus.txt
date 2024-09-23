@@ -66,12 +66,9 @@
 
 		cost = 1
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -102,12 +99,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -145,12 +139,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -181,12 +172,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -217,12 +205,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -255,12 +240,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -294,12 +276,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -330,12 +309,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -370,12 +346,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -409,12 +382,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -449,12 +419,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -493,12 +460,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -530,12 +494,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -568,12 +529,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -608,12 +566,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -648,12 +603,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -684,12 +636,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -723,12 +672,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -762,12 +708,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -804,12 +747,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -846,12 +786,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -888,12 +825,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -929,12 +863,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			neutrality > 0.5
@@ -968,12 +899,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1004,12 +932,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1029,6 +954,39 @@
 		}
 	}
 	focus = {
+		id = XHK_military_research_labs
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_private_mercenaries }
+	#	mutually_exclusive = { focus = XHK_deal_with_the_devil }
+		x = 0
+		y = 1
+		relative_position_id = XHK_private_mercenaries
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
 		id = XHK_casino_alliance
 #		icon = GFX_focus_SWE_radiotjanst
 		
@@ -1040,12 +998,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1073,17 +1028,14 @@
 		
 		prerequisite = { focus = XHK_casino_alliance }
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = XHK_casino_alliance
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1112,18 +1064,15 @@
 		prerequisite = { focus = XHK_private_mercenaries }
 		prerequisite = { focus = XHK_corporate_board focus = XHK_hanyang_consolidation }
 	#	mutually_exclusive = { focus = XHK_corporate_board }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = XHK_casino_alliance
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1151,18 +1100,15 @@
 		
 		prerequisite = { focus = XHK_guangdong_takeover }
 	#	mutually_exclusive = { focus = XHK_corporate_board }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = XHK_guangdong_takeover
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			has_war = no
@@ -1203,12 +1149,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1240,12 +1183,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1280,12 +1220,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1319,12 +1256,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1362,12 +1296,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1405,12 +1336,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1441,12 +1369,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1478,12 +1403,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1517,12 +1439,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			XGX = {
@@ -1563,12 +1482,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1602,12 +1518,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -1646,12 +1559,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			XSG = {
@@ -1696,12 +1606,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -1735,12 +1642,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -1774,12 +1678,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			XTW = {
@@ -1816,12 +1717,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -1852,12 +1750,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -1893,12 +1788,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -1930,12 +1822,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -1974,12 +1863,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -2020,12 +1906,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -2058,12 +1941,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -2097,12 +1977,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -2135,12 +2012,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2175,12 +2049,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2216,12 +2087,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2256,12 +2124,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2295,12 +2160,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2336,12 +2198,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2377,12 +2236,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2422,12 +2278,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2463,12 +2316,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2503,12 +2353,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2542,12 +2389,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2583,12 +2427,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2623,12 +2464,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2661,12 +2499,9 @@
 
 		cost = 10
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2700,12 +2535,9 @@
 
 		cost = 10
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2739,12 +2571,9 @@
 
 		cost = 10
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2779,12 +2608,9 @@
 
 		cost = 10
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2825,12 +2651,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2862,12 +2685,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2898,12 +2718,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2934,12 +2751,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -2971,12 +2785,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3009,12 +2820,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3052,12 +2860,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3107,12 +2912,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			NOT = {
@@ -3150,12 +2952,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -3190,12 +2989,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3228,12 +3024,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3267,12 +3060,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3314,12 +3104,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3353,15 +3140,12 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
-		
+			num_of_controlled_states > 6
 		}
 		
 		bypass = {
@@ -3389,12 +3173,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3429,12 +3210,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 90
+		}
 
 		available = {
 		
@@ -3467,12 +3245,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3507,12 +3282,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 90
+		}
 
 		available = {
 		
@@ -3545,12 +3317,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3584,12 +3353,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 90
+		}
 
 		available = {
 		
@@ -3622,12 +3388,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3661,12 +3424,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 90
+		}
 
 		available = {
 		
@@ -3682,7 +3442,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			XYU = {
+			XWH = {
 				country_event = XHK.3
 			}
 		}
@@ -3700,12 +3460,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 		
@@ -3740,12 +3497,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 90
+		}
 
 		available = {
 		
@@ -3779,12 +3533,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			has_decision = XHK_unify_yangtze
@@ -3815,12 +3566,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			has_completed_focus = XHK_unification
@@ -3851,12 +3599,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -3898,12 +3643,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -3937,12 +3679,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -3976,12 +3715,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			
@@ -4015,12 +3751,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			OR = {
@@ -4071,12 +3804,9 @@
 
 		cost = 5
 
-#		ai_will_do = {
-#			factor = 24
-#			modifier = {
-#				factor = 3
-#			}
-#		}
+		ai_will_do = {
+			base = 10
+		}
 
 		available = {
 			has_decision = XHK_unify_china
@@ -4093,6 +3823,175 @@
 
 		completion_reward = {
 			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = XHK_greater_intervention
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_far_right_takeover focus = XHK_the_great_coup }
+	#	mutually_exclusive = { focus = XHK_befriend_taiwan }
+		x = 6
+		y = 1
+		relative_position_id = XHK_the_great_coup
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = XHK_government_housing
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_greater_intervention }
+	#	mutually_exclusive = { focus = XHK_befriend_taiwan }
+		x = -1
+		y = 1
+		relative_position_id = XHK_greater_intervention
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XHK_vertical_slums
+				add_idea = XHK_government_housing_idea
+			}
+		}
+	}
+	focus = {
+		id = XHK_purge_corrupt_officials
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_greater_intervention }
+	#	mutually_exclusive = { focus = XHK_befriend_taiwan }
+		x = 1
+		y = 1
+		relative_position_id = XHK_greater_intervention
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			remove_ideas = XHK_corrupt_assembly
+		}
+	}
+	focus = {
+		id = XHK_fund_higher_education
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_government_housing }
+		prerequisite = { focus = XHK_purge_corrupt_officials }
+	#	mutually_exclusive = { focus = XHK_befriend_taiwan }
+		x = 1
+		y = 1
+		relative_position_id = XHK_government_housing
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XHK_build_research_labs
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_fund_higher_education }
+	#	mutually_exclusive = { focus = XHK_befriend_taiwan }
+		x = 0
+		y = 1
+		relative_position_id = XHK_fund_higher_education
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			num_of_civilian_factories > 25
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 }
