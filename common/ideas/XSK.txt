@@ -993,4 +993,50 @@ ideas = {
 
     }
 
+    industrial_concern = {
+		
+		XSK_mining_company = {
+			
+			allowed = {
+				original_tag = XSK
+			}
+
+            available = {
+                has_completed_focus = XSK_expand_the_mines
+            }
+			
+			traits = { mining_company }
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		XSK_railway_company_contract = {
+			
+			allowed = {
+				original_tag = XSK
+			}
+
+            available = {
+                has_completed_focus = XSK_chinese_politics
+                has_idea = XSK_railway_builders
+            }
+
+            visible = {
+                NOT = {
+                    has_completed_focus = XSK_no_sultan
+                    has_completed_focus = XSK_the_expansionist_sultan
+                }
+            }
+			
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { railway_company }
+		}
+		
+	}
+
 }

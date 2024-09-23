@@ -48,3 +48,57 @@ XK0_decrease_militancy = {
 		force_update_dynamic_modifier = yes
 	}
 }
+XK0_increase_university_budget = {
+	custom_effect_tooltip = XK0_increase_university_budget_tt 
+	hidden_effect = {
+		add_to_variable = { XK0_university_investments = 0.1 }
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.04
+		}
+	}
+}
+XK0_decrease_university_budget = {
+	custom_effect_tooltip = XK0_decrease_university_budget_tt 
+	hidden_effect = {
+		subtract_from_variable = { XK0_university_investments = 0.08 }
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+	}
+}
+XK0_increase_research_factor = {
+	custom_effect_tooltip = XK0_increase_research_factor_tt
+	hidden_effect = {
+		if = {
+			limit = { has_idea = XK0_university_of_josea }
+			remove_ideas = XK0_university_of_josea
+			add_dynamic_modifier = { modifier = XK0_university_of_josea_dm }
+			set_variable = { XK0_research_factor = 0.4 }
+		}
+		add_to_variable = { XK0_research_factor = 0.03 }
+	}
+}
+XK0_copy_important_flags = {
+	set_country_flag = XK0_country
+	inherit_technology = XK0
+	set_research_slots = 2
+	if = { limit = { XK0 = { has_country_flag = industry_folder_disabled } } set_country_flag = industry_folder_disabled }
+	if = { limit = { XK0 = { has_country_flag = naval_folder_disabled } } set_country_flag = naval_folder_disabled }
+	if = { limit = { XK0 = { has_country_flag = air_folder_disabled } } set_country_flag = air_folder_disabled }
+	if = { limit = { XK0 = { has_country_flag = artillery_folder_disabled } } set_country_flag = artillery_folder_disabled }
+	if = { limit = { XK0 = { has_country_flag = armour_folder_disabled } } set_country_flag = armour_folder_disabled }
+	if = { limit = { XK0 = { has_country_flag = support_folder_disabled } } set_country_flag = support_folder_disabled }
+	if = { limit = { XK0 = { has_country_flag = infantry_folder_disabled } } set_country_flag = infantry_folder_disabled }
+	add_dynamic_modifier = { modifier = XK0_militancy_alt }
+	set_variable = { XK0_militancy_level = 10 }
+	set_variable = { XK0_stability_factor = 0.24 }
+	set_variable = { XK0_political_power_gain = 0.2 }
+	set_variable = { XK0_democratic_drift = 0.04 }
+	set_variable = { XK0_war_support_factor = -0.24 }
+	set_variable = { XK0_weekly_manpower = -1000 }
+	set_variable = { XK0_fascism_drift = -0.04 }
+	set_variable = { XK0_university_investments = XK0.XK0_university_investments }
+	force_update_dynamic_modifier = yes
+}

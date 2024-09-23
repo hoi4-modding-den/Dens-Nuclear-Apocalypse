@@ -107,6 +107,80 @@ ideas = {
 				political_power_factor = -0.25
 			}
 		}
+		XHK_hanyang_dominance = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.25
+				war_support_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		XHK_corporate_assembly = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = 0.1
+				neutrality_drift = 0.05
+			}
+		}
+		XHK_corporate_soldiers = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+				army_morale_factor = -0.05
+			}
+		}
+		XHK_neofeudalism = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 		XHK_guangdong_menace = {
 			picture = generic_constitutional_guarantees
 			
@@ -164,6 +238,24 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				political_power_gain = 0.05
+			}
+		}
+		XHK_private_education = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+				production_factory_max_efficiency_factor = 0.2
 			}
 		}
 	}

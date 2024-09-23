@@ -937,7 +937,7 @@
 #		}
 
 		available = {
-		
+			neutrality > 0.5
 		}
 		
 		bypass = {
@@ -993,12 +993,12 @@
 		}
 	}
 	focus = {
-		id = XHK_expand_corporate_assets
+		id = XHK_private_mercenaries
 #		icon = GFX_focus_SWE_radiotjanst
 		
 		prerequisite = { focus = XHK_reorganize_the_state }
 	#	mutually_exclusive = { focus = XHK_deal_with_the_devil }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = XHK_reorganize_the_state
 
@@ -1026,6 +1026,169 @@
 
 		completion_reward = {
 			unlock_decision_category_tooltip = XHK_corporate_mercinaries
+		}
+	}
+	focus = {
+		id = XHK_casino_alliance
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_reorganize_the_state }
+	#	mutually_exclusive = { focus = XHK_corporate_board }
+		x = -1
+		y = 1
+		relative_position_id = XHK_reorganize_the_state
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_faction = "Corporate Interests Protection Commission"
+			XEX = {
+				country_event = XHK.5
+			}
+		}
+	}
+	focus = {
+		id = XHK_expand_to_railroad_tycoons
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_casino_alliance }
+		x = -1
+		y = 1
+		relative_position_id = XHK_casino_alliance
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			XRE = {
+				country_event = XHK.5
+			}
+		}
+	}
+	focus = {
+		id = XHK_guangdong_takeover
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_casino_alliance }
+		prerequisite = { focus = XHK_private_mercenaries }
+		prerequisite = { focus = XHK_corporate_board focus = XHK_hanyang_consolidation }
+	#	mutually_exclusive = { focus = XHK_corporate_board }
+		x = 1
+		y = 1
+		relative_position_id = XHK_casino_alliance
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			declare_war_on = {
+				target = XGD
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = XHK_incorporate_guangdong
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_guangdong_takeover }
+	#	mutually_exclusive = { focus = XHK_corporate_board }
+		x = 0
+		y = 1
+		relative_position_id = XHK_guangdong_takeover
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			has_war = no
+			XGD = {
+				all_core_state = {
+					is_owned_and_controlled_by = XHK
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = XGD
+				}
+				add_core_of = XGD
+			}
 		}
 	}
 	focus = {
@@ -1098,8 +1261,866 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_stability = -0.05
+			promote_character = XHK_the_ceo
+			swap_ideas = {
+				remove_idea = XHK_corrupt_assembly
+				add_idea = XHK_hanyang_dominance
+			}
+		}
+	}
+	focus = {
+		id = XHK_illusion_of_democracy
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_corporate_board }
+	#	mutually_exclusive = { focus = XHK_hanyang_consolidation }
+		x = -1
+		y = 1
+		relative_position_id = XHK_corporate_board
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XHK_corrupt_assembly
+				add_idea = XHK_corporate_assembly
+			}
+		}
+	}
+	focus = {
+		id = XHK_expand_consumer_factories
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hanyang_consolidation focus = XHK_corporate_board }
+		mutually_exclusive = { focus = XHK_expand_arsenals }
+		x = -1
+		y = 1
+		relative_position_id = XHK_hanyang_consolidation
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = XHK_expand_arsenals
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hanyang_consolidation }
+		mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_hanyang_consolidation
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = XHK_de_facto_neofeudalism
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_illusion_of_democracy focus = XHK_expand_consumer_factories }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_illusion_of_democracy
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XHK_neofeudalism
+		}
+	}
+	focus = {
+		id = XHK_reassign_workers_to_frontline
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_expand_arsenals }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 0
+		y = 1
+		relative_position_id = XHK_expand_arsenals
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XHK_corporate_soldiers
+		}
+	}
+	focus = {
+		id = XHK_privatize_guanxi
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_incorporate_guangdong }
+		prerequisite = { focus = XHK_de_facto_neofeudalism focus = XHK_reassign_workers_to_frontline }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = -1
+		y = 1
+		relative_position_id = XHK_incorporate_guangdong
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			declare_war_on = {
+				target = XGX
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = XHK_incorporate_guanxi
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_privatize_guanxi }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 0
+		y = 1
+		relative_position_id = XHK_privatize_guanxi
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			XGX = {
+				all_core_state = {
+					is_owned_and_controlled_by = XHK
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = XGX
+				}
+				add_core_of = XHK
+			}
+		}
+	}
+	focus = {
+		id = XHK_free_shanghai
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_incorporate_guangdong }
+		prerequisite = { focus = XHK_de_facto_neofeudalism focus = XHK_reassign_workers_to_frontline }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_incorporate_guangdong
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				target = XSG
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = XHK_free_central_china
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_free_shanghai }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 0
+		y = 1
+		relative_position_id = XHK_free_shanghai
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				target = XWH
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = XAU
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = XHK_reorganize_central_china
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_incorporate_guanxi }
+		prerequisite = { focus = XHK_free_central_china }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_incorporate_guanxi
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			XSG = {
+				is_puppet_of = XHK
+				owns_state = 600
+				owns_state = 595
+			}
+			XWH = {
+				is_puppet_of = XHK
+			}
+			XAU = {
+				is_puppet_of = XHK
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = "make custom cosmetic tags n stuff"
+			transfer_state = 600
+			transfer_state = 595
+			add_state_core = 600
+			add_state_core = 595
+		}
+	}
+	focus = {
+		id = XHK_free_taiwan
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_de_facto_neofeudalism focus = XHK_reassign_workers_to_frontline }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = -1
+		y = 1
+		relative_position_id = XHK_de_facto_neofeudalism
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				target = XTW
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = XHK_free_kyushu
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_free_taiwan }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 0
+		y = 1
+		relative_position_id = XHK_free_taiwan
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				target = XKY
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = XHK_reorganize_east_china_sea
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_free_kyushu }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 0
+		y = 1
+		relative_position_id = XHK_free_kyushu
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			XTW = {
+				is_puppet_of = XHK
+			}
+			XKY = {
+				is_puppet_of = XHK
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = "cosmetic tags here"
 			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = XHK_refocus_police
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_de_facto_neofeudalism focus = XHK_reassign_workers_to_frontline }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 2
+		y = 1
+		relative_position_id = XHK_de_facto_neofeudalism
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = XHK_loosen_housing_regulations
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_de_facto_neofeudalism focus = XHK_reassign_workers_to_frontline }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 4
+		y = 1
+		relative_position_id = XHK_de_facto_neofeudalism
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				 random_select_amount = 3
+				 add_extra_state_shared_building_slots = 2
+			}
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = XHK_privatize_education
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_refocus_police }
+		prerequisite = { focus = XHK_loosen_housing_regulations }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = -1
+		y = 1
+		relative_position_id = XHK_refocus_police
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XHK_private_education
+		}
+	}
+	focus = {
+		id = XHK_private_contractors
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_refocus_police }
+		prerequisite = { focus = XHK_loosen_housing_regulations }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_refocus_police
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				random_select_amount = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XHK_consumerism
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_refocus_police }
+		prerequisite = { focus = XHK_loosen_housing_regulations }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 3
+		y = 1
+		relative_position_id = XHK_refocus_police
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XHK_advertisements
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_privatize_education }
+		prerequisite = { focus = XHK_private_contractors }
+		prerequisite = { focus = XHK_consumerism }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = -1
+		y = 1
+		relative_position_id = XHK_private_contractors
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = XHK_exploit_the_vulnerable
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_privatize_education }
+		prerequisite = { focus = XHK_private_contractors }
+		prerequisite = { focus = XHK_consumerism }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_private_contractors
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = XHK_corporate_consolidation
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_reorganize_central_china }
+		prerequisite = { focus = XHK_reorganize_east_china_sea }
+		prerequisite = { focus = XHK_advertisements }
+		prerequisite = { focus = XHK_exploit_the_vulnerable }
+	#	mutually_exclusive = { focus = XHK_expand_consumer_factories }
+		x = 1
+		y = 1
+		relative_position_id = XHK_reorganize_east_china_sea
+
+		cost = 5
+
+#		ai_will_do = {
+#			factor = 24
+#			modifier = {
+#				factor = 3
+#			}
+#		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = "new custom tag"
+			custom_effect_tooltip = "annex puppets"
+			custom_effect_tooltip = "superevents"
 		}
 	}
 	focus = {
@@ -2467,10 +3488,10 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		#	create_wargoal = {
-		#		target = XSG
-		#		type = annex_everything
-		#	}
+			create_wargoal = {
+				target = XGX
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -2507,9 +3528,9 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		#	XSG = {
-		#		country_event = XHK.3
-		#	}
+			XGX = {
+				country_event = XHK.3
+			}
 		}
 	}
 	focus = {

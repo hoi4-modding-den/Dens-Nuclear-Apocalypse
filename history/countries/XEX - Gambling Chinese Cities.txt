@@ -2,18 +2,46 @@ capital = 608
 
 oob = "XEX_army"
 
-recruit_character = XEX_gambling_maxxing
+set_country_flag = dont_use_default_political_advisors
+
+recruit_character = XEX_gamblerman
+recruit_character = XEX_mihoyo_leader
+recruit_character = XEX_argentinian_gambler
+recruit_character = XEX_beijing_governor
+
+recruit_character = XEX_gacha_general_1
+recruit_character = XEX_gacha_general_2
+recruit_character = XEX_gacha_general_3
+recruit_character = XEX_gacha_general_4
+recruit_character = XEX_gacha_general_5
+
+add_ideas = {
+	free_trade
+	disarmed_nation
+	XEX_casino_profits
+	XEX_growing_unrest
+	XEX_open_door_policy
+}
+
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+}
 
 set_technology = {
 	infantry_weapons = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	gw_artillery = 1
+	infantry_weapons1 = 1
 	tech_trucks = 1
-	motorised_infantry = 1
+	tech_support = 1
+	tech_military_police = 1
+	tech_engineers = 1
 	basic_train = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
+	basic_machine_tools = 1
 }
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -49,8 +77,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
-	communism = 5
-	fascism = 10
-	neutrality = 75
+	democratic = 0
+	communism = 15
+	fascism = 30
+	neutrality = 55
 }

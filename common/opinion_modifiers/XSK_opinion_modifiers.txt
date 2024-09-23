@@ -25,4 +25,8 @@ opinion_modifiers = {
 	XSK_ai_friendship_boost = {
 		value = 50
 	}
+
+	XSK_pan_turkic_agitators = {
+		value = -50
+	}
 }

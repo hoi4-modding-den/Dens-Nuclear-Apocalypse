@@ -68,6 +68,7 @@ ideas = {
 			
 			modifier = {
 				research_speed_factor = 0.4
+				political_power_gain = -1
 			}
 		}
 		XK0_militancy_idea = {
@@ -89,5 +90,126 @@ ideas = {
 				fascism_drift = -0.04
 			}
 		}
+		XK0_workers_rights = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		XK0_minimum_wage = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { has_government = communism }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		XK0_increased_funding_armed_forces = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { has_government = fascism }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				experience_gain_army = 0.4
+			}
+		}
+		XK0_lowered_taxes = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { has_government = democratic }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = 0.2
+			}
+		}
+		XK0_defence_of_the_nation = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				army_defence_factor = 0.05
+				enemy_army_bonus_air_superiority_factor = -0.05
+			}
+		}
+		XK0_defence_of_the_nation2 = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				army_defence_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = -0.075
+			}
+		}
+		XK0_defence_of_the_nation3 = {
+			allowed = {}
+			available = {}
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			cancel = {}
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				army_defence_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = -0.1
+				dig_in_speed_factor = 0.2
+			}
+		}
+		# XK0_josea_rocket_program = {
+			# allowed = {}
+			# available = {}
+			# allowed_civil_war = { always = yes }
+			
+			# removal_cost = -1
+			# cancel = {}
+			
+			# picture = generic_morale_bonus
+			
+			# modifier = {
+				# consumer_goods_factor = 0.05
+				# research_speed_factor = 0.05
+			# }
+		# }
 	}
 }

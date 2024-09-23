@@ -121,5 +121,30 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}
 		}
+		XTW_the_forbidden_solution = {
+            picture = generic_purge
+            modifier = {
+				weekly_manpower = -200
+			}
+		}
+		XTW_informants_among_the_people = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = EST_democratic_opposition
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain = 0.1
+				foreign_subversive_activites = -0.25
+			}
+		}
 	}
 }

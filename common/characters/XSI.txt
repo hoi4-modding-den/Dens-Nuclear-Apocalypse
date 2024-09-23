@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			ideology = XSI_military_communism
 			traits = { XSI_the_red_eternal }
-			expire = "3000.9.9.9"
+			desc = chairman_saeng_2_desc
 			id = -1
 		}
 	}

@@ -112,7 +112,91 @@ guiTypes = {
 				maxHeight = 20
 				format = center
 			}
-			
+
+			instantTextboxType = {
+				name = "automaton_details_desc"
+				position = { x = 10 y = 40 }
+				textureFile = ""
+				font = "hoi_16mbs"
+				borderSize = {x = 0 y = 0}
+				text = XAU_details_desc_tooltip
+				maxWidth = 110
+				maxHeight = 120
+				format = left
+			}
+
+			instantTextboxType = {
+				name = "automaton_military_desc"
+				position = { x = 152 y = 53 }
+				textureFile = ""
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = XAU_automaton_military_factories
+				maxWidth = 60
+				maxHeight = 28
+				format = center
+			}
+
+			buttonType = {
+				name = "automaton_military_add_button"
+				spriteType = "GFX_XAU_add_button"
+				position = { x = 110 y = 40 }
+				pdx_tooltip = XAU_automaton_military_add_tooltip
+			}
+
+			buttonType = {
+				name = "automaton_military_subtract_button"
+				spriteType = "GFX_XAU_subtract_button"
+				position = { x = 206 y = 40 }
+				pdx_tooltip = XAU_automaton_military_subtract_tooltip
+			}
+
+			instantTextboxType = {
+				name = "automaton_civilian_desc"
+				position = { x = 152 y = 113 }
+				textureFile = ""
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = XAU_automaton_civilian_factories
+				maxWidth = 60
+				maxHeight = 28
+				format = center
+			}
+
+			buttonType = {
+				name = "automaton_civilian_add_button"
+				spriteType = "GFX_XAU_add_button"
+				position = { x = 110 y = 100 }
+				pdx_tooltip = XAU_automaton_civilian_add_tooltip
+			}
+
+			buttonType = {
+				name = "automaton_civilian_subtract_button"
+				spriteType = "GFX_XAU_subtract_button"
+				position = { x = 206 y = 100 }
+				pdx_tooltip = XAU_automaton_civilian_subtract_tooltip
+			}
+
+			buttonType = {
+				name = "automaton_construction_button"
+				spriteType = "GFX_XAU_automaton_construction_button"
+				position = { x = 0 y = 152 }
+				pdx_tooltip = XAU_automaton_construction_tooltip
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextboxType = {
+				name = "automaton_construction_desc"
+				position = { x = 0 y = 154 }
+				textureFile = ""
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = XAU_automaton_construction
+				maxWidth = 260
+				maxHeight = 28
+				format = center
+			    alwaystransparent = yes
+			}
 		}
 	}
 

@@ -265,12 +265,15 @@ country_event = {
         days = 60
                 }  
         hidden_effect = {
-        every_country = {
-        country_event = {
-        id = XSS_test_event.5
-        days = 5
-        random_hours = 12
-             }
+            every_country = {
+                limit = {
+                    capital_scope = { is_on_continent = europe }
+                }
+                country_event = {
+                    id = XSS_test_event.5
+                    days = 5
+                    random_hours = 12
+                }
             }
         }
     }
@@ -1189,6 +1192,7 @@ add_resource = {
 
         hidden_effect = {
         every_country = {
+            limit = { capital_scope = { is_on_continent = europe } }
         country_event = {
         id = XSS_test_event.8
         days = 5
@@ -5443,7 +5447,10 @@ add_equipment_to_stockpile = {
 
         
         every_country = {
-        limit = { has_government = communism }
+            limit = {
+                has_government = communism
+                capital_scope = { is_on_continent = europe }
+            }
         country_event = {
         id = XSS_test_event.29
         days = 5
@@ -7959,7 +7966,7 @@ focus = {
 
         add_ideas = {XSS_League_idea}
         every_country = {
-        limit = { NOT = {tag = LIB tag = XSS }}
+        limit = { capital_scope = { is_on_continent = europe } }
         country_event = {
         id = XSS_test_event.42
         days = 5

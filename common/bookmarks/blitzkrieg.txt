@@ -141,6 +141,27 @@ bookmarks = {
 				XDA_Mirage_Government
 			}
 		}
+		"XSI" = {
+			ideology = communism
+			history = "XSI_history_desc"
+			focuses = {
+			}
+			ideas = {
+				XSI_treaty_of_yangon
+				XSI_burmese_paciication_campaign
+				XSI_military_civic_rivarly_army_dominance
+			}
+		}
+		"XSB" = {
+			ideology = communism
+			history = "XSB_history_desc"
+			focuses = {
+			}
+			ideas = {
+				XSB_treaty_of_yangon
+				XSB_followers_of_sangkhism
+			}
+		}
 		"XNP" = {
 			ideology = democratic
 			history = "XNP_history_desc"
@@ -168,6 +189,20 @@ bookmarks = {
 				
 			}
 		}		
+		"XEX" = {
+			ideology = neutrality
+			history = "XEX_history_desc"
+			focuses = {
+				XEX_protect_our_interests
+				XEX_business_as_usual
+				XEX_protests_continue
+			}
+			ideas = {
+				XEX_casino_profits
+				XEX_growing_unrest
+				XEX_open_door_policy
+			}
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

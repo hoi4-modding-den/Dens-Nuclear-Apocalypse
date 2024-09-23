@@ -1,0 +1,13 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_idea_XBE_anarchy"
+        texturefile = "gfx/interface/ideas/idea_ARG_no_gods_no_masters.dds"
+    }
+
+    spriteType = {
+        name = "GFX_XBE_anarchy_leader"
+        texturefile = "gfx/leaders/leader_unknown_female.dds"
+    }
+
+}

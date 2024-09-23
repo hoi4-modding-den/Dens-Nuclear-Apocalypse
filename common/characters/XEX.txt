@@ -2,22 +2,172 @@ characters = {
 
 	### COUNTRY LEADERS ###
 
-	XEX_gambling_maxxing = {
-		name = "Avarage Gambler"
+	XEX_gamblerman = {
+		name = "Mr. Du Tu"
 		portraits = {
 			civilian = {
-				large = GFX_ideology_XEX_gambler
+				large = GFX_portrait_XEX_gamblerman
 			}
 		}
 		country_leader = {
-			ideology = XKR_casino_council
-			traits = {  }
+			ideology = XEX_casino_rule
+			traits = { XEX_king_of_gambling }
 			expire = "3000.9.9.9"
 			id = -1
 		}
 	}
 
-	### ADVISORS ###
+	XEX_mihoyo_leader = {
+		name = "Aether"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_XEX_mihoyo_leader
+			}
+		}
+	}
+
+	XEX_argentinian_gambler = {
+		name = "Monsieur Schmitler"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_XEX_argentinian_gambler
+			}
+		}
+		country_leader = {
+			ideology = XEX_anti_gamblerism
+			desc = XEX_argentinian_gambler_desc
+			traits = { XEX_former_gambler }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	XEX_beijing_governor = {
+		name = "Huang Hanying"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JAP_zengo_yoshida
+			}
+		}
+		country_leader = {
+			ideology = XFR_emergency_government
+			traits = { XEX_beijing_governor_trait }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+
+	# Generals
+
+	XEX_gacha_general_1 = {
+		name = XEX_gacha_general_1
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XEX_gacha_general_1"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_country_flag = XEX_general_1_unlocked
+			}
+			traits={ armor_officer }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+		}
+
+	}
+
+	XEX_gacha_general_2 = {
+		name = XEX_gacha_general_2
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XEX_gacha_general_2"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_country_flag = XEX_general_2_unlocked
+			}
+			traits={ infantry_leader engineer_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+		}
+
+	}
+
+	XEX_gacha_general_3 = {
+		name = XEX_gacha_general_3
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XEX_gacha_general_3"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_country_flag = XEX_general_3_unlocked
+			}
+			traits={ brilliant_strategist media_personality }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+
+	}
+
+	XEX_gacha_general_4 = {
+		name = XEX_gacha_general_4
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XEX_gacha_general_4"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_country_flag = XEX_general_4_unlocked
+			}
+			traits={ scavenger }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+
+	}
+
+	XEX_gacha_general_5 = {
+		name = XEX_gacha_general_5
+		
+		portraits = {
+			army = {
+				large = "GFX_portrait_XEX_gacha_general_5"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_country_flag = XEX_general_5_unlocked
+			}
+			traits={ career_officer trait_reckless }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+
+	}
 
 	
 }

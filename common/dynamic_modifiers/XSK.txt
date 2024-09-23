@@ -1,0 +1,11 @@
+XSK_turkic_resistance = {
+	enable = { always = yes }
+	icon = GFX_modifiers_tur_traditionalist_insurgency 
+
+	state_resources_factor = -0.9
+	local_building_slots = -10
+	local_factories = -0.9
+	local_manpower = -0.8
+	state_production_speed_buildings_factor = -0.9
+
+}

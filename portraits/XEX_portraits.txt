@@ -1,0 +1,19 @@
+XFR = {
+	army = {
+		female = {
+			"GFX_portrait_ITA_generic_female_1"
+			"GFX_portrait_ITA_generic_female_2"
+			"GFX_portrait_ITA_generic_female_3"
+			"GFX_portrait_ITA_generic_female_4"
+		}
+	}
+	
+	navy = {
+		female = {
+			"GFX_portrait_ITA_generic_female_1"
+			"GFX_portrait_ITA_generic_female_2"
+			"GFX_portrait_ITA_generic_female_3"
+			"GFX_portrait_ITA_generic_female_4"
+		}
+	}
+}

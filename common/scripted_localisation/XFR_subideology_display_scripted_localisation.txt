@@ -107,6 +107,12 @@ defined_text = {
 		localization_key = XSK_ottoman_stratocracy
 	}
 	text = {
+		trigger = {
+			has_country_leader_ideology = XEX_mihoyo
+		}
+		localization_key = XEX_mihoyo
+	}
+	text = {
 		localization_key = fascism
 	}
 }
@@ -125,6 +131,15 @@ defined_text = {
 			has_country_leader_ideology = XFR_military_government
 		}
 		localization_key = XSK_ottoman_stratocracy
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader_ideology = XKR_casino_council
+				has_country_leader_ideology = XEX_casino_rule
+			}
+		}
+		localization_key = XEX_casino_rule
 	}
 	text = {
 		trigger = {

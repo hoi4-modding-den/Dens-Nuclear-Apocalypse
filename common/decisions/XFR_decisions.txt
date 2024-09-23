@@ -2038,7 +2038,7 @@ XFR_bop_decision_cat = {
 				}
 				add_popularity = {
 					ideology = democratic
-					popularity = 0.1
+					popularity = 0.03
 				}
 			}
 			add_power_balance_value = {

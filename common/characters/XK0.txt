@@ -151,4 +151,21 @@ characters = {
 			}
 		}
 	}
+	XK0_min_jun_gang={
+		name=XK0_min_jun_gang
+		portraits={
+			army={
+				large=GFX_portrait_XK0_min_jun_gang
+			}
+			civilian={
+				large=GFX_portrait_XK0_min_jun_gang
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = { modernist_and_reformer }
+			expire = "265.1.1.1"
+			id = -1
+		}
+	}
 }

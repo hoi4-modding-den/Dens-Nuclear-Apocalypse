@@ -14,9 +14,6 @@ focus_tree = {
 		x = 7
 		y = 1
 		cost = 3
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
 		completion_reward = {
 			country_event = XON_start_event.1
 		}
@@ -27,9 +24,6 @@ focus_tree = {
 		x = 7
 		y = 2
 		cost = 3
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
 		prerequisite = { focus = XON_a_thousand_blessings }
 		completion_reward = {
 			country_event = XON_start_event.2
@@ -41,9 +35,6 @@ focus_tree = {
 		x = 7
 		y = 3
 		cost = 3
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
 		prerequisite = { focus = XON_loyal_and_true }
 		completion_reward = {
 			country_event = XON_start_event.3
@@ -55,9 +46,6 @@ focus_tree = {
 		x = 9
 		y = 4
 		cost = 3
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
 		prerequisite = { focus = XON_the_sworn_enemy }
 		completion_reward = {
 			XON = { add_stability = 0.1 }
@@ -69,12 +57,210 @@ focus_tree = {
 		x = 9
 		y = 5
 		cost = 3
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
 		prerequisite = { focus = XON_announce_eternal_succession }
 		completion_reward = {
-			
+			XON = { load_focus_tree = XON_KHOSHUT_focus }
+			# KHOSHUT will also become leader, gotta implement that
 		}
 	}
+}
+focus_tree = {
+	id = XON_KHOSHUT_focus
+
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = XON_time_for_change
+		icon = GFX_goal_unknown
+		x = 8
+		y = 1
+		cost = 3
+		completion_reward = {
+			XON = { add_stability = 0.05 }
+			}
+		}
+	focus = {
+		id = XON_contact_authority
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		cost = 3
+		prerequisite = { focus = XON_time_for_change }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_meet_with_union
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 3
+		prerequisite = { focus = XON_contact_authority }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_reach_out_rogue_intelligence
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 3
+		prerequisite = { focus = XON_meet_with_union }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_rebuild_schools
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 3
+		prerequisite = { focus = XON_time_for_change }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_reinvigorate_businesses
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 3
+		prerequisite = { focus = XON_rebuild_schools }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_restore_factories
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 3
+		prerequisite = { focus = XON_reinvigorate_businesses }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_make_big_promises
+		icon = GFX_goal_unknown
+		x = 10
+		y = 2
+		cost = 3
+		prerequisite = { focus = XON_time_for_change }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_help_minorities
+		icon = GFX_goal_unknown
+		x = 10
+		y = 3
+		cost = 3
+		prerequisite = { focus = XON_make_big_promises }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_sense_of_freedom
+		icon = GFX_goal_unknown
+		x = 10
+		y = 4
+		cost = 3
+		prerequisite = { focus = XON_help_minorities }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_turk_troubles
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 3
+		prerequisite = { focus = XON_time_for_change }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_infiltrate_ranks
+		icon = GFX_goal_unknown
+		x = 12
+		y = 3
+		cost = 3
+		prerequisite = { focus = XON_turk_troubles }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_operation_options
+		icon = GFX_goal_unknown
+		x = 12
+		y = 4
+		cost = 3
+		prerequisite = { focus = XON_infiltrate_ranks }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_army_prep
+		icon = GFX_goal_unknown
+		x = 8
+		y = 6
+		cost = 3
+		prerequisite = {
+		focus = XON_reach_out_rogue_intelligence
+		focus = XON_restore_factories
+		focus = XON_sense_of_freedom
+		focus = XON_operation_options
+		}
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_powerful_legacy
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 3
+		prerequisite = { focus = XON_army_prep }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_final_test
+		icon = GFX_focus_generic_attack_turkey
+		x = 8
+		y = 8
+		cost = 4
+		prerequisite = { focus = XON_powerful_legacy }
+		completion_reward = {
+			# WIP
+			}
+		}
+	focus = {
+		id = XON_rest_at_last
+		icon = GFX_goal_unknown
+		x = 8
+		y = 9
+		cost = 3
+		prerequisite = { focus = XON_final_test }
+		# The Ottomans must also be defeated!
+		completion_reward = {
+			# WIP
+			}
+		}
 }

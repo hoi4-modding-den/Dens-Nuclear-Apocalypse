@@ -1,0 +1,65 @@
+﻿XEX_INF_01 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { XEX }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { XSK_GAR_01 }
+
+	fallback_name = "%d. Infantry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Infantry Division" }
+		2 = { "%d. Infantry Division" }
+		3 = { "%d. Infantry Division" }
+		4 = { "%d. Infantry Division" }
+		5 = { "%d. Infantry Division" }
+		6 = { "%d. Infantry Division" }
+		7 = { "%d. Infantry Division" }
+		8 = { "%d. Infantry Division" }
+		9 = { "%d. Infantry Division" }
+		10 = { "%d. Infantry Division" }
+
+	}
+}
+
+XEX_GAR_01 = 
+{
+	name = "Casino Guards"
+
+	for_countries = { XEX }
+
+	can_use = { NOT = { has_government = communism } }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d. Casino Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Casino Guard Division" }
+		2 = { "%d. Casino Guard Division" }
+		14 = { "%d. Casino Guard Division" }
+		3 = { "%d. Casino Guard Division" }
+		5 = { "%d. Casino Guard Division" }
+		6 = { "%d. Casino Guard Division" }
+		7 = { "%d. Casino Guard Division" }
+		8 = { "%d. Casino Guard Division" }
+		9 = { "%d. Casino Guard Division" }
+		10 = { "%d. Casino Guard Division" }
+
+	}
+}

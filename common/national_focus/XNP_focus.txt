@@ -52,62 +52,11 @@ focus_tree = {
 		}		
 	}
 	focus = {
-		id = XNP_the_grand_coalition
-		icon = GFX_focus_ARG_strengthening_the_concordancia
-		relative_position_id = XNP_jhapa_conference
-		prerequisite = { focus = XNP_jhapa_conference }
-		mutually_exclusive = { focus = XNP_digging_our_own_grave }
-		x = 2
-		y = 1
-		cost = 1
-
-		available = {  }
-		bypass = {}		
-		
-		completion_reward = {
-			add_stability = 0.10
-			swap_ideas = {
-  				remove_idea = XNP_congressional_deadlock
-    			add_idea = XNP_unified_center_1
-			}
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}		
-	}
-	focus = {
-		id = XNP_digging_our_own_grave
-		icon = GFX_focus_generic_strike_at_democracy2
-		relative_position_id = XNP_jhapa_conference
-		prerequisite = { focus = XNP_jhapa_conference }
-		mutually_exclusive = { focus = XNP_the_grand_coalition }
-		x = -2
-		y = 1
-		cost = 1
-
-		available = {  }
-		bypass = {}		
-		
-		completion_reward = {
-			remove_ideas = XNP_congressional_deadlock
-			add_stability = -1.00
-			set_politics = {
-   				ruling_party = communism
-    			elections_allowed = no
-			}
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}		
-	}	
-	focus = {
 		id = XNP_multipartisan_agreements
 		icon = GFX_focus_SWE_form_rfsu
-		relative_position_id = XNP_the_grand_coalition
-		prerequisite = { focus = XNP_the_grand_coalition }
-		x = -3
+		relative_position_id = XNP_jhapa_conference
+		prerequisite = { focus = XNP_jhapa_conference }
+		x = -2
 		y = 1
 		cost = 10
 
@@ -151,9 +100,9 @@ focus_tree = {
 	focus = {
 		id = XNP_land_appropriation_committee
 		icon = GFX_focus_SWE_hygienic_housing
-		relative_position_id = XNP_the_grand_coalition
-		prerequisite = { focus = XNP_the_grand_coalition }
-		x = 1
+		relative_position_id = XNP_jhapa_conference
+		prerequisite = { focus = XNP_jhapa_conference }
+		x = 2
 		y = 1
 		cost = 5
 
@@ -222,6 +171,7 @@ focus_tree = {
 		available = { always = no }	
 		
 		completion_reward = {
+			remove_ideas = XNP_unified_center_3
 		}
 		
 		ai_will_do = {
@@ -243,6 +193,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = XNP_for_nepal_tt
+			add_ideas = XNP_right_coalition
 		}
 		
 		ai_will_do = {
@@ -264,6 +215,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = XNP_for_our_people_tt
+			add_ideas = XNP_centrist_coalition
 		}
 		
 		ai_will_do = {
@@ -285,6 +237,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = XNP_for_the_world_tt
+			add_ideas = XNP_left_coalition
 		}
 		
 		ai_will_do = {

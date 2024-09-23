@@ -59,7 +59,7 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons2
 			research_cost_coeff = 1
-		}		
+		}
 
 		research_cost = 1.5
 		start_year = 2236
@@ -70,6 +70,14 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+		}
+
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				add_stability = -0.1
+				country_event = XK0_focus.4
+			}
 		}
 		
 		ai_will_do = {
@@ -1235,7 +1243,7 @@ technologies = {
 		}
 	}
 	
-		support_weapons = {
+	support_weapons = {
 
 		infantry = {
 			defense = 0.05
@@ -1288,6 +1296,13 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+		}
+
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				country_event = XK0_focus.3
+			}
 		}
 		
 		ai_will_do = {
@@ -2452,6 +2467,25 @@ technologies = {
 				defence = 0.05
 			}
 		}
+	}
+
+	XSK_supply_reducer = { #hidden tech for the Ottoman Sultanate / XSK
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2236
+
+		no_supply_grace = 48
+		hills = {
+			movement = 0.05
+		}
+		mountain = {
+			movement = 0.05
+		}
+
 	}
 	
 }

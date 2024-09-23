@@ -1,4 +1,9 @@
 ﻿l_english:
+ XBE:0 "ASF Bangladesh"
+ XBE_DEF:0 "Bengali"
+ XBE_ADJ:0 "The Anarcho-Syndicalist Federation of Bangladesh"
+ XBE_anarchy:0 "Anarchy"
+
  XNP_fascism:0 "Nepāl"
  XNP_fascism_DEF:0 "Nepāl"
 
@@ -33,6 +38,9 @@
  XNP_extension_of_the_people:0 "Extension of the People"
  XNP_congressional_deadlock:0 "Congressional Deadlock"
  XNP_unified_center:0 "Unified Center"
+ XNP_centrist_coalition:0 "RSP Led Coalition"
+ XNP_left_coalition:0 "CPN Led Coalition"
+ XNP_right_coalition:0 "RPP Led Coalition"
  XNP_land_appropriation_committee:0 "Land Appropriation Committee"
  XNP_education_bureau:0 "Nepali Education Bureau"
 
@@ -42,8 +50,7 @@
 
  XNP_focus.1.title:0 "The Congress Convenes in Jhapa"
  XNP_focus.1.desc:0 "The Nepali National Congress only convenes in the capital on occassions of extreme importance. This year, the occasion is a complete deadlock among the representatives. All five major parties have a roughly equal number of represenatatives, and none of them can agree on anything. This special session is a last-ditch effort to move forward, at least until next year's panel is elected."
- XNP_focus.1.a:0 "The republicans come to an agreement"
- XNP_focus.1.b:0 "All hell breaks loose"
+ XNP_focus.1.a:0 "The Grand Coalition is formed!"
 
  XNP_diamond_in_the_rough:0 "Diamond in the Rough"
  XNP_diamond_in_the_rough_desc:0 ""
@@ -51,17 +58,15 @@
  XNP_jhapa_conference_desc:0 ""
  XNP_the_grand_coalition:0 "A Grand Coalition"
  XNP_the_grand_coalition_desc:0 ""
- XNP_digging_our_own_grave:0 "Digging Our Own Grave"
- XNP_digging_our_own_grave_desc:0 "§RThis path will be worked on after the democratic side of the tree!§!"
  XNP_multipartisan_agreements:0 "Multipartisan Agreements"
  XNP_fight_radicalism:0 "The Fight Against Radicalism"
  XNP_land_appropriation_committee:0 "Pass the Land Appropriation Act"
  XNP_fund_the_himalayan_mining_group:0 "Fund the Himalayan Mining Group"
- XNP_nepali_education_bureau:0 "Found the Himalayan Education Bureau"
+ XNP_nepali_education_bureau:0 "Found the Nepali Education Bureau"
  XNP_the_republic_lives_another_year:0 "The Republic Lives Another Year"
  XNP_for_the_world:0 "For the World"
  XNP_for_our_people:0 "For Our People"
  XNP_for_nepal:0 "For Nepal"
- XNP_for_the_world_tt:0 "§YThe §cCPN§Y splits from the coalition!§!"
- XNP_for_our_people_tt:0 "§YThe §dRSP§Y splits from the coalition!§!"
- XNP_for_nepal_tt:0 "§YThe §fRPP§Y splits from the coalition!§!"
+ XNP_for_the_world_tt:0 "§YThe §cCPN§!§Y takes lead in the coalition!§!"
+ XNP_for_our_people_tt:0 "§YThe §dRSP§!§Y takes lead in the coalition!§!"
+ XNP_for_nepal_tt:0 "§YThe §fRPP§!§Y takes lead in the coalition!§!"

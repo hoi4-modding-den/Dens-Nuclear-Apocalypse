@@ -36,6 +36,6 @@ XHK_corporate_mercinaries = {
 		original_tag = XHK
 	}
 	visible = {	
-		has_completed_focus = XHK_expand_corporate_assets
+		has_completed_focus = XHK_private_mercenaries
 	}
 }

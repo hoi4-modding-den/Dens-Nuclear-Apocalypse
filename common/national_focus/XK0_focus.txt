@@ -5,7 +5,7 @@
 		factor = 0
 		modifier = {
 			add = 10
-			tag = XK0
+			has_country_flag = XK0_country
 		}
 	}
 	
@@ -14,20 +14,20 @@
 	continuous_focus_position = { x = 3100 y = 1000 }
 
 	initial_show_position = {
-		focus = XK0_university_of_pyonyang_expansion
+		focus = XK0_do_research
 	}
 	
 	focus = {
-		id = XK0_university_of_pyonyang_expansion
+		id = XK0_do_research
 		icon = GFX_focus_XK0_university_investments
 		prerequisite = {}
-		x = 8
-		y = 0
+		x = 5
+		y = 2
 		#relative_position_id = 
 		
-		cost = 20
+		cost = 0
 		
-		available = {}
+		available = { always = no }
 		bypass = {}
 		mutually_exclusive = {}
 		
@@ -38,12 +38,251 @@
 		
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: XK0_university_of_pyonyang_expansion"
-			country_event = XK0_focus.1
+			custom_effect_tooltip = XK0_do_research_tt
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
-		
 	}
+	
+	# focus = {
+		# id = XK0_university_of_pyonyang_expansion
+		# icon = GFX_focus_XK0_university_investments
+		# prerequisite = {}
+		# x = 8
+		# y = 0
+		# #relative_position_id = 
+		
+		# cost = 20
+		
+		# available = {}
+		# bypass = {}
+		# mutually_exclusive = {}
+		
+		# cancelable = no
+		# cancel_if_invalid = yes
+		# continue_if_invalid = no
+		# available_if_capitulated = yes
+		
+		# completion_reward = { 
+			# log = "[GetDateText]: [Root.GetName]: XK0_university_of_pyonyang_expansion"
+			# country_event = XK0_focus.1
+		# }
+		
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	
+	# focus = {
+		# id = XK0_industrialisation_of_josea
+		# icon = GFX_focus_CHL_enlarge_the_textile_industries
+		# prerequisite = { focus = XK0_university_of_pyonyang_expansion }
+		# x = -3
+		# y = 1
+		# relative_position_id = XK0_university_of_pyonyang_expansion
+		
+		# cost = 6
+		
+		# available = {}
+		# bypass = {}
+		# mutually_exclusive = {}
+		
+		# cancelable = yes
+		# cancel_if_invalid = yes
+		# continue_if_invalid = no
+		# available_if_capitulated = yes
+		
+		# completion_reward = { 
+			# log = "[GetDateText]: [Root.GetName]: XK0_industrialisation_of_josea"
+			# custom_effect_tooltip = XK0_industrialisation_of_josea_tt
+		# }
+		
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	
+	# focus = {
+		# id = XK0_put_official_faith_in_trade_unions
+		# icon = GFX_focus_CHL_enlarge_the_textile_industries
+		# prerequisite = { focus = XK0_industrialisation_of_josea }
+		# x = -1
+		# y = 1
+		# relative_position_id = XK0_industrialisation_of_josea
+		
+		# cost = 6
+		
+		# available = {}
+		# bypass = {}
+		# mutually_exclusive = { focus = XK0_denounce_seoul_workers_federation }
+		
+		# cancelable = yes
+		# cancel_if_invalid = yes
+		# continue_if_invalid = no
+		# available_if_capitulated = yes
+		
+		# completion_reward = { 
+			# log = "[GetDateText]: [Root.GetName]: XK0_put_official_faith_in_trade_unions"
+			# XK0_decrease_militancy = yes
+			# add_popularity = {
+				# ideology = communism
+				# popularity = 0.08
+			# }
+		# }
+		
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	
+	# focus = {
+		# id = XK0_denounce_seoul_workers_federation
+		# icon = GFX_focus_CHL_enlarge_the_textile_industries
+		# prerequisite = { focus = XK0_industrialisation_of_josea }
+		# x = 1
+		# y = 1
+		# relative_position_id = XK0_industrialisation_of_josea
+		
+		# cost = 6
+		
+		# available = {}
+		# bypass = {}
+		# mutually_exclusive = { focus = XK0_put_official_faith_in_trade_unions }
+		
+		# cancelable = yes
+		# cancel_if_invalid = yes
+		# continue_if_invalid = no
+		# available_if_capitulated = yes
+		
+		# completion_reward = { 
+			# log = "[GetDateText]: [Root.GetName]: XK0_denounce_seoul_workers_federation"
+			# XK0_increase_militancy = yes
+			# add_popularity = {
+				# ideology = communism
+				# popularity = -0.03
+			# }
+			# add_popularity = {
+				# ideology = fascism
+				# popularity = 0.03
+			# }
+		# }
+		
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	
+	# focus = {
+		# id = XK0_expand_workers_rights
+		# icon = GFX_focus_CHL_enlarge_the_textile_industries
+		# prerequisite = { focus = XK0_put_official_faith_in_trade_unions }
+		# x = -2
+		# y = 1
+		# relative_position_id = XK0_put_official_faith_in_trade_unions
+		
+		# cost = 6
+		
+		# available = {}
+		# bypass = {}
+		# mutually_exclusive = {}
+		
+		# cancelable = yes
+		# cancel_if_invalid = yes
+		# continue_if_invalid = no
+		# available_if_capitulated = yes
+		
+		# completion_reward = { 
+			# log = "[GetDateText]: [Root.GetName]: XK0_expand_workers_rights"
+			# add_timed_idea = {
+				# idea = XK0_workers_rights
+				# days = 120
+			# }
+			# add_popularity = {
+				# ideology = communism
+				# popularity = 0.05
+			# }
+		# }
+		
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	
+	# focus = {
+		# id = XK0_introduce_a_minimum_wage
+		# icon = GFX_focus_CHL_enlarge_the_textile_industries
+		# prerequisite = { focus = XK0_expand_workers_rights }
+		# x = 0
+		# y = 1
+		# relative_position_id = XK0_expand_workers_rights
+		
+		# cost = 6
+		
+		# available = { NOT = { has_idea = XK0_workers_rights } }
+		# bypass = {}
+		# mutually_exclusive = {}
+		
+		# cancelable = yes
+		# cancel_if_invalid = yes
+		# continue_if_invalid = no
+		# available_if_capitulated = yes
+		
+		# completion_reward = { 
+			# log = "[GetDateText]: [Root.GetName]: XK0_introduce_a_minimum_wage"
+			# XK0_decrease_militancy = yes
+			# add_timed_idea = {
+				# idea = XK0_minimum_wage
+				# days = 365
+			# }
+			# add_popularity = {
+				# ideology = communism
+				# popularity = 0.05
+			# }
+		# }
+		
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	
+	# focus = {
+		# id = XK0_build_up_the_center
+		# icon = GFX_focus_CHL_enlarge_the_textile_industries
+		# prerequisite = { 
+			# focus = XK0_put_official_faith_in_trade_unions
+			# focus = XK0_denounce_seoul_workers_federation
+		# }
+		# x = 1
+		# y = 1
+		# relative_position_id = XK0_put_official_faith_in_trade_unions
+		
+		# cost = 6
+		
+		# available = { NOT = { has_idea = XK0_workers_rights } }
+		# bypass = {}
+		# mutually_exclusive = {}
+		
+		# cancelable = yes
+		# cancel_if_invalid = yes
+		# continue_if_invalid = no
+		# available_if_capitulated = yes
+		
+		# completion_reward = { 
+			# log = "[GetDateText]: [Root.GetName]: XK0_build_up_the_center"
+			# 525 = {
+				# add_extra_state_shared_building_slots = 2
+				# add_building_construction = {
+					# type = industrial_complex
+					# level = 2
+					# instant_build = yes
+				# }
+			# }
+		# }
+		
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
 }

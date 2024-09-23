@@ -1,0 +1,254 @@
+add_namespace = XEX_events
+add_namespace = XEX_news_events
+add_namespace = XEX_gatcha_events
+
+news_event = { # Mihoyo takes control
+    id = XEX_news_events.1
+    title = XEX_news_events.1.t
+    picture = GFX_news_event_XEX_mihoyo_coup
+    desc = XEX_news_events.1.d
+
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XEX_news_events.1.a
+        trigger = {
+            tag = XEX
+        }
+    }
+
+    option = {
+        name = XEX_news_events.1.b
+        trigger = {
+            NOT = { tag = XEX }
+        }
+    }
+}
+
+news_event = { # Anti-Gamblerists win
+    id = XEX_news_events.2
+    title = XEX_news_events.2.t
+    picture = GFX_news_event_hitler_speech
+    desc = XEX_news_events.2.d
+
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XEX_news_events.2.a
+        trigger = {
+            tag = XEX
+        }
+    }
+
+    option = {
+        name = XEX_news_events.2.b
+        trigger = {
+            NOT = { tag = XEX }
+        }
+    }
+}
+
+news_event = { # Schmitler fuckin dies
+    id = XEX_news_events.3
+    title = XEX_news_events.3.t
+    picture = GFX_news_event_chinese_soldiers_city_ruin
+    desc = XEX_news_events.3.d
+
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = XEX_news_events.3.a
+        trigger = {
+            tag = XEX
+        }
+    }
+
+    option = {
+        name = XEX_news_events.3.b
+        trigger = {
+            NOT = { tag = XEX }
+            has_country_flag = XEX_enemy_of_schmitler
+        }
+    }
+
+    option = {
+        name = XEX_news_events.3.c
+        trigger = {
+            NOT = { tag = XEX }
+            NOT = { has_country_flag = XEX_enemy_of_schmitler }
+        }
+    }
+}
+
+unit_leader_event = { # 
+    id = XEX_gatcha_events.1
+    title = XEX_gatcha_events.1.t
+    desc = XEX_gatcha_events.1.d
+
+    is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+            has_country_flag = XEX_general_1_unlocked
+        }
+	}
+
+    fire_only_once = yes
+    
+    option = {
+        name = XEX_gatcha_events.1.a
+        set_country_flag = XEX_general_1_unlocked
+        show_unit_leaders_tooltip = XEX_gacha_general_1
+    }
+
+}
+
+unit_leader_event = { # 
+    id = XEX_gatcha_events.2
+    title = XEX_gatcha_events.1.t
+    desc = XEX_gatcha_events.1.d
+
+    is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+            has_country_flag = XEX_general_2_unlocked
+        }
+	}
+
+    fire_only_once = yes
+    
+    option = {
+        name = XEX_gatcha_events.1.a
+        set_country_flag = XEX_general_2_unlocked
+        show_unit_leaders_tooltip = XEX_gacha_general_2
+    }
+
+}
+
+unit_leader_event = { # 
+    id = XEX_gatcha_events.3
+    title = XEX_gatcha_events.1.t
+    desc = XEX_gatcha_events.1.d
+
+    is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+            has_country_flag = XEX_general_3_unlocked
+        }
+	}
+
+    fire_only_once = yes
+    
+    option = {
+        name = XEX_gatcha_events.1.a
+        set_country_flag = XEX_general_3_unlocked
+        show_unit_leaders_tooltip = XEX_gacha_general_3
+    }
+
+}
+
+unit_leader_event = { # 
+    id = XEX_gatcha_events.4
+    title = XEX_gatcha_events.1.t
+    desc = XEX_gatcha_events.1.d
+
+    is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+            has_country_flag = XEX_general_4_unlocked
+        }
+	}
+
+    fire_only_once = yes
+    
+    option = {
+        name = XEX_gatcha_events.1.a
+        set_country_flag = XEX_general_4_unlocked
+        show_unit_leaders_tooltip = XEX_gacha_general_4
+    }
+
+}
+
+unit_leader_event = { # 
+    id = XEX_gatcha_events.5
+    title = XEX_gatcha_events.1.t
+    desc = XEX_gatcha_events.1.d
+
+    is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+            has_country_flag = XEX_general_5_unlocked
+        }
+	}
+
+    fire_only_once = yes
+    
+    option = {
+        name = XEX_gatcha_events.1.a
+        set_country_flag = XEX_general_5_unlocked
+        show_unit_leaders_tooltip = XEX_gacha_general_5
+    }
+
+}
+
+country_event = { # 
+    id = XEX_gatcha_events.6
+    title = XEX_gatcha_events.6.t
+    picture = GFX_report_event_chinese_soldiers_02
+    desc = XEX_gatcha_events.6.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XEX_gatcha_events.6.a
+        army_experience = 100
+    }
+
+}
+
+country_event = { # 
+    id = XEX_gatcha_events.7
+    title = XEX_gatcha_events.7.t
+    picture = GFX_report_event_DEN_denmark_surrenders
+    desc = XEX_gatcha_events.7.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XEX_gatcha_events.6.a
+        add_equipment_to_stockpile = { 
+			type = infantry_equipment
+			amount = 1000 
+			producer = ROOT
+		}
+    }
+
+}
+
+country_event = { # 
+    id = XEX_gatcha_events.8
+    title = XEX_gatcha_events.8.t
+    picture = GFX_report_event_chinese_soldiers
+    desc = XEX_gatcha_events.8.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    
+    option = {
+        name = XEX_gatcha_events.6.a
+        add_manpower = 10000
+    }
+
+}

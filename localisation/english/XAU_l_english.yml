@@ -12,16 +12,30 @@
  XAU_neutrality_DEF:5 "the Automaton Corporations"
  XAU_neutrality_ADJ:5 "Automaton"
 
+ XAU_non_existant_long:0 "§RERROR§!"
+ XAU_non_existant:0 "§RERROR§!"
+
+ XAU_rogues_council_long:0 "Rogue's Council"
+ XAU_rogues_council:0 "Rogue's Council"
+
  ### DECISIONS ###
 
  XAU_components_decisions:0 "Components Logistics"
- XAU_components_decisions_desc:0 "[?XAU.components]"
+ XAU_components_decisions_desc:0 "§YComponents§! are the lifeblood of the §Oautomatons§!. They are needed to §Grepair and update§! §Oautomatons§! which results in a constant need to obtain more. Fortunately, there are many venues we can exploit to collect more §Ycomponents§!, and their benefits range from §Roptimising our military§! to §Gconstructing new colossal industrial automatons§! that function like regular factories.\n\nCURRENT STOCKPILE: [?XAU.components] £components_texticon\n\n"
 
  ### TRAITS ###
 
  XAU_subject_to_change:0 "WIP - PLACEHOLDER"
+ XAU_prewar_knowledge:0 "Prewar Knowledge"
+ XAU_wary_of_humans:0 "§RWary of Humans§!"
 
  ### MISC ###
+
+ XAU_wary_of_humans_opinion:0 "Wary of humans"
+ XAU_love_gambling:0 "Robots love gambling"
+
+ XAU_synthetic_absolution:0 "Synthetic Absolution"
+ XAU_synthetic_absolution_desc:0 "Synthetic absolution is the system devised by automaton leadership for total domination over every citizen of the Union. The government is primarily concerned with the efficiency of its factories and will §Rpunish§! those who hinder its progress."
 
  state_components_loc:0 "$STATE|H$ h"
 
@@ -31,5 +45,16 @@
  XAU_continue_tooltip:0 "§YTo new horizons...§!"
  XAU_exit_tooltip:0 "§YExit§!"
 
- XAU_logistics_body:0 "§Y---------- PROCUREMENT ----------§!\nFrom Territory:\nScavenged:\n§Y---------------- USAGE ----------------§!\nPopulation:\nAutomatons:\nCorruption:"
+ XAU_logistics_body:0 "§Y---------- PROCUREMENT ----------§!\nFrom Territory:\nScavenged:\n§Y---------------- USAGE -----------------§!\nPopulation:\nAutomatons:\nCorruption:"
  XAU_logistics_stats:0 "\n§G+450§!\n§G+56§!\n\n§R-320§!\n§R-95§!\n§R-15§!"
+
+ XAU_automaton_military_factories:0 "[?XAU.military_automatons] £mil_factory_texticon"
+ XAU_automaton_civilian_factories:0 "[?XAU.civilian_automatons] £civ_factory_texticon"
+
+ XAU_automaton_construction:0 "§YConstruct automaton§!"
+ XAU_automaton_construction_tooltip:0 "§YConstruct new automaton§!\n\nTime required: 180 days\nFactories used: [?XAU.automaton_factory_requirement] £civ_factory_texticon"
+ XAU_automaton_military_add_tooltip:0 "§GAdd§! one §Yautomaton§! to\n§Gmilitary production§!"
+ XAU_automaton_military_subtract_tooltip:0 "§RRemove§! one §Yautomaton§!\nfrom §Gmilitary production§!"
+ XAU_automaton_civilian_add_tooltip:0 "§GAdd§! one §Yautomaton§! to\n§Ycivilian production§!"
+ XAU_automaton_civilian_subtract_tooltip:0 "§RRemove§! one §Yautomaton§!\nfrom §Ycivilian production§!"
+ XAU_details_desc_tooltip:0 "§Y--- CURRENT ---§!\nUnassigned: [?XAU.free_automatons]\nUpkeep: [?XAU.automaton_upkeep_modifier|.0%-]\n§Y- CONSTRUCT -§!\nCost: [?XAU.automaton_cost_modifier|.0%-]\nSpeed: [?XAU.automaton_build_speed_modifier|.0%+]\nFactory req: [?XAU.automaton_factory_requirement]"

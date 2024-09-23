@@ -10,4 +10,99 @@ scripted_gui = {
 			}
 		}
 	}
+	
+	XK0_road_scripted_gui = {
+		context_type = decision_category
+		window_name = "XK0_road_gui"
+
+		properties = {
+			XK0_525_strip = {
+				frame = 525.infrastructure_level
+			}
+			XK0_527_strip = {
+				frame = 527.infrastructure_level
+			}
+			XK0_997_strip = {
+				frame = 997.infrastructure_level
+			}
+			XK0_998_strip = {
+				frame = 998.infrastructure_level
+			}
+			XK0_999_strip = {
+				frame = 999.infrastructure_level
+			}
+			XK0_1000_strip = {
+				frame = 1000.infrastructure_level
+			}
+		}
+		
+		effects = {
+			XK0_525_strip_click = {
+				if = {
+					limit = {
+						NOT = { 
+							has_country_flag = XK0_road_program_525
+						}
+					}
+					set_country_flag = XK0_road_program_525
+					activate_decision = XK0_road_program_525
+				}
+			}
+			XK0_527_strip_click = {
+				if = {
+					limit = {
+						NOT = { 
+							has_country_flag = XK0_road_program_527
+						}
+					}
+					set_country_flag = XK0_road_program_527
+					activate_decision = XK0_road_program_527
+				}
+			}
+			XK0_997_strip_click = {
+				if = {
+					limit = {
+						NOT = { 
+							has_country_flag = XK0_road_program_997
+						}
+					}
+					set_country_flag = XK0_road_program_997
+					activate_decision = XK0_road_program_997
+				}
+			}
+			XK0_998_strip_click = {
+				if = {
+					limit = {
+						NOT = { 
+							has_country_flag = XK0_road_program_998
+						}
+					}
+					set_country_flag = XK0_road_program_998
+					activate_decision = XK0_road_program_998
+				}
+			}
+			XK0_999_strip_click = {
+				if = {
+					limit = {
+						NOT = { 
+							has_country_flag = XK0_road_program_999
+						}
+					}
+					set_country_flag = XK0_road_program_999
+					activate_decision = XK0_road_program_999
+				}
+			}
+			XK0_1000_strip_click = {
+				if = {
+					limit = {
+						NOT = { 
+							has_country_flag = XK0_road_program_1000
+						}
+					}
+					set_country_flag = XK0_road_program_1000
+					activate_decision = XK0_road_program_1000
+				}
+			}
+		}
+	}
 }

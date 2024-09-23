@@ -69,6 +69,13 @@ technologies = {
 			position = { x = 11 y = 9 } # x = 12 y = 0
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				country_event = XK0_focus.2
+			}
+		}
+		
 		ai_will_do = {
 			factor = 3
 			
@@ -115,6 +122,15 @@ technologies = {
 			position = { x = -2 y = 4 }
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				525 = {
+					increase_state_category = yes
+				}
+			}
+		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -150,6 +166,14 @@ technologies = {
 			position = { x = -2 y = 6 }
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				army_experience = 20
+				air_experience = 20
+			}
+		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -160,7 +184,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				date < "1938.1.1"
+				date < "2238.1.1"
 				factor = 0.5
 			}
 		}
@@ -201,6 +225,14 @@ technologies = {
 			position = { x = -2 y = 8 }
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				army_experience = 20
+				air_experience = 20
+			}
+		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -211,7 +243,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				date < "1939.1.1"
+				date < "2239.1.1"
 				factor = 0.5
 			}
 		}
@@ -251,6 +283,13 @@ technologies = {
 			position = { x = -2 y = 10 }
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				add_ideas = XK0_defence_of_the_nation
+			}
+		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -261,7 +300,7 @@ technologies = {
 				factor = 4
 			}
 			modifier = {
-				date < "1940.1.1"
+				date < "2240.1.1"
 				factor = 0.5
 			}
 		}
@@ -299,6 +338,16 @@ technologies = {
 			position = { x = -2 y = 12 }
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				swap_ideas = {
+					remove_idea = XK0_defence_of_the_nation
+					add_idea = XK0_defence_of_the_nation2
+				}
+			}
+		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -309,7 +358,7 @@ technologies = {
 				factor = 4
 			}
 			modifier = {
-				date < "1941.1.1"
+				date < "2241.1.1"
 				factor = 0.5
 			}
 		}
@@ -342,6 +391,16 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 14 }
+		}
+		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				swap_ideas = {
+					remove_idea = XK0_defence_of_the_nation2
+					add_idea = XK0_defence_of_the_nation3
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -938,6 +997,16 @@ technologies = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
 		}
+		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				unlock_decision_category_tooltip = XK0_josea_rocket_program
+				set_variable = { XK0_new_scientists_max = 0 }
+				set_variable = { XK0_jrp_rocketry_tests_max = 0 }
+				add_to_variable = { XK0_josea_rocket_program = 1 }
+			}
+		}
 	
 		ai_will_do = {
 			factor = 1
@@ -987,6 +1056,16 @@ technologies = {
 		path = {
 			leads_to_tech = jet_engines 
 			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				unlock_decision_category_tooltip = XK0_josea_rocket_program
+				set_variable = { XK0_new_scientists_max = 0 }
+				set_variable = { XK0_jrp_rocketry_tests_max = 0 }
+				add_to_variable = { XK0_josea_rocket_program = 1 }
+			}
 		}
 		
 		research_cost = 2
@@ -1049,6 +1128,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				unlock_decision_category_tooltip = XK0_josea_rocket_program
+				set_variable = { XK0_new_scientists_max = 0 }
+				set_variable = { XK0_jrp_rocketry_tests_max = 0 }
+				add_to_variable = { XK0_josea_rocket_program = 1 }
+			}
+		}
+		
 		research_cost = 1.5
 		start_year = 2245
 		
@@ -1100,6 +1189,15 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				unlock_decision_category_tooltip = XK0_josea_rocket_program
+				add_to_variable = { XK0_new_scientists_max = 0 }
+				add_to_variable = { XK0_josea_rocket_program = 1 }
+			}
+		}
+		
 		research_cost = 1.5
 		start_year = 2246
 		
@@ -1145,9 +1243,17 @@ technologies = {
 		}
 		
 		desc = "JET_ENGINES_SPECIAL"
-
+		
 		on_research_complete = {
 			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+			if = {
+				limit = { has_country_flag = XK0_country }
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 3
+					category = air_equipment
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -1182,23 +1288,23 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > 1941.1.1
+				date > 2241.1.1
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > 1942.1.1
+				date > 2242.1.1
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > 1943.1.1
+				date > 2243.1.1
 			}
 
 			modifier = {
 				factor = 2
 				is_major = yes
-				date > 1943.1.1
+				date > 2243.1.1
 			}
 
 			modifier = {
@@ -1269,10 +1375,23 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_country_flag = XK0_country }
+				add_threat = 10
+				news_event = XK0_news.1
+			}
+		}
+		
 		ai_will_do = {
 			factor = 3
 			modifier = {
 				tag = USA
+				factor = 2
+			}
+			modifier = {
+				has_country_flag = XK0_country
+				check_variable = { XK0_militancy_level > 40 }
 				factor = 2
 			}
 		}
@@ -1309,6 +1428,11 @@ technologies = {
 					has_war_with = JAP
 				}
 				play_warning_to_japan_effect = yes
+			}
+			if = {
+				limit = { has_country_flag = XK0_country }
+				add_threat = 40
+				news_event = XK0_news.2
 			}
 		}
 		categories = {

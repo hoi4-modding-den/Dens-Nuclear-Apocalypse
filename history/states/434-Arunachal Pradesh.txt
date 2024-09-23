@@ -10,7 +10,8 @@ manpower=133333
 	}
 
 	history={
-		owner = LIB # RAJ
+		owner = XBE
+		add_core_of = XBE
 		buildings = {
 			infrastructure = 1
 		}

@@ -295,6 +295,92 @@ foreign_politics = {
 
 	}
 
+	XSK_enact_protection_protocol = {
+
+		icon = GFX_decision_generic_army_support
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		target_trigger = { 
+			FROM = {
+				tag = XRE
+			}
+		}
+
+		available = {
+			OR = {
+				is_faction_leader = yes
+				AND = {
+					is_in_faction_with = XTW
+					XTW = { is_faction_leader = yes }
+				}
+			}
+			FROM = {
+				has_war = yes
+				OR = {
+					is_guaranteed_by = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+
+		visible = { 
+			NOT = { has_war_with = FROM }
+			FROM = {
+				is_in_faction = no
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 5
+
+        ai_will_do = {
+			base = 10000
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			FROM = {
+				custom_effect_tooltip = XSK_enact_protection_protocol_tt
+				hidden_effect = {
+					division_template = {
+						name = "Ottoman Survey Corps"
+						override_model = ITA_infantry_alt_3_entity
+						template_counter = 67
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+						}
+					}
+					random_core_state = {
+						limit = {
+							is_controlled_by = FROM
+						}
+						create_unit = {
+							division = "name = \"Ottoman Survey Corps\" division_template = \"Ottoman Survey Corps\" start_experience_factor = 0.4 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = FROM
+							allow_spawning_on_enemy_provs = yes 
+							count = 3
+						}
+					}
+				}
+			}
+        }
+
+	}
+
 }
 
 XSK_invasion_of_china = {
@@ -547,6 +633,10 @@ XSK_invasion_of_china = {
 			}
 		}
 	}
+
+}
+
+XSK_anarchy_reclamation_cat = {
 
 	XSK_reclaim_anarchy_land = {
 
@@ -943,6 +1033,56 @@ XSK_military_decisions = {
 					}
 				}
 			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	XSK_reduce_supply_use = {
+
+		icon = GFX_decision_generic_trucks
+
+		allowed = {
+			tag = XSK
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			has_tech = motorised_infantry
+		}
+
+		ai_hint_pp_cost = 50
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+			has_army_experience > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+
+		days_remove = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+				army_experience = -15
+			}
+		}
+
+		remove_effect = {
+			set_technology = {
+				XSK_supply_reducer = 1
+				popup = no
+			}
+			custom_effect_tooltip = XSK_supply_reducer_tt
 		}
 
 		ai_will_do = {
