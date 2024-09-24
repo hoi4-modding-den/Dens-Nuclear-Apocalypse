@@ -517,7 +517,7 @@ focus_tree = {
 
 	focus = {
 		id = XSK_empower_reformists
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_XSK_empower_reformists
 		prerequisite = { focus = XSK_no_sultan }
 		mutually_exclusive = { focus = XSK_empower_radicals }
 		x = 2
@@ -2681,6 +2681,41 @@ focus_tree = {
 					name = XSK_neutrality_party_yuan
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = XSK_reach_out_to_cordoba
+		icon = GFX_focus_generic_befriend_cordoba
+		prerequisite = { focus = XSK_legacy_of_suleyman focus = XSK_support_the_united_front }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = XSK_legacy_of_suleyman
+
+		available = {
+			is_subject = no
+			XAD = {
+				exists = yes
+				is_subject = no
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { }
+
+		completion_reward = {
+			XAD = { country_event = XSK_events.11 }
+			custom_effect_tooltip = the_following_will_happen_TT
+			XAD = { event_option_tooltip = XSK_events.11.a }
 		}
 	}
 

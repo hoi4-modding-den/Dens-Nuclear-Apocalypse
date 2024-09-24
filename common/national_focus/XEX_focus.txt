@@ -168,7 +168,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = {  }
@@ -233,7 +233,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = {  }
@@ -264,7 +264,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = {  }
@@ -277,7 +277,7 @@ focus_tree = {
 
 	focus = {
 		id = XEX_outprofit_the_casino_division
-		icon = GFX_focus_XEX_end_the_gambling
+		icon = GFX_focus_XEX_mihoyo_profits
 		prerequisite = { focus = XEX_expand_operations focus = XEX_expand_operations2 }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -337,6 +337,9 @@ focus_tree = {
 						has_dynamic_modifier = { modifier = XEX_genshin_state }
 					}
 				}
+			}
+			has_army_manpower = {
+				size > 200000
 			}
 		}
 
@@ -436,6 +439,52 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XEX_incursion_into_korea
+		icon = GFX_focus_XEX_attack_josea
+		prerequisite = { focus = XEX_realm_of_genshin }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_realm_of_genshin
+
+		available = {
+			is_subject = no
+			has_army_manpower = {
+				size > 250000
+			}
+			is_neighbor_of = XK0
+			NOT = { is_ally_with = XK0 }
+		}
+
+		bypass = {
+			XK0 = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		will_lead_to_war_with = XK0
+
+		completion_reward = {
+			create_wargoal = {
+				target = XK0
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
 		id = XEX_crackdown
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = XEX_protect_our_interests focus = XEX_business_as_usual }
@@ -503,7 +552,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = {  }
@@ -551,7 +600,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = {  }
@@ -815,7 +864,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = XEX_protect_our_interests focus = XEX_business_as_usual focus = XEX_protests_continue }
 		#mutually_exclusive = { focus =  }
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = XEX_business_as_usual
 
@@ -830,7 +879,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 200
+			factor = 50
 		}
 
 		search_filters = {  }
@@ -1004,7 +1053,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = {  }
@@ -1059,7 +1108,11 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
+			modifier = {
+				add = 200
+				XRE = { is_ai = yes }
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1314,7 +1367,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers
 		#prerequisite = { focus =  }
 		mutually_exclusive = { focus = XEX_business_as_usual focus = XEX_protect_our_interests }
-		x = 14
+		x = 15
 		y = 0
 		#relative_position_id = 
 
@@ -1788,6 +1841,7 @@ focus_tree = {
 
 		available = {
 			has_government = communism
+			has_war = no
 		}
 
 		bypass = {
@@ -1797,7 +1851,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		search_filters = {  }

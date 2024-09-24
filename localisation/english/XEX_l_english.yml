@@ -95,6 +95,7 @@
  XEX_guard_division_ready: "Bo-Hai Defence Corporation"
  XEX_appropriate_casino_riches: "Appropriate Casino Riches"
  XEX_enemy_of_casinos: "Gambling Help Groups"
+ XEX_enemy_of_casinos2: "United Against Luck"
  XEX_protectors_of_peace: "Peacekeepers"
  XEX_independence_protection: "Bo-Hai Organisation for the Protection of Sovereignty"
 
@@ -122,12 +123,18 @@ decision_cost_1_civ_50_pp_blocked: "£civ_factory §R1§! £pol_power §R50§!"
 decision_cost_1_civ_50_pp_tooltip: "It costs £civ_factory §Y1§! £pol_power §Y50§! to take the decision\n \nClicking this decision requires at least one £civ_factory §YCivilian Factory§! in any §Ycore state§!. This decision does §Rnot§! count §Yoff-map factories§! or §Yfactories from puppets§!."
 
 
+# Dynamic Modifiers
+
+ XEX_genshin_state: "Genshin Addiction"
+
+
 # Events
 
 XEX_news_events.1.t: "MiHoYo secures the Bo-Hai Gambling Cities"
 XEX_news_events.1.d: "In Light of the recent riots in the Bo-Hai Gambling Cities, the MiHoYo Corporation has seen it fit to overthrow the rule of the Casino Division and take matters into their own hands to take care of this problem. People are already reporting an increase in weeb sightings."
-XEX_news_events.1.a: "Now to fix this problem."
-XEX_news_events.1.b: "What the Hell?"
+XEX_news_events.1.a: "Let's hope profits won't drop."
+XEX_news_events.1.b: "They value money of human lives!"
+XEX_news_events.1.c: "Capitalist Pigs!"
 
 XEX_news_events.2.t: "Anti-Gamblerists overthrow the Casino Group"
 XEX_news_events.2.d: "Somehow, the Anti-Casino Party under the leadership of Monsieur Arnie Schmitler have managed to convince the population of the former Bo-Hai Gambling Cities to join their cause and evict the Casino Group, seizing control of the state. Schmitler has announced that he will do everything in his powers to protect the people from the dangers of gambling, no matter what."
@@ -159,7 +166,7 @@ XEX_gatcha_events.8.d: "We have recruited new officers for our Private Police."
 
  XEX_protect_our_interests: "Protect our Interests"
  XEX_protect_our_interests_desc: "With the continuing of the protests against the casino division of our group, we might need to take control of the situation to protect our company's interests."
- XEX_continue_brainwashing: "Continue Propaganda Campaigns"
+ XEX_continue_brainwashing: "Continue Advertising Campaigns"
  XEX_continue_brainwashing_desc: ""
  XEX_ensure_investors: "Guarantee Profits for Investors"
  XEX_ensure_investors_desc: ""
@@ -187,7 +194,9 @@ XEX_gatcha_events.8.d: "We have recruited new officers for our Private Police."
  XEX_realm_of_genshin_desc: ""
  XEX_realm_of_genshin_trigger: "has unlocked all Generals from the Gacha."
  XEX_realm_of_genshin_tt: "\nWe will gain §Ycores§! on all states with the §YGenshin Addiction§! modifier:"
- 
+XEX_incursion_into_korea: "Secure Profits in Korea"
+XEX_incursion_into_korea_desc: ""
+
  XEX_crackdown: "Crack Down on Dissent"
  XEX_crackdown_desc: ""
  XEX_end_unrest: "Raze the Ghettos"
@@ -273,8 +282,3 @@ XEX_gatcha_events.8.d: "We have recruited new officers for our Private Police."
  
  XEX_history_desc: "The Bo-Hai Gambling Cities are a state in which money rules everything. The owners of the casinos are de-facto ruling the nation like nobility, with Du Tu as their king."
 
-
-# Random Stuff
-
- XEX_forced_peace_deal_tt: "The Tsingtao Free State has fallen."
- XEX_genshin_state: "Genshin Addiction"

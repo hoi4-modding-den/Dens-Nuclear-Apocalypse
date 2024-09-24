@@ -359,6 +359,11 @@ XSK_railway_company_contract: "Foreign Railway Advisors"
  XSK_events.10.d: "There has been a rise in protests from Turkic minorities - and those that believe they are - within our country. Our counter-intelligence department has located the source of the agitators, [XSK.GetNameDef]. Apparently, they have been supporting resistance within our nation to solidify their claim on our territories."
  XSK_events.10.a: "Damn them!"
 
+ XSK_events.11.t: "Ottoman Military Mission"
+ XSK_events.11.d: "Today, an Ottoman Attache arrived in [ROOT.capital.GetCapitalVictoryPointName]. We have had good relations with the Sultanate since their formation, however, the Sultanate proposes to expand our agreements to include negotiable military aid missions to each other."
+ XSK_events.11.a: "They will make great allies!"
+ XSK_can_send_volunteers_to_XAD_tt: "Ottoman-Cordoban Military Agreement"
+
  XSK_taiwan_events.1.t: "Ottoman Delegates arrive in [ROOT.capital.GetCapitalVictoryPointName]"
  XSK_taiwan_events.1.d: "Today, Ottoman Delegates arrived in [ROOT.capital.GetCapitalVictoryPointName] to meet with our government. They have not stated their reason for traveling all the way here, but they do not seem hostile towards us."
  XSK_taiwan_events.1.a: "Let's see what they want."
@@ -428,6 +433,7 @@ XSK_railway_company_contract: "Foreign Railway Advisors"
 
 # Opinion Modifiers
 
+ XSK_islamic_friends: "Friends in Allah"
  XSK_dislike_deportation: "Deported Han Chinese"
  XSK_denounced_our_intentions: "Denounced our Government"
  XSK_uf_support: "United Front Support"
@@ -619,6 +625,8 @@ XSK_railway_company_contract: "Foreign Railway Advisors"
  XSK_chinese_science_desc: "Not even the finest in the world."
  XSK_trade_profits: "Trade Profits"
  XSK_trade_profits_desc: ""
+ XSK_reach_out_to_cordoba: "Reach out to Cordoba"
+ XSK_reach_out_to_cordoba_desc: ""
  XSK_reclaim_chinese_lands: "Reclaim Chinese Lands"
  XSK_reclaim_chinese_lands_desc: ""
  XSK_reclaim_chinese_lands_tt: "Unlocks £decision_icon_small §YDecisions§! to retake states from the Anarchy."

@@ -103,6 +103,10 @@ ideas = {
                 defense_bonus_against = 0.15
             }
 
+            rule = {
+                can_send_volunteers = yes
+            }
+
         }
 
         XSK_the_sultanate_in_china_cav = {
@@ -136,6 +140,10 @@ ideas = {
                 defense_bonus_against = 0.15
             }
 
+            rule = {
+                can_send_volunteers = yes
+            }
+
         }
 
         XSK_the_sultanate_in_china_mongolian_cav = {
@@ -161,6 +169,10 @@ ideas = {
                 cavalry_defence_factor = 0.15
                 offensive_war_stability_factor = 0.25
                 ai_focus_aggressive_factor = 0.2
+            }
+
+            rule = {
+                can_send_volunteers = yes
             }
 
         }
@@ -192,6 +204,10 @@ ideas = {
                 tag = XON
                 attack_bonus_against = 0.15
                 defense_bonus_against = 0.15
+            }
+
+            rule = {
+                can_send_volunteers = yes
             }
 
         }
@@ -226,6 +242,10 @@ ideas = {
                 tag = XON
                 attack_bonus_against = 0.15
                 defense_bonus_against = 0.15
+            }
+
+            rule = {
+                can_send_volunteers = yes
             }
 
         }

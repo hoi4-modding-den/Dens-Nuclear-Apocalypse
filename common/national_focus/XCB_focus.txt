@@ -1,0 +1,299 @@
+﻿focus_tree = {
+	id = XCB_initial
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XCB
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 100 y = 1000 }
+	
+	focus = {
+		id = XCB_the_looming_severance
+		icon = GFX_focus_BRA_cohen_plan
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 11
+		y = 0
+		#relative_position_id = 
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_the_northern_strategy
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = XCB_the_looming_severance }
+		mutually_exclusive = { focus = XCB_an_all_embracing_movement }
+		x = -5
+		y = 1
+		relative_position_id = XCB_the_looming_severance
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_the_tools_of_a_modern_revolution
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = XCB_the_northern_strategy }
+		#mutually_exclusive = { focus = XCB_an_all_embracing_movement }
+		x = -1
+		y = 1
+		relative_position_id = XCB_the_northern_strategy
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_a_clear_and_concise_military_doctrine
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = XCB_the_tools_of_a_modern_revolution }
+		#mutually_exclusive = { focus = XCB_an_all_embracing_movement }
+		x = 1
+		y = 1
+		relative_position_id = XCB_the_tools_of_a_modern_revolution
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_prepare_the_agrarians
+		icon = GFX_focus_ITA_peasants_rise
+		prerequisite = { focus = XCB_the_tools_of_a_modern_revolution }
+		#mutually_exclusive = { focus = XCB_an_all_embracing_movement }
+		x = -1
+		y = 1
+		relative_position_id = XCB_the_tools_of_a_modern_revolution
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_combat_internal_factionalism
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = XCB_the_northern_strategy }
+		#mutually_exclusive = { focus = XCB_an_all_embracing_movement }
+		x = 1
+		y = 1
+		relative_position_id = XCB_the_northern_strategy
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_the_red_banner_above_all
+		icon = GFX_focus_CHL_union_of_hispanic_republics
+		prerequisite = { focus = XCB_combat_internal_factionalism }
+		prerequisite = { focus = XCB_organize_the_cprm_leadership }
+		#mutually_exclusive = { focus = XCB_an_all_embracing_movement }
+		x = 2
+		y = 1
+		relative_position_id = XCB_combat_internal_factionalism
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_an_all_embracing_movement
+		icon = GFX_focus_generic_workers
+		prerequisite = { focus = XCB_the_looming_severance }
+		mutually_exclusive = { focus = XCB_the_northern_strategy }
+		x = 5
+		y = 1
+		relative_position_id = XCB_the_looming_severance
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_ignite_nationwide_flames 
+		icon = GFX_focus_SWE_attack_landsorganisationen
+		prerequisite = { focus = XCB_an_all_embracing_movement }
+		#mutually_exclusive = { focus = XCB_the_northern_strategy }
+		x = 1
+		y = 1
+		relative_position_id = XCB_an_all_embracing_movement
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_infiltrate_phnom_penh
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = XCB_ignite_nationwide_flames }
+		#mutually_exclusive = { focus = XCB_the_northern_strategy }
+		x = -1
+		y = 1
+		relative_position_id = XCB_ignite_nationwide_flames
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_rabblerousers_in_the_east_and_the_west
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		prerequisite = { focus = XCB_ignite_nationwide_flames }
+		#mutually_exclusive = { focus = XCB_the_northern_strategy }
+		x = 1
+		y = 1
+		relative_position_id = XCB_ignite_nationwide_flames
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_trust_the_kldp
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = XCB_an_all_embracing_movement }
+		#mutually_exclusive = { focus = XCB_the_northern_strategy }
+		x = -1
+		y = 1
+		relative_position_id = XCB_an_all_embracing_movement
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_organize_the_cprm_leadership
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { 
+			focus = XCB_an_all_embracing_movement
+			focus = XCB_the_northern_strategy
+		}
+		#mutually_exclusive = { focus = XCB_the_northern_strategy }
+		x = -5
+		y = 1
+		relative_position_id = XCB_an_all_embracing_movement
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_an_anti_authoritarian_coalition
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		prerequisite = { focus = XCB_organize_the_cprm_leadership }
+		prerequisite = { focus = XCB_trust_the_kldp }
+		
+		#mutually_exclusive = { focus = XCB_the_northern_strategy }
+		x = 2
+		y = 1
+		relative_position_id = XCB_organize_the_cprm_leadership
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XCB_cast_the_die
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		prerequisite = { 
+			focus = XCB_an_anti_authoritarian_coalition
+			focus = XCB_the_red_banner_above_all
+		}
+		
+		
+		#mutually_exclusive = { focus = XCB_the_northern_strategy }
+		x = -2
+		y = 1
+		relative_position_id = XCB_an_anti_authoritarian_coalition
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+}

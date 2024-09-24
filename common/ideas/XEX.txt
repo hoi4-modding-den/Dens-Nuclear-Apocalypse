@@ -235,7 +235,6 @@ ideas = {
         }
 
         XEX_enemy_of_casinos2 = {
-            name = XEX_enemy_of_casinos
             allowed = {
 				always = yes
 			}
@@ -253,8 +252,9 @@ ideas = {
             picture = eng_tackle_capitalism
 
             modifier = {
-                stability_factor = 0.15
+                stability_factor = 0.1
                 political_power_gain = 0.1
+                defensive_war_stability_factor = 0.25
             }
 
         }
