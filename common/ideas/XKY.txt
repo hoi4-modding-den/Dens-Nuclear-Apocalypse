@@ -12,17 +12,61 @@ ideas = {
 		XKY_Sasebo_Naval_Remnants = {
 			picture = generic_navy_carrier_bonus
 			modifier = {
-            naval_invasion_planning_bonus_speed = 0.05
+				naval_invasion_planning_bonus_speed = 0.05
 			}
 		}
 		XKY_Nippon_Kaigun = {
 			picture = NORDIC_navy_communist
 			modifier = {
-            naval_morale_factor = 0.23                
-            naval_detection = 0.15
-            experience_gain_navy_unit_factor = 0.10
-            navy_org_factor = 0.12
+				naval_morale_factor = 0.23                
+				naval_detection = 0.15
+				experience_gain_navy_unit_factor = 0.10
+				navy_org_factor = 0.12
 			}
 		}
-    }    
+		XKY_jewel_of_the_south_1 = {
+		picture = LIT_invested_in_farms
+			modifier = {
+				consumer_goods_factor = 0.1
+				cic_construction_boost = 0.13
+				production_speed_infrastructure_factor = 0.5 
+			}
+		}	
+		XKY_jewel_of_the_south_2 = {
+			picture = LIT_invested_in_farms
+			modifier = {
+				consumer_goods_factor = 0.05
+				cic_construction_boost = 0.13
+				production_speed_infrastructure_factor = 0.5 
+				production_speed_industrial_complex_factor = 0.5 		
+			}
+		}	
+		XKY_jewel_of_the_south_3 = {
+			picture = LIT_invested_in_farms
+			modifier = {
+				cic_construction_boost = 0.25
+				production_speed_infrastructure_factor = 0.5 
+				production_speed_industrial_complex_factor = 0.5 		
+				production_speed_arms_factory_factor = 0.5 
+			}
+		}
+		XKY_Inefficient_Farming_2 = {
+				picture = raj_risk_of_famine
+				modifier = {
+					supply_factor = -0.05
+					local_resources_factor = 0.05
+					recruitable_population_factor = 0.20
+
+				}
+		}	
+		XKY_Inefficient_Farming_3 = {
+				picture = generic_agrarian_society
+				modifier = {
+					supply_factor = 0.15
+					local_resources_factor = 0.15
+					recruitable_population_factor = 0.75
+
+				}
+		}		
+    }				    
 }
