@@ -27,6 +27,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.30
 				political_power_factor = -0.35
+			drift_defence_factor = -0.10
 			}
 		}
 		XNP_unified_center_2 = {
@@ -41,6 +42,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.15
 				political_power_factor = -0.1
+				drift_defence_factor = -0.25
 			}
 		}
 		XNP_unified_center_3 = {
@@ -53,11 +55,53 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.05
 				political_power_factor = -0.1
-				communism_drift = -0.03
-				fascism_drift = -0.03
-				party_popularity_stability_factor = 0.25
+				drift_defence_factor = -0.15
+			}
+		}
+		XNP_centrist_coalition = {
+			name = XNP_centrist_coalition
+
+			picture = spr_torchbearers_of_tomorrow
+
+			allowed = {
+				tag = XNP
+			}
+
+			modifier = {
+				democratic_drift = 0.10
+				democratic_acceptance = 25
+			}
+		}
+		XNP_right_coalition = {
+			name = XNP_right_coalition
+
+			picture = spr_torchbearers_of_tomorrow
+
+			allowed = {
+				tag = XNP
+			}
+
+			modifier = {
+				democratic_drift = 0.05
+				fascism_drift = 0.05
+				fascism_acceptance = 25
+			}
+		}
+		XNP_left_coalition = {
+			name = XNP_left_coalition
+
+			picture = spr_torchbearers_of_tomorrow
+
+			allowed = {
+				tag = XNP
+			}
+
+			modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.05
+				communism_acceptance = 25
 			}
 		}
 		XNP_land_appropriation_committee = {

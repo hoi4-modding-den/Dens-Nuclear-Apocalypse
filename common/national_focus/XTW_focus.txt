@@ -74,7 +74,7 @@ focus = {
 focus = {
 	id = XTW_bury_the_hatchet
 	icon = GFX_focus_URG_colorados
-	x = 0
+	x = -1
 	y = 1
 	relative_position_id = XTW_DPP_victory
 	available = {
@@ -91,7 +91,7 @@ focus = {
 		every_country = {
 			limit = {
 				capital_scope = {
-					is_on_continent = asia
+					DEN_is_chinese_state = yes
 				}
 			}
 			add_opinion_modifier = {
@@ -460,7 +460,7 @@ focus = {
 focus = {
 	id = XTW_revive_the_one_china_policy
 	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-	x = 0
+	x = 1
 	y = 1
 	relative_position_id = XTW_PFP_victory
 	available = {
@@ -474,22 +474,16 @@ focus = {
  	available_if_capitulated = yes
 	completion_reward = {
 		every_state = {
-			limit = {
-				OR = {
-				is_core_of = XHK
-				is_core_of = XGD
-				is_core_of = XSG
-				is_core_of = XYU
-				is_core_of = XWH
-				is_core_of = XEX
-				is_core_of = XMJ
-				is_core_of = XON
-				is_core_of = XSK
+				limit = {
+					DEN_is_chinese_state = yes
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
 				}
+				add_claim_by = ROOT
 			}
-			add_claim_by = XTW
-		}
-		add_stability = -0.1
+		add_stability = -0.05
 		every_country = {
 			limit = {
 				capital_scope = {
@@ -846,7 +840,7 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		country_event = taiwan.2
 	}
 }
 focus = {
@@ -856,6 +850,7 @@ focus = {
 	y = 1
 	relative_position_id = XTW_the_matter_of_kuomintang
 	available = {
+		has_country_flag = XTW_status_quo
 	}
 	prerequisite = {
 		focus = XTW_DPP_victory
@@ -866,7 +861,7 @@ focus = {
 	mutually_exclusive = {
 		focus = XTW_begin_reconciliation
 	}
-	cost = 5
+	cost = 0
  	available_if_capitulated = yes
 	completion_reward = {
 		add_political_power = 50
@@ -879,6 +874,7 @@ focus = {
 	y = 1
 	relative_position_id = XTW_the_matter_of_kuomintang
 	available = {
+		has_country_flag = XTW_a_change_in_policy
 	}
 	mutually_exclusive = {
 		focus = XTW_uphold_the_status_quo
@@ -889,7 +885,7 @@ focus = {
 	prerequisite = {
 		focus = XTW_the_matter_of_kuomintang
 	}
-	cost = 5
+	cost = 0
  	available_if_capitulated = yes
 	completion_reward = {
 		add_political_power = 50
@@ -911,7 +907,15 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_tech_bonus = {
+			bonus = 0.25
+					uses = 2
+					category = cat_special_forces_generic
+		}
+		add_timed_idea = {
+			idea = XTW_raiding_kuomintang_cells
+			days = 90
+		}
 	}
 }
 focus = {
@@ -930,7 +934,15 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_tech_bonus = {
+			bonus = 0.75
+					uses = 1
+					category = radar_tech
+		}
+		add_timed_idea = {
+			idea = XTW_bolster_anti_kmt_propaganda
+			days = 90
+		}
 	}
 }
 focus = {
@@ -949,7 +961,12 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_tech_bonus = {
+					bonus = 0.25
+					uses = 2
+					category = motorized_equipment
+					category = mountaineers_tech
+				}
 	}
 }
 focus = {
@@ -968,7 +985,16 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		capital_scope = {
+				create_unit = {
+    				division = "name = \"Liberated Soldiers\" division_template = \"Juntuán\" start_experience_factor = 0.3"
+   					 owner = XTW
+					 count = 2
+				}
+			}
+		add_stability = 0.05
+		add_manpower = -326
+		add_manpower = 569
 	}
 }
 focus = {
@@ -993,6 +1019,10 @@ focus = {
 			ideology = fascism
 			popularity = -0.1
 		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
 	}
 }
 focus = {
@@ -1004,6 +1034,13 @@ focus = {
 	available = {
 	}
 	mutually_exclusive = {
+	}
+	ai_will_do = {
+    base = 1
+	modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+		}
 	}
 	prerequisite = {
 		focus = XTW_bolster_anti_kmt_propaganda
@@ -1027,6 +1064,13 @@ focus = {
 	}
 	mutually_exclusive = {
 	}
+	ai_will_do = {
+    base = 1
+	modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+		}
+	}
 	prerequisite = {
 		focus = XTW_clamp_down_on_extremism
 	}
@@ -1037,6 +1081,9 @@ focus = {
  	available_if_capitulated = yes
 	completion_reward = {
 		custom_effect_tooltip = XTW_consequences_tt
+		hidden_effect = {
+			retire_character = XTW_li_qingfu
+		}
 	}
 }
 focus = {
@@ -1058,7 +1105,17 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = XTW_arrest_the_sympathisers
+				}
+			}
+			country_event = taiwan.5
+		}
+		else = {
+			country_event = taiwan.3
+		}
 	}
 }
 focus = {
@@ -1080,16 +1137,27 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = XTW_remove_li_qingfu
+				}
+			}
+			country_event = taiwan.6
+		}
+		else = {
+			country_event = taiwan.4
+		}
 	}
 }
 focus = {
 	id = XTW_a_new_era_for_taiwan
 	icon = GFX_focus_spr_torchbearers_of_tomorrow
-	x = -4
+	x = -12
 	y = 1
 	relative_position_id = XTW_proclaim_victory_over_terror
 	available = {
+		has_country_flag = XTW_a_new_era
 	}
 	mutually_exclusive = {
 		focus = XTW_desperate_gambit
@@ -1101,13 +1169,13 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		remove_ideas = XTW_kuomintang_insurgency
 	}
 }
 focus = {
 	id = XTW_west_pacific_project
 	icon = GFX_goal_generic_alliance
-	x = 0
+	x = -1
 	y = 1
 	relative_position_id = XTW_a_new_era_for_taiwan
 	available = {
@@ -1117,6 +1185,8 @@ focus = {
 	}
 	prerequisite = {
 		focus = XTW_a_new_era_for_taiwan
+		focus = XTW_desperate_gambit #placeholder for playability until I finish the rest
+		focus = XTW_a_mistake_undone #placeholder for playability until I finish the rest
 	}
 	cost = 5
  	available_if_capitulated = yes
@@ -1306,6 +1376,11 @@ focus = {
 	relative_position_id = XTW_the_matter_of_japan
 	available = {
 		is_puppet = no
+	}
+	bypass = {
+		NOT = {
+			has_idea = XTW_ryukyuan_seperatism
+		}
 	}
 	mutually_exclusive = {
 	}
@@ -1693,6 +1768,11 @@ focus = {
 	prerequisite = {
 		focus = XTW_joint_exercises
 	}
+	bypass = {
+		NOT = {
+			has_idea = XTW_overpopulation_crisis
+		}
+	}
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
@@ -1722,7 +1802,15 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_opinion_modifier = {
+				target = XEX
+				modifier = medium_increase
+			}
+		diplomatic_relation = {
+    		country = XEX
+    		relation = non_aggression_pact
+    		active = yes
+		}
 	}
 }
 focus = {
@@ -1732,6 +1820,7 @@ focus = {
 	y = 2
 	relative_position_id = XTW_contact_the_gambling_cities
 	available = {
+		has_country_flag = XTW_xex_accepted_offer
 		XEX = {
 			exists = yes
 		}
@@ -1745,7 +1834,10 @@ focus = {
 	cost = 10
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = XTW_development_bonds_tt
+		hidden_effect = {
+		set_country_flag = XTW_development_bond
+		}
 	}
 }
 focus = {
@@ -1776,6 +1868,7 @@ focus = {
 	y = 2
 	relative_position_id = XTW_clamp_down_on_extremism
 	available = {
+		has_country_flag = XTW_desperation
 	}
 	mutually_exclusive = {
 		focus = XTW_a_new_era_for_taiwan
@@ -1788,16 +1881,482 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
+		remove_ideas = XTW_kuomintang_insurgency
+	}
+}
+focus = {
+	id = XTW_martial_law
+	icon = GFX_focus_generic_little_entente
+	x = -3
+	y = 1
+	relative_position_id = XTW_desperate_gambit
+	available = {
+		has_civil_war = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_desperate_gambit
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+	}
+}
+focus = {
+	id = XTW_form_the_military_government
+	icon = GFX_focus_generic_military_dictatorship
+	x = -3
+	y = 1
+	relative_position_id = XTW_martial_law
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+		focus = XTW_the_dutch_coup
+	}
+	prerequisite = {
+		focus = XTW_martial_law
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+	}
+}
+focus = {
+	id = XTW_the_dutch_coup
+	icon = GFX_focus_hol_oranje_boven
+	x = 3
+	y = 1
+	relative_position_id = XTW_martial_law
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+		focus = XTW_form_the_military_government
+	}
+	prerequisite = {
+		focus = XTW_martial_law
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+	}
+}
+focus = {
+	id = XTW_reaffirm_colonial_holdings
+	icon = GFX_focus_hol_prepare_the_inundation_lines
+	x = 1
+	y = 1
+	relative_position_id = XTW_the_dutch_coup
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_the_dutch_coup
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
 		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_demand_kyushuan_subjugation
+	icon = GFX_XKY_A_Nation_Once_Again
+	x = -1
+	y = 1
+	relative_position_id = XTW_reaffirm_colonial_holdings
+	available = {
+		is_puppet = no
+	}
+	bypass = {
+		XKY = {
+			exists = no
+		}
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_reaffirm_colonial_holdings
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		XKY = {
+				country_event = generic.20
+			}
+	}
+}
+focus = {
+	id = XTW_reclaim_the_chinese_trading_posts
+	icon = GFX_focus_XEX_attack_chinese_revolutionary_union
+	x = 1
+	y = 1
+	relative_position_id = XTW_reaffirm_colonial_holdings
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_reaffirm_colonial_holdings
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		create_wargoal = {
+            target = XSG
+            type = take_state_focus
+			generator = {595 596}
+        }
+	}
+}
+focus = {
+	id = XTW_take_back_baan_hollanda
+	icon = GFX_goal_tfv_sever_ties_with_uk
+	x = 0
+	y = 2
+	relative_position_id = XTW_reaffirm_colonial_holdings
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_demand_kyushuan_subjugation
+		focus = XTW_reclaim_the_chinese_trading_posts
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		create_wargoal = {
+            target = XSI
+            type = annex_everything
+        }
+	}
+}
+focus = {
+	id = XTW_the_long_sail_home
+	icon = GFX_focus_XFR_attack_laagland
+	x = 0
+	y = 1
+	relative_position_id = XTW_take_back_baan_hollanda
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_take_back_baan_hollanda
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		create_wargoal = {
+            target = XNL
+            type = annex_everything
+        }
+		every_state = {
+				limit = {
+					is_core_of = XSI
+				}
+				add_core_of = ROOT
+			}
+		every_state = {
+				limit = {
+					is_core_of = XNL
+				}
+				add_core_of = ROOT
+			}
+		if = {
+			limit = {
+				XKY = {
+					is_puppet_of = XTW
+				}
+			}
+			annex_country = {
+    			target = XKY
+    			transfer_troops = yes
+			}
+		}
+		every_state = {
+				limit = {
+					is_core_of = XKY
+				}
+				add_core_of = ROOT
+			}
+		595 = {
+			add_core_of = ROOT
+		}
+		596 = {
+			add_core_of = ROOT
+		}
+	}
+}
+focus = {
+	id = XTW_civilian_development
+	icon = GFX_goal_generic_construct_civ_factory
+	x = -2
+	y = 2
+	relative_position_id = XTW_martial_law
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_form_the_military_government
+		focus = XTW_the_dutch_coup
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+	}
+}
+focus = {
+	id = XTW_impose_stratocratic_rule
+	icon = GFX_focus_SWE_revoke_militia_law
+	x = 0
+	y = 2
+	relative_position_id = XTW_martial_law
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_form_the_military_government
+		focus = XTW_the_dutch_coup
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = XTW_heavy_industrial_drive
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 2
+	y = 2
+	relative_position_id = XTW_martial_law
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_form_the_military_government
+		focus = XTW_the_dutch_coup
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+	}
+}
+focus = {
+	id = XTW_labour_camps
+	icon = GFX_focus_generic_public_works
+	x = -1
+	y = 1
+	relative_position_id = XTW_impose_stratocratic_rule
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_impose_stratocratic_rule
+	}
+	prerequisite = {
+		focus = XTW_civilian_development
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_stability = -0.05
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+	}
+}
+focus = {
+	id = XTW_informants_among_the_people
+	icon = GFX_focus_generic_vatican_agents
+	x = -1
+	y = 1
+	relative_position_id = XTW_labour_camps
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_labour_camps
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = XTW_informants_among_the_people
+		create_intelligence_agency = {
+    		name = "National Security Bureau"
+    		icon = GFX_intelligence_agency_logo_agency
+		}
+		upgrade_intelligence_agency = upgrade_passive_defense
+		upgrade_intelligence_agency = upgrade_anti_partisan
+	}
+}
+focus = {
+	id = XTW_crush_the_ryukyuan_rebels
+	icon = GFX_goal_demand_sudetenland
+	x = 1
+	y = 1
+	relative_position_id = XTW_impose_stratocratic_rule
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	bypass = {
+		NOT = {
+			has_idea = XTW_ryukyuan_seperatism
+		}
+	}
+	prerequisite = {
+		focus = XTW_impose_stratocratic_rule
+	}
+	prerequisite = {
+		focus = XTW_heavy_industrial_drive
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_stability = -0.1
+		add_manpower = -25000
+		remove_ideas = XTW_ryukyuan_seperatism
+	}
+}
+focus = {
+	id = XTW_settle_on_the_mountains
+	icon = GFX_focus_GRE_a_land_of_mountains
+	x = -1
+	y = 1
+	relative_position_id = XTW_crush_the_ryukyuan_rebels
+	available = {
+		is_puppet = no
+		has_completed_focus = XTW_form_the_military_government
+	}
+	bypass = {
+		NOT = {
+			has_idea = XTW_overpopulation_crisis
+		}
+	}
+	mutually_exclusive = {
+		focus = XTW_the_forbidden_solution
+	}
+	prerequisite = {
+		focus = XTW_crush_the_ryukyuan_rebels
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		remove_ideas = XTW_overpopulation_crisis
+	}
+}
+focus = {
+	id = XTW_the_forbidden_solution
+	icon = GFX_goal_generic_secret_weapon
+	x = 1
+	y = 1
+	relative_position_id = XTW_crush_the_ryukyuan_rebels
+	available = {
+		is_puppet = no
+		has_completed_focus = XTW_the_dutch_coup
+	}
+	bypass = {
+		NOT = {
+			has_idea = XTW_overpopulation_crisis
+		}
+	}
+	mutually_exclusive = {
+		focus = XTW_settle_on_the_mountains
+	}
+	prerequisite = {
+		focus = XTW_crush_the_ryukyuan_rebels
+	}
+	prerequisite = {
+		focus = XTW_demand_kyushuan_subjugation
+		focus = XTW_reclaim_the_chinese_trading_posts
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_stability = -0.2
+		add_manpower = -10000
+		remove_ideas = XTW_overpopulation_crisis
+		add_ideas = XTW_the_forbidden_solution
+	}
+}
+focus = {
+	id = XTW_ministry_of_public_enlightenment
+	icon = GFX_focus_generic_fascist_propaganda
+	x = 0
+	y = 3
+	relative_position_id = XTW_impose_stratocratic_rule
+	available = {
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_informants_among_the_people
+		focus = XTW_settle_on_the_mountains
+		focus = XTW_the_forbidden_solution
+		focus = XTW_take_back_baan_hollanda
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_research_slot = 1
 	}
 }
 focus = {
 	id = XTW_a_mistake_undone
 	icon = GFX_focus_chi_legislative_yuan
-	x = 4
+	x = 10
 	y = 1
 	relative_position_id = XTW_a_meeting_with_the_chairman
 	available = {
+		has_country_flag = XTW_an_undone_mistake
 	}
 	mutually_exclusive = {
 		focus = XTW_a_new_era_for_taiwan
@@ -1809,7 +2368,7 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		remove_ideas = XTW_kuomintang_insurgency
 	}
 }
 }

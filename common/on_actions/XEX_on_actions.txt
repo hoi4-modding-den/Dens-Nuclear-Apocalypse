@@ -1,0 +1,83 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				XEX = {
+					add_country_leader_role = {
+						character = XEX_mihoyo_leader
+						promote_leader = yes
+						country_leader = {
+							ideology = XEX_mihoyo
+							expire = "3000.1.1.1"
+							traits = { XEX_mihiyo_representative }
+						}
+					}
+				}
+			}
+			else = {
+				XEX = {
+					add_country_leader_role = {
+						character = XEX_mihoyo_leader
+						promote_leader = yes
+						country_leader = {
+							ideology = XEX_mihoyo
+							expire = "3000.1.1.1"
+							traits = { XEX_mihiyo_representative_no_lar }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { 
+						original_tag = XEX
+						has_government = neutrality
+					}
+				}
+				ROOT = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { 
+						original_tag = XEX
+						has_government = neutrality
+					}
+				}
+				ROOT = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+
+}

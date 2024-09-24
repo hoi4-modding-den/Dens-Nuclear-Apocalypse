@@ -11,7 +11,8 @@ manpower=5024177
 	}
 
 	history={
-		owner = LIB # MAN
+		owner = XRE # MAN
+		add_core_of = XRE
 		#add_core_of = CHI
 		#add_core_of = MAN
 		#add_core_of = PRC

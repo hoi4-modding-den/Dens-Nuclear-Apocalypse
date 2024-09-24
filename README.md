@@ -42,9 +42,17 @@ Current Apocalypse:
   | XRY | Foxy | yeoudal |
   | XSK | 0rland2 | 0rland0 |
   | XTK | 0rland2 | 0rland0 |
+  | XEX | 0rland2 | 0rland0 |
   | XHK | H2O27 | h2o27 |
   | XGD | H2O27 | h2o27 |
   | XDA | StarstruckFlora | starstruckflora |
+  | XON | Booloomer | lerainbowraider |
+  | XNP | Bowteye | dpneptune |
+  | XMJ | Foxy | ? |
+  | XAU | TacodevTacodev | milessmiles1 |
+  | QMU | H2O27 | h2o27 |
+  | XRE | Burgerkinghotline | burgerkinghotline |
+  | XAM | Greenbueller | greenbueller |
   
 </details>
 
@@ -88,6 +96,9 @@ European Apocalypse:
 | XRM | Woodymapper      | woody6982           |
 | XSS | Woodymapper      | woody6982           |
 | XRP | Carrera075       | carrera075          |
+| XRU | Booloomer        | lerainbowraider     |
+| XSO | Booloomer        | lerainbowraider     |
+| XSP | Booloomer        | lerainbowraider     |
 | XTI | H2o27            | h2o27               |
 | XHP | icewizard521     | icewizard521        | 
 

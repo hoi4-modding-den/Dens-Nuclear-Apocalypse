@@ -1,6 +1,6 @@
 capital = 620
 
-#oob = "XWH"
+oob = "XWH"
 
 set_technology = {
 	infantry_weapons = 1
@@ -21,6 +21,9 @@ add_ideas = {
 }
 
 set_convoys = 0
+
+recruit_character = XWH_Sun_Wu_IV
+recruit_character = XWH_AssemblyLeader
 
 set_politics = {
 	ruling_party = neutrality

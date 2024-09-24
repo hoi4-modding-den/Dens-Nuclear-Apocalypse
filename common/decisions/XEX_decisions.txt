@@ -1,0 +1,295 @@
+XEX_genshin_decisions = {
+
+	XEX_gatcha_decision = {
+
+		icon = GFX_decision_generic_military
+
+		priority = 50
+
+		allowed = {
+			tag = XEX
+		}
+
+		available = {
+			
+		}
+
+		visible = { 
+			
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 7
+
+		custom_cost_trigger = {
+			any_core_state = {
+				non_damaged_building_level = {
+					building = industrial_complex
+					level > 0
+				}
+			}
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_1_civ_50_pp
+
+        ai_will_do = {
+			base = 1000
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = XEX_gatcha_decision_tt
+			hidden_effect = {
+				random_list = {
+					5 = {
+						modifier = {
+							factor = 0
+							has_country_flag = XEX_general_1_unlocked
+						}
+						XEX_gacha_general_1 = { unit_leader_event = XEX_gatcha_events.1 }
+					}
+					5 = {
+						modifier = {
+							factor = 0
+							has_country_flag = XEX_general_2_unlocked
+						}
+						XEX_gacha_general_2 = { unit_leader_event = XEX_gatcha_events.2 }
+					}
+					5 = {
+						modifier = {
+							factor = 0
+							has_country_flag = XEX_general_3_unlocked
+						}
+						XEX_gacha_general_3 = { unit_leader_event = XEX_gatcha_events.3 }
+					}
+					5 = {
+						modifier = {
+							factor = 0
+							has_country_flag = XEX_general_4_unlocked
+						}
+						XEX_gacha_general_4 = { unit_leader_event = XEX_gatcha_events.4 }
+					}
+					5 = {
+						modifier = {
+							factor = 0
+							has_country_flag = XEX_general_5_unlocked
+						}
+						XEX_gacha_general_5 = { unit_leader_event = XEX_gatcha_events.5 }
+					}
+					25 = {
+						country_event = XEX_gatcha_events.6
+					}
+					25 = {
+						country_event = XEX_gatcha_events.7
+					}
+					25 = {
+						country_event = XEX_gatcha_events.8
+					}
+				}
+			}
+
+			hidden_effect = {
+				add_political_power = -50
+				if = {
+					limit = {
+						is_ai = no
+					}
+					random_core_state = {
+						limit = {
+							non_damaged_building_level = {
+								building = industrial_complex
+								level > 0
+							}
+						}
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+        }
+
+	}
+
+}
+
+XEX_genshinification_cat = {
+
+	XEX_spread_genshin = {
+		
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		cost = 25
+
+		priority = 5
+
+		allowed = {
+			original_tag = XEX
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = FROM
+			}
+		}
+
+		available = {
+			FROM = {
+				owner = {
+					FROM = { is_fully_controlled_by = PREV }
+				}
+			}
+		}
+
+		visible = {
+			if = {
+				limit = {
+					OR = {
+						FROM = { is_core_of = XWH }
+						FROM = { is_core_of = XSG }
+					}
+				}
+				ROOT = { has_completed_focus = XEX_expand_operations }
+			}
+			if = {
+				limit = {
+					FROM = { is_core_of = XRE }
+				}
+				ROOT = { has_completed_focus = XEX_expand_operations2 }
+			}
+			NOT = { has_dynamic_modifier = { modifier = XEX_genshin_state } }
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		modifier = {
+			research_speed_factor = -0.01
+		}
+
+		fire_only_once = yes
+
+		targets_dynamic = yes
+
+		state_target = yes
+
+		on_map_mode = map_only  
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = XRE
+					is_core_of = XSG
+					is_core_of = XWH
+				}
+			}
+		}
+
+		days_remove = 14
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			FROM = { add_dynamic_modifier = { modifier = XEX_genshin_state } }
+		}
+	}
+
+
+}
+
+economy_decisions = {
+
+}
+
+foreign_politics = {
+
+}
+
+political_actions = {
+
+	XEX_close_the_doors = {
+
+		icon = GFX_decision_SWI_isolate_switzerland
+
+		priority = 50
+
+		allowed = {
+			tag = XEX
+		}
+
+		available = {
+			
+		}
+
+		visible = { 
+			has_idea = XEX_open_door_policy
+		}
+
+		fire_only_once = no
+
+		cost = 25
+
+        ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				OR = {
+					has_war = yes
+					has_government = communism
+				}
+			}
+		}
+
+		complete_effect = {
+			remove_ideas = XEX_open_door_policy
+			set_country_flag = {
+				flag = XEX_closed_the_doors_timer
+				days = 90
+				value = 1
+			}
+			custom_effect_tooltip = XEX_close_the_doors_tt
+        }
+
+	}
+
+	XEX_open_the_doors = {
+
+		icon = GFX_decision_SWI_dismiss_council
+
+		priority = 50
+
+		allowed = {
+			tag = XEX
+		}
+
+		available = {
+			
+		}
+
+		visible = { 
+			NOT = { has_country_flag = XEX_closed_the_doors_timer }
+			NOT = { has_idea = XEX_open_door_policy }
+		}
+
+		fire_only_once = no
+
+		cost = 100
+
+        ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_war = no
+			}
+		}
+
+		complete_effect = {
+			add_ideas = XEX_open_door_policy
+        }
+
+	}
+
+}

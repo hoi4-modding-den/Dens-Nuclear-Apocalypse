@@ -8,7 +8,8 @@ set_stability = 0.4
 set_convoys = 10
 
 add_ideas = {
-	XSI_treaty_of_yangon
+	XSB_treaty_of_yangon
+	XSB_followers_of_sangkhism
 	limited_conscription
 	low_economic_mobilisation
 }

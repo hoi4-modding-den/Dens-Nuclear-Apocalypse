@@ -2,7 +2,22 @@ DEN_UNIFIED_CHINA = {
 	color = rgb { 163 126 65 }
 	color_ui = rgb { 163 126 65 }
 }
-
+XK0_stalin = {
+	color = rgb { 135 4 4 }
+	color_ui = rgb { 135 4 4 }
+}
+XSK_ottoman_china = {
+	color = rgb { 189 31 152 }
+	color_ui = rgb { 189 31 152 }
+}
+XEX_mihoyo_tag = {
+	color = rgb { 102 183 255 }
+	color_ui = rgb { 78 164 221 }
+}
+XEX_genshin_tag = {
+	color = rgb { 173 216 255 }
+	color_ui = rgb { 78 164 221 }
+}
 XHK_CRC= {
 	color = rgb { 133 89 68 }
 	color_ui = rgb { 133 89 68 }
@@ -10,6 +25,10 @@ XHK_CRC= {
 XHK_YTZ= {
 	color = rgb { 140 148 81 }
 	color_ui = rgb { 140 148 81 }
+}
+XHK_CORP= {
+	color = rgb { 74 74 74 }
+	color_ui = rgb { 74 74 74 }
 }
 XAQ_FAS= {
 	color = rgb { 58 151 29 }

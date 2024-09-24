@@ -1,0 +1,19 @@
+characters = {
+
+	### COUNTRY LEADERS ###
+
+	XAU_Rogue_Intelligence = {
+		name = "AX-021 'Rogue'"
+		portraits = {
+			civilian = {
+				large = "GFX_Leader_Rogue_Animated"
+			}
+		}
+		country_leader = {
+			ideology = XAU_synthetic_absolution
+			traits = { XAU_wary_of_humans XAU_prewar_knowledge }
+			expire = "3000.9.9.9"
+			id = -1
+		}
+	}
+}

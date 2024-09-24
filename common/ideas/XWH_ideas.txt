@@ -1,0 +1,21 @@
+ideas = {
+    country = {
+        XWH_WuchangGuides = {
+            picture = hol_aloof_neutrality
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+                stability_factor = 0.05
+				neutrality_drift = 0.02
+				war_support_factor = 0.05
+            }
+            
+            allowed = {
+                OR = {
+                    tag = XWH
+                } 
+            }
+        }
+    }
+}

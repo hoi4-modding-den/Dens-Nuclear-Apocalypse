@@ -1,0 +1,298 @@
+XSK_wants_always = {
+	allowed = {
+		tag = XSK
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = -30
+	}
+	
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = -50
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = mountaineers
+		value = 50
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = 250
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 30
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 500
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 20
+	}
+
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -50
+	}
+
+}
+
+XSK_build_marines = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		any_controlled_state = {
+			is_coastal = yes
+		}
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = marines
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 100
+	}
+}
+
+XSK_build_civs = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_idea = XSK_toaster_factories
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = -100
+	}
+}
+
+XSK_enemies_in_the_north = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		XMJ = { NOT = { is_subject_of = ROOT } }
+		XON = { NOT = { is_subject_of = ROOT } }
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = XMJ
+		value = 100
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = XON
+		value = 100
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = XON
+		value = -100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = XMJ
+		value = -100
+	}
+}
+
+XSK_befriend_XAD = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_reach_out_to_cordoba
+		NOT = { has_war_with = XAD }
+	}
+
+	ai_strategy = {
+	    type = support
+	    id = XAD
+		value = 100
+	}
+	ai_strategy = {
+	    type = send_volunteers_desire
+	    id = XAD
+		value = 100
+	}
+}
+
+XSK_befriend_XTW = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_mutual_cooperation
+	}
+
+	ai_strategy = {
+	    type = support
+	    id = XTW
+		value = 100
+	}
+
+	ai_strategy = {
+	    type = protect
+	    id = XTW
+		value = 100
+	}
+}
+
+XSK_guarantee_chinese_nations_XHK = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_mutual_cooperation
+		XHK = { has_government = democratic }
+	}
+
+	ai_strategy = {
+	    type = protect
+	    id = XHK
+		value = 100
+	}
+
+}
+
+XSK_guarantee_chinese_nations_XK0 = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_mutual_cooperation
+		XK0 = { has_government = democratic }
+	}
+
+	ai_strategy = {
+	    type = protect
+	    id = XK0
+		value = 100
+	}
+
+}
+
+XSK_guarantee_chinese_nations_XSG = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_completed_focus = XSK_mutual_cooperation
+		XSG = { has_government = democratic }
+	}
+
+	ai_strategy = {
+	    type = protect
+	    id = XSG
+		value = 100
+	}
+
+}
+
+XSK_use_tanks_in_north = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		has_idea = XSK_modernised_cavalry
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = XON
+		value = 50
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = XMJ
+		value = 50
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = XRE
+		value = 50
+	}
+}
+
+XSK_dont_waste_pp = {
+	allowed = {
+		tag = XSK
+	}
+	abort_when_not_enabled = yes
+
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -100
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -100
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -50
+	}
+}

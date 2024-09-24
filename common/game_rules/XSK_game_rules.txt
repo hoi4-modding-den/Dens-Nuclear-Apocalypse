@@ -1,0 +1,35 @@
+XSK_ai_behavior = {
+	name = "XSK_ai_behavior"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL_XSK"
+		desc = "RULE_OPTION_HISTORICAL_XSK_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = XSK_ALT_MONARCHIST
+		text = "RULE_OPTION_XSK_ALT_MONARCHIST"
+		desc = "RULE_OPTION_XSK_ALT_MONARCHIST_AI_DESC"
+	}
+	option = {
+		name = XSK_COMMUNIST
+		text = "RULE_OPTION_XSK_COMMUNIST"
+		desc = "RULE_OPTION_XSK_COMMUNIST_AI_DESC"
+	}
+	option = {
+		name = XSK_DEMOCRAT
+		text = "RULE_OPTION_XSK_DEMOCRAT"
+		desc = "RULE_OPTION_XSK_DEMOCRAT_AI_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}

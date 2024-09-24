@@ -4,6 +4,10 @@
  XCB_ADJ:0 "Cambodian"
  XCB_neutrality:0 "Cambodian State"
  XCB_neutrality_DEF:0 "the Cambodian State"
+ XCB_democratic:0 "Republic of Cambodia"
+ XCB_democratic_DEF:0 "The Republic of Cambodia"
+ XCB_communism:0 "Provisional Government of Cambodia"
+ XCB_communism_DEF:0 "The Provisional Government of Cambodia"
  XCX:0 "Cambodian State"
  XCX_DEF:0 "The Cambodian State"
  XCX_ADJ:0 "Cambodian"
@@ -17,6 +21,7 @@
  STATE_1008:0 "Prey Lang"
  STATE_1009:0 "Phnom Kulen"
  STATE_1010:0 "Chuor Phnum Kravanh"
+ 
  
  #parties
  XCB_neutrality_party:0 "The Preservative Council"

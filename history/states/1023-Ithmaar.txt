@@ -1,0 +1,22 @@
+state = {
+	id = 1023
+	name = "STATE_1023"
+	state_category = rural
+	manpower = 35600
+
+	history={
+		owner = XAM
+		add_core_of = XAM
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			13380 2
+		}
+	}
+
+	provinces = {
+		13380 13381 13382
+	}
+}

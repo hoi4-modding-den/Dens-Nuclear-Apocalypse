@@ -4,6 +4,61 @@ on_actions = {
 		effect = {
 			XSK = {
 				country_event = { id = XSK_succession_events.7 days = 4 }
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = XSK_ai_cheat_idea
+					every_core_state = {
+						create_unit = {
+							division = "name = \"Reservist Division\" division_template = \"Garnizon Tümeni\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = XSK
+							allow_spawning_on_enemy_provs = yes 
+							count = 3
+						}
+					}
+				}
+			}
+			XSK = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = XSK_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = XSK_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						10 = {
+							XSK = {
+								set_country_flag = XFR_AI_RANDOM_HISTORICAL
+							}
+						}
+						40 = {
+							XSK = {
+								set_country_flag = XFR_AI_RANDOM_ALT_MONARCHIST
+							}
+						}
+						25 = {
+							XSK = {
+								set_country_flag = XFR_AI_RANDOM_COMMUNIST
+							}
+						}
+						25 = {
+							XSK = {
+								set_country_flag = XFR_AI_RANDOM_DEMOCRATIC
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -77,6 +132,112 @@ on_actions = {
 						allow_spawning_on_enemy_provs = yes 
 						count = 3 
 					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = { tag = XRE }
+							FROM = { tag = XON }
+						}
+						AND = {
+							FROM = { tag = XRE }
+							ROOT = { tag = XON }
+						}
+					}
+				}
+				set_country_flag = XRE_has_war_with_XON
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = { tag = XEX }
+							FROM = { tag = XON }
+						}
+						AND = {
+							FROM = { tag = XEX }
+							ROOT = { tag = XON }
+						}
+					}
+				}
+				set_country_flag = XEX_has_war_with_XON
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = XMJ }
+					FROM = { tag = XSK }
+				}
+				ROOT = {
+					every_owned_state = {
+						transfer_state_to = FROM
+					}
+				}
+				if = {
+					limit = {
+						XON = { exists = yes }
+					}
+					XON = {
+						transfer_state = 611
+						transfer_state = 612
+						transfer_state = 621
+					}
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							tag = XEX
+							has_country_flag = XEX_has_war_with_XON
+						}
+					}
+					611 = { transfer_state_to = XEX }
+					XEX = { clr_country_flag = XEX_has_war_with_XON }
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { tag = XON }
+					FROM = { tag = XSK }
+				}
+				if = {
+					limit = { FROM = { NOT = { has_country_flag = XSK_should_puppet_XON } } }
+					ROOT = {
+						every_owned_state = {
+							transfer_state_to = FROM
+						}
+					}
+				}
+				else_if = {
+					limit = { FROM = { has_country_flag = XSK_should_puppet_XON } }
+					ROOT = {
+						every_owned_state = {
+							transfer_state_to = ROOT
+						}
+					}
+					FROM = {
+						set_autonomy = {
+							target = ROOT
+							autonomous_state = autonomy_puppet
+							end_wars = no
+							end_civil_wars = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							tag = XRE
+							has_country_flag = XRE_has_war_with_XON
+						}
+					}
+					761 = { transfer_state_to = XRE }
+					XRE = { clr_country_flag = XRE_has_war_with_XON }
 				}
 			}
 		}

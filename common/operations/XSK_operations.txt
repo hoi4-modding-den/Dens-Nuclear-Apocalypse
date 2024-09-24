@@ -1,0 +1,82 @@
+XSK_spread_turkic_propaganda = {
+	icon = GFX_operations_boost_resistance
+	map_icon = GFX_operations_boost_resistance_map
+	name = XSK_spread_turkic_propaganda_name
+	desc =  XSK_spread_turkic_propaganda_desc
+	priority = 100
+	
+	cost_multiplier = 0.25
+	
+	days = 70
+	network_strength = 40
+	operatives = 2
+
+	allowed = {
+		original_tag = XSK
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_completed_focus = XSK_expand_intelligence_operations
+		has_completed_focus = XSK_claim_the_mandate_of_heaven
+	}
+
+	visible = {
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		FROM = {
+			any_controlled_state = {
+				is_claimed_by = ROOT
+			}
+			NOT = { DEN_is_anarchy = yes }
+		}
+	}
+
+	equipment = {
+		support_equipment = 150
+		civilian_factories = {
+			amount = 4
+			days = 30
+		}
+	}
+
+
+	risk_chance = 0.1
+	experience = 1.5
+	outcome_extra_chance = 0
+	outcome_modifiers = {  }
+	outcome_execute = {
+		FROM = {
+			country_event = { id = XSK_events.10 }
+		}
+	}
+
+	outcome_potential = {
+		FROM = {
+			every_controlled_state = {
+				limit = { is_claimed_by = ROOT }
+				add_dynamic_modifier = {
+					modifier = XSK_turkic_resistance
+					days = 70
+				}
+			}
+		}
+	}
+	
+	phases = { #infiltration
+		infiltration_border = { base = 75 }
+		infiltration_paradrop = { base = 25 }
+	}
+	phases = { #resistance contacts
+		resistance_contacts_radio_circuits = { base = 50 }
+		resistance_contacts_briefings = { base = 50 }
+	}
+	phases = {
+		exfiltration_border = { base = 100 }
+	}
+}

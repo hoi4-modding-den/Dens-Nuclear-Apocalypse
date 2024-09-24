@@ -343,3 +343,27 @@ XWH = {
 	color = rgb { 56  61  150 }
 	color_ui = rgb { 56  61  150 }	
 }
+
+QMU = {
+	color = rgb { 67 89 55 }
+	color_ui = rgb { 67 89 55 }
+}
+
+XRE = {
+	color = rgb { 199 199 205 }
+	color_ui = rgb { 175 175 175 }
+}
+
+XAM = {
+	color = rgb { 130 120 210 }
+	color_ui = rgb { 130 120 210 }
+}
+
+XGX = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+XBE = {
+	color = rgb { 1 1 1 }
+	color_ui = rgb { 1 1 1 }
+}

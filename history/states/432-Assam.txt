@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = LIB # RAJ
+		add_core_of = XBE
+		owner = XBE
 		buildings = {
 			infrastructure = 2
 

@@ -1,0 +1,1987 @@
+focus_tree = {
+	id = XEX_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XEX
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 700 y = 2000 }
+
+	focus = {
+		id = XEX_protect_our_interests
+		icon = GFX_focus_XEX_mihoyo_coup
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XEX_business_as_usual focus = XEX_protests_continue }
+		x = 1
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = fascism
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			hidden_effect = {
+				set_cosmetic_tag = XEX_mihoyo_tag
+				news_event = XEX_news_events.1
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_continue_brainwashing
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = XEX_protect_our_interests }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XEX_protect_our_interests
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = XEX_ensure_investors
+		icon = GFX_focus_POL_complete_april_constitution
+		prerequisite = { focus = XEX_protect_our_interests }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_protect_our_interests
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = XEX_another_pull
+		icon = GFX_focus_XEX_another_roll
+		prerequisite = { focus = XEX_continue_brainwashing }
+		prerequisite = { focus = XEX_ensure_investors }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XEX_protect_our_interests
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			custom_effect_tooltip = XEX_another_pull_tt
+			set_country_flag = XEX_gatcha_unlocked
+		}
+	}
+
+	focus = {
+		id = XEX_the_magic_of_anime
+		icon = GFX_focus_XEX_magic_book
+		prerequisite = { focus = XEX_another_pull }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XEX_another_pull
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = XEX_magic_time
+		}
+	}
+
+	focus = {
+		id = XEX_continue_updates
+		icon = GFX_focus_research2
+		prerequisite = { focus = XEX_the_magic_of_anime }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 1
+		relative_position_id = XEX_the_magic_of_anime
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = XEX_continue_updates
+				bonus = 1
+				uses = 2
+				category = computing_tech
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_expand_operations
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = XEX_the_magic_of_anime }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XEX_the_magic_of_anime
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			custom_effect_tooltip = XEX_expand_operations_tt
+			set_country_flag = XEX_genshinification_unlocked
+		}
+	}
+
+	focus = {
+		id = XEX_expand_operations2
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = XEX_the_magic_of_anime }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_the_magic_of_anime
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			custom_effect_tooltip = XEX_expand_operations2_tt
+			set_country_flag = XEX_genshinification_unlocked
+		}
+	}
+
+	focus = {
+		id = XEX_outprofit_the_casino_division
+		icon = GFX_focus_XEX_mihoyo_profits
+		prerequisite = { focus = XEX_expand_operations focus = XEX_expand_operations2 }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 2
+		relative_position_id = XEX_the_magic_of_anime
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XEX_casino_profits
+				add_idea = XEX_casino_profits2
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_protect_the_playerbase
+		icon = GFX_focus_XEX_protect_genshin_players
+		prerequisite = { focus = XEX_expand_operations }
+		prerequisite = { focus = XEX_expand_operations2 }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 2
+		relative_position_id = XEX_the_magic_of_anime
+
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = XEX_protect_the_playerbase_trigger
+				XRE = {
+					all_core_state = {
+						has_dynamic_modifier = { modifier = XEX_genshin_state }
+					}
+				}
+				XSG = {
+					all_core_state = {
+						has_dynamic_modifier = { modifier = XEX_genshin_state }
+					}
+				}
+				XWH = {
+					all_core_state = {
+						has_dynamic_modifier = { modifier = XEX_genshin_state }
+					}
+				}
+			}
+			has_army_manpower = {
+				size > 200000
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			custom_effect_tooltip = XEX_protect_the_playerbase_tt
+			every_state = {
+				limit = { has_dynamic_modifier = { modifier = XEX_genshin_state } }
+				add_claim_by = ROOT
+			}
+			for_each_scope_loop = {
+				array = global.countries
+				if = {
+					limit = {
+						any_owned_state = {
+							has_dynamic_modifier = { modifier = XEX_genshin_state }
+						}
+					}
+					ROOT = {
+						create_wargoal = { type = take_claimed_state target = PREV }
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = PREV
+							value = 1000
+						}
+					}
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = PREV
+						value = 1000
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_realm_of_genshin
+		icon = GFX_focus_XEX_realm_of_genshin
+		prerequisite = { focus = XEX_outprofit_the_casino_division }
+		prerequisite = { focus = XEX_protect_the_playerbase }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 3
+		relative_position_id = XEX_the_magic_of_anime
+
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = XEX_realm_of_genshin_trigger
+				has_country_flag = XEX_general_1_unlocked
+				has_country_flag = XEX_general_2_unlocked
+				has_country_flag = XEX_general_3_unlocked
+				has_country_flag = XEX_general_4_unlocked
+				has_country_flag = XEX_general_5_unlocked
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			effect_tooltip = {
+				set_cosmetic_tag = XEX_genshin_tag_fascism
+			}
+			hidden_effect = {
+				set_cosmetic_tag = XEX_genshin_tag
+			}
+			custom_effect_tooltip = XEX_realm_of_genshin_tt
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = XEX_genshin_state }
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_incursion_into_korea
+		icon = GFX_focus_XEX_attack_josea
+		prerequisite = { focus = XEX_realm_of_genshin }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_realm_of_genshin
+
+		available = {
+			is_subject = no
+			has_army_manpower = {
+				size > 250000
+			}
+			is_neighbor_of = XK0
+			NOT = { is_ally_with = XK0 }
+		}
+
+		bypass = {
+			XK0 = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		will_lead_to_war_with = XK0
+
+		completion_reward = {
+			create_wargoal = {
+				target = XK0
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_crackdown
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = XEX_protect_our_interests focus = XEX_business_as_usual }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = XEX_protect_our_interests
+
+		available = {
+			
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = XEX_growing_unrest
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XEX_growing_unrest
+				add_idea = XEX_growing_unrest2
+			}
+			1003 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				1004 = {
+				set_demilitarized_zone = no
+				}
+				1005 = {
+					set_demilitarized_zone = no
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_end_unrest
+		icon = GFX_focus_POL_riot_of_37
+		prerequisite = { focus = XEX_crackdown }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XEX_crackdown
+
+		available = {
+			
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = XEX_growing_unrest2
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			remove_ideas = XEX_growing_unrest2
+			1003 = {
+				add_manpower = -10000
+			}
+			hidden_effect = {
+				1004 = {
+					add_manpower = -10000
+				}
+				1005 = {
+					add_manpower = -10000
+				}
+				1003 = { set_state_name = "Shanxi-Heibei" }
+				1004 = { set_state_name = "North Jehol" }
+				1005 = { set_state_name = "East Liaotung" }
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_expand_intelligence_gathering
+		icon = GFX_focus_generic_secret_service_agency
+		prerequisite = { focus = XEX_another_pull focus = XEX_tax_breaks }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XEX_end_unrest
+
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_intelligence_agency = yes
+				}
+				hidden_effect = {
+					create_intelligence_agency = {
+						name = "Genshin Impact"
+						icon = GFX_intelligence_agency_logo_XEX
+					}
+				}
+			}
+			else = {
+				create_intelligence_agency = {
+					name = "Genshin Impact"
+					icon = GFX_intelligence_agency_logo_XEX
+				}
+			}
+			create_operative_leader = {
+				name = "Venti"
+				GFX = GFX_portrait_XEX_spy
+				traits = { operative_well_groomed }
+				bypass_recruitment = yes
+				available_to_spy_master = yes
+				nationalities = { XEX }
+				gender = female
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_reform_the_guard_division
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = XEX_another_pull focus = XEX_tax_breaks }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XEX_end_unrest
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = XEX_reform_the_guard_division
+				bonus = 1
+				uses = 3
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_recruitment_drive
+		icon = GFX_focus_generic_limited_social_mobilization
+		prerequisite = { focus = XEX_reform_the_guard_division }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XEX_reform_the_guard_division
+
+		available = {
+			
+		}
+
+		bypass = {
+			NOT = {
+				OR = {
+					has_idea = disarmed_nation
+					has_idea = volunteer_only
+					has_idea = limited_conscription
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = disarmed_nation
+						has_idea = volunteer_only
+						has_idea = limited_conscription
+					}
+				}
+				add_ideas = extensive_conscription
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_better_weapons
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = XEX_reform_the_guard_division }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_reform_the_guard_division
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes 
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1 
+					instant_build = yes 
+				}
+			}
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 1000 
+				producer = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_ready_to_fight
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = XEX_recruitment_drive }
+		prerequisite = { focus = XEX_better_weapons }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XEX_reform_the_guard_division
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = XEX_guard_division_ready
+		}
+	}
+
+	focus = {
+		id = XEX_market_innovations
+		icon = GFX_focus_research
+		prerequisite = { focus = XEX_another_pull focus = XEX_tax_breaks }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XEX_end_unrest
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = XEX_business_as_usual
+		icon = GFX_focus_BRA_ethical_internationalism
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XEX_protests_continue focus = XEX_protect_our_interests }
+		x = 7
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			is_subject = no
+			has_government = neutrality
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				is_historical_focus_on = no
+			}
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = XEX_expand_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = XEX_protect_our_interests focus = XEX_business_as_usual focus = XEX_protests_continue }
+		#mutually_exclusive = { focus =  }
+		x = 4
+		y = 1
+		relative_position_id = XEX_business_as_usual
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_patrol_the_villa_district
+		icon = GFX_focus_ARG_march_to_la_casa_rosada
+		prerequisite = { focus = XEX_business_as_usual }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XEX_business_as_usual
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			custom_effect_tooltip = XEX_patrol_the_villa_district_tt
+			hidden_effect = {
+				division_template = {
+					name = "Villa Districts Guard Division"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+				}
+				608 = {
+					create_unit = {
+						division = "name = \"Villa Districts Guard Division\" division_template = \"Villa Districts Guard Division\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes 
+						count = 2
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_expand_the_casinos
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = XEX_business_as_usual }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_business_as_usual
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			every_core_state = {
+				random_select_amount = 2
+				limit = {
+					is_fully_controlled_by = ROOT
+					NOT = {
+						OR = {
+							state = 1003
+							state = 1004
+							state = 1005
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_tax_breaks
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		prerequisite = { focus = XEX_patrol_the_villa_district }
+		prerequisite = { focus = XEX_expand_the_casinos }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XEX_business_as_usual
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XEX_casino_profits
+				add_idea = XEX_casino_profits2
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_influence_abroad
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = XEX_tax_breaks }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XEX_tax_breaks
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			every_neighbor_country = {
+				limit = {
+					NOT = { DEN_is_anarchy = yes }
+					NOT = { has_war_with = ROOT }
+				}
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = ICE_trade_partner
+				}
+			}
+			add_political_power = 100
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = "Gamblers League"
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_northern_expansion
+		icon = GFX_focus_XEX_attack_railway_guys
+		prerequisite = { focus = XEX_influence_abroad }
+		mutually_exclusive = { focus = XEX_southern_expansion }
+		x = -1
+		y = 1
+		relative_position_id = XEX_influence_abroad
+
+		available = {
+			is_subject = no
+			has_army_manpower = {
+				size > 250000
+			}
+			is_neighbor_of = XRE
+			NOT = { is_ally_with = XRE }
+		}
+
+		bypass = {
+			XRE = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				XRE = { is_ai = yes }
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		will_lead_to_war_with = XRE
+
+		completion_reward = {
+			create_wargoal = {
+				target = XRE
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_southern_expansion
+		icon = GFX_focus_XEX_attack_chinese_revolutionary_union
+		prerequisite = { focus = XEX_influence_abroad }
+		mutually_exclusive = { focus = XEX_northern_expansion }
+		x = 1
+		y = 1
+		relative_position_id = XEX_influence_abroad
+
+		available = {
+			is_subject = no
+			has_army_manpower = {
+				size > 250000
+			}
+			is_neighbor_of = XSG
+			NOT = { is_ally_with = XSG }
+		}
+
+		bypass = {
+			XSG = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		will_lead_to_war_with = XSG
+
+		completion_reward = {
+			create_wargoal = {
+				target = XSG
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_integrate_conquered_territories
+		icon = GFX_focus_ETH_sway_the_warlords
+		prerequisite = { focus = XEX_northern_expansion focus = XEX_southern_expansion }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XEX_northern_expansion
+
+		available = {
+			if = {
+				limit = { has_completed_focus = XEX_northern_expansion }
+				XRE = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = { has_completed_focus = XEX_southern_expansion }
+				XSG = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = XEX_integrate_conquered_territories_tt
+					always = no
+				}
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = XEX_northern_expansion }
+				XRE = {
+					every_core_state = {
+						add_core_of = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = { has_completed_focus = XEX_southern_expansion }
+				XSG = {
+					every_core_state = {
+						add_core_of = ROOT
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = XEX_integrate_conquered_territories_tt
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_construct_casinos
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XEX_northern_expansion focus = XEX_southern_expansion }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XEX_southern_expansion
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			every_owned_state = {
+				random_select_amount = 3
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_gamble_it_all
+		icon = GFX_focus_jap_cast_the_die
+		prerequisite = { focus = XEX_integrate_conquered_territories }
+		prerequisite = { focus = XEX_construct_casinos }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XEX_construct_casinos
+
+		available = {
+			is_subject = no
+			has_army_manpower = {
+				size > 300000
+			}
+			is_subject = no
+			OR = {
+				NOT = { is_ally_with = XK0 }
+				NOT = { is_ally_with = XKY }
+			}
+		}
+
+		bypass = {
+			XK0 = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+			XKY = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		will_lead_to_war_with = XK0
+		will_lead_to_war_with = XKY
+		completion_reward = {
+			if = {
+				limit = {
+					XK0 = {
+						exists = yes
+						NOT = { is_ally_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				create_wargoal = {
+					target = XK0
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					XKY = {
+						exists = yes
+						NOT = { is_ally_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				create_wargoal = {
+					target = XKY
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_protests_continue
+		icon = GFX_focus_generic_workers
+		#prerequisite = { focus =  }
+		mutually_exclusive = { focus = XEX_business_as_usual focus = XEX_protect_our_interests }
+		x = 15
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				is_historical_focus_on = no
+			}
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_sabotage_casinos
+		icon = GFX_focus_SOV_organize_wreckers
+		prerequisite = { focus = XEX_protests_continue }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = XEX_protests_continue
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				has_government = communism
+				AND = {
+					608 = { NOT = { is_controlled_by = ROOT } }
+					597 = { NOT = { is_controlled_by = ROOT } }
+					610 = { NOT = { is_controlled_by = ROOT } }
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit = {
+					608 = {
+						is_controlled_by = ROOT
+						industrial_complex > 0
+					}
+				}
+				608 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					597 = {
+						is_controlled_by = ROOT
+						industrial_complex > 0
+					}
+				}
+				597 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					610 = {
+						is_controlled_by = ROOT
+						industrial_complex > 0
+					}
+				}
+				610 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 1
+					}
+				}
+			}
+			add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = XEX_rally_the_ghettos
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = XEX_protests_continue }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_protests_continue
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XEX_growing_unrest
+				add_idea = XEX_growing_unrest3
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_overthrow_the_capitalists
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		prerequisite = { focus = XEX_sabotage_casinos }
+		prerequisite = { focus = XEX_rally_the_ghettos }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = XEX_protests_continue
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			1003 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				1004 = {
+				set_demilitarized_zone = no
+				}
+				1005 = {
+					set_demilitarized_zone = no
+				}
+				news_event = XEX_news_events.2
+			}
+			add_ideas = XEX_appropriate_casino_riches
+		}
+	}
+
+	focus = {
+		id = XEX_care_for_the_poor
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = XEX_overthrow_the_capitalists }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XEX_overthrow_the_capitalists
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = XEX_enemy_of_casinos
+		}
+	}
+
+	focus = {
+		id = XEX_end_the_gambling
+		icon = GFX_focus_XEX_end_the_gambling
+		prerequisite = { focus = XEX_overthrow_the_capitalists }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XEX_overthrow_the_capitalists
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			custom_effect_tooltip = XEX_end_the_gambling_tt
+			hidden_effect = {
+				1003 = { set_state_name = "Shanxi-Heibei" }
+				1004 = { set_state_name = "North Jehol" }
+				1005 = { set_state_name = "East Liaotung" }
+				745 = { set_state_name = "Dalian" }
+				716 = { set_state_name = "Liaotung" }
+				610 = { set_state_name = "Jehol" }
+				609 = { set_state_name = "East Hebei" }
+				608 = { set_state_name = "Beijing" }
+				614 = { set_state_name = "Hebei" }
+				597 = { set_state_name = "Shandong" }
+				743 = { set_state_name = "Qingdao" }
+
+				retire_character = XEX_gamblerman
+				set_party_name = {
+					ideology = neutrality
+					long_name = "Qingdao Civility Party"
+					name = "Qingdao Civility Party"
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_schools_for_everyone
+		icon = GFX_focus_generic_socialist_science
+		prerequisite = { focus = XEX_overthrow_the_capitalists }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XEX_overthrow_the_capitalists
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = XEX_conscript_obdachlose
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = { focus = XEX_care_for_the_poor }
+		prerequisite = { focus = XEX_end_the_gambling }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_care_for_the_poor
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = XEX_conscript_obdachlose
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes 
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1 
+					instant_build = yes 
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = disarmed_nation
+						has_idea = volunteer_only
+					}
+				}
+				add_ideas = limited_conscription
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_work_for_everyone
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = XEX_end_the_gambling }
+		prerequisite = { focus = XEX_schools_for_everyone }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_end_the_gambling
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					NOT = {
+						OR = {
+							state = 1003
+							state = 1004
+							state = 1005
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					NOT = {
+						OR = {
+							state = 1003
+							state = 1004
+							state = 1005
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_peace_in_our_time
+		icon = GFX_focus_SWE_refuge_from_war
+		prerequisite = { focus = XEX_conscript_obdachlose }
+		prerequisite = { focus = XEX_work_for_everyone }
+		#mutually_exclusive = { focus = XEX_hijack_the_revolution }
+		x = 0
+		y = 2
+		relative_position_id = XEX_end_the_gambling
+
+		available = {
+			has_government = communism
+			has_war = no
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = XEX_protectors_of_peace
+		}
+	}
+
+	focus = {
+		id = XEX_fortify_the_border
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = XEX_peace_in_our_time }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = XEX_peace_in_our_time
+
+		available = {
+			has_government = communism
+			has_war = no
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = XEX_protect_independence
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = XEX_peace_in_our_time }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = XEX_peace_in_our_time
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = XEX_independence_protection
+		}
+	}
+
+	focus = {
+		id = XEX_united_we_stand
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = XEX_peace_in_our_time }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = XEX_peace_in_our_time
+
+		available = {
+			has_government = communism
+		}
+
+		bypass = {
+			
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XEX_enemy_of_casinos
+				add_idea = XEX_enemy_of_casinos2
+			}
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = XEX_take_no_chances
+		icon = GFX_focus_generic_strike_at_democracy3
+		prerequisite = { focus = XEX_protect_independence }
+		prerequisite = { focus = XEX_united_we_stand }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = XEX_united_we_stand
+
+		available = {
+			has_government = communism
+			is_subject = no
+			has_army_manpower = {
+				size > 250000
+			}
+			is_neighbor_of = XK0
+			NOT = { is_ally_with = XK0 }
+		}
+
+		bypass = {
+			XK0 = {
+				OR = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		will_lead_to_war_with = XK0
+		completion_reward = {
+			create_wargoal = {
+				target = XK0
+				type = annex_everything
+			}
+		}
+	}
+
+}

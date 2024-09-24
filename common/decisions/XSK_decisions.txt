@@ -1,8 +1,8 @@
-political_actions = {
+economy_decisions = {
 
-	XSK_ai_integrate_mongolia = {
+	XSK_build_railways_1 = {
 
-		icon = GFX_decision_generic_nationalism
+		icon = GFX_decision_generic_construction
 
 		priority = 50
 
@@ -11,153 +11,379 @@ political_actions = {
 		}
 
 		available = {
-			OR = {
-				is_ai = yes
-				is_debug = yes
-			}
-			any_country = {
-				is_subject_of = ROOT
-				original_tag = XON
-			}
+			760 = { controls_or_subject_of = yes }
+			817 = { controls_or_subject_of = yes }
+			330 = { controls_or_subject_of = yes }
+			num_of_civilian_factories_available_for_projects > 0
 		}
 
 		visible = { 
+			
+		}
+
+		cancel_trigger = {
 			OR = {
-				is_ai = yes
-				is_debug = yes
-			}
-			any_country = {
-				is_subject_of = ROOT
-				original_tag = XON
+				760 = { controls_or_subject_of = no }
+				817 = { controls_or_subject_of = no }
+				330 = { controls_or_subject_of = no }
 			}
 		}
 
-		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		fire_only_once = yes
 
 		cost = 50
 
-		days_re_enable = 30
+		days_remove = 14
 
         ai_will_do = {
 			base = 10000
 		}
-		complete_effect = {
-			every_country = {
-				limit = {
-					is_subject_of = ROOT
-					original_tag = XON
+
+		remove_effect = {
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 4704 4843 1781 7864 12541 1725 7881 4732 4801 }
+				start_province = 4704
+				target_province = 4801
+			}
+        }
+
+	}
+
+	XSK_build_railways_2 = {
+
+		icon = GFX_decision_generic_construction
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		available = {
+			760 = { controls_or_subject_of = yes }
+			817 = { controls_or_subject_of = yes }
+			OR = {
+				612 = { controls_or_subject_of = yes }
+				621 = { controls_or_subject_of = yes }
+			}
+			611 = { controls_or_subject_of = yes }
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		visible = { 
+			
+		}
+
+		cancel_trigger = {
+			OR = {
+				760 = { controls_or_subject_of = no }
+				817 = { controls_or_subject_of = no }
+				AND = {
+					612 = { controls_or_subject_of = no }
+					621 = { controls_or_subject_of = no }
 				}
-				add_autonomy_score = {
-    				value = -500
+				611 = { controls_or_subject_of = no }
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		days_remove = 14
+
+        ai_will_do = {
+			base = 10000
+		}
+
+		remove_effect = {
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				path = { }
+				start_province = 4704
+				target_province = 11752
+			}
+        }
+
+	}
+
+}
+
+foreign_politics = {
+
+	XSK_treaty_with_railroaders = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		target_trigger = { 
+			FROM = {
+				tag = XRE
+			}
+		}
+
+		available = {
+			FROM = { has_opinion = { target = ROOT value > 24 } }
+		}
+
+		visible = { 
+			NOT = { has_war_with = FROM }
+			has_completed_focus = XSK_chinese_politics
+		}
+
+		cancel_trigger = {
+			has_war_with = FROM
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		days_remove = 14
+
+        ai_will_do = {
+			base = 10000
+		}
+
+		remove_effect = {
+			FROM = { give_military_access = ROOT }
+			add_opinion_modifier = {
+				target = FROM
+    			modifier = XFR_open_borders
+			}
+			add_ideas = XSK_railway_builders
+        }
+
+	}
+
+	XSK_treaty_for_korean_independence = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		target_trigger = { 
+			FROM = {
+				tag = XK0
+			 }
+		}
+
+		available = {
+			FROM = { has_opinion = { target = ROOT value > 49 } }
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_other_country = {
+					is_owner_neighbor_of = FROM
+					is_subject_of = ROOT
 				}
 			}
-			every_country = {
-				limit = {
-					is_subject_of = ROOT
-					original_tag = XON
-					compare_autonomy_progress_ratio > 0.9
+		}
+
+		visible = { 
+			NOT = { has_war_with = FROM }
+			has_completed_focus = XSK_chinese_politics
+		}
+
+		cancel_trigger = {
+			has_war_with = FROM
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 14
+
+        ai_will_do = {
+			base = 10000
+		}
+
+		remove_effect = {
+			give_guarantee = FROM
+			add_political_power = 50
+			
+        }
+
+	}
+
+	XSK_improve_relations = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		target_trigger = { 
+			FROM = {
+				OR = {
+					original_tag = XTW
+					original_tag = XK0
+					original_tag = XKY
+					original_tag = XRY
 				}
-				ROOT = {
-					annex_country = {
-    					target = PREV
-    					transfer_troops = yes
+			}
+		}
+
+		available = {
+			FROM = { has_opinion = { target = ROOT value > 0 } }
+		}
+
+		visible = { 
+			NOT = { has_war_with = FROM }
+			has_completed_focus = XSK_chinese_politics
+		}
+
+		cancel_trigger = {
+			has_war_with = FROM
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 14
+
+        ai_will_do = {
+			base = 1000
+		}
+
+		remove_effect = {
+			reverse_add_opinion_modifier = {
+				target = FROM
+    			modifier = offered_support
+			}
+			add_political_power = 50
+			
+        }
+
+	}
+
+	XSK_enact_protection_protocol = {
+
+		icon = GFX_decision_generic_army_support
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		target_trigger = { 
+			FROM = {
+				tag = XRE
+			}
+		}
+
+		available = {
+			OR = {
+				is_faction_leader = yes
+				AND = {
+					is_in_faction_with = XTW
+					XTW = { is_faction_leader = yes }
+				}
+			}
+			FROM = {
+				has_war = yes
+				OR = {
+					is_guaranteed_by = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+
+		visible = { 
+			NOT = { has_war_with = FROM }
+			FROM = {
+				is_in_faction = no
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 5
+
+        ai_will_do = {
+			base = 10000
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			FROM = {
+				custom_effect_tooltip = XSK_enact_protection_protocol_tt
+				hidden_effect = {
+					division_template = {
+						name = "Ottoman Survey Corps"
+						override_model = ITA_infantry_alt_3_entity
+						template_counter = 67
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+						}
 					}
-				}
-				every_core_state = {
-					add_core_of = ROOT
+					random_core_state = {
+						limit = {
+							is_controlled_by = FROM
+						}
+						create_unit = {
+							division = "name = \"Ottoman Survey Corps\" division_template = \"Ottoman Survey Corps\" start_experience_factor = 0.4 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = FROM
+							allow_spawning_on_enemy_provs = yes 
+							count = 3
+						}
+					}
 				}
 			}
         }
 
 	}
 
-	XSK_reclaim_anarchy_land = {
-
-		icon = GFX_decision_ITA_reorganize_ascari
-
-		allowed = {
-			original_tag = XSK
-		}
-
-		highlight_states = { 
-			highlight_states_trigger = {
-				is_controlled_by = FROM
-			}
-		}
-
-		target_trigger = { 
-			FROM = {
-				DEN_is_chinese_state = yes
-				is_owned_and_controlled_by = LIB
-			 }
-		}
-
-		state_target = yes
-
-		available = {
-			NOT = { has_country_flag = XSK_reclaiming_anarchy }
-		}
-
-		visible = {
-			FROM = {
-				any_neighbor_state = {
-					OR = {
-						AND = {
-							owner = { is_subject_of = ROOT }
-							controller = { is_subject_of = ROOT }
-						}
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-		}
-
-		custom_cost_trigger = {
-			has_equipment = { infantry_equipment > 99 }
-		}
-		custom_cost_text = decision_cost_100_guns
-
-		on_map_mode = map_only
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 10
-				has_war = no
-			}
-		}
-
-		days_remove = 7
-
-		cancel_trigger = {
-			FROM = {
-				NOT = { is_owned_and_controlled_by = LIB }
-			}
-		}
-
-		complete_effect = {
-			set_country_flag = XSK_reclaiming_anarchy
-			hidden_effect = {
-				add_equipment_to_stockpile = {
-    				type = infantry_equipment
-    				amount = -100
-				}
-			}
-		}
-
-		remove_effect = {
-			clr_country_flag = XSK_reclaiming_anarchy
-			transfer_state = FROM
-		}
-	}
-
 }
 
 XSK_invasion_of_china = {
-
-	
 
 	XSK_invade_chinese_nation = {
 
@@ -212,10 +438,10 @@ XSK_invasion_of_china = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 0
+			factor = 20
 			modifier = {
-				add = 10
-				has_war = no
+				factor = 0
+				has_war = yes
 			}
 		}
 
@@ -285,7 +511,11 @@ XSK_invasion_of_china = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 
 		visible = {
@@ -369,6 +599,10 @@ XSK_invasion_of_china = {
 
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 
 		visible = {
@@ -397,6 +631,88 @@ XSK_invasion_of_china = {
 				target = FROM
 				type = take_claimed_state
 			}
+		}
+	}
+
+}
+
+XSK_anarchy_reclamation_cat = {
+
+	XSK_reclaim_anarchy_land = {
+
+		icon = GFX_decision_ITA_reorganize_ascari
+
+		allowed = {
+			original_tag = XSK
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = FROM
+			}
+		}
+
+		target_trigger = { 
+			FROM = {
+				DEN_is_chinese_state = yes
+				is_owned_and_controlled_by = LIB
+			 }
+		}
+
+		state_target = yes
+
+		available = {
+			NOT = { has_country_flag = XSK_reclaiming_anarchy }
+		}
+
+		visible = {
+			FROM = {
+				any_neighbor_state = {
+					OR = {
+						AND = {
+							owner = { is_subject_of = ROOT }
+							controller = { is_subject_of = ROOT }
+						}
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+		custom_cost_text = decision_cost_100_guns
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = 7
+
+		cancel_trigger = {
+			FROM = {
+				NOT = { is_owned_and_controlled_by = LIB }
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = XSK_reclaiming_anarchy
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = -100
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = XSK_reclaiming_anarchy
+			transfer_state = FROM
 		}
 	}
 
@@ -436,7 +752,7 @@ XSK_support_united_front_members_cat = {
 		fire_only_once = no
 
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 
 		days_remove = 14
@@ -465,7 +781,7 @@ XSK_support_united_front_members_cat = {
 						FROM = { is_subject_of = ROOT }
 					}
 					add_autonomy_score = {
-						value = -500
+						value = -150
 					}
 				}
 			}
@@ -505,7 +821,7 @@ XSK_support_united_front_members_cat = {
 		fire_only_once = no
 
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 
 		days_remove = 14
@@ -528,7 +844,7 @@ XSK_support_united_front_members_cat = {
 						FROM = { is_subject_of = ROOT }
 					}
 					add_autonomy_score = {
-						value = -500
+						value = -150
 					}
 				}
 			}
@@ -573,7 +889,7 @@ XSK_support_united_front_members_cat = {
 		fire_only_once = no
 
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 
 		days_remove = 14
@@ -607,11 +923,170 @@ XSK_support_united_front_members_cat = {
 						FROM = { is_subject_of = ROOT }
 					}
 					add_autonomy_score = {
-						value = -500
+						value = -150
 					}
 				}
 			}
 			add_political_power = 100
+		}
+	}
+
+}
+
+XSK_military_decisions = {
+
+	XSK_increase_irregular_recruitment = {
+
+		icon = GFX_decision_generic_disband_irregulars
+
+		allowed = {
+			tag = XSK
+		}
+
+		visible = {
+			check_variable = { XSK.irregular_recruitment > 0 }
+		}
+
+		available = {
+			
+		}
+
+		ai_hint_pp_cost = 50
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50
+
+		days_remove = 14
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = XSK_increase_irregular_recruitment_tt
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "Düzensiz Kolordu"
+					regiments = {
+						irregular_infantry = 2
+					}
+				}
+			}
+			subtract_from_variable  = { XSK.irregular_recruitment = 1 }
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	XSK_add_antitank_to_irregulars = {
+
+		icon = GFX_decision_generic_industry
+
+		allowed = {
+			tag = XSK
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			has_tech = interwar_antitank
+		}
+
+		ai_hint_pp_cost = 50
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+			has_army_experience > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+				army_experience = -15
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = XSK_add_antitank_to_irregulars_tt
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "Düzensiz Kolordu"
+					support = {
+						anti_tank = 0
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	XSK_reduce_supply_use = {
+
+		icon = GFX_decision_generic_trucks
+
+		allowed = {
+			tag = XSK
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			has_tech = motorised_infantry
+		}
+
+		ai_hint_pp_cost = 50
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+			has_army_experience > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+
+		days_remove = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+				army_experience = -15
+			}
+		}
+
+		remove_effect = {
+			set_technology = {
+				XSK_supply_reducer = 1
+				popup = no
+			}
+			custom_effect_tooltip = XSK_supply_reducer_tt
+		}
+
+		ai_will_do = {
+			base = 1
 		}
 	}
 
@@ -1051,6 +1526,124 @@ XSK_vilayets_cat = {
 					create_country_leader = {
 						name = "Yogunay Ozker"
 						picture = GFX_portrait_XSK_ottoman_vassal_4
+						expire = "3000.1.1"
+						ideology = despotism
+						traits = {
+							XSK_ottoman_subject_trait
+						}
+					}
+					division_template = {
+						name = "Ottoman Infantry Division"
+						override_model = ITA_infantry_alt_3_entity
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					every_controlled_state = {
+						create_unit = {
+							division = "name = \"Ottoman Infantry Division\" division_template = \"Ottoman Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+							owner = PREV
+							allow_spawning_on_enemy_provs = yes 
+							count = 2
+						}
+					}
+				}
+			}
+        }
+	}
+
+	XSK_vilayet_of_japan  = { 
+		
+		icon = GFX_decision_jap_pacific_guardian
+
+		priority = 50
+
+		allowed = {
+			tag = XSK
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				region = 289
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XSK_vilayet_of_japan_trigger
+				all_state = {
+					OR = {
+						NOT = { region = 289 }
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		visible = { 
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+        ai_will_do = {
+			base = 100
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			custom_effect_tooltip = XSK_vilayet_of_japan_tt
+			hidden_effect = {
+				create_dynamic_country = {
+    				original_tag = XKY
+					set_cosmetic_tag = XSK_japan
+					every_core_state = {
+						remove_core_of = PREV
+					}
+					every_state = {
+						limit = {
+							region = 289
+						}
+						PREV = { transfer_state = PREV }
+						add_core_of = THIS
+					}
+					transfer_state = 529
+					529 = {
+						add_core_of = THIS
+					}
+					transfer_state = 530
+					530 = {
+						add_core_of = THIS
+					}
+					ROOT = {
+						set_autonomy = {
+    						target = PREV
+    						autonomous_state = autonomy_XSK_vilayet
+    						end_wars = no
+    						end_civil_wars = no
+						}
+					}
+					set_capital = { state = 1014 }
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+						long_name = "Ottoman Rule"
+						name = "Ottoman Rule"
+					}
+					create_country_leader = {
+						name = "Altaner Baydar"
+						picture = GFX_portrait_XSK_ottoman_vassal_3
 						expire = "3000.1.1"
 						ideology = despotism
 						traits = {

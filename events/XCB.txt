@@ -10,24 +10,38 @@ country_event = { #civil war
 
 	option = { 
 		name = XCB.1.a
-		XCB = {
-			set_cosmetic_tag = XCB_civil_war_colour
-			delete_unit = {}
-		}
-		XCX = {
-			set_state_owner = 741
-			set_state_controller = 741
-			add_state_core = 741
-			add_state_core = 1008
-			add_state_core = 1009
-			add_state_core = 1010
-		}
-		XCB = {
-			declare_war_on = {
-				target = XCX
-				type = annex_everything
+		hidden_effect = {
+			XCB = {
+				set_cosmetic_tag = XCB_civil_war_colour
+				delete_unit = {}
+				set_politics = {
+					ruling_party = communism
+				}
+				set_popularities = {
+					communism = 65
+					democratic = 35
+				}
+				remove_ideas = {
+					XCB_the_two_city_government
+					XCB_fragmented_guerillas_dummy
+				}
+				retire_character = XCB_sieng_proeung
 			}
-			add_civil_war_target = XCX
+			XCX = {
+				set_state_owner = 741
+				set_state_controller = 741
+				add_state_core = 741
+				add_state_core = 1008
+				add_state_core = 1009
+				add_state_core = 1010
+			}
+			XCB = {
+				declare_war_on = {
+					target = XCX
+					type = annex_everything
+				}
+				add_civil_war_target = XCX
+			}
 		}
 	}
 }

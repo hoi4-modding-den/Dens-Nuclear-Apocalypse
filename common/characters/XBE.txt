@@ -1,0 +1,20 @@
+characters = {
+
+	XBE_anarchy_leader = {
+		name = "No Gods, No Masters"
+		portraits = {
+			civilian = {
+				large = "GFX_XBE_anarchy_leader"
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			traits = {
+				
+			}
+			expire = "3000.9.2.12"
+			id = -1
+		}
+	}
+
+}

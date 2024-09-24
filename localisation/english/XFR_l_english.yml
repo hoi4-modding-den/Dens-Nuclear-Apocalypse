@@ -994,7 +994,7 @@ XFR_bigger_dreams: "A Dream Beyond Francia!"
 XFR_bigger_dreams_desc: ""
 XFR_tno_reference: "The New Order"
 XFR_tno_reference_desc: "'Our empire spans from Germania to Iberia. We control the once mighty city of Rome and the centres of European culture, Vienna, Paris and Amsterdam. There is only one thing left to do...'"
-XFR_tno_reference_tt: "§RThe End is near...§!\n \n§G...for our enemies!§!"
+XFR_tno_reference_tt: "§RWe will embark on a grand crusade to retake all of Europa!§!"
 XFR_follow_the_promise: "Das Versprechen"
 XFR_follow_the_promise_desc: ""
 XFR_follow_the_promise_tt: "\n§YThe Kaiser will hold his promise...§!"
@@ -1782,7 +1782,7 @@ decision_cost_100_army_xp_tooltip: "It costs £GFX_army_experience §Y100§! to 
 
 decision_cost_1_civ: "£civ_factory §Y1§!"
 decision_cost_1_civ_blocked: "£civ_factory §R1§!"
-decision_cost_1_civ_tooltip: "It costs £civ_factory §Y1§! to take the decision\nClicking this decision requires at least one £civ_factory §YCivilian Factory§! in any §Ycore state§!. This decision does §Rnot§! count §Yoff-map factories§! or §Yfactories from puppets§!."
+decision_cost_1_civ_tooltip: "It costs £civ_factory §Y1§! to take the decision\n \nClicking this decision requires at least one £civ_factory §YCivilian Factory§! in any §Ycore state§!. This decision does §Rnot§! count §Yoff-map factories§! or §Yfactories from puppets§!."
 
 
 # Opinion Modifiers

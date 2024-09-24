@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+	    XBE_anarchy = {
+			name = XBE_anarchy
+
+			picture = idea_ARG_no_gods_no_masters
+
+			allowed = {
+				tag = XBE
+			}
+
+			modifier = {
+				local_manpower = -1.0
+				research_speed_factor = -1.0
+				local_resources_factor = -1.0
+				consumer_goods_expected_value = 1.0
+				enemy_declare_war_tension = -0.5
+				enemy_justify_war_goal_time = -0.5
+			}
+		}
+	}
+}

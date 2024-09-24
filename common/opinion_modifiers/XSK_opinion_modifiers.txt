@@ -10,6 +10,10 @@
 
 opinion_modifiers = {
 
+	XSK_islamic_friends = {
+		value = 25
+	}
+
 	XSK_dislike_deportation = {
 		value = -50
 	}
@@ -20,5 +24,13 @@ opinion_modifiers = {
 
 	XSK_uf_support = {
 		value = 25
+	}
+
+	XSK_ai_friendship_boost = {
+		value = 50
+	}
+
+	XSK_pan_turkic_agitators = {
+		value = -50
 	}
 }

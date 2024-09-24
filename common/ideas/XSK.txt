@@ -1,7 +1,79 @@
 ideas = {
     hidden_ideas = {	
+
+        XSK_ai_cheat_idea = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				is_ai = yes
+			}
+
+           removal_cost = -1
+
+            modifier = {
+                attrition = -0.2
+                no_supply_grace = 48
+                weekly_casualties_war_support = 0.01
+                supply_combat_penalties_on_core_factor = -0.25
+                equipment_capture = 0.2
+                political_power_gain = 0.1
+            }
+
+        }
+
 	}
     country = {
+
+        XSK_suleyman_xii_idea = {
+            name = XSK_sultan_suleyman_xii_name
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+           removal_cost = -1
+
+            picture = XSK_suleyman_xii_idea
+
+            modifier = {
+                operative_slot = 1
+                trade_opinion_factor = 0.1
+                opinion_gain_monthly_factor = 0.25
+                lend_lease_tension = -0.4
+            }
+
+        }
+
+        XSK_suleyman_xii_idea_no_lar = {
+            name = XSK_sultan_suleyman_xii_name
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+           removal_cost = -1
+
+            picture = XSK_suleyman_xii_idea
+
+            modifier = {
+                decryption_power_factor = 0.15
+                trade_opinion_factor = 0.1
+                opinion_gain_monthly_factor = 0.25
+                lend_lease_tension = -0.4
+            }
+
+        }
 
         XSK_the_sultanate_in_china = {
 
@@ -29,6 +101,10 @@ ideas = {
                 tag = XON
                 attack_bonus_against = 0.15
                 defense_bonus_against = 0.15
+            }
+
+            rule = {
+                can_send_volunteers = yes
             }
 
         }
@@ -64,6 +140,10 @@ ideas = {
                 defense_bonus_against = 0.15
             }
 
+            rule = {
+                can_send_volunteers = yes
+            }
+
         }
 
         XSK_the_sultanate_in_china_mongolian_cav = {
@@ -89,6 +169,10 @@ ideas = {
                 cavalry_defence_factor = 0.15
                 offensive_war_stability_factor = 0.25
                 ai_focus_aggressive_factor = 0.2
+            }
+
+            rule = {
+                can_send_volunteers = yes
             }
 
         }
@@ -120,6 +204,10 @@ ideas = {
                 tag = XON
                 attack_bonus_against = 0.15
                 defense_bonus_against = 0.15
+            }
+
+            rule = {
+                can_send_volunteers = yes
             }
 
         }
@@ -156,6 +244,10 @@ ideas = {
                 defense_bonus_against = 0.15
             }
 
+            rule = {
+                can_send_volunteers = yes
+            }
+
         }
 
         XSK_home_of_turks = {
@@ -182,6 +274,33 @@ ideas = {
 
         }
 
+        XSK_home_of_turks_2_dem = {
+            name = XSK_home_of_turks
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = tur_coordinated_balkan_armed_forces
+
+            modifier = {
+                weekly_manpower = 1000
+                surrender_limit = 0.25
+                political_power_gain = 0.1
+                stability_factor = 0.05
+                compliance_growth_on_our_occupied_states = -0.2
+                compliance_gain = 0.1
+                democratic_drift = 0.04
+            }
+
+        }
+
         XSK_home_of_turks_2 = {
             name = XSK_home_of_turks
 
@@ -203,6 +322,8 @@ ideas = {
                 political_power_gain = 0.1
                 stability_factor = 0.05
                 compliance_growth_on_our_occupied_states = -0.2
+                compliance_gain = 0.1
+                neutrality_drift = 0.04
             }
 
         }
@@ -503,8 +624,7 @@ ideas = {
             picture = ARG_civilian_economy_boost
 
             modifier = {
-                stability_factor = 0.1
-                consumer_goods_factor = 0.15
+                production_speed_arms_factory_factor = 0.4
                 production_speed_industrial_complex_factor = 0.4
             }
 
@@ -570,9 +690,9 @@ ideas = {
             picture = generic_armor
 
             modifier = {
-                army_armor_attack_factor = 0.1
-                army_armor_speed_factor = 0.25
-                org_loss_when_moving = -0.2
+                army_armor_attack_factor = 0.02
+                army_armor_speed_factor = 0.05
+                org_loss_when_moving = -0.1
             }
 
         }
@@ -598,14 +718,13 @@ ideas = {
             picture = tur_disorganised_armed_forces
 
             modifier = {
-                stability_factor = -0.15
-                army_org_regain = -0.1
+                army_org_regain = -0.03
             }
 
             targeted_modifier = {
                 tag = XSK
-                attack_bonus_against = -0.05
-                defense_bonus_against = -0.15
+                attack_bonus_against = -0.02
+                defense_bonus_against = -0.05
             }
 
         }
@@ -625,11 +744,193 @@ ideas = {
             picture = XSK_trinity_of_turko_monarcho_socialism
 
             modifier = {
-                stability_factor = 0.25
                 compliance_gain = 0.1
-                army_core_defence_factor = 0.1
+                army_core_defence_factor = 0.03
                 drift_defence_factor = 0.5
-                political_power_factor = 0.15
+                political_power_factor = 0.1
+                communism_drift = 0.04
+            }
+
+        }
+
+        XSK_suleyman_idea = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XRE
+            }
+
+           removal_cost = -1
+
+            picture = ARG_invest_in_railways
+
+            modifier = {
+                production_speed_rail_way_factor = 0.15
+            }
+
+        }
+
+        XSK_unite_china = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = jap_ichi_go
+
+            modifier = {
+                annex_cost_factor = -0.2
+                weekly_manpower = 1000
+                resistance_growth = -0.15
+                river_crossing_factor = -0.1
+            }
+
+        }
+
+        XSK_chinese_united_front = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = chi_chinese_unity
+
+            modifier = {
+                political_power_gain = 0.05
+                guarantee_tension = -0.25
+                guarantee_cost = -0.4
+                faction_trade_opinion_factor = 0.1
+            }
+
+        }
+
+        XSK_spy_recruitment = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_spy_intel
+
+            modifier = {
+                operative_slot = 1
+            }
+
+        }
+
+        XSK_spy_recruitment_2 = {
+            name = XSK_spy_recruitment
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = generic_spy_intel
+
+            modifier = {
+                operative_slot = 2
+            }
+
+        }
+
+        XSK_defence_focus = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+           removal_cost = -1
+
+            picture = YUG_federal_defense_council
+
+            modifier = {
+                army_core_defence_factor = 0.15
+            }
+
+        }
+
+        XSK_railway_builders = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+                has_war_with = XRE
+            }
+
+           removal_cost = -1
+
+            picture = ARG_invest_in_railways
+
+            modifier = {
+                production_speed_rail_way_factor = 0.15
+            }
+
+        }
+
+        XSK_bonus_against_XMJ = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				is_ai = yes
+			}
+
+           removal_cost = -1
+
+            picture = CZE_planning_bonus
+
+            modifier = {
+                attrition = -0.2
+                ai_focus_aggressive_factor = 0.8
+            }
+
+            targeted_modifier = {
+                tag = XMJ
+                attack_bonus_against = 0.2
+                defense_bonus_against = 0.05
             }
 
         }
@@ -685,7 +986,6 @@ ideas = {
             modifier = {
                 stability_factor = -0.2
                 political_power_gain = -0.1
-                custom_modifier_tooltip = XTK_idea_can_be_removed_tt
             }
 
         }
@@ -707,11 +1007,56 @@ ideas = {
             modifier = {
                 production_speed_buildings_factor = -0.25
                 production_factory_max_efficiency_factor = -0.2
-                custom_modifier_tooltip = XTK_idea_can_be_removed_tt
             }
 
         }
 
     }
+
+    industrial_concern = {
+		
+		XSK_mining_company = {
+			
+			allowed = {
+				original_tag = XSK
+			}
+
+            available = {
+                has_completed_focus = XSK_expand_the_mines
+            }
+			
+			traits = { mining_company }
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		XSK_railway_company_contract = {
+			
+			allowed = {
+				original_tag = XSK
+			}
+
+            available = {
+                has_completed_focus = XSK_chinese_politics
+                has_idea = XSK_railway_builders
+            }
+
+            visible = {
+                NOT = {
+                    has_completed_focus = XSK_no_sultan
+                    has_completed_focus = XSK_the_expansionist_sultan
+                }
+            }
+			
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { railway_company }
+		}
+		
+	}
 
 }
