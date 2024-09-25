@@ -64,9 +64,89 @@ ideas = {
 				modifier = {
 					supply_factor = 0.15
 					local_resources_factor = 0.15
-					recruitable_population_factor = 0.75
-
+					recruitable_population_factor = 0.25
+					consumer_goods_factor = -0.1
 				}
-		}		
+		}
+		XKY_Inefficient_Farming_4 = {
+				picture = generic_agrarian_society
+				modifier = {
+					supply_factor = 0.15
+					local_resources_factor = 0.15
+					recruitable_population_factor = 0.25
+					consumer_goods_factor = -0.15
+					training_time_factor = -0.15					
+				}
+		}
+		XKY_Inefficient_Farming_5 = {
+				picture = generic_agrarian_society
+				modifier = {
+					supply_factor = 0.15
+					local_resources_factor = 0.15
+					recruitable_population_factor = 0.25
+					consumer_goods_factor = -0.15
+					training_time_factor = -0.15
+					army_speed_factor = 0.15	
+				}
+		}
+		XKY_Inefficient_Farming_6 = {
+				picture = generic_agrarian_society
+				modifier = {
+					supply_factor = 0.15
+					local_resources_factor = 0.15
+					recruitable_population_factor = 0.25
+					consumer_goods_factor = -0.15
+					training_time_factor = -0.15
+					army_speed_factor = 0.15
+					conscription = 0.02
+				}
+		}
+		XKY_Inefficient_Farming_7 = {
+				picture = generic_agrarian_society
+				modifier = {
+					supply_factor = 0.15
+					local_resources_factor = 0.15
+					recruitable_population_factor = 0.25
+					consumer_goods_factor = -0.15
+					training_time_factor = -0.30
+					army_speed_factor = 0.15
+					conscription = 0.04
+					army_org = 10
+					army_morale = 10
+				}
+		}									
+		XKY_rebuilding_kyushu_university_1 = {
+				picture = generic_research_bonus
+				modifier = {
+				consumer_goods_factor = 0.1
+				research_speed_factor = 0.01
+				}
+		}	
+		XKY_rebuilding_kyushu_university_2 = {
+				picture = generic_research_bonus
+				modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor = 0.05
+				}
+		}
+		XKY_rebuilding_kyushu_university_3 = {
+				picture = generic_research_bonus
+				modifier = {
+				research_speed_factor = 0.25
+				}
+		}	
+		XKY_Faculty_of_Economics = {
+				picture = generic_foreign_capital
+				modifier = {
+				consumer_goods_factor = -0.50
+				}
+		}
+		XKY_Faculty_of_Agriculture = {
+				picture = generic_exploit_mines
+				modifier = {
+				supply_factor = 0.3
+				supply_consumption_factor = -0.15
+				}
+		}										
     }				    
 }

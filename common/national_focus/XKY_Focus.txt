@@ -60,7 +60,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_A_Nation_Once_Again
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -96,7 +96,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_first_kyushuan_parliament
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -206,7 +206,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = XKY_The_first_kyushuan_parliament
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -285,7 +285,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_first_kyushuan_parliament
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2098,7 +2098,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Jewel_of_the_South
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2236,7 +2236,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Jewel_of_the_South
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2259,8 +2259,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_ideas = XKY_rebuilding_kyushu_university_1
 		}
 	}
 	focus = {
@@ -2273,7 +2272,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Jewel_of_the_South
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2296,8 +2295,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = naval_equipment
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = naval_air
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = naval_doctrine
+			}						
 		}
 	}	
 	focus = {
@@ -2310,7 +2322,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Sasebo_Naval_Arsenal
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2333,8 +2345,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_tech_bonus = {
+				bonus = 2.5
+				uses = 1
+				category = infantry_tech
+			}
+			add_tech_bonus = {
+				bonus = 2.5
+				uses = 3
+				category = marine_tech
+			}			
 		}
 	}	
 	focus = {
@@ -2347,7 +2367,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Sasebo_Naval_Arsenal
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2370,8 +2390,71 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_tech_bonus = {
+				bonus = 3.0
+				uses = 2
+				category = cv_tech
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
@@ -2385,7 +2468,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = XKY_The_Sasebo_Naval_Arsenal
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2446,7 +2529,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_fourth_imperial_university
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2469,8 +2552,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_timed_idea = {
+				idea = XKY_Faculty_of_Agriculture
+				days = 365
+			}
 		}
 	}		
 	focus = {
@@ -2483,7 +2568,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_fourth_imperial_university
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2506,8 +2591,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_rebuilding_kyushu_university_1
+			add_idea = XKY_rebuilding_kyushu_university_2
+			}
 		}
 	}
 	focus = {
@@ -2520,7 +2607,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_fourth_imperial_university
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2543,8 +2630,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_timed_idea = {
+				idea = XKY_Faculty_of_Economics
+				days = 365
+			}
 		}
 	}	
 	focus = {
@@ -2559,7 +2648,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = XKY_The_fourth_imperial_university
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2582,8 +2671,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_rebuilding_kyushu_university_2
+			add_idea = XKY_rebuilding_kyushu_university_3
+			}
 		}
 	}	
 	focus = {
@@ -2596,7 +2687,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = XKY_A_2nd_Industrial_Revolution
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2619,8 +2710,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_Inefficient_Farming_2
+			add_idea = XKY_Inefficient_Farming_3
+			}
 		}
 	}	
 	focus = {
@@ -2633,7 +2726,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = XKY_A_2nd_Industrial_Revolution
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2726,13 +2819,13 @@ focus_tree = {
 		id = XKY_Kyushu_Export_Hub
 		icon = GFX_goal_generic_positive_trade_relations
 		
-		prerequisite = { focus = XKY_The_Miyazaki_Rice_Basket }							
+		prerequisite = { focus = XKY_The_Miyazaki_Rice_Basket focus = XKY_Restoring_the_Kyushu_Terraces focus = XKY_Never_another_empty_bowl}							
 #		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
 		x = 0
 		y = 1
 		relative_position_id = XKY_The_Miyazaki_Rice_Basket
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2755,8 +2848,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_Inefficient_Farming_3
+			add_idea = XKY_Inefficient_Farming_4
+			}			
 		}
 	}	
 	focus = {
@@ -2769,7 +2864,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Miyazaki_Rice_Basket
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2792,8 +2887,66 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
@@ -2806,7 +2959,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Miyazaki_Rice_Basket
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2829,21 +2982,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_resource = {
+				type = steel
+				amount = 15
+				state = 1018
+			}
 		}
 	}		
 	focus = {
 		id = XKY_The_worlds_most_efficient_rice_farm
 		icon = GFX_focus_generic_agricultural_subsidies
 		
-		prerequisite = { focus = XKY_Never_another_empty_bowl }							
+		prerequisite = { focus = XKY_Kyushu_Export_Hub }							
 #		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
 		x = 0
 		y = 1
 		relative_position_id = XKY_Never_another_empty_bowl
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2866,21 +3022,49 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
 		id = XKY_Less_farmers_in_the_field
 		icon = GFX_focus_SWE_rations
 		
-		prerequisite = { focus = XKY_Kyushu_Export_Hub }							
+		prerequisite = { focus = XKY_Kyushu_Export_Hub focus = XKY_The_worlds_most_efficient_rice_farm  focus = XKY_The_Great_Reforestation }							
 #		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
 		x = 0
 		y = 1
 		relative_position_id = XKY_Kyushu_Export_Hub
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2903,21 +3087,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_Inefficient_Farming_4
+			add_idea = XKY_Inefficient_Farming_5
+			}
 		}
 	}	
 	focus = {
 		id = XKY_The_Great_Reforestation
 		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		
-		prerequisite = { focus = XKY_Restoring_the_Kyushu_Terraces }							
+		prerequisite = { focus = XKY_Kyushu_Export_Hub }							
 #		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
 		x = 0
 		y = 1
 		relative_position_id = XKY_Restoring_the_Kyushu_Terraces
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2940,21 +3126,49 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = fuel_silo
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = fuel_silo
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}		
 	focus = {
 		id = XKY_Farmers_Bureau
 		icon = GFX_focus_DEN_schleswigian_farmers
 		
-		prerequisite = { focus = XKY_The_worlds_most_efficient_rice_farm }							
+		prerequisite = { focus = XKY_Less_farmers_in_the_field }							
 #		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
 		x = 0
 		y = 1
 		relative_position_id = XKY_The_worlds_most_efficient_rice_farm
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -2977,8 +3191,66 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
@@ -2991,7 +3263,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_Less_farmers_in_the_field
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3014,21 +3286,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_Inefficient_Farming_5
+			add_idea = XKY_Inefficient_Farming_6
+			}
 		}
 	}		
 	focus = {
 		id = XKY_Reclaiming_the_Old_factories
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_construct_mil_factory
 		
-		prerequisite = { focus = XKY_The_Great_Reforestation }							
+		prerequisite = { focus = XKY_Less_farmers_in_the_field }							
 #		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
 		x = 0
 		y = 1
 		relative_position_id = XKY_The_Great_Reforestation
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3051,8 +3325,36 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
@@ -3067,7 +3369,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = XKY_The_Miyazaki_Rice_Basket
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3090,8 +3392,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_Inefficient_Farming_6
+			add_idea = XKY_Inefficient_Farming_7
+			}
 		}
 	}	
 	focus = {
@@ -3104,7 +3408,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Yahata_Furnaces
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3141,7 +3445,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Yahata_Furnaces
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3236,7 +3540,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Yahata_Furnaces
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3273,7 +3577,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_Reopening_the_Hasino_Iron_Mines
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3310,7 +3614,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_Kokura_Arsenal_Expansion
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3347,7 +3651,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_Rebuilding_the_Miike_Coal_Mines
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3384,7 +3688,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Battleship_Island
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3407,8 +3711,66 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
@@ -3421,7 +3783,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_Mitsubishi_Aircraft_Plants
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3444,8 +3806,66 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}			
 		}
 	}	
 	focus = {
@@ -3458,7 +3878,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_Modernizing_the_Steel_Mills
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3497,7 +3917,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = XKY_The_Yahata_Furnaces
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -3535,7 +3955,7 @@ focus_tree = {
 		y = 7
 		relative_position_id = XKY_A_2nd_Industrial_Revolution
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
