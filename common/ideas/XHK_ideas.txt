@@ -276,5 +276,58 @@ ideas = {
 				monthly_population = 0.1
 			}
 		}
+		XHK_the_great_project_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.3
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		XHK_industrial_efficiency_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		XHK_cheap_production_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.25
+			}
+		}
 	}
 }	
