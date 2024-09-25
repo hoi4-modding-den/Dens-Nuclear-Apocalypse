@@ -60,7 +60,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_A_Nation_Once_Again
 
-		cost = 5
+		cost = 1
 
 #		ai_will_do = {
 #			factor = 24
@@ -2819,7 +2819,7 @@ focus_tree = {
 		id = XKY_Kyushu_Export_Hub
 		icon = GFX_goal_generic_positive_trade_relations
 		
-		prerequisite = { focus = XKY_The_Miyazaki_Rice_Basket focus = XKY_Restoring_the_Kyushu_Terraces focus = XKY_Never_another_empty_bowl}							
+		prerequisite = { focus = XKY_The_Miyazaki_Rice_Basket focus = XKY_Restoring_the_Kyushu_Terraces focus = XKY_Never_another_empty_bowl }							
 #		mutually_exclusive = { focus = XKY_Democracy_Triumphs }
 		x = 0
 		y = 1
@@ -3431,8 +3431,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_resource = {
+				type = steel
+				amount = 35
+				state = 1016
+			}
 		}
 	}	
 	focus = {
@@ -3563,8 +3566,66 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
@@ -3600,8 +3661,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_resource = {
+				type = steel
+				amount = 35
+				state = 1014
+			}
 		}
 	}	
 	focus = {
@@ -3637,8 +3701,71 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_resource = {
+				type = aluminium
+				amount = 35
+				state = 1014
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = 	arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = 	arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = 	arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = 	arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}	
 		}
 	}	
 	focus = {
@@ -3674,8 +3801,66 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}		
 	focus = {
@@ -3901,8 +4086,71 @@ random_owned_controlled_state = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
@@ -3940,8 +4188,36 @@ random_owned_controlled_state = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = 	arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = 	arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
