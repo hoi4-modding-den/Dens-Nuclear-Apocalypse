@@ -48,7 +48,7 @@ XCB = {
 		XCB_fragmented_guerillas_morale_variable = -0.15
 	}
 	set_variable = {
-		XCB_resistance_progress_bar_var = 27
+		XCB_resistance_progress_bar_var = 45
 	}
 	set_variable = { XCB_kldp_resistance_var = 20 }
 	set_variable = { XCB_cprm_a_resistance_var = 25 }
@@ -57,7 +57,7 @@ XCB = {
 	
 	set_variable = { XCB_tonle_sap_var = 1 }
 	set_variable = { XCB_chuor_phnum_var = 2 }
-	set_variable = { XCB_phnom_kulen_var = 4 }
+	set_variable = { XCB_phnom_kulen_var = 3 }
 	set_variable = { XCB_prey_lang_var = 3 }
 }
 

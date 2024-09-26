@@ -47,6 +47,15 @@
  XCB_cprm_a_influence_resistance:0 "§tCPRM-A Influence: §![?XCB_cprm_a_resistance_var]"
  XCB_cprm_i_influence_resistance:0 "§RCPRM-I Influence: §![?XCB_cprm_i_resistance_var]"
  
+ XCB_increase_ferocity_5:0 "§HIncreases the §RFerocity§! of the Population by§! §R5§!"
+ XCB_increase_ferocity_10:0 "§HIncreases the §RFerocity§! of the Population by§! §R10§!"
+ XCB_increase_ferocity_15:0 "§HIncreases the §RFerocity§! of the Population by§! §R15§!"
+ XCB_aaem_tt:0 "§RSowing the seeds of revolution all over Cambodia is the right strategy!§!"
+ XCB_tns_tt:0 "§RWe should concentrate our efforts on maintaining grip in Siem Reap!§!"
+ XCB_less_debuffs_cv_tt:0 "§HCompleting this focus ensures that our military fill receive less debuffs when the revolution shall fire.§!"
+ XCB_grant_guns_cv_tt:0 "§HCompleting this focus ensures that once the civil war triggers, the revolutionaries will gain up to 1000 guns.§!"
+ XCB_grant_soldiers_cv_tt:0 "§HCompleting this focus ensures that once the civil war triggers, the revolutionaries will gain up to 2500 guns.§!"
+ 
  XCB_chuor_phnum_info_loc:0 "§HChuor Phnum§! \n\n §RCurrent Sedition:§! [?XCB_chuor_phnum_var]"
  XCB_tonle_sap_info_loc:0 "§HTonle Sap§! \n\n §RCurrent Sedition:§! [?XCB_tonle_sap_var]"
  XCB_prey_lang_info_loc:0 "§HPrey Lang§! \n\n §RCurrent Sedition:§! [?XCB_prey_lang_var]"
