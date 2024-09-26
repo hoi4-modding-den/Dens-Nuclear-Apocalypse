@@ -130,6 +130,17 @@ country_event = {
 			complete_national_focus = XTW_desperate_gambit
 			hidden_effect = {
 				retire_character = XTW_chen_hua
+				set_politics = {
+    				ruling_party = neutrality
+    				elections_allowed = no
+    				long_name = XTW_armyparty_long
+    				name = XTW_armyparty
+				}
+				set_cosmetic_tag = XTW_army
+				promote_character = {
+    				character = XTW_qiu_huan
+    				ideology = despotism
+				}
 			}
 		}
 	}
