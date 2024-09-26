@@ -329,5 +329,59 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.25
 			}
 		}
+		XHK_production_lines_idea = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		XHK_attack = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.1
+			}
+		}
+		XHK_hkaf = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+			modifier = {
+				air_agility_factor = 0.05
+				air_attack_factor = 0.05
+				air_accidents_factor = -0.5
+			}
+		}
 	}
 }	
