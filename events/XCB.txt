@@ -23,7 +23,6 @@ country_event = { #civil war
 				}
 				remove_ideas = {
 					XCB_the_two_city_government
-					XCB_fragmented_guerillas_dummy
 				}
 				retire_character = XCB_sieng_proeung
 			}
@@ -42,6 +41,36 @@ country_event = { #civil war
 				}
 				add_civil_war_target = XCX
 			}
+			XCB = {
+				if = {
+					limit = {
+						has_country_flag = XCB_grant_soldiers_cv_tt
+					}
+					country_event = XCB.3
+				}
+			}
+			XCB = {
+				if = {
+					limit = {
+						has_country_flag = XCB_less_debuffs_cv
+					}
+					add_to_variable = {
+						XCB_fragmented_guerillas_war_support_variable = 0.05
+					}
+	
+					add_to_variable = {
+						XCB_fragmented_guerillas_conscription_variable = 0.05
+					}
+	
+					add_to_variable = {
+						XCB_fragmented_guerillas_attrition_variable = -0.05
+					}
+	
+					add_to_variable = {
+						XCB_fragmented_guerillas_morale_variable = 0.05
+					}
+				}
+			}
 		}
 	}
 }
@@ -58,5 +87,23 @@ country_event = { #debug
 		name = XCB.2.a
 		add_to_variable = { XCB_resistance_progress_bar_var = 73 } #Usko-Vitun-Matonta
 		add_to_variable = { XCB_resistance_dirty = 0.01 }
+	}
+}
+country_event = { #guns and soldiers
+	id = XCB.3
+	title = XCB.3.t
+	desc = XCB.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = XCB.3.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = GER
+		}
+		add_manpower = 2500
 	}
 }

@@ -11,7 +11,7 @@
 	
 	default = no
 	reset_on_civilwar = no
-	continuous_focus_position = { x = 100 y = 3250 }
+	continuous_focus_position = { x = 2075 y = 1775}
 
 focus = {
 	id = XTW_2236_elections
@@ -74,7 +74,7 @@ focus = {
 focus = {
 	id = XTW_bury_the_hatchet
 	icon = GFX_focus_URG_colorados
-	x = -1
+	x = -2
 	y = 1
 	relative_position_id = XTW_DPP_victory
 	available = {
@@ -460,7 +460,7 @@ focus = {
 focus = {
 	id = XTW_revive_the_one_china_policy
 	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-	x = 1
+	x = 2
 	y = 1
 	relative_position_id = XTW_PFP_victory
 	available = {
@@ -846,7 +846,7 @@ focus = {
 focus = {
 	id = XTW_uphold_the_status_quo
 	icon = GFX_focus_attack_china
-	x = -3
+	x = -4
 	y = 1
 	relative_position_id = XTW_the_matter_of_kuomintang
 	available = {
@@ -870,7 +870,7 @@ focus = {
 focus = {
 	id = XTW_begin_reconciliation
 	icon = GFX_focus_chi_cooperation_with_the_nationalists
-	x = 3
+	x = 4
 	y = 1
 	relative_position_id = XTW_the_matter_of_kuomintang
 	available = {
@@ -1153,7 +1153,7 @@ focus = {
 focus = {
 	id = XTW_a_new_era_for_taiwan
 	icon = GFX_focus_spr_torchbearers_of_tomorrow
-	x = -12
+	x = -13
 	y = 1
 	relative_position_id = XTW_proclaim_victory_over_terror
 	available = {
@@ -1175,7 +1175,7 @@ focus = {
 focus = {
 	id = XTW_west_pacific_project
 	icon = GFX_goal_generic_alliance
-	x = -1
+	x = -2
 	y = 1
 	relative_position_id = XTW_a_new_era_for_taiwan
 	available = {
@@ -1185,8 +1185,6 @@ focus = {
 	}
 	prerequisite = {
 		focus = XTW_a_new_era_for_taiwan
-		focus = XTW_desperate_gambit #placeholder for playability until I finish the rest
-		focus = XTW_a_mistake_undone #placeholder for playability until I finish the rest
 	}
 	cost = 5
  	available_if_capitulated = yes
@@ -1887,7 +1885,7 @@ focus = {
 focus = {
 	id = XTW_martial_law
 	icon = GFX_focus_generic_little_entente
-	x = -3
+	x = -6
 	y = 1
 	relative_position_id = XTW_desperate_gambit
 	available = {
@@ -1901,6 +1899,14 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
+		add_popularity = {
+    			ideology = fascism
+    			popularity = 0.1
+			}
+		add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.1
+			}
 	}
 }
 focus = {
@@ -1921,6 +1927,202 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
+		add_trait = {
+     		character = XTW_qiu_huan
+     		ideology = despotism
+    		trait = dictator
+		}
+		add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.15
+			}
+	}
+}
+focus = {
+	id = XTW_all_do_their_duty
+	icon = GFX_focus_generic_military_mission
+	x = -1
+	y = 1
+	relative_position_id = XTW_form_the_military_government
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_form_the_military_government
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = XTW_churchill_doctrine
+	}
+}
+focus = {
+	id = XTW_no_neglects
+	icon = GFX_focus_generic_workers
+	x = -1
+	y = 1
+	relative_position_id = XTW_all_do_their_duty
+	available = {
+		is_puppet = no
+	}
+	bypass = {
+		XKY = {
+			exists = no
+		}
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_all_do_their_duty
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = XTW_churchill_doctrine_1b
+			}
+			swap_ideas = {
+				remove_idea = XTW_churchill_doctrine_1b
+				add_idea = XTW_churchill_doctrine_2
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = XTW_churchill_doctrine
+				add_idea = XTW_churchill_doctrine_1a
+			}
+		}
+	}
+}
+focus = {
+	id = XTW_the_best_arrangements
+	icon = GFX_goal_generic_intelligence_exchange
+	x = 1
+	y = 1
+	relative_position_id = XTW_all_do_their_duty
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_all_do_their_duty
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = XTW_churchill_doctrine_1a
+			}
+			swap_ideas = {
+				remove_idea = XTW_churchill_doctrine_1a
+				add_idea = XTW_churchill_doctrine_2
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = XTW_churchill_doctrine
+				add_idea = XTW_churchill_doctrine_1b
+			}
+		}
+	}
+}
+focus = {
+	id = XTW_defend_our_island_home
+	icon = GFX_focus_generic_coastal_fort
+	x = 0
+	y = 2
+	relative_position_id = XTW_all_do_their_duty
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_no_neglects
+	}
+	prerequisite = {
+		focus = XTW_the_best_arrangements
+	}
+	cost = 10
+ 	available_if_capitulated = yes
+	completion_reward = {
+		swap_ideas = {
+				remove_idea = XTW_churchill_doctrine_2
+				add_idea = XTW_churchill_doctrine_3
+			}
+	}
+}
+focus = {
+	id = XTW_the_storm_of_war
+	icon = GFX_goal_generic_major_war
+	x = -1
+	y = 1
+	relative_position_id = XTW_defend_our_island_home
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_defend_our_island_home
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = XTW_churchill_doctrine_4b
+			}
+			swap_ideas = {
+				remove_idea = XTW_churchill_doctrine_4b
+				add_idea = XTW_churchill_doctrine_5
+			}
+		}
+		else = {
+		swap_ideas = {
+				remove_idea = XTW_churchill_doctrine_3
+				add_idea = XTW_churchill_doctrine_4a
+			}
+		}
+	}
+}
+focus = {
+	id = XTW_the_menace_of_tyranny
+	icon = GFX_focus_SWE_neither_death_nor_dishonor
+	x = 1
+	y = 1
+	relative_position_id = XTW_defend_our_island_home
+	available = {
+		is_puppet = no
+	}
+	mutually_exclusive = {
+	}
+	prerequisite = {
+		focus = XTW_defend_our_island_home
+	}
+	cost = 5
+ 	available_if_capitulated = yes
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = XTW_churchill_doctrine_4a
+			}
+			swap_ideas = {
+				remove_idea = XTW_churchill_doctrine_4a
+				add_idea = XTW_churchill_doctrine_5
+			}
+		}
+		else = {
+		swap_ideas = {
+				remove_idea = XTW_churchill_doctrine_3
+				add_idea = XTW_churchill_doctrine_4b
+			}
+		}
 	}
 }
 focus = {
@@ -1941,6 +2143,28 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
+		set_politics = {
+    		ruling_party = fascism
+    		elections_allowed = no
+    		long_name = XTW_dutchparty
+    		name = XTW_dutchparty
+		}
+		promote_character = XTW_aart_jansen
+		add_corps_commander_role = {
+  			character = XTW_aart_jansen
+  			traits={ brilliant_strategist politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		retire_character = XTW_qiu_huan
+		add_popularity = {
+    			ideology = fascism
+    			popularity = 0.15
+			}
+		set_cosmetic_tag = XTW_holland
 	}
 }
 focus = {
@@ -1960,7 +2184,24 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		every_state = {
+				limit = {
+					is_core_of = XKY
+				}
+				add_claim_by = ROOT
+			}
+		every_state = {
+				limit = {
+					is_core_of = XSI
+				}
+				add_claim_by = ROOT
+			}
+		595 = {
+			add_claim_by = ROOT
+		}
+		596 = {
+			add_claim_by = ROOT
+		}
 	}
 }
 focus = {
@@ -2141,7 +2382,7 @@ focus = {
 	cost = 5
  	available_if_capitulated = yes
 	completion_reward = {
-		add_political_power = 50
+		add_ideas = XTW_rule_by_fear
 	}
 }
 focus = {
@@ -2352,7 +2593,7 @@ focus = {
 focus = {
 	id = XTW_a_mistake_undone
 	icon = GFX_focus_chi_legislative_yuan
-	x = 10
+	x = 13
 	y = 1
 	relative_position_id = XTW_a_meeting_with_the_chairman
 	available = {
