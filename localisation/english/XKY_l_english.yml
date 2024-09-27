@@ -7,6 +7,9 @@ XKY_democratic_ADJ:0 "Kyushu"
 XKY_fascism:0 "The Second Rightous Army"
 XKY_fascism_DEF:0 "the second rightous army"
 XKY_fascism_ADJ:0 "Fascist"
+XKY_taisei_yokusankai:0 "The New Japanese Empire"
+XKY_taisei_yokusankai_DEF:0 "The New Japanese Empire"
+XKY_taisei_yokusankai_ADJ:0 "Imperial"
 XKY_communism:0 "Japanese Red Army Faction"
 XKY_communism_DEF:0 "the Japanese Red Army Faction"
 XKY_communism_ADJ:0 "Red Army"
@@ -22,7 +25,8 @@ XKY_fascism_party:0 "Kōdōha"
 XKY_fascism_party_long:0 "2nd Righteous Army"
 XKY_communism_party:0 "JRA"
 XKY_communism_party_long:0 "Japanese Red Army"
-
+XKY_taisei_yokusankai:0 "Taisei Yokusankai"
+XKY_taisei_yokusankai_long:0 "Imperial Rule Assistance Association"
   ### Ideas
 XKY_Nippon_Kaigun:0 "Nippon Kaigun"
 XKY_Nippon_Kaigun_desc:0 "The Japanese Navy, once one of the strongest in the world before the war, left us with invaluable lessons that we have not forgotten. Although our technology may now be outdated, those lessons remain as relevant as ever."
@@ -349,4 +353,20 @@ XKY_A_New_Japan_desc:0 "The time has come for Kyushu to lead the creation of a n
 kyushu.1.t:0 "The Bunker Rumors"
 kyushu.1.d:0 "Before the bombs fell, there were rumors that his majesty was able to escape to the bunkers under the imperial palace in edo. however, due to how hard the city was hit by the nuclear bombs, we have been unable to outfit a proper expedition"
 kyushu.1.a:0 "Until now..."
+
+kyushu.2.t:0 "The Return of the Second Righteous Army"
+kyushu.2.d:0 "Before the fall, the Second Righteous Army—veterans of the old wars—had pledged to defend the emperor at all costs. When the bombs rained down, their fate was sealed in chaos and ash, with only whispers of their survival echoing through the land. But as the dust settled, remnants of their forces began to resurface, gathering in the shadows, awaiting the time to fulfill their ancient oath. With Japan fractured and vulnerable, the question remains \nwill they rise once more to reclaim their honor and restore the emperor’s glory?"
+kyushu.2.a:0 "Their return is inevitable..."
+
+kyushu.3.t:0 "The First Steps Toward Unity"
+kyushu.3.d:0"The great fires of the nuclear war left Japan fractured and scattered, a shell of its former self. Kyushu, the island that had once flourished with agriculture and industry, was one of the first to recover from the devastation. Rural communities bound by self-sufficiency were the foundation upon which a new order was built. Now, with the first parliament convening for the first time in centuries, a choice must be made. Should the nation embrace democracy and look toward the future, led by the New Liberal Democratic Party? Or should it restore the glory of the past, rallying behind the Japanese Red Army and the return of the Second Righteous Army, sworn to restore the emperor’s legacy?"
+kyushu.3.a:0 "March Forward with Democracy"
+kyushu.3.b:0 "Reclaim the Honor of the Old Ways"
+
+kyushu.4.t:0 "The Emperor Lives"
+kyushu.4.d:0 "Stunning news has emerged from the depths of Edo the long-lost Imperial Family has been found, hidden deep beneath the rubble of the old Imperial Palace. After two centuries of mystery and speculation, an expedition finally breached the legendary underground bunkers, sealed tight since the day the bombs fell. Within, they found an astonishing relic of Japan’s past—a fully preserved shelter, untouched by time. Among the survivors descendants of the emperor himself, protected by generations of loyal retainers. Though weakened by isolation, they bear the symbols of the Chrysanthemum Throne, marking them as the last direct link to the old order. \nThis discovery sends shockwaves across Japan, as the very existence of the Imperial Family reignites debate about the future. Is this the return of the rightful rulers, destined to reclaim their place atop the nation? Or merely a shadow of an era best left behind? Kyushu stands at a pivotal moment—will it use this revelation to restore the monarchy, or continue to forge a new, democratic path?"
+kyushu.4.a:0 "Restore the Throne"
+
+
+
 

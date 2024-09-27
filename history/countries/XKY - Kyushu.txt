@@ -845,6 +845,7 @@ add_ideas = {
 recruit_character = XKY_Parliament
 recruit_character = XKY_Fujimoto_Aiko
 recruit_character = XKY_Inoue_Masaru
+recruit_character = XKY_Naruhito
 set_politics = {
 	ruling_party = democratic
 	last_election = "2232.1.30"

@@ -23,7 +23,7 @@ focus_tree = {
 		y = 0
 #		relative_position_id = XKY_A_Nation_Once_Again
 
-		cost = 5
+		cost = 1
 
 #		ai_will_do = {
 #			factor = 24
@@ -83,6 +83,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+		country_event = { id = kyushu.3 }		
         add_stability = 0.15
 		}
 	}	
@@ -156,8 +157,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 50
-        add_stability = -0.1
+			country_event = { id = kyushu.2 }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.30
+			}
+			set_politics = {
+				ruling_party = fascism
+				last_election = "2232.1.30"
+				election_frequency = 48
+				elections_allowed = yes
+			}
 		}
 	}		
 	focus = {
@@ -193,7 +203,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 75
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
 		}
 	}
 	focus = {
@@ -1541,7 +1560,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_2nd_Rightous_Army
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -1565,6 +1584,7 @@ focus_tree = {
 
 		completion_reward = {
         country_event = { id = kyushu.1 }
+		add_political_power = 15
 		}
 	}		
 	focus = {
@@ -1577,7 +1597,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Bunker_Rumors
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -1600,8 +1620,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+		add_manpower = 3
 		}
 	}			
 	focus = {
@@ -1614,7 +1633,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XKY_The_Bunker_Rumors
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -1637,8 +1656,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+		add_stability = 0.05
 		}
 	}		
 	focus = {
@@ -1652,7 +1670,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = XKY_The_Bunker_Rumors
 
-		cost = 10
+		cost = 5
 
 #		ai_will_do = {
 #			factor = 24
@@ -1675,8 +1693,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+        country_event = { id = kyushu.4 }
 		}
 	}		
 	focus = {
@@ -1712,8 +1729,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			set_party_name = { 
+				ideology = fascism
+				long_name = XKY_taisei_yokusankai_long
+				name = XKY_taisei_yokusankai
+			}
 		}
 	}	
 	focus = {

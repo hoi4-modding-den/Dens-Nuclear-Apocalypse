@@ -34,5 +34,17 @@ characters = {
             ideology = fascism_ideology
             traits = {Fascist_Militarist Fascist_Populist}
         }
-    }    
+    }
+    XKY_Naruhito = {
+        name = "Emperor Naruhito"
+        portraits={
+            civilian={
+                large = gfx/leaders/XKY/Portrait_Emperor_Naruhito.dds
+            }
+        }
+        country_leader={
+            ideology = fascism_ideology
+            traits = {Rearmer Tenacious_Negotiator Imperial Connections}
+        }
+    }        
 }	

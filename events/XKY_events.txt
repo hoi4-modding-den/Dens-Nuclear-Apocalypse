@@ -12,5 +12,59 @@ country_event = {
         name = "kyushu.1.a"
         add_stability = 0.05 # Adds 5% stability
     }
+}
+country_event = {
+    id = kyushu.2
+    title = "kyushu.2.t"
+    desc = "kyushu.2.d"
+    picture = GFX_report_event_japanese_army_parade
     
+    is_triggered_only = yes
+    
+    option = {
+        name = "kyushu.2.a"
+        add_stability = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+    }       
+}
+country_event = {
+    id = kyushu.3
+    title = "kyushu.3.t"
+    desc = "kyushu.3.d"
+    picture = GFX_report_event_asian_politicians
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "kyushu.3.b"
+        complete_national_focus = XKY_Rose_tinted_glasses # Adds 5% stability
+    }    
+    option = {
+        name = "kyushu.3.a"
+        complete_national_focus = XKY_A_strong_enough_foundation
+    }         
+}
+country_event = {
+    id = kyushu.4
+    title = "kyushu.4.t"
+    desc = "kyushu.4.d"
+    picture = GFX_report_event_jap_imperial_family
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "kyushu.4.a"
+        add_country_leader_role = {
+            character = XKY_Naruhito
+            promote_leader = yes
+            country_leader = {
+                    ideology = fascism_ideology
+                    expire = "1965.1.1.1"
+                    traits = { war_industrialist }
+            }
+        }
+    }       
 }
