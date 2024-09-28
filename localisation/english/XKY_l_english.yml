@@ -1,5 +1,7 @@
 ﻿l_english:
 
+
+
   ### Country Names
 XKY_democratic:0 "New Kyushuan Parliament"
 XKY_democratic_DEF:0 "the New Kyushuan Parliament"
@@ -7,16 +9,16 @@ XKY_democratic_ADJ:0 "Kyushu"
 XKY_fascism:0 "The Second Rightous Army"
 XKY_fascism_DEF:0 "the second rightous army"
 XKY_fascism_ADJ:0 "Fascist"
-XKY_taisei_yokusankai:0 "The New Japanese Empire"
-XKY_taisei_yokusankai_DEF:0 "The New Japanese Empire"
-XKY_taisei_yokusankai_ADJ:0 "Imperial"
+XKY_Kyushu_fascism:0 "The New Japanese Empire"
+XKY_Kyushu_fascism_DEF:0 "The New Japanese Empire"
+XKY_Kyushu_fascism_ADJ:0 "Imperial"
 XKY_communism:0 "Japanese Red Army Faction"
 XKY_communism_DEF:0 "the Japanese Red Army Faction"
 XKY_communism_ADJ:0 "Red Army"
 XKY_neutrality:0 "Kyushu Government"
 XKY_neutrality_DEF:0 "the Kyushu Government"
 XKY_neutrality_ADJ:0 "Kyushu"
-
+XKY_Kyushu_fascism:0 ""
   ### Party Names
 
 XKY_democratic_party:0 "Kyushuan Parliament"
@@ -368,5 +370,18 @@ kyushu.4.d:0 "Stunning news has emerged from the depths of Edo the long-lost Imp
 kyushu.4.a:0 "Restore the Throne"
 
 
+kyushu.5.t:0 "Arrival of the Admiral"
+kyushu.5.d:0 "The sun dipped low over Sasebo Harbor as a solitary ship approached the docks, its hull bearing the scars of long voyages through perilous waters. From the vessel emerged a man whose presence commanded the attention of every sailor on the pier. Admiral Yoshi Yoshida, a name whispered with awe throughout naval circles, had arrived. His reputation preceded him—tales of tactical genius, unmatched courage, and a mind as sharp as the katana he carried by his side. \nStepping off the gangplank with the air of a man who had seen countless battles, Yoshida surveyed the harbor, his eyes glinting with purpose. He bowed before the assembled officers of the new Japanese Empire, his voice calm but resolute. 'I have come to serve. The seas belong to Japan, and I will ensure they remain ours. \nIn that moment, it was clear to all; with Yoshida in command, the Empire's naval strength would once again rise to greatness."
+kyushu.5.a:0 "Welcome the Admiral into the Fleet"
 
+kyushu.6.t:0 "A New Empire for a New Era"
+kyushu.6.d:0 "The New Japanese Empire does not merely seek to restore the past—it aims to surpass it. Where the old empire reached for the sun, this one will grasp it, forging a future even brighter than its former glory. The lessons of history, learned through fire and ash, have tempered the steel of a nation ready to rise again. The imperial ambitions of the past will be overshadowed by a new order that combines military strength, industrial might, and a relentless drive for progress.\nThis empire will not fall to the mistakes of its predecessors. The seas, the skies, and the very stars themselves will be within reach as Japan moves boldly into this new era. No longer confined by the chains of history, the New Empire seeks to build a legacy that will last a thousand years, and beyond."
+kyushu.6.a:0 "Onward to a New Dawn"
 
+kyushu.7.t:0 "Calling in Old Favors"
+kyushu.7.d:0 "As whispers of the lost imperial bunker grew louder, the Kodoha faction knew that time was running out. Hidden in the ruins of Edo lay the greatest secret of Japan’s shattered past—the imperial refuge. But finding it would take more than brute force or blind exploration; it required those with knowledge, those who had ties to a world long forgotten. In dimly lit rooms, Kodoha agents quietly reached out to old contacts—figures from the shadows of history. Former officers, survivors of the old regime, and even black market traders, all bound by their shared loyalty to the emperor.\nOne by one, the pieces were set into motion. Maps exchanged hands, coded messages sent across the remaining factions, and quiet promises made. The Kodoha would find the bunker, of that there was no doubt. The only question was whether they would be ready for what awaited beneath the ashes of Edo."
+kyushu.7.a:0 "Trust in the Old Guard"
+
+kyushu.8.t:0 "Finding the Ancient Maps"
+kyushu.8.d:0 "After months of whispers and secret dealings, the Kodoha’s search for the imperial bunker has finally borne fruit. Hidden away in a forgotten archive, buried beneath layers of dust and time, the ancient maps of Edo have resurfaced. These hand-drawn charts, once believed lost to history, are marked with cryptic notes and routes, detailing the hidden tunnels beneath the old capital. Every line, every faded scribble holds the promise of unlocking the greatest secret in modern Japan; the location of the emperor's refuge.\nWith these maps in hand, the expedition can finally begin. Yet, as the Kodoha unfurl the fragile parchment, they know that these relics may guide them to either glory or ruin. The past is within reach, but the way forward is shrouded in uncertainty."
+kyushu.8.a:0 "Set the Course for Edo"

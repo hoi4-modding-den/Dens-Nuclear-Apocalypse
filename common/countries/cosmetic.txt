@@ -1539,3 +1539,7 @@ XCB_civil_war_colour = {
 	color = rgb { 189  43  43 }
 	color_ui = rgb { 189  43  43 }
 }
+XKY_Kyushu = {
+	color = rgb { 178  0  255 }
+	color_ui = rgb { 178  0  255 }
+}

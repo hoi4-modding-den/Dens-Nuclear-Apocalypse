@@ -1620,7 +1620,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		add_manpower = 3
+        country_event = { id = kyushu.7 }
 		}
 	}			
 	focus = {
@@ -1656,7 +1656,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		add_stability = 0.05
+        country_event = { id = kyushu.8 }
 		}
 	}		
 	focus = {
@@ -1734,6 +1734,9 @@ focus_tree = {
 				long_name = XKY_taisei_yokusankai_long
 				name = XKY_taisei_yokusankai
 			}
+			add_political_power = 15
+			add_stability = 0.10
+			add_war_support = 0.15
 		}
 	}	
 	focus = {
@@ -1769,8 +1772,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_ideas = XKY_Imperial_Japanese_Army_1
 		}
 	}		
 	focus = {
@@ -1806,8 +1808,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XK0
+			}
+			add_war_support = 0.10			
 		}
 	}			
 	focus = {
@@ -1843,8 +1848,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XTW
+			}
+			add_war_support = 0.10			
 		}
 	}
 	focus = {
@@ -1880,8 +1888,36 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	focus = {
@@ -1917,8 +1953,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			add_ideas = XKY_Nippon_Kaigun_2
 		}
 	}	
 	focus = {
@@ -1954,8 +1989,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_Nippon_Kaigun_2
+			add_idea = XKY_Nippon_Kaigun_3
+			}
+			add_tech_bonus = {
+				bonus = 2.5
+				uses = 1
+				category = submarine_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 2.5
+				uses = 3
+				category = ss_tech
+			}	
 		}
 	}		
 	focus = {
@@ -1991,8 +2038,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			swap_ideas = {
+			remove_idea = XKY_Imperial_Japanese_Army_1
+			add_idea = XKY_Imperial_Japanese_Army_2
+			}
 		}
 	}
 	focus = {
@@ -2028,8 +2077,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XHK
+			}
+			add_war_support = 0.10
 		}
 	}		
 	focus = {
@@ -2065,8 +2117,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+        country_event = { id = kyushu.5 }
 		}
 	}	
 	focus = {
@@ -2104,8 +2155,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-        add_political_power = 100
-        add_stability = 0.1
+        country_event = { id = kyushu.6 }
+		add_stability = 0.1
+		add_war_support = 0.20
 		}
 	}
 	focus = {

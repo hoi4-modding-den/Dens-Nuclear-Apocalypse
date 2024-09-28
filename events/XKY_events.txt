@@ -61,10 +61,161 @@ country_event = {
             character = XKY_Naruhito
             promote_leader = yes
             country_leader = {
-                    ideology = fascism_ideology
-                    expire = "1965.1.1.1"
+                    ideology = falangism
+                    expire = "2045.1.1.1"
                     traits = { war_industrialist }
             }
         }
+    }       
+}
+country_event = {
+    id = kyushu.5
+    title = "kyushu.5.t"
+    desc = "kyushu.5.d"
+    picture = GFX_report_event_SOV_negotiations_japan_rodzaevsky
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "kyushu.5.a"
+		create_navy_leader = {
+			name = "Yoshi Yoshida"
+			gfx = "GFX_Portrait_Japan_Generic_navy_1"
+			traits = { superior_tactician }
+			skill = 8
+			attack_skill = 5
+			defense_skill = 8
+			maneuvering_skill = 6
+			coordination_skill = 4
+		}
+    }       
+}
+country_event = {
+    id = kyushu.6
+    title = "kyushu.6.t"
+    desc = "kyushu.6.d"
+    picture = GFX_report_event_SOV_negotiations_japan_rodzaevsky
+    
+    is_triggered_only = yes
+    
+    option = {
+            name = "kyushu.6.a"
+            set_cosmetic_tag = XKY_Kyushu
+        	random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+		    }
+    }       
+}
+country_event = {
+    id = kyushu.7
+    title = "kyushu.7.t"
+    desc = "kyushu.7.d"
+    picture = GFX_report_event_SOV_negotiations_japan_rodzaevsky
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "kyushu.7.a"
+		add_manpower = 3
+    }       
+}
+country_event = {
+    id = kyushu.8
+    title = "kyushu.8.t"
+    desc = "kyushu.8.d"
+    picture = GFX_report_event_SOV_negotiations_japan_rodzaevsky
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "kyushu.8.a"
+		add_stability = 0.05
     }       
 }

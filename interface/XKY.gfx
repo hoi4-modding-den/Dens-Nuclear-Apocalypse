@@ -1,5 +1,15 @@
 spriteTypes = {
 	
+	### Portaits ###
+    spriteType = {
+        name = "GFX_Portrait_XKY_Yoshihida_Yoshida"
+        texturefile = "gfx/leaders/XKY/GFX_Portrait_XKY_Yoshihida_Yoshida.dds"
+    }	
+    spriteType = {
+        name = "GFX_Portrait_XKY_Koji_Yamazaki"
+        texturefile = "gfx/leaders/XKY/GFX_Portrait_XKY_Koji_Yamazaki.dds"
+    }		
+
 	### Focus ###
     spriteType = {
         name = "GFX_XKY_A_Nation_Once_Again"
