@@ -29,7 +29,16 @@
  XAU_prewar_knowledge:0 "Prewar Knowledge"
  XAU_wary_of_humans:0 "§RWary of Humans§!"
 
+ ### TECHNOLOGIES ###
+
+ combat_microprocessor_equipment:0 "Combat Microprocessor"
+ combat_microprocessor_equipment_0:0 "Q-41a Microprocessor"
+ combat_microprocessor_equipment_1:0 "Q-51b Microprocessor"
+
  ### MISC ###
+
+ automatons:0 "Automatons"
+ automatons_desc:0 "Elite robotic soldiers equipped with combat microprocessors that allow them to make complex decisions on the battlefield."
 
  XAU_wary_of_humans_opinion:0 "Wary of humans"
  XAU_love_gambling:0 "Robots love gambling"

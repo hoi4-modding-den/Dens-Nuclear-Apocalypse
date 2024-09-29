@@ -31,6 +31,13 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_unit_automatons_icon_small"
+		texturefile = "gfx/XAU/unit_automatons_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
 	### GUI ###
 
 	### WELCOME SCREEN ###
@@ -79,5 +86,37 @@ spriteTypes = {
 		name = "GFX_ideology_XAU_synthetic_absolution"
 		texturefile = "gfx/interface/XAU/XAU_synthetic_absolution_ideology.dds"
 	}
+
+	spriteType = {
+		name = "GFX_unit_automatons_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_automatons_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_automatons_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_automatons_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_combat_microprocessor_equipment_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_combat_microprocessor_0_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_combat_microprocessor_1_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_archetype_combat_microprocessor_equipment_medium"
+		texturefile = "gfx/interface/XAU/archetype_combat_microprocessor_equipment.dds"
+	}	
 }
 
