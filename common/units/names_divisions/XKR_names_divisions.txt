@@ -1,0 +1,10 @@
+XKR_INF_01 = {
+	name = "Casino Guards" 
+	for_countries = { XKR } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Casino Guards"
+	ordered = {
+		10 = { "10. 'Ace' Casino Guards" }
+	}
+}

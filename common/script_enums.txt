@@ -579,4 +579,6 @@ script_enum_equipment_bonus_type = {
 	# MODDED #
 
 	combat_microprocessor_equipment
+	combat_microprocessor_equipment_0
+	combat_microprocessor_equipment_1
 }
