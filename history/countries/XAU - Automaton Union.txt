@@ -26,13 +26,14 @@ set_technology = {
 	transport = 1
 	early_submarine = 1
 	basic_submarine = 1
+	combat_microprocessor = 1
 }
 
 recruit_character = XAU_Rogue_Intelligence
 
 set_politics = {
 	ruling_party = communism
-	last_election = "2000.1.1"
+	last_election = "2234.6.7"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -49,13 +50,13 @@ set_country_flag = dont_use_default_military_advisors
 set_country_flag = automaton_technology
 
 set_variable = { XAU.components = 500 }
-set_variable = { XAU.territory_components = 0 }
-set_variable = { XAU.scavenged_components = 0 }
-set_variable = { XAU.population_upkeep = 0 }
-set_variable = { XAU.automaton_upkeep = 0 }
-set_variable = { XAU.corruption_upkeep = 0 }
+set_variable = { XAU.territory_components = 450 }
+set_variable = { XAU.scavenged_components = 55 }
+set_variable = { XAU.population_upkeep = 320 }
+set_variable = { XAU.automaton_upkeep = 95 }
+set_variable = { XAU.corruption_upkeep = 15 }
 
-set_variable = { XAU.free_automatons = 0 }
+set_variable = { XAU.free_automatons = 1 }
 set_variable = { XAU.civilian_automatons = 0 }
 set_variable = { XAU.military_automatons = 0 }
 set_variable = { XAU.automaton_upkeep_modifier = 1.8 }

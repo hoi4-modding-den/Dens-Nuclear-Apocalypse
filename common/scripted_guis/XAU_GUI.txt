@@ -31,7 +31,46 @@ scripted_gui = {
 			
 		}
 		effects = {	
-			
+			automaton_military_add_button_click = {
+				if = {
+					limit = {
+						check_variable = { free_automatons > 0 }
+					}
+					add_to_variable = { free_automatons = -1 }
+					add_to_variable = { military_automatons = 1 }
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+			}
+			automaton_military_subtract_button_click = {
+				if = {
+					limit = {
+						check_variable = { military_automatons > 0 }
+					}
+					add_to_variable = { free_automatons = 1 }
+					add_to_variable = { military_automatons = -1 }
+					add_offsite_building = { type = arms_factory level = -1 }
+				}
+			}
+			automaton_civilian_add_button_click = {
+				if = {
+					limit = {
+						check_variable = { free_automatons > 0 }
+					}
+					add_to_variable = { free_automatons = -1 }
+					add_to_variable = { civilian_automatons = 1 }
+					add_offsite_building = { type = industrial_complex level = 1 }
+				}
+			}
+			automaton_civilian_subtract_button_click = {
+				if = {
+					limit = {
+						check_variable = { civilian_automatons > 0 }
+					}
+					add_to_variable = { free_automatons = 1 }
+					add_to_variable = { civilian_automatons = -1 }
+					add_offsite_building = { type = industrial_complex level = -1 }
+				}
+			}
 		}
 	}
 }

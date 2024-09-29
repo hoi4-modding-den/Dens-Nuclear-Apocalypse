@@ -99,10 +99,10 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	SpriteType = {
-		name = "GFX_combat_microprocessor_equipment_medium"
-		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment.dds"
-	}	
+	#SpriteType = {
+	#	name = "GFX_combat_microprocessor_equipment_medium"
+	#	texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment.dds"
+	#}	
 
 	SpriteType = {
 		name = "GFX_combat_microprocessor_medium"
@@ -111,7 +111,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_combat_microprocessor_1_medium"
-		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment.dds"
+		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment_1.dds"
 	}
 
 	SpriteType = {

@@ -55,7 +55,7 @@
  XAU_exit_tooltip:0 "§YExit§!"
 
  XAU_logistics_body:0 "§Y---------- PROCUREMENT ----------§!\nFrom Territory:\nScavenged:\n§Y---------------- USAGE -----------------§!\nPopulation:\nAutomatons:\nCorruption:"
- XAU_logistics_stats:0 "\n§G+450§!\n§G+56§!\n\n§R-320§!\n§R-95§!\n§R-15§!"
+ XAU_logistics_stats:0 "\n§G+[?XAU.territory_components]§!\n§G+[?XAU.scavenged_components]§!\n\n§R-[?XAU.population_upkeep]§!\n§R-[?XAU.automaton_upkeep]§!\n§R-[?XAU.corruption_upkeep]§!"
 
  XAU_automaton_military_factories:0 "[?XAU.military_automatons] £mil_factory_texticon"
  XAU_automaton_civilian_factories:0 "[?XAU.civilian_automatons] £civ_factory_texticon"
