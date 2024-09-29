@@ -105,8 +105,8 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_combat_microprocessor_0_medium"
-		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment.dds"
+		name = "GFX_combat_microprocessor_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment_0.dds"
 	}
 
 	SpriteType = {
