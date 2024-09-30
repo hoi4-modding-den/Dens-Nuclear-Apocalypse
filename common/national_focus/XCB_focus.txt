@@ -31,6 +31,7 @@
 		completion_reward = {
 			add_to_variable = { XCB_resistance_progress_bar_var = 10 }
 			custom_effect_tooltip = XCB_increase_ferocity_10
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -52,6 +53,7 @@
 			add_to_variable = { XCB_resistance_progress_bar_var = 5 }
 			custom_effect_tooltip = XCB_tns_tt
 			custom_effect_tooltip = XCB_increase_ferocity_5
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -111,6 +113,7 @@
 			custom_effect_tooltip = XCB_grant_soldiers_cv_tt
 			add_to_variable = { XCB_resistance_progress_bar_var = 5 }
 			custom_effect_tooltip = XCB_increase_ferocity_5
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -133,6 +136,7 @@
 			add_to_variable = { XCB_cprm_a_resistance_var = 10 }
 			add_to_variable = { XCB_cprm_i_resistance_var = 5 }
 			custom_effect_tooltip = XCB_cif_tt
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -157,6 +161,7 @@
 			add_to_variable = { XCB_cprm_a_resistance_var = 5 }
 			add_to_variable = { XCB_cprm_i_resistance_var = 5 }
 			custom_effect_tooltip = XCB_red_banner_focus_tt
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -179,6 +184,7 @@
 			add_to_variable = { XCB_resistance_progress_bar_var = 5 }
 			custom_effect_tooltip = XCB_aaem_tt
 			custom_effect_tooltip = XCB_increase_ferocity_5
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -198,6 +204,7 @@
 		completion_reward = {
 			add_to_variable = { XCB_resistance_progress_bar_var = 3 }
 			custom_effect_tooltip = XCB_increase_ferocity_3
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -217,6 +224,7 @@
 		completion_reward = {
 			add_to_variable = { XCB_tonle_sap_var = 1 }
 			custom_effect_tooltip = XCB_tonle_sap_cv_tt
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -239,6 +247,7 @@
 			custom_effect_tooltip = XCB_rabblerouser_cv_tt
 			add_to_variable = { XCB_prey_lang_var = 1 }
 			add_to_variable = { XCB_chuor_phnum_var = 1 }
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -260,6 +269,7 @@
 			custom_effect_tooltip = XCB_increase_ferocity_5
 			add_to_variable = { XCB_kldp_resistance_var = 5 }
 			custom_effect_tooltip = XCB_trust_the_kldp_tt
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -285,6 +295,7 @@
 			add_to_variable = { XCB_cprm_a_resistance_var = 5 }
 			add_to_variable = { XCB_cprm_i_resistance_var = 5 }
 			custom_effect_tooltip = XCB_cprm_organize_tt
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -310,6 +321,7 @@
 			add_to_variable = { XCB_cprm_a_resistance_var = 5 }
 			add_to_variable = { XCB_cprm_i_resistance_var = 5 }
 			custom_effect_tooltip = XCB_coalition_focus_tt
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 	focus = {
@@ -337,6 +349,7 @@
 		completion_reward = {
 			add_to_variable = { XCB_resistance_progress_bar_var = 15 }
 			custom_effect_tooltip = XCB_increase_ferocity_15
+			add_to_variable = { XCB_resistance_dirty = 0.01 }
 		}
 	}
 

@@ -25,6 +25,86 @@ country_event = { #civil war
 					XCB_the_two_city_government
 				}
 				retire_character = XCB_sieng_proeung
+				set_oob = "XCB_cv"
+				1008 = {
+					if = {
+						limit = {
+							check_variable = {
+								XCB_prey_lang_var = 5
+							}
+						}
+						create_unit = {
+							division = "division_template = \"Revolutionary Brigade\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
+							owner = XCB
+							count = 5
+						}
+						else = {
+							create_unit = {
+								division = "division_template = \"Revolutionary Brigade\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
+								owner = XCB
+								count = 3
+							}
+						}
+					}
+				}
+				1009 = {
+					if = {
+						limit = {
+							check_variable = {
+								XCB_phnom_kulen_var = 5
+							}
+						}
+						create_unit = {
+							division = "division_template = \"Revolutionary Brigade\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
+							owner = XCB
+							count = 5
+						}
+						else = {
+							create_unit = {
+								division = "division_template = \"Revolutionary Brigade\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
+								owner = XCB
+								count = 4
+							}
+						}
+					}
+				}
+				1010 = {
+					if = {
+						limit = {
+							check_variable = {
+								XCB_phnom_kulen_var = 3
+							}
+						}
+						create_unit = {
+							division = "division_template = \"Revolutionary Brigade\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
+							owner = XCB
+							count = 3
+						}
+						else = {
+							create_unit = {
+								division = "division_template = \"Revolutionary Brigade\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
+								owner = XCB
+								count = 2
+							}
+						}
+					}
+				}
+				741 = {
+					if = {
+						limit = {
+							check_variable = {
+								XCB_tonle_sap_var = 2
+							}
+						}
+						create_unit = {
+							division = "division_template = \"Revolutionary Brigade\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
+							owner = XCB
+							count = 1
+							allow_spawning_on_enemy_provs = yes
+							prioritize_location = 12288
+						}
+					}
+				}
 			}
 			XCX = {
 				set_state_owner = 741
@@ -33,6 +113,7 @@ country_event = { #civil war
 				add_state_core = 1008
 				add_state_core = 1009
 				add_state_core = 1010
+				set_oob = "XCX"
 			}
 			XCB = {
 				declare_war_on = {
@@ -85,7 +166,7 @@ country_event = { #debug
 
 	option = { 
 		name = XCB.2.a
-		add_to_variable = { XCB_resistance_progress_bar_var = 73 } #Usko-Vitun-Matonta
+		add_to_variable = { XCB_resistance_progress_bar_var = 55 } #Usko-Vitun-Matonta
 		add_to_variable = { XCB_resistance_dirty = 0.01 }
 	}
 }
