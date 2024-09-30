@@ -23,6 +23,9 @@
  XAU_components_decisions:0 "Components Logistics"
  XAU_components_decisions_desc:0 "§YComponents§! are the lifeblood of the §Oautomatons§!. They are needed to §Grepair and update§! §Oautomatons§! which results in a constant need to obtain more. Fortunately, there are many venues we can exploit to collect more §Ycomponents§!, and their benefits range from §Roptimising our military§! to §Gconstructing new colossal industrial automatons§! that function like regular factories.\n\nCURRENT STOCKPILE: [?XAU.components] £components_texticon\n\n"
 
+ XAU_build_automaton_tooltip:0 "§YConstructs a new automaton§!"
+ XAU_build_automaton:0 "Construct a new automaton from components"
+
  ### TRAITS ###
 
  XAU_subject_to_change:0 "WIP - PLACEHOLDER"
@@ -57,13 +60,15 @@
  XAU_logistics_body:0 "§Y---------- PROCUREMENT ----------§!\nFrom Territory:\nScavenged:\n§Y---------------- USAGE -----------------§!\nPopulation:\nAutomatons:\nCorruption:"
  XAU_logistics_stats:0 "\n§G+[?XAU.territory_components]§!\n§G+[?XAU.scavenged_components]§!\n\n§R-[?XAU.population_upkeep]§!\n§R-[?XAU.automaton_upkeep]§!\n§R-[?XAU.corruption_upkeep]§!"
 
+ XAU_logistics_trend:0 "[?XAU.components_trend|*.0=+] / month"
+
  XAU_automaton_military_factories:0 "[?XAU.military_automatons] £mil_factory_texticon"
  XAU_automaton_civilian_factories:0 "[?XAU.civilian_automatons] £civ_factory_texticon"
 
  XAU_automaton_construction:0 "§YConstruct automaton§!"
  XAU_automaton_construction_tooltip:0 "§YConstruct new automaton§!\n\nTime required: 180 days\nFactories used: [?XAU.automaton_factory_requirement] £civ_factory_texticon"
- XAU_automaton_military_add_tooltip:0 "§GAdd§! one §Yautomaton§! to\n§Gmilitary production§!"
- XAU_automaton_military_subtract_tooltip:0 "§RRemove§! one §Yautomaton§!\nfrom §Gmilitary production§!"
- XAU_automaton_civilian_add_tooltip:0 "§GAdd§! one §Yautomaton§! to\n§Ycivilian production§!"
- XAU_automaton_civilian_subtract_tooltip:0 "§RRemove§! one §Yautomaton§!\nfrom §Ycivilian production§!"
+ XAU_automaton_military_add_tooltip:0 "§GAdd§! one §Yautomaton§! to §Gmilitary production§!\n\n§YEffect:§!\n§GAdd 1 military factory§!\n§RAdd to automaton components upkeep§!\n\n§LTakes a day to reassign the automaton.§!"
+ XAU_automaton_military_subtract_tooltip:0 "§RRemove§! one §Yautomaton§! to §Gmilitary production§!\n\n§YEffect:§!\n§RRemove 1 military factory§!\n§GSubtract from automaton components upkeep§!\n\n§LTakes a day to reassign the automaton.§!"
+ XAU_automaton_civilian_add_tooltip:0 "§GAdd§! one §Yautomaton§! to §Ycivilian production§!\n\n§YEffect:§!\n§GAdd 1 civilian factory§!\n§RAdd to automaton components upkeep§!\n\n§LTakes a day to reassign the automaton.§!"
+ XAU_automaton_civilian_subtract_tooltip:0 "§RRemove§! one §Yautomaton§! to §Ycivilian production§!\n\n§YEffect:§!\n§RRemove 1 civilian factory§!\n§GSubtract from automaton components upkeep§!\n\n§LTakes a day to reassign the automaton.§!"
  XAU_details_desc_tooltip:0 "§Y--- CURRENT ---§!\nUnassigned: [?XAU.free_automatons]\nUpkeep: [?XAU.automaton_upkeep_modifier|.0%-]\n§Y- CONSTRUCT -§!\nCost: [?XAU.automaton_cost_modifier|.0%-]\nSpeed: [?XAU.automaton_build_speed_modifier|.0%+]\nFactory req: [?XAU.automaton_factory_requirement]"

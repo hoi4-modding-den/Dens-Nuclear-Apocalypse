@@ -1,0 +1,12 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = XAU
+				}
+				XAU_monthly_components_update = yes
+			}
+		}
+	}
+}

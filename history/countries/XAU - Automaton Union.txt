@@ -53,8 +53,10 @@ set_variable = { XAU.components = 500 }
 set_variable = { XAU.territory_components = 450 }
 set_variable = { XAU.scavenged_components = 55 }
 set_variable = { XAU.population_upkeep = 320 }
-set_variable = { XAU.automaton_upkeep = 95 }
+set_variable = { XAU.automaton_upkeep = 0 }
 set_variable = { XAU.corruption_upkeep = 15 }
+set_variable = { XAU.components_trend = 0 }
+set_variable = { XAU.automaton_cost = 0 }
 
 set_variable = { XAU.free_automatons = 1 }
 set_variable = { XAU.civilian_automatons = 0 }
@@ -63,9 +65,7 @@ set_variable = { XAU.automaton_upkeep_modifier = 1.8 }
 set_variable = { XAU.automaton_cost_modifier = 2.0 }
 set_variable = { XAU.automaton_build_speed_modifier = 0.65 }
 set_variable = { XAU.automaton_factory_requirement = 3 }
-
-set_variable = { XAU.automaton_build_time = 180 }
-divide_variable = { XAU.automaton_build_time = XAU.automaton_build_speed_modifier }
+set_variable = { XAU.automaton_build_time = 0 }
 
 set_variable = { 605.components = 100 } # Sichuan
 set_variable = { 748.components = 5 } # Zunyi
@@ -118,3 +118,7 @@ add_opinion_modifier = {
     target = XEX
     modifier = XAU_love_gambling
 }
+
+XAU_update_automaton_time = yes
+XAU_update_automaton_cost = yes
+XAU_update_components_trend = yes

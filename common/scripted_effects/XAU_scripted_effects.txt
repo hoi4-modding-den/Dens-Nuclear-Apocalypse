@@ -1,0 +1,50 @@
+XAU_update_components_trend = {
+	set_temp_variable = { temp_components_sum = 0 }
+	add_to_temp_variable = { temp_components_sum = XAU.territory_components }
+	add_to_temp_variable = { temp_components_sum = XAU.scavenged_components }
+	subtract_from_temp_variable = { temp_components_sum = XAU.population_upkeep }
+	subtract_from_temp_variable = { temp_components_sum = XAU.automaton_upkeep }
+	subtract_from_temp_variable = { temp_components_sum = XAU.corruption_upkeep }
+	set_variable = { XAU.components_trend = temp_components_sum }
+}
+
+XAU_update_automatons_upkeep = {
+	set_temp_variable = { temp_active_automatons = 0 }
+	add_to_temp_variable = { temp_active_automatons = XAU.civilian_automatons }
+	add_to_temp_variable = { temp_active_automatons = XAU.military_automatons }
+	multiply_temp_variable = { temp_active_automatons = 80 } # CAN BE CHANGED FOR BALANCING
+	multiply_temp_variable = { temp_active_automatons = XAU.automaton_upkeep_modifier }
+	round_temp_variable = temp_active_automatons
+	set_variable = { XAU.automaton_upkeep = temp_active_automatons }
+	
+	XAU_update_components_trend = yes
+}
+
+XAU_update_automaton_cost = {
+	set_temp_variable = { temp_cost = 500 }
+	multiply_temp_variable = { temp_cost = XAU.automaton_cost_modifier }
+	round_temp_variable = temp_cost
+	set_variable = { XAU.automaton_cost = temp_cost }
+}
+
+XAU_update_automaton_time = {
+	set_temp_variable = { temp_time = 120 }
+	divide_temp_variable = { temp_time = XAU.automaton_build_speed_modifier }
+	round_temp_variable = temp_time
+	set_variable = { XAU.automaton_build_time = temp_time }
+}
+
+XAU_monthly_components_update = {
+	log = "[?XAU.components_trend]"
+	log = "[?XAU.components]"
+	add_to_variable = { XAU.components = XAU.components_trend }
+
+	if = {
+		limit = {
+			check_variable = { XAU.components < 0 }
+		}
+
+		set_variable = { XAU.components = 0 }
+		### HAVE TO ADD THE END GAME CONDITION ###
+	}
+}

@@ -76,7 +76,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_24header"
 				borderSize = {x = 0 y = 0}
-				text = "+1000 per month"
+				text = "XAU_logistics_trend"
 				maxWidth = 200
 				maxHeight = 28
 				format = center
