@@ -11,6 +11,15 @@ spriteTypes = {
 		play_on_show = yes
 	}
 
+	frameAnimatedSpriteType = {
+		name = "GFX_Leader_Rogue_Disabled_Animated"
+		texturefile = "gfx/leaders/XAU/Leader_Rogue_Intelligence_Disabled_Animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
 	### TEXTICONS ###
 
 	spriteType = {

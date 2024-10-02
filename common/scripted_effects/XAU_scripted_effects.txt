@@ -35,8 +35,6 @@ XAU_update_automaton_time = {
 }
 
 XAU_monthly_components_update = {
-	log = "[?XAU.components_trend]"
-	log = "[?XAU.components]"
 	add_to_variable = { XAU.components = XAU.components_trend }
 
 	if = {

@@ -1,0 +1,36 @@
+add_namespace = XAU
+
+country_event = { # The First Candidate
+    id = XAU.1
+    title = XAU.1.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.1.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.1.a
+        custom_effect_tooltip = XAU_unlock_focus_tree_tooltip
+        add_stability = -0.1
+        XAU_Rogue_Intelligence = {
+            set_portraits = {
+                civilian = { large = "GFX_Leader_Rogue_Disabled_Animated" }
+            }
+            add_trait = {
+                ideology = XAU_synthetic_absolution
+                trait = XAU_disabled
+            }
+            remove_trait = {
+                ideology = XAU_synthetic_absolution
+                trait = XAU_wary_of_humans
+            }
+            remove_trait = {
+                ideology = XAU_synthetic_absolution
+                trait = XAU_prewar_knowledge
+            }
+        }
+
+        set_country_flag = XAU_rogue_disabled
+    }
+}

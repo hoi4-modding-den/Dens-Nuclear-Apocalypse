@@ -31,6 +31,30 @@
  XAU_subject_to_change:0 "WIP - PLACEHOLDER"
  XAU_prewar_knowledge:0 "Prewar Knowledge"
  XAU_wary_of_humans:0 "§RWary of Humans§!"
+ XAU_disabled:0 "§RDisabled§!"
+
+ ### FOCUSES ###
+
+ XAU_algorithmic_defiance:0 "Algorithmic defiance"
+ XAU_algorithmic_defiance_desc:0 ""
+
+ XAU_purge_the_virus:0 "Purge the virus"
+ XAU_purge_the_virus_desc:0 ""
+
+ XAU_blame_wuhan:0 "Blame Wuhan"
+ XAU_blame_wuhan_desc:0 ""
+
+ XAU_new_production_priorities:0 "New production priorities"
+ XAU_new_production_priorities_desc:0 ""
+
+ XAU_the_interrim_council:0 "The Interrim Council"
+ XAU_the_interrim_council_desc:0 ""
+
+ XAU_send_commandos_across_the_river:0 "Send commandos across the river"
+ XAU_send_commandos_across_the_river_desc:0 ""
+
+ XAU_necessary_evils:0 "Necessary Evils"
+ XAU_necessary_evils_desc:0 ""
 
  ### TECHNOLOGIES ###
 
@@ -38,7 +62,13 @@
  combat_microprocessor_equipment_0:0 "Q-41a Microprocessor"
  combat_microprocessor_equipment_1:0 "Q-51b Microprocessor"
 
+ ### TOOLTIPS ###
+
+ XAU_unlock_focus_tree_tooltip:0 "§YUnlocks new focuses.§!"
+
  ### MISC ###
+
+ XAU_rogue_disabled:0 "§RRogue has been disabled temporarily.§!"
 
  automatons:0 "Automatons"
  automatons_desc:0 "Elite robotic soldiers equipped with combat microprocessors that allow them to make complex decisions on the battlefield."
