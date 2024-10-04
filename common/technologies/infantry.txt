@@ -2503,12 +2503,12 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = combat_microprocessor_1
+			leads_to_tech = combat_algorithm_upgrade
 			research_cost_coeff = 1
 		}		
 
 		research_cost = 1.5
-		start_year = 2218
+		start_year = 2236
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = -1 }
@@ -2519,27 +2519,75 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+
+			modifier = {
+				factor = 2
+				has_country_flag = automaton_technology
+			}
+
+			modifier = {
+				factor = 5
+				has_country_flag = automaton_technology
+				has_war = yes
+			}
 		}
 	}
 
-	combat_microprocessor_1 = {
+	combat_algorithm_upgrade = {
 
-		enable_equipments = {
-			combat_microprocessor_equipment_1
+		category_automatons = {
+			soft_attack = 0.2
+			breakthrough = 0.1
 		}
 		
-		enable_subunits = {
-			automatons
-		}
-		
-		#path = {
-		#	leads_to_tech = combat_microprocessor_1
-		#	research_cost_coeff = 1
-		#}		
+		path = {
+			leads_to_tech = combat_algorithm_upgrade_1
+			research_cost_coeff = 1
+		}		
 
-		research_cost = 1.5
+		research_cost = 1.0
 		start_year = 2236
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1924 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				factor = 2
+				has_country_flag = automaton_technology
+			}
+
+			modifier = {
+				factor = 5
+				has_country_flag = automaton_technology
+				has_war = yes
+			}
+		}
+	}
+
+	combat_algorithm_upgrade_1 = {
+
+		category_automatons = {
+			max_organisation = 5
+			defense = 0.1
+			supply_consumption_factor = -0.25
+		}
+		
+		path = {
+			leads_to_tech = combat_microprocessor_1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.0
+		start_year = 2237
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1936 }
@@ -2550,7 +2598,92 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+
+			modifier = {
+				factor = 2
+				has_country_flag = automaton_technology
+			}
+
+			modifier = {
+				factor = 5
+				has_country_flag = automaton_technology
+				has_war = yes
+			}
+		}
+	}
+
+	combat_microprocessor_1 = {
+
+		enable_equipments = {
+			combat_microprocessor_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = combat_algorithm_upgrade_2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2238
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1938 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				factor = 2
+				has_country_flag = automaton_technology
+			}
+
+			modifier = {
+				factor = 5
+				has_country_flag = automaton_technology
+				has_war = yes
+			}
+		}
+	}
+
+	combat_algorithm_upgrade_2 = {
+
+        land_night_attack = 0.5
+
+		category_automatons = {
+			hard_attack = 0.25
+			breakthrough = 0.25
+		}	
+
+		research_cost = 1.5
+		start_year = 2239
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				factor = 2
+				has_country_flag = automaton_technology
+			}
+
+			modifier = {
+				factor = 5
+				has_country_flag = automaton_technology
+				has_war = yes
+			}
 		}
 	}
 	

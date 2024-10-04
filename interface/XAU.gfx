@@ -127,5 +127,20 @@ spriteTypes = {
 		name = "GFX_archetype_combat_microprocessor_equipment_medium"
 		texturefile = "gfx/interface/XAU/archetype_combat_microprocessor_equipment.dds"
 	}	
+
+	SpriteType = {
+		name = "GFX_combat_algorithm_upgrade_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_algorithm_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_combat_algorithm_upgrade_1_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_algorithm_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_combat_algorithm_upgrade_2_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_algorithm_3.dds"
+	}
 }
 

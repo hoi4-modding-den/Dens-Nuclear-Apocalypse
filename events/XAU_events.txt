@@ -19,7 +19,7 @@ country_event = { # The First Candidate
             }
             add_trait = {
                 ideology = XAU_synthetic_absolution
-                trait = XAU_disabled
+                trait = XAU_corrupted_databanks
             }
             remove_trait = {
                 ideology = XAU_synthetic_absolution
