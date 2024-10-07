@@ -30,6 +30,14 @@ set_technology = {
 }
 
 recruit_character = XAU_Rogue_Intelligence
+recruit_character = XAU_RX_525
+recruit_character = XAU_GX_252
+recruit_character = XAU_GX_378b
+recruit_character = XAU_GX_436
+recruit_character = XAU_GX_444
+recruit_character = XAU_RX_222
+recruit_character = XAU_RX_995
+recruit_character = XAU_RX_1000
 
 set_politics = {
 	ruling_party = communism

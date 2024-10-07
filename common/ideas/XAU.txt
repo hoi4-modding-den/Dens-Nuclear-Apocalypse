@@ -42,6 +42,22 @@ ideas = {
 				consumer_goods_factor = 0.4
 			}
 		}
+		XAU_the_great_crisis_mitigated = {
+			picture = XAU_the_great_crisis
+			modifier = {
+				political_power_gain = -0.75
+				stability_weekly = -0.01
+				consumer_goods_factor = 0.3
+			}
+		}
+		XAU_the_great_crisis_mitigated_2 = {
+			picture = XAU_the_great_crisis
+			modifier = {
+				political_power_gain = -0.5
+				stability_weekly = -0.01
+				consumer_goods_factor = 0.2
+			}
+		}
 		XAU_not_yet_over = {
 			picture = XAU_resource_famines
 			modifier = {

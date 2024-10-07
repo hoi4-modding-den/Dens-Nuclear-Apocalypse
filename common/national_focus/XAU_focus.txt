@@ -69,9 +69,11 @@ shared_focus = {
 	x = 1
 	y = 1
 	completion_reward = {
-		army_experience = 25
-		# REMOVE A GENERAL
-		# ADD TIMED IDEA THAT INCREASES PRODUCTION EFFICIENCY
+		retire_character = XAU_GX_252
+		swap_ideas = {
+			remove_idea = XAU_the_great_crisis
+			add_idea = XAU_the_great_crisis_mitigated
+		}
 	}
 	relative_position_id = XAU_stay_the_course
 	prerequisite = { focus = XAU_stay_the_course }
@@ -134,7 +136,10 @@ shared_focus = {
 	x = 0
 	y = 1
 	completion_reward = {
-		# NEW GENERALS
+		custom_effect_tooltip = XAU_unlock_new_generals
+		set_country_flag = XAU_Spark_unlocked
+		set_country_flag = XAU_995_unlocked
+		army_experience = 25
 	}
 	relative_position_id = XAU_remove_incompetence
 	prerequisite = { focus = XAU_remove_incompetence }
@@ -164,7 +169,8 @@ shared_focus = {
 	x = 0
 	y = 1
 	completion_reward = {
-		# BORDER WAR FOR CHANGDE AND XIAN
+		add_war_support = 0.1
+		country_event = XAU.6
 	}
 	relative_position_id = XAU_new_commisars
 	prerequisite = { focus = XAU_new_commisars }

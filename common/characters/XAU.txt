@@ -16,4 +16,167 @@ characters = {
 			id = -1
 		}
 	}
+
+	XAU_RX_525 = {
+		name = "RX-525 'Spark'"
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_XAU_Leader_RX_525"
+			}
+		}
+		field_marshal ={
+			traits={ aggressive_assaulter brilliant_strategist automaton_leader }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=1
+			visible = {
+				has_country_flag = XAU_Spark_unlocked
+			}
+		}
+
+	}
+
+	XAU_GX_252 = {
+		name = "GX-252 'Claw'"
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_XAU_Leader_AX_252"
+			}
+		}
+		field_marshal = {
+			traits={ old_guard inflexible_strategist automaton_leader war_hero }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+		}
+
+	}
+
+	XAU_GX_378b = {
+		name = "GX-378b 'Halfback'"
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_XAU_Leader_AX_378b"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter automaton_leader }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	XAU_GX_436 = {
+		name = "GX-436 'Bird'"
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_XAU_Leader_AX_436"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+		}
+
+	}
+
+	XAU_GX_444 = {
+		name = "GX-444"
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_XAU_Leader_AX_444"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+
+	}
+
+	XAU_RX_222 = {
+		name = "RX-222 'Ace'"
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_XAU_Leader_RX_222"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			visible = {
+				has_country_flag = XAU_Ace_unlocked
+			}
+		}
+
+	}
+
+	XAU_RX_995 = {
+		name = "RX-995"
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_XAU_Leader_RX_995"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			visible = {
+				has_country_flag = XAU_995_unlocked
+			}
+		}
+
+	}
+
+	XAU_RX_1000 = {
+		name = "RX-1000"
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_XAU_Leader_RX_1000"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=1
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			visible = {
+				has_country_flag = XAU_1000_unlocked
+			}
+		}
+
+	}
 }

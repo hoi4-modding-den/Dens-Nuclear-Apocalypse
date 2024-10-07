@@ -114,6 +114,10 @@
  XAU_not_yet_over_desc:0 "We have been weakened. We have been defeated. Yet there is still hope. The fight is not over and as long as we stand strong against the tide that seeks to break down our Union, we will stand triumphant."
  XAU_the_great_crisis:0 "The Great Crisis"
  XAU_the_great_crisis_desc:0 ""
+ XAU_the_great_crisis_mitigated:0 "The Great Crisis"
+ XAU_the_great_crisis_mitigated_desc:0 ""
+ XAU_the_great_crisis_mitigated_2:0 "The Great Crisis"
+ XAU_the_great_crisis_mitigated_2_desc:0 ""
  XAU_the_union_guard:0 "The Union Guard"
  XAU_the_union_guard_desc:0 "The people of the Union have decreed that we need to arm ourselves for future conflicts. The Union Guard are the heart and soul of our army and represent the will of the people."
 
@@ -159,6 +163,8 @@
  XAU_adapt_or_die_tooltip:0 "§YUnlocks focuses to abandon §Orogue§Y.§!"
  XAU_unlock_production_companies_tooltip:0 "§YUnlocks unique production companies.§!"
  XAU_unlock_new_focus_tree_tooltip:0 "§YUnlocks a new focus tree.§!"
+ XAU_unlock_ace_tooltip:0 "Unlocks:\n§YGeneral RX-222 'Ace'§!\n§LSkill§!: 4\n§RAttack§!: 5\n§GDefense§!: 2\n§OPlanning§!: 4\n§CLogistics§!: 2"
+ XAU_unlock_new_generals:0 "Unlocks:\n§YField Marshal RX-525 'Spark'§!\n§LSkill§!: 4\n§RAttack§!: 5\n§GDefense§!: 3\n§OPlanning§!: 5\n§CLogistics§!: 1\n\n§YGeneral RX-995§!\n§LSkill§!: 1\n§RAttack§!: 1\n§GDefense§!: 2\n§OPlanning§!: 2\n§CLogistics§!: 2"
 
  ### MISC ###
 
@@ -170,6 +176,9 @@
 
  automatons:0 "Automatons"
  automatons_desc:0 "Elite robotic soldiers equipped with combat microprocessors that allow them to make complex decisions on the battlefield."
+
+ automaton_leader:0 "Automaton Leader"
+ automaton_leader_desc:0 "Excels at using automatons on the battlefield."
 
  XAU_wary_of_humans_opinion:0 "Wary of humans"
  XAU_love_gambling:0 "Robots love gambling"
