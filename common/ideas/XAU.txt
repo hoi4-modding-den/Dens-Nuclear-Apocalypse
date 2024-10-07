@@ -17,12 +17,44 @@ ideas = {
 				democratic_drift = 0.02
 			}
 		}
+		XAU_civil_defiance_crushed = {
+			picture = XAU_civil_defiance
+			modifier = {
+				consumer_goods_factor = 0.05
+				fascism_drift = 0.01
+				neutrality_drift = 0.01
+				democratic_drift = 0.01
+			}
+		}
 		XAU_resource_famines = {
 			picture = XAU_resource_famines
 			modifier = {
 				stability_factor = -0.2
 				monthly_population = -0.8
 				production_speed_buildings_factor = -0.3
+			}
+		}
+		XAU_the_great_crisis = {
+			picture = XAU_the_great_crisis
+			modifier = {
+				political_power_gain = -1.0
+				stability_weekly = -0.01
+				consumer_goods_factor = 0.4
+			}
+		}
+		XAU_not_yet_over = {
+			picture = XAU_resource_famines
+			modifier = {
+				war_support_factor = 0.1
+				political_power_gain = 0.5
+			}
+		}
+		XAU_the_union_guard = {
+			picture = XAU_resource_famines
+			modifier = {
+				recruitable_population = 0.03
+				training_time_factor = -0.1
+				experience_gain_army = 0.1
 			}
 		}
 	}

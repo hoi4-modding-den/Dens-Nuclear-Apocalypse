@@ -1,6 +1,6 @@
 add_namespace = XAU
 
-country_event = { # The First Candidate
+country_event = { # Rogue is disabled
     id = XAU.1
     title = XAU.1.t
     picture = GFX_report_event_tur_sultan_in_istanbul
@@ -13,6 +13,9 @@ country_event = { # The First Candidate
         name = XAU.1.a
         custom_effect_tooltip = XAU_unlock_focus_tree_tooltip
         add_stability = -0.1
+        add_ideas = {
+            XAU_the_great_crisis
+        }
         XAU_Rogue_Intelligence = {
             set_portraits = {
                 civilian = { large = "GFX_Leader_Rogue_Disabled_Animated" }
@@ -32,5 +35,94 @@ country_event = { # The First Candidate
         }
 
         set_country_flag = XAU_rogue_disabled
+    }
+}
+
+country_event = { # Rogue is disabled
+    id = XAU.2
+    title = XAU.2.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.2.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.2.a
+        ai_chance = {
+            base = 10
+        }
+        add_stability = 0.05
+        add_political_power = 15
+        custom_effect_tooltip = XAU_staying_the_course_tooltip
+        set_country_flag = XAU_stay_with_rogue
+    }
+    option = {
+        name = XAU.2.b
+        ai_chance = {
+            base = 0
+        }
+        custom_effect_tooltip = XAU_adapt_or_die_tooltip
+        set_country_flag = XAU_abandoned_rogue
+    }
+}
+
+country_event = { # Citizens show their empathy
+    id = XAU.3
+    title = XAU.3.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.3.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.3.a
+        add_stability = 0.01
+        add_popularity = {
+            ideology = communism
+            popularity = 0.03
+        }
+    }
+}
+
+country_event = { # Deactivating delinquent
+    id = XAU.4
+    title = XAU.4.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.4.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.4.a
+        add_political_power = -50
+    }
+}
+
+country_event = { # I'm doing my part
+    id = XAU.5
+    title = XAU.5.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.5.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.5.a
+        ai_chance = {
+            base = 5
+        }
+        # ADD A NEW GENERAL
+    }
+
+    option = {
+        name = XAU.5.b
+        ai_chance = {
+            base = 5
+        }
+        add_manpower = 10000
     }
 }

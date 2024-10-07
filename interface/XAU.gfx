@@ -34,6 +34,10 @@ spriteTypes = {
 		name = "GFX_idea_XAU_resource_famines"
 		texturefile = "gfx/interface/ideas/XAU/XAU_resource_famines.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XAU_the_great_crisis"
+		texturefile = "gfx/interface/ideas/XAU/XAU_faulty_algorithm.dds"
+	}
 
 	### TEXTICONS ###
 

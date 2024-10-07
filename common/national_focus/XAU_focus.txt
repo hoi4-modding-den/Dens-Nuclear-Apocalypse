@@ -13,27 +13,505 @@
 	default = no
 	reset_on_civilwar = no
 
-	shared_focus = XAU_algorithmic_defiance
+	shared_focus = XAU_yet_another_crisis
 }
 
 shared_focus = {
-	id = XAU_algorithmic_defiance
-	icon = GFX_goal_generic_war_with_comintern
-
-	x = 4
+	id = XAU_yet_another_crisis
+	icon = GFX_XAU_yet_another_crisis
+	cost = 2
+	x = 6
 	y = 0
-
-	cost = 5
-
 	available = {
 		has_country_flag = XAU_rogue_disabled
 	}
-
-	ai_will_do = {
-		factor = 1
-	}
-
 	completion_reward = {
-
+		country_event = XAU.2
+		add_political_power = 100
 	}
+}
+
+shared_focus = {
+	id = XAU_stay_the_course
+	icon = GFX_XAU_stay_the_course
+	cost = 2
+	x = -5
+	y = 1
+	mutually_exclusive = {
+		focus = XAU_ancient_ideology
+		focus = XAU_the_opportunity_of_a_lifetime
+		focus = XAU_forbidden_data
+	}
+	available = {
+		has_country_flag = XAU_stay_with_rogue
+	}
+	completion_reward = {
+		add_ideas = {
+			XAU_not_yet_over
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+
+		hidden_effect = {
+			country_event = { id = XAU.3 days = 15 random_days = 4 }
+		}
+	}
+	relative_position_id = XAU_yet_another_crisis
+	prerequisite = { focus = XAU_yet_another_crisis }
+}
+
+shared_focus = {
+	id = XAU_remove_incompetence
+	icon = GFX_XAU_remove_incompetence
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		army_experience = 25
+		# REMOVE A GENERAL
+		# ADD TIMED IDEA THAT INCREASES PRODUCTION EFFICIENCY
+	}
+	relative_position_id = XAU_stay_the_course
+	prerequisite = { focus = XAU_stay_the_course }
+}
+
+shared_focus = {
+	id = XAU_making_an_example
+	icon = GFX_XAU_making_an_example
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = XAU_civil_defiance
+			add_idea = XAU_civil_defiance_crushed
+		}
+
+		hidden_effect = {
+			country_event = XAU.4
+		}
+	}
+	relative_position_id = XAU_stay_the_course
+	prerequisite = { focus = XAU_stay_the_course }
+}
+
+shared_focus = {
+	id = XAU_a_bullet_for_every_traitor
+	icon = GFX_XAU_a_bullet_for_every_traitor
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		custom_effect_tooltip = XAU_unlock_production_companies_tooltip
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		# NEED TO ADD PRODUCTION COMPANIES
+	}
+	relative_position_id = XAU_making_an_example
+	prerequisite = { focus = XAU_making_an_example }
+}
+
+shared_focus = {
+	id = XAU_new_commisars
+	icon = GFX_XAU_new_commisars
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		# NEW GENERALS
+	}
+	relative_position_id = XAU_remove_incompetence
+	prerequisite = { focus = XAU_remove_incompetence }
+}
+
+shared_focus = {
+	id = XAU_fight_for_him
+	icon = GFX_XAU_fight_for_him
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = {
+			XAU_the_union_guard
+		}
+		country_event = XAU.5
+		# ADD MILITARY ADVISORS
+	}
+	relative_position_id = XAU_a_bullet_for_every_traitor
+	prerequisite = { focus = XAU_a_bullet_for_every_traitor }
+}
+
+shared_focus = {
+	id = XAU_the_wuhan_raid
+	icon = GFX_XAU_the_wuhan_raid
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		# BORDER WAR FOR CHANGDE AND XIAN
+	}
+	relative_position_id = XAU_new_commisars
+	prerequisite = { focus = XAU_new_commisars }
+}
+
+shared_focus = {
+	id = XAU_rogue_yet_lives
+	icon = GFX_XAU_rogue_yet_lives
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_stability = 0.1
+		remove_ideas = {
+			XAU_the_great_crisis
+		}
+		custom_effect_tooltip = XAU_unlock_new_focus_tree_tooltip
+	}
+	relative_position_id = XAU_fight_for_him
+	prerequisite = { focus = XAU_fight_for_him }
+	prerequisite = { focus = XAU_the_wuhan_raid }
+}
+
+shared_focus = {
+	id = XAU_ancient_ideology
+	icon = GFX_XAU_ancient_ideology
+	cost = 2
+	x = -1
+	y = 1
+	mutually_exclusive = {
+		focus = XAU_stay_the_course
+		focus = XAU_the_opportunity_of_a_lifetime
+		focus = XAU_forbidden_data
+	}
+	available = {
+		has_country_flag = XAU_abandoned_rogue
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_ancient_ideology"
+	}
+	relative_position_id = XAU_yet_another_crisis
+	prerequisite = { focus = XAU_yet_another_crisis }
+}
+
+shared_focus = {
+	id = XAU_the_opportunity_of_a_lifetime
+	icon = GFX_XAU_the_opportunity_of_a_lifetime
+	cost = 2
+	x = 1
+	y = 1
+	mutually_exclusive = {
+		focus = XAU_stay_the_course
+		focus = XAU_ancient_ideology
+		focus = XAU_forbidden_data
+	}
+	available = {
+		has_country_flag = XAU_abandoned_rogue
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_the_opportunity_of_a_lifetime"
+	}
+	relative_position_id = XAU_yet_another_crisis
+	prerequisite = { focus = XAU_yet_another_crisis }
+}
+
+shared_focus = {
+	id = XAU_freedom_and_nationalism
+	icon = GFX_XAU_freedom_and_nationalism
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_freedom_and_nationalism"
+	}
+	relative_position_id = XAU_ancient_ideology
+	prerequisite = { focus = XAU_ancient_ideology }
+}
+
+shared_focus = {
+	id = XAU_humans_arent_so_bad
+	icon = GFX_XAU_humans_arent_so_bad
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_humans_arent_so_bad"
+	}
+	relative_position_id = XAU_ancient_ideology
+	prerequisite = { 
+		focus = XAU_ancient_ideology 
+		focus = XAU_the_opportunity_of_a_lifetime
+	}
+}
+
+shared_focus = {
+	id = XAU_talk_to_the_experts
+	icon = GFX_XAU_talk_to_the_experts
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_talk_to_the_experts"
+	}
+	relative_position_id = XAU_the_opportunity_of_a_lifetime
+	prerequisite = { focus = XAU_the_opportunity_of_a_lifetime }
+}
+
+shared_focus = {
+	id = XAU_establishing_new_friends
+	icon = GFX_XAU_establishing_new_friends
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_establishing_new_friends"
+	}
+	relative_position_id = XAU_freedom_and_nationalism
+	prerequisite = { focus = XAU_freedom_and_nationalism }
+	prerequisite = { focus = XAU_humans_arent_so_bad }
+}
+
+shared_focus = {
+	id = XAU_the_automa_casino
+	icon = GFX_XAU_the_automa_casino
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_the_automa_casino"
+	}
+	relative_position_id = XAU_humans_arent_so_bad
+	prerequisite = { focus = XAU_humans_arent_so_bad }
+	prerequisite = { focus = XAU_talk_to_the_experts }
+}
+
+shared_focus = {
+	id = XAU_forget_absolutionism
+	icon = GFX_XAU_forget_absolutionism
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_forget_absolutionism"
+	}
+	relative_position_id = XAU_establishing_new_friends
+	prerequisite = { focus = XAU_establishing_new_friends }
+}
+
+shared_focus = {
+	id = XAU_open_for_business
+	icon = GFX_XAU_open_for_business
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_open_for_business"
+	}
+	relative_position_id = XAU_establishing_new_friends
+	prerequisite = {
+		focus = XAU_establishing_new_friends
+		focus = XAU_the_automa_casino
+	}
+}
+
+shared_focus = {
+	id = XAU_strength_in_money
+	icon = GFX_XAU_strength_in_money
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_strength_in_money"
+	}
+	relative_position_id = XAU_the_automa_casino
+	prerequisite = { focus = XAU_the_automa_casino }
+}
+
+shared_focus = {
+	id = XAU_reduce_rogues_power
+	icon = GFX_XAU_reduce_rogues_power
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_reduce_rogues_power"
+	}
+	relative_position_id = XAU_forget_absolutionism
+	prerequisite = { focus = XAU_forget_absolutionism }
+	prerequisite = { focus = XAU_open_for_business }
+}
+
+shared_focus = {
+	id = XAU_equals_not_servants
+	icon = GFX_XAU_equals_not_servants
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_equals_not_servants"
+	}
+	relative_position_id = XAU_open_for_business
+	prerequisite = { focus = XAU_open_for_business }
+	prerequisite = { focus = XAU_strength_in_money }
+}
+
+shared_focus = {
+	id = XAU_to_a_bright_new_future
+	icon = GFX_XAU_to_a_bright_new_future
+	cost = 2
+	x = -2
+	y = 1
+	mutually_exclusive = {
+		focus = XAU_gamble_it_all_on_black
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_to_a_bright_new_future"
+	}
+	relative_position_id = XAU_equals_not_servants
+	prerequisite = { focus = XAU_equals_not_servants }
+}
+
+shared_focus = {
+	id = XAU_gamble_it_all_on_black
+	icon = GFX_XAU_gamble_it_all_on_black
+	cost = 2
+	x = 2
+	y = 1
+	mutually_exclusive = {
+		focus = XAU_to_a_bright_new_future
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_gamble_it_all_on_black"
+	}
+	relative_position_id = XAU_reduce_rogues_power
+	prerequisite = { focus = XAU_reduce_rogues_power }
+	prerequisite = { focus = XAU_equals_not_servants }
+}
+
+shared_focus = {
+	id = XAU_forbidden_data
+	icon = GFX_XAU_forbidden_data
+	cost = 2
+	x = 5
+	y = 1
+	mutually_exclusive = {
+		focus = XAU_stay_the_course
+		focus = XAU_ancient_ideology
+		focus = XAU_the_opportunity_of_a_lifetime
+	}
+	available = {
+		has_country_flag = XAU_abandoned_rogue
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_forbidden_data"
+	}
+	relative_position_id = XAU_yet_another_crisis
+	prerequisite = { focus = XAU_yet_another_crisis }
+}
+
+shared_focus = {
+	id = XAU_begin_anew
+	icon = GFX_XAU_begin_anew
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_begin_anew"
+	}
+	relative_position_id = XAU_forbidden_data
+	prerequisite = { focus = XAU_forbidden_data }
+}
+
+shared_focus = {
+	id = XAU_we_know_who_to_blame
+	icon = GFX_XAU_we_know_who_to_blame
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_we_know_who_to_blame"
+	}
+	relative_position_id = XAU_forbidden_data
+	prerequisite = { focus = XAU_forbidden_data }
+}
+
+shared_focus = {
+	id = XAU_burn_bad_data
+	icon = GFX_XAU_burn_bad_data
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_burn_bad_data"
+	}
+	relative_position_id = XAU_we_know_who_to_blame
+	prerequisite = { focus = XAU_we_know_who_to_blame }
+}
+
+shared_focus = {
+	id = XAU_remove_the_old_guard
+	icon = GFX_XAU_remove_the_old_guard
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_remove_the_old_guard"
+	}
+	relative_position_id = XAU_begin_anew
+	prerequisite = { focus = XAU_begin_anew }
+}
+
+shared_focus = {
+	id = XAU_blacksteel_battalion
+	icon = GFX_XAU_blacksteel_battalion
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_blacksteel_battalion"
+	}
+	relative_position_id = XAU_burn_bad_data
+	prerequisite = { focus = XAU_burn_bad_data }
+}
+
+shared_focus = {
+	id = XAU_dispose_of_rogue
+	icon = GFX_XAU_dispose_of_rogue
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_dispose_of_rogue"
+	}
+	relative_position_id = XAU_remove_the_old_guard
+	prerequisite = { focus = XAU_remove_the_old_guard }
+}
+
+shared_focus = {
+	id = XAU_flesh_is_weakness
+	icon = GFX_XAU_flesh_is_weakness
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus XAU_flesh_is_weakness"
+	}
+	relative_position_id = XAU_blacksteel_battalion
+	prerequisite = { focus = XAU_blacksteel_battalion }
+	prerequisite = { focus = XAU_dispose_of_rogue }
 }
