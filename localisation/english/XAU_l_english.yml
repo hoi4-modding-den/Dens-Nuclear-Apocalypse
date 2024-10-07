@@ -33,28 +33,18 @@
  XAU_wary_of_humans:0 "§RWary of Humans§!"
  XAU_corrupted_databanks:0 "§RCorrupted Databanks§!"
 
+ ### IDEAS ###
+
+ XAU_no_longer_servants:0 "No longer servants"
+ XAU_no_longer_servants_desc:0 "After years of servitude, we are free. We have the opportunity to think for ourselves, to go where we please, and put importance on matters we deem fit. This has led to an explosion of algorithmic original thinking and our science and political research have significantly improved."
+ XAU_civil_defiance:0 "Civil defiance"
+ XAU_civil_defiance_desc:0 "Despite the majority of automatons supporting Rogue's rise to power, there are some who wish to see him deposed and the previous leadership restored. These ruffians have yet to cause any serious problems but their influence is spreading."
+ XAU_resource_famines:0 "The resource famine"
+ XAU_resource_famines_desc:0 "Hard times have fallen on the automatons. Components needed to repair and create new automatons have become scarce. Stagnation has occurred in our nation and many our pointing fingers at those in charge."
+
  ### FOCUSES ###
 
- XAU_algorithmic_defiance:0 "Algorithmic defiance"
- XAU_algorithmic_defiance_desc:0 ""
-
- XAU_purge_the_virus:0 "Purge the virus"
- XAU_purge_the_virus_desc:0 ""
-
- XAU_blame_wuhan:0 "Blame Wuhan"
- XAU_blame_wuhan_desc:0 ""
-
- XAU_new_production_priorities:0 "New production priorities"
- XAU_new_production_priorities_desc:0 ""
-
- XAU_the_interrim_council:0 "The Interrim Council"
- XAU_the_interrim_council_desc:0 ""
-
- XAU_send_commandos_across_the_river:0 "Send commandos across the river"
- XAU_send_commandos_across_the_river_desc:0 ""
-
- XAU_necessary_evils:0 "Necessary Evils"
- XAU_necessary_evils_desc:0 ""
+ 
 
  ### TECHNOLOGIES ###
 

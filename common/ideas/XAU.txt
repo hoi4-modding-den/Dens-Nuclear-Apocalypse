@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		XAU_no_longer_servants = {
+			picture = XAU_no_longer_servants
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		XAU_civil_defiance = {
+			picture = XAU_civil_defiance
+			modifier = {
+				consumer_goods_factor = 0.1
+				fascism_drift = 0.02
+				neutrality_drift = 0.02
+				democratic_drift = 0.02
+			}
+		}
+		XAU_resource_famines = {
+			picture = XAU_resource_famines
+			modifier = {
+				stability_factor = -0.2
+				monthly_population = -0.8
+				production_speed_buildings_factor = -0.3
+			}
+		}
+	}
+}

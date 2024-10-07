@@ -3,7 +3,7 @@ capital = 605
 oob = "XAU_2236"
 
 set_war_support = 0.1
-set_stability = 0.9
+set_stability = 0.5
 set_convoys = 214
 
 set_technology = {
@@ -42,6 +42,12 @@ set_popularities = {
 	communism = 64
 	fascism = 23
 	neutrality = 0
+}
+
+add_ideas = {
+	XAU_no_longer_servants
+	XAU_civil_defiance
+	XAU_resource_famines
 }
 
 set_country_flag = XAU_welcome_message_flag

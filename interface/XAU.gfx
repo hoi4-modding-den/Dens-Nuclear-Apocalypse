@@ -20,6 +20,21 @@ spriteTypes = {
 		play_on_show = yes
 	}
 
+	### IDEAS ###
+
+	spriteType = {
+		name = "GFX_idea_XAU_no_longer_servants"
+		texturefile = "gfx/interface/ideas/XAU/XAU_no_longer_servants.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAU_civil_defiance"
+		texturefile = "gfx/interface/ideas/XAU/XAU_civil_defiance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAU_resource_famines"
+		texturefile = "gfx/interface/ideas/XAU/XAU_resource_famines.dds"
+	}
+
 	### TEXTICONS ###
 
 	spriteType = {
