@@ -226,3 +226,26 @@ country_event = {
 		}
 	}
 }
+news_event = {
+	id = taiwan.8
+	title = taiwan.8.t
+	desc = taiwan.8.d
+	picture = GFX_news_event_prc_declared
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = taiwan.8.a
+		trigger = {
+            tag = XTW
+        }
+	}
+	option = {
+		name = taiwan.8.b
+		trigger = {
+			NOT = {
+				tag = XTW
+			}
+		}
+	}
+}

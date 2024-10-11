@@ -27,7 +27,11 @@ XTW_armyparty:0 "ROTAF"
 
 XTW:0 "Taiwan"
 XTW_DEF:0 "Taiwan"
-XTW_ADJ:0 "Chinese"
+XTW_ADJ:0 "Taiwanese"
+
+XTW_federation:0 "Chinese Federation"
+XTW_federation_DEF:0 "the Chinese Federation"
+XTW_federation_ADJ:0 "Chinese"
 
 XTW_holland_fascism:0 "Nationale Republiek der Nederlanden"
 XTW_holland_fascism_DEF:0 "the Nationale Republiek der Nederlanden"
@@ -117,6 +121,7 @@ XTW_development_bonds_tt:0 "Grants the ability to acquire §Goff-map factories§
 
 XTW_xex_accepted_offer:0 "§Y[XEX.GetName]§! has accepted the offer."
 
+XTW_proclamation_tt:0 "Has either conquered or subjugated the entirety of China."
 ### EVENTS
 
 taiwan.1.t:0 "[GetYear] Elections"
@@ -149,6 +154,11 @@ taiwan.7.t:0 "A Most Curious Offer"
 taiwan.7.d:0 "A delegation from [XTW.GetNameDEF] has arrived today to propose an agreement. They seek to sign bonds with us for industrial development in exchange for a 10-weeks long payment."
 taiwan.7.a:0 "A Fine Deal."
 taiwan.7.b:0 "It's a waste of time and money."
+
+taiwan.8.t:0 "Proclamation of the Chinese Federation"
+taiwan.8.d:0 ""My compatriots, today is a grand day for China. After 200 years of suffering, at long last, China is once more united under one banner. The path ahead of us is difficult, of course, but our united people will surpass any hardship ahead and pave the way for a new age of China!"\n\n[XTW.GetLeader] has proclaimed the reunification of [XTW.GetNameDEF] today in front of millions of Chinese citizens. It is clear that this reunification will forever alter the spheres of influence."
+taiwan.8.a:0 "Long live the Federation!"
+taiwan.8.b:0 "The tiger has awakened."
 ### DECISIONS
 
 XTW_development_bonds_category:0 "Development Bonds"
