@@ -19,34 +19,11 @@
 ###################################
 
 	focus = {
-		id = XSG_the_first_elections
+		id = XSG_our_fight_for_china
 		icon = GFX_focus_generic_treaty
 		#prerequisite = { focus =  }
 		#mutually_exclusive = { focus = }
-		x = 15
-		y = 0
-		available = {
-		}
-		bypass = {
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	
-	focus = {
-		id = XSG_following_the_steps_of_the_kuomintang
-		icon = GFX_focus_generic_treaty
-		#prerequisite = { focus =  }
-		#mutually_exclusive = { focus = }
-		x = 25
+		x = 6
 		y = 1
 		available = {
 		}
@@ -63,31 +40,850 @@
 			add_political_power = 100
 		}
 	}
-	focus = {
-		id = XSG_declare_the_emergency_power
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = XSG_following_the_steps_of_the_kuomintang  }
-		#mutually_exclusive = { focus = }
-		x = 25
-		y = 2
-		available = {
-		}
-		bypass = {
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
 	
 
+################################################################
+#PEOPLE'S REPUBLIC PATH
+################################################################	
+focus = {
+	id = XSG_the_peoples_republic
+	icon = GFX_focus_generic_treaty
+	#prerequisite = { focus =  }
+	#mutually_exclusive = { focus = }
+	x = 12
+	y = 5
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
 
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_communism_with_chinese_characteristics
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_peoples_republic }
+	#mutually_exclusive = { focus = }
+	x = 11
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
 
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_red_guard_militias
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_peoples_republic }
+	#mutually_exclusive = { focus = }
+	x = 13
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}	
+focus = {
+	id = XSG_planned_economics
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_communism_with_chinese_characteristics }
+	prerequisite = { focus = XSG_red_guard_militias }
+	#mutually_exclusive = { focus = }
+	x = 12
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}		
+focus = {
+	id = XSG_new_chinese_worker
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_communism_with_chinese_characteristics }
+	#mutually_exclusive = { focus = }
+	x = 11
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_the_eyes_of_the_state
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_red_guard_militias }
+	#mutually_exclusive = { focus = }
+	x = 13
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_second_cultural_revolution
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_eyes_of_the_state }
+	prerequisite = { focus = XSG_new_chinese_worker }
+	#mutually_exclusive = { focus = }
+	x = 12
+	y = 9
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+
+#####################################################
+#FREEDOM FOR CHINA PATH
+#####################################################
+
+focus = {
+	id = XSG_liberalism_in_china
+	icon = GFX_focus_generic_treaty
+	#prerequisite = { focus = XSG_red_guard_militias }
+	#mutually_exclusive = { focus = }
+	x = 18
+	y = 5
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_a_stable_currency
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_liberalism_in_china }
+	#mutually_exclusive = { focus = }
+	x = 16
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_path_to_hegemony
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_liberalism_in_china }
+	#mutually_exclusive = { focus = }
+	x = 16
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_free_market_policy
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_liberalism_in_china }
+	#mutually_exclusive = { focus = }
+	x = 18
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_the_way_to_a_free_china
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_free_market_policy }
+	prerequisite = { focus = XSG_a_stable_currency }
+	#mutually_exclusive = { focus = }
+	x = 17
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_individualism_doctrine
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_liberalism_in_china }
+	#mutually_exclusive = { focus = }
+	x = 20
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_a_beacon_of_freedom_in_the_shattered_continent
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_individualism_doctrine }
+	prerequisite = { focus = XSG_the_way_to_a_free_china }
+	#mutually_exclusive = { focus = }
+	x = 19
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+###############################################
+#//NATIONAL_SYNDICALIST_PATH//
+###############################################
+focus = {
+	id = XSG_firm_hand
+	icon = GFX_focus_generic_treaty
+	#prerequisite = { focus = XSG }
+	#mutually_exclusive = { focus = }
+	x = 24
+	y = 5
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_firm_hand
+	icon = GFX_focus_generic_treaty
+	#prerequisite = { focus = XSG }
+	#mutually_exclusive = { focus = }
+	x = 24
+	y = 5
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_the_death_squads
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_firm_hand }
+	#mutually_exclusive = { focus = }
+	x = 23
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_shangai_watches
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_firm_hand }
+	#mutually_exclusive = { focus = }
+	x = 25
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_with_us_or_against_us
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_death_squads }
+	prerequisite = { focus = XSG_shangai_watches }
+	#mutually_exclusive = { focus = }
+	x = 24
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_true_state_of_the_people
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_shangai_watches }
+	#mutually_exclusive = { focus = }
+	x = 26
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_chinese_national_spirit
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_death_squads }
+	#mutually_exclusive = { focus = }
+	x = 22
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_theres_no_nation_that_cannot_be_reborn
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_chinese_national_spirit }
+	prerequisite = { focus = XSG_with_us_or_against_us }
+	prerequisite = { focus = XSG_true_state_of_the_people }
+	#mutually_exclusive = { focus = }
+	x = 24
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+#############################################################
+#//THE_TWO_THOUSAND_YEARS_OF_THE_MANDATE_OF_HEAVEN_RETURNS//
+#############################################################
+focus = {
+	id = XSG_ruzzian_military_take_over
+	icon = GFX_focus_generic_treaty
+	#prerequisite = { focus = XSG }
+	#mutually_exclusive = { focus = }
+	x = 30
+	y = 5
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_chinese_re_education
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_ruzzian_military_take_over }
+	#mutually_exclusive = { focus = }
+	x = 31
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_siberian_inmigration_plan
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_ruzzian_military_take_over }
+	#mutually_exclusive = { focus = }
+	x = 29
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_a_union_with_the_chinese
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_siberian_inmigration_plan }
+	prerequisite = { focus = XSG_chinese_re_education }
+	#mutually_exclusive = { focus = }
+	x = 30
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_destroying_the_old_system
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_a_union_with_the_chinese }
+	#mutually_exclusive = { focus = }
+	x = 29
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_ancient_asian_mysticism
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_a_union_with_the_chinese }
+	#mutually_exclusive = { focus = }
+	x = 31
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_the_mighty_eurasian_giant
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_ancient_asian_mysticism }
+	prerequisite = { focus = XSG_destroying_the_old_system }
+	#mutually_exclusive = { focus = }
+	x = 30
+	y = 9
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+#########################################
+#//THE_MILITARY_RESTORES_ORDER//
+#########################################
+focus = {
+	id = XSG_the_military_restores_order
+	icon = GFX_focus_generic_treaty
+	#prerequisite = { focus = XSG }
+	#mutually_exclusive = { focus = }
+	x = 35
+	y = 5
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_the_military_with_a_state
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_military_restores_order }
+	#mutually_exclusive = { focus = }
+	x = 36
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_the_military_order_program
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_military_restores_order }
+	#mutually_exclusive = { focus = }
+	x = 34
+	y = 6
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_no_loose_ends
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_military_order_program }
+	#mutually_exclusive = { focus = }
+	x = 34
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_clean_gun
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_military_order_program }
+	#mutually_exclusive = { focus = }
+	x = 34
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_the_banner_of_a_new_china
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_military_with_a_state }
+	#mutually_exclusive = { focus = }
+	x = 36
+	y = 7
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_all_the_chinese
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_the_banner_of_a_new_china }
+	#mutually_exclusive = { focus = }
+	x = 36
+	y = 8
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+focus = {
+	id = XSG_guided_by_the_light_of_a_sharp_bayonet
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = XSG_clean_gun }
+	prerequisite = { focus = XSG_all_the_chinese }
+	#mutually_exclusive = { focus = }
+	x = 35
+	y = 9
+	available = {
+	}
+	bypass = {
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+#############################################
+#//THE_GREAT_GIANTS_TAKE_OVER//
+#############################################
 }
