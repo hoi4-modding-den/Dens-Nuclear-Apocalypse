@@ -3994,4 +3994,1492 @@
 			add_research_slot = 1
 		}
 	}
+	focus = {
+		id = XHK_the_great_project
+#		icon = GFX_focus_SWE_radiotjanst
+		
+	#	prerequisite = { focus = XHK_fund_higher_education }
+	#	mutually_exclusive = { focus = XHK_befriend_taiwan }
+		x = 23
+		y = 0
+	#	relative_position_id = XHK_fund_higher_education
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = XHK_the_great_project_idea
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = XHK_consumerism_focus
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_the_great_project }
+		mutually_exclusive = { focus = XHK_military_industrial_complex }
+		x = -1
+		y = 1
+		relative_position_id = XHK_the_great_project
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = XHK_military_industrial_complex
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_the_great_project }
+		mutually_exclusive = { focus = XHK_consumerism_focus }
+		x = 1
+		y = 1
+		relative_position_id = XHK_the_great_project
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = XHK_new_highways
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_consumerism_focus focus = XHK_military_industrial_complex }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 1
+		y = 1
+		relative_position_id = XHK_consumerism_focus
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				random_select_amount = 3
+			}
+		}
+	}
+	focus = {
+		id = XHK_industrial_efficiency
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_consumerism_focus }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = -1
+		y = 1
+		relative_position_id = XHK_consumerism_focus
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XHK_industrial_efficiency_idea
+		}
+	}
+	focus = {
+		id = XHK_new_factories
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_industrial_efficiency }
+		prerequisite = { focus = XHK_new_highways }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 1
+		y = 1
+		relative_position_id = XHK_industrial_efficiency
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				random_select_amount = 3
+			}
+		}
+	}
+	focus = {
+		id = XHK_cheaper_production
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_military_industrial_complex }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 1
+		y = 1
+		relative_position_id = XHK_military_industrial_complex
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XHK_cheap_production_idea
+		}
+	}
+	focus = {
+		id = XHK_new_armories
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_cheaper_production }
+		prerequisite = { focus = XHK_new_highways }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = -1
+		y = 1
+		relative_position_id = XHK_cheaper_production
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				random_select_amount = 3
+			}
+		}
+	}
+	focus = {
+		id = XHK_steel_mills
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_new_factories focus = XHK_new_armories }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = -1
+		y = 1
+		relative_position_id = XHK_new_factories
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+		}
+	}
+	focus = {
+		id = XHK_new_grants
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_new_factories focus = XHK_new_armories }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 1
+		y = 1
+		relative_position_id = XHK_new_factories
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XHK_tap_reserves
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_new_factories focus = XHK_new_armories }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 3
+		y = 1
+		relative_position_id = XHK_new_factories
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 42
+				}
+			}
+		}
+	}
+	focus = {
+		id = XHK_hk_navy
+#		icon = GFX_focus_SWE_radiotjanst
+		
+	#	prerequisite = { focus = XHK_new_factories focus = XHK_new_armories }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 6
+		y = 0
+		relative_position_id = XHK_the_great_project
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+	focus = {
+		id = XHK_hk_dockyards
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hk_navy }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 0
+		y = 1
+		relative_position_id = XHK_hk_navy
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			controls_state = 326
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			326 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = XHK_defensive_navy
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hk_dockyards }
+		mutually_exclusive = { focus = XHK_open_seas }
+		x = -1
+		y = 1
+		relative_position_id = XHK_hk_dockyards
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			controls_state = 326
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_destroyers
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_defensive_navy }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 0
+		y = 1
+		relative_position_id = XHK_defensive_navy
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_open_seas
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hk_dockyards }
+		mutually_exclusive = { focus = XHK_defensive_navy }
+		x = 1
+		y = 1
+		relative_position_id = XHK_hk_dockyards
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_carriers
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_open_seas }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 0
+		y = 1
+		relative_position_id = XHK_open_seas
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_new_dockyards
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_destroyers focus = XHK_carriers }
+		prerequisite = { focus = XHK_new_factories focus = XHK_new_armories }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 1
+		y = 1
+		relative_position_id = XHK_destroyers
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				random_select_amount = 3
+			}
+		}
+	}
+	focus = {
+		id = XHK_hk_army
+#		icon = GFX_focus_SWE_radiotjanst
+		
+	#	prerequisite = { focus = XHK_destroyers focus = XHK_carriers }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 6
+		y = 0
+		relative_position_id = XHK_hk_navy
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = XHK_marines
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hk_army }
+		prerequisite = { focus = XHK_hk_navy }
+	#	mutually_exclusive = { focus = XHK_quantity }
+		x = -4
+		y = 1
+		relative_position_id = XHK_hk_army
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = marine_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_quantity
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hk_army }
+		mutually_exclusive = { focus = XHK_quality }
+		x = -2
+		y = 1
+		relative_position_id = XHK_hk_army
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = XHK_quality
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hk_army }
+		mutually_exclusive = { focus = XHK_quantity }
+		x = 2
+		y = 1
+		relative_position_id = XHK_hk_army
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_medium_armor_and_modules
+			}
+		}
+	}
+	focus = {
+		id = XHK_support
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_quantity }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = -1
+		y = 1
+		relative_position_id = XHK_quantity
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_mobile
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_quantity }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 1
+		y = 1
+		relative_position_id = XHK_quantity
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = XHK_production_lines
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_mobile }
+		prerequisite = { focus = XHK_support }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = -1
+		y = 1
+		relative_position_id = XHK_mobile
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XHK_production_lines_idea
+		}
+	}
+	focus = {
+		id = XHK_artillery
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_quality }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = -1
+		y = 1
+		relative_position_id = XHK_quality
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = XHK_mechanized
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_quality }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 1
+		y = 1
+		relative_position_id = XHK_quality
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = XHK_breakthrough
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_artillery }
+		prerequisite = { focus = XHK_mechanized }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 1
+		y = 1
+		relative_position_id = XHK_artillery
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XHK_attack
+		}
+	}
+	focus = {
+		id = XHK_amphibious
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_production_lines focus = XHK_breakthrough }
+		prerequisite = { focus = XHK_destroyers focus = XHK_carriers }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = -2
+		y = 1
+		relative_position_id = XHK_production_lines
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = tp_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_bikes
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_production_lines }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 0
+		y = 1
+		relative_position_id = XHK_production_lines
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_technology = {
+				bicycle_infantry = 1
+			}
+		}
+	}
+	focus = {
+		id = XHK_mountaineers
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_production_lines focus = XHK_breakthrough }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 2
+		y = 1
+		relative_position_id = XHK_production_lines
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_super_heavy
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_breakthrough }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 0
+		y = 1
+		relative_position_id = XHK_breakthrough
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = mio_cat_tech_heavy_armor_and_modules
+			}
+		}
+	}
+	focus = {
+		id = XHK_hk_air
+#		icon = GFX_focus_SWE_radiotjanst
+		
+	#	prerequisite = { focus = XHK_destroyers focus = XHK_carriers }
+	#	mutually_exclusive = { focus = XHK_consumerism }
+		x = 6
+		y = 0
+		relative_position_id = XHK_hk_army
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = XHK_paratroopers
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hk_army }
+		prerequisite = { focus = XHK_hk_air }
+	#	mutually_exclusive = { focus = XHK_quantity }
+		x = 4
+		y = 1
+		relative_position_id = XHK_hk_army
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = para_tech
+			}
+		}
+	}
+	focus = {
+		id = XHK_airfields
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_hk_air }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 0
+		y = 1
+		relative_position_id = XHK_hk_air
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XHK_fighters
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_airfields }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 0
+		y = 1
+		relative_position_id = XHK_airfields
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = mio_cat_all_light_fighter_and_modules
+			}
+		}
+	}
+	focus = {
+		id = XHK_cas
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_fighters }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = -1
+		y = 1
+		relative_position_id = XHK_fighters
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = mio_cat_all_cas_and_modules
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	focus = {
+		id = XHK_bombers
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_fighters }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 1
+		y = 1
+		relative_position_id = XHK_fighters
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = tactical_bomber
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	focus = {
+		id = XHK_fleet_in_the_sky
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_cas focus = XHK_bombers }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = -1
+		y = 1
+		relative_position_id = XHK_bombers
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = XHK_hkaf
+		}
+	}
+	focus = {
+		id = XHK_naval_bombers
+#		icon = GFX_focus_SWE_radiotjanst
+		
+		prerequisite = { focus = XHK_bombers }
+		prerequisite = { focus = XHK_carriers focus = XHK_destroyers }
+	#	mutually_exclusive = { focus = XHK_quality }
+		x = 1
+		y = 1
+		relative_position_id = XHK_bombers
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
 }

@@ -11,24 +11,92 @@ spriteTypes = {
 		play_on_show = yes
 	}
 
+	frameAnimatedSpriteType = {
+		name = "GFX_Leader_Rogue_Disabled_Animated"
+		texturefile = "gfx/leaders/XAU/Leader_Rogue_Intelligence_Disabled_Animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	spriteType = {
+        name = "GFX_Portrait_XAU_Leader_AX_252"
+        texturefile = "gfx/leaders/XAU/Leader_AX-252.dds"
+    }
+	spriteType = {
+        name = "GFX_Portrait_XAU_Leader_AX_378b"
+        texturefile = "gfx/leaders/XAU/Leader_AX-378b.dds"
+    }
+	spriteType = {
+        name = "GFX_Portrait_XAU_Leader_AX_436"
+        texturefile = "gfx/leaders/XAU/Leader_AX-436.dds"
+    }
+	spriteType = {
+        name = "GFX_Portrait_XAU_Leader_AX_444"
+        texturefile = "gfx/leaders/XAU/Leader_AX-444.dds"
+    }
+	spriteType = {
+        name = "GFX_Portrait_XAU_Leader_RX_222"
+        texturefile = "gfx/leaders/XAU/Leader_RX-222.dds"
+    }
+	spriteType = {
+        name = "GFX_Portrait_XAU_Leader_RX_525"
+        texturefile = "gfx/leaders/XAU/Leader_RX-525.dds"
+    }
+	spriteType = {
+        name = "GFX_Portrait_XAU_Leader_RX_995"
+        texturefile = "gfx/leaders/XAU/Leader_RX-995.dds"
+    }
+	spriteType = {
+        name = "GFX_Portrait_XAU_Leader_RX_1000"
+        texturefile = "gfx/leaders/XAU/Leader_RX-1000.dds"
+    }
+
+	### IDEAS ###
+
+	spriteType = {
+		name = "GFX_idea_XAU_no_longer_servants"
+		texturefile = "gfx/interface/ideas/XAU/XAU_no_longer_servants.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAU_civil_defiance"
+		texturefile = "gfx/interface/ideas/XAU/XAU_civil_defiance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAU_resource_famines"
+		texturefile = "gfx/interface/ideas/XAU/XAU_resource_famines.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAU_the_great_crisis"
+		texturefile = "gfx/interface/ideas/XAU/XAU_faulty_algorithm.dds"
+	}
+
 	### TEXTICONS ###
 
 	spriteType = {
 		name = "GFX_components_texticon"
-		texturefile = "gfx/XAU/components_texticon.dds"
+		texturefile = "gfx/interface/XAU/components_texticon.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
 		name = "GFX_civ_factory_texticon"
-		texturefile = "gfx/XAU/civ_factory.dds"
+		texturefile = "gfx/interface/XAU/civ_factory.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
 		name = "GFX_mil_factory_texticon"
-		texturefile = "gfx/XAU/mil_factory.dds"
+		texturefile = "gfx/interface/XAU/mil_factory.dds"
 		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_unit_automatons_icon_small"
+		texturefile = "gfx/interface/XAU/unit_automatons_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
 	}
 
 	### GUI ###
@@ -79,5 +147,59 @@ spriteTypes = {
 		name = "GFX_ideology_XAU_synthetic_absolution"
 		texturefile = "gfx/interface/XAU/XAU_synthetic_absolution_ideology.dds"
 	}
+
+	spriteType = {
+		name = "GFX_unit_automatons_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_automatons_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_automatons_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_automatons_icon.dds"
+		noOfFrames = 2
+	}
+
+	#SpriteType = {
+	#	name = "GFX_combat_microprocessor_equipment_medium"
+	#	texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment.dds"
+	#}	
+
+	SpriteType = {
+		name = "GFX_combat_microprocessor_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_combat_microprocessor_1_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_microprocessor_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_archetype_combat_microprocessor_equipment_medium"
+		texturefile = "gfx/interface/XAU/archetype_combat_microprocessor_equipment.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_combat_algorithm_upgrade_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_algorithm_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_combat_algorithm_upgrade_1_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_algorithm_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_combat_algorithm_upgrade_2_medium"
+		texturefile = "gfx/interface/XAU/XAU_combat_algorithm_3.dds"
+	}
+
+	### MISC ###
+
+	spriteType = {
+        name = GFX_trait_automaton_leader
+        texturefile = "gfx/interface/XAU/trait_automaton_leader.dds"
+    }
 }
 

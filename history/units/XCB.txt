@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Infantry Regiment"
 
 	division_names_group = XCB_INF_01
 
@@ -24,7 +24,7 @@ units = {
 			name_order = 1
 		}
 		location = 7376
-		division_template = "Infantry Brigade"
+		division_template = "Infantry Regiment"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -33,7 +33,7 @@ units = {
 			name_order = 2
 		}
 		location = 7432
-		division_template = "Infantry Brigade"
+		division_template = "Infantry Regiment"
 		start_experience_factor = 0.1
 	}
 

@@ -1,4 +1,25 @@
 division_template = {
+    name = "Automaton Infantry"
+    division_names_group = XAU_INF_02
+
+    regiments = {
+        automatons = { x = 0 y = 0 }
+        automatons = { x = 0 y = 1 }
+        automatons = { x = 0 y = 2 }
+        automatons = { x = 0 y = 3 }
+        automatons = { x = 1 y = 0 }
+        automatons = { x = 1 y = 1 }
+        automatons = { x = 1 y = 2 }
+        automatons = { x = 1 y = 3 }
+        artillery_brigade = { x = 2 y = 0 }
+        artillery_brigade = { x = 2 y = 1 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
     name = "Cyborg Footsoldiers"
     division_names_group = XAU_INF_01
 
@@ -6,25 +27,26 @@ division_template = {
         infantry = { x = 0 y = 0 }
         infantry = { x = 0 y = 1 }
         infantry = { x = 0 y = 2 }
-        infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
         infantry = { x = 1 y = 1 }
-        infantry = { x = 2 y = 2 }
+        infantry = { x = 1 y = 2 }
     }
     support = {
         engineer = { x = 0 y = 0 }
     }
 }
+
 units = {
     division = {
         division_name = {
             is_name_ordered = yes
             name_order = 1
 		}
-        location = 6999
-        division_template = "Cyborg Footsoldiers"
-        start_experience_factor = 0.2
-        start_equipment_factor = 0.9
-		start_manpower_factor = 0.9
+        location = 12705
+        division_template = "Automaton Infantry"
+        start_experience_factor = 0.8
+        start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
     }
 
     division = {
@@ -32,11 +54,11 @@ units = {
             is_name_ordered = yes
             name_order = 2
 		}
-        location = 1010
+        location = 6999
         division_template = "Cyborg Footsoldiers"
-        start_experience_factor = 0.2
-        start_equipment_factor = 0.9
-		start_manpower_factor = 0.9
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+		start_manpower_factor = 0.7
     }
 
     division = {
@@ -47,8 +69,32 @@ units = {
         location = 4925
         division_template = "Cyborg Footsoldiers"
         start_experience_factor = 0.2
+        start_equipment_factor = 0.6
+		start_manpower_factor = 0.6
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+		}
+        location = 1010
+        division_template = "Automaton Infantry"
+        start_experience_factor = 0.5
         start_equipment_factor = 0.9
 		start_manpower_factor = 0.9
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+		}
+        location = 5048
+        division_template = "Cyborg Footsoldiers"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.6
+		start_manpower_factor = 0.6
     }
 }
 instant_effect = {
@@ -59,5 +105,13 @@ instant_effect = {
         }
         requested_factories = 1
         efficiency = 0.42
+    }
+    add_equipment_production = {
+        equipment = {
+            type = combat_microprocessor_equipment_0
+            creator = XAU
+        }
+        requested_factories = 1
+        efficiency = 0.84
     }
 }

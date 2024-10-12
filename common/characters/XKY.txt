@@ -34,5 +34,52 @@ characters = {
             ideology = fascism_ideology
             traits = {Fascist_Militarist Fascist_Populist}
         }
-    }    
+    }
+    XKY_Naruhito = {
+        name = "Emperor Naruhito"
+        portraits={
+            civilian={
+                large = gfx/leaders/XKY/Portrait_Emperor_Naruhito.dds
+            }
+        }
+        country_leader={
+            ideology = fascism_ideology
+            traits = {Rearmer Tenacious_Negotiator Imperial Connections}
+        }
+    }
+    XKY_Koji_Yamazaki = {
+        name = "Koji Yamazaki"
+        portraits = {
+            army = {
+                large = "GFX_Portrait_XKY_Koji_Yamazaki"
+            }
+        }
+        corps_commander = {
+            traits = { media_personality armor_officer war_hero winter_specialist }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+            legacy_id = 867
+            visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+        }  
+    } 
+    XKY_Yoshihida_Yoshida = {
+        name = "Yoshihida Yoshida"
+        portraits = {
+            army = {
+                large = "GFX_Portrait_XKY_Yoshihida_Yoshida"
+            }
+        }
+        navy_leader = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            maneuvering_skill = 5
+            coordination_skill = 5
+            legacy_id = 983
+            visible = { has_stability > 0.3 }
+        } 
+    }              
 }	

@@ -443,7 +443,10 @@
 			}
 			add_stability = 0.05
 			every_other_country = {
-				limit = { has_government = democratic }
+				limit = { 
+					has_government = democratic
+					capital_scope = { is_on_continent = europe }
+				}
 				add_opinion_modifier = {
 					target = XAL
     				modifier = XAL_increased_political_freedoms
@@ -499,7 +502,7 @@
 
 		available = {
 			has_government = neutrality
-			democratic > 0.75
+			democratic > 0.4
 		}
 
 		bypass = {
@@ -516,7 +519,7 @@
 		completion_reward = {
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.1
+				popularity = 0.2
 			}
 			set_politics = { ruling_party = democratic elections_allowed = yes }
 		}

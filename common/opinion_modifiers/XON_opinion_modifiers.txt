@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	XON_accepted = {
+		value = 15
+	}
+}

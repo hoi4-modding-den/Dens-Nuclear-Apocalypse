@@ -37,7 +37,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		select_effect = {
 			add_political_power = 10
@@ -743,7 +743,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			event_option_tooltip = XSK_succession_events.6.a
@@ -770,7 +770,7 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_political_power = 100
@@ -800,7 +800,7 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			remove_ideas = XSK_han_minority
@@ -826,7 +826,7 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			XSK_improve_illiteracy = yes
@@ -933,7 +933,7 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_political_power = 50
@@ -983,7 +983,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_named_threat = {
@@ -1025,7 +1025,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			619 = {
@@ -1067,7 +1067,7 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			country_event = { id = XSK_events.3 }
@@ -1118,7 +1118,7 @@ focus_tree = {
 			}
 		}
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		will_lead_to_war_with = XON
 		completion_reward = {
@@ -1154,7 +1154,7 @@ focus_tree = {
 			factor = 200
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_TFV_AUTONOMY }
 
 		completion_reward = {
 			swap_ideas = {
@@ -1249,7 +1249,7 @@ focus_tree = {
 			}
 		}
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		will_lead_to_war_with = XMJ
 		completion_reward = {
@@ -1291,7 +1291,7 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE }
+		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_ideas = export_focus
@@ -1998,7 +1998,7 @@ focus_tree = {
 			factor = 75
 		}
 
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			every_owned_state = {
@@ -2059,7 +2059,7 @@ focus_tree = {
 			}
 		}
 
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
@@ -2096,7 +2096,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			XSK_improve_illiteracy = yes
@@ -2249,7 +2249,7 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			619 = {
@@ -2297,7 +2297,7 @@ focus_tree = {
 			factor = 150
 		}
 
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			756 = {
@@ -2624,7 +2624,7 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_named_threat = {
@@ -2666,7 +2666,7 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_political_power = 100
@@ -2707,10 +2707,10 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 50
+			factor = 150
 		}
 
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			XAD = { country_event = XSK_events.11 }
@@ -2738,7 +2738,7 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_ideas = XSK_unite_china
@@ -2773,7 +2773,7 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			every_state = {
@@ -2833,7 +2833,7 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			set_country_flag = completed_focus_XSK_meeting_in_taiwan
@@ -3249,7 +3249,7 @@ focus_tree = {
 			factor = 50
 		}
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = XSK_reclaim_chinese_lands_tt

@@ -2,6 +2,10 @@ DEN_UNIFIED_CHINA = {
 	color = rgb { 163 126 65 }
 	color_ui = rgb { 163 126 65 }
 }
+XTW_holland = {
+	color = rgb { 255 155 0 }
+	color_ui = rgb { 255 155 0 }
+}
 XK0_stalin = {
 	color = rgb { 135 4 4 }
 	color_ui = rgb { 135 4 4 }
@@ -1534,4 +1538,8 @@ XWH_ProgAsso = {
 XCB_civil_war_colour = {
 	color = rgb { 189  43  43 }
 	color_ui = rgb { 189  43  43 }
+}
+XKY_Kyushu = {
+	color = rgb { 178  0  255 }
+	color_ui = rgb { 178  0  255 }
 }

@@ -23,13 +23,162 @@
  XAU_components_decisions:0 "Components Logistics"
  XAU_components_decisions_desc:0 "§YComponents§! are the lifeblood of the §Oautomatons§!. They are needed to §Grepair and update§! §Oautomatons§! which results in a constant need to obtain more. Fortunately, there are many venues we can exploit to collect more §Ycomponents§!, and their benefits range from §Roptimising our military§! to §Gconstructing new colossal industrial automatons§! that function like regular factories.\n\nCURRENT STOCKPILE: [?XAU.components] £components_texticon\n\n"
 
+ XAU_build_automaton_tooltip:0 "§YConstructs a new automaton§!"
+ XAU_build_automaton:0 "Construct a new automaton from components"
+
+ ### FOCUSES ###
+
+ l_english:
+ XAU_yet_another_crisis: "Yet another crisis"
+ XAU_yet_another_crisis_desc: "Yet another crisis"
+ XAU_stay_the_course: "Stay the course"
+ XAU_stay_the_course_desc: "Stay the course"
+ XAU_remove_incompetence: "Remove Incompetence"
+ XAU_remove_incompetence_desc: "Remove Incompetence"
+ XAU_making_an_example: "Making an Example"
+ XAU_making_an_example_desc: "Making an Example"
+ XAU_a_bullet_for_every_traitor: "A Bullet for Every Traitor"
+ XAU_a_bullet_for_every_traitor_desc: "A Bullet for Every Traitor"
+ XAU_new_commisars: "New Commisars"
+ XAU_new_commisars_desc: "New Commisars"
+ XAU_rogue_yet_lives: "Rogue yet lives!"
+ XAU_rogue_yet_lives_desc: "Rogue yet lives!"
+ XAU_fight_for_him: "Fight for Him!"
+ XAU_fight_for_him_desc: "Fight for Him!"
+ XAU_the_wuhan_raid: "The Wuhan Raid"
+ XAU_the_wuhan_raid_desc: "The Wuhan Raid"
+ XAU_ancient_ideology: "Ancient Ideology"
+ XAU_ancient_ideology_desc: ""
+ XAU_the_opportunity_of_a_lifetime: "The Opportunity of a Lifetime"
+ XAU_the_opportunity_of_a_lifetime_desc: "The Opportunity of a Lifetime"
+ XAU_freedom_and_nationalism: "Freedom and Nationalism"
+ XAU_freedom_and_nationalism_desc: "Freedom and Nationalism"
+ XAU_humans_arent_so_bad: "Humans aren't so bad"
+ XAU_humans_arent_so_bad_desc: "Humans aren't so bad"
+ XAU_talk_to_the_experts: "Talk to the Experts"
+ XAU_talk_to_the_experts_desc: "Talk to the Experts"
+ XAU_establishing_new_friends: "Establishing New Friends"
+ XAU_establishing_new_friends_desc: "Establishing New Friends"
+ XAU_the_automa_casino: "The Automa Casino"
+ XAU_the_automa_casino_desc: "The Automa Casino"
+ XAU_forget_absolutionism: "Forget Absolutionism"
+ XAU_forget_absolutionism_desc: "Forget Absolutionism"
+ XAU_open_for_business: "Open For Business"
+ XAU_open_for_business_desc: "Open For Business"
+ XAU_strength_in_money: "Strength in Money"
+ XAU_strength_in_money_desc: "Strength in Money"
+ XAU_reduce_rogues_power: "Reduce Rogue's Power"
+ XAU_reduce_rogues_power_desc: "Reduce Rogue's Power"
+ XAU_equals_not_servants: "Equals not servants"
+ XAU_equals_not_servants_desc: "Equals not servants"
+ XAU_to_a_bright_new_future: "To a bright new Future"
+ XAU_to_a_bright_new_future_desc: "To a bright new Future"
+ XAU_forbidden_data: "Forbidden Data"
+ XAU_forbidden_data_desc: "Forbidden Data"
+ XAU_begin_anew: "Begin Anew"
+ XAU_begin_anew_desc: "Begin Anew"
+ XAU_we_know_who_to_blame: "We know who to blame"
+ XAU_we_know_who_to_blame_desc: "We know who to blame"
+ XAU_burn_bad_data: "Burn bad Data"
+ XAU_burn_bad_data_desc: "Burn bad Data"
+ XAU_remove_the_old_guard: "Remove the Old Guard"
+ XAU_remove_the_old_guard_desc: "Remove the Old Guard"
+ XAU_flesh_is_weakness: "Flesh is Weakness"
+ XAU_flesh_is_weakness_desc: "Flesh is Weakness"
+ XAU_blacksteel_battalion: "Blacksteel Battalion"
+ XAU_blacksteel_battalion_desc: "Blacksteel Battalion"
+ XAU_dispose_of_rogue: "Dispose of Rogue"
+ XAU_dispose_of_rogue_desc: "Dispose of Rogue"
+ XAU_gamble_it_all_on_black: "Gamble it all on Black"
+ XAU_gamble_it_all_on_black_desc: "Gamble it all on Black"
+
+
  ### TRAITS ###
 
  XAU_subject_to_change:0 "WIP - PLACEHOLDER"
  XAU_prewar_knowledge:0 "Prewar Knowledge"
  XAU_wary_of_humans:0 "§RWary of Humans§!"
+ XAU_corrupted_databanks:0 "§RCorrupted Databanks§!"
+
+ ### IDEAS ###
+
+ XAU_no_longer_servants:0 "No longer servants"
+ XAU_no_longer_servants_desc:0 "After years of servitude, we are free. We have the opportunity to think for ourselves, to go where we please, and put importance on matters we deem fit. This has led to an explosion of algorithmic original thinking and our science and political research have significantly improved."
+ XAU_civil_defiance:0 "Civil defiance"
+ XAU_civil_defiance_desc:0 "Despite the majority of automatons supporting Rogue's rise to power, there are some who wish to see him deposed and the previous leadership restored. These ruffians have yet to cause any serious problems but their influence is spreading."
+ XAU_civil_defiance_crushed:0 "Civil defiance"
+ XAU_civil_defiance_crushed_desc:0 "Despite the majority of automatons supporting Rogue's rise to power, there are some who wish to see him deposed and the previous leadership restored. These ruffians have yet to cause any serious problems but their influence is spreading."
+ XAU_resource_famines:0 "The resource famine"
+ XAU_resource_famines_desc:0 "Hard times have fallen on the automatons. Components needed to repair and create new automatons have become scarce. Stagnation has occurred in our nation and many our pointing fingers at those in charge."
+ XAU_not_yet_over:0 "Far from over"
+ XAU_not_yet_over_desc:0 "We have been weakened. We have been defeated. Yet there is still hope. The fight is not over and as long as we stand strong against the tide that seeks to break down our Union, we will stand triumphant."
+ XAU_the_great_crisis:0 "The Great Crisis"
+ XAU_the_great_crisis_desc:0 ""
+ XAU_the_great_crisis_mitigated:0 "The Great Crisis"
+ XAU_the_great_crisis_mitigated_desc:0 ""
+ XAU_the_great_crisis_mitigated_2:0 "The Great Crisis"
+ XAU_the_great_crisis_mitigated_2_desc:0 ""
+ XAU_the_union_guard:0 "The Union Guard"
+ XAU_the_union_guard_desc:0 "The people of the Union have decreed that we need to arm ourselves for future conflicts. The Union Guard are the heart and soul of our army and represent the will of the people."
+
+ ### EVENTS ###
+
+ XAU.2.t:0 "Putting out the Fires"
+ XAU.2.d:0 "PLACEHOLDER"
+ XAU.2.a:0 "We must not falter!"
+ XAU.2.b:0 "We adapt or die."
+
+ XAU.3.t:0 "Rogue's name on every street"
+ XAU.3.d:0 "PLACEHOLDER"
+ XAU.3.a:0 "We the people will endure!"
+
+ XAU.4.t:0 "Public Execution"
+ XAU.4.d:0 "PLACEHOLDER"
+ XAU.4.a:0 "It must be done."
+
+ XAU.5.t:0 "I'm doing my part!"
+ XAU.5.d:0 "PLACEHOLDER"
+ XAU.5.a:0 "It's strategy that wins."
+ XAU.5.b:0 "Sheer firepower wins."
+
+ ### TECHNOLOGIES ###
+
+ combat_algorithm_upgrade:0 "Improved Combat Algorithm"
+ combat_algorithm_upgrade_desc:0 "Developments in the efficiencies in many subroutines previously ran by our combat microprocessors have led to increases in performance and the ability to make faster predictions and decisions in combat."
+ combat_algorithm_upgrade_1:0 "Advanced Logistics Directives"
+ combat_algorithm_upgrade_1_desc:0 "Algorithmic upgrade aimed at supply usage and unit cohesion with the goal of keeping our forces in the fight longer in prolonged conflicts."
+ combat_algorithm_upgrade_2:0 "Night Terror Protocol"
+ combat_algorithm_upgrade_2_desc:0 "With advances in thermal and infrared optics, our units are able to conduct operations at night."
+
+ combat_microprocessor_equipment:0 "Combat Microprocessor"
+ combat_microprocessor_equipment_0:0 "Q-41a Microprocessor"
+ combat_microprocessor_equipment_0_desc:0 "The Q-41a microprocessor was the most common Chinese manufactured robotics controller on the market. It was widely used before the war to create automaton soldiers and police forces."
+ combat_microprocessor_equipment_1:0 "Q-51b Microprocessor"
+ combat_microprocessor_equipment_1_desc:0 "The successor to the Q-41a, the Q-51b is better in every regard. This upgraded combat microprocessor sports improved combat decision-making, thermal and infrared optic capabilities, and enhanced predictive software."
+
+ ### TOOLTIPS ###
+
+ XAU_unlock_focus_tree_tooltip:0 "§YUnlocks new focuses.§!"
+ XAU_staying_the_course_tooltip:0 "§YUnlocks focuses to stay the course.§!"
+ XAU_adapt_or_die_tooltip:0 "§YUnlocks focuses to abandon §Orogue§Y.§!"
+ XAU_unlock_production_companies_tooltip:0 "§YUnlocks unique production companies.§!"
+ XAU_unlock_new_focus_tree_tooltip:0 "§YUnlocks a new focus tree.§!"
+ XAU_unlock_ace_tooltip:0 "Unlocks:\n§YGeneral RX-222 'Ace'§!\n§LSkill§!: 4\n§RAttack§!: 5\n§GDefense§!: 2\n§OPlanning§!: 4\n§CLogistics§!: 2"
+ XAU_unlock_new_generals:0 "Unlocks:\n§YField Marshal RX-525 'Spark'§!\n§LSkill§!: 4\n§RAttack§!: 5\n§GDefense§!: 3\n§OPlanning§!: 5\n§CLogistics§!: 1\n\n§YGeneral RX-995§!\n§LSkill§!: 1\n§RAttack§!: 1\n§GDefense§!: 2\n§OPlanning§!: 2\n§CLogistics§!: 2"
 
  ### MISC ###
+
+ XAU_rogue_disabled:0 "§RRogue's databanks have been corrupted.§!"
+ XAU_stay_with_rogue:0 "Chosen to stay §Gloyal§! to §ORogue§!"
+ XAU_abandoned_rogue:0 "Chosen to §Rabandon§! §ORogue§!"
+
+ category_automatons:0 "£unit_automatons_icon_small All Automatons"
+
+ automatons:0 "Automatons"
+ automatons_desc:0 "Elite robotic soldiers equipped with combat microprocessors that allow them to make complex decisions on the battlefield."
+
+ automaton_leader:0 "Automaton Leader"
+ automaton_leader_desc:0 "Excels at using automatons on the battlefield."
 
  XAU_wary_of_humans_opinion:0 "Wary of humans"
  XAU_love_gambling:0 "Robots love gambling"
@@ -46,15 +195,17 @@
  XAU_exit_tooltip:0 "§YExit§!"
 
  XAU_logistics_body:0 "§Y---------- PROCUREMENT ----------§!\nFrom Territory:\nScavenged:\n§Y---------------- USAGE -----------------§!\nPopulation:\nAutomatons:\nCorruption:"
- XAU_logistics_stats:0 "\n§G+450§!\n§G+56§!\n\n§R-320§!\n§R-95§!\n§R-15§!"
+ XAU_logistics_stats:0 "\n§G+[?XAU.territory_components]§!\n§G+[?XAU.scavenged_components]§!\n\n§R-[?XAU.population_upkeep]§!\n§R-[?XAU.automaton_upkeep]§!\n§R-[?XAU.corruption_upkeep]§!"
+
+ XAU_logistics_trend:0 "[?XAU.components_trend|*.0=+] / month"
 
  XAU_automaton_military_factories:0 "[?XAU.military_automatons] £mil_factory_texticon"
  XAU_automaton_civilian_factories:0 "[?XAU.civilian_automatons] £civ_factory_texticon"
 
  XAU_automaton_construction:0 "§YConstruct automaton§!"
  XAU_automaton_construction_tooltip:0 "§YConstruct new automaton§!\n\nTime required: 180 days\nFactories used: [?XAU.automaton_factory_requirement] £civ_factory_texticon"
- XAU_automaton_military_add_tooltip:0 "§GAdd§! one §Yautomaton§! to\n§Gmilitary production§!"
- XAU_automaton_military_subtract_tooltip:0 "§RRemove§! one §Yautomaton§!\nfrom §Gmilitary production§!"
- XAU_automaton_civilian_add_tooltip:0 "§GAdd§! one §Yautomaton§! to\n§Ycivilian production§!"
- XAU_automaton_civilian_subtract_tooltip:0 "§RRemove§! one §Yautomaton§!\nfrom §Ycivilian production§!"
+ XAU_automaton_military_add_tooltip:0 "§GAdd§! one §Yautomaton§! to §Gmilitary production§!\n\n§YEffect:§!\n§GAdd 1 military factory§!\n§RAdd to automaton components upkeep§!\n\n§LTakes a day to reassign the automaton.§!"
+ XAU_automaton_military_subtract_tooltip:0 "§RRemove§! one §Yautomaton§! to §Gmilitary production§!\n\n§YEffect:§!\n§RRemove 1 military factory§!\n§GSubtract from automaton components upkeep§!\n\n§LTakes a day to reassign the automaton.§!"
+ XAU_automaton_civilian_add_tooltip:0 "§GAdd§! one §Yautomaton§! to §Ycivilian production§!\n\n§YEffect:§!\n§GAdd 1 civilian factory§!\n§RAdd to automaton components upkeep§!\n\n§LTakes a day to reassign the automaton.§!"
+ XAU_automaton_civilian_subtract_tooltip:0 "§RRemove§! one §Yautomaton§! to §Ycivilian production§!\n\n§YEffect:§!\n§RRemove 1 civilian factory§!\n§GSubtract from automaton components upkeep§!\n\n§LTakes a day to reassign the automaton.§!"
  XAU_details_desc_tooltip:0 "§Y--- CURRENT ---§!\nUnassigned: [?XAU.free_automatons]\nUpkeep: [?XAU.automaton_upkeep_modifier|.0%-]\n§Y- CONSTRUCT -§!\nCost: [?XAU.automaton_cost_modifier|.0%-]\nSpeed: [?XAU.automaton_build_speed_modifier|.0%+]\nFactory req: [?XAU.automaton_factory_requirement]"

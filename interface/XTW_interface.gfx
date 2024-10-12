@@ -19,4 +19,12 @@ spriteTypes = {
 		name = "GFX_portrait_XTW_wang_fan"
 		texturefile = "gfx/leaders/XTW/Portrait_Taiwan_Wang_Fan.png"
 	}
+	spriteType = {
+		name = "GFX_portrait_XTW_aart_jansen"
+		texturefile = "gfx/leaders/XTW/Portrait_Taiwan_Aart_Jansen.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_XTW_qiu_huan"
+		texturefile = "gfx/leaders/XTW/Portrait_Taiwan_Qiu_Huan.png"
+	}
 }

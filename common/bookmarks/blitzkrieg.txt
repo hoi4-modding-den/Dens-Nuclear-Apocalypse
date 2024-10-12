@@ -177,16 +177,23 @@ bookmarks = {
 			focuses = {
 			}
 			ideas = {
-				
+				XAU_no_longer_servants
+				XAU_civil_defiance
+				XAU_resource_famines
 			}
 		}
 		"XKY" = {
 			ideology = democratic
 			history = "XKY_history_desc"
 			focuses = {
+				XKY_A_Nation_Once_Again
+				XKY_Rose_tinted_glasses
+				XKY_The_Business_Proposal
 			}
 			ideas = {
-				
+				XKY_Inefficient_Farming
+				XKY_Sasebo_Naval_Remnants
+				XKY_Nippon_Kaigun
 			}
 		}		
 		"XEX" = {

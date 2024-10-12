@@ -304,6 +304,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+
+			gridboxtype = {
+				name = "combat_microprocessor_tree"
+				position = { x = 140 y = 450 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+
+			}
 		}
 
 		containerWindowType = {

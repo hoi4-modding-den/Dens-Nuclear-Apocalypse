@@ -823,7 +823,13 @@ country_event = { # Taipei Compromise: Delegation has arrived
         name = XSK_taiwan_events.2.a
         trigger = {
             XTW = {
-                NOT = { has_completed_focus = XTW_revive_the_one_china_policy }
+                has_government = democratic
+                NOT = {
+                    OR = {
+                        has_completed_focus = XTW_revive_the_one_china_policy
+                        has_completed_focus = XTW_martial_law
+                    }
+                }
             }
             is_ai = no
         }

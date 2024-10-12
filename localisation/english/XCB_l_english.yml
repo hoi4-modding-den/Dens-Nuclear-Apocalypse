@@ -31,6 +31,23 @@
  XCB_democratic_party_long:0 "Khmer Liberal Democratic Party"
  XCB_democratic_party:0 "KLDP"
  
+ #focuses
+ XCB_the_looming_severance:0 "The Looming Severance"
+ XCB_the_northern_strategy:0 "The Northern Strategy"
+ XCB_the_tools_of_a_modern_revolution:0 "The Tools of a Modern Revolution"
+ XCB_prepare_the_agrarians:0 "Prepare the Agrarians"
+ XCB_a_clear_and_concise_military_doctrine:0 "A Clear and Concise Military Doctrine"
+ XCB_combat_internal_factionalism:0 "Combat Internal Factionalism"
+ XCB_the_red_banner_above_all:0 "The Red Banner Above All"
+ XCB_organize_the_cprm_leadership:0 "Organize the CPRM Leadership"
+ XCB_cast_the_die:0 "Cast the Die"
+ XCB_an_anti_authoritarian_coalition:0 "An Anti-Authoritarian Coalition"
+ XCB_trust_the_kldp:0 "Trust the KLDP"
+ XCB_an_all_embracing_movement:0 "An All-Embracing Movement"
+ XCB_ignite_nationwide_flames:0 "Ignite Nation-Wide Flames"
+ XCB_infiltrate_phnom_penh:0 "Infiltrate Phnom Penh"
+ XCB_rabblerousers_in_the_east_and_the_west:0 "Rabblerousers in the East and the West"
+ 
  #ideas
  XCB_the_two_city_government:0 "The Two-City Government" #phnom penh and kampong saom
  XCB_the_two_city_government_desc:0 "Even despite the Preservative Council’s best efforts to maintain a functioning state through a firm hold of all societal institutions, many opposing voices have begun to make their presence felt in Cambodia. Sieng Preoung’s forces have all but lost the control of the nation in everywhere apart from the capital, Phnom Penh, and the coastal city of Kampong Saom, hanging on by a thread in the shores of the Mekong river."
@@ -46,6 +63,25 @@
  XCB_kldp_influence_resistance:0 "§CKLDP Influence: §![?XCB_kldp_resistance_var]"
  XCB_cprm_a_influence_resistance:0 "§tCPRM-A Influence: §![?XCB_cprm_a_resistance_var]"
  XCB_cprm_i_influence_resistance:0 "§RCPRM-I Influence: §![?XCB_cprm_i_resistance_var]"
+ 
+ XCB_increase_ferocity_5:0 "§HIncreases the §RFerocity§! of the Population by§! §R5§!"
+ XCB_increase_ferocity_10:0 "§HIncreases the §RFerocity§! of the Population by§! §R10§!"
+ XCB_increase_ferocity_15:0 "§HIncreases the §RFerocity§! of the Population by§! §R15§!"
+ XCB_increase_ferocity_2:0 "§HIncreases the §RFerocity§! of the Population by§! §R2§!"
+ XCB_increase_ferocity_3:0 "§HIncreases the §RFerocity§! of the Population by§! §R3§!"
+ XCB_tonle_sap_cv_tt:0 "§RIncreases Sedition In Tonle Sap§!"
+ XCB_rabblerouser_cv_tt:0 "§RIncreases Sedition In Prey Lang and Chuor Phnum§!"
+ XCB_cif_tt:0 "§HIncreases §tCPRM-A§! Influence By 10\nIncreases §RCPRM-I§! Influence By 5§!"
+ XCB_cprm_organize_tt:0 "§HIncreases §tCPRM-A§! Influence By 5\nIncreases §RCPRM-I§! Influence By 5§!"
+ XCB_trust_the_kldp_tt:0 "§HIncreases §CKLDP§! Influence By 5§!"
+ XCB_coalition_focus_tt:0 "§HIncreases §tCPRM-A§! Influence By 5\nIncreases §RCPRM-I§! Influence By 5\nIncreases §CKLDP§! Influence By 5§!"
+ XCB_red_banner_focus_tt:0 "§HIncreases §tCPRM-A§! Influence By 5\nIncreases §RCPRM-I§! Influence By 5\nDecreases §CKLDP§! Influence By 10§!"
+ 
+ XCB_aaem_tt:0 "§RSowing the seeds of revolution all over Cambodia is the right strategy!§!"
+ XCB_tns_tt:0 "§RWe should concentrate our efforts on maintaining grip in Siem Reap!§!"
+ XCB_less_debuffs_cv_tt:0 "§HCompleting this focus ensures that our military will be more prepared once the revolution shall fire.§!"
+ XCB_grant_guns_cv_tt:0 "§HCompleting this focus ensures that once the civil war triggers, the revolutionaries will gain up to 1000 guns.§!"
+ XCB_grant_soldiers_cv_tt:0 "§HCompleting this focus ensures that once the civil war triggers, the revolutionaries will gain up to 2500 guns.§!"
  
  XCB_chuor_phnum_info_loc:0 "§HChuor Phnum§! \n\n §RCurrent Sedition:§! [?XCB_chuor_phnum_var]"
  XCB_tonle_sap_info_loc:0 "§HTonle Sap§! \n\n §RCurrent Sedition:§! [?XCB_tonle_sap_var]"

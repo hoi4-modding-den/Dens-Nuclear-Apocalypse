@@ -30,8 +30,67 @@ scripted_gui = {
 		visible = {
 			
 		}
+		triggers = {
+			automaton_construction_button_click_enabled = {
+				NOT = { has_country_flag = XAU_building_automaton }
+			}
+		}
 		effects = {	
-			
+			automaton_military_add_button_click = {
+				if = {
+					limit = {
+						check_variable = { free_automatons > 0 }
+					}
+					add_to_variable = { free_automatons = -1 }
+					add_to_variable = { military_automatons = 1 }
+					add_offsite_building = { type = arms_factory level = 1 }
+					XAU_update_automatons_upkeep = yes
+				}
+			}
+			automaton_military_subtract_button_click = {
+				if = {
+					limit = {
+						check_variable = { military_automatons > 0 }
+					}
+					add_to_variable = { free_automatons = 1 }
+					add_to_variable = { military_automatons = -1 }
+					add_offsite_building = { type = arms_factory level = -1 }
+					XAU_update_automatons_upkeep = yes
+				}
+			}
+			automaton_civilian_add_button_click = {
+				if = {
+					limit = {
+						check_variable = { free_automatons > 0 }
+					}
+					add_to_variable = { free_automatons = -1 }
+					add_to_variable = { civilian_automatons = 1 }
+					add_offsite_building = { type = industrial_complex level = 1 }
+					XAU_update_automatons_upkeep = yes
+				}
+			}
+			automaton_civilian_subtract_button_click = {
+				if = {
+					limit = {
+						check_variable = { civilian_automatons > 0 }
+					}
+					add_to_variable = { free_automatons = 1 }
+					add_to_variable = { civilian_automatons = -1 }
+					add_offsite_building = { type = industrial_complex level = -1 }
+					XAU_update_automatons_upkeep = yes
+				}
+			}
+			automaton_construction_button_click = {
+				if = {
+					limit = {
+						check_variable = { XAU.components > XAU.automaton_cost }
+						NOT = { has_country_flag = XAU_building_automaton }
+					}
+
+					subtract_from_variable = { XAU.components = XAU.automaton_cost }
+					activate_decision = XAU_build_automaton
+				}
+			}
 		}
 	}
 }

@@ -59,4 +59,37 @@ characters = {
             traits = {BRA_militant_communist defender_of_the_peasantry}
         }
     }
+    XTW_qiu_huan = {
+        portraits={
+            civilian={
+                large="GFX_portrait_XTW_qiu_huan"
+            }
+        }
+        country_leader={
+            ideology=despotism
+            expire="2280.1.1.1"
+            traits = {disdain_for_politicians_2}
+        }
+        corps_commander={
+			traits={ old_guard politically_connected war_hero skilled_staffer  }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+    }
+    XTW_aart_jansen = {
+        portraits={
+            civilian={
+                large="GFX_portrait_XTW_aart_jansen"
+            }
+        }
+        country_leader={
+            ideology=rexism
+            expire="2280.1.1.1"
+            traits = {DEN_fascist_populist}
+        }
+    }
 }

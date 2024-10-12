@@ -1,0 +1,27 @@
+XAU_components_decisions = {	
+	XAU_build_automaton = {		
+		icon = GFX_decision_icon_default
+
+		visible = {
+			has_country_flag = XAU_building_automaton
+		}	
+
+		cost = 0
+
+		days_remove = XAU.automaton_build_time
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			set_country_flag = XAU_building_automaton
+		}
+
+		remove_effect = {
+			add_to_variable = { XAU.free_automatons = 1 }
+			custom_effect_tooltip = XAU_build_automaton_tooltip
+			clr_country_flag = XAU_building_automaton
+		}
+	}
+}

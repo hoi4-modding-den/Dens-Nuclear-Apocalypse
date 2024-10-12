@@ -89,7 +89,7 @@ focus_tree = {
 		cost = 3
 		prerequisite = { focus = XON_time_for_change }
 		completion_reward = {
-			# WIP
+			XRE = { country_event = XON_invite.1 }
 			}
 		}
 	focus = {
@@ -100,7 +100,7 @@ focus_tree = {
 		cost = 3
 		prerequisite = { focus = XON_contact_authority }
 		completion_reward = {
-			# WIP
+			XRE = { country_event = XON_invite.2 }
 			}
 		}
 	focus = {
@@ -111,7 +111,7 @@ focus_tree = {
 		cost = 3
 		prerequisite = { focus = XON_meet_with_union }
 		completion_reward = {
-			# WIP
+			XRE = { country_event = XON_invite.3 }
 			}
 		}
 	focus = {
@@ -122,7 +122,7 @@ focus_tree = {
 		cost = 3
 		prerequisite = { focus = XON_time_for_change }
 		completion_reward = {
-			# WIP
+			XON = { add_stability = 0.05 }
 			}
 		}
 	focus = {

@@ -9,19 +9,45 @@ XTW_democratic:0 "Republic of Taiwan"
 XTW_democratic_DEF:0 "the Republic of Taiwan"
 
 XTW_neutrality:0 "Republic of China"
-XTW_neutrality_DEF:0 "the Republic of China
+XTW_neutrality_DEF:0 "the Republic of China"
 
 XTW_communism:0 "People's Revolutionary Republic of Taiwan"
-XTW_communism_long:0 "People's Revolutionary Republic of Taiwan"
+XTW_communism_DEF:0 "the People's Revolutionary Republic of Taiwan"
 
 XTW_fascism_ADJ:0 "Chinese"
 XTW_democratic_ADJ:0 "Taiwanese"
 XTW_neutrality_ADJ:0 "Chinese"
 XTW_communism_ADJ:0 "Taiwanese"
 
+XTW_army:0 "Supreme Military Authority of Taiwan"
+XTW_army_DEF:0 "the Supreme Military Authority of Taiwan"
+XTW_armyparty_long:0 "The Republic of Taiwan Armed Forces"
+XTW_armyparty:0 "ROTAF"
+
+
 XTW:0 "Taiwan"
 XTW_DEF:0 "Taiwan"
-XTW_ADJ:0 "Chinese"
+XTW_ADJ:0 "Taiwanese"
+
+XTW_federation:0 "Chinese Federation"
+XTW_federation_DEF:0 "the Chinese Federation"
+XTW_federation_ADJ:0 "Chinese"
+
+XTW_holland_fascism:0 "Nationale Republiek der Nederlanden"
+XTW_holland_fascism_DEF:0 "the Nationale Republiek der Nederlanden"
+
+XTW_holland_democratic:0 "Republiek der Nederlanden"
+XTW_holland_democratic_DEF:0 "the Republiek der Nederlanden"
+
+XTW_holland_neutrality:0 "Koninkrijk der Nederlanden"
+XTW_holland_neutrality_DEF:0 "the Koninkrijk der Nederlanden"
+
+XTW_holland_communism:0 "Volksrepubliek der Nederlanden"
+XTW_holland_communism_DEF:0 "the Volksrepubliek der Nederlanden"
+
+XTW_dutchparty:0 "Nederlandse Rijk"
+
+XTW_holland_ADJ:0 "Dutch"
 
 ### PARTY NAMES
 
@@ -58,6 +84,11 @@ XTW_raiding_kuomintang_cells:0 "Raiding Kuomintang Cells"
 XTW_bond_payment_good:0 "Bond Payment"
 XTW_bond_payment_bad:0 "Bond Payment"
 
+XTW_rule_by_fear:0 "Rule by Fear"
+XTW_rule_by_fear_desc:0 "By instilling insecurity and fear into the people, we will divide and rule them."
+
+XTW_churchill_doctrine:0 "Churchill Doctrine"
+XTW_churchill_doctrine_desc:0 "300 years ago, on an island in the West, there lived a man called "Churchill."\n\nWhen his homeland was endangered by a great evil off the shore, he rallied his people behind him to fight against this evil whatever the cost may be. While our information about him is scarce, we can look up to him as an inspiration."
 ### CHARACTERS
 
 XTW_chen_hua:0 "Chen Hua"
@@ -69,6 +100,10 @@ XTW_li_qingfu:0 "Li Qingfu"
 XTW_shi_yuehan:0 "Shi Yuehan"
 
 XTW_wang_fan:0 "Wang Fan"
+
+XTW_aart_jansen:0 "Aart Jansen"
+
+XTW_qiu_huan:0 "Qiu Huan"
 
 ### TOOLTIPS
 
@@ -86,6 +121,7 @@ XTW_development_bonds_tt:0 "Grants the ability to acquire §Goff-map factories§
 
 XTW_xex_accepted_offer:0 "§Y[XEX.GetName]§! has accepted the offer."
 
+XTW_proclamation_tt:0 "Has either conquered or subjugated the entirety of China."
 ### EVENTS
 
 taiwan.1.t:0 "[GetYear] Elections"
@@ -118,6 +154,11 @@ taiwan.7.t:0 "A Most Curious Offer"
 taiwan.7.d:0 "A delegation from [XTW.GetNameDEF] has arrived today to propose an agreement. They seek to sign bonds with us for industrial development in exchange for a 10-weeks long payment."
 taiwan.7.a:0 "A Fine Deal."
 taiwan.7.b:0 "It's a waste of time and money."
+
+taiwan.8.t:0 "Proclamation of the Chinese Federation"
+taiwan.8.d:0 ""My compatriots, today is a grand day for China. After 200 years of suffering, at long last, China is once more united under one banner. The path ahead of us is difficult, of course, but our united people will surpass any hardship ahead and pave the way for a new age of China!"\n\n[XTW.GetLeader] has proclaimed the reunification of [XTW.GetNameDEF] today in front of millions of Chinese citizens. It is clear that this reunification will forever alter the spheres of influence."
+taiwan.8.a:0 "Long live the Federation!"
+taiwan.8.b:0 "The tiger has awakened."
 ### DECISIONS
 
 XTW_development_bonds_category:0 "Development Bonds"
@@ -310,3 +351,72 @@ XTW_autonomy_for_ryukyu_desc:0 ""
 
 XTW_taipei_technical_university:0 "Taipei Technical University"
 XTW_taipei_technical_university_desc:0 ""
+
+XTW_martial_law:0 "Martial Law"
+XTW_martial_law_desc:0 ""
+
+XTW_form_the_military_government:0 "Form the Military Government"
+XTW_form_the_military_government_desc:0 ""
+
+XTW_the_dutch_coup:0 "The Dutch Coup"
+XTW_the_dutch_coup_desc:0 ""
+
+XTW_civilian_development:0 "Civilian Development"
+XTW_civilian_development_desc:0 ""
+
+XTW_impose_stratocratic_rule:0 "Impose Stratocratic Rule"
+XTW_impose_stratocratic_rule_desc:0 ""
+
+XTW_heavy_industrial_drive:0 "Heavy Industrial Drive"
+XTW_heavy_industrial_drive_desc:0 ""
+
+XTW_reaffirm_colonial_holdings:0 "Reaffirm Colonial Holdings"
+XTW_reaffirm_colonial_holdings_desc:0 ""
+
+XTW_labour_camps:0 "Labour Camps"
+XTW_labour_camps_desc:0 ""
+
+XTW_crush_the_ryukyuan_rebels:0 "Crush the Ryukyuan Insurrection"
+XTW_crush_the_ryukyuan_rebels_desc:0 ""
+
+XTW_demand_kyushuan_subjugation:0 "The Gate to Japanese Christianity"
+XTW_demand_kyushuan_subjugation_desc:0 ""
+
+XTW_reclaim_the_chinese_trading_posts:0 "Reclaim the Chinese Posts"
+XTW_reclaim_the_chinese_trading_posts_desc:0 ""
+
+XTW_informants_among_the_people:0 "Informants Among the People"
+XTW_informants_among_the_people_desc:0 ""
+
+XTW_settle_on_the_mountains:0 "Settle on the Mountains"
+XTW_settle_on_the_mountains_desc:0 ""
+
+XTW_the_forbidden_solution:0 "The Forbidden Meal"
+XTW_the_forbidden_solution_desc:0 ""
+
+XTW_take_back_baan_hollanda:0 "Take back Baan Hollanda"
+XTW_take_back_baan_hollanda_desc:0 ""
+
+XTW_ministry_of_public_enlightenment:0 "Ministry of Public Enlightenment"
+XTW_ministry_of_public_enlightenment_desc:0 ""
+
+XTW_the_long_sail_home:0 "The Long Sail Home"
+XTW_the_long_sail_home_desc:0 ""
+
+XTW_all_do_their_duty:0 "All Do their Duty"
+XTW_all_do_their_duty_desc:0 ""
+
+XTW_no_neglects:0 "Nothing is Neglected"
+XTW_no_neglects_desc:0 ""
+
+XTW_the_best_arrangements:0 "The Best Arrangements"
+XTW_the_best_arrangements_desc:0 ""
+
+XTW_defend_our_island_home:0 "Defend our Island Home"
+XTW_defend_our_island_home_desc:0 ""
+
+XTW_the_storm_of_war:0 "Ride out the Storm of War"
+XTW_the_storm_of_war_desc:0 ""
+
+XTW_the_menace_of_tyranny:0 "Outlive the Menace of Tyranny"
+XTW_the_menace_of_tyranny_desc:0 ""

@@ -146,5 +146,193 @@ ideas = {
 				foreign_subversive_activites = -0.25
 			}
 		}
+		XTW_rule_by_fear = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_fascism_rising
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = -0.05
+				fascism_acceptance = 25
+			}
+		}
+		XTW_churchill_doctrine = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_guided_by_britain
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+			}
+		}
+		XTW_churchill_doctrine_1a = {
+			name = XTW_churchill_doctrine
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_guided_by_britain
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				attrition = -0.08
+			}
+		}
+		XTW_churchill_doctrine_1b = {
+			name = XTW_churchill_doctrine
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_guided_by_britain
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				democratic_acceptance = 50
+				defensive_war_stability_factor = 0.25
+			}
+		}
+		XTW_churchill_doctrine_2 = {
+			name = XTW_churchill_doctrine
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_guided_by_britain
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				attrition = -0.08
+				democratic_acceptance = 50
+				defensive_war_stability_factor = 0.25
+			}
+		}
+		XTW_churchill_doctrine_3 = {
+			name = XTW_churchill_doctrine
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_guided_by_britain
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				army_core_defence_factor = 0.10
+				attrition = -0.08
+				democratic_acceptance = 50
+				defensive_war_stability_factor = 0.25
+			}
+		}
+		XTW_churchill_doctrine_4a = {
+			name = XTW_churchill_doctrine
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_guided_by_britain
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				army_core_defence_factor = 0.10
+				army_speed_factor = 0.1
+				attrition = -0.08
+				democratic_acceptance = 50
+				defensive_war_stability_factor = 0.25
+			}
+		}
+		XTW_churchill_doctrine_4b = {
+			name = XTW_churchill_doctrine
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_guided_by_britain
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				army_core_defence_factor = 0.10
+				surrender_limit = 0.5
+				attrition = -0.08
+				democratic_acceptance = 50
+				defensive_war_stability_factor = 0.25
+			}
+		}
+		XTW_churchill_doctrine_5 = {
+			name = XTW_churchill_doctrine
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_guided_by_britain
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				army_core_defence_factor = 0.10
+				army_speed_factor = 0.1
+				surrender_limit = 0.5
+				attrition = -0.08
+				democratic_acceptance = 50
+				defensive_war_stability_factor = 0.25
+			}
+		}
 	}
 }

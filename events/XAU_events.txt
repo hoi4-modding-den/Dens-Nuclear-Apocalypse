@@ -1,0 +1,347 @@
+add_namespace = XAU
+add_namespace = XAU_border_conflict
+
+country_event = { # Rogue is disabled
+    id = XAU.1
+    title = XAU.1.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.1.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.1.a
+        custom_effect_tooltip = XAU_unlock_focus_tree_tooltip
+        add_stability = -0.1
+        add_ideas = {
+            XAU_the_great_crisis
+        }
+        XAU_Rogue_Intelligence = {
+            set_portraits = {
+                civilian = { large = "GFX_Leader_Rogue_Disabled_Animated" }
+            }
+            add_trait = {
+                ideology = XAU_synthetic_absolution
+                trait = XAU_corrupted_databanks
+            }
+            remove_trait = {
+                ideology = XAU_synthetic_absolution
+                trait = XAU_wary_of_humans
+            }
+            remove_trait = {
+                ideology = XAU_synthetic_absolution
+                trait = XAU_prewar_knowledge
+            }
+        }
+
+        set_country_flag = XAU_rogue_disabled
+    }
+}
+
+country_event = { # Rogue is disabled
+    id = XAU.2
+    title = XAU.2.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.2.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.2.a
+        ai_chance = {
+            base = 10
+        }
+        add_stability = 0.05
+        add_political_power = 15
+        custom_effect_tooltip = XAU_staying_the_course_tooltip
+        set_country_flag = XAU_stay_with_rogue
+    }
+    option = {
+        name = XAU.2.b
+        ai_chance = {
+            base = 0
+        }
+        custom_effect_tooltip = XAU_adapt_or_die_tooltip
+        set_country_flag = XAU_abandoned_rogue
+    }
+}
+
+country_event = { # Citizens show their empathy
+    id = XAU.3
+    title = XAU.3.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.3.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.3.a
+        add_stability = 0.01
+        add_popularity = {
+            ideology = communism
+            popularity = 0.03
+        }
+    }
+}
+
+country_event = { # Deactivating delinquent
+    id = XAU.4
+    title = XAU.4.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.4.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.4.a
+        add_political_power = -50
+    }
+}
+
+country_event = { # I'm doing my part
+    id = XAU.5
+    title = XAU.5.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.5.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.5.a
+        ai_chance = {
+            base = 5
+        }
+        custom_effect_tooltip = XAU_unlock_ace_tooltip
+        set_country_flag = XAU_Ace_unlocked
+    }
+
+    option = {
+        name = XAU.5.b
+        ai_chance = {
+            base = 5
+        }
+        add_manpower = 25000
+    }
+}
+
+country_event = { # Activating Wuhan sleeper cells
+    id = XAU.6
+    title = XAU.6.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.6.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.6.a
+        ai_chance = {
+            base = 5
+        }
+        XWH = {
+            country_event = XAU.7
+            country_event = XAU.8
+        }
+    }
+}
+
+country_event = { # Raiding Changde
+    id = XAU.7
+    title = XAU.7.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.7.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.7.a
+        start_border_war = {
+            change_state_after_war = no
+            attacker = {
+                state = 748
+                num_provinces = 2
+                on_win = XAU_border_conflict.1
+                on_lose = XAU_border_conflict.2
+                on_cancel = XAU_border_conflict.2
+                modifier = 0.25
+                dig_in_factor = 0
+                terrain_factor = 0
+            }	
+            defender = {
+                state = 750
+                num_provinces = 2
+                on_win = XAU_border_conflict.3
+                on_lose = XAU_border_conflict.4
+                on_cancel = XAU_border_conflict.3
+            }
+        }
+    }
+}
+
+country_event = { # Raiding Xian
+    id = XAU.8
+    title = XAU.8.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU.8.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU.8.a
+        start_border_war = {
+            change_state_after_war = no
+            attacker = {
+                state = 605
+                num_provinces = 3
+                on_win = XAU_border_conflict.5
+                on_lose = XAU_border_conflict.6
+                on_cancel = XAU_border_conflict.6
+                modifier = 0.25
+                dig_in_factor = 0
+                terrain_factor = 0
+            }	
+            defender = {
+                state = 744
+                num_provinces = 3
+                on_win = XAU_border_conflict.7
+                on_lose = XAU_border_conflict.8
+                on_cancel = XAU_border_conflict.7
+            }
+        }
+    }
+}
+
+country_event = { # Win the Changde border war
+    id = XAU_border_conflict.1
+    title = XAU_border_conflict.1.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU_border_conflict.1.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_border_conflict.1.a
+        add_political_power = 50
+        add_war_support = 0.05
+        transfer_state = 750
+    }
+}
+
+country_event = { # Lose the Changde border war
+    id = XAU_border_conflict.2
+    title = XAU_border_conflict.2.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU_border_conflict.2.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_border_conflict.2.a
+        add_political_power = -50
+        add_war_support = -0.05
+    }
+}
+
+country_event = { # For XWH if they win
+    id = XAU_border_conflict.3
+    title = XAU_border_conflict.3.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU_border_conflict.3.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_border_conflict.3.a
+        add_political_power = 50
+        add_war_support = 0.1
+    }
+}
+
+country_event = { # For XWH if they lose
+    id = XAU_border_conflict.4
+    title = XAU_border_conflict.4.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU_border_conflict.4.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_border_conflict.4.a
+        add_stability = -0.05
+    }
+}
+
+country_event = { # Win the Changde border war
+    id = XAU_border_conflict.5
+    title = XAU_border_conflict.5.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU_border_conflict.5.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_border_conflict.5.a
+        add_political_power = 25
+        add_war_support = 0.03
+        transfer_state = 744
+    }
+}
+
+country_event = { # Lose the Changde border war
+    id = XAU_border_conflict.6
+    title = XAU_border_conflict.6.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU_border_conflict.6.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_border_conflict.6.a
+        add_political_power = -25
+        add_war_support = -0.03
+    }
+}
+
+country_event = { # For XWH if they win
+    id = XAU_border_conflict.7
+    title = XAU_border_conflict.7.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU_border_conflict.7.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_border_conflict.7.a
+        add_political_power = 25
+        add_war_support = 0.05
+    }
+}
+
+country_event = { # For XWH if they lose
+    id = XAU_border_conflict.8
+    title = XAU_border_conflict.8.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XAU_border_conflict.8.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_border_conflict.8.a
+        add_stability = -0.02
+    }
+}

@@ -1,5 +1,7 @@
 ﻿l_english:
 
+
+
   ### Country Names
 XKY_democratic:0 "New Kyushuan Parliament"
 XKY_democratic_DEF:0 "the New Kyushuan Parliament"
@@ -7,13 +9,16 @@ XKY_democratic_ADJ:0 "Kyushu"
 XKY_fascism:0 "The Second Rightous Army"
 XKY_fascism_DEF:0 "the second rightous army"
 XKY_fascism_ADJ:0 "Fascist"
+XKY_Kyushu_fascism:0 "The New Japanese Empire"
+XKY_Kyushu_fascism_DEF:0 "The New Japanese Empire"
+XKY_Kyushu_fascism_ADJ:0 "Imperial"
 XKY_communism:0 "Japanese Red Army Faction"
 XKY_communism_DEF:0 "the Japanese Red Army Faction"
 XKY_communism_ADJ:0 "Red Army"
 XKY_neutrality:0 "Kyushu Government"
 XKY_neutrality_DEF:0 "the Kyushu Government"
 XKY_neutrality_ADJ:0 "Kyushu"
-
+XKY_Kyushu_fascism:0 ""
   ### Party Names
 
 XKY_democratic_party:0 "Kyushuan Parliament"
@@ -22,7 +27,8 @@ XKY_fascism_party:0 "Kōdōha"
 XKY_fascism_party_long:0 "2nd Righteous Army"
 XKY_communism_party:0 "JRA"
 XKY_communism_party_long:0 "Japanese Red Army"
-
+XKY_taisei_yokusankai:0 "Taisei Yokusankai"
+XKY_taisei_yokusankai_long:0 "Imperial Rule Assistance Association"
   ### Ideas
 XKY_Nippon_Kaigun:0 "Nippon Kaigun"
 XKY_Nippon_Kaigun_desc:0 "The Japanese Navy, once one of the strongest in the world before the war, left us with invaluable lessons that we have not forgotten. Although our technology may now be outdated, those lessons remain as relevant as ever."
@@ -33,269 +39,349 @@ XKY_Inefficient_Farming_desc:0 "The war did not just impact our military technol
 XKY_Sasebo_Naval_Remnants:0 "Sasebo Naval Remnants"
 XKY_Sasebo_Naval_Remnants_desc:0 "Since the formation of our modern nation, the Sasebo Naval Arsenal has been our great southern port. Its strategic location near Nagasaki, surrounded by hills, made it ideal for port and manufacturing activities.\n \n§YMany of its facilities were damaged during the war, but exploring and repairing these ruins will give us a decisive edge in projecting naval power in this new world.§!"
 
-  ### Focuses
+XKY_jewel_of_the_south_1:0 "The Jewel of the South"
+XKY_jewel_of_the_south_1_desc:0 "Kyushu, often referred to as the Jewel of the South, is a symbol of resilience and strength in this fractured world. As the first region to rebuild after the war, it stands at the forefront of our recovery.\n \n§YAlthough our industries are still adapting to the new challenges of this age, Kyushu's strategic location and rich resources will be key in shaping the future of our nation.§!"
+
+XKY_jewel_of_the_south_2:0 "The Jewel Shines Brighter"
+XKY_jewel_of_the_south_2_desc:0 "Kyushu's recovery continues at a rapid pace, with its industries and agricultural sectors flourishing despite the harsh post-war conditions. The region's unique position allows us to access vital trade routes and strengthen our foothold in both domestic and international affairs.\n \n§YFurther investment in Kyushu will cement its status as the economic and cultural heart of our nation.§!"
+
+XKY_jewel_of_the_south_3:0 "The Crown of the South"
+XKY_jewel_of_the_south_3_desc:0 "Kyushu is now a fully revitalized bastion of prosperity. Its factories are humming, its ports are bustling, and its people are thriving. As the crown jewel of the south, Kyushu stands as a beacon of hope and progress, leading our nation toward a brighter future.\n \n§YWith its resurgence, we can confidently project our influence far beyond our borders.§!"
+
+XKY_Inefficient_Farming_1:0 "Inefficient Farming Practices"
+XKY_Inefficient_Farming_1_desc:0 "Our rural lands, though spared from some of the worst effects of the war, still suffer from inefficient farming techniques. The fields are vast, but the yields are far from what they could be, leaving many of our people struggling to meet their basic needs.\n \n§YAddressing these inefficiencies will be crucial to ensuring our nation's survival in the long term.§!"
+
+XKY_Inefficient_Farming_2:0 "Reforming Agricultural Practices"
+XKY_Inefficient_Farming_2_desc:0 "Efforts to reform our farming techniques are finally beginning to bear fruit. By introducing modern tools and methods, we can improve productivity and begin to meet the growing demand for food across the country.\n \n§YWith continued focus, our agricultural sector will once again be able to feed not just Kyushu, but the entire nation.§!"
+
+XKY_Inefficient_Farming_3:0 "A New Agricultural Era"
+XKY_Inefficient_Farming_3_desc:0 "The agricultural reforms have succeeded beyond our expectations. Fields that once lay fallow are now bursting with crops, and food shortages are becoming a thing of the past. Our farmers, once constrained by outdated methods, now lead the charge in building a self-sufficient and prosperous future for our people.\n \n§YThis new era of agricultural productivity will provide the foundation for sustained growth and stability.§!"
+
+XKY_rebuilding_kyushu_university_1:0 "Rebuilding Kyushu University"
+XKY_rebuilding_kyushu_university_1_desc:0 "Kyushu University was once a symbol of academic excellence in the southern regions, but the war left many of its buildings in ruins. Rebuilding this prestigious institution will not only restore its legacy but also create new opportunities for learning and innovation in this new era.\n\n§YInvesting in education will lay the foundation for our future leaders and thinkers to emerge from the ashes of the past.§!"
+
+XKY_rebuilding_kyushu_university_2:0 "A Campus Reborn"
+XKY_rebuilding_kyushu_university_2_desc:0 "The reconstruction efforts have breathed new life into Kyushu University. The campus, once scarred by war, is now bustling with students eager to learn and shape the future. Its libraries, labs, and lecture halls are filled with the bright minds of tomorrow.\n\n§YWith further investments, Kyushu University can become a global hub for research and development, driving innovation for decades to come.§!"
+
+XKY_rebuilding_kyushu_university_3:0 "The Pinnacle of Learning"
+XKY_rebuilding_kyushu_university_3_desc:0 "Kyushu University has fully returned to its former glory, standing as a beacon of knowledge and progress. Its graduates are at the forefront of industry, science, and governance, helping to guide our nation through these tumultuous times.\n\n§YThe university's contributions to our society will secure Kyushu's place as a center of intellect and power in the new world.§!"
+
+XKY_Faculty_of_Economics:0 "Rebuilding the Faculty of Economics"
+XKY_Faculty_of_Economics_desc:0 "The Faculty of Economics at Kyushu University was a cornerstone of our nation's intellectual strength. Restoring this department will allow us to train the next generation of economic leaders who will steer our country towards prosperity and stability in this unpredictable age.\n\n§YA revitalized economics faculty will be essential to guiding our financial policies and maintaining our economic dominance.§!"
+
+XKY_Faculty_of_Agriculture:0 "Rebuilding the Faculty of Agriculture"
+XKY_Faculty_of_Agriculture_desc:0 "The Faculty of Agriculture at Kyushu University holds the key to solving our post-war food crises. By restoring its facilities, we can lead the way in developing new agricultural techniques that will ensure food security for our people.\n\n§YOur investment in agricultural education will pave the way for innovation in farming practices, ensuring we never face famine again.§!"
+
+XKY_Inefficient_Farming_4:0 "Cultivating Excellence"
+XKY_Inefficient_Farming_4_desc:0 "With ongoing investments in education and training, our farmers are embracing innovative practices and sustainable methods. The crops are flourishing, and the once-struggling fields are now the pride of Kyushu.\n\n§YAs we continue to cultivate excellence, our agricultural landscape transforms, ensuring our people's well-being and resilience.§!"
+
+XKY_Inefficient_Farming_5:0 "Harvesting Innovation"
+XKY_Inefficient_Farming_5_desc:0 "The shift toward technology-driven farming is yielding remarkable results. Advanced irrigation systems and crop rotation techniques are maximizing our harvests, ensuring food security for all.\n\n§YBy harnessing innovation, we are not just harvesting crops; we are harvesting hope and stability for our future.§!"
+
+XKY_Inefficient_Farming_6:0 "Sowing the Seeds of Prosperity"
+XKY_Inefficient_Farming_6_desc:0 "Our commitment to sustainable farming practices has led to a bountiful season. The integration of organic fertilizers and pest management strategies has revitalized our soil and our spirits.\n\n§YAs we sow the seeds of prosperity, we cultivate a thriving community united in our agricultural triumphs.§!"
+
+XKY_Inefficient_Farming_7:0 "Fields of Abundance"
+XKY_Inefficient_Farming_7_desc:0 "The once-inefficient farms of Kyushu are now transformed into fields of abundance. Our farmers have adopted cooperative models, sharing resources and knowledge to maximize their yields and uplift their neighbors.\n\n§YTogether, we are nurturing not just crops, but a strong and interconnected community.§!"
+
+XKY_Inefficient_Farming_8:0 "A Flourishing Future"
+XKY_Inefficient_Farming_8_desc:0 "As we embrace climate-resilient crops and regenerative farming techniques, the future of agriculture in Kyushu looks bright. Our fields are flourishing, and the agricultural sector is poised for continued success.\n\n§YWith our eyes on the horizon, we are sowing the path toward a flourishing future for all.§!"
+
+
+### Focuses
 
 XKY_A_Nation_Once_Again:0 "A Nation Once Again"
-XKY_A_Nation_Once_Again_desc:0 ""
-XKY_The_first_kyushuan_parliament:0 "The first kyushuan parliament"
-XKY_The_first_kyushuan_parliament_desc:0 ""
+XKY_A_Nation_Once_Again_desc:0 "After centuries of chaos, Kyushu rises once more to reclaim its rightful place in history. A nation of resilience, rooted in tradition yet forging a new path forward."
 
-XKY_Rose_tinted_glasses:0 "Rose tinted glasses"
-XKY_Rose_tinted_glasses_desc:0 ""
+XKY_The_first_kyushuan_parliament:0 "The First Kyushuan Parliament"
+XKY_The_first_kyushuan_parliament_desc:0 "The seat of government has been reestablished. But as Kyushu convenes its first parliament, it faces a fractured political landscape where unity may be its greatest challenge."
 
-XKY_The_2nd_Rightous_Army:0 "The 2nd Rightous Army"
-XKY_The_2nd_Rightous_Army_desc:0 ""
+XKY_Rose_tinted_glasses:0 "Rose-Tinted Glasses"
+XKY_Rose_tinted_glasses_desc:0 "As nostalgia for the old days grows, some seek to return to the glory of a past that may never have been. Romanticizing history could blind us to the realities of today."
+
+XKY_The_2nd_Rightous_Army:0 "The 2nd Righteous Army"
+XKY_The_2nd_Rightous_Army_desc:0 "Rallying under the banner of justice, a new army emerges to defend the values of Kyushu. This 'Righteous Army' fights for the future, but can its ideals withstand the trials ahead?"
 
 XKY_A_Rising_Red_Sun:0 "A Rising Red Sun"
-XKY_A_Rising_Red_Sun_desc:0 ""
+XKY_A_Rising_Red_Sun_desc:0 "The Red Sun rises once more over Japan, but this time with a revolutionary zeal. The power of the people is awakening—ready to reshape the nation."
 
 XKY_The_Jewel_of_the_South:0 "The Jewel of the South"
-XKY_The_Jewel_of_the_South_desc:0 ""
+XKY_The_Jewel_of_the_South_desc:0 "Kyushu has always been a shining jewel of Japan. Now, it must polish its brilliance to become the center of power and culture in a post-war world."
 
-XKY_A_strong_enough_foundation:0 "A strong enough foundation"
-XKY_A_strong_enough_foundation_desc:0 ""
+XKY_A_strong_enough_foundation:0 "A Strong Enough Foundation"
+XKY_A_strong_enough_foundation_desc:0 "Kyushu must be built upon foundations strong enough to withstand the trials ahead. Only a carefully balanced political and economic framework will ensure survival."
 
 XKY_Democracy_Forever:0 "Democracy Forever!"
-XKY_Democracy_Forever_desc:0 ""
+XKY_Democracy_Forever_desc:0 "Kyushu stands as a beacon of democracy in a world shrouded in chaos. But freedom must be defended, and the will of the people honored—forever."
 
-XKY_Laissez_Faire_Economics:0 "Laissez Faire Economics"
-XKY_Laissez_Faire_Economics_desc:0 ""
+XKY_Laissez_Faire_Economics:0 "Laissez-Faire Economics"
+XKY_Laissez_Faire_Economics_desc:0 "A free market economy can bring prosperity, if left to its own devices. Trusting in the invisible hand might bring untold riches—or unbearable inequality."
 
 XKY_A_Dynamic_Market:0 "A Dynamic Market"
-XKY_A_Dynamic_Market_desc:0 ""
+XKY_A_Dynamic_Market_desc:0 "As Kyushu's economy grows, dynamism and adaptability become key. A thriving, competitive market will be the engine that drives the new era."
 
 XKY_Sony_Rifles:0 "Sony Rifles"
-XKY_Sony_Rifles_desc:0 ""
+XKY_Sony_Rifles_desc:0 "Innovation knows no bounds, and neither does necessity. With Sony stepping into the arms market, a new wave of technological advancements arms our forces with precision weaponry."
 
 XKY_Reviving_Nissan_Plants:0 "Reviving Nissan Plants"
-XKY_Reviving_Nissan_Plants_desc:0 ""
+XKY_Reviving_Nissan_Plants_desc:0 "Nissan's old factories, once silent, now roar back to life. The machines hum once more as Kyushu’s industrial backbone is restored."
 
 XKY_The_Business_Proposal:0 "The Business Proposal"
-XKY_The_Business_Proposal_desc:0 ""
+XKY_The_Business_Proposal_desc:0 "Strategic alliances and shrewd business deals could secure Kyushu's place in the new world order. A single proposal could make—or break—us."
 
 XKY_Democracy_Triumphs:0 "Democracy Triumphs!"
-XKY_Democracy_Triumphs_desc:0 ""
+XKY_Democracy_Triumphs_desc:0 "Against all odds, the ideals of democracy have won the day. Kyushu’s people have spoken, and their will cannot be denied."
 
-XKY_Markets_Not_Nations:0 "Markets; Not Nations"
-XKY_Markets_Not_Nations_desc:0 ""
+XKY_Markets_Not_Nations:0 "Markets, Not Nations"
+XKY_Markets_Not_Nations_desc:0 "Trade knows no borders. The future belongs to those who value commerce and cooperation over nationalism and division."
 
-XKY_The_Nagasaki_thinktank:0 "The Nagasaki thinktank"
-XKY_The_Nagasaki_thinktank_desc:0 ""
+XKY_The_Nagasaki_thinktank:0 "The Nagasaki Think Tank"
+XKY_The_Nagasaki_thinktank_desc:0 "Nagasaki has always been a center for innovation. Now, the brightest minds converge to chart Kyushu’s course forward, solving today’s problems with tomorrow’s solutions."
 
 XKY_Honda_Planes:0 "Honda Planes..?"
-XKY_Honda_Planes_desc:0 ""
+XKY_Honda_Planes_desc:0 "It may seem strange, but Honda’s engineering prowess is no longer confined to the ground. From motorcycles to fighter jets, Honda leads the charge into the skies."
 
 XKY_Nissan_Tanks:0 "Nissan Tanks..?"
-XKY_Nissan_Tanks_desc:0 ""
+XKY_Nissan_Tanks_desc:0 "Nissan's tanks roll off the production line, embodying the company’s adaptability. What was once a car manufacturer now stands at the forefront of armored warfare."
 
-XKY_Return_of_the_Zaibatsus:0 "Return of the Zaibatsu's!"
-XKY_Return_of_the_Zaibatsus_desc:0 ""
+XKY_Return_of_the_Zaibatsus:0 "Return of the Zaibatsu!"
+XKY_Return_of_the_Zaibatsus_desc:0 "The old economic powerhouses are back, and they’re ready to reshape Kyushu’s economy. These industrial giants once dominated Japan, and their influence returns."
 
 XKY_Expanding_to_the_Taiwan_Market:0 "Expanding to the Taiwan Market"
-XKY_Expanding_to_the_Taiwan_Market_desc:0 ""
+XKY_Expanding_to_the_Taiwan_Market_desc:0 "The markets of Taiwan present new opportunities. Kyushu must seize this moment to expand its influence and secure valuable trade routes."
 
 XKY_Korean_Labor:0 "Korean Labor"
-XKY_Korean_Labor_desc:0 ""
+XKY_Korean_Labor_desc:0 "With Korea in disarray, an influx of labor flows into Kyushu. These workers will become the cornerstone of our new industries, but at what social cost?"
 
 XKY_Silicon_Dreams:0 "Silicon Dreams"
-XKY_Silicon_Dreams_desc:0 ""
+XKY_Silicon_Dreams_desc:0 "The future lies in technology. As Kyushu looks to the horizon, it dreams of becoming the silicon hub of Asia, rivaling even the tech giants of old."
 
 XKY_Pacific_Guardian:0 "Pacific Guardian"
-XKY_Pacific_Guardian_desc:0 ""
+XKY_Pacific_Guardian_desc:0 "Kyushu’s strategic location places it at the forefront of Pacific defense. As guardian of these waters, it will ensure peace—or enforce its will."
 
 XKY_The_Smartest_Minds_in_Asia:0 "The Smartest Minds in Asia!"
-XKY_The_Smartest_Minds_in_Asia_desc:0 ""
+XKY_The_Smartest_Minds_in_Asia_desc:0 "Kyushu must draw upon the brightest talents across the continent. The future belongs to those who are not only strong but smart."
 
 XKY_Reforming_Labour_Laws:0 "Reforming Labour Laws"
-XKY_Reforming_Labour_Laws_desc:0 ""
+XKY_Reforming_Labour_Laws_desc:0 "With a growing economy, labor reform is essential. New protections and standards will ensure a fair and prosperous future for all workers in Kyushu."
 
-XKY_Nationalizing_the_southern_farms:0 "Nationalizing the southern farms"
-XKY_Nationalizing_the_southern_farms_desc:0 ""
+XKY_Nationalizing_the_southern_farms:0 "Nationalizing the Southern Farms"
+XKY_Nationalizing_the_southern_farms_desc:0 "Control of the agricultural sector is crucial. By nationalizing the southern farms, Kyushu ensures a stable food supply and strengthens its rural economy."
 
 XKY_Industrial_Collectivization:0 "Industrial Collectivization"
-XKY_Industrial_Collectivization_desc:0 ""
+XKY_Industrial_Collectivization_desc:0 "The factories must belong to the people. Industrial collectivization will transfer power from private hands to the workers, creating a new socialist economy."
 
 XKY_The_Arsenal_of_Revolution:0 "The Arsenal of Revolution"
-XKY_The_Arsenal_of_Revolution_desc:0 ""
+XKY_The_Arsenal_of_Revolution_desc:0 "In the heart of Kyushu, an arsenal of revolutionary ideas and weapons is forming. It will arm the people in their fight for a just and equal society."
 
 XKY_Socialism_with_Japanese_Characteristics:0 "Socialism with Japanese Characteristics"
-XKY_Socialism_with_Japanese_Characteristics_desc:0 ""
+XKY_Socialism_with_Japanese_Characteristics_desc:0 "Adapted to our unique culture and history, socialism in Kyushu embraces both modern ideas and Japanese traditions. A new system is born."
 
 XKY_Land_Redistribution:0 "Land Redistribution"
-XKY_Land_Redistribution_desc:0 ""
+XKY_Land_Redistribution_desc:0 "To right the wrongs of the past, the vast estates of the few must be broken up. Land redistribution will give every farmer a fair share of Kyushu’s fertile soil."
 
 XKY_Revenge_for_36:0 "Revenge for '36"
-XKY_Revenge_for_36_desc:0 ""
+XKY_Revenge_for_36_desc:0 "The scars of the great collapse in 1936 still linger. Now is the time for revenge, to reclaim what was lost and punish those responsible for our suffering."
 
 XKY_Reeducation_Campaign:0 "Reeducation Campaign"
-XKY_Reeducation_Campaign_desc:0 ""
+XKY_Reeducation_Campaign_desc:0 "A campaign to reshape the minds of the population. The people must be educated in the new revolutionary ideals, purging old thoughts for a brighter future."
 
 XKY_Faculty_of_Revolutionary_Thought:0 "Faculty of Revolutionary Thought"
-XKY_Faculty_of_Revolutionary_Thought_desc:0 ""
+XKY_Faculty_of_Revolutionary_Thought_desc:0 "A new academic institution emerges, dedicated to training the next generation of revolutionary leaders. Here, students learn the theory and practice of social change."
 
 XKY_Purging_the_Kodoha:0 "Purging the Kodoha"
-XKY_Purging_the_Kodoha_desc:0 ""
+XKY_Purging_the_Kodoha_desc:0 "The remnants of the Kodoha faction, with its dangerous militaristic ideals, must be purged. Only through their removal can Kyushu build a peaceful future."
 
-XKY_Fed_on_Kyushuan_Grain:0 "Fed on Kyushuan Grain.."
-XKY_Fed_on_Kyushuan_Grain_desc:0 ""
+XKY_Fed_on_Kyushuan_Grain:0 "Fed on Kyushuan Grain"
+XKY_Fed_on_Kyushuan_Grain_desc:0 "The strength of Kyushu lies in its agriculture. Our soldiers and people are fed on the finest grain, giving them the energy and vitality to build a new world."
 
-XKY_Shooting_Kyushuan_Bullets:0 "..Shooting Kyushuan Bullets"
-XKY_Shooting_Kyushuan_Bullets_desc:0 ""
+XKY_Shooting_Kyushuan_Bullets:0 "Shooting Kyushuan Bullets"
+XKY_Shooting_Kyushuan_Bullets_desc:0 "Kyushu’s factories now churn out bullets, arming its soldiers with the tools they need to defend the nation and carry out its revolutionary mission."
 
 XKY_Bringing_the_Revolution_to_Ryukyu:0 "Bringing the Revolution to Ryukyu"
-XKY_Bringing_the_Revolution_to_Ryukyu_desc:0 ""
+XKY_Bringing_the_Revolution_to_Ryukyu_desc:0 "The Ryukyu Islands have long been under external control. Now, Kyushu leads a revolution to free them and unite the archipelago under one banner."
 
 XKY_Freeing_the_Taiwanese_Students:0 "Freeing the Taiwanese Students"
-XKY_Freeing_the_Taiwanese_Students_desc:0 ""
+XKY_Freeing_the_Taiwanese_Students_desc:0 "Revolutionary ideals have spread to Taiwan, where students lead the charge for freedom. Kyushu will stand with them, offering support to topple oppressive regimes."
 
-XKY_A_Japanese_Union:0 "A Japanese Union!"
-XKY_A_Japanese_Union_desc:0 ""
+XKY_A_Japanese_Union:0 "A Japanese Union"
+XKY_A_Japanese_Union_desc:0 "The dream of a united Japan rises again. But this time, it will not be one of emperors or warlords, but of workers and people united under a new banner."
 
 XKY_The_Bunker_Rumors:0 "The Bunker Rumors"
-XKY_The_Bunker_Rumors_desc:0 ""
+XKY_The_Bunker_Rumors_desc:0 "Whispers of a hidden bunker circulate among the elite. It may contain the remnants of pre-war power or treasures of untold value. But finding it could be a dangerous endeavor."
 
-XKY_Calling_in_some_old_connections:0 "Calling in some old connections"
-XKY_Calling_in_some_old_connections_desc:0 ""
+XKY_Calling_in_some_old_connections:0 "Calling in Some Old Connections"
+XKY_Calling_in_some_old_connections_desc:0 "In times of need, old friends can prove invaluable. It's time to reach out to those who owe favors and rekindle old alliances, ensuring Kyushu’s future."
 
 XKY_Finding_the_Ancient_Maps:0 "Finding the Ancient Maps"
-XKY_Finding_the_Ancient_Maps_desc:0 ""
+XKY_Finding_the_Ancient_Maps_desc:0 "Old maps from a forgotten time may hold the key to unlocking Kyushu’s potential. These charts could reveal strategic locations and lost resources hidden beneath the land."
 
 XKY_The_Tokyo_Expedition:0 "The Tokyo Expedition"
-XKY_The_Tokyo_Expedition_desc:0 ""
+XKY_The_Tokyo_Expedition_desc:0 "Tokyo lies in ruins, but what secrets does it still hold? A daring expedition to the once-great capital may unearth knowledge and power from the ashes of the past."
 
-XKY_A_Honorable_Restoration:0 "A Honorable Restoration"
-XKY_A_Honorable_Restoration_desc:0 ""
+XKY_A_Honorable_Restoration:0 "An Honorable Restoration"
+XKY_A_Honorable_Restoration_desc:0 "The honor of Kyushu’s past must be restored. This isn’t merely about military might, but about rekindling the values of respect, loyalty, and duty that once defined the nation."
 
-XKY_The_Boys_are_Back_in_Town:0 "The Boys are Back in Town"
-XKY_The_Boys_are_Back_in_Town_desc:0 ""
+XKY_The_Boys_are_Back_in_Town:0 "The Boys Are Back in Town"
+XKY_The_Boys_are_Back_in_Town_desc:0 "After years of exile, Kyushu’s finest warriors have returned. Their training in distant lands will prove invaluable as they fight for the future of their homeland."
 
 XKY_Kokura_Arsenal:0 "Kokura Arsenal"
-XKY_Kokura_Arsenal_desc:0 ""
+XKY_Kokura_Arsenal_desc:0 "The historic Kokura Arsenal returns to operation, producing weapons for Kyushu’s military. Its expertise in armaments will be crucial in ensuring the defense of the nation."
 
-XKY_Bringing_Ryukyu_back:0 "Bringing Ryukyu back"
-XKY_Bringing_Ryukyu_back_desc:0 ""
+XKY_Bringing_Ryukyu_back:0 "Bringing Ryukyu Back"
+XKY_Bringing_Ryukyu_back_desc:0 "The Ryukyu Islands were once part of Japan, and they will be again. Kyushu leads the charge to bring the islands back under its protection, securing a united archipelago."
 
 XKY_The_Silent_Killers:0 "The Silent Killers"
-XKY_The_Silent_Killers_desc:0 ""
+XKY_The_Silent_Killers_desc:0 "Stealth and precision define Kyushu’s elite forces. These 'silent killers' operate in the shadows, carrying out missions with deadly efficiency and leaving no trace behind."
 
 XKY_Reviving_the_Sasebo_SNLF:0 "Reviving the Sasebo SNLF"
-XKY_Reviving_the_Sasebo_SNLF_desc:0 ""
+XKY_Reviving_the_Sasebo_SNLF_desc:0 "The Sasebo Special Naval Landing Forces, Japan’s elite marines, are brought back to life in Kyushu. Their history of amphibious warfare will be invaluable in the coming conflicts."
 
 XKY_Hong_Kong_Outpost:0 "Hong Kong Outpost"
-XKY_Hong_Kong_Outpost_desc:0 ""
+XKY_Hong_Kong_Outpost_desc:0 "An outpost in Hong Kong could provide Kyushu with a foothold in international waters. This strategic position would allow Kyushu to project power across Asia and secure vital trade routes."
 
 XKY_The_Japanese_Nelson:0 "The Japanese Nelson"
-XKY_The_Japanese_Nelson_desc:0 ""
+XKY_The_Japanese_Nelson_desc:0 "Modeled after the great Admiral Nelson, Kyushu’s navy takes on a new doctrine of daring and dominance at sea. With these new tactics, Kyushu can rule the waves."
 
-XKY_For_Two_Thousand_More_Years:0 "For Two Thousand More Years!"
-XKY_For_Two_Thousand_More_Years_desc:0 ""
+XKY_For_Two_Thousand_More_Years:0 "For Two Thousand More Years"
+XKY_For_Two_Thousand_More_Years_desc:0 "Kyushu must ensure that Japan’s legacy endures for millennia to come. This isn’t just about survival—it's about building a nation that will stand the test of time."
 
 XKY_Nihon_Kaigun_Yoeinni:0 "Nihon Kaigun Yoeinni"
-XKY_Nihon_Kaigun_Yoeinni_desc:0 ""
+XKY_Nihon_Kaigun_Yoeinni_desc:0 "The Imperial Japanese Navy may be gone, but its spirit lives on. Kyushu’s navy, inspired by its legacy, seeks to dominate the seas once more, rebuilding a fleet to rival all others."
 
-XKY_Shattering_the_dagger:0 "Shattering the dagger"
-XKY_Shattering_the_dagger_desc:0 ""
+XKY_Shattering_the_dagger:0 "Shattering the Dagger"
+XKY_Shattering_the_dagger_desc:0 "An old enemy has long held a dagger to Kyushu’s throat. Now, it’s time to shatter that blade and end the threat once and for all, reclaiming Kyushu’s rightful place in the world."
 
 XKY_A_2nd_Industrial_Revolution:0 "A 2nd Industrial Revolution"
-XKY_A_2nd_Industrial_Revolution_desc:0 ""
+XKY_A_2nd_Industrial_Revolution_desc:0 "The fires of industry roar back to life. Kyushu leads the world into a second industrial revolution, harnessing both the old and new to rebuild a thriving economy."
 
-XKY_The_fourth_imperial_university:0 "The fourth imperial university"
-XKY_The_fourth_imperial_university_desc:0 ""
+XKY_The_fourth_imperial_university:0 "The Fourth Imperial University"
+XKY_The_fourth_imperial_university_desc:0 "Kyushu’s newest university stands as a beacon of learning, research, and development. As the fourth Imperial University, it continues Japan’s tradition of academic excellence."
 
 XKY_The_Sasebo_Naval_Arsenal:0 "The Sasebo Naval Arsenal"
-XKY_The_Sasebo_Naval_Arsenal_desc:0 ""
+XKY_The_Sasebo_Naval_Arsenal_desc:0 "The Sasebo Naval Arsenal, once a cornerstone of Japan’s naval power, returns to its former glory. Its shipyards and factories will rebuild Kyushu’s fleet, ensuring dominance at sea."
 
-XKY_Expedition_to_the_old_marine_barracks:0 "Expedition to the old marine barracks"
-XKY_Expedition_to_the_old_marine_barracks_desc:0 ""
+XKY_Expedition_to_the_old_marine_barracks:0 "Expedition to the Old Marine Barracks"
+XKY_Expedition_to_the_old_marine_barracks_desc:0 "A daring expedition to the abandoned marine barracks could reveal hidden caches of equipment and supplies, critical for rebuilding Kyushu’s naval and marine forces."
 
-XKY_Repairing_Drydock_No4:0 "Repairing Drydock No.4"
-XKY_Repairing_Drydock_No4_desc:0 ""
+XKY_Repairing_Drydock_No4:0 "Repairing Drydock No. 4"
+XKY_Repairing_Drydock_No4_desc:0 "The old drydocks of Sasebo, once vital to Japan’s navy, lie in ruins. Repairing Drydock No. 4 is the first step in restoring Kyushu’s naval capabilities and launching new vessels."
 
-XKY_Expedition_to_the_tunnels:0 "Expedition to the tunnels"
-XKY_Expedition_to_the_tunnels_desc:0 ""
+XKY_Expedition_to_the_tunnels:0 "Expedition to the Tunnels"
+XKY_Expedition_to_the_tunnels_desc:0 "Beneath Kyushu lies a network of tunnels from the old war. An expedition to these forgotten passageways could uncover vital intelligence and long-lost technology."
 
 XKY_Rebuilding_the_Faculty_of_Agriculture:0 "Rebuilding the Faculty of Agriculture"
-XKY_Rebuilding_the_Faculty_of_Agriculture_desc:0 ""
+XKY_Rebuilding_the_Faculty_of_Agriculture_desc:0 "Agriculture is the lifeblood of Kyushu. Rebuilding the Faculty of Agriculture ensures that the next generation of farmers and scientists will lead Kyushu into a new era of food production."
 
 XKY_Rebuilding_the_Faculty_of_Engineering:0 "Rebuilding the Faculty of Engineering"
-XKY_Rebuilding_the_Faculty_of_Engineering_desc:0 ""
+XKY_Rebuilding_the_Faculty_of_Engineering_desc:0 "Kyushu’s future depends on its engineers. The Faculty of Engineering will be rebuilt, training a new wave of minds to tackle the challenges of modern industry and infrastructure."
 
 XKY_Rebuilding_the_Faculty_of_Economics:0 "Rebuilding the Faculty of Economics"
-XKY_Rebuilding_the_Faculty_of_Economics_desc:0 ""
+XKY_Rebuilding_the_Faculty_of_Economics_desc:0 "Economic policy is key to Kyushu’s survival. By rebuilding the Faculty of Economics, Kyushu will train experts who can guide the nation’s financial future and ensure prosperity for all."
 
 XKY_A_Grand_Reopening:0 "A Grand Reopening"
-XKY_A_Grand_Reopening_desc:0 ""
+XKY_A_Grand_Reopening_desc:0 "The time has come to reopen Kyushu’s most important institutions. From factories to universities, this grand reopening symbolizes Kyushu’s return to prominence."
 
 XKY_The_Miyazaki_Rice_Basket:0 "The Miyazaki Rice Basket"
-XKY_The_Miyazaki_Rice_Basket_desc:0 ""
+XKY_The_Miyazaki_Rice_Basket_desc:0 "The fertile lands of Miyazaki are Kyushu’s rice basket, feeding the nation and ensuring a stable food supply. Expanding these farms will be critical to Kyushu’s future."
 
 XKY_The_Yahata_Furnaces:0 "The Yahata Furnaces"
-XKY_The_Yahata_Furnaces_desc:0 ""
+XKY_The_Yahata_Furnaces_desc:0 "Once the heart of Japan’s steel industry, the Yahata Furnaces are roaring back to life. Their output will fuel Kyushu’s industrial growth, providing the materials needed to rebuild."
 
 XKY_Kyushu_Export_Hub:0 "Kyushu Export Hub"
-XKY_Kyushu_Export_Hub_desc:0 ""
+XKY_Kyushu_Export_Hub_desc:0 "Kyushu’s position as a trade hub gives it access to global markets. By expanding exports, Kyushu can bring in wealth and resources to fuel its industrial and military ambitions."
 
-XKY_Never_another_empty_bowl:0 "Never another empty bowl"
-XKY_Never_another_empty_bowl_desc:0 ""
+XKY_Never_another_empty_bowl:0 "Never Another Empty Bowl"
+XKY_Never_another_empty_bowl_desc:0 "Kyushu must ensure food security for its people. With advancements in agriculture and food distribution, we will never again see a famine or empty rice bowls."
 
 XKY_Restoring_the_Kyushu_Terraces:0 "Restoring the Kyushu Terraces"
-XKY_Restoring_the_Kyushu_Terraces_desc:0 ""
+XKY_Restoring_the_Kyushu_Terraces_desc:0 "The ancient terraced farms of Kyushu have fallen into disrepair. By restoring these agricultural marvels, we can reclaim fertile land and increase rice production."
 
-XKY_The_worlds_most_efficient_rice_farm:0 "The world's most efficient rice farm"
-XKY_The_worlds_most_efficient_rice_farm_desc:0 ""
+XKY_The_worlds_most_efficient_rice_farm:0 "The World’s Most Efficient Rice Farm"
+XKY_The_worlds_most_efficient_rice_farm_desc:0 "Kyushu will create the world’s most efficient rice farms through modern techniques, advanced irrigation, and scientific farming methods. This will cement our place as a global leader in agriculture."
 
-XKY_Less_farmers_in_the_field:0 "Less farmers in the field"
-XKY_Less_farmers_in_the_field_desc:0 ""
+XKY_Less_farmers_in_the_field:0 "Less Farmers in the Field"
+XKY_Less_farmers_in_the_field_desc:0 "With automation and industrialization, fewer farmers are needed to work the land. By shifting to mechanized farming, we can free up labor for other sectors of the economy."
 
 XKY_The_Great_Reforestation:0 "The Great Reforestation"
-XKY_The_Great_Reforestation_desc:0 ""
+XKY_The_Great_Reforestation_desc:0 "Deforestation has taken its toll on Kyushu. A massive reforestation effort will restore the balance of nature, ensuring that future generations can thrive in harmony with the environment."
 
-XKY_Farmers_Bureau:0 "Farmers Bureau"
-XKY_Farmers_Bureau_desc:0 ""
+XKY_Farmers_Bureau:0 "Farmers' Bureau"
+XKY_Farmers_Bureau_desc:0 "To better manage the agricultural sector, Kyushu will establish a Farmers' Bureau. This organization will oversee land management, crop distribution, and food security for the region."
 
-XKY_More_workers_in_the_line:0 "More workers in the line"
-XKY_More_workers_in_the_line_desc:0 ""
+XKY_More_workers_in_the_line:0 "More Workers in the Line"
+XKY_More_workers_in_the_line_desc:0 "Industrial expansion requires more workers. By incentivizing labor in factories and infrastructure projects, we can ensure that Kyushu’s economy grows at a rapid pace."
 
-XKY_Reclaiming_the_Old_factories:0 "Reclaiming the Old factories"
-XKY_Reclaiming_the_Old_factories_desc:0 ""
+XKY_Reclaiming_the_Old_factories:0 "Reclaiming the Old Factories"
+XKY_Reclaiming_the_Old_factories_desc:0 "The factories that once powered Japan’s industrial rise have been abandoned. Kyushu will reclaim these old sites and bring them back to life, fueling our industrial rebirth."
 
-XKY_A_Bright_Green_Future:0 "A Bright Green Future..."
-XKY_A_Bright_Green_Future_desc:0 ""
+XKY_A_Bright_Green_Future:0 "A Bright Green Future"
+XKY_A_Bright_Green_Future_desc:0 "Sustainability is key to Kyushu’s long-term prosperity. By investing in green technologies and renewable energy, we will ensure a future that is both prosperous and environmentally friendly."
 
 XKY_Reopening_the_Hasino_Iron_Mines:0 "Reopening the Hasino Iron Mines"
-XKY_Reopening_the_Hasino_Iron_Mines_desc:0 ""
+XKY_Reopening_the_Hasino_Iron_Mines_desc:0 "The Hasino Iron Mines were once a major source of raw materials for Japan’s industry. Reopening these mines will provide the steel and resources necessary for Kyushu’s growing economy."
 
 XKY_Kokura_Arsenal_Expansion:0 "Kokura Arsenal Expansion"
-XKY_Kokura_Arsenal_Expansion_desc:0 ""
+XKY_Kokura_Arsenal_Expansion_desc:0 "The Kokura Arsenal has served Kyushu well, but it’s time for an upgrade. Expanding the arsenal will allow for greater production of weapons and military equipment, bolstering Kyushu’s defenses."
 
 XKY_Rebuilding_the_Miike_Coal_Mines:0 "Rebuilding the Miike Coal Mines"
-XKY_Rebuilding_the_Miike_Coal_Mines_desc:0 ""
+XKY_Rebuilding_the_Miike_Coal_Mines_desc:0 "Coal is still a vital resource for powering industry. Rebuilding the Miike Coal Mines will ensure that Kyushu has the energy needed to sustain its industrial growth."
 
 XKY_The_Battleship_Island:0 "The Battleship Island"
-XKY_The_Battleship_Island_desc:0 ""
+XKY_The_Battleship_Island_desc:0 "Hashima, also known as Battleship Island, was once a symbol of industrial might. Revitalizing the island’s coal mines and infrastructure will boost Kyushu’s industrial output and strategic position."
 
 XKY_Mitsubishi_Aircraft_Plants:0 "Mitsubishi Aircraft Plants"
-XKY_Mitsubishi_Aircraft_Plants_desc:0 ""
+XKY_Mitsubishi_Aircraft_Plants_desc:0 "The legendary Mitsubishi Aircraft Plants return to production. These facilities will play a key role in developing Kyushu’s air force, producing cutting-edge aircraft for defense and dominance in the skies."
 
 XKY_Modernizing_the_Steel_Mills:0 "Modernizing the Steel Mills"
-XKY_Modernizing_the_Steel_Mills_desc:0 ""
+XKY_Modernizing_the_Steel_Mills_desc:0 "Steel production is vital for Kyushu’s industrial base. Modernizing our steel mills will ensure that we have the materials needed for construction, military equipment, and infrastructure."
 
 XKY_Naval_Yard_Expansion:0 "Naval Yard Expansion"
-XKY_Naval_Yard_Expansion_desc:0 ""
+XKY_Naval_Yard_Expansion_desc:0 "Kyushu’s naval yards must grow to accommodate our expanding fleet. By expanding these shipyards, we will be able to produce more ships and maintain our naval superiority in the region."
 
 XKY_The_Need_for_Rubber:0 "The Need for Rubber"
-XKY_The_Need_for_Rubber_desc:0 ""
+XKY_The_Need_for_Rubber_desc:0 "Rubber is essential for manufacturing tires, machinery, and military vehicles. Securing a steady supply of rubber is a top priority for Kyushu’s industrial ambitions."
 
 XKY_Automation_Experiments:0 "Automation Experiments"
-XKY_Automation_Experiments_desc:0 ""
+XKY_Automation_Experiments_desc:0 "Kyushu will explore new frontiers in automation, using machines and robotics to enhance productivity. These experiments could revolutionize our factories and reduce the need for manual labor."
 
-XKY_More_Smog_in_the_Sky:0 "More Smog in the Sky..."
-XKY_More_Smog_in_the_Sky_desc:0 ""
+XKY_More_Smog_in_the_Sky:0 "More Smog in the Sky"
+XKY_More_Smog_in_the_Sky_desc:0 "As industry ramps up, pollution becomes inevitable. While we strive for a bright future, the immediate cost may be more smog-filled skies as Kyushu pushes its factories to full capacity."
 
-XKY_A_New_Japan:0 "A New Japan!"
-XKY_A_New_Japan_desc:0 ""
+XKY_A_New_Japan:0 "A New Japan"
+XKY_A_New_Japan_desc:0 "The time has come for Kyushu to lead the creation of a new Japan. One that is stronger, more united, and prepared to face the challenges of the future. This is not just a restoration—this is a revolution."
+
   ### EVENTS
 kyushu.1.t:0 "The Bunker Rumors"
 kyushu.1.d:0 "Before the bombs fell, there were rumors that his majesty was able to escape to the bunkers under the imperial palace in edo. however, due to how hard the city was hit by the nuclear bombs, we have been unable to outfit a proper expedition"
 kyushu.1.a:0 "Until now..."
 
+kyushu.2.t:0 "The Return of the Second Righteous Army"
+kyushu.2.d:0 "Before the fall, the Second Righteous Army—veterans of the old wars—had pledged to defend the emperor at all costs. When the bombs rained down, their fate was sealed in chaos and ash, with only whispers of their survival echoing through the land. But as the dust settled, remnants of their forces began to resurface, gathering in the shadows, awaiting the time to fulfill their ancient oath. With Japan fractured and vulnerable, the question remains \nwill they rise once more to reclaim their honor and restore the emperor’s glory?"
+kyushu.2.a:0 "Their return is inevitable..."
+
+kyushu.3.t:0 "The First Steps Toward Unity"
+kyushu.3.d:0"The great fires of the nuclear war left Japan fractured and scattered, a shell of its former self. Kyushu, the island that had once flourished with agriculture and industry, was one of the first to recover from the devastation. Rural communities bound by self-sufficiency were the foundation upon which a new order was built. Now, with the first parliament convening for the first time in centuries, a choice must be made. Should the nation embrace democracy and look toward the future, led by the New Liberal Democratic Party? Or should it restore the glory of the past, rallying behind the Japanese Red Army and the return of the Second Righteous Army, sworn to restore the emperor’s legacy?"
+kyushu.3.a:0 "March Forward with Democracy"
+kyushu.3.b:0 "Reclaim the Honor of the Old Ways"
+
+kyushu.4.t:0 "The Emperor Lives"
+kyushu.4.d:0 "Stunning news has emerged from the depths of Edo the long-lost Imperial Family has been found, hidden deep beneath the rubble of the old Imperial Palace. After two centuries of mystery and speculation, an expedition finally breached the legendary underground bunkers, sealed tight since the day the bombs fell. Within, they found an astonishing relic of Japan’s past—a fully preserved shelter, untouched by time. Among the survivors descendants of the emperor himself, protected by generations of loyal retainers. Though weakened by isolation, they bear the symbols of the Chrysanthemum Throne, marking them as the last direct link to the old order. \nThis discovery sends shockwaves across Japan, as the very existence of the Imperial Family reignites debate about the future. Is this the return of the rightful rulers, destined to reclaim their place atop the nation? Or merely a shadow of an era best left behind? Kyushu stands at a pivotal moment—will it use this revelation to restore the monarchy, or continue to forge a new, democratic path?"
+kyushu.4.a:0 "Restore the Throne"
+
+
+kyushu.5.t:0 "Arrival of the Admiral"
+kyushu.5.d:0 "The sun dipped low over Sasebo Harbor as a solitary ship approached the docks, its hull bearing the scars of long voyages through perilous waters. From the vessel emerged a man whose presence commanded the attention of every sailor on the pier. Admiral Yoshi Yoshida, a name whispered with awe throughout naval circles, had arrived. His reputation preceded him—tales of tactical genius, unmatched courage, and a mind as sharp as the katana he carried by his side. \nStepping off the gangplank with the air of a man who had seen countless battles, Yoshida surveyed the harbor, his eyes glinting with purpose. He bowed before the assembled officers of the new Japanese Empire, his voice calm but resolute. 'I have come to serve. The seas belong to Japan, and I will ensure they remain ours. \nIn that moment, it was clear to all; with Yoshida in command, the Empire's naval strength would once again rise to greatness."
+kyushu.5.a:0 "Welcome the Admiral into the Fleet"
+
+kyushu.6.t:0 "A New Empire for a New Era"
+kyushu.6.d:0 "The New Japanese Empire does not merely seek to restore the past—it aims to surpass it. Where the old empire reached for the sun, this one will grasp it, forging a future even brighter than its former glory. The lessons of history, learned through fire and ash, have tempered the steel of a nation ready to rise again. The imperial ambitions of the past will be overshadowed by a new order that combines military strength, industrial might, and a relentless drive for progress.\nThis empire will not fall to the mistakes of its predecessors. The seas, the skies, and the very stars themselves will be within reach as Japan moves boldly into this new era. No longer confined by the chains of history, the New Empire seeks to build a legacy that will last a thousand years, and beyond."
+kyushu.6.a:0 "Onward to a New Dawn"
+
+kyushu.7.t:0 "Calling in Old Favors"
+kyushu.7.d:0 "As whispers of the lost imperial bunker grew louder, the Kodoha faction knew that time was running out. Hidden in the ruins of Edo lay the greatest secret of Japan’s shattered past—the imperial refuge. But finding it would take more than brute force or blind exploration; it required those with knowledge, those who had ties to a world long forgotten. In dimly lit rooms, Kodoha agents quietly reached out to old contacts—figures from the shadows of history. Former officers, survivors of the old regime, and even black market traders, all bound by their shared loyalty to the emperor.\nOne by one, the pieces were set into motion. Maps exchanged hands, coded messages sent across the remaining factions, and quiet promises made. The Kodoha would find the bunker, of that there was no doubt. The only question was whether they would be ready for what awaited beneath the ashes of Edo."
+kyushu.7.a:0 "Trust in the Old Guard"
+
+kyushu.8.t:0 "Finding the Ancient Maps"
+kyushu.8.d:0 "After months of whispers and secret dealings, the Kodoha’s search for the imperial bunker has finally borne fruit. Hidden away in a forgotten archive, buried beneath layers of dust and time, the ancient maps of Edo have resurfaced. These hand-drawn charts, once believed lost to history, are marked with cryptic notes and routes, detailing the hidden tunnels beneath the old capital. Every line, every faded scribble holds the promise of unlocking the greatest secret in modern Japan; the location of the emperor's refuge.\nWith these maps in hand, the expedition can finally begin. Yet, as the Kodoha unfurl the fragile parchment, they know that these relics may guide them to either glory or ruin. The past is within reach, but the way forward is shrouded in uncertainty."
+kyushu.8.a:0 "Set the Course for Edo"
