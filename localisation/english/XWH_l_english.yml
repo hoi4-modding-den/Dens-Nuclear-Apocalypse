@@ -21,10 +21,21 @@
  XWH_ProgAsso_DEF:0 "Wuchang"
  XWH_ProgAsso_ADJ:0 "Wuhanese"
 
+ XWH_United:0 "United States of Wuhan"
+ XWH_United_DEF:0 "United Wuhan"
+ XWH_United_ADJ:0 "Wuhanese"
+
+ XWH_WarChang:0 "Wuchang Warrior State"
+ XWH_WarChang_DEF:0 "Wuchang Warriors"
+ XWH_WarChang_ADJ:0 "Wuhanese"
+
  XWH_PrideofWuchang:0 "Pride of Wuchang"
 
  XWH_WuchangGuides:0 "Guiders of Wuchang"
  XWH_WuchangGuides_desc:0 "The Wu family is the only family which can guide Wuchang. No others shall see the throne."
+ 
+ XWH_RecruitingIdea:0 "Wuchang Generals"
+ XWH_WuchangGuides_desc:0 "The best generals are Wuchang generals."
 
  XWH_EmpowerProgAsso:0 "Empower the Progressive Association"
  XWH_EmpowerProgAsso_desc:0 "The Progressive Association should take majority charge in the nation as it is time for change. The Wu family has the best intrest of Wuhan in mind."
@@ -43,3 +54,15 @@
 
  XWH_ProgAssoDeathofWu:0 "The Death of Sun Wu IV"
  XWH_ProgAssoDeathofWu_desc:0 "Sun Wu IV could only rule so long. His legacy will carry on and the Wuchang nation will see great success."
+
+ XWH_ProgAssoGreatConquest:0 "Wuchang Conquest"
+ XWH_ProgAssoGreatConquest_desc:0 "Wuchang must take over the weaker nations."
+
+ XWH_UnifyWuchang:0 "Wuchang United"
+ XWH_UnifyWuchang_desc:0 "Wuchang has fufiled its purpose. For now...."
+
+ XWH_FurtherExpansion:0 "Further Conquest"
+ XWH_FurtherExpansion_desc:0 "Wuchang will not rest. Wuchang requires more land. We will create regional governments to better control the masses."
+
+ XWH_FurtherExpansion2:0 "End of Conquests"
+ XWH_FurtherExpansion2_desc:0 "Wuchang is united. At what cost..."
