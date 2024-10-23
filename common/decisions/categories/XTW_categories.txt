@@ -9,3 +9,17 @@ XTW_development_bonds_category = {
 		has_country_flag = XTW_development_bond
 	}
 }
+
+XTW_anarchy_reclamation_cat = {			
+	icon = GFX_decision_category_generic_political_actions
+	priority = 50
+
+	visible_when_empty = no
+	
+	allowed = {
+		original_tag = XTW
+	}
+	visible = {
+		has_completed_focus = XTW_march_north
+	}
+}

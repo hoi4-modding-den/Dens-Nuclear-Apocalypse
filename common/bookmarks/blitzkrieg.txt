@@ -21,6 +21,9 @@ bookmarks = {
 			ideology = democratic
 			history = "XTW_history"
 			focuses = {
+				XTW_a_new_era_for_taiwan
+				XTW_desperate_gambit
+				XTW_a_mistake_undone
 			}
 			ideas = {
 				XTW_kuomintang_insurgency
