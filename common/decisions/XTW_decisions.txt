@@ -138,3 +138,85 @@ XTW_development_bonds_category = {
         }
     }
 }
+
+XTW_anarchy_reclamation_cat = {
+
+	XTW_reclaim_anarchy_land = {
+
+		icon = GFX_decision_ITA_reorganize_ascari
+
+		allowed = {
+			original_tag = XTW
+		}
+
+		highlight_states = { 
+			highlight_states_trigger = {
+				is_controlled_by = FROM
+			}
+		}
+
+		target_trigger = { 
+			FROM = {
+				DEN_is_chinese_state = yes
+				is_owned_and_controlled_by = LIB
+			 }
+		}
+
+		state_target = yes
+
+		available = {
+			NOT = { has_country_flag = XTW_reclaiming_anarchy }
+		}
+
+		visible = {
+			FROM = {
+				any_neighbor_state = {
+					OR = {
+						AND = {
+							owner = { is_subject_of = ROOT }
+							controller = { is_subject_of = ROOT }
+						}
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+		custom_cost_text = decision_cost_100_guns
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = 7
+
+		cancel_trigger = {
+			FROM = {
+				NOT = { is_owned_and_controlled_by = LIB }
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = XTW_reclaiming_anarchy
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = -100
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = XTW_reclaiming_anarchy
+			transfer_state = FROM
+		}
+	}
+
+}

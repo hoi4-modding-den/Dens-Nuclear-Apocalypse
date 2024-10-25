@@ -17,5 +17,22 @@ ideas = {
                 } 
             }
         }
+        XWH_RecruitingIdea = {
+            picture = ARG_military_government
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+				war_support_factor = 0.15
+                promote_cost_factor = -0.1
+                army_attack_factor = 0.15
+            }
+            
+            allowed = {
+                OR = {
+                    tag = XWH
+                } 
+            }
+        }
     }
 }

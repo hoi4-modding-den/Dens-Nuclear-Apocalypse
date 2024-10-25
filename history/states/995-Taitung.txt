@@ -12,6 +12,9 @@ state={
 			arms_factory = 1
 
 		}
+		victory_points = {
+			1175 3 
+		}
 	}
 	manpower=627251
 	buildings_max_level_factor=1.000

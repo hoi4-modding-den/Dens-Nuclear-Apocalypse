@@ -1,5 +1,17 @@
 ﻿l_english:
 
+### HISTORY
+
+XTW_history:0 "Despite being the shining beacon of democracy in East Asia following the downfall of Laos, Taiwan is not excused from its own set of problems.\n\nKuomintang, perpetrators of the failed coup attempt in early 23th century, roam the mountains, and their influence on the population continues to rise as dissatisfaction of the government grows.\n\nThere is also the matter of overpopulation. Taiwan was minimally affected by the nuclear fallout, and its population continued to thrive when the rest of China suffered. However, this luxury came with an eventual cost."
+
+### VICTORY POINTS
+
+VICTORY_POINTS_7214:0 "Hsinchu"
+VICTORY_POINTS_12027:0 "Nantou"
+VICTORY_POINTS_1091:0 "Changhua"
+VICTORY_POINTS_1175:0 "Taitung"
+VICTORY_POINTS_4096:0 "Hualien"
+
 ### COUNTRY NAME
 
 XTW_fascism:0 "Republic of China"
@@ -68,6 +80,8 @@ XTW_neutrality_party:0 "KMT(M)"
 
 ### IDEAS
 
+XTW_republic_of_china_army:0 "Republic of China Army"
+
 XTW_kuomintang_insurgency:0 "Kuomintang Insurgency"
 XTW_kuomintang_insurgency_desc:0 "Despite being outlawed since the start of 23th century due to a failed coup attempt, Kuomintang's shadow continues to loom over Taiwan. Its members have retreated to the mountains and the popular support for Kuomintang continues to grow every day.\n\n§YThis national spirit will be removed when either Kuomintang is in charge or an agreement has been achieved§!."
 
@@ -89,6 +103,13 @@ XTW_rule_by_fear_desc:0 "By instilling insecurity and fear into the people, we w
 
 XTW_churchill_doctrine:0 "Churchill Doctrine"
 XTW_churchill_doctrine_desc:0 "300 years ago, on an island in the West, there lived a man called "Churchill."\n\nWhen his homeland was endangered by a great evil off the shore, he rallied his people behind him to fight against this evil whatever the cost may be. While our information about him is scarce, we can look up to him as an inspiration."
+
+XTW_monopolies:0 "Monopolies"
+
+XTW_dispersed_monopolies:0 "Dispersed Monopolies"
+
+XTW_financial_assistance:0 "Financial Assistance"
+
 ### CHARACTERS
 
 XTW_chen_hua:0 "Chen Hua"
@@ -167,6 +188,10 @@ XTW_already_took_a_bond:0 "Already constructing a factory"
 XTW_civilian_industrial_bond:0 "Civilian Industrial Bond"
 XTW_military_industrial_bond:0 "Military Industrial Bond"
 XTW_naval_industrial_bond:0 "Naval Industrial Bond"
+
+XTW_anarchy_reclamation_cat:0 "Reclaim Chinese Territories"
+XTW_reclaim_anarchy_land:0 "Restore Order in [FROM.GetName]"
+XTW_reclaiming_anarchy:0 "Restoring Order"
 
 ### FOCUS
 
@@ -420,3 +445,138 @@ XTW_the_storm_of_war_desc:0 ""
 
 XTW_the_menace_of_tyranny:0 "Outlive the Menace of Tyranny"
 XTW_the_menace_of_tyranny_desc:0 ""
+
+XTW_a_new_dawn_for_china:0 "A New Dawn for China"
+XTW_a_new_dawn_for_china_desc:0 ""
+
+XTW_the_old_blood:0 "The Old Blood"
+XTW_the_old_blood_desc:0 ""
+
+XTW_importance_of_warfare:0 "Importance of Warfare"
+XTW_importance_of_warfare_desc:0 ""
+
+XTW_enabling_act:0 "Enabling Act"
+XTW_enabling_act_desc:0 ""
+
+XTW_bolster_the_military:0 "Bolster the Military"
+XTW_bolster_the_military_desc:0 ""
+
+XTW_redirect_production:0 "Redirect Production"
+XTW_redirect_production_desc:0 ""
+
+XTW_military_tribunal:0 "Military Tribunal"
+XTW_military_tribunal_desc:0 ""
+
+XTW_harsh_exercises:0 "Harsh Exercises"
+XTW_harsh_exercises_desc:0 ""
+
+XTW_central_military_academy:0 "Central Military Academy"
+XTW_central_military_academy_desc:0 ""
+
+XTW_the_heaven_and_the_ocean:0 "The Heaven and the Ocean"
+XTW_the_heaven_and_the_ocean_desc:0 ""
+
+XTW_wage_war_on_ryukyuan_separatists:0 "Wage War on Ryukyuan Separatism"
+XTW_wage_war_on_ryukyuan_separatists_desc:0 ""
+
+XTW_loyalty_to_the_generalissimo:0 "Loyalty to the Generalissimo"
+XTW_loyalty_to_the_generalissimo_desc:0 ""
+
+XTW_the_fight_behind_the_lines:0 "The Fight Behind the Lines"
+XTW_the_fight_behind_the_lines_desc:0 ""
+
+XTW_the_might_of_armed_forces:0 "The Might of the Armed Forces"
+XTW_the_might_of_armed_forces_desc:0 ""
+
+XTW_professional_army_doctrine:0 "Professional Army Doctrine"
+XTW_professional_army_doctrine_desc:0 ""
+
+XTW_encourage_paramilitarism:0 "Encourage Paramilitarism"
+XTW_encourage_paramilitarism_desc:0 ""
+
+XTW_for_the_good_of_the_nation:0 "For the Good of the Nation"
+XTW_for_the_good_of_the_nation_desc:0 ""
+
+XTW_revive_chinese_nationalism:0 "Revive Chinese Nationalism"
+XTW_revive_chinese_nationalism_desc:0 ""
+
+XTW_eliminate_factionalism:0 "Eliminate Factionalism"
+XTW_eliminate_factionalism_desc:0 ""
+
+XTW_inter_party_coordination_council:0 "Inter-party Coordination Council"
+XTW_inter_party_coordination_council_desc:0 ""
+
+XTW_a_new_sightline:0 "A New Sightline"
+XTW_a_new_sightline_desc:0 ""
+
+XTW_crush_the_cliques:0 "Crush the Cliques"
+XTW_crush_the_cliques_desc:0 ""
+
+XTW_contact_mainland_splinters:0 "Contact Mainland Splinters"
+XTW_contact_mainland_splinters_desc:0 ""
+
+XTW_intervention_in_guangdong:0 "Intervention in Guangdong"
+XTW_intervention_in_guangdong_desc:0 ""
+
+XTW_man_versus_machine:0 "Man Versus Machine"
+XTW_man_versus_machine_desc:0 ""
+
+XTW_all_or_nothing:0 "All or Nothing"
+XTW_all_or_nothing_desc:0 ""
+
+XTW_fate_of_wuhan:0 "Fate of [XWH.GetNameDEF]"
+XTW_fate_of_wuhan_desc:0 ""
+
+XTW_march_north:0 "March North"
+XTW_march_north_desc:0 ""
+
+XTW_proclamation_of_the_chinese_federation:0 "Proclamation of the Chinese Federation"
+XTW_proclamation_of_the_chinese_federation_desc:0 ""
+
+XTW_the_new_blood:0 "The New Blood"
+XTW_the_new_blood_desc:0 ""
+
+XTW_restore_democracy_to_the_party:0 "Restore Democracy to the Party"
+XTW_restore_democracy_to_the_party_desc:0 ""
+
+XTW_importance_of_welfare:0 "Importance of Welfare"
+XTW_importance_of_welfare_desc:0 ""
+
+XTW_executive_yuan:0 "Executive Yuan"
+XTW_executive_yuan_desc:0 ""
+
+XTW_healthcare_reform:0 "Healthcare Reform"
+XTW_healthcare_reform_desc:0 ""
+
+XTW_begin_the_land_reform:0 "Begin the Land Reform"
+XTW_begin_the_land_reform_desc:0 ""
+
+XTW_constitutional_reform:0 "Constitutional Reform"
+XTW_constitutional_reform_desc:0 ""
+
+XTW_ryukyuan_right_of_self_determination:0 "Ryukyuan Right of Self-determination"
+XTW_ryukyuan_right_of_self_determination_desc:0 ""
+
+XTW_fair_labour_standards_act:0 "Fair Labour Standards Act"
+XTW_fair_labour_standards_act_desc:0 ""
+
+XTW_apartment_construction:0 "Apartment Construction"
+XTW_apartment_construction_desc:0 ""
+
+XTW_agricultural_subsidies:0 "Agricultural Subsidies"
+XTW_agricultural_subsidies_desc:0 ""
+
+XTW_turn_a_blind_eye_to_the_monopolies:0 "Turn a Blind Eye to Monopolies"
+XTW_turn_a_blind_eye_to_the_monopolies_desc:0 ""
+
+XTW_crush_the_monopolies:0 "Crush the Monopolies"
+XTW_crush_the_monopolies_desc:0 ""
+
+XTW_unemployment_assistance:0 "Unemployment Assistance"
+XTW_unemployment_assistance_desc:0 ""
+
+XTW_business_startup_loans:0 "Business Startup Loans"
+XTW_business_startup_loans_desc:0 ""
+
+XTW_cultural_reform:0 "Cultural Reform"
+XTW_cultural_reform_desc:0 ""
