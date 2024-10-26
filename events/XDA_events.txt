@@ -1,0 +1,14 @@
+add_namespace = laos
+
+news_event = {
+	id = laos.1
+	title = laos.1.t
+	desc = laos.1.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = laos.1.a
+	}
+}

@@ -22,5 +22,12 @@ ideas = {
 				communism_drift = 0.03
 			}
 		}
+		XDA_new_constitution = {
+			picture = EST_democratic_opposition
+			modifier = {
+				political_power_gain = 0.30
+				stability_weekly = 0.01
+			}
+		}
 	}
 }
