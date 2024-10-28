@@ -31,9 +31,10 @@
  XEX_genshin_tag_fascism_ADJ: "Genshin"
 
 # States
+
  STATE_1003: "Anti-Casinos Ghettos"
- STATE_1004: "Anti-Casinos Ghettos"
- STATE_1005: "Anti-Casinos Ghettos"
+ STATE_1004: "Northern Anti-Casinos Ghettos"
+ STATE_1005: "Korean Border Ghettos"
  STATE_743: "Diànnao Casino"
  STATE_597: "Sī Casino"
  STATE_614: "Jìrán Casino"
@@ -55,7 +56,7 @@
 
 # Characters
 
- XEX_argentinian_gambler_desc: "Monsieur Schmitler is the organiser of the Anti-Casino Party. Originally a visitor from Argentina, he got stuck in a fridge during the nuclear apocalypse, being freed almost 200 years later by people in the Bo-Hai ghettos. A former gambling addict himself, he quickly organised a resistance movement against their casino overlords."
+ XEX_argentinian_gambler_desc: "Arnie Schmitler is the organiser of the Anti-Casino Party. While visiting from Argentina, he got stuck in a fridge during the nuclear apocalypse, being freed many years later by people in the Bo-Hai ghettos. A former gambling addict himself, he quickly organised a resistance movement against their casino overlords."
 
  XEX_gacha_general_1: "Ganyu"
  XEX_gacha_general_2: "Jean"
@@ -95,7 +96,7 @@
  XEX_guard_division_ready: "Bo-Hai Defence Corporation"
  XEX_appropriate_casino_riches: "Appropriate Casino Riches"
  XEX_enemy_of_casinos: "Gambling Help Groups"
- XEX_enemy_of_casinos2: "United Against Luck"
+ XEX_enemy_of_casinos2: "United Against Gambling Addiction"
  XEX_protectors_of_peace: "Peacekeepers"
  XEX_independence_protection: "Bo-Hai Organisation for the Protection of Sovereignty"
 
@@ -118,48 +119,49 @@
 
 # Decision Costs
 
-decision_cost_1_civ_50_pp: "£civ_factory §Y1§! £pol_power §Y50§!"
-decision_cost_1_civ_50_pp_blocked: "£civ_factory §R1§! £pol_power §R50§!"
-decision_cost_1_civ_50_pp_tooltip: "It costs £civ_factory §Y1§! £pol_power §Y50§! to take the decision\n \nClicking this decision requires at least one £civ_factory §YCivilian Factory§! in any §Ycore state§!. This decision does §Rnot§! count §Yoff-map factories§! or §Yfactories from puppets§!."
+ decision_cost_1_civ_50_pp: "£civ_factory §Y1§! £pol_power §Y50§!"
+ decision_cost_1_civ_50_pp_blocked: "£civ_factory §R1§! £pol_power §R50§!"
+ decision_cost_1_civ_50_pp_tooltip: "It costs £civ_factory §Y1§! £pol_power §Y50§! to take the decision\n \nClicking this decision requires at least one £civ_factory §YCivilian Factory§! in any §Ycore state§!. This decision does §Rnot§! count §Yoff-map factories§! or §Yfactories from puppets§!."
 
 
 # Dynamic Modifiers
 
  XEX_genshin_state: "Genshin Addiction"
+ XEX_genshin_state_modifier_tt: "§RThis modifier will be removed when §!§Y@XEX [XEX.GetNameDef]§!§R does not exist.§!"
 
 
 # Events
 
-XEX_news_events.1.t: "MiHoYo secures the Bo-Hai Gambling Cities"
-XEX_news_events.1.d: "In Light of the recent riots in the Bo-Hai Gambling Cities, the MiHoYo Corporation has seen it fit to overthrow the rule of the Casino Division and take matters into their own hands to take care of this problem. People are already reporting an increase in weeb sightings."
-XEX_news_events.1.a: "Let's hope profits won't drop."
-XEX_news_events.1.b: "They value money over human lives."
-XEX_news_events.1.c: "Capitalist Pigs!"
+ XEX_news_events.1.t: "MiHoYo secures the Bo-Hai Gambling Cities"
+ XEX_news_events.1.d: "In Light of the recent riots in the Bo-Hai Gambling Cities, the MiHoYo Corporation has seen it fit to overthrow the rule of the Casino Division and take matters into their own hands to take care of this problem. People are already reporting an increase in weeb sightings."
+ XEX_news_events.1.a: "Let's hope profits won't drop."
+ XEX_news_events.1.b: "They value money over human lives."
+ XEX_news_events.1.c: "Capitalist Pigs!"
 
-XEX_news_events.2.t: "Anti-Gamblerists overthrow the Casino Group"
-XEX_news_events.2.d: "Somehow, the Anti-Casino Party under the leadership of Monsieur Arnie Schmitler have managed to convince the population of the former Bo-Hai Gambling Cities to join their cause and evict the Casino Group, seizing control of the state. Schmitler has announced that he will do everything in his powers to protect the people from the dangers of gambling, no matter what."
-XEX_news_events.2.a: "We will make the Bo-Hai Territories great again!"
-XEX_news_events.2.b: "Interesting."
+ XEX_news_events.2.t: "Anti-Gamblerists overthrow the Casino Group"
+ XEX_news_events.2.d: "Somehow, the Anti-Casino Party under the leadership of Monsieur Arnie Schmitler have managed to convince the population of the former Bo-Hai Gambling Cities to join their cause and evict the Casino Group, seizing control of the state. Schmitler has announced that he will do everything in his powers to protect the people from the dangers of gambling, no matter what."
+ XEX_news_events.2.a: "We will make the Bo-Hai Territories great again!"
+ XEX_news_events.2.b: "Interesting."
 
-XEX_news_events.3.t: "The Defeat of the Tsingtao Free State!"
-XEX_news_events.3.d: "Following Arnie Schmitler's seizing of power, the Tsingtao Free State had been militarising at rapid speeds, preparing for expansion into Central China.\nHowever, his attempt has been thwarted by the other regional powers, tackling the Tsingtao menace and restoring order.\nNow, the region is under temporary military occupation with certain regions being occupied by the victors."
-XEX_news_events.3.a: "It would seem that we lost."
-XEX_news_events.3.b: "The Coalition has succeeded!"
-XEX_news_events.3.c: "A Victory for the Free World."
+ XEX_news_events.3.t: "The Defeat of the Tsingtao Free State!"
+ XEX_news_events.3.d: "Following Arnie Schmitler's seizing of power, the Tsingtao Free State had been militarising at rapid speeds, preparing for expansion into Central China.\nHowever, his attempt has been thwarted by the other regional powers, tackling the Tsingtao menace and restoring order.\nNow, the region is under temporary military occupation with certain regions being occupied by the victors."
+ XEX_news_events.3.a: "It would seem that we lost."
+ XEX_news_events.3.b: "The Coalition has succeeded!"
+ XEX_news_events.3.c: "A Victory for the Free World."
 
-XEX_gatcha_events.1.t: "A Wild General appears!"
-XEX_gatcha_events.1.d: "The Gambling has paid off. We have unlocked another great general!"
-XEX_gatcha_events.1.a: "Very Good!"
+ XEX_gatcha_events.1.t: "A Wild General appears!"
+ XEX_gatcha_events.1.d: "The Gambling has paid off. We have unlocked another great general!"
+ XEX_gatcha_events.1.a: "Very Good!"
 
-XEX_gatcha_events.6.t: "Surprise Army Training!"
-XEX_gatcha_events.6.d: "Our Army has launched a surprise exercise to gain live army experience."
-XEX_gatcha_events.6.a: "Alright."
+ XEX_gatcha_events.6.t: "Surprise Army Training!"
+ XEX_gatcha_events.6.d: "Our Army has launched a surprise exercise to gain live army experience."
+ XEX_gatcha_events.6.a: "Alright."
 
-XEX_gatcha_events.7.t: "Weapon Shipment has arrived!"
-XEX_gatcha_events.7.d: "Our weapon shipments from Europe have finally arrived."
+ XEX_gatcha_events.7.t: "Weapon Shipment has arrived!"
+ XEX_gatcha_events.7.d: "Our weapon shipments from Europe have finally arrived."
 
-XEX_gatcha_events.8.t: "New Recruits!"
-XEX_gatcha_events.8.d: "We have recruited new officers for our Private Police."
+ XEX_gatcha_events.8.t: "New Recruits!"
+ XEX_gatcha_events.8.d: "We have recruited new officers for our Private Police."
 
 
 # Focus Tree
@@ -194,8 +196,8 @@ XEX_gatcha_events.8.d: "We have recruited new officers for our Private Police."
  XEX_realm_of_genshin_desc: ""
  XEX_realm_of_genshin_trigger: "has unlocked all Generals from the Gacha."
  XEX_realm_of_genshin_tt: "\nWe will gain §Ycores§! on all states with the §YGenshin Addiction§! modifier:"
-XEX_incursion_into_korea: "Secure Profits in Korea"
-XEX_incursion_into_korea_desc: ""
+ XEX_incursion_into_korea: "Secure Profits in Korea"
+ XEX_incursion_into_korea_desc: ""
 
  XEX_crackdown: "Crack Down on Dissent"
  XEX_crackdown_desc: ""

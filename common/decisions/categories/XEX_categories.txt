@@ -8,6 +8,7 @@ XEX_genshin_decisions = {
 		original_tag = XEX
 	}
 	visible = {	
+		has_government = fascism
 		has_country_flag = XEX_gatcha_unlocked
 	}
 }
@@ -22,6 +23,8 @@ XEX_genshinification_cat = {
 		original_tag = XEX
 	}
 	visible = {	
+		has_government = fascism
+		is_subject = no
 		has_country_flag = XEX_genshinification_unlocked
 	}
 

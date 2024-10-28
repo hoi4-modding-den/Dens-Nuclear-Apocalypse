@@ -216,13 +216,13 @@
 
 # Dynamic Modifiers
 
-XSK_turkic_resistance: "Turkic Resistance"
+ XSK_turkic_resistance: "Turkic Resistance"
 
 
 # Companies
 
-XSK_mining_company: "Ottoman Royal Mining Corporation"
-XSK_railway_company_contract: "Foreign Railway Advisors"
+ XSK_mining_company: "Ottoman Royal Mining Corporation"
+ XSK_railway_company_contract: "Foreign Railway Advisors"
 
 
 # Decisions
@@ -356,13 +356,20 @@ XSK_railway_company_contract: "Foreign Railway Advisors"
  XSK_events.9.b.tt: "\nIf you insist."
 
  XSK_events.10.t: "Ottoman Agitators spread Pan-Turkic Propaganda!"
- XSK_events.10.d: "There has been a rise in protests from Turkic minorities - and those that believe they are - within our country. Our counter-intelligence department has located the source of the agitators, [XSK.GetNameDef]. Apparently, they have been supporting resistance within our nation to solidify their claim on our territories."
- XSK_events.10.a: "Damn them!"
+ XSK_events.10.d: "There has been a rise in protests from Turkic minorities - and those that believe they are - within our country. Our counter-intelligence department has located the source of the agitators, the [XSK.GetAdjective] agency [XSK.GetAgency]. Apparently, they have been supporting resistance within our nation to solidify their claim on our territories."
+ XSK_events.10.a: "The protests will die down."
 
  XSK_events.11.t: "Ottoman Military Mission"
- XSK_events.11.d: "Today, an Ottoman Attache arrived in [ROOT.capital.GetCapitalVictoryPointName]. We have had good relations with the Sultanate since their formation, however, the Sultanate proposes to expand our agreements to include negotiable military aid missions to each other."
- XSK_events.11.a: "They will make great allies!"
+ XSK_events.11.d: "Today, an Ottoman Attache arrived in [ROOT.capital.GetCapitalVictoryPointName]. We have had good relations with the Sultanate since their formation, and now they propose to expand our agreements to include negotiable military aid missions to each other."
+ XSK_events.11.a: "A done deal!"
  XSK_can_send_volunteers_to_XAD_tt: "Ottoman-Cordoban Military Agreement"
+
+ XSK_events.12.t: "A New Imperial Capital"
+ XSK_events.12.d: "With our proclamation of a new empire in China, perhaps we should move our capital to a more developed, urban region of the country."
+ XSK_events.12.a: "Beijing is a natural choice."
+ XSK_events.12.b: "Hongkong has experience in foreign occupation."
+ XSK_events.12.c: "Nanjing is located in the centre of the coastal region."
+ XSK_events.12.e: "[ROOT.capital.GetCapitalVictoryPointName] will not be abandoned!"
 
  XSK_taiwan_events.1.t: "Ottoman Delegates arrive in [ROOT.capital.GetCapitalVictoryPointName]"
  XSK_taiwan_events.1.d: "Today, Ottoman Delegates arrived in [ROOT.capital.GetCapitalVictoryPointName] to meet with our government. They have not stated their reason for traveling all the way here, but they do not seem hostile towards us."
