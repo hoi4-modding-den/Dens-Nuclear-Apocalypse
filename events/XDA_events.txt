@@ -12,3 +12,35 @@ news_event = {
 		name = laos.1.a
 	}
 }
+
+country_event = {
+	id = laos.2
+	title = laos.2.t
+	desc = laos.2.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = laos.2.a
+	}
+}
+
+country_event = {
+	id = laos.3
+	title = laos.3.t
+	desc = laos.3.d
+	picture = GFX_news_event_king_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = laos.3.a
+		XDA = {
+			add_ideas = XDA_Mirage_Government_2
+			hidden_effect = {
+			remove_ideas = XDA_Mirage_Government_1
+			}
+		}
+	}
+}

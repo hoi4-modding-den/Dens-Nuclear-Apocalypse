@@ -12,14 +12,37 @@ ideas = {
 				}
 			}
 		}
-		XDA_Mirage_Government = {
-			picture = Mirage_Government
+		XDA_Corrupt_Democracy = {
+			picture = EST_democratic_opposition
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.2
+			}
+		}
+		XDA_Mirage_Government_1 = {
+			picture = XDA_Mirage_Government
 			modifier = {
 				political_power_gain = -0.50
 				stability_factor = -0.35
-				neutrality_drift = 0.03
-				fascism_drift = 0.02
-				communism_drift = 0.03
+				neutrality_drift = 0.07
+				fascism_drift = 0.05
+				communism_drift = 0.07
+			}
+		}
+		XDA_Mirage_Government_2 = {
+		picture = XDA_Mirage_Government
+		modifier = {
+				political_power_gain = -0.35
+				stability_factor = -0.25
+				neutrality_drift = 0.07
+				fascism_drift = 0.05
+				communism_drift = 0.07
+			}
+		}
+		XDA_Campaign_against_change = {
+			picture = POL_Ideology_Drift_Defence
+			modifier = {
+				drift_defence_factor = 0.6
 			}
 		}
 		XDA_new_constitution = {

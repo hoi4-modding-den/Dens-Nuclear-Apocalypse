@@ -30,4 +30,171 @@ focus_tree = {
 			country_event = laos.1
 		}
 	}
+##Democratic Paths
+
+##A new party in charge
+	focus = {
+		id = XDA_Putting_a_stop_to_the_ridicule
+		icon = GFX_focus_generic_league_of_nations
+		x = -1
+		y = 1
+		relative_position_id = XDA_Rewritting_the_constitution
+		prerequisite = {
+		focus = XDA_Rewritting_the_constitution
+		}
+		mutually_exclusive = {
+		focus = XDA_Rebuilding_the_house
+		}
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = laos.2 
+		##Would give new political advisors, and maybe put a new democratic party in charge if i know how to do it
+		}
+	}
+	
+##Old faces, new ambitions
+	focus = {
+		id = XDA_Rebuilding_the_house
+		icon = GFX_focus_POL_riot_of_37
+		x = 1
+		y = 1
+		relative_position_id = XDA_Rewritting_the_constitution
+		prerequisite = {
+		focus = XDA_Rewritting_the_constitution
+		}
+		mutually_exclusive = {
+		focus = XDA_Putting_a_stop_to_the_ridicule
+		}
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+		##Would give new political advisors
+		}
+	}
+	focus = {
+		id = XDA_We_are_still_here
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 0
+		y = 1
+		relative_position_id = XDA_Rebuilding_the_house
+		prerequisite = {
+		focus = XDA_Rebuilding_the_house
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = laos.3
+		}
+	}
+##Side focuses to get the country on your side for the Laotian Republic to prevail
+	focus = {
+		id = XDA_A_campaign_against_change
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		relative_position_id = XDA_We_are_still_here
+		prerequisite = {
+		focus = XDA_We_are_still_here
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 20
+			add_ideas = XDA_Campaign_against_change
+		}
+	}
+	focus = {
+		id = XDA_Our_prevelant_future
+		icon = GFX_focus_BRA_rubber_war
+		x = 4
+		y = 1
+		relative_position_id = XDA_We_are_still_here
+		prerequisite = {
+		focus = XDA_We_are_still_here
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 20
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XDA_A_proof_of_strength
+		icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 1
+		relative_position_id = XDA_We_are_still_here
+		prerequisite = {
+		focus = XDA_We_are_still_here
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 20
+				random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = XDA_Back_in_charge
+		icon = GFX_focus_FIN_confederated_finno_russian_republics
+		x = 0
+		y = 1
+		relative_position_id = XDA_A_proof_of_strength
+		prerequisite = {
+			focus = XDA_A_campaign_against_change
+		}
+		prerequisite = {
+			focus = XDA_A_proof_of_strength
+		}
+		prerequisite = {
+			focus = XDA_Our_prevelant_future
+		}
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = XDA_Mirage_Government_2
+			hidden_effect = {
+				add_ideas = XDA_Corrupt_Democracy
+			}
+		}		
+	}
+	focus = {
+		id = XDA_humble_gift
+		icon = GFX_focus_BRA_cafe_com_leite_politics
+		x = 4
+		y = 1
+		relative_position_id = XDA_Back_in_charge
+		prerequisite = {
+		focus = XDA_Back_in_charge
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}			
+		}
+	}
 }

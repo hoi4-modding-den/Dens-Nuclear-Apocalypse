@@ -3,6 +3,13 @@ capital = 1006
 set_war_support = 0.45
 set_stability = 0.70
 
+set_politics = {
+	ruling_party = democratic
+	last_election = "2229.5.17"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
 set_popularities = {
 	democratic = 58
 	communism = 18
@@ -11,7 +18,7 @@ set_popularities = {
 }
 
 add_ideas = XDA_Crumbling_Democracy
-add_ideas = XDA_Mirage_Government
+add_ideas = XDA_Mirage_Government_1
 
 # Starting tech
 set_technology = {
