@@ -12,6 +12,21 @@ focus_tree = {
 	reset_on_civilwar = no
 	continuous_focus_position = { x = 100 y = 3250 }
 
+##	focus = {
+##		id =
+##		icon =
+##		x =
+##		y =
+##		relative_position_id =
+##		prerequisite = {
+##			focus =
+##		}
+##		cost =
+##		available_if_capitulated = yes
+##		completion_reward = {
+##		}
+##	}
+
 ##As the last focus tree was made a bit randomly, gonna restart it and try to work on 1 path the time I get back into it!
 
 	focus = {
@@ -36,7 +51,7 @@ focus_tree = {
 	focus = {
 		id = XDA_Putting_a_stop_to_the_ridicule
 		icon = GFX_focus_generic_league_of_nations
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = XDA_Rewritting_the_constitution
 		prerequisite = {
@@ -57,7 +72,7 @@ focus_tree = {
 	focus = {
 		id = XDA_Rebuilding_the_house
 		icon = GFX_focus_POL_riot_of_37
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = XDA_Rewritting_the_constitution
 		prerequisite = {
@@ -100,7 +115,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 33
 			add_ideas = XDA_Campaign_against_change
 		}
 	}
@@ -116,7 +131,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 33
 			add_research_slot = 1
 		}
 	}
@@ -132,7 +147,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 33
 				random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -143,6 +158,7 @@ focus_tree = {
 			}
 		}
 	}
+##right_demo_main
 	focus = {
 		id = XDA_Back_in_charge
 		icon = GFX_focus_FIN_confederated_finno_russian_republics
@@ -162,15 +178,32 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			remove_ideas = XDA_Mirage_Government_2
+			remove_ideas = XDA_Crumbling_Democracy
 			hidden_effect = {
 				add_ideas = XDA_Corrupt_Democracy
 			}
 		}		
 	}
 	focus = {
+		id = XDA_Rework_Coscription_laws
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 0
+		y = 1
+		relative_position_id = XDA_Back_in_charge
+		prerequisite = {
+			focus = XDA_Back_in_charge
+		}
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = limited_conscription
+		}
+	}
+##infrastructure_right_demo
+	focus = {
 		id = XDA_humble_gift
 		icon = GFX_focus_BRA_cafe_com_leite_politics
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = XDA_Back_in_charge
 		prerequisite = {
@@ -186,15 +219,75 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+			}			
+		}
+	}
+	focus = {
+		id = XDA_coastal_infrastructure_program
+		icon = GFX_focus_generic_refit_civilian_ships
+		x = 2
+		y = 1
+		relative_position_id = XDA_humble_gift
+		prerequisite = {
+			focus = XDA_humble_gift
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			671 = {
+				if = {
+				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
-				type = industrial_complex
-				level = 1
+				type = infrastructure
+				level = 2
 				instant_build = yes
 				}
-			}			
+				}
+			}
+		}
+	}
+##Shared_path
+	focus = {
+		id = XDA_heavenly_taskforce
+		icon = GFX_focus_CHL_a_french_alliance
+		x = 0
+		y = 5
+		relative_position_id = XDA_Rewritting_the_constitution
+		prerequisite = {
+			focus = XDA_Back_in_charge
+		}
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	focus = {
+		id = XDA_Railway_Project
+		icon = GFX_focus_generic_railroad
+		x = 2
+		y = 1
+		relative_position_id = XDA_heavenly_taskforce
+		prerequisite = {
+			focus = XDA_heavenly_taskforce
+		}
+		cost = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			build_railway = {
+				level = 2
+				fallback = yes
+				path = {1464 12332 9988 11909 10129 4075}
+				start_province = 1464
+				target_province = 4075
+			}
+			build_railway = {
+				level = 1
+				fallback = yes
+				path = {1563 1592 12417 12431 10438 12195}
+				start_province = 1563
+				target_province = 12195
+			}
 		}
 	}
 }

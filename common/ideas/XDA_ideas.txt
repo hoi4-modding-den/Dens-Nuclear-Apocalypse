@@ -3,8 +3,9 @@ ideas = {
 		XDA_Crumbling_Democracy = {
 			picture = generic_democratic_opposition
 			modifier = {
-				democratic_drift = -0.05
+				democratic_drift = -0.06
 				stability_factor = -0.2
+				political_power_gain = -0.20
 			}
 			cancel = {
 				NOT = {
@@ -20,7 +21,7 @@ ideas = {
 			}
 		}
 		XDA_Mirage_Government_1 = {
-			picture = XDA_Mirage_Government
+			picture = GFX_mirage_government
 			modifier = {
 				political_power_gain = -0.50
 				stability_factor = -0.35
@@ -30,7 +31,7 @@ ideas = {
 			}
 		}
 		XDA_Mirage_Government_2 = {
-		picture = XDA_Mirage_Government
+		picture = GFX_mirage_government
 		modifier = {
 				political_power_gain = -0.35
 				stability_factor = -0.25
@@ -40,13 +41,13 @@ ideas = {
 			}
 		}
 		XDA_Campaign_against_change = {
-			picture = POL_Ideology_Drift_Defence
+			picture = ARG_growing_nationalism_modifier
 			modifier = {
 				drift_defence_factor = 0.6
 			}
 		}
 		XDA_new_constitution = {
-			picture = EST_democratic_opposition
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				political_power_gain = 0.30
 				stability_weekly = 0.01
