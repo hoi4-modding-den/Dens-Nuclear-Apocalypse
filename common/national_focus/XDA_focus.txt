@@ -201,6 +201,21 @@ focus_tree = {
 	}
 ##infrastructure_right_demo
 	focus = {
+		id = XDA_Give_and_Take
+		icon = GFX_focus_DEN_heavy_regulations
+		x = 0
+		y = 2
+		relative_position_id = XDA_humble_gift
+		prerequisite = {
+		focus = XDA_coastal_infrastructure_program
+		focus = a
+		}
+		cost = 10
+		available_if_capitulated = no
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = XDA_humble_gift
 		icon = GFX_focus_BRA_cafe_com_leite_politics
 		x = 5
@@ -231,8 +246,11 @@ focus_tree = {
 		prerequisite = {
 			focus = XDA_humble_gift
 		}
-		cost = 5
+		cost = 7
 		available_if_capitulated = yes
+		available = {
+			NOT = { has_completed_focus = XDA_Give_and_Take }
+		}
 		completion_reward = {
 			671 = {
 				if = {
