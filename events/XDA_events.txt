@@ -51,7 +51,7 @@ news_event = {
 	desc = laos.4.d
 	picture = news_event_german_volunteers
 	
-	is triggered_only = yes
+	is_triggered_only = yes
 	
 	option = {
 		name = laos.4.a

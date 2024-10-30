@@ -66,5 +66,26 @@ ideas = {
 				war_support_weekly = 0.05
 			}
 		}
+		XDA_civilian_research = {
+			picture = SWE_folkhemmet
+			research_bonus = {
+				industry = 0.3
+				electronics = 0.3
+			}
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		XDA_army_research = {
+			picture = SWE_land_air_warfare
+			research_bonus = {
+				infantry_weapons = 0.2
+				air_equipment = 0.2
+				motorized_equipment = 0.2
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
 	}
 }
