@@ -185,7 +185,7 @@ focus_tree = {
 		}		
 	}
 	focus = {
-		id = XDA_Rework_Coscription_laws
+		id = XDA_Rework_Conscription_laws
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		x = 0
 		y = 1
@@ -199,6 +199,24 @@ focus_tree = {
 			add_ideas = limited_conscription
 		}
 	}
+	focus = {
+		id = XDA_the_enemies_on_our_backyard
+		icon = GFX_focus_BRA_cohen_plan
+		x = 0
+		y = 1
+		relative_position_id = XDA_Rework_Conscription_laws
+		prerequisite = {
+			focus = XDA_Rework_Conscription_laws
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = XDA_the_obvious_enemy_1
+			hidden_effect = {
+				countr_event = laos.4
+			}
+		}
+	}
 ##infrastructure_right_demo
 	focus = {
 		id = XDA_Give_and_Take
@@ -208,7 +226,7 @@ focus_tree = {
 		relative_position_id = XDA_humble_gift
 		prerequisite = {
 		focus = XDA_coastal_infrastructure_program
-		focus = a
+		focus = XDA_land_reform
 		}
 		cost = 10
 		available_if_capitulated = no
@@ -238,6 +256,24 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = XDA_land_reform
+		icon = GFX_focus_generic_farmland
+		x = 0
+		y = 1
+		relative_position_id = XDA_humble_gift
+		prerequisite = {
+		focus = XDA_humble_gift
+		}
+		cost = 7
+		available_if_capitulated = yes
+		available = {
+			NOT = { has_completed_focus = XDA_Give_and_Take }
+		}
+		completion_reward = {
+			add_ideas = XDA_farmland_reforms
+		}
+	}
+	focus = {
 		id = XDA_coastal_infrastructure_program
 		icon = GFX_focus_generic_refit_civilian_ships
 		x = 2
@@ -254,7 +290,7 @@ focus_tree = {
 		completion_reward = {
 			671 = {
 				if = {
-				limit = { is_controlled_by = ROOT }
+				limit = { is_controlled_by = XDA }
 				add_building_construction = {
 				type = infrastructure
 				level = 2
