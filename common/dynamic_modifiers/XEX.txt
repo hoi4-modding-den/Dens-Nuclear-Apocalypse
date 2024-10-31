@@ -4,5 +4,6 @@ XEX_genshin_state = {
 
 	local_building_slots = 1
 	local_manpower = -0.2
+	custom_modifier_tooltip = XEX_genshin_state_modifier_tt
 
 }

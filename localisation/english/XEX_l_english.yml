@@ -127,7 +127,7 @@
 # Dynamic Modifiers
 
  XEX_genshin_state: "Genshin Addiction"
- XEX_genshin_state_modifier_tt: "§RThis modifier will be removed when §!§Y@XEX [XEX.GetNameDef]§!§R does not exist.§!"
+ XEX_genshin_state_modifier_tt: "§RThis modifier will be removed when the §!§Y@XEX MiHoYo Corporation§!§R doesn't exist.§!"
 
 
 # Events
@@ -143,11 +143,9 @@
  XEX_news_events.2.a: "We will make the Bo-Hai Territories great again!"
  XEX_news_events.2.b: "Interesting."
 
- XEX_news_events.3.t: "The Defeat of the Tsingtao Free State!"
- XEX_news_events.3.d: "Following Arnie Schmitler's seizing of power, the Tsingtao Free State had been militarising at rapid speeds, preparing for expansion into Central China.\nHowever, his attempt has been thwarted by the other regional powers, tackling the Tsingtao menace and restoring order.\nNow, the region is under temporary military occupation with certain regions being occupied by the victors."
- XEX_news_events.3.a: "It would seem that we lost."
- XEX_news_events.3.b: "The Coalition has succeeded!"
- XEX_news_events.3.c: "A Victory for the Free World."
+ XEX_events.1.t: "Genshin Servers deactivated!"
+ XEX_events.1.d: "Following the fall of the MiHoYo Corporation, servers for Genshin Impact have been deactivated. While first devastated, Genshin players have slowly rehabilitated into normal people again, freeing themselves from their addiction."
+ XEX_events.1.a: "Productivity will return to the lands."
 
  XEX_gatcha_events.1.t: "A Wild General appears!"
  XEX_gatcha_events.1.d: "The Gambling has paid off. We have unlocked another great general!"
