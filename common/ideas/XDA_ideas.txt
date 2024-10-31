@@ -3,8 +3,9 @@ ideas = {
 		XDA_Crumbling_Democracy = {
 			picture = generic_democratic_opposition
 			modifier = {
-				democratic_drift = -0.05
+				democratic_drift = -0.06
 				stability_factor = -0.2
+				political_power_gain = -0.20
 			}
 			cancel = {
 				NOT = {
@@ -12,8 +13,15 @@ ideas = {
 				}
 			}
 		}
-		XDA_Mirage_Government = {
-			picture = Mirage_Government
+		XDA_Corrupt_Democracy = {
+			picture = EST_democratic_opposition
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.2
+			}
+		}
+		XDA_Mirage_Government_1 = {
+			picture = GFX_mirage_government
 			modifier = {
 				political_power_gain = -0.50
 				stability_factor = -0.35
@@ -21,6 +29,101 @@ ideas = {
 				fascism_drift = 0.02
 				communism_drift = 0.03
 			}
+		}
+		XDA_Mirage_Government_2 = {
+		picture = XDA_mirage_government
+		modifier = {
+				political_power_gain = -0.35
+				stability_factor = -0.25
+				neutrality_drift = 0.03
+				fascism_drift = 0.02
+				communism_drift = 0.03
+			}
+		}
+		XDA_Campaign_against_change = {
+			picture = ARG_growing_nationalism_modifier
+			modifier = {
+				drift_defence_factor = 0.6
+			}
+		}
+		XDA_new_constitution = {
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				political_power_gain = 0.30
+				stability_weekly = 0.01
+				democratic_drift = 0.02
+			}
+		}
+		XDA_farmland_reforms = {
+			picture = prc_low_popular_support3
+			modifier = {
+				monthly_population = 0.20
+			}
+		}
+		XDA_every_man_a_soldier = {
+			picture = prc_low_popular_support3
+			modifier = {
+				monthly_population = 0.05
+				local_manpower = 0.15
+			}
+		}
+		XDA_the_obvious_enemy_1 = {
+			picture = mex_politicised_army
+			modifier = {
+				war_support_weekly = 0.05
+			}
+		}
+		XDA_the_obvious_enemy_2 = {
+			picture = mex_politicised_army
+			modifier = {
+				war_support_weekly = 0.05
+				communism_drift = -0.03
+			}
+		}
+		XDA_foreign_propaganda = {
+			picture = mex_politicised_army	
+			modifier = {
+				communism_drift = -0.05
+				stability_weekly = -0.02
+			}
+		}
+		XDA_civilian_research = {
+			picture = SWE_folkhemmet
+			research_bonus = {
+				industry = 0.3
+				electronics = 0.3
+			}
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		XDA_army_research = {
+			picture = SWE_land_air_warfare
+			research_bonus = {
+				infantry_weapons = 0.2
+				air_equipment = 0.2
+				motorized_equipment = 0.2
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		XDA_siam_war_preparation = {
+			picture = generic_manpower_bonus
+			modifier = {
+				political_power_gain = -0.30
+				experience_gain_army = -0.1 
+				experience_gain_navy = -0.1
+				experience_gain_air = -0.1
+			}
+		}
+		XDA_siam_war_ready = {
+			picture = generic_infantry_bonus
+			targeted_modifier = {
+				tag = XSI
+                attack_bonus_against = 0.25
+                defense_bonus_against = 0.2
+            }
 		}
 	}
 }

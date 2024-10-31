@@ -791,6 +791,41 @@ country_event = { # Ottomans support Cordoba
 
 }
 
+country_event = { # Choose Imperial Capital
+    id = XSK_events.12
+    title = XSK_events.12.t
+    picture = GFX_report_event_tur_sultan_in_istanbul
+    desc = XSK_events.12.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = { # Beijing
+        name = XSK_events.12.a
+        set_capital  = { state = 608 }
+        add_stability = 0.02
+    }
+
+    option = { # Hongkong
+        name = XSK_events.12.b
+        set_capital  = { state = 326 }
+        add_stability = 0.02
+    }
+
+    option = { # Nanjing
+        name = XSK_events.12.c
+        set_capital  = { state = 613 }
+        add_stability = 0.02
+    }
+
+    option = { # keep current capital
+        name = XSK_events.12.e
+        add_stability = 0.01
+        add_political_power = 25
+    }
+
+}
+
 country_event = { # Taipei Compromise: Taiwan gets Notified
     id = XSK_taiwan_events.1
     title = XSK_taiwan_events.1.t

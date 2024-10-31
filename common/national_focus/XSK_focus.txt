@@ -2758,7 +2758,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = XSK_owns_and_controls_all_chinese_states_tt
-					all_state = {
+				all_state = {
 					OR = {
 						NOT = { DEN_is_chinese_state = yes }
 						owns_or_subject_of = yes
@@ -2770,7 +2770,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 50
+			factor = 500
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
@@ -2789,8 +2789,22 @@ focus_tree = {
 				}
 			}
 			set_cosmetic_tag = XSK_ottoman_china
+			remove_ideas = XSK_unite_china
 			hidden_effect = {
 				news_event = { id = XSK_news_events.6 days = 1 }
+				country_event = { id = XSK_events.12 days = 3 }
+
+				1003 = { set_state_name = "Shanxi-Heibei" }
+				1004 = { set_state_name = "North Jehol" }
+				1005 = { set_state_name = "East Liaotung" }
+				745 = { set_state_name = "Dalian" }
+				716 = { set_state_name = "Liaotung" }
+				610 = { set_state_name = "Jehol" }
+				609 = { set_state_name = "East Hebei" }
+				608 = { set_state_name = "Beijing" }
+				614 = { set_state_name = "Hebei" }
+				597 = { set_state_name = "Shandong" }
+				743 = { set_state_name = "Qingdao" }
 			}
 		}
 	}

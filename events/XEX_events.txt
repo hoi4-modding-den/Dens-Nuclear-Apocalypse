@@ -61,38 +61,40 @@ news_event = { # Anti-Gamblerists win
     }
 }
 
-news_event = { # Schmitler fuckin dies
-    id = XEX_news_events.3
-    title = XEX_news_events.3.t
-    picture = GFX_news_event_chinese_soldiers_city_ruin
-    desc = XEX_news_events.3.d
+state_event = { # Genshin Servers deactivated
+    id = XEX_events.1
+    title = XEX_events.1.t
+    picture = GFX_report_event_generic_stock_traders
+    desc = XEX_events.1.d
+	
+	trigger = {
+		all_other_country = {
+            OR = { 
+                NOT = { original_tag = XEX }
+                NOT = { has_government = fascism }
+                exists = no
+            }
+        }
+        has_dynamic_modifier = { modifier = XEX_genshin_state }
+        owner = {
+            NOT = { has_country_flag = XEX_genshin_servers_down }
+        }
+	}
 
-    is_triggered_only = yes
-
-    major = yes
+    immediate = {
+        set_country_flag = XEX_genshin_servers_down
+    }
     
     option = {
-        name = XEX_news_events.3.a
-        trigger = {
-            tag = XEX
+        name = XEX_events.1.a
+        owner = {
+            every_owned_state = {
+                limit = { has_dynamic_modifier = { modifier = XEX_genshin_state } }
+                remove_dynamic_modifier = { modifier = XEX_genshin_state }
+            }
         }
     }
 
-    option = {
-        name = XEX_news_events.3.b
-        trigger = {
-            NOT = { tag = XEX }
-            has_country_flag = XEX_enemy_of_schmitler
-        }
-    }
-
-    option = {
-        name = XEX_news_events.3.c
-        trigger = {
-            NOT = { tag = XEX }
-            NOT = { has_country_flag = XEX_enemy_of_schmitler }
-        }
-    }
 }
 
 unit_leader_event = { # 

@@ -1,0 +1,78 @@
+add_namespace = laos
+
+news_event = {
+	id = laos.1
+	title = laos.1.t
+	desc = laos.1.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = laos.1.a
+	}
+}
+
+country_event = {
+	id = laos.2
+	title = laos.2.t
+	desc = laos.2.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = laos.2.a
+	}
+}
+
+country_event = {
+	id = laos.3
+	title = laos.3.t
+	desc = laos.3.d
+	picture = GFX_news_event_king_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = laos.3.a
+		XDA = {
+			add_ideas = XDA_Mirage_Government_2
+			hidden_effect = {
+			remove_ideas = XDA_Mirage_Government_1
+			}
+		}
+	}
+}
+
+news_event = {
+	id = laos.4
+	title = laos.4.t
+	desc = laos.4.d
+	picture = news_event_german_volunteers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = laos.4.a
+	}
+}
+
+country_event = {
+	id = laos.5
+	title = laos.5.t
+	desc = laos.5.d
+	picture = news_event_german_volunteers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = laos.5.a
+		XDA = {
+			add_ideas = XDA_siam_war_ready
+			hidden_effect = {
+			remove_ideas = XDA_siam_war_preparation
+			}
+		}
+	}
+}
