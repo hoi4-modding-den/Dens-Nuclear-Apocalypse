@@ -60,10 +60,31 @@ ideas = {
 				monthly_population = 0.20
 			}
 		}
+		XDA_every_man_a_soldier = {
+			picture = prc_low_popular_support3
+			modifier = {
+				monthly_population = 0.05
+				local_manpower = 0.15
+			}
+		}
 		XDA_the_obvious_enemy_1 = {
 			picture = mex_politicised_army
 			modifier = {
 				war_support_weekly = 0.05
+			}
+		}
+		XDA_the_obvious_enemy_2 = {
+			picture = mex_politicised_army
+			modifier = {
+				war_support_weekly = 0.05
+				communism_drift = -0.03
+			}
+		}
+		XDA_foreign_propaganda = {
+			picture = mex_politicised_army	
+			modifier = {
+				communism_drift = -0.05
+				stability_weekly = -0.02
 			}
 		}
 		XDA_civilian_research = {
@@ -86,6 +107,23 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 			}
+		}
+		XDA_siam_war_preparation = {
+			picture = generic_manpower_bonus
+			modifier = {
+				political_power_gain = -0.30
+				experience_gain_army = -0.1 
+				experience_gain_navy = -0.1
+				experience_gain_air = -0.1
+			}
+		}
+		XDA_siam_war_ready = {
+			picture = generic_infantry_bonus
+			targeted_modifier = {
+				tag = XSI
+                attack_bonus_against = 0.25
+                defense_bonus_against = 0.2
+            }
 		}
 	}
 }

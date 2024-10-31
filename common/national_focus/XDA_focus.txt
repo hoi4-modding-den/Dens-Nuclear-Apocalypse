@@ -217,6 +217,51 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = XDA_anti_communist_fliers
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 0
+		y = 1
+		relative_position_id = XDA_the_enemies_on_our_backyard
+		prerequisite = {
+			focus = XDA_the_enemies_on_our_backyard
+		}
+		cost = 8
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = XDA_the_obvious_enemy_2
+			XSB = {
+				add_ideas = XDA_foreign_propaganda
+			}
+			hidden_effect = {
+				remove_ideas = XDA_the_obvious_enemy_1
+			}
+		}
+	}
+	focus = {
+		id = XDA_prepare_the_savannakhet_plan
+		icon = GFX_focus_generic_combined_arms
+		x = 2
+		y = 1
+		relative_position_id = XDA_anti_communist_fliers
+		prerequisite = {
+			focus = XDA_anti_communist_fliers
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = XDA_siam_war_preparation
+				days = 140
+			}
+			hidden_effect = {
+				country_event = {
+					days = 140
+					id = laos.5
+				}
+			}
+		}
+	}
 ##infrastructure_right_demo
 	focus = {
 		id = XDA_Give_and_Take
@@ -240,6 +285,15 @@ focus_tree = {
 				add_research_slot = 1
 				hidden_effect = {
 					remove_ideas = XDA_civilian_research
+				}
+			}
+			if = {
+				limit = {
+				has_completed_focus = XDA_land_reform
+				}
+				add_ideas = XDA_every_man_a_soldier
+				hidden_effect = {
+					remove_ideas = XDA_farmland_reforms
 				}
 			}
 		}
