@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_XAM_Kiri_Chey"
+		texturefile = "gfx/leaders/XAM/Portrait_Temp_XAM_Kiri_Chey.png"
+	}
+}

@@ -1,0 +1,14 @@
+characters = {
+	XAM_Kiri_Chey = {
+		name = "Kiri Chey"
+		portraits = {
+			civillian = {
+				large = "GFX_XAM_Kiri_Chey"
+			}
+		}
+
+		country_leader = {
+			ideology = XAM_Democratic_Monarch
+		}
+	}
+}

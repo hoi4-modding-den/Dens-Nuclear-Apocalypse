@@ -364,6 +364,9 @@ ideologies = {
 			XHK_corporatism = {
 				can_be_randomly_selected = no
 			}
+			XAM_Democratic_Monarch = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {

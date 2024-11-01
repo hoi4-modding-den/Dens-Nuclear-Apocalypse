@@ -17,3 +17,19 @@
   XAM:0 "Maris"
   XAM_DEF:0 "Serene Republic of Maris"
   XAM_ADJ:0 "T'lithan"
+
+ # Ideology
+ XAM_Democratic_Monarch:0 "Elected Monarch"
+ XAM_Democratic_Monarch_desc:0 "Within the Maris political system, there exists a representative who heralds the title of Monarch. Although lacking the traditional power of a monarch, they still hold power over the state, while the true government works in tandem with the one who holds the title. Working as the representation of Maris internationally, the elected monarch is key to the island maintaining its independence and its sacred environment."
+
+ XAM_neutrality_party:0 "HUMF"
+ XAM_neutrality_party_long:0 "House of Maris Freedom"
+ XAM_democratic_party:0 "AAR"
+ XAM_democratic_party_long:0 "Alliance for the Ancestral Revival"
+ XAM_communist_party:0 "OSA"
+ XAM_communist_party_long:0 "Oceanic Syndicate of Maris"
+ XAM_fascist_party:0 "VOS"
+ XAM_fascist_party_long:0 "Vanguard of the Seas"
+
+ # Map
+ STRATEGIC_REGION_290:0 "Maris Blithes"
