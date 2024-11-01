@@ -857,16 +857,7 @@ country_event = { # Taipei Compromise: Delegation has arrived
     option = {
         name = XSK_taiwan_events.2.a
         trigger = {
-            XTW = {
-                has_government = democratic
-                NOT = {
-                    OR = {
-                        has_completed_focus = XTW_revive_the_one_china_policy
-                        has_completed_focus = XTW_martial_law
-                    }
-                }
-            }
-            is_ai = no
+            NOT = { has_war_with = FROM }
         }
         FROM = {
             country_event = { id = XSK_taiwan_events.3 days = 3 }
@@ -897,11 +888,34 @@ country_event = { # Taipei Compromise: Delegation proposes mutuoal cooperation p
     option = {
         name = XSK_taiwan_events.3.a
         trigger = {
+            NOT = { has_war_with = FROM }
             OR = {
-                is_ai = no
-                has_war = no
+                has_government = democratic
+                AND = {
+                    has_government = neutrality
+                    has_completed_focus = XTW_restore_democracy_to_the_party
+                }
+            }
+            OR = {
+                has_completed_focus = XTW_west_pacific_project
+                has_completed_focus = XTW_contact_mainland_splinters
             }
         }
+        ai_chance = {
+			base = 100
+			
+			modifier = {
+				factor = 0.75
+				has_government = neutrality
+			}
+			
+			modifier = {
+				factor = 0.75
+				FROM = {
+					is_major = no
+				}
+			}
+		}
         FROM = {
             country_event = XSK_taiwan_events.5
         }
@@ -923,6 +937,74 @@ country_event = { # Taipei Compromise: Delegation proposes mutuoal cooperation p
 
     option = {
         name = XSK_taiwan_events.3.b
+        ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 65
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 35
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 5
+				}
+			}
+			
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+					target = FROM
+					value < 35
+				}
+			}
+			
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+					target = FROM
+					value < 65
+				}
+			}
+			
+			modifier = {
+				factor = 0.1
+				has_war = yes
+				FROM = {
+					has_war = no
+				}
+			}
+			
+			modifier = {
+				factor = 0.1
+				FROM = {
+					is_major = yes
+				}
+			}
+
+			modifier = {
+				factor = 10
+				FROM = {
+					OR = {
+						is_subject = yes
+						is_in_faction = yes
+					}
+				}
+			}
+		}
         FROM = {
             country_event = XSK_taiwan_events.6
         }
