@@ -239,6 +239,38 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = XDA_light_the_match
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x = 0
+		y = 1
+		relative_position_id = XDA_anti_communist_fliers
+		prerequisite = {
+			focus = XDA_anti_communist_fliers
+		}
+		cost = 10
+		available_if_capitulated = no
+		completion_reward = {
+			XSB = {
+				country_event = { days = 15 id = laos.6 }
+			}
+		}
+	}
+	focus = {
+		id = XDA_may_the_crimson_serpent_rest
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		relative_position_id = XDA_light_the_match
+		prerequisite = {
+			focus = XDA_light_the_match
+		}
+		cost = 6
+		available_if_capitulated = no
+		completion_reward = {
+			create_wargoal = { type = topple_government target = XSI }
+		}
+	}
+	focus = {
 		id = XDA_prepare_the_savannakhet_plan
 		icon = GFX_focus_generic_combined_arms
 		x = 2
@@ -262,7 +294,74 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = XDA_rework_the_army
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = XDA_prepare_the_savannakhet_plan
+		prerequisite = {
+			focus = XDA_prepare_the_savannakhet_plan
+		}
+		cost = 5
+		available_if_capitulated = no
+		completion_reward = {
+			army_experience = 75
+		}
+	}
+	focus = {
+		id = XDA_rework_the_navy
+		icon = GFX_focus_generic_africa_naval
+		x = 2
+		y = 1
+		relative_position_id = XDA_prepare_the_savannakhet_plan
+		prerequisite = {
+			focus = XDA_prepare_the_savannakhet_plan
+		}
+		cost = 5
+		available_if_capitulated = no
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+	focus = {
+		id = XDA_rework_the_air_troops
+		icon = GFX_focus_generic_multi_role_aircraft
+		x = 4
+		y = 1
+		relative_position_id = XDA_prepare_the_savannakhet_plan
+		prerequisite = {
+			focus = XDA_prepare_the_savannakhet_plan
+		}
+		cost = 5
+		available_if_capitulated = no
+		completion_reward = {
+			air_experience = 75
+		}
+	}
 ##infrastructure_right_demo
+	focus = {
+		id = XDA_humble_gift
+		icon = GFX_focus_BRA_cafe_com_leite_politics
+		x = 3
+		y = 1
+		relative_position_id = XDA_Back_in_charge
+		prerequisite = {
+		focus = XDA_Back_in_charge
+		}
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}			
+		}
+	}
 	focus = {
 		id = XDA_Give_and_Take
 		icon = GFX_focus_DEN_heavy_regulations
@@ -289,6 +388,15 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+				has_completed_focus = XDA_coastal_infrastructure_program
+				}
+				add_ideas = XDA_navy_knowhow
+				#hidden_effect = {
+					navy_experience = -50
+				#}
+			}
+			if = {
+				limit = {
 				has_completed_focus = XDA_land_reform
 				}
 				add_ideas = XDA_every_man_a_soldier
@@ -296,28 +404,6 @@ focus_tree = {
 					remove_ideas = XDA_farmland_reforms
 				}
 			}
-		}
-	}
-	focus = {
-		id = XDA_humble_gift
-		icon = GFX_focus_BRA_cafe_com_leite_politics
-		x = 5
-		y = 1
-		relative_position_id = XDA_Back_in_charge
-		prerequisite = {
-		focus = XDA_Back_in_charge
-		}
-		cost = 5
-		available_if_capitulated = yes
-		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-				}
-			}			
 		}
 	}
 	focus = {

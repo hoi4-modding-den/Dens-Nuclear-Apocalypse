@@ -108,6 +108,13 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+		XDA_navy_knowhow = {
+			picture = DEN_sovaernet_1
+			modifier = {
+				naval_hit_chance  = 0.2
+				naval_speed_factor = 0.2
+			}
+		}
 		XDA_siam_war_preparation = {
 			picture = generic_manpower_bonus
 			modifier = {
