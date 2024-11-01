@@ -32,10 +32,20 @@ XSK_anarchy_reclamation_cat = {
 	visible_when_empty = no	
 	
 	allowed = {
-		original_tag = XSK
+		DEN_is_chinese_nation = yes
 	}
 	visible = {	
-		has_completed_focus = XSK_reclaim_chinese_lands
+		NOT = { has_country_flag = XTW_anarchy_reclaim }
+		OR = {
+			has_country_flag = XSK_unlocked_anarchy_reclamation
+			all_other_country = {
+				OR = {
+					DEN_is_chinese_nation = no
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
 	}
 }
 

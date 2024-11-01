@@ -643,7 +643,7 @@ XSK_anarchy_reclamation_cat = {
 		icon = GFX_decision_ITA_reorganize_ascari
 
 		allowed = {
-			original_tag = XSK
+			DEN_is_chinese_nation = yes
 		}
 
 		highlight_states = { 
