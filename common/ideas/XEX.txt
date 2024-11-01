@@ -205,8 +205,9 @@ ideas = {
             picture = ROM_king_carol_emptied_accounts
 
             modifier = {
-                consumer_goods_factor = -0.15
-                production_speed_buildings_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.08
+                production_lack_of_resource_penalty_factor = -0.15
+                production_speed_buildings_factor = 0.1
             }
 
         }
@@ -297,7 +298,13 @@ ideas = {
             picture = YUG_federal_defense_council
 
             modifier = {
+                send_volunteer_size = 4
+                send_volunteers_tension = -0.25
                 army_core_defence_factor = 0.1
+            }
+
+            rule = {
+                can_send_volunteers = yes
             }
 
         }

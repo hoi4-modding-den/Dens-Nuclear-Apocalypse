@@ -80,4 +80,28 @@ on_actions = {
 		}
 	}
 
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					XEX = {
+						has_country_flag = XEX_use_dem_for_neu_flag
+						has_government = neutrality
+					}
+				}
+				XEX = { set_cosmetic_tag = XEX_democratic }
+			}
+			if = {
+				limit = {
+					XEX = {
+						has_country_flag = XEX_use_dem_for_neu_flag
+						has_cosmetic_tag = XEX_democratic
+						NOT = { has_government = neutrality }
+					}
+				}
+				XEX = { drop_cosmetic_tag = yes }
+			}
+		}
+	}
+
 }

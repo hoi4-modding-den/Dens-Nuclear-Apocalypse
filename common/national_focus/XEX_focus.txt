@@ -37,7 +37,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_popularity = {
@@ -78,7 +78,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_stability = 0.05
@@ -109,7 +109,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_political_power = 100
@@ -140,7 +140,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = XEX_another_pull_tt
@@ -171,7 +171,7 @@ focus_tree = {
 			factor = 200
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_ideas = XEX_magic_time
@@ -201,7 +201,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -236,7 +236,7 @@ focus_tree = {
 			factor = 200
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = XEX_expand_operations_tt
@@ -267,7 +267,7 @@ focus_tree = {
 			factor = 200
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = XEX_expand_operations2_tt
@@ -351,9 +351,13 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 0
+				date < 2239.1.1
+			}
 		}
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = XEX_protect_the_playerbase_tt
@@ -449,8 +453,14 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_army_manpower = {
-				size > 250000
+			OR = {
+				has_army_manpower = {
+					size > 250000
+				}
+				strength_ratio = {
+					tag = XK0
+					ratio > 1
+				}
 			}
 			is_neighbor_of = XK0
 			NOT = { is_ally_with = XK0 }
@@ -469,7 +479,11 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -509,7 +523,7 @@ focus_tree = {
 			factor = 200
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			swap_ideas = {
@@ -555,9 +569,13 @@ focus_tree = {
 			factor = 200
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
 			remove_ideas = XEX_growing_unrest2
 			1003 = {
 				add_manpower = -10000
@@ -603,7 +621,7 @@ focus_tree = {
 			factor = 200
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			if = {
@@ -658,7 +676,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			army_experience = 50
@@ -700,7 +718,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			if = {
@@ -739,7 +757,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			random_owned_state = {
@@ -791,7 +809,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_ideas = XEX_guard_division_ready
@@ -821,7 +839,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_research_slot = 1
@@ -852,7 +870,7 @@ focus_tree = {
 			}
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
 			add_stability = 0.1
@@ -880,9 +898,13 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 50
+			modifier = {
+				add = 100
+				date > 2238.1.1
+			}
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			random_core_state = {
@@ -974,7 +996,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			every_core_state = {
@@ -1056,7 +1078,7 @@ focus_tree = {
 			factor = 200
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			every_neighbor_country = {
@@ -1088,8 +1110,14 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_army_manpower = {
-				size > 250000
+			OR = {
+				has_army_manpower = {
+					size > 200000
+				}
+				strength_ratio = {
+					tag = XRE
+					ratio > 1
+				}
 			}
 			is_neighbor_of = XRE
 			NOT = { is_ally_with = XRE }
@@ -1138,8 +1166,14 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_army_manpower = {
-				size > 250000
+			OR = {
+				has_army_manpower = {
+					size > 200000
+				}
+				strength_ratio = {
+					tag = XSG
+					ratio > 1
+				}
 			}
 			is_neighbor_of = XSG
 			NOT = { is_ally_with = XSG }
@@ -1265,7 +1299,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			every_owned_state = {
@@ -1294,38 +1328,32 @@ focus_tree = {
 		relative_position_id = XEX_construct_casinos
 
 		available = {
+			has_country_leader = {
+				character = XEX_gamblerman
+				ruling_only = yes
+			}
 			is_subject = no
 			has_army_manpower = {
 				size > 300000
 			}
-			is_subject = no
-			OR = {
-				NOT = { is_ally_with = XK0 }
-				NOT = { is_ally_with = XKY }
-			}
 		}
 
 		bypass = {
-			XK0 = {
-				OR = {
-					is_subject_of = ROOT
-					has_war_with = ROOT
-					exists = no
-				}
-			}
-			XKY = {
-				OR = {
-					is_subject_of = ROOT
-					has_war_with = ROOT
-					exists = no
-				}
-			}
+			
 		}
 
 		cost = 5
 
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 0
+				date < 2240.1.1
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1333,31 +1361,20 @@ focus_tree = {
 		will_lead_to_war_with = XK0
 		will_lead_to_war_with = XKY
 		completion_reward = {
-			if = {
-				limit = {
-					XK0 = {
-						exists = yes
-						NOT = { is_ally_with = ROOT }
-						NOT = { has_war_with = ROOT }
+			effect_tooltip = {
+				random_list = {
+					1 = {
+						country_event = XEX_events.2
+						custom_effect_tooltip = the_following_will_happen_TT
+						event_option_tooltip = XEX_events.2.a
 					}
-				}
-				create_wargoal = {
-					target = XK0
-					type = annex_everything
+					99 = {
+						custom_effect_tooltip = XEX_gamble_it_all_tt
+					}
 				}
 			}
-			if = {
-				limit = {
-					XKY = {
-						exists = yes
-						NOT = { is_ally_with = ROOT }
-						NOT = { has_war_with = ROOT }
-					}
-				}
-				create_wargoal = {
-					target = XKY
-					type = puppet_wargoal_focus
-				}
+			hidden_effect = {
+				country_event = { id = XEX_events.2 days = 7 }
 			}
 		}
 	}
@@ -1389,7 +1406,7 @@ focus_tree = {
 			}
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_stability = -0.1
@@ -1430,7 +1447,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
 			if = {
@@ -1502,7 +1519,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
 			swap_ideas = {
@@ -1555,7 +1572,10 @@ focus_tree = {
 				}
 				news_event = XEX_news_events.2
 			}
-			add_ideas = XEX_appropriate_casino_riches
+			add_timed_idea = {
+				idea = XEX_appropriate_casino_riches
+				days = 365
+			}
 		}
 	}
 
@@ -1582,7 +1602,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
 			add_ideas = XEX_enemy_of_casinos
@@ -1612,7 +1632,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = XEX_end_the_gambling_tt
@@ -1632,8 +1652,18 @@ focus_tree = {
 				retire_character = XEX_gamblerman
 				set_party_name = {
 					ideology = neutrality
-					long_name = "Qingdao Civility Party"
-					name = "Qingdao Civility Party"
+					long_name = "Direct Military Rule from Beijing"
+					name = "Beijing Military Rule"
+				}
+				set_country_flag = XEX_use_dem_for_neu_flag
+				add_country_leader_role = {
+					character = XEX_beijing_governor
+					promote_leader = yes
+					country_leader = {
+						ideology = despotism
+						expire = "3000.1.1.1"
+						traits = { XEX_beijing_governor_trait }
+					}
 				}
 			}
 		}
@@ -1662,7 +1692,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_research_slot = 1
@@ -1693,7 +1723,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
 			army_experience = 50
@@ -1756,7 +1786,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			random_core_state = {
@@ -1770,10 +1800,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1788,10 +1818,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1897,7 +1927,10 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			add_ideas = XEX_independence_protection
+			swap_ideas = {
+				remove_idea = XEX_protectors_of_peace
+				add_idea = XEX_independence_protection
+			}
 		}
 	}
 
@@ -1924,7 +1957,7 @@ focus_tree = {
 			factor = 100
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			swap_ideas = {
@@ -1948,8 +1981,14 @@ focus_tree = {
 		available = {
 			has_government = communism
 			is_subject = no
-			has_army_manpower = {
-				size > 250000
+			OR = {
+				has_army_manpower = {
+					size > 250000
+				}
+				strength_ratio = {
+					tag = XK0
+					ratio > 1
+				}
 			}
 			is_neighbor_of = XK0
 			NOT = { is_ally_with = XK0 }

@@ -82,8 +82,14 @@ state_event = { # Genshin Servers deactivated
 	}
 
     immediate = {
-        set_country_flag = XEX_genshin_servers_down
+        owner = { set_country_flag = XEX_genshin_servers_down }
     }
+
+    mean_time_to_happen = {
+        days = 2
+    }
+
+    minor_flavor = yes
     
     option = {
         name = XEX_events.1.a
@@ -91,6 +97,47 @@ state_event = { # Genshin Servers deactivated
             every_owned_state = {
                 limit = { has_dynamic_modifier = { modifier = XEX_genshin_state } }
                 remove_dynamic_modifier = { modifier = XEX_genshin_state }
+            }
+        }
+    }
+
+}
+
+country_event = { # win the gamble (it's scripted)
+    id = XEX_events.2
+    title = XEX_events.2.t
+    picture = GFX_report_event_generic_stock_traders
+    desc = XEX_events.2.d
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    minor_flavor = yes
+    
+    option = {
+        name = XEX_events.2.a
+        add_political_power = 150
+        XEX_gamblerman = {
+            add_trait = {
+                ideology = XEX_casino_rule
+                trait = XEX_providence_challenger
+            }
+        }
+        set_cosmetic_tag = XEX_state_of_providence
+        custom_effect_tooltip = XEX_events.2.a.tt
+        every_neighbor_country = {
+            limit = {
+                OR = {
+                    DEN_is_chinese_nation = yes
+                    original_tag = XK0
+                }
+                NOT = { is_ally_with = ROOT }
+            }
+            ROOT = { 
+                create_wargoal = {
+                    target = PREV
+                    type = annex_everything
+                }
             }
         }
     }

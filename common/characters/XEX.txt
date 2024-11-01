@@ -51,7 +51,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = XFR_emergency_government
-			traits = { XEX_beijing_governor_trait }
+			traits = { XEX_beijing_governor_trait staunch_constitutionalist }
 			expire = "3000.9.9.9"
 			id = -1
 		}

@@ -30,6 +30,10 @@
  XEX_genshin_tag_fascism_DEF: "the Realm of Genshin Impact"
  XEX_genshin_tag_fascism_ADJ: "Genshin"
 
+ XEX_state_of_providence_neutrality: "State of Fortune"
+ XEX_state_of_providence_neutrality_DEF: "the True State of Fortune under the Conqueror of Providence"
+ XEX_state_of_providence_neutrality_ADJ: "Fortune State"
+
 # States
 
  STATE_1003: "Anti-Casinos Ghettos"
@@ -70,6 +74,8 @@
  XEX_mihiyo_representative_no_lar: "MiHoYo Representative"
  XEX_former_gambler: "Former Gambler"
  XEX_king_of_gambling: "King of Gambling"
+ XEX_king_of_gambling_tt: "  - Gambling Luck: §G+25%§!"
+ XEX_providence_challenger: "Conqueror of Providence"
  XEX_beijing_governor_trait: "Military Governor"
 
 
@@ -81,8 +87,8 @@
  XEX_fascism_party_long: "Bo-Hai Gambling Group - Gacha Division"
  XEX_communism_party: "Anti-Casino Party"
  XEX_communism_party_long: "Anti-Casino Party"
- XEX_democratic_party: "Beijing City Council"
- XEX_democratic_party_long: "Beijing City Council"
+ XEX_democratic_party: "Restorationists"
+ XEX_democratic_party_long: "Party for Restoration of the Beijing Constitution"
  
  
 # Ideas
@@ -92,13 +98,16 @@
  XEX_growing_unrest: "Anti-Casino Opposition"
  XEX_growing_unrest_desc: "The poor and downtrodden have all gathered in the ghettos to protest against the immoral practices of the Bo-Hai Gambling Group."
  XEX_open_door_policy: "Open Door Policy"
+ XEX_open_door_policy_desc: "Our Open Door Policy allows everyone simple entry to our nation. This has been mainly done to gain new customers for our casinos, though many people also simply come here for work."
  XEX_magic_time: "Virtual Magic"
+ XEX_magic_time_desc: "We are not certain HOW it works, but in the immortal words of Todd Howard:\n'It just works.'."
  XEX_guard_division_ready: "Bo-Hai Defence Corporation"
+ XEX_guard_division_ready_desc: "Outsourcing our national defence to a corporation may seem like a bad idea, but thanks to our incredible wealth, their loyalty is guaranteed."
  XEX_appropriate_casino_riches: "Appropriate Casino Riches"
  XEX_enemy_of_casinos: "Gambling Help Groups"
- XEX_enemy_of_casinos2: "United Against Gambling Addiction"
- XEX_protectors_of_peace: "Peacekeepers"
- XEX_independence_protection: "Bo-Hai Organisation for the Protection of Sovereignty"
+ XEX_enemy_of_casinos2: "United Against Gambling"
+ XEX_protectors_of_peace: "Bo-Hai Peacekeepers"
+ XEX_independence_protection: "Bo-Hai Organisation for the Protection of Sovereignty and International Intervention"
 
 
 # Decisions
@@ -113,7 +122,7 @@
  XEX_spread_genshin: "Ad Campaign in [FROM.GetName]"
 
  XEX_close_the_doors: "Close the Doors"
- XEX_close_the_doors_tt: "The Doors may be re-opened after 90 days."
+ XEX_close_the_doors_tt: "\n§GThe Doors may be re-opened after 90 days.§!\n"
  XEX_open_the_doors: "Re-Open the Doors"
 
 
@@ -147,6 +156,11 @@
  XEX_events.1.d: "Following the fall of the MiHoYo Corporation, servers for Genshin Impact have been deactivated. While first devastated, Genshin players have slowly rehabilitated into normal people again, freeing themselves from their addiction."
  XEX_events.1.a: "Productivity will return to the lands."
 
+ XEX_events.2.t: "Du Tu prevails"
+ XEX_events.2.d: "Du Tu knew the risks. And he took it.\n \nVictorious over luck itself, Du Tu saved Bo-Hai from collapse, transforming it into a state representing the very definition of Fortune. How? He wasn't so sure himself. But maybe, this was a sign.\nA sign of Providence."
+ XEX_events.2.a: "Now for my final play."
+ XEX_events.2.a.tt: "Gain £GFX_war_goal_texticon §YWargoals§! against every §Yneighbouring Chinese or Korean nation§!."
+
  XEX_gatcha_events.1.t: "A Wild General appears!"
  XEX_gatcha_events.1.d: "The Gambling has paid off. We have unlocked another great general!"
  XEX_gatcha_events.1.a: "Very Good!"
@@ -165,16 +179,16 @@
 # Focus Tree
 
  XEX_protect_our_interests: "Protect our Interests"
- XEX_protect_our_interests_desc: "With the continuing of the protests against the casino division of our group, we might need to take control of the situation to protect our company's interests."
+ XEX_protect_our_interests_desc: "With the continuing of the protests against the casino division, we might need to take control of the situation to protect our company's interests."
  XEX_continue_brainwashing: "Continue Advertising Campaigns"
- XEX_continue_brainwashing_desc: ""
+ XEX_continue_brainwashing_desc: "Even with our bad reputation among the general public, our advertisements always conveniently make them forget about our controversies. Look at our new Anime Waifu!"
  XEX_ensure_investors: "Guarantee Profits for Investors"
  XEX_ensure_investors_desc: ""
  XEX_another_pull: "Another Pull"
- XEX_another_pull_desc: ""
+ XEX_another_pull_desc: "Thanks to new revolutionary technology, we can directly convert money into random events! These could cause many things that will help our company."
  XEX_another_pull_tt: "Unlocks the §CGacha§! System."
  XEX_the_magic_of_anime: "The Magic of Anime"
- XEX_the_magic_of_anime_desc: ""
+ XEX_the_magic_of_anime_desc: "It is simply magic. Ask the wizards of Arnmouth for more info."
  XEX_continue_updates: "Continue Updates"
  XEX_continue_updates_desc: ""
  XEX_expand_operations: "Expand Operations South"
@@ -188,7 +202,7 @@
  XEX_protect_the_playerbase: "Secure the Playerbase"
  XEX_protect_the_playerbase_desc: ""
  XEX_protect_the_playerbase_trigger: "All possible states have the §YGenshin Addiction§! modifier."
- XEX_protect_the_playerbase_tt: "We will gain §Yclaims§! on all states with the §YGenshin Addiction§! modifier and §Ywargoals§! against their owners:"
+ XEX_protect_the_playerbase_tt: "We will gain §Yclaims§! on all states with the §YGenshin Addiction§! modifier and £GFX_war_goal_texticon §YWargoals§! against their owners:"
  XEX_protect_the_playerbase_tt2: "\n§RWe may no longer expand our Operations abroad.§!"
  XEX_realm_of_genshin: "Realm of Genshin"
  XEX_realm_of_genshin_desc: ""
@@ -200,7 +214,7 @@
  XEX_crackdown: "Crack Down on Dissent"
  XEX_crackdown_desc: ""
  XEX_end_unrest: "Raze the Ghettos"
- XEX_end_unrest_desc: ""
+ XEX_end_unrest_desc: "Those foolish peasants need to learn their place! Only the rich may flourish!"
  XEX_expand_intelligence_gathering: "Expand Intelligence Gathering"
  XEX_expand_intelligence_gathering_desc: ""
  XEX_reform_the_guard_division: "Reform the Guards Division"
@@ -217,7 +231,7 @@
  XEX_expand_dockyards_desc: ""
 
  XEX_business_as_usual: "Business as Usual"
- XEX_business_as_usual_desc: "These protests aren't going to achieve anything. The status quo will prevail."
+ XEX_business_as_usual_desc: "Even with the ongoing protests, we will continue our business. Money will flow, unrest our not."
  XEX_patrol_the_villa_district: "Patrol the Villa District"
  XEX_patrol_the_villa_district_desc: ""
  XEX_patrol_the_villa_district_tt: "Deploy 2 §O12-Width Infantry Divisions§! in Beijing."
@@ -238,20 +252,21 @@
  XEX_construct_casinos: "Expand the Casino Districts"
  XEX_construct_casinos_desc: ""
  XEX_gamble_it_all: "All or Nothing"
- XEX_gamble_it_all_desc: ""
+ XEX_gamble_it_all_desc: "We have come far, growing our empire in the search of profit. But it is time for one final gamble."
+ XEX_gamble_it_all_tt: "our country §Rcollapsing under our own greed.§!"
 
  XEX_protests_continue: "Protests Continue"
- XEX_protests_continue_desc: "We the people deserve to be protected from the money-hungry bastards that run those casinos!"
+ XEX_protests_continue_desc: "We the people deserve to be protected from the money-hungry bastards that run those casinos! And our leader, Arnie Schmitler has just the ideas how."
  XEX_sabotage_casinos: "Sabotage Casinos"
  XEX_sabotage_casinos_desc: ""
  XEX_rally_the_ghettos: "Rally the Ghettos"
  XEX_rally_the_ghettos_desc: ""
  XEX_overthrow_the_capitalists: "Overthrow the Plutocracy"
- XEX_overthrow_the_capitalists_desc: ""
+ XEX_overthrow_the_capitalists_desc: "No longer shall mammon and greed rule over us! Down with the elite! Long live the people!"
  XEX_care_for_the_poor: "Social Support Programs"
  XEX_care_for_the_poor_desc: ""
  XEX_end_the_gambling: "End the Gambling"
- XEX_end_the_gambling_desc: ""
+ XEX_end_the_gambling_desc: "These bastards ruined our nation, prioritising their casino's profits over the people's lifes. No longer! We shall burn down their monuments to greed once and for all!"
  XEX_end_the_gambling_tt: "The Casinos will be §Rburned down§!."
  XEX_schools_for_everyone: "Schools for Everyone"
  XEX_schools_for_everyone_desc: ""
@@ -259,15 +274,8 @@
  XEX_conscript_obdachlose_desc: ""
  XEX_work_for_everyone: "Reduce Unemployment"
  XEX_work_for_everyone_desc: ""
- XEX_hijack_the_revolution: "Hijack the Revolution"
- XEX_hijack_the_revolution_desc: ""
- XEX_eagle_over_tsingtao: "Eagle over Tsingtao"
- XEX_eagle_over_tsingtao_desc: ""
- XEX_try_to_take_over_the_world: "Try to take over the World!"
- XEX_try_to_take_over_the_world_desc: ""
- XEX_try_to_take_over_the_world_tt: "\n§RThis is a horrible idea...§!\n \nA new focus tree will be unlocked after either §Gwinning§! or §Rlosing§! the war."
  XEX_peace_in_our_time: "Protectors of Peace"
- XEX_peace_in_our_time_desc: ""
+ XEX_peace_in_our_time_desc: "Peace may reign for now, but it is only temporary. And we must be ready once evil strikes."
  XEX_fortify_the_border: "Fortify the Borders"
  XEX_fortify_the_border_desc: ""
  XEX_protect_independence: "Defend our Sovereignty"

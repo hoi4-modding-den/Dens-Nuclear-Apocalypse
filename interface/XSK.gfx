@@ -107,6 +107,12 @@ spriteTypes = {
 		name = "GFX_idea_XSK_railway_company_contract"
 		texturefile = "gfx/interface/ideas/idea_generic_railroads.dds"
 	}
+
+	spriteType = {
+		name = "GFX_war_goal_texticon"
+		texturefile = "gfx/XSK/war_goal_texticon.dds"
+		legacy_lazy_load = no
+	}
     
     spriteType = {
         name = "GFX_autonomy_XSK_vilayet_icon"

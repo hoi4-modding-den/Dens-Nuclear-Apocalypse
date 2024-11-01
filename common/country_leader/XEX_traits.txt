@@ -3,9 +3,8 @@ leader_traits = {
 	XEX_mihiyo_representative = {
 		random = no
 
-		stability_factor = 0.1
 		intel_network_gain_factor = 0.1
-		civilian_intel_factor = 0.5
+		civilian_intel_factor = 0.25
 
 		ai_will_do = {
 			factor = 0
@@ -15,7 +14,6 @@ leader_traits = {
 	XEX_mihiyo_representative_no_lar = {
 		random = no
 
-		stability_factor = 0.1
 		crypto_strength = 1
 		decryption_power_factor = 0.2
 
@@ -27,7 +25,8 @@ leader_traits = {
 	XEX_former_gambler = {
 		random = no
 
-		political_power_gain = 0.15
+		political_power_gain = 0.05
+		stability_factor = 0.1
 
 		ai_will_do = {
 			factor = 0
@@ -37,8 +36,20 @@ leader_traits = {
 	XEX_king_of_gambling = {
 		random = no
 
-		consumer_goods_expected_value = -0.1
-		global_building_slots_factor = 0.15
+		party_popularity_stability_factor = 0.15
+		custom_modifier_tooltip = XEX_king_of_gambling_tt
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	XEX_providence_challenger = {
+		random = no
+
+		compliance_gain = 0.1
+		justify_war_goal_time = -0.25
+		generate_wargoal_tension = -0.5
 
 		ai_will_do = {
 			factor = 0
