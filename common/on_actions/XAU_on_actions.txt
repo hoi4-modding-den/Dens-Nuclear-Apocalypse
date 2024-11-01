@@ -9,4 +9,21 @@ on_actions = {
 			}
 		}
 	}
+	on_war = {
+		effect = {
+			IF = {
+				limit = {
+					THIS = { tag = XAU }
+					XAU = {
+						NOT = {
+							has_country_flag = XAU_awakened_state
+						}
+					}
+				}
+				XAU = {
+					country_event = XAU_awakening.1
+				}
+			}
+		}
+	}
 }

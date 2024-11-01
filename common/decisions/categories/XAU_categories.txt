@@ -12,3 +12,17 @@ XAU_components_decisions = {
 	visible_when_empty = yes
 	scripted_gui = XAU_components_gui
 }
+
+XAU_our_awakening = {		
+	priority = 8		
+	icon = GFX_category_icon
+	
+	allowed = {
+		original_tag = XAU
+	}
+	visible = {	
+		original_tag = XAU
+		has_country_flag = XAU_awakened_state
+	}
+	visible_when_empty = yes
+}

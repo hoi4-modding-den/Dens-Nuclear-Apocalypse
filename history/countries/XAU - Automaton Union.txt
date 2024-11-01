@@ -59,8 +59,8 @@ add_ideas = {
 }
 
 set_country_flag = XAU_welcome_message_flag
-set_country_flag = dont_use_default_political_advisors
-set_country_flag = dont_use_default_military_advisors
+#set_country_flag = dont_use_default_political_advisors
+#set_country_flag = dont_use_default_military_advisors
 set_country_flag = automaton_technology
 
 set_variable = { XAU.components = 500 }
@@ -136,3 +136,7 @@ add_opinion_modifier = {
 XAU_update_automaton_time = yes
 XAU_update_automaton_cost = yes
 XAU_update_components_trend = yes
+
+set_research_slots = 4
+
+country_event = { id = XAU_awakening.1 days = 30 }

@@ -25,3 +25,84 @@ XAU_components_decisions = {
 		}
 	}
 }
+
+XAU_our_awakening = {
+	XAU_assemble_scrap_soldiers = {		
+		icon = GFX_decision_generic_industry
+
+		visible = {
+			has_war = yes
+		}
+
+		cost = 30
+
+		days_remove = 60
+		days_re_enable = 60
+
+		ai_will_do = {
+			base = 20
+		}
+
+		remove_effect = {
+			load_oob = "XAU_SCRAP_SOLDIERS"
+		}
+	}
+
+	XAU_purge_the_humans = {
+		targets = { XYU XGD XDA XSB XBE XBO XSR XTM XTT XNP XSG XWH XEX XMJ XON XK0 XKY XTW XRE XSK }
+		targets_dynamic = yes
+		visible = {
+			FROM = {
+				NOT = { has_war_with = XAU }
+				exists = yes
+				is_neighbor_of = XAU
+			}
+		}
+		icon = GFX_decision_generic_prepare_civil_war
+		cost = 25
+		war_with_target_on_complete = yes
+		days_remove = 30
+		ai_will_do = {
+			base = 2
+			modifier = {
+				add = 10
+				has_war = no
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+                target = FROM
+                type = annex_everything
+            } 
+			hidden_effect = { FROM = { country_event = XAU_awakening.2 } }
+		}
+	}
+
+	XAU_integrate_the_humans = {
+		targets = { XYU XGD XDA XSB XBE XBO XSR XTM XTT XNP XSG XWH XEX XMJ XON XK0 XKY XTW XRE XSK }
+		targets_dynamic = yes
+		visible = {
+			FROM = {
+				all_core_state = {
+					is_fully_controlled_by = XAU
+				}
+			}
+		}
+		icon = GFX_decision_generic_nationalism
+		cost = 100
+		war_with_target_on_complete = yes
+		days_remove = 180
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			add_stability = 0.03
+			FROM = {
+				every_core_state = {
+					add_core_of = XAU
+					remove_core_of = FROM
+				}
+			}
+		}
+	}
+}

@@ -201,5 +201,15 @@ spriteTypes = {
         name = GFX_trait_automaton_leader
         texturefile = "gfx/interface/XAU/trait_automaton_leader.dds"
     }
+
+	spriteType = {
+		name = "GFX_news_event_XAU_awakening"
+		texturefile = "gfx/event_pictures/news_event_XAU_awakening.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_invasion"
+		texturefile = "gfx/event_pictures/XAU_report_event_invasion.png"
+	}
 }
 

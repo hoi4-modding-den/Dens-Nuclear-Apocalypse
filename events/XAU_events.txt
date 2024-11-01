@@ -1,5 +1,7 @@
 add_namespace = XAU
 add_namespace = XAU_border_conflict
+add_namespace = XAU_awakening
+add_namespace = XAU_awakening_news
 
 country_event = { # Rogue is disabled
     id = XAU.1
@@ -344,4 +346,88 @@ country_event = { # For XWH if they lose
         name = XAU_border_conflict.8.a
         add_stability = -0.02
     }
+}
+
+country_event = { # Awakening
+    id = XAU_awakening.1
+    title = XAU_awakening.1.t
+    picture = GFX_report_event_invasion
+    desc = XAU_awakening.1.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = XAU_awakening.1.a
+        load_oob = "XAU_AWAKENING"
+        remove_ideas = {
+            XAU_civil_defiance
+            XAU_resource_famines
+        }
+
+        XAU_Rogue_Intelligence = {
+            set_portraits = {
+                civilian = { large = "GFX_Leader_Rogue_Disabled_Animated" }
+            }
+            add_trait = {
+                ideology = XAU_synthetic_absolution
+                trait = XAU_corrupted_databanks
+            }
+            remove_trait = {
+                ideology = XAU_synthetic_absolution
+                trait = XAU_wary_of_humans
+            }
+        }
+
+        add_popularity = {
+            ideology = communism
+            popularity = 0.2
+        }
+
+        set_country_flag = XAU_awakened_state
+        add_offsite_building = { type = arms_factory level = 5 }
+        add_offsite_building = { type = indeustrial_complex level = 5 }
+
+        set_cosmetic_tag = XAU_AWAKENED_SOLDIERS
+
+        news_event = XAU_awakening_news.1
+    }
+}
+
+country_event = { # The binary horde advances
+    id = XAU_awakening.2
+    title = XAU_awakening.2.t
+    picture = GFX_report_event_invasion
+    desc = XAU_awakening.2.d
+
+    is_triggered_only = yes
+    
+    option = {
+        name = XAU_awakening.2.a
+        add_war_support = 0.05
+    }
+}
+
+news_event = {
+	id = XAU_awakening_news.1
+	title = XAU_awakening_news.1.t
+	desc = XAU_awakening_news.1.d
+	picture = GFX_news_event_XAU_awakening
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = XAU_awakening_news.1.a
+		trigger = {
+			NOT = {
+				TAG = XAU
+			}
+		}
+	}
+	option = {
+		name = XAU_awakening_news.1.b
+		trigger = { TAG = XAU }
+	}
 }

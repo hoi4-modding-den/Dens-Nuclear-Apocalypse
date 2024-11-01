@@ -21,10 +21,11 @@ leader_traits = {
 		}
 	}
 
-	XAU_corrupted_databanks = {
+	XAU_awakened_AI = {
 		random = no
 	
-		political_power_factor = -0.5
+		offence = 0.1
+		defence = 0.1
 		
 		ai_will_do = {
 			factor = 1

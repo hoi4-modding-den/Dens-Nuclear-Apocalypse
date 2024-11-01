@@ -59,18 +59,31 @@ ideas = {
 			}
 		}
 		XAU_not_yet_over = {
-			picture = XAU_resource_famines
+			picture = POL_disjointed_industry
 			modifier = {
 				war_support_factor = 0.1
 				political_power_gain = 0.5
 			}
 		}
 		XAU_the_union_guard = {
-			picture = XAU_resource_famines
+			picture = NORDIC_army_communist
 			modifier = {
 				recruitable_population = 0.03
 				training_time_factor = -0.1
 				experience_gain_army = 0.1
+			}
+		}
+		XAU_doing_it_for_the_people = {
+			picture = generic_flexible_foreign_policy
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		XAU_im_doing_my_part = {
+			picture = SOV_organize_wreckers
+			modifier = {
+				surrender_limit = 1.0
+				army_core_defence_factor = 0.2
 			}
 		}
 	}

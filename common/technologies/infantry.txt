@@ -2516,6 +2516,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			automaton_tech
 		}
 		
 		ai_will_do = {
@@ -2555,6 +2556,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			automaton_tech
 		}
 		
 		ai_will_do = {
@@ -2595,6 +2597,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			automaton_tech
 		}
 		
 		ai_will_do = {
@@ -2633,6 +2636,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			automaton_tech
 		}
 		
 		ai_will_do = {
@@ -2669,6 +2673,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			automaton_tech
 		}
 		
 		ai_will_do = {

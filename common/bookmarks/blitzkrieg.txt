@@ -178,6 +178,9 @@ bookmarks = {
 			ideology = communism
 			history = "XAU_history_desc"
 			focuses = {
+				XAU_union_guard_forces
+				XAU_spark_border_wars_with_wuhan
+				XAU_remember_what_were_fighting_for
 			}
 			ideas = {
 				XAU_no_longer_servants
