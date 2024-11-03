@@ -21,6 +21,20 @@ peace_ai_desires = {
         ai_desire = 10000
     }
 
+    kill_these_guys = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT.FROM = {
+                OR = {
+                    original_tag = XAU
+                    original_tag = XOO
+                    original_tag = XFW
+                }
+            }
+        }
+        ai_desire = 10000
+    }
+
     do_not_liberate_or_force_government = {
         peace_action_type = { liberate force_government }
         enable = {
