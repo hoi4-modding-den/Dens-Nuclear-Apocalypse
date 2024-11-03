@@ -2859,6 +2859,54 @@ focus_tree = {
 	}
 
 	focus = {
+		id = XSK_strike_bo_hai
+		icon = GFX_focus_XEX_end_the_gambling
+		prerequisite = { focus = XSK_meeting_in_taiwan focus = XSK_consolidate_the_north }
+		#mutually_exclusive = { focus = XSK_claim_the_mandate_of_heaven }
+		x = -1
+		y = 2
+		relative_position_id = XSK_future_of_the_sultanate
+
+		available = {
+			is_subject = no
+			XEX = {
+				is_owner_neighbor_of = ROOT
+			}
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = XEX
+				XEX = {
+					is_subject_of = ROOT
+				}
+				XEX = {
+					exists = no
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 150
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			add_named_threat = {
+				threat = 2
+				name = XSK_strike_bo_hai
+			}
+			create_wargoal = {
+				target = XEX
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
 		id = XSK_mutual_cooperation
 		icon = GFX_focus_generic_befriend_taiwan
 		prerequisite = { focus = XSK_meeting_in_taiwan }
