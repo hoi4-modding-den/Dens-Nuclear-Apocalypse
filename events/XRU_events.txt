@@ -1,5 +1,6 @@
 add_namespace = XRU_start_event
 add_namespace = XRU
+add_namespace = XRU_real_event
 
 country_event = {
 	id = XRU_start_event.1
@@ -27,6 +28,22 @@ country_event = {
 	fire_only_once = yes
 		option = {
 		name = XRU.start_2.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = XRU_real_event.1
+	title = XRU.real_1.t
+	# picture = GFX_report_event_XRU_chaos
+	desc = XRU.real_1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+		option = {
+		name = XRU.real_1.a
 		ai_chance = {
 			base = 100
 		}
